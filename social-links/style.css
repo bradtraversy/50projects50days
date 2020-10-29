@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.4s ease;
+  height: 70px;
+  width: 70px;
+}
+
+.container.open {
+  width: 350px;
+}
+
+.container .open-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: linear-gradient(
+    110.1deg,
+    rgba(241, 115, 30, 1) 18.9%,
+    rgba(231, 29, 54, 1) 90.7%
+  );
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 70px;
+  width: 70px;
+  z-index: 100;
+}
+
+.container.open .open-btn {
+  display: none;
+}
+
+.container a {
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.container.open a {
+  position: static;
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+.container a.ytb {
+  background-color: #ff0000;
+}
+.container a.twt {
+  background-color: #1da1f2;
+}
+.container a.x {
+  background-color: #282c37;
+}
+.container a.lin {
+  background-color: #007bb5;
+}
+.container a.ins {
+  background-color: #c32aa3;
+}
+
+.container a i {
+  color: #fff;
+}
