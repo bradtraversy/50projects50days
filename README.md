@@ -33,7 +33,7 @@ UPDATE LINK 👇
 | 22  | [Drawing App](https://github.com/bradtraversy/50projects50days/tree/master/drawing-app)                                     | [Live Demo](https://50projects50days.com/projects/drawing-app/)                   |
 | 23  | [Kinetic Loader](https://github.com/bradtraversy/50projects50days/tree/master/kinetic-loader)                               | [Live Demo](https://50projects50days.com/projects/kinetic-loader/)                |
 | 24  | [Content Placeholder](https://github.com/bradtraversy/50projects50days/tree/master/content-placeholder)                     | [Live Demo](https://50projects50days.com/projects/content-placeholder/)           |
-| 25  | [Sticky Navbar](https://github.com/bradtraversy/50projects50days/tree/master/sticky-navbar)                                 | [Live Demo](https://50projects50days.com/projects/sticky-navbar/)                 |
+| 25  | [Sticky Navbar](https://github.com/bradtraversy/50projects50days/tree/master/sticky-navigation)                                 | [Live Demo](https://50projects50days.com/projects/sticky-navbar/)                 |
 | 26  | [Double Vertical Slider](https://github.com/bradtraversy/50projects50days/tree/master/double-vertical-slider)               | [Live Demo](https://50projects50days.com/projects/double-vertical-slider/)        |
 | 27  | [Toast Notification](https://github.com/bradtraversy/50projects50days/tree/master/toast-notification)                       | [Live Demo](https://50projects50days.com/projects/toast-notification/)            |
 | 28  | [Github Profiles](https://github.com/bradtraversy/50projects50days/tree/master/github-profiles)                             | [Live Demo](https://50projects50days.com/projects/github-profiles/)               |
