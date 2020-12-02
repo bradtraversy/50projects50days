@@ -48,7 +48,7 @@ UPDATE LINK 👇
 | 37  | [Pokedex](https://github.com/bradtraversy/50projects50days/tree/master/pokedex)                                             | [Live Demo](https://50projects50days.com/projects/pokedex/)                       |
 | 38  | [Mobile Tab Navigation](https://github.com/bradtraversy/50projects50days/tree/master/mobile-tab-navigation)                 | [Live Demo](https://50projects50days.com/projects/mobile-tab-navigation/)         |
 | 39  | [Password Strength Background](https://github.com/bradtraversy/50projects50days/tree/master/password-strength-background)   | [Live Demo](https://50projects50days.com/projects/password-strength-background/)  |
-| 40  | [3d Background Boxes](https://github.com/bradtraversy/50projects50days/tree/master/3d-background-boxes)                     | [Live Demo](https://50projects50days.com/projects/3d-background-boxes/)           |
+| 40  | [3d Background Boxes](https://github.com/bradtraversy/50projects50days/tree/master/3d-boxes-background)                     | [Live Demo](https://50projects50days.com/projects/3d-background-boxes/)           |
 | 41  | [Verify Account Ui](https://github.com/bradtraversy/50projects50days/tree/master/verify-account-ui)                         | [Live Demo](https://50projects50days.com/projects/verify-account-ui/)             |
 | 42  | [Live User Filter](https://github.com/bradtraversy/50projects50days/tree/master/live-user-filter)                           | [Live Demo](https://50projects50days.com/projects/live-user-filter/)              |
 | 43  | [Feedback Ui Design](https://github.com/bradtraversy/50projects50days/tree/master/feedback-ui-design)                       | [Live Demo](https://50projects50days.com/projects/feedback-ui-design/)            |
