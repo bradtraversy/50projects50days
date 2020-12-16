@@ -16,7 +16,7 @@ UPDATE LINK 👇
 | 05  | [Blurry Loading](https://github.com/bradtraversy/50projects50days/tree/master/blurry-loading)                               | [Live Demo](https://50projects50days.com/projects/blurry-loading/)                |
 | 06  | [Scroll Animation](https://github.com/bradtraversy/50projects50days/tree/master/scroll-animation)                           | [Live Demo](https://50projects50days.com/projects/scroll-animation/)              |
 | 07  | [Split Landing Page](https://github.com/bradtraversy/50projects50days/tree/master/split-landing-page)                       | [Live Demo](https://50projects50days.com/projects/split-landing-page/)            |
-| 08  | [Form Wave](https://github.com/bradtraversy/50projects50days/tree/master/form-wave)                                         | [Live Demo](https://50projects50days.com/projects/form-wave/)                     |
+| 08  | [Form Wave](https://github.com/bradtraversy/50projects50days/tree/master/input-form-wave)                                         | [Live Demo](https://50projects50days.com/projects/form-wave/)                     |
 | 09  | [Sound Board](https://github.com/bradtraversy/50projects50days/tree/master/sound-board)                                     | [Live Demo](https://50projects50days.com/projects/sound-board/)                   |
 | 10  | [Dad Jokes](https://github.com/bradtraversy/50projects50days/tree/master/dad-jokes)                                         | [Live Demo](https://50projects50days.com/projects/dad-jokes/)                     |
 | 11  | [Event Keycodes](https://github.com/bradtraversy/50projects50days/tree/master/event-keycodes)                               | [Live Demo](https://50projects50days.com/projects/event-keycodes/)                |
