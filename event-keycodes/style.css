@@ -40,3 +40,9 @@ body {
   color: #555;
   font-size: 14px;
 }
+
+@media(max-width:768px){
+ .key{
+   margin: 10px 0px;
+  }
+}
