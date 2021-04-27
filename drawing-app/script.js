@@ -41,7 +41,7 @@ canvas.addEventListener("mousemove", (e) => {
   }
 });
 
-//draw dot when clicked
+//draw dot when canvas is clicked
 canvas.addEventListener("click", (e) => {
   x = e.offsetX;
   y = e.offsetY;
