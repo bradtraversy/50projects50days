@@ -75,32 +75,16 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('ps.jpg');
+  background: linear-gradient(to bottom, var(--left-bg-color), var(--left-bg-color)), url('ps.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.split.left::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--left-bg-color);
 }
 
 .split.right {
   right: 0;
-  background: url('xbox.jpg');
+  background: linear-gradient(to bottom, var(--right-bg-color), var(--right-bg-color)), url('xbox.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.split.right::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--right-bg-color);
 }
 
 .split.right,
