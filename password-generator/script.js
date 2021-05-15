@@ -16,6 +16,7 @@ const randomFunc = {
 
 clipboardEl.addEventListener('click', () => {
     const textarea = document.createElement('textarea')
+	const copyToast = document.getElementById("copy-toast");
     const password = resultEl.innerText
 
     if(!password) { return }
@@ -25,7 +26,8 @@ clipboardEl.addEventListener('click', () => {
     textarea.select()
     document.execCommand('copy')
     textarea.remove()
-    alert('Password copied to clipboard!')
+	copyToast.className = "show";
+    setTimeout(function () { copyToast.className = copyToast.className.replace("show", ""); }, 3000);
 })
 
 generateEl.addEventListener('click', () => {
