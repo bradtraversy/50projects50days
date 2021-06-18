@@ -51,6 +51,9 @@ h2 {
   height: 100%;
 }
 
+#result::-webkit-scrollbar {
+  width: 1rem;
+}
 
 .result-container .btn {
   position: absolute;
