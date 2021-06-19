@@ -47,6 +47,12 @@ h2 {
 .result-container #result {
   word-wrap: break-word;
   max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#result::-webkit-scrollbar {
+  width: 1rem;
 }
 
 .result-container .btn {
