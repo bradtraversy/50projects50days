@@ -43,11 +43,17 @@ h1 {
   width: 120px;
   height: 120px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .pokemon .img-container img {
   max-width: 90%;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .pokemon .info {
@@ -63,5 +69,12 @@ h1 {
 
 .pokemon .info .name {
   margin: 15px 0 7px;
+  letter-spacing: 1px;
+}
+
+.pokemon .info .abilities {
+  margin: 15px 0 7px;
+  font-weight: 400;
+  font-size:10px;
   letter-spacing: 1px;
 }
