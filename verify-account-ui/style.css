@@ -32,6 +32,7 @@ body {
 }
 
 .code {
+  caret-color: transparent;
   border-radius: 5px;
   font-size: 75px;
   height: 120px;
