@@ -21,7 +21,7 @@ canvas.addEventListener('mousedown', (e) => {
     y = e.offsetY
 })
 
-canvas.addEventListener('mouseup', (e) => {
+document.addEventListener('mouseup', (e) => {
     isPressed = false
 
     x = undefined
