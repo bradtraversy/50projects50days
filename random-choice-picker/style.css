@@ -37,6 +37,10 @@ textarea {
   font-size: 16px;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 .tag {
   background-color: #f0932b;
   color: #fff;
