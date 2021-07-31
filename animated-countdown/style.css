@@ -124,3 +124,40 @@ h4 {
     transform: translate(-50%, -50%) rotate(-120deg);
   }
 }
+
+#replay{
+  background-color: #3498db;
+  border-radius: 3px;
+  border: none;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#replay span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+#replay span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#replay:hover span{
+  padding-right: 25px;
+}
+
+#replay:hover span:after{
+  opacity: 1;
+  right: 0;
+}
