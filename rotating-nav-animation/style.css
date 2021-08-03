@@ -110,6 +110,17 @@ nav ul li + li + li {
   transform: translateX(-200%);
 }
 
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #FF7979;
+  font-weight: bold;
+}
+
 .content img {
   max-width: 100%;
 }
