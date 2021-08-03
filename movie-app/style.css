@@ -102,7 +102,7 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
-  overflow: scroll;
+  overflow-y: scroll;
   transition: transform 0.3s ease-in;
 }
 
