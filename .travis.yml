@@ -4,3 +4,10 @@ node_js:
 
 script:
   - ./configure && make
+
+notifications:
+email:
+  recipients:
+    - kahmeng456@gmail.com
+  on_success: never # default: change
+  on_failure: always # default: always
