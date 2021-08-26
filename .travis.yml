@@ -1,9 +1,15 @@
 language: node_js
 node_js:
   - 7
+install:
+  - npm install
+before_script:
+        - cd animated-countdown
 
 script:
-  - ./configure && make
+        - echo 'testing!!'
+        - echo 'Installing something!'
+        - npm install
 
 notifications:
 email:
