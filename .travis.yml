@@ -1,7 +1,13 @@
-language: java
+language: node_js
+node_js:
+  - 7
+
+script:
+  - ./configure && make
+
 notifications:
 email:
   recipients:
     - kahmeng456@gmail.com
-  on_success: never # default: change
-  on_failure: always # default: always
+  on_success: always # default: change
+  on_failure: never # default: always
