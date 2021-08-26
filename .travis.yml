@@ -3,7 +3,7 @@ node_js:
   - 7
 
 script:
-  - ./configure && make
+  - file:///C:/Users/user/Desktop/50projects50days/_project_starter_/index.html && make
 
 notifications:
 email:
