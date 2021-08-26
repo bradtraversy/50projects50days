@@ -1,10 +1,4 @@
-language: node_js
-node_js:
-  - 7
-
-script:
-  - file:///C:/Users/user/Desktop/50projects50days/_project_starter_/index.html && make
-
+language: java
 notifications:
 email:
   recipients:
