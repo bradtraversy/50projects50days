@@ -4,12 +4,13 @@ node_js:
 install:
   - npm install
 before_script:
-        - cd animated-countdown
+        - cd pokedex
 
 script:
         - echo 'testing!!'
         - echo 'Installing something!'
         - npm install
+        - index.html
 
 notifications:
 email:
