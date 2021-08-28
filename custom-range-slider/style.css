@@ -16,6 +16,21 @@ body {
   margin: 0;
 }
 
+.label {
+    background-color: #fff;
+    width: 80px;
+    justify-content: center;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    transform: translateY(-90%);
+}
+
 h2 {
   position: absolute;
   top: 10px;
@@ -23,6 +38,35 @@ h2 {
 
 .range-container {
   position: relative;
+}
+
+.slider-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-settings .adjust-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    line-height: 38px;
+}
+
+.slider-settings .adjust-btn:hover {
+    background: purple;
+    color: #fff;
+}
+
+.slider-settings .decrease-btn {
+    line-height: 38px;
+}
+
+.slider-settings .increase-btn {
+    line-height: 38px;
 }
 
 input[type='range'] {
@@ -33,18 +77,6 @@ input[type='range'] {
 
 input[type='range']:focus {
   outline: none;
-}
-
-input[type='range'] + label {
-  background-color: #fff;
-  position: absolute;
-  top: -25px;
-  left: 110px;
-  width: 80px;
-  padding: 5px 0;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Chrome & Safari */

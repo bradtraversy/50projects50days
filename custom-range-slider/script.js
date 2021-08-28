@@ -1,27 +1,31 @@
-const range = document.getElementById('range')
+const decreaseBtn = document.querySelector('.decrease-btn');
+const increaseBtn = document.querySelector('.increase-btn');
+const slider = document.querySelector(".slider");
+const label = document.querySelector(".label");
+const allRanges = document.querySelectorAll(".range-container");
 
-range.addEventListener('input', (e) => {
-    const value = +e.target.value
-    const label = e.target.nextElementSibling
+allRanges.forEach(wrap => {
+    slider.addEventListener("input", () => {
+        setLabel(slider, label);
+    });
+});
 
-    const range_width = getComputedStyle(e.target).getPropertyValue('width')
-    const label_width = getComputedStyle(label).getPropertyValue('width')
+decreaseBtn.addEventListener('click', () => {
+    slider.value--;
+    setLabel(slider, label);
 
-    const num_width = +range_width.substring(0, range_width.length - 2)
-    const num_label_width = +label_width.substring(0, label_width.length - 2)
+});
+increaseBtn.addEventListener('click', () => {
+    slider.value++;
+    setLabel(slider, label);
 
-    const max = +e.target.max
-    const min = +e.target.min
+});
 
-    const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10)
-
-    label.style.left = `${left}px`
-
-
-    label.innerHTML = value
-})
-
-// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-  }
+function setLabel(slider, label) {
+    const val = slider.value;
+    const min = slider.min ? slider.min : 0;
+    const max = slider.max ? slider.max : 100;
+    const newVal = Number(((val - min) * 100) / (max - min));
+    label.innerHTML = val;
+    label.style.left = `calc(${newVal}% + (${17 - newVal}px))`;
+}
