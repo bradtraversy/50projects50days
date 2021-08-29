@@ -27,6 +27,7 @@ button {
   overflow: hidden;
   margin: 10px 0;
   position: relative;
+  cursor: pointer;
 }
 
 button:focus {
