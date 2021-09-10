@@ -104,6 +104,10 @@ body {
   letter-spacing: 1px;
 }
 
+.content {
+   padding: 0 1.5rem;
+}
+
 .content h2,
 .content h3 {
   font-size: 150%;
