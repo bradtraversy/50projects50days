@@ -119,3 +119,18 @@ body {
   line-height: 30px;
   letter-spacing: 1.2px;
 }
+
+/* Responsive */
+@media(max-width: 600px) {
+   .nav .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+   }
+
+   .nav .container h1 {
+      padding: 0.5rem 1rem 1rem;
+   }
+}
