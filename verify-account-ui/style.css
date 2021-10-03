@@ -65,6 +65,12 @@ body {
   border-radius: 5px;
 }
 
+.error{
+ color:red;
+ line-height: 40px;
+ font-weight: 700;
+}
+
 @media (max-width: 600px) {
   .code-container {
     flex-wrap: wrap;
