@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+@font-face {
+  font-family: Bebas-Nenue;
+  src: url(BebasNeue.otf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -60,7 +65,7 @@ body {
 }
 
 .nav-red {
-  background-color: rgb(229, 9, 20);
+  background-color: #E50914;
   width: 95%;
   transition-delay: 0.2s;
 }
@@ -95,6 +100,7 @@ body {
 
 .list li {
   margin: 20px 0;
+  font-family: Bebas-Nenue;
 }
 
 .list li a {
@@ -102,6 +108,14 @@ body {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+  font-kerning: 70px;
+  font-stretch: expanded;
+  transition: .25s ease;
+  font-size: 1.3em;
+}
+
+.list li a:hover {
+  color: #E50914;
 }
 
 .list ul {
