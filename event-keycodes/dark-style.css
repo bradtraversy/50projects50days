@@ -2,10 +2,11 @@
 
 * {
   box-sizing: border-box;
+ 
 }
 
 body {
-  background-color: #e1e1e1;
+  background-color: #383838;
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -17,8 +18,8 @@ body {
 }
 
 .key {
-  border: 1px solid #999;
-  background-color: #eee;
+  border: 1px solid #999999;
+  background-color: #2B2B2B;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   align-items: center;
@@ -28,6 +29,7 @@ body {
   flex-direction: column;
   margin: 10px;
   min-width: 150px;
+  color: white;
   position: relative;
 }
 
@@ -37,12 +39,6 @@ body {
   left: 0;
   text-align: center;
   width: 100%;
-  color: #555;
+  color: #c4c4c4;
   font-size: 14px;
-}
-
-@media(max-width:768px){
- .key{
-   margin: 10px 0px;
-  }
 }
