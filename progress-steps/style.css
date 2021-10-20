@@ -2,7 +2,8 @@
 
 :root {
   --line-border-fill: #3498db;
-  --line-border-empty: #e0e0e0;
+  --line-border-empty: #383838;
+
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 body {
-  background-color: #f6f7fb;
+  background-color: #1f1f1f;
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -58,8 +59,8 @@ body {
 }
 
 .circle {
-  background-color: #fff;
-  color: #999;
+  background-color: #1f1f1f;
+  color:#e2e2e2;
   border-radius: 50%;
   height: 30px;
   width: 30px;
