@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #2a2a72;
+  background-color: #0b0b0c;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -25,7 +25,7 @@ body {
 .user-form input {
   width: 100%;
   display: block;
-  background-color: #4c2885;
+  background-color: #060607;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -39,6 +39,7 @@ body {
 
 .user-form input::placeholder {
   color: #bbb;
+  
 }
 
 .user-form input:focus {
@@ -111,3 +112,15 @@ body {
     max-width: 400px;
   }
 }
+
+h1{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+img{
+  height: 5rem;
+  width: 5rem;
+}
+
+
