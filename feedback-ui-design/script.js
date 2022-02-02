@@ -5,15 +5,18 @@ const panel = document.querySelector('#panel')
 let selectedRating = 'Satisfied'
 
 ratingsContainer.addEventListener('click', (e) => {
-    if(e.target.parentNode.classList.contains('rating')) {
+    if(e.target.parentNode.classList.contains('rating') && e.target.nextElementSibling) {
         removeActive()
         e.target.parentNode.classList.add('active')
         selectedRating = e.target.nextElementSibling.innerHTML
-    }
-    if(e.target.classList.contains('rating')) {
+    } else if(
+        e.target.parentNode.classList.contains('rating') &&
+        e.target.previousSibling &&
+        e.target.previousElementSibling.nodeName === 'IMG'
+    ) {
         removeActive()
-        e.target.classList.add('active')
-        selectedRating = e.target.nextElementSibling.innerHTML
+        e.target.parentNode.classList.add('active')
+        selectedRating = e.target.innerHTML
     }
 
 })
