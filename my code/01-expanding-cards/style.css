@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+}
+.image {
+  width: 100px;
+  height: 80%;
+  margin: 10px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.image.active {
+  width: 60%;
+}
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  display: block;
+  margin: 30px;
+  opacity: 0;
+}
+span.active-span {
+  opacity: 1;
+  transition: all 0.3s ease-in 0.2s;
+}
