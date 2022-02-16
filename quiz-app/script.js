@@ -1,10 +1,10 @@
 const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
+        question: "Siapa nama anda ?",
+        a: "Udin",
+        b: "maemunah",
+        c: "kepin",
+        d: "maesaroh",
         correct: "d",
     },
     {
