@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>02-progress-steps</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="bar-wrapper">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="number-container">
+                <span class="number active">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <span class="number">4</span>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <button class="btn" id="prev" onclick="prev()" disabled>Prev</button>
+            <button class="btn" id="next" onclick="next()">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
