@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: violet;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+input,
+button {
+  border: unset;
+  height: 50px;
+  font-size: 20px;
+  outline: none;
+}
+
+input {
+  width: 0px;
+  transition: all 0.2s linear 0.1ms;
+}
+
+button {
+  padding: 0 15px;
+}
+
+.active {
+  width: 200px;
+  padding: 0 20px;
+}
