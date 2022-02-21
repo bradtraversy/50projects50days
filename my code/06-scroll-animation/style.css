@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 180%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s linear;
+}
+
+.slider:nth-child(odd) {
+  transform: translateX(400%);
+}
+
+.slider:nth-child(even) {
+  transform: translateX(-400%);
+}
+
+.slider.show {
+  transform: translateX(0);
+}
