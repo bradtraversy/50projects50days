@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkorchid;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span.btn {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 60px;
+  margin: 20px;
+  display: block;
+  border-radius: 10px;
+}
