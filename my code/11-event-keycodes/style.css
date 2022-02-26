@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+
+#container {
+  display: flex;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+.text {
+  padding: 20px 50px;
+  background-color: #fff;
+  font-size: 22px;
+  color: #000;
+  border: 1px solid #555;
+}
+
+.subtext {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
