@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.outer-head {
+  margin-bottom: 20px;
+}
+
+.outer-subhead {
+  margin-bottom: 30px;
+}
+
+.glass {
+  border: 5px solid rgb(21, 46, 126);
+  border-radius: 0 0 40px 40px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.glass-big {
+  width: 150px;
+  height: 300px;
+}
+
+.empty-big,
+.full-big {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s linear;
+}
+
+.empty-big {
+  height: 100%;
+  background-color: #fff;
+}
+
+.full-big {
+  height: 0%;
+  background-color: rgb(110, 161, 255);
+  opacity: 0;
+}
+
+.blue-text {
+  color: rgb(21, 46, 126);
+}
+
+h3.blue-text {
+  font-weight: 600;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#glasses-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.glass-small {
+  width: 50px;
+  height: 100px;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  color: rgb(21, 46, 126);
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.glass-small.active {
+  background-color: rgb(110, 161, 255);
+  color: #fff;
+}
