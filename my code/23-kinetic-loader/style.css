@@ -30,12 +30,12 @@ body {
 #one {
   top: 0;
   left: 0;
-  animation: rotate1 2s linear infinite 0.5s;
+  animation: rotate1 2s linear infinite;
 }
 
 #two {
   transform: rotate(-90deg);
-  /* animation: rotate1 2s linear infinite; */
+  animation: rotate2 2s linear infinite 0.5s;
 }
 
 @keyframes rotate1 {
@@ -44,11 +44,11 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
   75%,
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
