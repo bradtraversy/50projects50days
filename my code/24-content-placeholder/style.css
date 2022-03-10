@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.card {
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.header {
+  height: 200px;
+}
