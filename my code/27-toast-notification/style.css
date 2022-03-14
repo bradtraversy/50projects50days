@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: violet;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span.msg {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#button {
+  color: violet;
+}
+
+#wrapper {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: grid;
+  grid-gap: 20px;
+}
