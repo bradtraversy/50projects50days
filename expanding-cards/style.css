@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');##@import 文件引入 引入googleapis的字体
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;## box-sizing 规定两个并排的框
 }
 
 body {
   font-family: 'Muli', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;##设置元素生成框的类型,flex 提供弹性布局,为盒状模型提供很大的灵活性
+  align-items: center;##定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
+  justify-content: center;##设置元素的对齐方式
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  overflow: hidden;##控制内容溢出元素框时的显示状态,一般是visible hidden的话 内容会被修剪
+  margin: 0;##属性在一个声明中设置所有外边距属性。该属性可以有 1 到 4 个值
 }
 
 .container {
@@ -22,15 +22,15 @@ body {
 .panel {
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;##定义了图像的平铺模式
   height: 80vh;
-  border-radius: 50px;
+  border-radius: 50px;##为元素添加圆角边框
   color: #fff;
-  cursor: pointer;
+  cursor: pointer;##定义了鼠标指针放在一个元素边界范围内时所用的光标形状
   flex: 0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  -webkit-transition: all 700ms ease-in;##属性渐变 CSS属性(none|all|属性)  持续时间  时间函数  延迟时间
 }
 
 .panel h3 {
@@ -39,10 +39,10 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
-  opacity: 0;
+  opacity: 0;##设置不透明级别
 }
 
-.panel.active {
+.panel.active {## active 选择器用于选择活动链接
   flex: 5;
 }
 
@@ -51,13 +51,13 @@ body {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {##如果文档宽度小于 ...(480) 像素则修改某种属性
   .container {
     width: 100vw;
   }
 
   .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
+  .panel:nth-of-type(5) {##nth-of-type(n) 选择器匹配属于父元素的特定类型的第 N 个子元素的每个元素
     display: none;
   }
 }
