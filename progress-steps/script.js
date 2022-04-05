@@ -29,15 +29,11 @@ function update() {
     circles.forEach((circle, idx) => {
         if(idx < currentActive) {
             circle.classList.add('active')
+            progress.style.width = idx * (100/3)+ '%'
         } else {
             circle.classList.remove('active')
         }
     })
-
-    const actives = document.querySelectorAll('.active')
-
-    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
-
     if(currentActive === 1) {
         prev.disabled = true
     } else if(currentActive === circles.length) {
