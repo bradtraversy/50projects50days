@@ -41,6 +41,10 @@ textarea:focus {
   outline: none;
 }
 
+#tags {
+  text-align: center;
+}
+
 .tag {
   background-color: #f0932b;
   color: #fff;
