@@ -44,3 +44,7 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
+img{
+  width:45px;
+  height:45px;
+}

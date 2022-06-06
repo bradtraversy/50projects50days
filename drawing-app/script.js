@@ -4,7 +4,8 @@ const decreaseBtn = document.getElementById('decrease');
 const sizeEL = document.getElementById('size');
 const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
-
+const circle=document.getElementById("circle")
+const rect=document.getElementById("rect")
 const ctx = canvas.getContext('2d');
 
 let size = 10
@@ -13,7 +14,7 @@ colorEl.value = 'black'
 let color = colorEl.value
 let x
 let y
-
+let type="circle"
 canvas.addEventListener('mousedown', (e) => {
     isPressed = true
 
@@ -32,10 +33,14 @@ canvas.addEventListener('mousemove', (e) => {
     if(isPressed) {
         const x2 = e.offsetX
         const y2 = e.offsetY
-
+    
+       if(type=="circle"){
         drawCircle(x2, y2)
-        drawLine(x, y, x2, y2)
-
+       }else{
+        drawRect(x2,y2)
+       }
+     
+        
         x = x2
         y = y2
     }
@@ -44,6 +49,14 @@ canvas.addEventListener('mousemove', (e) => {
 function drawCircle(x, y) {
     ctx.beginPath();
     ctx.arc(x, y, size, 0, Math.PI * 2)
+    ctx.fillStyle = color
+    ctx.fill()
+}
+
+
+function drawRect(x, y) {
+    ctx.beginPath();
+   ctx.rect(x-size/2, y-size/2, size,size);
     ctx.fillStyle = color
     ctx.fill()
 }
@@ -84,3 +97,5 @@ decreaseBtn.addEventListener('click', () => {
 colorEl.addEventListener('change', (e) => color = e.target.value)
 
 clearEl.addEventListener('click', () => ctx.clearRect(0,0, canvas.width, canvas.height))
+circle.addEventListener('click',()=>{type="circle"})
+rect.addEventListener('click',()=>{type="rect";})
