@@ -66,11 +66,15 @@ h2 {
 
 .btn {
   border: none;
-  background-color: #3b3b98;
+  background-color: #292972;
   color: #fff;
   font-size: 16px;
   padding: 8px 12px;
   cursor: pointer;
+}
+.btn:hover{
+
+  background-color: #7d7dca;
 }
 
 .btn-large {
