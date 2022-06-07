@@ -13,6 +13,7 @@ body {
   text-align: center;
   height: 100vh;
   overflow: hidden;
+  overflow-y:scroll;
   margin: 0;
 }
 
@@ -45,4 +46,14 @@ body {
  .key{
    margin: 10px 0px;
   }
+}
+.container{
+  display:flex;
+  flex-direction: column;
+
+}
+#log{
+  display:flex;
+  flex-direction: column;
+  opacity: 0.65;
 }
