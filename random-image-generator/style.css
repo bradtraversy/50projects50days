@@ -34,3 +34,11 @@ body {
   width: 300px;
   max-width: 100%;
 }
+button{
+  background:rgb(98, 219, 142);
+  border:2px solid rgb(94, 161, 123);
+  border-radius:25px;
+  padding:20px;
+  font-size:25px;
+  color:white;
+}
