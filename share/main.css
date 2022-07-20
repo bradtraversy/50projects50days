@@ -1,0 +1,13 @@
+#square>div{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+#square>div>div{
+	width: 100px;
+	height: 100px;
+	/* margin-right: 10px; */
+	/* margin-bottom: 10px; */
+	border: 1px solid #f1f1f1;
+	transform: rotate(1deg);
+}

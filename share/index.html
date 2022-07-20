@@ -4,14 +4,16 @@
 		<meta charset="utf-8">
 		<title>Share</title>
 		<script src="./vue.js"></script>
+		<link rel="stylesheet" href="./main.css" />
 	</head>
 	<body>
 		<div id="app">
 			<button @click="cl">{{ message }}</button>
 			<p>Count is: {{ count }}</p>
 		</div>
+		<div id="square"><div v-html="rawHtml">loading...</div></div>
 		<script>
-			const { createApp, ref } = Vue
+			const { createApp, ref, onMounted } = Vue
 			const app = createApp({
 			  setup(){
 				  const message = ref('Hello Vue!')
@@ -26,7 +28,25 @@
 				  }
 			  }
 			  })
+			
+			const square = createApp({
+				setup(){
+					let rawHtml = ''
+					let start = 0
+					for(let i = 1; i < 101; i++){
+						for(let j = 1; j < 101; j++){
+							start ++
+							rawHtml += `<div style="background:rgba(${i},${j},${Math.random()*255},.5)">${start}</div>`
+						}
+					}
+					return {
+						rawHtml
+					}
+				}
+			})
+			
 			app.mount('#app')
+			square.mount('#square')
 		</script>
 	</body>
 </html>
