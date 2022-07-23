@@ -1,0 +1,79 @@
+#clock_container {
+  position: relative;
+  height: 40vw;
+  width: 40vw;
+  background: url(3998853-free-blank-clock-face-printable-download-free-clip-art-free-clip-blank-clock-face-png-516_516_preview.png)
+    no-repeat;
+  background-size: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* background-position: center; */
+  margin: auto;
+}
+.overall {
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+}
+#hour {
+  width: 2%;
+  height: 25%;
+  top: 23%;
+  left: 48%;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
+#min {
+  width: 1%;
+  height: 32%;
+  top: 18%;
+  left: 48.5%;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
+#sec {
+  width: 0.8%;
+  height: 32%;
+  top: 18%;
+  left: 49.1%;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
+#disp {
+  display: flex;
+  justify-content: center;
+}
+#button {
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  background: rgb(240, 80, 106);
+  color: white;
+  cursor: pointer;
+  margin: 4px;
+}
+#button:active {
+  background: coral;
+}
+#button1 {
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  background: rgb(83, 80, 240);
+  color: white;
+  cursor: pointer;
+  margin: 4px;
+}
+#button1:active {
+  background: rgb(80, 214, 255);
+}
+#para {
+  font-size: 1rem;
+  text-align: center;
+}
+
+body {
+  background: rgb(255, 249, 238);
+}
