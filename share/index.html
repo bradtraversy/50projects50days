@@ -7,20 +7,27 @@
 		<link rel="stylesheet" href="./main.css" />
 	</head>
 	<body>
+		
 		<div id="app">
 			<button @click="cl">{{ message }}</button>
 			<p>Count is: {{ count }}</p>
 		</div>
 		<div id="square"><div v-html="rawHtml">loading...</div></div>
 		<script>
-			const { createApp, ref, onMounted } = Vue
+			const { createApp, ref, onMounted, onUnmounted,onBeforeMount,onUpdated,version } = Vue
 			const app = createApp({
 			  setup(){
-				  const message = ref('Hello Vue!')
+				  const message = ref(`Hello Vue ${version} !`)
 				  let count = ref(1)
 				  const cl = function(){
 					  count.value ++
 				  }
+				  onMounted(()=>{
+					  console.log(app.config)
+				  })
+				  onUpdated(()=>{
+					  console.log('onUpdated')
+				  })
 				  return {
 					  message,
 					  count,
@@ -39,6 +46,12 @@
 							rawHtml += `<div style="background:rgba(${i},${j},${Math.random()*255},.5)">${start}</div>`
 						}
 					}
+					onMounted(()=>{
+						console.log(version)
+					})
+					onUnmounted(()=>{
+						alert('onUnmounted')
+					})
 					return {
 						rawHtml
 					}
@@ -47,6 +60,9 @@
 			
 			app.mount('#app')
 			square.mount('#square')
+			
+			
+			
 		</script>
 	</body>
 </html>
