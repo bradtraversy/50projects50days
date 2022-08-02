@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Menu - [Content - Footer]</title>
+		<style>
+			html,body,ul,li{
+				margin: 0;
+				padding: 0;
+				font-size: 0.8rem;
+			}
+			.leftFrame{
+				position: fixed;
+				left:0;
+				top:0;
+				bottom:0;
+				right:0;
+				width: 22rem;
+				background-color: #F1F1F1;
+				overflow: auto;
+				padding: 0.2rem;
+			}
+			.rightFrame{
+				background:#009688;
+				position: fixed;
+				left: 22.4rem;
+				top:0;
+				bottom:3.6rem;
+				right:0;
+				padding: 0.8rem;
+				color: #fff;
+				overflow: auto;
+			}
+			.footer{
+				position: fixed;
+				bottom:0;
+				left: 22.4rem;
+				right:0;
+				height: 2rem;
+				background-color: #2F4056;
+				padding: 0.8rem
+			}
+			ul>li{
+				height: 2rem;
+				line-height: 2rem;
+				padding: 0.5rem;
+				transition: background-color 0.25s linear;
+				margin-bottom: 1px;
+			}
+			.active{
+				background-color: #009688;
+				color: #fff;
+				font-weight: bold;
+			}
+			a{
+				text-decoration: none;
+				color: #000;
+				display: block;
+			}
+			li:hover{
+				background-color: #009688;
+				color: #fff;
+				font-weight: bold;
+			}
+			li:hover a{
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="leftFrame">
+				<ul>
+					<li><a href="index.html">Menu - Content</a></li>
+					<li><a href="index2.html">[Menu - Content] - Footer</a></li>
+					<li class="active">Menu - [Content - Footer]</li>
+					<li><a href="index4.html">Menu - [TopNav - Content]</a></li>
+					<li><a href="index5.html">Menu - [TopNav - Content - Footer]</a></li>
+					<li><a href="index6.html">TopNav - [Menu - Content]</a></li>
+					<li><a href="index7.html">TopNav - [Menu - Content - Footer]</a></li>
+					<li><a href="index8.html">TopNav - [Menu - Content] - Footer</a></li>
+				</ul>
+			</div>
+			<div class="rightFrame">
+				<p>Content</p>
+				<p>Have a nice day!</p>
+			</div>
+			<div class="footer">Footer</div>
+	</body>
+</html>
