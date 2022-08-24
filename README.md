@@ -1,3 +1,12 @@
+# Course translation pt-br <br> Tradução do curso pt-br
+
+## All classes are translated <br> Todas aulas estão traduzidas
+
+### <br> To translate the classes, it is necessary to download the class and add the translation file in the same folder <br><br> Para traduzir as aulas, é necessário baixar a aula e adicionar o arquivo de tradução na mesma pasta
+
+<br><br><br>
+
+
 # 50 Projects in 50 Days - HTML/CSS and JavaScript
 
 This is the main repository for all of the projects in the course.
