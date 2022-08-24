@@ -1,0 +1,67 @@
+﻿1
+00:00:00,180 --> 00:00:01,770
+Ei, pessoal, bem-vindos ao seu próximo projeto.
+
+2
+00:00:01,800 --> 00:00:07,350
+Então e neste projeto, vamos construir um dec poky, que é basicamente apenas um monte de Pokémon
+
+3
+00:00:07,350 --> 00:00:08,160
+cartões.
+
+4
+00:00:08,550 --> 00:00:17,790
+Como você pode ver, temos 150 aqui com a imagem, a ideia do Pokémon, o nome, o tipo.
+
+5
+00:00:17,790 --> 00:00:22,500
+E então, dependendo do tipo, a cor de fundo será uma cor específica.
+
+6
+00:00:22,500 --> 00:00:23,940
+Então a grama é verde.
+
+7
+00:00:23,940 --> 00:00:26,570
+O fogo é essa água de cor vermelha rosada.
+
+8
+00:00:26,820 --> 00:00:29,190
+Então, dependendo do tipo irá definir a cor de fundo.
+
+9
+00:00:29,490 --> 00:00:35,100
+Agora, para obter os dados para isso, vamos usar a API POC e você pode testá-la aqui para que você
+
+10
+00:00:35,100 --> 00:00:40,620
+pode obter por ID, que é o que vamos fazer e você pode obter habilidades e todos os tipos de outras coisas.
+
+11
+00:00:41,970 --> 00:00:46,440
+Você sabe, eu não sei muito sobre Pokémon, então não posso falar sobre isso.
+
+12
+00:00:46,440 --> 00:00:52,440
+Mas vamos apenas buscar alguns dados básicos e criar esses cartões com aparência legal e é totalmente responsivo.
+
+13
+00:00:52,440 --> 00:00:57,750
+Então, usaremos blocos flexíveis, você sabe, para que fique bem em telas pequenas.
+
+14
+00:00:58,170 --> 00:00:59,340
+Mas sim, vamos entrar nisso.
+
+15
+00:00:59,340 --> 00:01:02,160
+Vamos usar a API de busca junto com o coletor.
+
+16
+00:01:02,430 --> 00:01:06,960
+Nós vamos ter que manipular alguns dos dados um pouco para conseguir fazer o que queremos.
+
+17
+00:01:07,200 --> 00:01:08,400
+Então vamos pular nele.

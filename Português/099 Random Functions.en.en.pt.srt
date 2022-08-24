@@ -1,0 +1,375 @@
+﻿1
+00:00:00,390 --> 00:00:04,350
+Tudo bem, então vamos começar nosso JavaScript aqui, e não vou dizer que isso
+
+2
+00:00:04,350 --> 00:00:10,200
+é como um projeto avançado, mas muito do JavaScript que vamos fazer aqui é mais profundo do que
+
+3
+00:00:10,200 --> 00:00:13,670
+alguns dos, você sabe, a maioria dos projetos que estão neste curso.
+
+4
+00:00:14,220 --> 00:00:21,630
+Então vou começar criando algumas funções para gerar uma letra maiúscula, uma minúscula
+
+5
+00:00:21,630 --> 00:00:25,020
+letra, um número e um símbolo, porque precisamos fazer isso.
+
+6
+00:00:25,020 --> 00:00:30,630
+Precisamos gerar aleatoriamente essas coisas para criar nossa senha e precisamos combiná-las.
+
+7
+00:00:30,960 --> 00:00:34,560
+Então o que eu vou fazer é criar algumas funções.
+
+8
+00:00:35,070 --> 00:00:39,570
+Portanto, esta função será chamada get random lower.
+
+9
+00:00:40,440 --> 00:00:46,690
+E é exatamente o que vai fazer é retornar uma letra minúscula aleatória.
+
+10
+00:00:46,730 --> 00:00:49,160
+Agora, há algumas maneiras que podemos fazer isso.
+
+11
+00:00:49,170 --> 00:00:51,630
+O que vou fazer é usar o objeto string.
+
+12
+00:00:51,900 --> 00:00:56,520
+E sobre isso há um método chamado de Char Code.
+
+13
+00:00:56,940 --> 00:01:00,910
+Agora, eu só vou trazer esta janela por um segundo aqui.
+
+14
+00:01:01,320 --> 00:01:07,130
+Este é o objeto string, que é usado para representar e manipular uma sequência de caracteres.
+
+15
+00:01:07,590 --> 00:01:13,350
+E, você sabe, você pode converter algo em uma string, mas há todo um
+
+16
+00:01:13,350 --> 00:01:17,610
+monte de métodos que você pode usar nisso, inclusive do código char.
+
+17
+00:01:17,910 --> 00:01:26,160
+Portanto, o método static from char code retorna uma string criada a partir da sequência especificada do código UTF 16
+
+18
+00:01:26,160 --> 00:01:26,790
+unidades.
+
+19
+00:01:27,240 --> 00:01:33,990
+Então, basicamente, podemos colocar um número aqui que pertence e este é apenas o site da W3 Schools,
+
+20
+00:01:33,990 --> 00:01:36,770
+mas você pode encontrar estes e você sabe, muitos lugares diferentes.
+
+21
+00:01:37,080 --> 00:01:42,510
+Estes são os caracteres imprimíveis ASCII e nós temos nossos personagens aqui.
+
+22
+00:01:42,870 --> 00:01:51,030
+Então letras, números, símbolos, e então eles têm um número específico ou um código específico que pertence
+
+23
+00:01:51,030 --> 00:01:51,460
+para eles.
+
+24
+00:01:51,990 --> 00:01:58,530
+Então, se olharmos como os números aqui, zero, o código para isso é 48 e então continua.
+
+25
+00:01:58,530 --> 00:02:00,240
+E o nove é 57.
+
+26
+00:02:00,730 --> 00:02:10,890
+Se queremos letras maiúsculas, começa em 65 e termina em 90, letras minúsculas começam em 97 e terminam em
+
+27
+00:02:11,090 --> 00:02:12,330
+122.
+
+28
+00:02:12,750 --> 00:02:21,720
+Então, usando isso do código de caractere, se eu colocar um 97 aqui e então faremos um log do console de get
+
+29
+00:02:22,890 --> 00:02:32,430
+menor aleatório e se eu for aqui, devemos obter um A minúsculo porque 97 é o código para letras minúsculas
+
+30
+00:02:32,430 --> 00:02:35,940
+A, a próxima letra B seria o código 98.
+
+31
+00:02:35,940 --> 00:02:38,640
+Então isso me dá B 122.
+
+32
+00:02:38,640 --> 00:02:39,570
+Deve ser A Z.
+
+33
+00:02:40,050 --> 00:02:40,490
+Tudo bem.
+
+34
+00:02:40,500 --> 00:02:44,820
+Então, o que queremos fazer é apenas gerar uma minúscula aleatória.
+
+35
+00:02:45,240 --> 00:02:55,710
+Então vamos pegar o 97, que sabemos que é um A minúsculo e dois que eu quero multiplicar qualquer
+
+36
+00:02:55,710 --> 00:03:03,260
+número até 26 porque há 26 caracteres, você sabe, 26 letras no alfabeto.
+
+37
+00:03:03,630 --> 00:03:10,170
+Então, o que podemos fazer é, em primeiro lugar, apenas pegar o chão de pontos matemáticos, que vai arredondar
+
+38
+00:03:10,170 --> 00:03:11,990
+para baixo e, em seguida, matemática.
+
+39
+00:03:13,110 --> 00:03:15,630
+Então matemática ponto aleatório.
+
+40
+00:03:16,560 --> 00:03:22,560
+E então eu só quero multiplicar isso pelo número aleatório mais alto que eu quero obter, que é 26.
+
+41
+00:03:22,950 --> 00:03:26,730
+E então eu vou adicionar a isso 97.
+
+42
+00:03:27,030 --> 00:03:33,000
+Então isso poderia ser, você sabe, um mais noventa e sete, que seria 98, que seria um B ou dois
+
+43
+00:03:33,000 --> 00:03:34,680
+mais noventa e sete, que seria C.
+
+44
+00:03:35,130 --> 00:03:36,990
+Então, vamos em frente e salve isso.
+
+45
+00:03:36,990 --> 00:03:44,400
+E você pode ver imediatamente que temos um V se eu recarregar W, X, L, Z, então será aleatório,
+
+46
+00:03:44,820 --> 00:03:46,730
+você sabe, número minúsculo aleatório.
+
+47
+00:03:47,280 --> 00:03:49,500
+Portanto, há outras maneiras de fazer isso.
+
+48
+00:03:49,500 --> 00:03:56,390
+Mas é assim que vou fazer as letras minúsculas, maiúsculas e os números.
+
+49
+00:03:57,090 --> 00:04:01,200
+Então, vamos apenas copiar isso agora e colar isso.
+
+50
+00:04:01,230 --> 00:04:07,560
+E este vai ser aleatório e vamos fazer praticamente a mesma coisa aqui,
+
+51
+00:04:07,560 --> 00:04:10,380
+exceto que queremos alterar o intervalo que ainda queremos.
+
+52
+00:04:10,410 --> 00:04:14,970
+Vinte e seis é o nosso número aleatório para adicionar porque ainda estamos lidando com o alfabeto.
+
+53
+00:04:15,480 --> 00:04:24,480
+Mas queremos mudar isso de 97 para 65 porque nesse gráfico eu mostrei a você maiúsculo A. era 65.
+
+54
+00:04:25,090 --> 00:04:32,490
+OK, então vai ser apenas algo vinte e seis, você sabe, entre um e vinte e seis mais 65.
+
+55
+00:04:32,500 --> 00:04:38,700
+Então, se eu for em frente e consolar a lei, obter o máximo aleatório, obteremos o B maiúsculo, obteremos O.
+
+56
+00:04:38,940 --> 00:04:41,970
+SG então vai ser uma maiúscula aleatória.
+
+57
+00:04:42,460 --> 00:04:44,070
+Vamos fazer o mesmo para os números.
+
+58
+00:04:45,240 --> 00:04:55,410
+Então, este será um número aleatório e, em vez de vinte e seis, queremos dez, porque será você
+
+59
+00:04:55,410 --> 00:04:58,650
+sabe, até o que vai ser de zero a nove.
+
+60
+00:04:59,040 --> 00:04:59,670
+E então nós queremos.
+
+61
+00:05:00,030 --> 00:05:06,880
+Adicione a isso 48, porque zero tem o caráter, o casaco de 48.
+
+62
+00:05:07,410 --> 00:05:19,440
+Então, se eu descer aqui e disser, pegue um número aleatório, temos três a cinco, um cinco oito um.
+
+63
+00:05:19,870 --> 00:05:20,370
+Tudo bem.
+
+64
+00:05:21,090 --> 00:05:25,890
+E então quatro símbolos, símbolos.
+
+65
+00:05:25,910 --> 00:05:29,480
+E eu só quero usar um certo conjunto de símbolos.
+
+66
+00:05:29,490 --> 00:05:37,860
+Então vamos apenas como uma função, obter um símbolo aleatório.
+
+67
+00:05:37,860 --> 00:05:44,160
+E eu vou pegar essa sequência de símbolos aqui.
+
+68
+00:05:44,160 --> 00:05:51,090
+Então, vou dizer const symbols e definir isso como uma string com esses símbolos específicos.
+
+69
+00:05:51,450 --> 00:05:56,910
+E então queremos obter um desses símbolos aleatórios para retornar.
+
+70
+00:05:58,320 --> 00:06:02,190
+E mesmo que isso seja uma string, ainda podemos usar um índice.
+
+71
+00:06:02,190 --> 00:06:10,470
+Tipo, se eu pegar zero símbolos, zero, e descermos aqui, dizemos, pegue um símbolo aleatório, eu vou
+
+72
+00:06:10,470 --> 00:06:13,200
+obter a exclamação.
+
+73
+00:06:13,200 --> 00:06:15,600
+Se eu fizer um, eu deveria obter o sinal de arroba.
+
+74
+00:06:15,840 --> 00:06:18,320
+Então é zero um, dois, três e assim por diante.
+
+75
+00:06:18,630 --> 00:06:24,870
+Então eu vou pegar um número aleatório e aqui isso com um máximo do comprimento de toda a string.
+
+76
+00:06:25,200 --> 00:06:36,210
+Então, para fazer isso, vamos fazer matemática, ponto por matemática, ponto aleatório e vamos em frente e multiplicar esse ponto matemático
+
+77
+00:06:36,210 --> 00:06:43,000
+aleatório por qualquer que seja o comprimento dos símbolos é o comprimento dessa string.
+
+78
+00:06:43,410 --> 00:06:47,790
+Então agora vejo que recebo uma porcentagem se recarregar o slash.
+
+79
+00:06:47,940 --> 00:06:50,890
+Então eu vou pegar um desses símbolos aqui.
+
+80
+00:06:52,440 --> 00:07:00,120
+Então agora temos essas quatro funções e podemos implementá-las no restante do aplicativo.
+
+81
+00:07:00,300 --> 00:07:04,830
+Agora, uma coisa que eu quero fazer antes de terminarmos este vídeo específico é aqui.
+
+82
+00:07:04,830 --> 00:07:14,460
+Eu vou criar uma variável chamada random func porque eu quero eu quero poder pegar um random
+
+83
+00:07:14,460 --> 00:07:17,300
+minúsculas, maiúsculas, número, símbolo, o que for.
+
+84
+00:07:17,910 --> 00:07:23,490
+Então vou usar este objeto aqui e dar uma chave para cada função.
+
+85
+00:07:23,490 --> 00:07:41,760
+Então, mais baixo será obter aleatoriamente inferior e superior, Olby obterá aleatoriamente superior e não obterá número aleatório
+
+86
+00:07:42,360 --> 00:07:48,040
+e o símbolo receberá um símbolo aleatório.
+
+87
+00:07:48,570 --> 00:07:48,960
+Tudo bem.
+
+88
+00:07:48,970 --> 00:07:54,570
+Então, temos esse objeto que tem essas chaves que são iguais a qualquer coisa que essas funções retornem.
+
+89
+00:07:55,020 --> 00:07:57,840
+E você verá o porquê daqui a pouco quando usarmos isso.
+
+90
+00:07:58,050 --> 00:08:03,780
+Mas acho que devemos parar o vídeo aqui e no próximo começaremos a trabalhar com o DOM e,
+
+91
+00:08:04,500 --> 00:08:06,570
+você sabe, comece a adicionar algum evento.
+
+92
+00:08:06,570 --> 00:08:12,910
+Os ouvintes querem poder clicar neste botão, gerar uma senha com base nessas funções aqui.
+
+93
+00:08:13,650 --> 00:08:17,580
+Também queremos poder ter a função de copiá-lo para a área de transferência.
+
+94
+00:08:17,760 --> 00:08:19,820
+Então, vamos chegar a essas coisas no próximo vídeo.

@@ -1,0 +1,75 @@
+1
+00:00:00,300 --> 00:00:04,710
+All right, so in this project, we're going to be building an animated countdown and what you're seeing
+
+2
+00:00:04,710 --> 00:00:07,800
+right here is basically the final message or the final state.
+
+3
+00:00:07,980 --> 00:00:14,280
+But if I click replay or I just reload the page, you can see we get a really cool looking animation
+
+4
+00:00:14,280 --> 00:00:15,750
+from three to zero.
+
+5
+00:00:15,750 --> 00:00:20,220
+And of course, you could you can make it whatever numbers you want, whatever range you want.
+
+6
+00:00:20,520 --> 00:00:25,500
+And it's something you could put before your website loads or before your application loads.
+
+7
+00:00:25,800 --> 00:00:31,290
+We just have a very simple screen here, but this could be your website or whatever, and we can just
+
+8
+00:00:31,290 --> 00:00:33,340
+click replay to make this keep happening.
+
+9
+00:00:33,660 --> 00:00:39,000
+So what we're going to do here is deal with CSFs animations, keyframes.
+
+10
+00:00:39,240 --> 00:00:45,570
+We're going to be using the transform property with translate rotate scale and then we're going to use
+
+11
+00:00:45,570 --> 00:00:53,010
+some JavaScript to basically check certain conditions and either add or remove certain classes based
+
+12
+00:00:53,010 --> 00:00:54,090
+on those conditions.
+
+13
+00:00:54,270 --> 00:01:00,420
+Because we need to know, you know, are we should we add the in class or the out class to to create
+
+14
+00:01:00,420 --> 00:01:02,500
+the rotation or should we stop it?
+
+15
+00:01:02,520 --> 00:01:04,520
+Are we at the end of the numbers and so on.
+
+16
+00:01:04,530 --> 00:01:07,950
+So there's a little bit of logic that we have to add with JavaScript.
+
+17
+00:01:08,580 --> 00:01:12,510
+But what we do in quite a bit with keyframes, animations.
+
+18
+00:01:12,570 --> 00:01:12,870
+All right.
+
+19
+00:01:12,870 --> 00:01:13,740
+So let's get into it.

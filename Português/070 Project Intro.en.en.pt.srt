@@ -1,0 +1,75 @@
+﻿1
+00:00:00,240 --> 00:00:05,190
+Tudo bem, então este é realmente um dos meus projetos favoritos neste curso, este é um pequeno desenho
+
+2
+00:00:05,190 --> 00:00:08,310
+app que vamos criar usando a tela HTML5.
+
+3
+00:00:08,610 --> 00:00:10,350
+Então vamos usar o elemento canvas.
+
+4
+00:00:10,380 --> 00:00:12,240
+Isso é o que este grande quadrado é.
+
+5
+00:00:12,480 --> 00:00:16,560
+E há uma API JavaScript que podemos usar para desenhar formas.
+
+6
+00:00:16,560 --> 00:00:20,220
+Podemos desenhar círculos, retângulos, imagens, qualquer linha.
+
+7
+00:00:20,550 --> 00:00:25,470
+E vamos implementar isso com eventos de mouse para que possamos clicar e desenhar,
+
+8
+00:00:26,160 --> 00:00:27,540
+OK, então podemos desenhar.
+
+9
+00:00:27,690 --> 00:00:33,070
+E então vamos adicionar esses controles aqui onde podemos realmente mudar a cor.
+
+10
+00:00:33,100 --> 00:00:41,280
+Então mude para vermelho para começar a desenhar e podemos mudar a largura da caneta ou a linha aqui.
+
+11
+00:00:41,310 --> 00:00:48,450
+Então, se eu descer para cinco e ver que é um pouco menor, vou mudar a cor para uma cor esverdeada
+
+12
+00:00:48,840 --> 00:00:50,340
+e traga isso para 20.
+
+13
+00:00:51,390 --> 00:00:53,340
+OK, e o máximo que podemos ir é 50.
+
+14
+00:00:53,700 --> 00:00:59,580
+Então essa é a espessura que podemos ir e o mais baixo que podemos ir é cinco e podemos limpá-lo com este botão
+
+15
+00:00:59,580 --> 00:00:59,910
+aqui.
+
+16
+00:00:59,920 --> 00:01:03,570
+Então eu acho que é um pequeno aplicativo de tela legal e acho que você vai gostar.
+
+17
+00:01:03,600 --> 00:01:09,360
+Então vamos começar na interface e então vamos falar um pouco sobre como criar formas,
+
+18
+00:01:09,390 --> 00:01:15,420
+criando círculos e linhas com tela, e então passaremos para os eventos de mouse e desenho e então
+
+19
+00:01:15,420 --> 00:01:17,640
+esses dois controles de caixa aqui embaixo.

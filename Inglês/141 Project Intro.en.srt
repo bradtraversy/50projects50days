@@ -1,0 +1,59 @@
+1
+00:00:00,300 --> 00:00:05,280
+All right, in this project, we're going to build a custom range slider, so in with a team of five,
+
+2
+00:00:05,280 --> 00:00:11,420
+you have an input type of range, but it's you can't really style it.
+
+3
+00:00:11,430 --> 00:00:17,640
+You have to basically tell the browser that you don't want it to show and then you can style the track,
+
+4
+00:00:17,640 --> 00:00:22,860
+which is this part here, and you can style the thumb, which is this part here on your own.
+
+5
+00:00:22,860 --> 00:00:27,570
+So that's what we're going to do and is going to be quite a bit of success because we have to pay attention
+
+6
+00:00:27,570 --> 00:00:31,710
+to which browser it's being shown on because it's different in every browser.
+
+7
+00:00:31,720 --> 00:00:39,840
+So we'll have the Web kit prefix for, you know, safari and chrome emoji from A and from Microsoft.
+
+8
+00:00:40,140 --> 00:00:45,870
+And then we're going to add some JavaScript for this label so that it will show whatever the value is
+
+9
+00:00:45,870 --> 00:00:47,220
+from zero to 100.
+
+10
+00:00:47,220 --> 00:00:52,470
+But not only that, it's going to calculate the it's going to be this is positioned absolute and it's
+
+11
+00:00:52,470 --> 00:00:59,430
+going to calculate the left value to move it along with the thumb with a little ball here.
+
+12
+00:00:59,910 --> 00:01:00,330
+All right.
+
+13
+00:01:00,330 --> 00:01:05,200
+So it's just a nice little widget that you can use in your applications and stuff in your uses.
+
+14
+00:01:05,550 --> 00:01:05,900
+All right.
+
+15
+00:01:05,910 --> 00:01:07,200
+So let's go ahead and get started.

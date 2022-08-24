@@ -1,0 +1,75 @@
+1
+00:00:00,270 --> 00:00:01,950
+Hey, guys, welcome to your next project.
+
+2
+00:00:01,980 --> 00:00:08,280
+So in this one, we're going to create a pretty cool mobile navigation effect, responsive navigation
+
+3
+00:00:08,580 --> 00:00:12,900
+hamburger menu, and we branded it Netflix mobile navigation.
+
+4
+00:00:12,900 --> 00:00:14,580
+But it's just because of the color scheme.
+
+5
+00:00:14,580 --> 00:00:18,900
+It's not the actual Netflix menu, as far as I know.
+
+6
+00:00:19,320 --> 00:00:23,760
+But we basically just have a little hamburger menu up here, a little hamburger icon, I should say.
+
+7
+00:00:23,760 --> 00:00:30,810
+And if we click it, we get this cool effect where there's three separate parts that come out in the
+
+8
+00:00:30,810 --> 00:00:33,290
+transition and some of them have delay.
+
+9
+00:00:33,330 --> 00:00:38,240
+So we have the black, red, white, and they come out and then when it goes in white, red, black.
+
+10
+00:00:38,610 --> 00:00:40,130
+So it's just a nice little effect.
+
+11
+00:00:40,440 --> 00:00:42,030
+It's a clean looking menu.
+
+12
+00:00:42,870 --> 00:00:45,030
+Obviously, you could put whatever you want in the page.
+
+13
+00:00:45,030 --> 00:00:47,250
+We're just going to put the logo in context.
+
+14
+00:00:47,250 --> 00:00:50,400
+But this would be whatever you would want to put in the page.
+
+15
+00:00:51,120 --> 00:00:55,770
+And of course, if we make this really small still, you know, works the same way, looks good.
+
+16
+00:00:56,160 --> 00:00:59,130
+I think there's a minimum width of three twenty or so.
+
+17
+00:00:59,130 --> 00:01:01,890
+So it should look good on, you know, smartphones and so on.
+
+18
+00:01:02,440 --> 00:01:03,610
+So that's what we'll be building.
+
+19
+00:01:03,630 --> 00:01:05,250
+Let's go ahead and jump into it.

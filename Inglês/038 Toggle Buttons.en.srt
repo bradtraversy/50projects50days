@@ -1,0 +1,367 @@
+1
+00:00:00,210 --> 00:00:04,900
+All right, so now we want to style these buttons, these icon buttons, position them.
+
+2
+00:00:05,610 --> 00:00:10,380
+We want to give functionality to them so we can expand and contract these fake cues.
+
+3
+00:00:10,650 --> 00:00:15,740
+So we have a class of fake cue dash toggle on the button.
+
+4
+00:00:16,080 --> 00:00:22,530
+And obviously, we don't want to show the Chevron if it's expanded and we don't want to show the X if
+
+5
+00:00:22,530 --> 00:00:24,230
+it's if it's not expanded.
+
+6
+00:00:24,510 --> 00:00:26,010
+So we're going to have to deal with that.
+
+7
+00:00:26,280 --> 00:00:28,920
+But let's just do some basic stuff here first.
+
+8
+00:00:28,920 --> 00:00:34,170
+Like the background color I'm going to set to transparent and take away the border set.
+
+9
+00:00:34,170 --> 00:00:35,130
+That's zero.
+
+10
+00:00:35,790 --> 00:00:38,760
+And let's set the cursor to appointer.
+
+11
+00:00:39,510 --> 00:00:48,810
+Let's set I'm actually going to display Flex here and then align and justify to the center so a line
+
+12
+00:00:48,810 --> 00:00:56,850
+items center and justify content center and then let's increase the font size.
+
+13
+00:00:57,180 --> 00:01:05,660
+So we'll increase that, say, 16 pixels and then we're going to set padding to zero.
+
+14
+00:01:05,670 --> 00:01:09,960
+Let's set the position to be absolutes.
+
+15
+00:01:11,130 --> 00:01:17,610
+And then as far as where we want to put these, the initial toggle is going to be top 30 pixels, 30
+
+16
+00:01:17,610 --> 00:01:19,680
+pixels from the top is going to be on the right.
+
+17
+00:01:19,690 --> 00:01:21,870
+So let's do 30 pixels from the right.
+
+18
+00:01:22,500 --> 00:01:29,040
+And then the height will be 30 pixels and the width will be 30 pixels.
+
+19
+00:01:29,100 --> 00:01:30,420
+So if I save that.
+
+20
+00:01:31,740 --> 00:01:37,200
+Now, you can see these buttons over here as far as this first one.
+
+21
+00:01:39,680 --> 00:01:46,820
+I forgot to put the class on that, so that's reclass FNQ Dasch, Tawakkol.
+
+22
+00:01:48,310 --> 00:01:55,850
+All right, so I'm going to set the X right here, the Times to display none so far.
+
+23
+00:01:56,020 --> 00:02:00,110
+You dash toggle, which is the button, and then not done.
+
+24
+00:02:00,250 --> 00:02:07,090
+This should be dash so fake you dash toggle and then the class of F.A.A. dash times, which is the X
+
+25
+00:02:07,120 --> 00:02:10,060
+icon, I'm going to set that to display none.
+
+26
+00:02:12,160 --> 00:02:13,950
+So now we only see the Chevron.
+
+27
+00:02:14,170 --> 00:02:17,190
+Now if it's active, we do want to see the times.
+
+28
+00:02:17,200 --> 00:02:20,980
+So let's just copy this.
+
+29
+00:02:22,930 --> 00:02:27,340
+And here we're going to say let's put active in front.
+
+30
+00:02:27,340 --> 00:02:38,720
+So F a Q fake, Q dot active and then times and then let's display block.
+
+31
+00:02:39,760 --> 00:02:44,160
+So now you can see that this is the X is showing on the active.
+
+32
+00:02:45,100 --> 00:02:47,800
+Now we want to remove the Chevron if it's active.
+
+33
+00:02:47,800 --> 00:03:00,790
+So let's take this and let's set Hefe active so toggle and then we want Chevron dash down and we want
+
+34
+00:03:00,790 --> 00:03:04,080
+to display none there.
+
+35
+00:03:04,090 --> 00:03:06,610
+So now we only see the Chevron if it's not active.
+
+36
+00:03:06,610 --> 00:03:07,990
+We see the if it is.
+
+37
+00:03:09,010 --> 00:03:11,850
+Another thing I want to do is get rid of the C this outline here.
+
+38
+00:03:12,160 --> 00:03:19,900
+So that's going to be on F.A.A. Q Dash toggle, which is the button we want to say in its focus state.
+
+39
+00:03:21,010 --> 00:03:24,580
+We want the outlined property to be set to zero.
+
+40
+00:03:24,910 --> 00:03:26,170
+OK, that'll get rid of that.
+
+41
+00:03:26,830 --> 00:03:33,100
+Also on the active toggle, let's grab this here.
+
+42
+00:03:35,920 --> 00:03:40,060
+So on the act of Torgau, I'm going to set a background color
+
+43
+00:03:42,400 --> 00:03:46,840
+of hexadecimal value, nine F a.
+
+44
+00:03:48,070 --> 00:03:49,540
+Four A.
+
+45
+00:03:51,820 --> 00:03:58,240
+So you can see the ex has that that background, I want that to be rounded or circular.
+
+46
+00:03:58,240 --> 00:04:05,230
+So I'm going to add on the FAA toggle a border radius of 50 percent.
+
+47
+00:04:05,770 --> 00:04:07,780
+And then I also want to make the text.
+
+48
+00:04:07,960 --> 00:04:10,090
+Are the icon white?
+
+49
+00:04:11,620 --> 00:04:13,810
+If it's if it's the times.
+
+50
+00:04:13,840 --> 00:04:19,030
+So right here, let's say color white.
+
+51
+00:04:19,360 --> 00:04:19,690
+All right.
+
+52
+00:04:19,690 --> 00:04:21,160
+So now we want to make this function.
+
+53
+00:04:21,160 --> 00:04:24,490
+But what I'd like you to do is pause the video and try this yourself.
+
+54
+00:04:24,490 --> 00:04:29,940
+If you don't need any hints at all, then go ahead and pause it now and try it if you want some hints.
+
+55
+00:04:29,940 --> 00:04:31,760
+I'm going to just paste this in for a second.
+
+56
+00:04:32,140 --> 00:04:35,050
+So you want to bring in your toggle buttons.
+
+57
+00:04:35,230 --> 00:04:40,390
+Remember, they have a class of fake you dash toggle and you want to use query selector all because
+
+58
+00:04:40,390 --> 00:04:41,290
+it's more than one.
+
+59
+00:04:41,300 --> 00:04:42,850
+So that will create a node list.
+
+60
+00:04:43,120 --> 00:04:49,480
+You want to loop through that no list using for each and then on each toggle you want to add an event
+
+61
+00:04:49,480 --> 00:04:52,210
+listener, a click event listener because we're clicking on them.
+
+62
+00:04:52,510 --> 00:04:55,930
+And then you want to toggle the active class on the parent node.
+
+63
+00:04:55,940 --> 00:04:59,590
+You don't want to add the active class to this to toggle.
+
+64
+00:04:59,920 --> 00:05:06,940
+You want to add it on the parent, which is this div here, OK, and you can use dot parent node to
+
+65
+00:05:06,940 --> 00:05:13,060
+access that and then to toggle a specific class, you can do class list toggle and passata.
+
+66
+00:05:13,060 --> 00:05:17,350
+And so this should give you enough information to to really know how to do this.
+
+67
+00:05:17,360 --> 00:05:21,520
+So if you want to pause it and go ahead and try it, do that and then come back.
+
+68
+00:05:22,300 --> 00:05:24,730
+So I'm going to bring in my toggles.
+
+69
+00:05:25,000 --> 00:05:33,580
+So I'll set toggles to document DOT and we want to use query selector all and they have a class of F
+
+70
+00:05:33,640 --> 00:05:41,590
+a Q dash toggle and then I'm going to take that node list and I'm going to loop through with four each.
+
+71
+00:05:41,590 --> 00:05:43,960
+So say for each toggle.
+
+72
+00:05:46,390 --> 00:05:51,240
+I want to take that specific toggle and add an event listener onto it.
+
+73
+00:05:51,730 --> 00:05:54,100
+I want to listen for a click event.
+
+74
+00:05:54,670 --> 00:06:01,210
+And when that happens, I'm going to run a function and take the toggle, which is the button, and
+
+75
+00:06:01,210 --> 00:06:09,070
+I want to access the parent nodes so we can say dot parent node and I want to access the class list
+
+76
+00:06:09,820 --> 00:06:11,670
+and then call the not remove.
+
+77
+00:06:11,670 --> 00:06:17,500
+We want to call the toggle method and we want to toggle the act of class and that's it.
+
+78
+00:06:17,530 --> 00:06:18,880
+So very, very simple.
+
+79
+00:06:19,410 --> 00:06:24,330
+If we go over here and I click on that, it's going to take away the active class.
+
+80
+00:06:24,340 --> 00:06:29,530
+If I click it again, it's going to put it back so I can toggle that this and I can open the mall if
+
+81
+00:06:29,530 --> 00:06:29,920
+I want.
+
+82
+00:06:29,920 --> 00:06:35,320
+It doesn't have to be, you know, one by one or whatever can open as many as we want.
+
+83
+00:06:36,650 --> 00:06:37,590
+OK, and that's it.
+
+84
+00:06:38,080 --> 00:06:44,290
+And this is something that back when I was learning how to do this stuff, you would use Jacoway for
+
+85
+00:06:44,290 --> 00:06:48,760
+most likely because JavaScript just wasn't where it is today.
+
+86
+00:06:48,760 --> 00:06:51,040
+Query selector all didn't even exist.
+
+87
+00:06:51,820 --> 00:06:55,740
+It was just it was it was a lot of extra code just to do something simple.
+
+88
+00:06:56,110 --> 00:07:01,510
+So I mean, if you're learning JavaScript now, it's, it's much better than it was back in the day
+
+89
+00:07:02,230 --> 00:07:07,240
+when you had to use Jacoway for the smallest little just activity in the DOM.
+
+90
+00:07:07,630 --> 00:07:08,350
+But that's it.
+
+91
+00:07:08,350 --> 00:07:09,640
+Hopefully guys enjoyed this.
+
+92
+00:07:09,640 --> 00:07:11,140
+I will see you in the next project.

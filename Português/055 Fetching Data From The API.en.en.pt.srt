@@ -1,0 +1,631 @@
+﻿1
+00:00:00,270 --> 00:00:02,560
+Tudo bem, então vamos começar no JavaScript.
+
+2
+00:00:02,580 --> 00:00:07,440
+Mas primeiro, quero ver a API que estamos usando, que é o filme Dbag.
+
+3
+00:00:07,800 --> 00:00:14,040
+Portanto, você precisa se inscrever porque precisa de uma chave de API ao fazer suas solicitações.
+
+4
+00:00:14,220 --> 00:00:16,140
+Então você pode ver que eu já estou logado aqui.
+
+5
+00:00:16,530 --> 00:00:22,010
+E se você acessar mais e depois API, verá esta documentação.
+
+6
+00:00:22,020 --> 00:00:26,270
+E se olharmos para os exemplos de descoberta, ele fornece alguns pontos de extremidade que você pode atingir.
+
+7
+00:00:26,280 --> 00:00:33,060
+Então descubra o filme pelo qual você pode classificar, você sabe, data de lançamento ou obter um determinado intervalo de datas de lançamento que você
+
+8
+00:00:33,060 --> 00:00:35,360
+pode classificar por popularidade e assim por diante.
+
+9
+00:00:35,790 --> 00:00:42,180
+Mas o que precisamos fazer é voltar nesta visão geral da API, neste link aqui, os desenvolvedores pontilham o filme
+
+10
+00:00:42,180 --> 00:00:43,500
+saco.
+
+11
+00:00:43,500 --> 00:00:49,340
+Se você clicar nele, verá uma página como esta e diz para se registrar para uma chave de API, clique no botão
+
+12
+00:00:49,350 --> 00:00:49,650
+clique.
+
+13
+00:00:49,650 --> 00:00:53,490
+Neste link aqui, você pode ver que eu já tenho uma chave de API.
+
+14
+00:00:53,910 --> 00:00:58,800
+Então, para mim, diz, se você quiser editar os detalhes do seu aplicativo, clique aqui.
+
+15
+00:00:58,800 --> 00:01:01,530
+Você deve ter a opção de criar um novo aplicativo.
+
+16
+00:01:01,950 --> 00:01:04,920
+E se eu clicar aqui, você verá que acabei de ligar para o meu aplicativo de filmes.
+
+17
+00:01:04,920 --> 00:01:10,170
+Eu usei localhost para o URL e ele vai perguntar, você sabe, por que você quer essa API?
+
+18
+00:01:10,170 --> 00:01:11,640
+O que você planeja fazer com isso?
+
+19
+00:01:12,390 --> 00:01:20,250
+E você pode dizer algo como, você sabe, estou criando um aplicativo de não produção usando esta API ou
+
+20
+00:01:20,250 --> 00:01:21,050
+algo parecido.
+
+21
+00:01:22,170 --> 00:01:26,070
+Assim, quando você obtiver essa chave de API, poderá fazer solicitações.
+
+22
+00:01:26,610 --> 00:01:31,890
+Agora, no JavaScript aqui, quero ter algumas constantes.
+
+23
+00:01:31,890 --> 00:01:38,380
+Um será o sublinhado da API para sua URL e isso será sim.
+
+24
+00:01:39,000 --> 00:01:50,310
+E então é a API como um subdomínio pontilhar o filme dbag e depois cortar três porque essa é a versão
+
+25
+00:01:50,310 --> 00:01:51,270
+da API.
+
+26
+00:01:51,810 --> 00:01:58,800
+E então, se olharmos para voltar a esta página aqui, descobrir exemplos, será slash,
+
+27
+00:01:58,800 --> 00:02:02,190
+descobrir slash movie e quero classificar por popularidade.
+
+28
+00:02:02,190 --> 00:02:04,260
+Então, vou usar este ponto de extremidade aqui.
+
+29
+00:02:04,740 --> 00:02:09,060
+Então cole isso e vai classificar por popularidade que vai ser descendente.
+
+30
+00:02:09,630 --> 00:02:13,080
+E além disso, vamos colocar um amplificador aqui.
+
+31
+00:02:13,560 --> 00:02:22,680
+Precisamos de nossa chave de sublinhado de API e vou definir isso igual à minha chave, que está bem aqui.
+
+32
+00:02:24,660 --> 00:02:26,970
+E eu só quero dizer, vocês podem usar minha chave.
+
+33
+00:02:26,970 --> 00:02:29,280
+Não tenho certeza de qual é a limitação de taxa ou qualquer coisa.
+
+34
+00:02:29,280 --> 00:02:33,810
+Você provavelmente quer criar o seu próprio, mas se realmente não quiser, deixarei esta chave
+
+35
+00:02:33,810 --> 00:02:37,470
+no no repositório.
+
+36
+00:02:38,220 --> 00:02:39,300
+Então eu vou colar isso.
+
+37
+00:02:39,300 --> 00:02:41,280
+E isso lhe dá uma tonelada de resultados.
+
+38
+00:02:41,280 --> 00:02:44,580
+E você pode criar paginação se quiser.
+
+39
+00:02:44,580 --> 00:02:45,720
+Eu não vou entrar nisso.
+
+40
+00:02:45,720 --> 00:02:51,930
+Então eu vou fazer a página e comercial igual a um, o que me dá, eu acredito que o primeiro tipo trinta
+
+41
+00:02:51,930 --> 00:02:53,070
+resultados ou algo assim.
+
+42
+00:02:54,630 --> 00:02:57,000
+E podemos realmente ver o que isso nos dá.
+
+43
+00:02:57,000 --> 00:03:07,230
+Se eu pegar isso e entrar no chrome, você verá que me dá um objeto com a página, os resultados totais,
+
+44
+00:03:07,230 --> 00:03:10,440
+o total de páginas e, em seguida, uma matriz de resultados.
+
+45
+00:03:10,440 --> 00:03:17,610
+É aí que estão todos os dados do filme e tem como a popularidade, a contagem de votos, o caminho do pôster.
+
+46
+00:03:17,610 --> 00:03:18,930
+Aqui está a imagem.
+
+47
+00:03:18,930 --> 00:03:23,130
+Observe que não há caminho, é apenas uma barra e depois um arquivo de imagem.
+
+48
+00:03:23,130 --> 00:03:25,410
+Então, precisamos obter o caminho da imagem para isso.
+
+49
+00:03:25,450 --> 00:03:26,850
+Eu vou te mostrar como fazer isso em um segundo.
+
+50
+00:03:27,210 --> 00:03:34,650
+Temos a ideia se for Adults', a descrição do título, para que você possa usar todos esses dados em seu aplicativo.
+
+51
+00:03:34,800 --> 00:03:37,920
+Estamos usando apenas uma pequena parte dele agora.
+
+52
+00:03:37,920 --> 00:03:40,800
+No que diz respeito à imagem, temos esse caminho de pôster.
+
+53
+00:03:40,800 --> 00:03:44,220
+Mas, novamente, não há Eurail aqui.
+
+54
+00:03:45,210 --> 00:03:46,500
+Então eu tenho essa página.
+
+55
+00:03:47,160 --> 00:03:54,600
+Isso é da documentação que realmente precisamos usar algo assim antes dos nomes das imagens.
+
+56
+00:03:54,600 --> 00:04:01,620
+Então, o que vou fazer é pegar isso, não a imagem real aqui, o JPEG, mas apenas pegar esse URL
+
+57
+00:04:01,620 --> 00:04:07,830
+e digamos const image underscore path e vou configurá-lo para isso.
+
+58
+00:04:08,010 --> 00:04:10,770
+E este último é a largura é o tamanho.
+
+59
+00:04:11,160 --> 00:04:17,380
+Vou usar doze e oitenta aqui em vez de quinhentos, mas isso vai antes da imagem.
+
+60
+00:04:17,380 --> 00:04:22,800
+E na verdade não queremos a barra porque se olharmos para a resposta aqui para o caminho do pôster já
+
+61
+00:04:22,800 --> 00:04:24,330
+tem a barra na frente dele.
+
+62
+00:04:24,330 --> 00:04:26,190
+Portanto, não adicione a barra aqui.
+
+63
+00:04:27,270 --> 00:04:30,630
+E também queremos um ponto final de pesquisa.
+
+64
+00:04:30,870 --> 00:04:41,190
+Então, vou copiar isso e chamar essa pesquisa de URL e será a mesma rota que você
+
+65
+00:04:41,190 --> 00:04:41,940
+mais cedo.
+
+66
+00:04:41,940 --> 00:04:50,670
+Mas em vez de descobrir vamos usar search, search and slash movie.
+
+67
+00:04:51,300 --> 00:04:52,830
+Não queremos o por.
+
+68
+00:04:55,110 --> 00:04:58,470
+O que eu quero, porém, o que eu quero é minha chave de API.
+
+69
+00:04:58,470 --> 00:04:59,310
+Então vamos dizer.
+
+70
+00:05:01,060 --> 00:05:05,440
+A chave de sublinhado da API é igual a e.
+
+71
+00:05:08,200 --> 00:05:18,620
+Isso aí e a última coisa que diremos e comercial, queremos uma consulta, então é uma consulta igual
+
+72
+00:05:18,620 --> 00:05:25,520
+e o que vou fazer é apenas abrir aspas duplas porque quero poder concatenar uma pesquisa
+
+73
+00:05:25,520 --> 00:05:28,490
+termo da nossa caixa de pesquisa para aqui.
+
+74
+00:05:29,150 --> 00:05:29,570
+Tudo bem.
+
+75
+00:05:29,570 --> 00:05:34,640
+Porque basicamente o que estamos fazendo é definir os, você sabe, os filmes mais populares do
+
+76
+00:05:34,640 --> 00:05:36,530
+página de destino quando chegamos lá.
+
+77
+00:05:36,540 --> 00:05:41,870
+Mas se usarmos a caixa de pesquisa, usaremos esse ponto final e adicionaremos uma consulta
+
+78
+00:05:41,870 --> 00:05:42,270
+aqui.
+
+79
+00:05:42,530 --> 00:05:49,010
+Então, basta colocar uma aspas duplas aqui e cercar ambas e, você sabe, colocar isso entre aspas simples.
+
+80
+00:05:49,850 --> 00:05:50,240
+Tudo bem.
+
+81
+00:05:50,250 --> 00:05:55,670
+Agora que já fizemos isso, só quero ver se podemos fazer um pedido.
+
+82
+00:05:55,670 --> 00:05:59,630
+E então, no próximo vídeo, faremos as coisas do DOM, você sabe, adicionando-o à página.
+
+83
+00:06:00,080 --> 00:06:01,630
+Então vamos criar uma função.
+
+84
+00:06:01,640 --> 00:06:03,190
+Vou usar uma pia de distância.
+
+85
+00:06:03,210 --> 00:06:13,370
+Então vai ser uma função assíncrona chamada get movies e vai pegar um neutro e vamos
+
+86
+00:06:13,370 --> 00:06:15,080
+diga resposta const.
+
+87
+00:06:15,080 --> 00:06:21,710
+Araz, queremos aguardar porque lembre-se, Fach retorna uma promessa para que você não precise usar uma pia,
+
+88
+00:06:21,710 --> 00:06:24,290
+mas então você teria que fazer, você sabe, o ponto então e tal.
+
+89
+00:06:24,740 --> 00:06:28,360
+Então vamos dizer, espere, pegue, passe, você é Earl?
+
+90
+00:06:29,570 --> 00:06:32,420
+E então isso retornará uma promessa.
+
+91
+00:06:32,420 --> 00:06:35,990
+Mas ainda não nos dará o formato JSON.
+
+92
+00:06:35,990 --> 00:06:44,240
+Queremos criar outra variável chamada data e queremos esperar por um residente, Jason, que irá
+
+93
+00:06:44,240 --> 00:06:45,570
+nos dê os dados reais.
+
+94
+00:06:45,590 --> 00:06:50,990
+Então agora vamos considerar os dados de log e lembrar a resposta no navegador.
+
+95
+00:06:50,990 --> 00:06:53,580
+Teve resultado, né?
+
+96
+00:06:53,660 --> 00:06:55,180
+Tinha uma matriz de resultados.
+
+97
+00:06:55,670 --> 00:07:06,170
+Então eu quero apenas olhar para isso e então eu vou até aqui e digamos que pegue os filmes iniciais e nós vamos
+
+98
+00:07:06,170 --> 00:07:11,400
+para chamar, obter filmes e passar a URL da nossa API.
+
+99
+00:07:11,900 --> 00:07:13,220
+Então eu vou salvar isso.
+
+100
+00:07:13,220 --> 00:07:20,720
+E é que podemos realmente fazer isso menor agora e isso é minimizado.
+
+101
+00:07:21,260 --> 00:07:29,750
+OK, então eu só quero abrir meu console aqui e você pode ver que temos um array de 20 objetos e nós
+
+102
+00:07:29,750 --> 00:07:32,150
+tenha acesso a todos esses dados aqui.
+
+103
+00:07:32,810 --> 00:07:33,200
+Tudo bem.
+
+104
+00:07:33,200 --> 00:07:35,580
+Então, sabemos que podemos realmente obter os dados.
+
+105
+00:07:35,840 --> 00:07:37,780
+Agora, vamos em frente e fazer a pesquisa.
+
+106
+00:07:37,790 --> 00:07:39,690
+Eu não estou fazendo nada com o DOM ainda.
+
+107
+00:07:39,710 --> 00:07:40,880
+Faremos isso no próximo vídeo.
+
+108
+00:07:40,880 --> 00:07:46,390
+Mas vamos ter um ouvinte de eventos no formulário.
+
+109
+00:07:46,400 --> 00:07:49,560
+Então o que nós temos que trazer isso para fazer isso.
+
+110
+00:07:49,580 --> 00:07:53,810
+Então, na verdade, vou entrar nessas constantes, no entanto.
+
+111
+00:07:54,470 --> 00:08:03,860
+Então, digamos const form e diga document dot get element by D e acredito que tenho um formulário de ideia.
+
+112
+00:08:04,130 --> 00:08:05,320
+Você ainda verifica isso.
+
+113
+00:08:06,590 --> 00:08:07,910
+Então, no cabeçalho.
+
+114
+00:08:09,170 --> 00:08:09,530
+Sim.
+
+115
+00:08:09,530 --> 00:08:10,520
+Forma de ideia.
+
+116
+00:08:11,270 --> 00:08:17,630
+Tudo bem, então traga isso e então aqui embaixo, digamos form dot add event listener, nós vamos
+
+117
+00:08:17,630 --> 00:08:23,540
+para ouvir um envio e colocar uma função aqui com nosso objeto de evento.
+
+118
+00:08:23,540 --> 00:08:35,370
+E como é um envio, precisamos chamar e dot prevent default para que ele não seja realmente, você sabe,
+
+119
+00:08:35,390 --> 00:08:44,240
+enviar para a página e, em seguida, vamos criar uma variável chamada termo de pesquisa e defini-la como pesquisa, o que
+
+120
+00:08:44,240 --> 00:08:48,800
+nós temos que trazer também, que é a entrada.
+
+121
+00:08:48,800 --> 00:08:51,920
+Então diremos busca const.
+
+122
+00:08:53,510 --> 00:08:57,020
+E acho que dei a isso uma ideia de pesquisa.
+
+123
+00:09:00,020 --> 00:09:04,280
+OK, e então queremos o valor disso, porque, lembre-se, isso é uma entrada, então queremos obter isso
+
+124
+00:09:04,280 --> 00:09:16,400
+valor, coloque-o em uma variável e vamos verificar se o termo de pesquisa existe e também se o termo de pesquisa é
+
+125
+00:09:16,400 --> 00:09:18,230
+não é igual a nada.
+
+126
+00:09:18,860 --> 00:09:19,360
+Tudo bem.
+
+127
+00:09:19,370 --> 00:09:23,660
+Então vamos chamar get movies, que temos acima.
+
+128
+00:09:24,110 --> 00:09:32,120
+Agora precisamos de um neutro, é aqui que a API de pesquisa ou pesquisa seus resultados e, na verdade, vamos chamá-lo
+
+129
+00:09:32,120 --> 00:09:35,810
+API de pesquisa.
+
+130
+00:09:37,550 --> 00:09:37,950
+Tudo bem.
+
+131
+00:09:37,970 --> 00:09:42,100
+E o que queremos fazer é pegar o que quer que digitemos será colocado.
+
+132
+00:09:42,140 --> 00:09:45,320
+Queremos concatenar isso em nossa API de pesquisa.
+
+133
+00:09:45,320 --> 00:09:51,830
+Então pegue filmes, pesquise API e então vamos adicionar a isso qualquer que seja o termo de pesquisa.
+
+134
+00:09:52,800 --> 00:09:58,100
+OK, então isso nos dará uma resposta e, em seguida, apenas limparemos o valor do ponto de pesquisa.
+
+135
+00:09:58,100 --> 00:10:03,240
+Então, vamos definir o valor de pesquisa igual a nada e então teremos apenas um else.
+
+136
+00:10:03,260 --> 00:10:07,900
+Então, se enviarmos sem ter nada lá, apenas recarregarei a página.
+
+137
+00:10:07,910 --> 00:10:16,070
+Portanto, localização do ponto da janela, janela, localização do ponto, recarregamento do ponto.
+
+138
+00:10:17,690 --> 00:10:18,050
+Tudo bem.
+
+139
+00:10:18,060 --> 00:10:24,080
+Então o que deve acontecer agora é quando eu pesquisar algo aqui e enviar, você liga, pega filmes.
+
+140
+00:10:24,440 --> 00:10:30,200
+Deve levar a API de pesquisa com o termo de pesquisa e nos fornecer esses resultados.
+
+141
+00:10:30,380 --> 00:10:34,940
+Então vamos apenas dizer, eu não sei.
+
+142
+00:10:34,970 --> 00:10:36,370
+Não sei nem o que colocar aqui.
+
+143
+00:10:37,250 --> 00:10:38,300
+Quais foram alguns dos filmes?
+
+144
+00:10:38,300 --> 00:10:39,740
+Vamos apenas dizer a palavra difícil.
+
+145
+00:10:41,090 --> 00:10:41,480
+Tudo bem.
+
+146
+00:10:41,480 --> 00:10:42,850
+Então temos um resultado aqui.
+
+147
+00:10:42,860 --> 00:10:43,880
+Vamos dar uma olhada.
+
+148
+00:10:43,880 --> 00:10:45,920
+Eu só quero ver os títulos.
+
+149
+00:10:47,420 --> 00:10:48,890
+Então título Hard Kill.
+
+150
+00:10:50,340 --> 00:10:56,480
+Olhe para este aqui intitulado Die Hard Title Hard Target.
+
+151
+00:10:56,480 --> 00:10:56,750
+Tudo bem.
+
+152
+00:10:56,750 --> 00:10:58,880
+Assim, podemos ver que a pesquisa está realmente funcionando.
+
+153
+00:10:59,810 --> 00:11:03,500
+Agora, temos a parte do HDP bem feita.
+
+154
+00:11:03,500 --> 00:11:05,660
+Estamos fazendo solicitações estão recebendo uma resposta.
+
+155
+00:11:05,990 --> 00:11:12,260
+Então, no próximo vídeo, queremos pegar essa funcionalidade aqui e pegar esses dados e colocá-los em
+
+156
+00:11:12,260 --> 00:11:14,630
+o dormitório para que ele apareça aqui.
+
+157
+00:11:14,960 --> 00:11:15,350
+Tudo bem.
+
+158
+00:11:15,350 --> 00:11:16,490
+Então faremos isso a seguir.

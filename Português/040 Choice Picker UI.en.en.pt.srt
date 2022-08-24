@@ -1,0 +1,287 @@
+﻿1
+00:00:00,060 --> 00:00:04,950
+Tudo bem, vamos começar com uma escolha aleatória, então eu tenho meu projeto inicial aqui, vou
+
+2
+00:00:04,950 --> 00:00:10,020
+vá em frente e mude o título aqui para Random Choice Picker.
+
+3
+00:00:11,830 --> 00:00:13,480
+E vamos descer aqui.
+
+4
+00:00:13,500 --> 00:00:15,630
+Então nós vamos ter um recipiente.
+
+5
+00:00:15,630 --> 00:00:16,830
+Podemos nos livrar do H1.
+
+6
+00:00:17,490 --> 00:00:25,110
+Vamos colocar uma classe de container aqui e dentro do container terá um H3 e digamos digite todos
+
+7
+00:00:25,110 --> 00:00:25,710
+do.
+
+8
+00:00:28,530 --> 00:00:35,850
+Insira todas as opções divididas por uma vírgula.
+
+9
+00:00:37,020 --> 00:00:45,360
+Vá em frente e especifique o que é uma vírgula, Floren, e então vamos fazer uma quebra de linha aqui e então
+
+10
+00:00:45,360 --> 00:00:53,110
+digamos, pressione enter quando terminar.
+
+11
+00:00:54,750 --> 00:00:55,170
+Tudo bem.
+
+12
+00:00:55,200 --> 00:00:58,590
+Então, sob os três H, vamos colocar uma área de texto.
+
+13
+00:00:59,950 --> 00:01:07,480
+E isso vai ter um ID, vamos chamar a área de texto de criativo real e vamos ter que não precisamos
+
+14
+00:01:07,480 --> 00:01:13,000
+essas coisas aqui porque vamos ter um estilo de sucesso e então não precisamos de um nome.
+
+15
+00:01:14,020 --> 00:01:15,430
+Eu quero um espaço reservado, no entanto.
+
+16
+00:01:15,430 --> 00:01:17,170
+Então é um marcador de posição.
+
+17
+00:01:19,240 --> 00:01:24,000
+E vamos em frente e definir isso para inserir opções aqui.
+
+18
+00:01:24,040 --> 00:01:24,850
+Ponto ponto Ponto.
+
+19
+00:01:26,590 --> 00:01:32,320
+Agora, sob a área de texto, teremos uma área para as tags, então daremos uma ideia de
+
+20
+00:01:32,320 --> 00:01:41,650
+tags e estes vão ser span's com a classe de tag e obviamente com algum texto do
+
+21
+00:01:41,650 --> 00:01:42,430
+escolhas diferentes.
+
+22
+00:01:42,430 --> 00:01:44,800
+Mas isso será inserido com o JavaScript.
+
+23
+00:01:45,070 --> 00:01:48,780
+No entanto, por enquanto, vou apenas codificar apenas para que possamos vê-lo no estilo.
+
+24
+00:01:48,790 --> 00:01:50,930
+Então, vamos apenas criar uma tag aqui.
+
+25
+00:01:50,950 --> 00:01:52,300
+É uma escolha.
+
+26
+00:01:52,900 --> 00:01:58,510
+Vamos apenas adicionar três desses civis dois a três e salvar.
+
+27
+00:01:58,720 --> 00:02:09,150
+OK, então isso deve ser feito para o HTML, é saltar para o nosso sucesso e vamos manter a família de fontes
+
+28
+00:02:09,150 --> 00:02:09,610
+nossa garrafa.
+
+29
+00:02:09,610 --> 00:02:11,520
+Isso é violência em uma cor de fundo.
+
+30
+00:02:14,730 --> 00:02:22,770
+A cor de fundo será o valor hexadecimal para ser oito oito F zero, que é uma cor azul,
+
+31
+00:02:23,550 --> 00:02:30,420
+e temos o centro das colunas Flex e Flex Direction.
+
+32
+00:02:33,270 --> 00:02:34,600
+Então tudo isso está bem.
+
+33
+00:02:35,700 --> 00:02:42,360
+Então agora o H3, vamos dar uma cor branca nesse fundo azul.
+
+34
+00:02:42,360 --> 00:02:44,330
+E vamos também adicionar um pouco de margem.
+
+35
+00:02:44,340 --> 00:02:47,810
+Faremos 10 pixels, zero, 20 pixels para a margem.
+
+36
+00:02:49,020 --> 00:02:51,880
+Sabe, vamos mudar a fonte para Molly.
+
+37
+00:02:53,130 --> 00:03:03,930
+Então, o sucesso da família do ponto de interrogação é igual à Molly e vamos bem aqui no corpo e mudar isso.
+
+38
+00:03:06,370 --> 00:03:10,810
+Lá vamos nós, para que seja um pouco mais legível e, em seguida, para o contêiner.
+
+39
+00:03:13,760 --> 00:03:22,190
+Além disso, um sopro do contêiner para 500 pixels e, na verdade, isso deve funcionar, então tenha 500 pixels
+
+40
+00:03:22,190 --> 00:03:22,880
+recipiente,
+
+41
+00:03:26,300 --> 00:03:27,810
+vamos fazer a área de texto.
+
+42
+00:03:27,830 --> 00:03:33,680
+Então isso tem uma classe de área de texto e eu quero me livrar da borda.
+
+43
+00:03:33,680 --> 00:03:35,210
+Então diga fronteira nenhuma.
+
+44
+00:03:36,230 --> 00:03:39,620
+E vamos fazer disso um elemento de nível de bloco.
+
+45
+00:03:39,630 --> 00:03:46,700
+Então exiba o bloco e vamos definir a largura para 100 por cento de seu contêiner.
+
+46
+00:03:49,440 --> 00:03:57,840
+O que não está funcionando, e isso é porque eu dei uma ideia de área de texto, então vamos apenas estilizar
+
+47
+00:03:57,840 --> 00:03:58,730
+a área de texto.
+
+48
+00:03:58,740 --> 00:04:00,030
+Então, apenas tire esse ponto.
+
+49
+00:04:00,030 --> 00:04:00,900
+Não há aula.
+
+50
+00:04:01,950 --> 00:04:06,000
+A altura disso será de 100 centenas de pixels.
+
+51
+00:04:07,170 --> 00:04:19,020
+E vamos herdar a família de Molly e então vamos adicionar um pouco de preenchimento, fazer um preenchimento de 10 pixels.
+
+52
+00:04:19,590 --> 00:04:27,810
+E no que diz respeito à margem, vamos fazer zero zero 20 pixels, e então vamos fazer o tamanho da fonte um pouco
+
+53
+00:04:27,810 --> 00:04:29,460
+maior, 16 pixels.
+
+54
+00:04:31,260 --> 00:04:33,790
+E então isso deve ser bom para a área de texto.
+
+55
+00:04:34,380 --> 00:04:35,640
+Agora para as etiquetas.
+
+56
+00:04:35,640 --> 00:04:43,500
+Então temos span's com a classe de tag e vamos adicionar uma cor de fundo.
+
+57
+00:04:46,080 --> 00:04:54,870
+A cor de fundo será F zero nove três para ser o fundo e a cor
+
+58
+00:04:54,870 --> 00:05:05,850
+do texto será branco e adicionaremos um raio de borda de três pixels e desculpe,
+
+59
+00:05:05,850 --> 00:05:07,740
+não três pixels, 50 pixels.
+
+60
+00:05:10,450 --> 00:05:16,450
+E dar tapinhas fará 10 em cima e embaixo, 20 à esquerda e à direita.
+
+61
+00:05:17,390 --> 00:05:29,020
+E vamos espalhá-los um pouco para adicionar margem a zero, cinco primeiros, 10 e zero e o tamanho da fonte,
+
+62
+00:05:29,030 --> 00:05:31,220
+Eu vou fazer 14 pixels.
+
+63
+00:05:31,610 --> 00:05:32,840
+Faça isso um pouco menor.
+
+64
+00:05:32,870 --> 00:05:36,470
+Vamos exibir como no bloco de linha.
+
+65
+00:05:38,920 --> 00:05:47,650
+E sim, isso deve acontecer agora quando seleciona, você sabe, quando seleciona algo aleatoriamente, é
+
+66
+00:05:47,650 --> 00:05:49,260
+vai ter uma cor de fundo.
+
+67
+00:05:49,690 --> 00:05:53,980
+Então vamos ter além de tag, vai ter uma classe de destaque.
+
+68
+00:05:55,120 --> 00:06:05,170
+E eu só quero mudar a cor de fundo para o valor hexadecimal, 273, C 75.
+
+69
+00:06:05,170 --> 00:06:13,420
+E só para ver como é, digamos, o segundo aqui, adicionamos destaques e o destaque
+
+70
+00:06:13,420 --> 00:06:14,470
+um vai ficar assim.
+
+71
+00:06:15,850 --> 00:06:18,800
+OK, então é isso para a interface do usuário aqui.
+
+72
+00:06:19,240 --> 00:06:22,810
+Então, no próximo vídeo, continuaremos e começaremos a adicionar nosso JavaScript.

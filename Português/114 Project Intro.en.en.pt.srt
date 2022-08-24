@@ -1,0 +1,43 @@
+﻿1
+00:00:00,360 --> 00:00:05,320
+Tudo bem, neste projeto, vamos construir um carrossel de imagens que mostrará alguns
+
+2
+00:00:05,320 --> 00:00:08,680
+de imagens e vai basicamente deslizar por elas.
+
+3
+00:00:08,940 --> 00:00:10,410
+Ele vai fazer isso por conta própria.
+
+4
+00:00:10,650 --> 00:00:13,470
+Mas também temos esses botões aqui onde podemos controlá-lo.
+
+5
+00:00:13,470 --> 00:00:15,990
+Então eu posso ir, você sabe, próximo, próximo.
+
+6
+00:00:15,990 --> 00:00:19,700
+E se chegar ao fim, apenas volta ao início para que eu possa ir em seguida.
+
+7
+00:00:19,710 --> 00:00:21,990
+Eu também posso voltar assim.
+
+8
+00:00:22,710 --> 00:00:26,460
+E se chegarmos ao início e clicarmos em anterior, ele vai até o fim.
+
+9
+00:00:26,970 --> 00:00:27,330
+Tudo bem.
+
+10
+00:00:27,340 --> 00:00:28,400
+Então é isso que estamos construindo.
+
+11
+00:00:28,410 --> 00:00:29,880
+Vamos em frente e entrar nisso.

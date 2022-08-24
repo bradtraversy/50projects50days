@@ -1,0 +1,643 @@
+1
+00:00:00,150 --> 00:00:08,040
+OK, so now that I give you just a very brief overview of HTP request and response and the Fetch API,
+
+2
+00:00:08,310 --> 00:00:10,460
+we're going to go ahead and finish up our application here.
+
+3
+00:00:10,470 --> 00:00:16,340
+So I have my script, J.S. And first thing I want to do is bring in what I need from the Don.
+
+4
+00:00:16,350 --> 00:00:17,910
+So we have our joke.
+
+5
+00:00:18,460 --> 00:00:26,970
+I'm going to call this joke Al for joke element and set this to document doGet Element by D and that
+
+6
+00:00:26,970 --> 00:00:28,860
+should have an idea of joke.
+
+7
+00:00:29,280 --> 00:00:30,290
+Let's just make sure.
+
+8
+00:00:30,600 --> 00:00:33,840
+So we're getting this div right here that wraps this text.
+
+9
+00:00:34,050 --> 00:00:36,210
+So we're bringing that into our JavaScript.
+
+10
+00:00:36,540 --> 00:00:37,680
+We also want the button.
+
+11
+00:00:37,700 --> 00:00:52,140
+So let's say Korn's joke B10 equals document yet element by D and I think I used to joke B10 right here.
+
+12
+00:00:52,140 --> 00:00:55,360
+So we're getting the button as well because we need an event listener on that.
+
+13
+00:00:56,340 --> 00:00:56,730
+All right.
+
+14
+00:00:56,730 --> 00:01:06,480
+So right when we come into this application, we want to call a function called generate joke, so that's
+
+15
+00:01:06,480 --> 00:01:07,200
+going to get called.
+
+16
+00:01:07,200 --> 00:01:08,760
+So we want to create that.
+
+17
+00:01:08,760 --> 00:01:14,630
+So let's say function generate joke and this is where we want to make our request.
+
+18
+00:01:14,640 --> 00:01:16,740
+Now, like I said, this is built into the browser.
+
+19
+00:01:16,740 --> 00:01:18,840
+It's it's a native API.
+
+20
+00:01:18,840 --> 00:01:22,380
+So we don't have to include any kind of CDN or anything.
+
+21
+00:01:23,250 --> 00:01:30,830
+And what we want to do is make a feature request to a specific URL, which is going to be Seydou.
+
+22
+00:01:30,870 --> 00:01:33,210
+We still have this browser window open.
+
+23
+00:01:37,120 --> 00:01:44,620
+Yeah, so it's going to be to this I can has Dad Yocum, just like it tells us down here, to make a
+
+24
+00:01:44,620 --> 00:01:45,420
+request to.
+
+25
+00:01:46,540 --> 00:01:48,760
+So let's paste that in there.
+
+26
+00:01:50,170 --> 00:01:57,850
+Now, remember, if we just make a get request to this without the except header of applications, Jason,
+
+27
+00:01:57,850 --> 00:01:59,050
+it's going to give us HTML.
+
+28
+00:01:59,050 --> 00:02:00,190
+And that's not what we want.
+
+29
+00:02:00,670 --> 00:02:09,280
+So we can add in an object here with a headers value and headers is going to be an object.
+
+30
+00:02:09,280 --> 00:02:12,820
+And then we can put in for the key what what the header we want.
+
+31
+00:02:12,820 --> 00:02:20,860
+Remember when we were in Postman, they caused us and also we in Postman I set a header of except as
+
+32
+00:02:20,860 --> 00:02:23,920
+the key and application Jason is the value.
+
+33
+00:02:23,930 --> 00:02:25,630
+So we're doing the same thing here.
+
+34
+00:02:26,020 --> 00:02:36,550
+We're saying except as the key and setting application slash Jason as the value.
+
+35
+00:02:37,750 --> 00:02:44,140
+OK, now usually what I like to do if I'm adding headers is are not even just headers but anything in
+
+36
+00:02:44,140 --> 00:02:45,010
+this object.
+
+37
+00:02:45,010 --> 00:02:47,350
+I'll just take this and put it in a variable.
+
+38
+00:02:47,350 --> 00:02:51,280
+So I'm going to cut this and I'll put it in a variable called config.
+
+39
+00:02:51,760 --> 00:02:57,610
+And right above it, I'll just say const config equals that object.
+
+40
+00:02:57,670 --> 00:02:59,260
+I just think it's it's cleaner.
+
+41
+00:03:00,040 --> 00:03:03,120
+But you can you know, of course you can do what I just had here.
+
+42
+00:03:03,490 --> 00:03:06,430
+Now remember, this is going to give us a promise back.
+
+43
+00:03:06,430 --> 00:03:12,310
+So we have to set this to dot then and remember what the fetch API we get the response.
+
+44
+00:03:12,310 --> 00:03:13,480
+You can call us whatever you want.
+
+45
+00:03:13,480 --> 00:03:14,140
+Response.
+
+46
+00:03:14,240 --> 00:03:22,060
+I usually call it Redds and this is an arrow function and we just want to call Resource Jason to get
+
+47
+00:03:22,060 --> 00:03:27,380
+the adjacent data and then the second dot then is going to give us the actual data.
+
+48
+00:03:27,880 --> 00:03:33,190
+OK, so this is another arrow function and for now I'm just going to cancel log what data gives us and
+
+49
+00:03:33,190 --> 00:03:34,200
+I'm going to save this.
+
+50
+00:03:34,930 --> 00:03:36,730
+So this should run right away.
+
+51
+00:03:36,730 --> 00:03:38,320
+So I'm going to open up my console.
+
+52
+00:03:38,740 --> 00:03:46,660
+And what we get is an object with an I.D., a joke and a status, just like you saw with Kerl, just
+
+53
+00:03:46,660 --> 00:03:47,950
+like you saw with Postman.
+
+54
+00:03:47,950 --> 00:03:49,360
+It's all the same API.
+
+55
+00:03:49,360 --> 00:03:55,150
+We're just hitting it with different methods, different technologies, you know, postman Kerl fetch
+
+56
+00:03:55,150 --> 00:03:55,640
+whatever.
+
+57
+00:03:56,560 --> 00:03:59,470
+So what do we actually want to do with this.
+
+58
+00:03:59,470 --> 00:04:03,010
+We want to take the joke from this object and inserted here.
+
+59
+00:04:03,520 --> 00:04:13,390
+So in this arrow function right here instead of console logging, let's open up a code block and let's
+
+60
+00:04:13,390 --> 00:04:19,450
+take the joke element that we brought in above and set the inner HTML.
+
+61
+00:04:19,840 --> 00:04:24,280
+Let's set that to not not just data because data is the entire object.
+
+62
+00:04:24,280 --> 00:04:30,280
+We want DataDot joke because we're accessing this dot joke from this entire object.
+
+63
+00:04:31,080 --> 00:04:31,510
+All right.
+
+64
+00:04:31,510 --> 00:04:33,100
+So let's go ahead and save that.
+
+65
+00:04:33,100 --> 00:04:36,790
+And as soon as the page reloads, we see a joke here.
+
+66
+00:04:38,320 --> 00:04:41,770
+And I mean, this isn't going to work yet because we haven't hooked it up.
+
+67
+00:04:42,130 --> 00:04:43,960
+But we get my pet mouse.
+
+68
+00:04:43,960 --> 00:04:45,340
+Elvis died last night.
+
+69
+00:04:45,340 --> 00:04:46,600
+He was caught in a trap.
+
+70
+00:04:47,080 --> 00:04:51,550
+And if I reload, the page will get a different one, because remember, every time you hit this API,
+
+71
+00:04:51,670 --> 00:04:53,320
+it's going to give you a different joke.
+
+72
+00:04:53,620 --> 00:04:55,910
+I used to work for a soft drink can crusher.
+
+73
+00:04:55,930 --> 00:04:59,740
+It was so depressing cause this is so stupid.
+
+74
+00:05:00,700 --> 00:05:01,240
+But yeah.
+
+75
+00:05:01,240 --> 00:05:04,030
+So now we're getting this joke in here.
+
+76
+00:05:04,030 --> 00:05:09,040
+The next thing I want to do is just hook and eventless knob to this button so that it calls generate
+
+77
+00:05:09,040 --> 00:05:09,970
+joke again.
+
+78
+00:05:10,450 --> 00:05:18,580
+So let's go up here and just say a joke button and we'll add an event listener onto it and we want to
+
+79
+00:05:18,580 --> 00:05:20,320
+listen for a click.
+
+80
+00:05:21,040 --> 00:05:24,250
+And when that happens, we want to call generate joke.
+
+81
+00:05:24,460 --> 00:05:29,050
+And as soon as I save that, we get a different joke because whenever we save, it's going to call this
+
+82
+00:05:29,050 --> 00:05:29,530
+function.
+
+83
+00:05:29,530 --> 00:05:33,130
+But also, if I click this button, it'll give us a new joke.
+
+84
+00:05:34,750 --> 00:05:35,140
+All right.
+
+85
+00:05:35,140 --> 00:05:39,460
+And you can check your network tab as well to see any requests that you get.
+
+86
+00:05:39,460 --> 00:05:43,090
+I'm just going to dislocate this for a second.
+
+87
+00:05:45,770 --> 00:05:51,500
+And if I just reload this, this is going to show you any files that were loaded, like our stylesheet,
+
+88
+00:05:51,500 --> 00:05:51,940
+our script.
+
+89
+00:05:52,040 --> 00:05:57,720
+Yes, but if we look at so if we look at type, you see this fits right here.
+
+90
+00:05:57,740 --> 00:05:59,540
+This it made a call to this.
+
+91
+00:05:59,540 --> 00:06:03,050
+You, Aykan, has dad joke dotcom.
+
+92
+00:06:03,320 --> 00:06:04,520
+And we can see a few things.
+
+93
+00:06:04,520 --> 00:06:09,350
+We see our response, which is the, you know, the ID, the joke and the status.
+
+94
+00:06:09,680 --> 00:06:11,360
+We can also check out the headers.
+
+95
+00:06:11,660 --> 00:06:14,690
+So it was this is the request, the URL that was made.
+
+96
+00:06:14,960 --> 00:06:16,390
+It was a get request.
+
+97
+00:06:16,400 --> 00:06:17,240
+So that's the method.
+
+98
+00:06:17,240 --> 00:06:19,040
+The status code was 200.
+
+99
+00:06:20,090 --> 00:06:20,510
+What else?
+
+100
+00:06:20,510 --> 00:06:23,500
+The remote address and then any headers down here.
+
+101
+00:06:23,810 --> 00:06:27,080
+So there's response headers and there's also request headers.
+
+102
+00:06:27,560 --> 00:06:33,260
+And in the request header, we should have this except application, Jason, because we sent that that
+
+103
+00:06:33,260 --> 00:06:37,130
+was a result of what we sent within the options.
+
+104
+00:06:37,940 --> 00:06:39,890
+And then there's a bunch of other stuff here as well.
+
+105
+00:06:40,140 --> 00:06:44,960
+So whenever you need to see, you know, data that you get back, when you make any kind of request,
+
+106
+00:06:44,960 --> 00:06:47,300
+you can check it out in the network tab.
+
+107
+00:06:48,080 --> 00:06:50,500
+So let's just attach to reattach this.
+
+108
+00:06:51,410 --> 00:06:52,900
+So that's pretty much it.
+
+109
+00:06:52,910 --> 00:06:59,000
+Our application is very small and simple, but it works and we are making a request to a third party
+
+110
+00:06:59,000 --> 00:06:59,680
+API.
+
+111
+00:07:00,440 --> 00:07:05,840
+Now, the next thing I want to show you is how to use a sink away, because personally, I don't like
+
+112
+00:07:05,840 --> 00:07:07,640
+this then syntax.
+
+113
+00:07:08,060 --> 00:07:14,510
+I think it looks kind of messy and we can make it look like it's synchronous when it's really asynchronous
+
+114
+00:07:14,930 --> 00:07:20,810
+because we have to use this because this could happen, you know, while something else is happening.
+
+115
+00:07:20,810 --> 00:07:25,760
+So the DOT then basically says when this is finished, then do something.
+
+116
+00:07:26,690 --> 00:07:29,420
+So I'm going to actually comment.
+
+117
+00:07:29,430 --> 00:07:34,150
+I'm going to copy this and comment this out because I want to just do it again with a sink away.
+
+118
+00:07:34,730 --> 00:07:42,170
+Now, here, where we make our request, I'm going to get rid of just everything here and the dot then.
+
+119
+00:07:42,680 --> 00:07:46,130
+And what we can do is set for this fetch right here.
+
+120
+00:07:46,460 --> 00:07:53,850
+I'll set a variable called Rez Response, whatever you want to call it, and set it equal to the fetch.
+
+121
+00:07:54,230 --> 00:08:00,040
+Now, remember, fetch is a sink, so we have to wait until it's done fetching.
+
+122
+00:08:00,050 --> 00:08:02,060
+So we use the await keyword.
+
+123
+00:08:02,360 --> 00:08:08,510
+Now, whenever you use a wait inside of a function, you have to label that function async.
+
+124
+00:08:09,020 --> 00:08:14,390
+OK, that's why it's called the sink away the function, you label a sink and then any promises that
+
+125
+00:08:14,390 --> 00:08:18,410
+you want to put into a variable, you're going to put this away before it.
+
+126
+00:08:19,430 --> 00:08:24,170
+Now, this is going to give us just like we have down here, it gives us the response.
+
+127
+00:08:24,170 --> 00:08:26,510
+But we need to call this resident, Jason.
+
+128
+00:08:26,810 --> 00:08:33,410
+So what we would do in this case, using the fetch API, we could set another variable called data and
+
+129
+00:08:33,410 --> 00:08:35,930
+we could set that to rest JSON.
+
+130
+00:08:35,960 --> 00:08:38,240
+However, this also returns a promise.
+
+131
+00:08:38,460 --> 00:08:43,270
+So we have to wait on that and then the data will be in that variable.
+
+132
+00:08:43,280 --> 00:08:51,440
+So again, we'll just go down here and I'm just going to copy this line and I'm going to set that joke
+
+133
+00:08:51,440 --> 00:08:55,430
+element in our HTML to data and then the joke value.
+
+134
+00:08:56,000 --> 00:08:56,360
+All right.
+
+135
+00:08:56,360 --> 00:08:57,410
+So I'm going to save that.
+
+136
+00:08:57,410 --> 00:08:59,900
+And you can see it works the same exact way.
+
+137
+00:09:00,440 --> 00:09:07,430
+I think that this looks better and cleaner because instead of the dot thens, we're just basically setting
+
+138
+00:09:07,430 --> 00:09:13,280
+what we get back from fetch into a regular variable and then whatever we get back from resident Jason
+
+139
+00:09:13,280 --> 00:09:16,130
+into a variable and then we can just continue on.
+
+140
+00:09:16,130 --> 00:09:19,400
+We don't have to have this inside of a dot then.
+
+141
+00:09:19,760 --> 00:09:21,080
+And it's all preference.
+
+142
+00:09:21,350 --> 00:09:23,870
+Like I said, a sink away is very, very popular.
+
+143
+00:09:23,960 --> 00:09:27,620
+You're probably going to see it more than not, at least in modern code.
+
+144
+00:09:27,620 --> 00:09:30,740
+So definitely something to to understand.
+
+145
+00:09:30,740 --> 00:09:31,940
+I mean, you don't have to use it.
+
+146
+00:09:31,940 --> 00:09:34,160
+If you prefer using DOT, then that's fine.
+
+147
+00:09:34,940 --> 00:09:47,720
+I'm just going to put a comment here and say we'll say using DOT then here we'll say using.
+
+148
+00:09:50,370 --> 00:09:51,380
+A weight.
+
+149
+00:09:51,810 --> 00:09:53,950
+OK, so both of them do the same exact thing.
+
+150
+00:09:53,970 --> 00:09:56,100
+I'll keep both of them here for reference.
+
+151
+00:09:56,850 --> 00:09:57,750
+All right, so that's it.
+
+152
+00:09:57,750 --> 00:09:59,040
+Pretty simple project.
+
+153
+00:09:59,040 --> 00:10:00,300
+And we'll use this.
+
+154
+00:10:00,310 --> 00:10:05,600
+This is kind of a foundation for any other projects that we use when we're making HTP requests.
+
+155
+00:10:06,450 --> 00:10:12,810
+Like I said, there's a library called Axios, which is is what I prefer to use because it's it's easier
+
+156
+00:10:12,810 --> 00:10:13,190
+to use.
+
+157
+00:10:13,200 --> 00:10:16,860
+You don't have to do the two promised thing, the resident, Jason.
+
+158
+00:10:17,130 --> 00:10:22,380
+Also, there's other things that you can do that are beyond the scope of projects in this course that
+
+159
+00:10:22,380 --> 00:10:22,920
+I prefer.
+
+160
+00:10:22,950 --> 00:10:27,740
+So we'll probably have a project using Axios later on, but that's it.
+
+161
+00:10:27,750 --> 00:10:29,280
+Let's go ahead and get into the next one.

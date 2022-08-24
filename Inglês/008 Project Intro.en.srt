@@ -1,0 +1,63 @@
+1
+00:00:00,210 --> 00:00:05,100
+All right, so in this project, we're going to build some progress steps and you might see these in
+
+2
+00:00:05,490 --> 00:00:12,720
+different kinds of websites with forms, you know, multi basically like multilevel forms, shopping
+
+3
+00:00:12,720 --> 00:00:17,730
+carts, things like that, just a progress bar that starts at one and just goes along here.
+
+4
+00:00:18,090 --> 00:00:22,530
+So we're not going to have any form or anything, but we'll have these buttons to control the steps.
+
+5
+00:00:22,530 --> 00:00:23,510
+So it starts at 1:00.
+
+6
+00:00:23,790 --> 00:00:25,170
+He's got this blue outline.
+
+7
+00:00:25,500 --> 00:00:28,210
+If I click next, then it goes to two.
+
+8
+00:00:28,230 --> 00:00:35,100
+So the line we get transition goes over to two to border lights up, click next again.
+
+9
+00:00:35,100 --> 00:00:39,510
+And notice at the beginning, previous is disabled, so there's no reason to click previous.
+
+10
+00:00:39,930 --> 00:00:41,100
+And then we can keep going.
+
+11
+00:00:41,110 --> 00:00:44,490
+And when we click, when we get to the last one, the next is disabled.
+
+12
+00:00:44,820 --> 00:00:46,740
+OK, so we can just go back and forth.
+
+13
+00:00:46,740 --> 00:00:51,990
+And if we're at the end disabled, if we're at the end here, then next is disabled.
+
+14
+00:00:52,260 --> 00:00:52,530
+All right.
+
+15
+00:00:52,530 --> 00:00:58,530
+So we'll start off with the HTML style, style it with CSFs and then we'll add the functionality with
+
+16
+00:00:58,530 --> 00:00:59,280
+JavaScript.

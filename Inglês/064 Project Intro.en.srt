@@ -1,0 +1,43 @@
+1
+00:00:00,270 --> 00:00:05,010
+So in this project, we're going to create a button ripple effect, basically will be able to have buttons
+
+2
+00:00:05,010 --> 00:00:07,710
+and just give it a specific class of ripple.
+
+3
+00:00:07,720 --> 00:00:12,150
+And when we do that, if we click on those buttons, we'll get this effect.
+
+4
+00:00:12,150 --> 00:00:14,190
+And it's not just a ripple effect in the center.
+
+5
+00:00:14,190 --> 00:00:16,080
+It's wherever we click on the button.
+
+6
+00:00:16,470 --> 00:00:20,490
+And we're going to obviously add the animation, the styling with access.
+
+7
+00:00:20,700 --> 00:00:26,340
+But we need JavaScript to be able to pinpoint where exactly we're clicking so that we can change some
+
+8
+00:00:26,340 --> 00:00:31,620
+of the CSFs values of the positioning to give it that effect in that exact position.
+
+9
+00:00:31,860 --> 00:00:32,250
+All right.
+
+10
+00:00:32,260 --> 00:00:33,200
+So that's what we'll be doing.
+
+11
+00:00:33,210 --> 00:00:34,700
+Let's go ahead and get started.

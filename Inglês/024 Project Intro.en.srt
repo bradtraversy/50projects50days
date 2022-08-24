@@ -1,0 +1,43 @@
+1
+00:00:00,210 --> 00:00:01,680
+All right, welcome to your next project.
+
+2
+00:00:01,710 --> 00:00:09,130
+So in this one, we're going to build a simple login form here with a wave effect on the labels.
+
+3
+00:00:09,330 --> 00:00:15,000
+So if I go ahead and I click in here in the input, you can see the label will then wave up.
+
+4
+00:00:15,510 --> 00:00:19,720
+OK, so we have that cool little animation when we click in here and when we click out.
+
+5
+00:00:20,220 --> 00:00:25,470
+So basically the way we're going to do this is wrap a span around each one of these using JavaScript
+
+6
+00:00:25,770 --> 00:00:30,630
+and add a transition so that the label moves up when we focus on the input.
+
+7
+00:00:30,900 --> 00:00:34,020
+But we're also going to add a dynamic transition delay.
+
+8
+00:00:34,020 --> 00:00:38,790
+So it gives it that wave effect so each each letter goes up at a different time.
+
+9
+00:00:39,300 --> 00:00:39,690
+All right.
+
+10
+00:00:39,700 --> 00:00:40,880
+So that's what we'll be doing.
+
+11
+00:00:40,890 --> 00:00:42,360
+Let's go ahead and get into it.

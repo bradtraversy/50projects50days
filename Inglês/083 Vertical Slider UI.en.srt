@@ -1,0 +1,755 @@
+1
+00:00:00,390 --> 00:00:03,040
+We're going to get started on our vertical slide.
+
+2
+00:00:03,120 --> 00:00:10,080
+And I have my browser window quite wide because this isn't really responsive just because of the orientation
+
+3
+00:00:10,080 --> 00:00:11,850
+of the how the slider is.
+
+4
+00:00:12,090 --> 00:00:15,080
+So it's not going to look good on like a smartphone or anything like that.
+
+5
+00:00:15,090 --> 00:00:16,880
+That's not really what this is geared for.
+
+6
+00:00:17,400 --> 00:00:23,550
+So I'm going to just keep this a little wider and just click back and forth for now in our HTML, we
+
+7
+00:00:23,550 --> 00:00:29,520
+just have a product project starter and I have a link to the font awesome CDN because we will be using
+
+8
+00:00:29,520 --> 00:00:30,830
+icons for the buttons.
+
+9
+00:00:31,380 --> 00:00:40,830
+So let's start off here and change this to vertical slider and then we're going to have a container
+
+10
+00:00:40,830 --> 00:00:42,320
+that wraps around everything.
+
+11
+00:00:42,330 --> 00:00:51,000
+So let's give this div a class of slider dash container and there's basically three three separate parts.
+
+12
+00:00:51,030 --> 00:00:54,570
+First we have the left dash slide.
+
+13
+00:00:55,080 --> 00:00:58,350
+So this is going to be the text area.
+
+14
+00:00:58,350 --> 00:01:06,030
+So we'll have an H1 and a paragraph and then the right slide and I'll fill this fill this in in a little
+
+15
+00:01:06,030 --> 00:01:06,300
+bit.
+
+16
+00:01:06,690 --> 00:01:10,170
+But the right slide is going to be the images.
+
+17
+00:01:10,170 --> 00:01:10,430
+Right?
+
+18
+00:01:10,440 --> 00:01:13,080
+So they're just basically it's going to be digits background images.
+
+19
+00:01:13,440 --> 00:01:15,570
+And then underneath that, we want our buttons.
+
+20
+00:01:15,780 --> 00:01:19,380
+So let's say action dash buttons.
+
+21
+00:01:20,550 --> 00:01:29,400
+And our first button here is going to have a class of down dash button and I'm going to use font awesome
+
+22
+00:01:29,400 --> 00:01:29,880
+icon.
+
+23
+00:01:29,880 --> 00:01:35,520
+So Fayaz And we want a dash arrow dash down.
+
+24
+00:01:36,540 --> 00:01:39,210
+OK, so go ahead and save that weight.
+
+25
+00:01:39,210 --> 00:01:41,610
+Is that right now Faez space.
+
+26
+00:01:42,600 --> 00:01:48,090
+Narrowed down and then for the up arrow, we'll just take this button, copy it down, and we'll change
+
+27
+00:01:48,090 --> 00:01:53,000
+this to up and change this icon to up.
+
+28
+00:01:53,820 --> 00:01:55,130
+And now we have our buttons.
+
+29
+00:01:55,650 --> 00:02:04,170
+So for the left side, let's go into that div and we're just going to have a bunch of divs with in each
+
+30
+00:02:04,170 --> 00:02:04,530
+one.
+
+31
+00:02:05,160 --> 00:02:13,830
+So for this one will say nature flower and a paragraph will say all in pink.
+
+32
+00:02:14,490 --> 00:02:19,350
+And then each div is going to have an inline style with a background color.
+
+33
+00:02:19,500 --> 00:02:25,050
+So that way when you want to add new slides or new divs, you just throw the background color in here
+
+34
+00:02:25,050 --> 00:02:27,380
+rather than creating a whole separate class for it.
+
+35
+00:02:28,020 --> 00:02:34,410
+So let's say background color and we'll make it F.D. three five five five.
+
+36
+00:02:35,610 --> 00:02:36,360
+So I save it.
+
+37
+00:02:36,390 --> 00:02:38,010
+We're going to see that now.
+
+38
+00:02:38,010 --> 00:02:41,610
+We're going to have three more of these, which I'm just going to paste in because it's the same thing.
+
+39
+00:02:41,610 --> 00:02:43,430
+It's just different colors and content.
+
+40
+00:02:44,040 --> 00:02:51,420
+So if I save that, you can see what we have here now for the right slide is going to be just a bunch
+
+41
+00:02:51,420 --> 00:02:52,860
+of background images.
+
+42
+00:02:52,860 --> 00:02:54,600
+So I'm going to grab that.
+
+43
+00:02:55,470 --> 00:03:00,660
+And I'm just using links to splash images, just to stock images.
+
+44
+00:03:00,960 --> 00:03:05,400
+So you can see we have a div with a background image, you URL and we have for these.
+
+45
+00:03:05,670 --> 00:03:10,500
+Now, if I save, we're not going to see these right now because we don't have any content within the
+
+46
+00:03:10,500 --> 00:03:14,070
+div and there's no height or with applied to to the element.
+
+47
+00:03:14,520 --> 00:03:16,380
+So we're not going to see the images just yet.
+
+48
+00:03:16,890 --> 00:03:22,200
+Now one thing I want to mention is because of the way the slides, one side goes up, one side goes
+
+49
+00:03:22,200 --> 00:03:29,850
+down, we have this first div, this nature flower is actually going to go with the last image div here.
+
+50
+00:03:30,180 --> 00:03:30,540
+All right.
+
+51
+00:03:30,550 --> 00:03:36,930
+So if I look at this last image, I'm just going to copy that you URL and paste that and you can see
+
+52
+00:03:36,930 --> 00:03:38,160
+that's the pink flower.
+
+53
+00:03:38,460 --> 00:03:44,700
+So the way you would do this, if you want to add more, is if you add one on to the end here, you're
+
+54
+00:03:44,700 --> 00:03:46,830
+going to add one on to the beginning here.
+
+55
+00:03:47,290 --> 00:03:48,180
+OK, see the beat.
+
+56
+00:03:48,490 --> 00:03:50,610
+The last one here is Flying Eagle.
+
+57
+00:03:50,880 --> 00:03:55,680
+And if we take a look at this, we get the Flying Eagle.
+
+58
+00:03:55,680 --> 00:03:58,120
+So that's the order of the elements.
+
+59
+00:03:58,650 --> 00:04:01,920
+So now let's jump into our success and let's get started here.
+
+60
+00:04:02,100 --> 00:04:05,090
+So as far as the font goes, I'm going to use open sans.
+
+61
+00:04:05,490 --> 00:04:18,480
+So let's say family equals open plus sans and we're going to change this to open Sans, OK, and I can
+
+62
+00:04:18,480 --> 00:04:24,270
+make this smaller here, so make that smaller and make this a little smaller for now.
+
+63
+00:04:26,160 --> 00:04:30,050
+Now the body we actually don't need all this stuff like display flex.
+
+64
+00:04:30,060 --> 00:04:35,280
+I just want the, the font family and I want the height to be 100 viewport heights.
+
+65
+00:04:35,940 --> 00:04:37,500
+So it's going to go like that right now.
+
+66
+00:04:37,500 --> 00:04:40,530
+And I want to just set a reset on the margin and padding.
+
+67
+00:04:40,530 --> 00:04:44,280
+So for the universal selector will set margin padding to zero.
+
+68
+00:04:44,580 --> 00:04:47,220
+That's going to remove the margin and padding from everything.
+
+69
+00:04:49,500 --> 00:04:56,160
+Now, as far as the slider container goes, which is wrapped around everything.
+
+70
+00:04:57,600 --> 00:05:02,850
+So the slider container, I'm going to set the position to relative, because we're going to be setting
+
+71
+00:05:02,850 --> 00:05:09,270
+everything inside of it as absolute within that container and then just set in the overflow to hidden
+
+72
+00:05:09,870 --> 00:05:13,920
+and set the width to 100 viewport widths.
+
+73
+00:05:13,950 --> 00:05:17,790
+So VW, which will take the hole with and same with the height.
+
+74
+00:05:17,820 --> 00:05:19,220
+This is going to be vague.
+
+75
+00:05:19,230 --> 00:05:20,250
+Report heights.
+
+76
+00:05:21,100 --> 00:05:21,480
+All right.
+
+77
+00:05:21,480 --> 00:05:24,750
+And then we'll go ahead and start on the left slide.
+
+78
+00:05:28,360 --> 00:05:36,250
+So for the left side, I want to set the height to 100 percent and let's set the clock.
+
+79
+00:05:36,400 --> 00:05:38,340
+Let's do the width first.
+
+80
+00:05:38,530 --> 00:05:43,240
+So the width is going to be 35 percent of the container.
+
+81
+00:05:44,370 --> 00:05:50,130
+OK, the image part is going to be a little bigger, it's the image power will be 65 percent and we're
+
+82
+00:05:50,130 --> 00:05:59,220
+going to position this absolute and from the top zero, from the left zero.
+
+83
+00:05:59,610 --> 00:06:05,570
+And then what we want to do is target the immediate division side, which are each of these here.
+
+84
+00:06:05,970 --> 00:06:10,740
+So let's say left slide, immediate div.
+
+85
+00:06:12,250 --> 00:06:19,150
+And I want to set for that the height, for I want the height to be the entire thing, so one of these
+
+86
+00:06:19,150 --> 00:06:20,740
+should take up the entire height.
+
+87
+00:06:21,190 --> 00:06:27,010
+So there will be 100 to 100 percent and then width will be 100 percent.
+
+88
+00:06:27,010 --> 00:06:30,360
+But it's 100 percent of its container, which is 35 percent.
+
+89
+00:06:30,700 --> 00:06:37,260
+So if I save that now, we can see this nature flower and it takes up the entire height here.
+
+90
+00:06:37,780 --> 00:06:41,900
+And when we add the slide functionality, it'll show the next one.
+
+91
+00:06:43,090 --> 00:06:44,890
+Now, we want to style this a little better.
+
+92
+00:06:44,900 --> 00:06:50,480
+So let's display flex so each div will be display flex.
+
+93
+00:06:50,500 --> 00:06:51,900
+Now it's in a row right now.
+
+94
+00:06:51,910 --> 00:06:54,580
+That's why it's it's it's horizontal.
+
+95
+00:06:54,970 --> 00:07:02,710
+So we want to change the flex direction to a column and then we can align both horizontally and vertically.
+
+96
+00:07:02,710 --> 00:07:11,440
+So align center line item center and then let's justify content center and that'll align it that way.
+
+97
+00:07:12,640 --> 00:07:15,310
+And then let's also make the color white.
+
+98
+00:07:17,820 --> 00:07:27,760
+OK, and then let's grab the H1, so left slide H1 and let's set the font size to be a little bigger.
+
+99
+00:07:27,780 --> 00:07:32,970
+We're going to set that to 40 pixels and we'll add a little bit of margin bottom because remember,
+
+100
+00:07:32,970 --> 00:07:38,250
+we took the margin off of everything, 10 pixels to separate it from the paragraph part.
+
+101
+00:07:38,580 --> 00:07:40,410
+And then I just want to move it up a little bit.
+
+102
+00:07:40,410 --> 00:07:45,170
+So margin top offset a negative margin, 30 pixels, which will pull it up a little bit.
+
+103
+00:07:47,130 --> 00:07:56,640
+All right, so that's the left slide now, the right slide, right slide and the set, the height to
+
+104
+00:07:56,640 --> 00:08:08,640
+100 percent on that position, absolute from the top zero and then from the left, I'm going to go thirty
+
+105
+00:08:08,640 --> 00:08:11,990
+five percent because this with this thirty five percent.
+
+106
+00:08:12,210 --> 00:08:15,840
+So for the right slide, I'm positioning an absolute within the container.
+
+107
+00:08:16,050 --> 00:08:20,340
+So I want to start it here, which would be 35 percent over from the left.
+
+108
+00:08:21,390 --> 00:08:21,780
+All right.
+
+109
+00:08:21,790 --> 00:08:25,320
+And then we want to set the width of it to sixty five percent.
+
+110
+00:08:27,760 --> 00:08:29,020
+OK, and then.
+
+111
+00:08:30,750 --> 00:08:39,630
+To actually show the image, let's target the device, so Rightside directive and I just want to set
+
+112
+00:08:39,630 --> 00:08:45,270
+some background properties like background repeat so that no repeat, we already have the background
+
+113
+00:08:45,270 --> 00:08:47,220
+image set in line.
+
+114
+00:08:47,310 --> 00:08:47,520
+Right.
+
+115
+00:08:47,610 --> 00:08:48,980
+That's already set right here.
+
+116
+00:08:49,260 --> 00:08:52,650
+So I just want to add some other background properties like the size.
+
+117
+00:08:53,100 --> 00:08:54,420
+So what's the background?
+
+118
+00:08:54,420 --> 00:08:56,040
+Size is going to be cover.
+
+119
+00:08:56,460 --> 00:09:04,310
+I want to show the whole image and then background position is going to be centered on the X and Y axis.
+
+120
+00:09:04,770 --> 00:09:09,840
+We still can't see it because we need to apply a height to it.
+
+121
+00:09:10,050 --> 00:09:14,520
+So height and width are going to both be 100 percent.
+
+122
+00:09:14,550 --> 00:09:16,200
+So it takes up the whole part there.
+
+123
+00:09:16,410 --> 00:09:17,910
+And now we can see the image.
+
+124
+00:09:17,940 --> 00:09:22,710
+Now, this isn't the image that we actually want to show with this nature flower.
+
+125
+00:09:22,710 --> 00:09:29,310
+But like I said, since the way that we're sliding them in, when we get to our JavaScript, we're going
+
+126
+00:09:29,310 --> 00:09:33,960
+to set it so that this is the right text or the right left slide for this image.
+
+127
+00:09:34,230 --> 00:09:37,290
+But for now, let's go ahead and style our buttons.
+
+128
+00:09:37,290 --> 00:09:40,680
+So we're going to have some general button styles.
+
+129
+00:09:40,680 --> 00:09:50,040
+But before we do that, I just want to target the slider container action, what I call it action,
+
+130
+00:09:50,040 --> 00:09:52,700
+dash, Fortin's and Button.
+
+131
+00:09:54,780 --> 00:09:58,290
+And I mean, we could put the general styling in here as well.
+
+132
+00:09:58,290 --> 00:10:00,830
+But just in case you wanted to add other buttons somewhere.
+
+133
+00:10:01,140 --> 00:10:04,550
+So this is going to be positioned absolutes.
+
+134
+00:10:05,850 --> 00:10:11,670
+And as soon as I do that, you can see up here now there's there's two buttons here, but they're both
+
+135
+00:10:11,670 --> 00:10:13,410
+in the same exact spot right now.
+
+136
+00:10:14,460 --> 00:10:19,020
+I'm going to move both to a position of left 35 percent.
+
+137
+00:10:19,500 --> 00:10:24,210
+OK, so it's going to push them over and then let's go from the top will go down about halfway, we'll
+
+138
+00:10:24,210 --> 00:10:25,620
+say 50 percent down.
+
+139
+00:10:25,890 --> 00:10:30,300
+So now both buttons are right here and we want to make sure they're always on top.
+
+140
+00:10:30,300 --> 00:10:33,570
+So let's do a Z index of one.
+
+141
+00:10:36,000 --> 00:10:36,420
+All right.
+
+142
+00:10:36,430 --> 00:10:39,780
+And then for the down button.
+
+143
+00:10:39,990 --> 00:10:48,030
+So let's grab this here and say class down dash button.
+
+144
+00:10:51,390 --> 00:11:01,020
+I'm going to set a border, actually, let's let's position it first so we can use, transform and then
+
+145
+00:11:01,020 --> 00:11:07,210
+translate on the x axis, because what I want to do is move this button over this way to the left.
+
+146
+00:11:07,650 --> 00:11:13,220
+So if we put a positive number in here, I'm going to just do 100 percent of the element.
+
+147
+00:11:13,740 --> 00:11:16,640
+It's going to move it over to the left, which I don't want.
+
+148
+00:11:16,650 --> 00:11:17,790
+I want it over to the right.
+
+149
+00:11:17,800 --> 00:11:19,200
+So that's going to be I'm sorry.
+
+150
+00:11:19,500 --> 00:11:20,550
+That's going to move it to the right.
+
+151
+00:11:20,550 --> 00:11:21,610
+I want it to the left.
+
+152
+00:11:21,630 --> 00:11:23,060
+So that's going to be negative.
+
+153
+00:11:23,460 --> 00:11:26,070
+So now it's on either side of this line right here.
+
+154
+00:11:26,680 --> 00:11:27,120
+All right.
+
+155
+00:11:27,130 --> 00:11:30,930
+And then as far as the borders go.
+
+156
+00:11:32,460 --> 00:11:39,570
+Actually, you know what, we'll do that in a second, let's first do the up button, so this one is
+
+157
+00:11:39,570 --> 00:11:44,060
+going to be a button and we want to actually move this one down.
+
+158
+00:11:44,070 --> 00:11:45,420
+So we're going to do translate.
+
+159
+00:11:45,420 --> 00:11:46,050
+Why?
+
+160
+00:11:46,620 --> 00:11:47,040
+I'm sorry.
+
+161
+00:11:47,040 --> 00:11:47,700
+Now move it down.
+
+162
+00:11:47,700 --> 00:11:48,420
+Move it up.
+
+163
+00:11:48,420 --> 00:11:53,280
+This one here, I want to move up one hundred percent, so we'll do negative one hundred percent.
+
+164
+00:11:53,290 --> 00:11:58,460
+So now you can see the positioning of these arrows now for the styling.
+
+165
+00:11:59,430 --> 00:12:00,990
+So the general button styling.
+
+166
+00:12:00,990 --> 00:12:11,640
+Let's go up here to button and let's set a background color of white and let's get rid of the border.
+
+167
+00:12:11,640 --> 00:12:20,880
+So border none and let's make the color a gray will do triple J and let's make the cursor a pointer.
+
+168
+00:12:21,360 --> 00:12:23,700
+Let's make the font size a little bigger.
+
+169
+00:12:23,700 --> 00:12:30,870
+We'll do sixteen pixels, let's do padding fifteen pixels all the way around.
+
+170
+00:12:31,530 --> 00:12:41,790
+OK, so you can see it looks a little nicer and on hover it's a button however said the color to two
+
+171
+00:12:41,790 --> 00:12:46,020
+to two just a little darker and we don't want any outline.
+
+172
+00:12:46,020 --> 00:12:53,660
+So any button in the focus state we want to set the outline to none.
+
+173
+00:12:53,790 --> 00:12:54,270
+All right.
+
+174
+00:12:54,510 --> 00:12:56,400
+Now if we hover over, it gets darker.
+
+175
+00:12:56,650 --> 00:13:02,910
+I do want to have some rounded corners on the bottom for this one and for the top for this one.
+
+176
+00:13:03,240 --> 00:13:09,690
+So down where we have these down and up buttons, let's just add on the down button.
+
+177
+00:13:09,690 --> 00:13:10,740
+We'll say border.
+
+178
+00:13:12,360 --> 00:13:13,500
+We're going to say border.
+
+179
+00:13:15,690 --> 00:13:16,860
+This is the down button.
+
+180
+00:13:16,860 --> 00:13:27,030
+So let's do top top left radius and set that to five pixels so you can see that this has the rounded
+
+181
+00:13:27,030 --> 00:13:27,960
+corners here.
+
+182
+00:13:29,400 --> 00:13:34,620
+And then we're going to do bottom left radius.
+
+183
+00:13:36,420 --> 00:13:39,030
+So now this side is rounded.
+
+184
+00:13:39,030 --> 00:13:42,210
+I want to do the same on this one, but the opposite side.
+
+185
+00:13:42,600 --> 00:13:43,890
+So I'll just copy that.
+
+186
+00:13:43,890 --> 00:13:48,960
+And instead of left, let's take this and this.
+
+187
+00:13:49,620 --> 00:13:50,880
+Change that to right.
+
+188
+00:13:51,760 --> 00:13:58,090
+I said, now, those buttons look pretty good, OK, and it's obviously this doesn't do anything yet
+
+189
+00:13:58,090 --> 00:14:02,470
+because we need to add our JavaScript, so that's what we're going to do in the next video.

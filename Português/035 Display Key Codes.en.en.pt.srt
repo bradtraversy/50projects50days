@@ -1,0 +1,311 @@
+﻿1
+00:00:00,210 --> 00:00:05,430
+OK, agora queremos adicionar os scripts Java para este projeto, e antes de fazermos qualquer coisa, eu só quero
+
+2
+00:00:05,430 --> 00:00:13,240
+para adicionar o ouvinte de eventos e mostrar como obtemos essas propriedades reais, como código e código Qiqi.
+
+3
+00:00:13,620 --> 00:00:20,910
+Então vamos pegar a janela, que é o objeto de nível superior no navegador, e vamos adicionar
+
+4
+00:00:20,910 --> 00:00:22,680
+um ouvinte de eventos para isso.
+
+5
+00:00:23,520 --> 00:00:28,350
+E o evento que queremos ouvir é uma tecla pressionada, que é um evento de teclado.
+
+6
+00:00:28,770 --> 00:00:34,620
+E passamos uma função como um segundo segundo argumento aqui.
+
+7
+00:00:34,620 --> 00:00:38,640
+E então nesta função, podemos passar um objeto de evento.
+
+8
+00:00:38,640 --> 00:00:42,580
+E então eu só quero logar no console esse evento, objeto para mostrar a você o que ele nos dá.
+
+9
+00:00:42,990 --> 00:00:45,450
+Então, um dos meus consoles é só recarregar aqui.
+
+10
+00:00:45,840 --> 00:00:51,330
+E se eu acertar a letra A ou A, você vai ver que eu recebo um monte de propriedades.
+
+11
+00:00:51,690 --> 00:01:00,090
+E o que eu quero mostrar a você é, por um lado, o keek é sinto muito, o código que é Keet.
+
+12
+00:01:00,510 --> 00:01:06,450
+Então esse valor que a gente quer colocar aqui e aí a gente também tem que descer um pouco mais aqui.
+
+13
+00:01:06,450 --> 00:01:13,050
+Temos a chave real que vai entrar lá e também devemos ter o código da chave
+
+14
+00:01:14,040 --> 00:01:15,750
+ou são o código.
+
+15
+00:01:17,040 --> 00:01:19,800
+Nenhum código é Keet, enquanto o código-chave
+
+16
+00:01:23,070 --> 00:01:24,330
+aqui está logo abaixo.
+
+17
+00:01:24,570 --> 00:01:26,500
+Portanto, o código da chave é 65.
+
+18
+00:01:26,880 --> 00:01:32,940
+Agora, se eu apertar outra tecla como Q que vai me dar outro oops, eu vou subir aqui e apertar
+
+19
+00:01:32,940 --> 00:01:33,070
+isto.
+
+20
+00:01:33,510 --> 00:01:37,290
+Então aqui você pode ver que eu recebo a chave de Q O código é a chave.
+
+21
+00:01:37,290 --> 00:01:42,000
+Q E o código da chave é 81.
+
+22
+00:01:42,250 --> 00:01:46,140
+Então, queremos que essas coisas sejam colocadas nessas caixas, o que será bem fácil.
+
+23
+00:01:47,100 --> 00:01:49,290
+E então, na verdade, mais uma coisa que eu quero te mostrar.
+
+24
+00:01:49,740 --> 00:02:00,380
+Se eu apertar espaço, a chave real é o código é espaço, mas a chave real é apenas uma string vazia.
+
+25
+00:02:00,930 --> 00:02:06,510
+Então, eu só quero fazer uma verificação simples para ver se a chave é igual a uma string vazia.
+
+26
+00:02:06,510 --> 00:02:11,310
+Se for, então vamos em frente e apenas colocamos a palavra espaço lá, porque eu não quero apenas
+
+27
+00:02:11,310 --> 00:02:11,990
+estar em branco.
+
+28
+00:02:12,510 --> 00:02:23,190
+Então o que vamos fazer é, em primeiro lugar, trazer insert para que o documento obtenha o elemento por D e queremos trazer
+
+29
+00:02:23,190 --> 00:02:33,270
+na ideia de inserir e vamos nos livrar disso e vamos pegar inserir e dizer em nosso HTML porque
+
+30
+00:02:33,300 --> 00:02:39,930
+é assim que podemos inserir HTML e garantir que você use táticas de retorno aqui para que possamos colocar dinâmicas
+
+31
+00:02:39,930 --> 00:02:40,870
+valores aqui.
+
+32
+00:02:41,250 --> 00:02:48,090
+Agora vou copiar do HTML indexado as três divs com a classe de chave, não a última com
+
+33
+00:02:48,090 --> 00:02:49,950
+só o texto, mas esses três aqui.
+
+34
+00:02:49,950 --> 00:02:55,350
+Vou cortá-los, não copiá-los, porque não queremos aqueles lá inicialmente e salvar e
+
+35
+00:02:55,350 --> 00:02:57,390
+agora você só verá esta caixa.
+
+36
+00:02:57,540 --> 00:03:04,770
+Então, neste, em nosso valor HTML, neste literal de modelo, vou colar o pecado, mas quero
+
+37
+00:03:04,770 --> 00:03:07,740
+altere estes.
+
+38
+00:03:07,740 --> 00:03:10,320
+Estes são basicamente apenas codificados aqui.
+
+39
+00:03:10,320 --> 00:03:16,040
+Eu quero mudar isso para a chave que podemos obter da tecla E.
+
+40
+00:03:16,500 --> 00:03:19,800
+Agora lembre-se, isso será apenas uma string vazia se for espaço.
+
+41
+00:03:19,810 --> 00:03:29,100
+Então, o que vou fazer é fazer uma verificação rápida e dizer se uma chave é igual a apenas uma string vazia, então vamos
+
+42
+00:03:29,100 --> 00:03:34,980
+apague o espaço ou então vamos apagar qualquer que seja a chave.
+
+43
+00:03:34,980 --> 00:03:36,060
+Então é fundamental.
+
+44
+00:03:36,540 --> 00:03:39,630
+E este é apenas um ternário, é apenas um condicional abreviado.
+
+45
+00:03:40,080 --> 00:03:45,540
+Tudo o que você está testando vai aqui, que no nosso caso, testando para ver se ele é igual a uma string vazia.
+
+46
+00:03:46,020 --> 00:03:54,810
+Isso é basicamente, você sabe, então se isso coloca espaço para fora ou então isso representa outra coisa,
+
+47
+00:03:54,810 --> 00:03:56,760
+então qualquer que seja a chave.
+
+48
+00:03:57,240 --> 00:03:59,970
+OK, e aqui embaixo temos nosso código-chave.
+
+49
+00:03:59,980 --> 00:04:06,570
+Então, digamos que essa sintaxe seja apenas, você sabe, um modelo literal de sinal de dinheiro e chaves.
+
+50
+00:04:06,570 --> 00:04:11,490
+Contanto que você esteja em back ticks e não em aspas, você pode usar a sintaxe.
+
+51
+00:04:11,790 --> 00:04:18,180
+Então, queremos pegar o objeto ou o objeto de evento e digamos código de chave de ponto.
+
+52
+00:04:19,180 --> 00:04:25,530
+OK, agora há uma linha através dele e o código VTS porque está obsoleto, mas ainda aparecerá.
+
+53
+00:04:25,530 --> 00:04:26,490
+Ainda vai funcionar.
+
+54
+00:04:26,580 --> 00:04:30,180
+Se você estiver assistindo isso no futuro e não funcionar, você pode se livrar desse bloco
+
+55
+00:04:30,180 --> 00:04:32,030
+se quiser e apenas mostre o código.
+
+56
+00:04:32,640 --> 00:04:44,160
+Então, para este último aqui, digamos e dot code na verdade, já que colocamos uma ventilação aqui, vamos apenas mudar
+
+57
+00:04:44,160 --> 00:04:46,410
+porque isso pode ser absolutamente qualquer coisa que você quiser.
+
+58
+00:04:46,410 --> 00:04:47,820
+Vamos mudar isso para eventos.
+
+59
+00:04:48,390 --> 00:04:54,990
+E dessa forma, não sei, só porque usamos event não importa muito.
+
+60
+00:04:54,990 --> 00:04:59,220
+Mas tão chave de evento.
+
+61
+00:05:00,810 --> 00:05:07,430
+E quando você vê o código de outras pessoas, você pode ver que você pode ver o evento, você pode ver o Eevee, isso é
+
+62
+00:05:07,430 --> 00:05:08,480
+também bastante comum.
+
+63
+00:05:09,140 --> 00:05:10,550
+Então agora eu vou salvar isso.
+
+64
+00:05:11,720 --> 00:05:16,280
+E se eu for aqui e apertar enter, você pode ver que a tecla que eu apertei é enter.
+
+65
+00:05:16,280 --> 00:05:25,910
+O código da chave é 13 e o código é digitado por acerto a vamos obter 65 K se eu acertar três três e cinquenta
+
+66
+00:05:25,910 --> 00:05:27,410
+um dígito três.
+
+67
+00:05:27,960 --> 00:05:29,180
+Certo, então está funcionando.
+
+68
+00:05:29,180 --> 00:05:33,440
+Se tivéssemos espaço, veríamos espaço aqui por causa dessa verificação que ouvimos.
+
+69
+00:05:33,440 --> 00:05:35,600
+Caso contrário, seria apenas uma string vazia.
+
+70
+00:05:35,600 --> 00:05:37,640
+Então seria apenas vazio e não queremos isso.
+
+71
+00:05:38,450 --> 00:05:45,410
+OK, há um deslocamento capsular para trás, então qualquer tecla que você pressionar, fornecerá o código da tecla e
+
+72
+00:05:45,410 --> 00:05:45,860
+o código.
+
+73
+00:05:46,250 --> 00:05:46,580
+Tudo bem.
+
+74
+00:05:46,580 --> 00:05:51,170
+Então eu sei que este é um projeto muito simples, mas é bom apenas começar.
+
+75
+00:05:51,170 --> 00:05:56,300
+E também pode ser útil se você precisar do código para algo, se estiver construindo um jogo ou qualquer outra coisa
+
+76
+00:05:56,300 --> 00:05:56,840
+pode ser.
+
+77
+00:05:57,260 --> 00:05:57,590
+Tudo bem.
+
+78
+00:05:57,590 --> 00:06:00,140
+Obrigado por assistir e vejo vocês no próximo projeto.

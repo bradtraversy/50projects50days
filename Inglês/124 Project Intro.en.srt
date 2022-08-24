@@ -1,0 +1,43 @@
+1
+00:00:00,210 --> 00:00:04,800
+OK, so in this video, in the audience, I should say, this project, we're going to be creating this
+
+2
+00:00:05,160 --> 00:00:11,490
+mobile looking UI here with an image for the content and then some tabs down here.
+
+3
+00:00:11,500 --> 00:00:16,410
+We have homework blogging about us, and it's just going to show a different image, depending on which
+
+4
+00:00:16,410 --> 00:00:17,250
+tab we click.
+
+5
+00:00:17,550 --> 00:00:19,940
+If I click this one, you'll see the image changes.
+
+6
+00:00:20,190 --> 00:00:26,430
+So basically we're going to have a specific class of show on the content and a specific class of active
+
+7
+00:00:26,430 --> 00:00:27,060
+down here.
+
+8
+00:00:27,060 --> 00:00:30,420
+You can see the active one will be highlighted in purple.
+
+9
+00:00:30,990 --> 00:00:36,060
+So basically, we need to loop through these list items here, this menu, and add an event listener
+
+10
+00:00:36,060 --> 00:00:43,200
+on to each one so that we can remove, add and remove certain classes onto the content here, as well
+
+11
+00:00:43,200 --> 00:00:44,760
+as the items themselves.

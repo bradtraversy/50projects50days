@@ -1,0 +1,83 @@
+﻿1
+00:00:00,120 --> 00:00:05,040
+Então, neste projeto, vamos criar isso, vamos ter essa imagem aqui e você pode ver
+
+2
+00:00:05,040 --> 00:00:09,860
+diz clique duas vezes na imagem para colocar o coração e diz que você gostou zero vezes.
+
+3
+00:00:10,050 --> 00:00:15,100
+Então, quando clicarmos em qualquer lugar nesta imagem, se eu clicar duas vezes, você verá um coração aparecer.
+
+4
+00:00:15,120 --> 00:00:19,980
+Vai ter uma pequena animação de CSFs Growe e vai aparecer onde quer que cliquemos.
+
+5
+00:00:20,520 --> 00:00:22,950
+Não só isso, vai mostrar quantas vezes clicamos.
+
+6
+00:00:22,950 --> 00:00:24,440
+Você pode ver que clicou quatro vezes.
+
+7
+00:00:24,750 --> 00:00:28,350
+Portanto, o HTML e o acesso para isso são muito, muito fáceis.
+
+8
+00:00:28,560 --> 00:00:35,340
+Quando entrarmos no JavaScript, vamos definir um evento de duplo clique e basicamente inserir um coração
+
+9
+00:00:35,340 --> 00:00:37,710
+na posição exata em que clicamos.
+
+10
+00:00:37,710 --> 00:00:43,230
+Então, vamos trabalhar com, você sabe, o parâmetro do evento que temos é o objeto de evento.
+
+11
+00:00:43,230 --> 00:00:51,390
+Temos os valores do cliente X e do cliente Y para o deslocamento do destino do evento na parte superior esquerda do deslocamento para que possamos dizer
+
+12
+00:00:51,390 --> 00:00:56,820
+exatamente de onde vem esse elemento do topo e da esquerda, porque precisamos calcular, calcular
+
+13
+00:00:56,820 --> 00:01:00,050
+isso para encontrar a posição exata na imagem.
+
+14
+00:01:00,540 --> 00:01:05,220
+E outra coisa que faremos é em vez de usar apenas DB, clicarei no evento de duplo clique.
+
+15
+00:01:05,460 --> 00:01:11,850
+Vamos usar apenas um evento de clique único e basicamente criar nosso próprio evento de clique duplo baseado em
+
+16
+00:01:11,850 --> 00:01:14,550
+o tempo entre o espaço, entre os cliques.
+
+17
+00:01:14,910 --> 00:01:20,160
+Então, se eu clicar uma vez e esperar, você sabe, uma quantidade razoável de tempo novamente, isso não vai
+
+18
+00:01:20,160 --> 00:01:20,990
+para ser um clique duplo.
+
+19
+00:01:21,000 --> 00:01:26,340
+Então vamos testar o tempo entre cliques e basicamente criar nosso próprio evento de duplo clique.
+
+20
+00:01:26,640 --> 00:01:27,030
+Tudo bem.
+
+21
+00:01:27,030 --> 00:01:27,870
+Então vamos entrar nisso.

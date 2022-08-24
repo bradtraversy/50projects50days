@@ -1,0 +1,667 @@
+﻿1
+00:00:00,150 --> 00:00:04,770
+OK, então vamos começar nosso projeto FAA cue, então eu tenho meu projeto inicial, mas
+
+2
+00:00:04,770 --> 00:00:07,360
+Eu também tenho um link para o CD da fonte incrível.
+
+3
+00:00:07,380 --> 00:00:15,230
+E assim você pode, você sabe, pegar isso do repositório ou do font, awesome dot com ou do CBSNews.com.
+
+4
+00:00:15,660 --> 00:00:25,020
+E então para o título aqui, digamos F a Q e então no corpo nós vamos ter um H1 e dizer
+
+5
+00:00:26,310 --> 00:00:32,930
+perguntas frequentes e escreva sob o que vamos ter um contêiner.
+
+6
+00:00:32,940 --> 00:00:37,160
+Vamos chamar esse novo contêiner de traço falso.
+
+7
+00:00:40,320 --> 00:00:44,340
+E aqui dentro teremos nosso falso aparelho novo.
+
+8
+00:00:44,520 --> 00:00:48,690
+E os que estiverem mostrando a resposta, teremos uma classe de ativos.
+
+9
+00:00:50,310 --> 00:00:54,000
+OK, então só vou ativar o primeiro por enquanto.
+
+10
+00:00:54,210 --> 00:00:56,630
+E você pode ter mais de um ativo ao mesmo tempo.
+
+11
+00:00:56,640 --> 00:01:02,510
+Não é como se eles estivessem expandindo, você sabe, as guias de expansão que fizemos ou cartões de expansão,
+
+12
+00:01:02,520 --> 00:01:02,860
+qualquer que seja.
+
+13
+00:01:03,330 --> 00:01:06,540
+Então, aqui na fila, nós vamos ter um título.
+
+14
+00:01:06,540 --> 00:01:18,510
+Então, cada título de três pontos FAA Q Dash, digamos, por que não devemos confiar em átomos?
+
+15
+00:01:19,350 --> 00:01:24,630
+E então teremos um parágrafo da classe de texto falso de Q Dasch.
+
+16
+00:01:25,410 --> 00:01:27,320
+E esta será basicamente a resposta.
+
+17
+00:01:27,330 --> 00:01:30,070
+Diremos que eles inventam tudo.
+
+18
+00:01:30,090 --> 00:01:31,920
+Então, são apenas como piadinhas estúpidas.
+
+19
+00:01:33,150 --> 00:01:35,040
+Claro que você pode alterá-lo para o que quiser.
+
+20
+00:01:35,370 --> 00:01:36,510
+Então queremos nosso botão.
+
+21
+00:01:36,520 --> 00:01:42,360
+Agora vamos ter um Chevron ou um botão para baixo do Chevron.
+
+22
+00:01:42,540 --> 00:01:47,400
+Se estiver retraído e se estiver expandido, teremos um botão X ou um botão de tempos.
+
+23
+00:01:47,410 --> 00:01:49,110
+Então vamos fazer uma tag de olho aqui.
+
+24
+00:01:49,680 --> 00:01:50,970
+Fonte tão rápida.
+
+25
+00:01:50,970 --> 00:01:51,480
+Incrível.
+
+26
+00:01:51,480 --> 00:01:55,230
+Efate dash, Chevron dash para baixo.
+
+27
+00:01:55,680 --> 00:02:01,740
+E abaixo disso teremos tempos de traço FAA, que é um X.
+
+28
+00:02:02,490 --> 00:02:04,830
+OK, então se eu salvar isso, vai ficar assim.
+
+29
+00:02:06,870 --> 00:02:10,680
+Agora vamos ter mais três destes ou quatro no total.
+
+30
+00:02:10,890 --> 00:02:12,420
+Então, eu só vou colar esses.
+
+31
+00:02:12,420 --> 00:02:18,840
+Eu vou continuar dentro do recipiente, mas logo abaixo do primeiro cabelo falso e colar isso
+
+32
+00:02:18,840 --> 00:02:19,650
+e salve.
+
+33
+00:02:19,650 --> 00:02:23,130
+E posso ver que na verdade temos cinco no total.
+
+34
+00:02:25,050 --> 00:02:29,700
+OK, então quero dizer que você pode pegá-los se não quiser apenas copiá-los daqui, você pode pegá-los
+
+35
+00:02:29,700 --> 00:02:32,220
+do repositório final.
+
+36
+00:02:32,530 --> 00:02:32,880
+Tudo bem.
+
+37
+00:02:32,880 --> 00:02:37,770
+Mas basicamente eles são apenas um F a Q com um texto de título e os dois botões.
+
+38
+00:02:38,170 --> 00:02:39,990
+Então agora está pulando para a folha de estilo.
+
+39
+00:02:40,530 --> 00:02:44,460
+E no que diz respeito à fonte, vou usar a fonte Mully.
+
+40
+00:02:44,460 --> 00:02:51,480
+Então eu vou dizer sucesso, questionar família e igualar isso a Muli.
+
+41
+00:02:52,020 --> 00:02:54,300
+E então vamos no corpo definir essa fonte
+
+42
+00:02:57,780 --> 00:03:01,710
+e poderíamos fazer isso como display flex to center e tudo isso.
+
+43
+00:03:01,710 --> 00:03:04,500
+Mas vou centralizá-lo diretamente no contêiner.
+
+44
+00:03:04,500 --> 00:03:10,140
+Então, vou adicionar uma cor de fundo aqui de F zero três vezes, que é como cinza.
+
+45
+00:03:10,620 --> 00:03:20,430
+E então para o H1, vamos definir uma margem para 50 pixels, top zero e depois 30 pixels.
+
+46
+00:03:20,430 --> 00:03:26,970
+E eu quero enviar uma linha de texto para o centro e, em seguida, vamos centralizar o contêiner.
+
+47
+00:03:26,980 --> 00:03:32,160
+Então lembre-se, temos um contêiner Q dash
+
+48
+00:03:34,560 --> 00:03:46,580
+e para isso vamos definir uma largura máxima de 600 pixels e mantê-lo no meio, porque agora pode
+
+49
+00:03:46,600 --> 00:03:47,800
+vê-lo preso à borda.
+
+50
+00:03:47,800 --> 00:03:48,870
+Você quer mantê-lo no meio.
+
+51
+00:03:48,870 --> 00:03:55,590
+Então, vamos definir uma margem zero para a parte superior e inferior e automática à esquerda e à direita, o que manterá
+
+52
+00:03:55,590 --> 00:03:57,480
+no meio desses seiscentos pixels.
+
+53
+00:03:58,290 --> 00:03:58,660
+Tudo bem.
+
+54
+00:03:58,680 --> 00:04:03,660
+Então, para cada F a Q, queremos adicionar alguns estilos.
+
+55
+00:04:03,660 --> 00:04:07,410
+Então vamos adicionar uma cor de fundo transparente.
+
+56
+00:04:08,190 --> 00:04:12,660
+Basicamente, o ativo vai ter um fundo branco, mas os que estão ativos vão
+
+57
+00:04:12,660 --> 00:04:13,680
+ser transparente.
+
+58
+00:04:14,400 --> 00:04:17,910
+E vamos definir a borda para um pixel sólido.
+
+59
+00:04:17,910 --> 00:04:26,220
+E para a cor, vamos usar nove FA para oito, dá uma borda.
+
+60
+00:04:26,550 --> 00:04:32,670
+Também vai adicionar um raio de borda de dez pixels, faça os cantos uma margem um pouco arredondada.
+
+61
+00:04:32,670 --> 00:04:36,930
+Vamos fazer vinte pixels na parte superior e inferior, à esquerda e à direita.
+
+62
+00:04:37,410 --> 00:04:39,750
+Isso irá separá-los então para preenchimento.
+
+63
+00:04:40,170 --> 00:04:40,500
+Ops.
+
+64
+00:04:41,730 --> 00:04:42,690
+Para preenchimento.
+
+65
+00:04:42,690 --> 00:04:49,770
+Vamos fazer trinta pixels ao redor e vou posicionar este relativo para que possamos posicionar
+
+66
+00:04:49,770 --> 00:04:58,370
+stuff absoluto dentro do Q e vamos adicionar um overflow de hidden para que nada saia do container.
+
+67
+00:04:58,770 --> 00:04:59,790
+Também queremos.
+
+68
+00:05:00,410 --> 00:05:10,460
+Transição quando abrimos e fechamos ou expandimos e recolhemos, então vamos adicionar uma transição e apenas para zero
+
+69
+00:05:10,460 --> 00:05:12,020
+ponto três segundos cada.
+
+70
+00:05:12,080 --> 00:05:16,310
+Então, basicamente, qualquer coisa que possa fazer a transição será nesse período de tempo.
+
+71
+00:05:16,610 --> 00:05:20,900
+Agora, para o cue FAA que está ativo, digamos o cue FAA.
+
+72
+00:05:20,900 --> 00:05:29,600
+Se tiver uma classe de ativo, quero definir uma cor de fundo branca e o primeiro está ativo.
+
+73
+00:05:29,610 --> 00:05:30,950
+Então é a cor de fundo do porquê.
+
+74
+00:05:30,950 --> 00:05:38,090
+Eu também quero dar um ícone de fundo ou, na verdade, ícones de fundo posicionados de uma certa maneira.
+
+75
+00:05:38,360 --> 00:05:46,460
+Agora que sabemos como colocar ícones incríveis de fontes diretamente no HTML com classes específicas, também podemos
+
+76
+00:05:46,460 --> 00:05:47,210
+insira-os com.
+
+77
+00:05:47,890 --> 00:05:56,330
+Então, se você nunca fez isso antes, se formos para font awesome dotcom e procurarmos por um ícone, eu
+
+78
+00:05:56,330 --> 00:05:57,410
+não vai comentar.
+
+79
+00:05:59,920 --> 00:06:07,540
+E vamos dar uma olhada nesse direito, e na verdade esse aqui comenta aqui, então se você notar,
+
+80
+00:06:07,550 --> 00:06:10,590
+ele lhe dá a classe para que possamos inseri-lo diretamente no H2O.
+
+81
+00:06:10,600 --> 00:06:15,070
+Também obtemos esse valor Unicode de F zero sete cinco.
+
+82
+00:06:15,070 --> 00:06:16,900
+Cada ícone tem um valor diferente.
+
+83
+00:06:17,870 --> 00:06:23,170
+Então, podemos usar isso para inserir um ícone usando sucesso.
+
+84
+00:06:24,220 --> 00:06:30,580
+Então eu quero ter dois desses ícones comuns como pano de fundo aqui no active.
+
+85
+00:06:31,410 --> 00:06:35,340
+Bem, uma coisa que esqueci é a sombra da caixa, que vou colar.
+
+86
+00:06:35,350 --> 00:06:42,490
+São apenas duas sombras com zero no deslocamento horizontal, três na vertical, seis desfoque e
+
+87
+00:06:42,490 --> 00:06:45,160
+então esta é a cor e então uma segunda sombra.
+
+88
+00:06:45,670 --> 00:06:49,240
+Então, parece que está saindo um pouco da página.
+
+89
+00:06:50,140 --> 00:06:57,430
+Mas voltando aos ícones onde vou adicionar os CSFs para isso está no pseudo antes e depois
+
+90
+00:06:57,430 --> 00:06:59,630
+seletor para falso ativo.
+
+91
+00:06:59,980 --> 00:07:07,840
+Então, se eu tivesse que dizer dois pontos antes de passar um valor de conteúdo aqui e colocar o que quiser,
+
+92
+00:07:07,840 --> 00:07:08,050
+Curti.
+
+93
+00:07:08,050 --> 00:07:08,540
+Olá.
+
+94
+00:07:08,920 --> 00:07:13,210
+Então, antes desse falso U ativo, você pode ver que ele está inserindo Halo.
+
+95
+00:07:13,210 --> 00:07:14,620
+Eu também posso usar depois.
+
+96
+00:07:14,980 --> 00:07:22,680
+Então, eu também vou dizer fa Q ativo depois e agora você pode ver Halo depois disso.
+
+97
+00:07:23,470 --> 00:07:31,120
+Agora, em vez de usar texto aqui para conteúdo, vamos colocar esse caractere Unicode.
+
+98
+00:07:31,150 --> 00:07:37,030
+Agora, quando você usa uma fonte incrível como esta e coloca o Unicode, você quer usar a barra invertida e depois
+
+99
+00:07:37,030 --> 00:07:41,240
+seja qual for o código, que no nosso caso é F zero sete cinco.
+
+100
+00:07:41,650 --> 00:07:47,110
+Agora, se eu salvar isso, veremos este quadrado porque precisamos incluir a fonte
+
+101
+00:07:47,860 --> 00:07:49,420
+família para fonte.
+
+102
+00:07:49,420 --> 00:07:49,930
+Incrível.
+
+103
+00:07:50,110 --> 00:07:53,410
+O que na verdade será o espaço da fonte.
+
+104
+00:07:53,410 --> 00:07:56,350
+Impressionante espaço cinco espaço livre.
+
+105
+00:07:57,080 --> 00:08:02,010
+E agora, se eu salvar isso, você pode ver que inseri esses dois ícones.
+
+106
+00:08:02,710 --> 00:08:04,450
+Agora, obviamente, queremos estilizar isso.
+
+107
+00:08:04,450 --> 00:08:12,260
+Vamos em frente e adicionar uma cor aqui de hexadecimal para E, C, C, sete um.
+
+108
+00:08:14,080 --> 00:08:15,960
+OK, dá-lhe essa cor verde.
+
+109
+00:08:16,240 --> 00:08:24,360
+Vamos definir o tamanho da fonte e colocá-lo em sete unidades REM, o que o torna muito maior.
+
+110
+00:08:25,330 --> 00:08:34,130
+Portanto, é basicamente sete vezes o tamanho da fonte do elemento HTML raiz, que inicialmente é dezesseis
+
+111
+00:08:34,150 --> 00:08:34,780
+píxeis.
+
+112
+00:08:35,950 --> 00:08:40,780
+Então, além disso, queremos posicionar oops, o que diabos é isso.
+
+113
+00:08:41,830 --> 00:08:43,990
+Queremos posicionar absoluto
+
+114
+00:08:46,570 --> 00:08:47,770
+e vamos definir.
+
+115
+00:08:47,770 --> 00:08:49,420
+Eu não quero que eles sejam tão escuros.
+
+116
+00:08:49,420 --> 00:08:54,340
+Então vamos definir a opacidade aqui para fazermos zero ponto dois.
+
+117
+00:08:54,700 --> 00:09:01,480
+Isso os tornará muito mais leves e para a posição, digamos, de cima, fará vinte pixels.
+
+118
+00:09:01,480 --> 00:09:04,090
+Lembre-se que isso é para antes e depois.
+
+119
+00:09:04,540 --> 00:09:09,730
+Então o que estamos fazendo agora é posicionar, posicionar os dois no mesmo lugar, mas depois vamos pegar
+
+120
+00:09:09,730 --> 00:09:11,800
+um deles e mova-o um pouco.
+
+121
+00:09:12,250 --> 00:09:17,110
+Então, os vinte pixels superiores deixaram vinte pixels.
+
+122
+00:09:17,110 --> 00:09:22,210
+E se eu salvar isso, parece que há apenas um, mas eles são na verdade os dois exatamente da mesma forma
+
+123
+00:09:22,210 --> 00:09:22,900
+posição.
+
+124
+00:09:23,230 --> 00:09:30,880
+E eu quero definir um índice Z de zero para que tenhamos certeza de que está atrás de todo o resto.
+
+125
+00:09:31,510 --> 00:09:34,570
+Agora, como eu disse, ambos estão na mesma posição.
+
+126
+00:09:34,570 --> 00:09:36,820
+Então, o que vou fazer é pegar o que está antes.
+
+127
+00:09:36,820 --> 00:09:44,920
+Então eu vou pegar essa classe para este seletor e vou mudar a cor para vamos
+
+128
+00:09:44,920 --> 00:09:49,390
+faça três, quatro, nove, oito DB.
+
+129
+00:09:49,750 --> 00:09:55,150
+Então dê uma cor azul e então vamos definir a posição superior.
+
+130
+00:09:55,150 --> 00:09:57,850
+Então lembre-se, ele já está posicionado como absoluto aqui.
+
+131
+00:09:57,850 --> 00:10:01,510
+Portanto, não precisamos adicionar isso aqui, mas queremos alterar essas coordenadas.
+
+132
+00:10:01,930 --> 00:10:05,930
+Então, de cima, digamos dez pixels negativos.
+
+133
+00:10:05,930 --> 00:10:13,450
+Então ele vai subir dez pixels negativos, você sabe, do zero inicial e depois para a esquerda.
+
+134
+00:10:13,450 --> 00:10:16,360
+Vamos fazer trinta pixels negativos.
+
+135
+00:10:16,870 --> 00:10:20,260
+Então agora eu vou salvar isso e você pode ver que isso foi movido.
+
+136
+00:10:21,190 --> 00:10:28,510
+Outra coisa que eu quero fazer é girá-lo, porque agora o pequeno ponto está aqui fora do
+
+137
+00:10:28,510 --> 00:10:28,870
+tela.
+
+138
+00:10:28,870 --> 00:10:33,850
+Eu quero basicamente dar a volta por cima para que possamos usar transform translate para isso.
+
+139
+00:10:34,240 --> 00:10:39,550
+Então vamos dizer transformar e não traduzir.
+
+140
+00:10:39,550 --> 00:10:43,990
+Desculpe, gire, porque queremos girar isso no eixo Y.
+
+141
+00:10:43,990 --> 00:10:47,890
+Então vai girar y e vamos girá-lo até a metade.
+
+142
+00:10:47,890 --> 00:10:49,990
+Então 180 graus.
+
+143
+00:10:50,410 --> 00:10:54,370
+E agora se eu salvar, você pode ver que este azul foi girado.
+
+144
+00:10:54,610 --> 00:10:58,990
+Agora também poderíamos ter usado o ícone de comentários.
+
+145
+00:10:58,990 --> 00:10:59,170
+Certo.
+
+146
+00:10:59,260 --> 00:11:04,930
+Air, que parece muito semelhante, e poderíamos ter feito antes e adicionado, mas isso torna
+
+147
+00:11:04,930 --> 00:11:10,990
+é um pouco mais interessante usar vários ícones e apenas posicioná-los de maneira diferente
+
+148
+00:11:10,990 --> 00:11:15,550
+então você pode fazer o que quiser como pano de fundo aqui ou em qualquer coisa que você criar.
+
+149
+00:11:16,300 --> 00:11:20,650
+Então agora o que eu quero fazer é o título e o texto aqui.
+
+150
+00:11:21,460 --> 00:11:29,040
+Então vamos descer aqui e dizer um título de traço ou F a Q desculpe pelo título.
+
+151
+00:11:29,050 --> 00:11:34,060
+Tudo que eu quero fazer é adicionar margem, digamos zero top 35
+
+152
+00:11:36,400 --> 00:11:37,390
+35 certo.
+
+153
+00:11:37,390 --> 00:11:39,340
+Zero inferior zero à esquerda.
+
+154
+00:11:40,420 --> 00:11:47,620
+E para o texto, diga falso, você traçou o texto para isso.
+
+155
+00:11:48,040 --> 00:11:53,680
+Vamos adicionar uma margem aqui de trinta pixels zero zero.
+
+156
+00:11:54,130 --> 00:11:59,230
+Mas não quero que isso seja exibido, a menos que tenha a classe ativa.
+
+157
+00:11:59,240 --> 00:12:02,110
+Então, vamos inicialmente definir isso para exibir none.
+
+158
+00:12:02,950 --> 00:12:05,980
+E agora não podemos ver nenhum texto, nenhuma das respostas.
+
+159
+00:12:06,160 --> 00:12:17,580
+No entanto, se estiver ativo, tão falso, ativo e fa Q texto traço, queremos exibir como um bloco.
+
+160
+00:12:18,310 --> 00:12:21,430
+Então agora só podemos ver a resposta para aquele que está ativo.
+
+161
+00:12:22,340 --> 00:12:29,260
+OK, se eu adicionar ativo em outro como este aqui, se eu adicionar essa classe de ativo que é
+
+162
+00:12:29,260 --> 00:12:34,090
+vai dar todas essas propriedades e vai mostrar a pergunta me desculpe, a resposta como
+
+163
+00:12:34,090 --> 00:12:34,440
+Nós vamos.
+
+164
+00:12:36,100 --> 00:12:40,780
+Agora vou parar por aqui e no próximo vídeo, vamos lidar com esses botões porque só
+
+165
+00:12:40,780 --> 00:12:43,030
+quer que o X mostre se está ativo.
+
+166
+00:12:43,030 --> 00:12:47,800
+Queremos apenas que o Chevron apareça se não for, também precisamos estilizá-los e depois adicionar um pouco
+
+167
+00:12:47,800 --> 00:12:52,180
+pouco de JavaScript para poder clicar e expandir cada F você.

@@ -1,0 +1,503 @@
+﻿1
+00:00:00,210 --> 00:00:05,460
+OK, agora podemos buscar os dados ou apenas registrá-los no console, mas queremos inseri-los
+
+2
+00:00:05,460 --> 00:00:06,300
+para o dormitório.
+
+3
+00:00:06,300 --> 00:00:15,930
+Então, vamos substituir este log do console aqui por uma função e chamaremos isso de criar cartão Pokémon.
+
+4
+00:00:16,350 --> 00:00:18,470
+E vai receber os dados Pokémon.
+
+5
+00:00:18,480 --> 00:00:26,990
+Então aqui vai dizer CONSED criar cartão Pokemon e isso vai receber dados.
+
+6
+00:00:27,000 --> 00:00:28,180
+Chamaremos Pokémon.
+
+7
+00:00:29,780 --> 00:00:33,990
+OK, então para cada um, para cada um que buscarmos, vai criar um cartão.
+
+8
+00:00:35,910 --> 00:00:41,130
+Agora, obviamente, se tivéssemos milhares de resultados, isso não seria muito eficiente porque estamos fazendo
+
+9
+00:00:41,130 --> 00:00:42,510
+todos esses pedidos separados.
+
+10
+00:00:42,510 --> 00:00:45,240
+Mas quero dizer, este não é um aplicativo de produção nem nada.
+
+11
+00:00:45,250 --> 00:00:48,560
+É basicamente apenas, você sabe, para fins de aprendizado e diversão.
+
+12
+00:00:48,570 --> 00:00:50,420
+Então, e há apenas um e cinquenta.
+
+13
+00:00:50,460 --> 00:00:53,340
+Não é você sabe, ele busca muito rapidamente.
+
+14
+00:00:53,340 --> 00:00:55,440
+Então estamos bem agora.
+
+15
+00:00:55,440 --> 00:00:58,560
+E aqui queremos, antes de tudo, criar uma div.
+
+16
+00:00:58,560 --> 00:01:07,380
+Então, eu vou chamar isso de pokey, nos chamar de Pokémon L for Element e dizer document dot cria elementos
+
+17
+00:01:07,830 --> 00:01:09,160
+e queremos criar uma div.
+
+18
+00:01:09,240 --> 00:01:15,390
+Então, basicamente, o que estamos fazendo aqui é construir esses divs, esses desenvolvedores de Pokémon, e eles têm um
+
+19
+00:01:15,390 --> 00:01:17,880
+classe de Pokémon.
+
+20
+00:01:17,880 --> 00:01:29,610
+Então, queremos adicionar isso dizendo elementos pokie ou Pokemon, lista de classes dot adiciona classe de Pokémon.
+
+21
+00:01:31,230 --> 00:01:39,630
+Agora vamos criar basicamente um template aqui para nosso HTML, então vamos chamar esse Pokémon em nosso
+
+22
+00:01:40,330 --> 00:01:43,410
+HTML e vamos definir isso para alguns back ticks.
+
+23
+00:01:44,130 --> 00:01:51,330
+E o que vou fazer agora é pegar tudo o que está em um desses divs Pokémon, que
+
+24
+00:01:51,330 --> 00:01:53,550
+é apenas o contêiner de imagem e as informações.
+
+25
+00:01:54,060 --> 00:01:58,440
+Vou copiar isso e depois vou me livrar de tudo que está no contêiner inicial.
+
+26
+00:01:58,440 --> 00:02:04,260
+Então, todos esses desenvolvedores, tudo o que você deve ficar no HTML é apenas isso.
+
+27
+00:02:04,860 --> 00:02:10,980
+OK, então em nosso script aqui, vamos colar isso e vamos corrigir isso um pouco
+
+28
+00:02:10,980 --> 00:02:11,280
+pedaço.
+
+29
+00:02:14,120 --> 00:02:17,190
+OK, e então queremos inserir isso em nosso HTML.
+
+30
+00:02:17,300 --> 00:02:23,540
+Então vamos dizer que nosso pokey, queremos nossos elementos do elemento Pokémon.
+
+31
+00:02:23,700 --> 00:02:31,220
+Queremos definir todo o HTML para Pokémon em nosso HTML e depois colocá-lo no DOM.
+
+32
+00:02:31,220 --> 00:02:41,540
+Queremos pegar o container tão pequeno e queremos chamar append dot o pen child
+
+33
+00:02:42,200 --> 00:02:49,160
+e vamos colocar os elementos Pokémon ou Hokey Pokey Marnel.
+
+34
+00:02:49,470 --> 00:02:54,650
+Então, agora, se eu disser que se conseguirmos todos esses cartões agora, esses são apenas dados codificados, precisamos fazer
+
+35
+00:02:54,650 --> 00:02:55,840
+esse direito dinâmico.
+
+36
+00:02:56,630 --> 00:03:02,960
+A imagem é muito fácil porque é apenas este Eurail e depois o ID e temos o ID neste
+
+37
+00:03:02,990 --> 00:03:03,650
+objeto.
+
+38
+00:03:03,650 --> 00:03:12,680
+É apenas dot ID Então vamos substituir este aqui por dinheiro dizendo Curly Braces Pokémon dot d.
+
+39
+00:03:14,900 --> 00:03:17,300
+E agora você pode ver que temos todas as imagens diferentes.
+
+40
+00:03:18,890 --> 00:03:20,500
+A próxima coisa seria o nome.
+
+41
+00:03:21,380 --> 00:03:23,520
+Então o nome está aqui.
+
+42
+00:03:23,550 --> 00:03:29,990
+Agora, eu poderia fazer o nome Pokémon, e tudo bem.
+
+43
+00:03:29,990 --> 00:03:31,580
+Mas você verá que é minúscula.
+
+44
+00:03:31,580 --> 00:03:33,710
+Na verdade, eu quero maiúsculo o primeiro.
+
+45
+00:03:33,980 --> 00:03:42,350
+Então eu vou criar uma variável aqui em cima chamada name e pegar o nome do cachorro Pokémon.
+
+46
+00:03:43,160 --> 00:03:52,730
+E se dissermos Daudt em letras maiúsculas, se adicionarmos isso e colocarmos aqui apenas o nome, você verá
+
+47
+00:03:52,730 --> 00:03:55,420
+que é tudo maiúsculo porque é isso que esse método faz.
+
+48
+00:03:55,430 --> 00:03:57,560
+Eu quero apenas a primeira letra maiúscula.
+
+49
+00:03:57,950 --> 00:04:02,450
+Agora, com uma string que você pode pegar, você pode usar um índice como um array.
+
+50
+00:04:02,450 --> 00:04:05,920
+Então, se eu quiser apenas a primeira letra, posso pegar apenas zero.
+
+51
+00:04:06,440 --> 00:04:06,860
+Tudo bem.
+
+52
+00:04:06,870 --> 00:04:10,460
+Então, vou definir essa variável de nome apenas com a primeira letra maiúscula.
+
+53
+00:04:10,460 --> 00:04:12,590
+E se eu economizar, é isso que temos.
+
+54
+00:04:12,950 --> 00:04:20,660
+Agora, vamos adicionar o resto da palavra para que possamos fazer isso pegando o nome Pokémon DOT e vamos
+
+55
+00:04:20,660 --> 00:04:25,430
+para usar slice e com slice, podemos obter parte de uma string.
+
+56
+00:04:25,430 --> 00:04:32,360
+Então, eu quero dizer que eu quero cortar a partir de uma posição em K, porque você pode olhar para isso como
+
+57
+00:04:32,360 --> 00:04:32,750
+uma linha.
+
+58
+00:04:32,750 --> 00:04:34,700
+O primeiro um zero segundo um.
+
+59
+00:04:35,000 --> 00:04:37,670
+Quero dizer, você pode olhar para ele como um array, mesmo que seja uma string.
+
+60
+00:04:37,940 --> 00:04:43,670
+Então, queremos a partir da segunda letra, que é a única posição, então se eu salvar agora, você pode ver que temos
+
+61
+00:04:43,670 --> 00:04:45,760
+maiúsculas e o restante em minúsculas.
+
+62
+00:04:47,300 --> 00:04:49,910
+Então vamos ver o ID aqui.
+
+63
+00:04:51,530 --> 00:04:52,390
+Onde fica isso.
+
+64
+00:04:52,400 --> 00:05:02,780
+Então, nós temos o número e poderíamos fazer o Pokémon dot ID, mas eu quero colocar zeros nele.
+
+65
+00:05:03,260 --> 00:05:11,990
+Então, o que vou fazer é criar uma variável aqui chamada I d set it to Pokémon dot ID e queremos primeiro
+
+66
+00:05:11,990 --> 00:05:19,160
+torná-lo em string, então converta-o em string e então eu quero pat com zeros e há um método
+
+67
+00:05:19,160 --> 00:05:20,370
+chamada estrela de almofada.
+
+68
+00:05:20,750 --> 00:05:22,330
+OK, queremos preencher o início.
+
+69
+00:05:22,970 --> 00:05:28,370
+Então, basicamente três espaços, queremos preenchê-los com zero.
+
+70
+00:05:29,620 --> 00:05:35,290
+E aqui embaixo, em vez de Pokémon ID, vou usar apenas ID e agora temos zero zero um
+
+71
+00:05:35,290 --> 00:05:36,820
+zero zero dois, assim por diante.
+
+72
+00:05:37,600 --> 00:05:44,070
+Agora o tipo vai ser um pouco difícil porque é um array, certo?
+
+73
+00:05:44,080 --> 00:05:53,950
+Se pudermos registrar os tipos Pokémon DOT e olharmos aqui para baixo, temos uma matriz.
+
+74
+00:05:53,950 --> 00:05:55,570
+Alguns têm que, alguns têm um.
+
+75
+00:05:55,810 --> 00:05:59,380
+São objetos com um tipo, objeto com um valor de nome.
+
+76
+00:05:59,920 --> 00:06:09,820
+Então vamos criar uma variável aqui chamada type e definir isso na verdade antes de tudo, vamos pegar.
+
+77
+00:06:11,720 --> 00:06:22,250
+Vamos pegar os nomes dos tipos, então digamos tipos pokey dash e defina isso para os tipos Coatimundi, que é
+
+78
+00:06:22,250 --> 00:06:25,730
+o que acabei de mostrar, mas quero usar o MAP para criar um novo array.
+
+79
+00:06:26,060 --> 00:06:32,360
+Então map fazemos um loop e diremos para cada tipo que eu quero retornar o tipo, que é um objeto e
+
+80
+00:06:32,360 --> 00:06:34,700
+Eu quero obter o nome do ponto do tipo.
+
+81
+00:06:35,780 --> 00:06:44,870
+OK, e se eu cancelar assim, então tipos de sublinhado mesquinhos.
+
+82
+00:06:47,790 --> 00:06:55,460
+Quando damos uma olhada, temos esses arrays com zero fogo, um voando, então apenas um array de objetos
+
+83
+00:06:55,460 --> 00:06:56,020
+com o tipo.
+
+84
+00:06:57,650 --> 00:07:05,270
+Agora, para obter o tipo real do Pokémon atual, primeiro vou subir aqui.
+
+85
+00:07:05,270 --> 00:07:09,220
+Então nós temos as cores, que tem todos os tipos que a gente precisa.
+
+86
+00:07:09,230 --> 00:07:17,500
+Então, eu só quero criar um objeto que seja, você sabe, fogo zero, uma grama e assim por diante.
+
+87
+00:07:17,510 --> 00:07:21,230
+Então, vou criar uma variável chamada tipos principais aqui.
+
+88
+00:07:21,980 --> 00:07:29,020
+E podemos usar chaves de ponto de objeto porque queremos usar essas chaves aqui como os valores.
+
+89
+00:07:29,020 --> 00:07:30,880
+Então vamos passar em cores.
+
+90
+00:07:30,900 --> 00:07:39,800
+E agora, se eu puder registrar os tipos principais e dermos uma olhada, temos apenas uma matriz de todos os tipos diferentes
+
+91
+00:07:40,250 --> 00:07:41,900
+sem índices.
+
+92
+00:07:42,620 --> 00:07:46,850
+Então vamos voltar para baixo e roupas íntimas.
+
+93
+00:07:46,850 --> 00:07:52,580
+Eu tenho tipos Pogi, digamos consed e amarre todo esse tipo.
+
+94
+00:07:53,100 --> 00:07:59,770
+Quer pegar os principais tipos, que é apenas uma lista numerada de tipos e queremos encontrar.
+
+95
+00:07:59,990 --> 00:08:06,530
+Então, vou chamar find onde os tipos vão percorrer e dizer que somos do tipo
+
+96
+00:08:09,230 --> 00:08:19,520
+ou devo dizer onde o índice de tipos Pogi vamos usar o índice e depois passar esse índice específico
+
+97
+00:08:19,520 --> 00:08:20,900
+tipo ou essa iteração.
+
+98
+00:08:20,900 --> 00:08:27,200
+E queremos ver se é maior que menos um, porque se não houver índice de correspondência desse método
+
+99
+00:08:27,200 --> 00:08:28,880
+aqui retorna um negativo.
+
+100
+00:08:28,880 --> 00:08:31,220
+Então, queremos ver se é maior que um negativo.
+
+101
+00:08:31,580 --> 00:08:36,290
+Se for, então esse tipo está lá e seremos colocados nesta variável.
+
+102
+00:08:37,280 --> 00:08:37,700
+Tudo bem.
+
+103
+00:08:37,710 --> 00:08:44,600
+Então agora aqui onde temos o tipo esta grama bem aqui, vou substituir pelo tipo.
+
+104
+00:08:46,500 --> 00:08:55,230
+OK, então você pode ver grama, grama, fogo de grama, fogo, água, então agora é só pegar o tipo principal
+
+105
+00:08:55,230 --> 00:08:56,330
+e colocando lá.
+
+106
+00:08:58,010 --> 00:09:06,710
+Agora, também queremos que a cor mude dependendo do tipo, certo, então agora que temos esse tipo
+
+107
+00:09:06,710 --> 00:09:12,170
+variável, vamos definir uma variável aqui chamada color e definir isso para o array colors.
+
+108
+00:09:12,530 --> 00:09:18,070
+E lembre-se do índice ou das chaves, devo dizer, dessas cores são os tipos.
+
+109
+00:09:18,740 --> 00:09:26,900
+Então, queremos apenas usar esse tipo específico para esse cartão ou essa iteração como índice de cores.
+
+110
+00:09:27,170 --> 00:09:29,810
+E então podemos simplesmente definir o elemento.
+
+111
+00:09:29,820 --> 00:09:35,120
+Então o elemento Pokémon irá definir o estilo para que possamos pegar qualquer estilo em excesso.
+
+112
+00:09:35,120 --> 00:09:41,360
+Queremos a cor do plano de fundo, então plano de fundo, cor e queremos defini-lo para essa cor específica
+
+113
+00:09:42,020 --> 00:09:42,890
+então vamos economizar.
+
+114
+00:09:42,890 --> 00:09:45,320
+E agora o fundo vai depender do tipo.
+
+115
+00:09:45,330 --> 00:09:52,580
+Então o fogo tem essa grama vermelha tem essa água verde, o inseto azul é essa laranja e assim por diante.
+
+116
+00:09:54,400 --> 00:09:55,750
+OK, e é mais ou menos isso.
+
+117
+00:09:55,760 --> 00:09:57,290
+E é claro que isso é responsivo.
+
+118
+00:09:57,290 --> 00:10:02,240
+É apenas um contêiner de mil e duzentos pixels com itens flexíveis que envolvem.
+
+119
+00:10:02,250 --> 00:10:04,100
+Então eles simplesmente vão para a próxima linha.
+
+120
+00:10:05,920 --> 00:10:06,380
+Tudo bem.
+
+121
+00:10:06,390 --> 00:10:07,380
+Então é isso.
+
+122
+00:10:07,400 --> 00:10:09,410
+Espero que tenham gostado deste pequeno projeto.
+
+123
+00:10:09,410 --> 00:10:11,320
+E como eu disse, essa API é muito legal.
+
+124
+00:10:11,330 --> 00:10:15,890
+Você pode, se souber mais sobre Pokémon, pode lidar com habilidades e coisas assim.
+
+125
+00:10:15,890 --> 00:10:18,050
+Eu não, eu realmente não sei nada sobre isso.
+
+126
+00:10:18,050 --> 00:10:23,000
+Então, sim, como a maioria dos outros projetos, eu encorajo você a construir isso.

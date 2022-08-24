@@ -1,0 +1,391 @@
+﻿1
+00:00:00,300 --> 00:00:05,550
+Tudo bem, então vamos começar na mesa para o título do nosso teste, digamos, aplicativo de teste.
+
+2
+00:00:08,100 --> 00:00:14,930
+E essencialmente, o que vamos fazer é apenas ter um espaço reservado, uma espécie de espaço reservado para uma pergunta,
+
+3
+00:00:14,940 --> 00:00:22,140
+será um H2, dará um ID e então teremos um monte de entradas de rádio para a resposta.
+
+4
+00:00:22,140 --> 00:00:23,910
+E esses também serão espaços reservados.
+
+5
+00:00:23,910 --> 00:00:29,340
+E mais tarde, quando chegarmos ao JavaScript, substituiremos os espaços reservados pelo real
+
+6
+00:00:29,340 --> 00:00:34,430
+perguntas e respostas e usaremos isso basicamente como um modelo para cada um.
+
+7
+00:00:34,740 --> 00:00:37,320
+E então podemos ter quantas respostas de perguntas quisermos.
+
+8
+00:00:37,650 --> 00:00:44,520
+Então vamos começar criando um container de quiz e eu vou nos dar uma ideia de CUI'S.
+
+9
+00:00:45,680 --> 00:00:48,500
+E então teremos uma aula de quiz heter.
+
+10
+00:00:51,540 --> 00:00:58,800
+E aqui dentro, teremos nossa pergunta, que será um H2 com uma ideia de pergunta, e
+
+11
+00:00:58,800 --> 00:01:01,100
+Eu só vou, como eu disse, colocar um espaço reservado aqui.
+
+12
+00:01:01,110 --> 00:01:07,620
+Diremos apenas o texto da pergunta e, em seguida, teremos um OVNI com alguns itens da lista em cada item da lista
+
+13
+00:01:07,620 --> 00:01:15,510
+terá um raio de entrada de rádio, entrada de rádio com um nome de resposta.
+
+14
+00:01:15,510 --> 00:01:17,990
+E então o ID vai ser um para este.
+
+15
+00:01:19,170 --> 00:01:27,420
+E vamos ver, também queremos fazer uma resposta de classe e isso deve ser bom.
+
+16
+00:01:27,420 --> 00:01:32,550
+Então, abaixo dele, teremos um rótulo para corresponder ao ID da entrada, que é
+
+17
+00:01:32,550 --> 00:01:43,230
+a e também vamos dar a isso um ID de um texto sublinhado porque vamos inserir a pergunta em
+
+18
+00:01:43,230 --> 00:01:43,470
+aqui.
+
+19
+00:01:43,470 --> 00:01:45,110
+Vamos apenas dizer uma pergunta por enquanto.
+
+20
+00:01:45,960 --> 00:01:51,950
+Então, basicamente, queremos apenas copiar isso e cada pergunta terá quatro respostas.
+
+21
+00:01:51,960 --> 00:01:55,200
+Então é um, dois, três, quatro.
+
+22
+00:01:56,190 --> 00:01:58,140
+E então nós só queremos mudar algumas dessas coisas.
+
+23
+00:01:58,150 --> 00:02:04,660
+Então a segunda, então queremos que o nome seja a resposta para todas elas, mas a ideia vai mudar.
+
+24
+00:02:04,660 --> 00:02:11,790
+Então isso vai ser B e os quatro atributos no rótulo também vão ser B e então o ID
+
+25
+00:02:11,790 --> 00:02:13,440
+aqui vai ser BTX.
+
+26
+00:02:14,420 --> 00:02:23,000
+E então queremos fazer o mesmo aqui, então vamos aqui, aqui e aqui e vamos mudar isso para ver.
+
+27
+00:02:24,450 --> 00:02:33,330
+E então vamos aqui, aqui e aqui, e vai ficar tudo bem, e então queremos o botão de envio que é
+
+28
+00:02:33,330 --> 00:02:36,150
+vai sair do cabeçalho.
+
+29
+00:02:37,410 --> 00:02:40,380
+Então aqui e vamos adicionar um botão.
+
+30
+00:02:40,440 --> 00:02:46,620
+Vamos dar uma ideia de submit e diremos submit.
+
+31
+00:02:47,700 --> 00:02:52,680
+Tudo bem, não parece muito bom agora, mas vamos em frente e adicionar o sucesso,
+
+32
+00:02:53,400 --> 00:02:54,830
+o que não é muito ruim.
+
+33
+00:02:54,900 --> 00:02:59,940
+Então vamos pular para nossa folha de estilo e vamos usar a fonte Poppins.
+
+34
+00:02:59,940 --> 00:03:06,930
+Então eu vou dizer sucesso para questionar a família.
+
+35
+00:03:06,930 --> 00:03:08,400
+E vamos definir isso.
+
+36
+00:03:11,450 --> 00:03:24,110
+Para Poppins e então vamos esperar para dizer em e depois 200 ponto e vírgula 400.
+
+37
+00:03:25,670 --> 00:03:30,290
+Vou mudar a fonte do corpo para esse Poppins.
+
+38
+00:03:34,950 --> 00:03:41,460
+Tudo bem, então queremos também uma cor de fundo no corpo, então vamos definir esse fundo.
+
+39
+00:03:41,460 --> 00:03:49,050
+A cor será o valor hexadecimal B oito, C, seis DB.
+
+40
+00:03:50,520 --> 00:03:56,000
+OK, e então vamos adicionar na verdade, essa será a cor de fundo.
+
+41
+00:03:56,120 --> 00:04:00,510
+Vamos usar um gradiente, um gradiente linear para navegadores e dar suporte a isso.
+
+42
+00:04:00,520 --> 00:04:11,040
+Então, vamos usar a imagem de fundo e definir o gradiente linear e faremos três 15 graus e as cores para
+
+43
+00:04:11,040 --> 00:04:14,580
+este, o primeiro, vamos fazer hexadecimal.
+
+44
+00:04:15,220 --> 00:04:17,040
+Na verdade, vai ser a mesma cor aqui.
+
+45
+00:04:18,720 --> 00:04:29,880
+Então, queremos fazer isso em zero por cento e, em seguida, a vírgula na próxima cor será EF cinco, EF sete F
+
+46
+00:04:29,880 --> 00:04:32,310
+A a 100 por cento.
+
+47
+00:04:33,500 --> 00:04:40,160
+Então dê um pouco de aparência de gradiente, e então temos nossa caixa flexível, podemos nos livrar
+
+48
+00:04:41,270 --> 00:04:42,560
+Coluna de direção flexível.
+
+49
+00:04:44,410 --> 00:04:49,490
+E vamos ver que um item de linha que é bom para a imprensa deve estar OK.
+
+50
+00:04:50,770 --> 00:04:53,770
+Então agora o contêiner do quiz que envolve tudo.
+
+51
+00:04:58,900 --> 00:05:04,150
+Então, para isso, vou definir a cor de fundo para branco.
+
+52
+00:05:06,350 --> 00:05:18,470
+E vamos dar a isso um raio mais amplo de 10 pixels e vamos fazer uma sombra de caixa, então quatro caixas de Shadowville
+
+53
+00:05:18,470 --> 00:05:26,660
+faça zero zero para os deslocamentos, 10 pixels, dois pixels, e então nosso GBA e o carro serão cem,
+
+54
+00:05:27,020 --> 00:05:28,760
+cem, cem.
+
+55
+00:05:28,760 --> 00:05:31,670
+E então para o valor alfa será zero ponto um.
+
+56
+00:05:33,670 --> 00:05:40,430
+OK, vamos definir um com aqui também de seiscentos pixels.
+
+57
+00:05:42,080 --> 00:05:50,120
+E então eu vou definir um estouro de oculto para que nada saia do contêiner e, em seguida, para o
+
+58
+00:05:50,390 --> 00:05:55,180
+para o cabeçalho, lembre-se, toda esta parte é o cabeçalho do questionário e então você tem o botão abaixo dele.
+
+59
+00:05:55,550 --> 00:06:05,020
+Então vamos dizer que para o quiz teve aula, eu quero um pouco de preenchimento e vamos fazer um fórum, que vai
+
+60
+00:06:05,030 --> 00:06:09,920
+ser quatro vezes quaisquer que sejam os elementos HTML raiz, tamanhos de fonte.
+
+61
+00:06:10,580 --> 00:06:19,250
+E então para o H2, que é a pergunta ou o estilo que vamos fazer o preenchimento vai fazer um quarto e vamos
+
+62
+00:06:19,250 --> 00:06:25,300
+faça uma linha de texto para o centro e livre-se de qualquer margem.
+
+63
+00:06:26,960 --> 00:06:31,560
+E então para os EUA, todos nós não queremos nenhum ponto de bala.
+
+64
+00:06:31,560 --> 00:06:37,970
+Então, vamos definir o tipo de estilo de lista como nenhum e vamos definir o preenchimento como zero.
+
+65
+00:06:41,300 --> 00:06:49,370
+Agora, para os itens da lista, digamos que aliado dos EUA é aliado dos EUA, e vou definir o tamanho da fonte para ser um pouco
+
+66
+00:06:49,370 --> 00:06:49,700
+Maior.
+
+67
+00:06:49,730 --> 00:07:01,130
+Vamos fazer um ponto para obter um ponto para eles e então vamos definir a margem para ser um no topo
+
+68
+00:07:01,130 --> 00:07:06,620
+e zero inferior à esquerda e à direita e para o rótulo.
+
+69
+00:07:06,830 --> 00:07:09,170
+Então você vai se aliar ao rótulo.
+
+70
+00:07:12,090 --> 00:07:14,640
+Eu só quero transformar o cursor em um ponteiro.
+
+71
+00:07:14,900 --> 00:07:15,320
+Tudo bem.
+
+72
+00:07:15,320 --> 00:07:19,780
+Então, se passarmos o mouse sobre eles, obteremos nosso, você sabe, nosso ponteiro.
+
+73
+00:07:20,750 --> 00:07:23,270
+Então, a última coisa que queremos estilizar é o botão.
+
+74
+00:07:24,770 --> 00:07:26,900
+Então descreva o botão.
+
+75
+00:07:28,010 --> 00:07:29,680
+Vamos definir uma cor de fundo.
+
+76
+00:07:32,370 --> 00:07:41,850
+E isso vai ser oito E quatro para um D e então vamos tirar qualquer fonte de fronteira que faz fronteira com
+
+77
+00:07:41,850 --> 00:07:42,360
+Nenhum.
+
+78
+00:07:42,660 --> 00:07:46,380
+Vamos também tornar a cor do texto branca.
+
+79
+00:07:48,270 --> 00:07:57,210
+E queremos exibir isso como elementos de nível de bloco, e quero que ele percorra todo o caminho, defina
+
+80
+00:07:57,240 --> 00:08:03,420
+a largura para 100 por cento, e vamos transformar o cursor em um ponteiro.
+
+81
+00:08:04,110 --> 00:08:04,430
+Ops.
+
+82
+00:08:07,310 --> 00:08:11,690
+E para o tamanho da fonte, vou fazer um ponto, uma unidade de RAM.
+
+83
+00:08:14,500 --> 00:08:23,920
+E então vamos ver a família de fontes que queremos herdar, então usamos a fonte Poppins e, em seguida,
+
+84
+00:08:23,920 --> 00:08:28,410
+o preenchimento do botão será de um ponto três de ram.
+
+85
+00:08:30,130 --> 00:08:36,630
+OK, parece muito bom agora para o botão de salvamento ao passar o mouse.
+
+86
+00:08:36,640 --> 00:08:44,470
+E quando estiver em seu estado de foco, quero alterar a cor de fundo e vou alterá-la
+
+87
+00:08:44,470 --> 00:08:50,570
+para 73 para Denine um em foco.
+
+88
+00:08:50,920 --> 00:08:57,650
+OK, então está um pouco mais escuro e então eu quero que você veja neste contorno o que está em seu estado de foco.
+
+89
+00:08:57,670 --> 00:08:58,520
+Quer se livrar disso.
+
+90
+00:08:58,520 --> 00:09:01,400
+Portanto, é um botão em seu estado de foco.
+
+91
+00:09:02,050 --> 00:09:05,640
+Vamos definir o contorno para none.
+
+92
+00:09:06,430 --> 00:09:17,020
+E também vou definir a cor de fundo para cinco E3 e três sete.
+
+93
+00:09:17,030 --> 00:09:18,820
+Oh tudo bem.
+
+94
+00:09:23,580 --> 00:09:28,140
+Então o sucesso está feito, temos basicamente apenas um modelo aqui que vamos usar e então o
+
+95
+00:09:28,140 --> 00:09:33,920
+o próximo vídeo terá nossas perguntas em um array JavaScript e queremos basicamente substituí-lo.
+
+96
+00:09:34,200 --> 00:09:41,130
+Queremos ser capazes de, você sabe, ter uma resposta correta para cada pergunta e verificar se queremos
+
+97
+00:09:41,130 --> 00:09:43,190
+poder enviar e carregar a próxima pergunta.
+
+98
+00:09:43,200 --> 00:09:44,610
+Então vamos entrar nisso a seguir.

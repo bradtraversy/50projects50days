@@ -1,0 +1,263 @@
+﻿1
+00:00:00,180 --> 00:00:04,710
+Tudo bem, vamos começar nosso contador de incrementos para que eu tenha meu projeto.
+
+2
+00:00:05,190 --> 00:00:06,240
+Eu também tenho um link para a fonte.
+
+3
+00:00:06,240 --> 00:00:12,480
+Incrível, porque vamos adicionar os ícones das redes sociais, o que, claro, é opcional e vamos
+
+4
+00:00:12,480 --> 00:00:16,350
+diga contador de incremento.
+
+5
+00:00:16,350 --> 00:00:26,470
+E no corpo aqui, teremos três divs na classe de container counter dash.
+
+6
+00:00:26,970 --> 00:00:31,380
+OK, então neste tipo de container, teremos o ícone.
+
+7
+00:00:31,380 --> 00:00:33,180
+Então vamos fazer uma etiqueta de olho agora.
+
+8
+00:00:33,180 --> 00:00:39,870
+Quando você usa ícones de mídia social com fonte, incrível, é fab class em vez de fax e depois FAA
+
+9
+00:00:39,870 --> 00:00:42,330
+dash e este vai ser o Twitter.
+
+10
+00:00:43,560 --> 00:00:45,720
+E eu vou torná-lo um pouco maior com a fonte.
+
+11
+00:00:45,720 --> 00:00:46,110
+Incrível.
+
+12
+00:00:46,110 --> 00:00:48,710
+Você também pode adicionar a classe de um traço.
+
+13
+00:00:48,720 --> 00:00:56,820
+Vamos fazer três x, então três vezes o tamanho normal e então teremos uma classe de contador e
+
+14
+00:00:56,850 --> 00:00:59,170
+é aqui que o número vai.
+
+15
+00:00:59,190 --> 00:01:07,740
+No entanto, agora vou apenas codificar, mas no final das contas virá de um atributo,
+
+16
+00:01:07,740 --> 00:01:15,210
+um atributo de dados que vamos chamar de destino de dados e vamos defini-lo para doze e doze mil
+
+17
+00:01:16,350 --> 00:01:17,730
+em vez de dois, o que você quiser.
+
+18
+00:01:18,330 --> 00:01:25,870
+E então teremos um período apenas com o texto de que são os seguidores do Twitter, OK?
+
+19
+00:01:25,950 --> 00:01:30,520
+E vamos ter mais dois desses e você pode ter quantos contadores quiser.
+
+20
+00:01:31,470 --> 00:01:34,620
+Então o segundo aqui vai ser o YouTube.
+
+21
+00:01:36,060 --> 00:01:40,230
+E isso vamos dizer que isso será 5000.
+
+22
+00:01:43,780 --> 00:01:51,280
+E a data do Target 5000 e vamos mudar os seguidores do Twitter para o YouTube
+
+23
+00:01:53,530 --> 00:02:03,040
+inscritos e esse aqui embaixo, vamos fazer esse Facebook e depois quatro seguidores ou fãs,
+
+24
+00:02:03,040 --> 00:02:03,990
+tudo o que vai fazer.
+
+25
+00:02:04,000 --> 00:02:16,180
+Setenta e quinhentos e setenta e quinhentos vão mudar este texto aqui para os fãs do Facebook.
+
+26
+00:02:16,780 --> 00:02:17,190
+Tudo bem.
+
+27
+00:02:17,830 --> 00:02:19,190
+Então é assim que vai ficar agora.
+
+28
+00:02:19,210 --> 00:02:21,070
+Vamos em frente e estilizar essas coisas.
+
+29
+00:02:21,970 --> 00:02:25,080
+Portanto, a fonte que quero usar é a Raboteau mono.
+
+30
+00:02:25,510 --> 00:02:31,840
+Então aqui em cima, eu diria ponto de interrogação do sucesso e então vamos mudar.
+
+31
+00:02:32,550 --> 00:02:33,570
+Nós vamos nos livrar disso.
+
+32
+00:02:34,030 --> 00:02:44,200
+Então a família vai ser Rebadow mais mono assim, e então vamos mudar a família de fontes aqui
+
+33
+00:02:44,200 --> 00:02:46,170
+para Raboteau mono.
+
+34
+00:02:47,440 --> 00:02:53,140
+OK, é tipo aquela aparência de máquina de escrever e então vamos adicionar uma cor de fundo aqui.
+
+35
+00:02:53,470 --> 00:02:57,070
+Portanto, a cor de fundo será uma cor arroxeada.
+
+36
+00:02:57,080 --> 00:03:03,250
+Então ele para adicioná-lo fará com que o texto fique branco.
+
+37
+00:03:06,940 --> 00:03:14,630
+E então vamos ver se a coluna Filloux Direction, eu vou me livrar disso, eu realmente quero que
+
+38
+00:03:14,630 --> 00:03:19,910
+ser eu quero que fique assim, exceto que você sabe, quando estiver em telas pequenas, será assim.
+
+39
+00:03:20,060 --> 00:03:22,640
+Então, vamos apenas adicionar uma consulta de mídia no final.
+
+40
+00:03:23,780 --> 00:03:27,380
+Então, vamos definir um item de linha.
+
+41
+00:03:27,390 --> 00:03:28,050
+Isso é bom.
+
+42
+00:03:28,070 --> 00:03:28,330
+Tudo bem.
+
+43
+00:03:28,340 --> 00:03:38,000
+Então o container counter doh container, vou exibir flex.
+
+44
+00:03:39,260 --> 00:03:41,910
+E isso eu quero exibir como uma coluna.
+
+45
+00:03:41,930 --> 00:03:46,780
+Lembre-se, o contêiner do contador é cada um desses que estamos fazendo uma caixa flexível e não queremos
+
+46
+00:03:46,790 --> 00:03:47,420
+ir por aqui.
+
+47
+00:03:47,420 --> 00:03:49,640
+Queremos que eles sejam empilhados uns sobre os outros.
+
+48
+00:03:49,880 --> 00:04:00,440
+Então vamos definir a direção do flex para coluna e vamos justificar o centro de conteúdo e vamos adicionar uma margem.
+
+49
+00:04:00,890 --> 00:04:06,620
+Então, apenas para adicionar algum espaçamento, faremos 30 pixels, superior e inferior, 50 à esquerda e à direita.
+
+50
+00:04:08,420 --> 00:04:16,500
+E então vamos ver para o contador, classe ou contador, vou definir o tamanho da fonte.
+
+51
+00:04:16,520 --> 00:04:20,210
+Este é o que você sabe, o texto que vai incrementar.
+
+52
+00:04:20,210 --> 00:04:23,630
+Eu vou definir isso para 60 pixels, vai ficar bem grande.
+
+53
+00:04:24,020 --> 00:04:29,570
+E então vamos adicionar uma margem, no máximo dez pixels.
+
+54
+00:04:31,550 --> 00:04:37,040
+E também é uma linha no contêiner aqui.
+
+55
+00:04:37,040 --> 00:04:37,840
+Conte um recipiente.
+
+56
+00:04:37,850 --> 00:04:44,550
+Vamos fazer um texto, uma linha de traço de texto para o centro.
+
+57
+00:04:45,710 --> 00:04:45,990
+Bom.
+
+58
+00:04:47,990 --> 00:04:52,250
+Agora, quando está em telas pequenas como esta, quero que vá para o outro lado.
+
+59
+00:04:52,250 --> 00:05:00,050
+Então, vamos criar uma consulta de mídia aqui dizendo em media e uma largura máxima de, digamos, cinco e oitenta.
+
+60
+00:05:01,560 --> 00:05:10,370
+Então, significando qualquer coisa abaixo de cinco oitenta pixels, então eu quero que a direção de flexão do corpo seja uma coluna
+
+61
+00:05:10,370 --> 00:05:10,940
+de uma fileira.
+
+62
+00:05:11,670 --> 00:05:11,990
+Tudo bem.
+
+63
+00:05:11,990 --> 00:05:12,670
+Então vamos lá.
+
+64
+00:05:14,330 --> 00:05:18,230
+Agora, não precisamos ter esses números codificados aqui.
+
+65
+00:05:18,230 --> 00:05:23,620
+Podemos nos livrar deles porque isso será inserido pelo JavaScript.
+
+66
+00:05:23,630 --> 00:05:27,470
+Então, no próximo vídeo, vamos pular para o nosso script JS e continuaremos com isso.

@@ -1,0 +1,355 @@
+﻿1
+00:00:00,360 --> 00:00:06,360
+Tudo bem, então este é o primeiro projeto em que estamos realmente lidando com um terceiro
+
+2
+00:00:06,360 --> 00:00:10,050
+API usando fetch para fazer uma solicitação HTTP.
+
+3
+00:00:10,080 --> 00:00:15,920
+Então, vou passar por um pouco disso antes de entrarmos no próximo vídeo e escrever nosso JavaScript.
+
+4
+00:00:16,410 --> 00:00:21,170
+Portanto, a API com a qual estamos trabalhando é apenas uma interface de programação de aplicativos.
+
+5
+00:00:21,570 --> 00:00:24,120
+Estamos trabalhando com algo chamado API do Jason.
+
+6
+00:00:24,120 --> 00:00:29,370
+Ele serve dados de Jason, que são essencialmente como um objeto JavaScript.
+
+7
+00:00:29,370 --> 00:00:30,420
+Se parece com isso.
+
+8
+00:00:30,810 --> 00:00:32,550
+Portanto, chaves.
+
+9
+00:00:32,790 --> 00:00:36,210
+Jason usa aspas duplas nas chaves e nos valores.
+
+10
+00:00:36,870 --> 00:00:41,850
+Mas você pode ver que isso é apenas um objeto com um ID, uma piada e um status.
+
+11
+00:00:42,180 --> 00:00:48,210
+Então, se fizermos uma solicitação, recebo solicitações para esse URL específico.
+
+12
+00:00:48,690 --> 00:00:50,330
+Devemos obter algo assim.
+
+13
+00:00:50,340 --> 00:00:53,020
+Agora, existem alguns formatos diferentes.
+
+14
+00:00:53,490 --> 00:00:56,400
+O padrão será HTML e não queremos isso.
+
+15
+00:00:56,400 --> 00:00:58,500
+Queremos aplicativos, JSON.
+
+16
+00:00:58,770 --> 00:01:04,290
+Então, para conseguir isso, nós realmente temos que enviar um cabeçalho porque quando você envia uma solicitação HGP, você pode enviar
+
+17
+00:01:04,290 --> 00:01:09,800
+headers e queremos enviar um header de accept igual a applications, Jason.
+
+18
+00:01:10,110 --> 00:01:13,180
+E há muitas, muitas maneiras diferentes de fazer pedidos.
+
+19
+00:01:13,200 --> 00:01:15,390
+Nós vamos usar fetch dentro do nosso aplicativo.
+
+20
+00:01:15,660 --> 00:01:19,410
+Você pode até usar Kerl, que é um programa de terminal.
+
+21
+00:01:19,410 --> 00:01:21,630
+Então eu vou te mostrar bem rapidinho.
+
+22
+00:01:22,560 --> 00:01:24,900
+Deixe-me abrir um novo terminal aqui.
+
+23
+00:01:27,380 --> 00:01:33,610
+E se eu seguir esse caminho, basicamente estou usando Carl para fazer uma solicitação de obtenção para esta Eurail e estou
+
+24
+00:01:33,620 --> 00:01:40,880
+adicionando o cabeçalho aceitar o aplicativo JSON e, se eu fizer isso, obterei esse objeto com um ID,
+
+25
+00:01:40,910 --> 00:01:42,170
+uma piada e um status.
+
+26
+00:01:42,440 --> 00:01:47,930
+E cada ligação que eu fizer será uma piada diferente porque são piadas aleatórias, ok, com um
+
+27
+00:01:47,930 --> 00:01:48,440
+EU IRIA.
+
+28
+00:01:48,950 --> 00:01:53,090
+Então, outra ferramenta muito legal para trabalhar com APIs é o carteiro.
+
+29
+00:01:53,150 --> 00:01:55,010
+E vocês não precisam baixar isso nem nada.
+
+30
+00:01:55,010 --> 00:01:57,590
+Só quero mostrar que posso fazer o mesmo pedido.
+
+31
+00:01:57,920 --> 00:02:05,180
+Então, vou fazer essa solicitação para me livrar disso para este seu URL.
+
+32
+00:02:05,480 --> 00:02:11,810
+E se eu fizer isso sem adicionar o valor do cabeçalho except, obterei o HTML de volta.
+
+33
+00:02:11,810 --> 00:02:15,080
+Isso é HTML, então quero Jason de volta.
+
+34
+00:02:15,080 --> 00:02:23,630
+Então, vou adicionar cabeçalhos para uma chave, exceto e para um valor, será o JSON do aplicativo
+
+35
+00:02:23,870 --> 00:02:26,390
+e se eu enviar isso, recebo Jason de volta.
+
+36
+00:02:26,390 --> 00:02:29,840
+Então, eu apenas recebo este objeto simples como você viu quando eu usei Kerl.
+
+37
+00:02:30,320 --> 00:02:36,110
+E até onde esses métodos chegam, significa apenas que você está obtendo dados ou obtendo algo do servidor
+
+38
+00:02:36,440 --> 00:02:39,300
+post que você normalmente usa quando está enviando dados.
+
+39
+00:02:39,320 --> 00:02:46,430
+Então, se você está enviando como um formulário de contato ou talvez tenha uma tela de administração onde você está adicionando
+
+40
+00:02:46,430 --> 00:02:52,580
+uma nova postagem no blog ou algo que seria uma solicitação de postagem é usada para atualizar os dados que estão no
+
+41
+00:02:52,580 --> 00:02:53,110
+servidor.
+
+42
+00:02:53,120 --> 00:02:54,050
+O mesmo com Patch.
+
+43
+00:02:54,290 --> 00:02:59,810
+E então deletar é deletar dados no servidor e então esses aqui embaixo você realmente não tem
+
+44
+00:02:59,810 --> 00:03:00,440
+se preocupar com.
+
+45
+00:03:00,440 --> 00:03:04,810
+Esses raramente são usados, pelo menos para, você sabe, as coisas que eu faço.
+
+46
+00:03:05,780 --> 00:03:09,070
+Então esse é o Posman e você pode baixá-lo se quiser.
+
+47
+00:03:09,080 --> 00:03:12,230
+Eu acho que é Posman ponto com se você quiser mexer com isso.
+
+48
+00:03:13,010 --> 00:03:16,940
+Mas o que queremos fazer é fazer essa solicitação do nosso aplicativo.
+
+49
+00:03:17,210 --> 00:03:20,870
+E a maneira como podemos fazer isso é usando a API.
+
+50
+00:03:21,020 --> 00:03:29,180
+Assim, a API fornece uma interface JavaScript para acessar e manipular partes do pipeline, como
+
+51
+00:03:29,180 --> 00:03:30,740
+como pedidos e respostas.
+
+52
+00:03:31,190 --> 00:03:37,130
+E há um exemplo aqui e não precisa ser uma API de terceiros como estamos usando.
+
+53
+00:03:37,130 --> 00:03:38,600
+Pode ser seu próprio back-end.
+
+54
+00:03:38,600 --> 00:03:46,670
+Então você pode construir uma API com, como Express, sem Jasin Express ou Python, Django ou Laravel ou qualquer outra coisa
+
+55
+00:03:46,670 --> 00:03:47,270
+pode ser.
+
+56
+00:03:47,750 --> 00:03:51,320
+Ou você pode obter apenas arquivos padrão do Jason com o Fach.
+
+57
+00:03:51,320 --> 00:03:55,490
+Não precisa ser alguma, você sabe, alguma API complicada.
+
+58
+00:03:55,910 --> 00:04:02,900
+Agora, quando você chama fetch para neutral, ele retorna uma promessa porque busca os dados de forma assíncrona.
+
+59
+00:04:03,320 --> 00:04:10,660
+Então você tem esse ponto quando termina e a API é um pouco estranha porque você precisa então
+
+60
+00:04:10,700 --> 00:04:14,930
+a primeira você recebe a resposta e então você diz, bem, eu quero os dados do Jason.
+
+61
+00:04:14,930 --> 00:04:20,630
+Portanto, esta é apenas uma função de seta que passamos e estamos dizendo response dot Jason.
+
+62
+00:04:20,900 --> 00:04:26,720
+E então temos outro ponto, porque isso também retorna uma promessa, e isso nos dá o valor real
+
+63
+00:04:26,720 --> 00:04:27,120
+dados.
+
+64
+00:04:27,140 --> 00:04:31,670
+Então, neste caso, estaríamos registrando os dados que estão no arquivo Jason deste filme.
+
+65
+00:04:32,270 --> 00:04:34,790
+Portanto, esta é uma solicitação de obtenção por padrão.
+
+66
+00:04:34,790 --> 00:04:41,420
+Se ele quisesse fazer uma postagem ou solicitação, você passaria a URL exatamente como fizemos acima.
+
+67
+00:04:41,420 --> 00:04:48,750
+Mas então você teria essas opções extras, valorize nosso objeto e passaria o método que deseja.
+
+68
+00:04:48,800 --> 00:04:50,720
+Portanto, neste caso, é uma solicitação de postagem.
+
+69
+00:04:51,110 --> 00:04:54,650
+E se você estiver enviando dados de formulário, você passaria isso no corpo.
+
+70
+00:04:54,890 --> 00:05:00,740
+Como se você tivesse um formulário de registro com o nome e a senha do e-mail, essas coisas iriam no corpo.
+
+71
+00:05:01,430 --> 00:05:05,720
+OK, e não vou me aprofundar muito nisso porque o que estamos fazendo é bem simples.
+
+72
+00:05:06,590 --> 00:05:12,080
+Então, vamos fazer um pedido para obter nossa piada, colocá-la em nossa interface ou em nosso, você sabe,
+
+73
+00:05:12,080 --> 00:05:13,250
+em nosso aplicativo.
+
+74
+00:05:13,520 --> 00:05:19,970
+Também vou mostrar depois como podemos usar uma sintaxe diferente desse ponto.
+
+75
+00:05:20,300 --> 00:05:24,980
+Então existe uma coisa chamada pia, um await, que o torna um pouco mais limpo, pelo menos na minha opinião.
+
+76
+00:05:24,980 --> 00:05:30,140
+E eu acho que parece ser, você sabe, a coisa mais popular a se fazer ao usar promessas é
+
+77
+00:05:30,140 --> 00:05:34,040
+use uma pia em vez de DOT, porque isso pode ficar bastante confuso.
+
+78
+00:05:34,820 --> 00:05:36,410
+Então, vamos olhar para isso também.
+
+79
+00:05:36,830 --> 00:05:38,510
+Então, espero que isso faça sentido.
+
+80
+00:05:38,510 --> 00:05:39,770
+Se isso não acontecer, não se preocupe com isso.
+
+81
+00:05:39,770 --> 00:05:44,720
+Nós vamos fazer alguns projetos com, você sabe, lidar com APIs, lidar com fetch.
+
+82
+00:05:45,080 --> 00:05:51,920
+E também há uma biblioteca chamada Axios, que na verdade prefiro a buscar, mas a busca é incorporada
+
+83
+00:05:51,920 --> 00:05:52,490
+o navegador.
+
+84
+00:05:52,490 --> 00:05:56,330
+Você não precisa adicionar um CDN ou instalá-lo ou algo assim.
+
+85
+00:05:56,660 --> 00:05:57,080
+Tudo bem.
+
+86
+00:05:57,090 --> 00:06:05,270
+Então, no próximo vídeo, faremos nossa solicitação para nossa API usando fetch e a colocaremos no
+
+87
+00:06:05,480 --> 00:06:06,800
+aplicação aqui.
+
+88
+00:06:06,800 --> 00:06:07,580
+Obter uma piada.
+
+89
+00:06:07,580 --> 00:06:11,240
+Teremos também este botão, faça outra solicitação para receber outra piada.

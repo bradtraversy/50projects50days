@@ -1,0 +1,519 @@
+﻿1
+00:00:00,060 --> 00:00:05,790
+OK, agora queremos adicionar nosso JavaScript para fazer duas coisas, queremos que o valor seja exibido aqui quando
+
+2
+00:00:05,790 --> 00:00:07,920
+movemos isso, não vai ser muito difícil.
+
+3
+00:00:08,100 --> 00:00:12,780
+Também queremos que a posição do rótulo siga o polegar, logo acima dele.
+
+4
+00:00:13,050 --> 00:00:14,880
+Então vai ser um pouco mais complicado.
+
+5
+00:00:15,300 --> 00:00:18,800
+Então, vamos pular para o nosso script aqui e obter nossa entrada de intervalo.
+
+6
+00:00:18,810 --> 00:00:21,420
+Então tem uma idéia de alcance.
+
+7
+00:00:21,420 --> 00:00:30,180
+Então, vamos documentar o elemento doget por D, obter a ideia de intervalo e, em seguida, queremos adicionar um ouvinte de evento
+
+8
+00:00:30,180 --> 00:00:37,050
+nessa entrada para que o ouvinte e o evento sejam a entrada que será acionada sempre que nos movermos
+
+9
+00:00:37,050 --> 00:00:43,980
+o controle deslizante de intervalo e queremos ter uma função de seta com nosso objeto de evento passado aqui e depois
+
+10
+00:00:43,980 --> 00:00:45,210
+podemos obter o valor.
+
+11
+00:00:45,210 --> 00:00:49,500
+Digamos que o valor const seja igual ao valor do ponto alvo e ponto.
+
+12
+00:00:49,500 --> 00:00:55,590
+Portanto, o destino EGT representa o elemento em que esse ouvinte de evento está, que é o intervalo.
+
+13
+00:00:55,860 --> 00:01:00,600
+Agora eu quero que isso seja convertido em um número, então vou adicionar um sinal de mais aqui e então eu vou
+
+14
+00:01:00,600 --> 00:01:02,050
+basta dar-lhe o tipo de número.
+
+15
+00:01:02,580 --> 00:01:06,370
+Então vamos em frente e adicioná-lo ao rótulo.
+
+16
+00:01:06,690 --> 00:01:15,700
+Agora podemos obter o rótulo, digamos const label e temos acesso ao IDOT Target, que é a entrada.
+
+17
+00:01:15,990 --> 00:01:20,880
+Agora, porém, o selo está logo depois dele e é basicamente o próximo irmão.
+
+18
+00:01:21,090 --> 00:01:28,320
+Então vamos usar o método chamado são a propriedade do próximo elemento irmão.
+
+19
+00:01:28,470 --> 00:01:36,270
+Isso deve nos dar o rótulo e então podemos dizer rótulo ponto, HTML interno e podemos definir isso para o
+
+20
+00:01:36,270 --> 00:01:36,980
+valores.
+
+21
+00:01:36,990 --> 00:01:38,030
+Agora salve isso.
+
+22
+00:01:38,040 --> 00:01:45,180
+E quando eu mover isso, você verá que vai de zero a 100 e é isso, quero dizer, é bem simples.
+
+23
+00:01:46,080 --> 00:01:56,010
+Agora para isso seguir o polegar, precisamos basicamente calcular a posição desse rótulo e manter
+
+24
+00:01:56,010 --> 00:01:56,940
+acima do polegar.
+
+25
+00:01:56,970 --> 00:01:58,750
+Então isso vai ser um pouco mais difícil.
+
+26
+00:01:59,220 --> 00:02:06,060
+Então, vamos fazer isso bem no final, onde atribuímos o rótulo e queremos obter o
+
+27
+00:02:06,270 --> 00:02:12,560
+a largura do intervalo, que é realmente definido no arquivo de caso para 300 pixels.
+
+28
+00:02:12,960 --> 00:02:21,420
+Então, digamos a largura do intervalo consed e há uma função chamada get computated style.
+
+29
+00:02:22,350 --> 00:02:28,860
+E assim, permita-nos obter, podemos realmente obter valores de nosso sucesso, como o intervalo é a largura de
+
+30
+00:02:28,860 --> 00:02:29,880
+os 300 pixels.
+
+31
+00:02:29,880 --> 00:02:30,910
+É isso que queremos obter.
+
+32
+00:02:31,290 --> 00:02:35,550
+Portanto, queremos obter o estilo calculado para o ITG Target, que é a entrada.
+
+33
+00:02:36,120 --> 00:02:40,710
+E então há um método chamado get valor da propriedade.
+
+34
+00:02:40,920 --> 00:02:45,240
+E a propriedade para a qual queremos obter o valor é a largura.
+
+35
+00:02:45,810 --> 00:02:48,420
+Então eu vou em frente e apenas console o log aqui.
+
+36
+00:02:48,930 --> 00:02:51,750
+O intervalo sublinhado com.
+
+37
+00:02:52,630 --> 00:02:59,260
+Agora, se eu abrir meu console e disparar esse evento, você verá que são 300 pixels se eu mudar no meu
+
+38
+00:02:59,260 --> 00:03:05,990
+sucesso, então eu mudo isso para 400 e salvo e dispare, você verá que é 400.
+
+39
+00:03:07,780 --> 00:03:08,230
+Tudo bem.
+
+40
+00:03:08,230 --> 00:03:09,850
+Então eu vou definir isso de volta.
+
+41
+00:03:12,340 --> 00:03:22,330
+E isso nos dá o intervalo com o qual agora também precisamos levar em conta o rótulo, então para isso, vamos
+
+42
+00:03:22,480 --> 00:03:26,500
+na verdade, apenas copie isso e vamos chamá-lo.
+
+43
+00:03:29,330 --> 00:03:37,550
+Digamos, rotule com e queremos obter o estilo calculado para o rótulo, então, em vez de Target, que
+
+44
+00:03:37,550 --> 00:03:44,690
+é a entrada em que os ouvintes do evento, queremos obtê-la para a gravadora e queremos obter a
+
+45
+00:03:44,690 --> 00:03:45,230
+largura.
+
+46
+00:03:45,960 --> 00:03:50,360
+OK, isso nos dará que podemos ir em frente e cancelar o registro.
+
+47
+00:03:52,640 --> 00:03:56,360
+E quando eu movo isso, temos trezentos e oitenta pixels.
+
+48
+00:03:56,360 --> 00:04:00,600
+E assim vai permanecer o mesmo porque estamos apenas obtendo a largura disso e a largura disso.
+
+49
+00:04:02,270 --> 00:04:06,230
+Agora estes, ambos têm picos neles.
+
+50
+00:04:06,230 --> 00:04:07,540
+Eu só quero o número.
+
+51
+00:04:08,180 --> 00:04:15,950
+Então, vamos criar outra variável chamada num underscore width.
+
+52
+00:04:16,850 --> 00:04:21,360
+E basicamente o que eu quero fazer aqui é apenas obter o número para o intervalo.
+
+53
+00:04:22,520 --> 00:04:29,420
+Então vamos primeiro convertê-lo em um número com um sinal de mais e então vamos dizer o intervalo com o qual
+
+54
+00:04:29,420 --> 00:04:31,840
+agora é apenas 300 pixels.
+
+55
+00:04:32,120 --> 00:04:34,190
+Então, vamos usar a substring de ponto.
+
+56
+00:04:36,730 --> 00:04:47,370
+E diga zero e, em seguida, qualquer que seja o comprimento do intervalo com, então vamos dizer intervalo sublinhado com cachorro
+
+57
+00:04:47,740 --> 00:04:52,150
+comprimento, porque pode ser qualquer coisa, pode ser três pixels, pode ser três milhões de pixels.
+
+58
+00:04:52,180 --> 00:04:58,060
+Então, queremos obter o comprimento e subtrair dois porque estamos tirando os picos.
+
+59
+00:04:58,060 --> 00:04:59,390
+Estamos tirando o pixel.
+
+60
+00:04:59,800 --> 00:05:07,300
+Então agora vamos descer aqui e vamos ver que número com nos dá isso.
+
+61
+00:05:08,730 --> 00:05:14,640
+E você pode ver que nos dá 300 e é um número com o qual também queremos o número para o rótulo.
+
+62
+00:05:14,640 --> 00:05:16,410
+Então vamos chamar isso.
+
+63
+00:05:17,990 --> 00:05:23,630
+Nós diremos não, sublinhar, rotular, sublinhar com.
+
+64
+00:05:25,210 --> 00:05:32,230
+E, na verdade, vou copiar tudo isso aqui, mas em vez do intervalo com aqui, queremos o
+
+65
+00:05:32,230 --> 00:05:33,250
+etiqueta com
+
+66
+00:05:35,980 --> 00:05:41,870
+uma substring e vamos mudar isso para rotular com.
+
+67
+00:05:43,540 --> 00:05:50,740
+E então, se cancelarmos o log aqui, num rótulo com, você verá que devemos obter trezentos e oitenta
+
+68
+00:05:50,740 --> 00:05:51,730
+como números.
+
+69
+00:05:54,430 --> 00:06:02,080
+Então agora vamos colocar os homens nos valores máximos, porque lembre-se de que definimos isso no HTML,
+
+70
+00:06:02,080 --> 00:06:05,890
+definimos zero para os homens, 100 para o máximo.
+
+71
+00:06:06,430 --> 00:06:15,820
+Então, vamos criar uma variável aqui chamada Max e defini-la como e dot targets e podemos obtê-la de maneira muito simples
+
+72
+00:06:15,820 --> 00:06:18,280
+com apenas Max e queremos convertê-lo em um número.
+
+73
+00:06:18,280 --> 00:06:21,440
+Então, fora do seno positivo e podemos fazer o mesmo para os homens.
+
+74
+00:06:22,660 --> 00:06:28,570
+Então os homens definem isso para os homens e podemos testar isso.
+
+75
+00:06:30,410 --> 00:06:36,350
+E Max, e devemos obter zero em 100 bons, porque você pode definir os homens, Max, para qualquer coisa,
+
+76
+00:06:36,350 --> 00:06:44,000
+queremos ter certeza de que temos os valores que precisamos para usar essas informações, que temos que
+
+77
+00:06:44,540 --> 00:06:51,230
+aplique a propriedade left a isso, para calculá-lo, para seguir o polegar.
+
+78
+00:06:51,230 --> 00:06:57,080
+A bola aqui à esquerda é inicialmente colocada na etiqueta.
+
+79
+00:06:57,080 --> 00:06:57,530
+Cadê?
+
+80
+00:06:57,530 --> 00:07:00,590
+Bem aqui para 110 pixels, que está bem no meio.
+
+81
+00:07:00,800 --> 00:07:03,800
+Mas queremos que isso mude dependendo de onde está o polegar.
+
+82
+00:07:04,220 --> 00:07:07,190
+Para fazer isso, vamos criar uma variável chamada left.
+
+83
+00:07:07,960 --> 00:07:13,770
+E queremos fazer um pouco de cálculo aqui, vamos pegar o valor, então qualquer que seja o
+
+84
+00:07:13,850 --> 00:07:22,420
+o valor atual é de zero a 100 e queremos multiplicar isso por qualquer que seja o NUM.
+
+85
+00:07:23,410 --> 00:07:31,180
+E queremos dividir isso pelo máximo, que, você sabe, neste caso será cem.
+
+86
+00:07:32,110 --> 00:07:39,520
+E então queremos pegar isso e subtrair o rótulo NUM com o qual é o, você sabe, o número de
+
+87
+00:07:39,520 --> 00:07:45,310
+qualquer que seja a largura do rótulo, porque queremos que isso funcione independentemente da largura da faixa
+
+88
+00:07:45,310 --> 00:07:47,970
+é ou o ou o rótulo.
+
+89
+00:07:48,460 --> 00:07:51,630
+E queremos dividir isso por dois.
+
+90
+00:07:52,300 --> 00:08:02,090
+Então, se salvarmos isso, na verdade, vamos cancelar o log à esquerda e ver o que temos aqui.
+
+91
+00:08:02,440 --> 00:08:05,980
+Então, se eu for até o fim, teremos o que, menos 40?
+
+92
+00:08:05,980 --> 00:08:08,430
+Se eu for até aqui, chegaremos a 60.
+
+93
+00:08:09,400 --> 00:08:20,620
+Agora, vamos aplicar isso à propriedade left CSFs do rótulo para que possamos fazer isso dizendo label dot
+
+94
+00:08:20,630 --> 00:08:23,020
+style e queremos definir o valor à esquerda.
+
+95
+00:08:24,820 --> 00:08:27,340
+Agora, não podemos simplesmente configurá-lo para a esquerda porque isso é um não.
+
+96
+00:08:27,340 --> 00:08:31,750
+Tem que ser qualquer escolha que funcione assim.
+
+97
+00:08:32,200 --> 00:08:34,990
+Certo, 110 pixels, não apenas cento e dez.
+
+98
+00:08:34,990 --> 00:08:41,350
+Então vamos fazer isso para que ele volte tiquetaque aqui e então Passan saiu daqui e então ele.
+
+99
+00:08:42,310 --> 00:08:48,880
+Então agora se eu for e mover isso, você pode ver que ela se move junto com a bola aqui.
+
+100
+00:08:50,110 --> 00:08:55,330
+Agora observe como ele fica fora do centro à medida que você se move de cada lado.
+
+101
+00:08:55,330 --> 00:08:59,520
+Queremos levar em conta isso cerca de dez pixels.
+
+102
+00:09:00,220 --> 00:09:04,320
+Portanto, há uma solução que podemos usar.
+
+103
+00:09:04,330 --> 00:09:07,650
+Eu só vou trazer essa janela bem rápido.
+
+104
+00:09:07,660 --> 00:09:13,180
+Portanto, este é um post de estouro de pilha e vou copiar este link e colocá-lo no script.
+
+105
+00:09:13,630 --> 00:09:17,410
+Mas isso é mapear um intervalo de números para outro intervalo de números.
+
+106
+00:09:17,410 --> 00:09:19,840
+E usamos isso em outro projeto neste curso.
+
+107
+00:09:20,020 --> 00:09:23,860
+Não tenho certeza se ainda não tenho certeza da ordem exata dos projetos.
+
+108
+00:09:23,860 --> 00:09:25,540
+Então, talvez já o tenhamos usado.
+
+109
+00:09:25,540 --> 00:09:26,350
+Podemos não ter.
+
+110
+00:09:27,190 --> 00:09:34,570
+Mas basicamente essa função de escala que alguém criou recebe um número específico e depois um min em
+
+111
+00:09:34,570 --> 00:09:35,320
+o máx.
+
+112
+00:09:35,320 --> 00:09:40,360
+Então, em min em max e depois em Outman e em Max, você pode mapear um intervalo específico.
+
+113
+00:09:40,600 --> 00:09:45,610
+No nosso caso será zero 100 porque são nossos homens e Max.
+
+114
+00:09:45,850 --> 00:09:53,350
+E então mapeamos para menos 10, desculpe, dez e menos dez para compensar essa diferença.
+
+115
+00:09:53,740 --> 00:09:55,540
+Então eu vou copiar na verdade.
+
+116
+00:09:55,540 --> 00:10:05,680
+Deixa eu só deixar eu colar esse link aqui e só quero comentar que eu tenho e aí eu vou
+
+117
+00:10:05,680 --> 00:10:08,770
+para pegar esta função aqui
+
+118
+00:10:11,170 --> 00:10:12,520
+e coloque isso.
+
+119
+00:10:12,530 --> 00:10:12,880
+Tudo bem.
+
+120
+00:10:12,880 --> 00:10:18,460
+Então nós temos nossa função de escala e então podemos voltar ao nosso cálculo aqui e apenas adicionar
+
+121
+00:10:18,460 --> 00:10:26,950
+essa escala, que leva primeiro um num, que vai ser o nosso valor, e depois um imposto mínimo,
+
+122
+00:10:26,950 --> 00:10:33,190
+que no nosso caso será Min e Max no nosso caso é zero e cem.
+
+123
+00:10:33,550 --> 00:10:38,650
+E queremos mapear para dez e menos dez.
+
+124
+00:10:39,550 --> 00:10:42,100
+Então, se salvarmos isso, tentaremos novamente.
+
+125
+00:10:42,100 --> 00:10:44,470
+Agora você verá que sempre fica no meio.
+
+126
+00:10:46,090 --> 00:10:52,330
+OK, em vez de desviar para o lado, então eu sei que isso é um pouco para isso apenas para obter isso
+
+127
+00:10:52,330 --> 00:10:56,350
+pouco de funcionalidade, mas agora você pode usar isso em aplicativos.
+
+128
+00:10:56,360 --> 00:11:01,630
+Você tem esse pequeno widget e, claro, pode estilizá-lo, sabe, como quiser.
+
+129
+00:11:02,050 --> 00:11:03,960
+Mas isso vai ser tudo para este projeto.
+
+130
+00:11:03,970 --> 00:11:05,290
+Vejo você na próxima.

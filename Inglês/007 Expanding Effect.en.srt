@@ -1,0 +1,375 @@
+1
+00:00:00,330 --> 00:00:06,000
+OK, so now we want to get into the JavaScript, which is actually going to be fairly simple, and this
+
+2
+00:00:06,000 --> 00:00:10,470
+I plan on this being one of the first projects in at least in the first 10.
+
+3
+00:00:10,740 --> 00:00:14,940
+So I'm going to explain kind of stuff that many of you might already know.
+
+4
+00:00:15,480 --> 00:00:18,270
+Now, remember, the whole thing.
+
+5
+00:00:18,540 --> 00:00:22,120
+What we need to do is just change the class really on each of these.
+
+6
+00:00:22,140 --> 00:00:24,870
+So the first one has a class of active right now.
+
+7
+00:00:25,140 --> 00:00:31,530
+If I put that class on the second one, just manually by typing it in here, it's going to show the
+
+8
+00:00:31,530 --> 00:00:32,180
+second one.
+
+9
+00:00:32,550 --> 00:00:35,760
+So I'm going to start with that on the first like I had.
+
+10
+00:00:36,060 --> 00:00:38,720
+But we want to be able to switch that in our JavaScript.
+
+11
+00:00:38,730 --> 00:00:45,320
+So we need to first bring in all of these panels into the into our JavaScript files.
+
+12
+00:00:45,320 --> 00:00:50,850
+So I'm going to create a variable called panels and those different way to select elements we can use,
+
+13
+00:00:50,850 --> 00:00:54,730
+you know, get element by D, we can use query selector.
+
+14
+00:00:55,380 --> 00:01:03,900
+So a query selector does is allows us to select anything, could be, you know, a paragraph and each
+
+15
+00:01:03,900 --> 00:01:10,170
+one, a class, an ID, whatever we want the panels which have a class of panel.
+
+16
+00:01:10,200 --> 00:01:14,240
+Now the problem here is there's more than one panel, right.
+
+17
+00:01:14,250 --> 00:01:18,930
+We have all these divs with panels, so we can't just do this or it's just going to select the first
+
+18
+00:01:18,930 --> 00:01:19,220
+one.
+
+19
+00:01:19,500 --> 00:01:21,030
+So we need to use query, select.
+
+20
+00:01:21,030 --> 00:01:22,380
+They're all in that case.
+
+21
+00:01:22,800 --> 00:01:28,110
+And with query, select, they're all instead of just selecting the element directly, it puts all of
+
+22
+00:01:28,110 --> 00:01:32,690
+the panels into what's called the node list, which is similar to an array.
+
+23
+00:01:32,940 --> 00:01:34,740
+In fact, I can show you that if I can.
+
+24
+00:01:34,740 --> 00:01:36,390
+So log here panels.
+
+25
+00:01:37,880 --> 00:01:43,700
+And we open up our chrome dev tools here, you'll see that it's going to it prints out this node list
+
+26
+00:01:44,030 --> 00:01:51,740
+with with each div and some properties, and I can target specific panels, like if I put zero in here
+
+27
+00:01:51,740 --> 00:01:56,600
+because arrays are zero index, it's going to give me the very first panel.
+
+28
+00:01:56,610 --> 00:02:02,350
+You can see it has a class of active, so I could get the second one with one and so on.
+
+29
+00:02:02,720 --> 00:02:06,020
+Now you can also loop through a no list, just like you can with an array.
+
+30
+00:02:06,020 --> 00:02:06,830
+And that's what I want to do.
+
+31
+00:02:06,830 --> 00:02:11,420
+I want to take my panels and use it for each, which is a high order array method.
+
+32
+00:02:11,810 --> 00:02:19,130
+And these methods take in a function as an argument so you could do a function or what you usually see
+
+33
+00:02:19,130 --> 00:02:20,840
+is an arrow function like this.
+
+34
+00:02:21,740 --> 00:02:25,810
+OK, and then we need to pass in here whatever we want to use for each iteration.
+
+35
+00:02:25,820 --> 00:02:26,720
+These are panels.
+
+36
+00:02:26,720 --> 00:02:34,430
+So I'm going to use panel singular and I can console log here panel, and it's just going to loop through
+
+37
+00:02:34,430 --> 00:02:35,730
+and show me each panel.
+
+38
+00:02:37,310 --> 00:02:39,340
+Now, what do we actually want to do here?
+
+39
+00:02:39,350 --> 00:02:45,410
+We want to have an event listener on each of these so that if we click it, something happens.
+
+40
+00:02:45,720 --> 00:02:52,040
+So we'll take each panel and say, add event listener and I want to listen for a click.
+
+41
+00:02:52,880 --> 00:02:55,970
+And when that click happens, we're going to run a function.
+
+42
+00:02:56,900 --> 00:03:02,360
+And for that function, let's just do a console log here and I'll just say, I don't know, one, two,
+
+43
+00:03:02,360 --> 00:03:02,810
+three.
+
+44
+00:03:03,680 --> 00:03:07,060
+And if I click on any of these, we're going to log one, two, three.
+
+45
+00:03:07,760 --> 00:03:13,870
+So I want to whatever when we click on I want to add a class of active.
+
+46
+00:03:14,210 --> 00:03:20,180
+So if I say panel dot class list, that gives me a list of the classes.
+
+47
+00:03:20,450 --> 00:03:27,350
+But we also have methods on this class, this object like add where we can specifically out of class
+
+48
+00:03:27,350 --> 00:03:29,160
+and I'm going to add a class of active.
+
+49
+00:03:29,750 --> 00:03:36,800
+So now if I just close this, if I click on this one, it gets added the class of active, which then
+
+50
+00:03:36,800 --> 00:03:40,880
+changes it to flex five if I click on this one same thing.
+
+51
+00:03:40,880 --> 00:03:44,840
+But you can see that active is still on these other ones.
+
+52
+00:03:44,840 --> 00:03:49,690
+So it's expanding them, but it's not it's not retracting the other ones.
+
+53
+00:03:50,180 --> 00:03:58,640
+So what we'll do is before we we put a class of active let's remove the class of active on all of the
+
+54
+00:03:58,640 --> 00:03:59,390
+other ones.
+
+55
+00:03:59,660 --> 00:04:08,150
+So I'm going to have a function here called Remove Active Classes, and we'll create that down here.
+
+56
+00:04:09,440 --> 00:04:10,490
+That's a function.
+
+57
+00:04:11,210 --> 00:04:13,330
+Remove active classes.
+
+58
+00:04:14,960 --> 00:04:19,550
+Now, since there's more than one panel, we again, we're going to loop through them and then remove
+
+59
+00:04:19,550 --> 00:04:20,960
+all the active classes.
+
+60
+00:04:20,960 --> 00:04:23,260
+So we're going to do just what we did above.
+
+61
+00:04:23,270 --> 00:04:28,650
+So panel dot for each and and here we'll put an arrow function.
+
+62
+00:04:30,770 --> 00:04:36,290
+Now, when you have an arrow function with just one argument like this, because we can also get the
+
+63
+00:04:36,290 --> 00:04:39,110
+index, we can get the the complete array.
+
+64
+00:04:39,110 --> 00:04:41,600
+But since we're only we only need this one panel.
+
+65
+00:04:41,600 --> 00:04:45,200
+We don't even need these curly sorry, these parentheses.
+
+66
+00:04:45,200 --> 00:04:46,250
+We can just do this.
+
+67
+00:04:47,030 --> 00:04:47,530
+All right.
+
+68
+00:04:47,540 --> 00:04:49,340
+And up here we can do the same thing.
+
+69
+00:04:49,940 --> 00:04:52,280
+I mean, you can keep them if you want, but you don't have to.
+
+70
+00:04:52,980 --> 00:04:59,090
+And then in here, let's say for the particular panel that we're looping through, we want on the class
+
+71
+00:04:59,090 --> 00:05:05,150
+list objects we want to call remove and we want to remove all the active classes.
+
+72
+00:05:07,340 --> 00:05:13,640
+OK, so now what's going to happen is when we click, it's going to remove all the active classes from
+
+73
+00:05:13,640 --> 00:05:16,920
+all of them and then put the active class on the one we click.
+
+74
+00:05:16,940 --> 00:05:17,960
+So if I click here,
+
+75
+00:05:21,140 --> 00:05:24,980
+looks like something a panel is not defined.
+
+76
+00:05:25,550 --> 00:05:26,780
+Oh, panels.
+
+77
+00:05:26,930 --> 00:05:30,020
+So we're looping through panels here, which is coming from here.
+
+78
+00:05:31,750 --> 00:05:32,150
+All right.
+
+79
+00:05:32,160 --> 00:05:38,840
+So if I click on this now, you'll see we get the effect that we want because right before it adds the
+
+80
+00:05:38,840 --> 00:05:41,510
+active class to this, it takes it off the rest of them.
+
+81
+00:05:43,770 --> 00:05:48,810
+Now, one thing I would like to change, though, is as soon as I click on this, you'll see the H3
+
+82
+00:05:48,810 --> 00:05:51,350
+and has that kind of weird falling down effect.
+
+83
+00:05:51,690 --> 00:05:55,220
+So let's add a transition to the opacity on the H3.
+
+84
+00:05:55,740 --> 00:06:04,720
+So I'm going to go to the active H3 and let's add a transition here and let's say opacity.
+
+85
+00:06:04,740 --> 00:06:12,990
+So we want to add a transition on the opacity, zero three point six zero point three seconds and ease
+
+86
+00:06:12,990 --> 00:06:15,930
+in and let's add a delay as well.
+
+87
+00:06:15,930 --> 00:06:20,450
+So we'll add zero point four seconds on the delay.
+
+88
+00:06:20,880 --> 00:06:30,600
+And now if I click, you see that it doesn't actually feed in until the until the card is fully expanded,
+
+89
+00:06:31,230 --> 00:06:33,670
+which is a lot smoother than it was before.
+
+90
+00:06:34,530 --> 00:06:36,690
+OK, so that's pretty much it, guys.
+
+91
+00:06:36,990 --> 00:06:40,020
+I mean, you can make these into any kind of card.
+
+92
+00:06:40,020 --> 00:06:42,570
+It doesn't have to be just a heading with a background image.
+
+93
+00:06:42,570 --> 00:06:46,020
+It could be like a testimonial or absolutely anything you want.
+
+94
+00:06:46,290 --> 00:06:51,030
+So hopefully this helps you in building further projects with little widgets like this.

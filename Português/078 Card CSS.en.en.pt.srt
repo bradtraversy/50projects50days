@@ -1,0 +1,247 @@
+﻿1
+00:00:00,240 --> 00:00:06,510
+Tudo bem, então vamos começar o caso para este projeto, então acho que vamos manter
+
+2
+00:00:06,510 --> 00:00:07,410
+a fonte Roboto.
+
+3
+00:00:07,440 --> 00:00:08,310
+Isso é bom.
+
+4
+00:00:08,310 --> 00:00:11,910
+E o corpo, vamos adicionar um fundo.
+
+5
+00:00:13,050 --> 00:00:13,380
+Tudo bem.
+
+6
+00:00:13,390 --> 00:00:15,990
+Vamos fazer uma cor de fundo e será um cinza claro.
+
+7
+00:00:15,990 --> 00:00:20,400
+Então hexadecimal e, c, f zero, F um.
+
+8
+00:00:20,820 --> 00:00:25,170
+Será nosso plano de fundo e não precisamos da coluna Flex Direction.
+
+9
+00:00:25,920 --> 00:00:27,690
+E essas outras coisas devem ficar bem.
+
+10
+00:00:28,260 --> 00:00:34,860
+Agora, vamos apenas dizer que para a imagem, queremos que tenha uma largura máxima de cem por cento de sua
+
+11
+00:00:34,860 --> 00:00:35,520
+recipiente.
+
+12
+00:00:35,520 --> 00:00:37,250
+Então isso vai encolher essa imagem.
+
+13
+00:00:37,740 --> 00:00:40,380
+E então vamos começar a adicionar os estilos para o nosso cartão.
+
+14
+00:00:42,270 --> 00:00:44,520
+Então, o cartão, eu quero dar uma sombra de caixa.
+
+15
+00:00:45,420 --> 00:00:56,640
+Então, temos nossos deslocamentos horizontais para zero vertical, dois pixels borram 10 pixels e a cor será um preto
+
+16
+00:00:56,640 --> 00:01:03,670
+com uma opacidade de ponto zero para você ver o contorno aqui.
+
+17
+00:01:05,520 --> 00:01:05,940
+Tudo bem.
+
+18
+00:01:05,970 --> 00:01:08,880
+Agora queremos ter alguns cantos arredondados no cartão.
+
+19
+00:01:08,890 --> 00:01:16,680
+Então, eu vou definir o raio da borda para 10 pixels e vamos adicionar estouro e defini-lo como oculto, então
+
+20
+00:01:16,680 --> 00:01:19,320
+nada sai de seu recipiente.
+
+21
+00:01:19,620 --> 00:01:30,320
+E então eu vou ter uma largura de 350 pixels no cartão e vamos definir a altura do cabeçalho do cartão.
+
+22
+00:01:30,690 --> 00:01:34,040
+Eu quero definir isso para 200 pixels.
+
+23
+00:01:36,030 --> 00:01:39,210
+E agora, o texto está um pouco acima da imagem.
+
+24
+00:01:39,210 --> 00:01:42,540
+Então, vamos estilizar a imagem do cabeçalho do cartão.
+
+25
+00:01:46,500 --> 00:02:00,000
+Então, vou apenas ter certeza de que o Object Fit está configurado para cobrir e vamos definir a altura para 100 por cento de
+
+26
+00:02:00,000 --> 00:02:02,460
+seu recipiente e a largura para 100 por cento.
+
+27
+00:02:03,010 --> 00:02:06,810
+Então agora você pode ver que o texto não está mais sobre a imagem.
+
+28
+00:02:07,230 --> 00:02:14,970
+Agora o conteúdo do cartão aqui diz o conteúdo do cartão.
+
+29
+00:02:16,740 --> 00:02:22,280
+Então, vou definir o plano de fundo disso para a folha branca.
+
+30
+00:02:22,300 --> 00:02:23,610
+Usaremos a cor de fundo.
+
+31
+00:02:25,650 --> 00:02:31,650
+E então eu quero apenas definir algum preenchimento para mover tudo para longe dos lados ou fazer um preenchimento de 30 pixels.
+
+32
+00:02:32,520 --> 00:02:32,850
+Tudo bem.
+
+33
+00:02:32,850 --> 00:02:37,020
+Agora, as coisas que estão no conteúdo do cartão, como o título, vamos fazer isso.
+
+34
+00:02:37,020 --> 00:02:47,070
+Então, o título do traço do cartão, vou dar a ele uma altura de vinte pixels e uma margem de zero.
+
+35
+00:02:48,060 --> 00:02:49,290
+E então o trecho.
+
+36
+00:02:54,010 --> 00:03:02,260
+Então o trecho, vou dar uma cor hexadecimal 777, que é uma ótima cor, e depois para
+
+37
+00:03:02,260 --> 00:03:06,400
+a margem, vamos fazer 10 pixels, zero, 20 pixels.
+
+38
+00:03:08,220 --> 00:03:12,300
+Então esse é o trecho agora para o autor dos envoltórios em torno de tudo isso.
+
+39
+00:03:15,030 --> 00:03:22,710
+Então, autor, eu só quero exibir o de Fleck, que o coloca automaticamente em uma linha flexível e, em seguida, para
+
+40
+00:03:22,710 --> 00:03:24,510
+a imagem do perfil.
+
+41
+00:03:25,230 --> 00:03:29,010
+Então a imagem do traço do perfil, lembre-se, essa é a div ao redor da imagem.
+
+42
+00:03:29,310 --> 00:03:35,280
+Então, vou definir o raio da borda para 50% porque quero que seja arredondado, embora certo
+
+43
+00:03:35,280 --> 00:03:39,600
+agora isso está no div e a imagem está basicamente saindo do div.
+
+44
+00:03:39,600 --> 00:03:45,680
+Então, queremos ter certeza de que configuramos o estouro, queremos definir o estouro como oculto.
+
+45
+00:03:47,070 --> 00:03:48,510
+OK, então isso vai torná-lo arredondado.
+
+46
+00:03:48,750 --> 00:03:50,270
+Também queremos torná-lo muito menor.
+
+47
+00:03:50,280 --> 00:03:59,080
+Então, vamos definir a altura para 40 pixels e também a largura para 40 pixels.
+
+48
+00:03:59,130 --> 00:04:03,240
+Então agora a última coisa é a informação do autor, que está em torno do nome e da data.
+
+49
+00:04:03,750 --> 00:04:12,450
+Então, digamos informações do autor, que eu quero exibir como uma caixa flexível, mas quero que elas estejam no topo de cada
+
+50
+00:04:12,450 --> 00:04:12,650
+outro.
+
+51
+00:04:12,660 --> 00:04:15,980
+Portanto, a direção flexível será uma coluna em vez de uma linha.
+
+52
+00:04:16,830 --> 00:04:19,670
+E então vamos pegar qualquer conteúdo restante.
+
+53
+00:04:19,680 --> 00:04:27,450
+Então justifique o conteúdo para estar em torno de cada elemento do espaço e vamos adicionar uma margem à esquerda para movê-lo
+
+54
+00:04:27,450 --> 00:04:28,620
+longe da imagem.
+
+55
+00:04:29,040 --> 00:04:31,800
+Então, 10 pixels que irão afastar o texto.
+
+56
+00:04:32,310 --> 00:04:37,650
+E vamos adicionar uma largura de, digamos, cem pixels.
+
+57
+00:04:38,730 --> 00:04:44,070
+OK, e para a tag pequena, temos informações do autor pequenas.
+
+58
+00:04:44,070 --> 00:04:51,710
+Eu só quero mudar a cor para triplo J, que é um cinza e depois adicionar um pouco de margem superior.
+
+59
+00:04:52,080 --> 00:04:55,080
+Então, cinco pixels e então vamos.
+
+60
+00:04:55,920 --> 00:04:57,900
+Então agora nosso cartão está estilizado.
+
+61
+00:04:58,090 --> 00:05:03,840
+Então, no próximo vídeo, quero criar os efeitos de animação e, finalmente, esse conteúdo, as imagens
+
+62
+00:05:03,840 --> 00:05:05,940
+no texto virão do JavaScript.

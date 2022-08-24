@@ -1,0 +1,751 @@
+1
+00:00:00,180 --> 00:00:06,450
+OK, so we're going to get started now, this project is very heavy, that's what we're going to mostly
+
+2
+00:00:06,450 --> 00:00:07,430
+be focusing on.
+
+3
+00:00:07,620 --> 00:00:11,010
+We do need to add some JavaScript to have the hover effect.
+
+4
+00:00:11,010 --> 00:00:13,320
+But a lot of this is going to be styling.
+
+5
+00:00:13,680 --> 00:00:16,320
+So the HTML is actually going to be really simple.
+
+6
+00:00:16,320 --> 00:00:17,760
+Let's just jump right in here.
+
+7
+00:00:17,760 --> 00:00:22,140
+And this is a split landing page.
+
+8
+00:00:22,980 --> 00:00:24,480
+And I don't know, I just did that.
+
+9
+00:00:26,820 --> 00:00:28,830
+And we're going to get rid of this one.
+
+10
+00:00:28,830 --> 00:00:35,300
+And let's wrap everything in a container and then we're going to have the left and the right.
+
+11
+00:00:35,310 --> 00:00:38,820
+So both of these are going to have a class of split.
+
+12
+00:00:39,510 --> 00:00:41,430
+And this one will be the left.
+
+13
+00:00:41,460 --> 00:00:43,470
+So we'll also give it a class of left.
+
+14
+00:00:44,160 --> 00:00:45,930
+And then and here it will be.
+
+15
+00:00:46,470 --> 00:00:53,910
+Let's do an H1, say, PlayStation five, which is definitely my choice.
+
+16
+00:00:54,670 --> 00:00:57,570
+And then we'll have a link formatted as a button.
+
+17
+00:00:57,570 --> 00:01:03,380
+So I'm going to give this a class of B10 and it's not going to actually go anywhere.
+
+18
+00:01:03,720 --> 00:01:06,850
+And then for the text in here, we're going to say bye now.
+
+19
+00:01:07,650 --> 00:01:11,250
+OK, and then what we'll do is just copy this.
+
+20
+00:01:11,880 --> 00:01:16,710
+So this whole div right here, we're going to copy that down and just change this to.
+
+21
+00:01:16,710 --> 00:01:17,280
+Right.
+
+22
+00:01:18,060 --> 00:01:27,150
+So this is the right side and we're going to change this to Xbox Series X and by now.
+
+23
+00:01:27,210 --> 00:01:27,790
+And that's it.
+
+24
+00:01:27,810 --> 00:01:31,140
+So very simple html it's going to look like this.
+
+25
+00:01:31,740 --> 00:01:36,180
+So we're going to jump into our stylesheet I'm going to use the Roboto font, so we're going to keep
+
+26
+00:01:36,180 --> 00:01:36,630
+that.
+
+27
+00:01:36,960 --> 00:01:42,750
+And then for the body, I'm not going to use Flex, so I'm going to get rid of all of these.
+
+28
+00:01:43,560 --> 00:01:46,190
+And yeah, so that should be all set for the body.
+
+29
+00:01:47,220 --> 00:01:50,730
+Now I'm trying to figure out what we should style first.
+
+30
+00:01:50,790 --> 00:01:54,540
+Let's do we'll do the content.
+
+31
+00:01:54,540 --> 00:01:56,990
+Looks like the the heading in the in the button.
+
+32
+00:01:57,300 --> 00:02:01,710
+So let's start with the container which wraps around everything.
+
+33
+00:02:01,710 --> 00:02:10,950
+We want to position that to be relative and we want that to have a width of 100 percent and a height
+
+34
+00:02:11,490 --> 00:02:19,150
+of 100 percent and then the background so that two, three, three, three, which is a dark gray.
+
+35
+00:02:20,410 --> 00:02:21,570
+All right.
+
+36
+00:02:21,570 --> 00:02:29,550
+And this space up here is from the the margin on the heading now for the split.
+
+37
+00:02:29,670 --> 00:02:32,250
+Remember, both sides have a class of split.
+
+38
+00:02:33,180 --> 00:02:42,630
+So we're going to position the split absolu within the container and the width is going to be 50 percent.
+
+39
+00:02:42,630 --> 00:02:46,290
+So each one will be 50 percent, the height will be 100 percent.
+
+40
+00:02:46,770 --> 00:02:50,730
+And the overflow, we want that to be hidden.
+
+41
+00:02:53,360 --> 00:02:53,760
+All right.
+
+42
+00:02:53,760 --> 00:02:55,080
+So now it's positioned.
+
+43
+00:02:55,860 --> 00:02:57,810
+Let's do this, the left side.
+
+44
+00:02:57,990 --> 00:03:07,890
+So if we say split and we want to target the left side, so left, I'm going to set from the left zero.
+
+45
+00:03:09,510 --> 00:03:14,590
+And let's add the background, which is going to be a neutral.
+
+46
+00:03:15,090 --> 00:03:20,010
+Now, I didn't actually bring the images into this yet, so I'm just going to grab these and you can
+
+47
+00:03:20,010 --> 00:03:22,350
+get these in the repository.
+
+48
+00:03:22,860 --> 00:03:25,380
+And of course, you can use any images that you'd like.
+
+49
+00:03:25,840 --> 00:03:29,910
+So I'm just going to bring these over so we have the five of the Xbox.
+
+50
+00:03:30,540 --> 00:03:32,550
+So these are the two images that I'm using.
+
+51
+00:03:33,270 --> 00:03:37,050
+The left side is going to be the five.
+
+52
+00:03:37,050 --> 00:03:44,490
+So in here, let's say JPEG, OK, so we can see the background and we're going to add an overlay to
+
+53
+00:03:44,490 --> 00:03:47,100
+each side, but at least we have the background.
+
+54
+00:03:47,460 --> 00:03:53,910
+And then I just want to set the background, let's say background repeat.
+
+55
+00:03:53,910 --> 00:03:59,940
+I'm going to set to no repeat and background size, I'm going to set to cover.
+
+56
+00:03:59,940 --> 00:04:01,800
+So we see the whole thing.
+
+57
+00:04:02,820 --> 00:04:03,240
+All right.
+
+58
+00:04:03,240 --> 00:04:03,980
+So that's good.
+
+59
+00:04:04,350 --> 00:04:07,350
+Now for the overlay, actually.
+
+60
+00:04:07,350 --> 00:04:09,660
+Let's do the right first and then we'll do the overlay.
+
+61
+00:04:09,660 --> 00:04:13,500
+So let's say split with the class of.
+
+62
+00:04:13,500 --> 00:04:14,040
+Right.
+
+63
+00:04:15,600 --> 00:04:17,670
+And we want to position that on the right side.
+
+64
+00:04:17,670 --> 00:04:22,230
+So from the right zero and let's add the background.
+
+65
+00:04:23,100 --> 00:04:28,170
+So background is going to be neutral and it's going to be Xbox JPEG.
+
+66
+00:04:29,040 --> 00:04:32,190
+And let's set the background.
+
+67
+00:04:33,800 --> 00:04:35,430
+I forgot my semicolon here.
+
+68
+00:04:36,630 --> 00:04:43,440
+So background repeat will be no repeat in the background size to cover.
+
+69
+00:04:44,010 --> 00:04:44,400
+All right.
+
+70
+00:04:44,400 --> 00:04:45,270
+So I save that.
+
+71
+00:04:45,270 --> 00:04:50,880
+Now we have both images side by side, so now we'll go ahead and do the overlays.
+
+72
+00:04:50,880 --> 00:04:52,920
+So we'll start with the left overlay.
+
+73
+00:04:53,730 --> 00:04:58,650
+So we're going to use split left and then the before pseudo selector sokolenko them before.
+
+74
+00:04:59,190 --> 00:04:59,930
+And we're so.
+
+75
+00:04:59,960 --> 00:05:05,880
+Actually, styling like you can think of it as a ghost element that we're going to place over the left
+
+76
+00:05:05,880 --> 00:05:11,580
+side, so when we used before or after, we have to use a content property and we're just going to put
+
+77
+00:05:11,790 --> 00:05:13,530
+in just an empty string for that.
+
+78
+00:05:14,130 --> 00:05:23,520
+And then we want to position this to be absolute and it's going to have a width of 100 percent of its
+
+79
+00:05:23,520 --> 00:05:24,210
+container.
+
+80
+00:05:24,240 --> 00:05:25,140
+Same thing with height.
+
+81
+00:05:25,260 --> 00:05:27,000
+That's also going to be 100 percent.
+
+82
+00:05:27,630 --> 00:05:31,110
+And then we want the overlay, which is going to be a background color.
+
+83
+00:05:32,760 --> 00:05:38,350
+Now, I'm going to I'm going to put this in a custom property or variable just so it's easy to change.
+
+84
+00:05:39,420 --> 00:05:48,750
+So let's do Vare and we'll call this dash dash left, dash BGI dash color.
+
+85
+00:05:49,620 --> 00:05:52,450
+OK, and then let's go up to the top here.
+
+86
+00:05:52,450 --> 00:05:55,530
+And we want to define on a root scope.
+
+87
+00:05:58,620 --> 00:06:07,860
+Dash, dash, what I call it, left dash, B.G., dash color, and it's going to be a red, green,
+
+88
+00:06:07,860 --> 00:06:12,860
+blue Alfa because we needed to have some transparency so we can see the image behind the overlay.
+
+89
+00:06:13,290 --> 00:06:15,420
+So the color is going to be a bluish color.
+
+90
+00:06:15,420 --> 00:06:24,720
+So 87 for red, 84 for green and 236 for blue, and then for the alpha value will be zero point seven.
+
+91
+00:06:25,470 --> 00:06:25,860
+All right.
+
+92
+00:06:25,860 --> 00:06:30,570
+So if I go ahead and save that, I can see we have this blue overlay and while we're at it, we might
+
+93
+00:06:30,570 --> 00:06:32,760
+as well do the right overlay.
+
+94
+00:06:32,770 --> 00:06:37,920
+So let's change this to write big color.
+
+95
+00:06:38,850 --> 00:06:44,500
+And that's going to be it's going to be a little lighter than blacks.
+
+96
+00:06:44,570 --> 00:06:48,180
+We're going to do 43 for red, green and blue.
+
+97
+00:06:49,410 --> 00:06:57,810
+And then for the alpha value, let's do zero point eight and then we'll go down here and where we have
+
+98
+00:06:57,810 --> 00:07:01,500
+our split left before.
+
+99
+00:07:01,500 --> 00:07:08,620
+I'm just going to grab that and go under the right here and let's change this to split dot.
+
+100
+00:07:08,730 --> 00:07:09,210
+Right.
+
+101
+00:07:10,020 --> 00:07:11,730
+So now we're targeting the right side.
+
+102
+00:07:12,300 --> 00:07:19,500
+And let's see, this stuff here is going to be the same, 100 percent, and then the color is going
+
+103
+00:07:19,500 --> 00:07:28,170
+to be the right color, which just makes it a you know, it's like a gray, dark gray.
+
+104
+00:07:29,400 --> 00:07:29,790
+All right.
+
+105
+00:07:29,800 --> 00:07:30,660
+So that's good.
+
+106
+00:07:30,810 --> 00:07:35,900
+Now it's you trying to think what I want to do next.
+
+107
+00:07:35,910 --> 00:07:39,480
+Let's let's dial style the content now that's inside of it.
+
+108
+00:07:39,840 --> 00:07:45,260
+So we have the text, the H1 and the button that we want to style.
+
+109
+00:07:45,270 --> 00:07:49,740
+So let's do the H1 one first and I'm going to put that right up here.
+
+110
+00:07:50,910 --> 00:07:52,110
+See each one.
+
+111
+00:07:53,520 --> 00:07:55,310
+I'm going to increase the font size.
+
+112
+00:07:55,320 --> 00:08:03,210
+Let's do forum units and the color is going to be white and we want to position it.
+
+113
+00:08:03,360 --> 00:08:06,570
+So it's to position absolute.
+
+114
+00:08:06,580 --> 00:08:12,750
+So it's going to be position absolute on its in whatever side here and we want each one to be in the
+
+115
+00:08:12,750 --> 00:08:13,300
+middle.
+
+116
+00:08:14,760 --> 00:08:22,920
+So what we'll do is say from the left 50 percent and from the top we'll do 20 percent.
+
+117
+00:08:22,950 --> 00:08:28,650
+Now if I do that, it's going to put the beginning of the H1 right in the middle.
+
+118
+00:08:28,650 --> 00:08:29,520
+And that's not what I want.
+
+119
+00:08:29,520 --> 00:08:33,300
+I want the middle of the H1 in the middle of the of the side.
+
+120
+00:08:33,600 --> 00:08:41,730
+So to do that, we just need to add a transform and we're going to transform on translate X.
+
+121
+00:08:42,120 --> 00:08:46,020
+So we're going to move it on the X axis, negative 50 percent.
+
+122
+00:08:47,100 --> 00:08:50,250
+And now it's going to put it, you know, right in the middle.
+
+123
+00:08:50,260 --> 00:08:54,380
+Now, I don't want them to go on the next slide.
+
+124
+00:08:54,390 --> 00:08:57,240
+I don't want this to wrap even if this is smaller.
+
+125
+00:08:57,240 --> 00:09:00,510
+Like if I spent spane this out, it's on one line.
+
+126
+00:09:00,510 --> 00:09:02,990
+But even if it's smaller like this, I don't want it to wrap.
+
+127
+00:09:03,330 --> 00:09:05,940
+So we need to set the whitespace property.
+
+128
+00:09:06,510 --> 00:09:10,950
+So let's say white space and we're going to set that to no wrap.
+
+129
+00:09:11,220 --> 00:09:17,040
+So now, even if, you know, even if it's like that, it's still not going to rap, which is what I
+
+130
+00:09:17,040 --> 00:09:17,370
+want.
+
+131
+00:09:18,750 --> 00:09:20,220
+OK, so that's the one.
+
+132
+00:09:21,180 --> 00:09:23,310
+And now I think what we'll do is style the button.
+
+133
+00:09:23,310 --> 00:09:28,850
+And then in the next video we'll do the hover stuff and add our JavaScript and the rest of the season.
+
+134
+00:09:29,220 --> 00:09:30,240
+But let's dial the button.
+
+135
+00:09:30,260 --> 00:09:36,030
+So that has a class of buttons and it's going to close that up.
+
+136
+00:09:36,300 --> 00:09:39,360
+So first thing I'm going to do here is position it.
+
+137
+00:09:39,360 --> 00:09:41,910
+So let's say position absolute.
+
+138
+00:09:42,540 --> 00:09:48,990
+It's going to position the absolute within its container, within its side, and we want it to be in
+
+139
+00:09:48,990 --> 00:09:49,470
+the middle.
+
+140
+00:09:49,470 --> 00:09:57,480
+So let's say left 50 percent and let's do from the top will say 40 percent.
+
+141
+00:09:58,080 --> 00:10:00,840
+Now, that's going to put the beginning of it in the middle, right.
+
+142
+00:10:00,870 --> 00:10:02,760
+So this year we want the middle in the middle.
+
+143
+00:10:02,760 --> 00:10:13,680
+So we're going to add trends form, transform and then translate X negative 50 percent.
+
+144
+00:10:13,680 --> 00:10:15,090
+That's going to put it right in the middle.
+
+145
+00:10:16,530 --> 00:10:19,680
+And then let's take away that underline.
+
+146
+00:10:19,680 --> 00:10:29,220
+So text decoration is going to be none and the color is going to be white and we're going to add a border
+
+147
+00:10:29,220 --> 00:10:31,050
+of whites.
+
+148
+00:10:31,050 --> 00:10:35,130
+So that and solid and the width.
+
+149
+00:10:35,130 --> 00:10:38,460
+I'm going to use a RIM unit, so just point to room for the width.
+
+150
+00:10:39,480 --> 00:10:46,890
+OK, so we have our border, let's make the font size, we'll do one room for the font size and then
+
+151
+00:10:47,850 --> 00:10:53,520
+for the width of the button we'll do fifteen REM.
+
+152
+00:10:53,940 --> 00:10:57,420
+And then let's add padding of one point.
+
+153
+00:10:57,520 --> 00:11:06,220
+Five a.m. and then we want the text to be in the middle, so what I'm going to do is actually display
+
+154
+00:11:07,720 --> 00:11:14,280
+as flex and then we'll line items center and justify content center.
+
+155
+00:11:16,930 --> 00:11:18,490
+And let's also make it bold.
+
+156
+00:11:18,490 --> 00:11:25,000
+So let's see right in the font size will say font weight and set that to bold.
+
+157
+00:11:27,070 --> 00:11:29,250
+And I want it to be upper case as well.
+
+158
+00:11:29,260 --> 00:11:34,650
+So add text, transform into uppercase.
+
+159
+00:11:36,370 --> 00:11:43,370
+OK, so it looks pretty good and I think that's it as far as the button styles go.
+
+160
+00:11:44,050 --> 00:11:49,060
+Now we do want to have C yeah.
+
+161
+00:11:49,060 --> 00:11:54,570
+We do want to have a background color when we hover over these.
+
+162
+00:11:55,780 --> 00:12:01,620
+So let's actually define that as a variable up here so those can easily be changed.
+
+163
+00:12:02,020 --> 00:12:13,800
+So we'll say dash dash left, let's do left btn so left Betty and dash hover dash color.
+
+164
+00:12:14,890 --> 00:12:22,300
+And that's actually going to be the same as this except no transparency.
+
+165
+00:12:22,300 --> 00:12:25,780
+So instead of zero point seven for the alpha value will do one.
+
+166
+00:12:26,410 --> 00:12:26,850
+All right.
+
+167
+00:12:26,860 --> 00:12:36,660
+And then for the right let's say right button hover and that's going to be something different.
+
+168
+00:12:36,670 --> 00:12:44,680
+It's going to be the Xbox Green which is twenty eight one twenty two twenty eight.
+
+169
+00:12:44,950 --> 00:12:46,240
+And we're going to keep it solid.
+
+170
+00:12:46,250 --> 00:12:46,930
+So one.
+
+171
+00:12:47,710 --> 00:12:51,370
+And now we can go down here to the button
+
+172
+00:12:54,160 --> 00:13:07,450
+and let's add, let's say split left dot btn hover and we want to set the background, let's say a background
+
+173
+00:13:07,450 --> 00:13:07,900
+color.
+
+174
+00:13:07,900 --> 00:13:15,430
+We're going to set that to the variable or the custom property of dash dash left button hover color
+
+175
+00:13:16,720 --> 00:13:22,630
+and the border color because it has a white border by default, actually want the border to be the same
+
+176
+00:13:22,630 --> 00:13:23,560
+as this as well.
+
+177
+00:13:23,560 --> 00:13:27,740
+So let's change the border color to that.
+
+178
+00:13:27,760 --> 00:13:34,150
+So if I go over and I hover, OK, nothing's happening when I do split.
+
+179
+00:13:37,550 --> 00:13:43,240
+Split left button, hover background color.
+
+180
+00:13:47,020 --> 00:13:48,850
+Oh, I forgot my semicolons up here.
+
+181
+00:13:49,390 --> 00:13:55,620
+All right, now we get that blue hover, right, and then we'll do the same for the right side.
+
+182
+00:13:55,630 --> 00:14:10,540
+So let's just grab that and change this to rights and change this and this to right as well.
+
+183
+00:14:10,690 --> 00:14:15,820
+Now, come over here and we get that Xbox screen, however, call it so in the next video, we have
+
+184
+00:14:15,820 --> 00:14:17,050
+a little bit more access to.
+
+185
+00:14:17,050 --> 00:14:17,410
+Right.
+
+186
+00:14:17,410 --> 00:14:20,590
+Because we have to handle how wide we want it to go when we hover.
+
+187
+00:14:20,750 --> 00:14:27,220
+And of course, we have to add the hover effect by adding, adding and removing classes with JavaScript.
+
+188
+00:14:27,230 --> 00:14:29,170
+So we'll get into that in the next video.

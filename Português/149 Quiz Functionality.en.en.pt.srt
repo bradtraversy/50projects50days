@@ -1,0 +1,559 @@
+﻿1
+00:00:00,210 --> 00:00:05,480
+OK, agora queremos ir em frente e fazer esta função de teste, temos apenas a interface do usuário para isso agora.
+
+2
+00:00:06,030 --> 00:00:09,990
+Então, para o quiz, para as perguntas e tudo mais, vai entrar em um array.
+
+3
+00:00:09,990 --> 00:00:13,740
+E vou colar isso porque não quero apenas digitar tudo isso.
+
+4
+00:00:14,400 --> 00:00:18,110
+E basicamente temos apenas uma variável chamada dados do questionário.
+
+5
+00:00:18,120 --> 00:00:26,130
+É um array de objetos que tem uma pergunta e tem uma resposta ABCDE e depois também tem uma correta.
+
+6
+00:00:26,610 --> 00:00:30,510
+Portanto, o correto obviamente será qualquer um deles que esteja correto.
+
+7
+00:00:30,930 --> 00:00:32,850
+E temos apenas algumas perguntas simples aqui.
+
+8
+00:00:32,880 --> 00:00:34,650
+Qual idioma é executado em um navegador da Web?
+
+9
+00:00:34,650 --> 00:00:37,140
+Para que serve o HTML dos CSFs?
+
+10
+00:00:37,140 --> 00:00:38,540
+Em que ano é o lançamento do JavaScript?
+
+11
+00:00:38,550 --> 00:00:43,040
+Obviamente você pode mudar isso, mas vamos seguir em frente com essas perguntas.
+
+12
+00:00:43,440 --> 00:00:45,420
+Agora, vamos trazer tudo o que precisamos.
+
+13
+00:00:45,420 --> 00:00:49,830
+Em primeiro lugar, precisamos do quiz em si, que envolve tudo.
+
+14
+00:00:49,830 --> 00:00:59,730
+Então é para documentar doGet Element por D e vamos obter o ID do quiz agora para as respostas.
+
+15
+00:00:59,730 --> 00:01:05,340
+Então, digamos Consed e chamaremos essa resposta de Corujas.
+
+16
+00:01:05,340 --> 00:01:13,340
+Então, responda aos elementos e queremos usar o seletor de consulta de ponto de documento porque há mais de um
+
+17
+00:01:13,350 --> 00:01:13,700
+membro.
+
+18
+00:01:13,710 --> 00:01:17,010
+Cada uma delas tem uma classe de respostas.
+
+19
+00:01:17,010 --> 00:01:18,350
+Então é isso que queremos chegar aqui.
+
+20
+00:01:18,960 --> 00:01:25,260
+Então é uma classe de resposta e então queremos o elemento de pergunta.
+
+21
+00:01:25,270 --> 00:01:34,350
+Então vamos dizer consed question element e isso vai ser document dot get elemento por D e o H2.
+
+22
+00:01:34,350 --> 00:01:37,330
+A pergunta tem uma ideia de pergunta.
+
+23
+00:01:38,430 --> 00:01:41,880
+Agora queremos todos os IDs de resposta.
+
+24
+00:01:42,120 --> 00:01:51,690
+Então, basicamente, você conhece um texto a um texto D, então digamos const um texto sublinhado e defina-o como
+
+25
+00:01:51,690 --> 00:02:00,240
+documento ponto get elemento por D e isso vai ser um texto sublinhado e então eu vou copiar isso
+
+26
+00:02:00,240 --> 00:02:01,790
+para baixo mais três vezes.
+
+27
+00:02:02,400 --> 00:02:03,570
+Então este.
+
+28
+00:02:03,870 --> 00:02:04,440
+Este.
+
+29
+00:02:04,440 --> 00:02:05,790
+Vamos mudar isso para ser.
+
+30
+00:02:07,570 --> 00:02:12,420
+Este e este vão mudar para ver este, e este vai mudar muito profundamente.
+
+31
+00:02:13,090 --> 00:02:15,330
+OK, e finalmente, precisamos apenas enviar o botão.
+
+32
+00:02:15,340 --> 00:02:23,650
+Então, digamos que o envio do consed foi vencido e defina isso para documentar o elemento dot get bidi e vamos obter
+
+33
+00:02:23,650 --> 00:02:25,080
+a ideia de submeter.
+
+34
+00:02:26,430 --> 00:02:27,970
+OK, então é tudo o que precisamos.
+
+35
+00:02:27,970 --> 00:02:28,540
+Por enquanto.
+
+36
+00:02:29,950 --> 00:02:35,500
+Precisamos de um índice de basicamente a questão são o quiz atual.
+
+37
+00:02:35,740 --> 00:02:40,860
+Acho que cada uma dessas páginas em cada uma delas vai ser um quiz.
+
+38
+00:02:40,860 --> 00:02:48,910
+Então digamos CONSED e queremos o quiz atual, que sempre começará do zero.
+
+39
+00:02:49,610 --> 00:02:53,230
+Certo, porque é um array, vai para zero, começa em um índice zero.
+
+40
+00:02:53,830 --> 00:02:58,300
+E, na verdade, vamos definir isso, isso vai mudar e ser reatribuído.
+
+41
+00:02:58,300 --> 00:02:59,770
+Então, queremos usar o let aqui.
+
+42
+00:02:59,800 --> 00:03:04,390
+E então vamos também criar uma variável para a pontuação, que obviamente começa em zero.
+
+43
+00:03:05,140 --> 00:03:10,960
+E então vamos chamar load quiz, que é uma função que vamos criar agora.
+
+44
+00:03:15,350 --> 00:03:26,330
+Assim, queremos obter os dados atuais do questionário, então digamos que consed os dados atuais do questionário e vamos
+
+45
+00:03:26,330 --> 00:03:31,550
+defina isso para os dados do questionário, que é o array que temos acima.
+
+46
+00:03:31,850 --> 00:03:36,050
+E então o índice para isso serão os valores atuais do questionário.
+
+47
+00:03:36,050 --> 00:03:39,830
+Então isso aqui, que é inicialmente definido como zero.
+
+48
+00:03:40,310 --> 00:03:44,150
+Certo, então queremos obter os alimentos da questão.
+
+49
+00:03:45,980 --> 00:03:48,860
+Então questione Àlex, que deve ser um L minúsculo.
+
+50
+00:03:52,810 --> 00:03:55,450
+OK, então questione o elemento em urtext.
+
+51
+00:03:57,300 --> 00:04:05,910
+E vamos definir isso para qualquer que seja a pergunta atual de dados do questionário atual, porque a atual
+
+52
+00:04:05,910 --> 00:04:12,060
+os dados do questionário são um dos objetos na matriz e temos um valor de pergunta.
+
+53
+00:04:12,080 --> 00:04:15,190
+Então é isso que estamos recebendo aqui e vamos colocar isso em nosso texto.
+
+54
+00:04:15,190 --> 00:04:20,270
+Então, se eu salvar, veremos o primeiro aqui que é executado em um navegador da Web.
+
+55
+00:04:20,280 --> 00:04:23,610
+Se eu mudar o questionário atual também, veremos a segunda pergunta.
+
+56
+00:04:24,240 --> 00:04:24,720
+Tudo bem.
+
+57
+00:04:24,730 --> 00:04:25,340
+Eu sinto Muito.
+
+58
+00:04:25,380 --> 00:04:28,140
+Essa seria a terceira seria a segunda pergunta.
+
+59
+00:04:29,440 --> 00:04:33,320
+OK, agora para as respostas.
+
+60
+00:04:33,330 --> 00:04:41,490
+Lembre-se, temos um texto sublinhado e vamos definir o texto interno e vamos defini-lo como atual
+
+61
+00:04:42,750 --> 00:04:43,950
+dados do questionário.
+
+62
+00:04:44,020 --> 00:04:44,850
+Ponto a.
+
+63
+00:04:46,410 --> 00:04:51,330
+Porque se olharmos e soubermos, se olharmos aqui em cima, cada um tem um valor, é isso que estamos
+
+64
+00:04:51,330 --> 00:04:57,630
+chegar aqui e colocá-lo no ID do texto sublinhado Queremos fazer o mesmo para os outros três.
+
+65
+00:04:58,290 --> 00:05:07,980
+Então isso será B e este será B, texto C texto será o questionário atual DataDot C, e então este
+
+66
+00:05:07,980 --> 00:05:08,880
+será d.
+
+67
+00:05:10,590 --> 00:05:16,380
+Agora, um problema que teremos quando adicionarmos nossos eventos sem eventos no envio e carregarmos o próximo teste
+
+68
+00:05:16,380 --> 00:05:23,190
+ou a próxima, você sabe, a resposta da pergunta que teremos algo selecionado e queremos
+
+69
+00:05:23,190 --> 00:05:26,190
+para desmarcar tudo antes.
+
+70
+00:05:26,190 --> 00:05:27,510
+Tão certo.
+
+71
+00:05:27,510 --> 00:05:36,030
+Quando carregarmos o quiz aqui, vamos chamar o que é chamado de deselect answers e então vamos criar
+
+72
+00:05:36,030 --> 00:05:37,560
+essa função aqui embaixo.
+
+73
+00:05:40,680 --> 00:05:43,300
+Portanto, desmarque as respostas, e isso é bem simples.
+
+74
+00:05:43,330 --> 00:05:50,220
+Já temos nossos elementos de respostas, que é uma lista não porque consultamos o seletor all e apenas
+
+75
+00:05:50,220 --> 00:05:57,960
+quiser percorrer então para cada um e diremos para cada elemento de resposta, então vamos definir o em que
+
+76
+00:05:57,960 --> 00:05:59,730
+elemento de resposta específico.
+
+77
+00:06:00,870 --> 00:06:07,260
+Queremos definir o valor da verificação igual a falso, o que removerá quaisquer verificações ou seleções.
+
+78
+00:06:08,190 --> 00:06:08,610
+Tudo bem.
+
+79
+00:06:08,610 --> 00:06:13,830
+Agora vamos adicionar um ouvinte de evento para que tenhamos nosso botão de envio.
+
+80
+00:06:15,870 --> 00:06:17,340
+Queremos adicionar um ouvinte de evento.
+
+81
+00:06:17,340 --> 00:06:19,770
+Então, queremos ouvir um evento de clique.
+
+82
+00:06:20,340 --> 00:06:26,920
+E quando for clicado, vamos chamar uma função e precisamos obter a resposta.
+
+83
+00:06:26,960 --> 00:06:34,500
+Então, digamos que CONSED responda e vamos definir isso para uma função chamada Get Selected e vamos colocar essa função
+
+84
+00:06:34,500 --> 00:06:40,730
+aqui em cima, seja selecionado e eu vou inicializar a resposta.
+
+85
+00:06:40,740 --> 00:06:46,610
+Então, vou inicializar essa variável e, em seguida, pegar os elementos de resposta e fazer um loop.
+
+86
+00:06:46,620 --> 00:06:56,580
+Então, para cada resposta, para cada elemento de resposta, quero verificar qual está marcada.
+
+87
+00:06:56,850 --> 00:07:04,530
+Então, vamos fazer uma declaração if aqui e apenas dizer se aquele elemento de resposta em particular marcou, o que
+
+88
+00:07:04,530 --> 00:07:13,430
+nos dá um verdadeiro ou falso, então vamos definir resposta igual ao elemento de resposta dot ID.
+
+89
+00:07:13,680 --> 00:07:15,540
+OK, vamos configurá-lo para quaisquer que sejam as ideias.
+
+90
+00:07:15,540 --> 00:07:20,130
+E depois disso para cada ano, vamos apenas retornar a resposta.
+
+91
+00:07:21,500 --> 00:07:23,690
+Tudo bem, então isso nos dará a resposta.
+
+92
+00:07:25,760 --> 00:07:31,520
+Na verdade, vamos testar isso se fizermos um log do console de resposta e então eu vou passar aqui,
+
+93
+00:07:31,520 --> 00:07:35,300
+abra meu console, vou escolher C, o que obviamente está errado.
+
+94
+00:07:36,080 --> 00:07:44,960
+Mas você pode ver que no log B, Python é C, Java é A, JavaScript é D, então estamos recebendo o not
+
+95
+00:07:44,960 --> 00:07:47,950
+a resposta correta, mas estamos obtendo a resposta selecionada.
+
+96
+00:07:48,560 --> 00:07:50,990
+Então agora queremos combinar isso com a resposta correta.
+
+97
+00:07:51,030 --> 00:07:58,460
+Então vamos nos livrar disso e diremos se há uma resposta.
+
+98
+00:08:00,720 --> 00:08:11,460
+Então, se eu responder, queremos verificar se a resposta é igual à resposta correta, o que lembra
+
+99
+00:08:11,460 --> 00:08:18,660
+está no array, então podemos usar os dados whois e queremos qualquer que seja o questionário atual.
+
+100
+00:08:18,660 --> 00:08:26,450
+Então, passamos esse índice de teste atual, que começa em zero, e queremos verificar o valor correto.
+
+101
+00:08:27,000 --> 00:08:31,290
+Portanto, se a resposta que selecionamos for igual a essa, saberemos que está correta.
+
+102
+00:08:31,320 --> 00:08:34,320
+Então, queremos pegar a pontuação e apenas incrementá-la em um.
+
+103
+00:08:34,530 --> 00:08:35,640
+Então, basta pontuar mais.
+
+104
+00:08:35,640 --> 00:08:36,150
+Mais.
+
+105
+00:08:36,960 --> 00:08:41,700
+OK, então queremos ir para o próximo teste.
+
+106
+00:08:41,850 --> 00:08:45,540
+Então estou basicamente dizendo que cada uma dessas telas é um quiz.
+
+107
+00:08:45,870 --> 00:08:51,270
+Então, vamos fazer o teste atual e vamos incrementá-lo para passar para o próximo.
+
+108
+00:08:51,300 --> 00:08:59,800
+Agora vamos verificar se o questionário atual é menor que o comprimento do array.
+
+109
+00:08:59,820 --> 00:09:05,850
+Então, se for menor que os dados do questionário, o comprimento, isso significa que não estamos no final.
+
+110
+00:09:05,850 --> 00:09:10,620
+Então, queremos mais uma vez chamado load quiz ou então.
+
+111
+00:09:10,650 --> 00:09:12,450
+Então isso significa que estamos no fim.
+
+112
+00:09:12,450 --> 00:09:18,210
+Respondemos a última pergunta que vou fazer no elemento quiz, que é apenas o wrapper inteiro,
+
+113
+00:09:18,540 --> 00:09:23,880
+e eu vou definir o HTML inteiro e vamos adicioná-lo a alguns back ticks.
+
+114
+00:09:25,680 --> 00:09:33,330
+E aqui vamos colocar H2 e dizer que você respondeu
+
+115
+00:09:35,520 --> 00:09:39,870
+corretamente em e então vamos colocar a pontuação aqui.
+
+116
+00:09:40,650 --> 00:09:47,700
+Então, marque a barra e, em seguida, qualquer que seja o comprimento dos questionários, para que possamos obter isso com o array, que
+
+117
+00:09:47,700 --> 00:09:51,000
+são os dados do questionário e, em seguida, o comprimento.
+
+118
+00:09:51,240 --> 00:09:59,430
+Então será como, você sabe, três em quatro ou o que quer que seja, e então apenas faça perguntas e cada um
+
+119
+00:09:59,430 --> 00:10:04,110
+para OK e então vamos ter um botão de recarregar.
+
+120
+00:10:04,110 --> 00:10:15,080
+Então ao redor os dois terão um botão e nós vamos apenas fazer uma linha em clique aqui e defini-lo para localização
+
+121
+00:10:15,540 --> 00:10:16,260
+recarregar.
+
+122
+00:10:17,690 --> 00:10:22,970
+O que apenas recarregará a página e começará de novo e ele dirá recarregar.
+
+123
+00:10:30,510 --> 00:10:36,690
+Então, vamos salvá-lo, vamos experimentá-lo, vou recarregar isso e vamos em frente e selecione JavaScript.
+
+124
+00:10:37,860 --> 00:10:39,940
+Então, o que Cézannes representa?
+
+125
+00:10:39,960 --> 00:10:43,780
+Vou escolher a resposta errada de propósito aqui, html.
+
+126
+00:10:43,830 --> 00:10:47,460
+Stand para escolher a resposta certa JavaScript.
+
+127
+00:10:47,460 --> 00:10:49,290
+Vou escolher a resposta certa e enviar.
+
+128
+00:10:49,290 --> 00:10:52,920
+E você pode ver que eu respondi corretamente em três das quatro perguntas.
+
+129
+00:10:53,580 --> 00:10:54,690
+Vamos reformular isso.
+
+130
+00:10:54,690 --> 00:11:01,830
+Você acertou três das quatro perguntas.
+
+131
+00:11:03,300 --> 00:11:09,180
+OK, e só para mostrar que o botão de recarregar funciona, vou escolher um monte de respostas erradas
+
+132
+00:11:09,180 --> 00:11:09,570
+aqui.
+
+133
+00:11:10,230 --> 00:11:12,730
+E se eu clicar em recarregar, ele inicia o teste novamente.
+
+134
+00:11:12,960 --> 00:11:13,320
+Tudo bem.
+
+135
+00:11:13,320 --> 00:11:15,420
+Tão pouco simples aplicação.
+
+136
+00:11:15,990 --> 00:11:18,180
+Obviamente, você poderia adicionar muito mais a isso.
+
+137
+00:11:18,570 --> 00:11:22,940
+E se você quiser adicionar mais perguntas, tudo o que você faria é adicionar a este array, OK?
+
+138
+00:11:23,160 --> 00:11:28,320
+E você pode ter essas perguntas vindo de algum tipo de banco de dados, vindo de algum tipo de API.
+
+139
+00:11:29,070 --> 00:11:29,660
+Mas é isso.
+
+140
+00:11:29,670 --> 00:11:31,470
+Vamos em frente e vamos para o próximo.

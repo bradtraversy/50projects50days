@@ -1,0 +1,335 @@
+1
+00:00:00,270 --> 00:00:05,880
+OK, so now we're going to get into the JavaScript here of the fun part of this project, and first
+
+2
+00:00:05,880 --> 00:00:10,210
+thing we want to do, like with most of these projects, is bring in what we want from the DOM.
+
+3
+00:00:10,230 --> 00:00:12,200
+So we want all these small cups.
+
+4
+00:00:13,500 --> 00:00:19,410
+So let's say document dot and we're going to use query selector all because there's there's eight small
+
+5
+00:00:19,410 --> 00:00:20,120
+cups, right?
+
+6
+00:00:20,130 --> 00:00:25,350
+There's not just one element we're selecting and we want all the cup Dasch small classes.
+
+7
+00:00:25,530 --> 00:00:32,000
+So that'll put put them all into a no list of elements with the, you know, the class of cups small.
+
+8
+00:00:32,910 --> 00:00:34,560
+Next we want the leaders.
+
+9
+00:00:34,800 --> 00:00:40,760
+So leaders is it's the number above remained so right here.
+
+10
+00:00:41,130 --> 00:00:46,380
+So I mean, there's nothing there right now, but that's what we're grabbing and we need to insert something
+
+11
+00:00:46,380 --> 00:00:46,830
+in that.
+
+12
+00:00:46,840 --> 00:00:49,350
+So we want to grab that element.
+
+13
+00:00:49,350 --> 00:00:57,990
+We're going to use gets element by D has an idea of leaders and then we want two more things.
+
+14
+00:00:57,990 --> 00:01:00,960
+We want the percentage.
+
+15
+00:01:04,870 --> 00:01:11,440
+OK, so percentages is down here, it's going to be the percentage fall for the big cup and then the
+
+16
+00:01:11,440 --> 00:01:15,580
+remaining is the opposite, so remained.
+
+17
+00:01:19,940 --> 00:01:26,360
+All right, so remained is this right here, this whole divide with the leaders in the remained?
+
+18
+00:01:27,500 --> 00:01:27,890
+All right.
+
+19
+00:01:27,890 --> 00:01:33,860
+Now, the way that I'm going to handle this is we're going to take all the small cups and we're going
+
+20
+00:01:33,860 --> 00:01:35,600
+to loop through with a foreach.
+
+21
+00:01:35,600 --> 00:01:41,900
+So for each takes in an arrow function and first is going to be whatever we want to call each item,
+
+22
+00:01:41,900 --> 00:01:47,290
+which I'll call cop, and then we can have the index, which is going to be, you know, zero through
+
+23
+00:01:47,330 --> 00:01:51,000
+however many cups, so zero through seven, basically.
+
+24
+00:01:51,290 --> 00:01:57,050
+And in fact, I can just console log the index and if I open up my console.
+
+25
+00:02:01,160 --> 00:02:01,460
+Yeah.
+
+26
+00:02:01,460 --> 00:02:02,540
+So it's just logging.
+
+27
+00:02:02,550 --> 00:02:04,970
+It was just showing the index of each one.
+
+28
+00:02:05,690 --> 00:02:11,160
+Now what I would what I want to do is add an event listener on each of the cups.
+
+29
+00:02:11,190 --> 00:02:18,230
+So let's say cup dot, add event listener and we want to listen for a click event on each cup.
+
+30
+00:02:18,590 --> 00:02:21,700
+And when that happens we're going to call a function.
+
+31
+00:02:21,980 --> 00:02:27,530
+So we're going to add an arrow function here that calls a function called highlight cups.
+
+32
+00:02:28,040 --> 00:02:32,150
+And we're then going to pass in that index so we know which one we're clicking on.
+
+33
+00:02:32,600 --> 00:02:39,890
+So down here, we'll create a function called Highlight Cups, which takes in an index, and then here
+
+34
+00:02:39,890 --> 00:02:43,070
+lets console log index and now whatever.
+
+35
+00:02:43,070 --> 00:02:45,470
+When I click on, it's going to show that index.
+
+36
+00:02:47,960 --> 00:02:55,700
+So what I want to check here is when I click on one of these, basically, I want to add the full class
+
+37
+00:02:55,700 --> 00:02:58,660
+because remember, when it has a class of full, it gets colored blue.
+
+38
+00:02:59,150 --> 00:03:04,590
+So I'm going to take all the small cups and there's a few different ways you could do this.
+
+39
+00:03:05,270 --> 00:03:07,500
+This is probably the easiest way.
+
+40
+00:03:07,520 --> 00:03:13,820
+So if we take all the small cups and loop through number for each takes in an arrow function and we
+
+41
+00:03:13,820 --> 00:03:19,850
+want to say for each cup now, I don't want to use IDEX here because I'm using it here, I'm passing
+
+42
+00:03:19,850 --> 00:03:20,210
+it in.
+
+43
+00:03:20,510 --> 00:03:22,760
+This is the index of the cup or clicked on.
+
+44
+00:03:23,180 --> 00:03:26,680
+This is the index of, you know, each one in this loop.
+
+45
+00:03:26,690 --> 00:03:33,830
+So let's call this one, index two, and then here we'll do a check and we're going to see because what
+
+46
+00:03:33,830 --> 00:03:38,210
+I want to do is not just fill the one that I click on, but also all the ones before it.
+
+47
+00:03:38,210 --> 00:03:43,300
+If I click on this fourth one, all the ones before, it should also fill up.
+
+48
+00:03:43,670 --> 00:03:50,420
+So we can do that by checking if index two basically looping through the small, all the small cups
+
+49
+00:03:50,720 --> 00:03:58,970
+and seeing if this particular iteration, this index is less than or equal to the index that we click
+
+50
+00:03:58,970 --> 00:03:59,300
+on.
+
+51
+00:04:00,080 --> 00:04:03,980
+OK, now if that's true, we'll take the cup and we'll add a class to it.
+
+52
+00:04:03,980 --> 00:04:13,000
+So we'll say class list, dot add and we'll add the full class or else then we want to remove the class.
+
+53
+00:04:13,010 --> 00:04:18,950
+So I'll just go ahead and copy that and then we'll just set instead of add we want to remove.
+
+54
+00:04:18,960 --> 00:04:21,680
+So I'll save that and and let's go over here.
+
+55
+00:04:21,680 --> 00:04:25,340
+And if I click on one of these, you see that fills up.
+
+56
+00:04:25,340 --> 00:04:28,650
+If I click on the fourth one, it's going to fill up up to that cup.
+
+57
+00:04:29,150 --> 00:04:32,000
+OK, so no matter which one I click on, it's going to fill up to that.
+
+58
+00:04:32,300 --> 00:04:37,700
+But one thing I want to do is if let's say I click on the fourth one here, if I click on it again,
+
+59
+00:04:38,210 --> 00:04:39,770
+I want this one to empty.
+
+60
+00:04:39,770 --> 00:04:42,220
+I want to be able to toggle the last one here.
+
+61
+00:04:42,530 --> 00:04:49,990
+So before we actually do this in highlight cups, I just want to run a check and basically say if the
+
+62
+00:04:50,120 --> 00:04:56,600
+if the one that we're clicking on is full and the next one is not, then we want to decrease the index
+
+63
+00:04:56,600 --> 00:05:00,580
+by one and, you know, get rid of this so we can toggle it.
+
+64
+00:05:00,860 --> 00:05:06,320
+So the way we can do that is by checking small cups, which remember is a node list which is similar
+
+65
+00:05:06,320 --> 00:05:06,980
+to an array.
+
+66
+00:05:07,250 --> 00:05:12,350
+So I want to get the current index, meaning the current when we click on and I want to check the class
+
+67
+00:05:12,350 --> 00:05:18,590
+list and see if it contains a method called contains, we check for a specific class.
+
+68
+00:05:18,890 --> 00:05:24,900
+I want to see if it contains full and I want to see if it if the next one doesn't contain false.
+
+69
+00:05:24,900 --> 00:05:31,670
+So I'm going to say, if not small cups, the current index and then I'm going to use the property called
+
+70
+00:05:31,670 --> 00:05:36,770
+Next Element Sibling and check the class list of that.
+
+71
+00:05:36,800 --> 00:05:44,420
+So now I'm checking the next one to see if the class list contains full or I should say doesn't contain
+
+72
+00:05:44,420 --> 00:05:50,390
+because we have this, you know, this exclamation here, which means not if this is true, then let's
+
+73
+00:05:50,390 --> 00:05:53,090
+take the current index and decrement by one.
+
+74
+00:05:54,110 --> 00:06:01,460
+So now if I click on, you know, the third and this is full, but this is not and I click again, it's
+
+75
+00:06:01,460 --> 00:06:05,000
+going to decrease the index and make that go away by click again.
+
+76
+00:06:05,000 --> 00:06:07,580
+It's going to fill it so I can now toggle the last one.
+
+77
+00:06:08,920 --> 00:06:10,340
+OK, so that should be good.
+
+78
+00:06:10,900 --> 00:06:14,450
+Now that's pretty much it for the small cups.
+
+79
+00:06:14,450 --> 00:06:15,820
+This highlight cups function.
+
+80
+00:06:15,830 --> 00:06:23,240
+Next, we want to add a function called update big cup where depending on how many cups are filled down
+
+81
+00:06:23,240 --> 00:06:26,450
+here, this is going to be filled to a specific point.
+
+82
+00:06:26,450 --> 00:06:28,750
+We also want to show the percentage number.
+
+83
+00:06:28,760 --> 00:06:30,590
+We also want to show what's remained.
+
+84
+00:06:30,590 --> 00:06:31,970
+So we'll get into that next.

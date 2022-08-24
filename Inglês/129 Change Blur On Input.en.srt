@@ -1,0 +1,247 @@
+1
+00:00:00,150 --> 00:00:05,520
+OK, so now we want to add the JavaScript here, and this is this is actually an area where you could
+
+2
+00:00:05,520 --> 00:00:07,720
+pause the video and try to do this yourself.
+
+3
+00:00:08,010 --> 00:00:14,190
+So basically, as we start to type, the longer the password length is, the less blurry we want the
+
+4
+00:00:14,190 --> 00:00:14,910
+image to be.
+
+5
+00:00:14,920 --> 00:00:18,000
+And remember, it starts at 20 pixels.
+
+6
+00:00:18,240 --> 00:00:26,310
+So you essentially want to subtract from that 20 pixels, whatever the length of the password is, and
+
+7
+00:00:26,310 --> 00:00:28,260
+then multiply that by two.
+
+8
+00:00:28,260 --> 00:00:31,860
+That's going to be the the the math that will be using here.
+
+9
+00:00:32,160 --> 00:00:34,590
+So if you want to try it yourself, you can do that.
+
+10
+00:00:34,770 --> 00:00:39,150
+But I'm going to go ahead and start and bring in, first of all, the password input.
+
+11
+00:00:39,510 --> 00:00:48,060
+So let's call this variable password and document Doggett's element by D and we should have an idea
+
+12
+00:00:48,060 --> 00:00:49,050
+of password.
+
+13
+00:00:49,080 --> 00:00:51,270
+Let me just double check, make sure I put that.
+
+14
+00:00:52,110 --> 00:00:52,470
+Yep.
+
+15
+00:00:52,470 --> 00:00:53,880
+So idea of password.
+
+16
+00:00:53,880 --> 00:00:59,820
+And the other thing we want is the background, which is this div here and that has an idea of background.
+
+17
+00:00:59,820 --> 00:01:02,790
+So let's also grab that.
+
+18
+00:01:06,500 --> 00:01:13,340
+We'll call this background, all right, now we need an event listener on the password input, so let's
+
+19
+00:01:13,340 --> 00:01:17,600
+take that password input and let's add an event listener onto it.
+
+20
+00:01:17,600 --> 00:01:22,430
+And we want to listen for any input and then fire off a function.
+
+21
+00:01:24,410 --> 00:01:25,960
+So I'm going to use an arrow function.
+
+22
+00:01:25,970 --> 00:01:30,050
+We're going to pass E in here the event parameter because we need to get the value.
+
+23
+00:01:30,080 --> 00:01:36,820
+So let's say const input and let's set that to e target dot value.
+
+24
+00:01:37,220 --> 00:01:43,070
+OK, so that way we get the input and we'll just go ahead and test it with a console log here and let's
+
+25
+00:01:43,070 --> 00:01:46,820
+open up our console, get rid of that.
+
+26
+00:01:47,150 --> 00:01:52,550
+And as soon as I start to type it, we'll show whatever we're typing, whatever that input is.
+
+27
+00:01:53,030 --> 00:01:56,260
+Now, the next thing we want is the length of the input.
+
+28
+00:01:56,270 --> 00:02:04,940
+So let's create another variable here called length and set that to whatever the input dot length is.
+
+29
+00:02:05,510 --> 00:02:10,100
+And we can go ahead and console log the length here.
+
+30
+00:02:10,100 --> 00:02:17,330
+You see, it'll just give us the number, the length, and then we're going to take we're going to take
+
+31
+00:02:17,330 --> 00:02:20,200
+the the twenty.
+
+32
+00:02:20,210 --> 00:02:23,390
+That's what we have the blurr set to initially.
+
+33
+00:02:23,420 --> 00:02:27,010
+And we want to subtract from that the length.
+
+34
+00:02:27,020 --> 00:02:32,840
+Let's actually let's console log this.
+
+35
+00:02:35,190 --> 00:02:35,610
+All right.
+
+36
+00:02:35,630 --> 00:02:41,360
+So if I type in here, you'll see we get 19, 18, 17.
+
+37
+00:02:41,360 --> 00:02:50,840
+So I actually want to multiply that by two so that we get if I have one character, we get 18, 16,
+
+38
+00:02:50,840 --> 00:02:55,010
+14, 12, because I want it to go down by two each time.
+
+39
+00:02:55,970 --> 00:02:59,180
+And then when we get you know, we get start getting here.
+
+40
+00:02:59,180 --> 00:03:01,240
+We passed zero and we go negative.
+
+41
+00:03:02,360 --> 00:03:07,670
+So what I'm going to do is put this into a variable.
+
+42
+00:03:07,670 --> 00:03:10,670
+We'll call this blurr value.
+
+43
+00:03:13,210 --> 00:03:20,720
+And then we'll take the background and we want to edit the filter properties to the assess filter properties,
+
+44
+00:03:20,720 --> 00:03:27,220
+so we'll say style dot filter and we're going to set that to let's use a template literal here.
+
+45
+00:03:27,230 --> 00:03:31,090
+So use tactics and set it to blur.
+
+46
+00:03:31,120 --> 00:03:35,970
+So what we're doing is just essentially setting this value right here, the filter and the blur.
+
+47
+00:03:36,370 --> 00:03:40,240
+And instead of 20 pixels, we're going to use whatever the blur value is.
+
+48
+00:03:41,530 --> 00:03:45,790
+So we'll pass in blur value and then be sure to just add pixels after that.
+
+49
+00:03:46,540 --> 00:03:46,930
+All right.
+
+50
+00:03:46,930 --> 00:03:48,970
+So now we go back here.
+
+51
+00:03:48,970 --> 00:03:50,860
+I'm going to close that up and I start to type.
+
+52
+00:03:50,860 --> 00:03:53,740
+So I'll just type something and you can see it got a little less blurry.
+
+53
+00:03:54,250 --> 00:04:06,680
+So it should be at, what, 18 now and 16, 14, 12, 10, eight, six, four, two and zero.
+
+54
+00:04:06,700 --> 00:04:11,830
+So now anything negative obviously will still it'll be a clear image.
+
+55
+00:04:12,430 --> 00:04:17,870
+OK, now this is this is a really good project for you to to expand upon.
+
+56
+00:04:18,700 --> 00:04:22,000
+Right now, it's it's just testing the length of the password.
+
+57
+00:04:22,000 --> 00:04:29,920
+But you could test for things like special characters and numbers and all that, and you could use like
+
+58
+00:04:29,920 --> 00:04:31,020
+regular expressions.
+
+59
+00:04:31,030 --> 00:04:33,310
+There's there's a whole load of things that you could do.
+
+60
+00:04:33,580 --> 00:04:37,420
+But I think it's a good project to to add on to.
+
+61
+00:04:37,780 --> 00:04:39,480
+But that's all we're going to do for now.
+
+62
+00:04:39,490 --> 00:04:41,170
+So I will see you in the next one.

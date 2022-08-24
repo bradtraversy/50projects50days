@@ -1,0 +1,363 @@
+﻿1
+00:00:00,390 --> 00:00:05,610
+Então, vamos começar nosso projeto de duplo clique e usaremos a fonte.
+
+2
+00:00:05,610 --> 00:00:06,060
+Incrível.
+
+3
+00:00:06,060 --> 00:00:09,030
+Então notei que tenho o link, o CDN para fonte.
+
+4
+00:00:09,030 --> 00:00:09,750
+Incrível aqui.
+
+5
+00:00:10,020 --> 00:00:11,190
+Então você pode obter isso da fonte.
+
+6
+00:00:11,190 --> 00:00:13,930
+Impressionante site ou CD e Jast dot com.
+
+7
+00:00:14,460 --> 00:00:21,540
+Então vamos mudar o título aqui no HTML e vamos chamar esse carrinho de duplo clique.
+
+8
+00:00:23,290 --> 00:00:26,420
+E aqui embaixo não queremos ter muito.
+
+9
+00:00:26,430 --> 00:00:36,300
+Nós vamos ter um H3 aqui e vamos dizer clique duas vezes na imagem para e então vamos colocar o coração
+
+10
+00:00:36,300 --> 00:00:36,620
+aqui.
+
+11
+00:00:36,630 --> 00:00:44,720
+Então vamos usar um eye tag com a classe de Fey S e F um traço de coração.
+
+12
+00:00:46,860 --> 00:00:51,480
+E depois disso, vamos apenas colocar a palavra.
+
+13
+00:00:51,480 --> 00:00:53,400
+Então, fora do ícone aqui.
+
+14
+00:00:54,000 --> 00:00:56,580
+Então, será preciso clicar duas vezes na imagem para colocá-la no coração.
+
+15
+00:00:58,080 --> 00:00:58,950
+Certo, lá vamos nós.
+
+16
+00:01:00,390 --> 00:01:03,900
+E também vamos contar quantas vezes ele foi clicado.
+
+17
+00:01:03,910 --> 00:01:09,750
+Então isso vai entrar em uma pequena tag aqui e diremos que você gostou.
+
+18
+00:01:09,750 --> 00:01:11,490
+E então spane aqui.
+
+19
+00:01:11,670 --> 00:01:17,280
+E vamos dar uma ideia de tempos e começar do zero.
+
+20
+00:01:17,280 --> 00:01:20,070
+E depois do intervalo aqui, diremos apenas o tempo.
+
+21
+00:01:20,080 --> 00:01:22,380
+Então isso vai nos dizer quantas vezes gostamos.
+
+22
+00:01:22,680 --> 00:01:27,300
+E então a última coisa que queremos é apenas um div com a classe de me amar.
+
+23
+00:01:28,020 --> 00:01:32,220
+E é basicamente para onde a imagem de fundo vai e onde, você sabe, vamos
+
+24
+00:01:33,390 --> 00:01:40,110
+vamos adicionar nosso ouvinte de eventos ao nosso clique duplo nele e obter o ícone de coração.
+
+25
+00:01:40,440 --> 00:01:40,820
+Tudo bem.
+
+26
+00:01:40,830 --> 00:01:41,700
+Então vamos salvar isso.
+
+27
+00:01:41,700 --> 00:01:47,280
+Vamos pular para a folha de estilo aqui e vamos usar um código de família chamado Oswald.
+
+28
+00:01:47,280 --> 00:01:53,460
+Então, vou fazer com que a família do ponto de interrogação de César seja igual a Oswald.
+
+29
+00:01:55,050 --> 00:02:02,550
+E para o fundo aqui no fundo, para a família aqui no corpo, vamos mudar isso
+
+30
+00:02:02,550 --> 00:02:03,780
+para Osvaldo.
+
+31
+00:02:04,920 --> 00:02:06,540
+OK, então isso vai mudar a fonte.
+
+32
+00:02:06,930 --> 00:02:10,980
+E então não precisamos da caixa de Fleck aqui.
+
+33
+00:02:10,980 --> 00:02:14,730
+Então, na verdade, vou me livrar de todas essas coisas.
+
+34
+00:02:17,070 --> 00:02:23,790
+Você sabe, livre-se disso e tudo o que vou colocar aqui é um texto, um centro de linha.
+
+35
+00:02:27,040 --> 00:02:34,720
+E então vamos começar a estilizar como os três, então vamos dar uma margem inferior aqui de zero e vamos
+
+36
+00:02:34,720 --> 00:02:37,180
+adicione o centro de alinhamento de texto aqui.
+
+37
+00:02:39,790 --> 00:02:46,480
+E, em seguida, a tag pequena que quero exibir como bloco tão pequeno é inline por padrão.
+
+38
+00:02:46,960 --> 00:02:55,250
+E então eu quero adicionar a margem inferior à de 20 pixels e também alinhar o texto ao centro.
+
+39
+00:02:57,460 --> 00:03:02,260
+Então, para o coração que queremos, obviamente não queremos Blackheart e teremos o ícone do coração
+
+40
+00:03:02,260 --> 00:03:03,940
+na imagem quando clicamos nela.
+
+41
+00:03:04,210 --> 00:03:12,210
+Então, vamos estilizar um coração de traço e vamos apenas fazer a cor vermelha assim.
+
+42
+00:03:12,820 --> 00:03:14,110
+Agora temos um cartão vermelho.
+
+43
+00:03:14,620 --> 00:03:20,870
+Então, em seguida, queremos fazer a aula Love Me, que será basicamente toda a imagem.
+
+44
+00:03:21,880 --> 00:03:37,150
+Então, para isso, vamos adicionar um vamos fazer uma altura de 440 e vamos fazer uma largura de 300 e depois para o fundo.
+
+45
+00:03:38,110 --> 00:03:44,860
+Então eu vou usar uma imagem de fundo, atualizar o fundo, e então vai ser um Eurail.
+
+46
+00:03:45,010 --> 00:03:47,160
+E, claro, isso pode ser qualquer imagem que você quiser.
+
+47
+00:03:47,170 --> 00:03:49,060
+Eu só vou pegar isso bem rápido.
+
+48
+00:03:49,060 --> 00:03:51,690
+É apenas uma imagem de um carro do Splash.
+
+49
+00:03:54,630 --> 00:03:56,220
+OK, então coloque isso aí.
+
+50
+00:03:58,230 --> 00:04:05,520
+Tudo bem, agora, eu só quero adicionar alguns atributos de fundo como posição sem repetições, centro,
+
+51
+00:04:05,520 --> 00:04:08,970
+centro e tampa, OK?
+
+52
+00:04:09,000 --> 00:04:13,950
+E depois disso, vamos apenas configurar a margem.
+
+53
+00:04:13,960 --> 00:04:14,730
+Então eu quero ir.
+
+54
+00:04:14,730 --> 00:04:15,420
+Sim, está certo.
+
+55
+00:04:15,450 --> 00:04:17,820
+Então imagine que eu vou definir isso para automático.
+
+56
+00:04:18,090 --> 00:04:19,260
+Eu não movo para o meio.
+
+57
+00:04:19,800 --> 00:04:24,570
+E então vamos colocar um ponto de cursor lá, porque quando passamos o mouse sobre ele, queremos ter um ponteiro
+
+58
+00:04:25,170 --> 00:04:29,070
+e eu vou definir um máximo com cem por cento.
+
+59
+00:04:30,900 --> 00:04:36,840
+E vou posicionar isso para ser relativo porque o coração quando clicamos e temos o coração
+
+60
+00:04:36,840 --> 00:04:40,250
+ícone, que será posicionado absoluto dentro disso.
+
+61
+00:04:40,590 --> 00:04:44,760
+Portanto, este contêiner precisa ser posicionado em relação.
+
+62
+00:04:45,510 --> 00:04:53,370
+E também vamos adicionar um pouco de sombra de caixa, que vou colar caso tenhamos um
+
+63
+00:04:53,370 --> 00:04:54,240
+pequena sombra de caixa.
+
+64
+00:04:54,240 --> 00:04:58,880
+Parece que está saindo da página e isso deve ser o suficiente para Love Me.
+
+65
+00:04:58,890 --> 00:05:03,420
+Então agora vamos fazer o coração que está na classe Love Me.
+
+66
+00:05:04,980 --> 00:05:07,740
+Então FAA Dasch coração.
+
+67
+00:05:09,270 --> 00:05:12,810
+E como eu disse, se você quiser posicionar isso como absoluto.
+
+68
+00:05:15,520 --> 00:05:20,290
+E não vamos ver isso ainda porque será colocado através do JavaScript, então
+
+69
+00:05:20,290 --> 00:05:23,980
+estamos apenas adicionando os CSFs, o que não é muito que queremos posicionar de forma absoluta.
+
+70
+00:05:23,980 --> 00:05:30,880
+E então queremos ter uma animação para isso, que vou chamar de Gro e faremos isso em um
+
+71
+00:05:30,880 --> 00:05:35,280
+período de seis segundos e torná-lo linear.
+
+72
+00:05:35,830 --> 00:05:37,630
+E então vamos adicionar uma transformação
+
+73
+00:05:40,300 --> 00:05:43,550
+e para o conjunto de transformação, traduza.
+
+74
+00:05:44,440 --> 00:05:47,140
+Então vai ser que vai começar no meio.
+
+75
+00:05:47,220 --> 00:05:54,320
+Então 50 negativos, 50% no eixo x, negativos, 50% no eixo Y.
+
+76
+00:05:54,610 --> 00:05:55,990
+Também quero escalar.
+
+77
+00:05:56,980 --> 00:06:04,900
+Então, além de traduzir terá escala para zero agora para a animação que vai em uma tecla.
+
+78
+00:06:05,410 --> 00:06:10,410
+Então, digamos em keyframes e chamamos isso de crescer.
+
+79
+00:06:12,730 --> 00:06:15,700
+E o que eu quero fazer é apenas mudar a escala.
+
+80
+00:06:15,900 --> 00:06:21,880
+OK, então, quando clicarmos duas vezes nele, parecerá que está crescendo, você sabe, do seu normal
+
+81
+00:06:21,880 --> 00:06:22,710
+tamanho até.
+
+82
+00:06:22,990 --> 00:06:25,720
+Então nós queremos mudar isso.
+
+83
+00:06:27,560 --> 00:06:32,840
+A tradução será, ah, na verdade, desculpe, precisamos adicionar, digamos, dois, porque é
+
+84
+00:06:32,840 --> 00:06:34,760
+só que é apenas um ponto.
+
+85
+00:06:35,210 --> 00:06:38,480
+Então, dois, e então queremos escalá-lo.
+
+86
+00:06:38,480 --> 00:06:39,040
+Dez.
+
+87
+00:06:39,740 --> 00:06:42,250
+OK, então vai de zero a 10.
+
+88
+00:06:43,190 --> 00:06:51,320
+E vamos também zerar a opacidade porque não queremos que ela permaneça depois de clicarmos duas vezes.
+
+89
+00:06:51,320 --> 00:06:54,110
+Só queríamos mostrar escala e depois desaparecer.
+
+90
+00:06:54,890 --> 00:06:57,170
+OK, então isso é muito bonito para o sucesso.
+
+91
+00:06:57,170 --> 00:07:01,520
+No próximo vídeo, vamos entrar e fazer essa função com nosso JavaScript.

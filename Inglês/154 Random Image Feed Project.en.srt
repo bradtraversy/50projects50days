@@ -1,0 +1,495 @@
+1
+00:00:00,150 --> 00:00:04,560
+All right, so let's get started the should we should be able to do this in one video because it's not
+
+2
+00:00:04,560 --> 00:00:05,130
+too much.
+
+3
+00:00:05,140 --> 00:00:12,510
+So let's add a title of random image feed and then we'll add the same for this one here.
+
+4
+00:00:15,210 --> 00:00:20,220
+And all we really need in the HTML is a container to put everything to put our images in.
+
+5
+00:00:20,220 --> 00:00:22,920
+So that's that's going to be it for the HTML.
+
+6
+00:00:23,250 --> 00:00:28,080
+Now, before we do any styling, I just want to be able to get the images and put them in the dorm here.
+
+7
+00:00:28,440 --> 00:00:34,910
+So we're not actually using an API, like we're not making a request to an API that gives us imagery
+
+8
+00:00:34,920 --> 00:00:35,280
+URLs.
+
+9
+00:00:35,640 --> 00:00:40,280
+We're going to use a random Eurail from UN Splash.
+
+10
+00:00:40,290 --> 00:00:45,480
+In fact, I'll just show you some make it a little bit easier to understand if I put in this.
+
+11
+00:00:45,480 --> 00:00:48,960
+You earlier saw start on splash dot com slash random.
+
+12
+00:00:49,650 --> 00:00:51,350
+It's going to give me a random image.
+
+13
+00:00:51,360 --> 00:00:53,940
+Now, if I reload, it's going to be the same image.
+
+14
+00:00:54,180 --> 00:01:00,120
+So what we want to do in our script is, is create a bunch of image tags with this.
+
+15
+00:01:00,120 --> 00:01:01,690
+But we also need a size.
+
+16
+00:01:01,690 --> 00:01:05,190
+So like 300 times three hundred.
+
+17
+00:01:06,060 --> 00:01:16,890
+Give me a specific image, if I do three oh, one times whatever, 302, that's going to give me a different
+
+18
+00:01:16,890 --> 00:01:17,340
+image.
+
+19
+00:01:17,520 --> 00:01:20,910
+So we want to use those image sizes as well.
+
+20
+00:01:21,090 --> 00:01:22,710
+And those should be random.
+
+21
+00:01:22,720 --> 00:01:25,200
+So first thing we'll do is bring in our container.
+
+22
+00:01:27,540 --> 00:01:32,970
+And as I'm as I'm going here, if it's becoming clear what I'm going to do, I would suggest pausing
+
+23
+00:01:32,970 --> 00:01:34,650
+the video and trying it yourself.
+
+24
+00:01:34,650 --> 00:01:36,750
+And I know I've said that over and over in this course.
+
+25
+00:01:36,750 --> 00:01:42,740
+I'll probably say it a million more times, but I definitely, you know, recommend doing that.
+
+26
+00:01:43,140 --> 00:01:45,750
+So let's use query selector here.
+
+27
+00:01:45,750 --> 00:01:50,520
+And we have a class of container.
+
+28
+00:01:50,910 --> 00:01:57,330
+Now, the UN you URL that we're going to use, I'm going to put that into a variable called Unflashy
+
+29
+00:01:57,330 --> 00:02:09,000
+URL, which is http s and then saw Stotz on splash dot com slash random slash.
+
+30
+00:02:09,630 --> 00:02:11,490
+So that's the like the root Eurail.
+
+31
+00:02:11,490 --> 00:02:15,390
+We do want to have a size, but we're going to generate that randomly.
+
+32
+00:02:15,720 --> 00:02:18,030
+I'm also going to put the number of rows that we want.
+
+33
+00:02:18,040 --> 00:02:22,280
+So I want to get 10 rows of images with three images in each row.
+
+34
+00:02:22,740 --> 00:02:28,590
+So we'll have a for loop here and let's say let's equals zero.
+
+35
+00:02:28,860 --> 00:02:34,410
+And we want to say as long as I is less than whatever the rows is.
+
+36
+00:02:34,410 --> 00:02:39,720
+But we want to multiply that by three because we're going to have three images per row and then we want
+
+37
+00:02:39,720 --> 00:02:40,710
+to increment I.
+
+38
+00:02:41,730 --> 00:02:52,140
+And let's create an image tag so we can use create elements sorry, it should be document dot, create
+
+39
+00:02:52,140 --> 00:02:57,210
+elements and in here let's create an image tag and then for the source.
+
+40
+00:02:57,210 --> 00:03:03,450
+So image dot source, we're going to set that to some back text with the.
+
+41
+00:03:04,910 --> 00:03:10,090
+On Splash You, Earl, but we also need a random size, so down here we're going to have a function.
+
+42
+00:03:10,550 --> 00:03:11,600
+We have two functions.
+
+43
+00:03:11,600 --> 00:03:16,400
+One is going to be to get a random so get random number.
+
+44
+00:03:18,440 --> 00:03:22,370
+And we want a random number between like three hundred and three, ten.
+
+45
+00:03:22,400 --> 00:03:24,550
+So let's return from this function.
+
+46
+00:03:25,130 --> 00:03:30,800
+I want to round it down some math dot floor and here we want to take math dot random, which gives us
+
+47
+00:03:30,800 --> 00:03:37,580
+a random decimal and we want to multiply that by ten to give us, you know, a random number between
+
+48
+00:03:37,580 --> 00:03:38,360
+one and ten.
+
+49
+00:03:38,750 --> 00:03:40,850
+But we just want to add 300 to that.
+
+50
+00:03:41,360 --> 00:03:49,340
+OK, so if I go up here and I can still get a random number and we look in our console.
+
+51
+00:03:51,230 --> 00:03:58,970
+We get 306 by reload, three seven three three, three or six, so I want to now have a function to
+
+52
+00:03:58,970 --> 00:04:06,590
+get a random size and a random size being, you know, three, one times three or six or something like
+
+53
+00:04:06,590 --> 00:04:06,950
+that.
+
+54
+00:04:07,400 --> 00:04:08,900
+So let's return here.
+
+55
+00:04:10,450 --> 00:04:18,190
+And the tactics we're going to do get random number outside of the the curly brace will do at times
+
+56
+00:04:18,190 --> 00:04:22,670
+and X and then another get random number.
+
+57
+00:04:23,380 --> 00:04:32,710
+So if we go up here and we console log, get a random size, we get three or nine by three or seven,
+
+58
+00:04:33,100 --> 00:04:34,360
+there are two by three or seven.
+
+59
+00:04:34,370 --> 00:04:36,210
+So there's a lot of different combinations.
+
+60
+00:04:36,490 --> 00:04:42,010
+I mean, you might get a repeat image, but actually I know you won't because when you use the sizes,
+
+61
+00:04:42,010 --> 00:04:43,020
+it's always random.
+
+62
+00:04:43,570 --> 00:04:44,260
+I believe.
+
+63
+00:04:44,980 --> 00:04:48,160
+So now that we can get a random size, let's go up here.
+
+64
+00:04:48,160 --> 00:04:54,280
+And right after this on Splash you, Earl, we're going to put in get a random size, make sure you
+
+65
+00:04:54,280 --> 00:04:58,690
+put your parentheses, and then we just want to put that into the container.
+
+66
+00:04:58,690 --> 00:05:04,570
+So we'll grab the container and we'll append child because we're putting this inside the container,
+
+67
+00:05:05,650 --> 00:05:11,800
+all the images, and it's going to give us, you know, 10 rows of three.
+
+68
+00:05:12,400 --> 00:05:16,830
+So if I save that, you'll see that it's going to put all those images in the dorm.
+
+69
+00:05:18,880 --> 00:05:20,320
+Now, we want to style these.
+
+70
+00:05:20,320 --> 00:05:21,910
+You want to create our rose and stuff.
+
+71
+00:05:21,910 --> 00:05:25,360
+So in our stylesheet let's go ahead.
+
+72
+00:05:25,360 --> 00:05:33,250
+And for the body here, we're going to keep display flex flex direction column, align everything to
+
+73
+00:05:33,250 --> 00:05:33,790
+the center.
+
+74
+00:05:33,790 --> 00:05:37,030
+Let's get rid of overflow hidden so that we have scrollbar.
+
+75
+00:05:38,680 --> 00:05:46,880
+And instead of height 100 reports, let's do a mean height of one hundred reports.
+
+76
+00:05:46,900 --> 00:05:48,580
+So now we can see our title.
+
+77
+00:05:49,640 --> 00:05:50,060
+All right.
+
+78
+00:05:50,080 --> 00:05:54,400
+And then for the title, I'm just going to style that real quick.
+
+79
+00:05:54,400 --> 00:06:03,000
+Just add a margin here of let's do 10, Texel zero zero and let's do text align center.
+
+80
+00:06:03,010 --> 00:06:08,140
+I mean, technically, we don't need that, but we'll just add it and then for the container.
+
+81
+00:06:10,660 --> 00:06:15,940
+I want to display flaks, remember, all of the images are in the container, so if I turn the container
+
+82
+00:06:15,940 --> 00:06:18,700
+into a flex box, it turns them into a row.
+
+83
+00:06:19,210 --> 00:06:24,310
+And I want to just make sure I line items and justify content to center.
+
+84
+00:06:24,970 --> 00:06:29,070
+And then let's have them wrap on to the next line.
+
+85
+00:06:29,080 --> 00:06:32,320
+So do flex, wrap, wrap.
+
+86
+00:06:34,060 --> 00:06:40,080
+And we want to have we want three to be the max in the row.
+
+87
+00:06:40,090 --> 00:06:43,210
+So what we'll do is set a max with onto the container.
+
+88
+00:06:44,680 --> 00:06:51,280
+So Max with will do one thousand pixels because each one is going to be three hundred pixels.
+
+89
+00:06:52,480 --> 00:06:54,400
+So it shouldn't go past that.
+
+90
+00:06:54,940 --> 00:06:55,410
+All right.
+
+91
+00:06:55,720 --> 00:07:00,250
+And we're going to change the size, see how they're slightly different because of the sizes they're
+
+92
+00:07:00,250 --> 00:07:04,230
+all in the three hundred to 310 range, but they're slightly different.
+
+93
+00:07:04,240 --> 00:07:06,370
+So we will add a size onto the images.
+
+94
+00:07:07,420 --> 00:07:08,510
+So that's it for the container.
+
+95
+00:07:08,530 --> 00:07:09,850
+Now let's do the image.
+
+96
+00:07:11,560 --> 00:07:18,430
+So we'll do container image and let's just do an object fit cover.
+
+97
+00:07:18,430 --> 00:07:28,480
+We want to see the whole image and then we'll put some margin in between that and let's set the height
+
+98
+00:07:28,870 --> 00:07:31,780
+to three hundred pixels, also the width.
+
+99
+00:07:34,310 --> 00:07:42,500
+To 300 pixels now they're all going to be the same size and let's do a max width of one hundred percent
+
+100
+00:07:42,710 --> 00:07:45,750
+so they don't go out of the container and that should do it.
+
+101
+00:07:45,860 --> 00:07:51,020
+So if I reload, we should get a whole bunch of different random images.
+
+102
+00:07:52,490 --> 00:07:56,090
+And I mean, it's not going to be the most performant because we're just, you know, we're inserting
+
+103
+00:07:56,090 --> 00:07:57,290
+all these image tags.
+
+104
+00:07:57,290 --> 00:08:01,640
+But and some of them will repeat if they have the same size, apparently.
+
+105
+00:08:02,660 --> 00:08:05,180
+But yeah, we should have 10 rows total.
+
+106
+00:08:05,180 --> 00:08:10,630
+So let's see, one, two, three, four, five, six, seven, eight, nine, 10.
+
+107
+00:08:10,910 --> 00:08:15,530
+And if you wanted to, you could change this to, let's say, five rows and save.
+
+108
+00:08:16,100 --> 00:08:24,190
+And now you're should only get five rows of images and you could even put a select box here at an event,
+
+109
+00:08:24,200 --> 00:08:25,400
+a change event to it.
+
+110
+00:08:25,430 --> 00:08:31,160
+When you select, you know, five or 10 or 20, you can change the rows and you could do something like
+
+111
+00:08:31,160 --> 00:08:32,810
+that to add onto it.
+
+112
+00:08:32,810 --> 00:08:34,160
+But that's all we're going to do.
+
+113
+00:08:34,160 --> 00:08:35,290
+It is responsive.
+
+114
+00:08:35,300 --> 00:08:39,560
+So we're using flex wrap, so it'll knock on to the next line.
+
+115
+00:08:40,220 --> 00:08:45,320
+So on small screens is just going to be I mean, the rows, I guess, doesn't you know, we don't have
+
+116
+00:08:45,320 --> 00:08:50,990
+ten rows because or five rows in this case because it's only everything is stacked.
+
+117
+00:08:50,990 --> 00:08:55,080
+But at full screen it's going to be whatever number of rows you put here.
+
+118
+00:08:55,760 --> 00:08:56,120
+All right.
+
+119
+00:08:56,130 --> 00:09:01,070
+So I know this is a really simple project, but it just kind of gives you an idea of how you can put
+
+120
+00:09:01,070 --> 00:09:02,210
+things into the dorm.
+
+121
+00:09:02,210 --> 00:09:08,420
+We have random images, random image sizes and putting them into the source attribute of the images
+
+122
+00:09:08,420 --> 00:09:10,380
+and then putting them into the container.
+
+123
+00:09:10,820 --> 00:09:11,620
+All right, that's it.
+
+124
+00:09:11,630 --> 00:09:13,340
+Let's move on to the next project.

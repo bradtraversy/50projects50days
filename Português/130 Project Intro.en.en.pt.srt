@@ -1,0 +1,95 @@
+﻿1
+00:00:00,180 --> 00:00:05,080
+Muito bem, agora vamos criar o projeto desta caixa 3-D e vamos usar alguns
+
+2
+00:00:05,080 --> 00:00:11,850
+acesso para criar este efeito 3-D onde temos este ângulo aqui e aqui e conectamos o direito em
+
+3
+00:00:11,850 --> 00:00:15,000
+o lado inferior e apenas nos dá uma aparência de caixa 3-D.
+
+4
+00:00:15,390 --> 00:00:20,910
+E então vamos usar uma imagem de fundo ou um gif de fundo para cada uma dessas caixas.
+
+5
+00:00:21,150 --> 00:00:22,720
+E é tudo a mesma imagem.
+
+6
+00:00:22,720 --> 00:00:23,880
+É esta imagem minyon.
+
+7
+00:00:24,120 --> 00:00:31,440
+E o que vamos fazer é estender o tamanho do plano de fundo além da caixa única para torná-lo tão grande quanto
+
+8
+00:00:31,440 --> 00:00:32,690
+este recipiente aqui.
+
+9
+00:00:32,970 --> 00:00:38,640
+E então o que faremos é calcular dinamicamente a posição de fundo para que possamos movê-los
+
+10
+00:00:38,640 --> 00:00:45,220
+e basicamente formar o que parece ser uma grande imagem quando na verdade isso é apenas um monte da mesma imagem.
+
+11
+00:00:45,930 --> 00:00:48,770
+Também vamos adicionar um ouvinte de eventos a este botão aqui.
+
+12
+00:00:49,020 --> 00:00:55,860
+Então, quando clicamos nisso, toda essa área encolhe e também nos dá esse efeito de rotação em cada caixa
+
+13
+00:00:56,100 --> 00:00:57,900
+e, em seguida, combina-os todos juntos.
+
+14
+00:00:57,900 --> 00:00:59,520
+Portanto, não há espaçamento entre eles.
+
+15
+00:00:59,520 --> 00:01:02,380
+E parece apenas uma grande imagem conectada.
+
+16
+00:01:02,790 --> 00:01:03,280
+Tudo bem.
+
+17
+00:01:03,290 --> 00:01:07,140
+Então, usaremos coisas como transformações e transições de CSFs.
+
+18
+00:01:07,740 --> 00:01:10,320
+Usaremos os pseudoseletores after e before.
+
+19
+00:01:10,560 --> 00:01:17,190
+Vamos usar um loop e JavaScript para passar por essas caixas e calcular o plano de fundo
+
+20
+00:01:17,190 --> 00:01:24,090
+position e também adicione um ouvinte de evento a isso com algumas transições de sucesso para dar essa rotação
+
+21
+00:01:24,090 --> 00:01:24,540
+efeito.
+
+22
+00:01:24,840 --> 00:01:25,200
+Tudo bem.
+
+23
+00:01:25,210 --> 00:01:26,070
+Então é isso que estar fazendo.
+
+24
+00:01:26,070 --> 00:01:27,330
+Vamos em frente e começar.

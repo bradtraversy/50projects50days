@@ -1,0 +1,363 @@
+1
+00:00:00,390 --> 00:00:05,610
+So we're going to get started on our double click project and we are going to be using font.
+
+2
+00:00:05,610 --> 00:00:06,060
+Awesome.
+
+3
+00:00:06,060 --> 00:00:09,030
+So I noticed that I have the link, the CDN to font.
+
+4
+00:00:09,030 --> 00:00:09,750
+Awesome here.
+
+5
+00:00:10,020 --> 00:00:11,190
+So you can get that from font.
+
+6
+00:00:11,190 --> 00:00:13,930
+Awesome website or CD and Jast dot com.
+
+7
+00:00:14,460 --> 00:00:21,540
+So let's change the title here in the HTML and we'll call this double double click cart.
+
+8
+00:00:23,290 --> 00:00:26,420
+And down here we want to have not much.
+
+9
+00:00:26,430 --> 00:00:36,300
+We're going to have an H3 here and we'll say double click on the image to and then let's put the heart
+
+10
+00:00:36,300 --> 00:00:36,620
+here.
+
+11
+00:00:36,630 --> 00:00:44,720
+So we're going to use an eye tag with the class of Fey S and F a dash heart.
+
+12
+00:00:46,860 --> 00:00:51,480
+And then after that, we're just going to put the word it.
+
+13
+00:00:51,480 --> 00:00:53,400
+So outside of the icon here.
+
+14
+00:00:54,000 --> 00:00:56,580
+So it'll be double click on the image to heart it.
+
+15
+00:00:58,080 --> 00:00:58,950
+OK, there we go.
+
+16
+00:01:00,390 --> 00:01:03,900
+And then we're also going to count how many times it's been clicked.
+
+17
+00:01:03,910 --> 00:01:09,750
+So that's going to go into a small tag here and we'll say you liked it.
+
+18
+00:01:09,750 --> 00:01:11,490
+And then spane here.
+
+19
+00:01:11,670 --> 00:01:17,280
+And let's give this an idea of times and just start with zero.
+
+20
+00:01:17,280 --> 00:01:20,070
+And then after the span here, we'll just say time.
+
+21
+00:01:20,080 --> 00:01:22,380
+So that'll tell us how many times we liked it.
+
+22
+00:01:22,680 --> 00:01:27,300
+And then the last thing we want is just a div with the class of love me.
+
+23
+00:01:28,020 --> 00:01:32,220
+And that's basically where the background image is going to go and where, you know, we're going to
+
+24
+00:01:33,390 --> 00:01:40,110
+we're going to add our event listener to our double click on it and get that heart icon.
+
+25
+00:01:40,440 --> 00:01:40,820
+All right.
+
+26
+00:01:40,830 --> 00:01:41,700
+So let's save that.
+
+27
+00:01:41,700 --> 00:01:47,280
+Let's jump into the stylesheet here and we're going to use a family code called Oswald.
+
+28
+00:01:47,280 --> 00:01:53,460
+So I'm just going to do Caesar's questionmark family equals Oswald.
+
+29
+00:01:55,050 --> 00:02:02,550
+And for the background here in the background, for the family here in the body, let's change that
+
+30
+00:02:02,550 --> 00:02:03,780
+to Oswald.
+
+31
+00:02:04,920 --> 00:02:06,540
+OK, so that'll change the font.
+
+32
+00:02:06,930 --> 00:02:10,980
+And then we don't really need Fleck's box here.
+
+33
+00:02:10,980 --> 00:02:14,730
+So I'm actually going to get rid of all this stuff.
+
+34
+00:02:17,070 --> 00:02:23,790
+You know, get rid of that and all I'm going to put here is a text, a line center.
+
+35
+00:02:27,040 --> 00:02:34,720
+And then let's start to style like the three, so let's give a margin bottom here of zero and let's
+
+36
+00:02:34,720 --> 00:02:37,180
+add text align center here.
+
+37
+00:02:39,790 --> 00:02:46,480
+And then the small tag I want to display as block as small is inline by default.
+
+38
+00:02:46,960 --> 00:02:55,250
+And then I want to add margin bottom to that of 20 pixels and also text align center.
+
+39
+00:02:57,460 --> 00:03:02,260
+So for the heart we want we obviously don't want to Blackheart and we're going to have the heart icon
+
+40
+00:03:02,260 --> 00:03:03,940
+in the image when we click on it.
+
+41
+00:03:04,210 --> 00:03:12,210
+So let's style a dash heart and let's just make the color to red like that.
+
+42
+00:03:12,820 --> 00:03:14,110
+Now we have a red card.
+
+43
+00:03:14,620 --> 00:03:20,870
+So next we want to do the Love Me class, which is going to be the whole basically the whole image.
+
+44
+00:03:21,880 --> 00:03:37,150
+So for this, let's add a let's do a height of 440 and let's do a width of 300 and then for the background.
+
+45
+00:03:38,110 --> 00:03:44,860
+So I'm going to use a background image, actualise background, and then it's going to be a Eurail.
+
+46
+00:03:45,010 --> 00:03:47,160
+And of course, this could be any image you want.
+
+47
+00:03:47,170 --> 00:03:49,060
+I'm just going to grab this real quick.
+
+48
+00:03:49,060 --> 00:03:51,690
+It's just an image of a car from Splash.
+
+49
+00:03:54,630 --> 00:03:56,220
+OK, so put that in there.
+
+50
+00:03:58,230 --> 00:04:05,520
+All right, now, I just want to add a couple of background attributes like no repeats position, center,
+
+51
+00:04:05,520 --> 00:04:08,970
+center and cover, OK?
+
+52
+00:04:09,000 --> 00:04:13,950
+And then after that, let's just set margin up.
+
+53
+00:04:13,960 --> 00:04:14,730
+So I want to go.
+
+54
+00:04:14,730 --> 00:04:15,420
+Yeah, that's right.
+
+55
+00:04:15,450 --> 00:04:17,820
+So imagine I'm going to set that to auto.
+
+56
+00:04:18,090 --> 00:04:19,260
+I don't move it to the middle.
+
+57
+00:04:19,800 --> 00:04:24,570
+And then let's put a cursor point there, because when we hover over it, we want to have a pointer
+
+58
+00:04:25,170 --> 00:04:29,070
+and I'm just going to set a max with one hundred percent.
+
+59
+00:04:30,900 --> 00:04:36,840
+And I'm going to position this to be relative because the heart when we click and we have the heart
+
+60
+00:04:36,840 --> 00:04:40,250
+icon, that's going to be positioned absolute within this.
+
+61
+00:04:40,590 --> 00:04:44,760
+So this the container needs to be positioned relative.
+
+62
+00:04:45,510 --> 00:04:53,370
+And then let's also add a little bit of box shadow, which I'm just going to paste in case we have a
+
+63
+00:04:53,370 --> 00:04:54,240
+little box shadow.
+
+64
+00:04:54,240 --> 00:04:58,880
+Kind of looks like it's coming off the page and that should do it for Love Me.
+
+65
+00:04:58,890 --> 00:05:03,420
+So now let's do the the heart that's in the Love Me class.
+
+66
+00:05:04,980 --> 00:05:07,740
+So F.A.A. Dasch heart.
+
+67
+00:05:09,270 --> 00:05:12,810
+And like I said, if you want to position this to be absolute.
+
+68
+00:05:15,520 --> 00:05:20,290
+And we're not going to see this just yet because it's going to get put in through the JavaScript, so
+
+69
+00:05:20,290 --> 00:05:23,980
+we're just adding the CSFs, which isn't much we want to position absolute.
+
+70
+00:05:23,980 --> 00:05:30,880
+And then we want to have an animation for it, which I'm going to call Gro and we'll do that over a
+
+71
+00:05:30,880 --> 00:05:35,280
+period of six seconds and make that linear.
+
+72
+00:05:35,830 --> 00:05:37,630
+And then let's add a transform
+
+73
+00:05:40,300 --> 00:05:43,550
+and for the transform set translate.
+
+74
+00:05:44,440 --> 00:05:47,140
+So it's going to be it's going to start in the middle.
+
+75
+00:05:47,220 --> 00:05:54,320
+So 50 negative, 50 percent on the x axis, negative, 50 percent on the Y axis.
+
+76
+00:05:54,610 --> 00:05:55,990
+I also want to scale it.
+
+77
+00:05:56,980 --> 00:06:04,900
+So in addition to translate will have scale to zero now for the animation that's going to go on a key.
+
+78
+00:06:05,410 --> 00:06:10,410
+So let's say at keyframes and we called it grow.
+
+79
+00:06:12,730 --> 00:06:15,700
+And what I want to do is just change the scaling.
+
+80
+00:06:15,900 --> 00:06:21,880
+OK, so when we double click on it, it's going to look like it's growing, you know, from its regular
+
+81
+00:06:21,880 --> 00:06:22,710
+size up.
+
+82
+00:06:22,990 --> 00:06:25,720
+So we want to change this.
+
+83
+00:06:27,560 --> 00:06:32,840
+The translate will be, oh, actually, I'm sorry, we need to add let's just say two, because it's
+
+84
+00:06:32,840 --> 00:06:34,760
+only it's only one point.
+
+85
+00:06:35,210 --> 00:06:38,480
+So two, and then we want to scale it up.
+
+86
+00:06:38,480 --> 00:06:39,040
+Ten.
+
+87
+00:06:39,740 --> 00:06:42,250
+OK, so it's going to go from zero to 10.
+
+88
+00:06:43,190 --> 00:06:51,320
+And let's also make the opacity to zero because we don't want it to stay once we double click.
+
+89
+00:06:51,320 --> 00:06:54,110
+We just wanted to show scale and then disappear.
+
+90
+00:06:54,890 --> 00:06:57,170
+OK, so that's pretty much it for the success.
+
+91
+00:06:57,170 --> 00:07:01,520
+In the next video, we'll jump in and make this function with our JavaScript.

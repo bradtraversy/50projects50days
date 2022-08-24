@@ -1,0 +1,707 @@
+1
+00:00:00,060 --> 00:00:05,610
+OK, so we're going to get started on our movie app, and the first thing we want to do is the HTML,
+
+2
+00:00:05,610 --> 00:00:10,120
+then we'll jump into the contest and then finally we'll start in our JavaScript to pull in the data.
+
+3
+00:00:10,590 --> 00:00:13,640
+So in our index, each 12 of our projects start out.
+
+4
+00:00:13,650 --> 00:00:21,840
+Let's change the title here and call movie app and let's change or let's add into the body here.
+
+5
+00:00:21,840 --> 00:00:25,290
+We want a header at the top with a form.
+
+6
+00:00:25,290 --> 00:00:29,970
+I'm going to give this form an idea of form and insight here.
+
+7
+00:00:30,030 --> 00:00:31,470
+Actually, we don't need an action.
+
+8
+00:00:31,600 --> 00:00:32,550
+Get rid of that.
+
+9
+00:00:33,450 --> 00:00:36,700
+So we just want one input in here, which is going to be our search.
+
+10
+00:00:36,720 --> 00:00:43,890
+I'm going to give it an idea of search and also a class of search, and it's going to be text.
+
+11
+00:00:43,890 --> 00:00:48,470
+And then let's add a placeholder of search as well, OK?
+
+12
+00:00:48,480 --> 00:00:51,510
+And I'm not going to add a button, so we'll just have to hit enter.
+
+13
+00:00:51,510 --> 00:00:53,210
+If you want to add a button, you can.
+
+14
+00:00:53,700 --> 00:00:57,300
+But under the header, we're going to have our main area.
+
+15
+00:00:58,350 --> 00:01:01,650
+And I'm going to give this an idea of main.
+
+16
+00:01:02,220 --> 00:01:08,010
+And ultimately, this is all we're going to have in our HTML because the movies are going to it's going
+
+17
+00:01:08,010 --> 00:01:11,100
+to get inserted into the DOM with JavaScript.
+
+18
+00:01:11,100 --> 00:01:17,250
+But for now, we're just going to go ahead and hardcoded the HTML so we can style it so each one will
+
+19
+00:01:17,250 --> 00:01:20,940
+have a class of movie around it and it'll have an image.
+
+20
+00:01:20,940 --> 00:01:28,260
+And for now I'm just going to grab just an on splash stock image of some movie seats and it's going
+
+21
+00:01:28,260 --> 00:01:29,760
+to take up the whole thing for now.
+
+22
+00:01:30,330 --> 00:01:37,020
+But under that image, we're going to have a div with the class of movie dash info, which is going
+
+23
+00:01:37,020 --> 00:01:38,040
+to have the title.
+
+24
+00:01:38,190 --> 00:01:44,430
+So an H3 with the movie title and under the movie title will have a span.
+
+25
+00:01:44,970 --> 00:01:50,610
+Now this is going to be the rating and the color of the text is going to be different depending on the
+
+26
+00:01:50,610 --> 00:01:51,090
+rating.
+
+27
+00:01:51,090 --> 00:01:53,240
+So it'll be green if it's a high rating.
+
+28
+00:01:53,580 --> 00:01:58,410
+I think it's a ten point scale, but we'll just say like nine point eight so that that'll have a class
+
+29
+00:01:58,410 --> 00:02:01,020
+of green in the JavaScript will make it dynamic.
+
+30
+00:02:01,020 --> 00:02:02,790
+If it's a low rating, it'll be red.
+
+31
+00:02:03,030 --> 00:02:05,100
+If it's a mid rating, it'll be orange.
+
+32
+00:02:05,670 --> 00:02:09,000
+Now, under the movie info div, we're going to have our overview.
+
+33
+00:02:10,350 --> 00:02:11,880
+So class of overview.
+
+34
+00:02:12,330 --> 00:02:19,590
+And inside here, it's just going to be an H3 with overview as a label.
+
+35
+00:02:19,890 --> 00:02:28,100
+And then let's do LAAM 20 just for some dummy text here and then that should do it for the movie.
+
+36
+00:02:28,110 --> 00:02:33,330
+Now we're going to have a lot of these movie divs that are going to be inserted from the JavaScript
+
+37
+00:02:33,330 --> 00:02:34,800
+with the API data.
+
+38
+00:02:34,800 --> 00:02:39,540
+So I'm going to copy that and just put two more these movie divs in here for now.
+
+39
+00:02:39,930 --> 00:02:45,420
+And then in our stylesheet here, I'm going to use the Poppins font, so I'm going to highlight Raboteau
+
+40
+00:02:45,420 --> 00:02:52,260
+here, command highlighted here and change it to Poppins hit Escape to get back to my cursor up here
+
+41
+00:02:52,710 --> 00:02:55,440
+and let's use 200 400 for the weight.
+
+42
+00:02:56,940 --> 00:03:01,800
+And in the body we can get rid of everything except the font family and the margin zero.
+
+43
+00:03:03,090 --> 00:03:09,630
+OK, because we're not using Flex to, you know, put put in the middle like we have with most projects
+
+44
+00:03:09,630 --> 00:03:13,320
+because we do have a header, you know, that we're going to have and then the movies.
+
+45
+00:03:13,860 --> 00:03:21,120
+So I do want to add a background color here and we'll be using this color and another one throughout
+
+46
+00:03:21,120 --> 00:03:22,230
+the project.
+
+47
+00:03:22,230 --> 00:03:26,310
+So I'm going to put them into custom properties on the root scope.
+
+48
+00:03:26,310 --> 00:03:31,620
+So let's have a custom property or variable called primary dash color.
+
+49
+00:03:32,130 --> 00:03:38,190
+And this is going to be two two two five four B, it's going to be that.
+
+50
+00:03:38,190 --> 00:03:45,810
+And then we'll have a secondary color, which is going to be hexadecimal three seven three B six nine.
+
+51
+00:03:45,810 --> 00:03:47,070
+And let's call this.
+
+52
+00:03:49,260 --> 00:03:54,080
+Secondary, OK, and then primary color here is will say var.
+
+53
+00:03:54,170 --> 00:03:59,500
+This is the syntax for custom properties is var parentheses and then whatever the variable.
+
+54
+00:04:00,160 --> 00:04:04,320
+OK, so you can see that now the header, we want to style that.
+
+55
+00:04:04,320 --> 00:04:15,750
+So header I'm going to add some padding will do one to one room padding and I'm going to display Fleck's
+
+56
+00:04:16,770 --> 00:04:22,100
+and there's only one Fleck's item which is the form and I want to align that all the way to the right.
+
+57
+00:04:22,110 --> 00:04:27,390
+So I'm going to use to justify content Fleck's and which will push it all the way over and then let's
+
+58
+00:04:27,390 --> 00:04:29,440
+style the search box itself.
+
+59
+00:04:31,830 --> 00:04:38,720
+So search I'm going to set the background color to transparence and let's set the border.
+
+60
+00:04:39,960 --> 00:04:44,820
+So the border is going to be two pixel solid and it's going to be the secondary color.
+
+61
+00:04:44,820 --> 00:04:50,490
+So var dash dash secondary color and actually.
+
+62
+00:04:50,490 --> 00:04:51,390
+No, wait a minute.
+
+63
+00:04:51,750 --> 00:04:52,580
+Do we want that now.
+
+64
+00:04:52,590 --> 00:04:54,270
+We want the primary color for that.
+
+65
+00:04:59,390 --> 00:05:00,080
+Actually.
+
+66
+00:05:01,950 --> 00:05:03,200
+Hold on a second.
+
+67
+00:05:03,240 --> 00:05:09,000
+The header, yeah, the header, we actually want to have a background of the secondary color, so I'm
+
+68
+00:05:09,000 --> 00:05:14,490
+going to paste that in and change that to secondary.
+
+69
+00:05:14,550 --> 00:05:15,070
+There we go.
+
+70
+00:05:15,600 --> 00:05:16,030
+All right.
+
+71
+00:05:16,030 --> 00:05:23,720
+So I also want the border radius to be 50 pixels for the search form.
+
+72
+00:05:24,450 --> 00:05:29,900
+And let's make sure we inherit four font family.
+
+73
+00:05:29,910 --> 00:05:38,760
+We want to inherit our Poppins font, and then I'm going to increase the font size to one room and I'm
+
+74
+00:05:38,760 --> 00:05:40,200
+going to add some padding.
+
+75
+00:05:40,890 --> 00:05:45,540
+So we'll do point five from top and bottom one room, left and right.
+
+76
+00:05:46,020 --> 00:05:52,060
+And the color of the text that we type in will be white and that should do it.
+
+77
+00:05:52,080 --> 00:05:54,150
+I also want to change the color of the placeholder.
+
+78
+00:05:54,150 --> 00:05:57,410
+So search colon, colon placeholder.
+
+79
+00:05:58,050 --> 00:05:59,460
+Let's make that color.
+
+80
+00:06:01,140 --> 00:06:07,200
+This is actually going to be a seven three seven eight SI five.
+
+81
+00:06:08,370 --> 00:06:15,290
+OK, so I can see it has that purplish color and for the focus, so let's say search colon focus.
+
+82
+00:06:16,170 --> 00:06:19,410
+So when we click inside of it, I want to remove any outline.
+
+83
+00:06:19,410 --> 00:06:20,970
+So outline will be none.
+
+84
+00:06:21,210 --> 00:06:27,000
+But I also want to change the background color to be the primary colors so far.
+
+85
+00:06:27,780 --> 00:06:29,570
+Dash, dash, primary colors.
+
+86
+00:06:29,640 --> 00:06:32,910
+If I click in here, you can see it gets that background color.
+
+87
+00:06:33,270 --> 00:06:35,400
+All right, now let's do the movie area.
+
+88
+00:06:35,460 --> 00:06:37,920
+So are the main area, I should say.
+
+89
+00:06:37,920 --> 00:06:45,450
+So for Main, I'm going to display Flex because remember all the divs with the class of movies, those
+
+90
+00:06:45,450 --> 00:06:47,670
+are going to be flex items within Mane.
+
+91
+00:06:47,880 --> 00:06:49,740
+So it'll turn it into a flex row.
+
+92
+00:06:49,950 --> 00:06:52,320
+And I want them to wrap onto the next line.
+
+93
+00:06:52,320 --> 00:07:00,900
+So Flex Wrap will set to wrap and then I'm just going to grab the image so each div has a class of movie
+
+94
+00:07:00,900 --> 00:07:02,520
+and then we have an image inside.
+
+95
+00:07:02,760 --> 00:07:08,520
+I want that to be 100 percent of its container, which right now just goes all the way across.
+
+96
+00:07:08,910 --> 00:07:14,370
+But let's set the movie so each movie class will have a width of three hundred pixels.
+
+97
+00:07:15,330 --> 00:07:15,840
+All right.
+
+98
+00:07:15,840 --> 00:07:22,320
+And then we'll go ahead and add a margin of one ram to separate them out.
+
+99
+00:07:22,320 --> 00:07:27,030
+I'm also going to do back for a background background color.
+
+100
+00:07:27,030 --> 00:07:29,250
+I'm going to set that to the secondary color.
+
+101
+00:07:29,250 --> 00:07:35,940
+So var dash dash secondary color and we'll add a little box shadow.
+
+102
+00:07:37,170 --> 00:07:46,800
+So box shadow for the offsets will do zero for pixel by pixel blur arga black and zero point two for
+
+103
+00:07:46,800 --> 00:07:47,370
+the alpha.
+
+104
+00:07:47,370 --> 00:07:53,130
+So it gives it a little bit of a shadow and I'm going to position this relative so that we can position
+
+105
+00:07:53,130 --> 00:07:54,450
+other things inside of it.
+
+106
+00:07:54,450 --> 00:07:55,200
+Absolute.
+
+107
+00:07:55,530 --> 00:08:06,960
+I'm going to set the overflow to hidden and I'm going to set the border radius to three pixels so it's
+
+108
+00:08:06,960 --> 00:08:08,160
+just slightly rounded.
+
+109
+00:08:09,730 --> 00:08:21,990
+OK, now the movie info is the title and the rating, so class movie info and I'm going to first change
+
+110
+00:08:21,990 --> 00:08:28,050
+the color, make that brighter and I want to display Flex because I want it to be, you know, the title
+
+111
+00:08:28,050 --> 00:08:29,640
+here in the rating over here.
+
+112
+00:08:30,000 --> 00:08:36,300
+So if we do display Flex and let's take any.
+
+113
+00:08:38,960 --> 00:08:50,060
+Let's see, let's take the margin top off of the heading, so movie info three, that set margin top
+
+114
+00:08:50,060 --> 00:08:51,930
+to zero like that.
+
+115
+00:08:52,340 --> 00:08:52,760
+All right.
+
+116
+00:08:52,760 --> 00:08:59,580
+So we have display flex, let's line items to the center and let's justify content.
+
+117
+00:08:59,600 --> 00:09:05,090
+I want to put the space, the extra space between them so it pushes the rating all the way over.
+
+118
+00:09:05,570 --> 00:09:15,140
+And then for padding, let's do zero point five ram, one ram and then one ram on the bottom as well.
+
+119
+00:09:18,180 --> 00:09:26,580
+All right, and then I'm just going to add letter spacing here, and we're going to do point half a
+
+120
+00:09:26,580 --> 00:09:28,170
+pixel, point five pixel.
+
+121
+00:09:30,930 --> 00:09:34,920
+All right, now, what should we do next here?
+
+122
+00:09:35,550 --> 00:09:41,970
+The span, which is the rating here is going to have we're going to have the ability to add separate
+
+123
+00:09:41,970 --> 00:09:46,080
+classes depending on, you know, how high or low the rating is.
+
+124
+00:09:46,090 --> 00:09:47,280
+So we need those classes.
+
+125
+00:09:47,280 --> 00:09:50,180
+But the base class or the base element.
+
+126
+00:09:50,190 --> 00:09:58,320
+So movie info span, let's add a background color and that's going to be for the spane.
+
+127
+00:09:58,320 --> 00:10:04,740
+Let's do VARE and we're going to use our primary color like that.
+
+128
+00:10:04,740 --> 00:10:05,910
+And let's set.
+
+129
+00:10:06,900 --> 00:10:15,040
+Some padding on that, so we'll do point to five from top and bottom, point five from left and right.
+
+130
+00:10:15,840 --> 00:10:16,290
+Good.
+
+131
+00:10:16,440 --> 00:10:24,980
+Let's set a border radius of three pixels and then let's set font weight to bold.
+
+132
+00:10:26,130 --> 00:10:27,490
+OK, so that's our rating.
+
+133
+00:10:29,230 --> 00:10:32,240
+Now we want the different color classes.
+
+134
+00:10:32,250 --> 00:10:33,720
+So let's just grab that.
+
+135
+00:10:33,720 --> 00:10:39,840
+And let's say if it has a class of green, let's set color to green.
+
+136
+00:10:41,490 --> 00:10:43,510
+Actually, that's a little too dark.
+
+137
+00:10:43,530 --> 00:10:44,130
+Let's do.
+
+138
+00:10:46,960 --> 00:10:55,420
+It's light green look like, you know, we can do that, and then let's just take this, we want three
+
+139
+00:10:55,420 --> 00:11:04,990
+of these and the second one here is going to be orange and we'll set this color to orange.
+
+140
+00:11:05,650 --> 00:11:12,700
+And then this one here is going to be red and will set this one to red.
+
+141
+00:11:12,850 --> 00:11:19,030
+Right now, if one of these ratings, like, let's say this last one is is three point eight and we
+
+142
+00:11:19,030 --> 00:11:22,430
+set the class to red, then it's going to have a red coloring.
+
+143
+00:11:23,950 --> 00:11:26,530
+Now, the last part of this is the overview.
+
+144
+00:11:26,800 --> 00:11:31,330
+And the overview is going to be the white part that when we hover over, it's going to you know, it's
+
+145
+00:11:31,330 --> 00:11:33,060
+going to come up from the bottom.
+
+146
+00:11:33,070 --> 00:11:34,960
+So we want to add a transition on that.
+
+147
+00:11:35,470 --> 00:11:37,920
+But let's style overview first.
+
+148
+00:11:39,820 --> 00:11:48,220
+So I'm going to set the background color to white on overview and let's set some padding so it's not
+
+149
+00:11:48,340 --> 00:11:51,010
+up against the sides will do to some padding.
+
+150
+00:11:51,430 --> 00:11:54,180
+We're going to position this to be absolute.
+
+151
+00:11:54,580 --> 00:12:04,300
+And as far as you know, where we want to position this, let's do top top left, top zero, bottom
+
+152
+00:12:05,050 --> 00:12:09,760
+zero and right zero.
+
+153
+00:12:09,770 --> 00:12:11,950
+I'm sorry, not top left.
+
+154
+00:12:12,390 --> 00:12:14,740
+So we want left and right, zero and bottom.
+
+155
+00:12:15,250 --> 00:12:15,670
+All right.
+
+156
+00:12:15,680 --> 00:12:16,990
+So it should look like that.
+
+157
+00:12:18,730 --> 00:12:19,420
+And then.
+
+158
+00:12:21,760 --> 00:12:26,230
+Yeah, and then I'm going to set a max height of one hundred percent.
+
+159
+00:12:27,340 --> 00:12:33,850
+OK, now we don't want this to show initially what I want to do is have it pushed all the way down out
+
+160
+00:12:33,850 --> 00:12:40,570
+of the box and then when we hover, it comes up, transitions up so we can move it down with transform
+
+161
+00:12:40,570 --> 00:12:46,270
+and then we can use translate whi, which translates or moves it on the Y axis and I want to move it
+
+162
+00:12:46,270 --> 00:12:48,280
+down so it'll be a positive number.
+
+163
+00:12:49,270 --> 00:12:51,450
+We're going to do 101 percent.
+
+164
+00:12:51,460 --> 00:12:56,620
+So 100 percent of its height plus one more percent, which will move it all the way down.
+
+165
+00:12:56,620 --> 00:13:02,680
+If I set this to like 50 percent, it'll push it 50 percent down, but we want it off screen to begin
+
+166
+00:13:02,680 --> 00:13:08,050
+with and then when we hover it, so we'll say overview hover.
+
+167
+00:13:09,100 --> 00:13:10,270
+I'm sorry, not overview.
+
+168
+00:13:10,270 --> 00:13:11,520
+However, we want movie.
+
+169
+00:13:11,980 --> 00:13:19,960
+So when we when we hover over a movie, which is the entire box, then we want the overview to change
+
+170
+00:13:19,960 --> 00:13:26,410
+its transform translate why to zero, which is its original positioning.
+
+171
+00:13:26,800 --> 00:13:31,120
+Now if I hover over you can see it, it does that, but there's no transition yet.
+
+172
+00:13:31,120 --> 00:13:33,370
+So let's add a transition on to this.
+
+173
+00:13:33,880 --> 00:13:37,360
+We want transition and we want to transition.
+
+174
+00:13:37,360 --> 00:13:44,050
+The transform property will do zero point three second duration and we'll do an ease in effect.
+
+175
+00:13:44,350 --> 00:13:48,850
+So that way when I hover over it just kind of slides up, which is what I want.
+
+176
+00:13:49,180 --> 00:13:55,210
+OK, so now that we have the design down in, the next video will jump into our script J.S. and pull
+
+177
+00:13:55,210 --> 00:14:02,410
+in the data from the API using fetch and then ultimately insert these cards with the dynamic movie data.

@@ -1,0 +1,55 @@
+1
+00:00:00,240 --> 00:00:05,190
+OK, so in this project, we're going to create a live user filter where we're actually going to fetch
+
+2
+00:00:05,190 --> 00:00:09,310
+a bunch of users from an API called Random User Dot Me.
+
+3
+00:00:09,690 --> 00:00:15,390
+So we're going to fetch them, put them in here, and then we're going to be able to filter these users.
+
+4
+00:00:15,420 --> 00:00:21,930
+So if I just do if I type in an are here any user that has an R in either their name or their location
+
+5
+00:00:21,930 --> 00:00:27,960
+is going to show I'll do our oh, let's say let's search for this Roman guy.
+
+6
+00:00:27,960 --> 00:00:33,840
+So our M and you see that the only user that matches that is this Roman Roberts.
+
+7
+00:00:33,840 --> 00:00:37,320
+And if I delete it's going to still it's going to continue to filter.
+
+8
+00:00:37,680 --> 00:00:44,820
+OK, if I want to search for this all over and if I delete, it's going to just match whatever I put
+
+9
+00:00:44,820 --> 00:00:45,250
+in here.
+
+10
+00:00:45,300 --> 00:00:45,590
+All right.
+
+11
+00:00:45,600 --> 00:00:47,300
+So we're going to be dealing with the API.
+
+12
+00:00:47,490 --> 00:00:54,020
+We are going to use a sink await as opposed to the then syntax for fetch, which returns a promise.
+
+13
+00:00:54,330 --> 00:01:00,240
+So we'll first create the UI style with access and then we'll fetch the data and will implement the
+
+14
+00:01:00,240 --> 00:01:00,870
+filtering.

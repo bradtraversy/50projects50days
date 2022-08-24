@@ -1,0 +1,327 @@
+﻿1
+00:00:00,330 --> 00:00:03,990
+OK, então vamos começar com o HTML e o sucesso.
+
+2
+00:00:04,020 --> 00:00:09,180
+Então basicamente o que vamos fazer primeiro é apenas criar as três caixas.
+
+3
+00:00:10,020 --> 00:00:12,840
+Vamos colocá-lo diretamente no HTML mais tarde.
+
+4
+00:00:12,870 --> 00:00:17,070
+Isso será substituído por JavaScript, porque quando chegamos à página, queremos apenas ver aquele
+
+5
+00:00:17,070 --> 00:00:17,520
+caixa.
+
+6
+00:00:17,520 --> 00:00:22,680
+E assim que apertarmos uma tecla, veremos os três com os três valores, a chave, o código da chave
+
+7
+00:00:22,680 --> 00:00:23,310
+e o código.
+
+8
+00:00:23,700 --> 00:00:36,180
+Então vamos começar mudando o título aqui para dizer, você sabe, apenas dizer códigos de evento e então
+
+9
+00:00:37,050 --> 00:00:41,390
+vamos ter uma div wrapper aqui com a ideia de inserts.
+
+10
+00:00:42,090 --> 00:00:46,860
+E aqui vamos ter algumas classes, algumas divs com a classe QI, que é basicamente apenas
+
+11
+00:00:46,860 --> 00:00:50,710
+a caixa, a borda, a cor de fundo e assim por diante.
+
+12
+00:00:51,120 --> 00:00:54,600
+Então, isso será, digamos que é a tecla a que batemos.
+
+13
+00:00:55,110 --> 00:00:56,940
+Isso será dinâmico mais tarde.
+
+14
+00:00:56,940 --> 00:00:58,560
+Vamos adicionar isso com o JavaScript.
+
+15
+00:00:58,560 --> 00:01:03,240
+Mas por enquanto, vou apenas codificar a letra A e ter uma pequena etiqueta aqui.
+
+16
+00:01:06,630 --> 00:01:12,510
+E vamos apenas dar a isso um rótulo de chave de evento, porque é isso que está no objeto de evento, é
+
+17
+00:01:12,510 --> 00:01:14,190
+será o valor-chave.
+
+18
+00:01:14,700 --> 00:01:17,630
+E depois disso, d'Hiv terá outra classe de chave.
+
+19
+00:01:18,210 --> 00:01:22,200
+E este será o código da chave, que para A é 65.
+
+20
+00:01:22,200 --> 00:01:23,910
+Então eu vou apenas codificar isso lá.
+
+21
+00:01:24,330 --> 00:01:31,220
+E digamos que este é o código de chave de ponto do evento e então teremos outra classe de chave.
+
+22
+00:01:31,650 --> 00:01:35,190
+E este será o código, que neste caso seria Keet.
+
+23
+00:01:35,790 --> 00:01:45,330
+E dentro de pequenas tags aqui dirá event dot code e então teremos uma div final com a classe
+
+24
+00:01:45,330 --> 00:01:45,890
+de chave.
+
+25
+00:01:45,900 --> 00:01:48,870
+E isso vai ser como a caixa de boas-vindas.
+
+26
+00:01:48,880 --> 00:01:59,850
+Ele dirá que pressione qualquer tecla para obter o código da chave e o código apenas dirá para obter o código da chave.
+
+27
+00:02:02,030 --> 00:02:02,450
+Tudo bem.
+
+28
+00:02:02,460 --> 00:02:04,320
+Então deve ser isso para o HTML.
+
+29
+00:02:04,320 --> 00:02:05,040
+Bem simples.
+
+30
+00:02:05,790 --> 00:02:10,790
+Vamos pular para a folha de estilo e o estilo também não será tão ruim.
+
+31
+00:02:10,800 --> 00:02:12,270
+Eu só quero usar uma fonte diferente.
+
+32
+00:02:12,270 --> 00:02:13,860
+Então eu vou dizer sucesso.
+
+33
+00:02:13,860 --> 00:02:24,060
+Questione família e vamos colocar isso para Ammu Ally e colocar isso no corpo aqui e se mexer.
+
+34
+00:02:24,240 --> 00:02:27,360
+Eu mudo a fonte também no corpo.
+
+35
+00:02:27,360 --> 00:02:38,910
+Vou adicionar uma cor de fundo de um três vezes e vamos definir que podemos nos livrar do Flex Direction
+
+36
+00:02:38,910 --> 00:02:39,480
+coluna.
+
+37
+00:02:39,900 --> 00:02:43,890
+E eu só quero adicionar um centro de texto alinhado aqui.
+
+38
+00:02:44,730 --> 00:02:53,240
+Então, alinhe o texto no centro e tudo o que realmente precisamos para estilizar é a classe chave e, em seguida, as pequenas tags dentro.
+
+39
+00:02:53,250 --> 00:03:01,890
+Então, para a chave, vamos dar a isso uma borda para que a borda seja um pixel sólido e seja hexadecimal
+
+40
+00:03:01,890 --> 00:03:02,970
+999.
+
+41
+00:03:04,020 --> 00:03:08,430
+E então vou dar uma cor de fundo um pouco mais clara de Trípoli.
+
+42
+00:03:09,660 --> 00:03:13,590
+E então vamos adicionar uma sombra de caixa, apenas uma sombra muito leve.
+
+43
+00:03:13,590 --> 00:03:21,510
+Vou fazer um pixel para o deslocamento horizontal e vertical e três pixels para o desfoque
+
+44
+00:03:21,510 --> 00:03:27,990
+e então para a cor do RGB, um preto zero zero zero para vermelho, verde, azul e zero ponto um para
+
+45
+00:03:27,990 --> 00:03:28,400
+alfa.
+
+46
+00:03:28,410 --> 00:03:33,030
+Então, apenas uma sombra muito leve na direita e na parte inferior.
+
+47
+00:03:34,020 --> 00:03:40,950
+Então vamos definir que eu vou definir a exibição realmente para um flex embutido.
+
+48
+00:03:42,150 --> 00:03:52,050
+OK, então eles ficarão lado a lado e, em seguida, vamos definir os itens de linha para o centro e vamos definir o
+
+49
+00:03:52,650 --> 00:03:54,480
+tamanho da fonte seja maior.
+
+50
+00:03:54,480 --> 00:04:01,950
+Vou definir isso para vinte pixels e muito do preenchimento de cada um para vinte pixels.
+
+51
+00:04:03,450 --> 00:04:14,130
+E vamos definir o que eu realmente vou definir a direção do flex para a coluna e, em seguida, vamos definir a margem
+
+52
+00:04:14,250 --> 00:04:15,570
+vai quebrar um pouco.
+
+53
+00:04:15,570 --> 00:04:19,440
+Então vamos fazer dez pixels de margem
+
+54
+00:04:21,960 --> 00:04:24,270
+e vamos ver o que mais queremos fazer aqui.
+
+55
+00:04:24,270 --> 00:04:26,370
+Vamos definir o peso da fonte para Bould.
+
+56
+00:04:26,370 --> 00:04:30,810
+Então, eu vou aqui e digo que os pesos das fontes definem isso para negrito.
+
+57
+00:04:34,440 --> 00:04:38,310
+O que mais queremos fazer aqui é que a fonte correta não se pareça com ela?
+
+58
+00:04:38,310 --> 00:04:39,190
+Não, não é.
+
+59
+00:04:39,210 --> 00:04:42,150
+Então aqui devemos ter um e comercial.
+
+60
+00:04:43,200 --> 00:04:43,740
+Aqui vamos nós.
+
+61
+00:04:45,720 --> 00:04:51,390
+E então vamos definir Menwith aqui para cada caixa também para 150.
+
+62
+00:04:54,300 --> 00:04:59,010
+Tudo bem, então agora vamos fazer as tags pequenas, na verdade, mais uma coisa que eu quero fazer é posicionar isso
+
+63
+00:04:59,010 --> 00:05:05,150
+relativo porque as pequenas tags dentro da classe de chave serão posicionadas como absolutas.
+
+64
+00:05:05,400 --> 00:05:11,340
+Então, quando você posiciona algo absoluto e acessa, se você deseja posicioná-lo dentro deste contêiner,
+
+65
+00:05:11,340 --> 00:05:13,610
+então você tornaria essa posição relativa.
+
+66
+00:05:14,130 --> 00:05:23,740
+Então vamos pegar a classe chave e pequenas tags dentro dela e vamos posicionar isso absoluto.
+
+67
+00:05:24,030 --> 00:05:28,230
+Assim que eu fizer isso, vai, você sabe, vai ser colocado aqui, mas eu realmente quero
+
+68
+00:05:28,230 --> 00:05:29,400
+movê-lo para cima aqui.
+
+69
+00:05:29,850 --> 00:05:33,930
+Então, vamos definir o valor superior para um negativo.
+
+70
+00:05:33,930 --> 00:05:34,500
+Tão negativo.
+
+71
+00:05:34,500 --> 00:05:41,520
+Vinte e cinco, vinte e quatro pixels porque eu quero tirar dessa caixa e vou colocar o valor da esquerda
+
+72
+00:05:41,520 --> 00:05:42,450
+para zero.
+
+73
+00:05:43,410 --> 00:05:44,640
+Mas eu quero isso no meio.
+
+74
+00:05:44,640 --> 00:05:51,190
+Então, vou definir o texto de uma linha para o centro e também definir a largura para 100 por cento.
+
+75
+00:05:51,640 --> 00:05:57,690
+Isso, isso vai colocar no meio vamos adicionar ou vamos mudar a cor para cinco, cinco, cinco.
+
+76
+00:05:58,680 --> 00:06:00,020
+E eu quero menor.
+
+77
+00:06:00,030 --> 00:06:07,310
+Então, vamos definir o tamanho da fonte para 14 pixels e acho que devemos ser bons.
+
+78
+00:06:07,320 --> 00:06:07,640
+Sim.
+
+79
+00:06:07,650 --> 00:06:09,140
+Então isso parece OK.
+
+80
+00:06:09,150 --> 00:06:13,890
+Então, no próximo vídeo, queremos dar a isso algumas funcionalidades em que nem mostramos esses três
+
+81
+00:06:13,890 --> 00:06:16,110
+caixas até que realmente apertemos uma tecla.
+
+82
+00:06:16,350 --> 00:06:21,120
+E então, obviamente, qualquer tecla que acertarmos, esses dados aqui serão diferentes.

@@ -1,0 +1,575 @@
+﻿1
+00:00:00,150 --> 00:00:04,110
+Tudo bem, então vamos começar, eu tenho meu inicializador de projeto aberto aqui, e eu vou
+
+2
+00:00:04,110 --> 00:00:11,610
+para mudar o título aqui para decks pokey e teremos um H1 com decks pokey.
+
+3
+00:00:12,240 --> 00:00:16,980
+E acho que teremos um container que envolve tudo, que terá uma classe
+
+4
+00:00:16,980 --> 00:00:19,570
+de recipiente de traço pokey.
+
+5
+00:00:19,590 --> 00:00:27,120
+Também vou dar uma ideia de pokey container e aqui dentro vai estar basicamente cada carta é
+
+6
+00:00:27,120 --> 00:00:34,380
+vai ter uma classe de Pokémon e estes vão ter um monte desses e
+
+7
+00:00:34,380 --> 00:00:36,390
+em última análise, ele virá do JavaScript.
+
+8
+00:00:36,420 --> 00:00:41,880
+Vamos construir essa div no JavaScript, buscar os dados e colocar os dados aqui e
+
+9
+00:00:41,880 --> 00:00:42,810
+em seguida, coloque-o no dormitório.
+
+10
+00:00:42,810 --> 00:00:48,270
+Mas agora vou codificar o HTML apenas para que possamos vê-lo e pelo menos estilizar o
+
+11
+00:00:48,270 --> 00:00:48,720
+cartão.
+
+12
+00:00:49,590 --> 00:00:52,950
+Então eles vão ter um plano de fundo embutido.
+
+13
+00:00:52,960 --> 00:01:00,810
+Então vamos dizer estilo aqui e definir a cor do plano de fundo porque cada tipo terá um plano de fundo específico
+
+14
+00:01:00,810 --> 00:01:01,230
+cor.
+
+15
+00:01:01,480 --> 00:01:04,230
+OK, então aparentemente Pokémon, eles têm tipos diferentes.
+
+16
+00:01:04,230 --> 00:01:09,740
+Eu honestamente nunca olhei para Pokémon, então não tenho ideia sobre isso.
+
+17
+00:01:09,900 --> 00:01:11,840
+Tudo o que sei são os dados que estamos buscando.
+
+18
+00:01:12,540 --> 00:01:17,480
+Então, se você é um grande fã de Pokémon e eu cometer um erro, por favor, não fique chateado comigo.
+
+19
+00:01:18,000 --> 00:01:19,750
+Então vamos definir o plano de fundo.
+
+20
+00:01:19,780 --> 00:01:24,630
+Desculpe, isso definiu a cor de fundo para ser tão vermelho, verde, azul.
+
+21
+00:01:24,640 --> 00:01:29,310
+Dois, dois, dois, dois, cinco, três e dois a quatro.
+
+22
+00:01:30,250 --> 00:01:35,250
+OK, e aqui dentro, queremos ter uma div de contêiner de imagem.
+
+23
+00:01:35,820 --> 00:01:39,060
+Então, digamos contêiner de imagem e, em seguida, uma imagem.
+
+24
+00:01:39,060 --> 00:01:41,250
+E eu vou pegar o link aqui.
+
+25
+00:01:42,000 --> 00:01:45,210
+Então este é um link para o Pokémon Bulbasaur.
+
+26
+00:01:46,860 --> 00:01:51,720
+Então é assim e vai ser muito grande para começar.
+
+27
+00:01:51,720 --> 00:01:53,970
+Mas quando chegarmos ao sucesso, vamos consertar isso.
+
+28
+00:01:54,270 --> 00:01:59,550
+Então, sob o contêiner de imagem aqui, teremos uma classe de informações que terá algumas informações sobre isso
+
+29
+00:01:59,550 --> 00:02:00,750
+determinado pokémon.
+
+30
+00:02:01,350 --> 00:02:06,240
+Então spane, vamos dar a isso uma classe de não e apenas codificado aqui, zero zero um.
+
+31
+00:02:07,230 --> 00:02:11,670
+Em última análise, como eu disse, essas coisas virão da API.
+
+32
+00:02:12,060 --> 00:02:22,320
+Então H3 com uma classe de nome e diremos que é Balbus ou Balbus ou algo assim, eu acredito.
+
+33
+00:02:23,100 --> 00:02:26,460
+E então uma pequena tag aqui com uma classe de tipo.
+
+34
+00:02:27,960 --> 00:02:32,130
+E vamos colocar um rótulo de tipo e depois outro span.
+
+35
+00:02:34,360 --> 00:02:38,260
+E aqui dentro vai estar o nome do tipo que neste caso é grama.
+
+36
+00:02:39,430 --> 00:02:41,110
+OK, então isso deve fazê-lo.
+
+37
+00:02:41,320 --> 00:02:45,150
+Também vou colocar um link para o design que foi inspirado no Dribble.
+
+38
+00:02:45,460 --> 00:02:48,790
+Então eu vou passar isso aqui só para dar crédito a eles.
+
+39
+00:02:50,200 --> 00:02:50,650
+Tudo bem.
+
+40
+00:02:50,650 --> 00:02:54,820
+Na verdade, mais uma coisa que eu quero fazer é apenas criar alguns desses cartões.
+
+41
+00:02:54,820 --> 00:03:00,220
+Então, isso divida a classe de Pokémon, vamos apenas copiar isso duas vezes para que haja três deles.
+
+42
+00:03:00,640 --> 00:03:02,070
+OK, então temos três desses cartões.
+
+43
+00:03:02,080 --> 00:03:07,240
+E, finalmente, novamente, isso virá do JavaScript, então não teremos esse HTML neste
+
+44
+00:03:07,240 --> 00:03:09,100
+arquivo, mas nós apenas queremos.
+
+45
+00:03:09,100 --> 00:03:10,080
+Há um estilo.
+
+46
+00:03:10,450 --> 00:03:17,230
+Então vamos usar as pequenas fontes que vou pegar daqui até aqui e vamos dizer ponto de interrogação
+
+47
+00:03:17,410 --> 00:03:20,530
+família definir isso para lieto.
+
+48
+00:03:20,890 --> 00:03:22,570
+Então vamos.
+
+49
+00:03:22,570 --> 00:03:26,500
+E então Colen 300 e 400.
+
+50
+00:03:27,130 --> 00:03:30,070
+E então vamos adicionar essa família de fontes aqui.
+
+51
+00:03:31,840 --> 00:03:37,540
+Então mude isso e depois o plano de fundo, então para o plano de fundo, vamos usar um gradiente linear,
+
+52
+00:03:37,870 --> 00:03:41,920
+mas para qualquer navegador que não suporte isso, vamos colocar uma cor sólida primeiro.
+
+53
+00:03:41,920 --> 00:03:46,600
+Então EAFE, FBB será o fundo sólido.
+
+54
+00:03:46,600 --> 00:03:51,130
+E eu sei que não podemos ver isso por causa dos cartões aqui, mas vamos consertar isso em um minuto.
+
+55
+00:03:51,640 --> 00:03:59,470
+E então vamos também definir outro conjunto, outro plano de fundo aqui como uma direção de gradiente linear será
+
+56
+00:03:59,470 --> 00:04:00,610
+Para a direita.
+
+57
+00:04:00,610 --> 00:04:11,280
+A primeira cor será D quatro D, três DD e depois a vírgula e a próxima cor será EFP FPP.
+
+58
+00:04:12,520 --> 00:04:17,710
+OK, então esse será o plano de fundo que não podemos ver atualmente, e então todas as coisas do Fleck podem
+
+59
+00:04:17,710 --> 00:04:22,510
+ficar, o alinhamento vai se livrar da viewport de altura 100, vamos nos livrar do estouro oculto
+
+60
+00:04:22,510 --> 00:04:24,280
+porque queremos barras de rolagem.
+
+61
+00:04:24,520 --> 00:04:27,170
+E agora você pode ver o gradiente de fundo aqui.
+
+62
+00:04:28,870 --> 00:04:32,710
+Então, para o H1, eu só quero separar as letras.
+
+63
+00:04:32,710 --> 00:04:36,130
+Uma pequena alma definiu o espaçamento das letras para três pixels.
+
+64
+00:04:39,120 --> 00:04:48,270
+E vamos fazer o contêiner, então o contêiner pokey dash que envolve tudo o que deseja exibir
+
+65
+00:04:48,270 --> 00:04:50,910
+isso como linho.
+
+66
+00:04:51,990 --> 00:04:58,200
+Então, se olharmos para nossos envelopes de e-mail, todos esses Pokémon, basicamente todas as cartas.
+
+67
+00:04:58,380 --> 00:05:02,720
+Então, queremos usar a caixa flexível para transformá-los em itens flexíveis em uma linha.
+
+68
+00:05:03,030 --> 00:05:06,060
+Então exiba flex, vai colocá-los lado a lado.
+
+69
+00:05:06,080 --> 00:05:10,130
+E eu sei que a imagem está gigante agora, mas vamos consertar isso em alguns minutos.
+
+70
+00:05:11,100 --> 00:05:12,270
+Queremos exibir flaks.
+
+71
+00:05:12,270 --> 00:05:17,960
+Queremos que ele se envolva. Se ele sair de seu contêiner, ele se envolverá na próxima linha.
+
+72
+00:05:18,390 --> 00:05:21,450
+OK, e você pode ver agora que caiu para a próxima linha.
+
+73
+00:05:22,290 --> 00:05:29,550
+Quanto ao espaço restante, queremos alinhar os itens ao espaço entre eles.
+
+74
+00:05:33,260 --> 00:05:41,720
+E então vamos justificar o conteúdo no centro e queremos que fique no meio, digamos margem zero,
+
+75
+00:05:41,720 --> 00:05:49,790
+superior e inferior, auto esquerda e direita e, em seguida, desloque uma largura máxima de mil e duzentos pixels e nós
+
+76
+00:05:49,790 --> 00:05:50,990
+tornar isso responsivo.
+
+77
+00:05:52,280 --> 00:05:59,930
+OK, agora temos a classe de Pokémon que envolve todos vocês sabem, cada um tem uma classe de
+
+78
+00:05:59,930 --> 00:06:01,250
+Pokémon em cada carta.
+
+79
+00:06:02,700 --> 00:06:10,430
+E para isso vamos definir uma cor de fundo inicial de Trípoli.
+
+80
+00:06:11,720 --> 00:06:16,040
+Mas essas cores de fundo serão chamadas de cores de fundo e serão dinâmicas dependendo do
+
+81
+00:06:16,040 --> 00:06:16,820
+tipo é.
+
+82
+00:06:17,330 --> 00:06:19,190
+OK, mas vamos configurá-lo para isso inicialmente.
+
+83
+00:06:19,190 --> 00:06:24,020
+Vamos definir o raio da borda para 10 pixels.
+
+84
+00:06:24,440 --> 00:06:25,100
+Na verdade, você sabe o quê?
+
+85
+00:06:25,100 --> 00:06:26,230
+Não podemos nem ver nada disso.
+
+86
+00:06:26,240 --> 00:06:27,440
+Então vamos fazer a imagem.
+
+87
+00:06:27,440 --> 00:06:28,940
+Vamos apenas cuidar dessa imagem.
+
+88
+00:06:29,330 --> 00:06:36,020
+Então a imagem do Pokémon, contêiner Dasch, vamos fazer isso primeiro.
+
+89
+00:06:36,560 --> 00:06:44,150
+E para o contêiner, vamos definir uma cor de fundo do nosso GBA branco.
+
+90
+00:06:44,190 --> 00:06:46,640
+Então dois cinco, cinco, quatro, Rajeeb.
+
+91
+00:06:47,090 --> 00:06:53,570
+E então para o valor alfa fará zero vírgula seis para isso.
+
+92
+00:06:54,190 --> 00:06:54,620
+Certo.
+
+93
+00:06:54,620 --> 00:06:59,600
+E então queremos que sejam imagens arredondadas, mas vamos colocar o raio da borda na imagem
+
+94
+00:06:59,600 --> 00:07:00,320
+recipiente.
+
+95
+00:07:00,770 --> 00:07:02,390
+Então isso vai ser 50 por cento.
+
+96
+00:07:02,990 --> 00:07:12,290
+E eu quero ter uma altura de 120 pixels.
+
+97
+00:07:14,370 --> 00:07:21,460
+Ok, agora, as imagens são que você pode ver que elas estão alinhadas e você pode ver o contêiner de imagens,
+
+98
+00:07:21,460 --> 00:07:24,000
+mas as imagens estão saindo do recipiente.
+
+99
+00:07:24,460 --> 00:07:32,740
+Então, antes de adicionarmos qualquer coisa a isso, eu só quero fazer o centro da linha de texto.
+
+100
+00:07:33,070 --> 00:07:41,620
+Mas então para as imagens, vamos pegar isso e dizer para cada imagem, eu quero definir uma largura máxima nela
+
+101
+00:07:41,620 --> 00:07:45,300
+imagem seja 90 por cento de seu contêiner.
+
+102
+00:07:45,310 --> 00:07:49,150
+Então isso vai colocá-lo dentro de seu recipiente, que é isso, você sabe, isso aqui.
+
+103
+00:07:49,630 --> 00:07:57,850
+E vamos também adicionar uma margem a uma margem, acima de 20 pixels.
+
+104
+00:07:59,500 --> 00:08:08,290
+Tudo bem, agora que fizemos isso, vamos voltar para esta classe aqui, a classe Pokémon,
+
+105
+00:08:08,830 --> 00:08:11,380
+e eu quero box shadow nesses cartões.
+
+106
+00:08:11,380 --> 00:08:13,840
+Então, vamos definir a sombra da caixa aqui.
+
+107
+00:08:14,230 --> 00:08:22,720
+Fará zero quatro verticais desculpe, três pixels horizontais para o deslocamento V e depois 15 pixels para
+
+108
+00:08:22,720 --> 00:08:24,460
+o desfoque e depois para a cor.
+
+109
+00:08:24,460 --> 00:08:25,880
+Vai ser Vu.
+
+110
+00:08:26,450 --> 00:08:32,560
+Vamos fazer 100 para cada um deles e então zero vírgula cinco para a transparência.
+
+111
+00:08:33,040 --> 00:08:37,270
+Então você pode ver agora que temos essa sombra de caixa para espaçamento.
+
+112
+00:08:37,270 --> 00:08:40,210
+Vamos adicionar a margem a dez pixels que os separará.
+
+113
+00:08:40,220 --> 00:08:42,250
+Precisamos de algum espaçamento dentro do cartão.
+
+114
+00:08:42,520 --> 00:08:46,030
+Então vamos fazer vinte pixels dentro e você pode ver.
+
+115
+00:08:46,420 --> 00:08:51,340
+Isso é levado para a próxima linha porque temos o flex wrap.
+
+116
+00:08:52,690 --> 00:08:56,710
+Se não tivéssemos esse flex wrap bem aqui, então ele não faria isso.
+
+117
+00:08:58,260 --> 00:09:05,130
+Mas isso nos ajudará a torná-lo responsivo e, finalmente, quero apenas enviar uma linha de texto para o centro
+
+118
+00:09:06,760 --> 00:09:10,700
+agora para a parte inferior aqui, a informação.
+
+119
+00:09:10,710 --> 00:09:11,520
+Vamos fazer isso.
+
+120
+00:09:13,200 --> 00:09:17,520
+Então é uma informação de ponto Pokémon.
+
+121
+00:09:18,180 --> 00:09:22,940
+Tudo que eu quero nessa classe em particular é uma margem, no máximo 20 pixels.
+
+122
+00:09:22,940 --> 00:09:24,810
+Então vai empurrar tudo um pouco para baixo.
+
+123
+00:09:25,200 --> 00:09:28,070
+E então eu quero estilizar o número.
+
+124
+00:09:28,590 --> 00:09:31,770
+Então é uma informação de Pokémon.
+
+125
+00:09:34,780 --> 00:09:42,130
+Não, então vou adicionar uma cor de fundo aqui e vou usar RGB porque quero que seja como
+
+126
+00:09:42,740 --> 00:09:45,280
+um fundo transparente.
+
+127
+00:09:45,290 --> 00:09:49,150
+Então vamos fazer preto e então zero ponto um.
+
+128
+00:09:49,900 --> 00:09:52,870
+OK, então você pode ver que dá aquele fundo transparente.
+
+129
+00:09:52,870 --> 00:09:56,210
+Olha, nós vamos ter um pouco de preenchimento para ele.
+
+130
+00:09:56,230 --> 00:10:07,900
+Vamos fazer cinco pixels, superior e inferior, 10 pixels à esquerda e à direita e definir o raio da borda e vamos
+
+131
+00:10:07,900 --> 00:10:09,640
+fazer 10 pixels sobre isso.
+
+132
+00:10:10,510 --> 00:10:12,440
+E vamos torná-lo um pouco menor.
+
+133
+00:10:12,460 --> 00:10:18,090
+Faremos o tamanho da fonte e o definiremos para zero ponto zero ponto oito unidades AM.
+
+134
+00:10:18,100 --> 00:10:23,680
+Então, isso será apenas o que for o wrapper, o tamanho da fonte do contêiner, ele será multiplicado
+
+135
+00:10:23,680 --> 00:10:26,380
+por zero vírgula oito, o que vai torná-lo um pouco menor.
+
+136
+00:10:27,730 --> 00:10:30,210
+OK, então a última coisa é o nome.
+
+137
+00:10:30,220 --> 00:10:46,300
+Então é um nome de informação de Pokémon na margem vamos fazer 15 07 e depois vamos fazer o espaçamento entre letras
+
+138
+00:10:46,300 --> 00:10:47,680
+a um pixel.
+
+139
+00:10:49,650 --> 00:10:54,990
+Tudo bem, então parece muito bom e você vê, se eu estender, vai ficar todos no mesmo
+
+140
+00:10:54,990 --> 00:10:55,400
+linha.
+
+141
+00:10:57,360 --> 00:10:58,710
+Então isso é um sucesso.
+
+142
+00:10:58,710 --> 00:11:04,710
+No próximo vídeo, queremos realmente buscar esses dados porque agora é só colocá-los
+
+143
+00:11:04,710 --> 00:11:05,550
+o HTML.
+
+144
+00:11:05,550 --> 00:11:10,420
+Queremos ir em frente e buscá-lo na API e inseri-lo no DOM.

@@ -1,0 +1,923 @@
+1
+00:00:00,240 --> 00:00:05,490
+All right, guys, we're going to get started on the 3D box's background project, so I have my project
+
+2
+00:00:05,490 --> 00:00:07,880
+starter open my three files here.
+
+3
+00:00:08,130 --> 00:00:10,530
+Now, the HTML for this is going to be really simple.
+
+4
+00:00:10,530 --> 00:00:13,130
+It's actually only going to have two lines in the body.
+
+5
+00:00:13,140 --> 00:00:20,250
+One will be the button and one will be the box container and then the individual 16 boxes that are going
+
+6
+00:00:20,250 --> 00:00:22,110
+to transform into one box.
+
+7
+00:00:22,110 --> 00:00:26,060
+When we click the button, those are going to be created from within the JavaScript.
+
+8
+00:00:26,070 --> 00:00:31,020
+However, for now, until we get to that, I will just hardcoded them and then we'll remove them later
+
+9
+00:00:31,020 --> 00:00:33,120
+on and and add our JavaScript.
+
+10
+00:00:33,360 --> 00:00:33,750
+All right.
+
+11
+00:00:33,750 --> 00:00:35,810
+So let's go ahead and get started here.
+
+12
+00:00:35,830 --> 00:00:45,570
+Let's just change the title to see 3D Box's background and let's get rid of this H1 and let's put our
+
+13
+00:00:45,570 --> 00:00:47,370
+button so we have a button.
+
+14
+00:00:47,370 --> 00:00:51,200
+And I'm going to give you an idea of BTN and a class of magic.
+
+15
+00:00:51,930 --> 00:00:54,120
+And inside here we'll see magic.
+
+16
+00:00:54,120 --> 00:00:57,200
+And I'm just going to paste in an emoji here.
+
+17
+00:00:58,500 --> 00:01:03,240
+You don't have to, but if you want that, you can just grab it from the repository and then we're going
+
+18
+00:01:03,240 --> 00:01:04,740
+to have our boxes container.
+
+19
+00:01:04,770 --> 00:01:10,350
+This is going to have an idea of boxes because we do need to use it within the JavaScript and for styling
+
+20
+00:01:10,350 --> 00:01:12,060
+we'll add a class of boxes.
+
+21
+00:01:12,420 --> 00:01:17,580
+And inside here, like I said, this is ultimately going to come from the JavaScript, but for now,
+
+22
+00:01:17,760 --> 00:01:19,140
+we're just going to hard code them.
+
+23
+00:01:19,140 --> 00:01:23,460
+So let's go ahead and say a class of box and we want 16.
+
+24
+00:01:23,460 --> 00:01:29,250
+So we're going to do asterisked 16 enter and that will give us 16 divs with the class of box.
+
+25
+00:01:29,760 --> 00:01:30,870
+Go ahead and save that.
+
+26
+00:01:30,870 --> 00:01:34,770
+And all we're going to see is the button, because obviously these are just empty divs.
+
+27
+00:01:35,040 --> 00:01:36,870
+But we have to go ahead and style these.
+
+28
+00:01:37,170 --> 00:01:39,510
+So let's jump into our style access.
+
+29
+00:01:39,810 --> 00:01:43,110
+And we have our our boilerplate, our Raboteau font.
+
+30
+00:01:43,380 --> 00:01:45,750
+We are going to use the Poppins font for the buttons.
+
+31
+00:01:45,750 --> 00:01:53,120
+So what I'll do is just go ahead and duplicate this and let's go right here, right before the ampersand,
+
+32
+00:01:53,580 --> 00:01:58,800
+get rid of this and let's put in toppings like that.
+
+33
+00:01:58,800 --> 00:02:04,920
+And then down here in the body, we're just going to add a background color, a very light gray.
+
+34
+00:02:04,920 --> 00:02:07,770
+So it's going to be F A three times.
+
+35
+00:02:08,290 --> 00:02:11,370
+Can't even see the difference, but just a light gray background.
+
+36
+00:02:11,790 --> 00:02:16,670
+And then let's start on the styling for the button, which has a class of magic.
+
+37
+00:02:17,130 --> 00:02:18,990
+So it's magic.
+
+38
+00:02:18,990 --> 00:02:23,370
+And we're going to give this a background color of a yellow.
+
+39
+00:02:23,370 --> 00:02:30,540
+So we'll use hexadecimal here with the value of F nine, C A two for.
+
+40
+00:02:31,020 --> 00:02:32,340
+OK, so that would be the background.
+
+41
+00:02:32,340 --> 00:02:34,860
+The color is going to be white.
+
+42
+00:02:35,280 --> 00:02:40,920
+Let's add our font family here of Hobbins.
+
+43
+00:02:43,170 --> 00:02:51,240
+Sans serif, save that good, want to get rid of that ugly border and let's make let's give it some
+
+44
+00:02:51,240 --> 00:02:52,350
+rounded corners.
+
+45
+00:02:52,620 --> 00:03:04,110
+So border radius, border radius, I'm going to do three pixels and let's make the font size 16 pixels.
+
+46
+00:03:04,470 --> 00:03:06,350
+Add some padding to make this bigger.
+
+47
+00:03:06,360 --> 00:03:10,430
+Will do twelve on the top and bottom 20 on the left and right.
+
+48
+00:03:10,440 --> 00:03:10,880
+Good.
+
+49
+00:03:12,000 --> 00:03:16,640
+We want to have a cursor pointer so that when we hover over it we have our pointer.
+
+50
+00:03:17,160 --> 00:03:20,100
+Let's, let's position this to the top.
+
+51
+00:03:20,100 --> 00:03:26,100
+So I'm going to use position fixed which we'll position it fixed in the browser window and we'll see
+
+52
+00:03:26,100 --> 00:03:28,620
+from the top 20 pixels.
+
+53
+00:03:28,920 --> 00:03:35,400
+So let's move it up and then let's also add some letter spacing to space out the letters a little.
+
+54
+00:03:35,400 --> 00:03:37,230
+We'll do one pixel for that.
+
+55
+00:03:37,230 --> 00:03:37,620
+Good.
+
+56
+00:03:38,280 --> 00:03:43,590
+And let's see, we're also going to add a little box shadow on the bottom.
+
+57
+00:03:44,550 --> 00:03:50,670
+So for Box Shadow, we have our X offset, which I'm going to set to zero, and then the Y offset.
+
+58
+00:03:51,000 --> 00:03:56,550
+I'm going to set that to three pixels because I just want it to be slightly on down here on the Y axis,
+
+59
+00:03:56,700 --> 00:03:57,630
+right on the bottom.
+
+60
+00:03:57,960 --> 00:04:01,220
+And then for the color we'll use in RGB, a yellow.
+
+61
+00:04:01,500 --> 00:04:03,210
+So red, green, blue, alpha.
+
+62
+00:04:03,220 --> 00:04:11,340
+So two four nine four four red, 202 for green, thirty six for blue and then for the alpha, which
+
+63
+00:04:11,340 --> 00:04:13,980
+is the transparency will do zero point five.
+
+64
+00:04:14,280 --> 00:04:17,400
+So now you can see that there's a slight box shadow underneath.
+
+65
+00:04:18,300 --> 00:04:18,780
+All right.
+
+66
+00:04:18,780 --> 00:04:23,700
+Now I want to get rid of this ugly outline on the focus state.
+
+67
+00:04:23,700 --> 00:04:29,700
+So what we can do is take the magic class and say focus state.
+
+68
+00:04:29,700 --> 00:04:34,470
+We want to set the outline property to not get rid of that.
+
+69
+00:04:34,470 --> 00:04:39,360
+And then I also want to an effect that when we click, click and hold, when it's in its active state,
+
+70
+00:04:39,840 --> 00:04:43,470
+that it moves down a little bit and gets rid of the box shadow.
+
+71
+00:04:43,480 --> 00:04:46,340
+So it gives the effect of it's going over the box shadow.
+
+72
+00:04:46,680 --> 00:04:51,570
+So how we can do that is with magic in the active state.
+
+73
+00:04:51,570 --> 00:04:58,140
+We want to first remove the box shadows or set box shadow to none, and then we'll go ahead and set
+
+74
+00:04:58,140 --> 00:05:02,100
+the transform property and we're going to use translate.
+
+75
+00:05:02,100 --> 00:05:02,580
+Why?
+
+76
+00:05:02,580 --> 00:05:03,840
+Because we want to translate.
+
+77
+00:05:03,840 --> 00:05:08,610
+We want to move it along the Y axis, just two pixels, which will move it down.
+
+78
+00:05:08,760 --> 00:05:11,130
+If I did negative two pixels, it would move it up.
+
+79
+00:05:11,550 --> 00:05:12,660
+So let's save that.
+
+80
+00:05:12,660 --> 00:05:17,430
+And now you can see when I click and hold it basically like covers that box shadow.
+
+81
+00:05:18,540 --> 00:05:19,050
+All right.
+
+82
+00:05:19,050 --> 00:05:26,940
+So I'm also going to add to this magic button, a Z index of we'll just put one hundred because I want
+
+83
+00:05:26,940 --> 00:05:34,020
+it to always be on top, even if the browser is really short and the image the boxes go underneath,
+
+84
+00:05:34,020 --> 00:05:35,430
+I want the button to be on top.
+
+85
+00:05:36,210 --> 00:05:36,570
+All right.
+
+86
+00:05:36,570 --> 00:05:37,860
+So that takes care of that.
+
+87
+00:05:37,860 --> 00:05:39,630
+Now we're going to start on the boxes.
+
+88
+00:05:39,750 --> 00:05:46,710
+So we have the boxes container and then we have the individual box class.
+
+89
+00:05:46,740 --> 00:05:50,700
+Right now, I want to be able to see what we're doing with the boxes.
+
+90
+00:05:50,700 --> 00:05:57,030
+So for now, I'm just going to add a background of yellow and the height and the width here are very
+
+91
+00:05:57,030 --> 00:05:57,780
+important.
+
+92
+00:05:57,780 --> 00:06:00,990
+So that's going to be one twenty five for both.
+
+93
+00:06:01,860 --> 00:06:04,340
+OK, so the width is going to be one twenty five.
+
+94
+00:06:05,250 --> 00:06:12,450
+Now the reason for that is because the box is the container is going to have to do a height.
+
+95
+00:06:14,240 --> 00:06:16,700
+Is going to have a Hitner with a 500.
+
+96
+00:06:19,850 --> 00:06:27,590
+Which is one one twenty five times four is 500, and we want four across now to create the rows and
+
+97
+00:06:27,590 --> 00:06:33,590
+columns with with our success, we'll go ahead and use flex box on the container.
+
+98
+00:06:33,590 --> 00:06:36,860
+So let's say display flex.
+
+99
+00:06:37,640 --> 00:06:39,560
+As soon as I do that, they all get put in a row.
+
+100
+00:06:39,560 --> 00:06:42,050
+However, they're not being knocked down to the next.
+
+101
+00:06:42,620 --> 00:06:44,770
+I mean, there's only four that can fit here.
+
+102
+00:06:44,870 --> 00:06:46,370
+So I want them to wrap.
+
+103
+00:06:46,370 --> 00:06:51,500
+Basically, if it hits the edge, I want them to go on to the next line, create a new row so we can
+
+104
+00:06:51,500 --> 00:06:55,760
+say flex wrap and set that to wrap.
+
+105
+00:06:56,150 --> 00:07:01,310
+OK, now the reason it looks like one big block is because the numbers here are exact, right?
+
+106
+00:07:01,310 --> 00:07:03,770
+One twenty five times four is five hundred.
+
+107
+00:07:03,770 --> 00:07:05,980
+So there's no in between here.
+
+108
+00:07:06,350 --> 00:07:13,590
+Now, ultimately what I want to do is click this button and have them separate, have each box separate.
+
+109
+00:07:13,640 --> 00:07:17,770
+So what I'll do is I'll add a class onto this called big.
+
+110
+00:07:18,320 --> 00:07:19,520
+OK, I'm going to save that.
+
+111
+00:07:19,520 --> 00:07:27,290
+And then I'm going to say down here, if if the box is class, also has a big class, then let's go
+
+112
+00:07:27,290 --> 00:07:30,500
+ahead and extend the width and the height to six hundred pixels.
+
+113
+00:07:30,530 --> 00:07:34,460
+OK, so from 500 to 600, 600.
+
+114
+00:07:34,910 --> 00:07:37,770
+And that's going to make the container bigger.
+
+115
+00:07:37,790 --> 00:07:40,670
+Now this obviously doesn't look right.
+
+116
+00:07:40,670 --> 00:07:46,550
+We want this remaining space over here to be around each element, around each box.
+
+117
+00:07:46,970 --> 00:07:54,770
+So what we can do is where we where we display flex here, we can set the justified content to be space
+
+118
+00:07:54,770 --> 00:07:55,520
+around.
+
+119
+00:07:55,970 --> 00:08:00,500
+Now, if I save that, you can see now the remaining space is around each element.
+
+120
+00:08:00,620 --> 00:08:01,070
+All right.
+
+121
+00:08:01,070 --> 00:08:08,720
+We're also just going to add a position so that position relative to boxes and then down here for each
+
+122
+00:08:08,720 --> 00:08:13,980
+box, let's go ahead and replace the yellow with an image with that gif.
+
+123
+00:08:14,430 --> 00:08:19,790
+OK, so we're going to say background image and we want to set that to you, Earl.
+
+124
+00:08:20,390 --> 00:08:24,980
+And the link I'm just going to paste and this is from Jiffy dot com.
+
+125
+00:08:25,130 --> 00:08:29,510
+And if you want to use a different gif from this website or something else, you can do that.
+
+126
+00:08:29,930 --> 00:08:32,180
+So I'm going to go ahead and save that.
+
+127
+00:08:32,990 --> 00:08:39,230
+And now you can see that we just have this this one image in every box as the background.
+
+128
+00:08:39,670 --> 00:08:40,100
+All right.
+
+129
+00:08:40,130 --> 00:08:45,190
+Now, ultimately, we're going to want to change the positioning and the size of each of these.
+
+130
+00:08:45,500 --> 00:08:53,780
+So let's let's actually add a background repeat and we'll set that to no repeat.
+
+131
+00:08:54,050 --> 00:09:02,990
+And then for the for the size background size, we want to set this to the same size as the the initial
+
+132
+00:09:02,990 --> 00:09:05,890
+boxes because we want it to take up that entire thing.
+
+133
+00:09:06,260 --> 00:09:09,380
+Right now we have the class of big on, so it's at 600.
+
+134
+00:09:09,650 --> 00:09:16,910
+But ultimately we want the size to be 500 pixels on X and Y.
+
+135
+00:09:18,310 --> 00:09:23,390
+OK, so now you can see that it's stretched out and you can only see part of the image and it's the
+
+136
+00:09:23,390 --> 00:09:25,070
+same part in each box.
+
+137
+00:09:25,220 --> 00:09:31,530
+But later on we're going to change the positioning of each of these so that it looks like one big image.
+
+138
+00:09:32,360 --> 00:09:32,740
+All right.
+
+139
+00:09:33,350 --> 00:09:36,470
+So let's see the next thing that we'll do here.
+
+140
+00:09:36,740 --> 00:09:43,460
+We want to have a position of relative on this because we're going to be using the before and after
+
+141
+00:09:43,460 --> 00:09:46,670
+pseudo selector to give that that cubed border look.
+
+142
+00:09:47,600 --> 00:09:49,570
+And we need to position that absolute.
+
+143
+00:09:49,580 --> 00:09:52,340
+So we want the container of that to be relative.
+
+144
+00:09:53,180 --> 00:09:58,340
+Now, another thing we want to do is when we do click this button, what's going to happen is it's going
+
+145
+00:09:58,340 --> 00:10:00,780
+to toggle this big class, OK?
+
+146
+00:10:00,800 --> 00:10:03,710
+So it's going to go from that to that.
+
+147
+00:10:03,710 --> 00:10:06,500
+And when that happens, I want to have a rotate effect.
+
+148
+00:10:06,800 --> 00:10:13,940
+So we want to add a rotation to to to the boxes if it has that big class.
+
+149
+00:10:14,330 --> 00:10:18,330
+So let's go right here and let's say so.
+
+150
+00:10:18,470 --> 00:10:20,930
+Boxes has the big class.
+
+151
+00:10:20,930 --> 00:10:30,890
+We want that each individual box to have a transform and we're going to use rotate Z with a 360 degree
+
+152
+00:10:30,920 --> 00:10:32,850
+angle, OK?
+
+153
+00:10:33,950 --> 00:10:35,180
+Now we want this.
+
+154
+00:10:35,180 --> 00:10:38,360
+When this happens, we want it to transition nicely.
+
+155
+00:10:38,360 --> 00:10:41,960
+So let's add a transition on two boxes.
+
+156
+00:10:43,940 --> 00:10:53,000
+So transition just so you know it rotate smoothly and we'll use four point four seconds with an EZ effect.
+
+157
+00:10:53,000 --> 00:10:57,290
+And then I'm just going to copy this and put the transition in the box as well.
+
+158
+00:10:57,710 --> 00:11:02,090
+And now as soon as I save, you can see that it actually does that effect.
+
+159
+00:11:02,880 --> 00:11:09,560
+OK, because when that big class gets added, it will go ahead and do that.
+
+160
+00:11:09,560 --> 00:11:15,070
+And we're going to make this button ultimately add and remove that class, which will make it toile
+
+161
+00:11:15,080 --> 00:11:15,890
+into place.
+
+162
+00:11:16,460 --> 00:11:19,140
+OK, so it'll twirl or.
+
+163
+00:11:19,320 --> 00:11:24,860
+I should say rotate and then go all together, and then it'll rotate and split apart.
+
+164
+00:11:25,610 --> 00:11:25,970
+All right.
+
+165
+00:11:25,970 --> 00:11:27,150
+Hopefully that makes sense.
+
+166
+00:11:27,830 --> 00:11:34,130
+Now, the last thing that I want to do here is add that kind of that cubed effect.
+
+167
+00:11:34,130 --> 00:11:40,070
+So not only do we want, like a border on the right and the left, but we want it to skew.
+
+168
+00:11:40,070 --> 00:11:42,140
+So it goes like this at an angle.
+
+169
+00:11:42,620 --> 00:11:49,670
+So to to do this, to do the right side, we're going to use the after pseudo selector so we can take
+
+170
+00:11:49,670 --> 00:11:53,350
+the box class and then say double colon after.
+
+171
+00:11:54,050 --> 00:11:56,830
+And you can use this to insert content.
+
+172
+00:11:56,870 --> 00:12:00,340
+It needs this content value and we could even put something in here.
+
+173
+00:12:00,740 --> 00:12:04,910
+And now you can see that after that box element, it puts telo.
+
+174
+00:12:05,090 --> 00:12:06,110
+But we don't want that.
+
+175
+00:12:06,140 --> 00:12:07,460
+We just want to leave this blank.
+
+176
+00:12:07,700 --> 00:12:12,680
+The only reason we need this is to add some styling so you can think of it as kind of like a like an
+
+177
+00:12:12,680 --> 00:12:13,860
+invisible element.
+
+178
+00:12:15,320 --> 00:12:23,630
+So as for the styling, let's go ahead and add a background color and we're going to use the background
+
+179
+00:12:23,630 --> 00:12:32,060
+color of F what is it, F sixty five eight D it's going to be the background.
+
+180
+00:12:32,150 --> 00:12:33,710
+We're not going to see anything just yet.
+
+181
+00:12:33,710 --> 00:12:36,460
+We need to add the sizing and position and stuff like that.
+
+182
+00:12:37,400 --> 00:12:46,730
+So we want to position this absolute OK, so we're positioning in absolute and you need to have relative
+
+183
+00:12:46,730 --> 00:12:49,190
+on the box because absolute should be.
+
+184
+00:12:49,400 --> 00:12:50,870
+It's relative to the box.
+
+185
+00:12:50,870 --> 00:12:51,170
+Right.
+
+186
+00:12:52,190 --> 00:12:56,810
+And then for the positioning, the coordinates will do eight pixels from the top.
+
+187
+00:12:56,810 --> 00:13:02,570
+We want because we want to push it down a little bit because we're going to add that skew and then over
+
+188
+00:13:02,930 --> 00:13:09,860
+let's do from the right let's do negative 15 pixels because we want it to be, you know, going this
+
+189
+00:13:09,860 --> 00:13:10,220
+way.
+
+190
+00:13:10,700 --> 00:13:17,360
+And then for the height, we want it to take up one hundred percent of its container, which in this
+
+191
+00:13:17,360 --> 00:13:18,950
+case is the box itself.
+
+192
+00:13:19,340 --> 00:13:22,160
+And then the width is going to be 15 pixels.
+
+193
+00:13:22,500 --> 00:13:28,400
+So if I save that, you can see we have this yellow part here and it's pushed down a little bit because
+
+194
+00:13:28,400 --> 00:13:29,030
+of this eight.
+
+195
+00:13:29,030 --> 00:13:32,080
+In fact, if I put a zero here, you can see it's flash.
+
+196
+00:13:32,090 --> 00:13:33,350
+However, I want to use that.
+
+197
+00:13:33,720 --> 00:13:38,240
+I want to have that SKU effect here and here.
+
+198
+00:13:38,240 --> 00:13:39,530
+So it'll be on both sides.
+
+199
+00:13:39,770 --> 00:13:47,150
+And to do that, we can just use transform and we want to skew on the Y axis because it's up and downs
+
+200
+00:13:47,150 --> 00:13:47,660
+vertical.
+
+201
+00:13:47,660 --> 00:13:50,600
+So skew y forty five degrees.
+
+202
+00:13:50,600 --> 00:13:56,390
+And if I save that now, you can see we have that effect of it's coming off here and going, you know,
+
+203
+00:13:56,390 --> 00:13:59,780
+at a skewed angle on both the top and bottom.
+
+204
+00:14:00,350 --> 00:14:02,180
+Now we want to do the same thing here.
+
+205
+00:14:02,180 --> 00:14:07,070
+We basically want to come from here and go over so it looks like has that 3D effect.
+
+206
+00:14:07,490 --> 00:14:12,740
+So I'm actually going to just copy this whole thing and now we're going to use before.
+
+207
+00:14:14,150 --> 00:14:18,110
+OK, and for the background color, we're going to change it slightly.
+
+208
+00:14:18,110 --> 00:14:20,130
+We're going to use the same yellow robes.
+
+209
+00:14:21,050 --> 00:14:23,630
+We're going to use the same yellow that we used.
+
+210
+00:14:27,590 --> 00:14:32,750
+Or is it or is the yellow that I used for the button right here.
+
+211
+00:14:33,320 --> 00:14:40,370
+So we're going to just we'll just copy this background color here and set that here.
+
+212
+00:14:40,910 --> 00:14:42,560
+OK, just slightly different yellow.
+
+213
+00:14:42,920 --> 00:14:48,590
+And for the positioning, we want it to be absolute, although we want to change.
+
+214
+00:14:49,670 --> 00:14:53,120
+We're going to go let's see from the bottom.
+
+215
+00:14:54,860 --> 00:15:01,370
+We want to go negative fifteen and then from the left.
+
+216
+00:15:04,200 --> 00:15:06,190
+We want to go eight pixels.
+
+217
+00:15:06,460 --> 00:15:11,190
+OK, so it's basically the reverse of what we had before and then the height, the width is going to
+
+218
+00:15:11,190 --> 00:15:15,140
+be 100 percent and then the height will be 15.
+
+219
+00:15:15,150 --> 00:15:18,680
+So it's basically just the horizontal version of what we just did.
+
+220
+00:15:18,930 --> 00:15:22,820
+And then we want to skew on the x axis because it's horizontal.
+
+221
+00:15:22,950 --> 00:15:23,960
+So I'll save that.
+
+222
+00:15:24,330 --> 00:15:27,700
+And now you can see we basically have that same thing, but going this way.
+
+223
+00:15:28,080 --> 00:15:33,300
+So what we want to do in the next video is, of course, we want to add the functionality where we click
+
+224
+00:15:33,300 --> 00:15:39,390
+this button and it does its little rotate and goes into what looks like one big image.
+
+225
+00:15:39,660 --> 00:15:40,800
+And we want to be able to toggle that.
+
+226
+00:15:40,800 --> 00:15:43,330
+But we also need to change the background position.
+
+227
+00:15:43,350 --> 00:15:49,680
+We need to make that dynamic within these boxes, because right now they're just all in the same position,
+
+228
+00:15:49,680 --> 00:15:51,480
+which obviously doesn't look right.
+
+229
+00:15:51,480 --> 00:15:53,520
+We want it to look like it's one big image.
+
+230
+00:15:53,790 --> 00:15:54,150
+All right.
+
+231
+00:15:54,150 --> 00:15:55,770
+So that's what we're going to get into next.

@@ -1,0 +1,423 @@
+﻿1
+00:00:00,210 --> 00:00:09,000
+OK, agora queremos adicionar os repositórios aos cartões aqui, então vou fazer outro
+
+2
+00:00:09,150 --> 00:00:10,810
+função onde fazemos um pedido.
+
+3
+00:00:10,830 --> 00:00:16,200
+Então isso é para acertar o nome de usuário ou desculpe, pegue o usuário pelo nome de usuário.
+
+4
+00:00:16,410 --> 00:00:23,550
+Vamos criar uma função logo abaixo dela e chamaremos essa de get repos e isso levará
+
+5
+00:00:23,760 --> 00:00:29,720
+nome de usuário e vamos tornar isso assíncrono para que possamos usar um coletor, aguarde
+
+6
+00:00:32,340 --> 00:00:36,450
+e vamos fazer praticamente, você sabe, a mesma coisa aqui.
+
+7
+00:00:36,450 --> 00:00:37,860
+Vamos usar try catch.
+
+8
+00:00:38,970 --> 00:00:41,250
+Vou pegar isso e colar.
+
+9
+00:00:41,760 --> 00:00:43,340
+Agora para o erro aqui.
+
+10
+00:00:44,370 --> 00:00:45,180
+Vamos.
+
+11
+00:00:46,630 --> 00:00:55,180
+Vamos apenas substituir a mensagem aqui vai dizer problema ao buscar rooibos, então se por algum motivo, você
+
+12
+00:00:55,180 --> 00:00:59,830
+sabe, os reposts não podem ser recuperados, apenas exibiremos que realmente nos livraremos do
+
+13
+00:00:59,830 --> 00:01:00,990
+quatro ou quatro também.
+
+14
+00:01:02,750 --> 00:01:11,120
+Apenas se algo der errado agora aqui, não queremos apenas o nome de usuário do Aperol, também queremos obter
+
+15
+00:01:11,120 --> 00:01:11,780
+a repostagem.
+
+16
+00:01:11,810 --> 00:01:17,910
+Vou apenas concatenar aqui e adicionar a este repost de barra.
+
+17
+00:01:18,930 --> 00:01:26,060
+OK, então será a URL da API, que é definida nos repositórios de nome de usuário barra barra superior.
+
+18
+00:01:26,420 --> 00:01:32,540
+E quero dizer, eu posso te mostrar isso aqui o que isso nos daria.
+
+19
+00:01:35,090 --> 00:01:46,820
+Então, se o fizermos, você sabe, os usuários cortam e, em seguida, Brad Travis S. corta os repositórios, e isso me dá uma matriz
+
+20
+00:01:46,820 --> 00:01:56,120
+dos meus repositórios com o nome, o nome completo, um monte de informações sobre o usuário ou o proprietário, o
+
+21
+00:01:56,120 --> 00:01:58,730
+HTML, você RL, que é um link para o Rebo.
+
+22
+00:01:59,360 --> 00:02:01,190
+Então é isso que nós tiramos disso.
+
+23
+00:02:01,580 --> 00:02:07,880
+Agora, aqui, uma vez que conseguirmos isso, uma vez que chegarmos onde estamos.
+
+24
+00:02:07,920 --> 00:02:08,460
+Bem aqui.
+
+25
+00:02:08,480 --> 00:02:09,920
+Então, uma vez que conseguirmos isso.
+
+26
+00:02:11,450 --> 00:02:12,680
+Vamos então.
+
+27
+00:02:14,410 --> 00:02:19,150
+Vamos ver, vamos chamar em vez de criar cartão de usuário.
+
+28
+00:02:20,320 --> 00:02:31,360
+Vamos mudar isso para adicionar, diremos adicionar repos ao cartão, OK, mas queremos chamar isso de get repos up
+
+29
+00:02:31,360 --> 00:02:33,890
+aqui depois de chamarmos create user card.
+
+30
+00:02:34,360 --> 00:02:36,970
+Então, depois disso, diremos obter repos.
+
+31
+00:02:38,030 --> 00:02:44,450
+E queremos passar o nome de usuário aqui que está vindo daqui, OK, então ele criará
+
+32
+00:02:44,450 --> 00:02:51,320
+o cartão de usuário e, em seguida, chama get repos, que busca os repos e, em seguida, chama esse anúncio de repost de cartão,
+
+33
+00:02:51,320 --> 00:02:53,000
+que vamos criar agora.
+
+34
+00:02:53,430 --> 00:03:04,730
+Então, vamos abaixo em criar nosso cartão e digamos que a função diga função, adicione repos a
+
+35
+00:03:04,730 --> 00:03:07,260
+cartão, que vai levar em repos.
+
+36
+00:03:09,890 --> 00:03:11,690
+Agora precisamos do elemento repos.
+
+37
+00:03:11,690 --> 00:03:20,750
+Então, digamos const repos element e vamos defini-lo para documentar Dotts get element by ID e
+
+38
+00:03:20,750 --> 00:03:23,660
+devemos ter uma idéia de repos.
+
+39
+00:03:24,320 --> 00:03:29,450
+OK, se olharmos aqui no HTML que é inserido, temos este div, é onde queremos
+
+40
+00:03:29,450 --> 00:03:30,190
+insira-o.
+
+41
+00:03:30,200 --> 00:03:38,210
+Então eu estou pegando isso e então vamos pegar os repositórios que são passados ​​aqui e vamos fazer um loop por eles.
+
+42
+00:03:38,210 --> 00:03:45,020
+Então, direi apenas repos ponto para cada e digo para cada repositório.
+
+43
+00:03:47,450 --> 00:03:50,320
+Queremos então criar nossos links.
+
+44
+00:03:50,330 --> 00:03:50,630
+Certo.
+
+45
+00:03:50,650 --> 00:04:01,580
+Então, vamos dizer const, vamos chamar este link de repositório e defini-lo para documentar elementos de criação de ponto,
+
+46
+00:04:01,700 --> 00:04:04,970
+porque é isso que queremos fazer, é criar um novo elemento e ele ficará em uma tag.
+
+47
+00:04:05,420 --> 00:04:11,100
+Queremos adicionar a classe repo a ela porque, se você se lembrar de quando codificamos, havia links com
+
+48
+00:04:11,100 --> 00:04:12,260
+a classe de recompra.
+
+49
+00:04:12,800 --> 00:04:17,120
+Então vamos dizer que vamos pegar.
+
+50
+00:04:19,290 --> 00:04:22,260
+Os repo men realmente chamam esse elemento repo,
+
+51
+00:04:25,980 --> 00:04:35,370
+então pegue o elemento repo e digamos class list dot ad e vamos adicionar a classe de repo para
+
+52
+00:04:35,370 --> 00:04:35,850
+cada um.
+
+53
+00:04:36,780 --> 00:04:42,030
+Agora queremos adicionar uma aeronave porque queríamos apontar para o repositório real.
+
+54
+00:04:42,060 --> 00:04:48,090
+Strel Então vamos pegar o elemento repo e dizer dot HSF.
+
+55
+00:04:48,840 --> 00:04:55,590
+E isso vai para o Repo, que é o objeto de repositório que tem um valor de HTML.
+
+56
+00:04:55,590 --> 00:05:03,270
+Sublinhar RL, que você pode ver aqui, este aqui html seu URL, que é um link para o
+
+57
+00:05:03,270 --> 00:05:04,400
+repositório real.
+
+58
+00:05:04,410 --> 00:05:06,840
+Vamos adicionar isso ao endereço do link.
+
+59
+00:05:07,350 --> 00:05:11,130
+Também quero adicionar um destino a isso porque não quero que ele abra na mesma página.
+
+60
+00:05:11,130 --> 00:05:18,630
+Então vamos pegar nosso elemento repo e vamos definir os alvos e defini-lo para sublinhar em branco para que ele abra
+
+61
+00:05:18,630 --> 00:05:19,490
+em uma nova janela.
+
+62
+00:05:20,130 --> 00:05:28,800
+E então para o texto dentro do link, digamos, repo elementos e defina o texto interno.
+
+63
+00:05:28,800 --> 00:05:34,070
+E esse será o nome do repositório, que você pode ver que podemos obter aqui.
+
+64
+00:05:35,580 --> 00:05:38,640
+E então, finalmente, precisamos inserir no DOM.
+
+65
+00:05:38,640 --> 00:05:43,350
+Então, queremos pegar nossos repos, plural element e append child.
+
+66
+00:05:44,550 --> 00:05:48,600
+E para cada um deles, queremos adicionar o elemento repo.
+
+67
+00:05:50,100 --> 00:05:50,600
+Tudo bem.
+
+68
+00:05:50,610 --> 00:05:51,930
+Então vamos salvar isso.
+
+69
+00:05:52,440 --> 00:05:57,660
+Vamos voltar aqui e procurar por Floren Pop 17.
+
+70
+00:05:58,620 --> 00:06:01,230
+E agora você pode ver todos esses repositórios.
+
+71
+00:06:01,260 --> 00:06:03,190
+Agora, eu não tenho certeza se ele mostra todos eles.
+
+72
+00:06:05,340 --> 00:06:06,240
+Não, não mostra.
+
+73
+00:06:06,240 --> 00:06:09,250
+Definitivamente não mostra todos eles, mas mostra muitos.
+
+74
+00:06:09,390 --> 00:06:09,760
+Certo.
+
+75
+00:06:09,810 --> 00:06:11,610
+Então, eu quero reduzir isso um pouco.
+
+76
+00:06:11,620 --> 00:06:13,520
+Vamos pegar os vamos pegar 10 deles.
+
+77
+00:06:14,010 --> 00:06:19,200
+Então, antes de fazermos os quatro cada, vamos pegar o array repos e vamos fatiar.
+
+78
+00:06:19,680 --> 00:06:23,150
+Então, vamos apenas cortá-lo do primeiro ao 10.
+
+79
+00:06:23,160 --> 00:06:24,600
+Então queremos os 10 primeiros.
+
+80
+00:06:25,380 --> 00:06:28,470
+E se salvarmos isso e eu procurar novamente.
+
+81
+00:06:31,050 --> 00:06:32,580
+Ops, escrevi errado meu próprio nome.
+
+82
+00:06:34,380 --> 00:06:38,850
+OK, então agora temos um, dois, três, quatro, cinco, seis, sete, oito, nove, dez.
+
+83
+00:06:39,270 --> 00:06:42,060
+E é claro que você pode fazer o que quiser.
+
+84
+00:06:43,230 --> 00:06:43,710
+Tudo bem.
+
+85
+00:06:43,710 --> 00:06:51,840
+Agora, a última coisa que eu quero fazer é, em vez de deixar você saber, é basicamente em ordem alfabética
+
+86
+00:06:51,840 --> 00:06:52,110
+aqui.
+
+87
+00:06:52,110 --> 00:06:52,950
+E não é isso que eu quero.
+
+88
+00:06:52,950 --> 00:06:54,380
+Eu quero os últimos cinco.
+
+89
+00:06:54,960 --> 00:07:03,980
+Então, na verdade, com essa API, podemos adicionar em uma consulta, uma string de consulta para onde está?
+
+90
+00:07:03,990 --> 00:07:11,610
+Então, aqui onde estamos buscando nossos repositórios, podemos adicionar um ponto de interrogação e podemos classificar e definir isso
+
+91
+00:07:11,610 --> 00:07:12,810
+para criá-lo.
+
+92
+00:07:13,530 --> 00:07:15,780
+Então agora eu vou salvar isso e.
+
+93
+00:07:19,020 --> 00:07:26,340
+Pesquise e agora este é definitivamente o meu mais recente site Rebozo Currie, mas a API de descanso de LA reage
+
+94
+00:07:26,370 --> 00:07:29,520
+exemplo admon, que são todos os vídeos do YouTube, a propósito.
+
+95
+00:07:29,520 --> 00:07:32,460
+Você pode verificar meu canal para aqueles, mas sim.
+
+96
+00:07:32,460 --> 00:07:38,430
+Então agora está nos dando os últimos 10 rebozos e você pode alterá-lo se quiser alterá-lo para cinco.
+
+97
+00:07:40,710 --> 00:07:41,580
+Eu poderia fazer isso.
+
+98
+00:07:45,180 --> 00:07:45,900
+E lá vamos nós.
+
+99
+00:07:45,940 --> 00:07:47,370
+Então agora temos os cinco últimos.
+
+100
+00:07:48,000 --> 00:07:48,370
+Tudo bem.
+
+101
+00:07:48,370 --> 00:07:49,710
+Então é isso.
+
+102
+00:07:49,710 --> 00:07:55,170
+Quer dizer, eu sei que este é um projeto pequeno, mas há bastante coisa que fizemos aqui em termos de aprendizado,
+
+103
+00:07:55,170 --> 00:08:02,490
+você sabe, como usar axios, como usar, tentar, pegar e lidar com erros, você sabe, inserir coisas
+
+104
+00:08:02,490 --> 00:08:05,460
+para o dormitório e coisas assim, trabalhando com uma API.
+
+105
+00:08:05,460 --> 00:08:08,720
+Espero que gostem desse projeto e é isso.
+
+106
+00:08:08,730 --> 00:08:09,750
+Vejo você na próxima.

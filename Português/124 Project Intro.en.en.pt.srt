@@ -1,0 +1,43 @@
+﻿1
+00:00:00,210 --> 00:00:04,800
+OK, então neste vídeo, na platéia, devo dizer, este projeto, vamos criar este
+
+2
+00:00:05,160 --> 00:00:11,490
+UI com aparência móvel aqui com uma imagem para o conteúdo e, em seguida, algumas guias aqui.
+
+3
+00:00:11,500 --> 00:00:16,410
+Temos trabalhos de casa blogando sobre nós, e isso só mostrará uma imagem diferente, dependendo de qual
+
+4
+00:00:16,410 --> 00:00:17,250
+guia que clicamos.
+
+5
+00:00:17,550 --> 00:00:19,940
+Se eu clicar neste, você verá as alterações na imagem.
+
+6
+00:00:20,190 --> 00:00:26,430
+Então, basicamente, teremos uma aula específica de programa sobre o conteúdo e uma aula específica de
+
+7
+00:00:26,430 --> 00:00:27,060
+aqui embaixo.
+
+8
+00:00:27,060 --> 00:00:30,420
+Você pode ver que o ativo será destacado em roxo.
+
+9
+00:00:30,990 --> 00:00:36,060
+Então, basicamente, precisamos percorrer esses itens da lista aqui, neste menu, e adicionar um ouvinte de evento
+
+10
+00:00:36,060 --> 00:00:43,200
+em cada um para que possamos remover, adicionar e remover certas classes no conteúdo aqui, também
+
+11
+00:00:43,200 --> 00:00:44,760
+como os próprios itens.

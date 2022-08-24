@@ -1,0 +1,335 @@
+﻿1
+00:00:00,270 --> 00:00:05,880
+OK, agora vamos entrar no JavaScript aqui da parte divertida deste projeto, e primeiro
+
+2
+00:00:05,880 --> 00:00:10,210
+O que queremos fazer, como na maioria desses projetos, é trazer o que queremos do DOM.
+
+3
+00:00:10,230 --> 00:00:12,200
+Então, queremos todos esses copos pequenos.
+
+4
+00:00:13,500 --> 00:00:19,410
+Então, digamos document dot e vamos usar o seletor de consulta tudo porque há oito pequenos
+
+5
+00:00:19,410 --> 00:00:20,120
+copos, certo?
+
+6
+00:00:20,130 --> 00:00:25,350
+Não há apenas um elemento que estamos selecionando e queremos todas as classes pequenas da Copa Dasch.
+
+7
+00:00:25,530 --> 00:00:32,000
+Então, isso colocará todos eles em uma lista de elementos sem, você sabe, a classe de xícaras pequena.
+
+8
+00:00:32,910 --> 00:00:34,560
+Em seguida, queremos os líderes.
+
+9
+00:00:34,800 --> 00:00:40,760
+Então os líderes é que o número acima permaneceu tão aqui.
+
+10
+00:00:41,130 --> 00:00:46,380
+Quer dizer, não há nada lá agora, mas é isso que estamos pegando e precisamos inserir algo
+
+11
+00:00:46,380 --> 00:00:46,830
+naquilo.
+
+12
+00:00:46,840 --> 00:00:49,350
+Então, queremos pegar esse elemento.
+
+13
+00:00:49,350 --> 00:00:57,990
+Vamos usar o elemento gets de D tem uma ideia de líderes e depois queremos mais duas coisas.
+
+14
+00:00:57,990 --> 00:01:00,960
+Queremos a porcentagem.
+
+15
+00:01:04,870 --> 00:01:11,440
+OK, então as porcentagens estão aqui em baixo, vai ser a queda percentual para o copo grande e então o
+
+16
+00:01:11,440 --> 00:01:15,580
+restante é o oposto, então permaneceu.
+
+17
+00:01:19,940 --> 00:01:26,360
+Tudo bem, então ficou isso aqui, toda essa divisão com os líderes no resto?
+
+18
+00:01:27,500 --> 00:01:27,890
+Tudo bem.
+
+19
+00:01:27,890 --> 00:01:33,860
+Agora, a maneira como vou lidar com isso é pegar todos os copos pequenos e
+
+20
+00:01:33,860 --> 00:01:35,600
+para percorrer com um foreach.
+
+21
+00:01:35,600 --> 00:01:41,900
+Então, para cada um recebe uma função de seta e primeiro será o que quisermos chamar cada item,
+
+22
+00:01:41,900 --> 00:01:47,290
+que vou chamar de policial, e então podemos ter o índice, que vai ser, você sabe, de zero a
+
+23
+00:01:47,330 --> 00:01:51,000
+quantas xícaras, de zero a sete, basicamente.
+
+24
+00:01:51,290 --> 00:01:57,050
+E, de fato, posso apenas fazer o console logar o índice e se eu abrir meu console.
+
+25
+00:02:01,160 --> 00:02:01,460
+Sim.
+
+26
+00:02:01,460 --> 00:02:02,540
+Então é só logar.
+
+27
+00:02:02,550 --> 00:02:04,970
+Estava apenas mostrando o índice de cada um.
+
+28
+00:02:05,690 --> 00:02:11,160
+Agora o que eu gostaria de fazer é adicionar um ouvinte de eventos em cada um dos copos.
+
+29
+00:02:11,190 --> 00:02:18,230
+Então, digamos cup dot, adicione ouvinte de evento e queremos ouvir um evento de clique em cada copo.
+
+30
+00:02:18,590 --> 00:02:21,700
+E quando isso acontecer vamos chamar uma função.
+
+31
+00:02:21,980 --> 00:02:27,530
+Então, vamos adicionar uma função de seta aqui que chama uma função chamada highlight cups.
+
+32
+00:02:28,040 --> 00:02:32,150
+E então vamos passar esse índice para sabermos em qual deles estamos clicando.
+
+33
+00:02:32,600 --> 00:02:39,890
+Então aqui embaixo, vamos criar uma função chamada Highlight Cups, que recebe um índice, e então aqui
+
+34
+00:02:39,890 --> 00:02:43,070
+permite o índice de log do console e agora o que for.
+
+35
+00:02:43,070 --> 00:02:45,470
+Quando eu clicar, ele vai mostrar esse índice.
+
+36
+00:02:47,960 --> 00:02:55,700
+Então o que eu quero checar aqui é quando eu clicar em um desses, basicamente, eu quero adicionar a classe completa
+
+37
+00:02:55,700 --> 00:02:58,660
+porque lembre-se, quando tem uma classe de cheio, fica com a cor azul.
+
+38
+00:02:59,150 --> 00:03:04,590
+Então, vou pegar todos os copos pequenos e há algumas maneiras diferentes de fazer isso.
+
+39
+00:03:05,270 --> 00:03:07,500
+Esta é provavelmente a maneira mais fácil.
+
+40
+00:03:07,520 --> 00:03:13,820
+Então, se pegarmos todos os copos pequenos e percorrermos o número para cada um leva em uma função de seta e nós
+
+41
+00:03:13,820 --> 00:03:19,850
+quero dizer para cada xícara agora, não quero usar IDEX aqui porque estou usando aqui, estou passando
+
+42
+00:03:19,850 --> 00:03:20,210
+em.
+
+43
+00:03:20,510 --> 00:03:22,760
+Este é o índice do copo ou clicado.
+
+44
+00:03:23,180 --> 00:03:26,680
+Este é o índice de, você sabe, cada um neste loop.
+
+45
+00:03:26,690 --> 00:03:33,830
+Então, vamos chamar este índice dois, e então aqui vamos fazer uma verificação e vamos ver porque o que
+
+46
+00:03:33,830 --> 00:03:38,210
+O que eu quero fazer não é apenas preencher aquele que eu clicar, mas também todos os anteriores.
+
+47
+00:03:38,210 --> 00:03:43,300
+Se eu clicar neste quarto, todos os anteriores, ele também deve ser preenchido.
+
+48
+00:03:43,670 --> 00:03:50,420
+Então, podemos fazer isso verificando se o índice dois basicamente percorre os pequenos, todos os copos pequenos
+
+49
+00:03:50,720 --> 00:03:58,970
+e vendo se essa iteração em particular, esse índice é menor ou igual ao índice que clicamos
+
+50
+00:03:58,970 --> 00:03:59,300
+sobre.
+
+51
+00:04:00,080 --> 00:04:03,980
+OK, agora, se isso for verdade, pegaremos o copo e adicionaremos uma classe a ele.
+
+52
+00:04:03,980 --> 00:04:13,000
+Então diremos lista de classes, dot add e adicionaremos a classe completa ou então queremos remover a classe.
+
+53
+00:04:13,010 --> 00:04:18,950
+Então, eu vou em frente e copio isso e então vamos apenas definir em vez de adicionar que queremos remover.
+
+54
+00:04:18,960 --> 00:04:21,680
+Então eu vou salvar isso e vamos para cá.
+
+55
+00:04:21,680 --> 00:04:25,340
+E se eu clicar em um desses, você vê que se enche.
+
+56
+00:04:25,340 --> 00:04:28,650
+Se eu clicar no quarto, vai encher até aquele copo.
+
+57
+00:04:29,150 --> 00:04:32,000
+OK, então não importa em qual eu clique, vai preencher até isso.
+
+58
+00:04:32,300 --> 00:04:37,700
+Mas uma coisa que eu quero fazer é se eu clicar no quarto aqui, se eu clicar nele novamente,
+
+59
+00:04:38,210 --> 00:04:39,770
+Eu quero que este esvazie.
+
+60
+00:04:39,770 --> 00:04:42,220
+Eu quero ser capaz de alternar o último aqui.
+
+61
+00:04:42,530 --> 00:04:49,990
+Então, antes de realmente fazermos isso em copos de destaque, eu só quero fazer uma verificação e basicamente dizer se o
+
+62
+00:04:50,120 --> 00:04:56,600
+se o que estamos clicando estiver cheio e o próximo não, queremos diminuir o índice
+
+63
+00:04:56,600 --> 00:05:00,580
+por um e, você sabe, se livrar disso para que possamos alterná-lo.
+
+64
+00:05:00,860 --> 00:05:06,320
+Então, a maneira de fazer isso é verificando copos pequenos, que lembram que é uma lista de nós semelhante
+
+65
+00:05:06,320 --> 00:05:06,980
+a uma matriz.
+
+66
+00:05:07,250 --> 00:05:12,350
+Então eu quero obter o índice atual, ou seja, o atual quando clicamos e quero verificar a classe
+
+67
+00:05:12,350 --> 00:05:18,590
+list e vemos se ele contém um método chamado contém, verificamos uma classe específica.
+
+68
+00:05:18,890 --> 00:05:24,900
+Quero ver se contém full e quero ver se o próximo não contém false.
+
+69
+00:05:24,900 --> 00:05:31,670
+Então eu vou dizer, se não for small cups, o índice atual e então vou usar a propriedade chamada
+
+70
+00:05:31,670 --> 00:05:36,770
+Próximo Elemento Irmão e verifique a lista de classes disso.
+
+71
+00:05:36,800 --> 00:05:44,420
+Então agora estou verificando o próximo para ver se a lista de classes contém full ou devo dizer que não contém
+
+72
+00:05:44,420 --> 00:05:50,390
+porque temos isso, você sabe, essa exclamação aqui, o que significa que não, se isso for verdade, então vamos
+
+73
+00:05:50,390 --> 00:05:53,090
+pegue o índice atual e diminua em um.
+
+74
+00:05:54,110 --> 00:06:01,460
+Então agora se eu clicar, você sabe, o terceiro e este está cheio, mas este não está e eu clico novamente, é
+
+75
+00:06:01,460 --> 00:06:05,000
+vai diminuir o índice e fazer isso desaparecer clicando novamente.
+
+76
+00:06:05,000 --> 00:06:07,580
+Ele vai preenchê-lo, então agora posso alternar o último.
+
+77
+00:06:08,920 --> 00:06:10,340
+OK, então isso deve ser bom.
+
+78
+00:06:10,900 --> 00:06:14,450
+Agora isso é muito bonito para os copos pequenos.
+
+79
+00:06:14,450 --> 00:06:15,820
+Esta função de xícaras de destaque.
+
+80
+00:06:15,830 --> 00:06:23,240
+Em seguida, queremos adicionar uma função chamada atualizar copo grande, dependendo de quantos copos são preenchidos
+
+81
+00:06:23,240 --> 00:06:26,450
+aqui, isso vai ser preenchido até um ponto específico.
+
+82
+00:06:26,450 --> 00:06:28,750
+Também queremos mostrar o número percentual.
+
+83
+00:06:28,760 --> 00:06:30,590
+Também queremos mostrar o que restou.
+
+84
+00:06:30,590 --> 00:06:31,970
+Então vamos entrar nisso a seguir.

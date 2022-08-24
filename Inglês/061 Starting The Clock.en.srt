@@ -1,0 +1,595 @@
+1
+00:00:00,390 --> 00:00:07,170
+So we're going to get started here in our TML, let's say, for the title Thene Clock and get rid of
+
+2
+00:00:07,170 --> 00:00:14,460
+the H1 and I'm just going to paste in the the dribble link for what you know, what this project was
+
+3
+00:00:14,460 --> 00:00:16,290
+inspired from just to give them credit.
+
+4
+00:00:16,890 --> 00:00:21,810
+And we're going to have a clock, but we're also going to have a way to toggle the light mode and the
+
+5
+00:00:21,810 --> 00:00:22,500
+dark mode.
+
+6
+00:00:22,520 --> 00:00:23,660
+So that's going to be a button.
+
+7
+00:00:24,030 --> 00:00:26,310
+So we'll have a button with the class of toggle.
+
+8
+00:00:27,240 --> 00:00:30,390
+And in here for now, it's a dark mode.
+
+9
+00:00:32,010 --> 00:00:38,880
+And then underneath that, we'll have our clock dash container and this is going to include the clock
+
+10
+00:00:38,880 --> 00:00:39,540
+itself.
+
+11
+00:00:39,540 --> 00:00:44,540
+So I'm going to have a class of clock and the clock will have three needles.
+
+12
+00:00:44,550 --> 00:00:49,320
+So let's say class needle and let's create three of those.
+
+13
+00:00:49,680 --> 00:00:55,560
+And then each one will have its have a separate class so we can tell which one is the hour, which one
+
+14
+00:00:55,560 --> 00:00:59,860
+is the minute and which one is the second.
+
+15
+00:01:00,450 --> 00:01:04,020
+OK, and then underneath that we just want to live with Center Point.
+
+16
+00:01:04,050 --> 00:01:09,480
+That's going to be the center of the clock and then outside of the clock div but still within the container
+
+17
+00:01:09,480 --> 00:01:16,080
+we're going to have a class of time and this is going to come from the JavaScript.
+
+18
+00:01:16,080 --> 00:01:23,850
+But for now I'm just going to hard code twelve o'clock and then we also want the date and the format
+
+19
+00:01:23,850 --> 00:01:32,520
+of this is going to be like Monday, Monday, November, and then the day will be in a span.
+
+20
+00:01:32,520 --> 00:01:36,090
+So let's say span with a class of circle.
+
+21
+00:01:36,630 --> 00:01:39,820
+And then here I'll just put it to some Monday, November 2nd.
+
+22
+00:01:40,380 --> 00:01:40,770
+All right.
+
+23
+00:01:40,780 --> 00:01:43,250
+So if I save that, that's what this is going to look like.
+
+24
+00:01:43,800 --> 00:01:49,170
+So let's jump into our stylesheet and I don't know if we'll get the whole all the CIA.
+
+25
+00:01:49,180 --> 00:01:50,910
+We should be able to do all the success.
+
+26
+00:01:51,930 --> 00:01:53,970
+So I'm going to bring in and see.
+
+27
+00:01:53,970 --> 00:01:56,040
+We're actually going to use a font called Habbo.
+
+28
+00:01:56,880 --> 00:02:04,860
+So let's get from here over to success and success.
+
+29
+00:02:04,860 --> 00:02:09,870
+Questionmark family and sit there to HCB.
+
+30
+00:02:09,880 --> 00:02:12,330
+Oh, so it's going to be our main fun.
+
+31
+00:02:12,330 --> 00:02:16,710
+Let's say Colen three hundred and then we're going to add that down here.
+
+32
+00:02:17,700 --> 00:02:19,230
+Hebel save.
+
+33
+00:02:19,230 --> 00:02:20,020
+You could see the font.
+
+34
+00:02:20,240 --> 00:02:21,810
+The fun has now changed.
+
+35
+00:02:22,410 --> 00:02:27,990
+And then let's see for the body here its display flex.
+
+36
+00:02:27,990 --> 00:02:29,310
+We want to align center.
+
+37
+00:02:29,310 --> 00:02:32,490
+We can get rid of flex direction.
+
+38
+00:02:34,920 --> 00:02:39,090
+And know the rest should be OK now as far as the colors go.
+
+39
+00:02:39,120 --> 00:02:46,740
+I'm actually going to use some custom properties, so I'm going to go up here and let's say on the route
+
+40
+00:02:46,760 --> 00:02:57,390
+scope, I want to have a primary color of black and then a secondary
+
+41
+00:02:59,820 --> 00:03:02,550
+color of white.
+
+42
+00:03:04,570 --> 00:03:12,900
+Basically, this is going to be for for regular mode or light mode, I should say, and then if the
+
+43
+00:03:13,170 --> 00:03:19,260
+HTML has a class of dark, because we're actually going to change that within the JavaScript to enable
+
+44
+00:03:19,590 --> 00:03:25,890
+mode, then let's actually set the primary color, because you can have different scopes for different
+
+45
+00:03:25,890 --> 00:03:26,510
+variables.
+
+46
+00:03:26,520 --> 00:03:34,320
+So if it's on this primary dark scope, then the primary color I'm sorry, Teladoc scope and the primary
+
+47
+00:03:34,320 --> 00:03:42,390
+color will be white and the primary colors like the hands of the clock and stuff like that, the text
+
+48
+00:03:43,230 --> 00:03:45,270
+and then the secondary.
+
+49
+00:03:48,020 --> 00:04:00,140
+Color will be let's do three, three three, so real dark gray and then we'll say HTML dyed dark and
+
+50
+00:04:00,140 --> 00:04:11,030
+we're going to set the background color here to let's do one one one which is almost black and then
+
+51
+00:04:11,030 --> 00:04:12,740
+the color.
+
+52
+00:04:12,860 --> 00:04:15,200
+So the text is going to be the primary color.
+
+53
+00:04:15,200 --> 00:04:24,440
+So var dash dash primary color and it's going to be white because on that scope the primary colors white
+
+54
+00:04:24,440 --> 00:04:30,350
+everywhere else, the primary color will be black and obviously you don't have to use custom properties.
+
+55
+00:04:30,350 --> 00:04:36,590
+But I figured I'd make it so that we could easily, you know, change these up here rather than going
+
+56
+00:04:36,590 --> 00:04:38,920
+through and changing each one later on.
+
+57
+00:04:39,980 --> 00:04:47,390
+So when we click Doc Mode and this changes, you know, the background goes dark and everything else
+
+58
+00:04:47,390 --> 00:04:53,300
+goes white, I want it to have a transition so that it kind of has a fading effect rather than just,
+
+59
+00:04:53,600 --> 00:04:55,880
+you know, flicking to a different color.
+
+60
+00:04:56,270 --> 00:05:06,500
+So I'm going to add scoresheet here on HTML on the H2O element, let's transition, say transition all
+
+61
+00:05:06,500 --> 00:05:10,340
+zero point five seconds with an ease in effect.
+
+62
+00:05:10,580 --> 00:05:14,900
+OK, so that way when the background color changes, it'll fade in.
+
+63
+00:05:17,210 --> 00:05:21,560
+Now for the let's start on the the stuff in here for the toggle.
+
+64
+00:05:23,720 --> 00:05:32,900
+So the toggle button, let's do background color and we're going to set that to a cost to our one of
+
+65
+00:05:32,900 --> 00:05:38,300
+our custom properties of primary color, which is going to be black by default.
+
+66
+00:05:38,300 --> 00:05:43,820
+And then let's set the color to the secondary color.
+
+67
+00:05:47,170 --> 00:05:55,950
+OK, so of secondary color and let's get rid of the border, let's set a border radius of four pixels,
+
+68
+00:05:56,470 --> 00:06:05,590
+let's set the padding to eight pixels, top and bottom, 12 pixels left and right.
+
+69
+00:06:07,400 --> 00:06:17,120
+And what else, let's position this, so I'm going to position this to be absolute and I want it up
+
+70
+00:06:17,120 --> 00:06:19,910
+at the top, so let's say one hundred pixels down from the top.
+
+71
+00:06:20,240 --> 00:06:23,810
+And then this has this outline when it's when we focus on it.
+
+72
+00:06:23,820 --> 00:06:31,700
+So let's say toggle when it's in its focus state, we want to set the outline to none.
+
+73
+00:06:33,640 --> 00:06:38,980
+OK, so now let's start on actually, let's give it a curse, curse or appointers as well.
+
+74
+00:06:42,770 --> 00:06:50,420
+OK, so let's start on the clock container, which wraps around the the needles and wraps around the
+
+75
+00:06:51,080 --> 00:07:00,350
+the centerpoint, so clock dash container and I'm going to display that as a flex box.
+
+76
+00:07:01,550 --> 00:07:06,820
+And then let's set the flex direction from RO.
+
+77
+00:07:06,830 --> 00:07:15,390
+Let's set it to a column and I'm going to justify the content to this space.
+
+78
+00:07:15,440 --> 00:07:20,370
+Let's do space between and then line items to center.
+
+79
+00:07:21,200 --> 00:07:27,110
+Now we can't really see much within this container because everything is just an empty div.
+
+80
+00:07:28,640 --> 00:07:31,130
+So we'll go ahead and start to style the stuff inside.
+
+81
+00:07:31,140 --> 00:07:38,990
+So we do have a clock class that's going to be positioned relative so we can position stuff inside of
+
+82
+00:07:38,990 --> 00:07:39,100
+it.
+
+83
+00:07:39,110 --> 00:07:39,850
+Absolute.
+
+84
+00:07:39,860 --> 00:07:45,740
+And I'm going to set the width and the height both to two hundred pixels.
+
+85
+00:07:48,120 --> 00:07:54,900
+OK, and then we're going to do the needles now every needle, hour, minute and second has this needle
+
+86
+00:07:54,900 --> 00:08:01,620
+class and I'm going to give this clock a temporary background color, just a light gray.
+
+87
+00:08:01,650 --> 00:08:02,690
+I'm not going to keep this here.
+
+88
+00:08:02,700 --> 00:08:06,480
+It's just so we can see the outline of the clock and we can position the needles.
+
+89
+00:08:07,110 --> 00:08:12,780
+So we're going to have like a base needle class and we have the the hour, the minute and second needle.
+
+90
+00:08:12,780 --> 00:08:21,330
+But this is the base class and we want the background color of this to be whatever the primary color
+
+91
+00:08:21,330 --> 00:08:21,720
+is.
+
+92
+00:08:22,230 --> 00:08:28,500
+And then we're going to position this absolute within the clock class and the clock classes relative.
+
+93
+00:08:28,890 --> 00:08:30,510
+So position absolute.
+
+94
+00:08:30,510 --> 00:08:37,710
+And let's put it from the top, let's say 50 percent and from the left.
+
+95
+00:08:38,560 --> 00:08:44,590
+Fifty percent and let's give it an initial height of sixty five pixels, obviously each needle, you
+
+96
+00:08:44,590 --> 00:08:52,720
+know, the hour is going to be shorter than the minute, but will make the the the hour 65 or the base
+
+97
+00:08:52,720 --> 00:08:57,700
+needle 65 and then the width of the needles will be three pixels.
+
+98
+00:08:59,470 --> 00:08:59,850
+All right.
+
+99
+00:08:59,860 --> 00:09:03,320
+So you can see it's positioned right here.
+
+100
+00:09:03,340 --> 00:09:10,300
+Now, one thing I want to add to this is a transform origin because we are going to rotate these needles
+
+101
+00:09:10,300 --> 00:09:11,200
+or these hands.
+
+102
+00:09:12,340 --> 00:09:13,390
+I see needle or hand.
+
+103
+00:09:13,390 --> 00:09:14,350
+I mean, the same thing.
+
+104
+00:09:15,400 --> 00:09:21,160
+So we're going to use, transform, rotate, but I don't want it to rotate like from the middle.
+
+105
+00:09:21,490 --> 00:09:27,580
+I want it to rotate from the bottom center, you know, so it goes like this.
+
+106
+00:09:27,970 --> 00:09:30,520
+I mean, I can't really show you with my mouse, but you know what I mean.
+
+107
+00:09:30,520 --> 00:09:31,840
+I don't want it to spin on the middle.
+
+108
+00:09:31,840 --> 00:09:33,970
+I want to spin on the bottom center.
+
+109
+00:09:33,980 --> 00:09:40,030
+So we're going to set the transform origin to bottom center.
+
+110
+00:09:41,380 --> 00:09:48,370
+OK, and then let's take, let's say, a needle and then hours so far as the our class.
+
+111
+00:09:50,020 --> 00:09:51,580
+It's set to transform
+
+112
+00:09:54,670 --> 00:09:58,210
+and we're going to translate because we want to move this up, right?
+
+113
+00:09:58,220 --> 00:10:04,090
+We want we want the bottom of this to be up here because this is basically the clock.
+
+114
+00:10:04,090 --> 00:10:05,150
+That's the square.
+
+115
+00:10:05,440 --> 00:10:13,180
+So let's translate on actually going to use translate because we want it to be directly in the middle
+
+116
+00:10:14,170 --> 00:10:19,780
+on the X axis, because right now, I mean, it looks like it's in the middle, but it's the beginning
+
+117
+00:10:19,780 --> 00:10:20,480
+that's in the middle.
+
+118
+00:10:20,500 --> 00:10:31,570
+So let's say negative 50 percent on X and then we want to move it up negative 100 percent.
+
+119
+00:10:33,080 --> 00:10:38,800
+Now, this right here is the our needle, right.
+
+120
+00:10:38,800 --> 00:10:41,980
+These down here, this is still the other two because we have three.
+
+121
+00:10:41,980 --> 00:10:43,510
+We have the hour, minute and second.
+
+122
+00:10:44,350 --> 00:10:46,570
+So all we moved right now is the hour.
+
+123
+00:10:47,560 --> 00:10:52,140
+Now, we also want to add a rotate because that's how we're going to have this thing move.
+
+124
+00:10:52,150 --> 00:10:57,460
+So let's set it's going to be set to zero degrees initially, which if I say if it's the same thing,
+
+125
+00:10:57,730 --> 00:11:02,470
+if I set it to, let's say, 30 degrees, you'll see that it rotates like a clock.
+
+126
+00:11:03,190 --> 00:11:06,040
+So, I mean, we'll get into that later.
+
+127
+00:11:06,040 --> 00:11:11,950
+But that's how we're going to make this thing move is with transform rotate now for the minute.
+
+128
+00:11:12,760 --> 00:11:13,280
+Let's see.
+
+129
+00:11:13,300 --> 00:11:18,520
+We're just going to copy this because we want it in the same position, let's say eight minutes.
+
+130
+00:11:18,880 --> 00:11:20,980
+And this is going to be the same.
+
+131
+00:11:20,980 --> 00:11:22,540
+It's going to start at zero degrees.
+
+132
+00:11:22,540 --> 00:11:26,890
+But I want the height instead of sixty five pixels.
+
+133
+00:11:26,890 --> 00:11:28,540
+I want it to be 100 pixels.
+
+134
+00:11:29,230 --> 00:11:34,000
+So if I save that now, you can see that we have the minute placed here as well.
+
+135
+00:11:34,000 --> 00:11:35,230
+But it's longer.
+
+136
+00:11:35,410 --> 00:11:43,330
+In fact, if I rotate this 30 and save, you'll see that now the longer hand is rotated 30 degrees.
+
+137
+00:11:43,570 --> 00:11:48,010
+But we wanted to start at zero now for the second, let's.
+
+138
+00:11:49,720 --> 00:12:00,430
+Just take this and let's change this to our second hand or second Neidl, and then this can stay the
+
+139
+00:12:00,430 --> 00:12:03,130
+same, let's the hike and stay the same as well.
+
+140
+00:12:03,730 --> 00:12:09,970
+What I want to change is the background color, and I want it to be reddish color.
+
+141
+00:12:09,970 --> 00:12:20,860
+So it's going to be hexadecimal E seven four, C, three C, so it's like a reddish orange kind of color.
+
+142
+00:12:21,700 --> 00:12:26,230
+And you see if I rotate that, so that's going to be our second hand.
+
+143
+00:12:27,350 --> 00:12:33,470
+Now, the center point, which is right here where we have a dive for that did with the class of Centerpoint,
+
+144
+00:12:33,800 --> 00:12:39,070
+we're going to want to style that to be like a circle with a border.
+
+145
+00:12:39,560 --> 00:12:44,510
+So I think that we can stop here and we'll continue on with this in the next video, because there's
+
+146
+00:12:44,510 --> 00:12:46,250
+still quite a bit of success left.
+
+147
+00:12:46,520 --> 00:12:49,280
+And I don't want the video to take up too much time.
+
+148
+00:12:49,550 --> 00:12:49,900
+All right.
+
+149
+00:12:49,940 --> 00:12:51,910
+I'll see you in the next one and we'll finish this up.

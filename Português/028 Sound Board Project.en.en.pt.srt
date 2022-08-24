@@ -1,0 +1,519 @@
+﻿1
+00:00:00,060 --> 00:00:04,980
+OK, então vamos começar em nossa placa de som e na verdade não há muito código para este projeto,
+
+2
+00:00:04,980 --> 00:00:07,670
+para que possamos provavelmente fazer isso em um vídeo.
+
+3
+00:00:08,040 --> 00:00:10,170
+Então vamos chamar essa placa de som.
+
+4
+00:00:11,070 --> 00:00:15,990
+E no HTML aqui, vamos querer usar a tag de áudio HTML5.
+
+5
+00:00:16,410 --> 00:00:22,450
+Então, digamos que o áudio entre e precisamos de uma fonte e isso virá de sons.
+
+6
+00:00:22,470 --> 00:00:30,810
+Agora, eu tenho essa pasta chamada Sounds with the with applause mp3 bu MP three, você pode obtê-los dentro
+
+7
+00:00:30,810 --> 00:00:35,540
+o repositório GitHub para este curso ou a demonstração ao vivo também.
+
+8
+00:00:35,550 --> 00:00:36,690
+Você pode apenas, você sabe.
+
+9
+00:00:36,690 --> 00:00:36,930
+Certo.
+
+10
+00:00:36,930 --> 00:00:40,170
+Clique e baixe os sons ou você pode usar seus próprios sons.
+
+11
+00:00:40,500 --> 00:00:43,380
+Então eu vou apontar para essa pasta e depois aplausos.
+
+12
+00:00:43,650 --> 00:00:49,480
+Eu também vou dar uma identificação com qualquer que seja o efeito sonoro neste caso.
+
+13
+00:00:49,500 --> 00:00:51,030
+Aplausos Tudo bem.
+
+14
+00:00:51,030 --> 00:00:52,530
+E então vamos copiar isso.
+
+15
+00:00:52,530 --> 00:00:55,920
+Isso é um, dois, três, quatro, cinco, seis.
+
+16
+00:00:56,520 --> 00:00:58,170
+E queremos mudar isso.
+
+17
+00:00:58,170 --> 00:01:05,220
+Então, este aqui, eu vou selecionar o próximo aplauso e mudar os dois para bu.
+
+18
+00:01:07,290 --> 00:01:12,900
+OK, então vamos pegar este aqui neste, vamos mudar este para ofegar
+
+19
+00:01:15,510 --> 00:01:16,770
+e depois este aqui.
+
+20
+00:01:18,720 --> 00:01:19,920
+Eu vou mudar isso.
+
+21
+00:01:19,920 --> 00:01:21,210
+Ta ta da.
+
+22
+00:01:23,430 --> 00:01:28,800
+E então vamos pegar este e este vai ser a vitória.
+
+23
+00:01:31,550 --> 00:01:35,340
+E então este último aqui vai estar errado.
+
+24
+00:01:35,630 --> 00:01:39,560
+OK, certifique-se de alterar o ID e o nome real do arquivo.
+
+25
+00:01:39,800 --> 00:01:42,540
+E então a última coisa que precisamos é apenas um recipiente para nossos botões.
+
+26
+00:01:42,560 --> 00:01:44,330
+Eu vou ter um ID de botões.
+
+27
+00:01:44,790 --> 00:01:49,340
+Agora, se eu salvar isso, não veremos nada porque os botões serão gerados
+
+28
+00:01:49,610 --> 00:01:52,550
+do JavaScript com base em cada som.
+
+29
+00:01:52,910 --> 00:01:59,770
+Então, na verdade, vou pular no script JS e criar um array aqui chamado SOUNDS.
+
+30
+00:01:59,930 --> 00:02:06,890
+Então vai ser apenas um monte de cordas com o, você sabe, aplausos boo
+
+31
+00:02:09,170 --> 00:02:15,920
+suspiro vitória Todai
+
+32
+00:02:18,260 --> 00:02:19,970
+e errado.
+
+33
+00:02:20,630 --> 00:02:20,950
+Tudo bem.
+
+34
+00:02:20,960 --> 00:02:22,580
+Então tem todos os nossos efeitos sonoros.
+
+35
+00:02:22,820 --> 00:02:24,900
+E então o que vamos fazer é percorrer estes.
+
+36
+00:02:24,920 --> 00:02:28,820
+Então vamos dizer sons para cada um para cada som.
+
+37
+00:02:30,230 --> 00:02:32,660
+Vou executar uma função e vou criar um botão.
+
+38
+00:02:32,660 --> 00:02:38,630
+Então vamos criar uma variável e configurá-la para documentar elemento de criação.
+
+39
+00:02:38,640 --> 00:02:43,720
+Queremos criar um botão e, em seguida, quero dar a ele uma classe.
+
+40
+00:02:43,730 --> 00:02:48,590
+Então vamos pegar essa variável de botão e adicionar sem classe.
+
+41
+00:02:48,740 --> 00:02:57,890
+Queremos adicionar a classe de B10 para estilo e, em seguida, o texto interno define o texto interno para o som
+
+42
+00:02:58,010 --> 00:02:58,820
+em si.
+
+43
+00:02:58,940 --> 00:03:02,720
+OK, então terá estes aqui em cima será o texto interno do botão.
+
+44
+00:03:04,080 --> 00:03:04,400
+Certo.
+
+45
+00:03:04,430 --> 00:03:11,000
+E então queremos ter um evento sem eventos e, na verdade, você sabe, vamos inserir isso primeiro
+
+46
+00:03:11,000 --> 00:03:11,600
+estilize-os.
+
+47
+00:03:11,600 --> 00:03:18,560
+Então, vamos apenas dizer document e, em seguida, obter o elemento por D, vamos obter o contêiner de botões e estamos
+
+48
+00:03:18,560 --> 00:03:22,730
+vai anexar filho e passar o botão.
+
+49
+00:03:23,420 --> 00:03:23,750
+Tudo bem.
+
+50
+00:03:23,750 --> 00:03:26,300
+Então, assim que eu fizer isso, agora podemos ver nossos botões.
+
+51
+00:03:27,030 --> 00:03:28,520
+Então vamos pular para nossa folha de estilo.
+
+52
+00:03:28,530 --> 00:03:29,960
+Isso vai ser bem simples.
+
+53
+00:03:30,950 --> 00:03:38,330
+Nós vamos usar a fonte Poppins, então vamos mudar ou boto aqui e aqui para Poppins e então vamos
+
+54
+00:03:38,330 --> 00:03:44,630
+mude o peso para 200, 400 e o corpo.
+
+55
+00:03:44,630 --> 00:03:54,140
+Vou dar uma cor de fundo de RGV um seis um cento e dois a três.
+
+56
+00:03:55,460 --> 00:03:57,620
+E vamos fazê-lo.
+
+57
+00:03:57,630 --> 00:04:02,330
+Temos display flex e basicamente os botões serão colocados.
+
+58
+00:04:03,440 --> 00:04:08,270
+Bem, sim, vamos definir o flex wrap aqui para que eles passem para a próxima linha.
+
+59
+00:04:10,510 --> 00:04:18,940
+Tudo bem, e então a direção flexível, podemos nos livrar disso, queremos que seja uma linha, um item de linha
+
+60
+00:04:18,940 --> 00:04:20,470
+centralizar e justificar o conteúdo.
+
+61
+00:04:20,470 --> 00:04:24,820
+Vamos também enviar uma linha para o centro.
+
+62
+00:04:26,620 --> 00:04:29,470
+E eu acho que deve fazer isso para o corpo.
+
+63
+00:04:29,770 --> 00:04:30,880
+Agora para os botões.
+
+64
+00:04:30,890 --> 00:04:33,210
+Lembre-se, eles têm uma classe de botões.
+
+65
+00:04:34,780 --> 00:04:39,310
+Então, vamos definir a cor de fundo para Rebecca Purple.
+
+66
+00:04:41,200 --> 00:04:41,620
+Tudo bem.
+
+67
+00:04:41,620 --> 00:04:46,330
+Vamos definir o raio da borda para cinco pixels.
+
+68
+00:04:47,500 --> 00:04:50,440
+Vamos definir a borda para none.
+
+69
+00:04:51,490 --> 00:04:53,560
+Defina a cor para branco.
+
+70
+00:04:55,510 --> 00:04:56,850
+Nós vamos separá-los.
+
+71
+00:04:56,860 --> 00:04:58,480
+Margem vai fazer um quarto.
+
+72
+00:04:59,500 --> 00:05:08,980
+E vamos definir o preenchimento para um ponto cinco REM superior e inferior e depois três REM à esquerda e à direita.
+
+73
+00:05:09,010 --> 00:05:20,170
+Vou aumentar o tamanho da fonte para um ponto dois REM e vamos para a família de fontes que queremos herdar
+
+74
+00:05:21,340 --> 00:05:22,960
+e isso deveria bastar.
+
+75
+00:05:24,950 --> 00:05:25,360
+Tudo bem.
+
+76
+00:05:25,450 --> 00:05:26,710
+Então nós temos nossos botões para baixo.
+
+77
+00:05:26,710 --> 00:05:28,240
+Eles não fazem nada ainda na verdade.
+
+78
+00:05:28,240 --> 00:05:31,570
+Vamos nos livrar do contorno.
+
+79
+00:05:32,560 --> 00:05:44,440
+Então, o foco do botão defina o contorno para nenhum e, em seguida, vamos também adicionar um cursor ou um ponteiro de cursor e
+
+80
+00:05:44,440 --> 00:05:54,420
+vamos passar o mouse para, digamos, passar o botão e eu vou definir a opacidade para zero vírgula nove.
+
+81
+00:05:56,470 --> 00:06:03,670
+OK, agora de volta ao nosso JavaScript aqui, onde percorremos cada botão, queremos adicionar um ouvinte de eventos
+
+82
+00:06:03,670 --> 00:06:04,630
+em cada um.
+
+83
+00:06:04,660 --> 00:06:10,000
+Então, logo abaixo de onde definimos o texto inteiro, vamos pegar o botão e adicionar um ouvinte de evento
+
+84
+00:06:11,560 --> 00:06:13,990
+e queremos ouvir um clique.
+
+85
+00:06:14,980 --> 00:06:17,500
+E quando clicamos, queremos executar uma função.
+
+86
+00:06:19,630 --> 00:06:23,770
+E então eu vou basicamente pegar o áudio.
+
+87
+00:06:23,890 --> 00:06:29,290
+Então, queremos selecionar vamos documentar dot get elemento por D.
+
+88
+00:06:29,650 --> 00:06:36,700
+Agora, lembre-se, todas essas tags de áudio têm um ID de qualquer que seja o efeito sonoro, ou seja, elas são
+
+89
+00:06:36,730 --> 00:06:39,160
+tudo na desordem que estamos percorrendo.
+
+90
+00:06:39,520 --> 00:06:43,890
+Então a ideia é que queremos encontrar esse som em particular.
+
+91
+00:06:44,380 --> 00:06:54,250
+Agora com HTML cinco temos uma API JavaScript para quatro elementos de áudio e uma das funções ou métodos
+
+92
+00:06:54,250 --> 00:06:56,470
+nessa API é jogar bem.
+
+93
+00:06:56,710 --> 00:06:58,450
+Então, queremos dizer jogo de ponto.
+
+94
+00:06:58,930 --> 00:07:03,460
+E você só pode fazer isso obviamente se for um elemento de áudio, que são.
+
+95
+00:07:03,910 --> 00:07:05,350
+Então isso vai realmente jogar.
+
+96
+00:07:05,350 --> 00:07:06,370
+É eu vou salvar isso.
+
+97
+00:07:06,370 --> 00:07:07,240
+Eu vou passar.
+
+98
+00:07:07,270 --> 00:07:09,730
+Espero que vocês possam ouvir isso vai aumentar um pouco.
+
+99
+00:07:13,170 --> 00:07:15,060
+Então, se eu clicar em aplausos, você pode ouvir.
+
+100
+00:07:17,090 --> 00:07:22,320
+Agora, uma coisa que quero mostrar é que se eu clicar em vários botões, eles serão reproduzidos
+
+101
+00:07:22,320 --> 00:07:23,220
+uns aos outros, então.
+
+102
+00:07:32,250 --> 00:07:39,540
+OK, então eles jogam um sobre o outro e isso pode ser bom, mas eu quero fazer isso quando nós se algo estiver
+
+103
+00:07:39,540 --> 00:07:44,520
+tocando e clicamos em outro botão, então ele vai parar o que está tocando ou todos eles
+
+104
+00:07:44,520 --> 00:07:47,150
+que estão jogando antes disso e depois jogar aquele.
+
+105
+00:07:47,190 --> 00:07:52,350
+Então vamos logo acima de onde realmente tocamos.
+
+106
+00:07:52,350 --> 00:07:57,600
+E vamos executar uma função chamada We'll say stop music.
+
+107
+00:07:59,340 --> 00:07:59,820
+Tudo bem.
+
+108
+00:07:59,820 --> 00:08:05,130
+E então vamos descer aqui, ter certeza que você está fora dos quatro e criar uma função chamada
+
+109
+00:08:05,130 --> 00:08:06,600
+Parar músicas.
+
+110
+00:08:08,490 --> 00:08:18,000
+E vamos pegar nosso array de sons e folheá-los e dizer para cada som, criar um
+
+111
+00:08:18,000 --> 00:08:19,500
+variável chamada música.
+
+112
+00:08:19,500 --> 00:08:23,520
+E isso vai ser, você sabe, isso aqui.
+
+113
+00:08:25,530 --> 00:08:27,830
+Então vamos selecionar o elemento bidi.
+
+114
+00:08:27,840 --> 00:08:35,280
+Queremos esse som em particular e vamos pegar esse som ou essa música só porque chamamos de música
+
+115
+00:08:35,280 --> 00:08:35,700
+aqui.
+
+116
+00:08:36,120 --> 00:08:38,670
+E novamente, estamos falando de um elemento de áudio.
+
+117
+00:08:39,000 --> 00:08:42,140
+Então nós pudemos fazer uma peça nele.
+
+118
+00:08:42,150 --> 00:08:49,550
+Também podemos fazer uma pausa de ponto, OK, e na verdade não há uma parada de ponto, o que você pensaria.
+
+119
+00:08:49,830 --> 00:08:56,460
+Então, o que fazemos é pausar e definir a hora atual porque as tags de áudio têm uma propriedade de current
+
+120
+00:08:57,540 --> 00:09:00,330
+tempo e nós apenas redefinimos para zero.
+
+121
+00:09:00,700 --> 00:09:04,080
+OK, então é assim que podemos parar uma música agora se eu salvar isso.
+
+122
+00:09:14,370 --> 00:09:20,430
+OK, então agora você pode ver que quando eu clico em um, se algo estiver tocando, ele para o que está tocando.
+
+123
+00:09:21,430 --> 00:09:21,950
+Tudo bem.
+
+124
+00:09:21,960 --> 00:09:30,120
+Então, apenas isso dá a você um pequeno vislumbre da API de áudio HTML5 e você pode fazer muitas coisas legais
+
+125
+00:09:30,660 --> 00:09:32,910
+em meus meus projetos JavaScript 20.
+
+126
+00:09:32,910 --> 00:09:37,260
+Claro que temos, você sabe, um player de áudio que toca músicas diferentes.
+
+127
+00:09:37,260 --> 00:09:41,130
+Você pode pausar e jogar e parar e tudo isso e mostrar a hora.
+
+128
+00:09:41,520 --> 00:09:46,500
+Portanto, há muitas coisas que você pode fazer com isso em termos de criar pequenos tocadores de música e outras coisas.
+
+129
+00:09:46,500 --> 00:09:50,610
+Mas este é um projeto introdutório, então espero que tenham gostado.
+
+130
+00:09:50,610 --> 00:09:52,290
+Vamos para o próximo projeto.

@@ -1,0 +1,675 @@
+1
+00:00:00,330 --> 00:00:05,310
+OK, so we're going to get started on our testimonial box, I'm going to keep this the browser pretty
+
+2
+00:00:05,310 --> 00:00:09,270
+wide just so we can see the whole thing at at a at a wider width.
+
+3
+00:00:10,290 --> 00:00:13,920
+So in the HTML here, I just have a link to font.
+
+4
+00:00:13,920 --> 00:00:14,490
+Awesome.
+
+5
+00:00:14,790 --> 00:00:18,900
+And you can get that if you go to CDN, NJ Ask.com, just search for font.
+
+6
+00:00:18,900 --> 00:00:19,530
+Awesome.
+
+7
+00:00:19,530 --> 00:00:20,580
+Or just go to the font.
+
+8
+00:00:20,580 --> 00:00:30,840
+Awesome Web site, grab the CDN link and then let's change the title here to a testimonial box and down
+
+9
+00:00:30,840 --> 00:00:32,670
+here I'll get rid of this H1.
+
+10
+00:00:32,680 --> 00:00:34,260
+So this is going to be the container.
+
+11
+00:00:34,260 --> 00:00:38,370
+So testimonial Dasch container
+
+12
+00:00:40,920 --> 00:00:43,140
+and we want we're going to have a progress bar.
+
+13
+00:00:43,140 --> 00:00:44,630
+So I'm going to add that here.
+
+14
+00:00:44,640 --> 00:00:48,600
+So just progress dash bar, nothing inside the div.
+
+15
+00:00:49,530 --> 00:00:52,800
+That's where the animated line progress bar is going to go.
+
+16
+00:00:52,800 --> 00:00:54,690
+And then we want our quotes.
+
+17
+00:00:54,690 --> 00:00:57,240
+So I'm going to give us a class of eFax for fun.
+
+18
+00:00:57,240 --> 00:00:57,720
+Awesome.
+
+19
+00:00:58,050 --> 00:01:02,190
+And I want a dash quote dash.
+
+20
+00:01:02,310 --> 00:01:03,000
+Right.
+
+21
+00:01:03,360 --> 00:01:08,580
+But I'm also going to give it just a class of F a quote and I'm going to add that to both of them.
+
+22
+00:01:08,580 --> 00:01:12,840
+So let's copy that down and let's make this left.
+
+23
+00:01:13,890 --> 00:01:17,640
+And if I save that, we'll just going to see our two quotes right here.
+
+24
+00:01:18,540 --> 00:01:22,950
+So under the quotes, we'll have a paragraph with the class of testimonial.
+
+25
+00:01:22,950 --> 00:01:25,410
+And obviously this is going to be dynamic.
+
+26
+00:01:25,410 --> 00:01:30,960
+But for now, I'm just going to paste in some text so you can put whatever you like here or you can
+
+27
+00:01:30,960 --> 00:01:35,220
+just get that this exact text from from the repository.
+
+28
+00:01:35,760 --> 00:01:36,150
+All right.
+
+29
+00:01:36,150 --> 00:01:40,380
+And then under the paragraph, we're going to have a user class, which is going to have the user stuff
+
+30
+00:01:40,380 --> 00:01:41,190
+like the image.
+
+31
+00:01:41,580 --> 00:01:42,840
+So let's say image.
+
+32
+00:01:42,840 --> 00:01:46,170
+I'll give this a class of user das dash image.
+
+33
+00:01:46,830 --> 00:01:52,260
+And for the image, I'm going to take it from this random user.
+
+34
+00:01:53,400 --> 00:02:00,900
+So random user dot me slash API slash portraits
+
+35
+00:02:03,750 --> 00:02:09,420
+and let's do slash woman slash forty six jpeg.
+
+36
+00:02:10,290 --> 00:02:15,540
+So just give us a random image of a woman and then also I'm just going to say user.
+
+37
+00:02:16,200 --> 00:02:16,620
+All right.
+
+38
+00:02:16,620 --> 00:02:26,790
+So I save that every go now under the image we're going to have the user details so we'll have a class
+
+39
+00:02:26,790 --> 00:02:33,810
+of user details and then I'll have an H for and I'm going to give this a class of user name and we're
+
+40
+00:02:33,810 --> 00:02:41,310
+going to say my miles and then a paragraph with the class of role.
+
+41
+00:02:41,310 --> 00:02:43,890
+And her role is going to be marketing.
+
+42
+00:02:44,310 --> 00:02:44,970
+And that's it.
+
+43
+00:02:45,000 --> 00:02:46,050
+That's all the HTML.
+
+44
+00:02:46,050 --> 00:02:46,980
+So pretty simple.
+
+45
+00:02:47,400 --> 00:02:49,340
+Let's jump into the stylesheet here.
+
+46
+00:02:49,350 --> 00:02:56,160
+Now, I'm not going to use the Raboteau font with this, so I want to get rid of everything up to success.
+
+47
+00:02:56,670 --> 00:03:02,430
+And then from here we'll do questionmark and set the family equal to.
+
+48
+00:03:02,430 --> 00:03:05,730
+And I'm going to use what font to my using here.
+
+49
+00:03:05,730 --> 00:03:16,950
+Monserrat So M0 and T s e r a t and I'm just going to grab that font and put that right here for the
+
+50
+00:03:16,950 --> 00:03:17,460
+body.
+
+51
+00:03:18,780 --> 00:03:20,550
+K changes the font up.
+
+52
+00:03:20,930 --> 00:03:26,850
+I'm going to add a slightly light gray or slightly darker background color with the light gray.
+
+53
+00:03:27,150 --> 00:03:33,240
+So let's do it for three times and display flex.
+
+54
+00:03:33,240 --> 00:03:34,440
+We want everything centered.
+
+55
+00:03:34,440 --> 00:03:35,340
+That's correct.
+
+56
+00:03:35,910 --> 00:03:40,740
+Height 100 viewport heights because we want it centered both horizontally and vertically.
+
+57
+00:03:41,100 --> 00:03:46,140
+And then I'm just going to do padding ten pixels just so when it's on smaller screens.
+
+58
+00:03:46,650 --> 00:03:49,470
+We have a little bit of, you know, Rome on the edge here.
+
+59
+00:03:50,430 --> 00:03:56,790
+So this is the testimonial container wraps around everything Sloots style that we can actually make
+
+60
+00:03:56,790 --> 00:03:57,660
+this smaller.
+
+61
+00:04:00,140 --> 00:04:02,420
+Yeah, so let's do the testimonial container.
+
+62
+00:04:07,890 --> 00:04:12,340
+So for this, let's set the background color.
+
+63
+00:04:12,360 --> 00:04:21,930
+I'm going to set it to a hexadecimal blue, which is four, seven, six, C four, and will set the
+
+64
+00:04:21,930 --> 00:04:23,780
+color to be white.
+
+65
+00:04:25,440 --> 00:04:30,900
+And let's set the border radius rounded corners.
+
+66
+00:04:30,900 --> 00:04:38,970
+So I'm going to set this to, let's say, 15 pixels and let's do margin, 20 pixels, top and bottom.
+
+67
+00:04:38,970 --> 00:04:40,200
+Auto left and right.
+
+68
+00:04:40,200 --> 00:04:47,660
+Padding is going to be 50, top and bottom 80, 80 left and right.
+
+69
+00:04:49,950 --> 00:04:53,680
+And then let's give it a max with as well.
+
+70
+00:04:53,700 --> 00:04:56,910
+So, Max, what I'm going to do 768.
+
+71
+00:04:59,670 --> 00:05:06,420
+Yeah, and then I'm going to position it relative, because the quotes inside, I want to position those
+
+72
+00:05:06,420 --> 00:05:09,570
+absolute because I want the quotes like one here and one here.
+
+73
+00:05:10,050 --> 00:05:11,690
+So let's actually do that next.
+
+74
+00:05:11,700 --> 00:05:17,540
+So we have a dash quote is on both quotes, so I'll give those a color.
+
+75
+00:05:17,550 --> 00:05:19,530
+I want them to be kind of transparent looking.
+
+76
+00:05:19,530 --> 00:05:21,750
+So we'll do our Giba White.
+
+77
+00:05:22,050 --> 00:05:30,090
+So 255 for red, green, blue and then zero point three for the alpha because at that transparent type
+
+78
+00:05:30,090 --> 00:05:32,540
+look and then font size.
+
+79
+00:05:32,540 --> 00:05:34,980
+So let's make it bigger to twenty pixels.
+
+80
+00:05:36,060 --> 00:05:36,420
+Right.
+
+81
+00:05:36,420 --> 00:05:43,680
+And then we're going to position these to be absolute and let's set from the top 70 pixels.
+
+82
+00:05:43,710 --> 00:05:47,030
+So if I save that, both of them are going to be in the same exact spot.
+
+83
+00:05:47,610 --> 00:05:51,420
+So what we'll do is we'll first grab the right kwoh.
+
+84
+00:05:51,420 --> 00:05:53,250
+So F.A.A. quote dash.
+
+85
+00:05:53,310 --> 00:05:53,880
+Right.
+
+86
+00:05:54,810 --> 00:05:57,420
+And let's set that position from the left.
+
+87
+00:05:57,930 --> 00:06:00,750
+Forty pixels, which is going to move it over here.
+
+88
+00:06:00,790 --> 00:06:07,110
+Now this one, I want to be on the other side, so I'll just copy this down and let's set this quote
+
+89
+00:06:07,110 --> 00:06:10,560
+left and we want to go from the right.
+
+90
+00:06:11,490 --> 00:06:12,660
+Forty pixels.
+
+91
+00:06:13,800 --> 00:06:14,120
+Good.
+
+92
+00:06:15,540 --> 00:06:22,980
+Now if it's if the screen is smaller, like, you know, if it's around, if it's if it's under seventy
+
+93
+00:06:22,980 --> 00:06:25,980
+seven, sixty eight, then let's remove the quote.
+
+94
+00:06:26,040 --> 00:06:32,760
+So what we'll do is just add a media query down here by doing at media and inside here we want to set
+
+95
+00:06:32,760 --> 00:06:42,390
+the max with to seven sixty eight pixels, meaning that these styles are only going to apply if it's
+
+96
+00:06:42,390 --> 00:06:44,550
+under 768 pixels.
+
+97
+00:06:44,550 --> 00:06:51,760
+And we'll take the FAA dash quotes and display none.
+
+98
+00:06:52,290 --> 00:06:54,890
+OK, so if it's smaller than that, it's going to display none.
+
+99
+00:06:55,950 --> 00:07:00,960
+I'm also going to lessen the padding on the container if it's smaller like this.
+
+100
+00:07:01,380 --> 00:07:06,210
+So let's take the testimonial container and set the padding.
+
+101
+00:07:06,210 --> 00:07:12,750
+I believe it was fifty to twenty pixels, top and bottom and thirty left and right.
+
+102
+00:07:13,050 --> 00:07:13,620
+There we go.
+
+103
+00:07:16,420 --> 00:07:24,100
+All right, so let's move on from the quotes I want to go back above the media query here and we have
+
+104
+00:07:24,100 --> 00:07:26,860
+the testimonial, which is that the paragraph?
+
+105
+00:07:26,860 --> 00:07:30,010
+So it's a testimonial.
+
+106
+00:07:31,120 --> 00:07:39,300
+And I just want to change the line right here to 28 pixels just to spread the lines apart.
+
+107
+00:07:39,790 --> 00:07:45,430
+And as far as the text line, let's do justify like that.
+
+108
+00:07:46,800 --> 00:07:57,240
+OK, now for the user section here, say user, and I'm going to display as flex box and I want to center
+
+109
+00:07:57,240 --> 00:08:05,820
+everything, so I'm going to align items center and also justify content center.
+
+110
+00:08:07,660 --> 00:08:16,760
+All right, now for the image we have, the user image shows a user user image, and I want this to
+
+111
+00:08:16,760 --> 00:08:17,620
+be circular.
+
+112
+00:08:17,630 --> 00:08:26,000
+So I'm going to do a border radius of 50 percent to make it circular, a rounded and let's set the height
+
+113
+00:08:26,150 --> 00:08:29,720
+and the width to let's do seventy five pixels.
+
+114
+00:08:30,650 --> 00:08:38,870
+So that'll be the height and width, make it a little smaller and I'm just going to set object fit to
+
+115
+00:08:38,870 --> 00:08:43,310
+cover, which we actually don't need to have that.
+
+116
+00:08:43,310 --> 00:08:50,030
+But just to make sure it covers the back, the, not the background image but the, the image itself
+
+117
+00:08:50,690 --> 00:08:52,550
+and then user details.
+
+118
+00:08:52,730 --> 00:08:56,900
+So it's a user user details.
+
+119
+00:08:58,310 --> 00:09:04,740
+I'm just going to add margin yellows to margin left 10 pixels.
+
+120
+00:09:06,140 --> 00:09:11,210
+So this right here, we just want some spacing in between these.
+
+121
+00:09:11,210 --> 00:09:13,700
+Here are, you know, this these are pretty far apart.
+
+122
+00:09:13,940 --> 00:09:16,720
+So the user name, I believe is an H four.
+
+123
+00:09:17,150 --> 00:09:21,290
+So let's take the user name and let's remove any padding from it.
+
+124
+00:09:21,500 --> 00:09:24,350
+So I'm sorry, margin, remove any margin from it.
+
+125
+00:09:26,780 --> 00:09:38,330
+And then for the role of, say, user roll, I'm going to set the font weight to make sure the font
+
+126
+00:09:38,330 --> 00:09:42,560
+weight is set to normal and let's set margin.
+
+127
+00:09:43,290 --> 00:09:46,640
+We'll do two pixels on the top and bottom zero on the left and right.
+
+128
+00:09:47,010 --> 00:09:48,650
+Actually, that's kind of close together.
+
+129
+00:09:48,650 --> 00:09:49,850
+So it's to.
+
+130
+00:09:54,130 --> 00:09:55,330
+It's to 10.
+
+131
+00:09:57,390 --> 00:09:58,120
+Yeah, it's fine.
+
+132
+00:09:59,190 --> 00:10:05,220
+So the progress bar right now is just it's an empty divx, that's where we're going to have the animated
+
+133
+00:10:05,220 --> 00:10:05,760
+line.
+
+134
+00:10:05,770 --> 00:10:08,580
+So let's style the progress bar.
+
+135
+00:10:10,820 --> 00:10:20,840
+I'm going to give it a background of white background, color of white, and then let's give it a height
+
+136
+00:10:20,840 --> 00:10:22,970
+of, let's say, four pixels.
+
+137
+00:10:23,550 --> 00:10:27,410
+Now we can see the line, the width, make sure it's 100 percent.
+
+138
+00:10:29,000 --> 00:10:33,950
+And then we're going to have an animation called Grow.
+
+139
+00:10:34,130 --> 00:10:37,400
+We haven't created that yet, but we will it's going to take 10 seconds.
+
+140
+00:10:37,670 --> 00:10:44,210
+OK, so this is important because when we write our JavaScript, we want the box to change every 10
+
+141
+00:10:44,210 --> 00:10:45,220
+seconds as well.
+
+142
+00:10:45,410 --> 00:10:52,910
+So we want this progress bar to take 10 seconds to grow and we want it to grow in a linear style and
+
+143
+00:10:52,910 --> 00:10:57,940
+infinite so that it repeats and that should do it.
+
+144
+00:10:57,950 --> 00:11:00,100
+We just need to create that animation.
+
+145
+00:11:00,110 --> 00:11:02,490
+So let's create that in a key frame.
+
+146
+00:11:02,510 --> 00:11:07,790
+So the key frames and call this grow.
+
+147
+00:11:09,290 --> 00:11:11,060
+And this is going to be pretty simple.
+
+148
+00:11:11,060 --> 00:11:18,820
+We're just going to say at zero percent, we want to add a transform property and we want to scale X,
+
+149
+00:11:19,220 --> 00:11:20,870
+so it's going horizontal.
+
+150
+00:11:20,870 --> 00:11:23,630
+So X and set that to zero.
+
+151
+00:11:24,050 --> 00:11:28,070
+So now if I save, that's not right.
+
+152
+00:11:28,100 --> 00:11:29,810
+That's coming from the middle.
+
+153
+00:11:29,810 --> 00:11:35,330
+So we can actually change that by adding a transform origin up here.
+
+154
+00:11:35,360 --> 00:11:36,700
+So transform origin.
+
+155
+00:11:36,710 --> 00:11:38,250
+I'm going to set that to left.
+
+156
+00:11:38,930 --> 00:11:39,470
+There we go.
+
+157
+00:11:39,470 --> 00:11:43,040
+So that gives it, you know, positions it differently.
+
+158
+00:11:43,040 --> 00:11:44,270
+If we could also do right.
+
+159
+00:11:44,270 --> 00:11:45,770
+If you wanted to go that way.
+
+160
+00:11:46,580 --> 00:11:48,270
+But yeah, we're going to set that to left.
+
+161
+00:11:48,560 --> 00:11:52,840
+So that takes 10 seconds total to get to the end here, which is what we want.
+
+162
+00:11:53,390 --> 00:11:56,000
+So in the next video, we're going to jump into the JavaScript.
+
+163
+00:11:56,000 --> 00:11:59,690
+And as soon as it hits the end, you can see right now it just doesn't do anything.
+
+164
+00:11:59,690 --> 00:12:00,730
+It just starts over.
+
+165
+00:12:00,980 --> 00:12:02,540
+We want the testimonial.
+
+166
+00:12:02,540 --> 00:12:04,480
+We want the content to change.
+
+167
+00:12:04,700 --> 00:12:08,720
+So we need to use JavaScript to to manipulate the DOM.
+
+168
+00:12:08,930 --> 00:12:09,250
+All right.
+
+169
+00:12:09,260 --> 00:12:10,250
+So we'll do that next.

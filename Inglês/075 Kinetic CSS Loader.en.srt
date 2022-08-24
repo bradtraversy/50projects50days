@@ -1,0 +1,395 @@
+1
+00:00:00,180 --> 00:00:06,030
+OK, so this is going to be probably one of the shortest, if not the shortest project in this course,
+
+2
+00:00:06,030 --> 00:00:08,370
+but we're going to do a couple of cool things with success.
+
+3
+00:00:08,790 --> 00:00:15,870
+So let's change the title here in our project starter to Connecticut, Connecticut loader, and we're
+
+4
+00:00:15,870 --> 00:00:17,220
+going to have in our HTML.
+
+5
+00:00:17,220 --> 00:00:22,320
+Here is a class of kinetic div with a class of like and that's it.
+
+6
+00:00:22,980 --> 00:00:30,780
+So in our stylesheet here, we don't need to bring in a font because we have no text so we can get rid
+
+7
+00:00:30,780 --> 00:00:32,580
+of this font family here.
+
+8
+00:00:32,580 --> 00:00:34,500
+I am going to add a background color.
+
+9
+00:00:35,070 --> 00:00:43,650
+Let's say background color and we're going to set that to hexadecimal value of two three three five
+
+10
+00:00:43,650 --> 00:00:46,500
+zero, which will give us this blue background.
+
+11
+00:00:46,980 --> 00:00:50,460
+And we want to display Fleck's the correct the direction.
+
+12
+00:00:50,490 --> 00:00:55,880
+I'm going to get rid of the column direction and justify and align to the center.
+
+13
+00:00:57,090 --> 00:01:04,260
+And then let's do the kinetic class, which I'm going to position this.
+
+14
+00:01:05,370 --> 00:01:11,790
+I want to position this relative because we're actually going to use the before and after pseudo selectors
+
+15
+00:01:11,790 --> 00:01:16,150
+to create our triangles and we want to position those absolute within this class.
+
+16
+00:01:16,170 --> 00:01:17,730
+So this has to be relative.
+
+17
+00:01:18,300 --> 00:01:23,100
+When you position something absolute and you want an inside of a specific container like this, the
+
+18
+00:01:23,100 --> 00:01:30,780
+container needs to be relative and then we're going to set the height and the width to 80 pixels.
+
+19
+00:01:32,530 --> 00:01:35,990
+OK, that's all we need for the kinetic class.
+
+20
+00:01:36,000 --> 00:01:39,150
+Now we want to do the before and after pseudo selector.
+
+21
+00:01:39,170 --> 00:01:48,900
+So let's say kinetic coal and coal and after and also kinetic colon colon before.
+
+22
+00:01:50,040 --> 00:01:53,120
+And we're using both because we're going to have two triangles.
+
+23
+00:01:53,550 --> 00:02:00,390
+So when you use before and after or before or after, you have to add this content property, which
+
+24
+00:02:00,390 --> 00:02:02,070
+we're just going to set to an empty string.
+
+25
+00:02:02,070 --> 00:02:04,020
+We're not actually inserting anything here.
+
+26
+00:02:04,380 --> 00:02:10,760
+And then we want this to be positioned absolute inside of this relative container.
+
+27
+00:02:11,430 --> 00:02:16,920
+And then for the position we'll do top zero left zero.
+
+28
+00:02:17,460 --> 00:02:19,590
+And we want to create a triangle now.
+
+29
+00:02:19,590 --> 00:02:27,240
+And CSFs, what you can do is create a basically a box with a height and a width of zero, which will
+
+30
+00:02:27,240 --> 00:02:27,900
+set here.
+
+31
+00:02:27,900 --> 00:02:33,390
+And then you can set a border to and set whatever with you want.
+
+32
+00:02:33,390 --> 00:02:35,200
+The bigger the width, the bigger the triangle.
+
+33
+00:02:35,200 --> 00:02:39,570
+Let's do 50 pixels solid and we want to make this transparent.
+
+34
+00:02:39,690 --> 00:02:41,970
+OK, so we're not going to be able to see anything just yet.
+
+35
+00:02:42,390 --> 00:02:44,190
+But what we'll do is on the bottom.
+
+36
+00:02:44,190 --> 00:02:50,040
+So we'll say border bottom dash color and we're going to set that to white.
+
+37
+00:02:50,630 --> 00:02:54,720
+As soon as I do that, I see we get a triangle because essentially we have our border bottom, which
+
+38
+00:02:54,720 --> 00:02:59,100
+is white, but the left one, the left, right and top are transparent.
+
+39
+00:02:59,100 --> 00:03:01,010
+They're they're they're just transparent.
+
+40
+00:03:01,590 --> 00:03:08,490
+So if I wanted this to be facing down, I could set this to top color white or I could set top and bottom
+
+41
+00:03:09,000 --> 00:03:11,790
+to white and give it kind of an hourglass effect.
+
+42
+00:03:12,120 --> 00:03:15,630
+So it's just just something cool you can do with access.
+
+43
+00:03:15,630 --> 00:03:17,250
+I just want this to be bottom, though.
+
+44
+00:03:17,730 --> 00:03:18,150
+All right.
+
+45
+00:03:18,150 --> 00:03:23,190
+And there's two triangles here on both of these on on before and after.
+
+46
+00:03:23,190 --> 00:03:25,080
+They're just positioned in the same place.
+
+47
+00:03:25,080 --> 00:03:27,540
+So we can it just seems like there's one.
+
+48
+00:03:28,590 --> 00:03:33,570
+Now we want to add an animation, a rotation animation.
+
+49
+00:03:34,050 --> 00:03:35,640
+So let's set.
+
+50
+00:03:36,690 --> 00:03:42,870
+Actually, before we do that, let's grab just the before, because the styles of bovver for both before
+
+51
+00:03:42,870 --> 00:03:49,410
+and after, we want to rotate before so that it's on over here on this side so we can rotate with the
+
+52
+00:03:49,410 --> 00:03:50,910
+transform property.
+
+53
+00:03:51,360 --> 00:03:54,030
+So let's say transform and then rotate.
+
+54
+00:03:54,420 --> 00:03:57,240
+And I want to rotate this 90 degrees.
+
+55
+00:03:57,990 --> 00:04:00,980
+And that's just the before one, which now is over here.
+
+56
+00:04:01,440 --> 00:04:04,050
+OK, so we have the before and after triangles.
+
+57
+00:04:04,350 --> 00:04:07,230
+Now for the animation, we're going to use keyframes.
+
+58
+00:04:07,230 --> 00:04:18,360
+So let's say keyframes will call this rotate a and for the I guess the time frames here will say zero
+
+59
+00:04:18,360 --> 00:04:20,290
+percent, 25 percent.
+
+60
+00:04:20,880 --> 00:04:22,200
+I just want to change.
+
+61
+00:04:22,200 --> 00:04:29,460
+I want to add the transform here for the rotate and set that to zero.
+
+62
+00:04:29,820 --> 00:04:33,000
+So it's going to start zero zero degrees.
+
+63
+00:04:33,430 --> 00:04:33,750
+All right.
+
+64
+00:04:33,750 --> 00:04:34,680
+So we can start there.
+
+65
+00:04:34,680 --> 00:04:46,260
+And then for 50 percent and 75 percent, let's set the transform rotates and we're going to set this
+
+66
+00:04:46,260 --> 00:04:48,390
+to 180 degrees.
+
+67
+00:04:49,380 --> 00:04:53,910
+And then for one hundred percent are up to 100 percent.
+
+68
+00:04:53,910 --> 00:04:56,520
+We're going to rotate all the way.
+
+69
+00:04:56,940 --> 00:04:57,750
+We don't want to do that.
+
+70
+00:04:57,750 --> 00:05:04,400
+We want to do transform and then rotate.
+
+71
+00:05:04,410 --> 00:05:07,800
+And this is going to be 360 degrees.
+
+72
+00:05:10,170 --> 00:05:12,570
+All right, let's put our semicolons here.
+
+73
+00:05:15,530 --> 00:05:23,570
+All right, so I want to apply this to this here to the before and after, so we apply a keyframe animation
+
+74
+00:05:23,570 --> 00:05:31,490
+with the animation property and let's say rotate a we want the duration to be two seconds.
+
+75
+00:05:32,090 --> 00:05:34,510
+It's going to be in a linear fashion.
+
+76
+00:05:34,520 --> 00:05:35,530
+It's going to be infinite.
+
+77
+00:05:35,540 --> 00:05:40,180
+So it's going to keep going and then a delay of zero point five seconds.
+
+78
+00:05:41,630 --> 00:05:43,560
+So that's what it's going to do for now.
+
+79
+00:05:44,060 --> 00:05:48,440
+And we also want to add a different rotation on the before.
+
+80
+00:05:48,830 --> 00:05:51,080
+So I'm going to copy this whole thing here.
+
+81
+00:05:55,600 --> 00:06:01,270
+OK, and basically what's happening is, you know, it starts at zero four, rotate A and then it goes
+
+82
+00:06:01,270 --> 00:06:05,820
+to 180, so goes from here to here and then 360.
+
+83
+00:06:07,060 --> 00:06:08,910
+So just does a complete circle.
+
+84
+00:06:09,400 --> 00:06:16,330
+And then for this one, this is going to be rotate B and I just want to add different values as far
+
+85
+00:06:16,330 --> 00:06:18,940
+as, you know, how far we're rotating.
+
+86
+00:06:18,940 --> 00:06:28,660
+So let's do 90 degrees for the first one and then this one is going to be to 70 degrees and then this
+
+87
+00:06:28,660 --> 00:06:32,380
+one is going to be 450 degrees.
+
+88
+00:06:32,620 --> 00:06:37,330
+And we want to apply rotate be to this before selecter.
+
+89
+00:06:37,780 --> 00:06:50,160
+So let's say animation and we want to apply rotate B and make it two seconds, linear and infinite.
+
+90
+00:06:50,890 --> 00:06:51,320
+All right.
+
+91
+00:06:51,340 --> 00:06:57,460
+And you might have to reload to because since we're using live server and it should look like this.
+
+92
+00:06:58,000 --> 00:07:04,600
+So basically one triangle follows the other and you can experiment with it if you want, change up the
+
+93
+00:07:04,600 --> 00:07:06,310
+rotations and stuff like that.
+
+94
+00:07:06,670 --> 00:07:08,770
+But that's going to be it for this project.
+
+95
+00:07:08,770 --> 00:07:13,080
+I know this was a short one, but you could use this as a loader for your website or whatever.
+
+96
+00:07:13,090 --> 00:07:18,610
+I think it looks pretty cool and it gives you a little bit of experience with some animation and how
+
+97
+00:07:18,610 --> 00:07:22,090
+to create triangles and sixths or arrows, whatever you want to call them.
+
+98
+00:07:22,510 --> 00:07:23,240
+All right, that's it.
+
+99
+00:07:23,260 --> 00:07:24,880
+Let's move on to the next project.

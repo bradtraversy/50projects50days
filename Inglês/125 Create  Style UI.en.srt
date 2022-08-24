@@ -1,0 +1,507 @@
+1
+00:00:00,150 --> 00:00:04,680
+All right, we're going to get started on our mobile tab navigation, so let's go ahead and create the
+
+2
+00:00:04,710 --> 00:00:05,660
+user interface.
+
+3
+00:00:05,670 --> 00:00:09,290
+I just have my project Project Starter open here.
+
+4
+00:00:09,300 --> 00:00:11,370
+Let's open up all of these files.
+
+5
+00:00:12,570 --> 00:00:18,720
+And I'm also bringing font awesome in using the CDN because we will be using font awesome icons for
+
+6
+00:00:18,720 --> 00:00:19,700
+the menu items.
+
+7
+00:00:19,980 --> 00:00:29,960
+So let's call this mobile tab navigation and get rid of that.
+
+8
+00:00:30,390 --> 00:00:33,300
+So everything is going to be wrapped in a class of phone.
+
+9
+00:00:34,680 --> 00:00:39,060
+So we'll have kind of like a phone UI container here.
+
+10
+00:00:39,450 --> 00:00:44,400
+And then for the images, I'm actually going to paste these in.
+
+11
+00:00:44,400 --> 00:00:45,870
+Let me paste in the first one.
+
+12
+00:00:47,730 --> 00:00:49,170
+So these are from on splash.
+
+13
+00:00:49,170 --> 00:00:55,260
+Of course you can use any image you want or you don't even have to use images if you want it to be content
+
+14
+00:00:55,260 --> 00:00:57,510
+or whatever text content, that's fine.
+
+15
+00:00:57,720 --> 00:01:02,730
+But we're giving this a class of content so all of them will have this content class.
+
+16
+00:01:03,030 --> 00:01:06,320
+But whichever one is showing is going to have a class of show.
+
+17
+00:01:06,960 --> 00:01:14,460
+OK, so I'm going to grab the other three images, which all have the class of content but do not have
+
+18
+00:01:14,460 --> 00:01:15,720
+the class of show.
+
+19
+00:01:16,290 --> 00:01:18,530
+OK, only the first one has the class or show.
+
+20
+00:01:18,540 --> 00:01:23,730
+So let me just push these over three or four images.
+
+21
+00:01:24,060 --> 00:01:31,770
+Now, the navigation we're going to put right under the last image here, let's put a nav tag and in
+
+22
+00:01:31,770 --> 00:01:37,980
+here we're going to have a little with a list item and then we'll have our icon.
+
+23
+00:01:37,980 --> 00:01:38,910
+So let's use font.
+
+24
+00:01:38,910 --> 00:01:39,570
+Awesome here.
+
+25
+00:01:39,570 --> 00:01:48,630
+It's going to be Fayaz and a dash home and underneath that will have a paragraph with the text of home.
+
+26
+00:01:49,290 --> 00:01:51,630
+OK, right now these images are going to be giant.
+
+27
+00:01:51,630 --> 00:01:56,820
+So just ignore this for now and then let's copy this list item here.
+
+28
+00:01:57,960 --> 00:01:59,130
+We're going to have three more.
+
+29
+00:02:00,300 --> 00:02:09,810
+So the second one here, the icon will be Box and this is going to be work and this one here.
+
+30
+00:02:10,860 --> 00:02:18,420
+Let's do the icon book Dash Open and this will be blog.
+
+31
+00:02:19,800 --> 00:02:26,980
+And then this last one here is going to be for users and this one will be about us.
+
+32
+00:02:28,090 --> 00:02:29,350
+All right, so that should do it.
+
+33
+00:02:30,220 --> 00:02:37,090
+Let's jump into the stylesheet here and I'm going to use Open Sans for my phonte, so I'm going to get
+
+34
+00:02:37,090 --> 00:02:38,950
+rid of this.
+
+35
+00:02:39,970 --> 00:02:50,030
+So to success and then questionmark and let's say family equals open, plus Sande's.
+
+36
+00:02:50,620 --> 00:02:55,780
+And then for the family here, we'll say open sans.
+
+37
+00:02:56,920 --> 00:03:02,610
+And we want a background color on the body here.
+
+38
+00:03:03,850 --> 00:03:04,810
+So background color.
+
+39
+00:03:04,810 --> 00:03:09,640
+I'm going to use Rajiva so red and will be 155.
+
+40
+00:03:10,300 --> 00:03:17,080
+Green will be 89, blue will be 182 and the alpha value will be zero point seven.
+
+41
+00:03:19,480 --> 00:03:25,660
+OK, so give us that purple color and then we have see flex direction.
+
+42
+00:03:25,660 --> 00:03:34,150
+We can get rid of that midnite, we get ready overflow hidden and you can go ahead and you can scroll
+
+43
+00:03:34,150 --> 00:03:36,700
+down, see all the images actually there.
+
+44
+00:03:36,880 --> 00:03:37,840
+They're all out of whack.
+
+45
+00:03:37,840 --> 00:03:39,640
+So we'll fix that soon.
+
+46
+00:03:40,450 --> 00:03:44,740
+So the class of foam wraps around everything.
+
+47
+00:03:46,180 --> 00:03:55,150
+And for that, let's set set the position of that to be relative so we can position stuff absolute within
+
+48
+00:03:55,150 --> 00:03:55,330
+it.
+
+49
+00:03:55,870 --> 00:03:59,290
+And I'm going to set overflow to hidden on that.
+
+50
+00:04:00,720 --> 00:04:09,120
+And let's set the border so we're going to have a border of three pixels solid and the color will be
+
+51
+00:04:09,120 --> 00:04:13,890
+triple he and let's set a border radius.
+
+52
+00:04:15,790 --> 00:04:25,240
+And also the border radius to 15 pixels and then let's at the height of this to six hundred pixels and
+
+53
+00:04:25,240 --> 00:04:28,250
+the width will be 340.
+
+54
+00:04:29,540 --> 00:04:34,300
+OK, so now we can see our image, the content inside.
+
+55
+00:04:34,300 --> 00:04:36,490
+So each image has a class of content.
+
+56
+00:04:36,490 --> 00:04:36,760
+Right.
+
+57
+00:04:36,780 --> 00:04:41,680
+So let's say phone and then the content, which is the image.
+
+58
+00:04:42,430 --> 00:04:45,880
+We're going to initially set the opacity to zero.
+
+59
+00:04:45,880 --> 00:04:48,130
+As soon as I do that, though, it's going to go away.
+
+60
+00:04:48,130 --> 00:04:51,790
+I'm going to just comment that out for now so we can style the rest.
+
+61
+00:04:52,350 --> 00:05:04,120
+Let's set object fit to cover and let's set the position of this to be absolute and then we'll set from
+
+62
+00:05:04,120 --> 00:05:08,890
+the top zero and from the left zero.
+
+63
+00:05:10,400 --> 00:05:14,990
+And you might see a different image, too, because remember, they're just all the images are they
+
+64
+00:05:14,990 --> 00:05:16,420
+are they're just in the same place.
+
+65
+00:05:17,060 --> 00:05:18,770
+And then for the height of this.
+
+66
+00:05:19,950 --> 00:05:27,450
+Basically, we're going to have down here our tabs and it's going to be about 60 pixels high.
+
+67
+00:05:27,460 --> 00:05:33,720
+So what we'll do is use calc here and we can calculate, we'll say 100 percent of the high, but minus
+
+68
+00:05:33,720 --> 00:05:39,150
+it by, let's say, 60 pixels so that it gives us a little bit of room down there.
+
+69
+00:05:39,540 --> 00:05:46,050
+And let's just make sure the width we set this to 100 percent and we're going to have a transition on
+
+70
+00:05:46,050 --> 00:05:51,480
+this, because when we change the image, basically when we, you know, rotate the class of show,
+
+71
+00:05:51,480 --> 00:05:54,270
+we wanted to have that kind of fade in effect.
+
+72
+00:05:54,280 --> 00:05:59,820
+So the transition is going to be on the opacity property zero point four seconds.
+
+73
+00:05:59,820 --> 00:06:00,780
+And he's.
+
+74
+00:06:03,480 --> 00:06:11,550
+Now, the content that has show, so let's say phone dash content, if it has a class of show, we want
+
+75
+00:06:11,550 --> 00:06:13,620
+the opacity to be one.
+
+76
+00:06:13,890 --> 00:06:17,520
+So let's go back up here and uncommented this that way.
+
+77
+00:06:17,520 --> 00:06:23,730
+The only image that's going to show or the only content that's going to show has that opacity of one.
+
+78
+00:06:24,130 --> 00:06:28,770
+OK, so it's this first one here because it has that class.
+
+79
+00:06:28,770 --> 00:06:33,570
+If I go on, I put show on this one, it's going to show that image OK?
+
+80
+00:06:33,570 --> 00:06:35,090
+And it doesn't have to be an image.
+
+81
+00:06:35,100 --> 00:06:37,930
+It could be some kind of content if you want.
+
+82
+00:06:38,190 --> 00:06:40,620
+Now it's style, the navigation.
+
+83
+00:06:40,620 --> 00:06:50,370
+So the NAV, I want to position that to be absolute within the phone container so you can see that we
+
+84
+00:06:50,370 --> 00:06:52,070
+can see it now, but it doesn't look very good.
+
+85
+00:06:52,080 --> 00:06:59,700
+Let's put it to the bottom so we'll see from the bottom zero and from the left zero, which is going
+
+86
+00:06:59,700 --> 00:07:00,690
+to move it down there.
+
+87
+00:07:01,080 --> 00:07:07,800
+And then let's set a margin top of negative five pixels, which is going to just bring it up a little
+
+88
+00:07:07,800 --> 00:07:15,150
+bit and let's set the width so the width here to 100 percent.
+
+89
+00:07:15,730 --> 00:07:23,760
+OK, now let's style let's style the menu because, you know, we don't want this to be going vertical.
+
+90
+00:07:23,760 --> 00:07:24,930
+We don't want list spots.
+
+91
+00:07:24,930 --> 00:07:26,550
+We want it to go across here.
+
+92
+00:07:26,820 --> 00:07:28,320
+So we'll start with the US.
+
+93
+00:07:28,380 --> 00:07:38,610
+So let's say now, well, I'm going to set the background color to white and let's set it to display
+
+94
+00:07:38,610 --> 00:07:44,370
+flex so that all of the list items will line up in a row as flex items.
+
+95
+00:07:44,700 --> 00:07:50,640
+I'm going to set list style type to none because I don't want any bullet points.
+
+96
+00:07:51,370 --> 00:07:56,490
+I'm going to set the padding and the margin to zero.
+
+97
+00:07:57,920 --> 00:08:05,750
+And the height is going to be 60 pixels and you can change this, but it should match whatever you have
+
+98
+00:08:05,750 --> 00:08:11,890
+up here in this calc value where we're taking that away from 100 percent of the height of the phone.
+
+99
+00:08:13,250 --> 00:08:15,110
+And I think that's all we want to do there.
+
+100
+00:08:15,110 --> 00:08:18,680
+Now for the list items, let's say NAV list items.
+
+101
+00:08:19,610 --> 00:08:23,110
+Let's do a actually one background color.
+
+102
+00:08:23,120 --> 00:08:25,790
+We want to color of seven.
+
+103
+00:08:26,780 --> 00:08:34,700
+It's going to make those lighter out a cursor pointer and we want them to be all spread out the same
+
+104
+00:08:34,700 --> 00:08:35,060
+width.
+
+105
+00:08:35,060 --> 00:08:37,010
+So out of flex value of one.
+
+106
+00:08:37,700 --> 00:08:46,000
+And the padding, we'll just do 10 pixels all the way around and let's text a line center.
+
+107
+00:08:46,010 --> 00:08:53,660
+So move the text moving from the left to the center and then let's see for the the text down here is
+
+108
+00:08:53,660 --> 00:08:54,890
+wrapped in a paragraph.
+
+109
+00:08:54,890 --> 00:09:03,560
+So we'll say NAV Ally paragraph or nav doesn't really matter, but we're going to select the paragraph
+
+110
+00:09:03,560 --> 00:09:06,740
+and I'm going to just change the font size to 12 pixels.
+
+111
+00:09:06,740 --> 00:09:12,800
+So make it a little smaller and then let's at the margin to two pixels, top and bottom zero, left
+
+112
+00:09:12,800 --> 00:09:13,250
+and right.
+
+113
+00:09:14,240 --> 00:09:17,720
+So paragraphs have a margin of 10 pixels by default.
+
+114
+00:09:17,720 --> 00:09:21,290
+We just lessened it to two when it, you know, took away that space.
+
+115
+00:09:21,650 --> 00:09:23,990
+And then whichever one is covered are active.
+
+116
+00:09:23,990 --> 00:09:25,280
+I want to change the color.
+
+117
+00:09:25,290 --> 00:09:29,150
+So let's say NAV will ally hover.
+
+118
+00:09:30,230 --> 00:09:32,450
+And also we want NAV.
+
+119
+00:09:32,870 --> 00:09:35,720
+You will ally if it has active
+
+120
+00:09:38,600 --> 00:09:39,200
+color.
+
+121
+00:09:40,220 --> 00:09:46,080
+And let's set that to hexadecimal eight E four for a D.
+
+122
+00:09:47,960 --> 00:09:56,870
+So basically we have you know, we have the show class on the image and that's that's what we want to
+
+123
+00:09:56,870 --> 00:09:57,430
+show.
+
+124
+00:09:57,980 --> 00:10:04,940
+And then whichever tab here is active, we'll also have a class of active like this.
+
+125
+00:10:07,560 --> 00:10:15,180
+And now you can see, since I put that class of active, it has that purple color, so that should be
+
+126
+00:10:15,180 --> 00:10:19,530
+it for the success in the next video, we'll go ahead and make this function to where we can click on
+
+127
+00:10:19,530 --> 00:10:25,110
+one of these and it will change the content to, you know, whichever tab we're clicking on.

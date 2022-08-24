@@ -1,0 +1,247 @@
+1
+00:00:00,240 --> 00:00:06,510
+All right, so we're going to get started on the case for this project, so I guess we'll just keep
+
+2
+00:00:06,510 --> 00:00:07,410
+the Roboto font.
+
+3
+00:00:07,440 --> 00:00:08,310
+That's fine.
+
+4
+00:00:08,310 --> 00:00:11,910
+And the body, we're going to add a background.
+
+5
+00:00:13,050 --> 00:00:13,380
+All right.
+
+6
+00:00:13,390 --> 00:00:15,990
+Let's do a background color and it's going to be a light gray.
+
+7
+00:00:15,990 --> 00:00:20,400
+So hexadecimal e, c, f zero, F one.
+
+8
+00:00:20,820 --> 00:00:25,170
+It's going to be our background and we don't need Flex Direction column.
+
+9
+00:00:25,920 --> 00:00:27,690
+And this other stuff should be fine.
+
+10
+00:00:28,260 --> 00:00:34,860
+Now, let's just say for the image, we want that to have a max width of one hundred percent of its
+
+11
+00:00:34,860 --> 00:00:35,520
+container.
+
+12
+00:00:35,520 --> 00:00:37,250
+So that's going to shrink up that image.
+
+13
+00:00:37,740 --> 00:00:40,380
+And then let's start to add the styles for our card.
+
+14
+00:00:42,270 --> 00:00:44,520
+So the card, I want to give it a box shadow.
+
+15
+00:00:45,420 --> 00:00:56,640
+So we have our horizontal offsets to zero vertical, two pixels blur 10 pixels and color will be a black
+
+16
+00:00:56,640 --> 00:01:03,670
+with an opacity of zero point to you see the the outline here.
+
+17
+00:01:05,520 --> 00:01:05,940
+All right.
+
+18
+00:01:05,970 --> 00:01:08,880
+Now we want to have some rounded corners on the card.
+
+19
+00:01:08,890 --> 00:01:16,680
+So I'm going to set the border radius to 10 pixels and let's add overflow and set that to hidden so
+
+20
+00:01:16,680 --> 00:01:19,320
+nothing comes out of its container.
+
+21
+00:01:19,620 --> 00:01:30,320
+And then I'm going to have a width of 350 pixels on the card and let's set the card header height.
+
+22
+00:01:30,690 --> 00:01:34,040
+I want to set that to 200 pixels.
+
+23
+00:01:36,030 --> 00:01:39,210
+And right now, the text is kind of over the image a little bit.
+
+24
+00:01:39,210 --> 00:01:42,540
+So let's styled the card header image.
+
+25
+00:01:46,500 --> 00:02:00,000
+So I'm going to just make sure Object Fit is set to cover and let's set the height to 100 percent of
+
+26
+00:02:00,000 --> 00:02:02,460
+its container and the width to 100 percent.
+
+27
+00:02:03,010 --> 00:02:06,810
+So now you can see that the text is no longer over the image.
+
+28
+00:02:07,230 --> 00:02:14,970
+Now the card content here say card contents.
+
+29
+00:02:16,740 --> 00:02:22,280
+So I'm going to set the background of that to white sheet.
+
+30
+00:02:22,300 --> 00:02:23,610
+We'll use background color.
+
+31
+00:02:25,650 --> 00:02:31,650
+And then I want to just set some padding to move everything away from the sides or do 30 pixels padding.
+
+32
+00:02:32,520 --> 00:02:32,850
+All right.
+
+33
+00:02:32,850 --> 00:02:37,020
+Now, the stuff that's in the card card content like the title, let's do that.
+
+34
+00:02:37,020 --> 00:02:47,070
+So card dash title, I'm going to give that a height of twenty pixels and a margin of zero.
+
+35
+00:02:48,060 --> 00:02:49,290
+And then the excerpt.
+
+36
+00:02:54,010 --> 00:03:02,260
+So the excerpt, I'm going to give a color of hexadecimal 777, which is a great color, and then for
+
+37
+00:03:02,260 --> 00:03:06,400
+the margin, let's do 10 pixels, zero, 20 pixels.
+
+38
+00:03:08,220 --> 00:03:12,300
+So that's the excerpt now for the author of the wraps around all of this.
+
+39
+00:03:15,030 --> 00:03:22,710
+So author, I just want to display Fleck's, which automatically puts it into a flex row and then for
+
+40
+00:03:22,710 --> 00:03:24,510
+the profile image.
+
+41
+00:03:25,230 --> 00:03:29,010
+So profile dash image, remember, that's the div around the image.
+
+42
+00:03:29,310 --> 00:03:35,280
+So I am going to set the border radius to 50 percent because I want it to be rounded, although right
+
+43
+00:03:35,280 --> 00:03:39,600
+now that's on the div and the image is basically popping out of the div.
+
+44
+00:03:39,600 --> 00:03:45,680
+So we want to make sure we set overflow, we want to set overflow to hidden.
+
+45
+00:03:47,070 --> 00:03:48,510
+OK, so that'll make it rounded.
+
+46
+00:03:48,750 --> 00:03:50,270
+We also want to make it much smaller.
+
+47
+00:03:50,280 --> 00:03:59,080
+So let's set the height to 40 pixels and also the width to 40 pixels.
+
+48
+00:03:59,130 --> 00:04:03,240
+So now the last thing is the author info, which is around the name and the date.
+
+49
+00:04:03,750 --> 00:04:12,450
+So let's say author info, which I want to display as a flex box, but I want them to be on top of each
+
+50
+00:04:12,450 --> 00:04:12,650
+other.
+
+51
+00:04:12,660 --> 00:04:15,980
+So the flex direction is going to be a column instead of a row.
+
+52
+00:04:16,830 --> 00:04:19,670
+And then let's take any remaining content.
+
+53
+00:04:19,680 --> 00:04:27,450
+So justify content to be around each element of space around and let's add a margin left to move it
+
+54
+00:04:27,450 --> 00:04:28,620
+away from the image.
+
+55
+00:04:29,040 --> 00:04:31,800
+So 10 pixels that will move the text away.
+
+56
+00:04:32,310 --> 00:04:37,650
+And let's add a width of, let's say, one hundred pixels.
+
+57
+00:04:38,730 --> 00:04:44,070
+OK, and then for the small tag, we have author info small.
+
+58
+00:04:44,070 --> 00:04:51,710
+I just want to change the color to triple J, which is a grey and then add a little margin top.
+
+59
+00:04:52,080 --> 00:04:55,080
+So five pixels and then we go.
+
+60
+00:04:55,920 --> 00:04:57,900
+So now our card is styled.
+
+61
+00:04:58,090 --> 00:05:03,840
+So in the next video I want to create the animation effects and then ultimately this content, the images
+
+62
+00:05:03,840 --> 00:05:05,940
+in the text are going to come from the JavaScript.

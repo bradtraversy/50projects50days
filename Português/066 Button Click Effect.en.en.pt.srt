@@ -1,0 +1,447 @@
+﻿1
+00:00:00,240 --> 00:00:04,050
+Tudo bem, então vamos começar em um JavaScript, mas há apenas algumas coisas que eu quero
+
+2
+00:00:04,050 --> 00:00:05,400
+fazer aqui no HTML.
+
+3
+00:00:05,400 --> 00:00:11,880
+Primeiro, quero colocar uma classe no botão porque não quero adicionar automaticamente a ondulação a todos
+
+4
+00:00:11,880 --> 00:00:12,570
+botões.
+
+5
+00:00:12,570 --> 00:00:17,400
+Então, vamos apenas adicionar uma classe de ondulação aqui e então podemos nos livrar do intervalo porque vamos
+
+6
+00:00:17,400 --> 00:00:24,540
+estar, você sabe, adicionando isso através do JavaScript e deixará o estilo do botão aqui.
+
+7
+00:00:24,960 --> 00:00:28,560
+Mas se quisermos que tenha o efeito cascata, adicionaremos essa classe de ondulação.
+
+8
+00:00:28,590 --> 00:00:37,050
+Então, digamos que botões const e vamos usar document dot, query selector tudo porque queremos
+
+9
+00:00:37,050 --> 00:00:40,920
+para poder fazer isso em vários botões, desde que tenham a classe de Ripple.
+
+10
+00:00:41,860 --> 00:00:48,570
+OK, e então pegaremos esses botões e adicionaremos um foreach aqui e diremos para cada botão,
+
+11
+00:00:50,190 --> 00:00:56,670
+vamos pegar esse botão e adicionar um ouvinte de evento neles e ele ouvirá um clique.
+
+12
+00:00:57,120 --> 00:01:02,760
+E quando clicarmos, vamos executar uma função no nosso atributo aqui, nosso objeto de evento
+
+13
+00:01:03,300 --> 00:01:04,020
+em primeiro.
+
+14
+00:01:04,230 --> 00:01:05,960
+Queremos obter alguns valores diferentes.
+
+15
+00:01:05,970 --> 00:01:12,240
+O primeiro será onde clicamos na janela de visualização, mas só será acionado se clicarmos
+
+16
+00:01:12,240 --> 00:01:14,460
+o botão porque é onde está o ouvinte do evento.
+
+17
+00:01:14,760 --> 00:01:23,910
+Então, vou chamar esse valor de X e configurá-lo para esse objeto de evento e, em seguida, o cliente X e, em seguida, vou
+
+18
+00:01:23,910 --> 00:01:25,710
+fazer o mesmo para o cliente cliente.
+
+19
+00:01:25,710 --> 00:01:28,500
+Por que colocar isso em um valor Y?
+
+20
+00:01:28,830 --> 00:01:33,500
+E então, para que você entenda o que estamos recebendo aqui, vamos considerar os logs X e Y.
+
+21
+00:01:35,400 --> 00:01:39,480
+Então, quero dizer, se eu clicar aqui, nada acontece porque os ouvintes de eventos no botão.
+
+22
+00:01:39,490 --> 00:01:46,080
+Mas se eu clicar em curtir no topo aqui, você notará que não é como, você sabe, dois, três ou algo assim
+
+23
+00:01:46,080 --> 00:01:50,190
+assim porque não está chegando onde clicamos no botão, está chegando onde clicamos no
+
+24
+00:01:50,190 --> 00:01:51,440
+toda a janela de visualização.
+
+25
+00:01:52,020 --> 00:02:00,300
+Então isso está dizendo que são 160, 160 pixels a partir da esquerda porque este é o X e depois um noventa
+
+26
+00:02:00,300 --> 00:02:05,480
+nove é, você sabe, onde clicamos de cima para baixo porque esse é o eixo Y.
+
+27
+00:02:06,090 --> 00:02:11,280
+Agora que temos isso, há outra coisa que quero obter, que é a posição do
+
+28
+00:02:11,280 --> 00:02:12,210
+botão em si.
+
+29
+00:02:12,210 --> 00:02:14,130
+Onde começa no X?
+
+30
+00:02:14,130 --> 00:02:15,420
+Onde começa no Y?
+
+31
+00:02:15,960 --> 00:02:24,150
+Então, para conseguir isso, vamos criar uma variável chamada botão superior e vamos defini-la como alvo, que é sempre
+
+32
+00:02:24,390 --> 00:02:28,470
+o elemento que dispara o evento, neste caso, o botão.
+
+33
+00:02:28,800 --> 00:02:36,180
+E então há uma propriedade chamada Offset Top, que nos dará onde começa no topo.
+
+34
+00:02:36,180 --> 00:02:38,560
+Também queremos chegar onde começa a partir da esquerda.
+
+35
+00:02:39,090 --> 00:02:41,790
+Portanto, o deslocamento para a esquerda definirá o botão à esquerda.
+
+36
+00:02:42,480 --> 00:02:49,350
+Então agora, só para mostrar o que isso nos dá, digamos, botão, superior e botão esquerdo.
+
+37
+00:02:50,220 --> 00:02:54,180
+Se eu clicar nele, sempre será o mesmo, não importa onde eu clique, porque o que está recebendo
+
+38
+00:02:54,180 --> 00:02:57,110
+é a posição do próprio botão, não onde clicamos.
+
+39
+00:02:57,720 --> 00:03:01,770
+Agora queremos calcular onde no botão clicamos.
+
+40
+00:03:01,770 --> 00:03:05,550
+Como se eu clicar no canto, deve ser algo como um.
+
+41
+00:03:05,910 --> 00:03:06,300
+Certo.
+
+42
+00:03:06,600 --> 00:03:13,200
+Então, da maneira que podemos fazer isso, digamos que o CONSE chamará esse X dentro porque é a posição oposta
+
+43
+00:03:13,200 --> 00:03:14,370
+dentro do botão.
+
+44
+00:03:14,940 --> 00:03:21,630
+E então pegamos o valor X, que é onde clicamos em toda a viewport e
+
+45
+00:03:21,630 --> 00:03:29,420
+então nós apenas subtraímos disso o topo, o topo do botão o deslocamento do próprio elemento.
+
+46
+00:03:29,430 --> 00:03:30,360
+Então botão.
+
+47
+00:03:31,440 --> 00:03:36,000
+Top, e então faremos o mesmo para, digamos, botão esquerdo.
+
+48
+00:03:36,040 --> 00:03:43,950
+Este será o valor Y e será por isso que dentro e depois o console logará aqui X.
+
+49
+00:03:44,830 --> 00:03:52,120
+Dentro e por que dentro, então agora se eu clicar no canto aqui, deve ser um número muito baixo.
+
+50
+00:03:52,840 --> 00:03:54,010
+Na verdade, isso não está certo.
+
+51
+00:03:54,640 --> 00:03:55,750
+Por que é negativo?
+
+52
+00:04:00,850 --> 00:04:02,750
+Oh, eu tenho estes eu fiz isso errado.
+
+53
+00:04:02,770 --> 00:04:03,940
+Este deve ser o botão esquerdo.
+
+54
+00:04:05,560 --> 00:04:10,690
+Sim, porque este é o eixo x e então este deve ser o topo do botão.
+
+55
+00:04:11,450 --> 00:04:16,160
+Tudo bem, agora, se eu clicar no canto, teremos quatro, três, cinco, três.
+
+56
+00:04:16,520 --> 00:04:21,530
+Então, está começando de onde o botão começa, que vai ser o X dentro.
+
+57
+00:04:21,530 --> 00:04:24,970
+E então de onde começa de cima para baixo será o Y dentro.
+
+58
+00:04:25,550 --> 00:04:26,840
+Então vamos nos livrar disso.
+
+59
+00:04:27,200 --> 00:04:30,470
+E então queremos criar um elemento de círculo.
+
+60
+00:04:30,680 --> 00:04:37,070
+Então, o intervalo que me desculpem, o intervalo que tínhamos aqui antes, queremos construir isso de dentro
+
+61
+00:04:37,070 --> 00:04:38,030
+nosso JavaScript.
+
+62
+00:04:38,040 --> 00:04:43,790
+Então, digamos que o documento crie elementos e queremos criar um intervalo.
+
+63
+00:04:44,330 --> 00:04:46,310
+Queremos adicionar uma classe a ele.
+
+64
+00:04:46,320 --> 00:04:52,160
+Então vamos pegar nosso círculo e dizer lista de turmas, dot add.
+
+65
+00:04:53,330 --> 00:05:00,650
+E queremos adicionar a classe do círculo e, em seguida, as posições onde temos o topo e a esquerda no
+
+66
+00:05:00,650 --> 00:05:06,710
+estilo inline, bem, queremos obter isso desses valores exatamente onde quer que estejamos clicando.
+
+67
+00:05:07,160 --> 00:05:13,820
+Então, vamos pegar o círculo e o estilo e podemos definir qualquer propriedade em excesso que quisermos aqui.
+
+68
+00:05:13,820 --> 00:05:21,110
+Queremos definir o valor superior para o que y estiver dentro, porque é o eixo Y.
+
+69
+00:05:21,650 --> 00:05:28,060
+Mas queremos apenas adicionar a esse px porque precisamos que esse seja o formato e o acesso.
+
+70
+00:05:28,070 --> 00:05:30,770
+Vai ser, você sabe, 10 pixels, o que for, o que tiver que ser.
+
+71
+00:05:31,940 --> 00:05:33,830
+E eu vou copiar isso.
+
+72
+00:05:33,830 --> 00:05:39,430
+E vamos mudar isso para X dentro e mudar isso para o valor da esquerda.
+
+73
+00:05:40,040 --> 00:05:45,710
+E então aqui embaixo, vamos usar essa palavra chave referente a esse elemento.
+
+74
+00:05:45,710 --> 00:05:48,470
+E queremos anexar filho.
+
+75
+00:05:49,100 --> 00:05:53,020
+Então, estamos colocando o elemento circle.
+
+76
+00:05:53,690 --> 00:05:54,120
+Tudo bem.
+
+77
+00:05:54,140 --> 00:06:02,150
+Então, se eu salvar isso e clicar, oh, você sabe, já que eu uso isso, isso não funcionará com
+
+78
+00:06:02,150 --> 00:06:06,370
+uma função de seta tem que ser uma função formatada regular.
+
+79
+00:06:06,380 --> 00:06:09,770
+Então vamos nos livrar da flecha aqui assim.
+
+80
+00:06:09,770 --> 00:06:17,710
+E então, se eu clicar agora, você verá que o círculo está basicamente aparecendo onde quer que eu clique.
+
+81
+00:06:17,720 --> 00:06:21,680
+Agora, temos um problema aqui que você realmente não pode ver daqui.
+
+82
+00:06:21,680 --> 00:06:24,500
+Mas se eu descer, olhe para todos esses círculos.
+
+83
+00:06:24,890 --> 00:06:29,810
+Então, toda vez que eu clico, ele adiciona o círculo, mas não apenas o remove do DOM.
+
+84
+00:06:30,620 --> 00:06:34,130
+Essa é a coisa com JavaScript vanilla é que você tem que lidar com tudo.
+
+85
+00:06:34,130 --> 00:06:37,580
+Se você colocar algo no DOM, terá que lidar com a remoção.
+
+86
+00:06:38,120 --> 00:06:43,370
+Coisas assim são muito mais fáceis se você estiver usando algo como reagir porque você obtém um monte de ferramentas
+
+87
+00:06:43,370 --> 00:06:45,570
+fazer para lidar com o DOM.
+
+88
+00:06:46,100 --> 00:06:51,640
+Então, o que vamos ter que fazer aqui é removê-lo do DOM depois, mas só queremos esperar um
+
+89
+00:06:52,400 --> 00:06:53,540
+Certa quantidade de tempo.
+
+90
+00:06:53,540 --> 00:06:57,080
+Então, vamos definir o tempo limite, que recebe uma função.
+
+91
+00:06:57,860 --> 00:07:01,490
+E o que eu quero fazer aqui é pegar o círculo.
+
+92
+00:07:01,490 --> 00:07:06,260
+Então, no atual círculo que acabamos de anexar ao DOM, queremos removê-lo.
+
+93
+00:07:06,260 --> 00:07:08,870
+Então eu vou chamar circle dot remove.
+
+94
+00:07:09,530 --> 00:07:09,950
+Tudo bem.
+
+95
+00:07:09,950 --> 00:07:12,080
+E então isso leva tempo.
+
+96
+00:07:12,120 --> 00:07:17,090
+Leva um segundo argumento do tempo que queremos esperar, que será de 500 milissegundos.
+
+97
+00:07:17,390 --> 00:07:23,450
+Agora, quando eu clicar, você pode ver aqui embaixo, a seta mostrará quando o círculo estiver
+
+98
+00:07:23,450 --> 00:07:28,340
+colocado e, em seguida, é automaticamente retirado meio segundo depois.
+
+99
+00:07:29,840 --> 00:07:34,190
+OK, então você quer ter certeza de que quando estiver usando JavaScript vanilla e aqui está adicionando coisas
+
+100
+00:07:34,190 --> 00:07:37,280
+para o DOM, você quer certificar-se de limpar depois.
+
+101
+00:07:37,280 --> 00:07:41,600
+Você não quer apenas um monte de círculos no botão.
+
+102
+00:07:42,230 --> 00:07:42,650
+Tudo bem.
+
+103
+00:07:42,650 --> 00:07:43,280
+Então é isso.
+
+104
+00:07:43,320 --> 00:07:44,570
+Espero que vocês tenham gostado disso.
+
+105
+00:07:44,570 --> 00:07:50,690
+Eu sei que é muito simples ter apenas uma ondulação, mas se você é muito novo em JavaScript, isso
+
+106
+00:07:50,690 --> 00:07:56,000
+deve ajudá-lo, você sabe, descobrir onde você está clicando, descobrir a posição de um determinado
+
+107
+00:07:56,000 --> 00:07:59,570
+elemento, adicionando um elemento, manipulando o estilo.
+
+108
+00:07:59,570 --> 00:08:04,280
+Portanto, há um pouco e apenas este pequeno projeto, se você está apenas aprendendo JavaScript ou você
+
+109
+00:08:04,280 --> 00:08:06,080
+não sei muito sobre o Dom em geral.
+
+110
+00:08:06,500 --> 00:08:06,800
+Tudo bem.
+
+111
+00:08:06,800 --> 00:08:07,230
+Então é isso.
+
+112
+00:08:07,250 --> 00:08:09,200
+Vamos em frente e começar nosso próximo projeto.

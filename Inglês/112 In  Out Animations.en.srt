@@ -1,0 +1,427 @@
+1
+00:00:00,330 --> 00:00:05,520
+OK, so now we want to start to work on the numbers and that animation, so first thing we're going
+
+2
+00:00:05,520 --> 00:00:07,350
+to do is style numbers.
+
+3
+00:00:07,380 --> 00:00:13,710
+So remember, we have the class of numbers and we're going to give the NUM the color of a hexadecimal
+
+4
+00:00:13,710 --> 00:00:17,730
+value of three four nine eight DB.
+
+5
+00:00:18,510 --> 00:00:25,470
+OK, so we'll give it that blue color and then we want to increase the font size a lot.
+
+6
+00:00:25,480 --> 00:00:35,040
+So let's do 50 pixels and we're going to position this relative because the span inside that that are
+
+7
+00:00:35,050 --> 00:00:38,300
+around each number, we want those to be positioned absolute.
+
+8
+00:00:38,310 --> 00:00:40,580
+So the container should be positioned relative.
+
+9
+00:00:41,010 --> 00:00:47,610
+And we're also going to set the overflow to hidden because we don't want anything to go out of the container
+
+10
+00:00:47,820 --> 00:00:50,070
+and we want to set a width and height on this.
+
+11
+00:00:50,550 --> 00:00:55,830
+So we're going to set the width to 250 pixels and we're going to set the height to the same as the font
+
+12
+00:00:55,830 --> 00:00:57,690
+size, which is 50 pixels.
+
+13
+00:00:58,260 --> 00:00:58,710
+All right.
+
+14
+00:00:58,710 --> 00:01:02,970
+Now, we only want actually, you know what?
+
+15
+00:01:02,970 --> 00:01:04,820
+Let's position the numbers first.
+
+16
+00:01:04,830 --> 00:01:07,540
+We want the number to show right in the middle here.
+
+17
+00:01:07,560 --> 00:01:16,680
+So what we'll do is take the spans that are in the nums and we want to position those to be absolute
+
+18
+00:01:16,680 --> 00:01:19,650
+within its container, within nums.
+
+19
+00:01:20,130 --> 00:01:29,160
+And then we also want to set the position to let's do from the top 50 percent and from the left, 50
+
+20
+00:01:29,160 --> 00:01:29,830
+percent.
+
+21
+00:01:31,800 --> 00:01:36,060
+OK, and then what we'll do is to fix that positioning.
+
+22
+00:01:36,060 --> 00:01:46,080
+We'll add a translate transform I'm sorry, those backwards transform translate and then negative 50
+
+23
+00:01:46,080 --> 00:01:46,800
+percent.
+
+24
+00:01:47,670 --> 00:01:49,590
+Negative 50 percent.
+
+25
+00:01:51,180 --> 00:01:53,800
+OK, and now you can see that it's right in the middle.
+
+26
+00:01:55,020 --> 00:02:00,930
+Now we want to start off with a little bit of a rotation, because you can see that the way these numbers
+
+27
+00:02:00,930 --> 00:02:05,100
+come in, they come like that and they they turn they rotate.
+
+28
+00:02:05,110 --> 00:02:06,840
+So we're we're going to start this off.
+
+29
+00:02:07,770 --> 00:02:11,850
+So they rotate and we're going to do one hundred and twenty degrees.
+
+30
+00:02:11,850 --> 00:02:13,380
+So it's going to start off like that.
+
+31
+00:02:13,620 --> 00:02:16,680
+Now we want to change what's called the transform origin.
+
+32
+00:02:16,680 --> 00:02:20,030
+We don't want when this starts off, we don't want it to start here.
+
+33
+00:02:20,040 --> 00:02:23,370
+We wanted to start here when it rotates up like this.
+
+34
+00:02:23,670 --> 00:02:26,040
+So let me just show you real quick
+
+35
+00:02:28,650 --> 00:02:30,030
+transform origin.
+
+36
+00:02:31,260 --> 00:02:34,050
+So right here you can see it set to center.
+
+37
+00:02:34,050 --> 00:02:39,110
+But what I'm going to do is set it to the bottom center.
+
+38
+00:02:40,050 --> 00:02:42,810
+So if I do that, you can see that it's positioned differently.
+
+39
+00:02:42,810 --> 00:02:48,390
+It's going to come from from here rather than smack dab in the middle like that.
+
+40
+00:02:48,710 --> 00:02:49,160
+All right.
+
+41
+00:02:49,170 --> 00:02:50,070
+So it's just going to move it.
+
+42
+00:02:50,100 --> 00:02:51,900
+Now, you could also do like top center.
+
+43
+00:02:51,900 --> 00:02:52,890
+It could come from that way.
+
+44
+00:02:52,890 --> 00:02:55,350
+So you can change, you know, how it rotates.
+
+45
+00:02:55,650 --> 00:03:06,650
+So I'm going to go ahead and set the transform origin and let's set it to bottom center.
+
+46
+00:03:06,660 --> 00:03:09,990
+And as soon as I save that, we're not going to see anything here.
+
+47
+00:03:10,380 --> 00:03:15,890
+Now, if this 120 degrees are set to zero, then we would be able to see it.
+
+48
+00:03:16,200 --> 00:03:21,450
+And what I'm going to do is take the class of N because remember, we have this class of end that starts
+
+49
+00:03:21,450 --> 00:03:25,020
+on the three and have that at zero degrees.
+
+50
+00:03:25,020 --> 00:03:27,430
+So that that that's in focus right here.
+
+51
+00:03:27,780 --> 00:03:33,900
+So let's say NUMS and we want to grab the band that has the class of it.
+
+52
+00:03:33,920 --> 00:03:40,680
+And then let's go ahead and take this line here and just change this to zero degrees.
+
+53
+00:03:41,280 --> 00:03:45,360
+And that way we can see whatever number has that class on it.
+
+54
+00:03:45,690 --> 00:03:52,290
+Now, we also want to add our animation to the in class and we're going to call this animation go in.
+
+55
+00:03:52,680 --> 00:03:59,970
+It will be a duration of zero point five seconds and it'll be for my colon here and then it'll be an
+
+56
+00:04:00,570 --> 00:04:08,490
+let's do he's in out effect, OK, because essentially what we want is it to come from here and go over
+
+57
+00:04:08,490 --> 00:04:10,410
+like that, like you can see here.
+
+58
+00:04:11,460 --> 00:04:11,900
+All right.
+
+59
+00:04:12,360 --> 00:04:18,450
+So each number that's coming in has that go in and then we'll have a go out to go this way and we're
+
+60
+00:04:18,450 --> 00:04:21,600
+going to use transform, rotate to be able to do that.
+
+61
+00:04:22,260 --> 00:04:24,250
+So we might as well create the out as well.
+
+62
+00:04:24,250 --> 00:04:27,890
+I'll just copy this so we'll have a class of out.
+
+63
+00:04:28,440 --> 00:04:32,190
+And this isn't going to have the starting point here.
+
+64
+00:04:32,790 --> 00:04:33,930
+So you get rid of that.
+
+65
+00:04:34,260 --> 00:04:36,980
+We're just going to call an animation called Go Out.
+
+66
+00:04:37,650 --> 00:04:46,050
+So let's create both of these animations, these keyframes, so say keyframes, and this will be the
+
+67
+00:04:46,050 --> 00:04:48,450
+go in animation.
+
+68
+00:04:48,450 --> 00:04:52,400
+Now we're going to have multiple states here, so let's do zero percent.
+
+69
+00:04:52,410 --> 00:04:53,850
+It's going to be our starting point.
+
+70
+00:04:54,240 --> 00:05:04,560
+Then we'll have a 30 percent and then a 60 percent and then a 100 percent, which is where it will end.
+
+71
+00:05:05,160 --> 00:05:08,620
+So we just want different levels of rotation in these different states.
+
+72
+00:05:08,620 --> 00:05:14,730
+So I'm going to copy this line here, the transform, translate and rotate and we're going to start
+
+73
+00:05:15,660 --> 00:05:17,990
+at 120.
+
+74
+00:05:19,350 --> 00:05:25,320
+And because we're going to be, you know, over here and then at 30 percent, I'm actually going to
+
+75
+00:05:25,320 --> 00:05:33,480
+go to negative 20 because I don't want to go right just from 120 to zero, because I want to have this
+
+76
+00:05:33,480 --> 00:05:36,810
+little bounce effect so you can see how it kind of goes forward.
+
+77
+00:05:36,810 --> 00:05:43,890
+And then back if you want, you can do just one twenty two and then put, you know, down here zero.
+
+78
+00:05:43,890 --> 00:05:44,490
+That's fine.
+
+79
+00:05:44,490 --> 00:05:49,500
+But if you want that bouncy effect, we're going to go negative 20 at 30 percent and then we're going
+
+80
+00:05:49,500 --> 00:05:54,450
+to go to ten degrees at 60 percent, which will give it that effect.
+
+81
+00:05:54,600 --> 00:05:58,230
+And you could see when I save it, you can see how it works.
+
+82
+00:05:58,230 --> 00:06:02,280
+If I take out this and do it, it just comes right in.
+
+83
+00:06:02,280 --> 00:06:06,540
+And it's slower because remember that no matter what, the duration is always going to be zero point
+
+84
+00:06:06,540 --> 00:06:07,440
+five seconds.
+
+85
+00:06:09,210 --> 00:06:09,630
+All right.
+
+86
+00:06:09,630 --> 00:06:10,880
+So that's go in.
+
+87
+00:06:10,890 --> 00:06:13,530
+Now we want to create our go out.
+
+88
+00:06:13,530 --> 00:06:18,750
+So I'm just going to copy this and let's change this to go out.
+
+89
+00:06:19,020 --> 00:06:24,540
+And we want to start at zero degrees now because remember, we're starting here and we're going out.
+
+90
+00:06:24,870 --> 00:06:29,340
+So start at zero degrees and then we don't need a 30 percent, but it's 60.
+
+91
+00:06:29,820 --> 00:06:32,310
+I want to go to 20 degrees.
+
+92
+00:06:33,120 --> 00:06:41,550
+And then at 100, I want to go to negative 120, which is obviously the opposite of 120.
+
+93
+00:06:41,730 --> 00:06:43,710
+So negative 120 will be over here.
+
+94
+00:06:45,560 --> 00:06:49,250
+All right, so that should do it, the last thing I want to do is just style.
+
+95
+00:06:49,250 --> 00:06:51,590
+This age for sprog should have done that earlier.
+
+96
+00:06:51,600 --> 00:06:53,450
+I'm going to put that up here somewhere.
+
+97
+00:06:53,960 --> 00:07:07,040
+Just say age four, and it's going to set the font size to 20 pixels and margin five pixels and let's
+
+98
+00:07:07,040 --> 00:07:07,940
+make it uppercase.
+
+99
+00:07:07,940 --> 00:07:10,960
+So text transform is going to be upper case.
+
+100
+00:07:12,020 --> 00:07:12,560
+There we go.
+
+101
+00:07:13,340 --> 00:07:15,380
+OK, so we have our success done.
+
+102
+00:07:15,380 --> 00:07:22,340
+Now we have to do a couple of things in the JavaScript we need to control when we want to show this
+
+103
+00:07:22,340 --> 00:07:24,290
+and when we want to show our final message.
+
+104
+00:07:24,530 --> 00:07:34,040
+We also need to basically loop through these spans here and add and remove the in and out class so that
+
+105
+00:07:34,040 --> 00:07:37,580
+we can have that animation happen continuously.
+
+106
+00:07:37,860 --> 00:07:38,120
+All right.
+
+107
+00:07:38,120 --> 00:07:39,520
+So we're going to do that in the next video.

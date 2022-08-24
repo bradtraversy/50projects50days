@@ -1,0 +1,683 @@
+﻿1
+00:00:00,150 --> 00:00:05,670
+OK, então vamos começar no HTML e acessar, eu tenho meu inicializador de projeto aberto aqui, o
+
+2
+00:00:05,670 --> 00:00:06,750
+índice HTML.
+
+3
+00:00:07,200 --> 00:00:12,780
+Eu tenho um link para uma fonte incrível porque usaremos alguns ícones para os botões, as setas.
+
+4
+00:00:13,140 --> 00:00:21,300
+Então, no título aqui, vamos nos livrar disso e alterá-lo para o controle deslizante de fundo e nos livrar de
+
+5
+00:00:21,300 --> 00:00:27,660
+este H1 aqui e teremos um container wrapper chamado slider dash container.
+
+6
+00:00:27,660 --> 00:00:31,920
+E aqui teríamos cinco divs com a classe de slide.
+
+7
+00:00:32,100 --> 00:00:36,760
+E a primeira, também vou dar uma aula de ativo que vai representar a imagem atual
+
+8
+00:00:36,760 --> 00:00:37,800
+ou a imagem ativa.
+
+9
+00:00:38,340 --> 00:00:38,730
+Tudo bem.
+
+10
+00:00:38,730 --> 00:00:40,200
+Então vá em frente e faça isso.
+
+11
+00:00:40,200 --> 00:00:42,300
+E nada vai acontecer nesses devs.
+
+12
+00:00:42,300 --> 00:00:45,870
+Vamos adicionar um estilo embutido para a imagem de fundo.
+
+13
+00:00:46,500 --> 00:00:51,110
+Então vamos dizer imagem de fundo e definir isso para você mais cedo.
+
+14
+00:00:51,960 --> 00:00:56,580
+E então aqui dentro, vamos colocar um link para uma imagem que eu vou pegar bem rápido.
+
+15
+00:00:57,270 --> 00:01:02,190
+E se você quiser essas imagens exatas, você pode obtê-las no repositório final.
+
+16
+00:01:03,300 --> 00:01:09,870
+Então isso é tudo que esses divs vão ser apenas uma classe de slide com uma imagem de fundo de estilo inline.
+
+17
+00:01:10,320 --> 00:01:15,270
+Então eu vou pegar e colar os outros quatro.
+
+18
+00:01:16,140 --> 00:01:17,990
+Então esta div termina aqui.
+
+19
+00:01:18,000 --> 00:01:23,400
+Você ainda quer estar dentro do contêiner e eu vou colar esses outros quatro e salvar para que o
+
+20
+00:01:23,400 --> 00:01:25,500
+outros quatro não têm a classe de ativo.
+
+21
+00:01:25,500 --> 00:01:32,240
+Apenas o primeiro deve ter a classe ativa e depois em todos esses divs, mas ainda no contêiner.
+
+22
+00:01:32,250 --> 00:01:37,530
+Então logo acima da última div aqui nós vamos ter nossos botões e este vai ter uma classe
+
+23
+00:01:37,530 --> 00:01:47,880
+de seta e a classe de seta traço para a esquerda ou seta para a esquerda e também dentro da esquerda.
+
+24
+00:01:48,660 --> 00:01:51,660
+E o próprio botão será um ícone de fonte incrível.
+
+25
+00:01:51,660 --> 00:01:58,110
+Então eu etiqueto a classe do eFax e então fa traço seta traço para a esquerda.
+
+26
+00:01:58,750 --> 00:01:59,190
+Tudo bem.
+
+27
+00:01:59,190 --> 00:02:07,950
+E então vamos em frente e copiamos isso e vamos substituir a esquerda aqui, aqui e aqui pela direita.
+
+28
+00:02:09,750 --> 00:02:10,940
+OK, e isso deve fazê-lo.
+
+29
+00:02:10,950 --> 00:02:13,710
+Então eu vou salvar e isso é tudo que vamos ver por enquanto.
+
+30
+00:02:14,100 --> 00:02:20,070
+Não vemos a imagem de fundo porque esses divs não têm conteúdo e não definimos uma altura ou largura
+
+31
+00:02:20,370 --> 00:02:21,240
+nestas div.
+
+32
+00:02:21,240 --> 00:02:23,220
+Então não vamos ver as imagens ainda.
+
+33
+00:02:24,270 --> 00:02:30,360
+Agora vamos pular para nossa folha de estilo e, finalmente, a imagem de fundo será gerada através
+
+34
+00:02:30,360 --> 00:02:31,260
+o JavaScript.
+
+35
+00:02:31,260 --> 00:02:42,060
+Mas, por enquanto, vou apenas codificar uma imagem de plano de fundo e usar a primeira imagem
+
+36
+00:02:42,060 --> 00:02:45,150
+do HTML aqui deste primeiro div.
+
+37
+00:02:45,990 --> 00:02:49,890
+Eu só vou pegar isso e nós vamos em frente e colocamos isso lá.
+
+38
+00:02:50,250 --> 00:02:55,410
+E se eu disser que agora devemos ver essa imagem de fundo, vou adicionar algumas propriedades de fundo.
+
+39
+00:02:55,980 --> 00:03:04,680
+Então, vamos adicionar a posição ao plano de fundo, a posição será centralizada nos eixos X e Y e vamos
+
+40
+00:03:04,680 --> 00:03:08,700
+adicione um tamanho de plano de fundo e defina-o para cobrir.
+
+41
+00:03:10,110 --> 00:03:10,870
+E lá vamos nós.
+
+42
+00:03:12,000 --> 00:03:18,000
+Agora, também vou adicionar uma transição aqui porque, no final das contas, vamos mudar as imagens.
+
+43
+00:03:18,210 --> 00:03:23,870
+E eu só quero ter um pequeno efeito de slide ou transição de slide.
+
+44
+00:03:23,880 --> 00:03:31,530
+Então, no corpo, vamos adicionar um ponto zero para a segunda transição e usaremos o efeito EAS.
+
+45
+00:03:31,530 --> 00:03:34,160
+E você pode ver quando eu salvei isso meio que mostra isso.
+
+46
+00:03:35,670 --> 00:03:36,360
+Tudo bem.
+
+47
+00:03:36,390 --> 00:03:42,900
+Agora para a sobreposição, porque não queremos isso todo como não queremos que essa imagem seja tão brilhante.
+
+48
+00:03:43,210 --> 00:03:48,510
+Então, para a sobreposição, vou pegar o corpo e usar o pseudo seletor antes.
+
+49
+00:03:49,950 --> 00:03:55,830
+E quando usamos antes ou depois, temos que adicionar conteúdo aqui, que na verdade não estamos adicionando nenhum
+
+50
+00:03:55,830 --> 00:03:56,340
+contente.
+
+51
+00:03:56,340 --> 00:03:57,660
+Então, deixe isso em branco.
+
+52
+00:03:57,900 --> 00:04:02,970
+E o que estamos fazendo essencialmente é apenas colocar uma sobreposição sobre esta imagem aqui.
+
+53
+00:04:02,970 --> 00:04:06,870
+Então, queremos posicionar isso como absoluto.
+
+54
+00:04:07,000 --> 00:04:13,500
+Vai ser absoluto e então do topo para o zero superior e o zero esquerdo.
+
+55
+00:04:13,890 --> 00:04:19,830
+Então, estamos começando no canto superior esquerdo e queremos que a largura seja 100% e queremos
+
+56
+00:04:19,830 --> 00:04:23,010
+a altura seja 100 altura da janela de visualização.
+
+57
+00:04:23,010 --> 00:04:25,440
+Então, queremos apenas ocupar toda a janela de visualização.
+
+58
+00:04:26,340 --> 00:04:34,320
+E então para o plano de fundo, a mesma cor de plano de fundo, vamos definir isso como a e defini-lo
+
+59
+00:04:34,320 --> 00:04:40,440
+para preto e então vamos fazer zero vírgula sete para o Alpha, para a transparência.
+
+60
+00:04:40,980 --> 00:04:45,660
+Agora você pode ver que a sobreposição com as setas está realmente atrás da sobreposição e não queremos
+
+61
+00:04:45,660 --> 00:04:45,960
+este.
+
+62
+00:04:45,960 --> 00:04:50,910
+Então, vou definir o índice Z para um negativo.
+
+63
+00:04:50,910 --> 00:04:51,960
+vou colocar mais baixo.
+
+64
+00:04:51,960 --> 00:04:55,330
+Então agora que tudo estará em cima da sobreposição.
+
+65
+00:04:56,160 --> 00:04:58,350
+Então agora vamos em frente e adicionar.
+
+66
+00:05:00,020 --> 00:05:09,590
+Os estilos de contêiner deslizante, então teremos uma sombra de caixa aqui e teremos sombras,
+
+67
+00:05:09,590 --> 00:05:14,090
+o primeiro fará zero dois zero três pixels.
+
+68
+00:05:15,110 --> 00:05:23,630
+Então o offset horizontal e vertical e então o Blu vai fazer seis pixels e a cor RGB A, que
+
+69
+00:05:23,630 --> 00:05:24,890
+vai ficar preto.
+
+70
+00:05:25,370 --> 00:05:32,570
+E para o valor alfa, vamos fazer zero vírgula um seis e então vamos colocar uma vírgula aqui para a próxima sombra,
+
+71
+00:05:32,570 --> 00:05:43,910
+que será zero três pixels, seis pixels são GBA e zero zero zero e zero ponto dois três.
+
+72
+00:05:44,190 --> 00:05:46,910
+E ainda não podemos ver isso porque não temos nenhum conteúdo.
+
+73
+00:05:46,940 --> 00:05:48,380
+Também não temos altura nem com.
+
+74
+00:05:48,380 --> 00:05:49,760
+Então vamos definir uma altura aqui.
+
+75
+00:05:50,660 --> 00:06:00,710
+Faremos 70 alturas de viewport e vamos dar uma largura de 70 VW, que é a largura da viewport.
+
+76
+00:06:01,280 --> 00:06:03,260
+E agora você pode ver o esboço aqui.
+
+77
+00:06:03,260 --> 00:06:04,850
+Você pode ver as sombras da caixa.
+
+78
+00:06:06,530 --> 00:06:13,670
+E também quero apenas adicionar posição relativa, porque os slides serão posicionados absolutos
+
+79
+00:06:13,670 --> 00:06:20,900
+dentro do contêiner e também estouro oculto porque não queremos que nada saia do contêiner.
+
+80
+00:06:20,900 --> 00:06:22,310
+Então, vamos definir isso também.
+
+81
+00:06:23,330 --> 00:06:30,500
+Agora temos vários divs com imagens de fundo e cada um tem uma classe de slide, mas apenas um deve
+
+82
+00:06:30,500 --> 00:06:31,870
+tem uma classe de ativo.
+
+83
+00:06:32,150 --> 00:06:42,830
+Então, vou definir o slide inicialmente, definir a opacidade para zero e depois aqui, digamos slide com
+
+84
+00:06:42,830 --> 00:06:48,950
+a classe de ativo, então isso terá uma opacidade.
+
+85
+00:06:49,310 --> 00:06:50,900
+Então, vemos apenas o primeiro.
+
+86
+00:06:51,140 --> 00:06:54,820
+OK, agora esta aula de slides, temos que adicionar um monte de outras coisas aqui.
+
+87
+00:06:55,160 --> 00:06:57,500
+Lembre-se, isso tem a imagem de fundo.
+
+88
+00:06:57,890 --> 00:07:01,080
+Está apenas na linha, então não está na folha de estilo.
+
+89
+00:07:01,190 --> 00:07:03,940
+Então eu quero definir bem, você sabe o quê?
+
+90
+00:07:03,950 --> 00:07:07,370
+Vamos fazer o aumento com primeiro para que possamos realmente ver a imagem.
+
+91
+00:07:07,370 --> 00:07:15,290
+Então, faremos uma altura de cem alturas de viewport em uma largura de 100 larguras de viewport.
+
+92
+00:07:16,250 --> 00:07:18,530
+OK, então isso obviamente não parece certo.
+
+93
+00:07:18,530 --> 00:07:20,510
+Queremos adicionar alguma posição de fundo.
+
+94
+00:07:22,460 --> 00:07:33,650
+Então, a posição do plano de fundo será o centro do centro em X e Y e vamos fazer um tamanho de plano de fundo de
+
+95
+00:07:33,650 --> 00:07:36,620
+tampa e lá vamos nós.
+
+96
+00:07:37,460 --> 00:07:47,810
+Agora, eu quero definir a posição disso para absoluto e, em seguida, quero definir a partir do topo negativo
+
+97
+00:07:47,810 --> 00:07:49,100
+15 pixels.
+
+98
+00:07:49,100 --> 00:07:51,590
+Então vai subir um pouco.
+
+99
+00:07:51,590 --> 00:07:57,170
+E então digamos da esquerda, negativos não são quinze pixels.
+
+100
+00:07:57,170 --> 00:08:00,500
+Quinze vich assim.
+
+101
+00:08:01,400 --> 00:08:03,050
+E então a esquerda vai ser negativa.
+
+102
+00:08:03,050 --> 00:08:04,580
+Quinze VW.
+
+103
+00:08:06,260 --> 00:08:06,710
+Tudo bem.
+
+104
+00:08:06,860 --> 00:08:13,220
+E então teremos uma transição nisso porque estes, estes serão trocados
+
+105
+00:08:13,220 --> 00:08:15,440
+imagens de fundo e queremos uma boa transição.
+
+106
+00:08:15,440 --> 00:08:17,870
+Então vamos fazer zero vírgula quatro segundos.
+
+107
+00:08:19,220 --> 00:08:23,870
+E ele usou um efeito EZ e apenas definiu o índice Z para um.
+
+108
+00:08:24,050 --> 00:08:25,580
+Então está sempre no topo.
+
+109
+00:08:26,120 --> 00:08:27,590
+Agora para a flecha.
+
+110
+00:08:28,550 --> 00:08:38,000
+Vamos adicionar essa classe aqui, e vou posicionar os dois botões da classe
+
+111
+00:08:38,000 --> 00:08:46,190
+do nosso vou posicioná-los para serem corrigidos e depois vê-los apenas tempora, porque no final
+
+112
+00:08:46,190 --> 00:08:48,950
+eles vão ser como, você sabe, aqui e aqui.
+
+113
+00:08:49,100 --> 00:08:51,560
+Mas agora eles estão por trás disso.
+
+114
+00:08:51,560 --> 00:08:55,430
+Então e este slide tem um índice Z de um.
+
+115
+00:08:55,940 --> 00:08:59,920
+Então, vamos definir o índice Z disso apenas temporariamente.
+
+116
+00:08:59,930 --> 00:09:01,400
+Vou colocar em 100.
+
+117
+00:09:01,670 --> 00:09:07,790
+Agora que podemos vê-los e como os posicionamos fixos, eles estão basicamente no mesmo local.
+
+118
+00:09:08,380 --> 00:09:09,350
+Mas vamos consertar isso.
+
+119
+00:09:09,350 --> 00:09:11,150
+Vamos apenas adicionar algum estilo a eles.
+
+120
+00:09:12,530 --> 00:09:18,710
+Então, vamos adicionar um plano de fundo, digamos, a cor do plano de fundo transparente.
+
+121
+00:09:20,520 --> 00:09:30,480
+OK, e agora vamos fazer o lado real um pouco de preenchimento, então o preenchimento fará 20 pixels de quebra
+
+122
+00:09:30,480 --> 00:09:35,430
+aumentar um pouco, vamos colocar o tamanho da fonte porque lembre-se, estamos usando ícones incríveis de fonte.
+
+123
+00:09:35,430 --> 00:09:38,310
+Então vamos ter o tamanho da fonte para 30 pixels.
+
+124
+00:09:39,810 --> 00:09:43,710
+E então vamos definir o que eu quero movê-lo para baixo.
+
+125
+00:09:43,830 --> 00:09:51,840
+Na verdade, antes de fazermos isso, vamos fazer a borda, que eu vou fazer dois pixels sólidos e laranja
+
+126
+00:09:51,840 --> 00:09:52,890
+para a cor.
+
+127
+00:09:54,840 --> 00:09:59,700
+E então vamos dizer de cima, vamos descer 50 por cento.
+
+128
+00:09:59,700 --> 00:10:01,350
+Mas queremos estar no meio exato.
+
+129
+00:10:01,350 --> 00:10:03,660
+Não queremos que apenas o topo fique no meio.
+
+130
+00:10:03,960 --> 00:10:07,290
+Então, a maneira de fazer isso é adicionando uma propriedade transformada.
+
+131
+00:10:08,610 --> 00:10:12,000
+Então transforme e queremos definir translate.
+
+132
+00:10:12,600 --> 00:10:13,200
+Por quê?
+
+133
+00:10:13,200 --> 00:10:20,880
+Porque isso está no eixo Y, que é o eixo vertical, e queremos apenas 50% negativos,
+
+134
+00:10:20,880 --> 00:10:24,080
+que irá movê-lo para o meio exato.
+
+135
+00:10:24,090 --> 00:10:26,500
+Então o meio disso está agora bem no meio.
+
+136
+00:10:28,530 --> 00:10:31,560
+Agora vamos ver.
+
+137
+00:10:31,560 --> 00:10:35,370
+Então temos uma seta para a esquerda e uma seta para a direita.
+
+138
+00:10:36,210 --> 00:10:40,440
+Se olharmos para trás aqui, temos seta para esquerda, seta para esquerda, seta para direita.
+
+139
+00:10:40,440 --> 00:10:42,440
+Então eu vou posicioná-los.
+
+140
+00:10:42,450 --> 00:10:46,470
+Então, digamos uma seta para a esquerda.
+
+141
+00:10:46,480 --> 00:10:50,970
+E lembre-se, as setas estão posicionadas fixas.
+
+142
+00:10:51,000 --> 00:10:55,950
+Vou definir a posição esquerda e passar um valor de cálculo aqui.
+
+143
+00:10:55,950 --> 00:11:05,100
+Então, isso calculará o que eu colocar aqui, que será de 15 larguras de janela de visualização, menos 65 pixels.
+
+144
+00:11:05,520 --> 00:11:10,380
+E se eu salvar isso, você pode ver que agora está aqui, a seta para a esquerda.
+
+145
+00:11:10,680 --> 00:11:11,640
+Então a seta para a direita.
+
+146
+00:11:11,640 --> 00:11:13,230
+Queremos calcular isso.
+
+147
+00:11:13,290 --> 00:11:21,240
+Então vamos copiar isso e vamos pegar a seta para a direita.
+
+148
+00:11:21,240 --> 00:11:27,810
+E em vez de vender a posição da esquerda, queremos definir da direita a mesma coisa, 15 VW menos
+
+149
+00:11:28,080 --> 00:11:29,070
+sessenta e cinco.
+
+150
+00:11:29,370 --> 00:11:32,140
+E isso deve colocar isso e colocá-los no lugar certo.
+
+151
+00:11:33,030 --> 00:11:39,210
+Agora, não queremos que eles tenham um índice Z mais alto do que isso, porque você pode ver aqui
+
+152
+00:11:39,510 --> 00:11:40,620
+está passando por cima.
+
+153
+00:11:40,620 --> 00:11:46,530
+Então vamos nos livrar desse índice Z de 100 e salvar e agora você não pode ver a borda.
+
+154
+00:11:46,530 --> 00:11:48,540
+É meio que saindo da imagem.
+
+155
+00:11:48,840 --> 00:11:52,170
+E então uma outra coisa, quando eu clico nisso, você vê aquele contorno?
+
+156
+00:11:52,170 --> 00:11:53,240
+Queremos nos livrar disso.
+
+157
+00:11:53,580 --> 00:11:56,250
+Então vamos subir aqui e dizer Arrow.
+
+158
+00:11:56,280 --> 00:12:03,010
+Quando está no estado de foco, queremos definir o contorno para zero.
+
+159
+00:12:03,480 --> 00:12:05,400
+Então agora não deveríamos ter esse esboço.
+
+160
+00:12:05,580 --> 00:12:07,350
+E também queremos que a seta seja branca.
+
+161
+00:12:07,350 --> 00:12:14,070
+Então aqui, seta, vamos colorir e definir isso para branco.
+
+162
+00:12:15,990 --> 00:12:16,510
+Tudo bem, legal.
+
+163
+00:12:16,530 --> 00:12:17,980
+Então isso nos dá um sucesso.
+
+164
+00:12:18,120 --> 00:12:18,720
+Uma outra coisa.
+
+165
+00:12:18,720 --> 00:12:21,150
+Vamos torná-lo um ponto quando passamos o mouse sobre ele.
+
+166
+00:12:21,150 --> 00:12:23,640
+Então, vamos adicionar o ponteiro do cursor.
+
+167
+00:12:25,350 --> 00:12:25,870
+Aqui vamos nós.
+
+168
+00:12:26,250 --> 00:12:28,320
+Então nosso sucesso está feito agora.
+
+169
+00:12:28,320 --> 00:12:30,240
+Queremos, obviamente, queremos que isso funcione.
+
+170
+00:12:30,240 --> 00:12:33,570
+Queremos poder deslizar a imagem, também a imagem de fundo.
+
+171
+00:12:33,900 --> 00:12:36,450
+Então, no próximo vídeo, vamos começar no JavaScript.

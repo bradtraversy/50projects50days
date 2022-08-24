@@ -1,0 +1,283 @@
+1
+00:00:00,330 --> 00:00:04,290
+All right, so we're going to get started on a drag and drop project, so I have my project starter
+
+2
+00:00:04,290 --> 00:00:04,850
+open.
+
+3
+00:00:04,860 --> 00:00:08,370
+I'm going to just change this to drag and drop.
+
+4
+00:00:09,930 --> 00:00:12,240
+And the HTML is going to be really, really simple.
+
+5
+00:00:12,240 --> 00:00:16,020
+We're basically just going to have a bunch of boxes with the class of empty.
+
+6
+00:00:16,020 --> 00:00:21,330
+So let's say class empty and we want five of these.
+
+7
+00:00:21,340 --> 00:00:23,130
+So we'll say times five.
+
+8
+00:00:23,790 --> 00:00:28,530
+And the first one here, I want to have the the image that we can drag and drop.
+
+9
+00:00:28,530 --> 00:00:32,100
+So inside this div, I'm going to have a class of fill.
+
+10
+00:00:32,580 --> 00:00:38,780
+And we also want to add an attribute here of Dragonball, OK, because we want this to be Dragonball
+
+11
+00:00:38,790 --> 00:00:39,600
+within the browser.
+
+12
+00:00:39,600 --> 00:00:42,360
+So we want to set Dragonball equal to true.
+
+13
+00:00:43,260 --> 00:00:44,130
+And that's it.
+
+14
+00:00:44,130 --> 00:00:46,110
+That's all we need for our HTML.
+
+15
+00:00:46,710 --> 00:00:50,550
+So now let's jump into our stylesheet and we'll start to create this.
+
+16
+00:00:50,560 --> 00:00:54,630
+So we actually don't need any font because there's no text.
+
+17
+00:00:55,110 --> 00:01:00,230
+So we're just going to get rid of that for the flex direction.
+
+18
+00:01:00,240 --> 00:01:03,120
+I'm not going to use a column unless it's on smaller screen.
+
+19
+00:01:03,130 --> 00:01:08,460
+So what I'll do is get rid of the Flex Direction column, but just create a media query down here.
+
+20
+00:01:10,230 --> 00:01:20,220
+So say if it's a max width of 800 pixels, so if it's under 800 pixels, then on the body, we want
+
+21
+00:01:20,220 --> 00:01:23,850
+the flex direction to be a column.
+
+22
+00:01:25,530 --> 00:01:32,760
+OK, and then in the body, the only other thing I'm going to do here is add a background color of steel
+
+23
+00:01:32,760 --> 00:01:33,220
+blue.
+
+24
+00:01:34,200 --> 00:01:34,620
+All right.
+
+25
+00:01:34,620 --> 00:01:38,840
+So now we want to style the boxes with the class of empty.
+
+26
+00:01:39,570 --> 00:01:41,430
+So let's say class empty.
+
+27
+00:01:43,500 --> 00:01:47,130
+And I'm going to actually we don't need a display here.
+
+28
+00:01:47,520 --> 00:01:58,200
+Let's do a height of 150 pixels and a width of 150 pixels and we'll do a margin of 10 pixels.
+
+29
+00:01:58,740 --> 00:02:05,070
+And I'm going to have a border solid three pixels and.
+
+30
+00:02:06,800 --> 00:02:16,400
+Black, and let's give it a background of white, OK, so there's our boxes, those are empty boxes.
+
+31
+00:02:17,810 --> 00:02:24,070
+Now, when we when we have our image here, actually, let's just do the fill class.
+
+32
+00:02:24,080 --> 00:02:30,110
+So under empty, we'll have our fill class and we're going to have a background image here.
+
+33
+00:02:30,500 --> 00:02:33,590
+And I'm going to use an unspoiled random image.
+
+34
+00:02:33,920 --> 00:02:35,820
+So it'll be a different image every time.
+
+35
+00:02:36,500 --> 00:02:47,570
+So for the Earth, it's a mess and it's going to be source dot on splash dot com and then slash random
+
+36
+00:02:47,570 --> 00:02:48,830
+and then you can do a size.
+
+37
+00:02:48,830 --> 00:02:54,560
+So I'm going to do one 50 x 150 will be 150 by 150.
+
+38
+00:02:55,280 --> 00:02:59,060
+I'm going to set the height of that to one forty five pixels.
+
+39
+00:02:59,600 --> 00:03:02,180
+And let's set up from a semicolon.
+
+40
+00:03:04,050 --> 00:03:12,240
+And let's set the width to one forty five pixels and let's look the cursor to a pointer, and if I save
+
+41
+00:03:12,240 --> 00:03:16,590
+that, you'll see we have a random image and it's going to be a different image every time.
+
+42
+00:03:16,890 --> 00:03:24,360
+And I'm able to drag this and see that if I don't have this, if I set this to false.
+
+43
+00:03:26,570 --> 00:03:31,490
+And now you see, I can't actually pick it up and drag it, so you want to make sure that that attribute
+
+44
+00:03:31,490 --> 00:03:34,010
+is always set to true if you're using drag and drop.
+
+45
+00:03:35,330 --> 00:03:40,380
+Now, we want to have some specific styles when we're dragging it.
+
+46
+00:03:40,400 --> 00:03:45,920
+So, for instance, when I'm when I click and I hold and I'm dragging it, I want it to have a border
+
+47
+00:03:45,950 --> 00:03:48,530
+like a grayish white border around it.
+
+48
+00:03:48,800 --> 00:03:58,730
+So I'm going to have a class here of hold and I'll say border so that the solid let's do five pixels
+
+49
+00:03:58,880 --> 00:04:00,040
+C.C.C..
+
+50
+00:04:00,650 --> 00:04:02,420
+Now, that's not going to be applied.
+
+51
+00:04:02,630 --> 00:04:07,640
+But when we get to our JavaScript, when we have that event where we're holding it, we wanted to add
+
+52
+00:04:07,640 --> 00:04:08,210
+the border.
+
+53
+00:04:08,480 --> 00:04:09,800
+I can add it manually.
+
+54
+00:04:09,800 --> 00:04:15,680
+If I go over here and I say hold now you can see there's that gray border around it, but I only want
+
+55
+00:04:15,680 --> 00:04:17,780
+it when I'm actually holding it.
+
+56
+00:04:18,500 --> 00:04:22,010
+And then I also want to style these boxes if we hover over.
+
+57
+00:04:22,040 --> 00:04:28,070
+So if I take this and I hover over a box, I want it to have a dark background and also have a dashboard
+
+58
+00:04:28,110 --> 00:04:28,750
+around it.
+
+59
+00:04:28,760 --> 00:04:30,770
+So let's have a class called Harvard.
+
+60
+00:04:31,640 --> 00:04:36,890
+So you just need to figure out the styles of the different states of the drag events, because there's
+
+61
+00:04:37,100 --> 00:04:39,250
+there's multiple drag events that we can use.
+
+62
+00:04:39,800 --> 00:04:45,290
+So we're going to set the background color of this to three, three, three, if it if it has the class
+
+63
+00:04:45,290 --> 00:04:56,420
+of Harvard and let's also say border color, we'll set that to white and we'll set the border style.
+
+64
+00:04:58,010 --> 00:04:59,840
+We'll set that to dashed
+
+65
+00:05:02,390 --> 00:05:02,730
+hopes.
+
+66
+00:05:03,050 --> 00:05:07,020
+Keep forgetting my semicolons border white.
+
+67
+00:05:07,030 --> 00:05:08,000
+You don't need that.
+
+68
+00:05:09,570 --> 00:05:15,660
+OK, so this isn't going to show just yet because we need to apply that with the JavaScript, so in
+
+69
+00:05:15,660 --> 00:05:17,810
+the next video jumped, it will jump into our script.
+
+70
+00:05:17,960 --> 00:05:18,330
+Yes.
+
+71
+00:05:18,690 --> 00:05:21,560
+And we'll start to add all of our different drag events.

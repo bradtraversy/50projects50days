@@ -1,0 +1,51 @@
+﻿1
+00:00:00,270 --> 00:00:06,390
+Então este é um pequeno projeto legal para escolher escolhas aleatórias agora temos esta área de texto, e assim que
+
+2
+00:00:06,390 --> 00:00:12,870
+como eu começo a digitar, como eu vou dizer escolha um e você verá que o formato aqui é como uma tag.
+
+3
+00:00:13,200 --> 00:00:19,860
+E para criar outra escolha, só preciso colocar uma vírgula e começar a digitar novamente, dizer escolha para outro
+
+4
+00:00:19,860 --> 00:00:20,370
+vírgula.
+
+5
+00:00:20,370 --> 00:00:23,250
+Escolha três, escolha quatro.
+
+6
+00:00:23,250 --> 00:00:28,530
+Obviamente eu posso fazer quantos eu quiser e assim que eu apertar enter, vai nos dar esse legal
+
+7
+00:00:28,530 --> 00:00:31,560
+pouco efeito e vai parar em uma escolha aleatória.
+
+8
+00:00:31,560 --> 00:00:33,340
+Também vai limpar a área de texto.
+
+9
+00:00:33,690 --> 00:00:34,170
+Tudo bem.
+
+10
+00:00:34,180 --> 00:00:41,580
+Então, se você só precisa de um pequeno ajudante para ajudá-lo a fazer uma escolha entre quantos itens,
+
+11
+00:00:41,580 --> 00:00:44,130
+por mais objetos, quero dizer, você poderia fazer números aqui.
+
+12
+00:00:46,590 --> 00:00:48,750
+E só vai parar em um aleatório.
+
+13
+00:00:49,110 --> 00:00:52,460
+OK, então é isso que vamos criar, vamos em frente e começar.

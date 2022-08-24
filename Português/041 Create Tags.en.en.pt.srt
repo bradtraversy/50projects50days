@@ -1,0 +1,323 @@
+﻿1
+00:00:00,090 --> 00:00:05,160
+Tudo bem, então neste vídeo, queremos criar nossas tags, queremos poder digitar aqui e dividir
+
+2
+00:00:05,160 --> 00:00:07,630
+por uma vírgula e crie as tags abaixo.
+
+3
+00:00:08,130 --> 00:00:12,960
+Então, uma coisa que eu quero fazer neste caso, porém, é no H3, eu vou adicionar um texto, uma linha
+
+4
+00:00:12,960 --> 00:00:13,590
+de centro.
+
+5
+00:00:13,590 --> 00:00:15,960
+E só para centralizar isso, acho que fica um pouco melhor.
+
+6
+00:00:16,500 --> 00:00:22,290
+E então, em nosso arquivo de script, queremos obter o elemento tags, que é esse aqui, esse div
+
+7
+00:00:22,290 --> 00:00:23,700
+com a ideia de etiquetas.
+
+8
+00:00:24,000 --> 00:00:32,190
+Então, vamos chamar essas tags de Al e definir esse elemento get do documento por D e queremos a ideia de tags.
+
+9
+00:00:32,580 --> 00:00:34,560
+E então eu também quero a área de texto.
+
+10
+00:00:35,610 --> 00:00:46,140
+Temos um ID de área de texto e vamos chamar essa área de texto e essas são as duas únicas coisas que você
+
+11
+00:00:46,140 --> 00:00:47,000
+quer trazer.
+
+12
+00:00:47,010 --> 00:00:50,760
+Então eu quero focar automaticamente na área de texto.
+
+13
+00:00:50,760 --> 00:00:56,190
+Então, vamos chamar o método de foco, que se formos para a página, ele colocará automaticamente o cursor
+
+14
+00:00:56,190 --> 00:00:58,020
+lá e podemos começar a digitar.
+
+15
+00:00:58,650 --> 00:01:01,540
+Agora queremos um ouvinte de eventos na área de texto.
+
+16
+00:01:01,550 --> 00:01:06,080
+Então, adicione um ouvinte de evento e queremos ouvir uma chave.
+
+17
+00:01:06,090 --> 00:01:07,640
+Então você tem chave para baixo e chave para cima.
+
+18
+00:01:07,650 --> 00:01:11,930
+Estamos ouvindo quando você pressiona e solta, isso vai disparar isso.
+
+19
+00:01:12,420 --> 00:01:16,050
+E quando isso acontece, é passado em nosso parâmetro de evento aqui.
+
+20
+00:01:17,430 --> 00:01:23,670
+Quando isso acontecer, vamos chamar uma função chamada create tags e queremos passar em cada alvo
+
+21
+00:01:24,360 --> 00:01:27,120
+valor de ponto, que será o que digitarmos.
+
+22
+00:01:27,330 --> 00:01:36,990
+Então, se criarmos uma função chamada create tags, digamos input, e nós consolemos o log da entrada que temos aqui
+
+23
+00:01:36,990 --> 00:01:41,280
+e abrimos nosso console e eu começo a digitar, você deve ver o que digitamos aqui.
+
+24
+00:01:42,510 --> 00:01:42,890
+Tudo bem.
+
+25
+00:01:43,470 --> 00:01:48,900
+Agora, a maneira como vamos fazer isso é que queremos pegar o que quer que seja que digitarmos.
+
+26
+00:01:48,900 --> 00:01:50,150
+E então colocamos uma vírgula.
+
+27
+00:01:50,730 --> 00:01:57,930
+Queremos dividir nessa vírgula e criar uma matriz de, você sabe, o que quer que esteja em ambos os lados desses
+
+28
+00:01:57,930 --> 00:01:58,380
+comentários.
+
+29
+00:01:58,380 --> 00:02:01,280
+Portanto, isso criaria um array com this como o primeiro valor.
+
+30
+00:02:01,290 --> 00:02:04,170
+Este é o segundo que podemos fazer isso usando split.
+
+31
+00:02:04,560 --> 00:02:10,230
+Então, digamos tags const e vamos definir isso para input, que é uma string.
+
+32
+00:02:10,530 --> 00:02:15,210
+Queremos dividi-lo pela vírgula e transformá-lo em um array.
+
+33
+00:02:15,240 --> 00:02:22,740
+Então agora se um console logar aqui e eu disser, vamos colocar um aqui, oops.
+
+34
+00:02:22,920 --> 00:02:23,780
+O que acontece?
+
+35
+00:02:24,150 --> 00:02:25,710
+Dividir não é uma função.
+
+36
+00:02:26,730 --> 00:02:28,500
+Então dividi eu coloquei um.
+
+37
+00:02:28,680 --> 00:02:33,000
+Você pode ver que temos um array com um valor de um, que é uma string.
+
+38
+00:02:33,300 --> 00:02:36,600
+Se eu colocar um dois, será apenas um array com um 12.
+
+39
+00:02:36,600 --> 00:02:42,810
+Mas se eu colocar uma vírgula e depois um dois, então teremos um array com dois valores, um e dois.
+
+40
+00:02:42,990 --> 00:02:44,710
+Então, ele vai dividi-lo pela vírgula.
+
+41
+00:02:45,150 --> 00:02:47,850
+Agora, eu não quero ser capaz de ter um espaço assim.
+
+42
+00:02:48,060 --> 00:02:56,190
+Então, o que faremos é adicionar a esse filtro de pontos e o filtro também é um método de matriz de alta ordem que permite
+
+43
+00:02:56,190 --> 00:03:00,820
+você retornar certas coisas com base em uma condicional.
+
+44
+00:03:01,110 --> 00:03:08,310
+Então, para cada tag, digamos tag, dot, trem, que apenas cortará qualquer espaço em branco,
+
+45
+00:03:08,310 --> 00:03:14,070
+se isso não for igual a uma string vazia, retornará isso.
+
+46
+00:03:14,070 --> 00:03:17,510
+E então nós só queremos um mapa que irá apenas manipular o array.
+
+47
+00:03:17,940 --> 00:03:24,390
+Então, para cada tag, queremos retornar um array com a tag, mas queremos aparar.
+
+48
+00:03:24,660 --> 00:03:26,740
+Então, estamos apenas dizendo que não pode ser uma string vazia.
+
+49
+00:03:26,760 --> 00:03:29,280
+Além disso, vamos cortar qualquer espaço em branco.
+
+50
+00:03:29,350 --> 00:03:35,250
+Agora, se eu salvar isso e fizer um espaço, você pode ver que não são realmente adicionados os espaços.
+
+51
+00:03:35,250 --> 00:03:40,920
+E lá eu posso colocar vírgula no espaço e o espaço não é adicionado lá.
+
+52
+00:03:42,420 --> 00:03:48,240
+E se eu apenas gosto de vírgula e depois outra vírgula, não adiciona outra, não faz nada
+
+53
+00:03:48,360 --> 00:03:49,420
+por causa do nosso filtro.
+
+54
+00:03:50,220 --> 00:03:50,610
+Tudo bem.
+
+55
+00:03:50,610 --> 00:03:57,930
+Agora que estabelecemos isso, vamos colocar essas tags em nosso HTML, para nos livrarmos disso
+
+56
+00:03:57,930 --> 00:04:01,020
+e vamos pegar o elemento tags e limpá-lo.
+
+57
+00:04:02,430 --> 00:04:04,230
+Caso contrário, eles só vão se acumular.
+
+58
+00:04:04,260 --> 00:04:10,860
+Então, antes de fazermos qualquer coisa, vamos limpar isso e pegar nossas tags, que é um array.
+
+59
+00:04:10,860 --> 00:04:14,730
+E queremos percorrer loops com for each.
+
+60
+00:04:15,030 --> 00:04:16,770
+Para cada.
+
+61
+00:04:17,820 --> 00:04:27,180
+Então, para cada tag, vamos criar um elemento de tag com o elemento document dot create.
+
+62
+00:04:27,180 --> 00:04:28,670
+E queremos criar uma extensão.
+
+63
+00:04:29,850 --> 00:04:31,680
+Também queremos adicionar uma classe a isso.
+
+64
+00:04:31,690 --> 00:04:36,930
+Então, vamos pegar o elemento tag e adicionar um ponto sem classe.
+
+65
+00:04:38,520 --> 00:04:46,320
+Classe de tag, e então queremos definir todo o texto disso, então pegaremos o elemento tag e definiremos
+
+66
+00:04:46,320 --> 00:04:51,990
+todo o texto para qualquer que seja a tag, porque estamos fazendo um loop aqui.
+
+67
+00:04:52,290 --> 00:04:55,160
+Pegamos cada um e vamos colocar isso como o texto interno.
+
+68
+00:04:55,170 --> 00:04:57,990
+E então, finalmente, queremos pegar o elemento tags.
+
+69
+00:04:58,350 --> 00:04:59,870
+Portanto, certifique-se de ter o S aqui.
+
+70
+00:04:59,880 --> 00:05:07,200
+Esta é a ideia de, você sabe, o div com a ideia de tags e queremos anexar filho e estamos
+
+71
+00:05:07,200 --> 00:05:09,800
+vai adicionar cada um desses elementos de tag.
+
+72
+00:05:10,320 --> 00:05:12,330
+Então, se eu for em frente e eu fizer.
+
+73
+00:05:12,720 --> 00:05:13,400
+Olá.
+
+74
+00:05:14,220 --> 00:05:15,570
+Então ele começa a digitar.
+
+75
+00:05:15,570 --> 00:05:21,950
+Há uma tag, se eu fizer uma vírgula e colocar um mundo, essa será a segunda tag.
+
+76
+00:05:21,960 --> 00:05:24,000
+Então, ele vai separá-lo por vírgulas.
+
+77
+00:05:24,780 --> 00:05:25,140
+Tudo bem.
+
+78
+00:05:25,150 --> 00:05:28,770
+Portanto, temos a capacidade de criar essas tags.
+
+79
+00:05:28,980 --> 00:05:35,310
+O que queremos fazer a seguir é ter a capacidade de acertar, entrar e depois selecionar aleatoriamente.
+
+80
+00:05:35,310 --> 00:05:39,170
+E vai destacar e vai dar aquela pequena animação legal também.
+
+81
+00:05:39,480 --> 00:05:41,130
+Então faremos isso no próximo vídeo.

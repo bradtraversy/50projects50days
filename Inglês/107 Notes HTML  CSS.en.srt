@@ -1,0 +1,467 @@
+1
+00:00:00,150 --> 00:00:05,400
+OK, so we should be able to get the Temel on the CSFs done here now, ultimately all we're going to
+
+2
+00:00:05,400 --> 00:00:11,300
+have in the TML is an add button to add a note and then the note will be put in via JavaScript.
+
+3
+00:00:11,310 --> 00:00:16,350
+But for now, like with many other projects, we're going to just type out the HTML first so we can
+
+4
+00:00:16,350 --> 00:00:18,320
+style it and then we'll get rid of it.
+
+5
+00:00:18,360 --> 00:00:21,600
+We'll make it dynamic so we can insert a note with the JavaScript.
+
+6
+00:00:21,990 --> 00:00:27,830
+Now I have my project starter and I have a link to the font awesome CDN so that we can use icons.
+
+7
+00:00:28,170 --> 00:00:32,010
+There's one other small library we're going to use called Markt.
+
+8
+00:00:32,250 --> 00:00:38,520
+So I'm going to go to NJ Ask.com and just search for Markt, which allows us to use markdown.
+
+9
+00:00:39,510 --> 00:00:41,790
+It will allow us to use markdown in our notes.
+
+10
+00:00:42,000 --> 00:00:45,750
+So if we want to make something bold, we can, you know, surround it in asterisks.
+
+11
+00:00:45,960 --> 00:00:48,630
+We can create lists and headings and stuff like that.
+
+12
+00:00:48,780 --> 00:00:53,790
+So I'm going to just copy the script tag here and I'm going to put it right above the script.
+
+13
+00:00:54,000 --> 00:00:54,540
+Yes.
+
+14
+00:00:54,840 --> 00:00:59,510
+OK, so we're just going to include that CDN and then we'll be able to use the marked library.
+
+15
+00:01:00,330 --> 00:01:04,560
+Now, as far as the HTML goes, like I said, we're going to have an add, but actually it's out of
+
+16
+00:01:04,560 --> 00:01:05,320
+title first.
+
+17
+00:01:05,320 --> 00:01:11,100
+So just call this notes app and then we're going to have our add button.
+
+18
+00:01:11,220 --> 00:01:12,330
+So it'll be a button.
+
+19
+00:01:12,370 --> 00:01:17,910
+Let's give it a class of add and an idea of add and then it's going to use font.
+
+20
+00:01:17,910 --> 00:01:18,360
+Awesome.
+
+21
+00:01:18,360 --> 00:01:25,800
+So we'll do an ID tag with Faez in the class of a dash plus which will give us a little plus sign and
+
+22
+00:01:25,800 --> 00:01:28,610
+after that we'll say add note.
+
+23
+00:01:29,820 --> 00:01:31,130
+OK, so that gives us a button.
+
+24
+00:01:31,620 --> 00:01:35,610
+Now like I said, we're going to be inserting notes through JavaScript, but for now we'll go ahead
+
+25
+00:01:35,610 --> 00:01:39,360
+and just type it out so it'll have a class of note, each one.
+
+26
+00:01:40,080 --> 00:01:45,540
+And then inside here we're going to have a class of tools.
+
+27
+00:01:46,140 --> 00:01:48,690
+And this is where the edit and delete buttons are going to go.
+
+28
+00:01:48,690 --> 00:01:54,900
+So we're going to say, button, let's give us a class of edits and inside here will have an icon.
+
+29
+00:01:54,900 --> 00:02:01,830
+So IFRS and then F.A.A. dash edits and it's just going to be the icon.
+
+30
+00:02:01,830 --> 00:02:09,030
+No text, then the copy that down and this is going to be a trash dash ALZ and the class for this button
+
+31
+00:02:09,030 --> 00:02:10,740
+will be delete.
+
+32
+00:02:11,440 --> 00:02:11,810
+All right.
+
+33
+00:02:11,820 --> 00:02:16,200
+So now we have our added delete button for our note underneath Tool's.
+
+34
+00:02:16,440 --> 00:02:24,210
+We're going to have a div and the way this will work is will have a div and then we'll have a text area
+
+35
+00:02:24,900 --> 00:02:26,310
+and get rid of all this stuff.
+
+36
+00:02:26,700 --> 00:02:32,340
+And depending on the state of the note, it d may or may not have a class of hidden.
+
+37
+00:02:32,350 --> 00:02:38,910
+So I'm going to add a class here of hidden, which is just going to be basically display none and I'm
+
+38
+00:02:38,910 --> 00:02:43,500
+going to leave it off the text area so it'll be active by default.
+
+39
+00:02:43,800 --> 00:02:50,070
+But like I said, these notes are going to be put in through JavaScript and these classes will be dynamic
+
+40
+00:02:50,070 --> 00:02:51,800
+depending on if there's text or not.
+
+41
+00:02:52,560 --> 00:02:54,240
+So that should do it for the HTML.
+
+42
+00:02:54,240 --> 00:03:02,340
+Let's jump into the stylesheet here and we're going to use the Poppins font with a weight of 200 and
+
+43
+00:03:02,700 --> 00:03:11,490
+400 and will replace this Poppins, OK, and then display flaks.
+
+44
+00:03:11,490 --> 00:03:18,660
+We don't need Flex Direction column, but I am going to set Flex wrap and set that to wrap so that the
+
+45
+00:03:18,660 --> 00:03:21,630
+notes will go on to the next line when needed.
+
+46
+00:03:21,780 --> 00:03:30,600
+And then let's see, we don't really need to do the A line items or the justify content or the height
+
+47
+00:03:31,410 --> 00:03:34,050
+or the overflow because we might have scroll bars.
+
+48
+00:03:34,050 --> 00:03:41,460
+If we have enough notes, margin zero will keep that and then I'm going to add some padding to the top.
+
+49
+00:03:41,490 --> 00:03:43,620
+We'll do three REM units for that.
+
+50
+00:03:44,670 --> 00:03:45,180
+All right.
+
+51
+00:03:45,180 --> 00:03:47,970
+Now the add button.
+
+52
+00:03:48,000 --> 00:03:48,930
+Let's do that.
+
+53
+00:03:50,350 --> 00:03:55,290
+So this I'm actually going to position this fixed into the into the body.
+
+54
+00:03:55,290 --> 00:04:01,140
+So let's say position fixed and then let's put this from the top.
+
+55
+00:04:01,830 --> 00:04:09,000
+We'll do one room, which is just a multiplier of the the root HTML element, which by default is sixteen
+
+56
+00:04:09,000 --> 00:04:09,690
+pixels.
+
+57
+00:04:09,690 --> 00:04:15,320
+So we're seeing top sixteen pixels from the top and also from the right.
+
+58
+00:04:16,230 --> 00:04:18,090
+OK, so it's going to put that right there.
+
+59
+00:04:18,540 --> 00:04:27,690
+Now we want to style this, so let's add a background color to this and we're going to use the hexadecimal
+
+60
+00:04:27,690 --> 00:04:35,610
+value of nine c eight six to go down here a little bit.
+
+61
+00:04:35,610 --> 00:04:38,580
+Let's take away the border border none.
+
+62
+00:04:38,940 --> 00:04:45,270
+Let's add a border radius of, say, three pixels and then four padding.
+
+63
+00:04:45,570 --> 00:04:50,070
+We'll do zero point five REM top and bottom one left and right.
+
+64
+00:04:50,550 --> 00:04:56,040
+And let's make the color white, which will actually move up here.
+
+65
+00:04:57,120 --> 00:04:59,610
+And then let's do the cursor pointer.
+
+66
+00:05:00,910 --> 00:05:04,400
+And that should do it, so we have our ad note button up in the corner.
+
+67
+00:05:04,840 --> 00:05:08,710
+Now we want to style the note, which has a class of note.
+
+68
+00:05:09,620 --> 00:05:19,660
+So let's say note, and I'm going to set the background color to white and then let's do a box shadow.
+
+69
+00:05:22,090 --> 00:05:32,590
+And for the box shadow, the offsets will set to zero 10 pixel for pixel and then Najiba Black with
+
+70
+00:05:32,590 --> 00:05:38,530
+zero point one alpha gives it a slight shadow and then let's add some margin.
+
+71
+00:05:38,540 --> 00:05:46,160
+So 30 pixels top and bottom, 20 pixels left and right, and then let's set height.
+
+72
+00:05:46,240 --> 00:05:51,190
+So a fixed height of 400 pixels and a width of 400 pixels.
+
+73
+00:05:51,670 --> 00:05:53,930
+And of course you could change this stuff if you'd like.
+
+74
+00:05:54,730 --> 00:05:55,090
+All right.
+
+75
+00:05:55,100 --> 00:05:58,410
+So that's kind of the outline of the of the note.
+
+76
+00:05:58,570 --> 00:06:01,890
+Now, for this part, here we have the edit and delete button.
+
+77
+00:06:01,900 --> 00:06:04,270
+Remember, that has a class of tools.
+
+78
+00:06:04,270 --> 00:06:09,590
+So let's say note tools and go ahead style that area.
+
+79
+00:06:10,000 --> 00:06:20,650
+So it's going to have a background color of hexadecimal, nine E, C, eight, six to also give a background
+
+80
+00:06:20,920 --> 00:06:29,200
+and then let's display flex so the buttons will be flex items and then we're going to justify the content
+
+81
+00:06:29,200 --> 00:06:34,480
+to flex and that'll put them over to the right.
+
+82
+00:06:34,900 --> 00:06:40,090
+And let's add some padding to the flex container to the tools.
+
+83
+00:06:40,090 --> 00:06:42,360
+So the zero point five REM.
+
+84
+00:06:43,390 --> 00:06:45,660
+OK, now we want to style the buttons as well.
+
+85
+00:06:45,670 --> 00:06:51,610
+So let's see note and then the tools class and then the button for the buttons inside.
+
+86
+00:06:52,750 --> 00:06:56,350
+Let's give them a background color of transparent.
+
+87
+00:06:56,900 --> 00:06:58,360
+Let's get rid of the border.
+
+88
+00:06:58,360 --> 00:06:59,470
+So border none.
+
+89
+00:07:00,100 --> 00:07:08,890
+Let's make the color white and let's set the cursor to be a pointer.
+
+90
+00:07:09,880 --> 00:07:17,920
+I'm also going to change the font size to one ram and add a margin left of a half ram.
+
+91
+00:07:19,430 --> 00:07:28,160
+All right, so I think that looks pretty good for our buttons now for the text area, let's say notes,
+
+92
+00:07:28,490 --> 00:07:29,760
+text area.
+
+93
+00:07:32,000 --> 00:07:34,060
+So I want to get rid of any outline.
+
+94
+00:07:34,070 --> 00:07:35,360
+So outline none.
+
+95
+00:07:35,930 --> 00:07:48,560
+And let's make sure the family is inherited and let's set the font size to one point to room and set
+
+96
+00:07:48,560 --> 00:07:50,300
+the border to none.
+
+97
+00:07:51,860 --> 00:08:00,050
+OK, and then we'll set the height to 400 pixels, which is the same as the note, and the width will
+
+98
+00:08:00,050 --> 00:08:03,500
+just set to 100 percent of its container, which is the note.
+
+99
+00:08:03,860 --> 00:08:04,790
+And then padding.
+
+100
+00:08:04,790 --> 00:08:09,020
+I'm going to add 20 pixels padding so it's not right up against the edge.
+
+101
+00:08:09,230 --> 00:08:12,140
+So now we can, you know, type in this text area.
+
+102
+00:08:13,220 --> 00:08:16,720
+One thing that I realize, though, I forgot to add the background color to the body.
+
+103
+00:08:16,730 --> 00:08:23,080
+So let's go up here and add background color and I'll set that to a light blue.
+
+104
+00:08:23,090 --> 00:08:27,480
+So it's going to be seven BD a F three for that.
+
+105
+00:08:28,100 --> 00:08:29,960
+OK, so that gives it some contrast.
+
+106
+00:08:30,380 --> 00:08:33,290
+And then the last thing is just didn't want to do that.
+
+107
+00:08:34,190 --> 00:08:43,520
+The last thing is to add a class of hidden and hidden is just going to be display none, which will
+
+108
+00:08:43,520 --> 00:08:47,060
+be able to add to the elements that we need to later on.
+
+109
+00:08:48,440 --> 00:08:54,860
+OK, now if we add another note, like if I take this whole div right here and just copy it down a couple
+
+110
+00:08:54,860 --> 00:08:58,130
+of times, you'll see that it'll add more notes.
+
+111
+00:08:58,130 --> 00:09:04,520
+And if I make this bigger, it's going to, you know, align horizontal, but it'll wrap when we when
+
+112
+00:09:04,520 --> 00:09:05,540
+we're on smaller screen.
+
+113
+00:09:05,550 --> 00:09:08,290
+So it's pretty much, you know, inherently responsive.
+
+114
+00:09:08,300 --> 00:09:15,770
+So we'll just leave it as is and now we can get rid of let's just undo that and that.
+
+115
+00:09:15,770 --> 00:09:19,520
+And I'm just going to leave one of these notes here for now.
+
+116
+00:09:19,730 --> 00:09:23,890
+But ultimately, we won't need it here because it's going to get inserted when we click add node.
+
+117
+00:09:24,140 --> 00:09:27,800
+OK, so we'll get into the JavaScript to be able to do that next.

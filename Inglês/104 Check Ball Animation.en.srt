@@ -1,0 +1,211 @@
+1
+00:00:00,180 --> 00:00:06,990
+OK, so now we want to create the animation for the ball to move back and forth when we click it, so
+
+2
+00:00:06,990 --> 00:00:09,720
+we're going to have two animation.
+
+3
+00:00:09,750 --> 00:00:12,360
+So let's create those will say keyframes.
+
+4
+00:00:12,630 --> 00:00:15,060
+This one is going to be called slide on.
+
+5
+00:00:15,750 --> 00:00:19,710
+And this is just going to have it go from here to here.
+
+6
+00:00:19,710 --> 00:00:25,800
+And we're going to do that by just changing the value of the translate x axis.
+
+7
+00:00:25,810 --> 00:00:31,880
+So we'll use a transform property and set to translate X to be further over.
+
+8
+00:00:32,640 --> 00:00:34,000
+We'll also scale it a bit.
+
+9
+00:00:34,020 --> 00:00:43,200
+So let's go ahead and say at zero percent of this animation, we want to transform and we're going to
+
+10
+00:00:43,200 --> 00:00:48,780
+set translate X because we're moving it on the X axis right to left or left to right.
+
+11
+00:00:48,810 --> 00:00:54,600
+In this case, we're going to start at zero and the scale is going to start at just one, which is what
+
+12
+00:00:54,600 --> 00:00:56,190
+it is by default.
+
+13
+00:00:56,700 --> 00:01:09,660
+And then at 50 percent, we want to set transform to translate X and go from zero to twenty pixels and
+
+14
+00:01:09,660 --> 00:01:15,840
+then set the scale to one point two and then at 100 percent.
+
+15
+00:01:18,600 --> 00:01:29,280
+So say 100 percent, we want to transform, translate acts and this is going to be 40 pixels and set
+
+16
+00:01:29,280 --> 00:01:31,910
+scale back to one.
+
+17
+00:01:32,490 --> 00:01:34,260
+OK, so that's the slide on.
+
+18
+00:01:34,830 --> 00:01:37,940
+The slide off is basically just going to be this backwards.
+
+19
+00:01:37,950 --> 00:01:42,960
+So I'm going to just copy this and let's set this to slide off.
+
+20
+00:01:43,530 --> 00:01:50,190
+And zero percent is going to be at 40 pixels because it's going to be at the end scale one.
+
+21
+00:01:50,520 --> 00:01:57,720
+And then second is going to be the same 20 pixels and then third or 100 percent, I should say, is
+
+22
+00:01:57,720 --> 00:02:01,350
+going to be back at zero with a scale of one.
+
+23
+00:02:01,670 --> 00:02:03,620
+OK, so pretty simple animations.
+
+24
+00:02:03,630 --> 00:02:07,430
+Now, we need to implement this because, you know, we haven't added it to anything.
+
+25
+00:02:08,010 --> 00:02:19,590
+So for the ball, let's add animation and we want to set this to slide off and say zero point three
+
+26
+00:02:19,590 --> 00:02:21,030
+seconds for the duration.
+
+27
+00:02:21,030 --> 00:02:24,150
+We want it to be linear and forwards.
+
+28
+00:02:26,540 --> 00:02:33,500
+All right, and you can see as soon as I save, since I'm using live server, it automatically reloads.
+
+29
+00:02:33,550 --> 00:02:35,260
+It shows you that animation.
+
+30
+00:02:35,570 --> 00:02:37,490
+Now when we click on it, we check it.
+
+31
+00:02:37,500 --> 00:02:39,350
+We want to run slide on.
+
+32
+00:02:39,980 --> 00:02:40,300
+Right.
+
+33
+00:02:40,370 --> 00:02:43,820
+So let's go right here.
+
+34
+00:02:44,300 --> 00:02:51,290
+In the way we can target this with our success is the toggle, which is the checkbox input when it's
+
+35
+00:02:51,290 --> 00:02:51,840
+checked.
+
+36
+00:02:52,000 --> 00:02:55,100
+OK, so Colin checked OK means in the checked state.
+
+37
+00:02:55,520 --> 00:02:59,990
+Then we want to add the label class and then the ball class.
+
+38
+00:03:00,530 --> 00:03:01,840
+That's what we want to animate.
+
+39
+00:03:02,270 --> 00:03:09,830
+OK, so this is basically by default it'll have the slide off, but when it's checked it'll run slide
+
+40
+00:03:09,830 --> 00:03:10,250
+on.
+
+41
+00:03:10,280 --> 00:03:20,750
+So let's set animation to slide on zero point three seconds, linear and forwards.
+
+42
+00:03:21,590 --> 00:03:23,840
+OK, so save that.
+
+43
+00:03:23,840 --> 00:03:28,460
+And now since the first one is checked, you'll see that it's pushed over to the side.
+
+44
+00:03:28,990 --> 00:03:31,340
+If I reload this, they're all going to be unchecked.
+
+45
+00:03:31,760 --> 00:03:38,990
+But now if I click that, click that, that, and then if I click it again, it removes the checked
+
+46
+00:03:38,990 --> 00:03:44,690
+and it runs this, which is slide off, which brings it back over because of where we're setting it
+
+47
+00:03:44,690 --> 00:03:46,310
+on the x axis.
+
+48
+00:03:47,780 --> 00:03:48,250
+All right.
+
+49
+00:03:48,260 --> 00:03:49,810
+So we have that part done.
+
+50
+00:03:49,820 --> 00:03:56,270
+Now, the only thing we have left is the logic because we don't want to be able to say good, fast and
+
+51
+00:03:56,270 --> 00:03:59,410
+cheap, because that's very rare that you get that.
+
+52
+00:03:59,420 --> 00:04:04,310
+So we'll be able to do like cheap and good or cheap and fast.
+
+53
+00:04:04,580 --> 00:04:07,010
+So we'll add a little bit of JavaScript to this next.

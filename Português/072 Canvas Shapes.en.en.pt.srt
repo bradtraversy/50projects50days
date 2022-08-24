@@ -1,0 +1,411 @@
+﻿1
+00:00:00,240 --> 00:00:05,580
+Tudo bem, então vamos começar em nosso JavaScript e estamos usando a API de tela, que é uma forma
+
+2
+00:00:05,580 --> 00:00:13,650
+para desenhar gráficos ou desenhar formas na tela usando JavaScript, e estamos usando as cinco telas pequenas
+
+3
+00:00:13,650 --> 00:00:14,210
+elemento.
+
+4
+00:00:15,000 --> 00:00:22,440
+Então, um exemplo básico aqui, podemos trazer nossa tela e, em seguida, criamos um contexto usando get context created
+
+5
+00:00:22,440 --> 00:00:23,520
+para adicionar contexto.
+
+6
+00:00:23,760 --> 00:00:29,820
+E então podemos chamar certos de que podemos definir certas propriedades e métodos, como o estilo do filme, definir o verde
+
+7
+00:00:30,210 --> 00:00:32,220
+Phil RACT criará um retângulo.
+
+8
+00:00:32,640 --> 00:00:35,300
+Os dois primeiros são o posicionamento.
+
+9
+00:00:35,310 --> 00:00:42,270
+Então é dez a partir do eixo x da tela e depois dez para baixo no eixo y.
+
+10
+00:00:42,630 --> 00:00:44,190
+A largura é 150.
+
+11
+00:00:44,190 --> 00:00:45,840
+A altura disso é 100.
+
+12
+00:00:46,280 --> 00:00:46,620
+Tudo bem.
+
+13
+00:00:46,630 --> 00:00:48,240
+Então eu só vou pegar isso.
+
+14
+00:00:49,020 --> 00:00:50,570
+Então, estamos trazendo lona.
+
+15
+00:00:50,580 --> 00:00:53,020
+Ele tem um ID de canvas.
+
+16
+00:00:53,020 --> 00:00:55,390
+Então traga isso e então criamos um contexto.
+
+17
+00:00:55,820 --> 00:01:03,090
+Agora, eu realmente quero desenhar um círculo, então eu vou ter uma função chamada Draw Circle e nós estamos
+
+18
+00:01:03,090 --> 00:01:07,330
+vai usar esta função no sorteio da versão final.
+
+19
+00:01:07,330 --> 00:01:10,590
+Um círculo vai receber um valor X em um valor Y.
+
+20
+00:01:10,590 --> 00:01:14,920
+Esse será o posicionamento na tela onde queremos desenhar o círculo.
+
+21
+00:01:15,390 --> 00:01:19,500
+Agora, se formos, acho que há um link aqui embaixo.
+
+22
+00:01:20,190 --> 00:01:20,450
+Sim.
+
+23
+00:01:20,520 --> 00:01:25,170
+Desenhar formas e ver caminhos.
+
+24
+00:01:26,550 --> 00:01:35,490
+E bem aqui, para desenhar um círculo, precisamos começar um caminho e depois criar um arco e o arco leva
+
+25
+00:01:35,490 --> 00:01:39,000
+no posicionamento onde você deseja colocá-lo, o raio do círculo.
+
+26
+00:01:39,900 --> 00:01:44,840
+Acho que este é o ângulo inicial e o ângulo final está bem aqui.
+
+27
+00:01:44,850 --> 00:01:48,260
+E então se você quiser no sentido horário ou anti-horário.
+
+28
+00:01:48,270 --> 00:01:50,370
+Então eu realmente vou.
+
+29
+00:01:51,990 --> 00:01:53,220
+Pegue isso.
+
+30
+00:01:57,130 --> 00:02:04,270
+Então vamos começar um caminho agora, os valores aqui, eu não quero isso é só isso é 75 sobre 75
+
+31
+00:02:04,270 --> 00:02:04,630
+baixa.
+
+32
+00:02:04,630 --> 00:02:12,610
+Eu quero que isso seja onde quer que X seja passado em Y e então o tamanho que eu vou ter em uma variável
+
+33
+00:02:12,610 --> 00:02:14,820
+chamado size, e isso será uma variável global.
+
+34
+00:02:14,830 --> 00:02:18,970
+Então aqui em cima, vou dizer let size e definir isso para 20.
+
+35
+00:02:20,500 --> 00:02:27,340
+OK, então isso será passado e, em seguida, zero para o início e, em seguida, o fim será sim.
+
+36
+00:02:27,340 --> 00:02:32,880
+Math dot pi vezes dois e então você não precisa passar nada aqui.
+
+37
+00:02:33,550 --> 00:02:38,780
+Então, apenas fazendo isso, se dermos uma olhada, não fará nada porque ainda não preenchemos o círculo.
+
+38
+00:02:38,830 --> 00:02:46,660
+Então, o que vou fazer é definir uma cor no círculo primeiro através do ponto e depois preencher o estilo.
+
+39
+00:02:47,170 --> 00:02:52,330
+E vou definir isso para uma variável chamada color, que também vou configurar aqui, porque
+
+40
+00:02:52,330 --> 00:02:55,540
+queremos que isso seja acessível fora desta função.
+
+41
+00:02:55,880 --> 00:03:03,040
+Então a cor inicialmente fica toda preta e então vamos preencher o círculo.
+
+42
+00:03:03,040 --> 00:03:04,510
+Então pegue nosso contexto.
+
+43
+00:03:04,510 --> 00:03:05,830
+E há um método chamado preenchimento.
+
+44
+00:03:06,340 --> 00:03:08,920
+Agora, se eu salvar isso, OK, temos que chamar a função.
+
+45
+00:03:10,210 --> 00:03:11,800
+Vamos chamar, desenhar, circular.
+
+46
+00:03:13,300 --> 00:03:17,150
+E digamos que queremos começar com cem acima e 200 abaixo.
+
+47
+00:03:17,710 --> 00:03:18,580
+Então salve isso.
+
+48
+00:03:18,580 --> 00:03:21,190
+E agora vai traçar um círculo ou desenhar um círculo.
+
+49
+00:03:21,460 --> 00:03:29,020
+Cem no eixo x e 200 abaixo no Y e isso está dentro da tela, não da página.
+
+50
+00:03:29,980 --> 00:03:30,510
+Tudo bem.
+
+51
+00:03:30,520 --> 00:03:38,650
+Agora, também queremos ser capazes de desenhar linhas, então digamos função, desenhe uma linha.
+
+52
+00:03:40,480 --> 00:03:47,680
+E isso vai levar na mudança para as posições X e Y, como para onde queremos ir e
+
+53
+00:03:47,680 --> 00:03:50,240
+também de onde queremos traçar a linha em dois.
+
+54
+00:03:50,500 --> 00:03:55,810
+Então o que vai passar é X1 e Y um.
+
+55
+00:03:56,260 --> 00:03:59,020
+Então essa será a mudança para X1 e por quê.
+
+56
+00:03:59,020 --> 00:04:04,310
+E então a linha para a qual desenha a linha será X para e Y dois.
+
+57
+00:04:04,840 --> 00:04:05,250
+Tudo bem.
+
+58
+00:04:05,260 --> 00:04:17,410
+Então aqui nós precisamos começar novamente um caminho, então comece o caminho e então vamos fazer X ponto mover dois e isso é
+
+59
+00:04:17,410 --> 00:04:19,830
+vai ser x1 y um.
+
+60
+00:04:19,840 --> 00:04:21,780
+Então isso vai se mover para uma posição específica.
+
+61
+00:04:21,790 --> 00:04:23,710
+Não vai traçar nada ou desenhar nada.
+
+62
+00:04:23,710 --> 00:04:24,820
+Ele só vai se mover para isso.
+
+63
+00:04:25,300 --> 00:04:33,090
+Então vamos dizer que é a linha dois e isso vai para X dois e Y dois.
+
+64
+00:04:33,460 --> 00:04:33,910
+Tudo bem.
+
+65
+00:04:33,910 --> 00:04:42,100
+Agora precisamos querer aplicar uma cor, então fazemos isso com X pontos e estilo de traço.
+
+66
+00:04:43,060 --> 00:04:46,500
+Então o acidente vascular cerebral é como um tipo de borda.
+
+67
+00:04:46,510 --> 00:04:48,820
+Então, quando usamos uma linha, estamos usando um traço.
+
+68
+00:04:49,150 --> 00:04:53,680
+Assim, o estilo dos traços será da mesma cor do círculo.
+
+69
+00:04:53,690 --> 00:04:57,970
+Então, basicamente a cor global, que começará como preto, seremos capazes de
+
+70
+00:04:57,970 --> 00:05:03,220
+em última análise, escolha nossa cor aqui, mas ela começará como preto e depois a largura da linha.
+
+71
+00:05:03,220 --> 00:05:12,880
+Então digamos que é uma linha com e vamos definir isso para uma variável de tamanho, que é isso, você
+
+72
+00:05:12,880 --> 00:05:14,230
+sabe, vinte para começar.
+
+73
+00:05:14,980 --> 00:05:18,730
+E então, finalmente, para realmente desenhar a linha que precisamos chamar de traço.
+
+74
+00:05:18,730 --> 00:05:21,070
+Então traço de ponto.
+
+75
+00:05:22,060 --> 00:05:29,680
+E então vamos descer aqui e vamos dizer desenhar uma linha e vamos dizer, vamos começar 300 de novo no x
+
+76
+00:05:29,680 --> 00:05:30,250
+eixo.
+
+77
+00:05:30,250 --> 00:05:32,160
+Trezentos abaixo no eixo Y.
+
+78
+00:05:32,770 --> 00:05:38,080
+Então esse é basicamente o movimento para o qual você pode pensar como tirar a caneta do papel.
+
+79
+00:05:38,080 --> 00:05:39,580
+Você está se movendo para um determinado local.
+
+80
+00:05:39,760 --> 00:05:43,330
+Os segundos dois argumentos que estamos passando são a linha dois.
+
+81
+00:05:43,330 --> 00:05:44,680
+Então é isso que a caneta para baixo.
+
+82
+00:05:44,680 --> 00:05:48,590
+Então vamos dizer que vamos de 300 para 500 salvando isso.
+
+83
+00:05:48,590 --> 00:05:50,980
+E eu posso ver que você tem uma linha começa.
+
+84
+00:05:50,980 --> 00:05:55,330
+Passamos para trezentos e trezentos e depois baixamos de 300 para 500.
+
+85
+00:05:57,070 --> 00:05:57,480
+Tudo bem.
+
+86
+00:05:57,490 --> 00:06:03,460
+Então, é claro, você sabe, podemos mudar se quisermos fazer como uma linha diagonal.
+
+87
+00:06:03,970 --> 00:06:09,370
+Poderíamos mudar isso para duzentos, algo assim.
+
+88
+00:06:09,640 --> 00:06:11,950
+Agora, na verdade, não vamos chamá-los assim.
+
+89
+00:06:11,950 --> 00:06:16,480
+Queremos chamá-los quando tivermos nosso evento de maior movimento, porque será dinâmico.
+
+90
+00:06:17,200 --> 00:06:17,920
+Tudo bem.
+
+91
+00:06:18,370 --> 00:06:26,080
+Uma das coisas que eu quero fazer aqui são os valores X e os valores Y.
+
+92
+00:06:26,080 --> 00:06:33,130
+Eu quero que eles sejam globais também, porque nós vamos, você sabe, usá-los em vários lugares
+
+93
+00:06:33,670 --> 00:06:34,870
+e reatribuindo-os.
+
+94
+00:06:34,870 --> 00:06:37,330
+Então eu vou inicializar o X.
+
+95
+00:06:37,420 --> 00:06:41,160
+Diremos apenas let X e diremos let Y.
+
+96
+00:06:42,100 --> 00:06:43,690
+Então eles estão indefinidos agora.
+
+97
+00:06:44,740 --> 00:06:45,370
+Tudo bem.
+
+98
+00:06:45,370 --> 00:06:46,920
+E eu acho isso bom.
+
+99
+00:06:46,930 --> 00:06:53,020
+Então, no próximo vídeo, o que vamos fazer é começar a lidar com a maioria dos eventos, como o movimento do mouse.
+
+100
+00:06:53,020 --> 00:06:54,190
+Queremos poder.
+
+101
+00:06:54,620 --> 00:07:00,890
+Queremos criar nosso círculo e linhas e queremos saber se o botão está pressionado ou não, também, para
+
+102
+00:07:00,890 --> 00:07:03,650
+movendo porque só queremos derrubar nossos moisés.
+
+103
+00:07:03,950 --> 00:07:06,260
+Então vamos entrar nesse assunto no próximo vídeo.

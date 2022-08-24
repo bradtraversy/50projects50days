@@ -1,0 +1,231 @@
+﻿1
+00:00:00,300 --> 00:00:04,950
+OK, então vamos começar no JavaScript, que vai ser bem fácil, e eu desafio
+
+2
+00:00:04,950 --> 00:00:07,690
+você tentar fazer isso sozinho de antemão.
+
+3
+00:00:08,160 --> 00:00:14,790
+Basicamente, a gente precisa trazer todo o conteúdo, que são essas imagens aqui com o
+
+4
+00:00:14,790 --> 00:00:15,860
+classe de conteúdo.
+
+5
+00:00:15,870 --> 00:00:17,970
+Portanto, o seletor de consulta all trará todos aqueles.
+
+6
+00:00:17,970 --> 00:00:22,790
+Você também deseja trazer todos os itens da lista e, em seguida, adicionar um ouvinte de evento em cada um deles.
+
+7
+00:00:23,100 --> 00:00:29,310
+OK, então você pode querer fazer um loop com um for each e adicionar um ouvinte de evento e então você quer,
+
+8
+00:00:29,640 --> 00:00:35,790
+você sabe, adicione a classe de ativo a qualquer um que você clicar e também adicione a classe de show a qualquer
+
+9
+00:00:36,030 --> 00:00:39,240
+dessas imagens ou qualquer conteúdo que deva ser exibido.
+
+10
+00:00:39,570 --> 00:00:48,120
+Então, digamos const contents e usamos document got query selector all porque é mais de um.
+
+11
+00:00:48,120 --> 00:00:50,340
+Vamos selecionar a classe de conteúdo.
+
+12
+00:00:50,640 --> 00:01:00,240
+E então vamos também pegar no NAV você vai querer todos os itens da lista e vamos chamar isso de itens da lista
+
+13
+00:01:01,500 --> 00:01:04,810
+e pegaremos os itens da lista e passaremos por eles.
+
+14
+00:01:04,830 --> 00:01:12,300
+Então, para cada e vamos passar aqui e a função de seta e dizer para cada item.
+
+15
+00:01:12,660 --> 00:01:14,340
+E também queremos obter o índice.
+
+16
+00:01:14,340 --> 00:01:16,350
+Então eu vou usar IDEX aqui.
+
+17
+00:01:16,370 --> 00:01:20,460
+Esta deve ser uma seta gorda e então vamos adicionar uma estrela sem eventos.
+
+18
+00:01:20,460 --> 00:01:31,230
+Então adicione eventless no item que queremos ouvir um clique e em Click vamos primeiro
+
+19
+00:01:31,230 --> 00:01:37,010
+de tudo, esconda todas as classes de show ou devo dizer, remova todas as classes de show e active.
+
+20
+00:01:37,350 --> 00:01:39,110
+Então vamos ter duas funções diferentes.
+
+21
+00:01:39,120 --> 00:01:46,320
+Isso será hyd todo o conteúdo e digamos que oculta todos os itens.
+
+22
+00:01:47,190 --> 00:01:49,830
+OK, então vamos descer aqui e criar essas funções.
+
+23
+00:01:49,830 --> 00:01:52,020
+Portanto, esconda todo o conteúdo.
+
+24
+00:01:53,040 --> 00:01:57,420
+E o que vamos fazer aqui é pegar o conteúdo e depois para cada um deles.
+
+25
+00:01:58,350 --> 00:02:07,890
+Então para cada conteúdo, que é cada div com a classe ou me desculpe, cada imagem com a classe de conteúdo.
+
+26
+00:02:07,900 --> 00:02:08,210
+Certo.
+
+27
+00:02:08,640 --> 00:02:09,000
+Sim.
+
+28
+00:02:09,010 --> 00:02:10,260
+Então classe de conteúdo.
+
+29
+00:02:10,260 --> 00:02:11,400
+Trouxemos isso aqui.
+
+30
+00:02:11,550 --> 00:02:18,720
+Agora estamos fazendo um loop e queremos pegar o conteúdo atual na iteração e remover
+
+31
+00:02:18,720 --> 00:02:19,440
+aquela aula.
+
+32
+00:02:20,520 --> 00:02:24,390
+Então a classe de estrela remove do show.
+
+33
+00:02:25,560 --> 00:02:37,860
+OK, e então vamos copiar isso e vamos ocultar todos os itens e falar sobre cada um dos itens da lista,
+
+34
+00:02:38,650 --> 00:02:44,760
+você vai mudar isso para item e vamos remover a classe de active.
+
+35
+00:02:45,450 --> 00:02:49,380
+OK, então eu salvo isso e vou e clico em um deles.
+
+36
+00:02:49,380 --> 00:02:54,420
+Você verá que não há nenhuma classe ativa agora em nenhum deles porque nenhum deles é roxo e há
+
+37
+00:02:54,420 --> 00:03:00,210
+nenhuma imagem aparecendo porque não tem mais show, não tem mais aula de show.
+
+38
+00:03:00,210 --> 00:03:03,000
+E a classe show é o que torna a opacidade uma.
+
+39
+00:03:03,240 --> 00:03:05,330
+A opacidade é zero por padrão.
+
+40
+00:03:05,760 --> 00:03:12,630
+Então, depois de inicialmente ocultar esses, vamos pegar o item em que clicamos e vamos pegar a lista de classes
+
+41
+00:03:12,630 --> 00:03:16,440
+e adicione a ele a classe de active.
+
+42
+00:03:19,250 --> 00:03:27,320
+Então, se eu clicar neste aqui, você verá que isso está ativo, isso está ativo e assim por diante, e então
+
+43
+00:03:27,320 --> 00:03:32,560
+também queremos adicionar a classe de show ao conteúdo correto.
+
+44
+00:03:32,690 --> 00:03:41,600
+Então aqui, digamos conteúdo e lembre-se, conteúdo é uma lista de nós, então eu posso acessar zero um o que for
+
+45
+00:03:41,600 --> 00:03:42,620
+índice que eu quero.
+
+46
+00:03:42,920 --> 00:03:49,330
+Eu quero usar o índice deste foreach para que o primeiro mostre o primeiro segundo item mostre
+
+47
+00:03:49,340 --> 00:03:50,520
+um segundo e assim por diante.
+
+48
+00:03:50,810 --> 00:03:53,420
+Então, queremos adicionar essa classe de show a isso.
+
+49
+00:03:53,810 --> 00:03:55,870
+Então agora começamos aqui.
+
+50
+00:03:55,910 --> 00:03:59,690
+Isso já está ativo porque, você sabe, nós o temos aqui.
+
+51
+00:04:00,560 --> 00:04:03,770
+E então, se clicarmos no segundo, ele estará ativo.
+
+52
+00:04:03,770 --> 00:04:06,560
+É roxo e deve mostrar a segunda imagem.
+
+53
+00:04:06,800 --> 00:04:10,780
+OK, o segundo na lista de nós, este aqui mostrará o próximo.
+
+54
+00:04:10,800 --> 00:04:12,080
+Este vai mostrar aquele.
+
+55
+00:04:12,650 --> 00:04:18,800
+OK, então sempre mostrará o correto por causa do índice que estamos adicionando a essa classe de exibição
+
+56
+00:04:18,800 --> 00:04:19,410
+para.
+
+57
+00:04:20,210 --> 00:04:22,010
+OK, então espero que faça sentido.
+
+58
+00:04:22,730 --> 00:04:24,620
+Então te vejo no próximo vídeo.

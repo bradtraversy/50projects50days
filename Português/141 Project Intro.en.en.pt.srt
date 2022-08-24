@@ -1,0 +1,59 @@
+﻿1
+00:00:00,300 --> 00:00:05,280
+Tudo bem, neste projeto, vamos construir um controle deslizante de alcance personalizado, então com uma equipe de cinco,
+
+2
+00:00:05,280 --> 00:00:11,420
+você tem um tipo de intervalo de entrada, mas não pode realmente estilizá-lo.
+
+3
+00:00:11,430 --> 00:00:17,640
+Você basicamente tem que dizer ao navegador que você não quer que ele apareça e então você pode estilizar a faixa,
+
+4
+00:00:17,640 --> 00:00:22,860
+que é essa parte aqui, e você pode estilizar o polegar, que é essa parte aqui por conta própria.
+
+5
+00:00:22,860 --> 00:00:27,570
+Então é isso que vamos fazer e vai ser um pouco de sucesso porque temos que prestar atenção
+
+6
+00:00:27,570 --> 00:00:31,710
+para qual navegador ele está sendo exibido porque é diferente em cada navegador.
+
+7
+00:00:31,720 --> 00:00:39,840
+Portanto, teremos o prefixo do kit da Web para, você sabe, emoji de safári e cromo da A e da Microsoft.
+
+8
+00:00:40,140 --> 00:00:45,870
+E então vamos adicionar algum JavaScript para este rótulo para que ele mostre qualquer que seja o valor
+
+9
+00:00:45,870 --> 00:00:47,220
+de zero a 100.
+
+10
+00:00:47,220 --> 00:00:52,470
+Mas não é só isso, vai calcular o que vai ser isso é posicionado absoluto e é
+
+11
+00:00:52,470 --> 00:00:59,430
+vai calcular o valor da esquerda para movê-lo junto com o polegar com uma bolinha aqui.
+
+12
+00:00:59,910 --> 00:01:00,330
+Tudo bem.
+
+13
+00:01:00,330 --> 00:01:05,200
+Portanto, é apenas um pequeno widget que você pode usar em seus aplicativos e outras coisas em seus usos.
+
+14
+00:01:05,550 --> 00:01:05,900
+Tudo bem.
+
+15
+00:01:05,910 --> 00:01:07,200
+Então vamos em frente e começar.

@@ -1,0 +1,495 @@
+﻿1
+00:00:00,150 --> 00:00:05,880
+Tudo bem, então vamos começar nossa navegação com a marca Netflix aqui, então tenho meus produtos
+
+2
+00:00:05,910 --> 00:00:11,730
+Storrar eu tenho um link para a fonte CDN incrível porque nós estaremos usando dois ícones da fonte.
+
+3
+00:00:11,730 --> 00:00:12,300
+Incrível.
+
+4
+00:00:12,690 --> 00:00:16,190
+Então, no corpo, quem realmente chega ao título primeiro.
+
+5
+00:00:16,230 --> 00:00:22,650
+Então no título aqui e muda para Netflix, navegação móvel.
+
+6
+00:00:22,950 --> 00:00:24,290
+Esse é o nome do projeto.
+
+7
+00:00:24,690 --> 00:00:28,860
+E então aqui embaixo nós vamos primeiro ter nosso botão de abrir.
+
+8
+00:00:30,180 --> 00:00:32,100
+Então vamos adicionar um botão aqui.
+
+9
+00:00:32,430 --> 00:00:37,410
+E isso vai ter duas classes, NAV, Dash, BTN, que vão estar tanto no aberto quanto no
+
+10
+00:00:37,410 --> 00:00:45,150
+feche e abra o Dash BTN e vamos usar um ícone com a classe de fatos e depois um traço
+
+11
+00:00:45,150 --> 00:00:49,070
+Barzeh, que nos dará um menu de hambúrguer, ícone do menu de hambúrguer.
+
+12
+00:00:49,740 --> 00:00:55,140
+Então, abaixo disso, teremos a imagem, o logotipo, o logotipo da Netflix no meio
+
+13
+00:00:55,140 --> 00:00:55,860
+da página.
+
+14
+00:00:56,040 --> 00:00:58,080
+Também vai no próprio NAV.
+
+15
+00:00:58,080 --> 00:00:59,130
+Então teremos dois deles.
+
+16
+00:00:59,460 --> 00:01:06,600
+Mas digamos imagem com a classe de um logotipo e o AltX apenas dirá logotipo e então a fonte é
+
+17
+00:01:06,600 --> 00:01:08,490
+vai vir de um link remoto.
+
+18
+00:01:08,910 --> 00:01:13,080
+Você pode, claro, baixar qualquer logotipo ou qualquer imagem e colocá-lo aqui.
+
+19
+00:01:13,410 --> 00:01:19,950
+Mas vou fazer um link para esse logo da Netflix e depois vamos fazer um parágrafo com a classe de texto.
+
+20
+00:01:19,950 --> 00:01:23,910
+E eu só quero que isso diga a navegação móvel.
+
+21
+00:01:23,920 --> 00:01:26,310
+Portanto, este é apenas o conteúdo que ficará no meio.
+
+22
+00:01:26,310 --> 00:01:28,220
+E agora o logotipo é enorme.
+
+23
+00:01:28,230 --> 00:01:34,500
+Na verdade, vou adicionar o logotipo bem rápido da folha de estilo e, digamos, com cento e
+
+24
+00:01:34,530 --> 00:01:35,670
+cinquenta pixels.
+
+25
+00:01:36,660 --> 00:01:37,020
+Tudo bem.
+
+26
+00:01:37,020 --> 00:01:42,810
+Só para podermos ver as coisas agora, embaixo disso, embaixo do parágrafo é onde vamos
+
+27
+00:01:42,810 --> 00:01:47,310
+ter nossa navegação vai ser três partes separadas que deslizam para fora.
+
+28
+00:01:47,310 --> 00:01:49,370
+Você vai ter o vermelho, branco e preto.
+
+29
+00:01:49,830 --> 00:01:54,120
+Então o que vamos fazer é ter três classes NAV.
+
+30
+00:01:54,120 --> 00:02:01,170
+O primeiro também terá nav dash black e depois dentro dele terá outra classe de nav
+
+31
+00:02:01,170 --> 00:02:10,700
+com uma classe de nav dash red e depois outra com nav e vamos para nav dash black, não black.
+
+32
+00:02:10,710 --> 00:02:11,970
+Já fizemos preto e branco.
+
+33
+00:02:12,930 --> 00:02:17,670
+Então o branco é para onde o conteúdo real vai, os links e outras coisas.
+
+34
+00:02:18,660 --> 00:02:23,370
+A primeira coisa que vou colocar aqui é o botão fechar para que tenha uma classe de nav btn igual a
+
+35
+00:02:23,370 --> 00:02:31,200
+abrir e, em seguida, vamos fechar o traço BTN também e usaremos o eFax para um traço.
+
+36
+00:02:32,370 --> 00:02:39,060
+OK, então há um botão de fechar e abaixo do botão haverá outra imagem para o nosso logotipo.
+
+37
+00:02:39,060 --> 00:02:42,720
+Então eu vou pegar isso aqui e colocar isso aqui.
+
+38
+00:02:45,310 --> 00:02:52,330
+OK, e então queremos nossos links ou nossos itens de menu, então vamos ter uma lista de você Alan Unnoted
+
+39
+00:02:52,330 --> 00:02:57,370
+com uma classe de lista e vamos fazer um aliado aqui com um link dentro dela.
+
+40
+00:02:57,560 --> 00:02:59,230
+Link não precisa ir a lugar nenhum.
+
+41
+00:02:59,800 --> 00:03:01,690
+E isso vai dizer equipes.
+
+42
+00:03:02,360 --> 00:03:04,210
+Nós vamos ter três aqui para começar.
+
+43
+00:03:04,210 --> 00:03:13,660
+Então, equipes, locais e, digamos, a vida na Netflix.
+
+44
+00:03:14,080 --> 00:03:16,630
+Agora, dentro disso, teremos um poço aninhado.
+
+45
+00:03:16,930 --> 00:03:19,060
+Então vamos colocar outro item de lista aqui.
+
+46
+00:03:19,060 --> 00:03:24,220
+Mas dentro dele terá um pool e um item de lista com um link.
+
+47
+00:03:25,210 --> 00:03:30,100
+E isso vai dizer a cultura Netflix.
+
+48
+00:03:30,100 --> 00:03:34,390
+Memmo, vamos fazer todas essas letras maiúsculas usando access, então não importa se você fizer isso
+
+49
+00:03:34,390 --> 00:03:35,860
+minúsculas ou maiúsculas.
+
+50
+00:03:38,020 --> 00:03:43,540
+Então vamos ver, temos isso e depois temos o equilíbrio entre vida profissional.
+
+51
+00:03:45,470 --> 00:03:46,450
+Então vamos fazer.
+
+52
+00:03:50,060 --> 00:03:58,580
+Inclusão e diversidade e blog.
+
+53
+00:04:00,080 --> 00:04:04,460
+Tudo bem, então esses são links, então não parece muito bom, mas vamos em frente e estilizar
+
+54
+00:04:04,460 --> 00:04:04,810
+Isso agora.
+
+55
+00:04:04,820 --> 00:04:05,960
+Então vamos pular aqui.
+
+56
+00:04:06,680 --> 00:04:09,860
+E não tenho certeza se teremos todo o sucesso neste vídeo.
+
+57
+00:04:09,860 --> 00:04:11,960
+Talvez tenhamos que fazer o resto no próximo.
+
+58
+00:04:11,960 --> 00:04:14,120
+Mas vamos começar aqui com as fontes.
+
+59
+00:04:14,120 --> 00:04:16,400
+Vou usar a fonte Mieuli.
+
+60
+00:04:17,120 --> 00:04:22,070
+Então é uma família de ponto de interrogação e defina isso para eles.
+
+61
+00:04:22,130 --> 00:04:25,910
+Você se inscreve e nós adicionamos isso aqui.
+
+62
+00:04:27,770 --> 00:04:32,240
+E talvez eu pudesse exibir a coluna de Fleck.
+
+63
+00:04:32,240 --> 00:04:32,930
+Isso é bom.
+
+64
+00:04:33,950 --> 00:04:35,960
+Altura 100 alturas da janela de visualização.
+
+65
+00:04:36,380 --> 00:04:42,140
+Nós realmente não precisamos de um estouro e não precisamos de margem zero porque queremos que seja,
+
+66
+00:04:42,140 --> 00:04:43,420
+você sabe, bem na borda aqui.
+
+67
+00:04:44,810 --> 00:04:46,300
+Então isso deve ser bom para o corpo.
+
+68
+00:04:46,910 --> 00:04:50,180
+O este texto que está na parte principal da página.
+
+69
+00:04:51,290 --> 00:04:52,850
+Eu quero que seja em maiúsculas.
+
+70
+00:04:52,850 --> 00:04:58,280
+Então, vamos dizer transformação de texto, defina isso para maiúsculas.
+
+71
+00:04:59,090 --> 00:05:01,720
+E então é isso, quero dizer, é praticamente isso para a página inteira.
+
+72
+00:05:01,730 --> 00:05:04,220
+Claro, você pode colocar o que quiser aqui.
+
+73
+00:05:05,360 --> 00:05:11,420
+Então nós temos, você sabe, onde está aqui em cima, a imagem no texto.
+
+74
+00:05:11,420 --> 00:05:15,530
+Mas você teria o conteúdo da sua página aqui e depois teria o menu aqui embaixo.
+
+75
+00:05:16,580 --> 00:05:20,330
+Então, a próxima coisa que quero fazer é o botão NAV, que é este aqui.
+
+76
+00:05:20,330 --> 00:05:22,880
+Eu quero posicioná-lo aqui, fazer com que pareça um pouco melhor.
+
+77
+00:05:23,270 --> 00:05:33,170
+Então, vamos adicionar o botão nav dash e vamos tirar as bordas da água.
+
+78
+00:05:33,170 --> 00:05:33,680
+Nenhum.
+
+79
+00:05:34,850 --> 00:05:37,070
+E isso se aplica a ambos os botões.
+
+80
+00:05:38,180 --> 00:05:39,350
+Tão entediado ou nenhum.
+
+81
+00:05:39,350 --> 00:05:41,630
+E então o fundo, queremos nos livrar desse cinza.
+
+82
+00:05:41,630 --> 00:05:44,000
+Então, vamos configurá-lo para transparente.
+
+83
+00:05:44,420 --> 00:05:47,450
+Também vamos garantir que o cursor seja um ponteiro.
+
+84
+00:05:47,450 --> 00:05:51,170
+E vamos definir o tamanho da fonte para um pouco maior.
+
+85
+00:05:51,170 --> 00:05:52,220
+Vinte pixels.
+
+86
+00:05:53,000 --> 00:05:55,160
+Então esse é o botão de navegação, que está em ambos.
+
+87
+00:05:55,170 --> 00:05:58,880
+Agora vamos fazer apenas o botão de abrir, então abra o botão de traço.
+
+88
+00:05:59,450 --> 00:06:03,110
+E para isso queremos posicionar esse fixo dentro da viewport.
+
+89
+00:06:03,380 --> 00:06:04,610
+Então posição fixa.
+
+90
+00:06:04,610 --> 00:06:10,880
+E eu quero que seja dez pixels do topo e dez pixels da esquerda que vai colocá-lo
+
+91
+00:06:10,880 --> 00:06:12,200
+bem aqui no canto.
+
+92
+00:06:14,030 --> 00:06:19,610
+Então, para o nav, lembre-se desses três NAVs aqui.
+
+93
+00:06:19,610 --> 00:06:26,240
+Então, vamos estilizar o nav e depois cada cor porque vai sair até um certo ponto
+
+94
+00:06:26,240 --> 00:06:27,920
+para que possamos ver todas as três cores.
+
+95
+00:06:28,370 --> 00:06:38,690
+Então, vamos fazer o nav primeiro para que a classe nav e essa seja a posição fixa e queremos que seja
+
+96
+00:06:38,690 --> 00:06:40,610
+direita, bem no canto superior.
+
+97
+00:06:40,610 --> 00:06:44,540
+Então, o zero superior deixou zero.
+
+98
+00:06:45,260 --> 00:06:47,510
+OK, então você verá que subirá se você salvar.
+
+99
+00:06:47,960 --> 00:06:51,620
+E então a altura disso será toda a janela de visualização.
+
+100
+00:06:51,620 --> 00:06:53,300
+Portanto, 100 alturas de viewport.
+
+101
+00:06:53,900 --> 00:06:54,380
+Tudo bem.
+
+102
+00:06:54,380 --> 00:07:02,990
+E então, até onde você sabe, o efeito deslizante aqui, a maneira como fazemos isso é com uma transição no
+
+103
+00:07:02,990 --> 00:07:11,270
+transform propriedade usando traduzir desculpa, traduzir efeitos X, você sabe, movendo-se ao longo do eixo X,
+
+104
+00:07:11,270 --> 00:07:13,040
+que é o eixo horizontal.
+
+105
+00:07:13,040 --> 00:07:18,860
+Então vamos adicionar uma transformação aqui e digamos que queremos traduzir no eixo x.
+
+106
+00:07:19,400 --> 00:07:24,830
+E para começar, queremos que fique bem à esquerda da tela, o que fará um negativo
+
+107
+00:07:24,830 --> 00:07:31,100
+cem por cento, o que o tira da tela agora para que ele entre.
+
+108
+00:07:31,100 --> 00:07:34,790
+O que vai acontecer é que vamos adicionar a classe de visível a cada um deles.
+
+109
+00:07:34,790 --> 00:07:36,380
+Eu só vou adicioná-lo manualmente agora.
+
+110
+00:07:36,380 --> 00:07:41,390
+Mas mais tarde, removeremos isso e faremos com JavaScript.
+
+111
+00:07:42,080 --> 00:07:46,340
+Mas só para que possamos ver, vamos definir visível em todos os três, certifique-se de que está em todos
+
+112
+00:07:46,340 --> 00:07:46,820
+três.
+
+113
+00:07:47,240 --> 00:07:49,640
+E então o que vamos fazer é pegar o NAV.
+
+114
+00:07:49,640 --> 00:07:58,970
+E se tiver uma classe de visible, vou copiar essa transformação aqui e configurá-la de volta ao seu
+
+115
+00:07:58,970 --> 00:08:00,740
+posição normal, que é zero.
+
+116
+00:08:01,280 --> 00:08:04,760
+Então agora podemos vê-lo porque visível está em todos os três.
+
+117
+00:08:05,930 --> 00:08:10,730
+Agora queremos que ele tenha uma transição suave quando alternar entre isso e isso e vice-versa.
+
+118
+00:08:10,730 --> 00:08:15,800
+Então, vamos definir uma transição na propriedade transform.
+
+119
+00:08:16,340 --> 00:08:19,760
+E vamos marcar três segundos para a duração.
+
+120
+00:08:19,760 --> 00:08:22,970
+Então, quanto tempo leva e, em seguida, facilite para fora.
+
+121
+00:08:23,450 --> 00:08:23,780
+Tudo bem.
+
+122
+00:08:23,780 --> 00:08:26,660
+Então eu acho que isso é tudo que vamos fazer neste vídeo.
+
+123
+00:08:26,660 --> 00:08:31,400
+E o próximo continuará com o estilo e então adicionaremos o JavaScript para que possamos fazer o
+
+124
+00:08:31,400 --> 00:08:33,560
+a função dos botões abrir e fechar.

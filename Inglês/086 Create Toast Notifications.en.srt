@@ -1,0 +1,731 @@
+1
+00:00:00,060 --> 00:00:05,310
+OK, so this is going to be a pretty quick project, we should be able to get it done in one video pretty
+
+2
+00:00:05,310 --> 00:00:05,760
+quickly.
+
+3
+00:00:05,770 --> 00:00:11,610
+So let's change the title here to toast notification.
+
+4
+00:00:13,770 --> 00:00:22,560
+And then down here, the way this is going to work is we'll have an idea with the idea of toasts.
+
+5
+00:00:23,490 --> 00:00:26,580
+And I want to be able to have multiple toasts.
+
+6
+00:00:26,590 --> 00:00:30,960
+So basically, you know, one can show up and then another can show on top of it, another on top of
+
+7
+00:00:30,960 --> 00:00:34,850
+it, and then they'll just disappear after whatever, three seconds.
+
+8
+00:00:35,280 --> 00:00:39,570
+So we'll have an idea of toasts, which we'll put right in the HTML.
+
+9
+00:00:39,570 --> 00:00:46,050
+And then the divs with the class of toast like this will actually get inserted via JavaScript.
+
+10
+00:00:46,050 --> 00:00:50,280
+But just for now, we'll go ahead and, you know, put some in here.
+
+11
+00:00:50,280 --> 00:00:56,550
+So we'll say hello world and we'll say toast number two.
+
+12
+00:00:57,780 --> 00:01:05,700
+And then I want to button give it a class of B10 and then let's give us an idea of button and just say
+
+13
+00:01:05,700 --> 00:01:08,880
+show notification.
+
+14
+00:01:10,950 --> 00:01:11,420
+All right.
+
+15
+00:01:11,430 --> 00:01:14,220
+So, I mean, we're just going to have it.
+
+16
+00:01:14,220 --> 00:01:15,450
+So we click the button.
+
+17
+00:01:15,450 --> 00:01:16,800
+It shows a random message.
+
+18
+00:01:16,800 --> 00:01:22,650
+But of course, you could do form validation or any kind of of, you know, any time you want to notify
+
+19
+00:01:22,650 --> 00:01:24,980
+the user of something, you could use this.
+
+20
+00:01:25,440 --> 00:01:26,790
+So let's do the styling.
+
+21
+00:01:27,270 --> 00:01:32,760
+The the font that I that we're going to use is Poppins, Floren Pop's favorite font.
+
+22
+00:01:33,720 --> 00:01:36,300
+And then wait 200, 400.
+
+23
+00:01:38,130 --> 00:01:39,240
+Add that here.
+
+24
+00:01:41,070 --> 00:01:43,140
+And a set of background color.
+
+25
+00:01:44,670 --> 00:01:46,290
+So background color.
+
+26
+00:01:46,290 --> 00:01:55,920
+We're going to set that to Rebecca Purple and we can just leave the rest of this stuff in the body and
+
+27
+00:01:55,920 --> 00:02:05,190
+let's style the button so we have a class of BTN going to give it a background color of white and give
+
+28
+00:02:05,190 --> 00:02:06,190
+it a color hopes.
+
+29
+00:02:06,720 --> 00:02:07,410
+That's fine.
+
+30
+00:02:07,830 --> 00:02:17,250
+Give it a color of Rebecca Purple and then let's give it a font family.
+
+31
+00:02:17,250 --> 00:02:26,670
+We want to inherit Poppins and then font weight is going to be bold and padding.
+
+32
+00:02:26,670 --> 00:02:32,460
+I'm going to add one REM and border radius.
+
+33
+00:02:33,420 --> 00:02:37,080
+Let's do five pixels and get rid of the border.
+
+34
+00:02:37,080 --> 00:02:41,550
+So border nun and cursor, we want that to be a pointer.
+
+35
+00:02:43,690 --> 00:02:50,860
+And then for the outline here, let's get rid of that, so the button focus state, we're going to set
+
+36
+00:02:50,860 --> 00:02:56,290
+the outline to none and then the active state.
+
+37
+00:02:56,300 --> 00:03:00,900
+So when we click it, I just wanted to scale down a little bit.
+
+38
+00:03:00,910 --> 00:03:10,000
+So set transform scale from one two point nine, eight cases are button.
+
+39
+00:03:11,440 --> 00:03:15,300
+And then let's start to let's do the toast.
+
+40
+00:03:15,310 --> 00:03:22,030
+So we have toast, plural, which is the container, and we want this to display fixed down in the bottom
+
+41
+00:03:22,030 --> 00:03:24,970
+corner and then we want to style each toast.
+
+42
+00:03:25,360 --> 00:03:33,900
+So let's start with the idea of Tostes that I give it an ID or class.
+
+43
+00:03:33,910 --> 00:03:34,040
+Yeah.
+
+44
+00:03:34,090 --> 00:03:35,070
+And I gave it an idea.
+
+45
+00:03:35,080 --> 00:03:38,920
+I mean, you could use a class if you if you want if you don't like styling with the ID.
+
+46
+00:03:39,910 --> 00:03:41,350
+But I'm not going to use the ID here.
+
+47
+00:03:41,350 --> 00:03:46,210
+And let's display first of all, position it.
+
+48
+00:03:46,210 --> 00:03:53,830
+So position this to be fixed and I want it in the bottom corner so we'll say from the bottom ten pixels
+
+49
+00:03:53,830 --> 00:03:56,440
+and from the right ten pixels.
+
+50
+00:03:56,440 --> 00:04:01,240
+And of course you could put this up but you could put them up at the top over here wherever you want.
+
+51
+00:04:01,540 --> 00:04:08,170
+But I want to put it in the bottom here and then let's do display flex.
+
+52
+00:04:09,040 --> 00:04:10,540
+And I don't want it to be a row.
+
+53
+00:04:10,540 --> 00:04:12,190
+I do want them to be on top of each other.
+
+54
+00:04:12,190 --> 00:04:15,250
+So we'll do Flex Direction column.
+
+55
+00:04:16,600 --> 00:04:22,030
+And I want to align to the end so we'll align items to flex and.
+
+56
+00:04:24,180 --> 00:04:30,580
+And that should be good for the for the container, so now let's style each individual toast.
+
+57
+00:04:32,310 --> 00:04:44,790
+So for that, let's set the background color to whites and we'll set the color to Rebecca Purple and
+
+58
+00:04:44,790 --> 00:04:50,810
+the border radius to five pixels and padding.
+
+59
+00:04:50,850 --> 00:04:56,910
+We're going to do one room, top and bottom to room, left and right, and let's separate them out.
+
+60
+00:04:56,910 --> 00:05:00,180
+So margin will be zero point five REM.
+
+61
+00:05:01,950 --> 00:05:02,340
+All right.
+
+62
+00:05:02,340 --> 00:05:06,460
+And obviously, you can style these however you want, but I think that's all right.
+
+63
+00:05:06,480 --> 00:05:12,980
+So now let's take these out of the HTML because these will be inserted with JavaScript.
+
+64
+00:05:13,650 --> 00:05:18,480
+So basically you would have, you know, your Web page or form whatever it is, and then you'd have
+
+65
+00:05:18,930 --> 00:05:24,460
+this just somewhere on the page so that your toes can display and its display.
+
+66
+00:05:25,530 --> 00:05:25,920
+I'm sorry.
+
+67
+00:05:25,920 --> 00:05:27,210
+It's positioned fixed.
+
+68
+00:05:27,210 --> 00:05:30,990
+So it's always going to be, you know, at the bottom corner or wherever you decide to put it.
+
+69
+00:05:31,950 --> 00:05:37,170
+So in our script here, let's bring in the button so we can add in the event listener on it.
+
+70
+00:05:37,650 --> 00:05:43,390
+So Button set that to document dot get element vidi.
+
+71
+00:05:43,410 --> 00:05:45,090
+And we gave that an idea of button.
+
+72
+00:05:46,560 --> 00:05:50,070
+Let's also bring in the container or Tostes.
+
+73
+00:05:55,490 --> 00:06:04,040
+OK, and then I'm just going to have an array of random messages here, so I'm just going to do message
+
+74
+00:06:05,120 --> 00:06:08,540
+one, two, three and four.
+
+75
+00:06:14,250 --> 00:06:18,770
+I mean, we don't have to do this, I can't count, we don't have to do this.
+
+76
+00:06:18,770 --> 00:06:22,280
+We could just have like an argument, a message passed and as an argument.
+
+77
+00:06:22,280 --> 00:06:24,160
+But this just makes it a little bit more fun.
+
+78
+00:06:24,980 --> 00:06:27,550
+So we have an array of just random messages.
+
+79
+00:06:27,560 --> 00:06:31,190
+Now we want to take our button and we want to add an event.
+
+80
+00:06:31,190 --> 00:06:33,920
+Listener, listen for a click.
+
+81
+00:06:35,390 --> 00:06:45,890
+And run a function here and let's call a function called create notification, if you want to leave
+
+82
+00:06:45,890 --> 00:06:48,590
+at any time, pause the video and do this.
+
+83
+00:06:48,590 --> 00:06:50,930
+Just try to do this yourself without any guidance.
+
+84
+00:06:51,350 --> 00:06:52,630
+I would invite you to do that.
+
+85
+00:06:53,900 --> 00:06:56,840
+So let's create create notification.
+
+86
+00:06:58,910 --> 00:07:02,060
+And inside here, let's just make sure this is working.
+
+87
+00:07:02,060 --> 00:07:08,750
+So I'm just going to console log one, two, three and see console good.
+
+88
+00:07:08,750 --> 00:07:11,870
+So that we know that's working now in here.
+
+89
+00:07:11,870 --> 00:07:19,220
+We want to create the notification div because remember it's going to be a div with the class of toast.
+
+90
+00:07:19,220 --> 00:07:28,130
+So let's say consed we'll call this note if said it to on the document object, we have a method called
+
+91
+00:07:28,130 --> 00:07:34,700
+create element to create any kind of HTML element we want, we want this to be a div and then we want
+
+92
+00:07:34,700 --> 00:07:36,150
+to add a class to that.
+
+93
+00:07:36,680 --> 00:07:47,060
+So let's say notify DOT class list add and we're going to add tost class of toast.
+
+94
+00:07:47,510 --> 00:07:54,490
+We also need to decide what we want to put inside the div as the text is the message so we can say notify
+
+95
+00:07:54,490 --> 00:07:59,120
+DOT in our text and you could set this to anything you want.
+
+96
+00:07:59,540 --> 00:08:00,890
+He could just put a string here.
+
+97
+00:08:01,250 --> 00:08:06,310
+Or you could you could have it come in as an argument.
+
+98
+00:08:06,320 --> 00:08:13,430
+We're going to have a separate function called get random message, which I'll go outside of this function
+
+99
+00:08:13,430 --> 00:08:14,300
+now and create.
+
+100
+00:08:15,680 --> 00:08:17,210
+And it's pretty simple.
+
+101
+00:08:17,220 --> 00:08:19,910
+So we just want to we have our array up here.
+
+102
+00:08:20,300 --> 00:08:27,620
+So let's just return from this function messages, which is our array with with a random index.
+
+103
+00:08:27,770 --> 00:08:31,300
+So, you know, we can do zero one, whatever.
+
+104
+00:08:31,460 --> 00:08:37,970
+So let's do math dot floor to round down math, dot random.
+
+105
+00:08:39,520 --> 00:08:41,130
+So that'll give us a random decimal.
+
+106
+00:08:41,150 --> 00:08:49,670
+We want to multiply that by messages at length so that the you know, however many elements or items
+
+107
+00:08:49,670 --> 00:08:51,670
+are in the messages array.
+
+108
+00:08:52,130 --> 00:08:53,960
+So it'll give us a random message.
+
+109
+00:08:53,960 --> 00:09:00,680
+And then to put it into the dorm, we're going to take the container ships, take the container and
+
+110
+00:09:01,250 --> 00:09:03,710
+let's append why it's doing that.
+
+111
+00:09:03,720 --> 00:09:04,870
+I bring in the container.
+
+112
+00:09:04,880 --> 00:09:06,170
+Oh, I called it Tostes.
+
+113
+00:09:06,170 --> 00:09:06,670
+That's right.
+
+114
+00:09:07,400 --> 00:09:16,880
+So Tostes, which is basically the toast container we're going to append child and we want to append
+
+115
+00:09:16,880 --> 00:09:18,660
+into that the notification.
+
+116
+00:09:19,160 --> 00:09:19,550
+All right.
+
+117
+00:09:19,550 --> 00:09:25,130
+So if I see that I come over here and I click, I see message to message one, message three.
+
+118
+00:09:25,130 --> 00:09:28,470
+So it's just going to be random and they just keep adding up.
+
+119
+00:09:28,810 --> 00:09:31,460
+Now, obviously, you're not going to want that.
+
+120
+00:09:31,460 --> 00:09:32,870
+You don't want them to stay there.
+
+121
+00:09:34,850 --> 00:09:38,990
+There's a few things you could do, you could put like an X button so you can close it up, but we're
+
+122
+00:09:38,990 --> 00:09:42,170
+just going to make it disappear after a certain amount of time.
+
+123
+00:09:42,200 --> 00:09:52,670
+So after the the toast is put into the dorm, we're going to run a set time out, which takes in a function.
+
+124
+00:09:55,340 --> 00:10:02,690
+And we just want to remove it from the dorm completely, so we'll take our notification and remove or
+
+125
+00:10:02,690 --> 00:10:08,360
+just remove it from the dorm now set time out takes a second argument of the time that you want to wait
+
+126
+00:10:08,360 --> 00:10:10,070
+until you run the function.
+
+127
+00:10:10,430 --> 00:10:14,140
+So we're going to wait 300 milliseconds, which is three seconds.
+
+128
+00:10:14,510 --> 00:10:20,780
+So if I save that and I click show notification a few times after three seconds, the first one goes,
+
+129
+00:10:20,780 --> 00:10:22,140
+you know, then the second, third.
+
+130
+00:10:23,090 --> 00:10:28,300
+So even if there is a bunch of messages, they're all going to disappear, which is what we want.
+
+131
+00:10:28,670 --> 00:10:31,970
+Now, in reality, you're probably not going to do like a random message.
+
+132
+00:10:31,970 --> 00:10:34,620
+You want a specific message when you call this function.
+
+133
+00:10:34,970 --> 00:10:38,930
+So what we could do is pass in something like this.
+
+134
+00:10:40,520 --> 00:10:45,110
+This is invalid data or something like that.
+
+135
+00:10:45,740 --> 00:10:50,570
+And then we could pass in here as an as a parameter, a message.
+
+136
+00:10:51,080 --> 00:10:59,780
+And what we'll do is set that to null by default so that down here in the inner text, we can say if
+
+137
+00:10:59,780 --> 00:11:05,030
+message, then show the message or else get a random message.
+
+138
+00:11:05,330 --> 00:11:09,590
+So now if I click show notification, it's going to give us this is invalid data because that's what
+
+139
+00:11:09,590 --> 00:11:10,670
+we passed in here.
+
+140
+00:11:11,210 --> 00:11:17,330
+And you would probably you know, you would only call this once and we could also and I'm just kind
+
+141
+00:11:17,330 --> 00:11:18,740
+of just winging it here.
+
+142
+00:11:18,740 --> 00:11:19,940
+I didn't plan on doing this.
+
+143
+00:11:19,940 --> 00:11:24,440
+But just to give you a better idea of how you would actually do this, because you wouldn't actually
+
+144
+00:11:24,440 --> 00:11:26,330
+do random messages, I don't think.
+
+145
+00:11:27,110 --> 00:11:33,800
+But we could do a type as well, like pass in a type which will just set to null by default.
+
+146
+00:11:35,000 --> 00:11:38,030
+And a type could be like a CSFs class.
+
+147
+00:11:38,030 --> 00:11:41,150
+So we could actually copy that down.
+
+148
+00:11:41,150 --> 00:11:42,590
+And let's say add.
+
+149
+00:11:44,720 --> 00:11:58,760
+So we'll do say if there's a type, then add that type as a class else, then else then I guess set
+
+150
+00:11:58,760 --> 00:12:13,490
+it to like info and then we could go on our success and we could say tost dot info.
+
+151
+00:12:14,360 --> 00:12:15,680
+So it should be a class.
+
+152
+00:12:16,640 --> 00:12:23,870
+So tost info pops and we could take the color up here.
+
+153
+00:12:25,130 --> 00:12:29,930
+And no, I don't want to duplicate it, I want to bring it down into here.
+
+154
+00:12:29,930 --> 00:12:33,200
+So that'll be the info and then we'll take that.
+
+155
+00:12:35,180 --> 00:12:45,890
+Let's do a success class and we'll make that green and we could take those who could take this one here
+
+156
+00:12:45,890 --> 00:12:50,180
+and call this error and make that red.
+
+157
+00:12:53,690 --> 00:12:57,090
+So right now, if I see this, it's going to it's going to be purple.
+
+158
+00:12:57,290 --> 00:12:58,820
+It should have a class of info.
+
+159
+00:12:58,820 --> 00:13:06,230
+But if I were to add in here a type of, let's say, success.
+
+160
+00:13:07,880 --> 00:13:15,150
+Now they're green, so we have the ability to do that, another thing we could do is just for fun is
+
+161
+00:13:15,470 --> 00:13:18,260
+have some random types, just like we did with the messages.
+
+162
+00:13:18,260 --> 00:13:24,890
+So we'll see CONSE types and we'll set that to an array and let's say info
+
+163
+00:13:27,200 --> 00:13:28,390
+success.
+
+164
+00:13:29,660 --> 00:13:31,550
+And it was the other one error.
+
+165
+00:13:32,570 --> 00:13:43,700
+And we could create a function just like this to get random, get a random type and just take from the
+
+166
+00:13:43,700 --> 00:13:47,280
+types array of random random item.
+
+167
+00:13:47,450 --> 00:13:52,340
+Actually, one thing we want to do is make sure that when we get the types we use, the types, the
+
+168
+00:13:52,340 --> 00:13:57,020
+length here, or else it's going to be because there's more messages and types.
+
+169
+00:13:57,710 --> 00:14:04,310
+And then where we have this ternary where we're saying, you know, if there is a type and use that,
+
+170
+00:14:04,310 --> 00:14:08,690
+if not use enfolds change info to get random type.
+
+171
+00:14:10,460 --> 00:14:14,090
+Now at the moment we have this is invalid data and success.
+
+172
+00:14:14,090 --> 00:14:16,300
+Pastan, which actually doesn't make sense.
+
+173
+00:14:16,310 --> 00:14:18,830
+That should probably be error because that's that's an error.
+
+174
+00:14:19,190 --> 00:14:24,050
+But if we take out both of these and we just call create notification, then everything's random.
+
+175
+00:14:24,630 --> 00:14:30,470
+So the message is random and the class or the type is also random.
+
+176
+00:14:31,720 --> 00:14:37,720
+All right, so, I mean, the random stuff is it's just for fun, but you can see what how you would
+
+177
+00:14:37,720 --> 00:14:39,670
+actually add this in your application.
+
+178
+00:14:39,670 --> 00:14:44,860
+If you wanted to add these little tost messages, maybe you'd have some kind of form validation.
+
+179
+00:14:44,860 --> 00:14:51,340
+And, you know, if you're if the name isn't included or whatever, you could go ahead and run create
+
+180
+00:14:51,340 --> 00:14:54,100
+notification with a specific type and message.
+
+181
+00:14:54,550 --> 00:14:54,910
+All right.
+
+182
+00:14:54,920 --> 00:14:55,690
+So that's it, guys.
+
+183
+00:14:55,690 --> 00:14:59,370
+Hopefully you enjoyed this little project and we'll jump into the next one.

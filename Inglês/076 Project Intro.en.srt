@@ -1,0 +1,63 @@
+1
+00:00:00,120 --> 00:00:04,350
+All right, so in this project, we're going to build a content placeholder and you can see this just
+
+2
+00:00:04,350 --> 00:00:11,190
+looks like an ordinary card, has an image, some text, a user image or an author image and and some
+
+3
+00:00:11,190 --> 00:00:11,610
+data.
+
+4
+00:00:11,850 --> 00:00:17,850
+So if I reload or we come to this page, you're going to see this cool gradient animation that loads
+
+5
+00:00:17,850 --> 00:00:21,130
+in about two and a half seconds and then the content comes in.
+
+6
+00:00:21,570 --> 00:00:26,910
+So the way that we're going to approach this is we're first going to build out just the card with HTML
+
+7
+00:00:26,910 --> 00:00:27,680
+access.
+
+8
+00:00:28,050 --> 00:00:34,950
+Then we're going to create this animation with access using basically just modifying the background
+
+9
+00:00:34,950 --> 00:00:36,740
+position of a linear gradient.
+
+10
+00:00:37,080 --> 00:00:43,050
+And then we're going to have JavaScript insert the content and the content will just be hardcoded in
+
+11
+00:00:43,050 --> 00:00:43,790
+the JavaScript.
+
+12
+00:00:43,800 --> 00:00:46,800
+But of course you could fetch the data from some kind of API.
+
+13
+00:00:47,190 --> 00:00:47,630
+All right.
+
+14
+00:00:47,640 --> 00:00:50,630
+And of course, you could have multiple cards and stuff like that.
+
+15
+00:00:50,970 --> 00:00:51,990
+So that's it.
+
+16
+00:00:51,990 --> 00:00:53,180
+Let's go ahead and get into it.

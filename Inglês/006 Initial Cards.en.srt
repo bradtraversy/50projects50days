@@ -1,0 +1,511 @@
+1
+00:00:00,150 --> 00:00:05,490
+All right, so in this video, we're going to do the human access for the expanding cards and then we'll
+
+2
+00:00:05,490 --> 00:00:07,590
+get into the JavaScript in the next video.
+
+3
+00:00:07,920 --> 00:00:12,390
+So we have projects that are open, have my index HTML.
+
+4
+00:00:12,390 --> 00:00:21,720
+I'm going to go ahead and change the title here to expanding cards and then let's get rid of this H1
+
+5
+00:00:21,720 --> 00:00:22,140
+here.
+
+6
+00:00:22,860 --> 00:00:24,780
+And this is going to be pretty simple.
+
+7
+00:00:24,780 --> 00:00:31,500
+We're just going to have a container wrapped around five divs with the class of panel now for this first
+
+8
+00:00:31,500 --> 00:00:36,840
+one and we'll have a class of panel and also a class of active, because that's how we're going to tell
+
+9
+00:00:36,840 --> 00:00:38,760
+which card is going to be expanded.
+
+10
+00:00:38,760 --> 00:00:44,490
+It's going to have a class of active and inside the div is just going to be whatever the H three as
+
+11
+00:00:44,490 --> 00:00:46,890
+this one is going to be, explore the world.
+
+12
+00:00:46,890 --> 00:00:48,540
+Of course, you can change that if you want.
+
+13
+00:00:48,960 --> 00:00:52,800
+And then we're going to have an inline style for the background image.
+
+14
+00:00:53,100 --> 00:00:56,130
+So you could easily, you know, change that if you want.
+
+15
+00:00:56,490 --> 00:01:06,000
+So let's say background image and set that to a euro and single quotes in here with a link to an image
+
+16
+00:01:06,000 --> 00:01:08,010
+which you could use whatever you want.
+
+17
+00:01:08,010 --> 00:01:15,140
+I'm going to just grab a link to an unspoilt image and paste that in between the quotes here.
+
+18
+00:01:16,230 --> 00:01:22,020
+OK, so if I save that, I'm just going to see just the content, which is the H3 with the background
+
+19
+00:01:22,020 --> 00:01:26,500
+image behind it, but it's only going to take up as much as the content does for now.
+
+20
+00:01:27,270 --> 00:01:32,130
+So for the other four panel devs, I'm going to go right under this, still within the container and
+
+21
+00:01:32,130 --> 00:01:33,590
+I'm just going to post season.
+
+22
+00:01:33,600 --> 00:01:37,680
+And of course, you can grab these from the project repository.
+
+23
+00:01:39,090 --> 00:01:46,290
+And again, they're just panels with a background image in the inline style and then an H3 in the div.
+
+24
+00:01:46,620 --> 00:01:51,000
+So wild forests and a beach city on Winter Mountains clouds.
+
+25
+00:01:51,540 --> 00:01:55,770
+So we'll save and now we can see all the H 3s will a little bit of the background image.
+
+26
+00:01:56,280 --> 00:02:01,920
+So now let's jump into the stylesheet and start to make this look, you know, like some cards that
+
+27
+00:02:01,920 --> 00:02:02,880
+we can expand.
+
+28
+00:02:03,270 --> 00:02:13,830
+So the font I'm going to take this out and say CSFs, questionmark family and set that to Ally.
+
+29
+00:02:15,030 --> 00:02:17,760
+And then let's add that here in the body.
+
+30
+00:02:17,880 --> 00:02:19,290
+So that will change the font.
+
+31
+00:02:19,680 --> 00:02:26,520
+We don't need Flex Direct Direction column and then this the rest of this can stay the same for the
+
+32
+00:02:26,520 --> 00:02:27,030
+body.
+
+33
+00:02:27,630 --> 00:02:36,360
+Now, remember, we have a container wrapped around all the panels, and all I want to do here is display
+
+34
+00:02:36,360 --> 00:02:38,040
+this as a flex box.
+
+35
+00:02:38,280 --> 00:02:41,010
+So immediately it's going to turn it into a flex row.
+
+36
+00:02:41,470 --> 00:02:45,090
+OK, so our container right here is now a flex box.
+
+37
+00:02:45,090 --> 00:02:51,030
+So any immediate children, which are all these devices, are going to be put horizontal into a row.
+
+38
+00:02:51,570 --> 00:02:56,670
+If we wanted them on top of each other, we could do flex direction column like that.
+
+39
+00:02:56,670 --> 00:02:57,180
+But we don't.
+
+40
+00:02:57,180 --> 00:02:59,430
+We want them in a row now.
+
+41
+00:02:59,430 --> 00:03:05,100
+It takes up one hundred, you know, 100 viewport widths right now or 100 percent of the viewport.
+
+42
+00:03:05,310 --> 00:03:12,270
+So I'm going to set the width of the container to 90 VW, which is a viewport width.
+
+43
+00:03:12,600 --> 00:03:17,920
+So if you think of the width as 100 slices going this way, we're taking up 90 of the 100.
+
+44
+00:03:18,330 --> 00:03:21,840
+So the next thing I want to do is the panels.
+
+45
+00:03:21,850 --> 00:03:23,390
+So that's all we need for the container.
+
+46
+00:03:23,400 --> 00:03:27,510
+So for the panel class, it already has the background image.
+
+47
+00:03:27,510 --> 00:03:31,670
+But let's add some other background attributes like the size.
+
+48
+00:03:31,680 --> 00:03:34,320
+Right now, you can only see a small portion of the image.
+
+49
+00:03:35,310 --> 00:03:40,050
+I'm going to set this to auto and 100 percent.
+
+50
+00:03:40,050 --> 00:03:42,780
+And now you can see, you know, much more of the image.
+
+51
+00:03:43,050 --> 00:03:44,970
+I'm going to set the position.
+
+52
+00:03:44,980 --> 00:03:49,470
+So background position all set to center.
+
+53
+00:03:50,370 --> 00:03:52,330
+And I don't want any repeat.
+
+54
+00:03:52,340 --> 00:03:56,790
+So let's set the background dash repeat to no repeat.
+
+55
+00:03:57,990 --> 00:04:04,780
+OK, and then for the height of these, let's make them not not quite the whole height of the viewport.
+
+56
+00:04:04,800 --> 00:04:06,950
+Let's do 80 votes.
+
+57
+00:04:06,950 --> 00:04:09,630
+So 80 viewport heights, OK?
+
+58
+00:04:09,630 --> 00:04:10,930
+It's starting to look a little better.
+
+59
+00:04:11,370 --> 00:04:15,570
+Let's set the border or I'm not the border, but the border radius.
+
+60
+00:04:15,570 --> 00:04:18,210
+I'm going to set that to 50 pixels.
+
+61
+00:04:18,210 --> 00:04:21,780
+So make them rounded and you can style it differently if you like.
+
+62
+00:04:22,290 --> 00:04:25,500
+I'm going to set the color of the text inside to be white.
+
+63
+00:04:25,890 --> 00:04:30,600
+I want a cursor pointer so that when I hover over it, we have a cursor.
+
+64
+00:04:31,170 --> 00:04:34,500
+Now the width we can set the flex prop..
+
+65
+00:04:34,510 --> 00:04:39,150
+Since we're using flex box, I'm going to set it to an initial value of zero point five.
+
+66
+00:04:39,150 --> 00:04:41,010
+So they're all going to be even right now.
+
+67
+00:04:41,400 --> 00:04:46,170
+But when we have the active class, what we'll do is we'll change this to something much higher, like
+
+68
+00:04:46,170 --> 00:04:56,820
+Flex five, OK, and let's separate these out a bit so we'll add a margin of ten pixels and then let's
+
+69
+00:04:56,820 --> 00:04:59,730
+make this position relative.
+
+70
+00:04:59,770 --> 00:05:07,120
+Because I want to position the H threes and side absolute, so that means that the the H3 container
+
+71
+00:05:07,120 --> 00:05:10,900
+Divx, which is our container element, which is the panel has to be relative.
+
+72
+00:05:11,890 --> 00:05:18,220
+And then when we do change the width for the active, like when we click and it turns active, I want
+
+73
+00:05:18,220 --> 00:05:24,070
+it to not just flick to a bigger size or bigger width, but I wanted to have a transition.
+
+74
+00:05:24,070 --> 00:05:30,130
+So let's say let's add a transition on the flex property and we'll make it zero point seven seconds
+
+75
+00:05:30,130 --> 00:05:32,920
+for the duration with an ease in effect.
+
+76
+00:05:34,030 --> 00:05:35,500
+OK, so we'll save that.
+
+77
+00:05:35,950 --> 00:05:42,190
+Now, before we get to the active class, let's do the H threes that are inside of the panels.
+
+78
+00:05:42,190 --> 00:05:52,480
+So we have panel H three and I'm going to set the font size to twenty four pixels and let's set the
+
+79
+00:05:52,480 --> 00:05:53,320
+position.
+
+80
+00:05:53,980 --> 00:05:56,290
+So position is going to be absolute.
+
+81
+00:05:57,220 --> 00:05:58,720
+That's why I made this relative.
+
+82
+00:05:58,720 --> 00:06:03,150
+We want the H3 absolute within it and I want it to be at the bottom left corner.
+
+83
+00:06:03,160 --> 00:06:07,870
+So let's say 20 pixels from the bottom and 20 pixels from the left.
+
+84
+00:06:07,930 --> 00:06:08,710
+I save that.
+
+85
+00:06:08,710 --> 00:06:10,540
+You can see the position has changed.
+
+86
+00:06:11,590 --> 00:06:14,470
+I'm going to set margin to zero on these.
+
+87
+00:06:14,770 --> 00:06:18,970
+And I also only want the tree to show if it's on if it's active.
+
+88
+00:06:18,970 --> 00:06:19,270
+Right.
+
+89
+00:06:19,270 --> 00:06:20,410
+Because this doesn't look good.
+
+90
+00:06:20,410 --> 00:06:22,300
+We can't even read the headings.
+
+91
+00:06:22,300 --> 00:06:27,700
+So let's set the capacity to zero, which will just make them invisible.
+
+92
+00:06:28,010 --> 00:06:31,040
+OK, but will when it's active, we'll show them.
+
+93
+00:06:31,450 --> 00:06:35,730
+So let's first do the panel if it's active.
+
+94
+00:06:35,740 --> 00:06:43,750
+So we're just saying if the panel div also has an active class, will change the flux from zero point
+
+95
+00:06:43,750 --> 00:06:46,330
+five, which is the initial value to five.
+
+96
+00:06:46,870 --> 00:06:56,470
+And now you can see it's much wider for the H3, let's say panel active age three and it has an opacity
+
+97
+00:06:56,470 --> 00:06:58,780
+of zero right now for every panel.
+
+98
+00:06:58,780 --> 00:07:02,260
+But if it's active, let's set the opacity to one.
+
+99
+00:07:02,260 --> 00:07:05,110
+That way we can see it if it's active.
+
+100
+00:07:06,440 --> 00:07:15,580
+OK, now I do want to make it so if the screen is really small that we only show three instead of five
+
+101
+00:07:15,580 --> 00:07:16,540
+of these cards.
+
+102
+00:07:16,540 --> 00:07:25,120
+So to do that, we can add a media query by saying at media and we can use a min or a max with, I'm
+
+103
+00:07:25,120 --> 00:07:28,360
+going to say max width of four eighty pixels.
+
+104
+00:07:28,630 --> 00:07:34,150
+And what this means is any styles that I put in here are only going to take effect if the screen is
+
+105
+00:07:34,150 --> 00:07:35,740
+under forty eighty pixels.
+
+106
+00:07:36,070 --> 00:07:41,800
+So one thing I want to do is the container is initially set to a width of I think it's 90 viewport widths.
+
+107
+00:07:42,130 --> 00:07:47,200
+We're going to set it to 100 viewport widths on small screens so that it takes up a little more room
+
+108
+00:07:47,200 --> 00:07:48,820
+and it gives us some extra space.
+
+109
+00:07:49,330 --> 00:07:52,750
+OK, and then I'm going to remove the last two panels.
+
+110
+00:07:53,170 --> 00:08:00,520
+And the way that I can do that is by saying, panel and I can use the pseudo selector by using a colon
+
+111
+00:08:00,520 --> 00:08:04,150
+here and then a dash of dash type.
+
+112
+00:08:05,320 --> 00:08:07,330
+And I want the last two.
+
+113
+00:08:07,330 --> 00:08:08,680
+So there's five total.
+
+114
+00:08:09,040 --> 00:08:13,720
+I want four and five so I can take enth of type four.
+
+115
+00:08:13,750 --> 00:08:15,100
+That's going to grab this one.
+
+116
+00:08:15,550 --> 00:08:17,020
+But I also want the fifth one.
+
+117
+00:08:17,020 --> 00:08:18,970
+So I'm just going to copy that.
+
+118
+00:08:18,970 --> 00:08:25,420
+Put a comma here and let's also grab the fifth one last one and let's set display to none, which will
+
+119
+00:08:25,420 --> 00:08:26,490
+just get rid of them.
+
+120
+00:08:26,830 --> 00:08:31,450
+So now you can see on small screens there's only three images or three cards.
+
+121
+00:08:31,450 --> 00:08:33,910
+If I go past four eighty now there's five.
+
+122
+00:08:34,810 --> 00:08:37,330
+OK, so that's what that media query does for us.
+
+123
+00:08:37,420 --> 00:08:38,950
+I'm just going to make this a little bigger.
+
+124
+00:08:41,300 --> 00:08:43,640
+So that should do it for the success.
+
+125
+00:08:43,670 --> 00:08:48,950
+Now, obviously, we want the functionality where we click on one of these and it expands and, you
+
+126
+00:08:48,950 --> 00:08:53,290
+know, the other one gets smaller and we can see whichever one is active.
+
+127
+00:08:53,300 --> 00:08:55,720
+So for that, we need JavaScript.
+
+128
+00:08:55,730 --> 00:08:57,380
+So that's what we're going to do in the next video.

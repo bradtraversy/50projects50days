@@ -1,0 +1,575 @@
+﻿1
+00:00:00,300 --> 00:00:06,750
+Tudo bem, vamos começar com nosso design de feedback ou design de interface do usuário de feedback, e acabei de ter meu projeto
+
+2
+00:00:06,760 --> 00:00:07,640
+arranque aberto aqui.
+
+3
+00:00:07,650 --> 00:00:08,790
+Eu tenho um link para a fonte.
+
+4
+00:00:08,790 --> 00:00:15,480
+Incrível, porque você sabe, uma vez que enviamos o feedback, há um ícone na tela.
+
+5
+00:00:15,480 --> 00:00:23,730
+Então vamos usar isso e vamos mudar o título aqui para, digamos, nos avise
+
+6
+00:00:24,690 --> 00:00:34,170
+seu feedback e vamos nos livrar desse H1 aqui e vamos criar um container aqui.
+
+7
+00:00:34,170 --> 00:00:41,150
+Vou nos dar uma ideia de painel e também classe de painel Dasch container.
+
+8
+00:00:41,670 --> 00:00:54,170
+E aqui, vamos ter uma marca forte e vamos dizer, quão satisfeito você está com o nosso.
+
+9
+00:00:54,180 --> 00:00:59,100
+E então eu só quero colocar uma quebra de linha aqui para garantir que o resto disso vá para uma nova linha
+
+10
+00:00:59,400 --> 00:01:03,930
+e depois diga desempenho de suporte ao cliente.
+
+11
+00:01:05,970 --> 00:01:13,050
+E por baixo desse forte, teremos um contêiner de classificações, então é um contêiner de classificações Dasch
+
+12
+00:01:13,050 --> 00:01:18,000
+e isso vai conter as três caixas com, você sabe, aqueles rostos.
+
+13
+00:01:18,330 --> 00:01:20,660
+Assim, cada um terá uma classe de classificação.
+
+14
+00:01:21,270 --> 00:01:25,230
+Então são duas classificações e aqui dentro vai ter uma imagem.
+
+15
+00:01:26,970 --> 00:01:30,800
+E essas imagens são, na verdade, do ícone plano ponto com.
+
+16
+00:01:30,810 --> 00:01:33,710
+Então, eu estou indo aos pedaços e estes são FGs.
+
+17
+00:01:34,030 --> 00:01:40,710
+Vou colar nessa primeira lá e embaixo da imagem ainda dentro da div de classificação vai
+
+18
+00:01:40,710 --> 00:01:46,020
+tem uma pequena tag com a classificação real, então isso seria infeliz.
+
+19
+00:01:46,800 --> 00:01:48,630
+Então, se eu salvar isso, é isso que vamos ver.
+
+20
+00:01:49,860 --> 00:01:53,010
+Não vai ficar muito bom até chegarmos ao estilo.
+
+21
+00:01:53,430 --> 00:01:54,650
+Mas para os outros dois.
+
+22
+00:01:54,660 --> 00:01:58,070
+Então essa é a nossa primeira div de classificação e depois temos mais duas.
+
+23
+00:01:58,410 --> 00:01:59,960
+Então, eu só vou colar esses.
+
+24
+00:02:02,190 --> 00:02:03,990
+OK, então temos o primeiro aqui.
+
+25
+00:02:03,990 --> 00:02:08,340
+Nós temos a segunda que é neutra, que é uma imagem diferente, e então temos essa aqui
+
+26
+00:02:08,340 --> 00:02:10,140
+satisfeito e notado.
+
+27
+00:02:10,140 --> 00:02:12,750
+O último tem a classe ativa nele.
+
+28
+00:02:12,750 --> 00:02:14,390
+Então vai ter o contorno.
+
+29
+00:02:14,820 --> 00:02:16,080
+Então vamos salvar isso.
+
+30
+00:02:16,110 --> 00:02:18,340
+Mas teremos o esboço assim que tivermos o sucesso.
+
+31
+00:02:18,360 --> 00:02:21,270
+Agora, vai ficar assim, ok?
+
+32
+00:02:21,300 --> 00:02:22,850
+E então no fundo, vamos ver.
+
+33
+00:02:22,870 --> 00:02:33,960
+Queremos ir para fora deste div e deste div e logo acima do painel final conter ou div e ter
+
+34
+00:02:33,960 --> 00:02:34,530
+um botão.
+
+35
+00:02:35,040 --> 00:02:39,990
+E eu vou dar uma aula de B10 e vamos dar uma ideia de enviar, porque nós vamos
+
+36
+00:02:39,990 --> 00:02:49,110
+precisa adicionar um ouvinte de evento no JavaScript para isso e diremos enviar ou visualizar e é isso
+
+37
+00:02:49,110 --> 00:02:49,730
+o HTML.
+
+38
+00:02:49,770 --> 00:02:54,990
+Então vamos pular para nossa folha de estilo aqui e para uma fonte vamos usar Monserrat.
+
+39
+00:02:54,990 --> 00:02:57,630
+Então eu vou aqui mesmo.
+
+40
+00:02:57,630 --> 00:02:58,920
+Termina com sucesso.
+
+41
+00:02:58,920 --> 00:03:05,550
+Fará família Questionmark igual a Monserrat.
+
+42
+00:03:06,030 --> 00:03:07,620
+E vamos adicionar isso ao corpo.
+
+43
+00:03:12,040 --> 00:03:19,180
+OK, e para essas coisas aqui, vamos exibir sinalizadores e na verdade não precisamos do Flex Direction
+
+44
+00:03:19,180 --> 00:03:23,440
+coluna, queremos alinhar o centro e a altura 100 viewport.
+
+45
+00:03:23,560 --> 00:03:24,180
+Isso é bom.
+
+46
+00:03:24,820 --> 00:03:30,940
+E vamos começar no container do painel, que envolve tudo.
+
+47
+00:03:34,630 --> 00:03:38,110
+Portanto, o contêiner do painel terá uma cor de fundo branca.
+
+48
+00:03:40,170 --> 00:03:47,820
+E, na verdade, uma coisa que eu quero fazer no corpo é fora do plano de fundo, então no corpo dirá plano de fundo
+
+49
+00:03:47,820 --> 00:03:54,790
+cor e este será o valor hexadecimal FF nove, f dois.
+
+50
+00:03:55,140 --> 00:03:56,330
+Assim como, ótimo.
+
+51
+00:03:58,320 --> 00:04:00,020
+E você pode você mal pode ver a diferença.
+
+52
+00:04:00,030 --> 00:04:01,200
+Então você pode ver o fundo.
+
+53
+00:04:01,200 --> 00:04:03,550
+É quase como uma cor bronzeada muito, muito clara.
+
+54
+00:04:04,260 --> 00:04:14,040
+E também quero adicionar uma sombra de caixa no contêiner do painel para que façamos zero zero para os deslocamentos e
+
+55
+00:04:14,040 --> 00:04:19,790
+em seguida, 10 pixels de desfoque e, em seguida, GBA para a cor, que será preta.
+
+56
+00:04:19,950 --> 00:04:22,680
+Zero zero zero e depois zero ponto três.
+
+57
+00:04:23,670 --> 00:04:30,450
+OK, então você pode ver que temos apenas esta pequena caixa, raio da borda da sombra.
+
+58
+00:04:32,870 --> 00:04:39,560
+Então eu quero que isso tenha cantos arredondados um pouco, então faça quatro pixels, raio da borda, e vamos
+
+59
+00:04:39,560 --> 00:04:45,620
+defina o tamanho da fonte do texto aqui para um padrão de 90%.
+
+60
+00:04:46,310 --> 00:04:50,330
+E eu quero exibir flaks.
+
+61
+00:04:50,330 --> 00:04:52,450
+Assim que eu fizer isso, vai ficar assim.
+
+62
+00:04:53,210 --> 00:04:54,030
+Nós não queremos isso.
+
+63
+00:04:54,030 --> 00:04:54,860
+Não queremos remar.
+
+64
+00:04:54,860 --> 00:04:57,610
+Queremos que estes sejam, você sabe, um em cima do outro.
+
+65
+00:04:57,620 --> 00:05:03,440
+Então, vamos definir a direção flexível para chamá-los em vez de Roe, o que fará com que pareça semelhante
+
+66
+00:05:03,440 --> 00:05:04,460
+para como ele acabou de fazer.
+
+67
+00:05:05,240 --> 00:05:07,220
+Mas queremos justificar o centro de conteúdo.
+
+68
+00:05:07,230 --> 00:05:10,880
+Queremos alinhar os itens ao centro.
+
+69
+00:05:11,840 --> 00:05:15,370
+E vamos em frente e adicionar um pouco de preenchimento a este contêiner.
+
+70
+00:05:15,380 --> 00:05:19,370
+Então, 30 pixels de preenchimento, tire tudo das bordas.
+
+71
+00:05:19,370 --> 00:05:29,120
+Vamos adicionar uma largura máxima de 400 pixels aqui e vamos enviar uma linha para o centro, que na verdade vou
+
+72
+00:05:29,120 --> 00:05:29,980
+para colocar aqui.
+
+73
+00:05:31,190 --> 00:05:36,770
+Então, a seguir, vamos aumentar a altura da linha aqui, o que acredito ser um
+
+74
+00:05:36,770 --> 00:05:37,730
+marca forte.
+
+75
+00:05:39,230 --> 00:05:41,510
+Então, sim, temos apenas isso embrulhado e forte.
+
+76
+00:05:41,510 --> 00:05:48,800
+Então, digamos que o contêiner do painel seja forte e vamos definir a altura da linha para vinte pixels.
+
+77
+00:05:50,580 --> 00:05:56,640
+E então vamos começar a estilizar as classificações, então o contêiner de classificações envolve isso, os três
+
+78
+00:05:56,640 --> 00:05:58,880
+rostos aqui, três caixas.
+
+79
+00:05:58,890 --> 00:06:02,730
+Portanto, é um contêiner Dasch de classificações.
+
+80
+00:06:04,230 --> 00:06:11,130
+E para isso, queremos exibir como uma caixa flexível, OK?
+
+81
+00:06:11,160 --> 00:06:12,570
+Queremos isso como uma linha flexível.
+
+82
+00:06:13,050 --> 00:06:17,850
+E então para margem aqui, vamos fazer 20 pixels na parte superior e inferior.
+
+83
+00:06:19,940 --> 00:06:26,360
+Agora, para cada classificação, lembre-se, temos a classe de classificação e vou definir quero todas
+
+84
+00:06:26,360 --> 00:06:30,620
+para serem colunas iguais, então vamos usar flex one para todas elas.
+
+85
+00:06:31,760 --> 00:06:36,260
+E então vamos definir o cursor para um ponteiro porque vamos clicar neles e então
+
+86
+00:06:36,260 --> 00:06:36,860
+preenchimento.
+
+87
+00:06:37,900 --> 00:06:41,780
+Vamos fazer 20 pixels ao redor, meio que separá-los.
+
+88
+00:06:41,780 --> 00:06:46,820
+E então para margem, vamos fazer 10 pixels, superior e inferior, cinco pixels à esquerda e à direita.
+
+89
+00:06:48,440 --> 00:06:48,890
+Tudo bem.
+
+90
+00:06:48,920 --> 00:06:51,710
+Agora vamos lidar com o foco.
+
+91
+00:06:51,710 --> 00:06:54,560
+Queremos ter essa caixa ao redor quando passarmos o mouse.
+
+92
+00:06:54,950 --> 00:07:00,860
+Além disso, queremos fazê-lo quando clicarmos nele para que a caixa permaneça nele para o foco e ativo.
+
+93
+00:07:00,860 --> 00:07:06,070
+Vamos fazer uma aula de classificação e passar o mouse.
+
+94
+00:07:06,530 --> 00:07:11,480
+Também queremos isso na classe de rating quando tiver uma classe de ativo.
+
+95
+00:07:14,360 --> 00:07:22,040
+Então, vou definir o raio da borda para quatro pixels e não teremos uma borda,
+
+96
+00:07:22,060 --> 00:07:23,360
+nós vamos ter uma sombra de caixa.
+
+97
+00:07:23,960 --> 00:07:32,410
+Então box shadow, vamos fazer zero zero 10 pixels, nosso GPA e zero zero zero.
+
+98
+00:07:32,420 --> 00:07:36,250
+Então vermelho, verde, azul zero e depois zero ponto um para o alfa.
+
+99
+00:07:36,590 --> 00:07:39,590
+E você pode ver que o ativo tem aquela caixa ao redor dele.
+
+100
+00:07:39,590 --> 00:07:43,010
+E se eu passar o mouse sobre qualquer um deles, também tem aquela caixa.
+
+101
+00:07:43,760 --> 00:07:45,190
+Agora a imagem.
+
+102
+00:07:45,200 --> 00:07:52,820
+Então, vamos pegar a imagem que está no div de classificação da classe de classificação e vamos dar a ela uma largura de 40 pixels.
+
+103
+00:07:53,600 --> 00:07:54,950
+Vai torná-los um pouco menores.
+
+104
+00:07:55,280 --> 00:08:00,800
+Também temos as pequenas tags que têm o, você sabe, infeliz, neutro, satisfeito, então vamos dizer
+
+105
+00:08:00,800 --> 00:08:02,840
+classificação pequena.
+
+106
+00:08:04,190 --> 00:08:07,820
+E eu vou mudar a cor disso para cinco, cinco, cinco.
+
+107
+00:08:08,450 --> 00:08:17,630
+E vamos definir isso para exibir em traço e bloco porque essas são pequenas tags que são inline por padrão.
+
+108
+00:08:17,870 --> 00:08:22,760
+E então eu só quero adicionar uma margem para, digamos, 10 pixels, zero zero.
+
+109
+00:08:22,760 --> 00:08:24,080
+Isso vai empurrá-los um pouco para baixo.
+
+110
+00:08:25,880 --> 00:08:31,340
+E então, se estiver ativo, eu só quero mudar a cor do pequeno para torná-lo um pouco mais claro.
+
+111
+00:08:31,350 --> 00:08:34,850
+Então vamos pegar isso.
+
+112
+00:08:36,200 --> 00:08:40,850
+Então passe o mouse ou pequeno, desculpe, passe o mouse ou ativo, mas oops.
+
+113
+00:08:42,930 --> 00:08:51,620
+E então queremos apenas direcionar as tags pequenas para isso e definir essa cor para hexadecimal.
+
+114
+00:08:51,620 --> 00:08:52,490
+Um um um.
+
+115
+00:08:54,730 --> 00:09:04,780
+OK, e então para o estilo do botão para que tenha uma classe de botões e defina a cor de fundo
+
+116
+00:09:04,780 --> 00:09:16,360
+disso para o valor hexadecimal de três zero a D para ser OK, será nossa cor de fundo.
+
+117
+00:09:16,630 --> 00:09:23,470
+Então queremos que a cor do texto seja branca e vamos definir a borda para zero.
+
+118
+00:09:23,590 --> 00:09:30,730
+Vamos definir o raio da borda para quatro pixels, como todo o resto precisa de um pouco de preenchimento.
+
+119
+00:09:31,030 --> 00:09:38,650
+Então vamos fazer um preenchimento de 12 pixels na parte superior e inferior, 30 pixels à esquerda e à direita e transformar o cursor em um ponteiro.
+
+120
+00:09:40,790 --> 00:09:41,690
+OK bom.
+
+121
+00:09:42,250 --> 00:09:49,160
+Vamos nos livrar desses contornos ou dizer, classe de BTN quando está em seu estado de foco, queremos definir o
+
+122
+00:09:49,160 --> 00:09:51,470
+contorno para zero.
+
+123
+00:09:53,300 --> 00:09:53,840
+Tudo bem.
+
+124
+00:09:53,840 --> 00:09:57,500
+E então vamos fazer um grande BTN.
+
+125
+00:09:57,980 --> 00:10:04,730
+E quando estiver em seu estado ativo, iremos em frente e adicionaremos uma propriedade de transformação e vamos apenas dimensionar
+
+126
+00:10:04,730 --> 00:10:05,480
+baixou um pouco.
+
+127
+00:10:05,510 --> 00:10:09,050
+Então, de um, vamos para nove vírgula noventa.
+
+128
+00:10:09,440 --> 00:10:12,320
+Então nós temos aquele pequeno, você sabe, efeito de redução de escala.
+
+129
+00:10:12,980 --> 00:10:20,960
+Agora não podemos vê-lo ainda, mas uma vez que basicamente enviamos este formulário usando JavaScript, vamos
+
+130
+00:10:20,960 --> 00:10:24,590
+ter um ícone da fonte incrível.
+
+131
+00:10:24,590 --> 00:10:26,090
+Inserido com algum texto.
+
+132
+00:10:26,090 --> 00:10:28,540
+Então, eu só quero adicionar esse estilo para isso.
+
+133
+00:10:28,550 --> 00:10:30,810
+Vai ser um coração de traço.
+
+134
+00:10:31,460 --> 00:10:33,220
+Vai ser a classe para o ícone.
+
+135
+00:10:33,230 --> 00:10:40,820
+Eu só quero torná-lo vermelho para colorir vermelho e o tamanho da fonte, vou torná-lo maior 30 pixels e
+
+136
+00:10:40,820 --> 00:10:44,990
+apenas defina a margem inferior apenas para empurrar o conteúdo abaixo dela para baixo.
+
+137
+00:10:44,990 --> 00:10:46,430
+Defina isso para 10 pixels.
+
+138
+00:10:46,730 --> 00:10:50,240
+OK, e é isso para este VSS tão simples.
+
+139
+00:10:50,870 --> 00:10:56,960
+No próximo vídeo, vamos adicionar a funcionalidade onde podemos clicar e podemos alterar o ativo
+
+140
+00:10:56,960 --> 00:11:00,110
+class e dê a borda, ou a sombra da caixa.
+
+141
+00:11:00,290 --> 00:11:04,790
+E também para que possamos clicar nele e ele nos mostrará uma página que basicamente diz obrigado.
+
+142
+00:11:04,900 --> 00:11:06,440
+Você sabe, obrigado pelo seu feedback.
+
+143
+00:11:06,740 --> 00:11:07,040
+Tudo bem.
+
+144
+00:11:07,040 --> 00:11:08,150
+Então vamos entrar nisso a seguir.

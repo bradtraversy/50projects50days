@@ -1,0 +1,407 @@
+1
+00:00:00,180 --> 00:00:05,040
+All right, so let's get started, I just have my project starter open here and we're going to change
+
+2
+00:00:05,040 --> 00:00:12,450
+the title here to let's call it good, cheap, fast.
+
+3
+00:00:12,900 --> 00:00:18,450
+And basically we're going to have just some checkboxes, but we're going to style them to look really
+
+4
+00:00:18,450 --> 00:00:18,750
+cool.
+
+5
+00:00:18,780 --> 00:00:24,270
+We're going to add some animation and we're going to add some logic so that you can't pick, for instance,
+
+6
+00:00:24,270 --> 00:00:28,550
+all three because it's hard to get a project that's a good, cheap and fast it'll be.
+
+7
+00:00:28,590 --> 00:00:31,820
+They're cheap and fast or cheap and good.
+
+8
+00:00:32,070 --> 00:00:34,590
+So we'll add some logic with JavaScript later on.
+
+9
+00:00:35,040 --> 00:00:37,200
+So let's go ahead and add here.
+
+10
+00:00:37,830 --> 00:00:40,380
+I'm actually going to use an H two here.
+
+11
+00:00:40,380 --> 00:00:48,960
+So let's put an H two and say, how do you want your project to be?
+
+12
+00:00:51,450 --> 00:00:53,220
+And then we'll have our toggle.
+
+13
+00:00:53,460 --> 00:00:59,220
+So we're going to have three separate divs with the class of toggle container that are going to surround
+
+14
+00:00:59,220 --> 00:01:03,180
+the input, the label and the text, the spane text.
+
+15
+00:01:03,570 --> 00:01:13,740
+So let's create toggle dash container and in here let's put an input with the type of checkbox.
+
+16
+00:01:14,710 --> 00:01:16,150
+And we don't need a name.
+
+17
+00:01:16,840 --> 00:01:26,350
+We don't need a name for the I.D., we'll say good and let's also give it a class of Torkel.
+
+18
+00:01:28,340 --> 00:01:29,490
+OK, so that's our input.
+
+19
+00:01:29,500 --> 00:01:34,720
+Now we want a label because when you have a label for a form field, you can click on that label and
+
+20
+00:01:34,720 --> 00:01:39,160
+it will in this case, it'll check or uncheck the check box.
+
+21
+00:01:39,490 --> 00:01:41,210
+So let's say label for good.
+
+22
+00:01:41,290 --> 00:01:47,080
+So the I.D. should match the ID for the input, should match the four attribute on the label.
+
+23
+00:01:47,740 --> 00:01:55,930
+And then I'm also going to give this a class of label and then inside the label we're going to have
+
+24
+00:01:55,930 --> 00:01:57,120
+a class of ball.
+
+25
+00:01:57,160 --> 00:02:03,280
+So this is going to be the you know, the round part of the the the slider, whatever you want to call
+
+26
+00:02:03,280 --> 00:02:06,880
+it, that's going to go back and forth that we're going to animate.
+
+27
+00:02:07,270 --> 00:02:09,370
+So we're not going to put anything in this div.
+
+28
+00:02:09,370 --> 00:02:11,290
+We just want to have it here for styling.
+
+29
+00:02:11,770 --> 00:02:16,660
+And then outside of the label, we're going to have a span with the text.
+
+30
+00:02:16,660 --> 00:02:17,830
+So this will say good.
+
+31
+00:02:18,340 --> 00:02:24,670
+I will say that it's not going to look very good until we add our success, but we want three of these.
+
+32
+00:02:24,700 --> 00:02:31,510
+So this div of toggle container, I'm going to just grab that space that in here and here and then just
+
+33
+00:02:31,510 --> 00:02:32,290
+change.
+
+34
+00:02:32,410 --> 00:02:33,910
+The second one is going to be cheap.
+
+35
+00:02:33,910 --> 00:02:35,340
+So we'll change this.
+
+36
+00:02:35,800 --> 00:02:40,810
+Actually, this idea right here, the four and that's too cheap.
+
+37
+00:02:41,260 --> 00:02:45,760
+And just going to add uppercase here.
+
+38
+00:02:47,450 --> 00:02:50,800
+No, I have cheap in the last one is going to be fast.
+
+39
+00:02:50,800 --> 00:02:58,330
+So let's change this too fast and just make this uppercase
+
+40
+00:03:00,670 --> 00:03:03,400
+that and that should do it for the HDMI.
+
+41
+00:03:03,400 --> 00:03:04,400
+Also pretty simple.
+
+42
+00:03:04,880 --> 00:03:08,650
+Now the success is going to really change how this looks.
+
+43
+00:03:08,650 --> 00:03:11,180
+So we have quite a bit to do here.
+
+44
+00:03:11,230 --> 00:03:13,930
+Not all, not too much, but we're going to do some animation.
+
+45
+00:03:14,860 --> 00:03:16,960
+Let's start off with the body here.
+
+46
+00:03:16,960 --> 00:03:23,200
+So we'll just stick with the Raboteau font display, flex line items we don't need.
+
+47
+00:03:24,460 --> 00:03:26,560
+Well, yeah, we'll keep the column.
+
+48
+00:03:27,670 --> 00:03:30,730
+I don't think we have to change anything here so we can just leave that.
+
+49
+00:03:31,080 --> 00:03:34,960
+So let's start to style the toggle container.
+
+50
+00:03:36,280 --> 00:03:42,850
+So the toggle container, I'm going to display Flex and I want to use a line.
+
+51
+00:03:42,850 --> 00:03:46,120
+Items here to display everything are aligned to the center.
+
+52
+00:03:46,420 --> 00:03:53,890
+I'm going to add a margin here of ten pixels on the top and bottom and then a width of 200 pixels to
+
+53
+00:03:53,890 --> 00:03:59,140
+remember the container wraps around the input, the label and the span text.
+
+54
+00:04:00,810 --> 00:04:02,820
+Now, the class of toggle,
+
+55
+00:04:06,390 --> 00:04:12,000
+so we have the class of Torgau, which is the on the input itself, the checkbox, we don't want to
+
+56
+00:04:12,000 --> 00:04:18,060
+show that because we're basically replacing that with the cool ball look or whatever that whatever you
+
+57
+00:04:18,060 --> 00:04:20,170
+want to call it, the slider, the ball, whatever.
+
+58
+00:04:20,550 --> 00:04:28,490
+So let's grab the toggle class and I'm going to set the visibility to hidden.
+
+59
+00:04:30,300 --> 00:04:33,180
+So now we can't see the actual checkbox.
+
+60
+00:04:33,190 --> 00:04:34,650
+Now we have the label
+
+61
+00:04:37,110 --> 00:04:40,780
+and for the label, let's give this a whiff.
+
+62
+00:04:41,860 --> 00:04:48,240
+We'll give it a width of 40 or 80 pixels and then let's give it a height of forty pixels.
+
+63
+00:04:49,560 --> 00:04:52,100
+OK, so, I mean, it's just it's here.
+
+64
+00:04:52,110 --> 00:04:53,040
+You can't see it yet.
+
+65
+00:04:53,050 --> 00:04:58,500
+So let's give it a background color of grey.
+
+66
+00:04:58,500 --> 00:05:01,800
+So we're going to use D zero three times here.
+
+67
+00:05:01,890 --> 00:05:02,460
+There we go.
+
+68
+00:05:02,940 --> 00:05:05,340
+We want it wanted to have really rounded corners.
+
+69
+00:05:05,340 --> 00:05:13,530
+So I'm going to set the border radius to 50 pixels like that and we want to set a cursor pointer.
+
+70
+00:05:13,680 --> 00:05:15,810
+So when we hover over it, we have a cursor.
+
+71
+00:05:16,110 --> 00:05:21,720
+I'm going to display it as an inline block because it's in line by default.
+
+72
+00:05:22,290 --> 00:05:28,890
+And I want to be able to add a margin of do zero 15 zero.
+
+73
+00:05:29,430 --> 00:05:36,090
+OK, so I kind of put some space around it and that actually should do it for the label itself.
+
+74
+00:05:37,780 --> 00:05:44,080
+Now, if it's checked, then I want the background color of the label to change.
+
+75
+00:05:44,110 --> 00:05:49,630
+So what we can do is take the toggle, which is the checkbox, and we can say colon checked, which
+
+76
+00:05:49,630 --> 00:05:58,940
+means when it's in, it's checked state, then we want to style the label and set the background color.
+
+77
+00:05:58,960 --> 00:06:06,070
+I'm going to set it to hexadecimal value eight E four for a D like that.
+
+78
+00:06:06,280 --> 00:06:10,150
+Now, as soon as I do that, the first one is purple because it's checked.
+
+79
+00:06:10,150 --> 00:06:14,010
+If I click it again, it's going to uncheck and it's going to be gray.
+
+80
+00:06:14,470 --> 00:06:15,880
+OK, so we can now do this.
+
+81
+00:06:17,390 --> 00:06:19,420
+Now the next thing I want to do is the ball.
+
+82
+00:06:19,420 --> 00:06:27,370
+We want to have that little circle inside so we have a class of ball and let's set the background for
+
+83
+00:06:27,370 --> 00:06:34,540
+that to white, which you're not going to see because it doesn't have any content and it also doesn't
+
+84
+00:06:34,540 --> 00:06:35,380
+have a height or width.
+
+85
+00:06:35,380 --> 00:06:40,030
+So let's set the height to thirty four pixels and also the width.
+
+86
+00:06:40,740 --> 00:06:43,530
+Let's set that to thirty four pixels.
+
+87
+00:06:43,970 --> 00:06:46,780
+OK, so you can see the the white square in here.
+
+88
+00:06:46,780 --> 00:06:53,970
+We want it to be round so let's set border radius to 50 percent.
+
+89
+00:06:55,060 --> 00:06:57,010
+OK, and then we want to position it.
+
+90
+00:06:57,020 --> 00:07:09,580
+So let's position this absolute and we're actually going to want to have the label position relative
+
+91
+00:07:09,580 --> 00:07:13,690
+because we're positioning the ball absolu within the label.
+
+92
+00:07:13,690 --> 00:07:16,690
+So the label then has to be positioned relative.
+
+93
+00:07:16,690 --> 00:07:20,300
+So let's add that here relative.
+
+94
+00:07:21,220 --> 00:07:23,020
+OK, so we're going to position absolute.
+
+95
+00:07:23,020 --> 00:07:29,170
+And then as far as where we want to put it inside the label, let's do three pixels from the top and
+
+96
+00:07:29,170 --> 00:07:33,290
+let's do three pixels from the left.
+
+97
+00:07:33,640 --> 00:07:36,060
+OK, so it fits right in there, nice and snug.
+
+98
+00:07:37,450 --> 00:07:44,340
+And it's also just a line items center and justify content center as well.
+
+99
+00:07:45,790 --> 00:07:49,500
+OK, now when I click, you can see it just turns purple.
+
+100
+00:07:49,540 --> 00:07:51,390
+We don't have the animation here.
+
+101
+00:07:51,820 --> 00:07:54,910
+So what we'll do in the next video is add the animation.
+
+102
+00:07:54,910 --> 00:07:59,020
+So when we click, it slides over and click again, slides back.

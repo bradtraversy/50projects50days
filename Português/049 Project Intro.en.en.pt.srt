@@ -1,0 +1,59 @@
+﻿1
+00:00:00,150 --> 00:00:05,130
+Tudo bem, então este é um pequeno projeto legal, basicamente vamos apenas rastrear copos de
+
+2
+00:00:05,130 --> 00:00:12,270
+água ou copos de água e basicamente temos uma meta de dois líderes e temos esse copo grande aqui e
+
+3
+00:00:12,300 --> 00:00:13,530
+isso é apenas todo o sucesso.
+
+4
+00:00:13,530 --> 00:00:16,760
+Então, vamos estilizar isso e adicionar algumas funcionalidades JavaScript.
+
+5
+00:00:16,770 --> 00:00:22,410
+Então, se eu clicar neste primeiro aqui, você pode ver que temos doze vírgula cinco por cento dos nossos dois
+
+6
+00:00:22,410 --> 00:00:22,970
+líderes.
+
+7
+00:00:22,980 --> 00:00:25,740
+Temos um vírgula setenta e cinco litros restantes.
+
+8
+00:00:26,160 --> 00:00:30,810
+E se eu clicar, como o quarto aqui, ele não apenas destacará este ou preencherá este
+
+9
+00:00:30,830 --> 00:00:32,610
+copo, mas todo o caminho até esse copo.
+
+10
+00:00:32,850 --> 00:00:36,630
+E agora você pode ver que eu tenho 50 por cento e um líder restante.
+
+11
+00:00:37,110 --> 00:00:42,600
+E então aqui, você sabe, zero vírgula sete cinco restantes, sessenta e dois vírgula cinco eu vou para 100 por cento
+
+12
+00:00:42,600 --> 00:00:43,700
+enche tudo.
+
+13
+00:00:44,100 --> 00:00:49,350
+Então eu acho que é um pequeno projeto legal para manipular o dom, fazer um pouco de cálculo
+
+14
+00:00:49,350 --> 00:00:50,300
+no JavaScript.
+
+15
+00:00:50,610 --> 00:00:52,140
+Então vamos em frente e começar.

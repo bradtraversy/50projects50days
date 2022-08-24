@@ -1,0 +1,79 @@
+﻿1
+00:00:00,300 --> 00:00:06,560
+OK, então neste projeto, vamos construir um aplicativo de piada de pai onde ele nos dá uma piada.
+
+2
+00:00:06,570 --> 00:00:08,190
+Então eu tinha um relógio ontem.
+
+3
+00:00:08,190 --> 00:00:09,660
+Foi tão demorado.
+
+4
+00:00:09,910 --> 00:00:14,730
+Eles são apenas pequenas piadas bobas e podemos clicar em um botão para obter uma nova piada e podemos continuar recebendo
+
+5
+00:00:14,730 --> 00:00:15,330
+novas piadas.
+
+6
+00:00:15,330 --> 00:00:22,140
+E nós estamos recebendo isso é na verdade uma API de terceiros que eu posso ter piada de pai pontocom.
+
+7
+00:00:22,320 --> 00:00:29,460
+E se você acessar a API de barra de URL, poderá ver basicamente a documentação dessa API e estamos
+
+8
+00:00:29,460 --> 00:00:36,810
+vai usar a API de busca que está embutida no navegador para fazer uma solicitação e obter um objeto com um
+
+9
+00:00:36,810 --> 00:00:39,240
+ID, uma piada e um status.
+
+10
+00:00:39,240 --> 00:00:43,710
+E vamos pegar essa piada e colocá-la em nosso aplicativo aqui.
+
+11
+00:00:44,100 --> 00:00:44,490
+Tudo bem.
+
+12
+00:00:44,490 --> 00:00:51,660
+Então, na verdade, vou ter uma seção neste projeto em que vou estritamente sobre solicitação e resposta HTTP,
+
+13
+00:00:51,990 --> 00:00:55,140
+como isso funciona, bem como como a API funciona.
+
+14
+00:00:55,410 --> 00:01:01,020
+E então, você sabe, depois de construirmos a interface com H2O e acesso, adicionaremos nosso JavaScript.
+
+15
+00:01:01,230 --> 00:01:06,450
+Vou mostrar como podemos usar fetch normalmente e como também podemos usá-lo com algo chamado
+
+16
+00:01:06,450 --> 00:01:07,350
+uma pia de distância.
+
+17
+00:01:07,350 --> 00:01:12,180
+Porque quando você lida com isso, você lida com algo chamado promessas, que vamos abordar como
+
+18
+00:01:12,180 --> 00:01:12,510
+Nós vamos.
+
+19
+00:01:12,660 --> 00:01:12,960
+Tudo bem.
+
+20
+00:01:12,960 --> 00:01:13,920
+Então vamos começar.

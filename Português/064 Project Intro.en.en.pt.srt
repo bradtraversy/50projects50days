@@ -1,0 +1,43 @@
+﻿1
+00:00:00,270 --> 00:00:05,010
+Então, neste projeto, vamos criar um efeito de ondulação de botão, basicamente será capaz de ter botões
+
+2
+00:00:05,010 --> 00:00:07,710
+e apenas dê uma classe específica de ondulação.
+
+3
+00:00:07,720 --> 00:00:12,150
+E quando fizermos isso, se clicarmos nesses botões, teremos esse efeito.
+
+4
+00:00:12,150 --> 00:00:14,190
+E não é apenas um efeito cascata no centro.
+
+5
+00:00:14,190 --> 00:00:16,080
+É onde clicamos no botão.
+
+6
+00:00:16,470 --> 00:00:20,490
+E vamos obviamente adicionar a animação, o estilo com acesso.
+
+7
+00:00:20,700 --> 00:00:26,340
+Mas precisamos de JavaScript para poder identificar exatamente onde estamos clicando para que possamos alterar alguns
+
+8
+00:00:26,340 --> 00:00:31,620
+dos valores dos CSFs do posicionamento para dar aquele efeito naquela posição exata.
+
+9
+00:00:31,860 --> 00:00:32,250
+Tudo bem.
+
+10
+00:00:32,260 --> 00:00:33,200
+Então é isso que vamos fazer.
+
+11
+00:00:33,210 --> 00:00:34,700
+Vamos em frente e começar.

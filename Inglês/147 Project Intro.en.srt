@@ -1,0 +1,67 @@
+1
+00:00:00,300 --> 00:00:05,760
+All right, in this project, we're going to create a little quiz application, so we have this question
+
+2
+00:00:05,760 --> 00:00:08,370
+here, which language runs in a Web browser?
+
+3
+00:00:08,610 --> 00:00:11,400
+And we have some answers, some multiple choice.
+
+4
+00:00:11,700 --> 00:00:14,010
+We're going to go ahead and choose JavaScript and submit.
+
+5
+00:00:14,280 --> 00:00:15,990
+And it's going to take us to the next question.
+
+6
+00:00:15,990 --> 00:00:17,580
+What is CSFs stand for?
+
+7
+00:00:17,580 --> 00:00:24,300
+Central stylesheets, cascading style sheets, cascading simple sheets, cars, SUVs, sailboats, go
+
+8
+00:00:24,300 --> 00:00:26,970
+ahead and choose cards, cars, SUV, sailboats.
+
+9
+00:00:27,510 --> 00:00:30,030
+And then what does each HTML stand for?
+
+10
+00:00:30,600 --> 00:00:32,310
+Hypertext markup language?
+
+11
+00:00:32,310 --> 00:00:36,270
+And then what year was JavaScript launch, which was 1995?
+
+12
+00:00:36,660 --> 00:00:41,400
+And you can see we answered three out of four questions correctly and we can reload the quiz.
+
+13
+00:00:41,410 --> 00:00:44,030
+So it's pretty simple in terms of functionality.
+
+14
+00:00:44,760 --> 00:00:51,240
+What we'll do is create like a basic template that we can use to insert the questions and answers using
+
+15
+00:00:51,240 --> 00:00:57,570
+a JavaScript array, and then we'll add the functionality to select an answer and check it and so on.
+
+16
+00:00:57,600 --> 00:00:59,360
+Add to the score and increment it.
+
+17
+00:00:59,700 --> 00:01:01,200
+So let's go ahead and get started.

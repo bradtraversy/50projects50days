@@ -1,0 +1,67 @@
+﻿1
+00:00:00,180 --> 00:00:01,770
+OK, bem-vindo ao seu próximo projeto.
+
+2
+00:00:01,800 --> 00:00:07,890
+Então este, este é um projeto bem simples, pelo menos em termos de JavaScript, é apenas como
+
+3
+00:00:07,890 --> 00:00:08,970
+cinco linhas mais ou menos.
+
+4
+00:00:09,120 --> 00:00:13,320
+Basicamente, só precisamos adicionar um ouvinte de eventos a este ícone aqui.
+
+5
+00:00:13,590 --> 00:00:17,940
+E uma vez que clicamos nele, vamos alternar um ato de classe.
+
+6
+00:00:18,240 --> 00:00:19,740
+E está ativo agora.
+
+7
+00:00:19,740 --> 00:00:23,610
+Mas quando eu clicar nele, você verá o que acontece são algumas coisas, na verdade.
+
+8
+00:00:23,610 --> 00:00:31,230
+Este contêiner aqui, o nav encolhe, os links começam a girar e depois desaparecem,
+
+9
+00:00:31,740 --> 00:00:33,570
+definindo a opacidade para zero.
+
+10
+00:00:33,960 --> 00:00:38,790
+E então o ex faz uma rotação e depois se transforma em duas filas.
+
+11
+00:00:39,230 --> 00:00:41,100
+OK, então é um efeito muito legal.
+
+12
+00:00:41,100 --> 00:00:44,190
+E você pode usar isso em qualquer site ou aplicativo.
+
+13
+00:00:45,020 --> 00:00:47,160
+Vamos fazer principalmente CSFs aqui.
+
+14
+00:00:47,820 --> 00:00:53,610
+Como você pode ver, temos algumas transições que entrarão em jogo quando alternarmos o
+
+15
+00:00:53,610 --> 00:00:56,250
+classe ativa, que é o que estamos fazendo quando clicamos nisso.
+
+16
+00:00:56,670 --> 00:00:57,000
+Tudo bem.
+
+17
+00:00:57,010 --> 00:00:58,470
+Então vamos em frente e entrar nisso.

@@ -1,0 +1,375 @@
+﻿1
+00:00:00,330 --> 00:00:06,000
+OK, agora queremos entrar no JavaScript, que na verdade será bastante simples, e isso
+
+2
+00:00:06,000 --> 00:00:10,470
+Eu planejo que este seja um dos primeiros projetos em pelo menos nos primeiros 10.
+
+3
+00:00:10,740 --> 00:00:14,940
+Então eu vou explicar o tipo de coisa que muitos de vocês já devem saber.
+
+4
+00:00:15,480 --> 00:00:18,270
+Agora, lembre-se, a coisa toda.
+
+5
+00:00:18,540 --> 00:00:22,120
+O que precisamos fazer é apenas mudar a classe realmente em cada um deles.
+
+6
+00:00:22,140 --> 00:00:24,870
+Então o primeiro tem uma classe de ativo agora.
+
+7
+00:00:25,140 --> 00:00:31,530
+Se eu colocar essa classe na segunda, apenas digitando manualmente aqui, vai mostrar o
+
+8
+00:00:31,530 --> 00:00:32,180
+o segundo.
+
+9
+00:00:32,550 --> 00:00:35,760
+Então eu vou começar com isso no primeiro como eu tinha.
+
+10
+00:00:36,060 --> 00:00:38,720
+Mas queremos poder mudar isso em nosso JavaScript.
+
+11
+00:00:38,730 --> 00:00:45,320
+Portanto, precisamos primeiro trazer todos esses painéis para nossos arquivos JavaScript.
+
+12
+00:00:45,320 --> 00:00:50,850
+Então vou criar uma variável chamada painéis e essas formas diferentes de selecionar elementos que podemos usar,
+
+13
+00:00:50,850 --> 00:00:54,730
+você sabe, obter o elemento por D, podemos usar o seletor de consulta.
+
+14
+00:00:55,380 --> 00:01:03,900
+Então, um seletor de consulta nos permite selecionar qualquer coisa, pode ser, você sabe, um parágrafo e cada
+
+15
+00:01:03,900 --> 00:01:10,170
+um, uma classe, um ID, o que quisermos os painéis que têm uma classe de painel.
+
+16
+00:01:10,200 --> 00:01:14,240
+Agora o problema aqui é que há mais de um painel, certo.
+
+17
+00:01:14,250 --> 00:01:18,930
+Temos todos esses divs com painéis, então não podemos fazer isso ou apenas selecionar o primeiro
+
+18
+00:01:18,930 --> 00:01:19,220
+1.
+
+19
+00:01:19,500 --> 00:01:21,030
+Então, precisamos usar query, select.
+
+20
+00:01:21,030 --> 00:01:22,380
+Estão todos nesse caso.
+
+21
+00:01:22,800 --> 00:01:28,110
+E com query, select, eles são todos em vez de apenas selecionar o elemento diretamente, ele coloca todos
+
+22
+00:01:28,110 --> 00:01:32,690
+os painéis no que é chamado de lista de nós, que é semelhante a uma matriz.
+
+23
+00:01:32,940 --> 00:01:34,740
+Na verdade, eu posso te mostrar isso se eu puder.
+
+24
+00:01:34,740 --> 00:01:36,390
+Então entre aqui painéis.
+
+25
+00:01:37,880 --> 00:01:43,700
+E abrimos nossas ferramentas de desenvolvimento do Chrome aqui, você verá que ele imprime esta lista de nós
+
+26
+00:01:44,030 --> 00:01:51,740
+com cada div e algumas propriedades, e posso segmentar painéis específicos, como se eu colocasse zero aqui
+
+27
+00:01:51,740 --> 00:01:56,600
+porque as matrizes são de índice zero, isso me dará o primeiro painel.
+
+28
+00:01:56,610 --> 00:02:02,350
+Você pode ver que tem uma classe de ativo, então eu poderia pegar o segundo com um e assim por diante.
+
+29
+00:02:02,720 --> 00:02:06,020
+Agora você também pode percorrer uma lista não, assim como você pode fazer com um array.
+
+30
+00:02:06,020 --> 00:02:06,830
+E é isso que eu quero fazer.
+
+31
+00:02:06,830 --> 00:02:11,420
+Eu quero pegar meus painéis e usá-los para cada um, que é um método de matriz de alta ordem.
+
+32
+00:02:11,810 --> 00:02:19,130
+E esses métodos recebem uma função como argumento para que você possa fazer uma função ou o que você costuma ver
+
+33
+00:02:19,130 --> 00:02:20,840
+é uma função de seta como esta.
+
+34
+00:02:21,740 --> 00:02:25,810
+OK, e então precisamos passar aqui o que queremos usar para cada iteração.
+
+35
+00:02:25,820 --> 00:02:26,720
+Estes são painéis.
+
+36
+00:02:26,720 --> 00:02:34,430
+Então, vou usar o painel singular e posso fazer o console log aqui no painel, e ele só vai percorrer
+
+37
+00:02:34,430 --> 00:02:35,730
+e me mostre cada painel.
+
+38
+00:02:37,310 --> 00:02:39,340
+Agora, o que realmente queremos fazer aqui?
+
+39
+00:02:39,350 --> 00:02:45,410
+Queremos ter um ouvinte de eventos em cada um deles para que, se clicarmos nele, algo aconteça.
+
+40
+00:02:45,720 --> 00:02:52,040
+Então, pegaremos cada painel e diremos, adicione ouvinte de evento e quero ouvir um clique.
+
+41
+00:02:52,880 --> 00:02:55,970
+E quando esse clique acontecer, vamos executar uma função.
+
+42
+00:02:56,900 --> 00:03:02,360
+E para essa função, vamos fazer um log do console aqui e direi, não sei, um, dois,
+
+43
+00:03:02,360 --> 00:03:02,810
+três.
+
+44
+00:03:03,680 --> 00:03:07,060
+E se eu clicar em qualquer um deles, vamos registrar um, dois, três.
+
+45
+00:03:07,760 --> 00:03:13,870
+Então eu quero que quando clicamos em quero adicionar uma classe de active.
+
+46
+00:03:14,210 --> 00:03:20,180
+Então, se eu disser lista de classes de ponto de painel, isso me dá uma lista das classes.
+
+47
+00:03:20,450 --> 00:03:27,350
+Mas também temos métodos nesta classe, este objeto como add onde podemos especificamente fora da classe
+
+48
+00:03:27,350 --> 00:03:29,160
+e vou adicionar uma classe de active.
+
+49
+00:03:29,750 --> 00:03:36,800
+Então agora se eu fechar isso, se eu clicar neste, ele adiciona a classe de ativo, que então
+
+50
+00:03:36,800 --> 00:03:40,880
+muda para flex cinco se eu clicar nessa mesma coisa.
+
+51
+00:03:40,880 --> 00:03:44,840
+Mas você pode ver que ainda está ativo nesses outros.
+
+52
+00:03:44,840 --> 00:03:49,690
+Então está expandindo eles, mas não está retraindo os outros.
+
+53
+00:03:50,180 --> 00:03:58,640
+Então o que faremos é antes de colocarmos uma classe de ativo, vamos remover a classe de ativo em todos os
+
+54
+00:03:58,640 --> 00:03:59,390
+outros.
+
+55
+00:03:59,660 --> 00:04:08,150
+Então eu vou ter uma função aqui chamada Remove Active Classes, e vamos criá-la aqui embaixo.
+
+56
+00:04:09,440 --> 00:04:10,490
+Isso é uma função.
+
+57
+00:04:11,210 --> 00:04:13,330
+Remova as classes ativas.
+
+58
+00:04:14,960 --> 00:04:19,550
+Agora, como há mais de um painel, novamente, vamos percorrê-los e depois remover
+
+59
+00:04:19,550 --> 00:04:20,960
+todas as classes ativas.
+
+60
+00:04:20,960 --> 00:04:23,260
+Então vamos fazer exatamente o que fizemos acima.
+
+61
+00:04:23,270 --> 00:04:28,650
+Então panel dot para cada e aqui vamos colocar uma função de seta.
+
+62
+00:04:30,770 --> 00:04:36,290
+Agora, quando você tem uma função de seta com apenas um argumento como este, porque também podemos obter o
+
+63
+00:04:36,290 --> 00:04:39,110
+index, podemos obter o array completo.
+
+64
+00:04:39,110 --> 00:04:41,600
+Mas como somos só precisamos deste painel.
+
+65
+00:04:41,600 --> 00:04:45,200
+Não precisamos nem desses cacheados desculpe, desses parênteses.
+
+66
+00:04:45,200 --> 00:04:46,250
+Podemos apenas fazer isso.
+
+67
+00:04:47,030 --> 00:04:47,530
+Tudo bem.
+
+68
+00:04:47,540 --> 00:04:49,340
+E aqui em cima podemos fazer a mesma coisa.
+
+69
+00:04:49,940 --> 00:04:52,280
+Quero dizer, você pode mantê-los se quiser, mas não precisa.
+
+70
+00:04:52,980 --> 00:04:59,090
+E então aqui, digamos que para o painel específico que estamos percorrendo, queremos na classe
+
+71
+00:04:59,090 --> 00:05:05,150
+list objetos que queremos chamar de remove e queremos remover todas as classes ativas.
+
+72
+00:05:07,340 --> 00:05:13,640
+OK, então agora o que vai acontecer é quando clicarmos, vai remover todas as classes ativas do
+
+73
+00:05:13,640 --> 00:05:16,920
+todos eles e, em seguida, coloque a classe ativa na que clicarmos.
+
+74
+00:05:16,940 --> 00:05:17,960
+Então, se eu clicar aqui,
+
+75
+00:05:21,140 --> 00:05:24,980
+parece algo que um painel não está definido.
+
+76
+00:05:25,550 --> 00:05:26,780
+Ah, painéis.
+
+77
+00:05:26,930 --> 00:05:30,020
+Então, estamos percorrendo os painéis aqui, que vem daqui.
+
+78
+00:05:31,750 --> 00:05:32,150
+Tudo bem.
+
+79
+00:05:32,160 --> 00:05:38,840
+Então, se eu clicar agora, você verá que obteremos o efeito que queremos, porque logo antes de adicionar o
+
+80
+00:05:38,840 --> 00:05:41,510
+classe ativa para isso, tira isso do resto deles.
+
+81
+00:05:43,770 --> 00:05:48,810
+Agora, uma coisa que eu gostaria de mudar, porém, é assim que eu clicar nisso, você verá o H3
+
+82
+00:05:48,810 --> 00:05:51,350
+e tem esse tipo de efeito estranho de queda.
+
+83
+00:05:51,690 --> 00:05:55,220
+Então vamos adicionar uma transição para a opacidade no H3.
+
+84
+00:05:55,740 --> 00:06:04,720
+Então eu vou para o H3 ativo e vamos adicionar uma transição aqui e digamos opacidade.
+
+85
+00:06:04,740 --> 00:06:12,990
+Queremos adicionar uma transição na opacidade, zero três vírgula seis zero vírgula três segundos e facilitar
+
+86
+00:06:12,990 --> 00:06:15,930
+e vamos adicionar um atraso também.
+
+87
+00:06:15,930 --> 00:06:20,450
+Então vamos adicionar zero ponto quatro segundos no atraso.
+
+88
+00:06:20,880 --> 00:06:30,600
+E agora, se eu clicar, você verá que ele não é alimentado até que o cartão esteja totalmente expandido,
+
+89
+00:06:31,230 --> 00:06:33,670
+que é muito mais suave do que era antes.
+
+90
+00:06:34,530 --> 00:06:36,690
+OK, então é mais ou menos isso, pessoal.
+
+91
+00:06:36,990 --> 00:06:40,020
+Quero dizer, você pode transformar isso em qualquer tipo de cartão.
+
+92
+00:06:40,020 --> 00:06:42,570
+Não precisa ser apenas um título com uma imagem de fundo.
+
+93
+00:06:42,570 --> 00:06:46,020
+Pode ser como um depoimento ou absolutamente qualquer coisa que você queira.
+
+94
+00:06:46,290 --> 00:06:51,030
+Espero que isso ajude você a construir novos projetos com pequenos widgets como este.

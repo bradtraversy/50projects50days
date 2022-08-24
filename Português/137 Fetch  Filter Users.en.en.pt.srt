@@ -1,0 +1,715 @@
+﻿1
+00:00:00,180 --> 00:00:06,900
+OK, agora queremos buscar alguns dados, alguns usuários de uma API de terceiros em um usuário aleatório me pontilham.
+
+2
+00:00:07,320 --> 00:00:09,420
+Portanto, esta API é bastante simples.
+
+3
+00:00:09,420 --> 00:00:10,920
+É é é aberto.
+
+4
+00:00:10,920 --> 00:00:13,740
+Então você não precisa de nenhum tipo de chave ou algo assim.
+
+5
+00:00:13,740 --> 00:00:15,360
+Você não precisa se inscrever para nada.
+
+6
+00:00:15,630 --> 00:00:24,240
+Você simplesmente faz uma solicitação para um usuário aleatório cortar um usuário aleatório, eu cortar a API e você obtém Eu acho que você
+
+7
+00:00:24,240 --> 00:00:30,020
+obter um usuário por padrão, mas você pode definir um parâmetro de consulta de resultados e obter quantos quiser.
+
+8
+00:00:30,030 --> 00:00:32,640
+Então, na verdade, podemos apenas mostrar isso no navegador.
+
+9
+00:00:32,650 --> 00:00:33,840
+Eu só vou copiar isso.
+
+10
+00:00:34,350 --> 00:00:44,370
+Então, API de usuário aleatório, se eu executar, isso me dá a aparência de que me dá um usuário, mas se eu colocar
+
+11
+00:00:44,370 --> 00:00:52,080
+nesta uma string de consulta, então se eu fizer um ponto de interrogação e, em seguida, resultados e definir isso, vamos definir isso para 20,
+
+12
+00:00:52,500 --> 00:00:59,610
+você verá que me dá 20 usuários e dá a você todos os tipos de campos, seu nome, nome, localização com
+
+13
+00:00:59,610 --> 00:01:05,720
+um endereço completo, idade, número de telefone, até mesmo senha, nome de usuário e senha.
+
+14
+00:01:05,730 --> 00:01:09,280
+Portanto, é uma API realmente útil para dados fictícios.
+
+15
+00:01:10,080 --> 00:01:11,260
+Então é isso que vamos usar.
+
+16
+00:01:11,260 --> 00:01:16,650
+Então vamos fechar isso, vamos ao nosso script e eu vou começar aqui trazendo o que
+
+17
+00:01:16,650 --> 00:01:17,020
+Eu preciso de.
+
+18
+00:01:17,040 --> 00:01:20,160
+Então vamos trazer o resultado.
+
+19
+00:01:21,780 --> 00:01:27,330
+Então no nosso índice, cada vez temos isso aqui mesmo, os EUA, com a ideia de resultado.
+
+20
+00:01:27,360 --> 00:01:28,670
+Então nós queremos trazer isso.
+
+21
+00:01:28,680 --> 00:01:34,620
+Então document dot, vou em frente e usar o elemento git por estes e resultado.
+
+22
+00:01:35,280 --> 00:01:38,910
+E também queremos nosso filtro, que é nossa entrada.
+
+23
+00:01:39,470 --> 00:01:45,920
+Então isso tem um filtro de ideia ou pelo menos deveria apenas ter certeza de que eu coloquei isso.
+
+24
+00:01:45,920 --> 00:01:46,200
+Sim.
+
+25
+00:01:46,200 --> 00:01:48,080
+Então, filtre a ideia aqui.
+
+26
+00:01:49,800 --> 00:01:58,200
+OK, então trazendo isso e a próxima coisa que eu quero fazer é inicializar um array muito aqui chamado
+
+27
+00:01:58,200 --> 00:02:02,660
+list items e será apenas um array vazio.
+
+28
+00:02:02,970 --> 00:02:08,940
+Então, basicamente, onde vamos colocar os dados que buscamos e vamos criar uma função e isso é
+
+29
+00:02:08,940 --> 00:02:11,190
+vai ser assíncrono porque vou usar uma pia de distância.
+
+30
+00:02:11,230 --> 00:02:13,260
+Eu não vou usar a sintaxe DOT então.
+
+31
+00:02:13,650 --> 00:02:23,230
+Então, direi função assíncrona e chamaremos isso de obter dados e digamos Congresso.
+
+32
+00:02:23,250 --> 00:02:26,250
+Então isso vai representar a resposta do nosso pedido.
+
+33
+00:02:26,640 --> 00:02:28,520
+Agora, esta festa retorna uma promessa.
+
+34
+00:02:28,530 --> 00:02:34,740
+Então queremos esperar já que estamos usando uma pia de distância, queremos esperar, buscar e vamos passar aqui
+
+35
+00:02:34,740 --> 00:02:42,660
+http s usuário aleatório dot mi slash API e eu vou conseguir cinquenta.
+
+36
+00:02:42,660 --> 00:02:48,150
+Então vamos dizer que os resultados são iguais a cinqüenta.
+
+37
+00:02:49,250 --> 00:02:50,970
+OK, agora o que a API.
+
+38
+00:02:50,970 --> 00:02:55,140
+Precisamos ligar para o residente Jason para obter nossos dados.
+
+39
+00:02:55,150 --> 00:03:02,820
+Então vamos criar uma variável chamada data e vamos esperar porque isso aqui diz que vai
+
+40
+00:03:02,820 --> 00:03:06,500
+ser esse Jason residente aqui vai ser uma promessa.
+
+41
+00:03:06,510 --> 00:03:07,950
+Queremos aguardar isso.
+
+42
+00:03:08,250 --> 00:03:13,200
+E então isso deve nos dar nossos dados e eu vou em frente e cancelo os dados de log apenas para que possamos testar
+
+43
+00:03:13,200 --> 00:03:13,740
+isso.
+
+44
+00:03:14,130 --> 00:03:17,700
+E vamos executar esta função aqui, digamos, obter dados.
+
+45
+00:03:18,330 --> 00:03:24,240
+E então se formos até aqui e abrirmos nosso console, devemos ver, OK, então temos um objeto com
+
+46
+00:03:24,240 --> 00:03:24,840
+duas coisas.
+
+47
+00:03:24,840 --> 00:03:31,080
+Nós temos informações e isso tem como eu acho paginação e coisas assim, o número de resultados, o
+
+48
+00:03:31,080 --> 00:03:31,710
+página.
+
+49
+00:03:32,130 --> 00:03:37,260
+Então resultados é o que queremos neste deve ter 50 usuários diferentes.
+
+50
+00:03:38,190 --> 00:03:38,660
+Tudo bem.
+
+51
+00:03:38,670 --> 00:03:40,350
+Então vamos.
+
+52
+00:03:41,950 --> 00:03:42,650
+Vamos descer aqui.
+
+53
+00:03:42,670 --> 00:03:53,470
+Vamos nos livrar deste log do console aqui e quero limpar os resultados antes de fazermos qualquer coisa.
+
+54
+00:03:53,470 --> 00:04:03,100
+Então vamos dizer resultados e definir os resultados internos do HTML começam em nosso HTML, defina isso como apenas uma string vazia.
+
+55
+00:04:04,030 --> 00:04:09,910
+E então teremos que percorrer os dados aqui, saber realmente o que podemos fazer, pois precisamos
+
+56
+00:04:09,910 --> 00:04:15,310
+para fazer os resultados do ponto de dados, porque lembre-se, isso obtém um objeto com informações nos resultados.
+
+57
+00:04:15,640 --> 00:04:22,870
+Então, poderíamos descer aqui e dizer resultados de pontos de dados ou podemos apenas estruturar aqui para que possamos
+
+58
+00:04:22,870 --> 00:04:26,700
+apenas retire os resultados dos dados, na verdade.
+
+59
+00:04:27,760 --> 00:04:33,130
+Sim, tudo bem, porque chamamos esse resultado de singular para que possamos usar os resultados aqui e depois
+
+60
+00:04:33,130 --> 00:04:35,710
+podemos simplesmente pegar isso e podemos fazer um loop por isso.
+
+61
+00:04:35,710 --> 00:04:37,030
+Então para cada um.
+
+62
+00:04:40,500 --> 00:04:45,910
+Para cada, digamos, para cada usuário, porque é isso que é.
+
+63
+00:04:45,930 --> 00:04:52,980
+Então, cada usuário, vamos em frente e eu só quero console logar aqui usuário apenas para ter certeza de que estamos recebendo
+
+64
+00:04:52,980 --> 00:04:55,680
+isso é bom para que você possa ver que está registrando todos os usuários.
+
+65
+00:04:57,000 --> 00:05:03,830
+E vamos construir um aliado, porque agora em nosso HTML, temos apenas que você sabe, temos a informação,
+
+66
+00:05:03,840 --> 00:05:09,780
+temos o carregamento aqui, que será mostrado inicialmente, mas queremos construir o item da lista
+
+67
+00:05:10,260 --> 00:05:12,140
+para isso vão ter os usuários.
+
+68
+00:05:12,150 --> 00:05:22,230
+Então vamos fazer isso neste foreach vai dizer const ally e vamos usar o elemento document dot create porque
+
+69
+00:05:22,230 --> 00:05:30,300
+queremos criar um item de lista para cada um desses usuários e, em seguida, queremos levar nossa matriz de itens de lista,
+
+70
+00:05:30,300 --> 00:05:37,980
+que começa como uma matriz vazia e, em seguida, queremos empurrar cada um dos aliados.
+
+71
+00:05:38,640 --> 00:05:46,020
+OK, então vamos empurrar isso e então vamos pegar a mentira e adicionar o HTML interno.
+
+72
+00:05:46,920 --> 00:05:52,790
+Então, isso será, você sabe, semelhante ao HTML codificado que tínhamos para cada usuário.
+
+73
+00:05:52,800 --> 00:05:59,760
+Ele terá a imagem e coisas assim, que podemos obter desse objeto de usuário que é passado para
+
+74
+00:05:59,760 --> 00:06:01,720
+este foreach quando percorremos o array.
+
+75
+00:06:02,160 --> 00:06:12,900
+Então aqui, digamos imagem e defina a fonte e queremos definir isso, vamos usar essa variável
+
+76
+00:06:12,900 --> 00:06:16,170
+sintaxe e vamos pegar o usuário agora.
+
+77
+00:06:16,170 --> 00:06:20,550
+Podemos acessar a imagem do ponto do usuário e, em seguida, há tamanhos diferentes.
+
+78
+00:06:20,550 --> 00:06:21,840
+vou fazer grande.
+
+79
+00:06:22,980 --> 00:06:28,230
+Então a imagem do usuário é grande e você pode ver todas essas coisas se fizer uma solicitação, você sabe, seja no seu
+
+80
+00:06:28,230 --> 00:06:36,870
+browser ou com algo como Postman ou qualquer que seja o ALZ, vou usar o primeiro nome do usuário.
+
+81
+00:06:36,880 --> 00:06:40,140
+Portanto, temos o ponto do nome do usuário primeiro.
+
+82
+00:06:40,720 --> 00:06:45,750
+E se você está se perguntando, você sabe onde eu consegui esse ponto de nome primeiro e outras coisas nesta foto em ponto grande,
+
+83
+00:06:45,750 --> 00:06:47,220
+cada API é diferente.
+
+84
+00:06:48,060 --> 00:06:52,140
+Você só precisa, você pode olhar a documentação para ver o que ela lhe dá.
+
+85
+00:06:52,140 --> 00:06:54,450
+Na verdade, podemos ver aqui embaixo onde eu registrei.
+
+86
+00:06:55,320 --> 00:06:55,800
+Vamos ver.
+
+87
+00:06:55,800 --> 00:06:56,850
+Então você pode ver o nome.
+
+88
+00:06:57,090 --> 00:07:00,390
+Portanto, nome é na verdade um objeto com primeiro sobrenome e título.
+
+89
+00:07:00,600 --> 00:07:03,330
+Então estou pegando a primeira foto.
+
+90
+00:07:03,330 --> 00:07:08,760
+Deve estar aqui em algum lugar para imaginar que temos uma miniatura média grande, então depende apenas da API.
+
+91
+00:07:08,760 --> 00:07:11,730
+Eu sei que quando eu comecei a aprender essas coisas, isso me confundiu.
+
+92
+00:07:11,730 --> 00:07:13,230
+Tipo de onde você tirou isso.
+
+93
+00:07:13,410 --> 00:07:17,290
+Só depende dos dados que estão sendo enviados da API.
+
+94
+00:07:18,150 --> 00:07:25,350
+A mesma coisa com, você sabe, aqui onde obtemos resultados, às vezes algumas APIs, os dados podem vir
+
+95
+00:07:25,350 --> 00:07:32,430
+como, você sabe, uma matriz ou nossa única matriz ou pode vir em objetos diferentes, como um objeto de resultados.
+
+96
+00:07:32,590 --> 00:07:34,620
+Este também tinha um objeto de informação.
+
+97
+00:07:34,620 --> 00:07:37,410
+Portanto, depende apenas dos dados com os quais você está lidando.
+
+98
+00:07:38,250 --> 00:07:40,500
+Então esta imagem aqui, vamos terminar isso.
+
+99
+00:07:41,480 --> 00:07:52,070
+E então temos sob a imagem, temos um div e vamos dar a isso uma classe de informações do usuário Dasch
+
+100
+00:07:54,620 --> 00:07:57,670
+e informações do usuário, teremos o nome.
+
+101
+00:07:57,680 --> 00:08:03,680
+Então será em uma idade de quatro anos e esse será o nome e o sobrenome.
+
+102
+00:08:03,680 --> 00:08:11,870
+Então vamos em frente e pegar o nome do ponto do usuário primeiro e depois o MySpace e então vamos pegar o nome do ponto do usuário
+
+103
+00:08:11,870 --> 00:08:13,070
+ponto por último.
+
+104
+00:08:13,700 --> 00:08:17,910
+E abaixo disso teremos nosso gráfico de potência e este será o local.
+
+105
+00:08:18,470 --> 00:08:28,940
+Portanto, com essa API específica nos dados que ela nos fornece, temos acesso à localização do usuário, cidade ponto e
+
+106
+00:08:28,940 --> 00:08:32,210
+aí eu vou colocar uma vírgula e aí eu quero pegar o país.
+
+107
+00:08:32,210 --> 00:08:37,460
+Portanto, local do ponto do usuário, país do ponto.
+
+108
+00:08:38,390 --> 00:08:41,010
+OK, e você pode ver isso aqui embaixo.
+
+109
+00:08:42,140 --> 00:08:45,630
+Então na localização você tem cidade, você pode ter coordenadas.
+
+110
+00:08:45,630 --> 00:08:47,380
+Então você pode colocá-los em um mapa.
+
+111
+00:08:47,390 --> 00:08:49,580
+Quer dizer, você pode fazer muito com essa pequena API.
+
+112
+00:08:50,930 --> 00:08:51,980
+Então é isso.
+
+113
+00:08:52,580 --> 00:08:55,430
+Agora temos o item de lista criado.
+
+114
+00:08:55,700 --> 00:08:59,320
+Nós o adicionamos ao array, adicionamos o HTML inteiro.
+
+115
+00:08:59,330 --> 00:09:02,990
+Agora só precisamos colocá-lo no resultado, no HTML.
+
+116
+00:09:03,000 --> 00:09:04,930
+Então nós temos esse resultado que nós puxamos.
+
+117
+00:09:04,940 --> 00:09:11,540
+Esse é o você que queremos anexar filho porque estamos colocando este elai nos EUA. Então, queremos
+
+118
+00:09:11,540 --> 00:09:13,220
+é só passar deitada aí.
+
+119
+00:09:14,220 --> 00:09:14,640
+Tudo bem.
+
+120
+00:09:15,170 --> 00:09:20,450
+Então, se eu salvar isso, você pode ver aqui agora que estamos chegando 50 mais perto.
+
+121
+00:09:20,460 --> 00:09:22,970
+Então, estamos recebendo 50 usuários diferentes.
+
+122
+00:09:23,540 --> 00:09:29,900
+Agora, o carregamento não deve estar aparecendo, e isso porque deve ser um resultado claro.
+
+123
+00:09:30,050 --> 00:09:32,630
+Então eu não estou limpando os resultados.
+
+124
+00:09:32,630 --> 00:09:36,200
+Os dados que eu tenho, é o resultado que eu trouxe.
+
+125
+00:09:36,500 --> 00:09:37,640
+Então vamos salvar isso.
+
+126
+00:09:37,640 --> 00:09:40,790
+E posso ver que isso não será exibido agora para a filtragem.
+
+127
+00:09:40,790 --> 00:09:44,420
+Precisamos ter um ouvinte de eventos quando digitamos essa entrada.
+
+128
+00:09:44,420 --> 00:09:50,450
+Então vamos direto para onde chamamos, pegar os dados inicialmente e vamos pegar o filtro, que é o
+
+129
+00:09:50,450 --> 00:09:53,390
+input e vamos adicionar um ouvinte de evento a ele.
+
+130
+00:09:53,870 --> 00:09:56,090
+E queremos ouvir qualquer entrada.
+
+131
+00:09:56,540 --> 00:10:02,420
+E quando isso acontecer, vamos disparar um evento que vai chamar uma função.
+
+132
+00:10:02,420 --> 00:10:08,030
+Vamos passar nosso evento, objeto e chamar uma função chamada dados filtrados que vamos
+
+133
+00:10:08,030 --> 00:10:15,680
+para criar e queremos apenas passar e para que nosso evento ponto alvo ponto valor, que vai nos dar
+
+134
+00:10:15,680 --> 00:10:17,210
+tudo o que está sendo digitado.
+
+135
+00:10:17,660 --> 00:10:27,410
+Então aqui embaixo, vamos criar nossa função para filtrar dados e isso vai incluir vamos chamar search
+
+136
+00:10:27,410 --> 00:10:27,890
+prazo.
+
+137
+00:10:27,890 --> 00:10:35,150
+Então, o que está sendo digitado e apenas para mostrar que você pode consolar o termo de pesquisa de log.
+
+138
+00:10:36,360 --> 00:10:44,030
+E se abrirmos nosso console aqui e eu começar a digitar, você pode ver que podemos capturar o que estivermos digitando.
+
+139
+00:10:45,390 --> 00:10:52,350
+Então eu vou pegar os itens da lista, que é, você sabe, a matriz de usuários e percorrer.
+
+140
+00:10:53,100 --> 00:10:56,560
+Então diremos para cada chamada este item.
+
+141
+00:10:58,680 --> 00:11:00,810
+Então, para cada item que eu quero verificar.
+
+142
+00:11:01,650 --> 00:11:09,840
+Então, queremos basicamente verificar se ele corresponde ao usuário, para que possamos fazer isso pegando o item, veja
+
+143
+00:11:09,840 --> 00:11:13,680
+se o item pontilhar em nosso texto.
+
+144
+00:11:14,380 --> 00:11:18,390
+Portanto, em nosso texto para o item, lembre-se de que os itens da lista são o elai.
+
+145
+00:11:18,390 --> 00:11:23,850
+Então vamos passar pelos aliados e checar cada item e checar o texto interno e eu vou
+
+146
+00:11:23,850 --> 00:11:32,670
+torná-lo minúsculo usando para minúsculo assim, porque mesmo se digitarmos em letras maiúsculas,
+
+147
+00:11:32,670 --> 00:11:33,810
+Ainda quero que combine.
+
+148
+00:11:33,810 --> 00:11:38,910
+Então vamos primeiro convertê-lo para minúsculas e então vamos usar o método includes.
+
+149
+00:11:39,660 --> 00:11:45,270
+Então diremos se o texto interno, quando é minúsculo ou não, quando, mas vamos convertê-lo para
+
+150
+00:11:45,270 --> 00:11:51,390
+minúsculas se isso inclui o termo de pesquisa que é passado para esta função.
+
+151
+00:11:51,390 --> 00:11:53,640
+E também queremos fazer isso em minúsculas.
+
+152
+00:11:54,540 --> 00:11:56,040
+Então, ambos serão minúsculos.
+
+153
+00:11:56,040 --> 00:11:57,030
+Nós vamos igualar isso.
+
+154
+00:11:57,030 --> 00:12:02,460
+Se corresponder, queremos remover qualquer classe de hide.
+
+155
+00:12:02,490 --> 00:12:07,200
+Lembre-se, a classe alta está configurada para exibir nenhum, bem isso aqui.
+
+156
+00:12:07,620 --> 00:12:18,540
+Então, queremos apenas pegar o item e definir a lista de classes, remover dot e queremos remover qualquer classificado
+
+157
+00:12:19,050 --> 00:12:19,800
+senão.
+
+158
+00:12:21,420 --> 00:12:26,760
+Então, se não corresponder, basicamente se não correspondermos ao que digitamos, queremos adicionar a classe
+
+159
+00:12:26,760 --> 00:12:27,190
+de esconder.
+
+160
+00:12:27,210 --> 00:12:34,660
+Então, digamos item ponto, lista de classes, ponto, adicionar e então queremos adicionar a classe de ocultar.
+
+161
+00:12:35,430 --> 00:12:41,160
+OK, agora você pode ver que temos Rothesay, Roger bem aqui.
+
+162
+00:12:41,610 --> 00:12:48,750
+Se eu fizer r agora, ele filtrará qualquer coisa que tenha um R será incluído aqui e isso inclui
+
+163
+00:12:48,750 --> 00:12:49,850
+qualquer coisa que está aqui.
+
+164
+00:12:49,860 --> 00:12:51,510
+Assim, o nome e localização.
+
+165
+00:12:51,510 --> 00:12:54,590
+Então você pode ver que todos estes têm os nossos em algum lugar aqui.
+
+166
+00:12:54,630 --> 00:12:54,900
+Certo.
+
+167
+00:12:55,310 --> 00:13:01,290
+Vamos fazer nosso O e agora ele está apenas nos dando nomes ou locais com R.
+
+168
+00:13:01,290 --> 00:13:02,310
+Oi G.
+
+169
+00:13:02,820 --> 00:13:04,390
+E isso nos deixa com Roger.
+
+170
+00:13:05,490 --> 00:13:06,020
+Tudo bem.
+
+171
+00:13:06,060 --> 00:13:10,290
+Se eu conheço o Roger e começo a digitar mais letras, não vai combinar.
+
+172
+00:13:10,710 --> 00:13:18,840
+E se eu remover, vai se isso você sabe, se combinar de novo, vai remover o classificado.
+
+173
+00:13:18,850 --> 00:13:23,190
+Então, é apenas adicionar e remover essa classe Hyde enquanto digitamos e excluímos.
+
+174
+00:13:23,940 --> 00:13:24,330
+Certo.
+
+175
+00:13:24,340 --> 00:13:25,530
+Então é isso.
+
+176
+00:13:26,160 --> 00:13:31,650
+E você pode aplicar isso a qualquer tipo de lista que você queira pesquisar.
+
+177
+00:13:32,160 --> 00:13:33,540
+Realmente fácil de montar.
+
+178
+00:13:34,260 --> 00:13:34,870
+Mas é isso.
+
+179
+00:13:34,870 --> 00:13:37,170
+É ir em frente e passar para o próximo projeto.

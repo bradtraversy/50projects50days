@@ -1,0 +1,271 @@
+﻿1
+00:00:00,150 --> 00:00:05,820
+Tudo bem, então no último vídeo, criamos nosso e-mail, que é bem simples e com muito estilo,
+
+2
+00:00:05,820 --> 00:00:12,060
+então definimos as posições das agulhas e assim por diante neste quadrado aqui, podemos realmente nos livrar
+
+3
+00:00:12,060 --> 00:00:12,370
+por essa.
+
+4
+00:00:12,390 --> 00:00:15,290
+Agora, eu só queria que você visse o contorno do relógio.
+
+5
+00:00:15,300 --> 00:00:19,170
+Então, essa cor de fundo na classe clock, podemos nos livrar disso.
+
+6
+00:00:19,860 --> 00:00:22,080
+E então vamos começar no ponto central.
+
+7
+00:00:23,160 --> 00:00:31,590
+Temos uma classe de ponto central e vamos usar a classe Centerpoint, mas também vamos
+
+8
+00:00:31,590 --> 00:00:36,690
+usar o pseudo seletor depois porque queremos que seja basicamente dois círculos.
+
+9
+00:00:36,700 --> 00:00:38,090
+Então, precisamos estilizar ambos.
+
+10
+00:00:38,110 --> 00:00:40,450
+Então vai ser um círculo dentro de um círculo.
+
+11
+00:00:40,920 --> 00:00:51,670
+Então, para isso, vamos definir a cor de fundo e vamos definir isso para, digamos E sete, E
+
+12
+00:00:51,690 --> 00:00:56,370
+sete quatro, C, três C, então é da mesma cor que a segunda agulha.
+
+13
+00:00:56,370 --> 00:01:01,290
+Poderíamos colocar isso em uma variável, mas esses são os únicos dois lugares em que estamos usando no próximo
+
+14
+00:01:01,290 --> 00:01:01,800
+uns aos outros.
+
+15
+00:01:01,810 --> 00:01:02,820
+Então isso deve ser bom.
+
+16
+00:01:03,570 --> 00:01:13,680
+E então eu vou definir a largura para dez pixels e também a altura para dez pixels.
+
+17
+00:01:13,680 --> 00:01:19,820
+Então você pode ver que é apenas um quadrado e está posicionado estático agora, que é o posicionamento padrão.
+
+18
+00:01:19,830 --> 00:01:27,730
+Então, queremos posicionar o absoluto e, até onde queremos colocá-lo, queremos chegar ao topo 50%.
+
+19
+00:01:27,730 --> 00:01:35,940
+E isso está dentro da classe de relógio onde aquele quadrado cinza estava e digamos da esquerda, 50
+
+20
+00:01:35,940 --> 00:01:36,610
+por cento.
+
+21
+00:01:37,680 --> 00:01:41,510
+Agora, isso não está diretamente no meio.
+
+22
+00:01:41,520 --> 00:01:49,980
+Então, precisamos usar transform e queremos traduzir em ambos os eixos.
+
+23
+00:01:50,010 --> 00:01:53,260
+Então vamos dizer traduzir e então apenas menos 50.
+
+24
+00:01:53,280 --> 00:01:57,780
+Então, queremos puxar de volta 50 negativos em Xanthi.
+
+25
+00:01:57,780 --> 00:01:59,490
+Então isso vai colocá-lo diretamente no meio.
+
+26
+00:01:59,730 --> 00:02:01,370
+E queremos que isso seja um círculo.
+
+27
+00:02:01,380 --> 00:02:03,980
+Então, vamos definir o raio da borda.
+
+28
+00:02:03,990 --> 00:02:07,350
+Vamos definir isso para 50 por cento, o que fará com que seja um círculo.
+
+29
+00:02:08,100 --> 00:02:14,690
+OK, e então eu penso e acho que é tudo o que queremos fazer aqui.
+
+30
+00:02:14,700 --> 00:02:20,130
+Agora, também queremos adicionar um ponto preto no meio.
+
+31
+00:02:20,400 --> 00:02:28,770
+Então eu vou copiar, vamos copiar tudo isso e dizer ponto central e então vamos
+
+32
+00:02:28,770 --> 00:02:30,660
+usar dois pontos, dois pontos depois.
+
+33
+00:02:30,660 --> 00:02:37,140
+E como estamos usando after, precisamos adicionar uma propriedade content aqui, que será apenas uma string vazia.
+
+34
+00:02:37,590 --> 00:02:42,370
+E vou definir a cor de fundo para a cor primária, seja ela qual for.
+
+35
+00:02:42,390 --> 00:02:50,030
+Então vamos dizer var traço, traço, cor primária e a largura e a altura.
+
+36
+00:02:50,070 --> 00:02:54,000
+Queremos que isso seja menor porque isso vai ficar no meio do outro no meio do
+
+37
+00:02:54,000 --> 00:02:54,800
+círculo vermelho.
+
+38
+00:02:55,140 --> 00:02:58,320
+Então, vamos definir isso para a posição de cinco pixels.
+
+39
+00:02:58,320 --> 00:03:00,210
+Absoluto isso é tudo de bom.
+
+40
+00:03:00,270 --> 00:03:01,080
+Isso é tudo a mesma coisa.
+
+41
+00:03:01,110 --> 00:03:08,160
+Então, se eu salvar isso, agora temos um pequeno ponto preto no meio do nosso ponto central, OK, agora é estilo
+
+42
+00:03:08,160 --> 00:03:08,910
+como o texto.
+
+43
+00:03:08,910 --> 00:03:10,560
+Então nós temos a classe do tempo.
+
+44
+00:03:11,260 --> 00:03:15,600
+Estou para definir o tamanho da fonte aqui para 60 pixels.
+
+45
+00:03:15,600 --> 00:03:18,810
+Tão bom e grande e, em seguida, a classe de encontro.
+
+46
+00:03:20,010 --> 00:03:28,230
+Então vou fazer a cor tripla A e então vamos definir o tamanho da fonte para 14 pixels.
+
+47
+00:03:28,260 --> 00:03:31,050
+Vamos definir o espaçamento entre letras.
+
+48
+00:03:32,100 --> 00:03:38,190
+Eu vou fazer o zero ponto três pixels e vamos torná-lo maiúsculo.
+
+49
+00:03:38,190 --> 00:03:43,530
+Portanto, a transformação de texto definirá isso para maiúsculas.
+
+50
+00:03:44,220 --> 00:03:49,740
+Agora, a data, como as duas aqui, tem uma extensão em torno dela com a classe do círculo.
+
+51
+00:03:49,760 --> 00:03:57,750
+Então digamos que para o círculo de data, vamos fazer a cor de fundo, a cor primária
+
+52
+00:04:00,480 --> 00:04:04,860
+e vamos fazer da cor a cor secundária.
+
+53
+00:04:07,930 --> 00:04:18,170
+E queremos que seja um círculo, então o raio da borda será de 50 por cento.
+
+54
+00:04:19,480 --> 00:04:19,920
+Tudo bem.
+
+55
+00:04:19,930 --> 00:04:26,080
+E então vamos adicionar um Hitner com então vamos fazer 18 pixels.
+
+56
+00:04:31,810 --> 00:04:39,550
+E vamos definir que eu realmente vou exibir isso como na linha de Fleck.
+
+57
+00:04:41,780 --> 00:04:47,810
+OK, e queremos obviamente que você queira o número no meio, então vamos fazer um centro de itens de linha
+
+58
+00:04:47,810 --> 00:04:52,940
+e vamos justificar os assentos do centro de conteúdo que são colocados no meio.
+
+59
+00:04:52,940 --> 00:04:58,160
+E então eu vou mudar a altura da linha para o mesmo que o tamanho da fonte 18 pixels.
+
+60
+00:05:02,030 --> 00:05:07,340
+E então, quando isso mudar, eu quero ter uma transição.
+
+61
+00:05:07,340 --> 00:05:14,810
+Então, em uma transição, digamos que zero ponto cinco segundos tenha chegado.
+
+62
+00:05:16,900 --> 00:05:19,390
+OK, então eu acho que isso parece muito bom.
+
+63
+00:05:21,610 --> 00:05:26,680
+Na verdade, o tamanho da fonte, digamos, tamanho da fonte 12 pixels.
+
+64
+00:05:28,120 --> 00:05:32,560
+Tudo bem, agora temos basicamente nossa interface do usuário feita aqui.
+
+65
+00:05:32,560 --> 00:05:36,090
+E no próximo vídeo, queremos deixar essa função OK.
+
+66
+00:05:36,150 --> 00:05:39,820
+Queremos fazer o relógio funcionar, queremos mostrar a data e a hora.
+
+67
+00:05:39,820 --> 00:05:44,770
+Queremos poder mudar para o modo claro ou mudar para o modo escuro e voltar.
+
+68
+00:05:45,040 --> 00:05:47,350
+Então vamos entrar em tudo isso no próximo vídeo.

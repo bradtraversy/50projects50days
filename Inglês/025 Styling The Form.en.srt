@@ -1,0 +1,459 @@
+1
+00:00:00,210 --> 00:00:05,660
+OK, so let's get started on our form input wave project, I have my project start are open here.
+
+2
+00:00:05,820 --> 00:00:11,280
+It's going to say form input wave and then let's get rid of this, each one.
+
+3
+00:00:11,280 --> 00:00:15,960
+And we're just going to wrap a container around our form.
+
+4
+00:00:16,080 --> 00:00:18,240
+So we'll have a container with an H1.
+
+5
+00:00:18,270 --> 00:00:24,630
+We'll just say please log in basic login form and we'll have a form tag here.
+
+6
+00:00:24,630 --> 00:00:25,770
+We don't need an action.
+
+7
+00:00:26,550 --> 00:00:32,040
+And and here we're going to have a form Dasch Control, which will wrap around the input which is going
+
+8
+00:00:32,040 --> 00:00:33,120
+to be typed text.
+
+9
+00:00:33,120 --> 00:00:39,270
+I'm also going to add required, which will just give it some basic validation and then the label is
+
+10
+00:00:39,270 --> 00:00:43,320
+going to go underneath and we don't really need a four.
+
+11
+00:00:43,320 --> 00:00:48,630
+So we'll get rid of that and say email and then I'm going to go ahead and copy that down.
+
+12
+00:00:49,710 --> 00:00:52,020
+And this one is going to be password.
+
+13
+00:00:52,320 --> 00:00:59,730
+So type password and label password underneath that form control.
+
+14
+00:00:59,730 --> 00:01:06,210
+We're going to have a button and I'm going to give it a class of B10 and let's just say log in and then
+
+15
+00:01:06,210 --> 00:01:08,430
+we'll have a live with the class of text.
+
+16
+00:01:08,850 --> 00:01:19,200
+Actually it's to a parallel to a paragraph class of text and say don't have an account and if they don't
+
+17
+00:01:19,200 --> 00:01:20,970
+have an account then we'll just have a link.
+
+18
+00:01:20,970 --> 00:01:23,850
+Doesn't have to go anywhere and say register.
+
+19
+00:01:24,660 --> 00:01:25,050
+All right.
+
+20
+00:01:25,050 --> 00:01:26,010
+So that's our form.
+
+21
+00:01:26,160 --> 00:01:26,950
+Pretty simple.
+
+22
+00:01:27,570 --> 00:01:33,720
+Now, before I get into CSFs, I just want to kind of explain what we're going to be doing as far as,
+
+23
+00:01:33,720 --> 00:01:34,920
+you know, how to do this.
+
+24
+00:01:35,400 --> 00:01:44,250
+And we want to use JavaScript to basically wrap each letter in a in a span and we're going to have a
+
+25
+00:01:44,250 --> 00:01:46,710
+transition on that span to move it up.
+
+26
+00:01:47,070 --> 00:01:53,190
+So or transform translate y value to move it up with a transition to make it smooth.
+
+27
+00:01:53,520 --> 00:01:57,990
+And in JavaScript, when we wrap the span around each letter, we're also going to add a transition
+
+28
+00:01:57,990 --> 00:02:04,950
+delay to each one that increases every letter so that, you know, the first one goes up and then this
+
+29
+00:02:04,950 --> 00:02:06,300
+the end would be delayed.
+
+30
+00:02:06,300 --> 00:02:09,510
+Then it would go up a would be even more delayed, then it would go up.
+
+31
+00:02:09,510 --> 00:02:10,980
+So it gives it that wave effect.
+
+32
+00:02:11,280 --> 00:02:13,620
+So that's ultimately what we're going to end up with.
+
+33
+00:02:13,620 --> 00:02:18,060
+In fact, I'll go ahead and just paste in what these labels will look like afterwards.
+
+34
+00:02:19,020 --> 00:02:21,960
+So basically we'll have, you know, the label tag.
+
+35
+00:02:22,500 --> 00:02:23,880
+You don't have to put this in.
+
+36
+00:02:23,880 --> 00:02:29,460
+I'm just showing you as an example, we'll have each letter wrapped in a span with a transition delay
+
+37
+00:02:29,460 --> 00:02:30,510
+that increments.
+
+38
+00:02:30,960 --> 00:02:34,290
+So I'm just going to comment that out.
+
+39
+00:02:34,290 --> 00:02:36,750
+But just so you can see what we're going to end up with.
+
+40
+00:02:37,140 --> 00:02:41,580
+But before we get into any of that, let's just do some basic styling on this form because it looks
+
+41
+00:02:41,580 --> 00:02:42,120
+horrible.
+
+42
+00:02:42,570 --> 00:02:54,960
+So I'm going to use the mollifies so we'll do family equals and Muli and then let's set the set that
+
+43
+00:02:54,960 --> 00:03:03,870
+on the body and then I'm going to set a background color for the body to steal blue and the color of
+
+44
+00:03:03,870 --> 00:03:06,630
+the text to white.
+
+45
+00:03:08,220 --> 00:03:18,660
+That's and then let's style, uh, let's see, we'll do the container and let's add a background color
+
+46
+00:03:20,130 --> 00:03:21,490
+of our GBA.
+
+47
+00:03:21,490 --> 00:03:28,140
+I want it to have just kind of a transparent look, so black and then zero point four for the alpha
+
+48
+00:03:28,140 --> 00:03:30,000
+value and let's add padding.
+
+49
+00:03:30,390 --> 00:03:31,080
+So padding.
+
+50
+00:03:31,080 --> 00:03:34,440
+We're going to do twenty pixels, top and bottom, forty left and right.
+
+51
+00:03:34,980 --> 00:03:38,970
+And let's add a slight border radius of five pixels.
+
+52
+00:03:40,020 --> 00:03:40,440
+All right.
+
+53
+00:03:40,440 --> 00:03:43,410
+And then let's do container each one.
+
+54
+00:03:44,160 --> 00:03:48,090
+So for that I want to text a line to the center.
+
+55
+00:03:48,090 --> 00:03:52,140
+I also want to add a margin on the bottom of thirty pixels.
+
+56
+00:03:53,310 --> 00:03:57,750
+OK, and then the link, let's say container A which is just the register link.
+
+57
+00:03:57,750 --> 00:04:00,120
+I want to text decoration none.
+
+58
+00:04:00,990 --> 00:04:06,330
+Take away the underline and the color will be let's put the color to light blue.
+
+59
+00:04:09,130 --> 00:04:14,830
+So now we want to get into the form fields first we have the form control, which wraps around the input
+
+60
+00:04:14,830 --> 00:04:21,820
+and the labels, so it's a form control and I'm going to position that relative because I want the label
+
+61
+00:04:21,820 --> 00:04:23,880
+to be positioned absolute within it.
+
+62
+00:04:24,520 --> 00:04:29,740
+And then for margin, let's do 20 top and bottom zero left and right, 40 bottom.
+
+63
+00:04:30,490 --> 00:04:34,300
+And I'm going to just settle with of three hundred pixels.
+
+64
+00:04:35,470 --> 00:04:35,950
+All right.
+
+65
+00:04:35,950 --> 00:04:38,770
+And then let's do the inputs.
+
+66
+00:04:38,770 --> 00:04:40,570
+So form control input.
+
+67
+00:04:41,590 --> 00:04:49,680
+I'm going to set the background color to transparent and then get rid of that border.
+
+68
+00:04:49,990 --> 00:04:52,150
+But I do want a border on the bottom.
+
+69
+00:04:53,620 --> 00:04:55,060
+So let's say border
+
+70
+00:04:57,790 --> 00:04:59,110
+border dash bottom.
+
+71
+00:04:59,110 --> 00:05:01,090
+And I'm going to set that to two pixels.
+
+72
+00:05:02,050 --> 00:05:04,570
+Let's do whites and solid.
+
+73
+00:05:05,910 --> 00:05:07,930
+OK, now I want on its own line.
+
+74
+00:05:07,930 --> 00:05:10,600
+So instead of inline, we want to display block.
+
+75
+00:05:10,970 --> 00:05:15,100
+I also want it to go all the way across, all set with to 100 percent.
+
+76
+00:05:16,030 --> 00:05:18,220
+And we'll add some padding.
+
+77
+00:05:18,440 --> 00:05:28,210
+Let's do 15 pixels on the top and bottom and the font size for the input I'm going to set to 18 pixels.
+
+78
+00:05:29,580 --> 00:05:32,420
+And I think we should be good there.
+
+79
+00:05:33,390 --> 00:05:34,890
+Let's get the color to white.
+
+80
+00:05:37,530 --> 00:05:42,450
+And then the border here are the outline, I should say, we want to get rid of that also, if I submit
+
+81
+00:05:42,450 --> 00:05:45,170
+and it's invalid, you get that border as well.
+
+82
+00:05:45,180 --> 00:05:48,750
+So let's target form control inputs.
+
+83
+00:05:49,350 --> 00:05:58,920
+And when it's in its focus, also, we want form, control, input, valid, and we're going to just
+
+84
+00:05:58,920 --> 00:06:01,990
+set the outline on that to zero.
+
+85
+00:06:02,670 --> 00:06:04,800
+OK, so now we don't have that ugly border.
+
+86
+00:06:06,870 --> 00:06:12,150
+Now, before we do, I think we're going to do the label stuff in the next video.
+
+87
+00:06:12,150 --> 00:06:16,830
+But let's finish like the button and the text down here.
+
+88
+00:06:16,830 --> 00:06:22,920
+So we have a class of actually we put this up, we'll do all the form stuff down at the bottom.
+
+89
+00:06:22,930 --> 00:06:24,240
+So let's do BTN.
+
+90
+00:06:24,810 --> 00:06:31,230
+And I'm just going to set the cursor to a point where I'm going to display as an inline block.
+
+91
+00:06:33,720 --> 00:06:40,860
+For our button here, and I want it to go all the way across, we'll say, with 100 percent and let's
+
+92
+00:06:40,860 --> 00:06:47,640
+set the background of the button to light blue and let's set the padding.
+
+93
+00:06:48,970 --> 00:06:56,480
+We'll do padding 15 pixels and let's Refaat family, we're going to inherit.
+
+94
+00:06:57,270 --> 00:07:05,340
+And then for fun size, let's put that to 16 pixels and the border.
+
+95
+00:07:05,340 --> 00:07:06,510
+We want to get rid of that.
+
+96
+00:07:06,510 --> 00:07:07,860
+So border zero.
+
+97
+00:07:07,860 --> 00:07:13,320
+And I'm going to make the border radius, same as the container, five pixels.
+
+98
+00:07:14,490 --> 00:07:18,660
+And I think that's all we want to do.
+
+99
+00:07:20,810 --> 00:07:26,430
+Let's say let's add on let's say BTN focus set that outline.
+
+100
+00:07:26,790 --> 00:07:28,590
+Actually, we can add that down here.
+
+101
+00:07:32,410 --> 00:07:34,450
+No, because we're going to add something else there.
+
+102
+00:07:34,510 --> 00:07:42,900
+Yeah, let's just do outline zero on BTN focus and we can have a little hover effect too.
+
+103
+00:07:42,910 --> 00:07:47,770
+So I mean, not hover, click effect or hover, whatever you want.
+
+104
+00:07:47,800 --> 00:07:50,950
+So we're going to do button and when it's active.
+
+105
+00:07:50,950 --> 00:07:56,020
+So when we click down on it, we're going to add a transform and just scale it down a bit.
+
+106
+00:07:56,020 --> 00:08:00,530
+So scale it from one two point ninety so we get that little effect.
+
+107
+00:08:00,580 --> 00:08:00,940
+All right.
+
+108
+00:08:03,100 --> 00:08:09,330
+Yes, I think what else the text here, we can move that down a little bit, so under the button stuff,
+
+109
+00:08:09,340 --> 00:08:16,570
+we have a class of text and it's going to set the margin top to 30 pixels, push that down a bit.
+
+110
+00:08:17,530 --> 00:08:19,600
+Now, the label, don't worry about that.
+
+111
+00:08:19,840 --> 00:08:22,990
+We're going to we're going to style that next.
+
+112
+00:08:23,020 --> 00:08:29,260
+And like I said, we need to use JavaScript to turn the label into letters with span's around them with
+
+113
+00:08:29,260 --> 00:08:30,350
+a transition delay.
+
+114
+00:08:30,370 --> 00:08:33,760
+We're also going to have a transition, obviously, on the label span.
+
+115
+00:08:34,030 --> 00:08:36,220
+So we'll get into that in the next video.

@@ -1,0 +1,59 @@
+﻿1
+00:00:00,420 --> 00:00:06,480
+Então, neste projeto, vamos construir uma página de carregamento borrada ou uma imagem de carregamento, então se eu vier
+
+2
+00:00:06,480 --> 00:00:14,010
+para esta página aqui, você verá que a imagem começa borrada e nós também começamos com zero
+
+3
+00:00:14,010 --> 00:00:18,420
+por cento e então isso vai até 100 por cento e a imagem entra em foco.
+
+4
+00:00:18,810 --> 00:00:21,600
+Então você pode usar isso para carregar praticamente qualquer coisa.
+
+5
+00:00:21,600 --> 00:00:23,550
+Estamos apenas fazendo um efeito de desfoque na imagem.
+
+6
+00:00:23,550 --> 00:00:24,870
+Mas você pode carregar em seu site.
+
+7
+00:00:24,870 --> 00:00:30,690
+Você pode ter qualquer outro elemento no carregamento do DOM nesse período específico de tempo a partir de quando formos para
+
+8
+00:00:30,690 --> 00:00:37,410
+zero a 100 e teremos que mapear diferentes faixas de números para a carga de zero a 100.
+
+9
+00:00:37,740 --> 00:00:43,020
+Por exemplo, o desfoque da imagem será de 30 pixels quando começar e diminuirá para zero
+
+10
+00:00:43,260 --> 00:00:45,230
+à medida que vamos de zero a 100.
+
+11
+00:00:45,240 --> 00:00:50,760
+E há uma função de estouro de pilha que vamos usar para nos ajudar a fazer isso, para nos ajudar a mapear um
+
+12
+00:00:50,760 --> 00:00:52,080
+intervalo de numeração para outro.
+
+13
+00:00:52,410 --> 00:00:52,860
+Tudo bem.
+
+14
+00:00:52,860 --> 00:00:53,390
+Então é isso.
+
+15
+00:00:53,400 --> 00:00:54,270
+Vamos começar.

@@ -1,0 +1,283 @@
+1
+00:00:00,060 --> 00:00:05,680
+All right, let's get started on our content placeholder project, sort of content placeholder.
+
+2
+00:00:07,500 --> 00:00:15,360
+Now, the plan here is to just do the HTML and access, have our card, our image card content, and
+
+3
+00:00:15,360 --> 00:00:21,750
+then create our our animation, like the wave type animation as it loads.
+
+4
+00:00:21,750 --> 00:00:23,370
+We're going to do that within the access.
+
+5
+00:00:23,640 --> 00:00:28,860
+And then ultimately the content is going to come from the JavaScript, like the images, the text that's
+
+6
+00:00:28,860 --> 00:00:33,000
+going to get input from the JavaScript after that little animation.
+
+7
+00:00:33,010 --> 00:00:38,040
+But for now, we're just going to hardcourt all the content directly in the HTML just so we can get
+
+8
+00:00:38,040 --> 00:00:39,200
+the card set up.
+
+9
+00:00:39,600 --> 00:00:45,470
+So let's give this a class of card that will be our wrapper class, no bootstrap or anything like that.
+
+10
+00:00:45,480 --> 00:00:47,280
+We're going to style the card from scratch.
+
+11
+00:00:47,670 --> 00:00:50,340
+So we have a card dash header.
+
+12
+00:00:50,790 --> 00:00:56,970
+And then anywhere where we want to add that the little wave animation, we have this animated dash B.G.
+
+13
+00:00:56,970 --> 00:00:57,630
+class.
+
+14
+00:00:58,060 --> 00:01:04,980
+And if it's text, it's also going to have an animated big text class because the text doesn't always
+
+15
+00:01:04,980 --> 00:01:06,570
+go all the way across the card.
+
+16
+00:01:06,570 --> 00:01:10,260
+But we want that animation to go all the way across the header.
+
+17
+00:01:10,260 --> 00:01:11,880
+Isn't just text.
+
+18
+00:01:12,600 --> 00:01:16,560
+That class will go on like paragraphs, headings and stuff like that.
+
+19
+00:01:16,830 --> 00:01:20,640
+So this is fine for the for the header.
+
+20
+00:01:20,970 --> 00:01:26,810
+But I also want to add an idea of header because I'm going to use IDs to grab on to it from the JavaScript.
+
+21
+00:01:27,300 --> 00:01:28,860
+So we'll have an image in here.
+
+22
+00:01:28,860 --> 00:01:32,940
+And I'm going to grab just a link to an unsafe image.
+
+23
+00:01:33,180 --> 00:01:34,200
+So we'll save that.
+
+24
+00:01:34,200 --> 00:01:35,520
+You see, it's just a laptop.
+
+25
+00:01:35,700 --> 00:01:38,340
+And for now, this is just going to take up the whole screen.
+
+26
+00:01:38,340 --> 00:01:43,740
+But we'll fix that when we get into the CSFs now under the header.
+
+27
+00:01:44,490 --> 00:01:45,740
+So the header ends here.
+
+28
+00:01:45,750 --> 00:01:55,320
+We want to have our card content and in the card content will have a card dash title.
+
+29
+00:01:55,950 --> 00:02:07,710
+And I'm going to add the animated animated dash B.G. class here and also the animated dash BGU dash
+
+30
+00:02:07,710 --> 00:02:11,100
+text, because this is actually going to be an H3.
+
+31
+00:02:11,100 --> 00:02:13,200
+So let's add H3 right here.
+
+32
+00:02:15,160 --> 00:02:25,690
+And fix that spelling, animated, big animated big text and also an idea of title and let's just say
+
+33
+00:02:25,690 --> 00:02:30,640
+Lorem five enter, which just give me five, you know, five dummy text words.
+
+34
+00:02:31,180 --> 00:02:38,070
+So under the age three, we're going to have a paragraph with the class of Kadesh excerpt.
+
+35
+00:02:38,080 --> 00:02:42,050
+And I'm also going to give it an idea of excerpt.
+
+36
+00:02:43,120 --> 00:02:46,270
+And for the paragraph, I'll do Lorem 10.
+
+37
+00:02:48,310 --> 00:02:53,320
+And still within the paragraph, I want to have three of those animated lines.
+
+38
+00:02:53,770 --> 00:02:55,770
+So I'm going to have three spans.
+
+39
+00:02:55,780 --> 00:03:07,600
+So let's say spane class, animated dash B.G. also animated dash BGI dash text and that should do it.
+
+40
+00:03:07,610 --> 00:03:11,290
+So inside the span, I'm just going to have a non breaking space.
+
+41
+00:03:11,290 --> 00:03:16,810
+So let's say ampersands nbsp semicolon and then I just want three of these.
+
+42
+00:03:16,810 --> 00:03:18,760
+I want to copy that down three times.
+
+43
+00:03:20,830 --> 00:03:21,220
+Good.
+
+44
+00:03:21,220 --> 00:03:26,350
+And then under the paragraphs these spans I'll be within the paragraph because basically you're going
+
+45
+00:03:26,350 --> 00:03:30,700
+to see these which are going to be the animated lines before this text loads.
+
+46
+00:03:31,390 --> 00:03:37,390
+So under the paragraph will have the author class, which is going to be where we have the profile image
+
+47
+00:03:37,390 --> 00:03:38,610
+and the name and the date.
+
+48
+00:03:39,010 --> 00:03:47,590
+So first we'll have a class of profile dash img and let's also add animated dash B.G. and it's given
+
+49
+00:03:47,590 --> 00:03:50,600
+an idea of profile underscore IMG.
+
+50
+00:03:51,430 --> 00:04:01,180
+So for the image, let's throw this in here and I'm going to use http s random user dot mi slash api
+
+51
+00:04:01,180 --> 00:04:01,900
+slash
+
+52
+00:04:04,630 --> 00:04:10,960
+portrait's slash men slash forty five dot jpeg.
+
+53
+00:04:15,470 --> 00:04:16,400
+Slash.
+
+54
+00:04:18,570 --> 00:04:26,540
+All right, now, this image here, that's good under the d'Hiv, so we have the profile image Divx,
+
+55
+00:04:26,550 --> 00:04:33,930
+we're going to go under that still within the author class and let's say author Dasch Info and and here
+
+56
+00:04:33,930 --> 00:04:35,970
+will have some strong tags.
+
+57
+00:04:35,980 --> 00:04:38,250
+I'm going to give this the animated class.
+
+58
+00:04:38,250 --> 00:04:46,920
+So animated B.G. also animated BGU dash text and also an idea of name.
+
+59
+00:04:47,280 --> 00:04:49,800
+And we'll just say John Doe for the name.
+
+60
+00:04:50,400 --> 00:05:00,120
+OK, underneath the strong tags will have some small tags with the same animated B.G. animated PG dash
+
+61
+00:05:00,120 --> 00:05:00,830
+text.
+
+62
+00:05:01,410 --> 00:05:04,110
+And so let's do an I.D. of dates.
+
+63
+00:05:04,590 --> 00:05:09,420
+And for the date, I'll say October 8th.
+
+64
+00:05:09,720 --> 00:05:10,550
+Twenty twenty.
+
+65
+00:05:12,570 --> 00:05:12,920
+All right.
+
+66
+00:05:12,930 --> 00:05:15,440
+So that should do it for the HTML.
+
+67
+00:05:15,450 --> 00:05:17,430
+I just want to make sure I have these classes.
+
+68
+00:05:17,430 --> 00:05:17,970
+Correct.
+
+69
+00:05:18,840 --> 00:05:21,060
+So animated big text.
+
+70
+00:05:25,800 --> 00:05:29,790
+All right, so if I missed something up, we'll come back to it, but I think we're going to stop here
+
+71
+00:05:30,090 --> 00:05:33,330
+and in the next video, we'll go ahead and start to style the card.

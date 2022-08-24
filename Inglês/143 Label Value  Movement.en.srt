@@ -1,0 +1,519 @@
+1
+00:00:00,060 --> 00:00:05,790
+OK, so now we want to add our JavaScript to do two things, we want the value to display in here when
+
+2
+00:00:05,790 --> 00:00:07,920
+we move this, that's not going to be too difficult.
+
+3
+00:00:08,100 --> 00:00:12,780
+We also want the position of the label to follow the thumb, to be right above it.
+
+4
+00:00:13,050 --> 00:00:14,880
+So that's going to be a little more complicated.
+
+5
+00:00:15,300 --> 00:00:18,800
+So let's jump into our script here and let's get our range input.
+
+6
+00:00:18,810 --> 00:00:21,420
+So has an idea of range.
+
+7
+00:00:21,420 --> 00:00:30,180
+So we'll do document doget element by D, get the idea of range and then we want to add an event listener
+
+8
+00:00:30,180 --> 00:00:37,050
+onto that input so that listener and the event is going to be input that will fire off whenever we move
+
+9
+00:00:37,050 --> 00:00:43,980
+the range slider and we want to have an arrow function with our event object passed in here and then
+
+10
+00:00:43,980 --> 00:00:45,210
+we can get the value.
+
+11
+00:00:45,210 --> 00:00:49,500
+Let's say const value equals e dot target dot value.
+
+12
+00:00:49,500 --> 00:00:55,590
+So EGT target represents the element that this event listener is on, which is the range.
+
+13
+00:00:55,860 --> 00:01:00,600
+Now I do want this to convert to a number, so I'm just going to add a plus sign here and then I'll
+
+14
+00:01:00,600 --> 00:01:02,050
+just give it the type of number.
+
+15
+00:01:02,580 --> 00:01:06,370
+So then we'll go ahead and add it to the label.
+
+16
+00:01:06,690 --> 00:01:15,700
+Now we can get the label, let's say const label and we have access to IDOT Target, which is the input.
+
+17
+00:01:15,990 --> 00:01:20,880
+Now though, the label is directly after it and it's it's basically it's the next sibling.
+
+18
+00:01:21,090 --> 00:01:28,320
+So we're going to use the method called are the property of next element sibling.
+
+19
+00:01:28,470 --> 00:01:36,270
+That should give us the label and then we can say label dot, inner HTML and we can set that to the
+
+20
+00:01:36,270 --> 00:01:36,980
+values.
+
+21
+00:01:36,990 --> 00:01:38,030
+Now save that.
+
+22
+00:01:38,040 --> 00:01:45,180
+And when I move this you'll see that goes from zero to 100 and that's I mean, that's pretty simple.
+
+23
+00:01:46,080 --> 00:01:56,010
+Now for this to follow the thumb, we need to basically calculate the position of this label and keep
+
+24
+00:01:56,010 --> 00:01:56,940
+it above the thumb.
+
+25
+00:01:56,970 --> 00:01:58,750
+So this is going to be a little more difficult.
+
+26
+00:01:59,220 --> 00:02:06,060
+So let's let's do that at this at the very end where we assign the label and then we want to get the
+
+27
+00:02:06,270 --> 00:02:12,560
+the width of the range, which is actually set in the case file to 300 pixels.
+
+28
+00:02:12,960 --> 00:02:21,420
+So let's say consed range width and there's a function called get computed style.
+
+29
+00:02:22,350 --> 00:02:28,860
+And so allow us to get we can actually get values from our success, like the range is the width of
+
+30
+00:02:28,860 --> 00:02:29,880
+the 300 pixels.
+
+31
+00:02:29,880 --> 00:02:30,910
+That's what we want to get.
+
+32
+00:02:31,290 --> 00:02:35,550
+So we want to get the computed style for ITG Target, which is the input.
+
+33
+00:02:36,120 --> 00:02:40,710
+And then there's a method called get property value.
+
+34
+00:02:40,920 --> 00:02:45,240
+And the property we want to get the value for is the width.
+
+35
+00:02:45,810 --> 00:02:48,420
+So I'll go ahead and just console log here.
+
+36
+00:02:48,930 --> 00:02:51,750
+The range underscore with.
+
+37
+00:02:52,630 --> 00:02:59,260
+Now, if I open up my console and I fire that event, you can see it's 300 pixels if I change in my
+
+38
+00:02:59,260 --> 00:03:05,990
+success, so I change this to 400 and save and fire this off, you'll see it's 400.
+
+39
+00:03:07,780 --> 00:03:08,230
+All right.
+
+40
+00:03:08,230 --> 00:03:09,850
+So I'm going to set that back.
+
+41
+00:03:12,340 --> 00:03:22,330
+And that gives us the range with now we also need to account for the label with so for that, let's
+
+42
+00:03:22,480 --> 00:03:26,500
+actually just copy this and we'll call this one.
+
+43
+00:03:29,330 --> 00:03:37,550
+Say, label with and we want to get the computed style for the label, so instead of Target, which
+
+44
+00:03:37,550 --> 00:03:44,690
+is the input that that the event listeners on, we want to get it for the label and we want to get the
+
+45
+00:03:44,690 --> 00:03:45,230
+width.
+
+46
+00:03:45,960 --> 00:03:50,360
+OK, so that'll give us we can go ahead and cancel log that.
+
+47
+00:03:52,640 --> 00:03:56,360
+And when I move this, we get three hundred and eighty pixels.
+
+48
+00:03:56,360 --> 00:04:00,600
+And so it's going to stay the same because we're just getting the width of this and the width of this.
+
+49
+00:04:02,270 --> 00:04:06,230
+Now these, both of these have peaks on them.
+
+50
+00:04:06,230 --> 00:04:07,540
+I just want the number.
+
+51
+00:04:08,180 --> 00:04:15,950
+So let's actually create another variable called num underscore width.
+
+52
+00:04:16,850 --> 00:04:21,360
+And basically what I want to do here is just get the number for the range with.
+
+53
+00:04:22,520 --> 00:04:29,420
+So let's first convert it to a number with a plus sign and then we'll say the range with which right
+
+54
+00:04:29,420 --> 00:04:31,840
+now is just 300 pixels.
+
+55
+00:04:32,120 --> 00:04:34,190
+So we're going to use dot substring.
+
+56
+00:04:36,730 --> 00:04:47,370
+And say zero and then whatever the the length of the range with so let's say range underscore with dog
+
+57
+00:04:47,740 --> 00:04:52,150
+length, because it could be anything, it could be three pixels, it could be three million pixels.
+
+58
+00:04:52,180 --> 00:04:58,060
+So we want to get the length and then just subtract two because we're taking the peaks off.
+
+59
+00:04:58,060 --> 00:04:59,390
+We're taking the pixel off.
+
+60
+00:04:59,800 --> 00:05:07,300
+So now let's go down here and let's see what number with gives us that.
+
+61
+00:05:08,730 --> 00:05:14,640
+And you can see it gives us 300 and it's a number we also want the number with for the label.
+
+62
+00:05:14,640 --> 00:05:16,410
+So let's call this.
+
+63
+00:05:17,990 --> 00:05:23,630
+We'll say no, underscore, label, underscore with.
+
+64
+00:05:25,210 --> 00:05:32,230
+And actually, I'll just copy this whole thing here, but instead of the range with here, we want the
+
+65
+00:05:32,230 --> 00:05:33,250
+label with
+
+66
+00:05:35,980 --> 00:05:41,870
+an substring and let's change this to label with.
+
+67
+00:05:43,540 --> 00:05:50,740
+And then if we cancel log here, num label with, you'll see we should get three hundred and eighty
+
+68
+00:05:50,740 --> 00:05:51,730
+as numbers.
+
+69
+00:05:54,430 --> 00:06:02,080
+So now let's get the let's get the men in the max values because remember we set that in the HTML,
+
+70
+00:06:02,080 --> 00:06:05,890
+we set zero for the men, 100 for the max.
+
+71
+00:06:06,430 --> 00:06:15,820
+So we'll create a variable here called Max and set that to e dot targets and we can get it very simply
+
+72
+00:06:15,820 --> 00:06:18,280
+with just Max and we want to convert it to a number.
+
+73
+00:06:18,280 --> 00:06:21,440
+So out of plus sine and we can do the same for men.
+
+74
+00:06:22,660 --> 00:06:28,570
+So men set that to men and we can test that out.
+
+75
+00:06:30,410 --> 00:06:36,350
+And Max, and we should get zero in 100 good, because you could set the the men, Max, to anything,
+
+76
+00:06:36,350 --> 00:06:44,000
+we want to make sure that we have those values that we need to use this information, that we have to
+
+77
+00:06:44,540 --> 00:06:51,230
+apply the left property to this, to calculate it, to follow the thumb.
+
+78
+00:06:51,230 --> 00:06:57,080
+The ball here left is initially set on the label.
+
+79
+00:06:57,080 --> 00:06:57,530
+Where is it?
+
+80
+00:06:57,530 --> 00:07:00,590
+Right here to 110 pixels, which is right in the middle.
+
+81
+00:07:00,800 --> 00:07:03,800
+But we want that to change depending on where the thumb is.
+
+82
+00:07:04,220 --> 00:07:07,190
+So to do that, let's create a variable called left.
+
+83
+00:07:07,960 --> 00:07:13,770
+And we want to do a little bit of calculation here, we're going to take the value, so whatever the
+
+84
+00:07:13,850 --> 00:07:22,420
+the current value is zero to 100 and we want to multiply that by whatever the NUM with is.
+
+85
+00:07:23,410 --> 00:07:31,180
+And we want to divide that by the max, which, you know, in this case is going to be one hundred.
+
+86
+00:07:32,110 --> 00:07:39,520
+And then we want to take that and subtract the NUM label with which is the, you know, the number of
+
+87
+00:07:39,520 --> 00:07:45,310
+whatever the width of the label, because we want this to work regardless of how wide the the track
+
+88
+00:07:45,310 --> 00:07:47,970
+is or the or the label.
+
+89
+00:07:48,460 --> 00:07:51,630
+And we want to divide that by two.
+
+90
+00:07:52,300 --> 00:08:02,090
+So if we save that, actually, let's just cancel log left and see what we get down here.
+
+91
+00:08:02,440 --> 00:08:05,980
+So if I go all the way over, we get what, negative 40?
+
+92
+00:08:05,980 --> 00:08:08,430
+If I go all the way this way, we get to 60.
+
+93
+00:08:09,400 --> 00:08:20,620
+Now, let's apply that to the left CSFs property of the label so we can do that by saying label dot
+
+94
+00:08:20,630 --> 00:08:23,020
+style and we want to set the left value.
+
+95
+00:08:24,820 --> 00:08:27,340
+Now, we can't just set it to left because that's a no.
+
+96
+00:08:27,340 --> 00:08:31,750
+It has to be whatever pick whatever works like this.
+
+97
+00:08:32,200 --> 00:08:34,990
+Right, 110 pixels, not just one hundred and ten.
+
+98
+00:08:34,990 --> 00:08:41,350
+So let's make this so he's back ticks here and then Passan left here and then he.
+
+99
+00:08:42,310 --> 00:08:48,880
+So now if I go and I move this, you can see that it moves along with the ball here.
+
+100
+00:08:50,110 --> 00:08:55,330
+Now notice how it becomes off center as you move over on each side.
+
+101
+00:08:55,330 --> 00:08:59,520
+We want to account for that about ten pixels.
+
+102
+00:09:00,220 --> 00:09:04,320
+So there's a solution we can use.
+
+103
+00:09:04,330 --> 00:09:07,650
+I'm just going to bring this window over real quick.
+
+104
+00:09:07,660 --> 00:09:13,180
+So this is a stack overflow post and I'll copy this link and put it in the in the script.
+
+105
+00:09:13,630 --> 00:09:17,410
+But this is to map a range of numbers to another range of numbers.
+
+106
+00:09:17,410 --> 00:09:19,840
+And we've used this in another project in this course.
+
+107
+00:09:20,020 --> 00:09:23,860
+I'm not sure if I'm not sure of the exact order of the projects yet.
+
+108
+00:09:23,860 --> 00:09:25,540
+So we might have used it already.
+
+109
+00:09:25,540 --> 00:09:26,350
+We might have not.
+
+110
+00:09:27,190 --> 00:09:34,570
+But basically this scale function that someone created takes in a specific number and then a min in
+
+111
+00:09:34,570 --> 00:09:35,320
+the max.
+
+112
+00:09:35,320 --> 00:09:40,360
+So in in min in max and then in Outman and out Max, you can map a specific range.
+
+113
+00:09:40,600 --> 00:09:45,610
+In our case it'll be, you know, zero 100 because that's our men and Max.
+
+114
+00:09:45,850 --> 00:09:53,350
+And then we'll map it to negative 10 I'm sorry, ten and negative ten to kind of make up for that difference.
+
+115
+00:09:53,740 --> 00:09:55,540
+So I'm going to copy actually.
+
+116
+00:09:55,540 --> 00:10:05,680
+Let me just let me just paste this link here and just want to comment that I have and then I'm going
+
+117
+00:10:05,680 --> 00:10:08,770
+to grab this function here
+
+118
+00:10:11,170 --> 00:10:12,520
+and put that in.
+
+119
+00:10:12,530 --> 00:10:12,880
+All right.
+
+120
+00:10:12,880 --> 00:10:18,460
+So we have our scale function and then we can just go back up to our calculation here and just add to
+
+121
+00:10:18,460 --> 00:10:26,950
+that scale, which takes in first a num, which is going to be our value, and then a minimum tax,
+
+122
+00:10:26,950 --> 00:10:33,190
+which in our case is going to be Min and Max in in our case is zero and one hundred.
+
+123
+00:10:33,550 --> 00:10:38,650
+And we want to map to ten and negative ten.
+
+124
+00:10:39,550 --> 00:10:42,100
+So if we save that, we try this again.
+
+125
+00:10:42,100 --> 00:10:44,470
+Now you'll see that it always stays in the middle.
+
+126
+00:10:46,090 --> 00:10:52,330
+OK, instead of veering off to the side, so I know that this is quite a bit to this just to get this
+
+127
+00:10:52,330 --> 00:10:56,350
+little bit of functionality, but now you can use this in applications.
+
+128
+00:10:56,360 --> 00:11:01,630
+You have this nice little widget and of course, you can style it, you know, however you want.
+
+129
+00:11:02,050 --> 00:11:03,960
+But that's going to be it for this project.
+
+130
+00:11:03,970 --> 00:11:05,290
+I will see you in the next one.

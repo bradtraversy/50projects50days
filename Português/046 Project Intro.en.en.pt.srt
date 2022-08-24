@@ -1,0 +1,47 @@
+﻿1
+00:00:00,120 --> 00:00:03,840
+Tudo bem, então neste projeto, vamos criar um contador de incrementos e tenho certeza que você já viu
+
+2
+00:00:03,840 --> 00:00:06,000
+isso em sites em algum lugar.
+
+3
+00:00:06,270 --> 00:00:07,830
+Basicamente, temos esses números.
+
+4
+00:00:07,830 --> 00:00:10,260
+Estou apenas usando o Twitter, YouTube, fãs do Facebook.
+
+5
+00:00:10,800 --> 00:00:11,960
+Mas pode ser qualquer número.
+
+6
+00:00:11,970 --> 00:00:18,690
+E quando chegamos ao site, inicialmente, você pode ver que ele conta de zero para cima e podemos definir o
+
+7
+00:00:18,690 --> 00:00:24,310
+qualquer que seja o incremento, podemos configurá-lo para o que quisermos para torná-lo mais rápido ou mais lento.
+
+8
+00:00:25,080 --> 00:00:29,220
+Então, vamos primeiro apenas criar o estilo criado e torná-lo responsivo.
+
+9
+00:00:29,220 --> 00:00:35,460
+Então, quando está em uma tela pequena, você sabe, fica na vertical e então adicionamos o JavaScript para fazer
+
+10
+00:00:35,460 --> 00:00:36,750
+ele incrementa assim.
+
+11
+00:00:36,900 --> 00:00:37,250
+Tudo bem.
+
+12
+00:00:37,260 --> 00:00:38,150
+Então vamos começar.

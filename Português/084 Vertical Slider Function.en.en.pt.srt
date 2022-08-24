@@ -1,0 +1,579 @@
+﻿1
+00:00:00,210 --> 00:00:04,710
+OK, então agora vamos começar no JavaScript para fazer isso funcionar e deslizar.
+
+2
+00:00:05,080 --> 00:00:09,270
+Então, em nosso roteiro, sim, vou seguir em frente e trazer tudo o que precisamos.
+
+3
+00:00:09,270 --> 00:00:17,580
+Então vamos trazer nosso container deslizante e vamos usar document, dot, query, selector e
+
+4
+00:00:17,580 --> 00:00:21,420
+selecione pela classe do contêiner do painel deslizante.
+
+5
+00:00:21,750 --> 00:00:23,880
+E então vamos trazer algumas outras coisas.
+
+6
+00:00:25,170 --> 00:00:27,570
+Então este vai ser o slide certo.
+
+7
+00:00:28,600 --> 00:00:31,410
+Então classe de slide Dasch direito.
+
+8
+00:00:32,880 --> 00:00:36,900
+E para a variável aqui, chamaremos este slide.
+
+9
+00:00:37,920 --> 00:00:38,550
+Certo.
+
+10
+00:00:39,300 --> 00:00:48,870
+E então também teremos slide para a esquerda e isso terá a classe de esquerda para
+
+11
+00:00:49,260 --> 00:00:49,890
+deslizar.
+
+12
+00:00:50,670 --> 00:00:51,090
+Tudo bem.
+
+13
+00:00:51,120 --> 00:00:52,430
+Então nós também queremos os botões.
+
+14
+00:00:52,440 --> 00:01:03,000
+Então, temos o botão para cima botão para cima e temos o botão para baixo.
+
+15
+00:01:04,470 --> 00:01:09,570
+E vamos chamar este botão para cima.
+
+16
+00:01:12,700 --> 00:01:20,140
+botão para baixo e também quero obter o comprimento dos slides, ou seja, quantos slides temos?
+
+17
+00:01:20,560 --> 00:01:29,350
+Digamos que o tamanho dos slides e vamos definir isso como seletor de consulta, tudo porque o que estamos selecionando é
+
+18
+00:01:29,890 --> 00:01:30,880
+todas as divs.
+
+19
+00:01:30,880 --> 00:01:33,190
+E na verdade não queremos todas as divs no documento.
+
+20
+00:01:33,190 --> 00:01:35,650
+Queremos todas as divs que estão no slide.
+
+21
+00:01:36,160 --> 00:01:36,750
+Certo.
+
+22
+00:01:37,520 --> 00:01:40,350
+OK, então basicamente todos aqueles divs com as imagens de fundo.
+
+23
+00:01:40,840 --> 00:01:45,550
+Então, aqui queremos consultar o seletor de todos os pratos que nos fornecerão todos os elementos, mas apenas
+
+24
+00:01:45,550 --> 00:01:46,480
+precisa do comprimento.
+
+25
+00:01:46,510 --> 00:01:53,140
+Então vamos usar a propriedade length aqui e isso nos dará quatro neste caso se eu puder.
+
+26
+00:01:53,140 --> 00:01:59,290
+Então registre o comprimento dos slides e eu vou aqui e abro isso.
+
+27
+00:01:59,290 --> 00:02:00,820
+Você pode ver que temos quatro.
+
+28
+00:02:01,400 --> 00:02:06,070
+OK, então você poderá adicionar mais ou menos slides, se desejar.
+
+29
+00:02:07,090 --> 00:02:13,150
+Agora queremos ter um índice de slide ativo porque basicamente eles estão posicionados como em cima
+
+30
+00:02:13,150 --> 00:02:13,600
+uns aos outros.
+
+31
+00:02:13,610 --> 00:02:17,410
+Precisamos saber qual índice está basicamente em exibição.
+
+32
+00:02:17,420 --> 00:02:22,200
+Então, digamos índice de slide ativo.
+
+33
+00:02:22,210 --> 00:02:25,890
+Certifique-se de usar let aqui e vamos definir isso como zero para começar.
+
+34
+00:02:26,290 --> 00:02:30,000
+E vamos pegar o slide para a esquerda, OK?
+
+35
+00:02:30,010 --> 00:02:38,560
+E então vamos adicionar um estilo e queremos aplicar o topo e definir isso para um conjunto de táticas.
+
+36
+00:02:39,550 --> 00:02:45,490
+E queremos fazer negativo porque na verdade isso vai subir e o valor superior inicial vai
+
+37
+00:02:45,490 --> 00:02:51,370
+para ser negativo e então colocar nossa sintaxe de expressão aqui e depois alguns parênteses.
+
+38
+00:02:51,370 --> 00:03:00,490
+E queremos pegar o comprimento do slide e subtrair por um porque o comprimento será para.
+
+39
+00:03:00,490 --> 00:03:07,630
+No entanto, o índice é baseado em zero, então o índice será como zero de um a três, mesmo que esses quatro
+
+40
+00:03:07,630 --> 00:03:09,400
+total, começa em zero.
+
+41
+00:03:09,400 --> 00:03:15,520
+Queremos obter o último índice, que neste caso seria três, que seria o quarto slide,
+
+42
+00:03:16,100 --> 00:03:19,900
+OK, porque os arrays não são listas, eles são baseados em zero.
+
+43
+00:03:20,290 --> 00:03:28,900
+E então queremos multiplicar isso por 100 porque ocupa cem por cento ou 100 alturas da janela de visualização.
+
+44
+00:03:28,900 --> 00:03:30,670
+Então vamos adicionar aqui, vich.
+
+45
+00:03:31,100 --> 00:03:31,600
+Tudo bem.
+
+46
+00:03:31,600 --> 00:03:37,240
+Agora, se eu salvar isso e voltar, notei que isso foi movido para a posição correta.
+
+47
+00:03:37,630 --> 00:03:40,950
+Então Flying Eagle realmente combina com esta imagem aqui.
+
+48
+00:03:42,040 --> 00:03:46,810
+Agora, queremos apenas adicionar funcionalidades para que possamos, você sabe, mover para cima e para baixo.
+
+49
+00:03:47,800 --> 00:03:53,620
+Um lado subirá, um lado descerá e deve colocar os slides corretos no lugar.
+
+50
+00:03:54,100 --> 00:04:00,220
+Então, vamos pegar o botão para cima e vamos chamar um ouvinte de evento para adicionar um clique.
+
+51
+00:04:02,290 --> 00:04:04,570
+E quando isso acontecer, vamos correr.
+
+52
+00:04:05,570 --> 00:04:14,920
+Chamaremos esta função change slide e passaremos um argumento de OP, OK, e então vou
+
+53
+00:04:14,920 --> 00:04:19,630
+para copiar isso para baixo e então este vai chamar e isso vai estar no botão para baixo.
+
+54
+00:04:20,920 --> 00:04:24,670
+Então vamos mudar isso aqui para o botão para baixo.
+
+55
+00:04:24,940 --> 00:04:26,680
+Então ambos vão chamar a mesma função.
+
+56
+00:04:26,680 --> 00:04:28,810
+Eles só vão ser aprovados em um argumento diferente.
+
+57
+00:04:29,140 --> 00:04:30,400
+Então vamos criar nossa função.
+
+58
+00:04:30,400 --> 00:04:31,330
+Usaremos uma flecha.
+
+59
+00:04:31,330 --> 00:04:37,450
+Então, vamos dizer que mudar o slide é igual e vai tomar uma direção como parâmetro.
+
+60
+00:04:40,120 --> 00:04:42,790
+E então vamos obter a altura do controle deslizante.
+
+61
+00:04:42,790 --> 00:04:49,180
+Então diremos altura do controle deslizante, e esse será o contêiner do controle deslizante.
+
+62
+00:04:49,660 --> 00:04:55,600
+E então há uma propriedade chamada altura do cliente, OK, que nos dará exatamente isso.
+
+63
+00:04:55,720 --> 00:05:03,010
+Na verdade, podemos consolar o log para que você possa ver o que isso nos dá a altura do slider.
+
+64
+00:05:03,010 --> 00:05:08,410
+E se eu for aqui e clicar no botão, teremos seis, seis, seis.
+
+65
+00:05:08,410 --> 00:05:09,520
+Isso é um mau sinal.
+
+66
+00:05:10,630 --> 00:05:11,770
+Vamos clicar novamente.
+
+67
+00:05:11,770 --> 00:05:12,880
+Cinco sete sete.
+
+68
+00:05:12,880 --> 00:05:19,420
+Então é baseado em qualquer coisa, você sabe, qualquer que seja a altura aqui e será completamente
+
+69
+00:05:19,420 --> 00:05:19,960
+dinâmico.
+
+70
+00:05:19,960 --> 00:05:23,590
+Não importa como, você sabe, alto ou pequeno.
+
+71
+00:05:23,980 --> 00:05:26,830
+Então isso nos dará a inclinação, qualquer que seja a altura do controle deslizante.
+
+72
+00:05:26,830 --> 00:05:29,470
+Agora, vamos verificar a direção que está sendo passada.
+
+73
+00:05:29,470 --> 00:05:41,230
+Se a direção é, digamos, igual a para cima, então o que vamos querer fazer é pegar o ativo
+
+74
+00:05:41,230 --> 00:05:45,040
+índice, índice de slide ativo e incrementá-lo por um.
+
+75
+00:05:45,040 --> 00:05:49,690
+Então mais mais e então queremos saber o que acontece se chegarmos ao fim.
+
+76
+00:05:49,690 --> 00:06:02,110
+Então, digamos que se o índice do slide ativo for maior que o último índice do slide,
+
+77
+00:06:02,110 --> 00:06:08,170
+que podemos obter com o comprimento do slide, oops, comprimento do slide.
+
+78
+00:06:09,430 --> 00:06:10,810
+Mas queremos tirar um.
+
+79
+00:06:10,920 --> 00:06:18,630
+A partir disso, se isso for verdade, definiremos o índice do slide ativo como zero para voltar ao início.
+
+80
+00:06:18,780 --> 00:06:21,510
+Então, basicamente, se chegarmos ao fim, voltaremos ao início.
+
+81
+00:06:22,500 --> 00:06:22,950
+Tudo bem.
+
+82
+00:06:24,090 --> 00:06:31,360
+Agora, se eu clicar em cima, você pode ver que nada está acontecendo ainda porque precisamos adicionar uma transformação.
+
+83
+00:06:32,310 --> 00:06:36,420
+Precisamos traduzi-lo no eixo Y, basicamente movê-lo para cima e para baixo.
+
+84
+00:06:36,900 --> 00:06:46,320
+Então aqui embaixo, depois do slide, vamos ter que mover os dois slides para a esquerda
+
+85
+00:06:46,320 --> 00:06:47,370
+e deslize para a direita.
+
+86
+00:06:47,400 --> 00:06:51,360
+Então vamos pegar o slide certo para a direita.
+
+87
+00:06:51,360 --> 00:07:00,870
+E defina o estilo dot transform e queremos traduzir o Y no eixo Y.
+
+88
+00:07:01,610 --> 00:07:03,360
+Então traduza o porquê.
+
+89
+00:07:04,260 --> 00:07:12,690
+E o que queremos passar aqui é negativo porque queremos que o lado direito suba e então nossa expressão
+
+90
+00:07:12,690 --> 00:07:20,250
+sintaxe, queremos que o índice do slide ativo seja multiplicado, qualquer que seja a altura do slider, porque lembre-se
+
+91
+00:07:20,250 --> 00:07:24,810
+a altura do controle deslizante é variável e, em seguida, queremos apenas adicionar pixels a ele.
+
+92
+00:07:24,820 --> 00:07:27,270
+Então, se eu salvar isso, eu vou aqui e clico.
+
+93
+00:07:28,260 --> 00:07:29,520
+Nada acontece.
+
+94
+00:07:31,720 --> 00:07:34,630
+Vejamos, o comprimento do slide não está definido.
+
+95
+00:07:37,050 --> 00:07:39,190
+O comprimento do slide não está definido.
+
+96
+00:07:39,210 --> 00:07:41,130
+Oh, desliza comprimento, plural.
+
+97
+00:07:42,600 --> 00:07:46,430
+Tudo bem, então vamos tentar isso e depois vamos para que você possa ver que ele muda.
+
+98
+00:07:46,440 --> 00:07:52,290
+Agora, se eu fizer isso e estiver em uma certa altura e a altura mudar, você pode ver que sangra
+
+99
+00:07:52,290 --> 00:07:52,740
+sobre.
+
+100
+00:07:53,310 --> 00:07:59,640
+Se eu clicar novamente, ele recalculará a altura com base nisso aqui, OK, o que
+
+101
+00:07:59,640 --> 00:08:02,190
+colocamos nesta variável que estamos usando aqui.
+
+102
+00:08:04,170 --> 00:08:08,680
+Agora, eu quero que ele realmente tenha uma transição suave, em vez de apenas passar rapidamente.
+
+103
+00:08:09,150 --> 00:08:15,080
+Então vamos voltar para nossa folha de estilo e vamos ver.
+
+104
+00:08:15,090 --> 00:08:19,350
+Queremos ir nos slides esquerdo e direito.
+
+105
+00:08:21,300 --> 00:08:25,050
+Então, vamos até o slide esquerdo aqui e vamos adicionar uma transição.
+
+106
+00:08:26,760 --> 00:08:31,950
+Então, queremos fazer a transição da propriedade transform, que é o que estamos mudando em nosso JavaScript.
+
+107
+00:08:32,430 --> 00:08:36,810
+E vamos fazer um ponto de cinco segundos e facilitar a saída.
+
+108
+00:08:37,320 --> 00:08:39,210
+E então eu quero fazer a mesma coisa para.
+
+109
+00:08:39,210 --> 00:08:39,760
+Certo.
+
+110
+00:08:40,320 --> 00:08:42,630
+Então, aqui, vamos adicionar isso também.
+
+111
+00:08:43,110 --> 00:08:44,530
+E vamos ver o que acontece aqui.
+
+112
+00:08:44,550 --> 00:08:44,870
+Tudo bem.
+
+113
+00:08:44,880 --> 00:08:47,080
+Então agora você pode ver que tem essa transição.
+
+114
+00:08:47,090 --> 00:08:49,560
+E quando chegamos ao fim, voltamos ao início.
+
+115
+00:08:51,170 --> 00:08:55,580
+OK, agora queremos o mesmo para este lado, porque agora estamos apenas trocando as imagens.
+
+116
+00:08:55,580 --> 00:08:56,960
+Isso continua o mesmo.
+
+117
+00:08:57,590 --> 00:09:02,660
+Então vamos pegar isso aqui e colar isso.
+
+118
+00:09:02,660 --> 00:09:11,660
+E então queremos dizer deslizar para a esquerda e alterar o valor da transformação traduzir por quê?
+
+119
+00:09:11,990 --> 00:09:15,470
+E nós só queremos tornar isso positivo porque queremos que seja para o outro lado.
+
+120
+00:09:15,830 --> 00:09:16,220
+Certo.
+
+121
+00:09:16,230 --> 00:09:19,670
+Portanto, o índice de slide ativo vezes o slide ou os pixels de altura.
+
+122
+00:09:20,150 --> 00:09:21,440
+Então agora se eu clicar para cima.
+
+123
+00:09:23,030 --> 00:09:23,660
+Aqui vamos nós.
+
+124
+00:09:26,080 --> 00:09:30,610
+Tudo bem, então vai para o lado oposto agora, o botão para baixo não faz nada.
+
+125
+00:09:30,610 --> 00:09:35,880
+Então, aqui em cima, onde temos isso, se a direção for para cima, vamos agora.
+
+126
+00:09:35,950 --> 00:09:37,270
+Vamos colocar um elsea.
+
+127
+00:09:37,870 --> 00:09:39,350
+Na verdade, vamos fazer outro.
+
+128
+00:09:39,370 --> 00:09:53,890
+Caso contrário, se a direção for igual a para baixo, basicamente faremos algo semelhante
+
+129
+00:09:53,890 --> 00:09:54,760
+ao que fizemos aqui.
+
+130
+00:09:54,760 --> 00:09:57,970
+Podemos copiar isso, mas queremos diminuir isso.
+
+131
+00:09:57,980 --> 00:10:02,800
+Então menos menos vai tirar um e queremos verificar se estamos no começo.
+
+132
+00:10:02,800 --> 00:10:09,790
+Então, se isso for menor que zero, se isso for menor que zero, então vamos
+
+133
+00:10:09,790 --> 00:10:16,120
+para configurá-lo para o último slide no índice, que será qualquer que seja o comprimento dos slides, menos
+
+134
+00:10:16,120 --> 00:10:19,870
+um, porque o comprimento para nós, pelo menos, é quatro.
+
+135
+00:10:19,870 --> 00:10:22,780
+Mas o último índice seria três porque é zero.
+
+136
+00:10:22,790 --> 00:10:24,750
+Um, dois, três são os índices.
+
+137
+00:10:25,540 --> 00:10:26,610
+Então vamos salvar isso.
+
+138
+00:10:26,620 --> 00:10:27,850
+E agora se clicarmos para baixo.
+
+139
+00:10:30,260 --> 00:10:36,740
+Aí está, e deve sempre combinar com o correto que você conhece, o texto correto com o correto
+
+140
+00:10:36,740 --> 00:10:37,230
+imagem.
+
+141
+00:10:39,050 --> 00:10:40,230
+Tudo bem, então é isso.
+
+142
+00:10:40,250 --> 00:10:42,250
+Espero que tenham gostado deste projeto.
+
+143
+00:10:42,260 --> 00:10:44,210
+Eu acho que é um slider de aparência muito legal.
+
+144
+00:10:45,050 --> 00:10:45,500
+Então é isso.
+
+145
+00:10:45,510 --> 00:10:47,120
+Vejo você no próximo projeto.

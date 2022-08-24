@@ -1,0 +1,355 @@
+﻿1
+00:00:00,300 --> 00:00:06,630
+OK, então temos algumas funções aqui para desenhar um círculo, desenhar uma linha, e não as estou chamando
+
+2
+00:00:06,630 --> 00:00:11,010
+em qualquer lugar ainda, mas queremos começar a lidar com a maioria dos nossos eventos.
+
+3
+00:00:11,430 --> 00:00:19,260
+Então, em última análise, queremos ser capazes de segurar o botão mais abotoado e arrastar e desenhar com base no
+
+4
+00:00:19,260 --> 00:00:24,150
+cor selecionada com base na, você sabe, na linha selecionada ou com o que você quiser chamar isso
+
+5
+00:00:24,150 --> 00:00:24,880
+o tamanho.
+
+6
+00:00:25,290 --> 00:00:31,110
+Então vamos acima de nossas funções aqui e vamos pegar nossa tela.
+
+7
+00:00:32,040 --> 00:00:40,320
+Então, vamos pegar nossa tela e adicionar um ouvinte de evento e vou ouvir um
+
+8
+00:00:40,590 --> 00:00:41,180
+evento.
+
+9
+00:00:41,190 --> 00:00:48,870
+Então, basicamente, quando eu clico e mantenho pressionado, isso é um down e vamos passar no nosso evento
+
+10
+00:00:48,870 --> 00:00:49,830
+objeto aqui.
+
+11
+00:00:50,550 --> 00:00:54,690
+E eu vou ter outra variável global aqui e subdimensionar.
+
+12
+00:00:54,690 --> 00:01:00,300
+E vamos chamar isso de Prest porque queremos saber se o mouse está sendo pressionado e isso é
+
+13
+00:01:00,300 --> 00:01:02,010
+vai ser falso para começar.
+
+14
+00:01:02,460 --> 00:01:07,470
+Mas uma vez que temos o mouse para baixo, diremos que é pressionado e então será igual.
+
+15
+00:01:07,470 --> 00:01:08,130
+Verdadeiro.
+
+16
+00:01:08,580 --> 00:01:14,520
+Eu também quero obter a posição de onde o mouse está, e é isso que esses valores X e Y são.
+
+17
+00:01:14,550 --> 00:01:24,680
+Então, vamos definir X aqui para o deslocamento do ponto X e, em seguida, vamos definir Y para o deslocamento do ponto Y, OK?
+
+18
+00:01:24,750 --> 00:01:29,820
+E isso nos dará o posicionamento de onde o mouse está.
+
+19
+00:01:29,820 --> 00:01:32,640
+Na verdade, vou em frente e console o log.
+
+20
+00:01:33,030 --> 00:01:41,640
+Vamos log é pressionado e vamos logar X e Y então eu vou aqui e vou abrir meu console.
+
+21
+00:01:44,010 --> 00:01:49,220
+Apenas recarregue isso e você verá que nos tornamos verdadeiros, porque quando estou mais para baixo, é verdade.
+
+22
+00:01:49,590 --> 00:01:51,630
+E então a posição onde eu cliquei.
+
+23
+00:01:52,170 --> 00:01:58,230
+Tudo bem, então se eu for, se eu subir aqui, eu posso ver que é um número muito baixo.
+
+24
+00:01:59,760 --> 00:02:03,350
+A parte superior está cortada por causa do meu console.
+
+25
+00:02:03,720 --> 00:02:07,740
+Mas você pode ver se eu clicar todo o caminho até aqui, é como um, certo?
+
+26
+00:02:07,740 --> 00:02:09,930
+Se eu clicar fora da tela, nada acontece.
+
+27
+00:02:09,930 --> 00:02:13,550
+Mas se eu clicar com o botão direito na borda que disse zero negativo.
+
+28
+00:02:13,770 --> 00:02:18,150
+Então, um, à medida que eles avançam, você pode ver o primeiro número subir.
+
+29
+00:02:18,150 --> 00:02:20,580
+À medida que eles descem, você pode ver o segundo número subir.
+
+30
+00:02:21,790 --> 00:02:26,510
+OK, então esse é o nosso posicionamento X e Y e é pressionado é verdade.
+
+31
+00:02:26,520 --> 00:02:31,350
+Agora quando lançarmos quero que seja falso e quero limpar esses valores.
+
+32
+00:02:31,650 --> 00:02:39,330
+Então, vou copiar isso e quero mudar isso agora para o mouse.
+
+33
+00:02:39,330 --> 00:02:41,010
+Então está no lançamento.
+
+34
+00:02:41,400 --> 00:02:48,570
+Vamos definir é pressione para false e, em seguida, vamos definir X e Y exatamente iguais a indefinido.
+
+35
+00:02:51,820 --> 00:02:57,970
+Então, define isso como indefinido e consolará Logat lá também.
+
+36
+00:02:58,000 --> 00:03:03,300
+Então, se eu for, vou clicar e segurar true e isso me dá o posicionamento que vou deixar ir.
+
+37
+00:03:03,670 --> 00:03:06,220
+Eu recebo falso e o posicionamento é indefinido.
+
+38
+00:03:07,030 --> 00:03:08,290
+OK, então é isso que eu quero.
+
+39
+00:03:08,320 --> 00:03:11,520
+Vou me livrar dos logs do console porque não precisamos mais deles.
+
+40
+00:03:12,520 --> 00:03:17,110
+Mas agora ele sabe se estamos segurando ou se o mouse não está sendo pressionado.
+
+41
+00:03:17,680 --> 00:03:20,260
+Agora, queremos um evento para o movimento do mouse.
+
+42
+00:03:20,510 --> 00:03:27,610
+Então, apenas copie isso bem rápido e vamos definir isso para mover o mouse agora.
+
+43
+00:03:27,610 --> 00:03:28,360
+Movimento do mouse.
+
+44
+00:03:29,290 --> 00:03:36,430
+Podemos obter o posicionamento, mas só queremos que isso aconteça se o mouse estiver sendo pressionado.
+
+45
+00:03:36,430 --> 00:03:41,470
+Então vamos fazer um F aqui e digamos se for pressionado.
+
+46
+00:03:41,650 --> 00:03:47,890
+Ei, se isso for verdade, significa que estamos segurando, então vamos criar uma variável aqui chamada
+
+47
+00:03:47,890 --> 00:03:51,370
+X2 e defina-o para o posicionamento.
+
+48
+00:03:51,370 --> 00:03:57,370
+Então E desloque X e depois faça a mesma coisa para Y.
+
+49
+00:03:58,450 --> 00:03:59,980
+Isso será chamado de Y dois.
+
+50
+00:04:02,390 --> 00:04:02,830
+Tudo bem.
+
+51
+00:04:02,830 --> 00:04:08,380
+E podemos ir em frente e logar no console este X para e Y para.
+
+52
+00:04:08,650 --> 00:04:16,810
+E agora, se eu for e clicar e segurar, você poderá ver a posição de onde quer que meu mouse esteja agora
+
+53
+00:04:16,810 --> 00:04:19,450
+de log do console, eu realmente quero desenhar.
+
+54
+00:04:19,450 --> 00:04:22,180
+Então eu vou ligar, desenhar um círculo.
+
+55
+00:04:22,600 --> 00:04:30,030
+E o que vai entrar aqui é a posição, o X dois e o Y dois.
+
+56
+00:04:30,260 --> 00:04:32,680
+Agora, se salvarmos isso, viemos até aqui.
+
+57
+00:04:32,680 --> 00:04:34,200
+Vou fechar o console.
+
+58
+00:04:34,570 --> 00:04:39,900
+Agora, se eu clicar e segurar, o que vai acontecer é continuar desenhando círculos, OK?
+
+59
+00:04:40,000 --> 00:04:44,740
+Então toda vez que eu movo o mouse, obtemos os valores da posição.
+
+60
+00:04:44,740 --> 00:04:47,360
+Passamos a desenhar um círculo e ele desenha um círculo.
+
+61
+00:04:47,800 --> 00:04:53,920
+Agora, o problema que temos é se eu for muito rápido, você pode ver que há, você sabe, espaços entre
+
+62
+00:04:53,920 --> 00:04:55,180
+os círculos e não queremos isso.
+
+63
+00:04:55,180 --> 00:04:57,580
+Queremos apenas uma linha reta, não importa o quê.
+
+64
+00:04:57,910 --> 00:05:05,550
+Então, além de desenhar um círculo, vamos desenhar uma linha ou apenas copiar isso e dizer desenhar uma linha.
+
+65
+00:05:05,560 --> 00:05:08,930
+Agora, este será o lugar onde traçamos a linha, mas precisamos disso.
+
+66
+00:05:08,950 --> 00:05:12,370
+Precisamos adicionar o movimento às posições também.
+
+67
+00:05:12,380 --> 00:05:18,130
+Portanto, esse movimento para são os dois primeiros argumentos passados ​​nos quais serão X e Y.
+
+68
+00:05:19,640 --> 00:05:24,610
+OK, agora se verificarmos agora, temos esse efeito estranho acontecendo.
+
+69
+00:05:24,610 --> 00:05:31,600
+E isso porque depois de fazermos isso, queremos definir o valor X para qualquer que seja a posição atual
+
+70
+00:05:31,600 --> 00:05:37,060
+e os valores de Y e o valor de Y para o que quer que seja, você sabe, y para é.
+
+71
+00:05:37,360 --> 00:05:39,130
+Então agora se eu vier e desenhar.
+
+72
+00:05:41,000 --> 00:05:41,370
+Hum.
+
+73
+00:05:42,670 --> 00:05:51,160
+Então o que está acontecendo agora é que a linha com não é tão larga quanto o círculo porque eu realmente esqueci
+
+74
+00:05:51,160 --> 00:05:57,430
+aqui eu defino linha com o tamanho, então linha dentro do raio de um círculo que, você sabe, existem
+
+75
+00:05:57,430 --> 00:05:58,250
+duas coisas diferentes.
+
+76
+00:05:58,260 --> 00:06:05,360
+Então, se eu multiplicar isso por dois, deve acabar funcionando e sendo o mesmo.
+
+77
+00:06:05,380 --> 00:06:08,770
+Então agora é apenas uma linha reta, OK?
+
+78
+00:06:08,830 --> 00:06:14,170
+A largura do raio do círculo ou o tamanho do círculo é o mesmo agora que a largura da linha
+
+79
+00:06:14,170 --> 00:06:14,890
+da linha.
+
+80
+00:06:15,100 --> 00:06:16,480
+Então, ambos estão sendo desenhados.
+
+81
+00:06:16,480 --> 00:06:19,570
+Nós não temos nada disso pulando ou qualquer coisa assim.
+
+82
+00:06:20,500 --> 00:06:20,920
+Tudo bem.
+
+83
+00:06:20,930 --> 00:06:21,880
+Muito legal.
+
+84
+00:06:26,260 --> 00:06:26,610
+Legal.
+
+85
+00:06:27,250 --> 00:06:27,640
+Tudo bem.
+
+86
+00:06:27,650 --> 00:06:31,840
+Então, no próximo vídeo, quero que esses controles funcionem.
+
+87
+00:06:31,930 --> 00:06:38,110
+Eu quero poder mudar a cor, mudar a linha, a largura do tamanho, eu acho, e também
+
+88
+00:06:38,110 --> 00:06:41,890
+ser capaz de limpá-lo com este botão em vez de ter que recarregar.
+
+89
+00:06:42,130 --> 00:06:43,270
+Então faremos isso a seguir.

@@ -1,0 +1,463 @@
+﻿1
+00:00:00,150 --> 00:00:03,030
+Tudo bem, agora temos a parte divertida, que é o JavaScript.
+
+2
+00:00:03,060 --> 00:00:05,010
+Então vamos pular para pular James.
+
+3
+00:00:05,010 --> 00:00:10,050
+E a primeira coisa que queremos fazer é pegar o container, que é o único elemento que temos no
+
+4
+00:00:10,050 --> 00:00:10,790
+no corpo.
+
+5
+00:00:10,800 --> 00:00:17,250
+Então digamos document dot, pegue o elemento bidi que tem um ID de container.
+
+6
+00:00:17,700 --> 00:00:26,760
+Agora queremos criar uma matriz de cores aqui porque queremos que sejam cores aleatórias quando
+
+7
+00:00:26,760 --> 00:00:28,340
+seguimos ao longo das praças.
+
+8
+00:00:28,620 --> 00:00:31,740
+Então, vou apenas colar alguns valores hexadecimais.
+
+9
+00:00:31,740 --> 00:00:34,050
+Você pode usar absolutamente todas as cores que quiser.
+
+10
+00:00:34,380 --> 00:00:39,300
+Eles podem ser hexadecimais, podem ser RGB, podem ser nomes de cores, o que você quiser.
+
+11
+00:00:39,690 --> 00:00:41,910
+E então queremos uma variável aqui.
+
+12
+00:00:41,910 --> 00:00:44,840
+Eu vou dar apenas todas as letras maiúsculas aqui.
+
+13
+00:00:44,850 --> 00:00:50,220
+Chame os quadrados e depois a quantidade de quadrados que queremos colocar na tela, que vai
+
+14
+00:00:50,220 --> 00:00:51,780
+ser 500 neste caso.
+
+15
+00:00:52,980 --> 00:00:54,480
+Não sei porque coloquei ponto e vírgula.
+
+16
+00:00:54,480 --> 00:00:55,760
+Eu não uso ponto e vírgula.
+
+17
+00:00:56,400 --> 00:00:58,410
+Então, essas são as variáveis ​​que precisamos.
+
+18
+00:00:58,410 --> 00:01:01,830
+E então a maneira como vamos fazer isso é criar um loop for.
+
+19
+00:01:02,520 --> 00:01:07,320
+OK, então queremos dizer e vamos deixar AI igual a zero.
+
+20
+00:01:07,710 --> 00:01:09,030
+Então vai começar do zero.
+
+21
+00:01:09,030 --> 00:01:17,100
+E então, desde que I seja menor do que o que temos em quadrados e queremos incrementar I em um.
+
+22
+00:01:18,000 --> 00:01:20,500
+Então aqui vamos criar um elemento.
+
+23
+00:01:20,510 --> 00:01:31,620
+Então, digamos que quadrado e no objeto de documento há um método chamado Spell This Right document.
+
+24
+00:01:31,890 --> 00:01:38,520
+Existe um método chamado create element e podemos criar qualquer tipo de elemento DOM que quisermos.
+
+25
+00:01:38,530 --> 00:01:42,150
+Vou criar uma div e depois quero adicionar a classe do quadrado.
+
+26
+00:01:42,150 --> 00:01:50,520
+Então, vou pegar o elemento quadrado e vou dizer class list dot add e quero adicionar o
+
+27
+00:01:50,520 --> 00:01:59,130
+classe de quadrado porque esse é, você sabe, o quadrado que reestilizamos isso, essa classe de quadrado e isso é
+
+28
+00:01:59,130 --> 00:02:00,230
+o que queremos mostrar.
+
+29
+00:02:00,730 --> 00:02:03,050
+Agora isso não vai fazer nada ainda.
+
+30
+00:02:03,060 --> 00:02:08,640
+Queremos pegar o contêiner que trouxemos e queremos anexar filho porque queremos inserir
+
+31
+00:02:08,640 --> 00:02:13,280
+isso no contêiner e vamos passar aqui quadrado assim.
+
+32
+00:02:13,950 --> 00:02:20,160
+OK, agora, se salvarmos isso, você pode ver que 500 quadrados já foram pintados.
+
+33
+00:02:20,160 --> 00:02:24,630
+Se eu mudar isso para duzentos e economizar agora, teremos duzentos.
+
+34
+00:02:24,630 --> 00:02:29,160
+Então você pode mudar isso para o que quiser, mas vamos em frente e pintar 500 quadrados.
+
+35
+00:02:29,490 --> 00:02:36,570
+E então o que queremos que aconteça é quando passamos o mouse sobre eles, queremos basicamente que eles acendam
+
+36
+00:02:36,570 --> 00:02:38,400
+com uma cor aleatória.
+
+37
+00:02:38,670 --> 00:02:46,020
+Então, dentro deste loop for, vamos pegar o quadrado e eu quero adicionar um ouvinte de evento.
+
+38
+00:02:46,020 --> 00:02:53,400
+Então eu vou dizer add event listener and pass in the event neste caso vai passar o mouse.
+
+39
+00:02:53,400 --> 00:02:57,690
+Então, quando passamos o mouse sobre um quadrado, isso vai disparar.
+
+40
+00:02:58,080 --> 00:03:04,860
+E eu quero que isso chame uma função que vamos criar que diz que se chama definir cor e
+
+41
+00:03:04,860 --> 00:03:08,010
+queremos passar naquela praça em particular.
+
+42
+00:03:08,880 --> 00:03:09,330
+Tudo bem.
+
+43
+00:03:09,330 --> 00:03:11,430
+Queremos fazer a mesma coisa quando sairmos.
+
+44
+00:03:11,430 --> 00:03:14,940
+Então, teremos um ouvinte de eventos no mouse.
+
+45
+00:03:15,450 --> 00:03:21,860
+Então quando deixamos um quadrado e depois chamamos remove color, OK?
+
+46
+00:03:21,870 --> 00:03:29,040
+E então vamos descer aqui e vamos criar conjuntos de funções, colorir e dizer elemento.
+
+47
+00:03:32,190 --> 00:03:35,670
+E por enquanto, vamos console log here element.
+
+48
+00:03:35,710 --> 00:03:41,520
+Então, se eu salvar isso e abrir meu console para remover a cor, não está definido.
+
+49
+00:03:41,680 --> 00:03:48,180
+Então eu só preciso definir remover elementos de cor.
+
+50
+00:03:50,320 --> 00:03:50,740
+Tudo bem.
+
+51
+00:03:50,760 --> 00:03:56,850
+Agora, se eu passar o mouse sobre um quadrado, você pode ver que ele está indo para ou eu não deveria dizer pairar, mas se eu
+
+52
+00:03:56,850 --> 00:03:59,550
+passe o mouse, ele vai chamar isso.
+
+53
+00:03:59,880 --> 00:04:00,410
+Tudo bem.
+
+54
+00:04:00,420 --> 00:04:03,900
+Se eu sair dele, vai chamar remove color.
+
+55
+00:04:03,900 --> 00:04:06,810
+Então é por isso que eu gosto do log do console um, dois, três.
+
+56
+00:04:07,350 --> 00:04:12,330
+E nós vamos até aqui, você verá que cada vez que eu sair de um quadrado, ele vai disparar isso
+
+57
+00:04:12,330 --> 00:04:12,690
+desligado.
+
+58
+00:04:14,190 --> 00:04:14,490
+Tudo bem.
+
+59
+00:04:14,490 --> 00:04:16,730
+Então vamos nos livrar disso e vamos fazer a cor definida primeiro.
+
+60
+00:04:16,740 --> 00:04:20,070
+Então, precisamos ter uma cor específica.
+
+61
+00:04:20,070 --> 00:04:25,260
+Vou ter uma função chamada Get Random Color, porque não queremos que seja sempre a mesma
+
+62
+00:04:25,260 --> 00:04:25,620
+1.
+
+63
+00:04:26,220 --> 00:04:34,890
+Então aqui embaixo, digamos função, pegue uma cor aleatória e queremos retornar.
+
+64
+00:04:36,510 --> 00:04:42,150
+E lembre-se, temos esse array de cores e podemos acessar como se o índice zero nos desse isso
+
+65
+00:04:42,150 --> 00:04:44,540
+um depois um, dois, três, quatro.
+
+66
+00:04:44,970 --> 00:04:47,460
+Então eu quero obter um índice aleatório.
+
+67
+00:04:47,610 --> 00:04:53,220
+Então, aqui dentro, em vez de codificar um número, vou dizer matemática dot floor porque quero
+
+68
+00:04:53,220 --> 00:04:56,550
+arredondar para baixo e, em seguida, matemática dot aleatório.
+
+69
+00:04:57,150 --> 00:04:59,860
+Então matemática aleatória me dá um decimal aleatório I.
+
+70
+00:04:59,880 --> 00:05:06,540
+Queremos multiplicar isso pelo comprimento da matriz, então cores, comprimento, dessa forma será
+
+71
+00:05:06,540 --> 00:05:10,560
+em algum lugar entre zero e o quê, quatro?
+
+72
+00:05:10,560 --> 00:05:11,190
+Tão zero.
+
+73
+00:05:11,190 --> 00:05:12,720
+Um dois três quatro.
+
+74
+00:05:13,910 --> 00:05:14,430
+OK.
+
+75
+00:05:14,460 --> 00:05:21,030
+Na verdade, eu posso ir em frente e console logar aqui a cor.
+
+76
+00:05:21,060 --> 00:05:25,590
+E se eu passar o mouse, você verá que será uma dessas cores.
+
+77
+00:05:26,880 --> 00:05:27,210
+Bom.
+
+78
+00:05:27,660 --> 00:05:30,600
+Então agora só precisamos configurá-lo para o quadrado real.
+
+79
+00:05:30,750 --> 00:05:34,380
+Nesse caso, o elemento porque o quadrado está sendo passado é o elemento.
+
+80
+00:05:34,860 --> 00:05:44,040
+Então podemos definir o estilo, vamos definir o plano de fundo do ponto de estilo e vamos definir isso igual a qualquer
+
+81
+00:05:44,040 --> 00:05:45,030
+a cor é.
+
+82
+00:05:45,960 --> 00:05:55,580
+E então também a caixa Shadowlord set element, talvez element, dot style, dot box, shadow.
+
+83
+00:05:55,590 --> 00:06:00,720
+Você quer usar o caso Camil para isso e vamos configurar isso para mostrar alguns tiques aqui.
+
+84
+00:06:01,200 --> 00:06:07,310
+E vai ser zero zero dois pixels e então qualquer que seja a cor.
+
+85
+00:06:07,530 --> 00:06:16,260
+Então aqui vamos passar e a cor e depois outra sombra então vírgula zero zero 10 pixels e depois o que for
+
+86
+00:06:16,290 --> 00:06:17,780
+a cor é.
+
+87
+00:06:17,820 --> 00:06:18,170
+Tudo bem.
+
+88
+00:06:18,180 --> 00:06:19,200
+Então eu guardo isso.
+
+89
+00:06:19,470 --> 00:06:21,810
+Vamos fechar o console e ir até aqui.
+
+90
+00:06:22,650 --> 00:06:26,090
+E você pode ver onde quer que eu vá, vai me dar uma cor aleatória.
+
+91
+00:06:27,000 --> 00:06:30,240
+Então você poderia criar como um aplicativo de desenho com isso.
+
+92
+00:06:30,240 --> 00:06:34,540
+Você pode torná-los menores e adicionar alguma outra funcionalidade a ele.
+
+93
+00:06:34,680 --> 00:06:41,460
+Eu só quero que eles desapareçam assim que sairmos disso, porque agora podemos preencher todo o
+
+94
+00:06:41,460 --> 00:06:41,900
+coisa.
+
+95
+00:06:43,350 --> 00:06:45,210
+Quero dizer, se é isso que você quer fazer, tudo bem.
+
+96
+00:06:45,210 --> 00:06:46,600
+Mas eu quero remover a cor.
+
+97
+00:06:46,620 --> 00:06:52,980
+Então o que vamos fazer é um que remove é chamado de pegar o elemento e definir o estilo dot background.
+
+98
+00:06:52,980 --> 00:07:00,690
+E queremos defini-la de volta para a cor original da caixa, que é esta aqui.
+
+99
+00:07:01,270 --> 00:07:08,370
+OK, então vamos definir isso igual a essa cor em remover e, em seguida, definir a sombra da caixa.
+
+100
+00:07:08,370 --> 00:07:13,440
+Então, estilo de ponto de elemento, sombra de caixa de ponto.
+
+101
+00:07:13,590 --> 00:07:19,550
+Vamos definir isso para a sombra da caixa original, que é esta aqui.
+
+102
+00:07:21,000 --> 00:07:23,250
+Então passa isso aqui.
+
+103
+00:07:24,670 --> 00:07:25,070
+Tudo bem.
+
+104
+00:07:25,080 --> 00:07:26,040
+Então vamos salvar isso.
+
+105
+00:07:26,280 --> 00:07:34,440
+E agora você pode ver que eu posso ir e pegar uma cor aleatória, mas ela desaparece e desaparece assim.
+
+106
+00:07:34,980 --> 00:07:40,260
+Leva dois segundos para desaparecer por causa dessa transição aqui.
+
+107
+00:07:41,230 --> 00:07:46,770
+OK, então se eu tirar essa transição, então ele vai fazer isso.
+
+108
+00:07:46,770 --> 00:07:48,570
+E isso é meio estúpido.
+
+109
+00:07:48,570 --> 00:07:53,610
+Então, queremos deixar esse rastro fazendo isso, adicionando essa transição.
+
+110
+00:07:53,910 --> 00:08:00,030
+E assim como em qualquer outro projeto neste curso, eu encorajo você a adicionar a ele, talvez ter alguns
+
+111
+00:08:00,030 --> 00:08:04,260
+selecione uma caixa de seleção onde você pode escolher diferentes esquemas de cores ou algo parecido.
+
+112
+00:08:05,310 --> 00:08:06,960
+Tenho certeza que você pode pensar em algo.
+
+113
+00:08:06,990 --> 00:08:13,020
+Este é apenas um bom modelo para criar algum tipo de aplicativo de desenho ou algo assim.
+
+114
+00:08:13,320 --> 00:08:13,710
+Tudo bem.
+
+115
+00:08:13,720 --> 00:08:14,520
+Então é isso.
+
+116
+00:08:14,520 --> 00:08:16,350
+Vamos para o próximo projeto.

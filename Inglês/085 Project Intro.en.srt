@@ -1,0 +1,71 @@
+1
+00:00:00,240 --> 00:00:04,710
+All right, so this is going to be a pretty simple project, but I think it's useful because there's
+
+2
+00:00:04,710 --> 00:00:10,770
+a lot of times when you need to notify a user of something, whether it's an error or just like a little
+
+3
+00:00:10,770 --> 00:00:14,700
+info block, and you'll often see these tost notifications.
+
+4
+00:00:14,700 --> 00:00:20,160
+So something that will pop up in sometimes it's up in the corner here, sometimes it's down here.
+
+5
+00:00:20,160 --> 00:00:22,680
+Or you could put it in the middle wherever you want, really.
+
+6
+00:00:22,980 --> 00:00:29,760
+And you can see that it actually disappears after a few seconds because you don't want him to just stay
+
+7
+00:00:29,760 --> 00:00:30,120
+there.
+
+8
+00:00:30,120 --> 00:00:35,370
+And we can have multiple notifications because maybe multiple things happened and then they all just
+
+9
+00:00:35,370 --> 00:00:37,140
+go away after a certain amount of time.
+
+10
+00:00:37,440 --> 00:00:41,490
+Now we're going to make it fun and just randomize the messages and the types.
+
+11
+00:00:41,490 --> 00:00:44,130
+You'll see that some of them have different colors.
+
+12
+00:00:44,310 --> 00:00:49,770
+So like green is success, red is ever purple is info.
+
+13
+00:00:49,920 --> 00:00:51,360
+So we're going to randomize those.
+
+14
+00:00:51,360 --> 00:00:57,000
+But I'm also going to show you how you can add a specific message and a specific type.
+
+15
+00:00:57,150 --> 00:01:00,510
+And you could use this in like form validation or something like that.
+
+16
+00:01:00,840 --> 00:01:01,200
+All right.
+
+17
+00:01:01,210 --> 00:01:01,740
+So that's it.
+
+18
+00:01:01,740 --> 00:01:02,850
+Let's go ahead and get into it.

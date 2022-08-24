@@ -1,0 +1,67 @@
+﻿1
+00:00:00,300 --> 00:00:01,900
+Ei, pessoal, bem-vindos ao seu próximo projeto.
+
+2
+00:00:01,920 --> 00:00:05,390
+Então eu realmente gosto deste projeto, eu acho que é muito legal.
+
+3
+00:00:05,400 --> 00:00:08,160
+Então, basicamente, temos apenas um artigo simples.
+
+4
+00:00:08,160 --> 00:00:11,310
+Pode ser qualquer coisa, qualquer site, qualquer blog, qualquer coisa.
+
+5
+00:00:11,520 --> 00:00:14,860
+E aqui em cima temos o pequeno ícone de navegação.
+
+6
+00:00:14,880 --> 00:00:21,270
+Se eu clicar aqui, o que vai acontecer é que ele gira todo o site, todo o contêiner
+
+7
+00:00:21,270 --> 00:00:29,110
+aqui, e então traz na nav aqui, os itens de navegação do lado e o ícone também mudam.
+
+8
+00:00:29,130 --> 00:00:31,710
+Então, basicamente, temos dois ícones abertos e fechados.
+
+9
+00:00:31,980 --> 00:00:37,170
+Vamos posicioná-los para que quando clicarmos nele, o círculo gire e mostre o botão fechar.
+
+10
+00:00:37,380 --> 00:00:41,970
+Obviamente, precisamos de um pouco de JavaScript para poder adicionar e remover a classe específica, que
+
+11
+00:00:41,970 --> 00:00:46,500
+vamos chamar show NAV e isso vai, você sabe, girar e trazer o menu.
+
+12
+00:00:46,500 --> 00:00:47,880
+Então eu acho que isso parece muito legal.
+
+13
+00:00:48,630 --> 00:00:53,220
+Então, será principalmente sucesso com o qual estamos lidando.
+
+14
+00:00:53,610 --> 00:00:57,930
+Precisamos adicionar estilos específicos para elementos específicos.
+
+15
+00:00:57,930 --> 00:01:02,940
+Quando o show now of class está presente, o único JavaScript que realmente precisamos é adicionar ou remover a classe
+
+16
+00:01:02,940 --> 00:01:03,930
+e clicamos neste botão.
+
+17
+00:01:04,200 --> 00:01:05,450
+OK, então vamos começar.

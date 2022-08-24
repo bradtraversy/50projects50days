@@ -1,0 +1,551 @@
+﻿1
+00:00:00,390 --> 00:00:06,720
+OK, agora queremos começar no Navar e eu queria separar isso porque, você sabe, o
+
+2
+00:00:06,720 --> 00:00:10,110
+site em que você usará isso no futuro será completamente diferente.
+
+3
+00:00:10,120 --> 00:00:12,260
+Então eu quero que o Navar seja o mesmo.
+
+4
+00:00:12,270 --> 00:00:13,890
+Então eu queria fazer tudo isso em um vídeo.
+
+5
+00:00:14,310 --> 00:00:18,060
+Então vamos em frente e pegar a tag nav.
+
+6
+00:00:18,570 --> 00:00:20,550
+OK, então isso envolve tudo.
+
+7
+00:00:20,550 --> 00:00:28,080
+E vou adicionar uma posição a isso, porque agora você pode ver se eu rolar, você sabe,
+
+8
+00:00:28,080 --> 00:00:32,340
+é apenas na posição normal e eu posso rolar para fora, você sabe, para fora dela.
+
+9
+00:00:32,580 --> 00:00:37,520
+Então, quero posicioná-lo fixo no topo assim que fizer isso.
+
+10
+00:00:37,530 --> 00:00:41,010
+Agora, não importa onde eu role, sempre estará no topo.
+
+11
+00:00:41,940 --> 00:00:49,450
+Agora vou definir um fundo, vamos fazer uma cor de fundo e vou fazer dois, dois, dois
+
+12
+00:00:49,470 --> 00:00:53,620
+para a cor de fundo e vou definir o topo.
+
+13
+00:00:53,640 --> 00:01:00,420
+Então vai ser zero de cima e zero da esquerda e da direita, o que vai
+
+14
+00:01:00,420 --> 00:01:04,060
+fazê-lo percorrer todo o caminho assim, OK?
+
+15
+00:01:04,190 --> 00:01:11,850
+E então vamos querer adicionar uma transição aqui, porque quando começamos a rolar, vai
+
+16
+00:01:11,850 --> 00:01:15,330
+mudar de cor e vai diminuir o preenchimento.
+
+17
+00:01:15,330 --> 00:01:16,380
+Vai ter esse efeito.
+
+18
+00:01:16,390 --> 00:01:18,840
+Portanto, não queremos que isso apenas pisque.
+
+19
+00:01:18,840 --> 00:01:22,490
+Queremos que, você sabe, adicione uma transição suave.
+
+20
+00:01:22,710 --> 00:01:29,130
+Então, faremos a transição de todos os elementos ou desculpe, todas as propriedades que podem ser transferidas no ponto três
+
+21
+00:01:29,130 --> 00:01:31,650
+segundos com uma facilidade em nosso efeito.
+
+22
+00:01:32,970 --> 00:01:33,390
+Tudo bem.
+
+23
+00:01:33,390 --> 00:01:36,480
+E então vamos começar a estilizar algumas dessas outras coisas.
+
+24
+00:01:36,480 --> 00:01:43,920
+O container, basicamente, eu quero colocar, sabe, o logo desse lado e o poço desse lado.
+
+25
+00:01:44,160 --> 00:01:50,070
+Portanto, o contêiner será a caixa flexível porque o H1 nos EUA será os itens flexíveis dentro
+
+26
+00:01:50,070 --> 00:01:50,360
+disso.
+
+27
+00:01:50,880 --> 00:01:56,250
+Então, se olharmos para o nosso HTML, se eu colocar o flex agora, isso fará com que o contêiner seja o flex
+
+28
+00:01:56,250 --> 00:01:57,420
+item, que eu não quero.
+
+29
+00:01:57,630 --> 00:02:01,170
+Então eu quero que esta seja a caixa flexível nestes dois para ser o item flexível.
+
+30
+00:02:01,500 --> 00:02:11,640
+Então, vamos direto para isso e agora temos um contêiner e defina-o para exibir flex, que automaticamente
+
+31
+00:02:11,640 --> 00:02:15,120
+vai colocar o H1 nos EUA lado a lado.
+
+32
+00:02:15,660 --> 00:02:22,710
+E eu quero basicamente pegar este espaço aqui e colocá-lo entre eles para que possamos usar o conteúdo justificado
+
+33
+00:02:22,830 --> 00:02:26,580
+espaço entre e isso vai empurrar isso para o lado.
+
+34
+00:02:27,420 --> 00:02:37,200
+OK, eu também quero alinhar alguns ou vamos fazer um centro de itens de linha que irá centralizá-lo, você sabe, isso
+
+35
+00:02:37,200 --> 00:02:37,620
+caminho.
+
+36
+00:02:38,400 --> 00:02:41,160
+E então vamos também adicionar um pouco de preenchimento.
+
+37
+00:02:41,310 --> 00:02:48,450
+Vamos fazer 20 pixels na parte superior e inferior para o preenchimento e cuidaremos desses itens da lista em um
+
+38
+00:02:48,450 --> 00:02:48,780
+minuto.
+
+39
+00:02:49,680 --> 00:02:51,120
+OK, então temos isso.
+
+40
+00:02:52,410 --> 00:02:59,130
+Também vamos adicionar essa transição ao contêiner porque vamos alterar o preenchimento
+
+41
+00:02:59,130 --> 00:03:02,690
+value quando rolamos e adicionamos a classe ativa.
+
+42
+00:03:03,390 --> 00:03:11,400
+Agora, para os EUA, você diz NAV, bem, queremos que esses itens, os itens da lista, estejam em uma linha.
+
+43
+00:03:11,400 --> 00:03:12,930
+Então vamos exibir flex.
+
+44
+00:03:12,930 --> 00:03:14,780
+Isso os colocará automaticamente em uma linha.
+
+45
+00:03:14,790 --> 00:03:16,800
+Queremos nos livrar de todos os pontos de bala.
+
+46
+00:03:17,190 --> 00:03:18,710
+Então isso vai ser definido como nenhum.
+
+47
+00:03:19,170 --> 00:03:24,840
+E vamos alinhar os itens ao centro.
+
+48
+00:03:24,840 --> 00:03:33,000
+E deve ser assim que vai justificar o centro também.
+
+49
+00:03:33,930 --> 00:03:35,370
+E depois para os links.
+
+50
+00:03:36,270 --> 00:03:40,920
+Então nós temos o nosso, na verdade, eu uso o NAV aqui.
+
+51
+00:03:40,920 --> 00:03:46,040
+Queremos usar a classe de NAV porque você pode ter um nav em outro lugar, sabe.
+
+52
+00:03:47,490 --> 00:03:48,870
+Então o próximo é o link.
+
+53
+00:03:48,900 --> 00:03:51,600
+Então, digamos que o navegador de classe Maytag.
+
+54
+00:03:52,080 --> 00:03:58,980
+Vou definir a cor para brancos e vamos nos livrar daquele sublinhado com nenhuma decoração de texto.
+
+55
+00:04:00,030 --> 00:04:09,240
+E vamos espalhá-los para que façamos um preenchimento de sete pixels, superior e inferior, quinze pixels restantes
+
+56
+00:04:09,240 --> 00:04:12,360
+e isso vai, você sabe, separá-los um pouco.
+
+57
+00:04:13,800 --> 00:04:15,990
+E então eu também vou adicionar a transição.
+
+58
+00:04:15,990 --> 00:04:21,030
+Vou copiar isso e colocar aqui também.
+
+59
+00:04:23,350 --> 00:04:30,700
+Tudo bem, então, quero dizer, temos um sticky agora, nav, praticamente tudo o que você precisa fazer é posicionar
+
+60
+00:04:30,700 --> 00:04:34,420
+em fixo assim e ele vai ficar.
+
+61
+00:04:34,420 --> 00:04:40,250
+Mas queremos ter esse efeito onde quando atingimos um certo ponto, fica branco.
+
+62
+00:04:40,300 --> 00:04:42,970
+E também tem um pouco menos de preenchimento.
+
+63
+00:04:43,460 --> 00:04:47,200
+OK, então quando você rolar para cima e para baixo e daremos esse efeito, teremos uma classe de
+
+64
+00:04:47,200 --> 00:04:47,920
+ativo.
+
+65
+00:04:49,510 --> 00:04:49,950
+Tudo bem.
+
+66
+00:04:49,960 --> 00:04:54,840
+Então, digamos que a classe agora tenha a classe ativa.
+
+67
+00:04:54,850 --> 00:05:04,600
+Então, quando estiver ativo, quero que a cor de fundo seja branca e podemos adicionar isso
+
+68
+00:05:04,600 --> 00:05:06,340
+aqui manualmente.
+
+69
+00:05:06,370 --> 00:05:11,710
+Vamos apenas adicionar ativo e agora você pode ver que é branco para que possamos pelo menos vê-lo no estilo.
+
+70
+00:05:13,330 --> 00:05:18,970
+E então eu também vou adicionar vamos deixar os links, os links ativos pretos.
+
+71
+00:05:19,570 --> 00:05:25,420
+Então agora ative um defina a cor para preto.
+
+72
+00:05:27,030 --> 00:05:27,510
+Tudo bem.
+
+73
+00:05:27,520 --> 00:05:33,550
+E então vamos adicionar uma sombra de caixa quando ela estiver ativa também.
+
+74
+00:05:34,300 --> 00:05:46,790
+Então, a sombra da caixa faz para os deslocamentos zero e dois pixels, desfoque de 10 pixels, Rajiva Black e zero ponto três
+
+75
+00:05:46,790 --> 00:05:48,490
+é apenas um pouco de sombra de caixa.
+
+76
+00:05:49,900 --> 00:05:53,650
+Agora o container, quando estiver ativo, quero ter menos preenchimento.
+
+77
+00:05:53,650 --> 00:05:56,520
+Tem 20 para começar.
+
+78
+00:05:56,860 --> 00:05:59,770
+Então o que eu vou fazer é pegar isso.
+
+79
+00:05:59,770 --> 00:06:03,730
+E aqui, digamos nav
+
+80
+00:06:05,920 --> 00:06:06,850
+ativo.
+
+81
+00:06:07,060 --> 00:06:12,860
+Então, o contêiner de navegação ativo, vou alterá-lo de vinte para dez pixels, certo?
+
+82
+00:06:12,910 --> 00:06:18,270
+Agora, se eu disser que podemos ver que é mais magro e então eu só quero ter o hover, eu quero que ele seja ratificado,
+
+83
+00:06:18,280 --> 00:06:22,510
+hover ou se ou se o link tiver uma classe de active.
+
+84
+00:06:22,840 --> 00:06:28,030
+Na verdade, talvez devêssemos chamá-lo de algo diferente porque chamamos isso de ativo para que possamos chamá-lo
+
+85
+00:06:28,030 --> 00:06:28,620
+atual.
+
+86
+00:06:29,680 --> 00:06:42,340
+E então o que vamos fazer é dizer NAV, se a tag A tem uma classe de current ou o nav a está sendo coberto,
+
+87
+00:06:43,480 --> 00:06:53,800
+então vamos fazer a cor desse hexadecimal ver zero três nove ser, que é uma cor vermelha e vamos
+
+88
+00:06:53,800 --> 00:06:57,130
+faça o peso da fonte fazer isso em negrito.
+
+89
+00:06:57,220 --> 00:06:57,600
+Tudo bem.
+
+90
+00:06:57,660 --> 00:07:04,090
+Se eu disser que podemos ver o link atual, é essa cor vermelha e se eu passar o mouse, é essa cor vermelha e isso é
+
+91
+00:07:04,090 --> 00:07:07,760
+vai ser se o Navar é branco ou preto, ativo ou não.
+
+92
+00:07:07,780 --> 00:07:12,400
+Então vou remover a classe ativa no NAV agora volta a ser preta.
+
+93
+00:07:12,790 --> 00:07:17,800
+Então, para que o JavaScript será usado é quando atingimos um certo ponto, quando rolamos,
+
+94
+00:07:17,800 --> 00:07:20,470
+quero que ele se transforme na barra de navegação ativa.
+
+95
+00:07:20,860 --> 00:07:21,220
+Certo.
+
+96
+00:07:21,240 --> 00:07:23,170
+Então vamos para o nosso JavaScript aqui.
+
+97
+00:07:23,470 --> 00:07:24,870
+E isso não vai ser difícil.
+
+98
+00:07:24,880 --> 00:07:26,770
+Vamos trazer nosso NAV.
+
+99
+00:07:26,770 --> 00:07:35,770
+Então, digamos que o seletor de consulta de ponto de documento do Korn agora seja igual e o selecionará pela classe de NAV.
+
+100
+00:07:36,310 --> 00:07:42,640
+E então queremos adicionar na janela o ouvinte de eventos e queremos ouvir um pergaminho.
+
+101
+00:07:43,360 --> 00:07:46,840
+E quando rolarmos, vamos chamar uma função chamada fixed nav.
+
+102
+00:07:47,680 --> 00:07:53,720
+OK, então aqui embaixo, digamos que a função Fixx NAV não tenha espaço.
+
+103
+00:07:55,120 --> 00:07:56,740
+Então função de navegação fixa.
+
+104
+00:07:57,040 --> 00:08:00,550
+E queremos verificar os pontos de rolagem.
+
+105
+00:08:00,550 --> 00:08:07,450
+Então, vou fazer um log do console aqui dos pontos da janela e rolar y porque estamos usando estamos
+
+106
+00:08:07,450 --> 00:08:09,940
+falando sobre o eixo Y que é vertical.
+
+107
+00:08:10,360 --> 00:08:14,560
+Então, eu vou abrir isso e conforme eu rola você pode ver que vai me dar esse valor.
+
+108
+00:08:15,070 --> 00:08:25,040
+E também quero ver o elemento NAV e verificar sua altura de deslocamento.
+
+109
+00:08:26,590 --> 00:08:29,590
+Então, se eu rolar, você pode ver que as barras de navegação se deslocam para cima.
+
+110
+00:08:29,590 --> 00:08:32,500
+É setenta e três e sempre vai ficar setenta e três.
+
+111
+00:08:33,310 --> 00:08:39,130
+Mas o que faremos, quero descobrir um ponto em que queremos realmente transformar isso no ativo,
+
+112
+00:08:40,180 --> 00:08:41,470
+a barra de navegação ativa.
+
+113
+00:08:41,480 --> 00:08:45,040
+Então, o que vou fazer é realmente fazer uma instrução if aqui.
+
+114
+00:08:45,040 --> 00:08:55,780
+Então, digamos se e diremos se a posição de rolagem y é maior que a altura do deslocamento de navegação e vamos
+
+115
+00:08:55,780 --> 00:08:57,520
+basta adicionar um cinqüenta a isso.
+
+116
+00:08:57,520 --> 00:09:00,650
+Então isso vai derrubá-lo, você sabe, para esta área.
+
+117
+00:09:01,120 --> 00:09:08,380
+Então, se isso for verdade, vamos pegar o nav e adicionar a classe.
+
+118
+00:09:08,380 --> 00:09:12,070
+Então anúncio ponto classless de ativo.
+
+119
+00:09:12,820 --> 00:09:13,110
+Certo.
+
+120
+00:09:13,160 --> 00:09:16,300
+Então, queremos adicionar active e else.
+
+121
+00:09:16,900 --> 00:09:20,790
+Então, se não for, se for menor que isso, queremos remover a classe.
+
+122
+00:09:20,800 --> 00:09:22,600
+Então vamos apenas copiar.
+
+123
+00:09:22,690 --> 00:09:30,550
+Isso e em vez de anúncio, vamos remover, tudo bem, então vou salvar isso e agora vou começar a
+
+124
+00:09:30,550 --> 00:09:31,120
+rolagem.
+
+125
+00:09:31,540 --> 00:09:37,960
+E assim que eu atingi este ponto onde isso é verdade, onde é o pergaminho, por que o valor é maior que
+
+126
+00:09:37,960 --> 00:09:42,870
+a altura de deslocamento mais um 150, então ele se torna ativo.
+
+127
+00:09:43,420 --> 00:09:47,370
+OK, então vai levar essa altura mais um, você sabe, 150.
+
+128
+00:09:47,890 --> 00:09:56,710
+Então, por volta deste ponto aqui, OK, vai virar e se voltarmos para cima, ele volta
+
+129
+00:09:56,710 --> 00:09:57,240
+ao normal.
+
+130
+00:09:57,520 --> 00:10:02,500
+Então você vê muito esse efeito nos sites e não precisa do Junqueira.
+
+131
+00:10:02,520 --> 00:10:04,740
+Não há necessidade de qualquer biblioteca extra.
+
+132
+00:10:04,750 --> 00:10:06,010
+É muito, muito simples.
+
+133
+00:10:06,760 --> 00:10:12,200
+Então você pode usar isso para, você sabe, seus sites e interfaces de usuário a partir de agora.
+
+134
+00:10:12,640 --> 00:10:13,210
+Então é isso.
+
+135
+00:10:13,220 --> 00:10:18,220
+Espero que isso ajude você e, você sabe, lhe dê algo que você possa usar no futuro.
+
+136
+00:10:18,490 --> 00:10:19,190
+E é isso.
+
+137
+00:10:19,210 --> 00:10:19,950
+Obrigado por assistir.
+
+138
+00:10:19,960 --> 00:10:21,340
+Vejo você no próximo projeto.

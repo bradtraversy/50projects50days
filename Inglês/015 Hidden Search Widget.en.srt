@@ -1,0 +1,443 @@
+1
+00:00:00,300 --> 00:00:03,090
+All right, we're going to get started on our hidden search form.
+
+2
+00:00:03,150 --> 00:00:06,720
+So in our time out here, I have my project started.
+
+3
+00:00:06,730 --> 00:00:13,500
+You can also see I have the font awesome link here because we're going to be using the search icon for
+
+4
+00:00:13,500 --> 00:00:13,980
+the button.
+
+5
+00:00:14,400 --> 00:00:17,100
+So let's change this to a hidden search.
+
+6
+00:00:18,690 --> 00:00:27,360
+And then down here in the body, let's create a div with the class of search and this div is going to
+
+7
+00:00:27,360 --> 00:00:30,940
+wrap both the input and the button, and that's really all we have.
+
+8
+00:00:30,960 --> 00:00:33,030
+So let's add the input.
+
+9
+00:00:33,030 --> 00:00:41,420
+I'm going to give this a we'll give this a class of input and the type is going to be text.
+
+10
+00:00:41,430 --> 00:00:43,020
+Let's also add a placeholder.
+
+11
+00:00:44,520 --> 00:00:48,200
+So placeholder will just be search, dot, dot, dot.
+
+12
+00:00:48,870 --> 00:00:55,230
+And then right after the input will have the button and the button is going to have a class of beats
+
+13
+00:00:55,310 --> 00:00:58,380
+and inside that button will have an ID tag with the font.
+
+14
+00:00:58,410 --> 00:00:59,490
+Awesome icon.
+
+15
+00:00:59,490 --> 00:01:04,940
+So fase and a dash search for the icon.
+
+16
+00:01:05,520 --> 00:01:06,230
+So I save it.
+
+17
+00:01:06,270 --> 00:01:07,320
+We're going to see this.
+
+18
+00:01:07,350 --> 00:01:09,950
+Just a regular looking ugly search form.
+
+19
+00:01:10,320 --> 00:01:12,350
+So let's jump into our success.
+
+20
+00:01:12,900 --> 00:01:22,200
+Basically, what we want to do is have a class of active and when we when it's active, the the input
+
+21
+00:01:22,200 --> 00:01:25,350
+here will expand and the button will move over.
+
+22
+00:01:25,470 --> 00:01:28,380
+And we wanted to start with just just showing the button.
+
+23
+00:01:28,840 --> 00:01:34,750
+So let's just get some general styles in here first as far as the body goes.
+
+24
+00:01:34,770 --> 00:01:41,340
+I want to add a background, let's say background image, and I'm going to use a linear gradient so
+
+25
+00:01:41,340 --> 00:01:42,710
+we'll see a linear gradient.
+
+26
+00:01:43,080 --> 00:01:55,770
+Let's do a 90 degree gradients and four colors will do the hexadecimal value of 75 F, F, F, and let's
+
+27
+00:01:55,770 --> 00:02:01,450
+do hexadecimal seven one five eight E two.
+
+28
+00:02:02,120 --> 00:02:09,690
+OK, so those are going to be our colors and we need to put a semicolon here that I forgot.
+
+29
+00:02:10,350 --> 00:02:10,950
+Where am I?
+
+30
+00:02:10,950 --> 00:02:11,760
+Where's my cursor.
+
+31
+00:02:14,410 --> 00:02:19,600
+OK, so now we have that background gradient, you can probably make this a little smaller here.
+
+32
+00:02:22,660 --> 00:02:28,810
+OK, so background now we want to display Fleck's align everything to the center.
+
+33
+00:02:28,820 --> 00:02:31,150
+We don't need we don't need where is it?
+
+34
+00:02:31,150 --> 00:02:35,450
+Flex Direction as a column height 100 viewport.
+
+35
+00:02:35,450 --> 00:02:36,280
+It's good.
+
+36
+00:02:36,970 --> 00:02:39,820
+The search class.
+
+37
+00:02:39,820 --> 00:02:46,060
+I'm going to position this relative so we can position things inside of it absolu.
+
+38
+00:02:46,060 --> 00:02:49,300
+And let's set the initial height here to 50 pixels.
+
+39
+00:02:50,560 --> 00:02:57,640
+And then for the input, I mean, that has a class of input actually.
+
+40
+00:02:57,640 --> 00:03:10,890
+Let's do search input and let's set a background color of white and let's set a border of zero.
+
+41
+00:03:10,900 --> 00:03:18,250
+Take away any border and I'm going to make the font size 18 pixels will make that a little bigger.
+
+42
+00:03:18,940 --> 00:03:32,650
+And let's set the padding on this to 15 pixels all around and we'll set the height to 50 pixels and
+
+43
+00:03:32,650 --> 00:03:37,020
+let's set the width to 50 pixels.
+
+44
+00:03:37,720 --> 00:03:43,660
+So it's going to start off short like this, but then we'll have an animation or a transition to expand
+
+45
+00:03:43,660 --> 00:03:43,810
+it.
+
+46
+00:03:44,890 --> 00:03:50,410
+So I want to add here a transition on the width property.
+
+47
+00:03:50,610 --> 00:03:55,690
+OK, so we want the width to have a transition that's going to last zero point three seconds with an
+
+48
+00:03:55,690 --> 00:03:56,530
+EZ effect.
+
+49
+00:03:58,720 --> 00:04:08,470
+Now for the button, let's style that, so that has a class of BTN and we're going to set a background
+
+50
+00:04:09,280 --> 00:04:10,990
+color of white.
+
+51
+00:04:13,220 --> 00:04:16,920
+And let's set a border of zero.
+
+52
+00:04:17,570 --> 00:04:25,410
+We want the cursor to be a pointer when we hover over it, we want a font size of twenty four pixels.
+
+53
+00:04:25,760 --> 00:04:27,920
+So remember, this is the button with the icon.
+
+54
+00:04:28,250 --> 00:04:37,850
+And I want to position this absolute within the within the search class here, the search container
+
+55
+00:04:37,850 --> 00:04:42,890
+and let's say from the top zero and from the left zero.
+
+56
+00:04:44,000 --> 00:04:49,250
+And then we're going to give this a height and width of 50 pixels.
+
+57
+00:04:52,610 --> 00:04:58,940
+OK, so it puts it right in the middle there and then I want to transition on this, because what we
+
+58
+00:04:58,940 --> 00:05:02,090
+want to do with the button is move it over.
+
+59
+00:05:02,090 --> 00:05:05,510
+We want the the input to it to expand the width.
+
+60
+00:05:05,630 --> 00:05:10,640
+We have the transition for that up here, the button we want to push over.
+
+61
+00:05:10,850 --> 00:05:14,480
+OK, so the input gets wider, the button gets pushed over.
+
+62
+00:05:14,480 --> 00:05:17,170
+So we'll use transform on that.
+
+63
+00:05:17,180 --> 00:05:23,650
+So we want to add a transition for transform same amount of time as the width on the input and and ease
+
+64
+00:05:23,660 --> 00:05:24,170
+effect.
+
+65
+00:05:26,870 --> 00:05:34,460
+OK, and then we want to get rid of any outline, so let's grab, let's say, the BTN when it's in its
+
+66
+00:05:34,460 --> 00:05:40,140
+focus state and also the input when it's in its focus state.
+
+67
+00:05:40,610 --> 00:05:43,850
+We want to set the outline to none.
+
+68
+00:05:45,020 --> 00:05:46,810
+OK, so now we don't see that outline.
+
+69
+00:05:47,720 --> 00:05:52,190
+And then finally, we want to take the search.
+
+70
+00:05:54,540 --> 00:06:03,330
+Inputs, but when it's active, so the search class, if it has an active class, then we want the input
+
+71
+00:06:03,330 --> 00:06:08,010
+to go to 200 pixels from what was it, 50?
+
+72
+00:06:08,450 --> 00:06:09,980
+Yeah, so it starts at 50.
+
+73
+00:06:10,380 --> 00:06:18,480
+And then when and when the search element has an active class on it, then the width will go to 200.
+
+74
+00:06:18,690 --> 00:06:21,070
+And then we also want the button to move over.
+
+75
+00:06:21,150 --> 00:06:25,320
+We have a trend, a transition on the transform, but we haven't actually created that yet.
+
+76
+00:06:25,570 --> 00:06:34,190
+So also when the search has the class of active on it that we want to take the button, we want to set
+
+77
+00:06:34,200 --> 00:06:36,960
+transform and we want to move it.
+
+78
+00:06:37,170 --> 00:06:39,660
+We want to move it along the X axis.
+
+79
+00:06:39,670 --> 00:06:44,070
+We want to move it to the right so we can use translate X.
+
+80
+00:06:44,370 --> 00:06:50,340
+So translate on the X axis and we'll move it over one hundred and ninety eight pixels.
+
+81
+00:06:52,080 --> 00:06:52,530
+All right.
+
+82
+00:06:54,060 --> 00:06:59,460
+So if I save that, we're not going to see any difference here because we need a little bit of JavaScript
+
+83
+00:06:59,460 --> 00:07:05,240
+to be able to give it that class and you'll see if I manually put on the active class here.
+
+84
+00:07:05,520 --> 00:07:06,030
+There we go.
+
+85
+00:07:06,030 --> 00:07:06,840
+It expands.
+
+86
+00:07:07,260 --> 00:07:09,240
+So JavaScript is going to be really simple.
+
+87
+00:07:09,360 --> 00:07:11,880
+Let's go ahead and bring in the search.
+
+88
+00:07:12,450 --> 00:07:14,130
+So document dot.
+
+89
+00:07:16,080 --> 00:07:17,190
+Query selector.
+
+90
+00:07:18,540 --> 00:07:25,230
+And we want to grab the class of search and then let's also grab the BGN.
+
+91
+00:07:27,680 --> 00:07:36,980
+PETN, and then let's grab the input input and then I'm going to take the button and we want an event
+
+92
+00:07:36,980 --> 00:07:41,020
+listener on that, so we want to add an event listener of a click event.
+
+93
+00:07:43,190 --> 00:07:47,240
+And when we click, we're going to call an arrow function here.
+
+94
+00:07:47,240 --> 00:07:50,030
+And all we want to do is take the search.
+
+95
+00:07:50,690 --> 00:07:53,360
+Remember the search div, which I just showed you?
+
+96
+00:07:53,360 --> 00:07:57,390
+If I put an active class on that, it widens it out, pushes the button over.
+
+97
+00:07:57,620 --> 00:07:58,610
+So that's what we want to do.
+
+98
+00:07:58,620 --> 00:08:06,230
+We want to say from search, we have our class list and then there's a method called toggle to toggle
+
+99
+00:08:06,230 --> 00:08:08,450
+a class, basically just add and remove it.
+
+100
+00:08:08,450 --> 00:08:11,200
+So we'll toggle the class of active.
+
+101
+00:08:11,510 --> 00:08:16,800
+I also want to set focus on the input, which we can just use the focus method.
+
+102
+00:08:17,270 --> 00:08:17,690
+All right.
+
+103
+00:08:17,700 --> 00:08:23,990
+So if I go over here and I click, it not only opens it and, you know, pushes the button over, widens
+
+104
+00:08:23,990 --> 00:08:27,320
+the input, but it also focuses in the in there.
+
+105
+00:08:27,650 --> 00:08:34,310
+And if I click goes back and you can see just from the projects we've done so far and some of the ones
+
+106
+00:08:34,310 --> 00:08:41,630
+that we're going to do a lot of this just it's all just putting specific classes through our JavaScript,
+
+107
+00:08:41,630 --> 00:08:46,880
+through events, you know, clicking or hovering over something and making an event far off where we
+
+108
+00:08:46,880 --> 00:08:52,730
+just add or remove or toggle a class and then we have a transition to give us a cool little animation.
+
+109
+00:08:52,940 --> 00:08:58,070
+So there's very little need for something like Jan to do stuff like this anymore.
+
+110
+00:08:58,130 --> 00:09:04,640
+You just use vanilla JavaScript to mix with success and you can do just about any kind of animation
+
+111
+00:09:04,640 --> 00:09:06,650
+that you can do with J query pretty easily.

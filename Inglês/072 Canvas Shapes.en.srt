@@ -1,0 +1,411 @@
+1
+00:00:00,240 --> 00:00:05,580
+All right, so we're going to start on our JavaScript and we're using the canvas API, which is a way
+
+2
+00:00:05,580 --> 00:00:13,650
+to draw graphics or draw shapes on the canvas using JavaScript, and we're using the small five canvas
+
+3
+00:00:13,650 --> 00:00:14,210
+element.
+
+4
+00:00:15,000 --> 00:00:22,440
+So basic example here, we can bring in our canvas and then we create a context using get context created
+
+5
+00:00:22,440 --> 00:00:23,520
+to add context.
+
+6
+00:00:23,760 --> 00:00:29,820
+And then we can call certain we can set certain properties and methods like the film style set the green
+
+7
+00:00:30,210 --> 00:00:32,220
+Phil RACT will create a rectangle.
+
+8
+00:00:32,640 --> 00:00:35,300
+The first two are the positioning.
+
+9
+00:00:35,310 --> 00:00:42,270
+So it's ten over from on the x axis of the canvas and then ten down on the y axis.
+
+10
+00:00:42,630 --> 00:00:44,190
+The width is 150.
+
+11
+00:00:44,190 --> 00:00:45,840
+The height of this is 100.
+
+12
+00:00:46,280 --> 00:00:46,620
+All right.
+
+13
+00:00:46,630 --> 00:00:48,240
+So I'm just going to grab that.
+
+14
+00:00:49,020 --> 00:00:50,570
+So we're bringing in canvas.
+
+15
+00:00:50,580 --> 00:00:53,020
+It does have an I.D. of canvas.
+
+16
+00:00:53,020 --> 00:00:55,390
+So bring that in and then we create a context.
+
+17
+00:00:55,820 --> 00:01:03,090
+Now, I actually want to draw a circle, so I'm going to have a function called Draw Circle and we are
+
+18
+00:01:03,090 --> 00:01:07,330
+going to be using this function in the in the final version draw.
+
+19
+00:01:07,330 --> 00:01:10,590
+A circle is going to take in an X value in a Y value.
+
+20
+00:01:10,590 --> 00:01:14,920
+That's going to be the positioning on the canvas where we want to draw the circle.
+
+21
+00:01:15,390 --> 00:01:19,500
+Now, if we go, I think there's a link down here.
+
+22
+00:01:20,190 --> 00:01:20,450
+Yeah.
+
+23
+00:01:20,520 --> 00:01:25,170
+Drawing shapes and see paths.
+
+24
+00:01:26,550 --> 00:01:35,490
+And right here, so to draw a circle, we need to begin a path and then create an arc and the arc takes
+
+25
+00:01:35,490 --> 00:01:39,000
+in the positioning where you want to put it, the radius of the circle.
+
+26
+00:01:39,900 --> 00:01:44,840
+I think this is the start angle and the end angle is right here.
+
+27
+00:01:44,850 --> 00:01:48,260
+And then if you want it clockwise or counterclockwise.
+
+28
+00:01:48,270 --> 00:01:50,370
+So I'm actually going to.
+
+29
+00:01:51,990 --> 00:01:53,220
+Grab this.
+
+30
+00:01:57,130 --> 00:02:04,270
+So we're going to begin a path now, the values here, I don't want this is just this is 75 over 75
+
+31
+00:02:04,270 --> 00:02:04,630
+down.
+
+32
+00:02:04,630 --> 00:02:12,610
+I want this to be wherever X is that's passed in in Y and then the size I'm going to have in a variable
+
+33
+00:02:12,610 --> 00:02:14,820
+called size, and that's going to be a global variable.
+
+34
+00:02:14,830 --> 00:02:18,970
+So up here, I'll say let size and set that to 20.
+
+35
+00:02:20,500 --> 00:02:27,340
+OK, so that will get passed and then zero for the start and then the end will be yeah.
+
+36
+00:02:27,340 --> 00:02:32,880
+Math dot pi times two and then you don't need to pass anything in here.
+
+37
+00:02:33,550 --> 00:02:38,780
+So just doing that, if we take a look it doesn't do anything because we haven't filled the circle yet.
+
+38
+00:02:38,830 --> 00:02:46,660
+So what I'm going to do is set a color on the circle first through dot and then fill style.
+
+39
+00:02:47,170 --> 00:02:52,330
+And I'm going to set that to a variable called color, which I'm also going to set up here, because
+
+40
+00:02:52,330 --> 00:02:55,540
+we want we want this to be accessible outside of this function.
+
+41
+00:02:55,880 --> 00:03:03,040
+So the color initially all set to black and then let's fill the circle.
+
+42
+00:03:03,040 --> 00:03:04,510
+So take our context.
+
+43
+00:03:04,510 --> 00:03:05,830
+And there's a method called fill.
+
+44
+00:03:06,340 --> 00:03:08,920
+Now, if I save that, OK, we have to call the function.
+
+45
+00:03:10,210 --> 00:03:11,800
+Let's call, draw, circle.
+
+46
+00:03:13,300 --> 00:03:17,150
+And let's say we want to start at one hundred over and 200 down.
+
+47
+00:03:17,710 --> 00:03:18,580
+So save that.
+
+48
+00:03:18,580 --> 00:03:21,190
+And now it's going to plot a circle or draw a circle.
+
+49
+00:03:21,460 --> 00:03:29,020
+One hundred over on the x axis and 200 down on the Y and that's within the canvas, not the page.
+
+50
+00:03:29,980 --> 00:03:30,510
+All right.
+
+51
+00:03:30,520 --> 00:03:38,650
+Now, we also want to be able to draw lines, so let's say function, draw a line.
+
+52
+00:03:40,480 --> 00:03:47,680
+And this is going to take in the move to positions X and Y positions like where we want to move to and
+
+53
+00:03:47,680 --> 00:03:50,240
+also where we want to draw the line from in two.
+
+54
+00:03:50,500 --> 00:03:55,810
+So what will pass in is X1 and Y one.
+
+55
+00:03:56,260 --> 00:03:59,020
+So that's going to be the move to X1 and why one.
+
+56
+00:03:59,020 --> 00:04:04,310
+And then the line to which draws the line will be X to and Y two.
+
+57
+00:04:04,840 --> 00:04:05,250
+All right.
+
+58
+00:04:05,260 --> 00:04:17,410
+So in here we need to again begin a path, so begin path and then let's do X dot move two and that's
+
+59
+00:04:17,410 --> 00:04:19,830
+going to be x1 y one.
+
+60
+00:04:19,840 --> 00:04:21,780
+So that's going to move to a specific position.
+
+61
+00:04:21,790 --> 00:04:23,710
+It's not going to plot anything or draw anything.
+
+62
+00:04:23,710 --> 00:04:24,820
+It's just going to move to it.
+
+63
+00:04:25,300 --> 00:04:33,090
+Then let's say it's line two and that's going to go to X two and Y two.
+
+64
+00:04:33,460 --> 00:04:33,910
+All right.
+
+65
+00:04:33,910 --> 00:04:42,100
+Now we need to want to apply a color so we do that with X dots and stroke style.
+
+66
+00:04:43,060 --> 00:04:46,500
+So stroke is like like a a border kind of.
+
+67
+00:04:46,510 --> 00:04:48,820
+So when we use a line, we're using a stroke.
+
+68
+00:04:49,150 --> 00:04:53,680
+So the strokes style is going to be the same color as the circle.
+
+69
+00:04:53,690 --> 00:04:57,970
+So the basically the global color, which is going to start off as black, we're going to be able to
+
+70
+00:04:57,970 --> 00:05:03,220
+ultimately choose our color here, but it's going to start as black and then the line width.
+
+71
+00:05:03,220 --> 00:05:12,880
+So let's say it's a line with and we're going to set that to a variable of size, which is this, you
+
+72
+00:05:12,880 --> 00:05:14,230
+know, twenty to start with.
+
+73
+00:05:14,980 --> 00:05:18,730
+And then finally to actually draw the line we need to call stroke.
+
+74
+00:05:18,730 --> 00:05:21,070
+So dot stroke.
+
+75
+00:05:22,060 --> 00:05:29,680
+And then let's go down here and let's say draw a line and we'll say, let's start 300 over on the x
+
+76
+00:05:29,680 --> 00:05:30,250
+axis.
+
+77
+00:05:30,250 --> 00:05:32,160
+Three hundred down on the Y axis.
+
+78
+00:05:32,770 --> 00:05:38,080
+So that's basically the move to which you can think of as having your pen off the paper.
+
+79
+00:05:38,080 --> 00:05:39,580
+You're moving to a certain spot.
+
+80
+00:05:39,760 --> 00:05:43,330
+The second two arguments we're passing in is the line two.
+
+81
+00:05:43,330 --> 00:05:44,680
+So that's what the pen down.
+
+82
+00:05:44,680 --> 00:05:48,590
+So we'll say we'll go from 300 to 500 by save that.
+
+83
+00:05:48,590 --> 00:05:50,980
+And I can see you have a line starts.
+
+84
+00:05:50,980 --> 00:05:55,330
+We move to three hundred three hundred and then we draw down from 300 to 500.
+
+85
+00:05:57,070 --> 00:05:57,480
+All right.
+
+86
+00:05:57,490 --> 00:06:03,460
+So and of course, you know, we can change if we want to do like a diagonal line.
+
+87
+00:06:03,970 --> 00:06:09,370
+We could change this to two hundred, something like that.
+
+88
+00:06:09,640 --> 00:06:11,950
+Now, we're not actually going to call these like this.
+
+89
+00:06:11,950 --> 00:06:16,480
+We want to call those when we have our most move event because it's going to be dynamic.
+
+90
+00:06:17,200 --> 00:06:17,920
+All right.
+
+91
+00:06:18,370 --> 00:06:26,080
+One of the thing that I want to do here is the X values and Y values.
+
+92
+00:06:26,080 --> 00:06:33,130
+I want those to be global as well, because we're going to be, you know, using those in multiple places
+
+93
+00:06:33,670 --> 00:06:34,870
+and reassigning them.
+
+94
+00:06:34,870 --> 00:06:37,330
+So I'm just going to initialize X.
+
+95
+00:06:37,420 --> 00:06:41,160
+We'll just say let X and we'll say let Y.
+
+96
+00:06:42,100 --> 00:06:43,690
+So they're undefined right now.
+
+97
+00:06:44,740 --> 00:06:45,370
+All right.
+
+98
+00:06:45,370 --> 00:06:46,920
+And I think that's good.
+
+99
+00:06:46,930 --> 00:06:53,020
+So in the next video, what we'll do is start to deal with our most events, like on the mouse move.
+
+100
+00:06:53,020 --> 00:06:54,190
+We want to be able to.
+
+101
+00:06:54,620 --> 00:07:00,890
+We want to create our circle and lines and we want to know if the button is pressed or not, too, for
+
+102
+00:07:00,890 --> 00:07:03,650
+moving because we only want to drive our moses' down.
+
+103
+00:07:03,950 --> 00:07:06,260
+So we'll get into that stuff in the next video.

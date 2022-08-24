@@ -1,0 +1,55 @@
+1
+00:00:00,270 --> 00:00:05,790
+All right, so this is just going to be a fun little project where we actually take some checkboxes
+
+2
+00:00:05,790 --> 00:00:11,310
+and we style them to look like these little sliders here with these little balls that we can animate
+
+3
+00:00:11,610 --> 00:00:12,580
+back and forth.
+
+4
+00:00:12,990 --> 00:00:18,330
+OK, so we're going to add a little bit of success and style them with success and then add some animations
+
+5
+00:00:18,330 --> 00:00:19,460
+to give it this effect.
+
+6
+00:00:19,860 --> 00:00:24,990
+And then finally, we're going to add a little bit of JavaScript logic, because when you have a project,
+
+7
+00:00:25,500 --> 00:00:28,430
+you rarely get it to be good, cheap and fast.
+
+8
+00:00:28,440 --> 00:00:36,320
+So basically, if we choose good cheap and then we click fast, it's going to uncheck cheap sex.
+
+9
+00:00:36,390 --> 00:00:39,560
+So we might get it to be good and fast, but then it's not going to be cheap.
+
+10
+00:00:40,110 --> 00:00:47,460
+We can do cheap and fast and we can do cheap and good, but we can't do all three because that's very
+
+11
+00:00:47,460 --> 00:00:47,760
+rare.
+
+12
+00:00:47,770 --> 00:00:50,880
+So it's just a little it's just fun to add a little bit of logic to it.
+
+13
+00:00:51,120 --> 00:00:58,130
+But, you know, you can use these little slider widgets inside of your user interfaces and Web sites.
+
+14
+00:00:58,350 --> 00:00:59,940
+So let's go ahead and get started.

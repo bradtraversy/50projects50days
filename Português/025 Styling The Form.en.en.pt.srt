@@ -1,0 +1,459 @@
+﻿1
+00:00:00,210 --> 00:00:05,660
+OK, então vamos começar em nosso projeto de onda de entrada de formulário, eu tenho meu início de projeto aberto aqui.
+
+2
+00:00:05,820 --> 00:00:11,280
+Vai dizer form input wave e então vamos nos livrar disso, cada um.
+
+3
+00:00:11,280 --> 00:00:15,960
+E vamos apenas envolver um container em torno de nosso formulário.
+
+4
+00:00:16,080 --> 00:00:18,240
+Então teremos um container com um H1.
+
+5
+00:00:18,270 --> 00:00:24,630
+Vamos apenas dizer por favor faça login no formulário de login básico e teremos uma tag de formulário aqui.
+
+6
+00:00:24,630 --> 00:00:25,770
+Não precisamos de uma ação.
+
+7
+00:00:26,550 --> 00:00:32,040
+E aqui teremos um formulário Dasch Control, que envolverá a entrada que está sendo
+
+8
+00:00:32,040 --> 00:00:33,120
+para ser digitado o texto.
+
+9
+00:00:33,120 --> 00:00:39,270
+Eu também vou adicionar obrigatório, o que dará apenas alguma validação básica e, em seguida, o rótulo é
+
+10
+00:00:39,270 --> 00:00:43,320
+vai para baixo e nós realmente não precisamos de um quatro.
+
+11
+00:00:43,320 --> 00:00:48,630
+Então vamos nos livrar disso e dizer e-mail e então eu vou em frente e copiá-lo.
+
+12
+00:00:49,710 --> 00:00:52,020
+E este vai ser a senha.
+
+13
+00:00:52,320 --> 00:00:59,730
+Portanto, digite senha e etiquete a senha abaixo desse controle de formulário.
+
+14
+00:00:59,730 --> 00:01:06,210
+Nós vamos ter um botão e eu vou dar uma classe de B10 e vamos apenas dizer entre e então
+
+15
+00:01:06,210 --> 00:01:08,430
+teremos uma live com a turma do texto.
+
+16
+00:01:08,850 --> 00:01:19,200
+Na verdade, é um paralelo a uma classe de parágrafo de texto e diz que não tem uma conta e se não tiver
+
+17
+00:01:19,200 --> 00:01:20,970
+tiver uma conta, então teremos apenas um link.
+
+18
+00:01:20,970 --> 00:01:23,850
+Não precisa ir a lugar nenhum e dizer registrar.
+
+19
+00:01:24,660 --> 00:01:25,050
+Tudo bem.
+
+20
+00:01:25,050 --> 00:01:26,010
+Então esse é o nosso formulário.
+
+21
+00:01:26,160 --> 00:01:26,950
+Bem simples.
+
+22
+00:01:27,570 --> 00:01:33,720
+Agora, antes de entrar nos CSFs, quero apenas explicar o que vamos fazer no que diz respeito a,
+
+23
+00:01:33,720 --> 00:01:34,920
+você sabe, como fazer isso.
+
+24
+00:01:35,400 --> 00:01:44,250
+E queremos usar JavaScript para basicamente envolver cada letra em um intervalo e teremos um
+
+25
+00:01:44,250 --> 00:01:46,710
+transição nesse intervalo para movê-lo para cima.
+
+26
+00:01:47,070 --> 00:01:53,190
+Então ou transforme converta o valor y para movê-lo para cima com uma transição para torná-lo suave.
+
+27
+00:01:53,520 --> 00:01:57,990
+E em JavaScript, quando envolvemos o intervalo em torno de cada letra, também adicionaremos uma transição
+
+28
+00:01:57,990 --> 00:02:04,950
+atraso para cada um que aumenta cada letra para que, você sabe, o primeiro suba e depois este
+
+29
+00:02:04,950 --> 00:02:06,300
+o fim seria adiado.
+
+30
+00:02:06,300 --> 00:02:09,510
+Aí subia e demorava mais ainda, aí subia.
+
+31
+00:02:09,510 --> 00:02:10,980
+Então dá aquele efeito de onda.
+
+32
+00:02:11,280 --> 00:02:13,620
+Então, no final das contas, é com isso que vamos terminar.
+
+33
+00:02:13,620 --> 00:02:18,060
+Na verdade, vou seguir em frente e apenas colar como esses rótulos ficarão depois.
+
+34
+00:02:19,020 --> 00:02:21,960
+Então, basicamente, teremos, você sabe, a etiqueta da etiqueta.
+
+35
+00:02:22,500 --> 00:02:23,880
+Você não precisa colocar isso.
+
+36
+00:02:23,880 --> 00:02:29,460
+Estou apenas mostrando como exemplo, teremos cada letra envolvida em um intervalo com um atraso de transição
+
+37
+00:02:29,460 --> 00:02:30,510
+que incrementa.
+
+38
+00:02:30,960 --> 00:02:34,290
+Então eu vou apenas comentar isso.
+
+39
+00:02:34,290 --> 00:02:36,750
+Mas só para você ver o que vamos acabar com.
+
+40
+00:02:37,140 --> 00:02:41,580
+Mas antes de entrarmos nisso, vamos apenas fazer alguns estilos básicos neste formulário porque parece
+
+41
+00:02:41,580 --> 00:02:42,120
+horrível.
+
+42
+00:02:42,570 --> 00:02:54,960
+Então eu vou usar os mollies, então vamos fazer o family equals e o Muli e então vamos definir o set que
+
+43
+00:02:54,960 --> 00:03:03,870
+no corpo e depois vou definir uma cor de fundo para o corpo roubar o azul e a cor do
+
+44
+00:03:03,870 --> 00:03:06,630
+o texto para branco.
+
+45
+00:03:08,220 --> 00:03:18,660
+Isso é e então vamos estilizar, uh, vamos ver, vamos fazer o container e vamos adicionar uma cor de fundo
+
+46
+00:03:20,130 --> 00:03:21,490
+do nosso GBA.
+
+47
+00:03:21,490 --> 00:03:28,140
+Eu quero que ele tenha apenas uma aparência transparente, então preto e zero ponto quatro para o alfa
+
+48
+00:03:28,140 --> 00:03:30,000
+value e vamos adicionar preenchimento.
+
+49
+00:03:30,390 --> 00:03:31,080
+Então acolchoado.
+
+50
+00:03:31,080 --> 00:03:34,440
+Vamos fazer vinte pixels, superior e inferior, quarenta à esquerda e à direita.
+
+51
+00:03:34,980 --> 00:03:38,970
+E vamos adicionar um pequeno raio de borda de cinco pixels.
+
+52
+00:03:40,020 --> 00:03:40,440
+Tudo bem.
+
+53
+00:03:40,440 --> 00:03:43,410
+E então vamos fazer o container de cada um.
+
+54
+00:03:44,160 --> 00:03:48,090
+Então, para isso, quero enviar uma linha para o centro.
+
+55
+00:03:48,090 --> 00:03:52,140
+Eu também quero adicionar uma margem na parte inferior de trinta pixels.
+
+56
+00:03:53,310 --> 00:03:57,750
+OK, e então o link, digamos o container A que é apenas o link de registro.
+
+57
+00:03:57,750 --> 00:04:00,120
+Eu quero decoração de texto nenhum.
+
+58
+00:04:00,990 --> 00:04:06,330
+Retire o sublinhado e a cor será, vamos colocar a cor azul claro.
+
+59
+00:04:09,130 --> 00:04:14,830
+Então agora queremos entrar nos campos de formulário primeiro temos o controle de formulário, que envolve a entrada
+
+60
+00:04:14,830 --> 00:04:21,820
+e os rótulos, então é um controle de formulário e vou posicionar esse relativo porque quero o rótulo
+
+61
+00:04:21,820 --> 00:04:23,880
+para ser posicionado absoluto dentro dele.
+
+62
+00:04:24,520 --> 00:04:29,740
+E então para margem, vamos fazer 20 em cima e em baixo zero à esquerda e à direita, 40 embaixo.
+
+63
+00:04:30,490 --> 00:04:34,300
+E vou me contentar com trezentos pixels.
+
+64
+00:04:35,470 --> 00:04:35,950
+Tudo bem.
+
+65
+00:04:35,950 --> 00:04:38,770
+E então vamos fazer as entradas.
+
+66
+00:04:38,770 --> 00:04:40,570
+Então, formulário de entrada de controle.
+
+67
+00:04:41,590 --> 00:04:49,680
+Vou definir a cor de fundo para transparente e depois me livrar dessa borda.
+
+68
+00:04:49,990 --> 00:04:52,150
+Mas eu quero uma borda na parte inferior.
+
+69
+00:04:53,620 --> 00:04:55,060
+Então vamos dizer fronteira
+
+70
+00:04:57,790 --> 00:04:59,110
+traço de borda inferior.
+
+71
+00:04:59,110 --> 00:05:01,090
+E eu vou definir isso para dois pixels.
+
+72
+00:05:02,050 --> 00:05:04,570
+Vamos fazer brancos e sólidos.
+
+73
+00:05:05,910 --> 00:05:07,930
+OK, agora eu quero em sua própria linha.
+
+74
+00:05:07,930 --> 00:05:10,600
+Então, em vez de inline, queremos exibir block.
+
+75
+00:05:10,970 --> 00:05:15,100
+Eu também quero que ele vá até o fim, tudo definido com 100 por cento.
+
+76
+00:05:16,030 --> 00:05:18,220
+E vamos adicionar um pouco de preenchimento.
+
+77
+00:05:18,440 --> 00:05:28,210
+Vamos fazer 15 pixels na parte superior e inferior e o tamanho da fonte para a entrada que vou definir para 18 pixels.
+
+78
+00:05:29,580 --> 00:05:32,420
+E acho que devemos ser bons lá.
+
+79
+00:05:33,390 --> 00:05:34,890
+Vamos colocar a cor branca.
+
+80
+00:05:37,530 --> 00:05:42,450
+E então a borda aqui é o contorno, devo dizer, queremos nos livrar disso também, se eu enviar
+
+81
+00:05:42,450 --> 00:05:45,170
+e é inválido, você obtém essa borda também.
+
+82
+00:05:45,180 --> 00:05:48,750
+Então, vamos direcionar as entradas de controle de formulário.
+
+83
+00:05:49,350 --> 00:05:58,920
+E quando está em seu foco, também queremos forma, controle, entrada, válido, e vamos apenas
+
+84
+00:05:58,920 --> 00:06:01,990
+defina o contorno para zero.
+
+85
+00:06:02,670 --> 00:06:04,800
+OK, agora não temos essa fronteira feia.
+
+86
+00:06:06,870 --> 00:06:12,150
+Agora, antes de fazermos, acho que vamos fazer as coisas da gravadora no próximo vídeo.
+
+87
+00:06:12,150 --> 00:06:16,830
+Mas vamos terminar como o botão e o texto aqui embaixo.
+
+88
+00:06:16,830 --> 00:06:22,920
+Então, temos uma classe de, na verdade, colocamos isso, faremos todas as coisas do formulário na parte inferior.
+
+89
+00:06:22,930 --> 00:06:24,240
+Então vamos fazer BTN.
+
+90
+00:06:24,810 --> 00:06:31,230
+E vou apenas definir o cursor para um ponto em que vou exibir como um bloco embutido.
+
+91
+00:06:33,720 --> 00:06:40,860
+Para o nosso botão aqui, e eu quero que ele vá até o fim, diremos, com 100 por cento e vamos
+
+92
+00:06:40,860 --> 00:06:47,640
+defina o fundo do botão para azul claro e vamos definir o preenchimento.
+
+93
+00:06:48,970 --> 00:06:56,480
+Faremos padding de 15 pixels e vamos Refaat família, vamos herdar.
+
+94
+00:06:57,270 --> 00:07:05,340
+E então, para um tamanho divertido, vamos colocar isso em 16 pixels e a borda.
+
+95
+00:07:05,340 --> 00:07:06,510
+Queremos nos livrar disso.
+
+96
+00:07:06,510 --> 00:07:07,860
+Portanto, fronteira zero.
+
+97
+00:07:07,860 --> 00:07:13,320
+E eu vou fazer o raio da borda, igual ao do container, cinco pixels.
+
+98
+00:07:14,490 --> 00:07:18,660
+E acho que isso é tudo o que queremos fazer.
+
+99
+00:07:20,810 --> 00:07:26,430
+Digamos que vamos adicionar, digamos que o foco BTN defina esse contorno.
+
+100
+00:07:26,790 --> 00:07:28,590
+Na verdade, podemos adicionar isso aqui.
+
+101
+00:07:32,410 --> 00:07:34,450
+Não, porque vamos adicionar outra coisa lá.
+
+102
+00:07:34,510 --> 00:07:42,900
+Sim, vamos apenas fazer o contorno zero no foco BTN e podemos ter um pequeno efeito de foco também.
+
+103
+00:07:42,910 --> 00:07:47,770
+Então, quero dizer, não passe o mouse, clique em efeito ou passe o mouse, o que você quiser.
+
+104
+00:07:47,800 --> 00:07:50,950
+Então vamos fazer o botão e quando está ativo.
+
+105
+00:07:50,950 --> 00:07:56,020
+Então, quando clicarmos nele, adicionaremos uma transformação e apenas reduziremos um pouco.
+
+106
+00:07:56,020 --> 00:08:00,530
+Então dimensione de um dois ponto noventa para que tenhamos esse pequeno efeito.
+
+107
+00:08:00,580 --> 00:08:00,940
+Tudo bem.
+
+108
+00:08:03,100 --> 00:08:09,330
+Sim, acho que o que mais o texto aqui, podemos mover um pouco para baixo, então sob as coisas do botão,
+
+109
+00:08:09,340 --> 00:08:16,570
+temos uma classe de texto e ela definirá a margem superior para 30 pixels, empurre-a um pouco para baixo.
+
+110
+00:08:17,530 --> 00:08:19,600
+Agora, a gravadora, não se preocupe com isso.
+
+111
+00:08:19,840 --> 00:08:22,990
+Nós vamos estilizar isso a seguir.
+
+112
+00:08:23,020 --> 00:08:29,260
+E como eu disse, precisamos usar JavaScript para transformar o rótulo em letras com spans ao redor deles com
+
+113
+00:08:29,260 --> 00:08:30,350
+um atraso de transição.
+
+114
+00:08:30,370 --> 00:08:33,760
+Nós também teremos uma transição, obviamente, na extensão da gravadora.
+
+115
+00:08:34,030 --> 00:08:36,220
+Então vamos entrar nisso no próximo vídeo.

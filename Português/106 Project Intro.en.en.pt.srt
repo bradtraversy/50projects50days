@@ -1,0 +1,115 @@
+﻿1
+00:00:00,150 --> 00:00:04,980
+Então, neste projeto, vamos construir um aplicativo de notas e, na verdade, poderemos salvar esses
+
+2
+00:00:04,980 --> 00:00:10,040
+notas para armazenamento local, então usaremos a API de armazenamento local, que é incorporada ao navegador.
+
+3
+00:00:10,380 --> 00:00:13,140
+Portanto, não tenho nada aqui além de um botão adicionar nota.
+
+4
+00:00:13,140 --> 00:00:18,990
+E se eu clicar nele, ele adicionará esta pequena nota aqui para que eu possa clicar aqui e digitar,
+
+5
+00:00:19,380 --> 00:00:22,590
+você sabe, olá mundo ou qualquer outra coisa.
+
+6
+00:00:22,860 --> 00:00:25,600
+E isso aqui vai alternar.
+
+7
+00:00:26,220 --> 00:00:27,150
+Este é o botão de edição.
+
+8
+00:00:27,150 --> 00:00:31,590
+Ele alternará da área de texto para apenas uma div regular que mostra o texto.
+
+9
+00:00:31,950 --> 00:00:32,340
+Tudo bem.
+
+10
+00:00:32,340 --> 00:00:33,480
+Posso adicionar outro.
+
+11
+00:00:34,710 --> 00:00:36,300
+Diga olá novamente.
+
+12
+00:00:38,820 --> 00:00:39,270
+Tudo bem.
+
+13
+00:00:39,270 --> 00:00:40,410
+Então temos duas notas aqui.
+
+14
+00:00:40,680 --> 00:00:45,060
+E se eu recarregar, eles vão ficar porque estão salvos no armazenamento local.
+
+15
+00:00:45,370 --> 00:00:47,360
+Se eu excluir isso, eu recarrego.
+
+16
+00:00:47,370 --> 00:00:50,700
+Vai permanecer o mesmo porque, novamente, está sendo salvo no navegador.
+
+17
+00:00:50,700 --> 00:00:52,380
+Está sendo salvo no armazenamento local.
+
+18
+00:00:53,070 --> 00:00:58,020
+Outra coisa que podemos fazer é usar markdown porque usaremos uma pequena biblioteca chamada Markt.
+
+19
+00:00:58,320 --> 00:01:01,440
+Então, se eu quiser que isso seja um título, eu poderia fazer um sinal de número.
+
+20
+00:01:01,440 --> 00:01:06,810
+Eu não vou passar por toda a sintaxe de markdown, mas você pode procurar isso.
+
+21
+00:01:06,810 --> 00:01:07,910
+Você pode olhar para isso por conta própria.
+
+22
+00:01:07,920 --> 00:01:10,410
+Eu tenho um curso intensivo no YouTube, sobre remarcação.
+
+23
+00:01:10,710 --> 00:01:14,730
+Se quisermos fazer como uma lista não ordenada, podemos fazer como o espaço de hífen.
+
+24
+00:01:15,390 --> 00:01:20,550
+E se dermos uma olhada fora do modo de edição, temos um título e uma lista de lista.
+
+25
+00:01:21,360 --> 00:01:24,390
+OK, se eu recarregar vai ficar porque de novo, sendo salvo.
+
+26
+00:01:24,810 --> 00:01:30,480
+Então eu acho que é um aplicativo muito legal se você está aprendendo, sabe, armazenamento local e como
+
+27
+00:01:30,480 --> 00:01:33,630
+para trabalhar com o DOM, adicionar e remover coisas e assim por diante.
+
+28
+00:01:33,930 --> 00:01:34,430
+Tudo bem.
+
+29
+00:01:34,440 --> 00:01:36,300
+Então vamos em frente e começar.

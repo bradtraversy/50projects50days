@@ -1,0 +1,367 @@
+﻿1
+00:00:00,210 --> 00:00:04,900
+Tudo bem, agora queremos estilizar esses botões, esses botões de ícone, posicioná-los.
+
+2
+00:00:05,610 --> 00:00:10,380
+Queremos dar funcionalidade a eles para que possamos expandir e contrair essas pistas falsas.
+
+3
+00:00:10,650 --> 00:00:15,740
+Portanto, temos uma classe de alternância de sinal falso no botão.
+
+4
+00:00:16,080 --> 00:00:22,530
+E obviamente, não queremos mostrar o Chevron se for expandido e não queremos mostrar o X se
+
+5
+00:00:22,530 --> 00:00:24,230
+é se não for expandido.
+
+6
+00:00:24,510 --> 00:00:26,010
+Então nós vamos ter que lidar com isso.
+
+7
+00:00:26,280 --> 00:00:28,920
+Mas vamos apenas fazer algumas coisas básicas aqui primeiro.
+
+8
+00:00:28,920 --> 00:00:34,170
+Como a cor de fundo, vou definir como transparente e tirar o conjunto de bordas.
+
+9
+00:00:34,170 --> 00:00:35,130
+Isso é zero.
+
+10
+00:00:35,790 --> 00:00:38,760
+E vamos definir o cursor para apontador.
+
+11
+00:00:39,510 --> 00:00:48,810
+Vamos definir que vou exibir o Flex aqui e depois alinhar e justificar ao centro para que uma linha
+
+12
+00:00:48,810 --> 00:00:56,850
+central de itens e justifique o centro de conteúdo e, em seguida, vamos aumentar o tamanho da fonte.
+
+13
+00:00:57,180 --> 00:01:05,660
+Então vamos aumentar isso, digamos, 16 pixels e então vamos definir o padding para zero.
+
+14
+00:01:05,670 --> 00:01:09,960
+Vamos definir a posição como absoluta.
+
+15
+00:01:11,130 --> 00:01:17,610
+E então, onde queremos colocá-los, a alternância inicial será de 30 pixels, 30
+
+16
+00:01:17,610 --> 00:01:19,680
+pixels do topo estarão à direita.
+
+17
+00:01:19,690 --> 00:01:21,870
+Então vamos fazer 30 pixels da direita.
+
+18
+00:01:22,500 --> 00:01:29,040
+E então a altura será de 30 pixels e a largura será de 30 pixels.
+
+19
+00:01:29,100 --> 00:01:30,420
+Então, se eu salvar isso.
+
+20
+00:01:31,740 --> 00:01:37,200
+Agora, você pode ver esses botões aqui até este primeiro.
+
+21
+00:01:39,680 --> 00:01:46,820
+Eu esqueci de colocar a aula sobre isso, então isso é reclassificar FNQ Dasch, Tawakkol.
+
+22
+00:01:48,310 --> 00:01:55,850
+Tudo bem, então vou colocar o X bem aqui, o Times para não mostrar nenhum até agora.
+
+23
+00:01:56,020 --> 00:02:00,110
+Você dash alterna, que é o botão, e depois não é feito.
+
+24
+00:02:00,250 --> 00:02:07,090
+Isso deve ser o traço tão falso que você alterna o traço e, em seguida, a classe de tempos do traço FAA, que é o X
+
+25
+00:02:07,120 --> 00:02:10,060
+ícone, vou configurá-lo para não exibir nenhum.
+
+26
+00:02:12,160 --> 00:02:13,950
+Então agora só vemos o Chevron.
+
+27
+00:02:14,170 --> 00:02:17,190
+Agora, se estiver ativo, queremos ver os horários.
+
+28
+00:02:17,200 --> 00:02:20,980
+Então vamos copiar isso.
+
+29
+00:02:22,930 --> 00:02:27,340
+E aqui vamos dizer vamos colocar ativo na frente.
+
+30
+00:02:27,340 --> 00:02:38,720
+Então F um Q falso, Q ponto ativo e depois vezes e então vamos exibir o bloco.
+
+31
+00:02:39,760 --> 00:02:44,160
+Então agora você pode ver que este é o X que está aparecendo no ativo.
+
+32
+00:02:45,100 --> 00:02:47,800
+Agora queremos remover o Chevron se estiver ativo.
+
+33
+00:02:47,800 --> 00:03:00,790
+Então vamos pegar isso e vamos definir o Hefe ativo para alternar e então queremos Chevron dash para baixo e queremos
+
+34
+00:03:00,790 --> 00:03:04,080
+para exibir nenhum lá.
+
+35
+00:03:04,090 --> 00:03:06,610
+Então agora só vemos o Chevron se não estiver ativo.
+
+36
+00:03:06,610 --> 00:03:07,990
+Nós vemos o se é.
+
+37
+00:03:09,010 --> 00:03:11,850
+Outra coisa que quero fazer é me livrar do C deste esboço aqui.
+
+38
+00:03:12,160 --> 00:03:19,900
+Então, isso vai estar na alternância FAA Q Dash, que é o botão que queremos dizer em seu estado de foco.
+
+39
+00:03:21,010 --> 00:03:24,580
+Queremos que a propriedade delineada seja definida como zero.
+
+40
+00:03:24,910 --> 00:03:26,170
+OK, isso vai se livrar disso.
+
+41
+00:03:26,830 --> 00:03:33,100
+Também na alternância ativa, vamos pegar isso aqui.
+
+42
+00:03:35,920 --> 00:03:40,060
+Então, no ato de Torgau, vou definir uma cor de fundo
+
+43
+00:03:42,400 --> 00:03:46,840
+de valor hexadecimal, nove F a.
+
+44
+00:03:48,070 --> 00:03:49,540
+Quatro A.
+
+45
+00:03:51,820 --> 00:03:58,240
+Então você pode ver que o ex tem esse fundo, eu quero que seja arredondado ou circular.
+
+46
+00:03:58,240 --> 00:04:05,230
+Então, vou adicionar na FAA um raio de borda de 50%.
+
+47
+00:04:05,770 --> 00:04:07,780
+E então eu também quero fazer o texto.
+
+48
+00:04:07,960 --> 00:04:10,090
+O ícone é branco?
+
+49
+00:04:11,620 --> 00:04:13,810
+Se é se é o tempo.
+
+50
+00:04:13,840 --> 00:04:19,030
+Então aqui, digamos cor branca.
+
+51
+00:04:19,360 --> 00:04:19,690
+Tudo bem.
+
+52
+00:04:19,690 --> 00:04:21,160
+Então agora queremos fazer esta função.
+
+53
+00:04:21,160 --> 00:04:24,490
+Mas o que eu gostaria que você fizesse é pausar o vídeo e tentar isso você mesmo.
+
+54
+00:04:24,490 --> 00:04:29,940
+Se você não precisar de nenhuma dica, vá em frente e pause-o agora e tente se quiser algumas dicas.
+
+55
+00:04:29,940 --> 00:04:31,760
+Vou colar isso por um segundo.
+
+56
+00:04:32,140 --> 00:04:35,050
+Então você quer trazer seus botões de alternância.
+
+57
+00:04:35,230 --> 00:04:40,390
+Lembre-se, eles têm uma classe de alternância de traço falso e você deseja usar o seletor de consulta porque
+
+58
+00:04:40,390 --> 00:04:41,290
+é mais de um.
+
+59
+00:04:41,300 --> 00:04:42,850
+Então isso criará uma lista de nós.
+
+60
+00:04:43,120 --> 00:04:49,480
+Você deseja percorrer essa lista sem usar for each e, em cada alternância, deseja adicionar um evento
+
+61
+00:04:49,480 --> 00:04:52,210
+listener, um listener de evento de clique porque estamos clicando neles.
+
+62
+00:04:52,510 --> 00:04:55,930
+E então você deseja alternar a classe ativa no nó pai.
+
+63
+00:04:55,940 --> 00:04:59,590
+Você não deseja adicionar a classe ativa a isso para alternar.
+
+64
+00:04:59,920 --> 00:05:06,940
+Você deseja adicioná-lo no pai, que é este div aqui, OK, e você pode usar o nó pai dot para
+
+65
+00:05:06,940 --> 00:05:13,060
+acesse isso e, em seguida, para alternar uma classe específica, você pode fazer alternância de lista de classes e passata.
+
+66
+00:05:13,060 --> 00:05:17,350
+E, portanto, isso deve fornecer informações suficientes para você realmente saber como fazer isso.
+
+67
+00:05:17,360 --> 00:05:21,520
+Então, se você quiser pausar e tentar, faça isso e depois volte.
+
+68
+00:05:22,300 --> 00:05:24,730
+Então eu vou trazer minhas alternâncias.
+
+69
+00:05:25,000 --> 00:05:33,580
+Então, vou definir alternâncias para documentar DOT e queremos usar o seletor de consulta todos e eles têm uma classe de F
+
+70
+00:05:33,640 --> 00:05:41,590
+um Q dash alternar e, em seguida, vou pegar essa lista de nós e vou percorrer com quatro cada.
+
+71
+00:05:41,590 --> 00:05:43,960
+Então diga para cada alternância.
+
+72
+00:05:46,390 --> 00:05:51,240
+Eu quero pegar essa alternância específica e adicionar um ouvinte de evento a ela.
+
+73
+00:05:51,730 --> 00:05:54,100
+Quero ouvir um evento de clique.
+
+74
+00:05:54,670 --> 00:06:01,210
+E quando isso acontecer, vou executar uma função e pegar o botão de alternância, e
+
+75
+00:06:01,210 --> 00:06:09,070
+Eu quero acessar os nós pais para que possamos dizer nó pai dot e quero acessar a lista de classes
+
+76
+00:06:09,820 --> 00:06:11,670
+e, em seguida, chame o not remove.
+
+77
+00:06:11,670 --> 00:06:17,500
+Queremos chamar o método de alternância e queremos alternar o ato de classe e é isso.
+
+78
+00:06:17,530 --> 00:06:18,880
+Muito, muito simples.
+
+79
+00:06:19,410 --> 00:06:24,330
+Se formos até aqui e eu clicar nisso, vai tirar a classe ativa.
+
+80
+00:06:24,340 --> 00:06:29,530
+Se eu clicar novamente, ele será colocado de volta para que eu possa alternar isso e abrir o shopping se
+
+81
+00:06:29,530 --> 00:06:29,920
+Eu quero.
+
+82
+00:06:29,920 --> 00:06:35,320
+Não precisa ser, você sabe, um por um ou o que quer que possa abrir quantos quisermos.
+
+83
+00:06:36,650 --> 00:06:37,590
+Certo, e é isso.
+
+84
+00:06:38,080 --> 00:06:44,290
+E isso é algo que quando eu estava aprendendo a fazer essas coisas, você usava Jacoway para
+
+85
+00:06:44,290 --> 00:06:48,760
+provavelmente porque o JavaScript simplesmente não estava onde está hoje.
+
+86
+00:06:48,760 --> 00:06:51,040
+Seletor de consulta nem existia.
+
+87
+00:06:51,820 --> 00:06:55,740
+Era só que era um monte de código extra apenas para fazer algo simples.
+
+88
+00:06:56,110 --> 00:07:01,510
+Quer dizer, se você está aprendendo JavaScript agora, é muito melhor do que antigamente
+
+89
+00:07:02,230 --> 00:07:07,240
+quando você tinha que usar Jacoway para a menor atividade justa no DOM.
+
+90
+00:07:07,630 --> 00:07:08,350
+Mas é isso.
+
+91
+00:07:08,350 --> 00:07:09,640
+Espero que os caras tenham gostado disso.
+
+92
+00:07:09,640 --> 00:07:11,140
+Vejo você no próximo projeto.

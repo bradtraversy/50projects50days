@@ -1,0 +1,675 @@
+1
+00:00:00,060 --> 00:00:06,000
+All right, so we're going to jump into our HTML and it's going to change the title to progress steps
+
+2
+00:00:06,810 --> 00:00:11,280
+and in the body here, we're going to want a container around everything.
+
+3
+00:00:11,820 --> 00:00:18,120
+And then inside that container, we'll have a progress Dasch container and then inside there, we'll
+
+4
+00:00:18,120 --> 00:00:19,440
+have a class of progress.
+
+5
+00:00:19,470 --> 00:00:23,290
+I'm also going to give it an idea of progress, OK?
+
+6
+00:00:23,490 --> 00:00:25,640
+And nothing is going to go inside here.
+
+7
+00:00:25,650 --> 00:00:29,980
+We're just going to use it for for styling and for creating the line.
+
+8
+00:00:29,980 --> 00:00:33,030
+And now we do have the circles with the numbers inside.
+
+9
+00:00:33,040 --> 00:00:36,180
+So inside inside progress container.
+
+10
+00:00:36,180 --> 00:00:45,090
+But after the progress div, we're going to have a class of circle and depending on which one is active,
+
+11
+00:00:45,090 --> 00:00:46,760
+it'll have different styling.
+
+12
+00:00:46,800 --> 00:00:52,050
+So the first one here, I'm going to just manually put a class of active on and this is going to be
+
+13
+00:00:52,050 --> 00:00:55,650
+one and then we'll copy that down three more times.
+
+14
+00:00:55,650 --> 00:00:57,990
+And we don't want active on these other ones.
+
+15
+00:00:58,410 --> 00:01:06,300
+And this one will be step two and this one will be three and this one will be four.
+
+16
+00:01:06,300 --> 00:01:11,940
+And then let's go outside of the progress container still within the regular container and have our
+
+17
+00:01:11,940 --> 00:01:12,490
+buttons.
+
+18
+00:01:12,510 --> 00:01:14,160
+So this is going to be class.
+
+19
+00:01:14,370 --> 00:01:20,010
+Let's give it a class of BTN and I'm going to give it an idea of pre for prevue.
+
+20
+00:01:20,940 --> 00:01:26,460
+And I'm also going to make this disabled by default because we're going to start at one and we can't
+
+21
+00:01:26,460 --> 00:01:28,170
+go previous if we're at one.
+
+22
+00:01:28,590 --> 00:01:33,300
+And let's just say Prešov in here, copy this down and this will be the next.
+
+23
+00:01:33,880 --> 00:01:38,790
+So we'll get rid of disabled here and change the ID to next.
+
+24
+00:01:40,050 --> 00:01:41,370
+OK, so we'll save that.
+
+25
+00:01:41,370 --> 00:01:43,470
+It's going to look absolutely horrible for now.
+
+26
+00:01:43,830 --> 00:01:47,270
+But let's jump into our success and start to sharpen this up.
+
+27
+00:01:47,850 --> 00:01:50,040
+So I'm going to use the multi font.
+
+28
+00:01:50,040 --> 00:01:58,650
+So I'm going to just get rid of this here and say CSFs, questionmark, family equals Ally.
+
+29
+00:02:00,180 --> 00:02:07,350
+And I'll add that here and then I'm going to add a background color to the body.
+
+30
+00:02:07,860 --> 00:02:17,550
+So background color is going to be F six, F seven F, B and C display Fleck's.
+
+31
+00:02:17,550 --> 00:02:22,070
+We can get rid of the column, justify a line center.
+
+32
+00:02:22,080 --> 00:02:23,600
+OK, that stuff is all good.
+
+33
+00:02:24,450 --> 00:02:34,710
+So for the container, we're just going to text a line to the center and then for the progress container.
+
+34
+00:02:40,580 --> 00:02:44,510
+Let's display that as a flex box.
+
+35
+00:02:44,690 --> 00:02:50,360
+OK, so it's going to remember the progress container wraps around this right here, not the buttons.
+
+36
+00:02:50,510 --> 00:02:52,590
+So put that into a flex row.
+
+37
+00:02:53,180 --> 00:02:58,140
+Now, as far as the remaining content, let's do justify content.
+
+38
+00:02:58,730 --> 00:03:05,000
+So I want to take the remaining space here and put it in between the elements.
+
+39
+00:03:05,000 --> 00:03:08,510
+So we're going to use space between, OK.
+
+40
+00:03:08,520 --> 00:03:09,890
+So that will separate them out.
+
+41
+00:03:10,220 --> 00:03:14,660
+We're going to position relative so that we can position other things inside of it.
+
+42
+00:03:14,660 --> 00:03:15,410
+Absolu.
+
+43
+00:03:15,830 --> 00:03:30,230
+Let's add a margin bottom of 30 pixels and let's set a max width of 100 percent and set a width of 350
+
+44
+00:03:30,230 --> 00:03:30,950
+pixels.
+
+45
+00:03:31,730 --> 00:03:34,070
+And you could change this, of course, if you wanted to.
+
+46
+00:03:34,670 --> 00:03:39,710
+So now we want to start to work on the line that's going to go through the middle of these and then
+
+47
+00:03:39,710 --> 00:03:40,980
+we'll work on the circles.
+
+48
+00:03:41,510 --> 00:03:44,630
+Now, the way we're going to do this is the progress.
+
+49
+00:03:45,230 --> 00:03:50,390
+This div right here is going to be the blue line that that changes, that has a transition.
+
+50
+00:03:50,390 --> 00:03:55,190
+When we click next, it'll go to two, three, so it'll go to a certain percentage and then we're going
+
+51
+00:03:55,190 --> 00:04:01,190
+to have a faint gray line behind it, which is basically represents the empty line and that's going
+
+52
+00:04:01,190 --> 00:04:05,000
+to be on the before pseudo selector of the progress container.
+
+53
+00:04:05,450 --> 00:04:05,870
+All right.
+
+54
+00:04:05,870 --> 00:04:08,170
+So let's go ahead and create the blue line first.
+
+55
+00:04:08,180 --> 00:04:10,220
+So that's going to be on progress.
+
+56
+00:04:11,930 --> 00:04:12,380
+All right.
+
+57
+00:04:12,380 --> 00:04:14,960
+We're going to set a background color.
+
+58
+00:04:15,590 --> 00:04:21,710
+Let's set it to hexadecimal three, four, nine, eight DB.
+
+59
+00:04:23,030 --> 00:04:29,150
+And we want to position this to be absolute within the progress container, which is positioned relative.
+
+60
+00:04:29,540 --> 00:04:35,300
+And as far as where I want to put it, I want it in the middle, you know, vertically.
+
+61
+00:04:35,300 --> 00:04:44,810
+So let's do 50 percent from the top and let's do from the left zero and it'll have a height of four
+
+62
+00:04:44,810 --> 00:04:45,520
+pixels.
+
+63
+00:04:45,530 --> 00:04:50,390
+Now the width is going to start out as zero percent because we're going to start, you know, at the
+
+64
+00:04:50,390 --> 00:04:53,570
+beginning here, but just for now, so we can actually see it.
+
+65
+00:04:53,570 --> 00:04:55,010
+I'll set it to 50 percent.
+
+66
+00:04:55,700 --> 00:04:57,440
+Now, this isn't directly in the middle.
+
+67
+00:04:57,440 --> 00:05:02,150
+The top of the line is in the middle, but we want the middle to be in the middle.
+
+68
+00:05:02,490 --> 00:05:10,270
+So we want to add a transform and set translate on the Y axis, which is the vertical axis.
+
+69
+00:05:10,580 --> 00:05:12,650
+Want to move it up 50 percent.
+
+70
+00:05:13,450 --> 00:05:15,100
+OK, so now it should be right in the middle.
+
+71
+00:05:15,950 --> 00:05:21,590
+And let's also set a Z index because we want to make sure this is behind the circles, behind the numbers.
+
+72
+00:05:21,600 --> 00:05:23,300
+So we'll set that to negative one.
+
+73
+00:05:24,560 --> 00:05:31,370
+And then this is going to have a transition on it, because when we do click previous or next, we want
+
+74
+00:05:31,370 --> 00:05:35,900
+the line to transition in a certain duration, not just flip to the next one.
+
+75
+00:05:35,910 --> 00:05:40,130
+So we'll just two point four seconds with an EZ effect.
+
+76
+00:05:41,990 --> 00:05:42,410
+All right.
+
+77
+00:05:42,420 --> 00:05:46,400
+So that should be good as far as that goes.
+
+78
+00:05:46,430 --> 00:05:51,140
+Now, I'm going to just change this to zero percent with because that's going to be the starting point.
+
+79
+00:05:51,380 --> 00:05:56,000
+And I'm going to copy this and go right above it.
+
+80
+00:05:57,260 --> 00:06:04,430
+And this is going to be the progress container and we're going to use the before selector and then this
+
+81
+00:06:04,430 --> 00:06:06,860
+is going to be the faint gray line behind it.
+
+82
+00:06:06,860 --> 00:06:09,890
+So I'm going to use E zero three times as the background.
+
+83
+00:06:10,580 --> 00:06:16,070
+These coordinates are going to be the positioning is going to be the same, the height, the same.
+
+84
+00:06:16,070 --> 00:06:21,950
+The width, however, is going to be one hundred thousand one hundred because it's going to represent
+
+85
+00:06:21,950 --> 00:06:22,940
+the empty line.
+
+86
+00:06:23,480 --> 00:06:26,990
+And we don't need a transition because it's not actually going to do anything.
+
+87
+00:06:27,000 --> 00:06:29,120
+It's just the the line behind it.
+
+88
+00:06:30,500 --> 00:06:32,420
+So I saved it.
+
+89
+00:06:32,420 --> 00:06:37,610
+But the reason we're not seeing anything is when you use before or after, you have to add content,
+
+90
+00:06:37,610 --> 00:06:41,740
+which I, I often forget and just set it to an empty string.
+
+91
+00:06:41,750 --> 00:06:44,610
+So now we can see the line behind it.
+
+92
+00:06:44,630 --> 00:06:52,430
+Now, if I were to set this to, you know, 50 percent, you can see now it fills in that gray line.
+
+93
+00:06:53,330 --> 00:06:57,530
+But we're going to keep that at zero for now and let's style the circles.
+
+94
+00:06:57,800 --> 00:07:00,740
+OK, so all we have left now is the circles and the buttons.
+
+95
+00:07:01,490 --> 00:07:03,260
+So say circle.
+
+96
+00:07:06,950 --> 00:07:18,050
+And for this, let's give it a background color of white, and we're going to do a color of nine nine
+
+97
+00:07:18,050 --> 00:07:18,590
+nine.
+
+98
+00:07:18,920 --> 00:07:22,100
+So just like a gray color and.
+
+99
+00:07:23,190 --> 00:07:25,680
+Let's see, let's do a border radius.
+
+100
+00:07:28,630 --> 00:07:37,180
+Border radius, we want us to be rounded so 50 percent and let's set a height of 30 pixels and we'll
+
+101
+00:07:37,180 --> 00:07:40,810
+also set a width of 30 pixels.
+
+102
+00:07:42,130 --> 00:07:42,520
+All right.
+
+103
+00:07:42,550 --> 00:07:46,290
+Now we want to center the the numbers in the circle.
+
+104
+00:07:46,300 --> 00:07:55,840
+So one of the easiest ways to do that is just display Fleck's a line items center and justify content
+
+105
+00:07:56,320 --> 00:07:56,860
+center.
+
+106
+00:07:56,890 --> 00:07:58,690
+So those are put the numbers right in the middle.
+
+107
+00:07:59,830 --> 00:08:00,250
+Let's see.
+
+108
+00:08:00,250 --> 00:08:02,200
+Let's give it a give them a border.
+
+109
+00:08:02,650 --> 00:08:08,140
+So border will be three pixels solid and let's do a light gray.
+
+110
+00:08:08,140 --> 00:08:12,820
+So E zero basically the same color as the as the line.
+
+111
+00:08:13,900 --> 00:08:17,720
+And I think that should do it.
+
+112
+00:08:17,740 --> 00:08:19,450
+We do want to add a transition.
+
+113
+00:08:21,340 --> 00:08:25,210
+The border is going to change depending on where the blue line is.
+
+114
+00:08:25,210 --> 00:08:27,790
+If it's up to two, then that border should be two.
+
+115
+00:08:28,180 --> 00:08:33,310
+And that that's going to pertain to the active class, which will style in a second.
+
+116
+00:08:33,310 --> 00:08:40,330
+But for the transition, let's do point four seconds ease and then let's do the active class.
+
+117
+00:08:40,540 --> 00:08:51,400
+So circle, if it has the active class on it, then let's make the border the color and sit that two
+
+118
+00:08:51,820 --> 00:08:56,070
+three four nine eight DB
+
+119
+00:08:58,720 --> 00:09:07,720
+and that should be the same as or is it right here three four nine eight that we could actually use
+
+120
+00:09:08,050 --> 00:09:09,550
+some custom properties here.
+
+121
+00:09:09,910 --> 00:09:13,360
+So defiant to define custom properties which are basically just variables.
+
+122
+00:09:13,360 --> 00:09:14,200
+We need a scope.
+
+123
+00:09:14,200 --> 00:09:15,730
+So I'm going to put it on the root scope.
+
+124
+00:09:16,820 --> 00:09:30,200
+And let's set the wheels, a line fell and set that actually it's the line in the buffet line.
+
+125
+00:09:31,960 --> 00:09:36,620
+Water fell and grab this.
+
+126
+00:09:39,200 --> 00:09:40,790
+And put that in their.
+
+127
+00:09:42,440 --> 00:09:44,030
+And then let's say.
+
+128
+00:09:47,950 --> 00:09:52,010
+Line border empty.
+
+129
+00:09:52,630 --> 00:09:54,430
+And that's going to be that e0.
+
+130
+00:09:56,920 --> 00:10:07,800
+OK, so now we can just replace this with vare dash, dash line border empty.
+
+131
+00:10:09,270 --> 00:10:10,720
+I'm just going to copy that.
+
+132
+00:10:11,560 --> 00:10:17,350
+And this one here, this is going to be oops, this is going to be Phil.
+
+133
+00:10:17,530 --> 00:10:19,090
+So line border Phil.
+
+134
+00:10:20,760 --> 00:10:25,780
+And this one here will be line border empty.
+
+135
+00:10:25,800 --> 00:10:31,910
+That's the border of the circle, and then if it's active, it'll be filled.
+
+136
+00:10:33,420 --> 00:10:37,650
+So that way you can just if you want to change the colors, you can do that easily up above.
+
+137
+00:10:39,540 --> 00:10:39,990
+All right.
+
+138
+00:10:40,000 --> 00:10:42,270
+So now for the buttons.
+
+139
+00:10:42,270 --> 00:10:43,920
+Those are the last thing we want to style.
+
+140
+00:10:43,920 --> 00:10:51,990
+So BTN and this is actually going to have the same background color as the film.
+
+141
+00:10:51,990 --> 00:10:54,290
+So we'll go ahead and just add that here as well.
+
+142
+00:10:57,010 --> 00:11:10,420
+OK, and let's set the color to white and let's remove the button border, let's set the border radius
+
+143
+00:11:10,420 --> 00:11:14,900
+to six pixels and set the cursor to a pointer.
+
+144
+00:11:15,490 --> 00:11:18,760
+Let's set the make sure we inherit the font family.
+
+145
+00:11:19,390 --> 00:11:22,090
+So inherit good.
+
+146
+00:11:22,110 --> 00:11:23,440
+Let's add some padding.
+
+147
+00:11:23,950 --> 00:11:31,000
+So we'll do eight pixels, top and bottom, 30 pixels left and right and add a little bit of margin.
+
+148
+00:11:31,480 --> 00:11:35,740
+So five pixel margin and that should do it actually.
+
+149
+00:11:35,740 --> 00:11:44,090
+Let's make the font size 14 pixels, OK, and then we'll just have a little scaling effect on the active.
+
+150
+00:11:44,110 --> 00:11:54,580
+So like when we click it so btn cool and active and add a transform, we want to scale it down a little.
+
+151
+00:11:54,610 --> 00:11:56,780
+So from one will go two point ninety eight.
+
+152
+00:11:57,640 --> 00:12:01,260
+That way when we click we have you know that little factoid.
+
+153
+00:12:01,270 --> 00:12:02,260
+This is disabled.
+
+154
+00:12:02,260 --> 00:12:03,310
+Remember the previous.
+
+155
+00:12:03,320 --> 00:12:06,250
+So I can't click that but that has that little effect.
+
+156
+00:12:06,280 --> 00:12:07,780
+Let's also get rid of the outline.
+
+157
+00:12:07,780 --> 00:12:14,740
+So BTN when it's in its focus state, we want to set the outline to zero or none.
+
+158
+00:12:17,950 --> 00:12:18,430
+All right.
+
+159
+00:12:18,580 --> 00:12:23,350
+Let's also let's make it if it's disabled, if the button is disabled, we'll make it grey.
+
+160
+00:12:23,350 --> 00:12:29,950
+So let's say button Colen disabled because we can target that and we're going to set the background
+
+161
+00:12:30,130 --> 00:12:35,530
+color to vare and let's use the empty.
+
+162
+00:12:35,800 --> 00:12:41,440
+And I'm also going to set the cursor from a pointer, set it to not allowed.
+
+163
+00:12:41,710 --> 00:12:47,380
+So that way, if it's disabled, we can't you know, it gives us that not allowed cursor can't click
+
+164
+00:12:47,380 --> 00:12:47,590
+it.
+
+165
+00:12:48,430 --> 00:12:50,350
+So that does it for the styling.
+
+166
+00:12:50,350 --> 00:12:55,060
+So in the next video we can go ahead and add the JavaScript so we can click next, have this move to
+
+167
+00:12:55,060 --> 00:12:59,680
+the second one, third one, have it moved back with previous and so on.
+
+168
+00:12:59,770 --> 00:13:00,040
+All right.
+
+169
+00:13:00,040 --> 00:13:01,300
+So I'll see you in the next video.

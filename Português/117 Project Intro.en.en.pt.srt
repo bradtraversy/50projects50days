@@ -1,0 +1,63 @@
+﻿1
+00:00:00,150 --> 00:00:04,200
+Certo, pessoal, neste projeto, vamos criar um hoverboard, então é bem legal
+
+2
+00:00:04,200 --> 00:00:05,010
+pouco efeito.
+
+3
+00:00:05,280 --> 00:00:07,610
+Vamos pintar essas caixas na tela.
+
+4
+00:00:07,620 --> 00:00:12,510
+Vamos estilizá-los com sucesso, e vamos basicamente definir um certo número.
+
+5
+00:00:12,930 --> 00:00:17,490
+Então, agora, está definido para 500 no JavaScript e vai pintar esse número de caixas.
+
+6
+00:00:17,760 --> 00:00:22,890
+E então teremos ouvintes de eventos para mais e mais para fora, para que, quando passarmos o mouse,
+
+7
+00:00:22,890 --> 00:00:25,180
+vai nos dar uma cor aleatória.
+
+8
+00:00:25,530 --> 00:00:29,100
+OK, então você pode ver se eu passar o mouse sobre isso, é azul, então é roxo.
+
+9
+00:00:29,100 --> 00:00:35,580
+Então, teremos uma variedade de cores que basicamente teremos que escolher para cada caixa quando passarmos o mouse
+
+10
+00:00:35,580 --> 00:00:35,930
+acima dele.
+
+11
+00:00:35,940 --> 00:00:37,530
+Então isso nos dá esse efeito legal.
+
+12
+00:00:37,770 --> 00:00:43,650
+E isso pode ser usado para algum tipo de aplicativo de desenho ou algo assim usando CSFs
+
+13
+00:00:43,650 --> 00:00:44,370
+transição.
+
+14
+00:00:44,380 --> 00:00:47,010
+Então, temos esse efeito de fadeout legal também.
+
+15
+00:00:47,250 --> 00:00:47,660
+Tudo bem.
+
+16
+00:00:47,670 --> 00:00:48,950
+Então vamos em frente e começar.

@@ -1,0 +1,487 @@
+1
+00:00:00,360 --> 00:00:05,310
+All right, so now we're going to start on the JavaScript and ultimately this is going to come from
+
+2
+00:00:05,730 --> 00:00:06,790
+the JavaScript.
+
+3
+00:00:07,170 --> 00:00:13,380
+But one thing I want to do is on this div here, I want to add a class of Maine, and this just represents
+
+4
+00:00:13,380 --> 00:00:20,340
+where the text will show when we're not in edit mode because the text area will be hidden when when
+
+5
+00:00:20,340 --> 00:00:21,510
+we're not in edit mode.
+
+6
+00:00:21,510 --> 00:00:25,490
+And then when we toggle it with this and we go to edit mode, then the text area will show.
+
+7
+00:00:25,800 --> 00:00:32,670
+So I'm actually going to just get rid of that hidden class for now and then let's let's grab everything
+
+8
+00:00:32,670 --> 00:00:33,990
+within this div.
+
+9
+00:00:34,980 --> 00:00:40,500
+So I'm just going to cut that and then just delete this because we're going to create this with JavaScript
+
+10
+00:00:40,500 --> 00:00:42,540
+and then we'll just insert what I just covid.
+
+11
+00:00:42,930 --> 00:00:47,930
+So I'll save that and go to my script and let's bring in our add button.
+
+12
+00:00:47,940 --> 00:00:54,360
+So say add Vitton equals documents dot get element by D.
+
+13
+00:00:54,390 --> 00:00:58,530
+We want to grab the idea of add then we want to add an event listener.
+
+14
+00:00:58,530 --> 00:01:02,190
+So add button dot add event listener.
+
+15
+00:01:03,180 --> 00:01:09,120
+Listen for a click and when that happens we'll have an arrow function and then we'll call a function
+
+16
+00:01:09,120 --> 00:01:11,970
+called add a new note.
+
+17
+00:01:14,220 --> 00:01:17,670
+And down here let's create that function.
+
+18
+00:01:17,680 --> 00:01:26,760
+So add new note which is going to take in an optional text argument which will set to nothing by default.
+
+19
+00:01:27,840 --> 00:01:34,950
+And then I want to build that that div with the class of notes, it will say const note equals and then
+
+20
+00:01:34,950 --> 00:01:39,360
+on a document object we'll call create elements and we want to create a div.
+
+21
+00:01:40,620 --> 00:01:43,410
+And then I want to just add the class of note to that.
+
+22
+00:01:43,420 --> 00:01:48,840
+So we'll say note class list, not add and add the class of note.
+
+23
+00:01:49,500 --> 00:01:54,390
+Then we want to take that note and set the inner HTML equal to a set of tactics.
+
+24
+00:01:54,390 --> 00:02:01,230
+And this is where I'm going to paste in what I copied and we'll just kind of clean this up a little
+
+25
+00:02:01,230 --> 00:02:01,530
+bit.
+
+26
+00:02:04,620 --> 00:02:10,600
+Yes, we'll just move this over, OK, and then down here.
+
+27
+00:02:10,620 --> 00:02:19,280
+So basically if there's text, we want to add the class of hidden on the text area.
+
+28
+00:02:19,950 --> 00:02:23,170
+So both of these classes where we're going to add a dynamic class.
+
+29
+00:02:23,190 --> 00:02:30,480
+So right here, let's open up our our expression syntax with money sine curly brace inside the class
+
+30
+00:02:30,480 --> 00:02:31,020
+quotes.
+
+31
+00:02:31,290 --> 00:02:39,360
+And I'm going to say if text then have no class else then have a class of hidden, which is display
+
+32
+00:02:39,360 --> 00:02:42,510
+none, and then on the text area will do the opposite.
+
+33
+00:02:42,780 --> 00:02:43,040
+Right.
+
+34
+00:02:43,080 --> 00:02:51,270
+So say class and we'll say if there's text then have the class of hidden inside the text area or else
+
+35
+00:02:51,480 --> 00:02:52,590
+have no class.
+
+36
+00:02:53,230 --> 00:02:58,710
+OK, and then to put this into the DOM, we can take our document body, which is just, you know,
+
+37
+00:02:58,710 --> 00:03:05,100
+the the browser body and append child meaning we want to add something in it and we want to add the
+
+38
+00:03:05,100 --> 00:03:06,960
+note every time we click the button.
+
+39
+00:03:07,290 --> 00:03:16,120
+So now click it, click it again and it adds the notes to the DOM and they're in text area mode by default.
+
+40
+00:03:17,100 --> 00:03:27,730
+Now this right here can we can add something in here, like to put a string and just say hello world.
+
+41
+00:03:28,230 --> 00:03:33,990
+Now, if I save that and I add a note, notice how I can't click in here because of this right here.
+
+42
+00:03:33,990 --> 00:03:45,090
+We're saying for this div, if there's text, which we did pass in, then have no class here and down
+
+43
+00:03:45,090 --> 00:03:47,760
+here, if there's text and hide the text area.
+
+44
+00:03:48,090 --> 00:03:49,740
+OK, so we passed in text.
+
+45
+00:03:49,740 --> 00:03:51,450
+So it's not a text area.
+
+46
+00:03:51,900 --> 00:03:55,790
+If we do it without passing anything in it is a text area.
+
+47
+00:03:56,940 --> 00:04:04,040
+Now we want to make these buttons function as far as in this video will go as far as the dorm.
+
+48
+00:04:04,050 --> 00:04:09,180
+So like deleting it from the dorm and toggling the hidden on these two.
+
+49
+00:04:09,180 --> 00:04:12,090
+But we're not going to get into local storage until the next video.
+
+50
+00:04:12,420 --> 00:04:19,950
+But let's inside this add new note before we add it to the dorm, let's bring in from the note, the
+
+51
+00:04:19,950 --> 00:04:20,640
+edit button.
+
+52
+00:04:20,640 --> 00:04:31,290
+So edit BTN and we can actually take from the note, this current note, we want to query selector and
+
+53
+00:04:31,290 --> 00:04:33,330
+we want the class of edit.
+
+54
+00:04:34,410 --> 00:04:34,800
+Right.
+
+55
+00:04:34,800 --> 00:04:36,210
+And then I'm going to copy this down.
+
+56
+00:04:36,210 --> 00:04:38,650
+We want for these because we also want to get the delete.
+
+57
+00:04:40,560 --> 00:04:46,200
+So this is going to be the delete button and then we want to get the main.
+
+58
+00:04:47,430 --> 00:04:52,890
+So that's class of main and then we want the text area.
+
+59
+00:04:52,900 --> 00:04:59,730
+So I'm just going to grab it by text area and we'll call this text uppercase A.
+
+60
+00:04:59,810 --> 00:05:12,560
+Area and then let's add an event onto delete, so will take the delete delete button and add event listener,
+
+61
+00:05:13,160 --> 00:05:18,410
+want to listen for a click and when we click, we'll call a function.
+
+62
+00:05:18,410 --> 00:05:20,510
+And for now we're just going to remove it from the dorm.
+
+63
+00:05:20,510 --> 00:05:25,220
+So we'll take that specific note and we'll just call remove, which does just that.
+
+64
+00:05:25,220 --> 00:05:26,670
+It just takes it away from the dawn.
+
+65
+00:05:26,690 --> 00:05:29,060
+So if I go on, I add a note, I'll add another one.
+
+66
+00:05:29,300 --> 00:05:34,190
+If I click on the trash icon now, I can delete them, OK, or remove them.
+
+67
+00:05:34,610 --> 00:05:40,460
+Now for edit, what we want to happen is we want to be able to toggle main and text area.
+
+68
+00:05:40,820 --> 00:05:47,450
+So I'll just just grab that and change this to edit.
+
+69
+00:05:48,350 --> 00:05:56,780
+OK, so when we click on edit, what we're going to want to do here is take main class list and toggle
+
+70
+00:05:57,830 --> 00:05:59,120
+the hidden class.
+
+71
+00:06:00,060 --> 00:06:03,650
+OK, we're going to do the same thing for text area.
+
+72
+00:06:05,570 --> 00:06:09,770
+So text area, make sure you use the uppercase A version.
+
+73
+00:06:10,370 --> 00:06:14,390
+And now you can see when I when I first click it, we have a text area.
+
+74
+00:06:14,390 --> 00:06:20,570
+If I click edit now I can't now it's now the main is showing the div with the class of main so text
+
+75
+00:06:20,570 --> 00:06:23,000
+area main type in here.
+
+76
+00:06:23,480 --> 00:06:24,530
+Can't type in here.
+
+77
+00:06:25,880 --> 00:06:28,440
+OK, and that's all I wanted to do for now.
+
+78
+00:06:29,690 --> 00:06:34,190
+Now if there is text passed in to the function like
+
+79
+00:06:37,220 --> 00:06:40,280
+Hello World, I want to be able to see that here.
+
+80
+00:06:40,790 --> 00:06:45,500
+So I'm going to go right, right below where we were.
+
+81
+00:06:45,500 --> 00:06:53,360
+We brought in all this stuff and let's say text area and set the value to text.
+
+82
+00:06:53,780 --> 00:06:56,270
+Now, I also want to set the main area.
+
+83
+00:06:56,270 --> 00:07:01,880
+So I'm going to say main dot in our HTML over text area has a value.
+
+84
+00:07:01,880 --> 00:07:04,670
+So you don't do text area in HTML.
+
+85
+00:07:04,670 --> 00:07:05,750
+Main is a div.
+
+86
+00:07:06,050 --> 00:07:12,500
+So I'm going to set the entire HTML to the text, but I want it to be markdown so we can use the marked
+
+87
+00:07:12,500 --> 00:07:15,500
+library by just simply wrapping this in marked.
+
+88
+00:07:16,340 --> 00:07:20,720
+So if we save that and if I click add note I already had Hello world in there.
+
+89
+00:07:21,080 --> 00:07:22,820
+So this is the text now.
+
+90
+00:07:22,820 --> 00:07:23,960
+This is the main version.
+
+91
+00:07:23,960 --> 00:07:31,640
+I can't edit it and then if I click edit it's the same thing now I want to make it so that if I update
+
+92
+00:07:31,670 --> 00:07:37,000
+this like I change that high and then I click that, that shows here as well.
+
+93
+00:07:37,700 --> 00:07:43,130
+So what we can do is add an event listener on to the text area.
+
+94
+00:07:43,130 --> 00:07:51,080
+So let's say text area dot add event listener and we want to listen for any input on that text area.
+
+95
+00:07:51,320 --> 00:07:58,220
+And when that happens, we're going to run a function with the event object and we want to get the value.
+
+96
+00:07:58,220 --> 00:08:07,100
+We want to get e dot target dot value and I'm going to use D structuring to pull out value from target.
+
+97
+00:08:07,100 --> 00:08:14,690
+So since value is on target, I can use curly braces here and say const value and take that from E target
+
+98
+00:08:15,410 --> 00:08:24,740
+and then I'm going to take main and update the inner HTML to the marked version of that value.
+
+99
+00:08:25,910 --> 00:08:27,080
+So let's save that.
+
+100
+00:08:27,080 --> 00:08:34,820
+And now if I go here and I change this to high and I click that, you'll see that also says hi because
+
+101
+00:08:34,820 --> 00:08:37,460
+as I type in the text area, this is going to update.
+
+102
+00:08:37,850 --> 00:08:41,690
+Now, since we're using the marked library, we should be able to add markdown.
+
+103
+00:08:41,710 --> 00:08:44,540
+So let's do a heading will say like list.
+
+104
+00:08:44,990 --> 00:08:53,570
+So no sign, I'll be an H1, H2, H3, etc. and then we could do like an order list with hyphens.
+
+105
+00:08:54,560 --> 00:08:58,430
+I'm not going to go over like all the markdown syntax, but it's pretty easy to learn.
+
+106
+00:08:58,430 --> 00:09:04,310
+I have a mark down crash course on YouTube and if I click that now, you can see we actually have a
+
+107
+00:09:04,310 --> 00:09:06,740
+heading and we have our list items.
+
+108
+00:09:07,400 --> 00:09:11,510
+We should probably add some padding to that, I think.
+
+109
+00:09:11,510 --> 00:09:14,630
+Yeah, we added padding to the text area right here.
+
+110
+00:09:15,290 --> 00:09:21,080
+So let's also add to main padding.
+
+111
+00:09:21,920 --> 00:09:23,030
+Yeah, there we go.
+
+112
+00:09:25,090 --> 00:09:25,790
+All right, cool.
+
+113
+00:09:26,950 --> 00:09:30,970
+Now, it just it still says, hello, world, when I delete and I create a new one because that's just
+
+114
+00:09:30,970 --> 00:09:34,960
+coming from here and we don't actually want anything to start with.
+
+115
+00:09:35,740 --> 00:09:36,220
+Right.
+
+116
+00:09:36,460 --> 00:09:43,090
+And we can you know, we can put something in here and it shows in both text area and main.
+
+117
+00:09:43,240 --> 00:09:45,370
+But when I reload, the note goes away.
+
+118
+00:09:46,060 --> 00:09:51,250
+So what we want to work on next, since we have, you know, the functionality that we have so far in
+
+119
+00:09:51,250 --> 00:09:57,430
+terms of the DOM, we want to be able to save these to local storage and in the browser.
+
+120
+00:09:57,430 --> 00:10:03,010
+We want to also fetch them from a local storage and show, you know, each note inside of an actual
+
+121
+00:10:03,010 --> 00:10:03,320
+note.
+
+122
+00:10:03,330 --> 00:10:04,720
+So we'll get into that next.

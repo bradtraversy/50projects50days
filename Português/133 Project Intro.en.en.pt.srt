@@ -1,0 +1,67 @@
+﻿1
+00:00:00,450 --> 00:00:06,000
+Tudo bem, neste projeto, vamos criar uma interface de usuário de conta de verificação e você deve ter visto isso
+
+2
+00:00:06,000 --> 00:00:12,180
+se você sabe, você se inscreve em alguma coisa ou qualquer outra coisa e eles te mandam um código e você tem que validar
+
+3
+00:00:12,180 --> 00:00:15,230
+esse código em um site ou algum tipo de aplicativo.
+
+4
+00:00:15,600 --> 00:00:17,090
+E esta é apenas a parte da interface do usuário.
+
+5
+00:00:17,100 --> 00:00:23,240
+Não estamos adicionando nenhum tipo de funcionalidade além da interface do usuário e digitando números e aquecendo
+
+6
+00:00:23,250 --> 00:00:26,220
+para cada entrada aqui, porque todas são entradas separadas.
+
+7
+00:00:26,670 --> 00:00:31,230
+Então, basicamente, quando você chega à página, ela se concentra na primeira e eu posso colocar um número
+
+8
+00:00:31,470 --> 00:00:33,480
+e então vai me levar para a próxima entrada.
+
+9
+00:00:33,750 --> 00:00:35,700
+Posso colocar outro número, outro.
+
+10
+00:00:36,000 --> 00:00:40,950
+E então se eu quiser mudar um número, se eu quiser voltar, eu posso apertar backspace e colocar um
+
+11
+00:00:40,950 --> 00:00:43,200
+número em continuar.
+
+12
+00:00:43,200 --> 00:00:46,310
+Se eu quiser mudar isso novamente, posso mudar isso e depois entrar.
+
+13
+00:00:46,470 --> 00:00:51,750
+E então você teria, você sabe, validar com o que quer que seja com seu banco de dados e autenticação
+
+14
+00:00:51,750 --> 00:00:52,530
+e todas essas coisas.
+
+15
+00:00:52,530 --> 00:00:53,910
+Mas esta é apenas a interface do usuário.
+
+16
+00:00:54,180 --> 00:00:56,980
+Então é isso que vamos construir neste projeto.
+
+17
+00:00:57,000 --> 00:00:58,300
+Vamos em frente e começar.

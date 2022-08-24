@@ -1,0 +1,87 @@
+1
+00:00:00,060 --> 00:00:05,160
+OK, so this is a pretty simple project, what we're going to do here is have a form.
+
+2
+00:00:05,320 --> 00:00:12,150
+It's basically a login form and the length of the password is going to be detected.
+
+3
+00:00:12,150 --> 00:00:14,790
+And this image, it's going to start off blurry.
+
+4
+00:00:14,790 --> 00:00:20,130
+And as the password gets longer and stronger, this is going to become more clear.
+
+5
+00:00:20,140 --> 00:00:24,340
+So you'll see if I go ahead and enter one character, it gets a little more clear.
+
+6
+00:00:24,360 --> 00:00:26,220
+Another another.
+
+7
+00:00:27,180 --> 00:00:31,500
+And eventually it just ends up as a completely clear image.
+
+8
+00:00:31,740 --> 00:00:34,260
+So it's a cool little way to test password strength.
+
+9
+00:00:34,290 --> 00:00:35,820
+Now, this is obviously very simple.
+
+10
+00:00:35,820 --> 00:00:37,950
+It's only going by the password length.
+
+11
+00:00:38,790 --> 00:00:45,030
+You could add on to this after and you could, you know, see if there's special characters or uppercase
+
+12
+00:00:45,030 --> 00:00:46,530
+letters and numbers and all that.
+
+13
+00:00:46,530 --> 00:00:48,960
+But this is this is going to be pretty simple to begin with.
+
+14
+00:00:49,650 --> 00:00:54,870
+We're also going to be using the Tailwind CSFs framework and we're just using a CDN.
+
+15
+00:00:54,870 --> 00:00:57,900
+We're not going to, like, download it or compile it or anything like that.
+
+16
+00:00:57,900 --> 00:00:59,070
+We're not using NPM.
+
+17
+00:00:59,340 --> 00:01:05,010
+We're just going to throw the CDN link in so we can use some of the classes and make the styling a little
+
+18
+00:01:05,010 --> 00:01:05,950
+easier on us.
+
+19
+00:01:05,970 --> 00:01:06,270
+All right.
+
+20
+00:01:06,270 --> 00:01:11,490
+So you'll get a little bit experience with some of the tail when utility classes in this project as
+
+21
+00:01:11,490 --> 00:01:11,820
+well.
+
+22
+00:01:11,940 --> 00:01:12,960
+OK, so let's begin.

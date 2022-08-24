@@ -1,0 +1,63 @@
+﻿1
+00:00:00,120 --> 00:00:04,350
+Tudo bem, então neste projeto, vamos construir um espaço reservado de conteúdo e você pode ver isso apenas
+
+2
+00:00:04,350 --> 00:00:11,190
+parece um cartão comum, tem uma imagem, algum texto, uma imagem de usuário ou uma imagem de autor e alguns
+
+3
+00:00:11,190 --> 00:00:11,610
+dados.
+
+4
+00:00:11,850 --> 00:00:17,850
+Então, se eu recarregar ou chegarmos a esta página, você verá essa animação de gradiente legal que carrega
+
+5
+00:00:17,850 --> 00:00:21,130
+em cerca de dois segundos e meio e então o conteúdo chega.
+
+6
+00:00:21,570 --> 00:00:26,910
+Então, a maneira como vamos abordar isso é que primeiro vamos construir apenas o cartão com HTML
+
+7
+00:00:26,910 --> 00:00:27,680
+Acesso.
+
+8
+00:00:28,050 --> 00:00:34,950
+Então vamos criar essa animação com acesso usando basicamente apenas modificando o fundo
+
+9
+00:00:34,950 --> 00:00:36,740
+posição de um gradiente linear.
+
+10
+00:00:37,080 --> 00:00:43,050
+E então vamos fazer com que o JavaScript insira o conteúdo e o conteúdo será apenas codificado em
+
+11
+00:00:43,050 --> 00:00:43,790
+o JavaScript.
+
+12
+00:00:43,800 --> 00:00:46,800
+Mas é claro que você pode buscar os dados de algum tipo de API.
+
+13
+00:00:47,190 --> 00:00:47,630
+Tudo bem.
+
+14
+00:00:47,640 --> 00:00:50,630
+E, claro, você pode ter vários cartões e coisas assim.
+
+15
+00:00:50,970 --> 00:00:51,990
+Então é isso.
+
+16
+00:00:51,990 --> 00:00:53,180
+Vamos em frente e entrar nisso.

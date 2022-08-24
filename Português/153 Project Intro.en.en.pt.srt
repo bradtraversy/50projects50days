@@ -1,0 +1,63 @@
+﻿1
+00:00:00,210 --> 00:00:05,040
+Tudo bem, e neste projeto, vamos construir um feed de imagem aleatório onde chegamos à página e
+
+2
+00:00:05,040 --> 00:00:11,010
+vai obter um monte de imagens aleatórias para nós e poderemos, no JavaScript, colocar
+
+3
+00:00:11,010 --> 00:00:12,780
+no número de linhas que queremos aqui.
+
+4
+00:00:12,780 --> 00:00:18,660
+Tenho cinco linhas de imagens, três em cada coluna ou três colunas em cada linha, devo dizer.
+
+5
+00:00:18,930 --> 00:00:21,050
+E não estamos usando nenhum tipo de API nem nada.
+
+6
+00:00:21,060 --> 00:00:29,340
+O que vamos fazer é começar as imagens desta fonte neutra, splash dot com random,
+
+7
+00:00:29,580 --> 00:00:34,360
+e então você pode colocar uma barra e depois um tamanho como 300 por 300.
+
+8
+00:00:34,860 --> 00:00:41,670
+OK, se eu colocar, digamos 300 por três um, isso me dará uma imagem diferente.
+
+9
+00:00:42,570 --> 00:00:49,470
+E o que faremos é que esse tamanho gere um tamanho aleatório e insira essas imagens no
+
+10
+00:00:49,470 --> 00:00:50,880
+dormitório usando JavaScript.
+
+11
+00:00:50,890 --> 00:00:55,260
+Portanto, sem API, sem solicitações de recursos ou qualquer coisa assim.
+
+12
+00:00:55,440 --> 00:00:58,290
+Vamos apenas inserir imagens aleatórias no dormitório.
+
+13
+00:00:58,310 --> 00:01:00,150
+Portanto, este será um projeto muito curto.
+
+14
+00:01:00,150 --> 00:01:03,390
+Provavelmente podemos fazer isso em um vídeo de dez minutos.
+
+15
+00:01:03,480 --> 00:01:03,810
+Tudo bem.
+
+16
+00:01:03,810 --> 00:01:04,640
+Então vamos começar.

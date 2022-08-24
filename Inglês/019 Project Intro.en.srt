@@ -1,0 +1,79 @@
+1
+00:00:00,330 --> 00:00:06,510
+All right, so in this project, we're going to build a scroll animation, which is is pretty simple.
+
+2
+00:00:06,510 --> 00:00:08,960
+We can most likely do this all in one video.
+
+3
+00:00:08,970 --> 00:00:10,460
+However, it's very useful.
+
+4
+00:00:10,560 --> 00:00:16,080
+You might see these websites where you start scrolling in parts of the site, you know, images or sections
+
+5
+00:00:16,080 --> 00:00:17,700
+of the website start to come in.
+
+6
+00:00:18,000 --> 00:00:20,190
+So I just created these content blocks.
+
+7
+00:00:20,190 --> 00:00:22,020
+And you can see there's three to begin with.
+
+8
+00:00:22,350 --> 00:00:28,640
+But if I go and I start to scroll down, the next one comes in from the left, go down some more.
+
+9
+00:00:28,650 --> 00:00:32,810
+Next one comes in from the right and it's going to alternate where it comes in from.
+
+10
+00:00:33,120 --> 00:00:37,700
+So we're going to use CSFs transitions to have it come in smoothly.
+
+11
+00:00:37,770 --> 00:00:43,290
+We're going to use JavaScript to basically tell where the trigger point is for the next box to come
+
+12
+00:00:43,290 --> 00:00:43,590
+in.
+
+13
+00:00:43,710 --> 00:00:46,550
+And then we're going to add a specific class to show it.
+
+14
+00:00:46,830 --> 00:00:52,590
+And then if I go back up, it'll remove the class when it hits the trigger point and it'll all, you
+
+15
+00:00:52,590 --> 00:00:53,760
+know, slide back out.
+
+16
+00:00:54,120 --> 00:00:54,540
+All right.
+
+17
+00:00:54,550 --> 00:00:56,160
+So I think it's really useful.
+
+18
+00:00:56,160 --> 00:01:00,000
+You can use this in a lot of different uses and different websites.
+
+19
+00:01:00,300 --> 00:01:01,010
+So that's it.
+
+20
+00:01:01,020 --> 00:01:01,830
+Let's get into it.

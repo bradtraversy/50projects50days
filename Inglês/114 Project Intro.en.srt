@@ -1,0 +1,43 @@
+1
+00:00:00,360 --> 00:00:05,320
+All right, so in this project, we're going to be building an image carousel that will show a couple
+
+2
+00:00:05,320 --> 00:00:08,680
+of images and it's going to basically just slide through them.
+
+3
+00:00:08,940 --> 00:00:10,410
+It's going to do it on its own.
+
+4
+00:00:10,650 --> 00:00:13,470
+But we also have these buttons here where we can control it.
+
+5
+00:00:13,470 --> 00:00:15,990
+So I can go, you know, next, next.
+
+6
+00:00:15,990 --> 00:00:19,700
+And if it gets to the end, it just goes back to the beginning so I can go next.
+
+7
+00:00:19,710 --> 00:00:21,990
+I can also go back like that.
+
+8
+00:00:22,710 --> 00:00:26,460
+And if we get to the beginning and click previous, it just goes to the to the end.
+
+9
+00:00:26,970 --> 00:00:27,330
+All right.
+
+10
+00:00:27,340 --> 00:00:28,400
+So that's what we're building.
+
+11
+00:00:28,410 --> 00:00:29,880
+Let's go ahead and get into it.

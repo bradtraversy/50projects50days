@@ -1,0 +1,115 @@
+1
+00:00:00,150 --> 00:00:04,980
+So in this project, we're going to build a notes app and we're actually going to be able to save these
+
+2
+00:00:04,980 --> 00:00:10,040
+notes to local storage, so we'll be using the local storage API, which is built into the browser.
+
+3
+00:00:10,380 --> 00:00:13,140
+So I have nothing here but an add note button.
+
+4
+00:00:13,140 --> 00:00:18,990
+And if I click that, it's going to add this little note here so I can click in here and I can type,
+
+5
+00:00:19,380 --> 00:00:22,590
+you know, hello world or whatever.
+
+6
+00:00:22,860 --> 00:00:25,600
+And this here is going to toggle.
+
+7
+00:00:26,220 --> 00:00:27,150
+This is the edit button.
+
+8
+00:00:27,150 --> 00:00:31,590
+It'll toggle from text area to just a regular div that shows the text.
+
+9
+00:00:31,950 --> 00:00:32,340
+All right.
+
+10
+00:00:32,340 --> 00:00:33,480
+I can add another one.
+
+11
+00:00:34,710 --> 00:00:36,300
+Say hello again.
+
+12
+00:00:38,820 --> 00:00:39,270
+All right.
+
+13
+00:00:39,270 --> 00:00:40,410
+So we have two notes here.
+
+14
+00:00:40,680 --> 00:00:45,060
+And if I reload, they're going to stay because they're saved in local storage.
+
+15
+00:00:45,370 --> 00:00:47,360
+If I delete this, I reload.
+
+16
+00:00:47,370 --> 00:00:50,700
+It's going to stay the same because, again, it's being saved to the browser.
+
+17
+00:00:50,700 --> 00:00:52,380
+It's being saved in local storage.
+
+18
+00:00:53,070 --> 00:00:58,020
+Another thing we can do is use markdown because we're going to be using a small library called Markt.
+
+19
+00:00:58,320 --> 00:01:01,440
+So if I want this to be a heading, I could do a number sign.
+
+20
+00:01:01,440 --> 00:01:06,810
+I'm not going to go through all the markdown syntax, but you can look up that.
+
+21
+00:01:06,810 --> 00:01:07,910
+You can look at that on your own.
+
+22
+00:01:07,920 --> 00:01:10,410
+I do have a crash course on YouTube, on markdown.
+
+23
+00:01:10,710 --> 00:01:14,730
+If we want to do like an unordered list, we could do like hyphen space.
+
+24
+00:01:15,390 --> 00:01:20,550
+And if we take a look at that outside of edit mode, we have a heading and an list list.
+
+25
+00:01:21,360 --> 00:01:24,390
+OK, if I reload is going to stay because again, being saved.
+
+26
+00:01:24,810 --> 00:01:30,480
+So I think it's a it's a pretty neat application if you're learning, you know, local storage and how
+
+27
+00:01:30,480 --> 00:01:33,630
+to work with the DOM, add and remove things and so on.
+
+28
+00:01:33,930 --> 00:01:34,430
+All right.
+
+29
+00:01:34,440 --> 00:01:36,300
+So let's go ahead and get started.

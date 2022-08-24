@@ -1,0 +1,271 @@
+1
+00:00:00,150 --> 00:00:05,820
+All right, so in the last video, we created our e-mail, which is pretty simple and a lot of the styling,
+
+2
+00:00:05,820 --> 00:00:12,060
+so we set the positions of the needles and so on in this square right here, we can actually get rid
+
+3
+00:00:12,060 --> 00:00:12,370
+of that.
+
+4
+00:00:12,390 --> 00:00:15,290
+Now, I just wanted you to see kind of the outline of the clock.
+
+5
+00:00:15,300 --> 00:00:19,170
+So this background color on the clock class, we can get rid of that.
+
+6
+00:00:19,860 --> 00:00:22,080
+And then let's start on the center point.
+
+7
+00:00:23,160 --> 00:00:31,590
+So we have a class of center point and we're going to use the Centerpoint class, but we're also going
+
+8
+00:00:31,590 --> 00:00:36,690
+to use the after pseudo selector because we want it to be basically two circles.
+
+9
+00:00:36,700 --> 00:00:38,090
+So we need to style both.
+
+10
+00:00:38,110 --> 00:00:40,450
+So it's going to be a circle within a circle.
+
+11
+00:00:40,920 --> 00:00:51,670
+So for this, let's set the background color and we're going to set that to, let's say E seven, E
+
+12
+00:00:51,690 --> 00:00:56,370
+seven four, C, three C, so it's the same color as the second needle.
+
+13
+00:00:56,370 --> 00:01:01,290
+We could put that in a variable, but these are the only two places we're using it in the right next
+
+14
+00:01:01,290 --> 00:01:01,800
+to each other.
+
+15
+00:01:01,810 --> 00:01:02,820
+So this should be fine.
+
+16
+00:01:03,570 --> 00:01:13,680
+And then I'm going to set the width to ten pixels and also the height to ten pixels.
+
+17
+00:01:13,680 --> 00:01:19,820
+So you can see it's just a square and it's positioned static right now, which is the default positioning.
+
+18
+00:01:19,830 --> 00:01:27,730
+So we want to position absolute and as far as where we want to put it, we want to top 50 percent.
+
+19
+00:01:27,730 --> 00:01:35,940
+And this is within the clock class where that's that gray square was and let's say from the left, 50
+
+20
+00:01:35,940 --> 00:01:36,610
+percent.
+
+21
+00:01:37,680 --> 00:01:41,510
+Now, that's not directly in the middle.
+
+22
+00:01:41,520 --> 00:01:49,980
+So we need to use transform and we want to translate on both axes.
+
+23
+00:01:50,010 --> 00:01:53,260
+So let's say translate and then just negative 50.
+
+24
+00:01:53,280 --> 00:01:57,780
+So we want to pull it back negative 50 on Xanthi.
+
+25
+00:01:57,780 --> 00:01:59,490
+So that'll put it directly in the middle.
+
+26
+00:01:59,730 --> 00:02:01,370
+And we want this to be a circle.
+
+27
+00:02:01,380 --> 00:02:03,980
+So let's set the border radius.
+
+28
+00:02:03,990 --> 00:02:07,350
+We're going to set that to 50 percent, which will make it a circle.
+
+29
+00:02:08,100 --> 00:02:14,690
+OK, and then I think and I think that's all we want to do here.
+
+30
+00:02:14,700 --> 00:02:20,130
+Now, we also want to add a like a black dot in the middle.
+
+31
+00:02:20,400 --> 00:02:28,770
+So I'm going to copy let's actually just copy this whole thing and say center point and then we're going
+
+32
+00:02:28,770 --> 00:02:30,660
+to use colon, colon after.
+
+33
+00:02:30,660 --> 00:02:37,140
+And since we're using after, we need to add a content property here, which will just be an empty string.
+
+34
+00:02:37,590 --> 00:02:42,370
+And I'm going to set the background color to the primary color, whatever that is.
+
+35
+00:02:42,390 --> 00:02:50,030
+So let's say var dash, dash, primary color and the width and the height.
+
+36
+00:02:50,070 --> 00:02:54,000
+We want this to be smaller because this is going to be in the middle of the other in the middle of the
+
+37
+00:02:54,000 --> 00:02:54,800
+red circle.
+
+38
+00:02:55,140 --> 00:02:58,320
+So we'll set that to five pixels position.
+
+39
+00:02:58,320 --> 00:03:00,210
+Absolute this this is all good.
+
+40
+00:03:00,270 --> 00:03:01,080
+That's all the same.
+
+41
+00:03:01,110 --> 00:03:08,160
+So if I save that now we have a little black dot in the middle of our center point, OK, now it's style
+
+42
+00:03:08,160 --> 00:03:08,910
+like the text.
+
+43
+00:03:08,910 --> 00:03:10,560
+So we have the class of time.
+
+44
+00:03:11,260 --> 00:03:15,600
+I'm to set the font size here to 60 pixels.
+
+45
+00:03:15,600 --> 00:03:18,810
+So nice and big and then the class of date.
+
+46
+00:03:20,010 --> 00:03:28,230
+So date I'm going to make the color triple A and then let's set the font size to 14 pixels.
+
+47
+00:03:28,260 --> 00:03:31,050
+Let's set the letter spacing.
+
+48
+00:03:32,100 --> 00:03:38,190
+I'm going to do the zero point three pixels and let's make it uppercase.
+
+49
+00:03:38,190 --> 00:03:43,530
+So text transform will set that to uppercase.
+
+50
+00:03:44,220 --> 00:03:49,740
+Now the the the date, like the two here, has a span around it with the class of circle.
+
+51
+00:03:49,760 --> 00:03:57,750
+So let's say for date circle, let's make the background color, the primary color
+
+52
+00:04:00,480 --> 00:04:04,860
+and let's make the color the secondary color.
+
+53
+00:04:07,930 --> 00:04:18,170
+And we want it to be a circle, so border radius is going to be 50 percent at that.
+
+54
+00:04:19,480 --> 00:04:19,920
+All right.
+
+55
+00:04:19,930 --> 00:04:26,080
+And then let's add a Hitner with so we'll do 18 pixels.
+
+56
+00:04:31,810 --> 00:04:39,550
+And let's set I'm actually going to display this as in line Fleck's.
+
+57
+00:04:41,780 --> 00:04:47,810
+OK, and then we want to obviously you want the number in the middle, so let's do a line items center
+
+58
+00:04:47,810 --> 00:04:52,940
+and let's do justify content center seats that are put in the middle.
+
+59
+00:04:52,940 --> 00:04:58,160
+And then I'm just going to change the line height to the same as the font size 18 pixels.
+
+60
+00:05:02,030 --> 00:05:07,340
+And then that when it changes, I want to have a transition.
+
+61
+00:05:07,340 --> 00:05:14,810
+So at a transition, let's say zero point five seconds is in.
+
+62
+00:05:16,900 --> 00:05:19,390
+OK, so I think that that looks pretty good.
+
+63
+00:05:21,610 --> 00:05:26,680
+Actually, the font size, let's say, font size 12 pixels.
+
+64
+00:05:28,120 --> 00:05:32,560
+All right, so now we have basically our UI done here.
+
+65
+00:05:32,560 --> 00:05:36,090
+And in the next video, we want to make this function OK.
+
+66
+00:05:36,150 --> 00:05:39,820
+We want to make the clock work, want to show the date and time.
+
+67
+00:05:39,820 --> 00:05:44,770
+We want to be able to change to light mode or change to dark mode and back.
+
+68
+00:05:45,040 --> 00:05:47,350
+So we'll get into all of that in the next video.

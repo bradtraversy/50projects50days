@@ -1,0 +1,407 @@
+1
+00:00:00,150 --> 00:00:05,910
+OK, so we're able to type in a user, get their profile data and console it, but we don't want to
+
+2
+00:00:05,910 --> 00:00:06,180
+do that.
+
+3
+00:00:06,210 --> 00:00:08,800
+We want to add it to this card right here.
+
+4
+00:00:09,360 --> 00:00:12,460
+So what we'll do is create a new function.
+
+5
+00:00:13,610 --> 00:00:21,720
+Let's go down here and say function and we're going to call this create let's call it create user card.
+
+6
+00:00:23,850 --> 00:00:26,040
+And it's going to take in a user.
+
+7
+00:00:27,330 --> 00:00:33,510
+And we want to take, let's say, const card HTML.
+
+8
+00:00:33,520 --> 00:00:38,850
+So we're going to create a variable here called card HTML and set it to a set of tactics.
+
+9
+00:00:39,180 --> 00:00:42,690
+And then I'm going to grab what we have in our HTML, this card.
+
+10
+00:00:42,840 --> 00:00:49,320
+So this div right here, everything that's in Maine, I'm going to take that and cut that.
+
+11
+00:00:50,370 --> 00:00:52,470
+We don't actually need anything in here.
+
+12
+00:00:54,300 --> 00:00:56,520
+We'll save that's going to go away.
+
+13
+00:00:56,820 --> 00:01:02,520
+And then in our script, in this variable right here in this template, literal, I'm going to just
+
+14
+00:01:02,520 --> 00:01:05,610
+go ahead and let's go like that and paste that in.
+
+15
+00:01:06,630 --> 00:01:07,050
+All right.
+
+16
+00:01:07,080 --> 00:01:08,520
+So create user card right now.
+
+17
+00:01:08,520 --> 00:01:11,820
+It's just all static, you know, content.
+
+18
+00:01:12,330 --> 00:01:17,550
+But I'm going to go after the back to here and take mean.
+
+19
+00:01:17,550 --> 00:01:19,300
+Actually, we need to bring Main in, don't we.
+
+20
+00:01:19,770 --> 00:01:20,070
+Yeah.
+
+21
+00:01:20,070 --> 00:01:28,530
+So up here, let's go ahead and bring in, say, Maine, which has an idea of Maine, and then after
+
+22
+00:01:28,530 --> 00:01:35,880
+the template literal will say Maine dot enter html equals Maine.
+
+23
+00:01:37,650 --> 00:01:40,830
+I call it a card card html.
+
+24
+00:01:42,090 --> 00:01:44,010
+So card html.
+
+25
+00:01:45,530 --> 00:01:54,980
+And let's save that and then once we make the request right here, so we get the data and instead of,
+
+26
+00:01:55,520 --> 00:02:04,760
+you know, console logging, let's call create user card and let's pass in our data, which is the user
+
+27
+00:02:04,760 --> 00:02:05,240
+data.
+
+28
+00:02:05,630 --> 00:02:08,060
+And they get that gets passed in here right now.
+
+29
+00:02:08,060 --> 00:02:10,790
+It's going to be the same static, you know, content.
+
+30
+00:02:10,790 --> 00:02:12,950
+But let's just make sure that that works at least.
+
+31
+00:02:12,950 --> 00:02:19,670
+So if I type in, you know, Brad, enter, OK, so we get a card, but it's still has John Doe in it.
+
+32
+00:02:19,670 --> 00:02:21,290
+So let's change this stuff up.
+
+33
+00:02:21,290 --> 00:02:27,170
+We now have access to the user data, and if you want to see exactly what that gives you, we could
+
+34
+00:02:27,170 --> 00:02:36,080
+take this and you could just go right in your browser here and paste that in and put any GitHub username
+
+35
+00:02:36,350 --> 00:02:37,700
+and you're going to see what it gives you.
+
+36
+00:02:37,700 --> 00:02:39,770
+So you can see the avatar.
+
+37
+00:02:39,770 --> 00:02:47,530
+You Eurail is what we want, that we're going to want the user name right here.
+
+38
+00:02:47,570 --> 00:02:49,070
+We're going to want the bio.
+
+39
+00:02:49,730 --> 00:02:52,550
+So all this this data is available to you.
+
+40
+00:02:52,560 --> 00:02:55,610
+So let's go to the image here.
+
+41
+00:02:55,610 --> 00:02:56,630
+Let's get rid of that.
+
+42
+00:02:56,630 --> 00:03:01,940
+And let's put in here the user dot avatar underscore you URL.
+
+43
+00:03:02,030 --> 00:03:07,670
+And then for the ALZ, we'll go ahead and say user, let's do the user name.
+
+44
+00:03:08,180 --> 00:03:16,040
+And right here in the H2, we want to use user dot name and then the bios.
+
+45
+00:03:18,970 --> 00:03:29,180
+So let's get rid of this and let's add user dot bio and then we have down here, like our followers
+
+46
+00:03:29,290 --> 00:03:39,940
+will get rid of this 300 here and let's put in user dot followers and then we have our following user
+
+47
+00:03:39,940 --> 00:03:42,190
+dot following.
+
+48
+00:03:43,000 --> 00:03:51,250
+And our repos is going to be user dot, public, underscore, rebholz.
+
+49
+00:03:51,250 --> 00:03:53,080
+And this is all coming from the API.
+
+50
+00:03:53,080 --> 00:03:54,780
+You can see right here, public repose.
+
+51
+00:03:55,240 --> 00:04:02,770
+You have other stuff like public gists, company blog you could use and then repost here.
+
+52
+00:04:02,770 --> 00:04:07,150
+We're just going to get rid of these because we're actually going to make another request to get those
+
+53
+00:04:07,150 --> 00:04:08,020
+and then insert.
+
+54
+00:04:08,020 --> 00:04:10,060
+But I'm just going to get rid of those for now.
+
+55
+00:04:10,660 --> 00:04:12,010
+So let's save that.
+
+56
+00:04:12,010 --> 00:04:15,550
+And let's go back to our application here.
+
+57
+00:04:15,550 --> 00:04:20,260
+And I'm going to search for my profile and then we go.
+
+58
+00:04:20,260 --> 00:04:25,780
+So we get my image, my name, my bio number of followers following.
+
+59
+00:04:26,200 --> 00:04:29,530
+I should follow some more people repos.
+
+60
+00:04:30,460 --> 00:04:30,780
+Good.
+
+61
+00:04:31,660 --> 00:04:38,020
+Now, we don't have the the Repos yet, like the you know, because we're going to get to the top five
+
+62
+00:04:38,020 --> 00:04:40,000
+repos or the latest five.
+
+63
+00:04:40,450 --> 00:04:41,830
+We're going to do that in the next video.
+
+64
+00:04:41,830 --> 00:04:48,580
+But what I do want to do is handle the error, because right now, if there's an error, like let's
+
+65
+00:04:48,580 --> 00:04:53,980
+put something that we know is probably not a name and nothing happens.
+
+66
+00:04:54,340 --> 00:04:57,480
+Well, something does happen at console logs right here.
+
+67
+00:04:57,850 --> 00:05:06,760
+So if there's an error, let's then let's get rid of this and let's call a function called create error
+
+68
+00:05:07,330 --> 00:05:07,990
+card.
+
+69
+00:05:10,080 --> 00:05:14,620
+All right, now what we could do it this way.
+
+70
+00:05:14,640 --> 00:05:21,570
+You can also check for specific responses like that would be a 404 because it wouldn't be found.
+
+71
+00:05:21,810 --> 00:05:23,760
+So we could do an F here.
+
+72
+00:05:24,960 --> 00:05:37,860
+And we could say if the error dot response DOT status is equal to a 404, then we want to do a create
+
+73
+00:05:37,860 --> 00:05:38,580
+error card.
+
+74
+00:05:38,970 --> 00:05:42,930
+And then you can check for other types of of responses as well.
+
+75
+00:05:43,560 --> 00:05:47,730
+But we'll just go ahead and leave it at this, because if it tries to find a user that doesn't exist,
+
+76
+00:05:47,730 --> 00:05:50,240
+it's going to be a 404 status.
+
+77
+00:05:50,790 --> 00:05:55,350
+So this create error card, let's actually you know what?
+
+78
+00:05:55,350 --> 00:05:56,840
+Let's put a message in here.
+
+79
+00:05:57,420 --> 00:06:07,320
+So create error card will take a message that says there is no or we'll just say no user.
+
+80
+00:06:10,450 --> 00:06:13,900
+No profile with this username.
+
+81
+00:06:14,560 --> 00:06:21,820
+All right, so we'll go down here and let's create that function function, create error card, which
+
+82
+00:06:21,820 --> 00:06:29,920
+takes in a message and we're just going to do the same thing we did above in the user card will create
+
+83
+00:06:29,920 --> 00:06:30,670
+a variable.
+
+84
+00:06:31,090 --> 00:06:41,920
+We'll call this card HTML and set this to template literal and we're going to have a div with the class
+
+85
+00:06:43,480 --> 00:06:44,650
+of card
+
+86
+00:06:47,470 --> 00:06:56,980
+and inside this div we're just going to have an H1 with whatever that message is.
+
+87
+00:06:58,140 --> 00:07:07,050
+OK, and then we'll take the main element and set the inner HTML equal to the card HTML.
+
+88
+00:07:07,420 --> 00:07:08,260
+So let's save that.
+
+89
+00:07:08,260 --> 00:07:14,710
+Now I'm going to type something in here that is definitely not a name and that didn't work.
+
+90
+00:07:16,220 --> 00:07:16,610
+See.
+
+91
+00:07:23,550 --> 00:07:28,080
+Reference error message is not to oh, I put a message MSG.
+
+92
+00:07:28,570 --> 00:07:29,800
+All right, let's try that again.
+
+93
+00:07:32,320 --> 00:07:33,280
+So no problem.
+
+94
+00:07:33,280 --> 00:07:34,840
+No profile with this username.
+
+95
+00:07:34,840 --> 00:07:39,910
+And it's going to tell us down here that it got a feel for as well in the console, but good.
+
+96
+00:07:39,910 --> 00:07:40,600
+That's what I want.
+
+97
+00:07:40,610 --> 00:07:46,450
+So then we could try, like, you know, Floren Pop 17 and we get Florens.
+
+98
+00:07:46,780 --> 00:07:48,700
+Beautiful picture and profile.
+
+99
+00:07:49,750 --> 00:07:50,110
+All right.
+
+100
+00:07:50,120 --> 00:07:53,410
+So in the next video, we want to work on the repositories.
+
+101
+00:07:53,410 --> 00:07:59,800
+We want to show the top five, not the top five, the most recent five down here with a link to click
+
+102
+00:07:59,800 --> 00:08:02,140
+on and visit those repositories.

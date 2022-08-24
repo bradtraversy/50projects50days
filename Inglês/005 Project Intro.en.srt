@@ -1,0 +1,47 @@
+1
+00:00:00,240 --> 00:00:04,020
+All right, so in this project, we're going to build some expanding cards, basically we were going
+
+2
+00:00:04,020 --> 00:00:08,220
+to style these panels to have a background image and a heading.
+
+3
+00:00:08,220 --> 00:00:13,230
+We're going to use flex blocks to align everything and then add a little bit of JavaScript so that when
+
+4
+00:00:13,230 --> 00:00:20,550
+we click one of these, it changes the class to active and it then expands with the CSFs transition
+
+5
+00:00:20,550 --> 00:00:20,900
+case.
+
+6
+00:00:20,910 --> 00:00:22,920
+We'll be using JavaScript for the event.
+
+7
+00:00:22,920 --> 00:00:28,530
+Listeners will be using CSS transitions to give it the smooth through the fact you'll see the heading
+
+8
+00:00:28,530 --> 00:00:32,160
+doesn't come in until the card is fully expanded as well.
+
+9
+00:00:32,440 --> 00:00:34,830
+And we're using just background images and headings.
+
+10
+00:00:34,830 --> 00:00:39,950
+But you could make these into testimonials or fake hues or whatever it might be.
+
+11
+00:00:39,960 --> 00:00:41,590
+So hopefully you enjoy it.
+
+12
+00:00:41,610 --> 00:00:43,580
+Let's go ahead and jump in and get started.

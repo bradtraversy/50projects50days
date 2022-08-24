@@ -1,0 +1,39 @@
+﻿1
+00:00:00,300 --> 00:00:05,220
+Os caras deste projeto, vamos construir um widget de caixa de depoimento e você pode ver que ele mostra
+
+2
+00:00:05,220 --> 00:00:07,860
+um depoimento com um usuário com uma barra de progresso.
+
+3
+00:00:08,070 --> 00:00:13,200
+E depois de 10 segundos, quando esta barra de progresso chegar ao fim, ela irá em frente e mudará para o
+
+4
+00:00:13,200 --> 00:00:14,340
+próximo depoimento.
+
+5
+00:00:14,580 --> 00:00:21,870
+Então basicamente teremos um array em nosso em nosso JavaScript com o texto, a imagem, nosso link para o
+
+6
+00:00:21,870 --> 00:00:28,590
+imagem, o nome, o papel e basicamente trocá-lo toda vez que essa barra de progresso estiver ativa.
+
+7
+00:00:28,590 --> 00:00:29,820
+Portanto, a cada 10 segundos.
+
+8
+00:00:30,000 --> 00:00:37,450
+Então, usaremos set interval para fazer isso e criaremos essa animação usando quadros-chave nos CSFs.
+
+9
+00:00:37,860 --> 00:00:38,190
+Tudo bem.
+
+10
+00:00:38,190 --> 00:00:39,030
+Então vamos fazer isso.

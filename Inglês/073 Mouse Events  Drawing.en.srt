@@ -1,0 +1,355 @@
+1
+00:00:00,300 --> 00:00:06,630
+OK, so we have a couple of functions here to draw a circle, draw a line, and I'm not calling them
+
+2
+00:00:06,630 --> 00:00:11,010
+anywhere just yet, but we want to start to deal with our most events.
+
+3
+00:00:11,430 --> 00:00:19,260
+So ultimately, we want to be able to hold up our most buttoned down and drag and draw based on the
+
+4
+00:00:19,260 --> 00:00:24,150
+color selected based on the, you know, the line selected or the with whatever you want to call that
+
+5
+00:00:24,150 --> 00:00:24,880
+the size.
+
+6
+00:00:25,290 --> 00:00:31,110
+So let's go above our functions here and let's take our canvas.
+
+7
+00:00:32,040 --> 00:00:40,320
+So we're going to take our canvas and add an event listener and I'm going to listen for a most down
+
+8
+00:00:40,590 --> 00:00:41,180
+event.
+
+9
+00:00:41,190 --> 00:00:48,870
+So basically when I click and I hold it down, that'll be a down and we're going to pass in our event
+
+10
+00:00:48,870 --> 00:00:49,830
+object here.
+
+11
+00:00:50,550 --> 00:00:54,690
+And I'm going to have another global variable up here and undersize.
+
+12
+00:00:54,690 --> 00:01:00,300
+And we're going to call this is Prest because we want to know if the mouse is being pressed and that's
+
+13
+00:01:00,300 --> 00:01:02,010
+going to be false to begin with.
+
+14
+00:01:02,460 --> 00:01:07,470
+But once we have mouse down, we'll say is pressed is then going to equal.
+
+15
+00:01:07,470 --> 00:01:08,130
+True.
+
+16
+00:01:08,580 --> 00:01:14,520
+I also want to get the position of where the mouse is, and that's what these X and Y values are.
+
+17
+00:01:14,550 --> 00:01:24,680
+So let's set X here to dot offset X and then we'll set Y to idot offset Y, OK?
+
+18
+00:01:24,750 --> 00:01:29,820
+And that will give us the positioning of where the mouse is.
+
+19
+00:01:29,820 --> 00:01:32,640
+In fact, I'll go ahead and console log.
+
+20
+00:01:33,030 --> 00:01:41,640
+Let's log is pressed and let's log X and Y so I'll go over here and I'll open up my console.
+
+21
+00:01:44,010 --> 00:01:49,220
+Just reload that and you'll see we get true because when I most down it's true.
+
+22
+00:01:49,590 --> 00:01:51,630
+And then the position where I clicked.
+
+23
+00:01:52,170 --> 00:01:58,230
+All right, so if I go, if I go up here, I can see it's a very low number.
+
+24
+00:01:59,760 --> 00:02:03,350
+The top is cut off because of my console.
+
+25
+00:02:03,720 --> 00:02:07,740
+But you can see if I click all the way over here, it's like one, right?
+
+26
+00:02:07,740 --> 00:02:09,930
+If I click outside of the canvas, nothing happens.
+
+27
+00:02:09,930 --> 00:02:13,550
+But if I click right on the edge that said negative zero.
+
+28
+00:02:13,770 --> 00:02:18,150
+So one, as they go over, you can see that first number climb.
+
+29
+00:02:18,150 --> 00:02:20,580
+As they go down, you can see the second number climb.
+
+30
+00:02:21,790 --> 00:02:26,510
+OK, so that's our X and Y positioning and is pressed is true.
+
+31
+00:02:26,520 --> 00:02:31,350
+Now when we release I want is to be false and I want to clear these values.
+
+32
+00:02:31,650 --> 00:02:39,330
+So I'm just going to copy this and I want to change this now to mouse up.
+
+33
+00:02:39,330 --> 00:02:41,010
+So that's on release.
+
+34
+00:02:41,400 --> 00:02:48,570
+We're going to set is press to false and then we're going to set X and Y just equal to undefined.
+
+35
+00:02:51,820 --> 00:02:57,970
+So sets that to undefined and will console Lorgat there as well.
+
+36
+00:02:58,000 --> 00:03:03,300
+So if I go, I'm going to click and hold true and that gives me the positioning I'm going to let go.
+
+37
+00:03:03,670 --> 00:03:06,220
+I get false and the positioning is undefined.
+
+38
+00:03:07,030 --> 00:03:08,290
+OK, so that's what I want.
+
+39
+00:03:08,320 --> 00:03:11,520
+I'm just going to get rid of the console logs because we don't need those anymore.
+
+40
+00:03:12,520 --> 00:03:17,110
+But now it knows if we're if we're holding it down or if the mouse isn't being pressed.
+
+41
+00:03:17,680 --> 00:03:20,260
+Now, we want an event for mouse move.
+
+42
+00:03:20,510 --> 00:03:27,610
+So just copy this real quick and let's set this to mouse move right now.
+
+43
+00:03:27,610 --> 00:03:28,360
+Mouse move.
+
+44
+00:03:29,290 --> 00:03:36,430
+We can get the positioning, but we only want any of this to happen if the mouse is being pressed.
+
+45
+00:03:36,430 --> 00:03:41,470
+So let's do an F here and let's say if is pressed.
+
+46
+00:03:41,650 --> 00:03:47,890
+Hey, so if that's true, it means we're holding it down, then let's create a variable here called
+
+47
+00:03:47,890 --> 00:03:51,370
+X2 and set it to the positioning.
+
+48
+00:03:51,370 --> 00:03:57,370
+So E dot offset X and then do the same thing for Y.
+
+49
+00:03:58,450 --> 00:03:59,980
+This will be called Y two.
+
+50
+00:04:02,390 --> 00:04:02,830
+All right.
+
+51
+00:04:02,830 --> 00:04:08,380
+And we can go ahead and console log this X to and Y to.
+
+52
+00:04:08,650 --> 00:04:16,810
+And now if I go and I click and hold, you can see the position of wherever my mouse is now instead
+
+53
+00:04:16,810 --> 00:04:19,450
+of console logging, I actually want to draw.
+
+54
+00:04:19,450 --> 00:04:22,180
+So I'm going to call, draw circle.
+
+55
+00:04:22,600 --> 00:04:30,030
+And what's going to go in here is that the position, the X two and the Y two.
+
+56
+00:04:30,260 --> 00:04:32,680
+Now if we save that, we come over here.
+
+57
+00:04:32,680 --> 00:04:34,200
+I'm just going to close up the console.
+
+58
+00:04:34,570 --> 00:04:39,900
+Now, if I click and I hold, what's going to happen is it keeps drawing circles, OK?
+
+59
+00:04:40,000 --> 00:04:44,740
+So every time I move the mouse, it we get the values of the position.
+
+60
+00:04:44,740 --> 00:04:47,360
+We passman to draw a circle and it draws a circle.
+
+61
+00:04:47,800 --> 00:04:53,920
+Now the problem we have is if I go really fast, you can see that there's, you know, spaces in between
+
+62
+00:04:53,920 --> 00:04:55,180
+the circles and we don't want that.
+
+63
+00:04:55,180 --> 00:04:57,580
+We want just a straight line no matter what.
+
+64
+00:04:57,910 --> 00:05:05,550
+So in addition to draw a circle, we're going to draw a line or just copy that down and say draw a line.
+
+65
+00:05:05,560 --> 00:05:08,930
+Now, this is going to be where we draw the line, but we need that.
+
+66
+00:05:08,950 --> 00:05:12,370
+We need to add the move to positions as well.
+
+67
+00:05:12,380 --> 00:05:18,130
+So this move to is the first two arguments passed in which is going to be X and Y.
+
+68
+00:05:19,640 --> 00:05:24,610
+OK, now if we check it out now, we have this weird effect going on.
+
+69
+00:05:24,610 --> 00:05:31,600
+And that's because after we do this, we want to set the X value to whatever the current position is
+
+70
+00:05:31,600 --> 00:05:37,060
+and the Y values and the Y value to whatever, you know, y to is.
+
+71
+00:05:37,360 --> 00:05:39,130
+So now if I come over and draw.
+
+72
+00:05:41,000 --> 00:05:41,370
+Hmm.
+
+73
+00:05:42,670 --> 00:05:51,160
+So what's happening now is the line with is not as wide as the circle because I actually forgot down
+
+74
+00:05:51,160 --> 00:05:57,430
+here I set line with to the size, so line within the radius of a circle that, you know, there are
+
+75
+00:05:57,430 --> 00:05:58,250
+two different things.
+
+76
+00:05:58,260 --> 00:06:05,360
+So if I multiply this by two, it should end up working and being the same.
+
+77
+00:06:05,380 --> 00:06:08,770
+So now it's just a straight line, OK?
+
+78
+00:06:08,830 --> 00:06:14,170
+The width of the the radius of the circle or the size of the circle is the same now as the line width
+
+79
+00:06:14,170 --> 00:06:14,890
+of the line.
+
+80
+00:06:15,100 --> 00:06:16,480
+So they're both being drawn.
+
+81
+00:06:16,480 --> 00:06:19,570
+We don't have any of that skipping going on or anything like that.
+
+82
+00:06:20,500 --> 00:06:20,920
+All right.
+
+83
+00:06:20,930 --> 00:06:21,880
+So pretty cool.
+
+84
+00:06:26,260 --> 00:06:26,610
+Cool.
+
+85
+00:06:27,250 --> 00:06:27,640
+All right.
+
+86
+00:06:27,650 --> 00:06:31,840
+So in the next video, I want to have these controls work.
+
+87
+00:06:31,930 --> 00:06:38,110
+I want to be able to change the colour, change the line, the width of the size, I guess, and also
+
+88
+00:06:38,110 --> 00:06:41,890
+be able to clear it out with this button rather than having to reload.
+
+89
+00:06:42,130 --> 00:06:43,270
+So we'll do that next.

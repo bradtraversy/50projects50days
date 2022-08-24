@@ -1,0 +1,287 @@
+1
+00:00:00,060 --> 00:00:04,950
+All right, let's get started on a random choice pick, so I have my project starter here, I'm going
+
+2
+00:00:04,950 --> 00:00:10,020
+to go ahead and just change the title here to Random Choice Picker.
+
+3
+00:00:11,830 --> 00:00:13,480
+And let's go down here.
+
+4
+00:00:13,500 --> 00:00:15,630
+So we're going to have a container.
+
+5
+00:00:15,630 --> 00:00:16,830
+We can get rid of the H1.
+
+6
+00:00:17,490 --> 00:00:25,110
+Let's put a class of container here and inside the container will have an H3 and let's say enter all
+
+7
+00:00:25,110 --> 00:00:25,710
+of.
+
+8
+00:00:28,530 --> 00:00:35,850
+Enter all of the choices divided by a comma.
+
+9
+00:00:37,020 --> 00:00:45,360
+Go ahead and just specify what a comma is, Floren and then let's do a line break here and then we'll
+
+10
+00:00:45,360 --> 00:00:53,110
+say, press enter when you are done.
+
+11
+00:00:54,750 --> 00:00:55,170
+All right.
+
+12
+00:00:55,200 --> 00:00:58,590
+So under the H three, let's put a text area.
+
+13
+00:00:59,950 --> 00:01:07,480
+And this is going to have an I.D., we'll call text area real creative and let's have we don't need
+
+14
+00:01:07,480 --> 00:01:13,000
+this stuff here because we're going to style of a success and then we don't need a name.
+
+15
+00:01:14,020 --> 00:01:15,430
+I do want a placeholder, though.
+
+16
+00:01:15,430 --> 00:01:17,170
+So it's a placeholder.
+
+17
+00:01:19,240 --> 00:01:24,000
+And we'll go ahead and set that to enter choices here.
+
+18
+00:01:24,040 --> 00:01:24,850
+Dot, dot, dot.
+
+19
+00:01:26,590 --> 00:01:32,320
+Now, under the text area, we're going to have an area for the tags, so we'll give this an idea of
+
+20
+00:01:32,320 --> 00:01:41,650
+tags and the these are going to be span's with the class of tag and obviously with some text of the
+
+21
+00:01:41,650 --> 00:01:42,430
+different choices.
+
+22
+00:01:42,430 --> 00:01:44,800
+But this is going to get inserted with the JavaScript.
+
+23
+00:01:45,070 --> 00:01:48,780
+However, for now, I'm just going to hardcoded just so we can see it in style it.
+
+24
+00:01:48,790 --> 00:01:50,930
+So we'll just create a tag here.
+
+25
+00:01:50,950 --> 00:01:52,300
+It's a choice one.
+
+26
+00:01:52,900 --> 00:01:58,510
+We'll just add three of these civil two to three and save.
+
+27
+00:01:58,720 --> 00:02:09,150
+OK, so that should do it for the HTML is jump into our success and let's so font family will just keep
+
+28
+00:02:09,150 --> 00:02:09,610
+our bottle.
+
+29
+00:02:09,610 --> 00:02:11,520
+That's violence at a background color.
+
+30
+00:02:14,730 --> 00:02:22,770
+Background color is going to be hexadecimal value to be eight eight F zero, which is a blue color,
+
+31
+00:02:23,550 --> 00:02:30,420
+and we have display Flex and Flex Direction columns center.
+
+32
+00:02:33,270 --> 00:02:34,600
+So all this is fine.
+
+33
+00:02:35,700 --> 00:02:42,360
+So now the H3, let's give that a color of white on that blue background.
+
+34
+00:02:42,360 --> 00:02:44,330
+And let's also just add a little bit of margin.
+
+35
+00:02:44,340 --> 00:02:47,810
+We'll do 10 pixels, zero, 20 pixels for the margin.
+
+36
+00:02:49,020 --> 00:02:51,880
+You know, let's change the font to Molly.
+
+37
+00:02:53,130 --> 00:03:03,930
+So success questionmark family equals Molly and let's right here in the body and change this.
+
+38
+00:03:06,370 --> 00:03:10,810
+There we go, so that's a little bit more readable and then for the container.
+
+39
+00:03:13,760 --> 00:03:22,190
+Also, the a whiff of the container to 500 pixels and actually that should do it, so have 500 pixel
+
+40
+00:03:22,190 --> 00:03:22,880
+container,
+
+41
+00:03:26,300 --> 00:03:27,810
+let's do the text area.
+
+42
+00:03:27,830 --> 00:03:33,680
+So that has a class of text area and I want to get rid of the border.
+
+43
+00:03:33,680 --> 00:03:35,210
+So say border none.
+
+44
+00:03:36,230 --> 00:03:39,620
+And let's make this a block level element.
+
+45
+00:03:39,630 --> 00:03:46,700
+So display block and we're going to set the width to 100 percent of its container.
+
+46
+00:03:49,440 --> 00:03:57,840
+Which is not working, and that's because I gave it an idea of text area, so we'll just sort of style
+
+47
+00:03:57,840 --> 00:03:58,730
+the text area.
+
+48
+00:03:58,740 --> 00:04:00,030
+So just take away that dot.
+
+49
+00:04:00,030 --> 00:04:00,900
+There's no class.
+
+50
+00:04:01,950 --> 00:04:06,000
+The height of this is going to be 100 hundred pixels.
+
+51
+00:04:07,170 --> 00:04:19,020
+And let's inherit the family of Molly and then let's add some padding, do 10 pixels padding.
+
+52
+00:04:19,590 --> 00:04:27,810
+And as far as margin goes, we'll do zero zero 20 pixels, and then let's make the font size a little
+
+53
+00:04:27,810 --> 00:04:29,460
+bigger, 16 pixels.
+
+54
+00:04:31,260 --> 00:04:33,790
+And then that should be good for the text area.
+
+55
+00:04:34,380 --> 00:04:35,640
+Now for the tags.
+
+56
+00:04:35,640 --> 00:04:43,500
+So we have span's with the class of tag and we're going to add a background color.
+
+57
+00:04:46,080 --> 00:04:54,870
+So background color is going to be F zero nine three to be it's going to be the background and the color
+
+58
+00:04:54,870 --> 00:05:05,850
+of the text is going to be white and we're going to add a border radius of three pixels and I'm sorry,
+
+59
+00:05:05,850 --> 00:05:07,740
+not three pixels, 50 pixels.
+
+60
+00:05:10,450 --> 00:05:16,450
+And patting will do 10 top and bottom, 20 left and right.
+
+61
+00:05:17,390 --> 00:05:29,020
+And let's spread them out a bit so we'll add margin to zero, top five, 10 and zero and the font size,
+
+62
+00:05:29,030 --> 00:05:31,220
+I'm going to make 14 pixels.
+
+63
+00:05:31,610 --> 00:05:32,840
+Make that a little smaller.
+
+64
+00:05:32,870 --> 00:05:36,470
+Let's display as in line block.
+
+65
+00:05:38,920 --> 00:05:47,650
+And yes, that should do it now when it selects, you know, when it selects something at random, it's
+
+66
+00:05:47,650 --> 00:05:49,260
+going to have a background color.
+
+67
+00:05:49,690 --> 00:05:53,980
+So we'll have in addition to tag, it will have a class of highlight.
+
+68
+00:05:55,120 --> 00:06:05,170
+And I just want to change the background color to hexadecimal value, 273, C 75.
+
+69
+00:06:05,170 --> 00:06:13,420
+And just to see what that looks like at, say, the second one here, we add highlights and the highlighted
+
+70
+00:06:13,420 --> 00:06:14,470
+one will look like that.
+
+71
+00:06:15,850 --> 00:06:18,800
+OK, so that's it for the user interface here.
+
+72
+00:06:19,240 --> 00:06:22,810
+So in the next video, we'll go ahead and we'll start to add our JavaScript.

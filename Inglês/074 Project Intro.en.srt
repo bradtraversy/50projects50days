@@ -1,0 +1,31 @@
+1
+00:00:00,330 --> 00:00:03,550
+All right, guys, this is going to be a pretty quick project.
+
+2
+00:00:03,570 --> 00:00:05,060
+It should only be one video.
+
+3
+00:00:05,250 --> 00:00:11,250
+We're going to create this kinetic loader where we have these two triangles created with proccess and
+
+4
+00:00:11,250 --> 00:00:15,690
+we're going to add this animation so that they rotate and one follows another.
+
+5
+00:00:15,970 --> 00:00:16,350
+All right.
+
+6
+00:00:16,360 --> 00:00:22,440
+So we're going to look at creating keyframes and also how to create these triangles using borders.
+
+7
+00:00:22,710 --> 00:00:23,070
+All right.
+
+8
+00:00:23,070 --> 00:00:24,240
+Let's go ahead and get into it.

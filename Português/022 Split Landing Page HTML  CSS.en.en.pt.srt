@@ -1,0 +1,751 @@
+﻿1
+00:00:00,180 --> 00:00:06,450
+OK, então vamos começar agora, este projeto é muito pesado, é isso que vamos principalmente
+
+2
+00:00:06,450 --> 00:00:07,430
+estar focando.
+
+3
+00:00:07,620 --> 00:00:11,010
+Precisamos adicionar algum JavaScript para ter o efeito de foco.
+
+4
+00:00:11,010 --> 00:00:13,320
+Mas muito disso vai ser estilo.
+
+5
+00:00:13,680 --> 00:00:16,320
+Então o HTML vai ser bem simples.
+
+6
+00:00:16,320 --> 00:00:17,760
+Vamos pular bem aqui.
+
+7
+00:00:17,760 --> 00:00:22,140
+E esta é uma página de destino dividida.
+
+8
+00:00:22,980 --> 00:00:24,480
+E não sei, acabei de fazer isso.
+
+9
+00:00:26,820 --> 00:00:28,830
+E vamos nos livrar deste.
+
+10
+00:00:28,830 --> 00:00:35,300
+E vamos embrulhar tudo em um container e então teremos a esquerda e a direita.
+
+11
+00:00:35,310 --> 00:00:38,820
+Então, ambos terão uma classe de divisão.
+
+12
+00:00:39,510 --> 00:00:41,430
+E esta será a esquerda.
+
+13
+00:00:41,460 --> 00:00:43,470
+Então, também daremos uma classe de esquerda.
+
+14
+00:00:44,160 --> 00:00:45,930
+E então e aqui será.
+
+15
+00:00:46,470 --> 00:00:53,910
+Vamos fazer um H1, digamos, PlayStation cinco, que definitivamente é minha escolha.
+
+16
+00:00:54,670 --> 00:00:57,570
+E então teremos um link formatado como um botão.
+
+17
+00:00:57,570 --> 00:01:03,380
+Então, vou dar a isso uma classe de B10 e não vai realmente ir a lugar nenhum.
+
+18
+00:01:03,720 --> 00:01:06,850
+E então para o texto aqui, vamos dizer adeus agora.
+
+19
+00:01:07,650 --> 00:01:11,250
+OK, e então o que faremos é apenas copiar isso.
+
+20
+00:01:11,880 --> 00:01:16,710
+Então, todo esse div aqui, vamos copiar isso e apenas mudar isso para.
+
+21
+00:01:16,710 --> 00:01:17,280
+Certo.
+
+22
+00:01:18,060 --> 00:01:27,150
+Portanto, este é o lado certo e vamos mudar isso para o Xbox Series X e agora.
+
+23
+00:01:27,210 --> 00:01:27,790
+E é isso.
+
+24
+00:01:27,810 --> 00:01:31,140
+Um html muito simples vai ficar assim.
+
+25
+00:01:31,740 --> 00:01:36,180
+Então vamos pular para nossa folha de estilo, vou usar a fonte Roboto, então vamos manter
+
+26
+00:01:36,180 --> 00:01:36,630
+este.
+
+27
+00:01:36,960 --> 00:01:42,750
+E então para o corpo, não vou usar Flex, então vou me livrar de tudo isso.
+
+28
+00:01:43,560 --> 00:01:46,190
+E sim, então isso deve estar tudo pronto para o corpo.
+
+29
+00:01:47,220 --> 00:01:50,730
+Agora estou tentando descobrir o que devemos estilizar primeiro.
+
+30
+00:01:50,790 --> 00:01:54,540
+Vamos fazer vamos fazer o conteúdo.
+
+31
+00:01:54,540 --> 00:01:56,990
+Parece que o título no botão.
+
+32
+00:01:57,300 --> 00:02:01,710
+Então vamos começar com o container que envolve tudo.
+
+33
+00:02:01,710 --> 00:02:10,950
+Queremos posicioná-lo para ser relativo e queremos que tenha uma largura de 100 por cento e uma altura
+
+34
+00:02:11,490 --> 00:02:19,150
+de 100 por cento e, em seguida, o plano de fundo para que dois, três, três, três, que é um cinza escuro.
+
+35
+00:02:20,410 --> 00:02:21,570
+Tudo bem.
+
+36
+00:02:21,570 --> 00:02:29,550
+E este espaço aqui em cima é da margem no título agora para a divisão.
+
+37
+00:02:29,670 --> 00:02:32,250
+Lembre-se, ambos os lados têm uma classe de divisão.
+
+38
+00:02:33,180 --> 00:02:42,630
+Então, vamos posicionar a divisão absoluta dentro do contêiner e a largura será de 50%.
+
+39
+00:02:42,630 --> 00:02:46,290
+Então cada um será 50 por cento, a altura será 100 por cento.
+
+40
+00:02:46,770 --> 00:02:50,730
+E o estouro, queremos que fique escondido.
+
+41
+00:02:53,360 --> 00:02:53,760
+Tudo bem.
+
+42
+00:02:53,760 --> 00:02:55,080
+Então agora está posicionado.
+
+43
+00:02:55,860 --> 00:02:57,810
+Vamos fazer isso, o lado esquerdo.
+
+44
+00:02:57,990 --> 00:03:07,890
+Então, se dissermos dividir e quisermos atingir o lado esquerdo, então, à esquerda, vou definir a partir do zero esquerdo.
+
+45
+00:03:09,510 --> 00:03:14,590
+E vamos adicionar o fundo, que será neutro.
+
+46
+00:03:15,090 --> 00:03:20,010
+Agora, eu ainda não trouxe as imagens para isso, então vou pegar essas e você pode
+
+47
+00:03:20,010 --> 00:03:22,350
+obtê-los no repositório.
+
+48
+00:03:22,860 --> 00:03:25,380
+E, claro, você pode usar as imagens que quiser.
+
+49
+00:03:25,840 --> 00:03:29,910
+Então, eu só vou trazer isso para que tenhamos os cinco do Xbox.
+
+50
+00:03:30,540 --> 00:03:32,550
+Então essas são as duas imagens que estou usando.
+
+51
+00:03:33,270 --> 00:03:37,050
+O lado esquerdo vai ser o cinco.
+
+52
+00:03:37,050 --> 00:03:44,490
+Aqui, digamos JPEG, OK, para que possamos ver o plano de fundo e adicionar uma sobreposição ao
+
+53
+00:03:44,490 --> 00:03:47,100
+cada lado, mas pelo menos temos o pano de fundo.
+
+54
+00:03:47,460 --> 00:03:53,910
+E então eu só quero definir o plano de fundo, digamos, repetir o plano de fundo.
+
+55
+00:03:53,910 --> 00:03:59,940
+Vou definir para sem repetição e tamanho de fundo, vou definir para cobrir.
+
+56
+00:03:59,940 --> 00:04:01,800
+Assim vemos tudo.
+
+57
+00:04:02,820 --> 00:04:03,240
+Tudo bem.
+
+58
+00:04:03,240 --> 00:04:03,980
+Então isso é bom.
+
+59
+00:04:04,350 --> 00:04:07,350
+Agora para a sobreposição, na verdade.
+
+60
+00:04:07,350 --> 00:04:09,660
+Vamos fazer o certo primeiro e depois vamos fazer a sobreposição.
+
+61
+00:04:09,660 --> 00:04:13,500
+Então vamos dizer dividir com a classe de.
+
+62
+00:04:13,500 --> 00:04:14,040
+Certo.
+
+63
+00:04:15,600 --> 00:04:17,670
+E queremos posicionar isso no lado direito.
+
+64
+00:04:17,670 --> 00:04:22,230
+Então, do zero à direita e vamos adicionar o plano de fundo.
+
+65
+00:04:23,100 --> 00:04:28,170
+Portanto, o plano de fundo será neutro e será o Xbox JPEG.
+
+66
+00:04:29,040 --> 00:04:32,190
+E vamos definir o plano de fundo.
+
+67
+00:04:33,800 --> 00:04:35,430
+Esqueci meu ponto e vírgula aqui.
+
+68
+00:04:36,630 --> 00:04:43,440
+Portanto, a repetição do plano de fundo não será repetida no tamanho do plano de fundo a ser coberto.
+
+69
+00:04:44,010 --> 00:04:44,400
+Tudo bem.
+
+70
+00:04:44,400 --> 00:04:45,270
+Então eu guardo isso.
+
+71
+00:04:45,270 --> 00:04:50,880
+Agora temos as duas imagens lado a lado, então agora vamos fazer as sobreposições.
+
+72
+00:04:50,880 --> 00:04:52,920
+Então vamos começar com a sobreposição esquerda.
+
+73
+00:04:53,730 --> 00:04:58,650
+Então vamos usar split left e então o pseudo seletor anterior sokolenko eles antes.
+
+74
+00:04:59,190 --> 00:04:59,930
+E nós somos assim.
+
+75
+00:04:59,960 --> 00:05:05,880
+Na verdade, estilizar como você pode pensar nele como um elemento fantasma que vamos colocar à esquerda
+
+76
+00:05:05,880 --> 00:05:11,580
+lado, então quando usamos antes ou depois, temos que usar uma propriedade de conteúdo e vamos colocar
+
+77
+00:05:11,790 --> 00:05:13,530
+em apenas uma string vazia para isso.
+
+78
+00:05:14,130 --> 00:05:23,520
+E então queremos posicionar isso como absoluto e terá uma largura de 100 por cento de sua
+
+79
+00:05:23,520 --> 00:05:24,210
+recipiente.
+
+80
+00:05:24,240 --> 00:05:25,140
+Mesma coisa com a altura.
+
+81
+00:05:25,260 --> 00:05:27,000
+Isso também vai ser 100 por cento.
+
+82
+00:05:27,630 --> 00:05:31,110
+E então queremos a sobreposição, que será uma cor de fundo.
+
+83
+00:05:32,760 --> 00:05:38,350
+Agora, vou colocar isso em uma propriedade ou variável personalizada para facilitar a alteração.
+
+84
+00:05:39,420 --> 00:05:48,750
+Então vamos fazer Vare e vamos chamar esse traço traço à esquerda, traço BGI traço cor.
+
+85
+00:05:49,620 --> 00:05:52,450
+OK, e então vamos até o topo aqui.
+
+86
+00:05:52,450 --> 00:05:55,530
+E queremos definir em um escopo raiz.
+
+87
+00:05:58,620 --> 00:06:07,860
+Traço, traço, como eu chamo, traço esquerdo, BG, cor do traço, e vai ser vermelho, verde,
+
+88
+00:06:07,860 --> 00:06:12,860
+alfa azul porque precisávamos ter alguma transparência para que pudéssemos ver a imagem por trás da sobreposição.
+
+89
+00:06:13,290 --> 00:06:15,420
+Então a cor vai ser uma cor azulada.
+
+90
+00:06:15,420 --> 00:06:24,720
+Então 87 para vermelho, 84 para verde e 236 para azul, e então para o valor alfa será zero vírgula sete.
+
+91
+00:06:25,470 --> 00:06:25,860
+Tudo bem.
+
+92
+00:06:25,860 --> 00:06:30,570
+Então, se eu salvar isso, posso ver que temos essa sobreposição azul e, enquanto estamos nisso, podemos
+
+93
+00:06:30,570 --> 00:06:32,760
+bem como fazer a sobreposição direita.
+
+94
+00:06:32,770 --> 00:06:37,920
+Então vamos mudar isso para escrever uma cor grande.
+
+95
+00:06:38,850 --> 00:06:44,500
+E isso vai ser um pouco mais claro que os pretos.
+
+96
+00:06:44,570 --> 00:06:48,180
+Vamos fazer 43 para vermelho, verde e azul.
+
+97
+00:06:49,410 --> 00:06:57,810
+E então para o valor alfa, vamos fazer zero vírgula oito e então vamos descer aqui e onde temos
+
+98
+00:06:57,810 --> 00:07:01,500
+nossa separação saiu antes.
+
+99
+00:07:01,500 --> 00:07:08,620
+Eu só vou pegar isso e ir para a direita aqui e vamos mudar isso para ponto dividido.
+
+100
+00:07:08,730 --> 00:07:09,210
+Certo.
+
+101
+00:07:10,020 --> 00:07:11,730
+Então agora estamos mirando no lado direito.
+
+102
+00:07:12,300 --> 00:07:19,500
+E vamos ver, este material aqui vai ser o mesmo, 100 por cento, e então a cor vai
+
+103
+00:07:19,500 --> 00:07:28,170
+para ser a cor certa, o que só faz com que você saiba, é como um cinza, cinza escuro.
+
+104
+00:07:29,400 --> 00:07:29,790
+Tudo bem.
+
+105
+00:07:29,800 --> 00:07:30,660
+Então isso é bom.
+
+106
+00:07:30,810 --> 00:07:35,900
+Agora é você tentando pensar o que eu quero fazer a seguir.
+
+107
+00:07:35,910 --> 00:07:39,480
+Vamos discar estilizar o conteúdo agora que está dentro dele.
+
+108
+00:07:39,840 --> 00:07:45,260
+Então temos o texto, o H1 e o botão que queremos estilizar.
+
+109
+00:07:45,270 --> 00:07:49,740
+Então vamos fazer o H1 primeiro e eu vou colocar isso aqui em cima.
+
+110
+00:07:50,910 --> 00:07:52,110
+Veja cada um.
+
+111
+00:07:53,520 --> 00:07:55,310
+Vou aumentar o tamanho da fonte.
+
+112
+00:07:55,320 --> 00:08:03,210
+Vamos fazer as unidades do fórum e a cor vai ser branca e queremos posicioná-la.
+
+113
+00:08:03,360 --> 00:08:06,570
+Então é a posição absoluta.
+
+114
+00:08:06,580 --> 00:08:12,750
+Então vai ser a posição absoluta em qualquer lado aqui e queremos que cada um esteja no
+
+115
+00:08:12,750 --> 00:08:13,300
+meio.
+
+116
+00:08:14,760 --> 00:08:22,920
+Então o que vamos fazer é dizer 50% da esquerda e 20% do topo.
+
+117
+00:08:22,950 --> 00:08:28,650
+Agora, se eu fizer isso, colocará o início do H1 bem no meio.
+
+118
+00:08:28,650 --> 00:08:29,520
+E não é isso que eu quero.
+
+119
+00:08:29,520 --> 00:08:33,300
+Eu quero o meio do H1 no meio do lado.
+
+120
+00:08:33,600 --> 00:08:41,730
+Então, para fazer isso, só precisamos adicionar uma transformação e vamos transformar na tradução X.
+
+121
+00:08:42,120 --> 00:08:46,020
+Então, vamos movê-lo no eixo X, menos 50%.
+
+122
+00:08:47,100 --> 00:08:50,250
+E agora vai colocar, sabe, bem no meio.
+
+123
+00:08:50,260 --> 00:08:54,380
+Agora, eu não quero que eles passem para o próximo slide.
+
+124
+00:08:54,390 --> 00:08:57,240
+Eu não quero que isso envolva, mesmo que isso seja menor.
+
+125
+00:08:57,240 --> 00:09:00,510
+Como se eu gastasse isso, é em uma linha.
+
+126
+00:09:00,510 --> 00:09:02,990
+Mas mesmo que seja menor assim, não quero que enrole.
+
+127
+00:09:03,330 --> 00:09:05,940
+Então, precisamos definir a propriedade whitespace.
+
+128
+00:09:06,510 --> 00:09:10,950
+Então, digamos espaço em branco e vamos defini-lo como sem envoltório.
+
+129
+00:09:11,220 --> 00:09:17,040
+Então agora, mesmo que, você sabe, mesmo que seja assim, ainda não vai fazer rap, que é o que eu
+
+130
+00:09:17,040 --> 00:09:17,370
+querer.
+
+131
+00:09:18,750 --> 00:09:20,220
+OK, então é esse.
+
+132
+00:09:21,180 --> 00:09:23,310
+E agora acho que o que faremos é estilizar o botão.
+
+133
+00:09:23,310 --> 00:09:28,850
+E então, no próximo vídeo, faremos o hover e adicionaremos nosso JavaScript e o resto da temporada.
+
+134
+00:09:29,220 --> 00:09:30,240
+Mas vamos discar o botão.
+
+135
+00:09:30,260 --> 00:09:36,030
+Então isso tem uma classe de botões e vai fechar isso.
+
+136
+00:09:36,300 --> 00:09:39,360
+Então, a primeira coisa que vou fazer aqui é posicioná-lo.
+
+137
+00:09:39,360 --> 00:09:41,910
+Então vamos dizer posição absoluta.
+
+138
+00:09:42,540 --> 00:09:48,990
+Ele vai posicionar o absoluto dentro de seu contêiner, dentro de seu lado, e queremos que ele esteja em
+
+139
+00:09:48,990 --> 00:09:49,470
+o meio.
+
+140
+00:09:49,470 --> 00:09:57,480
+Então vamos dizer que deixou 50 por cento e vamos fazer de cima vai dizer 40 por cento.
+
+141
+00:09:58,080 --> 00:10:00,840
+Agora, isso vai colocar o começo disso no meio, certo.
+
+142
+00:10:00,870 --> 00:10:02,760
+Então este ano queremos o meio no meio.
+
+143
+00:10:02,760 --> 00:10:13,680
+Então vamos adicionar tendências de forma, transformar e então traduzir X negativo 50 por cento.
+
+144
+00:10:13,680 --> 00:10:15,090
+Isso vai colocá-lo bem no meio.
+
+145
+00:10:16,530 --> 00:10:19,680
+E então vamos tirar esse sublinhado.
+
+146
+00:10:19,680 --> 00:10:29,220
+Portanto, a decoração de texto não será nenhuma e a cor será branca e adicionaremos uma borda
+
+147
+00:10:29,220 --> 00:10:31,050
+de brancos.
+
+148
+00:10:31,050 --> 00:10:35,130
+Então isso e sólido e a largura.
+
+149
+00:10:35,130 --> 00:10:38,460
+Eu vou usar uma unidade RIM, então apenas aponte para o espaço para a largura.
+
+150
+00:10:39,480 --> 00:10:46,890
+OK, então temos nossa borda, vamos fazer o tamanho da fonte, vamos fazer um espaço para o tamanho da fonte e depois
+
+151
+00:10:47,850 --> 00:10:53,520
+para a largura do botão faremos quinze REM.
+
+152
+00:10:53,940 --> 00:10:57,420
+E então vamos adicionar preenchimento de um ponto.
+
+153
+00:10:57,520 --> 00:11:06,220
+Cinco da manhã e queremos que o texto fique no meio, então o que vou fazer é exibir
+
+154
+00:11:07,720 --> 00:11:14,280
+como flex e, em seguida, centralizaremos os itens de linha e justificaremos o centro de conteúdo.
+
+155
+00:11:16,930 --> 00:11:18,490
+E vamos também torná-lo ousado.
+
+156
+00:11:18,490 --> 00:11:25,000
+Então vamos ver direito no tamanho da fonte vai dizer o peso da fonte e definir isso para negrito.
+
+157
+00:11:27,070 --> 00:11:29,250
+E eu quero que seja em maiúsculas também.
+
+158
+00:11:29,260 --> 00:11:34,650
+Então adicione texto, transforme em maiúsculas.
+
+159
+00:11:36,370 --> 00:11:43,370
+OK, então parece muito bom e acho que é isso no que diz respeito aos estilos de botão.
+
+160
+00:11:44,050 --> 00:11:49,060
+Agora queremos ter C sim.
+
+161
+00:11:49,060 --> 00:11:54,570
+Queremos ter uma cor de fundo quando passamos o mouse sobre eles.
+
+162
+00:11:55,780 --> 00:12:01,620
+Então, vamos definir isso como uma variável aqui em cima para que possam ser facilmente alteradas.
+
+163
+00:12:02,020 --> 00:12:13,800
+Então, vamos dizer traço traço esquerdo, vamos fazer esquerda btn então esquerda Betty e traço pairar cor do traço.
+
+164
+00:12:14,890 --> 00:12:22,300
+E isso realmente vai ser o mesmo que isso, exceto sem transparência.
+
+165
+00:12:22,300 --> 00:12:25,780
+Então, em vez de zero vírgula sete para o valor alfa, fará um.
+
+166
+00:12:26,410 --> 00:12:26,850
+Tudo bem.
+
+167
+00:12:26,860 --> 00:12:36,660
+E então para a direita, digamos que o botão direito passe o mouse e isso será algo diferente.
+
+168
+00:12:36,670 --> 00:12:44,680
+Vai ser o Xbox Green que tem vinte e oito um vinte e dois vinte e oito.
+
+169
+00:12:44,950 --> 00:12:46,240
+E vamos mantê-lo sólido.
+
+170
+00:12:46,250 --> 00:12:46,930
+Então um.
+
+171
+00:12:47,710 --> 00:12:51,370
+E agora podemos descer aqui para o botão
+
+172
+00:12:54,160 --> 00:13:07,450
+e vamos adicionar, digamos dividir ponto esquerdo btn hover e queremos definir o plano de fundo, digamos um plano de fundo
+
+173
+00:13:07,450 --> 00:13:07,900
+cor.
+
+174
+00:13:07,900 --> 00:13:15,430
+Vamos definir isso para a variável ou a propriedade personalizada da cor de foco do botão esquerdo traço traço
+
+175
+00:13:16,720 --> 00:13:22,630
+e a cor da borda porque tem uma borda branca por padrão, na verdade quer que a borda seja a mesma
+
+176
+00:13:22,630 --> 00:13:23,560
+como isso também.
+
+177
+00:13:23,560 --> 00:13:27,740
+Então vamos mudar a cor da borda para isso.
+
+178
+00:13:27,760 --> 00:13:34,150
+Então, se eu passar por cima e passar o mouse, OK, nada está acontecendo quando eu me divido.
+
+179
+00:13:37,550 --> 00:13:43,240
+Botão esquerdo dividido, cor de fundo do mouse.
+
+180
+00:13:47,020 --> 00:13:48,850
+Ah, esqueci meu ponto e vírgula aqui.
+
+181
+00:13:49,390 --> 00:13:55,620
+Tudo bem, agora pegamos aquele hover azul, certo, e então faremos o mesmo para o lado direito.
+
+182
+00:13:55,630 --> 00:14:10,540
+Então vamos pegar isso e mudar isso para direitos e mudar isso e isso para certo também.
+
+183
+00:14:10,690 --> 00:14:15,820
+Agora, venha aqui e pegamos a tela do Xbox, no entanto, chame-a assim no próximo vídeo, temos
+
+184
+00:14:15,820 --> 00:14:17,050
+um pouco mais de acesso.
+
+185
+00:14:17,050 --> 00:14:17,410
+Certo.
+
+186
+00:14:17,410 --> 00:14:20,590
+Porque temos que lidar com a largura que queremos quando passamos o mouse.
+
+187
+00:14:20,750 --> 00:14:27,220
+E, claro, temos que adicionar o efeito hover adicionando, adicionando e removendo classes com JavaScript.
+
+188
+00:14:27,230 --> 00:14:29,170
+Então vamos entrar nisso no próximo vídeo.

@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:05,220
+The guys in this project, we're going to build a testimonial box widget and you can see that it shows
+
+2
+00:00:05,220 --> 00:00:07,860
+a testimonial with a user with a progress bar.
+
+3
+00:00:08,070 --> 00:00:13,200
+And after 10 seconds, when this progress bar hits the end, it's going to go ahead and switch to the
+
+4
+00:00:13,200 --> 00:00:14,340
+next testimonial.
+
+5
+00:00:14,580 --> 00:00:21,870
+So basically will have an array in our in our JavaScript with the text, the image, our link to the
+
+6
+00:00:21,870 --> 00:00:28,590
+image, the name, the role, and basically switch it every time that this progress bar is up.
+
+7
+00:00:28,590 --> 00:00:29,820
+So every 10 seconds.
+
+8
+00:00:30,000 --> 00:00:37,450
+So we'll be using set interval to do that and we'll create this animation using key frames in the CSFs.
+
+9
+00:00:37,860 --> 00:00:38,190
+All right.
+
+10
+00:00:38,190 --> 00:00:39,030
+So let's get to it.

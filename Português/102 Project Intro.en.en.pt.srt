@@ -1,0 +1,55 @@
+﻿1
+00:00:00,270 --> 00:00:05,790
+Tudo bem, então este será apenas um pequeno projeto divertido onde nós realmente pegamos algumas caixas de seleção
+
+2
+00:00:05,790 --> 00:00:11,310
+e nós os estilizamos para se parecerem com esses pequenos sliders aqui com essas bolinhas que podemos animar
+
+3
+00:00:11,610 --> 00:00:12,580
+vai e volta.
+
+4
+00:00:12,990 --> 00:00:18,330
+OK, então vamos adicionar um pouco de sucesso e estilizá-los com sucesso e, em seguida, adicionar algumas animações
+
+5
+00:00:18,330 --> 00:00:19,460
+para dar esse efeito.
+
+6
+00:00:19,860 --> 00:00:24,990
+E, finalmente, vamos adicionar um pouco de lógica JavaScript, porque quando você tem um projeto,
+
+7
+00:00:25,500 --> 00:00:28,430
+você raramente consegue que seja bom, barato e rápido.
+
+8
+00:00:28,440 --> 00:00:36,320
+Então, basicamente, se escolhermos bom barato e clicarmos rápido, vai desmarcar sexo barato.
+
+9
+00:00:36,390 --> 00:00:39,560
+Então, podemos fazer com que seja bom e rápido, mas não será barato.
+
+10
+00:00:40,110 --> 00:00:47,460
+Podemos fazer barato e rápido e podemos fazer barato e bom, mas não podemos fazer os três porque isso é muito
+
+11
+00:00:47,460 --> 00:00:47,760
+cru.
+
+12
+00:00:47,770 --> 00:00:50,880
+Então é só um pouco, é divertido adicionar um pouco de lógica a isso.
+
+13
+00:00:51,120 --> 00:00:58,130
+Mas, você sabe, você pode usar esses pequenos widgets deslizantes dentro de suas interfaces de usuário e sites.
+
+14
+00:00:58,350 --> 00:00:59,940
+Então vamos em frente e começar.

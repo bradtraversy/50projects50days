@@ -1,0 +1,59 @@
+1
+00:00:00,150 --> 00:00:05,130
+All right, so this is kind of a cool little project, basically we're going to just track glasses of
+
+2
+00:00:05,130 --> 00:00:12,270
+water or cups of water and basically we have a goal of two leaders and we have this big cup here and
+
+3
+00:00:12,300 --> 00:00:13,530
+this is just all success.
+
+4
+00:00:13,530 --> 00:00:16,760
+So we're going to style this and then add some JavaScript functionality.
+
+5
+00:00:16,770 --> 00:00:22,410
+So if I click on this first one here, you can see that we have twelve point five percent of our two
+
+6
+00:00:22,410 --> 00:00:22,970
+leaders.
+
+7
+00:00:22,980 --> 00:00:25,740
+We have one point seventy five liters remaining.
+
+8
+00:00:26,160 --> 00:00:30,810
+And if I click on, like the fourth one here, it's going to not only highlight this one or fill this
+
+9
+00:00:30,830 --> 00:00:32,610
+cup, but all the way up to that cup.
+
+10
+00:00:32,850 --> 00:00:36,630
+And now you can see I have 50 percent and one leader remaining.
+
+11
+00:00:37,110 --> 00:00:42,600
+And then here, you know, zero point seven five remaining, sixty two point five I go to 100 percent
+
+12
+00:00:42,600 --> 00:00:43,700
+fills up the whole thing.
+
+13
+00:00:44,100 --> 00:00:49,350
+So I think it's a cool little project to kind of manipulate the dom, do a little bit of calculation
+
+14
+00:00:49,350 --> 00:00:50,300
+in the JavaScript.
+
+15
+00:00:50,610 --> 00:00:52,140
+So let's go ahead and get started.

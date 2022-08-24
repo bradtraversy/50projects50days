@@ -1,0 +1,495 @@
+﻿1
+00:00:00,150 --> 00:00:04,560
+Tudo bem, então vamos começar a fazer isso em um vídeo, porque não é
+
+2
+00:00:04,560 --> 00:00:05,130
+muito.
+
+3
+00:00:05,140 --> 00:00:12,510
+Então, vamos adicionar um título de feed de imagem aleatório e, em seguida, adicionaremos o mesmo para este aqui.
+
+4
+00:00:15,210 --> 00:00:20,220
+E tudo o que realmente precisamos no HTML é um container para colocar tudo para colocar nossas imagens.
+
+5
+00:00:20,220 --> 00:00:22,920
+Então é isso que vai ser para o HTML.
+
+6
+00:00:23,250 --> 00:00:28,080
+Agora, antes de fazermos qualquer estilo, eu só quero conseguir as imagens e colocá-las no dormitório aqui.
+
+7
+00:00:28,440 --> 00:00:34,910
+Na verdade, não estamos usando uma API, como não estamos fazendo uma solicitação para uma API que nos fornece imagens
+
+8
+00:00:34,920 --> 00:00:35,280
+URLs.
+
+9
+00:00:35,640 --> 00:00:40,280
+Vamos usar um Eurail aleatório da UN Splash.
+
+10
+00:00:40,290 --> 00:00:45,480
+Na verdade, vou apenas mostrar algumas para tornar um pouco mais fácil de entender se eu colocar isso.
+
+11
+00:00:45,480 --> 00:00:48,960
+Você viu anteriormente começar em splash ponto com barra aleatória.
+
+12
+00:00:49,650 --> 00:00:51,350
+Vai me dar uma imagem aleatória.
+
+13
+00:00:51,360 --> 00:00:53,940
+Agora, se eu recarregar, será a mesma imagem.
+
+14
+00:00:54,180 --> 00:01:00,120
+Então, o que queremos fazer em nosso script é criar um monte de tags de imagem com isso.
+
+15
+00:01:00,120 --> 00:01:01,690
+Mas também precisamos de um tamanho.
+
+16
+00:01:01,690 --> 00:01:05,190
+Assim como 300 vezes trezentos.
+
+17
+00:01:06,060 --> 00:01:16,890
+Dê-me uma imagem específica, se eu fizer três oh, uma vez qualquer, 302, isso vai me dar um diferente
+
+18
+00:01:16,890 --> 00:01:17,340
+imagem.
+
+19
+00:01:17,520 --> 00:01:20,910
+Então, queremos usar esses tamanhos de imagem também.
+
+20
+00:01:21,090 --> 00:01:22,710
+E esses devem ser aleatórios.
+
+21
+00:01:22,720 --> 00:01:25,200
+Então, a primeira coisa que faremos é trazer nosso contêiner.
+
+22
+00:01:27,540 --> 00:01:32,970
+E como estou indo aqui, se está ficando claro o que vou fazer, sugiro pausar
+
+23
+00:01:32,970 --> 00:01:34,650
+o vídeo e experimentá-lo você mesmo.
+
+24
+00:01:34,650 --> 00:01:36,750
+E eu sei que já disse isso várias vezes neste curso.
+
+25
+00:01:36,750 --> 00:01:42,740
+Eu provavelmente vou dizer isso mais um milhão de vezes, mas eu definitivamente, você sabe, recomendo fazer isso.
+
+26
+00:01:43,140 --> 00:01:45,750
+Então, vamos usar o seletor de consulta aqui.
+
+27
+00:01:45,750 --> 00:01:50,520
+E temos uma classe de contêiner.
+
+28
+00:01:50,910 --> 00:01:57,330
+Agora, a URL da UN que vamos usar, vou colocá-la em uma variável chamada Unflashy
+
+29
+00:01:57,330 --> 00:02:09,000
+URL, que é http s e, em seguida, vi Stotz em splash dot com slash barra aleatória.
+
+30
+00:02:09,630 --> 00:02:11,490
+Então é como a raiz Eurail.
+
+31
+00:02:11,490 --> 00:02:15,390
+Queremos ter um tamanho, mas vamos gerá-lo aleatoriamente.
+
+32
+00:02:15,720 --> 00:02:18,030
+Também vou colocar o número de linhas que queremos.
+
+33
+00:02:18,040 --> 00:02:22,280
+Então eu quero obter 10 linhas de imagens com três imagens em cada linha.
+
+34
+00:02:22,740 --> 00:02:28,590
+Então, teremos um loop for aqui e digamos que seja igual a zero.
+
+35
+00:02:28,860 --> 00:02:34,410
+E queremos dizer contanto que I seja menor do que o que quer que as linhas sejam.
+
+36
+00:02:34,410 --> 00:02:39,720
+Mas queremos multiplicar isso por três porque teremos três imagens por linha e queremos
+
+37
+00:02:39,720 --> 00:02:40,710
+para incrementar I.
+
+38
+00:02:41,730 --> 00:02:52,140
+E vamos criar uma tag de imagem para que possamos usar create elements desculpe, deve ser document dot, create
+
+39
+00:02:52,140 --> 00:02:57,210
+elementos e aqui vamos criar uma tag de imagem e depois para a fonte.
+
+40
+00:02:57,210 --> 00:03:03,450
+Então fonte de ponto de imagem, vamos definir isso para algum texto de volta com o.
+
+41
+00:03:04,910 --> 00:03:10,090
+No Splash You, Earl, mas também precisamos de um tamanho aleatório, então aqui embaixo teremos uma função.
+
+42
+00:03:10,550 --> 00:03:11,600
+Temos duas funções.
+
+43
+00:03:11,600 --> 00:03:16,400
+Um vai ser obter um número aleatório para obter um número aleatório.
+
+44
+00:03:18,440 --> 00:03:22,370
+E queremos um número aleatório entre trezentos e três, dez.
+
+45
+00:03:22,400 --> 00:03:24,550
+Então vamos retornar desta função.
+
+46
+00:03:25,130 --> 00:03:30,800
+Eu quero arredondar para baixo alguns pontos matemáticos e aqui queremos pegar pontos matemáticos aleatórios, o que nos dá
+
+47
+00:03:30,800 --> 00:03:37,580
+um decimal aleatório e queremos multiplicar isso por dez para nos dar, você sabe, um número aleatório entre
+
+48
+00:03:37,580 --> 00:03:38,360
+uma e dez.
+
+49
+00:03:38,750 --> 00:03:40,850
+Mas nós só queremos adicionar 300 a isso.
+
+50
+00:03:41,360 --> 00:03:49,340
+OK, então se eu subir aqui e ainda conseguir um número aleatório e olharmos em nosso console.
+
+51
+00:03:51,230 --> 00:03:58,970
+Obtemos 306 recarregando, três sete três três, três ou seis, então agora quero ter uma função para
+
+52
+00:03:58,970 --> 00:04:06,590
+obter um tamanho aleatório e um tamanho aleatório sendo, você sabe, três, uma vez três ou seis ou algo como
+
+53
+00:04:06,590 --> 00:04:06,950
+este.
+
+54
+00:04:07,400 --> 00:04:08,900
+Então vamos voltar aqui.
+
+55
+00:04:10,450 --> 00:04:18,190
+E as táticas que vamos fazer para obter números aleatórios fora da chave irão fazer às vezes
+
+56
+00:04:18,190 --> 00:04:22,670
+e X e, em seguida, outro obtém número aleatório.
+
+57
+00:04:23,380 --> 00:04:32,710
+Então, se subirmos aqui e consolarmos o log, obtermos um tamanho aleatório, teremos três ou nove por três ou sete,
+
+58
+00:04:33,100 --> 00:04:34,360
+há dois por três ou sete.
+
+59
+00:04:34,370 --> 00:04:36,210
+Portanto, há um monte de combinações diferentes.
+
+60
+00:04:36,490 --> 00:04:42,010
+Quero dizer, você pode obter uma imagem repetida, mas na verdade eu sei que não, porque quando você usa os tamanhos,
+
+61
+00:04:42,010 --> 00:04:43,020
+é sempre aleatório.
+
+62
+00:04:43,570 --> 00:04:44,260
+Eu acredito.
+
+63
+00:04:44,980 --> 00:04:48,160
+Então agora que podemos obter um tamanho aleatório, vamos subir aqui.
+
+64
+00:04:48,160 --> 00:04:54,280
+E logo depois disso no Splash you, Earl, vamos colocar um tamanho aleatório, certifique-se de
+
+65
+00:04:54,280 --> 00:04:58,690
+coloque seus parênteses e, em seguida, queremos apenas colocar isso no contêiner.
+
+66
+00:04:58,690 --> 00:05:04,570
+Então, pegaremos o contêiner e anexaremos filho porque estamos colocando isso dentro do contêiner,
+
+67
+00:05:05,650 --> 00:05:11,800
+todas as imagens, e isso nos dará, você sabe, 10 linhas de três.
+
+68
+00:05:12,400 --> 00:05:16,830
+Então, se eu salvar isso, você verá que colocará todas aquelas imagens no dormitório.
+
+69
+00:05:18,880 --> 00:05:20,320
+Agora, queremos estilizá-los.
+
+70
+00:05:20,320 --> 00:05:21,910
+Você quer criar nossa rosa e outras coisas.
+
+71
+00:05:21,910 --> 00:05:25,360
+Então, em nossa folha de estilo, vamos em frente.
+
+72
+00:05:25,360 --> 00:05:33,250
+E para o corpo aqui, vamos manter a coluna display flex flex direction, alinhar tudo para
+
+73
+00:05:33,250 --> 00:05:33,790
+o Centro.
+
+74
+00:05:33,790 --> 00:05:37,030
+Vamos nos livrar do estouro oculto para que tenhamos a barra de rolagem.
+
+75
+00:05:38,680 --> 00:05:46,880
+E em vez de relatórios de altura 100, vamos fazer uma altura média de cem relatórios.
+
+76
+00:05:46,900 --> 00:05:48,580
+Então agora podemos ver o nosso título.
+
+77
+00:05:49,640 --> 00:05:50,060
+Tudo bem.
+
+78
+00:05:50,080 --> 00:05:54,400
+E então para o título, eu vou estilizar isso bem rápido.
+
+79
+00:05:54,400 --> 00:06:03,000
+Basta adicionar uma margem aqui de vamos fazer 10, Texel zero zero e vamos alinhar o texto ao centro.
+
+80
+00:06:03,010 --> 00:06:08,140
+Quer dizer, tecnicamente, não precisamos disso, mas vamos apenas adicioná-lo e depois para o contêiner.
+
+81
+00:06:10,660 --> 00:06:15,940
+Eu quero exibir flaks, lembre-se, todas as imagens estão no container, então se eu virar o container
+
+82
+00:06:15,940 --> 00:06:18,700
+em uma caixa flexível, ele os transforma em uma linha.
+
+83
+00:06:19,210 --> 00:06:24,310
+E eu quero apenas ter certeza de que os itens de linha e justifiquem o conteúdo para o centro.
+
+84
+00:06:24,970 --> 00:06:29,070
+E então vamos fazer com que eles passem para a próxima linha.
+
+85
+00:06:29,080 --> 00:06:32,320
+Então flexione, enrole, enrole.
+
+86
+00:06:34,060 --> 00:06:40,080
+E queremos que três sejam o máximo na linha.
+
+87
+00:06:40,090 --> 00:06:43,210
+Então, o que faremos é definir um max with no contêiner.
+
+88
+00:06:44,680 --> 00:06:51,280
+Então Max com fará mil pixels porque cada um terá trezentos pixels.
+
+89
+00:06:52,480 --> 00:06:54,400
+Então não deve passar disso.
+
+90
+00:06:54,940 --> 00:06:55,410
+Tudo bem.
+
+91
+00:06:55,720 --> 00:07:00,250
+E vamos mudar o tamanho, ver como eles são ligeiramente diferentes por causa dos tamanhos que são
+
+92
+00:07:00,250 --> 00:07:04,230
+todos na faixa de trezentos a 310, mas são ligeiramente diferentes.
+
+93
+00:07:04,240 --> 00:07:06,370
+Então vamos adicionar um tamanho para as imagens.
+
+94
+00:07:07,420 --> 00:07:08,510
+Então é isso para o recipiente.
+
+95
+00:07:08,530 --> 00:07:09,850
+Agora vamos fazer a imagem.
+
+96
+00:07:11,560 --> 00:07:18,430
+Então, vamos fazer a imagem do contêiner e vamos apenas fazer uma capa de ajuste de objeto.
+
+97
+00:07:18,430 --> 00:07:28,480
+Queremos ver a imagem inteira e então vamos colocar alguma margem entre isso e vamos definir a altura
+
+98
+00:07:28,870 --> 00:07:31,780
+a trezentos pixels, também a largura.
+
+99
+00:07:34,310 --> 00:07:42,500
+Para 300 pixels agora todos terão o mesmo tamanho e vamos fazer uma largura máxima de cem por cento
+
+100
+00:07:42,710 --> 00:07:45,750
+para que não saiam do recipiente e isso deve bastar.
+
+101
+00:07:45,860 --> 00:07:51,020
+Então, se eu recarregar, devemos obter um monte de imagens aleatórias diferentes.
+
+102
+00:07:52,490 --> 00:07:56,090
+E quero dizer, não será o mais performático porque estamos apenas, você sabe, estamos inserindo
+
+103
+00:07:56,090 --> 00:07:57,290
+todas essas tags de imagem.
+
+104
+00:07:57,290 --> 00:08:01,640
+Mas e alguns deles se repetirão se tiverem o mesmo tamanho, aparentemente.
+
+105
+00:08:02,660 --> 00:08:05,180
+Mas sim, devemos ter 10 linhas no total.
+
+106
+00:08:05,180 --> 00:08:10,630
+Então vamos ver, um, dois, três, quatro, cinco, seis, sete, oito, nove, 10.
+
+107
+00:08:10,910 --> 00:08:15,530
+E se você quiser, você pode mudar isso para, digamos, cinco linhas e salvar.
+
+108
+00:08:16,100 --> 00:08:24,190
+E agora você deve obter apenas cinco linhas de imagens e pode até colocar uma caixa de seleção aqui em um evento,
+
+109
+00:08:24,200 --> 00:08:25,400
+um evento de mudança para ele.
+
+110
+00:08:25,430 --> 00:08:31,160
+Quando você seleciona, você sabe, cinco ou 10 ou 20, você pode alterar as linhas e fazer algo como
+
+111
+00:08:31,160 --> 00:08:32,810
+que para adicionar a ele.
+
+112
+00:08:32,810 --> 00:08:34,160
+Mas isso é tudo que vamos fazer.
+
+113
+00:08:34,160 --> 00:08:35,290
+É responsivo.
+
+114
+00:08:35,300 --> 00:08:39,560
+Então, estamos usando o flex wrap, então ele irá para a próxima linha.
+
+115
+00:08:40,220 --> 00:08:45,320
+Então, em telas pequenas, quero dizer, as linhas, eu acho, você não sabe, não temos
+
+116
+00:08:45,320 --> 00:08:50,990
+dez linhas porque ou cinco linhas neste caso porque é só que tudo está empilhado.
+
+117
+00:08:50,990 --> 00:08:55,080
+Mas em tela cheia será qualquer número de linhas que você colocar aqui.
+
+118
+00:08:55,760 --> 00:08:56,120
+Tudo bem.
+
+119
+00:08:56,130 --> 00:09:01,070
+Então eu sei que este é um projeto muito simples, mas dá uma ideia de como você pode colocar
+
+120
+00:09:01,070 --> 00:09:02,210
+coisas para o dormitório.
+
+121
+00:09:02,210 --> 00:09:08,420
+Temos imagens aleatórias, tamanhos de imagem aleatórios e colocando-os no atributo source das imagens
+
+122
+00:09:08,420 --> 00:09:10,380
+e, em seguida, colocá-los no recipiente.
+
+123
+00:09:10,820 --> 00:09:11,620
+Tudo bem, é isso.
+
+124
+00:09:11,630 --> 00:09:13,340
+Vamos para o próximo projeto.

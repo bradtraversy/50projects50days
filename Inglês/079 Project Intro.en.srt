@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:04,200
+Hey, guys, this project, we're going to create something that's pretty simple, but also something
+
+2
+00:00:04,200 --> 00:00:07,560
+that's very useful that you see quite a bit, and that's a sticky nav.
+
+3
+00:00:07,770 --> 00:00:11,160
+So we have this over at the top of our little website here.
+
+4
+00:00:11,830 --> 00:00:14,240
+We're going to create this hero image with an overlay.
+
+5
+00:00:14,250 --> 00:00:17,040
+So we're going to style, you know, a little bit of this Web site here.
+
+6
+00:00:17,040 --> 00:00:20,040
+But the main point is the Navar that sticks to the top.
+
+7
+00:00:20,250 --> 00:00:25,350
+And when I scroll down and I hit a certain point, you can see that it does a few things.
+
+8
+00:00:25,350 --> 00:00:31,340
+It changes its color, it changes the text color and it lessens the padding and makes it smaller.
+
+9
+00:00:31,530 --> 00:00:36,600
+If I go back up to the top, it turns back black and adds that padding.
+
+10
+00:00:36,600 --> 00:00:38,610
+So we get that nice little effect.
+
+11
+00:00:38,820 --> 00:00:41,310
+And you see this a lot on different websites.
+
+12
+00:00:41,550 --> 00:00:46,910
+So we figured that it would be a nice addition to the course and to the projects.
+
+13
+00:00:47,190 --> 00:00:48,740
+So let's go ahead and get started.

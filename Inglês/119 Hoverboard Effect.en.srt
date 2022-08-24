@@ -1,0 +1,463 @@
+1
+00:00:00,150 --> 00:00:03,030
+All right, so now we have the fun part, which is the JavaScript.
+
+2
+00:00:03,060 --> 00:00:05,010
+So let's jump in to skip James.
+
+3
+00:00:05,010 --> 00:00:10,050
+And first thing we want to do is grab the container, which is the only element that we have in the
+
+4
+00:00:10,050 --> 00:00:10,790
+in the body.
+
+5
+00:00:10,800 --> 00:00:17,250
+So let's say document dot, get element bidi in that has an I.D. of container.
+
+6
+00:00:17,700 --> 00:00:26,760
+Now we want to create an array of colors here because we want to we want these to be random colors when
+
+7
+00:00:26,760 --> 00:00:28,340
+we follow along the squares.
+
+8
+00:00:28,620 --> 00:00:31,740
+So I'm going to just paste in some hexadecimal values.
+
+9
+00:00:31,740 --> 00:00:34,050
+You can use absolutely any colors you want.
+
+10
+00:00:34,380 --> 00:00:39,300
+They can be hexadecimal, they can be RGB, they can be color names, whatever you want.
+
+11
+00:00:39,690 --> 00:00:41,910
+And then we want a variable here.
+
+12
+00:00:41,910 --> 00:00:44,840
+I'm going to give this just all caps here.
+
+13
+00:00:44,850 --> 00:00:50,220
+Call the squares and then the amount of squares that we want to put on the screen, which is going to
+
+14
+00:00:50,220 --> 00:00:51,780
+be 500 in this case.
+
+15
+00:00:52,980 --> 00:00:54,480
+I don't know why I put a semicolon.
+
+16
+00:00:54,480 --> 00:00:55,760
+I don't use semicolons.
+
+17
+00:00:56,400 --> 00:00:58,410
+So those are the variables we need.
+
+18
+00:00:58,410 --> 00:01:01,830
+And then the way we're going to do this is create a for loop.
+
+19
+00:01:02,520 --> 00:01:07,320
+OK, so we want to say for and let's let AI equals zero.
+
+20
+00:01:07,710 --> 00:01:09,030
+So it's going to start at zero.
+
+21
+00:01:09,030 --> 00:01:17,100
+And then as long as I is less than whatever we have in squares and then we want to increment I by one.
+
+22
+00:01:18,000 --> 00:01:20,500
+So in here we're going to create an element.
+
+23
+00:01:20,510 --> 00:01:31,620
+So let's say conse square and on the document object there's a method called Spell This Right document.
+
+24
+00:01:31,890 --> 00:01:38,520
+There's a method called create element and we can create any type of the DOM element that we want.
+
+25
+00:01:38,530 --> 00:01:42,150
+I'm going to create a div and then I want to add the class of square.
+
+26
+00:01:42,150 --> 00:01:50,520
+So I'm going to take the square element and I'm going to say class list dot add and I want to add the
+
+27
+00:01:50,520 --> 00:01:59,130
+class of square because that's, you know, the square we restyled this, this square class and that's
+
+28
+00:01:59,130 --> 00:02:00,230
+what we want to show.
+
+29
+00:02:00,730 --> 00:02:03,050
+Now this isn't going to do anything just yet.
+
+30
+00:02:03,060 --> 00:02:08,640
+We want to take the container that we brought in and we want to append child because we want to insert
+
+31
+00:02:08,640 --> 00:02:13,280
+this into the container and we'll pass in here square like that.
+
+32
+00:02:13,950 --> 00:02:20,160
+OK, now, if we save this, you can see that 500 squares have now been painted.
+
+33
+00:02:20,160 --> 00:02:24,630
+If I change this to two hundred and I save now, we have two hundred.
+
+34
+00:02:24,630 --> 00:02:29,160
+So you can change this to whatever you want, but we're going to go ahead and paint 500 squares.
+
+35
+00:02:29,490 --> 00:02:36,570
+And then what we want to happen is when we hover over these, we want to basically have them light up
+
+36
+00:02:36,570 --> 00:02:38,400
+with a random color.
+
+37
+00:02:38,670 --> 00:02:46,020
+So inside this for loop, let's take the square and I want to add an event listener.
+
+38
+00:02:46,020 --> 00:02:53,400
+So I'm going to say add event listener and pass in the event in this case is going to be mouseover.
+
+39
+00:02:53,400 --> 00:02:57,690
+So when we just hover over a square, this is going to fire off.
+
+40
+00:02:58,080 --> 00:03:04,860
+And I want this to call a function that we're going to create that says that's called set color and
+
+41
+00:03:04,860 --> 00:03:08,010
+we want to pass in that particular square.
+
+42
+00:03:08,880 --> 00:03:09,330
+All right.
+
+43
+00:03:09,330 --> 00:03:11,430
+We want to do the same thing when we leave.
+
+44
+00:03:11,430 --> 00:03:14,940
+So we'll have an event listener on mouse out.
+
+45
+00:03:15,450 --> 00:03:21,860
+So when we leave a square and then we'll call remove color, OK?
+
+46
+00:03:21,870 --> 00:03:29,040
+And then let's go down here and let's create function sets, color and say element.
+
+47
+00:03:32,190 --> 00:03:35,670
+And just for now, let's console log here element.
+
+48
+00:03:35,710 --> 00:03:41,520
+So if I save that and I open up my console to remove color is not defined.
+
+49
+00:03:41,680 --> 00:03:48,180
+So I just need to define remove color elements.
+
+50
+00:03:50,320 --> 00:03:50,740
+All right.
+
+51
+00:03:50,760 --> 00:03:56,850
+So now if I hover over a square, you can see it's just going to or I shouldn't say hover, but if I
+
+52
+00:03:56,850 --> 00:03:59,550
+mouse over, it's going to call that.
+
+53
+00:03:59,880 --> 00:04:00,410
+All right.
+
+54
+00:04:00,420 --> 00:04:03,900
+If I come out of it, it's going to call remove color.
+
+55
+00:04:03,900 --> 00:04:06,810
+So that's why I just do like console log one, two, three.
+
+56
+00:04:07,350 --> 00:04:12,330
+And we go over here, you'll see that each time I get out of a of a square, it's going to fire this
+
+57
+00:04:12,330 --> 00:04:12,690
+off.
+
+58
+00:04:14,190 --> 00:04:14,490
+All right.
+
+59
+00:04:14,490 --> 00:04:16,730
+So let's get rid of that and let's do the set color first.
+
+60
+00:04:16,740 --> 00:04:20,070
+So we need to have a specific color.
+
+61
+00:04:20,070 --> 00:04:25,260
+I'm going to have a function called Get Random Color, because we don't want it to always be the same
+
+62
+00:04:25,260 --> 00:04:25,620
+one.
+
+63
+00:04:26,220 --> 00:04:34,890
+So down here, let's say function, get random color and we want to return.
+
+64
+00:04:36,510 --> 00:04:42,150
+And remember, we have that colors array and we can access like the zero index is going to give us this
+
+65
+00:04:42,150 --> 00:04:44,540
+one then one, two, three, four.
+
+66
+00:04:44,970 --> 00:04:47,460
+So I want to get a random index.
+
+67
+00:04:47,610 --> 00:04:53,220
+So inside here, instead of hard coding a number, I'm going to say math dot floor because I want to
+
+68
+00:04:53,220 --> 00:04:56,550
+round down and then math dot random.
+
+69
+00:04:57,150 --> 00:04:59,860
+So math random gives me a random decimal I.
+
+70
+00:04:59,880 --> 00:05:06,540
+We want to multiply that by the length of the array, so colors, length, that way it's going to be
+
+71
+00:05:06,540 --> 00:05:10,560
+somewhere in between zero and what, four?
+
+72
+00:05:10,560 --> 00:05:11,190
+So zero.
+
+73
+00:05:11,190 --> 00:05:12,720
+One, two, three, four.
+
+74
+00:05:13,910 --> 00:05:14,430
+OK.
+
+75
+00:05:14,460 --> 00:05:21,030
+In fact, I can go ahead and console log here the color.
+
+76
+00:05:21,060 --> 00:05:25,590
+And if I go over and hover, you'll see that it's going to be one of those colors.
+
+77
+00:05:26,880 --> 00:05:27,210
+Good.
+
+78
+00:05:27,660 --> 00:05:30,600
+So now we just need to set it to the actual square.
+
+79
+00:05:30,750 --> 00:05:34,380
+In this case, the element because the square is getting passed in is the element.
+
+80
+00:05:34,860 --> 00:05:44,040
+So we can set the style, let's set the style dot background and we're going to set that equal to whatever
+
+81
+00:05:44,040 --> 00:05:45,030
+the color is.
+
+82
+00:05:45,960 --> 00:05:55,580
+And then also the box Shadowlord set element, perhaps element, dot style, dot box, shadow.
+
+83
+00:05:55,590 --> 00:06:00,720
+You want to use Camil case for this and we're going to set that to show you some back ticks here.
+
+84
+00:06:01,200 --> 00:06:07,310
+And it's going to be zero zero two pixels and then whatever the color is.
+
+85
+00:06:07,530 --> 00:06:16,260
+So in here we'll pass and the color and then another shadow so comma zero zero 10 pixels and then whatever
+
+86
+00:06:16,290 --> 00:06:17,780
+the color is.
+
+87
+00:06:17,820 --> 00:06:18,170
+All right.
+
+88
+00:06:18,180 --> 00:06:19,200
+So I save that.
+
+89
+00:06:19,470 --> 00:06:21,810
+Let's close the console up and go over here.
+
+90
+00:06:22,650 --> 00:06:26,090
+And you can see wherever I go, it's going to give me a random color.
+
+91
+00:06:27,000 --> 00:06:30,240
+So you could you could create like a drawing app with this.
+
+92
+00:06:30,240 --> 00:06:34,540
+You can make them smaller and you could add some other functionality to it.
+
+93
+00:06:34,680 --> 00:06:41,460
+I just want I just want them to disappear once we come off it, because right now we can fill the whole
+
+94
+00:06:41,460 --> 00:06:41,900
+thing.
+
+95
+00:06:43,350 --> 00:06:45,210
+I mean, if that's what you want to do, that's fine.
+
+96
+00:06:45,210 --> 00:06:46,600
+But I want to remove the color.
+
+97
+00:06:46,620 --> 00:06:52,980
+So what we'll do is one that remove is called we'll take the element and set the style dot background.
+
+98
+00:06:52,980 --> 00:07:00,690
+And we want to set it back to the original the original color of the box, which is this right here.
+
+99
+00:07:01,270 --> 00:07:08,370
+OK, so we're going to set that equal to that color on remove and then set the box shadow.
+
+100
+00:07:08,370 --> 00:07:13,440
+So element dot style, dot box shadow.
+
+101
+00:07:13,590 --> 00:07:19,550
+We're going to set that to the original box shadow, which is this right here.
+
+102
+00:07:21,000 --> 00:07:23,250
+So pass that in here.
+
+103
+00:07:24,670 --> 00:07:25,070
+All right.
+
+104
+00:07:25,080 --> 00:07:26,040
+So let's save that.
+
+105
+00:07:26,280 --> 00:07:34,440
+And now you can see I can go over and get a random color, but it disappears and it fades out like that.
+
+106
+00:07:34,980 --> 00:07:40,260
+It takes two seconds to fade out because of this transition right here.
+
+107
+00:07:41,230 --> 00:07:46,770
+OK, so if I if I take this transition off, then it's just going to do this.
+
+108
+00:07:46,770 --> 00:07:48,570
+And that is kind of stupid.
+
+109
+00:07:48,570 --> 00:07:53,610
+So we want to leave that trail by doing that, adding that transition.
+
+110
+00:07:53,910 --> 00:08:00,030
+And just like with any other project in this course, I encourage you to add to it, maybe have some
+
+111
+00:08:00,030 --> 00:08:04,260
+select a select box where you can choose different color schemes or something like that.
+
+112
+00:08:05,310 --> 00:08:06,960
+I'm sure that you can think of something.
+
+113
+00:08:06,990 --> 00:08:13,020
+This is just a good template to create some kind of drawing application or something like that.
+
+114
+00:08:13,320 --> 00:08:13,710
+All right.
+
+115
+00:08:13,720 --> 00:08:14,520
+So that's it.
+
+116
+00:08:14,520 --> 00:08:16,350
+Let's move on to the next project.

@@ -1,0 +1,487 @@
+﻿1
+00:00:00,210 --> 00:00:06,880
+OK, então vamos começar nosso projeto de força de imagem de senha, como você quiser chamá-lo.
+
+2
+00:00:07,320 --> 00:00:13,450
+Vamos em frente e apenas chamar essa senha de plano de fundo de força de senha.
+
+3
+00:00:16,350 --> 00:00:21,900
+Agora, isso será um pouco diferente porque, na verdade, usaremos os CSFs Tailwind, que
+
+4
+00:00:21,900 --> 00:00:27,900
+é um framework de acesso a frameworks, apenas para que não tenhamos que escrever muito sucesso.
+
+5
+00:00:27,910 --> 00:00:29,610
+E é apenas uma estrutura muito legal.
+
+6
+00:00:29,610 --> 00:00:35,610
+Nós não vamos nos aprofundar nisso e, você sabe, e compilá-lo ou algo assim.
+
+7
+00:00:35,610 --> 00:00:37,020
+Nós vamos apenas usar um CDN.
+
+8
+00:00:37,020 --> 00:00:46,620
+Então, se formos a um ponto com CDN JS e digitarmos tailwind, queremos pegar isso e isso aqui,
+
+9
+00:00:46,620 --> 00:00:49,560
+este acesso de ponto de vento de cauda.
+
+10
+00:00:49,560 --> 00:00:51,270
+Vamos copiar essa tag de link.
+
+11
+00:00:51,720 --> 00:00:57,450
+E vamos colocar isso logo acima do nosso acesso de estilo personalizado e salvaremos isso.
+
+12
+00:00:57,450 --> 00:01:02,660
+Você pode ver a fonte já alterada e agora estamos usando o acesso tailwind padrão.
+
+13
+00:01:04,110 --> 00:01:07,320
+Então, para o HTML, vamos fechar isso.
+
+14
+00:01:07,320 --> 00:01:14,010
+Primeiro de tudo, na verdade, vamos abrir o resto dos nossos arquivos aqui e depois fechá-los e vamos nos livrar
+
+15
+00:01:14,010 --> 00:01:15,990
+deste H1 aqui.
+
+16
+00:01:16,350 --> 00:01:24,690
+Então, eu quero ter uma imagem de fundo com a qual possamos trabalhar para, você sabe, adicionar esse efeito de desfoque.
+
+17
+00:01:24,690 --> 00:01:33,090
+Então eu vou ter uma div aqui com a classe de background e também um ID de background e nada
+
+18
+00:01:33,090 --> 00:01:33,980
+vai entrar nele.
+
+19
+00:01:33,990 --> 00:01:36,030
+Nós só vamos usar isso para o fundo.
+
+20
+00:01:36,030 --> 00:01:42,930
+E então vamos ter basicamente um wrapper em torno de tudo e vamos nos dar alguns ventos a favor
+
+21
+00:01:42,930 --> 00:01:45,490
+aulas como BGU Dash White.
+
+22
+00:01:47,100 --> 00:01:51,300
+Então esta será a caixa no meio com os campos do formulário.
+
+23
+00:01:51,610 --> 00:01:53,040
+Também vou arredondar.
+
+24
+00:01:53,040 --> 00:01:58,080
+Então, vamos adicionar arredondadas e essas são classes de vento de cauda para que não tenhamos que criar o acesso para
+
+25
+00:01:58,080 --> 00:01:58,380
+isto.
+
+26
+00:01:58,810 --> 00:01:59,730
+Quer um enchimento.
+
+27
+00:01:59,730 --> 00:02:02,850
+Então eu vou fazer p dash tendem a fazer preenchimento ao redor.
+
+28
+00:02:03,180 --> 00:02:08,790
+Eu quero o centro para o centro do texto e vamos adicionar uma sombra a ele também.
+
+29
+00:02:08,800 --> 00:02:12,340
+Então Shadow fará sombra MMD Shadow Medium.
+
+30
+00:02:12,810 --> 00:02:13,260
+Tudo bem.
+
+31
+00:02:13,290 --> 00:02:16,830
+De vez em quando, essas são as classes Tailwind.
+
+32
+00:02:17,010 --> 00:02:20,550
+Se você estiver interessado em vento de cauda, ​​eu tenho um curso intensivo no YouTube.
+
+33
+00:02:20,550 --> 00:02:24,720
+Tem muitos vídeos no YouTube que são pagos e cursos gratuitos.
+
+34
+00:02:25,260 --> 00:02:28,080
+É um framework muito, muito legal se você quiser dar uma olhada mais nele.
+
+35
+00:02:29,010 --> 00:02:30,540
+Então aqui eu vou ter um H1.
+
+36
+00:02:30,840 --> 00:02:36,900
+Vou dar a isso uma classe de texto, traço três Excel para torná-lo um pouco maior.
+
+37
+00:02:37,410 --> 00:02:44,200
+E aqui dentro, vamos apenas dizer imagem, senha, força.
+
+38
+00:02:46,740 --> 00:02:47,970
+Você pode colocar o que quiser.
+
+39
+00:02:47,970 --> 00:02:48,930
+Estou apenas colocando isso.
+
+40
+00:02:48,930 --> 00:02:51,240
+E então vamos colocar um parágrafo aqui.
+
+41
+00:02:51,240 --> 00:02:58,170
+Vou dar a este parágrafo uma classe de texto que tornará o texto menor e depois o traço de texto
+
+42
+00:02:58,170 --> 00:03:03,570
+grea dash 700, o que lhe dará um tom de cinza.
+
+43
+00:03:03,570 --> 00:03:10,050
+E vamos apenas dizer para alterar a senha para ver o efeito.
+
+44
+00:03:11,580 --> 00:03:12,020
+Tudo bem.
+
+45
+00:03:12,030 --> 00:03:14,510
+E então sob esse parágrafo, teremos uma div.
+
+46
+00:03:14,790 --> 00:03:17,910
+Vamos dar uma aula de Mooi.
+
+47
+00:03:17,910 --> 00:03:22,530
+Portanto, minha inteligência é marginalizada no eixo Y, que é superior e inferior.
+
+48
+00:03:22,830 --> 00:03:27,540
+Eu vou fazer o traço quatro e também é o traço de texto para a esquerda.
+
+49
+00:03:28,020 --> 00:03:33,540
+E no stiv aqui, teremos nossa gravadora e nossa entrada para o e-mail.
+
+50
+00:03:33,840 --> 00:03:36,810
+Então vamos adicionar vamos descer aqui um pouco.
+
+51
+00:03:36,810 --> 00:03:37,890
+Vamos adicionar um rótulo.
+
+52
+00:03:38,640 --> 00:03:40,440
+Então o rótulo vai ter uma classe.
+
+53
+00:03:40,440 --> 00:03:43,890
+Enviaremos uma mensagem para Gray Dash novecentos.
+
+54
+00:03:44,580 --> 00:03:47,520
+E no Slovo, vamos apenas dizer e-mail whoops.
+
+55
+00:03:47,730 --> 00:03:48,330
+Oh sim.
+
+56
+00:03:48,330 --> 00:03:49,680
+Podemos dizer por e-mail.
+
+57
+00:03:49,680 --> 00:03:56,340
+E aqui dentro queremos dizer e-mail e, sob esse rótulo, teremos nossa entrada.
+
+58
+00:03:56,340 --> 00:03:59,190
+Então essa entrada vai ter algumas classes.
+
+59
+00:03:59,640 --> 00:04:02,970
+Nós vamos ter fronteira, vamos fazer bloco.
+
+60
+00:04:02,970 --> 00:04:05,700
+Portanto, é um nível de bloco, atinge todo o caminho.
+
+61
+00:04:06,040 --> 00:04:07,740
+Vamos garantir que a largura esteja completa.
+
+62
+00:04:07,740 --> 00:04:17,130
+Então w traço cheio de preenchimento para P dois uma vez uma margem na parte superior, então traço vazio dois e eu quero arredondado.
+
+63
+00:04:17,130 --> 00:04:19,080
+Então eu vou adicionar a classe arredondada.
+
+64
+00:04:19,770 --> 00:04:27,000
+OK, e então queremos ter alguns outros atributos para que tenhamos texto do tipo de entrada nas classes.
+
+65
+00:04:27,240 --> 00:04:36,450
+Eu também vou adicionar uma ideia de e-mail e vou adicionar um espaço reservado e apenas dizer enter.
+
+66
+00:04:38,940 --> 00:04:39,590
+E-mail.
+
+67
+00:04:41,670 --> 00:04:47,940
+Todos os direitos que deveriam ser bons, na verdade é colocado uma chamada após o rótulo para que você possa ver aqui
+
+68
+00:04:48,730 --> 00:04:51,320
+temos nosso email agora queremos fazer as senhas.
+
+69
+00:04:51,340 --> 00:04:54,630
+Vou copiar esta div que envolve o rótulo e a entrada.
+
+70
+00:04:55,220 --> 00:05:00,450
+Você sabe, vamos colocar isso aqui e apenas mudar isso para senha.
+
+71
+00:05:01,910 --> 00:05:07,440
+Vamos alterar a senha do tipo dois e as classes aqui.
+
+72
+00:05:07,440 --> 00:05:17,020
+Na verdade, podemos apenas deixar a senha do ID e o espaço reservado inserir a senha.
+
+73
+00:05:17,970 --> 00:05:18,450
+Tudo bem.
+
+74
+00:05:18,450 --> 00:05:20,090
+Então agora temos nossos dois campos.
+
+75
+00:05:20,090 --> 00:05:22,710
+A última coisa que queremos é o botão.
+
+76
+00:05:23,250 --> 00:05:29,730
+Então vamos sair dessa div aqui e vamos colocar um botão aqui.
+
+77
+00:05:30,120 --> 00:05:32,310
+Então, isso vai ter algumas aulas.
+
+78
+00:05:32,310 --> 00:05:40,680
+Eu quero BGU Dash Black e vamos fazer um traço de texto em branco e para preenchimento, vamos fazer o preenchimento por partes
+
+79
+00:05:40,680 --> 00:05:45,930
+os dois superiores e inferiores e vamos fazer o top marginado para empurrá-lo um pouco para baixo.
+
+80
+00:05:45,930 --> 00:05:47,700
+Vai fazer dois vazios.
+
+81
+00:05:48,300 --> 00:05:53,850
+E eu quero exibir isso, na verdade, está muito vazio e quero que isso seja um bloco embutido.
+
+82
+00:05:53,970 --> 00:06:00,930
+Então vamos adicionar a classe de bloco embutido e vamos fazer com traço cheio e arredondado.
+
+83
+00:06:01,890 --> 00:06:04,410
+OK, então essas são as classes que queremos para o texto.
+
+84
+00:06:04,410 --> 00:06:13,770
+Nós diremos apenas enviar e vamos dar a ele um tipo de submissão também, mesmo que isso não importe realmente.
+
+85
+00:06:14,970 --> 00:06:17,130
+Mas vamos em frente e salvar esse bem.
+
+86
+00:06:18,060 --> 00:06:18,420
+Tudo bem.
+
+87
+00:06:19,620 --> 00:06:23,480
+Então agora para isso para o acesso do cliente, vamos para nossa folha de estilo.
+
+88
+00:06:23,490 --> 00:06:27,090
+Muito do estilo já está lá na cauda quando as classes utilitárias.
+
+89
+00:06:27,090 --> 00:06:30,650
+Mas queremos dar a imagem de fundo com o desfoque.
+
+90
+00:06:31,020 --> 00:06:35,310
+Então, quanto ao que temos em nosso estilo padrão, vou me livrar das fontes.
+
+91
+00:06:35,970 --> 00:06:39,270
+Não precisamos incluir que Castalian tenha sua própria fonte.
+
+92
+00:06:39,930 --> 00:06:48,390
+E então para o estilo do plano de fundo, temos uma classe de plano de fundo e tudo o que é, é um div
+
+93
+00:06:48,390 --> 00:06:49,170
+no topo.
+
+94
+00:06:49,560 --> 00:06:49,950
+Certo.
+
+95
+00:06:49,960 --> 00:06:55,000
+Queremos que isso cubra tudo e queremos adicionar a imagem de fundo a isso.
+
+96
+00:06:55,530 --> 00:06:58,910
+Então vamos primeiro definir a imagem de fundo.
+
+97
+00:06:58,920 --> 00:07:04,170
+Então, vai definir o plano de fundo para um neutro e o link da imagem que vou colar.
+
+98
+00:07:04,320 --> 00:07:09,120
+E você pode, se quiser usar a mesma imagem, você pode saber, você pode copiar isso, você
+
+99
+00:07:09,120 --> 00:07:10,650
+pode obtê-lo a partir do repositório.
+
+100
+00:07:10,920 --> 00:07:17,580
+Vamos defini-lo como sem repetição e vamos definir o posicionamento para o centro do centro nos eixos X e Y e, em seguida,
+
+101
+00:07:17,580 --> 00:07:19,840
+capa para o tamanho do fundo.
+
+102
+00:07:20,760 --> 00:07:24,240
+Agora, não vamos ver nada ainda porque é apenas uma div vazia.
+
+103
+00:07:24,240 --> 00:07:31,920
+Queremos posicionar isso para ser absoluto e queremos definir vou definir o topo para ser um pouco mais longe
+
+104
+00:07:31,920 --> 00:07:33,000
+do que a borda.
+
+105
+00:07:33,000 --> 00:07:39,960
+Então vamos fazer vinte pixels negativos e vamos definir o fundo para vinte negativos.
+
+106
+00:07:39,990 --> 00:07:49,470
+Vamos defini-lo em todos os lados do canto inferior esquerdo, menos vinte e escrever menos vinte.
+
+107
+00:07:50,820 --> 00:07:53,250
+E se eu fizer isso vamos ver a imagem aqui.
+
+108
+00:07:53,250 --> 00:08:01,740
+Agora está cobrindo, está cobrindo a caixa de login que obviamente não queremos.
+
+109
+00:08:01,740 --> 00:08:03,870
+Então, vamos apenas alterar o índice Z.
+
+110
+00:08:04,320 --> 00:08:10,650
+Vamos fazer disso o índice para um negativo e então a caixa de login estará em cima dele.
+
+111
+00:08:10,650 --> 00:08:13,860
+Agora eu quero começar a começar a imagem desfocada.
+
+112
+00:08:14,070 --> 00:08:20,160
+E quanto mais longa a senha ficar, menor será o desfoque da imagem.
+
+113
+00:08:20,490 --> 00:08:26,970
+Então insiste que temos essa propriedade de filtro e vamos usar Blur e vamos defini-lo para vinte
+
+114
+00:08:26,970 --> 00:08:29,900
+pixels borram assim.
+
+115
+00:08:29,910 --> 00:08:34,620
+Então, basicamente, quanto mais alto for, se eu definir isso para trinta, ficará ainda mais embaçado, mas
+
+116
+00:08:34,620 --> 00:08:41,760
+vamos defini-lo para vinte zero, obviamente, o knobler dez está um pouco embaçado, mas vamos
+
+117
+00:08:41,760 --> 00:08:44,040
+defina isso para vinte para começar.
+
+118
+00:08:44,460 --> 00:08:48,150
+OK, então isso é tudo que precisamos fazer para o HTML e acesso.
+
+119
+00:08:48,390 --> 00:08:52,530
+No próximo vídeo vamos fazer o JavaScript que deve ser muito, muito rápido.
+
+120
+00:08:52,530 --> 00:08:55,350
+São apenas nove linhas de código ou algo assim.
+
+121
+00:08:55,590 --> 00:08:55,950
+Tudo bem.
+
+122
+00:08:55,950 --> 00:08:56,970
+Então faremos isso a seguir.

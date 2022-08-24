@@ -1,0 +1,75 @@
+﻿1
+00:00:00,270 --> 00:00:01,950
+Ei, pessoal, bem-vindos ao seu próximo projeto.
+
+2
+00:00:01,980 --> 00:00:08,280
+Então, neste, vamos criar um efeito de navegação móvel muito legal, navegação responsiva
+
+3
+00:00:08,580 --> 00:00:12,900
+menu de hambúrguer, e nós o chamamos de navegação móvel Netflix.
+
+4
+00:00:12,900 --> 00:00:14,580
+Mas é apenas por causa do esquema de cores.
+
+5
+00:00:14,580 --> 00:00:18,900
+Não é o menu real da Netflix, até onde eu sei.
+
+6
+00:00:19,320 --> 00:00:23,760
+Mas basicamente temos um pequeno menu de hambúrgueres aqui, um pequeno ícone de hambúrguer, devo dizer.
+
+7
+00:00:23,760 --> 00:00:30,810
+E se clicarmos nele, obtemos esse efeito legal onde há três partes separadas que saem no
+
+8
+00:00:30,810 --> 00:00:33,290
+transição e alguns deles têm atraso.
+
+9
+00:00:33,330 --> 00:00:38,240
+Então nós temos o preto, vermelho, branco, e eles saem e então quando vai em branco, vermelho, preto.
+
+10
+00:00:38,610 --> 00:00:40,130
+Portanto, é apenas um pequeno efeito agradável.
+
+11
+00:00:40,440 --> 00:00:42,030
+É um menu de aparência limpa.
+
+12
+00:00:42,870 --> 00:00:45,030
+Obviamente, você pode colocar o que quiser na página.
+
+13
+00:00:45,030 --> 00:00:47,250
+Vamos apenas contextualizar o logotipo.
+
+14
+00:00:47,250 --> 00:00:50,400
+Mas isso seria o que você gostaria de colocar na página.
+
+15
+00:00:51,120 --> 00:00:55,770
+E, claro, se fizermos isso bem pequeno ainda, você sabe, funciona da mesma maneira, parece bom.
+
+16
+00:00:56,160 --> 00:00:59,130
+Acho que há uma largura mínima de três vinte ou mais.
+
+17
+00:00:59,130 --> 00:01:01,890
+Portanto, deve ficar bem, você sabe, smartphones e assim por diante.
+
+18
+00:01:02,440 --> 00:01:03,610
+Então é isso que vamos construir.
+
+19
+00:01:03,630 --> 00:01:05,250
+Vamos em frente e pular nele.

@@ -1,0 +1,35 @@
+1
+00:00:00,150 --> 00:00:05,160
+All right, so this is one of the cooler looking projects we're going to build this theme clock where
+
+2
+00:00:05,160 --> 00:00:12,000
+we use access to style, these hands right here, these needles, which are obviously the hour, the
+
+3
+00:00:12,000 --> 00:00:16,710
+minute and second, and then we're going to use JavaScript to power it and have it show the current
+
+4
+00:00:16,710 --> 00:00:17,340
+time.
+
+5
+00:00:17,340 --> 00:00:20,760
+We're going to update it every second so that it takes like an actual clock.
+
+6
+00:00:21,000 --> 00:00:25,590
+We're going to show a digital readout of the time, the day, the date, and we're also going to be
+
+7
+00:00:25,590 --> 00:00:29,220
+able to toggle it to dark mode and then back to light mode.
+
+8
+00:00:29,250 --> 00:00:31,880
+So this is one of my favorite projects of this course.
+
+9
+00:00:32,160 --> 00:00:33,900
+So let's go ahead and jump in.

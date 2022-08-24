@@ -1,0 +1,31 @@
+﻿1
+00:00:00,330 --> 00:00:03,550
+Muito bem, pessoal, este vai ser um projeto bem rápido.
+
+2
+00:00:03,570 --> 00:00:05,060
+Deve ser apenas um vídeo.
+
+3
+00:00:05,250 --> 00:00:11,250
+Vamos criar este carregador cinético onde temos esses dois triângulos criados com processo e
+
+4
+00:00:11,250 --> 00:00:15,690
+vamos adicionar esta animação para que eles girem e um siga o outro.
+
+5
+00:00:15,970 --> 00:00:16,350
+Tudo bem.
+
+6
+00:00:16,360 --> 00:00:22,440
+Então, vamos ver como criar quadros-chave e também como criar esses triângulos usando bordas.
+
+7
+00:00:22,710 --> 00:00:23,070
+Tudo bem.
+
+8
+00:00:23,070 --> 00:00:24,240
+Vamos em frente e entrar nisso.

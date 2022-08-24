@@ -1,0 +1,123 @@
+﻿1
+00:00:00,240 --> 00:00:03,040
+Tudo bem, pessoal, então vamos fazer um pouco neste projeto.
+
+2
+00:00:03,060 --> 00:00:07,670
+Vamos usar a API do GitHub para buscar usuários.
+
+3
+00:00:07,680 --> 00:00:12,180
+Poderemos pesquisar usuários do GitHub para obter alguns de seus dados de perfil e exibi-los em um
+
+4
+00:00:12,180 --> 00:00:12,690
+cartão.
+
+5
+00:00:12,900 --> 00:00:19,080
+E também faremos uma solicitação separada para obter os cinco repositórios mais recentes do usuário ou, no entanto,
+
+6
+00:00:19,080 --> 00:00:22,320
+quantos quiserem adicionar, para adicionar ao cartão.
+
+7
+00:00:22,340 --> 00:00:25,040
+Então, para dar um exemplo aqui, posso procurar um usuário.
+
+8
+00:00:25,410 --> 00:00:32,850
+Vou procurar por mim mesmo e você verá que meu avatar aparece meu nome, meus seguidores na bio,
+
+9
+00:00:32,850 --> 00:00:35,730
+seguindo meu último repost cinco.
+
+10
+00:00:36,180 --> 00:00:41,430
+Se eu procurar por Floren Pop 17, você verá o alerta.
+
+11
+00:00:41,430 --> 00:00:43,260
+Então, é claro que você pode procurar o seu próprio.
+
+12
+00:00:43,500 --> 00:00:48,420
+E se eu pesquisar apenas algo que não seja um nome, ele dirá que não há perfil com
+
+13
+00:00:48,420 --> 00:00:49,230
+este nome de usuário.
+
+14
+00:00:49,230 --> 00:00:51,430
+Então, vamos fazer um pouco de tratamento de erros também.
+
+15
+00:00:51,900 --> 00:00:54,670
+Então, esses são os documentos para a API rest do GitHub.
+
+16
+00:00:55,200 --> 00:00:57,180
+Esta é a versão mais recente dos documentos.
+
+17
+00:00:57,180 --> 00:01:03,150
+E você pode ver basicamente como você pode buscar usuários e que tipo de dados você obtém.
+
+18
+00:01:03,540 --> 00:01:08,760
+E então a outra coisa que vamos fazer é usar o Axios em vez da API de busca.
+
+19
+00:01:09,060 --> 00:01:11,660
+Então Axios é uma biblioteca.
+
+20
+00:01:11,670 --> 00:01:16,980
+É uma biblioteca cliente HDB baseada em promessas para o navegador e não Ge'ez.
+
+21
+00:01:16,980 --> 00:01:25,740
+Então eu prefiro Axios pessoalmente quando faço qualquer tipo de tamanho grande ou médio a projetos maiores, vou usar
+
+22
+00:01:25,740 --> 00:01:26,460
+axios.
+
+23
+00:01:26,460 --> 00:01:28,050
+Tem melhores características.
+
+24
+00:01:28,050 --> 00:01:28,800
+Na minha opinião.
+
+25
+00:01:28,800 --> 00:01:34,440
+É mais fácil usar o tratamento de erros é melhor, então eu definitivamente prefiro.
+
+26
+00:01:34,450 --> 00:01:39,870
+Então, eu queria adicioná-lo a pelo menos um dos projetos deste curso e vamos usá-lo com um
+
+27
+00:01:39,870 --> 00:01:40,590
+afundar.
+
+28
+00:01:40,590 --> 00:01:44,700
+Mas eu vou te mostrar como usá-lo apenas com regular, você sabe, depois com sintaxe também.
+
+29
+00:01:45,120 --> 00:01:46,380
+Então é isso que vamos construir.
+
+30
+00:01:46,380 --> 00:01:48,300
+Pessoal, espero que gostem desse projeto.
+
+31
+00:01:48,300 --> 00:01:49,500
+Vamos em frente e entrar nisso.

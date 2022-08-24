@@ -1,0 +1,391 @@
+1
+00:00:00,300 --> 00:00:05,550
+All right, so let's start on the table for our quiz title, say quiz app.
+
+2
+00:00:08,100 --> 00:00:14,930
+And essentially, what we're going to do is just have a placeholder, kind of a placeholder for a question,
+
+3
+00:00:14,940 --> 00:00:22,140
+it'll be an H2, will give it an ID and then we'll have a bunch of radio inputs for the answer.
+
+4
+00:00:22,140 --> 00:00:23,910
+And those will also be placeholders.
+
+5
+00:00:23,910 --> 00:00:29,340
+And then later on, when we get to the JavaScript, we will replace the placeholders with the actual
+
+6
+00:00:29,340 --> 00:00:34,430
+questions and answers and we'll use that as basically as a template for each one.
+
+7
+00:00:34,740 --> 00:00:37,320
+And then we can have as many question answers as we want.
+
+8
+00:00:37,650 --> 00:00:44,520
+So let's start off by just creating a quiz container and I'm going to give us an idea of CUI'S.
+
+9
+00:00:45,680 --> 00:00:48,500
+And then we'll have a class of quiz heter.
+
+10
+00:00:51,540 --> 00:00:58,800
+And inside here, we'll have our question, which is going to be an H2 with an idea of question, and
+
+11
+00:00:58,800 --> 00:01:01,100
+I'm just going to, like I said, put a placeholder here.
+
+12
+00:01:01,110 --> 00:01:07,620
+We'll just say question text and then under that will have a UFO with some list items in each list item
+
+13
+00:01:07,620 --> 00:01:15,510
+will have a radio input radius, radio input with a name of answer.
+
+14
+00:01:15,510 --> 00:01:17,990
+And then the ID is going to be a for this one.
+
+15
+00:01:19,170 --> 00:01:27,420
+And let's see, we also want to do a class answer and that should be good.
+
+16
+00:01:27,420 --> 00:01:32,550
+Then underneath it, we're going to have a label for is going to match the ID of the input, which is
+
+17
+00:01:32,550 --> 00:01:43,230
+a and let's also give this an I.D. of a underscore text because we're going to insert the question in
+
+18
+00:01:43,230 --> 00:01:43,470
+here.
+
+19
+00:01:43,470 --> 00:01:45,110
+We'll just say question for now.
+
+20
+00:01:45,960 --> 00:01:51,950
+So basically, we just want to copy this and each question will have four answers.
+
+21
+00:01:51,960 --> 00:01:55,200
+So that's one, two, three, four.
+
+22
+00:01:56,190 --> 00:01:58,140
+And then we just want to change some of this stuff.
+
+23
+00:01:58,150 --> 00:02:04,660
+So the second one, so we want the name to be answer for all of them, but the idea is going to change.
+
+24
+00:02:04,660 --> 00:02:11,790
+So that's going to be B and the four attribute on the label as well is going to be B and then the ID
+
+25
+00:02:11,790 --> 00:02:13,440
+here is going to be BTX.
+
+26
+00:02:14,420 --> 00:02:23,000
+And then we want to do the same here, so let's go here, here and here and let's change that to see.
+
+27
+00:02:24,450 --> 00:02:33,330
+And then we'll go here, here and here, and it's going to be OK, and then we want submit button that's
+
+28
+00:02:33,330 --> 00:02:36,150
+going to go outside of the header.
+
+29
+00:02:37,410 --> 00:02:40,380
+So right here and let's add a button.
+
+30
+00:02:40,440 --> 00:02:46,620
+We're going to give this an idea of submit and we'll say submit.
+
+31
+00:02:47,700 --> 00:02:52,680
+All right, so it doesn't look very good right now, but we're going to go ahead and add the success,
+
+32
+00:02:53,400 --> 00:02:54,830
+which isn't too bad.
+
+33
+00:02:54,900 --> 00:02:59,940
+So let's jump in to our stylesheet and we're going to use the Poppins font.
+
+34
+00:02:59,940 --> 00:03:06,930
+So I'm going to say success to questionmark family.
+
+35
+00:03:06,930 --> 00:03:08,400
+And let's set this.
+
+36
+00:03:11,450 --> 00:03:24,110
+To Poppins and then let's do a wait so t say at and then 200 semicolon 400.
+
+37
+00:03:25,670 --> 00:03:30,290
+I'm going to change the body font to that Poppins.
+
+38
+00:03:34,950 --> 00:03:41,460
+All right, so we want we also want a background color on the body, so let's set that background.
+
+39
+00:03:41,460 --> 00:03:49,050
+Color is going to be hexadecimal value B eight, C, six DB.
+
+40
+00:03:50,520 --> 00:03:56,000
+OK, and then let's add actually, that will be the background color.
+
+41
+00:03:56,120 --> 00:04:00,510
+We're going to use a gradient, a linear gradient for browser's and support that.
+
+42
+00:04:00,520 --> 00:04:11,040
+So let's use background image and set linear gradient and we'll do three 15 degrees and the colors for
+
+43
+00:04:11,040 --> 00:04:14,580
+this, the first one, let's do hexadecimal.
+
+44
+00:04:15,220 --> 00:04:17,040
+Actually it's going to be the same color here.
+
+45
+00:04:18,720 --> 00:04:29,880
+So we want to do that at zero percent and then comma in the next color will be EF five, EF seven F
+
+46
+00:04:29,880 --> 00:04:32,310
+A to 100 percent.
+
+47
+00:04:33,500 --> 00:04:40,160
+So give it just a little bit of a gradient look, and then we have our flex box, we can get rid of
+
+48
+00:04:41,270 --> 00:04:42,560
+Flex Direction column.
+
+49
+00:04:44,410 --> 00:04:49,490
+And let's see a line item that's good press should be OK.
+
+50
+00:04:50,770 --> 00:04:53,770
+So now the quiz container which wraps around everything.
+
+51
+00:04:58,900 --> 00:05:04,150
+So for that, I'm going to set the background color to white.
+
+52
+00:05:06,350 --> 00:05:18,470
+And let's give this a broader radius of 10 pixels and let's do a box shadow, so four box Shadowville
+
+53
+00:05:18,470 --> 00:05:26,660
+do zero zero for the offsets, 10 pixels, two pixels, and then our GBA and the car will be one hundred,
+
+54
+00:05:27,020 --> 00:05:28,760
+one hundred, one hundred.
+
+55
+00:05:28,760 --> 00:05:31,670
+And then for the alpha value will be zero point one.
+
+56
+00:05:33,670 --> 00:05:40,430
+OK, let's set a with here as well of six hundred pixels.
+
+57
+00:05:42,080 --> 00:05:50,120
+And then I'm going to set an overflow of hidden so nothing goes out of the container and then for the
+
+58
+00:05:50,390 --> 00:05:55,180
+for the header, remember, this whole part is the quiz header and then you have the button below it.
+
+59
+00:05:55,550 --> 00:06:05,020
+So let's say for the quiz had class, I want some padding and we'll just do forum, which is going to
+
+60
+00:06:05,030 --> 00:06:09,920
+be four times whatever the root HTML elements, font sizes.
+
+61
+00:06:10,580 --> 00:06:19,250
+And then for the H2, which is the question or style that let's do padding will do one room and let's
+
+62
+00:06:19,250 --> 00:06:25,300
+do text a line to the center and get rid of any margin.
+
+63
+00:06:26,960 --> 00:06:31,560
+And then for the U.S., all we don't want any bullet points.
+
+64
+00:06:31,560 --> 00:06:37,970
+So let's set list style type to none and let's set padding to zero.
+
+65
+00:06:41,300 --> 00:06:49,370
+Now for the list items say U.S. ally are U.S. ally, and I'm going to set the font size to be a little
+
+66
+00:06:49,370 --> 00:06:49,700
+bigger.
+
+67
+00:06:49,730 --> 00:07:01,130
+Let's do one point to get one point to them and then we'll set the margin on that to be one on the top
+
+68
+00:07:01,130 --> 00:07:06,620
+and bottom zero on the left and right and for the label.
+
+69
+00:07:06,830 --> 00:07:09,170
+So you'll ally label.
+
+70
+00:07:12,090 --> 00:07:14,640
+I just want to make the cursor into a pointer.
+
+71
+00:07:14,900 --> 00:07:15,320
+All right.
+
+72
+00:07:15,320 --> 00:07:19,780
+So if we hover over these, we get our, you know, our pointer.
+
+73
+00:07:20,750 --> 00:07:23,270
+So last thing we want to style is the button.
+
+74
+00:07:24,770 --> 00:07:26,900
+So describe button.
+
+75
+00:07:28,010 --> 00:07:29,680
+Let's set a background color.
+
+76
+00:07:32,370 --> 00:07:41,850
+And that's going to be eight E four for a D and then let's take away any border source that border to
+
+77
+00:07:41,850 --> 00:07:42,360
+none.
+
+78
+00:07:42,660 --> 00:07:46,380
+Let's also make the color of the text white.
+
+79
+00:07:48,270 --> 00:07:57,210
+And we want to display this as a bloc level elements, and I want it to go all the way across, set
+
+80
+00:07:57,240 --> 00:08:03,420
+the width to 100 percent, and let's make the cursor into a pointer.
+
+81
+00:08:04,110 --> 00:08:04,430
+Oops.
+
+82
+00:08:07,310 --> 00:08:11,690
+And for the font size, I'm going to make that one point, one RAM unit.
+
+83
+00:08:14,500 --> 00:08:23,920
+And then let's see for the font family we just want to inherit, so we use that Poppins font and then
+
+84
+00:08:23,920 --> 00:08:28,410
+the padding for the button is going to be one point three ram.
+
+85
+00:08:30,130 --> 00:08:36,630
+OK, so looks pretty good now for the hover save button.
+
+86
+00:08:36,640 --> 00:08:44,470
+And when it's in its hover state, I want to change the background color and I'm going to change it
+
+87
+00:08:44,470 --> 00:08:50,570
+to 73 to Denine one on hover.
+
+88
+00:08:50,920 --> 00:08:57,650
+OK, so it's just a little darker and then I want you to see this outline what's in its focus state.
+
+89
+00:08:57,670 --> 00:08:58,520
+Want to get rid of that.
+
+90
+00:08:58,520 --> 00:09:01,400
+So it's a button in its focus state.
+
+91
+00:09:02,050 --> 00:09:05,640
+Let's set the outline to none.
+
+92
+00:09:06,430 --> 00:09:17,020
+And I'm also going to set the background color to five E3 and three seven.
+
+93
+00:09:17,030 --> 00:09:18,820
+Oh, all right.
+
+94
+00:09:23,580 --> 00:09:28,140
+So the success is done, we have basically just a template here that we're going to use and then the
+
+95
+00:09:28,140 --> 00:09:33,920
+next video will have our questions in a JavaScript array and we want to basically replace it.
+
+96
+00:09:34,200 --> 00:09:41,130
+We want to be able to, you know, have a correct answer for each question and check that we want to
+
+97
+00:09:41,130 --> 00:09:43,190
+be able to submit and load the next question.
+
+98
+00:09:43,200 --> 00:09:44,610
+So we'll get into that next.

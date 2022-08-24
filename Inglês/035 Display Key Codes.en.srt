@@ -1,0 +1,311 @@
+1
+00:00:00,210 --> 00:00:05,430
+OK, so now we want to add the Java scripts for this project, and before we do anything, I just want
+
+2
+00:00:05,430 --> 00:00:13,240
+to add the event listener and show you how we get these actual properties like Qiqi code and code.
+
+3
+00:00:13,620 --> 00:00:20,910
+So let's let's take the window, which is the top level object in the browser, and we're going to add
+
+4
+00:00:20,910 --> 00:00:22,680
+an event listener on to that.
+
+5
+00:00:23,520 --> 00:00:28,350
+And the event we want to listen for is a key down, which is a keyboard event.
+
+6
+00:00:28,770 --> 00:00:34,620
+And we pass in a function as a second second argument here.
+
+7
+00:00:34,620 --> 00:00:38,640
+And then in this function, we can pass an event object.
+
+8
+00:00:38,640 --> 00:00:42,580
+And then I just want to console log that event, object to show you what it gives us.
+
+9
+00:00:42,990 --> 00:00:45,450
+So one of my console just reload here.
+
+10
+00:00:45,840 --> 00:00:51,330
+And if I hit the letter A or the A, you're going to see I get a bunch of properties.
+
+11
+00:00:51,690 --> 00:01:00,090
+And what I want to show you is, for one, the keek are I'm sorry, the code which is Keet.
+
+12
+00:01:00,510 --> 00:01:06,450
+So that value we want to get put in here and then we also have to go down here a little more.
+
+13
+00:01:06,450 --> 00:01:13,050
+We have the actual key which is a that's going to go in there and then we should also have the key code
+
+14
+00:01:14,040 --> 00:01:15,750
+or are the code.
+
+15
+00:01:17,040 --> 00:01:19,800
+No code is Keet, whereas the key code
+
+16
+00:01:23,070 --> 00:01:24,330
+here it is right underneath.
+
+17
+00:01:24,570 --> 00:01:26,500
+So key code is 65.
+
+18
+00:01:26,880 --> 00:01:32,940
+Now, if I hit another key like Q that's going to give me another oops, I going to go up here and hit
+
+19
+00:01:32,940 --> 00:01:33,070
+it.
+
+20
+00:01:33,510 --> 00:01:37,290
+So here you can see I get the key of Q The code is key.
+
+21
+00:01:37,290 --> 00:01:42,000
+Q And the key code is 81.
+
+22
+00:01:42,250 --> 00:01:46,140
+So we want that stuff to be put in these boxes, which is going to be pretty easy.
+
+23
+00:01:47,100 --> 00:01:49,290
+And then actually one more thing I want to show you.
+
+24
+00:01:49,740 --> 00:02:00,380
+If I hit space, the actual key is the code is space, but the actual key is just an empty string.
+
+25
+00:02:00,930 --> 00:02:06,510
+So I just want to do a simple check to see if the key is equal to an empty string.
+
+26
+00:02:06,510 --> 00:02:11,310
+If it is, then we'll go ahead and just put the word space in there, because I don't want it to just
+
+27
+00:02:11,310 --> 00:02:11,990
+be blank.
+
+28
+00:02:12,510 --> 00:02:23,190
+So what we'll do is, first of all, bring in insert so document get element by D and we want to bring
+
+29
+00:02:23,190 --> 00:02:33,270
+in the idea of insert and let's get rid of that and we're going to take insert and say in our HTML because
+
+30
+00:02:33,300 --> 00:02:39,930
+that's how we can insert HTML and make sure you use back tactics here so that this is we can put dynamic
+
+31
+00:02:39,930 --> 00:02:40,870
+values in here.
+
+32
+00:02:41,250 --> 00:02:48,090
+Now I'm going to copy from indexed HTML the three divs with the class of key, not the last one with
+
+33
+00:02:48,090 --> 00:02:49,950
+just the text, but these three here.
+
+34
+00:02:49,950 --> 00:02:55,350
+I'm going to cut them, not copy them, because we don't want those in there initially and save and
+
+35
+00:02:55,350 --> 00:02:57,390
+now you're only going to see this one box.
+
+36
+00:02:57,540 --> 00:03:04,770
+So in this, in our HTML value, in this template literal, I'm going to paste the sin but I want to
+
+37
+00:03:04,770 --> 00:03:07,740
+change these.
+
+38
+00:03:07,740 --> 00:03:10,320
+These are basically just hardcoded a right here.
+
+39
+00:03:10,320 --> 00:03:16,040
+I want to change that to the key which we can get from E key.
+
+40
+00:03:16,500 --> 00:03:19,800
+Now remember, this is going to be just an empty string if it's space.
+
+41
+00:03:19,810 --> 00:03:29,100
+So what I'll do is just do a quick check will say if a key is equal to just an empty string, then let's
+
+42
+00:03:29,100 --> 00:03:34,980
+put out space or else let's put out whatever the key is.
+
+43
+00:03:34,980 --> 00:03:36,060
+So it's key.
+
+44
+00:03:36,540 --> 00:03:39,630
+And this is just a ternary it's just a shorthand conditional.
+
+45
+00:03:40,080 --> 00:03:45,540
+Whatever you're testing goes here, which in our case, testing to see if he equals an empty string.
+
+46
+00:03:46,020 --> 00:03:54,810
+This is basically, you know, then so if this then puts put out space or else so this represents else,
+
+47
+00:03:54,810 --> 00:03:56,760
+then just whatever the key is.
+
+48
+00:03:57,240 --> 00:03:59,970
+OK, and then down here we have our key code.
+
+49
+00:03:59,980 --> 00:04:06,570
+So let's say and this syntax is just, you know, a template literal of money sign and curly braces.
+
+50
+00:04:06,570 --> 00:04:11,490
+As long as you're in back ticks and not quotes, then you can use the syntax.
+
+51
+00:04:11,790 --> 00:04:18,180
+So we want to take the object or the event object and let's say dot key code.
+
+52
+00:04:19,180 --> 00:04:25,530
+OK, now there's a line through it and VTS code because it is deprecated, but it will still show up.
+
+53
+00:04:25,530 --> 00:04:26,490
+It will still work.
+
+54
+00:04:26,580 --> 00:04:30,180
+If you're watching this in the future and it doesn't work, then you can just get rid of this block
+
+55
+00:04:30,180 --> 00:04:32,030
+if you want and just show the code.
+
+56
+00:04:32,640 --> 00:04:44,160
+So for this last one here, let's say e dot code actually since we put a vent here, let's just change
+
+57
+00:04:44,160 --> 00:04:46,410
+because this can be absolutely anything you want.
+
+58
+00:04:46,410 --> 00:04:47,820
+We'll change this to events.
+
+59
+00:04:48,390 --> 00:04:54,990
+And that way, I don't know, just because we used event there doesn't really matter.
+
+60
+00:04:54,990 --> 00:04:59,220
+But so event key.
+
+61
+00:05:00,810 --> 00:05:07,430
+And when you see other people's code, you might see you might see event, you might see Eevee, that's
+
+62
+00:05:07,430 --> 00:05:08,480
+also pretty common.
+
+63
+00:05:09,140 --> 00:05:10,550
+So now I'm going to save this.
+
+64
+00:05:11,720 --> 00:05:16,280
+And if I go over here and I hit enter, you can see that the key I hit is enter.
+
+65
+00:05:16,280 --> 00:05:25,910
+The key code is 13 and the code is enter by hit a we're going to get a 65 K if I hit three three fifty
+
+66
+00:05:25,910 --> 00:05:27,410
+one digit three.
+
+67
+00:05:27,960 --> 00:05:29,180
+OK, so it's working.
+
+68
+00:05:29,180 --> 00:05:33,440
+If we had space we're going to see space here because of this check we did hear.
+
+69
+00:05:33,440 --> 00:05:35,600
+Otherwise it would just be an empty string.
+
+70
+00:05:35,600 --> 00:05:37,640
+So it would just be empty and we don't want that.
+
+71
+00:05:38,450 --> 00:05:45,410
+OK, there's a backwards capsular shift so any key you hit, it's going to give you the key code and
+
+72
+00:05:45,410 --> 00:05:45,860
+the code.
+
+73
+00:05:46,250 --> 00:05:46,580
+All right.
+
+74
+00:05:46,580 --> 00:05:51,170
+So I know this is a really simple project, but it's nice to just get going.
+
+75
+00:05:51,170 --> 00:05:56,300
+And it can also be useful if you need the code for something, if you're building a game or whatever
+
+76
+00:05:56,300 --> 00:05:56,840
+it might be.
+
+77
+00:05:57,260 --> 00:05:57,590
+All right.
+
+78
+00:05:57,590 --> 00:06:00,140
+So thanks for watching and I'll see you in the next project.

@@ -1,0 +1,435 @@
+﻿1
+00:00:00,210 --> 00:00:05,100
+OK, agora que temos o talento pronto, queremos pular para o JavaScript e queremos
+
+2
+00:00:05,100 --> 00:00:12,210
+faça essa função para que quando clicarmos na seta, ela deslize a imagem de fundo e também mude
+
+3
+00:00:12,210 --> 00:00:12,790
+esta imagem.
+
+4
+00:00:12,810 --> 00:00:15,000
+Então vamos primeiro trazer tudo o que precisamos.
+
+5
+00:00:15,270 --> 00:00:20,190
+Queremos o próprio corpo, que podemos obter do objeto do documento e depois do corpo.
+
+6
+00:00:20,850 --> 00:00:23,140
+E vamos pegar os slides.
+
+7
+00:00:23,160 --> 00:00:26,430
+Agora, o Slide's é mais do que uma das classes de slides.
+
+8
+00:00:27,060 --> 00:00:29,130
+Temos cinco divs com a classe de slides.
+
+9
+00:00:29,130 --> 00:00:35,400
+Então, vamos usar document dot, query selector all porque há vários.
+
+10
+00:00:35,400 --> 00:00:42,510
+Então queremos todos com a classe de slide e depois queremos os botões direito e esquerdo.
+
+11
+00:00:42,660 --> 00:00:48,270
+Portanto, há uma const esquerda vts e defina isso como document.
+
+12
+00:00:48,270 --> 00:00:57,030
+Dot usará o elemento get por D porque temos um ID de left e também queremos a ideia de right
+
+13
+00:00:57,870 --> 00:00:59,760
+e chamaremos este botão direito.
+
+14
+00:01:02,340 --> 00:01:08,010
+E então vou inicializar uma variável aqui chamada Active Slide para sabermos em qual delas estamos.
+
+15
+00:01:08,010 --> 00:01:19,290
+Vai começar do zero e então teremos uma função say function e chamaremos esse conjunto de BG
+
+16
+00:01:19,440 --> 00:01:20,730
+ao corpo.
+
+17
+00:01:20,910 --> 00:01:23,760
+Então isso vai definir o plano de fundo para o corpo.
+
+18
+00:01:24,030 --> 00:01:28,620
+E na verdade vou entrar no estilo de acesso e me livrar do corpo aqui.
+
+19
+00:01:28,620 --> 00:01:31,980
+Lembre-se, eu coloquei eu codifiquei a imagem de fundo.
+
+20
+00:01:31,980 --> 00:01:33,060
+Eu vou me livrar disso.
+
+21
+00:01:33,690 --> 00:01:35,370
+Então a gente não vê mais isso aí.
+
+22
+00:01:36,120 --> 00:01:45,310
+E queremos, nesta função, pegar o corpo e adicionar um estilo de imagem de fundo.
+
+23
+00:01:45,840 --> 00:01:51,270
+Então quando lidamos com acesso via JavaScript, vai ser o caso de Camil assim.
+
+24
+00:01:51,270 --> 00:01:53,900
+Você não vai usar traços ou hífens, seja o que for.
+
+25
+00:01:54,640 --> 00:02:00,870
+Então defina a imagem de fundo para e teremos nossos slides agora.
+
+26
+00:02:00,870 --> 00:02:07,740
+Slides é quando você usa esse seletor de consulta, tudo isso será o que chamamos de lista de nós.
+
+27
+00:02:07,740 --> 00:02:14,130
+Então é semelhante a um array e podemos dizer, você sabe, deslize zero para o primeiro, um para o segundo
+
+28
+00:02:14,130 --> 00:02:14,850
+e assim por diante.
+
+29
+00:02:15,180 --> 00:02:19,620
+Vamos colocar o slide ativo aqui, que começa em zero.
+
+30
+00:02:20,040 --> 00:02:27,300
+E então queremos fazer a imagem de fundo dot style dot porque é isso que queremos obter.
+
+31
+00:02:28,380 --> 00:02:36,540
+Então, estamos olhando para o nosso HTML, estamos recebendo o primeiro slide, que é este div aqui, certo
+
+32
+00:02:36,540 --> 00:02:36,960
+aqui.
+
+33
+00:02:36,990 --> 00:02:42,300
+E estamos obtendo a imagem de fundo, sua URL, que será essa, e vamos definir
+
+34
+00:02:42,300 --> 00:02:43,520
+isso ao corpo.
+
+35
+00:02:43,830 --> 00:02:45,300
+Agora queremos chamar isso.
+
+36
+00:02:45,750 --> 00:02:49,920
+Então, eu vou logo acima disso e dizer definir BG para o corpo.
+
+37
+00:02:50,370 --> 00:02:55,500
+E se eu salvar isso agora você pode ver que temos nossa imagem de fundo, nossa primeira imagem.
+
+38
+00:02:56,940 --> 00:03:03,420
+Agora queremos poder definir o slide ativo para a próxima imagem.
+
+39
+00:03:03,420 --> 00:03:09,360
+Então vamos também criar uma função chamada set active slide.
+
+40
+00:03:11,790 --> 00:03:17,760
+E o que faremos é pegar os slides que trouxemos, lembrando que é uma lista de nós e queremos
+
+41
+00:03:17,760 --> 00:03:18,510
+para percorrer.
+
+42
+00:03:18,510 --> 00:03:24,110
+Eu vou usar o método foreach aqui e ver para cada slide e isso vai ter uma função de seta.
+
+43
+00:03:25,560 --> 00:03:31,710
+Então, para cada slide, vou pegar esse slide e remover a classe.
+
+44
+00:03:31,740 --> 00:03:38,010
+Então, se fizermos a remoção de pontos sem classes, podemos remover uma classe específica e ela ficará ativa.
+
+45
+00:03:38,760 --> 00:03:40,530
+OK, então vamos remover isso.
+
+46
+00:03:40,530 --> 00:03:44,340
+E como usamos uma função de seta, nem precisamos dessas chaves.
+
+47
+00:03:44,340 --> 00:03:45,300
+Podemos apenas fazer isso.
+
+48
+00:03:47,430 --> 00:03:52,010
+E depois disso, para cada um, vou fazer slides novamente.
+
+49
+00:03:52,020 --> 00:03:55,110
+Essa é a lista sem e pegue o slide ativo.
+
+50
+00:03:55,740 --> 00:03:58,800
+E eu quero adicionar a classe de ativo a isso.
+
+51
+00:03:58,800 --> 00:04:00,270
+Então lista de classe.
+
+52
+00:04:01,940 --> 00:04:11,870
+Não adicione e adicione a classe de ativo agora se eu subir até o topo aqui e alterar o slide ativo para
+
+53
+00:04:11,900 --> 00:04:14,660
+um, ele terá a imagem de fundo.
+
+54
+00:04:14,660 --> 00:04:16,490
+A segunda é a imagem de fundo.
+
+55
+00:04:16,610 --> 00:04:17,570
+Mude para dois.
+
+56
+00:04:17,810 --> 00:04:23,450
+Será o terceiro porque lembre-se, é uma lista sem, que é basicamente como um array.
+
+57
+00:04:23,450 --> 00:04:24,800
+Então é base zero.
+
+58
+00:04:25,670 --> 00:04:29,270
+E isso está sendo mudado aqui embaixo.
+
+59
+00:04:29,300 --> 00:04:32,570
+Estamos definindo a imagem de fundo para qualquer que seja o slide ativo.
+
+60
+00:04:32,570 --> 00:04:36,410
+Então zero e então é um a zero.
+
+61
+00:04:36,410 --> 00:04:37,670
+Um dois três quatro.
+
+62
+00:04:38,240 --> 00:04:45,980
+Agora, para a imagem frontal, precisamos apenas alterar a classe de active para a que queremos exibir.
+
+63
+00:04:45,980 --> 00:04:49,760
+Então, se eu manualmente descer aqui e colocá-lo no segundo, isso vai aparecer.
+
+64
+00:04:50,070 --> 00:04:57,400
+Então, o que faremos é adicionar ouvintes de eventos a essas setas para que possamos incrementar esse slide ativo.
+
+65
+00:04:58,010 --> 00:05:06,200
+Então vamos aqui e vamos pegar o botão direito e vamos adicionar um ouvinte de evento e queremos
+
+66
+00:05:06,200 --> 00:05:07,490
+ouça o clique.
+
+67
+00:05:08,360 --> 00:05:12,080
+E uma vez que fizermos isso, vamos executar uma função usando uma função de seta.
+
+68
+00:05:12,980 --> 00:05:17,720
+Então, no botão direito, queremos levar o slide ativo em incrementos de um.
+
+69
+00:05:17,720 --> 00:05:28,100
+Então vamos fazer mais mais agora queremos verificar o final para que possamos dizer se o slide ativo é maior
+
+70
+00:05:28,100 --> 00:05:34,040
+do que os slides, o que nos dará o comprimento total da lista de nós, mas queremos apenas
+
+71
+00:05:34,040 --> 00:05:35,420
+tire um disso.
+
+72
+00:05:35,630 --> 00:05:39,050
+E se isso for verdade, então queremos defini-lo de volta para zero.
+
+73
+00:05:39,050 --> 00:05:42,580
+Então vamos definir o slide ativo igual a zero.
+
+74
+00:05:43,010 --> 00:05:47,850
+Agora, depois de definir o slide ativo, queremos apenas chamar as duas funções abaixo.
+
+75
+00:05:47,870 --> 00:05:53,510
+Então, o primeiro será definido, BGU para corpo, porque isso definirá o plano de fundo e, em seguida,
+
+76
+00:05:53,510 --> 00:05:57,670
+deseja definir o slide ativo.
+
+77
+00:05:58,430 --> 00:05:58,850
+Tudo bem.
+
+78
+00:05:58,850 --> 00:05:59,870
+Então vamos salvar isso.
+
+79
+00:05:59,870 --> 00:06:04,400
+E agora se eu chegar e clicar aqui, você verá que irá para a próxima imagem.
+
+80
+00:06:04,400 --> 00:06:07,570
+Ele muda o plano de fundo, que também tem essa transição.
+
+81
+00:06:07,580 --> 00:06:10,790
+Lembre-se, adicionamos essa transição ao corpo.
+
+82
+00:06:11,270 --> 00:06:17,450
+Então você tem esse tipo de estatística, aquele efeito ali, aquele efeito slide, ou é mais como um alongamento
+
+83
+00:06:17,450 --> 00:06:18,230
+tipo de efeito.
+
+84
+00:06:18,890 --> 00:06:21,920
+E se chegarmos ao último, ele simplesmente recomeça.
+
+85
+00:06:24,210 --> 00:06:32,460
+OK, então temos, vamos ver, primeira imagem, segunda, terceira, quarta, quinta, e então começa de novo
+
+86
+00:06:32,470 --> 00:06:34,140
+para que a funcionalidade seja feita.
+
+87
+00:06:34,500 --> 00:06:39,330
+Agora vamos fazer essencialmente a mesma coisa com o botão esquerdo na direção oposta.
+
+88
+00:06:39,330 --> 00:06:42,420
+Então, vou copiar tudo do ouvinte do botão direito.
+
+89
+00:06:42,960 --> 00:06:46,200
+E vamos definir isso para o botão esquerdo.
+
+90
+00:06:46,530 --> 00:06:50,010
+E em Click, queremos diminuir o slide.
+
+91
+00:06:50,020 --> 00:06:53,010
+Então menos menos vai demorar, você sabe, tirar um.
+
+92
+00:06:53,430 --> 00:06:59,880
+E queremos verificar o início para que possamos simplesmente verificar e ver se o slide ativo, se está indo
+
+93
+00:06:59,880 --> 00:07:03,690
+ser maior que, desculpe, menor que zero.
+
+94
+00:07:04,050 --> 00:07:10,710
+Em seguida, queremos definir o slide ativo até o final do último, que serão slides, ponto
+
+95
+00:07:10,800 --> 00:07:16,910
+comprimento, slides, comprimento do ponto e, em seguida, apenas menos um fora disso.
+
+96
+00:07:17,400 --> 00:07:22,260
+OK, e novamente, basta chamar set background para body e definir slides ativos.
+
+97
+00:07:22,290 --> 00:07:29,370
+Agora eu posso ir para frente e para trás e se eu estou no primeiro e eu vou para trás, isso me leva para a direita
+
+98
+00:07:29,370 --> 00:07:30,330
+ao último.
+
+99
+00:07:32,330 --> 00:07:33,380
+Tudo bem, legal.
+
+100
+00:07:34,700 --> 00:07:42,870
+Então isso nos dá uma pequena apresentação de slides, obviamente, isso em si não é muito útil.
+
+101
+00:07:42,890 --> 00:07:45,620
+Quer dizer, acho que seria se fosse como uma galeria de imagens.
+
+102
+00:07:45,980 --> 00:07:52,670
+Mas quero dizer, eu quero que você entenda toda a lógica disso, trazendo todas as
+
+103
+00:07:52,670 --> 00:08:00,500
+slides com o Querrey Selecter, todos tendo o plano de fundo alterado para qualquer que seja a imagem de plano de fundo para
+
+104
+00:08:00,500 --> 00:08:08,450
+aquele slide específico e, em seguida, percorrer todos os slides, removendo o ato da aula e adicionando
+
+105
+00:08:08,450 --> 00:08:10,610
+o ato da aula para o próximo.
+
+106
+00:08:11,030 --> 00:08:17,220
+OK, que vai ser, você sabe, incrementar ou decrementar, dependendo da seta que clicarmos.
+
+107
+00:08:17,660 --> 00:08:18,560
+Então é isso.
+
+108
+00:08:18,560 --> 00:08:20,360
+Espero que os caras gostem desse projeto.
+
+109
+00:08:20,370 --> 00:08:21,700
+Vamos pular para o próximo.

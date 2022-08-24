@@ -1,0 +1,627 @@
+1
+00:00:00,150 --> 00:00:03,360
+All right, so we're going to get started here, I have my project starter open.
+
+2
+00:00:03,360 --> 00:00:09,360
+I also have a link here to the font awesome CDN so that we can use some icons for the open and close
+
+3
+00:00:09,360 --> 00:00:09,930
+buttons.
+
+4
+00:00:10,350 --> 00:00:19,380
+So in the title here, I'm just going to say rotating navigation and down here, let's get rid of this.
+
+5
+00:00:19,380 --> 00:00:22,320
+Each one, we're going to have a container that wraps everything.
+
+6
+00:00:22,740 --> 00:00:29,910
+And in here we're going to have a circle dash container that's going to wrap the circle of the class
+
+7
+00:00:29,910 --> 00:00:30,450
+of circle.
+
+8
+00:00:30,450 --> 00:00:32,660
+And this is basically the, you know, the circle.
+
+9
+00:00:32,670 --> 00:00:34,470
+It's going to be up in the corner with the buttons.
+
+10
+00:00:34,830 --> 00:00:37,950
+So in here, we're going to have a button with the idea of close.
+
+11
+00:00:38,340 --> 00:00:40,680
+And I just want to use an icon from font.
+
+12
+00:00:40,680 --> 00:00:41,160
+Awesome.
+
+13
+00:00:41,160 --> 00:00:49,050
+So eFax and then a dash times will be the icon and right under that will have a button with the idea
+
+14
+00:00:49,050 --> 00:00:49,740
+of open.
+
+15
+00:00:50,160 --> 00:00:57,990
+And this is going to be the icon eFax and then a dash barres to give us like that, you know, at Hamberger.
+
+16
+00:00:57,990 --> 00:00:58,320
+Look.
+
+17
+00:00:59,610 --> 00:01:03,480
+So if I save that, we're just going to see our two buttons here and now we want to be still within
+
+18
+00:01:03,480 --> 00:01:06,240
+the main container, but outside of the circle container.
+
+19
+00:01:06,250 --> 00:01:11,640
+So right above the last div, we're going to have our content and you could put absolutely anything
+
+20
+00:01:11,640 --> 00:01:19,350
+here in this content, Dev, we're just going to put in each one say amazing article and small tags
+
+21
+00:01:19,350 --> 00:01:26,460
+will put the author, our good friend, Foreign Pop and then paragraph, let's do Lorem 100 just to
+
+22
+00:01:26,460 --> 00:01:34,860
+throw some dummy text in there under the paragraph, we'll have another H3 and we'll say my dog and
+
+23
+00:01:34,860 --> 00:01:36,150
+we're going have a picture of a dog.
+
+24
+00:01:36,150 --> 00:01:40,740
+I'm just going to piece this this image tag in here.
+
+25
+00:01:40,740 --> 00:01:43,530
+And of course, like I said, you can put anything you want here.
+
+26
+00:01:43,560 --> 00:01:46,110
+This is just an on splash image of a dog.
+
+27
+00:01:46,500 --> 00:01:52,110
+And then underneath that will have a paragraph will do Lorem 75.
+
+28
+00:01:52,980 --> 00:02:03,030
+And save and get a cute little dog on the screen, so underneath the container, so the container ends
+
+29
+00:02:03,030 --> 00:02:09,750
+here, the last div, we're going to put our nav, so let's just create a H2O five nav tag with the
+
+30
+00:02:09,750 --> 00:02:11,790
+URL and then an ally.
+
+31
+00:02:11,790 --> 00:02:13,620
+And I'm going to use icons here as well.
+
+32
+00:02:13,620 --> 00:02:25,590
+So we'll do I f a s and F a dash home and then next to that icon will just stay home and copy that down
+
+33
+00:02:25,590 --> 00:02:26,460
+twice.
+
+34
+00:02:26,580 --> 00:02:31,980
+So this one is going to be about I mean, these are probably B links, but that's fine.
+
+35
+00:02:31,980 --> 00:02:33,230
+You can add the links if you want.
+
+36
+00:02:33,630 --> 00:02:42,000
+So fails, let's do user dash Alz and then for this is going to be contact, these aren't going to be
+
+37
+00:02:42,000 --> 00:02:43,230
+actual pages.
+
+38
+00:02:45,420 --> 00:02:51,030
+The point of this project is the the actual animation and the position of the nav and all that, not
+
+39
+00:02:51,030 --> 00:02:52,660
+the actual inner pages.
+
+40
+00:02:53,100 --> 00:02:55,530
+So this will use the envelope.
+
+41
+00:02:56,790 --> 00:02:59,500
+OK, so that should do it for the HTML.
+
+42
+00:02:59,500 --> 00:03:02,580
+Let's jump into our stylesheet and we'll do a good part of this.
+
+43
+00:03:02,580 --> 00:03:07,050
+Now we probably have to break it into another video because there's quite a bit of success, but I'm
+
+44
+00:03:07,050 --> 00:03:08,850
+going to use the latest font.
+
+45
+00:03:08,850 --> 00:03:15,540
+So success Questionmark Family equals Lato and then we'll add that to our body.
+
+46
+00:03:18,790 --> 00:03:19,470
+All right.
+
+47
+00:03:19,470 --> 00:03:21,000
+And then let's see.
+
+48
+00:03:21,030 --> 00:03:24,000
+We're actually not going to use all this Fleck's stuff here.
+
+49
+00:03:24,450 --> 00:03:30,330
+So I'm going to get rid of pretty much all of this except for.
+
+50
+00:03:33,460 --> 00:03:42,100
+Except for the overflow hidden, which I'm actually going to change to overflow accident, so what that
+
+51
+00:03:42,100 --> 00:03:46,010
+does is it only hides the scroll bar on the x axis.
+
+52
+00:03:46,030 --> 00:03:47,220
+So going this way.
+
+53
+00:03:47,470 --> 00:03:51,880
+So we want to be able to scroll this way and then margined zero.
+
+54
+00:03:51,880 --> 00:04:01,030
+And then let's also add a background color of three three three, which is a dark gray.
+
+55
+00:04:01,030 --> 00:04:02,740
+And then let's have color.
+
+56
+00:04:03,640 --> 00:04:09,880
+Ta ta two, and I know that that doesn't look right, but we're going to set the container background
+
+57
+00:04:09,880 --> 00:04:11,230
+color to a light color.
+
+58
+00:04:11,230 --> 00:04:20,390
+So let's do background color and we'll do a three times now with this container.
+
+59
+00:04:21,220 --> 00:04:27,610
+Basically, it's going to rotate a little bit over when it has a specific class of Chenab.
+
+60
+00:04:27,620 --> 00:04:34,180
+So before I add anything else to the container, let's do container when it has shown NAV and we can
+
+61
+00:04:34,180 --> 00:04:42,730
+rotate it with the transformed property and then rotate and I'm going to rotate it negative 20 degrees.
+
+62
+00:04:44,230 --> 00:04:44,710
+All right.
+
+63
+00:04:44,710 --> 00:04:54,850
+And then let's see if we go back here and we just add that class manually to this show NAV, then you
+
+64
+00:04:54,850 --> 00:04:56,350
+can see it rotates.
+
+65
+00:04:56,740 --> 00:04:58,930
+And I'm just going to keep that there for a second.
+
+66
+00:05:00,490 --> 00:05:03,340
+We're going to want to change the transform origin.
+
+67
+00:05:03,940 --> 00:05:09,490
+So transform origin when you when you rotate the origin by default is going to be like in the middle.
+
+68
+00:05:09,490 --> 00:05:10,900
+It just it just turns it.
+
+69
+00:05:10,900 --> 00:05:11,740
+It rotates it.
+
+70
+00:05:12,100 --> 00:05:16,510
+However, we want it to rotate from the top left position.
+
+71
+00:05:16,510 --> 00:05:17,690
+So it rotates.
+
+72
+00:05:17,710 --> 00:05:18,640
+I can't really explain.
+
+73
+00:05:18,680 --> 00:05:26,710
+If you go to the Amdocs for Fortran transform origin, you'll be able to see how it works with different
+
+74
+00:05:26,710 --> 00:05:27,250
+values.
+
+75
+00:05:27,250 --> 00:05:33,340
+But we want to set the transform origin property to the top left.
+
+76
+00:05:33,920 --> 00:05:38,730
+OK, so now you can see the rotation point is up here instead of in the middle.
+
+77
+00:05:40,150 --> 00:05:45,850
+Now we do want to transition on that because we don't want to just flick, you know, rotate real quick.
+
+78
+00:05:45,850 --> 00:05:47,200
+We want it to be smooth.
+
+79
+00:05:47,200 --> 00:05:50,710
+So let's add a transition onto that.
+
+80
+00:05:51,040 --> 00:05:58,140
+And we want to transition the transform property, say zero point five seconds and we'll just use linear.
+
+81
+00:05:58,150 --> 00:06:00,430
+So it's just, you know, all one speed or whatever.
+
+82
+00:06:00,430 --> 00:06:05,520
+And you can see it actually does it when I save because we have that class on it.
+
+83
+00:06:06,490 --> 00:06:09,640
+Now, I'm going to just go ahead and get rid of that class for now.
+
+84
+00:06:09,640 --> 00:06:14,710
+But we know that it does rotate when it has that specific class added.
+
+85
+00:06:15,340 --> 00:06:20,750
+So some other things I want to do here is just set the width to 100 viewport widths.
+
+86
+00:06:20,770 --> 00:06:26,440
+So basically take up the whole, you know, the whole viewport horizontally.
+
+87
+00:06:26,710 --> 00:06:33,670
+And then let's set the min height to I'm going to set that to one hundred viewport heights.
+
+88
+00:06:33,670 --> 00:06:42,100
+So we want to take up the whole viewport and then for padding, let's say padding fifty pixels all the
+
+89
+00:06:42,100 --> 00:06:46,540
+way around and that should do it for the container.
+
+90
+00:06:46,570 --> 00:06:55,330
+Now let's work on the circle container which is around this so circle Dasch container.
+
+91
+00:06:56,620 --> 00:07:05,290
+And I want to position this in a fixed position and we want it to be like a half circle on the edge
+
+92
+00:07:05,290 --> 00:07:06,070
+of the page.
+
+93
+00:07:06,070 --> 00:07:13,090
+So we'll set this to negative one hundred pixels for the top and then left same thing, negative 100
+
+94
+00:07:13,090 --> 00:07:13,720
+pixels.
+
+95
+00:07:14,410 --> 00:07:17,220
+And right now we just don't see anything.
+
+96
+00:07:17,710 --> 00:07:20,500
+Basically the buttons are not showing right now.
+
+97
+00:07:20,920 --> 00:07:26,980
+So far the circle itself, because remember, we have a circle container, but then we also have a class
+
+98
+00:07:26,980 --> 00:07:29,020
+of circle that wraps around the icon.
+
+99
+00:07:29,040 --> 00:07:34,000
+So this is where we're going to have like the background color, which is going to be hexadecimal F
+
+100
+00:07:34,000 --> 00:07:36,520
+F seven nine seven nine.
+
+101
+00:07:37,000 --> 00:07:45,070
+And let's set a height of two hundred pixels in a with of two hundred pixels and now you can see it
+
+102
+00:07:45,070 --> 00:07:46,180
+up in the corner there.
+
+103
+00:07:47,740 --> 00:07:49,360
+We want this to be a circle.
+
+104
+00:07:49,360 --> 00:07:55,450
+So Border Dasch radius, we're going to set that to fifty percent, make that a half circle.
+
+105
+00:07:55,600 --> 00:07:58,990
+I mean it's a full circle but half of it's off the screen.
+
+106
+00:07:59,290 --> 00:07:59,890
+That's what we did.
+
+107
+00:07:59,890 --> 00:08:03,490
+Negative 100 because we have two hundred for the height and the width.
+
+108
+00:08:03,640 --> 00:08:07,570
+If you increase or decrease this, you want to adjust that as well.
+
+109
+00:08:07,810 --> 00:08:12,250
+And we want to position this relative so we can position the buttons inside absolute.
+
+110
+00:08:12,760 --> 00:08:14,380
+And this is going to rotate.
+
+111
+00:08:14,410 --> 00:08:19,780
+So I want to add a transition on the transform.
+
+112
+00:08:21,050 --> 00:08:28,280
+Property and let's make that same thing, zero point five seconds linear, it's the same as the container
+
+113
+00:08:28,280 --> 00:08:29,060
+rotation.
+
+114
+00:08:30,170 --> 00:08:30,610
+All right.
+
+115
+00:08:30,620 --> 00:08:36,050
+And then for the buttons, let's say a circle button.
+
+116
+00:08:37,770 --> 00:08:42,960
+And for these, I want to I know we can't see them at the moment, let's actually position them for
+
+117
+00:08:42,960 --> 00:08:51,630
+our sole position, them absolute sort of a position, absolute, and let's put them top 50 percent.
+
+118
+00:08:52,200 --> 00:08:56,070
+And from the left, 50 percent.
+
+119
+00:08:57,810 --> 00:09:02,820
+And then let's make the height one hundred pixels.
+
+120
+00:09:04,560 --> 00:09:13,140
+And then let's set and I know it doesn't look right yet, let's set the background to transparent.
+
+121
+00:09:14,300 --> 00:09:18,530
+And they're both right and they're both from the same exact spot right now, we want to take off that
+
+122
+00:09:18,530 --> 00:09:19,070
+border.
+
+123
+00:09:19,220 --> 00:09:24,170
+So Border zero, let's set the font size bigger as well.
+
+124
+00:09:24,170 --> 00:09:27,830
+So font size will set that to twenty six pixels.
+
+125
+00:09:28,980 --> 00:09:32,310
+And let's put the color to white.
+
+126
+00:09:34,000 --> 00:09:40,600
+OK, and then I just want to get rid of this border, one intense focus state, so let's say dot circle
+
+127
+00:09:41,230 --> 00:09:48,730
+and the button we want to target focus and set out line to none.
+
+128
+00:09:51,340 --> 00:09:52,000
+OK, good.
+
+129
+00:09:54,460 --> 00:09:54,960
+Let's see.
+
+130
+00:09:54,970 --> 00:10:00,010
+So each one has one has an idea of open, one has an idea of close.
+
+131
+00:10:00,010 --> 00:10:02,740
+So I want to target the open.
+
+132
+00:10:03,880 --> 00:10:12,070
+So circle button the idea of open and I'm going to set that left value to 60.
+
+133
+00:10:13,140 --> 00:10:18,860
+Percent, Hey, the open button is what we're going to see initially, and that's where I want it positioned.
+
+134
+00:10:19,500 --> 00:10:28,470
+So for the close, let's say, circle and we want the button that has the idea of close.
+
+135
+00:10:29,700 --> 00:10:37,670
+And I'm going to set that to top and at that to 60 percent, and this is relative to the circle, OK?
+
+136
+00:10:37,680 --> 00:10:44,310
+And we want to rotate this this close button.
+
+137
+00:10:44,310 --> 00:10:52,230
+So let's use, transform, rotate, and we're going to rotate it 90 degrees or 90 degrees.
+
+138
+00:10:52,920 --> 00:10:56,940
+And let's set this transform origin.
+
+139
+00:10:59,400 --> 00:11:03,330
+Transform Origin is going to be top left as well.
+
+140
+00:11:03,870 --> 00:11:06,260
+So now I save it and you can't see it.
+
+141
+00:11:06,270 --> 00:11:06,980
+It's up here.
+
+142
+00:11:06,990 --> 00:11:14,340
+In fact, if I take my container here and let's set just temporarily set this to 200 pixels.
+
+143
+00:11:15,830 --> 00:11:21,800
+I can see exactly where it's positioned, so just put that back to negative 100 and we should just see
+
+144
+00:11:22,090 --> 00:11:27,680
+the lines here and it's going to stay fixed there no matter what.
+
+145
+00:11:28,910 --> 00:11:33,980
+This image, though, let's let's just fix that real quick.
+
+146
+00:11:34,370 --> 00:11:37,580
+We're going to do the rest of this season in the next video.
+
+147
+00:11:37,580 --> 00:11:46,130
+But I just want to target the content image and set a max width of one hundred percent of its container
+
+148
+00:11:46,550 --> 00:11:47,510
+because that's bugging me.
+
+149
+00:11:47,840 --> 00:11:50,810
+But, yeah, you could have absolutely any content you want here.
+
+150
+00:11:51,050 --> 00:11:53,150
+And we can see the nav and stuff down here.
+
+151
+00:11:53,150 --> 00:11:59,000
+But in the next video, we'll finish the access and then we'll add a little bit of JavaScript to be
+
+152
+00:11:59,000 --> 00:12:05,270
+able to click this and, you know, add the show NAV class and will do to do its whole rotation effect.
+
+153
+00:12:06,140 --> 00:12:10,460
+Let's actually add, though, onto onto the button.
+
+154
+00:12:11,960 --> 00:12:16,340
+Let's add a cursor pointer like that.
+
+155
+00:12:16,840 --> 00:12:17,170
+All right.
+
+156
+00:12:17,180 --> 00:12:17,660
+So that's it.
+
+157
+00:12:17,660 --> 00:12:18,730
+I'll see you in the next video.

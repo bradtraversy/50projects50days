@@ -1,0 +1,579 @@
+1
+00:00:00,210 --> 00:00:04,710
+OK, so now we're going to start on the JavaScript to get this to function and slide.
+
+2
+00:00:05,080 --> 00:00:09,270
+So in our script, yes, I'm going to go ahead and bring everything that we need in.
+
+3
+00:00:09,270 --> 00:00:17,580
+So let's bring in our slider container and we're going to use document, dot, query, selector and
+
+4
+00:00:17,580 --> 00:00:21,420
+select by the class of slider dash container.
+
+5
+00:00:21,750 --> 00:00:23,880
+And then we're going to bring in a couple other things.
+
+6
+00:00:25,170 --> 00:00:27,570
+So this is going to be the right slide.
+
+7
+00:00:28,600 --> 00:00:31,410
+So class of right Dasch slide.
+
+8
+00:00:32,880 --> 00:00:36,900
+And for the variable here, we'll call this slide.
+
+9
+00:00:37,920 --> 00:00:38,550
+Right.
+
+10
+00:00:39,300 --> 00:00:48,870
+And then we're also going to have slide left and that's going to have that has the class of left to
+
+11
+00:00:49,260 --> 00:00:49,890
+slide.
+
+12
+00:00:50,670 --> 00:00:51,090
+All right.
+
+13
+00:00:51,120 --> 00:00:52,430
+Then we also want the buttons.
+
+14
+00:00:52,440 --> 00:01:03,000
+So we have the up button up dash button and we have the down dash button.
+
+15
+00:01:04,470 --> 00:01:09,570
+And let's call this one up button.
+
+16
+00:01:12,700 --> 00:01:20,140
+Down button, and then I also want to get the length of the slides, meaning how many slides do we have?
+
+17
+00:01:20,560 --> 00:01:29,350
+So let's say slides length and we'll set this to query selecter, all because what we're selecting is
+
+18
+00:01:29,890 --> 00:01:30,880
+all the divs.
+
+19
+00:01:30,880 --> 00:01:33,190
+And we actually don't want all the divs in the document.
+
+20
+00:01:33,190 --> 00:01:35,650
+We want all the divs that are in the slide.
+
+21
+00:01:36,160 --> 00:01:36,750
+Right.
+
+22
+00:01:37,520 --> 00:01:40,350
+OK, so basically all those divs with the background images.
+
+23
+00:01:40,840 --> 00:01:45,550
+So in here we want to query selector all the dishes that will give us all the elements, but we just
+
+24
+00:01:45,550 --> 00:01:46,480
+need the length.
+
+25
+00:01:46,510 --> 00:01:53,140
+So we'll use the length property here and that will give us it will give us four in this case if I can.
+
+26
+00:01:53,140 --> 00:01:59,290
+So log slides length and me go over here and open this up.
+
+27
+00:01:59,290 --> 00:02:00,820
+You can see that we get four.
+
+28
+00:02:01,400 --> 00:02:06,070
+OK, so you'll be able to add more or less slides if you want.
+
+29
+00:02:07,090 --> 00:02:13,150
+Now we want to have an active slide index because basically these are positioned to be like on top of
+
+30
+00:02:13,150 --> 00:02:13,600
+each other.
+
+31
+00:02:13,610 --> 00:02:17,410
+We need to know which index is basically in view.
+
+32
+00:02:17,420 --> 00:02:22,200
+So let's say active slide index.
+
+33
+00:02:22,210 --> 00:02:25,890
+Make sure use let here and we'll set that to zero to start with.
+
+34
+00:02:26,290 --> 00:02:30,000
+And let's take the slide left, OK?
+
+35
+00:02:30,010 --> 00:02:38,560
+And then we're going to add a style and we want to apply the top and set that to a set of tactics.
+
+36
+00:02:39,550 --> 00:02:45,490
+And we want to do negative because this is actually going to go up and the initial top value is going
+
+37
+00:02:45,490 --> 00:02:51,370
+to be negative and then put in our our expression syntax here and then some parentheses.
+
+38
+00:02:51,370 --> 00:03:00,490
+And we want to take the slide length and subtract by one because the length is going to be for.
+
+39
+00:03:00,490 --> 00:03:07,630
+However, the index is zero based, so the index will be like zero one to three, even though this four
+
+40
+00:03:07,630 --> 00:03:09,400
+total, it starts at zero.
+
+41
+00:03:09,400 --> 00:03:15,520
+So we want to get the last index, which in this case would be three, which would be the fourth slide,
+
+42
+00:03:16,100 --> 00:03:19,900
+OK, because arrays are no lists, they're zero based.
+
+43
+00:03:20,290 --> 00:03:28,900
+And then we want to multiply that by 100 because it takes up one hundred percent or 100 viewport heights.
+
+44
+00:03:28,900 --> 00:03:30,670
+So let's add here, vich.
+
+45
+00:03:31,100 --> 00:03:31,600
+All right.
+
+46
+00:03:31,600 --> 00:03:37,240
+Now, if I save that and I go back, I noticed that this has moved to the correct position.
+
+47
+00:03:37,630 --> 00:03:40,950
+So Flying Eagle actually goes with this image here.
+
+48
+00:03:42,040 --> 00:03:46,810
+Now we just want to add functionality so we can, you know, flick these up and down.
+
+49
+00:03:47,800 --> 00:03:53,620
+One side will go up, one side will go down, and it should bring the correct slides into place.
+
+50
+00:03:54,100 --> 00:04:00,220
+So let's take the up button and let's call an add an event listener for a click.
+
+51
+00:04:02,290 --> 00:04:04,570
+And when that happens, we're going to run.
+
+52
+00:04:05,570 --> 00:04:14,920
+We'll call this function change slide and we will pass in an argument of OP, OK, and then I'm going
+
+53
+00:04:14,920 --> 00:04:19,630
+to copy this down and then this one is going to call down and this is going to be on the down button.
+
+54
+00:04:20,920 --> 00:04:24,670
+So let's change this here to down button.
+
+55
+00:04:24,940 --> 00:04:26,680
+So they're both going to call the same function.
+
+56
+00:04:26,680 --> 00:04:28,810
+They're just going to get passed in a different argument.
+
+57
+00:04:29,140 --> 00:04:30,400
+So let's create our function.
+
+58
+00:04:30,400 --> 00:04:31,330
+We'll use an arrow.
+
+59
+00:04:31,330 --> 00:04:37,450
+So we'll say change slide equals and it's going to take in a direction as a parameter.
+
+60
+00:04:40,120 --> 00:04:42,790
+And then let's get the slider height.
+
+61
+00:04:42,790 --> 00:04:49,180
+So we'll say conse slider height, and that's going to be the slider container.
+
+62
+00:04:49,660 --> 00:04:55,600
+And then there's a property called client height, OK, which will give us just that.
+
+63
+00:04:55,720 --> 00:05:03,010
+In fact, we can console log so you can see what that gives us slider height.
+
+64
+00:05:03,010 --> 00:05:08,410
+And if I go over here and I click the button we get six, six, six.
+
+65
+00:05:08,410 --> 00:05:09,520
+Is that a bad sign.
+
+66
+00:05:10,630 --> 00:05:11,770
+Let's click up again.
+
+67
+00:05:11,770 --> 00:05:12,880
+Five seven seven.
+
+68
+00:05:12,880 --> 00:05:19,420
+So it's based on whatever, you know, whatever the height is here and it's it's going to be completely
+
+69
+00:05:19,420 --> 00:05:19,960
+dynamic.
+
+70
+00:05:19,960 --> 00:05:23,590
+Doesn't matter how, you know, high or small it is.
+
+71
+00:05:23,980 --> 00:05:26,830
+So that will give us the slope, whatever the slider height is.
+
+72
+00:05:26,830 --> 00:05:29,470
+Now, let's check for the direction that's being passed in.
+
+73
+00:05:29,470 --> 00:05:41,230
+If the direction is, let's say, equal to up, then what we're going to want to do is take the active
+
+74
+00:05:41,230 --> 00:05:45,040
+index, active slide index and increment that by one.
+
+75
+00:05:45,040 --> 00:05:49,690
+So plus plus and then we want to know what happens if we hit the end.
+
+76
+00:05:49,690 --> 00:06:02,110
+So let's say if the active slide index happens to be greater than the last the last index in the slide,
+
+77
+00:06:02,110 --> 00:06:08,170
+which we can get with slide length oops, slide slide length.
+
+78
+00:06:09,430 --> 00:06:10,810
+But we want to take away one.
+
+79
+00:06:10,920 --> 00:06:18,630
+From that, so if that's true, then we'll set the active slide index to zero to back to the beginning.
+
+80
+00:06:18,780 --> 00:06:21,510
+So basically, if we get to the end, we're going to go back to the beginning.
+
+81
+00:06:22,500 --> 00:06:22,950
+All right.
+
+82
+00:06:24,090 --> 00:06:31,360
+Now, if I click on up, you can see nothing is happening yet because we need to add a transform.
+
+83
+00:06:32,310 --> 00:06:36,420
+We need to translate it on the Y axis, basically move it up and down.
+
+84
+00:06:36,900 --> 00:06:46,320
+So down here, after the if I'm going to take the slide, we're going to have to move both slide left
+
+85
+00:06:46,320 --> 00:06:47,370
+and slide right.
+
+86
+00:06:47,400 --> 00:06:51,360
+So let's take the right slide right.
+
+87
+00:06:51,360 --> 00:07:00,870
+And set the style dot transform and we want to translate the Y on the Y axis.
+
+88
+00:07:01,610 --> 00:07:03,360
+So translate why.
+
+89
+00:07:04,260 --> 00:07:12,690
+And what we want to pass in here is negative because we want the right side to go up and then our expression
+
+90
+00:07:12,690 --> 00:07:20,250
+syntax, we want the active slide index multiplied, whatever the slider height is, because remember
+
+91
+00:07:20,250 --> 00:07:24,810
+the slider height is variable and then we just want to add pixels on to it.
+
+92
+00:07:24,820 --> 00:07:27,270
+So if I save that, I go over here and I click up.
+
+93
+00:07:28,260 --> 00:07:29,520
+Nothing happens.
+
+94
+00:07:31,720 --> 00:07:34,630
+Let's see, slide length is not defined.
+
+95
+00:07:37,050 --> 00:07:39,190
+Slide length is not defined.
+
+96
+00:07:39,210 --> 00:07:41,130
+Oh, it slides length, plural.
+
+97
+00:07:42,600 --> 00:07:46,430
+All right, so let's try that and then we go so you can see that it switches.
+
+98
+00:07:46,440 --> 00:07:52,290
+Now, if I do it and it's at a certain height and then the height changes, you can see it kind of bleeds
+
+99
+00:07:52,290 --> 00:07:52,740
+over.
+
+100
+00:07:53,310 --> 00:07:59,640
+If I click it again, it's going to then recalculate the height based on this right here, OK, which
+
+101
+00:07:59,640 --> 00:08:02,190
+we put in to this variable which we're using down here.
+
+102
+00:08:04,170 --> 00:08:08,680
+Now, I want it to actually have a smooth transition rather than just flicking over.
+
+103
+00:08:09,150 --> 00:08:15,080
+So let's go back to our style sheet and let's see.
+
+104
+00:08:15,090 --> 00:08:19,350
+We want to go on both the left and right slides.
+
+105
+00:08:21,300 --> 00:08:25,050
+So let's go up to the left slide here and let's add a transition.
+
+106
+00:08:26,760 --> 00:08:31,950
+So we want to transition the transform property, which is what we're changing in our JavaScript.
+
+107
+00:08:32,430 --> 00:08:36,810
+And we'll do a point five seconds and ease in out.
+
+108
+00:08:37,320 --> 00:08:39,210
+And then I want to do the same thing for.
+
+109
+00:08:39,210 --> 00:08:39,760
+Right.
+
+110
+00:08:40,320 --> 00:08:42,630
+So right here, we'll add that as well.
+
+111
+00:08:43,110 --> 00:08:44,530
+And let's see what happens here.
+
+112
+00:08:44,550 --> 00:08:44,870
+All right.
+
+113
+00:08:44,880 --> 00:08:47,080
+So now you can see it has that transition.
+
+114
+00:08:47,090 --> 00:08:49,560
+And when we get to the end, it just goes back to the beginning.
+
+115
+00:08:51,170 --> 00:08:55,580
+OK, so now we want the same for this side, because right now we're just switching the images.
+
+116
+00:08:55,580 --> 00:08:56,960
+This is staying the same.
+
+117
+00:08:57,590 --> 00:09:02,660
+So let's grab this here and paste that.
+
+118
+00:09:02,660 --> 00:09:11,660
+And then we want to say slide left and change the the transform value translate why?
+
+119
+00:09:11,990 --> 00:09:15,470
+And we just want to make this positive because we want it to go the other way.
+
+120
+00:09:15,830 --> 00:09:16,220
+Right.
+
+121
+00:09:16,230 --> 00:09:19,670
+So active slide index times slide or height pixels.
+
+122
+00:09:20,150 --> 00:09:21,440
+So now if I click up.
+
+123
+00:09:23,030 --> 00:09:23,660
+There we go.
+
+124
+00:09:26,080 --> 00:09:30,610
+All right, so it just goes the opposite way now, the down button doesn't do anything.
+
+125
+00:09:30,610 --> 00:09:35,880
+So up here where we have this, if direction is up, let's go right now.
+
+126
+00:09:35,950 --> 00:09:37,270
+Let's put an elsea.
+
+127
+00:09:37,870 --> 00:09:39,350
+Actually, let's do an else.
+
+128
+00:09:39,370 --> 00:09:53,890
+If so else, if the direction is equal to down, then we're basically going to do something similar
+
+129
+00:09:53,890 --> 00:09:54,760
+to what we did here.
+
+130
+00:09:54,760 --> 00:09:57,970
+So we can copy that, but we want to decrement that.
+
+131
+00:09:57,980 --> 00:10:02,800
+So minus minus will take away one and we want to check to see if we're at the beginning.
+
+132
+00:10:02,800 --> 00:10:09,790
+So if this is going to be less than zero, so if that's going to be less than zero, then we're going
+
+133
+00:10:09,790 --> 00:10:16,120
+to set it to the last slide in the index, which is going to be whatever the slides length is, minus
+
+134
+00:10:16,120 --> 00:10:19,870
+one, because the length for us at least is four.
+
+135
+00:10:19,870 --> 00:10:22,780
+But the last index would be three because it's zero.
+
+136
+00:10:22,790 --> 00:10:24,750
+One, two, three is the indexes.
+
+137
+00:10:25,540 --> 00:10:26,610
+So let's save that.
+
+138
+00:10:26,620 --> 00:10:27,850
+And now if we click down.
+
+139
+00:10:30,260 --> 00:10:36,740
+There you go, and it should always match up with the correct you know, the correct text with the correct
+
+140
+00:10:36,740 --> 00:10:37,230
+image.
+
+141
+00:10:39,050 --> 00:10:40,230
+All right, so that's it.
+
+142
+00:10:40,250 --> 00:10:42,250
+Hopefully you enjoyed this project.
+
+143
+00:10:42,260 --> 00:10:44,210
+I think it's a pretty cool looking slider.
+
+144
+00:10:45,050 --> 00:10:45,500
+So that's it.
+
+145
+00:10:45,510 --> 00:10:47,120
+I'll see you in the next project.

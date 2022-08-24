@@ -1,0 +1,75 @@
+1
+00:00:00,240 --> 00:00:05,190
+All right, so this is actually one of my favorite projects in this course, this is a little drawing
+
+2
+00:00:05,190 --> 00:00:08,310
+app that we're going to create using HTML5 canvas.
+
+3
+00:00:08,610 --> 00:00:10,350
+So we're going to use the canvas element.
+
+4
+00:00:10,380 --> 00:00:12,240
+That's what this big square is.
+
+5
+00:00:12,480 --> 00:00:16,560
+And there's a JavaScript API that we can use to draw shapes.
+
+6
+00:00:16,560 --> 00:00:20,220
+We can draw, you know, circles, rectangles, images, whatever lines.
+
+7
+00:00:20,550 --> 00:00:25,470
+And we're going to implement that with mouse events so that we can actually click and we can draw,
+
+8
+00:00:26,160 --> 00:00:27,540
+OK, so we can draw.
+
+9
+00:00:27,690 --> 00:00:33,070
+And then we're going to add these controls down here where we can actually change the color.
+
+10
+00:00:33,100 --> 00:00:41,280
+So change it to red start to draw and we can change the the width of the the pen or the line here.
+
+11
+00:00:41,310 --> 00:00:48,450
+So if I go down to five and see it's a little smaller, I'll change the color to like a greenish color
+
+12
+00:00:48,840 --> 00:00:50,340
+and bring this to 20.
+
+13
+00:00:51,390 --> 00:00:53,340
+OK, and the highest we can go is 50.
+
+14
+00:00:53,700 --> 00:00:59,580
+So that's the thickness we can go and the lowest we can go is five and we can clear it with this button
+
+15
+00:00:59,580 --> 00:00:59,910
+here.
+
+16
+00:00:59,920 --> 00:01:03,570
+So I think it's a cool little canvas app and I think you'll enjoy it.
+
+17
+00:01:03,600 --> 00:01:09,360
+So let's go ahead and start on the interface and then we'll we'll talk a little bit about creating shapes,
+
+18
+00:01:09,390 --> 00:01:15,420
+creating circles and lines with canvas, and then we'll move into the mouse events and drawing and then
+
+19
+00:01:15,420 --> 00:01:17,640
+these two box controls down here.

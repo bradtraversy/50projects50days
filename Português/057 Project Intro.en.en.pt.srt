@@ -1,0 +1,55 @@
+﻿1
+00:00:00,270 --> 00:00:04,980
+OK, então neste projeto, vamos construir um controle deslizante de imagem, mas também teremos o plano de fundo
+
+2
+00:00:04,980 --> 00:00:06,170
+mudança de imagem também.
+
+3
+00:00:06,180 --> 00:00:10,190
+E você pode ver que o fundo está basicamente alinhado com esta imagem aqui.
+
+4
+00:00:10,500 --> 00:00:14,330
+Então, teremos alguns ouvintes de eventos nessas setas e nesses botões.
+
+5
+00:00:14,550 --> 00:00:20,130
+Então, quando eu clicar, ele mudará esta imagem, mas também mudará a imagem de fundo e a posição
+
+6
+00:00:20,130 --> 00:00:21,720
+-lo no lugar certo.
+
+7
+00:00:22,080 --> 00:00:26,490
+Então você verá que eles estão basicamente conectados, essa imagem de primeiro plano no fundo.
+
+8
+00:00:27,040 --> 00:00:27,480
+Tudo bem.
+
+9
+00:00:27,480 --> 00:00:32,790
+Assim, com as duas imagens de fundo, apenas uma está neste, o elemento slide e, em seguida, um está no
+
+10
+00:00:32,790 --> 00:00:33,810
+elemento do corpo.
+
+11
+00:00:34,080 --> 00:00:39,510
+E vamos adicionar algum JavaScript para adicionar esses ouvintes de eventos e ter tudo alinhado
+
+12
+00:00:39,510 --> 00:00:40,080
+agradável.
+
+13
+00:00:40,410 --> 00:00:40,800
+Tudo bem.
+
+14
+00:00:40,810 --> 00:00:41,870
+Então vamos começar.

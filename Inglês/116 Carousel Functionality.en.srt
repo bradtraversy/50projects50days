@@ -1,0 +1,583 @@
+1
+00:00:00,060 --> 00:00:04,980
+OK, so now we're going to start on the functionality for this now, if you have a decent experience
+
+2
+00:00:04,980 --> 00:00:10,590
+with JavaScript and working with the DOM and all that, you can attempt to try this on your own.
+
+3
+00:00:10,600 --> 00:00:13,770
+And in fact, I would encourage that for a lot of these projects.
+
+4
+00:00:13,770 --> 00:00:18,630
+And if it doesn't match up to exactly what I have, that's absolutely fine, because there's so many
+
+5
+00:00:18,630 --> 00:00:20,370
+different ways to do stuff like this.
+
+6
+00:00:20,370 --> 00:00:23,410
+We're not working with a framework or something like that.
+
+7
+00:00:23,430 --> 00:00:28,210
+I mean, when it comes to vanilla JavaScript, there's so many different ways to do the same thing.
+
+8
+00:00:28,830 --> 00:00:31,200
+So let's start off by bringing in what we need.
+
+9
+00:00:31,200 --> 00:00:33,120
+We have our images container.
+
+10
+00:00:33,120 --> 00:00:34,880
+So I'm going to call us IMGs.
+
+11
+00:00:35,400 --> 00:00:38,430
+We'll get it by I.D. So get Element Bidi.
+
+12
+00:00:38,700 --> 00:00:42,320
+And if you remember, the image container also has an idea of images.
+
+13
+00:00:42,330 --> 00:00:44,220
+So that's the same element right here.
+
+14
+00:00:44,220 --> 00:00:48,750
+ID images is our image container that wraps around all of these images.
+
+15
+00:00:49,410 --> 00:00:51,930
+So we also want to bring in our buttons.
+
+16
+00:00:51,930 --> 00:01:01,320
+Let's do left BTN and set that document dot get element by D and that has an idea of left and then we'll
+
+17
+00:01:01,320 --> 00:01:12,900
+also get a right button and we'll call this right button and then we want to get each individual image
+
+18
+00:01:12,900 --> 00:01:13,660
+as well.
+
+19
+00:01:13,680 --> 00:01:16,830
+So let's say Consed and we'll call this.
+
+20
+00:01:17,090 --> 00:01:23,310
+I already have images, we'll just call this IMG and it's going to be a node list so we'll be able to
+
+21
+00:01:23,370 --> 00:01:30,350
+do like IMG zero, IMG one and that'll get that specific index just like an array.
+
+22
+00:01:30,630 --> 00:01:39,450
+So we do that by fetching it with document dot query selector, all because there's more than one.
+
+23
+00:01:39,780 --> 00:01:44,910
+We want to get inside the images container, each image.
+
+24
+00:01:45,690 --> 00:01:46,110
+All right.
+
+25
+00:01:46,110 --> 00:01:48,150
+Next thing I'm going to do is set an index.
+
+26
+00:01:48,520 --> 00:01:51,240
+So the index is going to be, you know, where we're at.
+
+27
+00:01:51,240 --> 00:01:56,310
+The first one will be whatever, zero, one, two, three and so on.
+
+28
+00:01:56,310 --> 00:01:56,820
+It doesn't matter.
+
+29
+00:01:56,850 --> 00:01:58,710
+You can put more images or less.
+
+30
+00:01:58,710 --> 00:01:59,310
+Doesn't matter.
+
+31
+00:01:59,310 --> 00:02:03,180
+We're going to start it at zero and make sure you let because we're going to reassign it.
+
+32
+00:02:03,780 --> 00:02:08,390
+And then let's also create an interval because we're going to want this to keep running.
+
+33
+00:02:09,180 --> 00:02:14,700
+So let's say set interval and this takes in a function which I'm going to call run.
+
+34
+00:02:15,000 --> 00:02:16,730
+And how often do we want to run it?
+
+35
+00:02:16,740 --> 00:02:20,310
+I'm going to do two thousand milliseconds, which means two seconds.
+
+36
+00:02:20,640 --> 00:02:25,800
+So every two seconds this function called run is going to run.
+
+37
+00:02:27,210 --> 00:02:32,100
+And all this is going to do is increase the index or increment the index by one.
+
+38
+00:02:32,100 --> 00:02:38,190
+So IDEX plus plus and then we'll have a separate function to actually do the change image and we'll
+
+39
+00:02:38,190 --> 00:02:44,640
+call that change image, OK, which will go ahead and create a function change image.
+
+40
+00:02:46,350 --> 00:02:52,980
+And really all this has to do is change the translate value on the image container right here.
+
+41
+00:02:52,980 --> 00:02:58,920
+You can see we have transform and then translate X, which is, you know, where it is on the x axis
+
+42
+00:02:59,250 --> 00:03:03,510
+set to zero, which is going to by default, put it in the first image.
+
+43
+00:03:03,870 --> 00:03:09,960
+What we're going to want to do is slide it 500 pixels over to the next image and then 500 pixels to
+
+44
+00:03:09,960 --> 00:03:10,740
+the next image.
+
+45
+00:03:10,980 --> 00:03:14,670
+And we want to use a negative value because we want this to go this way.
+
+46
+00:03:14,880 --> 00:03:17,220
+If we do, positive value will go this way.
+
+47
+00:03:17,670 --> 00:03:22,560
+And I can just show you right here, if I set this to negative 500, I probably should showed you this
+
+48
+00:03:22,560 --> 00:03:23,070
+earlier.
+
+49
+00:03:24,060 --> 00:03:30,900
+That's automatically going to bring me to the next image if we do negative 1000 next image, OK, if
+
+50
+00:03:30,900 --> 00:03:36,990
+we do, you know, positive 500, it's going to go the other way, which we, of course, we don't want.
+
+51
+00:03:37,000 --> 00:03:38,930
+So we want this to be at Loop's.
+
+52
+00:03:39,250 --> 00:03:41,850
+We want this to be at zero for now.
+
+53
+00:03:42,810 --> 00:03:49,530
+And before we even do the transform, though, let's let's check to see if we're at the beginning or
+
+54
+00:03:49,530 --> 00:03:55,710
+if we're at the end, because then we'll have to reset the index to either zero or the last image.
+
+55
+00:03:56,220 --> 00:03:59,970
+So we can do that by setting an if statement here.
+
+56
+00:03:59,970 --> 00:04:06,600
+And we'll say if the index is greater than the image length.
+
+57
+00:04:06,600 --> 00:04:10,590
+Remember, image is a no list of all the images.
+
+58
+00:04:10,590 --> 00:04:15,690
+So the length will give us exactly how many images there are now.
+
+59
+00:04:16,840 --> 00:04:21,040
+The thing with this is actually I'm just going to console log real quick image
+
+60
+00:04:23,590 --> 00:04:29,890
+and let's go to our console here so you can see it's a no list of four images, but the index is at
+
+61
+00:04:29,890 --> 00:04:30,670
+zero, right?
+
+62
+00:04:30,680 --> 00:04:32,550
+So zero one, two, three.
+
+63
+00:04:32,890 --> 00:04:39,520
+So I want to see basically if we're at the end of the node list now, image dot length is going to give
+
+64
+00:04:39,520 --> 00:04:42,880
+us four because this four total, that's the length.
+
+65
+00:04:43,300 --> 00:04:48,160
+But I want to see if the index is at three because remember, the index starts at zero.
+
+66
+00:04:48,160 --> 00:04:49,950
+It's going to go zero one to three.
+
+67
+00:04:50,230 --> 00:04:54,070
+So we don't want to check to see if it's greater than the length because that's four.
+
+68
+00:04:54,460 --> 00:04:58,180
+We want to see if it's greater than the length minus one.
+
+69
+00:04:58,450 --> 00:05:00,510
+OK, which will be in our case three.
+
+70
+00:05:01,120 --> 00:05:04,330
+And if that's the case, then we just want to go back to the beginning.
+
+71
+00:05:04,330 --> 00:05:06,290
+So we'll set index to zero.
+
+72
+00:05:07,090 --> 00:05:12,550
+OK, and then else or else if we want to check to see if we're at the beginning.
+
+73
+00:05:12,730 --> 00:05:21,190
+So we can easily do that by saying if the index is going to be less than zero, then let's set the index
+
+74
+00:05:21,190 --> 00:05:22,150
+to the end.
+
+75
+00:05:22,150 --> 00:05:25,330
+And we can do that by setting it to the image length.
+
+76
+00:05:25,960 --> 00:05:30,550
+Except remember, the image length is for the last index is three.
+
+77
+00:05:30,560 --> 00:05:36,610
+So we just want to again, minus one from that, OK, once we figure out if it's at the beginning of
+
+78
+00:05:36,610 --> 00:05:46,090
+the end, we can take the image container, which is images, and set the style dot transform and we
+
+79
+00:05:46,090 --> 00:05:51,310
+want to set that to some back ticks and then translate X.
+
+80
+00:05:51,850 --> 00:05:58,270
+And in here, let's open up our expression syntax and remember, we want to go negative whatever.
+
+81
+00:05:58,270 --> 00:06:04,510
+The current index is multiplied by 500 because that's it's 500 pixels.
+
+82
+00:06:04,810 --> 00:06:07,570
+And make sure you put pixels outside of this right here.
+
+83
+00:06:07,750 --> 00:06:13,710
+And it's just going to do what I just showed you when I put, you know, negative 500 pixels in here,
+
+84
+00:06:13,720 --> 00:06:14,820
+negative 1000.
+
+85
+00:06:14,830 --> 00:06:19,360
+It's just going to move the image and it does it smoothly because of this transition.
+
+86
+00:06:19,780 --> 00:06:22,620
+Without the transition, it would just flick to the next one.
+
+87
+00:06:22,930 --> 00:06:25,270
+So let's just try that will save that.
+
+88
+00:06:26,530 --> 00:06:33,940
+And now you'll see after two seconds, the image changes on its own and it goes back to the beginning
+
+89
+00:06:33,940 --> 00:06:34,850
+when it hits the end.
+
+90
+00:06:35,290 --> 00:06:40,480
+Now, if we don't have a CSFs transition here, if I comment that out, it'll still work.
+
+91
+00:06:40,780 --> 00:06:43,830
+But it just like, you know, flick's to the next image.
+
+92
+00:06:44,020 --> 00:06:45,850
+So you want to have a transition.
+
+93
+00:06:45,850 --> 00:06:47,500
+So it's nice and it's nice and smooth.
+
+94
+00:06:47,830 --> 00:06:52,750
+And of course, you could change the duration if you want here for the transition.
+
+95
+00:06:53,350 --> 00:06:54,810
+But yeah, I think that's good.
+
+96
+00:06:55,390 --> 00:07:00,270
+So that handles, you know, the the automatic carousel.
+
+97
+00:07:00,280 --> 00:07:02,320
+We also want these buttons to function.
+
+98
+00:07:02,320 --> 00:07:02,650
+Right.
+
+99
+00:07:03,100 --> 00:07:06,790
+So let's go ahead and create some event listeners down here.
+
+100
+00:07:08,020 --> 00:07:10,810
+Let's do the left button, OK?
+
+101
+00:07:10,810 --> 00:07:10,930
+Sure.
+
+102
+00:07:10,930 --> 00:07:13,270
+We'll do the right button first.
+
+103
+00:07:13,270 --> 00:07:14,110
+So right button.
+
+104
+00:07:14,590 --> 00:07:16,050
+We want to add an event listener.
+
+105
+00:07:16,060 --> 00:07:22,150
+We're going to listen for a click and on that click will run function.
+
+106
+00:07:22,150 --> 00:07:23,680
+I'm going to use an arrow function.
+
+107
+00:07:24,430 --> 00:07:30,280
+And since we're going right, we're going to want to decrement the index.
+
+108
+00:07:30,280 --> 00:07:35,710
+So index minus minus and then we can just call change image.
+
+109
+00:07:37,720 --> 00:07:38,050
+All right.
+
+110
+00:07:38,050 --> 00:07:40,360
+Now, I'm going to save this and click next.
+
+111
+00:07:41,110 --> 00:07:48,520
+Now you see how we're having a little issue here because the interval is not resetting.
+
+112
+00:07:48,520 --> 00:07:51,070
+It's still has that same two second interval.
+
+113
+00:07:51,880 --> 00:07:55,030
+And when I click next, it's not like it's not resetting.
+
+114
+00:07:55,030 --> 00:07:58,270
+It's not disturbing it so it does some weird stuff.
+
+115
+00:07:58,690 --> 00:08:04,990
+So what we can do is create a function right here and we'll say reset interval.
+
+116
+00:08:07,060 --> 00:08:11,980
+And there's a JavaScript function called clear interval, which will do just that.
+
+117
+00:08:11,980 --> 00:08:17,800
+And we want to clear the current interval, which we, you know, described above, and then just reset
+
+118
+00:08:17,800 --> 00:08:17,920
+it.
+
+119
+00:08:17,920 --> 00:08:28,450
+So we'll reset interval to set interval and set set it to run the run function into two seconds or twelve
+
+120
+00:08:28,450 --> 00:08:29,230
+milliseconds.
+
+121
+00:08:29,560 --> 00:08:34,360
+And then down here, right after we change the image, we'll call reset interval.
+
+122
+00:08:35,440 --> 00:08:38,530
+We should ask you, you don't need this right here.
+
+123
+00:08:38,560 --> 00:08:38,890
+All right.
+
+124
+00:08:39,220 --> 00:08:40,930
+So now if I click next.
+
+125
+00:08:45,090 --> 00:08:50,520
+Actually, wait a minute, this is going the wrong way, this should be a plus plus.
+
+126
+00:08:52,640 --> 00:08:53,060
+All right.
+
+127
+00:08:54,770 --> 00:09:01,160
+Sorry about that, but you'll see, even if I if I get rid of the reset interval, it's still you know,
+
+128
+00:09:01,160 --> 00:09:06,260
+it still messes up because it's not resetting when I click on the the button and switch the image.
+
+129
+00:09:06,440 --> 00:09:09,890
+So you want to make sure that you reset that in order for this to work.
+
+130
+00:09:10,040 --> 00:09:10,600
+All right, good.
+
+131
+00:09:10,710 --> 00:09:14,390
+Now we want to do the same thing with the left button, which is going to be very similar.
+
+132
+00:09:14,400 --> 00:09:21,850
+So I'll just copy that and we'll set this to the left button click and all we need to do is minus minus.
+
+133
+00:09:22,370 --> 00:09:26,990
+And now if I click preview for at the beginning, it's going to take us to the end.
+
+134
+00:09:27,350 --> 00:09:29,360
+So it's going to go back and forth to the end.
+
+135
+00:09:29,810 --> 00:09:36,590
+But if I keep clicking previous, you know, I can go next previous, next, next previous.
+
+136
+00:09:37,640 --> 00:09:41,050
+And you can add as many images as you want in the HTML.
+
+137
+00:09:41,060 --> 00:09:46,340
+It doesn't matter if you have, you know, two images or you have, you know, 20 images, it doesn't
+
+138
+00:09:46,340 --> 00:09:46,730
+matter.
+
+139
+00:09:47,610 --> 00:09:50,250
+So I think that's pretty much it.
+
+140
+00:09:50,270 --> 00:09:52,280
+Let's get rid of this console log here.
+
+141
+00:09:53,090 --> 00:09:57,290
+And if you did try to do this on your own, if it doesn't look like this, that's fine.
+
+142
+00:09:57,290 --> 00:09:59,200
+It might even be better than this.
+
+143
+00:09:59,550 --> 00:10:04,510
+We're just trying to kind of simplify things for people that are fairly new to JavaScript.
+
+144
+00:10:04,640 --> 00:10:06,140
+So that's it for this project.
+
+145
+00:10:06,140 --> 00:10:07,490
+Guys, hopefully you enjoyed it.
+
+146
+00:10:07,760 --> 00:10:08,940
+Let's move on to the next one.

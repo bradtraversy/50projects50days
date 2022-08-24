@@ -1,0 +1,75 @@
+﻿1
+00:00:00,090 --> 00:00:05,070
+Tudo bem, então neste projeto, vamos construir um gerador de senhas, então a ideia é que podemos escolher
+
+2
+00:00:05,070 --> 00:00:07,110
+uma linha de 20 por padrão.
+
+3
+00:00:07,140 --> 00:00:12,900
+Digamos que queremos 10, uma senha de 10 caracteres e podemos escolher se queremos incluir maiúsculas
+
+4
+00:00:12,900 --> 00:00:15,880
+letras, letras minúsculas, números e símbolos.
+
+5
+00:00:16,170 --> 00:00:21,450
+Então, digamos que queremos apenas letras maiúsculas, minúsculas e números, mas não símbolos.
+
+6
+00:00:21,830 --> 00:00:22,710
+Clique em gerar.
+
+7
+00:00:22,710 --> 00:00:23,790
+E é isso que temos.
+
+8
+00:00:23,850 --> 00:00:29,610
+Então vamos ter 10 se eu mudar isso para, digamos cinco e vamos incluir símbolos também.
+
+9
+00:00:30,120 --> 00:00:35,700
+Agora vamos informar, vamos obter uma senha com letras maiúsculas e minúsculas,
+
+10
+00:00:35,700 --> 00:00:36,810
+números e símbolos.
+
+11
+00:00:37,320 --> 00:00:41,460
+Além disso, vamos adicionar a funcionalidade onde podemos clicar e vai
+
+12
+00:00:41,460 --> 00:00:43,560
+copie a senha para a área de transferência.
+
+13
+00:00:43,860 --> 00:00:49,960
+Se eu apenas subir aqui e meu você é albar e colar, você verá que realmente colará o que quer que seja
+
+14
+00:00:50,130 --> 00:00:52,540
+está no resultado da senha aqui.
+
+15
+00:00:52,950 --> 00:00:53,350
+Tudo bem.
+
+16
+00:00:53,350 --> 00:00:55,040
+Então vamos em frente e pular nele.
+
+17
+00:00:55,050 --> 00:00:55,740
+O JavaScript.
+
+18
+00:00:55,740 --> 00:01:00,300
+E isso vai ser um pouco mais complicado do que muitos outros projetos, mas vamos em frente
+
+19
+00:01:00,300 --> 00:01:02,520
+e levá-lo passo a passo e fazê-lo.

@@ -1,0 +1,675 @@
+﻿1
+00:00:00,060 --> 00:00:05,400
+OK, então vamos começar em nosso HTML aqui, e eu tenho meu navegador um pouco mais largo do que o normal só porque
+
+2
+00:00:05,400 --> 00:00:06,910
+da largura da interface do usuário.
+
+3
+00:00:07,290 --> 00:00:13,290
+Então, no título, vou mudar isso para verificar as contagens.
+
+4
+00:00:13,290 --> 00:00:17,660
+E aqui embaixo, vamos ter um contêiner.
+
+5
+00:00:20,040 --> 00:00:27,990
+E neste contêiner, vamos fazer um H2 e apenas verificar sua conta e, em seguida, um parágrafo e estou
+
+6
+00:00:27,990 --> 00:00:35,250
+vou apenas copiar e colar aquele parágrafo em que basicamente diz, você sabe, nós lhe enviamos um e-mail
+
+7
+00:00:35,250 --> 00:00:42,150
+um código de seis dígitos, digite o código abaixo, e então vamos fazer um container de traço de código, que vai
+
+8
+00:00:42,150 --> 00:00:45,480
+envolver o código, que terá seis entradas.
+
+9
+00:00:45,870 --> 00:00:51,630
+Então, digamos input e vamos dar a isso uma classe de código, exceto que não será texto, será
+
+10
+00:00:51,630 --> 00:01:02,220
+para ser um tipo de número e vamos adicionar um espaço reservado de zero e, em seguida, vamos definir um mínimo e um
+
+11
+00:01:02,220 --> 00:01:02,670
+Mac.
+
+12
+00:01:02,690 --> 00:01:06,360
+Assim, em uma entrada numérica, podemos definir um mínimo, que será zero.
+
+13
+00:01:06,660 --> 00:01:13,070
+E Max, vamos definir isso para nove e tornar isso obrigatório, OK?
+
+14
+00:01:13,070 --> 00:01:14,280
+E então eu vou copiar isso.
+
+15
+00:01:14,280 --> 00:01:16,660
+São dois, três, quatro ou cinco, seis.
+
+16
+00:01:16,690 --> 00:01:23,840
+Portanto, queremos seis no total e, em seguida, fora do contêiner de código, ainda dentro do contêiner regular.
+
+17
+00:01:23,850 --> 00:01:26,220
+Vamos fazer uma pequena tag com uma classe de informações.
+
+18
+00:01:26,730 --> 00:01:32,130
+E aqui eu vou colar um texto e basicamente dizer, você sabe, este é o design
+
+19
+00:01:32,130 --> 00:01:38,370
+só que não pegamos seu e-mail, não temos seu e-mail e isso deve ser feito para o HTML.
+
+20
+00:01:38,380 --> 00:01:42,780
+Então vamos pular para nossa folha de estilo aqui e eu vou usar a fonte Molay.
+
+21
+00:01:43,530 --> 00:01:57,270
+Então o sucesso ponto de interrogação e definir a família para imitar I e depois dizer Colen 300 para o peso 700.
+
+22
+00:01:57,810 --> 00:02:00,840
+E então vamos mudar isso aqui também.
+
+23
+00:02:02,820 --> 00:02:06,510
+E vamos adicionar uma cor de fundo bem clara ao corpo.
+
+24
+00:02:06,960 --> 00:02:14,550
+Então para isso vamos fazer hexadecimal F, B, F, C do CFT.
+
+25
+00:02:15,180 --> 00:02:17,310
+OK, então não há muita diferença.
+
+26
+00:02:17,310 --> 00:02:19,290
+É apenas um cinza claro, cinza muito claro.
+
+27
+00:02:19,860 --> 00:02:21,410
+E podemos nos livrar da direção flexível.
+
+28
+00:02:21,420 --> 00:02:21,870
+Opa.
+
+29
+00:02:21,900 --> 00:02:27,210
+Não queria fazer isso e me livrar da coluna Flex Direction, o que acabei de fazer.
+
+30
+00:02:28,350 --> 00:02:32,100
+E então o resto pode ficar em contêiner.
+
+31
+00:02:32,760 --> 00:02:35,070
+Então o container envolve tudo.
+
+32
+00:02:36,330 --> 00:02:45,660
+E para isso eu quero fazer uma cor de fundo branca e então vamos fazer uma borda de três pixels, preto
+
+33
+00:02:45,660 --> 00:02:53,670
+e sólido, e vamos dar alguns cantos arredondados do raio da borda, dez pixels para adicionar um pouco de preenchimento,
+
+34
+00:02:54,330 --> 00:02:55,650
+dá-lhes algum espaço lá.
+
+35
+00:02:56,130 --> 00:03:04,770
+Então o padding será de trinta pixels e vamos fazer uma largura máxima para este container de 1000 pixels
+
+36
+00:03:05,130 --> 00:03:12,030
+e então vamos alinhar tudo ao centro e isso deve fazer isso para o contêiner.
+
+37
+00:03:12,030 --> 00:03:20,700
+Agora, para o contêiner de código que envolve isso aqui, todas essas entradas fazem esse contêiner de código.
+
+38
+00:03:24,150 --> 00:03:29,550
+E vamos exibir flex, então vamos fazer disso uma caixa flex, que fará todos os itens,
+
+39
+00:03:29,550 --> 00:03:33,480
+todas as entradas, itens flexíveis e quero uma linha para o centro.
+
+40
+00:03:34,920 --> 00:03:38,270
+Portanto, queremos itens de linha e justificamos o conteúdo ao centro.
+
+41
+00:03:38,970 --> 00:03:45,060
+E vamos também adicionar uma margem ao contêiner, 40 pixels na parte superior e inferior.
+
+42
+00:03:45,810 --> 00:03:49,680
+OK, agora queremos fazer cada entrada individual, que tem uma classe de código.
+
+43
+00:03:50,310 --> 00:03:54,590
+Então, vou definir o raio da borda para cinco pixels.
+
+44
+00:03:54,600 --> 00:03:57,830
+Vou aumentar o tamanho da fonte.
+
+45
+00:03:57,840 --> 00:04:08,910
+Então 75 pixels e nós daremos esta altura fixa de, digamos, 120 e um com 100 pixels.
+
+46
+00:04:10,180 --> 00:04:15,960
+E então para a borda, vamos fazer a borda de um pixel e vamos deixá-la bem leve.
+
+47
+00:04:15,960 --> 00:04:19,960
+Então vamos fazer sólido e depois triplo E.
+
+48
+00:04:21,150 --> 00:04:22,790
+OK, então borda muito fraca.
+
+49
+00:04:22,800 --> 00:04:27,620
+E então para a margem, vou fazer uma margem de um por cento.
+
+50
+00:04:28,200 --> 00:04:29,860
+Então meio que separe-os um pouco.
+
+51
+00:04:29,880 --> 00:04:30,740
+Linha de texto.
+
+52
+00:04:30,750 --> 00:04:32,340
+Obviamente queremos os números no meio.
+
+53
+00:04:32,340 --> 00:04:33,810
+Portanto, alinha o texto ao centro.
+
+54
+00:04:34,770 --> 00:04:44,190
+Vamos definir o peso da fonte, certifique-se de que está definido para 300 e então acho que é isso.
+
+55
+00:04:45,510 --> 00:04:47,100
+Então isso parece muito bom.
+
+56
+00:04:47,350 --> 00:04:49,760
+Nós vamos nos livrar dessas flechas aqui.
+
+57
+00:04:49,770 --> 00:04:50,850
+Eu não quero isso.
+
+58
+00:04:51,660 --> 00:04:57,360
+A maneira de fazer isso é pegando a classe de código, que é a entrada, e depois dois pontos, dois pontos
+
+59
+00:04:57,660 --> 00:05:00,030
+traço, traço do kit da web.
+
+60
+00:05:01,900 --> 00:05:02,330
+O que é isso?
+
+61
+00:05:02,350 --> 00:05:07,330
+Botão de rotação externo externo e, em seguida, queremos o botão de rotação interno também.
+
+62
+00:05:07,360 --> 00:05:17,080
+Então codifique dois pontos, dois pontos, um web kit dash, um botão giratório interno e vamos definir os kits web de traço,
+
+63
+00:05:17,710 --> 00:05:19,480
+aparência a ninguém.
+
+64
+00:05:19,660 --> 00:05:22,400
+E vamos definir a margem para zero.
+
+65
+00:05:22,810 --> 00:05:25,390
+Então, se eu fizer isso agora, você pode ver que eles se foram.
+
+66
+00:05:25,450 --> 00:05:29,850
+No entanto, isso vai ser chrome e safari para se livrar dessas setas no Firefox.
+
+67
+00:05:29,890 --> 00:05:38,740
+Podemos ir direto para o código, para a classe de código e usar a aparência do Mozi Dash e podemos configurá-lo para TextField
+
+68
+00:05:39,970 --> 00:05:42,680
+então isso deve se livrar das setas no Firefox.
+
+69
+00:05:43,210 --> 00:05:45,520
+Agora quando eu clico aqui nós colocamos algo.
+
+70
+00:05:48,410 --> 00:05:54,050
+Eu já tinha zero lá, se eu colocar um número aqui e passar para o próximo, eu quero que isso tenha
+
+71
+00:05:54,050 --> 00:06:00,790
+como uma sombra de caixa ao redor dele e altere a cor da borda para que possamos fazer isso usando o estado válido.
+
+72
+00:06:00,800 --> 00:06:12,890
+Então, se pegarmos a entrada do código e dissermos que Colen é válido, vamos fazer uma cor de borda de três quatro nove oito
+
+73
+00:06:13,490 --> 00:06:18,140
+DB e então vamos mudar o nosso vamos adicionar uma sombra de caixa.
+
+74
+00:06:19,250 --> 00:06:29,230
+Assim, o Box Shadow fará zero deslocamentos de 10 pixels, 10 pixels de desfoque de cinco pixels negativos e depois legba.
+
+75
+00:06:29,240 --> 00:06:37,010
+Então a cor tem o X, a cor vai ser preta com zero vírgula dois cinco para o alfa.
+
+76
+00:06:37,340 --> 00:06:41,740
+Então agora se ele tiver o número nele, você verá que ele tem essa borda.
+
+77
+00:06:41,750 --> 00:06:43,640
+Ele também tem a sombra da caixa.
+
+78
+00:06:45,290 --> 00:06:50,690
+Agora, para isso aqui em baixo, vou adicionar um pouco de estilo ao que tem a classe
+
+79
+00:06:50,690 --> 00:06:51,380
+de informações.
+
+80
+00:06:52,310 --> 00:06:57,440
+Então, fora da cor de fundo do EA três vezes.
+
+81
+00:06:59,010 --> 00:07:05,360
+E vamos exibir isso como um bloco embutido porque é uma tag pequena, então é exibida
+
+82
+00:07:05,360 --> 00:07:06,650
+em linha por padrão.
+
+83
+00:07:07,160 --> 00:07:17,960
+E eu vou adicionar um preenchimento de dez pixels e vamos fazer uma altura de linha de vinte pixels e vamos
+
+84
+00:07:17,960 --> 00:07:22,810
+faça uma largura máxima de 400 pixels.
+
+85
+00:07:22,820 --> 00:07:28,960
+Então é só apertar e vamos mudar a cor vamos fazer sete sete sete.
+
+86
+00:07:30,200 --> 00:07:31,070
+Então é muito leve.
+
+87
+00:07:32,000 --> 00:07:38,030
+E também um raio de borda fará com que seu raio de borda seja cinco pixels.
+
+88
+00:07:39,590 --> 00:07:47,840
+OK, agora eu quero ter este envoltório porque se você sabe, se nós fizermos isso menor, apenas meio que
+
+89
+00:07:47,840 --> 00:07:48,680
+corta.
+
+90
+00:07:49,490 --> 00:07:57,650
+Então, o que faremos é adicionar, vamos adicionar uma consulta de mídia aqui, digamos, mídia, e vamos fazer uma largura máxima
+
+91
+00:07:57,650 --> 00:08:00,430
+de 600 pixels.
+
+92
+00:08:01,160 --> 00:08:10,520
+Então, quando isso for seiscentos pixels ou menos, vamos pegar o contêiner de código e definir o wrap de Fleck para rap.
+
+93
+00:08:10,850 --> 00:08:12,890
+Assim, segue para a próxima linha.
+
+94
+00:08:13,610 --> 00:08:17,800
+E então eu também vou diminuir um pouco as entradas.
+
+95
+00:08:17,810 --> 00:08:25,280
+Então o código, vamos definir o tamanho da fonte, que eu acho que é 75 por padrão, vai defini-lo para 60.
+
+96
+00:08:25,970 --> 00:08:31,040
+E a altura, que eu acho que é 100, vai definir isso para 80 ou é 120.
+
+97
+00:08:31,040 --> 00:08:38,540
+Acredito que vamos definir isso para 80 e, em seguida, vamos definir uma largura máxima de 70 pixels.
+
+98
+00:08:38,720 --> 00:08:40,340
+OK, então vai torná-lo um pouco menor.
+
+99
+00:08:42,140 --> 00:08:48,620
+Você sabe, rap, tudo bem, então é isso que o sucesso do JavaScript não vai ser tão ruim.
+
+100
+00:08:49,640 --> 00:08:55,970
+O que nós queremos fazer, porém, é que quando eu clicar aqui e colocar, eu digite um número e
+
+101
+00:08:55,970 --> 00:08:57,250
+então eu digito outro número.
+
+102
+00:08:57,440 --> 00:08:59,480
+Não quero que fique na mesma caixa.
+
+103
+00:08:59,480 --> 00:09:02,770
+Eu quero que seja no próximo para que possamos digitar rapidamente o código.
+
+104
+00:09:03,380 --> 00:09:03,800
+Tudo bem.
+
+105
+00:09:03,810 --> 00:09:11,150
+Então vamos pular para o nosso JavaScript e vamos trazer as entradas para que diremos códigos const porque eles
+
+106
+00:09:11,180 --> 00:09:16,670
+toda a classe de código e vamos usar ponto de documento, seletor de consulta, tudo porque há mais
+
+107
+00:09:16,670 --> 00:09:18,260
+do que aquele que queremos pegar.
+
+108
+00:09:18,620 --> 00:09:22,340
+Portanto, a classe de código que os colocará em uma lista de nós.
+
+109
+00:09:22,890 --> 00:09:25,150
+Agora, inicialmente queremos nos concentrar no primeiro.
+
+110
+00:09:25,160 --> 00:09:29,360
+Assim como um array com uma lista de nós, posso pegar um índice.
+
+111
+00:09:29,390 --> 00:09:34,180
+Eu quero zero, que é o primeiro, e vou chamar o método de foco.
+
+112
+00:09:34,580 --> 00:09:40,370
+Assim que eu fizer isso e quando chegarmos à página, ele colocará automaticamente o cursor na
+
+113
+00:09:40,370 --> 00:09:45,050
+lá, porque quando chegamos à página, queríamos ir direto para a primeira e depois
+
+114
+00:09:45,050 --> 00:09:48,670
+nós digitamos, você sabe, através dessas entradas.
+
+115
+00:09:49,220 --> 00:09:53,930
+Então, a próxima coisa que faremos é pegar os códigos e podemos fazer um loop com um foreach.
+
+116
+00:09:54,500 --> 00:10:01,940
+Então vou dizer para cada código e também vou pegar o índice de cada código, cada entrada e
+
+117
+00:10:01,940 --> 00:10:03,310
+Eu quero adicionar um ouvinte de eventos.
+
+118
+00:10:03,320 --> 00:10:05,150
+Portanto, adicione o ouvinte de evento de código.
+
+119
+00:10:05,810 --> 00:10:07,790
+Quero ouvir o evento key down.
+
+120
+00:10:09,260 --> 00:10:13,010
+E quando isso acontecer, vamos executar uma função com um objeto de evento.
+
+121
+00:10:14,450 --> 00:10:22,010
+E eu quero apenas verificar para ver se a chave para que eu possa pegar este objeto de evento e dizer, Dorcy.
+
+122
+00:10:22,490 --> 00:10:30,830
+Então, se for maior ou igual a zero e também quero verificar se é menor que nove.
+
+123
+00:10:30,830 --> 00:10:36,540
+Então tecla e ponto se for menor ou igual a nove.
+
+124
+00:10:37,100 --> 00:10:41,210
+Agora, se isso acontecer, eu quero passar para o próximo.
+
+125
+00:10:41,220 --> 00:10:48,110
+Então, se eu digitar dois aqui, quero que isso se concentre no próximo código e na próxima entrada para que possamos fazer
+
+126
+00:10:48,110 --> 00:10:53,720
+isso pegando códigos, que é uma lista de nós ou basicamente um array.
+
+127
+00:10:54,020 --> 00:10:58,210
+E queremos definir, digamos, index.
+
+128
+00:10:58,490 --> 00:11:03,170
+Então, quando fazemos o loop, temos um índice que começa em zero, então o próximo será um, dois
+
+129
+00:11:03,170 --> 00:11:03,800
+e assim por diante.
+
+130
+00:11:04,020 --> 00:11:07,970
+Queremos apenas adicionar um a esse índice e queremos nos concentrar nesse.
+
+131
+00:11:09,590 --> 00:11:13,910
+Agora, se eu descer aqui e fizer isso, ele se move para o próximo.
+
+132
+00:11:13,910 --> 00:11:14,480
+Mas observe.
+
+133
+00:11:15,110 --> 00:11:19,880
+O que quer que eu acerte, que foi um três neste caso, vai para o segundo aqui.
+
+134
+00:11:19,880 --> 00:11:22,280
+Se eu acertar de novo, quero dizer, isso funciona.
+
+135
+00:11:22,280 --> 00:11:28,250
+Mas para o primeiro, queremos que ele vá na primeira caixa para que possamos adicionar um pequeno tempo limite definido
+
+136
+00:11:28,250 --> 00:11:32,570
+aqui e espere, você sabe, dez milissegundos ou mais e então faça isso.
+
+137
+00:11:32,580 --> 00:11:35,450
+Então defina o tempo limite, que leva em uma função.
+
+138
+00:11:36,860 --> 00:11:41,810
+Então eu vou pegar isso e colocar isso aqui.
+
+139
+00:11:41,810 --> 00:11:45,530
+Como é um forro, não precisamos de chaves e depois definir o tempo.
+
+140
+00:11:45,530 --> 00:11:49,640
+Vou pegar o segundo argumento do tempo limite, que será para nós.
+
+141
+00:11:49,640 --> 00:11:51,200
+Diremos apenas dez milissegundos.
+
+142
+00:11:51,500 --> 00:11:57,380
+Então, se eu descer aqui e colocar algo aqui, ele espera e então nos permite colocar o
+
+143
+00:11:57,380 --> 00:12:00,590
+número no primeiro e então podemos continuar.
+
+144
+00:12:00,980 --> 00:12:08,300
+Agora, se clicarmos em delete, quero que não faça nada agora, mas quero que volte ao anterior
+
+145
+00:12:08,300 --> 00:12:08,480
+isto.
+
+146
+00:12:08,720 --> 00:12:11,420
+Se, você sabe, se errarmos e precisarmos colocar um número diferente.
+
+147
+00:12:11,420 --> 00:12:19,730
+E então vamos fazer um else if e eu quero verificar se o botão delete foi pressionado ou a tecla backspace.
+
+148
+00:12:19,730 --> 00:12:21,920
+Então, digamos e ponto chave.
+
+149
+00:12:22,520 --> 00:12:30,920
+Se for igual a backspace, que com B maiúsculo, quero fazer a mesma coisa que fiz
+
+150
+00:12:30,920 --> 00:12:36,280
+aqui, exceto que eu quero fazer o índice menos um para retroceder.
+
+151
+00:12:36,290 --> 00:12:42,350
+Então, agora, se eu fizer três, cinco, seis e depois disser que errei com o seis, posso voltar atrás.
+
+152
+00:12:43,130 --> 00:12:49,310
+No entanto, isso fica meio confuso porque agora se eu apertar delete novamente para tentar excluir aqueles seis, ele vai
+
+153
+00:12:49,310 --> 00:12:50,420
+volta para o próximo.
+
+154
+00:12:50,630 --> 00:12:52,550
+E então eu acabo com dois números lá.
+
+155
+00:12:52,550 --> 00:12:54,880
+Então ainda está meio bagunçado agora.
+
+156
+00:12:55,640 --> 00:12:57,890
+Portanto, esta é uma correção muito fácil.
+
+157
+00:12:57,890 --> 00:13:05,450
+O que podemos fazer é assim que atingirmos, você sabe, um número aqui, queremos basicamente limpá-lo
+
+158
+00:13:05,450 --> 00:13:08,300
+para que possamos pegar, diremos códigos.
+
+159
+00:13:08,600 --> 00:13:15,920
+E então, seja qual for o índice atual, vamos definir o valor como uma string vazia para simplesmente nada.
+
+160
+00:13:16,040 --> 00:13:22,130
+Então agora se eu fizer como dois, sete, seis, e digamos que seis foi um erro, eu posso apertar backspace e
+
+161
+00:13:22,130 --> 00:13:24,490
+em seguida, pressione outro número e ele o substituirá.
+
+162
+00:13:25,010 --> 00:13:31,940
+OK, cinco backspaces, mude para sete, três, quatro e depois o que for, o que você quiser
+
+163
+00:13:31,940 --> 00:13:33,530
+acontecer depois de inserir o código.
+
+164
+00:13:33,530 --> 00:13:35,080
+Esta é apenas a parte da interface do usuário.
+
+165
+00:13:35,780 --> 00:13:36,230
+Tudo bem.
+
+166
+00:13:36,230 --> 00:13:41,240
+Então, sim, espero que vocês tenham gostado disso e não devamos acabar.
+
+167
+00:13:41,300 --> 00:13:46,880
+Com dois números em qualquer um dos espaços, não importa o quão rápido digitemos ou algo assim.
+
+168
+00:13:47,270 --> 00:13:48,070
+Tudo bem, então é isso.
+
+169
+00:13:48,080 --> 00:13:50,390
+Vamos em frente e passar para o próximo projeto.

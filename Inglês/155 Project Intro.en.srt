@@ -1,0 +1,63 @@
+1
+00:00:00,330 --> 00:00:05,370
+All right, so in this project, we're going to create a to do list, which looks pretty nice, pretty
+
+2
+00:00:05,370 --> 00:00:09,260
+nice clean design, and we're able to add it to do down here.
+
+3
+00:00:09,270 --> 00:00:12,600
+I'll just say to do one and you'll see that gets added.
+
+4
+00:00:12,600 --> 00:00:14,250
+I'll see to do two.
+
+5
+00:00:15,600 --> 00:00:17,040
+To do three.
+
+6
+00:00:17,310 --> 00:00:19,560
+And it's just going to get keep getting added down here.
+
+7
+00:00:19,590 --> 00:00:23,940
+Now, if I reload this, they're going to stay because we're actually going to implement local storage
+
+8
+00:00:23,940 --> 00:00:24,490
+at the end.
+
+9
+00:00:24,840 --> 00:00:28,200
+So first we're going to create the design or the the layout here.
+
+10
+00:00:28,200 --> 00:00:34,650
+Then we're going to add the functionality in the dorm where we can add it to do we can also mark as
+
+11
+00:00:34,650 --> 00:00:35,370
+completed.
+
+12
+00:00:35,700 --> 00:00:42,030
+So if I left click, it's going to mark as complete and if I right click it'll actually delete that.
+
+13
+00:00:42,030 --> 00:00:43,020
+To do so.
+
+14
+00:00:43,020 --> 00:00:46,290
+We'll add the dorm functionality first and then add in.
+
+15
+00:00:46,290 --> 00:00:51,030
+The last video will go ahead and implement local storage so that you can leave the page or reload the
+
+16
+00:00:51,030 --> 00:00:53,250
+page and the to dos will stay.

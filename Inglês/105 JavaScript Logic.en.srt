@@ -1,0 +1,239 @@
+1
+00:00:00,150 --> 00:00:05,250
+OK, so in the last video, we did our little animation, and right now we can put these wherever we
+
+2
+00:00:05,250 --> 00:00:10,290
+want, but I want to make it so that if we try to do all three, it's not going to let us do good,
+
+3
+00:00:10,290 --> 00:00:11,270
+cheap and fast.
+
+4
+00:00:11,280 --> 00:00:12,780
+So we want to have it.
+
+5
+00:00:12,780 --> 00:00:15,150
+So, you know, it can do cheap and good.
+
+6
+00:00:15,150 --> 00:00:18,810
+It can do cheap and fast, but it can't do all three.
+
+7
+00:00:18,820 --> 00:00:21,500
+So first thing I want to do is bring in everything we need.
+
+8
+00:00:21,510 --> 00:00:25,680
+Let's bring in the toggles, which is the checkbox themselves.
+
+9
+00:00:25,680 --> 00:00:34,320
+So let's say document dot, query selector, all because there's more than one and we want all the ones
+
+10
+00:00:34,320 --> 00:00:39,420
+of the class of toggle and then let's get each.
+
+11
+00:00:40,350 --> 00:00:43,920
+Basically we want to grab, you know, the the label.
+
+12
+00:00:44,400 --> 00:00:49,200
+I'm not not the label but the idea of good, cheap and fast.
+
+13
+00:00:49,210 --> 00:00:53,590
+So toggles gets all of these, but we want each individual one by its side.
+
+14
+00:00:54,030 --> 00:00:57,360
+So here we'll say I good.
+
+15
+00:00:57,390 --> 00:01:04,670
+This is going to be query selector and set this to good.
+
+16
+00:01:04,680 --> 00:01:15,750
+And then this one here is going to be cheap query selector and let's do I d of cheap and then this is
+
+17
+00:01:15,750 --> 00:01:19,640
+going to be fast so I'd fast.
+
+18
+00:01:19,680 --> 00:01:24,460
+Make sure you use query selector since it's a single element and fast.
+
+19
+00:01:24,480 --> 00:01:26,580
+So we were bringing in everything we need.
+
+20
+00:01:26,820 --> 00:01:33,750
+Now I'm going to take toggles and I'm going to loop through with a for each and see for each toggle.
+
+21
+00:01:35,380 --> 00:01:37,110
+Let's add an event listener.
+
+22
+00:01:37,110 --> 00:01:45,240
+So say toggle dot add event listener and the event is going to be a change.
+
+23
+00:01:45,720 --> 00:01:50,160
+When you have a checkbox and you want to add an event to it, you want to use change, not click.
+
+24
+00:01:51,240 --> 00:01:59,490
+So when that runs will have a function and we're going to have a function run called Do the Trick.
+
+25
+00:02:01,690 --> 00:02:10,300
+And passing the target value, which is the whatever we select and we have to pass in here our event
+
+26
+00:02:10,300 --> 00:02:10,990
+object.
+
+27
+00:02:12,340 --> 00:02:18,550
+OK, so now each time we click on one of these, it's going to, you know, fire off the change event
+
+28
+00:02:18,550 --> 00:02:23,460
+and it's going to do the trick and pass in whatever the target is passing that element.
+
+29
+00:02:23,800 --> 00:02:31,330
+So let's create a function called Do the Trick and it's going to take in we'll call the collect one.
+
+30
+00:02:32,160 --> 00:02:33,020
+That's what it is.
+
+31
+00:02:33,020 --> 00:02:34,150
+It's the one we clicked on.
+
+32
+00:02:35,740 --> 00:02:43,120
+And we want to check first to see if all three are checked so we can say if good dot checked, because
+
+33
+00:02:43,120 --> 00:02:45,760
+when you have a checkbox, you bring it into the dorm.
+
+34
+00:02:45,760 --> 00:02:50,980
+You can you can access if it's checked or not with Dorchak, then it'll be a true or false.
+
+35
+00:02:51,420 --> 00:02:58,960
+So we'll say if good is checked, if cheap is checked and if fast.
+
+36
+00:03:00,810 --> 00:03:01,270
+Checked.
+
+37
+00:03:01,680 --> 00:03:10,470
+OK, so if that's true, let's say if good is equal to the clipped one.
+
+38
+00:03:11,220 --> 00:03:16,590
+So basically the you know, the clipped one, meaning the target that's passed, and then we're going
+
+39
+00:03:16,590 --> 00:03:21,440
+to say fast dot checked and we want to uncheck it.
+
+40
+00:03:21,450 --> 00:03:23,880
+So we're going to set that to false.
+
+41
+00:03:25,300 --> 00:03:27,870
+OK, and then let's say if.
+
+42
+00:03:30,440 --> 00:03:33,890
+Cheap is the correct one.
+
+43
+00:03:34,530 --> 00:03:42,560
+OK, so if we click on cheap, then we'll take good and let's get checked and set that to false.
+
+44
+00:03:45,000 --> 00:03:56,010
+And then if we have fast that's clicked, then we want to set cheap checked to false.
+
+45
+00:03:56,580 --> 00:03:57,830
+All right, so let's save that.
+
+46
+00:03:57,840 --> 00:04:04,260
+Now, if I go on a good cheap and then I click fast, you'll see cheap automatically slide back over
+
+47
+00:04:04,260 --> 00:04:07,800
+because it's it's set back to false right here.
+
+48
+00:04:08,390 --> 00:04:13,440
+OK, if I click cheap then good is going to be unchecked.
+
+49
+00:04:14,410 --> 00:04:17,700
+If I click good fast is going to be unchecked.
+
+50
+00:04:17,930 --> 00:04:25,890
+OK, if if cheap is already selected we can do good and not cheap and not fast.
+
+51
+00:04:25,890 --> 00:04:26,760
+We can do fast.
+
+52
+00:04:26,760 --> 00:04:27,780
+Not cheap, not good.
+
+53
+00:04:27,780 --> 00:04:32,130
+We can do cheap and fast or good.
+
+54
+00:04:32,130 --> 00:04:33,450
+But we can't do all three.
+
+55
+00:04:34,040 --> 00:04:35,340
+Ah it's very rare at least.
+
+56
+00:04:35,550 --> 00:04:37,290
+So it's just a fun little project.
+
+57
+00:04:38,460 --> 00:04:45,240
+And you know, you could use these nice sliders, these style checkboxes in your UI.
+
+58
+00:04:46,400 --> 00:04:49,410
+The, the logic here was just really for fun.
+
+59
+00:04:49,710 --> 00:04:50,480
+But that's it.
+
+60
+00:04:50,500 --> 00:04:52,350
+Let's go ahead and get started on the next one.

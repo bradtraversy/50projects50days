@@ -1,0 +1,63 @@
+﻿1
+00:00:00,150 --> 00:00:05,520
+OK, então neste projeto, vamos trabalhar um pouco com a tag de áudio HTML5 e vamos
+
+2
+00:00:05,520 --> 00:00:08,550
+para criar esta placa de som para que tenhamos esses efeitos diferentes.
+
+3
+00:00:08,580 --> 00:00:10,140
+Nós apenas lhe damos uma amostra.
+
+4
+00:00:20,270 --> 00:00:25,370
+Espero que você possa ouvir isso, então basicamente clicamos em um botão, faz um efeito sonoro, e se o
+
+5
+00:00:25,370 --> 00:00:29,420
+o som ainda está tocando e clicamos em outro, ele vai parar esse efeito e iniciar o próximo
+
+6
+00:00:29,420 --> 00:00:29,720
+1.
+
+7
+00:00:29,960 --> 00:00:32,720
+Então, podemos fazer isso usando tags de áudio.
+
+8
+00:00:33,500 --> 00:00:37,420
+Então, mais cinco, você tem a tag de áudio, você pode mostrar os controles.
+
+9
+00:00:37,430 --> 00:00:38,360
+Nós não vamos fazer isso.
+
+10
+00:00:38,370 --> 00:00:40,140
+Nós vamos fazer tudo através de JavaScript.
+
+11
+00:00:40,430 --> 00:00:47,630
+Então, basicamente, se você capturar um elemento de áudio com, você sabe, obter elemento por ideia, qualquer que seja, você
+
+12
+00:00:47,630 --> 00:00:56,520
+tem alguns métodos e propriedades nesse objeto que você traz, como play, pause e assim por diante.
+
+13
+00:00:56,540 --> 00:00:59,180
+Então este é o Amdocs.
+
+14
+00:00:59,180 --> 00:01:03,890
+Se você quiser dar uma olhada nisso e ver os diferentes métodos, o que estamos fazendo é bem simples,
+
+15
+00:01:04,160 --> 00:01:08,860
+mas acho que é uma boa adição ao curso trabalhar com o elemento de áudio.
+
+16
+00:01:08,870 --> 00:01:10,450
+Então vamos em frente e entrar nisso.

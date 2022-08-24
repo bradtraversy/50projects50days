@@ -1,0 +1,275 @@
+﻿1
+00:00:00,270 --> 00:00:05,760
+Tudo bem, então neste vídeo, vamos buscar nossos dados da API e, em seguida, no próximo vídeo
+
+2
+00:00:05,760 --> 00:00:07,950
+pegará esses dados e criará esses cartões.
+
+3
+00:00:07,980 --> 00:00:13,920
+Agora, a API que estamos usando é desse diko da API.
+
+4
+00:00:14,220 --> 00:00:16,650
+E há vários endpoints diferentes que podemos atingir.
+
+5
+00:00:16,650 --> 00:00:18,960
+Podemos pegar o Pokémon pelo nome, eu acho.
+
+6
+00:00:18,960 --> 00:00:26,550
+Então, Pokemon Ditto lhe dará todas as informações que você pode obter pelo ID Pokémon, o Pokémon.
+
+7
+00:00:26,550 --> 00:00:30,750
+Você pode obter por habilidades de tipo e, em seguida, você pode obter um monte.
+
+8
+00:00:30,750 --> 00:00:35,390
+Se você vir Pokémon, também poderá definir um limite e isso fornecerá uma matriz de resultados.
+
+9
+00:00:35,400 --> 00:00:42,030
+Mas se olharmos para cada objeto, ele inclui apenas o nome e um Eurail para aquele Pokémon em particular com
+
+10
+00:00:42,030 --> 00:00:42,790
+a identificação.
+
+11
+00:00:43,260 --> 00:00:48,930
+Agora o que queremos fazer é mostrar cartões diferentes na mesma tela com o nome, o tipo, o
+
+12
+00:00:48,930 --> 00:00:50,460
+ID, a imagem.
+
+13
+00:00:50,760 --> 00:00:55,920
+Então, teremos que fazer solicitações separadas para cada cartão, o que, você sabe, se você estivesse recebendo
+
+14
+00:00:55,920 --> 00:01:00,120
+milhares de itens que você provavelmente não gostaria de fazer por problemas de desempenho.
+
+15
+00:01:00,120 --> 00:01:01,290
+Mas para isso, deve ser bom.
+
+16
+00:01:01,290 --> 00:01:03,630
+Vamos apenas obter 150 cartas diferentes.
+
+17
+00:01:04,110 --> 00:01:06,480
+Então, queremos fazer solicitações para o ID.
+
+18
+00:01:06,690 --> 00:01:07,060
+Certo.
+
+19
+00:01:07,100 --> 00:01:11,400
+Se olharmos alguns dos dados aqui, temos o nome, que é Bulbasaur, que é o mesmo
+
+20
+00:01:11,400 --> 00:01:12,030
+nós costumavamos.
+
+21
+00:01:12,510 --> 00:01:14,430
+Obtemos o ID, que é um.
+
+22
+00:01:14,430 --> 00:01:15,490
+Recebemos o tipo.
+
+23
+00:01:15,720 --> 00:01:21,010
+Agora, os tipos serão complicados porque é uma matriz de objetos que também possui um tipo.
+
+24
+00:01:21,480 --> 00:01:23,540
+Portanto, tem um objeto de tipo com um nome.
+
+25
+00:01:23,550 --> 00:01:31,350
+Então, precisamos usar o método map are high order array para obter isso e
+
+26
+00:01:31,350 --> 00:01:33,210
+basicamente obter uma matriz de tipos.
+
+27
+00:01:33,570 --> 00:01:35,530
+Mas falaremos sobre isso quando chegarmos a isso.
+
+28
+00:01:35,910 --> 00:01:39,340
+Então, a primeira coisa que quero fazer é trazer o que precisamos.
+
+29
+00:01:40,560 --> 00:01:44,730
+Então, digamos recipiente pokey e queremos obtê-lo do DOM.
+
+30
+00:01:44,740 --> 00:01:51,240
+Então, vamos usar o elemento document get por D e eu tenho uma ideia do contêiner Pokie Dasch porque é onde
+
+31
+00:01:51,240 --> 00:01:53,850
+vamos querer preenchê-lo com todos esses cartões.
+
+32
+00:01:54,030 --> 00:01:54,390
+Certo.
+
+33
+00:01:54,390 --> 00:01:56,490
+Que é isso aqui.
+
+34
+00:01:56,520 --> 00:02:00,030
+Em última análise, todas essas coisas aqui virão do JavaScript.
+
+35
+00:02:00,750 --> 00:02:04,680
+Então, também vou definir uma variável para o número de contas que queremos.
+
+36
+00:02:04,710 --> 00:02:11,760
+Então vamos dizer que a contagem de sublinhados de Pokémon e eu vou definir isso para um e cinquenta e nós vamos ter
+
+37
+00:02:11,760 --> 00:02:17,520
+um objeto chamado cores que serão pares de valores-chave do tipo.
+
+38
+00:02:18,060 --> 00:02:24,690
+Assim, por exemplo, o tipo de fogo terá uma cor de FD FTF.
+
+39
+00:02:25,670 --> 00:02:30,510
+E para o resto disso, vou apenas copiar e colá-los no tipo de digitação.
+
+40
+00:02:32,120 --> 00:02:37,760
+E então o que faremos é criar uma função quando você usar uma função de seta chamada fetch Pokemon's.
+
+41
+00:02:40,400 --> 00:02:42,930
+Você não precisa usar uma função de seta, mas eu vou.
+
+42
+00:02:42,950 --> 00:02:49,100
+E este será um loop for porque basicamente queremos fazer um loop por essa quantidade de vezes.
+
+43
+00:02:49,520 --> 00:02:55,050
+E cada número, cada iteração será usada como um ID para o Pokémon que estamos recebendo.
+
+44
+00:02:55,400 --> 00:02:57,950
+Então vamos começar aqui com um.
+
+45
+00:02:57,950 --> 00:03:01,570
+Então deixe I igual a um, porque esse é o primeiro ID que queremos obter.
+
+46
+00:03:02,060 --> 00:03:10,370
+E então, enquanto I for menor ou igual à contagem de Pokémon e queremos apenas incrementar
+
+47
+00:03:10,370 --> 00:03:17,120
+por um, teremos uma função chamada Get Pokémon e passar a AI é o ID.
+
+48
+00:03:17,150 --> 00:03:18,860
+Agora isso vai retornar uma promessa.
+
+49
+00:03:18,870 --> 00:03:22,190
+Portanto, precisamos aguardar e aparecer.
+
+50
+00:03:22,190 --> 00:03:23,970
+Queremos chamar um sync.
+
+51
+00:03:25,130 --> 00:03:31,940
+OK, agora para essa função, vamos criar isso, pegue Pokémon também use a função de seta.
+
+52
+00:03:31,940 --> 00:03:36,970
+Isso vai levar um IED e vamos usar Fach aqui.
+
+53
+00:03:36,980 --> 00:03:38,940
+Então vamos usar uma pia de distância.
+
+54
+00:03:40,460 --> 00:03:45,530
+Então isso é síncrono e então eu vou colocar o Eurail em uma variável aqui.
+
+55
+00:03:46,700 --> 00:04:01,430
+Então, as táticas e a API do seu URL serão coqui api dot seo slash API slash version dois slash Pokémon
+
+56
+00:04:01,430 --> 00:04:06,600
+e então o OK e os IDs sendo passados ​​e então queremos buscar.
+
+57
+00:04:06,620 --> 00:04:13,520
+Então, digamos que a resposta será igual a aguardar a promessa de busca que passa essa passagem no
+
+58
+00:04:13,520 --> 00:04:13,970
+URL.
+
+59
+00:04:14,240 --> 00:04:23,570
+Queremos dados de Jason, então queremos aguardar o residente Jason OK, e então vamos em frente e console os dados de log
+
+60
+00:04:23,570 --> 00:04:24,830
+para que você possa ver o que temos.
+
+61
+00:04:25,640 --> 00:04:28,490
+E se eu abrir meu console, temos que chamar isso.
+
+62
+00:04:28,520 --> 00:04:31,310
+Então, queremos chamar o fetch.
+
+63
+00:04:32,750 --> 00:04:35,660
+Então pegue os Pokémons.
+
+64
+00:04:36,820 --> 00:04:43,900
+E você pode ver aqui embaixo, nós pegamos esses objetos com todos os dados de cada Pokémon até 150, e
+
+65
+00:04:43,900 --> 00:04:46,250
+claro, você pode alterar este número aqui se quiser.
+
+66
+00:04:47,860 --> 00:04:50,080
+Assim, podemos buscar os dados agora.
+
+67
+00:04:50,080 --> 00:04:52,900
+Precisamos inseri-lo no dormitório.
+
+68
+00:04:52,910 --> 00:05:00,190
+Então, no próximo vídeo, vamos criar uma função chamada Create Pokémon Card, onde para cada
+
+69
+00:05:00,190 --> 00:05:03,820
+um que buscamos, ele cria um cartão e o insere no DOM.

@@ -1,0 +1,231 @@
+1
+00:00:00,300 --> 00:00:04,950
+OK, so we're going to start on the JavaScript, which is going to be pretty easy, and I would challenge
+
+2
+00:00:04,950 --> 00:00:07,690
+you to try and do this yourself beforehand.
+
+3
+00:00:08,160 --> 00:00:14,790
+Basically, we need to bring in all the contents, which are, you know, these images here with the
+
+4
+00:00:14,790 --> 00:00:15,860
+class of content.
+
+5
+00:00:15,870 --> 00:00:17,970
+So query selector all will bring all those in.
+
+6
+00:00:17,970 --> 00:00:22,790
+You also want to bring all the list items in and then add an event listener on each of these.
+
+7
+00:00:23,100 --> 00:00:29,310
+OK, so you might want to loop through with a for each and add an event listener and then you want to,
+
+8
+00:00:29,640 --> 00:00:35,790
+you know, add the class of active to whichever one you click on and also add the class of show to whichever
+
+9
+00:00:36,030 --> 00:00:39,240
+of these images or whichever content should show.
+
+10
+00:00:39,570 --> 00:00:48,120
+So let's say const contents and we use document got query selector all because it's more than one.
+
+11
+00:00:48,120 --> 00:00:50,340
+We're going to select the class of content.
+
+12
+00:00:50,640 --> 00:01:00,240
+And then let's also grab from the NAV you'll we want all the list items and we'll call this list items
+
+13
+00:01:01,500 --> 00:01:04,810
+and we'll take the list items and let's loop through those.
+
+14
+00:01:04,830 --> 00:01:12,300
+So for each and we'll pass in here and arrow function and say for each item.
+
+15
+00:01:12,660 --> 00:01:14,340
+And we also want to get the index.
+
+16
+00:01:14,340 --> 00:01:16,350
+So I'll just use IDEX here.
+
+17
+00:01:16,370 --> 00:01:20,460
+This should be a fat arrow and then let's add an eventless star.
+
+18
+00:01:20,460 --> 00:01:31,230
+So add eventless onto the item that we want to listen for a click and on Click we're going to first
+
+19
+00:01:31,230 --> 00:01:37,010
+of all, hide all the classes of show or I should say, remove all the classes of show and active.
+
+20
+00:01:37,350 --> 00:01:39,110
+So let's have two different functions.
+
+21
+00:01:39,120 --> 00:01:46,320
+This will be hyd all contents and let's say hide all items.
+
+22
+00:01:47,190 --> 00:01:49,830
+OK, so we'll go down here and create these functions.
+
+23
+00:01:49,830 --> 00:01:52,020
+So hide all contents.
+
+24
+00:01:53,040 --> 00:01:57,420
+And what we're gonna do here is take the contents and then for each one of those.
+
+25
+00:01:58,350 --> 00:02:07,890
+So for each content, which is each div with the class or I'm sorry, each image with the class of content.
+
+26
+00:02:07,900 --> 00:02:08,210
+Right.
+
+27
+00:02:08,640 --> 00:02:09,000
+Yeah.
+
+28
+00:02:09,010 --> 00:02:10,260
+So class of content.
+
+29
+00:02:10,260 --> 00:02:11,400
+We brought that in here.
+
+30
+00:02:11,550 --> 00:02:18,720
+Now we're looping through and we want to take whichever content is current in the iteration and remove
+
+31
+00:02:18,720 --> 00:02:19,440
+that class.
+
+32
+00:02:20,520 --> 00:02:24,390
+So class of star remove of show.
+
+33
+00:02:25,560 --> 00:02:37,860
+OK, and then let's copy this and let's do hide all items and take say for each of the list items,
+
+34
+00:02:38,650 --> 00:02:44,760
+you will change that to item and let's remove the class of active.
+
+35
+00:02:45,450 --> 00:02:49,380
+OK, so I save that and I go and I click on one of these.
+
+36
+00:02:49,380 --> 00:02:54,420
+You'll see that there's no active class now on any of these because none of them are purple and there's
+
+37
+00:02:54,420 --> 00:03:00,210
+no image showing because there's no more show, there's no more show class.
+
+38
+00:03:00,210 --> 00:03:03,000
+And the show class is what makes the opacity one.
+
+39
+00:03:03,240 --> 00:03:05,330
+The opacity is zero by default.
+
+40
+00:03:05,760 --> 00:03:12,630
+So after we initially hide those, let's take the item that we click on and let's take the class list
+
+41
+00:03:12,630 --> 00:03:16,440
+and add to it the class of active.
+
+42
+00:03:19,250 --> 00:03:27,320
+So if I click on this one here, you'll see that this is active, this is active and so on, and then
+
+43
+00:03:27,320 --> 00:03:32,560
+we also want to add the class of show on to the correct content.
+
+44
+00:03:32,690 --> 00:03:41,600
+So here, let's say contents and remember, contents is a node list, so I can access zero one whatever
+
+45
+00:03:41,600 --> 00:03:42,620
+index I want.
+
+46
+00:03:42,920 --> 00:03:49,330
+I want to use the index from this foreach so that the first one shows the first one second item shows
+
+47
+00:03:49,340 --> 00:03:50,520
+a second and so on.
+
+48
+00:03:50,810 --> 00:03:53,420
+So we want to add that class of show on to that.
+
+49
+00:03:53,810 --> 00:03:55,870
+So now we start off here.
+
+50
+00:03:55,910 --> 00:03:59,690
+This is already active because, you know, we have it right here.
+
+51
+00:04:00,560 --> 00:04:03,770
+And then if we click on the second one, this will be active.
+
+52
+00:04:03,770 --> 00:04:06,560
+It's purple and it should show the second image.
+
+53
+00:04:06,800 --> 00:04:10,780
+OK, the second one in the node list, this one here will show the next one.
+
+54
+00:04:10,800 --> 00:04:12,080
+This one will show that one.
+
+55
+00:04:12,650 --> 00:04:18,800
+OK, so it's always going to show the correct one because of the index that we're adding that show class
+
+56
+00:04:18,800 --> 00:04:19,410
+on to.
+
+57
+00:04:20,210 --> 00:04:22,010
+OK, so hopefully that makes sense.
+
+58
+00:04:22,730 --> 00:04:24,620
+So I will see you in the next video.

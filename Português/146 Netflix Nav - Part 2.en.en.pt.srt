@@ -1,0 +1,607 @@
+﻿1
+00:00:00,270 --> 00:00:05,190
+Tudo bem, agora vamos terminar a maior parte do custo e adicionar o JavaScript para o botão
+
+2
+00:00:05,190 --> 00:00:11,550
+funcionalidade, e então eu quero adicionar alguns outros efeitos mais tarde para que possamos atrasar porque temos três
+
+3
+00:00:11,550 --> 00:00:13,770
+caixas, o vermelho, branco e preto.
+
+4
+00:00:13,770 --> 00:00:16,200
+E eu quero que eles saiam como um após o outro.
+
+5
+00:00:16,200 --> 00:00:18,480
+Então, vamos adicionar alguns atrasos de transição.
+
+6
+00:00:18,840 --> 00:00:21,200
+Mas por enquanto, vamos terminar o estilo básico.
+
+7
+00:00:21,210 --> 00:00:25,420
+Então vamos adicionar agora a brasa preta, essa preta, vermelha e branca.
+
+8
+00:00:25,430 --> 00:00:32,300
+Então, para preto, vamos definir a cor de fundo para ser e vamos fazer três, quatro para preto.
+
+9
+00:00:32,660 --> 00:00:35,020
+Sinto muito pelo vermelho três um.
+
+10
+00:00:35,100 --> 00:00:36,680
+Então, apenas números muito baixos.
+
+11
+00:00:36,690 --> 00:00:39,060
+Não é bem preto, mas é escuro.
+
+12
+00:00:39,450 --> 00:00:42,270
+Ainda não podemos vê-lo porque queremos adicionar uma largura.
+
+13
+00:00:42,270 --> 00:00:51,290
+Vamos fazer 60 por cento e então eu quero adicionar uma largura máxima de 480.
+
+14
+00:00:52,470 --> 00:00:55,140
+Portanto, não deve sair além de 480, não importa o quê.
+
+15
+00:00:55,140 --> 00:00:56,250
+E então um Menwith.
+
+16
+00:00:57,270 --> 00:00:59,550
+Então o Menwith fará três 20.
+
+17
+00:01:00,900 --> 00:01:01,440
+Tudo bem.
+
+18
+00:01:01,440 --> 00:01:02,100
+E depois.
+
+19
+00:01:02,730 --> 00:01:04,300
+Sim, isso deve funcionar por enquanto.
+
+20
+00:01:05,730 --> 00:01:14,730
+Então o vermelho vamos fazer Naved Dash Red e vamos definir nossa cor de fundo para que seja e
+
+21
+00:01:14,730 --> 00:01:17,160
+então passe para o vermelho de dois a nove.
+
+22
+00:01:17,160 --> 00:01:21,670
+Então, um número muito alto e depois nove e 20.
+
+23
+00:01:22,800 --> 00:01:24,870
+OK, agora não podemos ver isso ainda.
+
+24
+00:01:25,540 --> 00:01:26,970
+Então vamos.
+
+25
+00:01:28,060 --> 00:01:33,950
+Vamos adicionar uma largura de 95 por cento.
+
+26
+00:01:35,350 --> 00:01:41,140
+OK, agora você pode ver o vermelho saindo, mas você ainda pode ver o preto atrás dele do lado aqui,
+
+27
+00:01:41,440 --> 00:01:42,450
+que é o que queremos.
+
+28
+00:01:44,050 --> 00:01:49,060
+E então para a parte branca, então é um Naved Dash White.
+
+29
+00:01:52,060 --> 00:01:58,330
+Para isso, a cor de fundo será branco puro, então usarei apenas hexadecimal e queremos
+
+30
+00:01:58,330 --> 00:02:07,300
+que saia, então digamos que com 95 por cento e agora temos o que parece ser uma faixa preta e vermelha
+
+31
+00:02:07,300 --> 00:02:07,610
+aqui.
+
+32
+00:02:08,020 --> 00:02:11,650
+Então, quando sai e entra, vai fazer isso em taxas diferentes.
+
+33
+00:02:11,650 --> 00:02:12,760
+Vamos adicionar um atraso.
+
+34
+00:02:12,760 --> 00:02:16,930
+Mas como eu disse, eu só quero começar o estilo básico primeiro.
+
+35
+00:02:17,530 --> 00:02:19,270
+Então eu também vou adicionar preenchimento aqui.
+
+36
+00:02:19,270 --> 00:02:24,070
+Como isso está embrulhando, o conteúdo fará um preenchimento de 40 pixels, moverá tudo para dentro.
+
+37
+00:02:24,520 --> 00:02:30,670
+Vamos posicionar este relativo porque vamos querer posicionar o botão fechar absoluto dentro
+
+38
+00:02:30,670 --> 00:02:30,850
+isto.
+
+39
+00:02:31,780 --> 00:02:34,360
+E sim, por enquanto é isso.
+
+40
+00:02:35,470 --> 00:02:43,390
+E então para o botão fechar, digamos fechar traço BTN, vamos posicionar esse absoluto.
+
+41
+00:02:43,390 --> 00:02:53,800
+E onde eu quero colocar isso dentro do contêiner branco de navegação é 40 pixels do topo e 30 pixels
+
+42
+00:02:53,920 --> 00:02:54,800
+da direita.
+
+43
+00:02:55,210 --> 00:03:01,660
+Então agora você pode ver que também vamos torná-lo um pouco mais leve adicionando um valor de opacidade de zero
+
+44
+00:03:01,660 --> 00:03:03,880
+ponto três, que irá alimentá-lo um pouco.
+
+45
+00:03:06,010 --> 00:03:07,150
+Agora, vamos ver.
+
+46
+00:03:07,540 --> 00:03:09,880
+Isto é o que nos resta é a lista.
+
+47
+00:03:10,570 --> 00:03:18,490
+Então vamos dizer para a classe de lista, que é a inicial que você vai e eu quero me livrar de qualquer
+
+48
+00:03:18,490 --> 00:03:19,240
+Tópicos.
+
+49
+00:03:19,240 --> 00:03:22,150
+Então lista, tipo de estilo, vamos definir isso como nenhum.
+
+50
+00:03:23,950 --> 00:03:30,590
+E o preenchimento, vou me livrar do preenchimento padrão zero e depois dos itens da lista.
+
+51
+00:03:30,590 --> 00:03:34,870
+Então liste L, quero espalhá-los.
+
+52
+00:03:34,870 --> 00:03:39,670
+Portanto, coloque uma margem de 20 pixels na parte superior e inferior para espalhá-los.
+
+53
+00:03:39,680 --> 00:03:49,690
+Então vamos fazer os links para que o aliado marque e vamos definir a cor disso, a cor que vou
+
+54
+00:03:49,690 --> 00:03:55,540
+para ser o mesmo preto que temos para o fundo de um dos mapas.
+
+55
+00:03:56,170 --> 00:03:58,960
+E então vamos fazer o tamanho da fonte.
+
+56
+00:03:59,320 --> 00:04:02,980
+O tamanho da fonte será de quatorze pixels.
+
+57
+00:04:02,980 --> 00:04:08,770
+Eu tenho meu ponto e vírgula aqui, OK, e então queremos nos livrar do sublinhado do texto.
+
+58
+00:04:09,970 --> 00:04:15,280
+Então, a decoração de texto vai ser divertida e vamos também torná-la maiúscula.
+
+59
+00:04:15,280 --> 00:04:16,840
+Então, transforme o texto.
+
+60
+00:04:17,140 --> 00:04:19,060
+Eu vou definir isso para maiúsculas.
+
+61
+00:04:20,020 --> 00:04:20,350
+Tudo bem.
+
+62
+00:04:20,360 --> 00:04:21,310
+Então parece muito bom.
+
+63
+00:04:21,310 --> 00:04:26,410
+Agora temos um pouco aninhado dentro da lista e você pode ver que tem os marcadores aqui.
+
+64
+00:04:26,410 --> 00:04:36,340
+Então, digamos lista e, em seguida, você dentro da lista definirá o tipo de estilo de lista como nenhum.
+
+65
+00:04:36,790 --> 00:04:41,680
+E para preenchimento à esquerda, é um preenchimento à esquerda.
+
+66
+00:04:41,680 --> 00:04:45,220
+Vamos definir isso para vinte pixels porque queremos que ele se destaque um pouco.
+
+67
+00:04:46,060 --> 00:04:46,390
+Tudo bem.
+
+68
+00:04:46,390 --> 00:04:51,460
+Então eu acho que parece muito bom e isso é a maioria dos CSFs.
+
+69
+00:04:51,460 --> 00:04:56,440
+Agora, eu quero pular para o JavaScript aqui, e há basicamente três coisas que você quer pegar
+
+70
+00:04:56,440 --> 00:05:03,220
+o botão aberto, o botão fechado e o nav, embora tenhamos várias classes de NAV uma em cada
+
+71
+00:05:03,220 --> 00:05:04,360
+dessas cores.
+
+72
+00:05:04,870 --> 00:05:13,090
+Então vamos primeiro trazer, digamos, aberto, sublinhado, batido, e vamos usar o ponto de documento,
+
+73
+00:05:13,090 --> 00:05:14,470
+seletor de consultas.
+
+74
+00:05:14,470 --> 00:05:19,180
+E isso tem uma classe de traço aberto BTN.
+
+75
+00:05:19,750 --> 00:05:26,650
+Então é apenas uma convenção que Floren e eu gostamos de usar são traços ou hífens e acesso.
+
+76
+00:05:26,650 --> 00:05:31,000
+E então se você vai criar uma variável aqui, você não pode usar um hífen.
+
+77
+00:05:31,000 --> 00:05:35,500
+Então você usa um sublinhado ou às vezes você verá, você sabe, o caso do camelo.
+
+78
+00:05:35,500 --> 00:05:40,480
+Mas neste caso, vamos apenas sublinhar e, em seguida, vamos obter o botão fechar como
+
+79
+00:05:40,480 --> 00:05:40,990
+Nós vamos.
+
+80
+00:05:42,430 --> 00:05:44,470
+E você pode usar um sublinhado em suas aulas.
+
+81
+00:05:44,470 --> 00:05:46,240
+Eu só não gosto de fazer isso.
+
+82
+00:05:47,860 --> 00:05:50,560
+Então feche o botão agora para o NAV.
+
+83
+00:05:50,590 --> 00:05:52,060
+Temos vários desses.
+
+84
+00:05:52,060 --> 00:06:00,790
+Então o que isso significa é que temos que usar o seletor de consulta all e queremos pegar a classe de NAV e isso
+
+85
+00:06:00,790 --> 00:06:04,150
+nos dará uma lista de nós que podemos basicamente percorrer.
+
+86
+00:06:05,380 --> 00:06:08,140
+Então, vamos pegar o botão de abrir e adicionar um ouvinte de eventos.
+
+87
+00:06:08,200 --> 00:06:08,500
+Certo.
+
+88
+00:06:08,530 --> 00:06:11,230
+Então, desse ouvinte, queremos ouvir o evento de clique.
+
+89
+00:06:12,730 --> 00:06:15,010
+Quando isso acontecer, irá disparar uma função.
+
+90
+00:06:15,400 --> 00:06:21,340
+E nós não temos que usar corridas encaracoladas aqui, mas eu vou apenas para torná-lo mais limpo.
+
+91
+00:06:22,000 --> 00:06:25,510
+Então vamos pegar nossos NAVs e vamos fazer um loop.
+
+92
+00:06:25,600 --> 00:06:31,090
+Então, para cada um porque há vários NAVs e vamos economizar para cada elemento nav.
+
+93
+00:06:31,630 --> 00:06:38,440
+Queremos pegar esse elemento nav e queremos adicionar a classe visible.
+
+94
+00:06:38,440 --> 00:06:47,140
+Então eu dot class list dot add e queremos adicionar a classe visível.
+
+95
+00:06:48,220 --> 00:06:48,640
+Tudo bem.
+
+96
+00:06:48,640 --> 00:06:49,810
+Porque estamos adicionando.
+
+97
+00:06:50,050 --> 00:06:55,330
+Múltiplos agora, é por isso que temos que percorrer a lista de nós aqui agora, o botão fechar vai
+
+98
+00:06:55,330 --> 00:06:58,190
+ser praticamente a mesma coisa, exceto que estamos removendo a classe.
+
+99
+00:06:58,190 --> 00:07:04,270
+Então, vou colocar isso aqui e pegar o botão Fechar em um evento de clique.
+
+100
+00:07:04,540 --> 00:07:10,620
+E então, para cada nav, queremos remover a classe visível.
+
+101
+00:07:10,810 --> 00:07:11,170
+Tudo bem.
+
+102
+00:07:11,170 --> 00:07:17,140
+Vou salvar isso e vou excluir essas classes visíveis que eu apenas, você sabe,
+
+103
+00:07:17,500 --> 00:07:18,790
+codificado aqui.
+
+104
+00:07:19,090 --> 00:07:20,260
+Então eu vou me livrar deles.
+
+105
+00:07:20,560 --> 00:07:22,190
+E agora deve estar fora da tela.
+
+106
+00:07:22,210 --> 00:07:24,820
+Se eu clicar, ele irá em frente e abrirá.
+
+107
+00:07:24,820 --> 00:07:26,890
+Se eu clicar, a saída fecha.
+
+108
+00:07:27,160 --> 00:07:29,650
+Agora, não tem o efeito que eu quero.
+
+109
+00:07:29,830 --> 00:07:35,390
+Eu quero que seja, eu quero que as três partes saiam meio separadas para dar um pequeno efeito legal.
+
+110
+00:07:35,890 --> 00:07:45,760
+Então, em nossa folha de estilo aqui, vamos adicionar para ver, então no nav black, basicamente, estamos
+
+111
+00:07:45,760 --> 00:07:48,840
+vai apenas adicionar atrasos de transição em certas cores.
+
+112
+00:07:49,180 --> 00:07:51,970
+Então agora preto aqui.
+
+113
+00:07:52,030 --> 00:07:57,910
+Digamos que queremos adicionar um atraso de transição, o que significa que ele esperará o tempo que colocarmos
+
+114
+00:07:57,910 --> 00:08:00,070
+aqui antes de realmente disparar.
+
+115
+00:08:00,430 --> 00:08:02,680
+Então eu vou atrasá-lo por ponto.
+
+116
+00:08:02,890 --> 00:08:05,290
+Quatro segundos para o preto.
+
+117
+00:08:05,860 --> 00:08:09,100
+Pronto, agora fechamos.
+
+118
+00:08:09,100 --> 00:08:11,570
+Você pode ver que o preto demora um pouco mais.
+
+119
+00:08:12,970 --> 00:08:20,260
+Agora também queremos adicionar um atraso ou devo dizer remover o atraso no visível para o preto.
+
+120
+00:08:20,410 --> 00:08:28,090
+Então o que vamos fazer é dizer agora traço preto e se ele tiver a classe visível, então queremos a transição
+
+121
+00:08:28,090 --> 00:08:31,120
+atraso de zero segundos.
+
+122
+00:08:33,260 --> 00:08:33,710
+Tudo bem.
+
+123
+00:08:36,530 --> 00:08:40,100
+Então ele sai direto e depois meio que demora quando volta.
+
+124
+00:08:40,640 --> 00:08:47,810
+Então, no vermelho, agora temos vermelho aqui, vamos adicionar um atraso de transição, que será um pouco
+
+125
+00:08:47,810 --> 00:08:51,100
+mais rápido que o preto porque não se destaca tanto.
+
+126
+00:08:51,110 --> 00:08:59,300
+Então vamos fazer em vez do que fazemos para o Black Point, vamos apontar dois segundos para isso.
+
+127
+00:08:59,300 --> 00:09:06,430
+E agora você pode ver que tem aquele efeito onde, você sabe, o vermelho entra e então o preto entra.
+
+128
+00:09:07,130 --> 00:09:09,890
+Agora, quando é visível naquele vermelho
+
+129
+00:09:12,590 --> 00:09:20,160
+navarrette visível, basicamente quando o abrimos, queremos adicionar um atraso de transição de ponto dois segundos.
+
+130
+00:09:20,900 --> 00:09:26,850
+Então agora quando eu abro, você pode ver que o vermelho tem um pequeno atraso.
+
+131
+00:09:27,350 --> 00:09:31,280
+Agora queremos fazer o mesmo para o branco porque você pode ver quando ele abre, o vermelho e o branco vêm
+
+132
+00:09:31,280 --> 00:09:32,900
+na mesma hora exata.
+
+133
+00:09:33,140 --> 00:09:33,760
+Eu não quero isso.
+
+134
+00:09:33,770 --> 00:09:35,980
+Eu quero que o branco se espalhe também.
+
+135
+00:09:36,530 --> 00:09:39,550
+Então vamos para agora de branco.
+
+136
+00:09:40,280 --> 00:09:48,080
+E quando não estiver visível, vamos definir o atraso de transição para zero segundos.
+
+137
+00:09:48,080 --> 00:09:49,600
+Mas no visível.
+
+138
+00:09:50,450 --> 00:09:51,880
+Então agora traço branco.
+
+139
+00:09:51,890 --> 00:09:55,390
+E quando eu digo visível, é basicamente quando ele abre.
+
+140
+00:09:57,260 --> 00:10:01,760
+Então, quando o visível, vamos fazer um atraso de transição de ponto quatro segundos.
+
+141
+00:10:02,370 --> 00:10:08,540
+OK, então agora você pode ver preto, vermelho, branco quando vai em branco, vermelho, preto.
+
+142
+00:10:10,500 --> 00:10:12,930
+Portanto, é apenas o momento do atraso da transição.
+
+143
+00:10:14,760 --> 00:10:16,760
+Tudo bem, e que é mais ou menos isso.
+
+144
+00:10:16,770 --> 00:10:18,550
+Então é apenas um pequeno efeito legal.
+
+145
+00:10:18,970 --> 00:10:22,620
+É claro, é responsivo, você sabe, telas pequenas.
+
+146
+00:10:23,130 --> 00:10:24,270
+Isso funcionará bem.
+
+147
+00:10:25,560 --> 00:10:26,040
+Mas sim.
+
+148
+00:10:26,040 --> 00:10:28,110
+Então vai ser isso para este projeto.
+
+149
+00:10:28,110 --> 00:10:29,250
+Pessoal espero que tenham gostado.
+
+150
+00:10:29,250 --> 00:10:33,900
+E, obviamente, você pode marcar como outra coisa, apenas a Netflix parece combinar com as cores.
+
+151
+00:10:34,710 --> 00:10:35,190
+Então é isso.
+
+152
+00:10:35,220 --> 00:10:37,590
+Obrigado por assistir e nos vemos no próximo projeto.

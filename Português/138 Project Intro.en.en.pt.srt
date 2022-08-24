@@ -1,0 +1,91 @@
+﻿1
+00:00:00,150 --> 00:00:07,800
+Ei, pessoal, esse é mais um projeto do Dribble, então esse é de uma barra de gás DIKO, espero que eu pronuncie
+
+2
+00:00:07,800 --> 00:00:10,890
+certo e este é um design de interface de usuário de pesquisa ou feedback.
+
+3
+00:00:11,100 --> 00:00:16,620
+E basicamente só temos, você sabe, esses dois rostos sorridentes com infelizes, neutros, satisfeitos,
+
+4
+00:00:16,860 --> 00:00:22,830
+e podemos enviar o feedback e, em seguida, apenas mostrar uma mensagem de agradecimento aqui.
+
+5
+00:00:23,130 --> 00:00:24,360
+Então é isso que vamos fazer.
+
+6
+00:00:24,360 --> 00:00:25,760
+E este é o projeto aqui.
+
+7
+00:00:25,770 --> 00:00:29,520
+Assim diz, qual é o seu grau de satisfação com o desempenho do nosso suporte ao cliente?
+
+8
+00:00:29,790 --> 00:00:31,050
+Temos três escolhas.
+
+9
+00:00:31,050 --> 00:00:35,540
+Posso clicar em um e você verá que ele o destaca com a caixa aqui.
+
+10
+00:00:35,850 --> 00:00:41,430
+Então, basicamente, vamos alterar a classe para ativa e clicar em enviar revisão e, em seguida,
+
+11
+00:00:41,430 --> 00:00:41,640
+Vejo.
+
+12
+00:00:41,640 --> 00:00:45,750
+Obrigado com o que escolhemos para o feedback, que está satisfeito.
+
+13
+00:00:45,990 --> 00:00:50,020
+E diz que usaremos seu feedback para melhorar nosso desempenho.
+
+14
+00:00:50,430 --> 00:00:50,790
+Tudo bem.
+
+15
+00:00:50,800 --> 00:00:55,710
+Muito simples, mas quando chegarmos ao JavaScript, faremos as coisas um pouco diferentes
+
+16
+00:00:55,710 --> 00:01:02,290
+de apenas percorrer, você sabe, essas classificações aqui, essas caixas e adicionar um ouvinte de eventos
+
+17
+00:01:02,290 --> 00:01:07,860
+em cada um, vamos aproveitar o evento borbulhando e adicionar um ouvinte de evento a um dos
+
+18
+00:01:07,860 --> 00:01:12,240
+nós pais e, em seguida, direcione os nós de classificação específicos.
+
+19
+00:01:12,270 --> 00:01:12,660
+Tudo bem.
+
+20
+00:01:12,660 --> 00:01:19,680
+Vamos ver algumas propriedades diferentes para lidar com o DOM e, você sabe, passar para
+
+21
+00:01:19,680 --> 00:01:25,080
+diferentes elementos e coisas assim e também, claro, o sucesso de criar essa interface.
+
+22
+00:01:25,170 --> 00:01:25,500
+Tudo bem.
+
+23
+00:01:25,500 --> 00:01:26,340
+Então vamos começar.

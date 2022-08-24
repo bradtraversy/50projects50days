@@ -1,0 +1,431 @@
+﻿1
+00:00:00,330 --> 00:00:06,150
+OK, então vamos começar em nossa lista de tarefas, então vamos para o HTML aqui e vamos alterar o
+
+2
+00:00:06,150 --> 00:00:13,560
+título para lista de tarefas e para o corpo, não teremos muito.
+
+3
+00:00:13,560 --> 00:00:20,070
+Basicamente, vamos fazer um H1 vai dizer ao DOS e um formulário que vou dar
+
+4
+00:00:20,070 --> 00:00:21,390
+a ideia de forma.
+
+5
+00:00:22,380 --> 00:00:25,010
+E vamos ver, não precisamos de uma ação.
+
+6
+00:00:26,670 --> 00:00:29,750
+E então, neste formulário, teremos apenas uma entrada.
+
+7
+00:00:30,660 --> 00:00:37,200
+Então vamos fazer uma entrada com a classe de entrada e também uma ideia de entrada.
+
+8
+00:00:37,650 --> 00:00:42,090
+Vai ser texto e então eu vou definir o espaço reservado.
+
+9
+00:00:45,300 --> 00:00:52,900
+E diremos digite sua tarefa e também desativarei o preenchimento automático.
+
+10
+00:00:54,800 --> 00:01:01,880
+OK, sob essa entrada, vamos ter um pouco e dar a isso uma classe de para DOS e um ID de
+
+11
+00:01:01,880 --> 00:01:02,580
+para DOS.
+
+12
+00:01:03,860 --> 00:01:07,160
+Agora, todos os itens da lista serão colocados aqui.
+
+13
+00:01:07,160 --> 00:01:12,080
+Quando adicionamos nosso para fazer isso, ele será dinâmico, você sabe, adicionado a fazer na entrada e então ele terá
+
+14
+00:01:12,080 --> 00:01:13,270
+mostrado como o item da lista.
+
+15
+00:01:13,280 --> 00:01:16,730
+Mas, por enquanto, vou apenas colocar um item de lista de amostra.
+
+16
+00:01:16,730 --> 00:01:18,290
+Diremos apenas o meu primeiro.
+
+17
+00:01:19,290 --> 00:01:21,330
+Para fazer o seu posto para realmente.
+
+18
+00:01:24,400 --> 00:01:25,810
+OK, então essa é a nossa hora.
+
+19
+00:01:25,850 --> 00:01:30,730
+Vamos pular para nossa folha de estilo e usaremos a fonte Poppins.
+
+20
+00:01:34,820 --> 00:01:43,520
+Poppins, e então queremos definir o peso aqui para 200, 400, e para o corpo, vamos definir um plano de fundo,
+
+21
+00:01:43,520 --> 00:01:46,640
+cor, fundo, cor.
+
+22
+00:01:46,670 --> 00:01:50,720
+Vamos fazer cinco, três vezes, que é um cinza claro.
+
+23
+00:01:51,110 --> 00:01:57,170
+E então a cor vamos fazer quatro, quatro, quatro, o que deixa um pouco mais claro.
+
+24
+00:01:58,370 --> 00:02:02,660
+E queremos exibir itens de linha flexíveis agora.
+
+25
+00:02:02,660 --> 00:02:03,980
+Direção flexível.
+
+26
+00:02:05,210 --> 00:02:10,180
+Sim, vamos manter a direção flexível como coluna o resto do.
+
+27
+00:02:10,430 --> 00:02:10,660
+Sim.
+
+28
+00:02:10,660 --> 00:02:12,350
+O resto de nós deve estar bem, na verdade.
+
+29
+00:02:12,350 --> 00:02:16,130
+Vamos tirar o overflow escondido para o caso de precisarmos de barras de rolagem.
+
+30
+00:02:16,940 --> 00:02:20,890
+OK, e então o que eu vou fazer parecer muito legal.
+
+31
+00:02:21,350 --> 00:02:23,570
+Então vamos estilizar isso.
+
+32
+00:02:24,950 --> 00:02:32,690
+Então a cor que vamos ser e vai ser um sete nove quatro vermelho um três um quatro verde e
+
+33
+00:02:32,690 --> 00:02:35,960
+dois dois seis quatro azul.
+
+34
+00:02:36,320 --> 00:02:37,700
+Nós vamos torná-lo realmente grande.
+
+35
+00:02:37,700 --> 00:02:39,920
+Então vamos fazer o tamanho da fonte.
+
+36
+00:02:39,920 --> 00:02:41,840
+Defina isso para dez REM.
+
+37
+00:02:42,530 --> 00:02:47,840
+Vai ser legal e grande e vamos ter certeza de enviar uma mensagem de texto para o centro de vinhos e eu quero que
+
+38
+00:02:47,840 --> 00:02:48,290
+ser.
+
+39
+00:02:49,190 --> 00:02:54,540
+Desbotado ou transparente, vamos ver a opacidade para zero vírgula quatro.
+
+40
+00:02:55,340 --> 00:02:55,850
+Tudo bem.
+
+41
+00:02:56,030 --> 00:02:58,610
+Então esse é o nosso agora o formulário.
+
+42
+00:03:02,140 --> 00:03:11,590
+Form, vou definir uma sombra de caixa e para os deslocamentos faremos para zero e para 10 pixels para o
+
+43
+00:03:11,590 --> 00:03:16,450
+blur gba para a cor, que será preta e então zero ponto um.
+
+44
+00:03:17,880 --> 00:03:26,730
+Vamos dar-lhe uma largura máxima de cem por cento e vamos dar-lhe uma largura de 400 pixels.
+
+45
+00:03:28,310 --> 00:03:31,320
+Tudo bem, então esse é o próprio formulário agora, a entrada.
+
+46
+00:03:31,340 --> 00:03:32,630
+Vamos fazer isso a seguir.
+
+47
+00:03:32,660 --> 00:03:38,870
+Então nós demos uma classe de entrada e eu vou dizer nenhuma fronteira.
+
+48
+00:03:39,830 --> 00:03:42,410
+E a cor para isso vai ser quatro.
+
+49
+00:03:42,410 --> 00:03:47,380
+Quatro para o tamanho da fonte serão dois REM.
+
+50
+00:03:48,450 --> 00:03:49,700
+OK, tão bonito e grande.
+
+51
+00:03:50,270 --> 00:03:52,730
+E vamos adicionar um pouco de preenchimento à entrada.
+
+52
+00:03:52,730 --> 00:03:56,020
+Fará um REM superior e inferior dois REM esquerdo e direito.
+
+53
+00:03:56,540 --> 00:04:05,930
+E vamos definir, vamos exibi-lo como um elemento de nível de bloco e definir a largura para 100 por cento
+
+54
+00:04:05,930 --> 00:04:06,920
+de seu recipiente.
+
+55
+00:04:07,830 --> 00:04:15,540
+Eu vejo que já parece muito bom placeholder, vamos mudar a cor disso ou dizer entrada Kalanchoe
+
+56
+00:04:15,540 --> 00:04:22,760
+e espaço reservado e então a cor será o valor hexadecimal D cinco três vezes.
+
+57
+00:04:23,580 --> 00:04:26,250
+Portanto, é um espaço reservado agradável e leve.
+
+58
+00:04:26,940 --> 00:04:30,170
+E então vamos fazer o item da lista.
+
+59
+00:04:30,180 --> 00:04:32,250
+Então estes aqui, aqueles não parecem muito bons.
+
+60
+00:04:32,250 --> 00:04:40,230
+Então, digamos que insira o item da lista, não insira o item da lista para fazer o item da lista.
+
+61
+00:04:41,880 --> 00:04:43,740
+Então vamos fazer o a fazer primeiro.
+
+62
+00:04:45,480 --> 00:04:50,220
+Defina uma cor de fundo nestes de branco.
+
+63
+00:04:53,490 --> 00:05:02,130
+Tudo bem, e então vamos definir o preenchimento no DOS para zero, e queremos nos livrar dessas balas
+
+64
+00:05:02,130 --> 00:05:03,810
+pontos, um tipo de estilo LA.
+
+65
+00:05:03,810 --> 00:05:05,180
+Nós vamos definir isso para nenhum.
+
+66
+00:05:05,850 --> 00:05:09,870
+E vamos tirar qualquer margem também.
+
+67
+00:05:12,440 --> 00:05:15,070
+OK, e então isso deve ser bom para o DOS.
+
+68
+00:05:15,090 --> 00:05:27,270
+Agora para os aliados, digamos, para Dos Elai, vou definir uma borda no topo para um pixel sólido e
+
+69
+00:05:27,270 --> 00:05:30,810
+e cinco três vezes.
+
+70
+00:05:31,680 --> 00:05:33,030
+OK, então podemos pagar um top.
+
+71
+00:05:33,030 --> 00:05:37,470
+Vamos dar ao cursor um ponteiro quando passarmos o mouse sobre eles porque vamos poder.
+
+72
+00:05:37,470 --> 00:05:37,770
+Certo.
+
+73
+00:05:37,770 --> 00:05:42,840
+Clique e exclua-os e também marque-os como completos.
+
+74
+00:05:43,710 --> 00:05:51,660
+Portanto, o tamanho da fonte para aumentar o tamanho da fonte fará um ponto cinco REM e vamos adicionar um pouco de preenchimento,
+
+75
+00:05:51,750 --> 00:05:58,770
+vai fazer uma casa de quarto, um quarto e dois quartos nas laterais.
+
+76
+00:06:00,840 --> 00:06:01,230
+Tudo bem.
+
+77
+00:06:01,240 --> 00:06:03,390
+Então eu acho que parece muito bom.
+
+78
+00:06:05,700 --> 00:06:11,540
+Agora, quando eles estiverem completos, quando eles estiverem completos, nós vamos querer uma linha.
+
+79
+00:06:12,120 --> 00:06:27,450
+Então deixe-me adicionar manualmente uma classe aqui de concluído e agora aqui dirá ao DOS Ally, se estiver concluído,
+
+80
+00:06:31,590 --> 00:06:36,470
+então vamos definir a cor para ser seis, três vezes.
+
+81
+00:06:36,990 --> 00:06:38,910
+E vamos também dar-lhe uma linha.
+
+82
+00:06:38,910 --> 00:06:43,050
+Assim, a decoração de texto será definida como linha.
+
+83
+00:06:43,380 --> 00:06:45,990
+OK, então, se estiver concluído, ficará assim.
+
+84
+00:06:46,380 --> 00:06:51,420
+Agora, uma coisa que acabei de perceber é que esqueci de colocar o pequeno texto na parte inferior que diz que você saiu,
+
+85
+00:06:51,420 --> 00:06:54,500
+clique no botão de alternância completo e, em seguida, clique com o botão direito do mouse para excluir.
+
+86
+00:06:54,510 --> 00:07:05,970
+Então, vamos entrar no formulário aqui e adicionar algumas tags pequenas e diremos, digamos, esquerda
+
+87
+00:07:06,420 --> 00:07:11,550
+clique para alternar concluído.
+
+88
+00:07:12,120 --> 00:07:14,370
+E então eu quero apenas ter uma quebra de linha.
+
+89
+00:07:14,580 --> 00:07:22,440
+Então, vamos colocar uma tag VR aqui e dizer clique com o botão direito para excluir para fazer.
+
+90
+00:07:24,290 --> 00:07:28,460
+Tudo bem, então isso não parece muito bom, então vamos adicionar um pouco de estilo ao
+
+91
+00:07:28,460 --> 00:07:29,060
+pequena.
+
+92
+00:07:32,450 --> 00:07:39,020
+OK, tão pequeno, vamos mudar a cor ou torná-lo mais claro, então vou dar um valor de cinco,
+
+93
+00:07:39,020 --> 00:07:41,720
+três vezes e vamos movê-lo para baixo.
+
+94
+00:07:41,720 --> 00:07:49,930
+Então, no topo da margem, vou definir dois três ram para empurrá-lo para baixo e vamos apenas enviar um texto no centro da linha.
+
+95
+00:07:51,080 --> 00:07:53,080
+OK, então eu acho que parece muito bom.
+
+96
+00:07:53,420 --> 00:07:55,160
+Então agora temos a interface do usuário aqui.
+
+97
+00:07:55,410 --> 00:08:01,910
+Vamos fazer o contorno deste da mesma cor que o H1, então vou pegar isso
+
+98
+00:08:02,420 --> 00:08:11,110
+aqui e então vamos pegar a entrada, digamos entrada, foco de dois pontos.
+
+99
+00:08:12,140 --> 00:08:16,550
+Então, quando estiver em seu estado de foco, queremos a cor do contorno.
+
+100
+00:08:20,400 --> 00:08:21,480
+Para ser aquele roxo.
+
+101
+00:08:22,470 --> 00:08:23,130
+Tudo bem, legal.
+
+102
+00:08:23,640 --> 00:08:29,910
+Então, no próximo vídeo, vamos fazer com que essa função seja capaz de adicionar ao DOS e eles obterão
+
+103
+00:08:29,910 --> 00:08:34,130
+Sèvres para o armazenamento local, poderá eliminá-los e torná-los completos.
+
+104
+00:08:34,470 --> 00:08:39,030
+Então, vou me livrar dos dois itens da lista que estão aqui agora, porque isso foi
+
+105
+00:08:39,030 --> 00:08:41,440
+apenas para vê-lo e estilizá-lo.
+
+106
+00:08:41,460 --> 00:08:44,320
+Então, em última análise, isso vai começar com nada.
+
+107
+00:08:44,700 --> 00:08:45,300
+Então é isso.
+
+108
+00:08:45,300 --> 00:08:48,210
+Vamos em frente e pular para o JavaScript no próximo vídeo.

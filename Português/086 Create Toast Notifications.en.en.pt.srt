@@ -1,0 +1,731 @@
+﻿1
+00:00:00,060 --> 00:00:05,310
+OK, então este será um projeto bem rápido, devemos ser capazes de fazê-lo em um vídeo bastante
+
+2
+00:00:05,310 --> 00:00:05,760
+rapidamente.
+
+3
+00:00:05,770 --> 00:00:11,610
+Então vamos mudar o título aqui para notificação de brinde.
+
+4
+00:00:13,770 --> 00:00:22,560
+E então aqui embaixo, a forma como isso vai funcionar é que nós teremos uma ideia com a ideia de torradas.
+
+5
+00:00:23,490 --> 00:00:26,580
+E quero poder fazer vários brindes.
+
+6
+00:00:26,590 --> 00:00:30,960
+Então, basicamente, você sabe, um pode aparecer e outro pode aparecer em cima dele, outro em cima
+
+7
+00:00:30,960 --> 00:00:34,850
+isso, e então eles simplesmente desaparecem depois de três segundos.
+
+8
+00:00:35,280 --> 00:00:39,570
+Então teremos uma ideia de brindes, que colocaremos direto no HTML.
+
+9
+00:00:39,570 --> 00:00:46,050
+E então as divs com a classe de toast como essa serão inseridas via JavaScript.
+
+10
+00:00:46,050 --> 00:00:50,280
+Mas por enquanto, vamos em frente e, você sabe, colocamos alguns aqui.
+
+11
+00:00:50,280 --> 00:00:56,550
+Então diremos olá mundo e diremos o brinde número dois.
+
+12
+00:00:57,780 --> 00:01:05,700
+E então eu quero dar uma classe de botão B10 e então vamos nos dar uma ideia de botão e apenas dizer
+
+13
+00:01:05,700 --> 00:01:08,880
+mostrar notificação.
+
+14
+00:01:10,950 --> 00:01:11,420
+Tudo bem.
+
+15
+00:01:11,430 --> 00:01:14,220
+Então, quero dizer, nós vamos ter isso.
+
+16
+00:01:14,220 --> 00:01:15,450
+Então clicamos no botão.
+
+17
+00:01:15,450 --> 00:01:16,800
+Ele mostra uma mensagem aleatória.
+
+18
+00:01:16,800 --> 00:01:22,650
+Mas é claro, você pode fazer validação de formulário ou qualquer tipo de, você sabe, a qualquer momento que você quiser notificar
+
+19
+00:01:22,650 --> 00:01:24,980
+o usuário de algo, você pode usar isso.
+
+20
+00:01:25,440 --> 00:01:26,790
+Então vamos fazer o estilo.
+
+21
+00:01:27,270 --> 00:01:32,760
+A fonte que vamos usar é a Poppins, a fonte favorita de Floren Pop.
+
+22
+00:01:33,720 --> 00:01:36,300
+E então espere 200, 400.
+
+23
+00:01:38,130 --> 00:01:39,240
+Adicione isso aqui.
+
+24
+00:01:41,070 --> 00:01:43,140
+E um conjunto de cor de fundo.
+
+25
+00:01:44,670 --> 00:01:46,290
+Então cor de fundo.
+
+26
+00:01:46,290 --> 00:01:55,920
+Vamos definir isso para Rebecca Purple e podemos deixar o resto dessas coisas no corpo e
+
+27
+00:01:55,920 --> 00:02:05,190
+vamos estilizar o botão para que tenhamos uma classe de BTN dando uma cor de fundo branca e dando
+
+28
+00:02:05,190 --> 00:02:06,190
+é uma cor espera.
+
+29
+00:02:06,720 --> 00:02:07,410
+Isso é bom.
+
+30
+00:02:07,830 --> 00:02:17,250
+Dê uma cor de Rebecca Purple e então vamos dar uma família de fontes.
+
+31
+00:02:17,250 --> 00:02:26,670
+Queremos herdar Poppins e, em seguida, o peso da fonte será em negrito e preenchimento.
+
+32
+00:02:26,670 --> 00:02:32,460
+Vou adicionar um REM e um raio de borda.
+
+33
+00:02:33,420 --> 00:02:37,080
+Vamos fazer cinco pixels e nos livrar da borda.
+
+34
+00:02:37,080 --> 00:02:41,550
+Então fronteira freira e cursor, queremos que seja um ponteiro.
+
+35
+00:02:43,690 --> 00:02:50,860
+E então para o contorno aqui, vamos nos livrar disso, então o estado de foco do botão, vamos definir
+
+36
+00:02:50,860 --> 00:02:56,290
+o contorno para nenhum e, em seguida, o estado ativo.
+
+37
+00:02:56,300 --> 00:03:00,900
+Então, quando clicamos nele, eu só queria diminuir um pouco.
+
+38
+00:03:00,910 --> 00:03:10,000
+Portanto, defina a escala de transformação de um dois pontos nove, oito casos são botão.
+
+39
+00:03:11,440 --> 00:03:15,300
+E então vamos começar vamos fazer o brinde.
+
+40
+00:03:15,310 --> 00:03:22,030
+Então, temos toast, plural, que é o contêiner, e queremos que isso seja exibido fixado na parte inferior
+
+41
+00:03:22,030 --> 00:03:24,970
+canto e depois queremos estilizar cada brinde.
+
+42
+00:03:25,360 --> 00:03:33,900
+Então vamos começar com a ideia de Tostes que eu dou um ID ou classe.
+
+43
+00:03:33,910 --> 00:03:34,040
+Sim.
+
+44
+00:03:34,090 --> 00:03:35,070
+E eu dei uma ideia.
+
+45
+00:03:35,080 --> 00:03:38,920
+Quero dizer, você pode usar uma classe se quiser, se não gostar de estilizar com o ID.
+
+46
+00:03:39,910 --> 00:03:41,350
+Mas eu não vou usar o ID aqui.
+
+47
+00:03:41,350 --> 00:03:46,210
+E vamos exibir primeiro, posicioná-lo.
+
+48
+00:03:46,210 --> 00:03:53,830
+Então posicione isso para ser corrigido e eu quero no canto inferior, então diremos a partir dos dez pixels inferiores
+
+49
+00:03:53,830 --> 00:03:56,440
+e da direita dez pixels.
+
+50
+00:03:56,440 --> 00:04:01,240
+E é claro que você pode colocar isso, mas você pode colocá-los no topo aqui onde quiser.
+
+51
+00:04:01,540 --> 00:04:08,170
+Mas eu quero colocá-lo no fundo aqui e então vamos exibir o flex.
+
+52
+00:04:09,040 --> 00:04:10,540
+E não quero que seja uma briga.
+
+53
+00:04:10,540 --> 00:04:12,190
+Eu quero que eles fiquem um em cima do outro.
+
+54
+00:04:12,190 --> 00:04:15,250
+Então vamos fazer a coluna Flex Direction.
+
+55
+00:04:16,600 --> 00:04:22,030
+E eu quero alinhar até o final, então vamos alinhar os itens para flex e.
+
+56
+00:04:24,180 --> 00:04:30,580
+E isso deve ser bom para o recipiente, então agora vamos estilizar cada brinde individual.
+
+57
+00:04:32,310 --> 00:04:44,790
+Então, para isso, vamos definir a cor de fundo para branco e vamos definir a cor para Rebecca Purple e
+
+58
+00:04:44,790 --> 00:04:50,810
+o raio da borda para cinco pixels e preenchimento.
+
+59
+00:04:50,850 --> 00:04:56,910
+Nós vamos fazer uma sala, de cima para baixo, para a esquerda e para a direita, e vamos separá-las.
+
+60
+00:04:56,910 --> 00:05:00,180
+Então a margem será zero vírgula cinco REM.
+
+61
+00:05:01,950 --> 00:05:02,340
+Tudo bem.
+
+62
+00:05:02,340 --> 00:05:06,460
+E, obviamente, você pode estilizá-los como quiser, mas acho que está tudo bem.
+
+63
+00:05:06,480 --> 00:05:12,980
+Então agora vamos tirá-los do HTML porque eles serão inseridos com JavaScript.
+
+64
+00:05:13,650 --> 00:05:18,480
+Então basicamente você teria, você sabe, sua página da Web ou formulário o que quer que seja, e então você teria
+
+65
+00:05:18,930 --> 00:05:24,460
+isso apenas em algum lugar na página para que seus dedos possam exibir e sua exibição.
+
+66
+00:05:25,530 --> 00:05:25,920
+Eu sinto Muito.
+
+67
+00:05:25,920 --> 00:05:27,210
+Está posicionado fixo.
+
+68
+00:05:27,210 --> 00:05:30,990
+Então sempre vai estar, você sabe, no canto inferior ou onde quer que você decida colocá-lo.
+
+69
+00:05:31,950 --> 00:05:37,170
+Então, em nosso script aqui, vamos trazer o botão para que possamos adicionar o ouvinte de evento nele.
+
+70
+00:05:37,650 --> 00:05:43,390
+Então Button defina isso para documentar dot get element vidi.
+
+71
+00:05:43,410 --> 00:05:45,090
+E demos a isso uma ideia de botão.
+
+72
+00:05:46,560 --> 00:05:50,070
+Vamos trazer também o container ou Tostes.
+
+73
+00:05:55,490 --> 00:06:04,040
+OK, e então eu vou ter um array de mensagens aleatórias aqui, então eu vou fazer message
+
+74
+00:06:05,120 --> 00:06:08,540
+um, dois, três e quatro.
+
+75
+00:06:14,250 --> 00:06:18,770
+Quer dizer, não temos que fazer isso, não posso contar, não temos que fazer isso.
+
+76
+00:06:18,770 --> 00:06:22,280
+Poderíamos ter apenas como um argumento, uma mensagem passada e como argumento.
+
+77
+00:06:22,280 --> 00:06:24,160
+Mas isso só torna tudo um pouco mais divertido.
+
+78
+00:06:24,980 --> 00:06:27,550
+Portanto, temos uma matriz de apenas mensagens aleatórias.
+
+79
+00:06:27,560 --> 00:06:31,190
+Agora queremos pegar nosso botão e queremos adicionar um evento.
+
+80
+00:06:31,190 --> 00:06:33,920
+Ouvinte, ouça um clique.
+
+81
+00:06:35,390 --> 00:06:45,890
+E execute uma função aqui e vamos chamar uma função chamada create notification, se você quiser sair
+
+82
+00:06:45,890 --> 00:06:48,590
+a qualquer momento, pause o vídeo e faça isso.
+
+83
+00:06:48,590 --> 00:06:50,930
+Apenas tente fazer isso sozinho, sem qualquer orientação.
+
+84
+00:06:51,350 --> 00:06:52,630
+Eu o convidaria a fazer isso.
+
+85
+00:06:53,900 --> 00:06:56,840
+Então vamos criar criar notificação.
+
+86
+00:06:58,910 --> 00:07:02,060
+E aqui dentro, vamos apenas ter certeza de que está funcionando.
+
+87
+00:07:02,060 --> 00:07:08,750
+Então, vou apenas fazer o console logar um, dois, três e ver o console bom.
+
+88
+00:07:08,750 --> 00:07:11,870
+Para que saibamos que está funcionando agora aqui.
+
+89
+00:07:11,870 --> 00:07:19,220
+Queremos criar a div de notificação porque lembre-se de que será uma div com a classe toast.
+
+90
+00:07:19,220 --> 00:07:28,130
+Então, digamos que chamaremos essa nota se dissermos no objeto do documento, temos um método chamado
+
+91
+00:07:28,130 --> 00:07:34,700
+create element para criar qualquer tipo de elemento HTML que quisermos, queremos que seja um div e depois queremos
+
+92
+00:07:34,700 --> 00:07:36,150
+para adicionar uma classe a isso.
+
+93
+00:07:36,680 --> 00:07:47,060
+Então, digamos que notifique a lista de classes DOT add e vamos adicionar tost class of toast.
+
+94
+00:07:47,510 --> 00:07:54,490
+Também precisamos decidir o que queremos colocar dentro do div, pois o texto é a mensagem para que possamos dizer notificar
+
+95
+00:07:54,490 --> 00:07:59,120
+DOT em nosso texto e você pode definir isso para o que quiser.
+
+96
+00:07:59,540 --> 00:08:00,890
+Ele poderia simplesmente colocar uma corda aqui.
+
+97
+00:08:01,250 --> 00:08:06,310
+Ou você poderia tê-lo como um argumento.
+
+98
+00:08:06,320 --> 00:08:13,430
+Nós vamos ter uma função separada chamada get random message, que eu vou sair dessa função
+
+99
+00:08:13,430 --> 00:08:14,300
+agora e criar.
+
+100
+00:08:15,680 --> 00:08:17,210
+E é bem simples.
+
+101
+00:08:17,220 --> 00:08:19,910
+Então, nós só queremos ter nosso array aqui em cima.
+
+102
+00:08:20,300 --> 00:08:27,620
+Então vamos apenas retornar desta função as mensagens, que é nosso array com um índice aleatório.
+
+103
+00:08:27,770 --> 00:08:31,300
+Então, você sabe, nós podemos fazer zero um, tanto faz.
+
+104
+00:08:31,460 --> 00:08:37,970
+Então vamos fazer matemática ponto chão para arredondar matemática, ponto aleatório.
+
+105
+00:08:39,520 --> 00:08:41,130
+Então isso nos dará um decimal aleatório.
+
+106
+00:08:41,150 --> 00:08:49,670
+Queremos multiplicar isso por mensagens extensamente para que você saiba, não importa quantos elementos ou itens
+
+107
+00:08:49,670 --> 00:08:51,670
+estão na matriz de mensagens.
+
+108
+00:08:52,130 --> 00:08:53,960
+Então vai nos dar uma mensagem aleatória.
+
+109
+00:08:53,960 --> 00:09:00,680
+E então para colocá-lo no dormitório, vamos pegar os navios porta-contêineres, pegar o contêiner e
+
+110
+00:09:01,250 --> 00:09:03,710
+vamos anexar por que ele está fazendo isso.
+
+111
+00:09:03,720 --> 00:09:04,870
+Eu trago o recipiente.
+
+112
+00:09:04,880 --> 00:09:06,170
+Ah, eu chamei de Tostes.
+
+113
+00:09:06,170 --> 00:09:06,670
+Isso mesmo.
+
+114
+00:09:07,400 --> 00:09:16,880
+Então, Tostes, que é basicamente o container toast que vamos anexar filho e queremos anexar
+
+115
+00:09:16,880 --> 00:09:18,660
+em que a notificação.
+
+116
+00:09:19,160 --> 00:09:19,550
+Tudo bem.
+
+117
+00:09:19,550 --> 00:09:25,130
+Então se eu vejo que eu venho aqui e clico, eu vejo mensagem para mensagem um, mensagem três.
+
+118
+00:09:25,130 --> 00:09:28,470
+Então vai ser aleatório e eles continuam somando.
+
+119
+00:09:28,810 --> 00:09:31,460
+Agora, obviamente, você não vai querer isso.
+
+120
+00:09:31,460 --> 00:09:32,870
+Você não quer que eles fiquem lá.
+
+121
+00:09:34,850 --> 00:09:38,990
+Há algumas coisas que você pode fazer, você pode colocar como um botão X para poder fechá-lo, mas estamos
+
+122
+00:09:38,990 --> 00:09:42,170
+só vai fazê-lo desaparecer depois de um certo período de tempo.
+
+123
+00:09:42,200 --> 00:09:52,670
+Então, depois que o brinde for colocado no dormitório, vamos executar um tempo limite definido, que leva uma função.
+
+124
+00:09:55,340 --> 00:10:02,690
+E queremos removê-lo completamente do dormitório, então pegaremos nossa notificação e removeremos ou
+
+125
+00:10:02,690 --> 00:10:08,360
+basta removê-lo do dormitório agora definir o tempo limite leva um segundo argumento do tempo que você deseja esperar
+
+126
+00:10:08,360 --> 00:10:10,070
+até você executar a função.
+
+127
+00:10:10,430 --> 00:10:14,140
+Então vamos esperar 300 milissegundos, que são três segundos.
+
+128
+00:10:14,510 --> 00:10:20,780
+Então, se eu salvar isso e clicar em mostrar notificação algumas vezes depois de três segundos, o primeiro vai,
+
+129
+00:10:20,780 --> 00:10:22,140
+você sabe, então o segundo, terceiro.
+
+130
+00:10:23,090 --> 00:10:28,300
+Portanto, mesmo que haja um monte de mensagens, todas elas desaparecerão, que é o que queremos.
+
+131
+00:10:28,670 --> 00:10:31,970
+Agora, na realidade, você provavelmente não vai fazer como uma mensagem aleatória.
+
+132
+00:10:31,970 --> 00:10:34,620
+Você deseja uma mensagem específica ao chamar essa função.
+
+133
+00:10:34,970 --> 00:10:38,930
+Então, o que poderíamos fazer é passar algo assim.
+
+134
+00:10:40,520 --> 00:10:45,110
+Estes são dados inválidos ou algo assim.
+
+135
+00:10:45,740 --> 00:10:50,570
+E então poderíamos passar aqui como um parâmetro, uma mensagem.
+
+136
+00:10:51,080 --> 00:10:59,780
+E o que vamos fazer é definir isso como null por padrão para que aqui no texto interno, possamos dizer se
+
+137
+00:10:59,780 --> 00:11:05,030
+mensagem, então mostre a mensagem ou então receba uma mensagem aleatória.
+
+138
+00:11:05,330 --> 00:11:09,590
+Agora, se eu clicar em mostrar notificação, isso nos dará dados inválidos, porque é isso que
+
+139
+00:11:09,590 --> 00:11:10,670
+passamos aqui.
+
+140
+00:11:11,210 --> 00:11:17,330
+E você provavelmente sabe, você só ligaria uma vez e nós também poderíamos e eu sou apenas gentil
+
+141
+00:11:17,330 --> 00:11:18,740
+de apenas improvisar aqui.
+
+142
+00:11:18,740 --> 00:11:19,940
+Eu não planejava fazer isso.
+
+143
+00:11:19,940 --> 00:11:24,440
+Mas apenas para lhe dar uma ideia melhor de como você realmente faria isso, porque você não
+
+144
+00:11:24,440 --> 00:11:26,330
+fazer mensagens aleatórias, eu não acho.
+
+145
+00:11:27,110 --> 00:11:33,800
+Mas também podemos fazer um tipo, como passar um tipo que será definido como nulo por padrão.
+
+146
+00:11:35,000 --> 00:11:38,030
+E um tipo pode ser como uma classe de CSFs.
+
+147
+00:11:38,030 --> 00:11:41,150
+Então, podemos copiar isso.
+
+148
+00:11:41,150 --> 00:11:42,590
+E digamos adicionar.
+
+149
+00:11:44,720 --> 00:11:58,760
+Então vamos dizer se há um tipo, então adicionamos esse tipo como uma classe else, então então eu acho que set
+
+150
+00:11:58,760 --> 00:12:13,490
+para gostar de informações e então poderíamos continuar nosso sucesso e poderíamos dizer tost dot info.
+
+151
+00:12:14,360 --> 00:12:15,680
+Então deve ser uma aula.
+
+152
+00:12:16,640 --> 00:12:23,870
+Então, as informações aparecem e podemos pegar a cor aqui.
+
+153
+00:12:25,130 --> 00:12:29,930
+E não, não quero duplicá-lo, quero trazê-lo aqui.
+
+154
+00:12:29,930 --> 00:12:33,200
+Então essa será a informação e então vamos pegar isso.
+
+155
+00:12:35,180 --> 00:12:45,890
+Vamos fazer uma aula de sucesso e vamos fazer aquele verde e poderíamos levar quem pudesse levar esse aqui
+
+156
+00:12:45,890 --> 00:12:50,180
+e chame este erro e faça aquele vermelho.
+
+157
+00:12:53,690 --> 00:12:57,090
+Então agora, se eu vir isso, vai ser roxo.
+
+158
+00:12:57,290 --> 00:12:58,820
+Deve ter uma classe de informações.
+
+159
+00:12:58,820 --> 00:13:06,230
+Mas se eu adicionasse aqui um tipo de, digamos, sucesso.
+
+160
+00:13:07,880 --> 00:13:15,150
+Agora eles são verdes, então temos a capacidade de fazer isso, outra coisa que podemos fazer é apenas por diversão é
+
+161
+00:13:15,470 --> 00:13:18,260
+tem alguns tipos aleatórios, assim como fizemos com as mensagens.
+
+162
+00:13:18,260 --> 00:13:24,890
+Então, veremos os tipos CONSE e definiremos isso como um array e digamos info
+
+163
+00:13:27,200 --> 00:13:28,390
+sucesso.
+
+164
+00:13:29,660 --> 00:13:31,550
+E foi o outro erro.
+
+165
+00:13:32,570 --> 00:13:43,700
+E poderíamos criar uma função como esta para obter aleatoriamente, obter um tipo aleatório e apenas tirar do
+
+166
+00:13:43,700 --> 00:13:47,280
+tipos array de item aleatório aleatório.
+
+167
+00:13:47,450 --> 00:13:52,340
+Na verdade, uma coisa que queremos fazer é ter certeza de que quando obtivermos os tipos que usamos, os tipos, os
+
+168
+00:13:52,340 --> 00:13:57,020
+comprimento aqui, ou então será porque há mais mensagens e tipos.
+
+169
+00:13:57,710 --> 00:14:04,310
+E então onde temos este ternário onde estamos dizendo, você sabe, se houver um tipo e usar isso,
+
+170
+00:14:04,310 --> 00:14:08,690
+se não usar enfolds, altere as informações para obter o tipo aleatório.
+
+171
+00:14:10,460 --> 00:14:14,090
+Agora no momento temos isso são dados inválidos e sucesso.
+
+172
+00:14:14,090 --> 00:14:16,300
+Pastan, o que na verdade não faz sentido.
+
+173
+00:14:16,310 --> 00:14:18,830
+Isso provavelmente deve ser um erro, porque isso é um erro.
+
+174
+00:14:19,190 --> 00:14:24,050
+Mas se retirarmos os dois e apenas chamarmos criar notificação, então tudo será aleatório.
+
+175
+00:14:24,630 --> 00:14:30,470
+Portanto, a mensagem é aleatória e a classe ou o tipo também é aleatório.
+
+176
+00:14:31,720 --> 00:14:37,720
+Tudo bem, então, quero dizer, o material aleatório é apenas por diversão, mas você pode ver como você faria
+
+177
+00:14:37,720 --> 00:14:39,670
+realmente adicione isso em seu aplicativo.
+
+178
+00:14:39,670 --> 00:14:44,860
+Se você quiser adicionar essas pequenas mensagens tost, talvez tenha algum tipo de validação de formulário.
+
+179
+00:14:44,860 --> 00:14:51,340
+E, você sabe, se o nome não está incluído ou o que quer que seja, você pode ir em frente e executar create
+
+180
+00:14:51,340 --> 00:14:54,100
+notificação com um tipo e mensagem específicos.
+
+181
+00:14:54,550 --> 00:14:54,910
+Tudo bem.
+
+182
+00:14:54,920 --> 00:14:55,690
+Então é isso, galera.
+
+183
+00:14:55,690 --> 00:14:59,370
+Espero que tenham gostado deste pequeno projeto e vamos pular para o próximo.

@@ -1,0 +1,87 @@
+﻿1
+00:00:00,150 --> 00:00:04,860
+Então, neste projeto, vamos construir um aplicativo de filmes e usar um terceiro
+
+2
+00:00:04,860 --> 00:00:13,590
+API do filme DB Dog, que lhe dá, você sabe, um banco de dados gigante de filmes com o título e
+
+3
+00:00:13,590 --> 00:00:17,720
+classificações e imagens e apenas um monte de dados com os quais podemos trabalhar.
+
+4
+00:00:17,730 --> 00:00:23,220
+Então vamos, em primeiro lugar, criar a interface do usuário, você sabe, adicionar o acesso de e-mail que vamos
+
+5
+00:00:23,220 --> 00:00:27,960
+para registrar uma chave de API com o serviço TMD DB.
+
+6
+00:00:28,270 --> 00:00:33,930
+Vamos adicionar o JavaScript para fazer uma solicitação para obter os dados para mostrar os filmes mais populares
+
+7
+00:00:33,930 --> 00:00:36,380
+na época, que é o que você pode ver aqui.
+
+8
+00:00:37,080 --> 00:00:41,700
+Nós vamos ter este efeito de foco onde ele mostra a visão geral de cada filme, mostra o
+
+9
+00:00:41,700 --> 00:00:42,270
+Avaliação.
+
+10
+00:00:42,270 --> 00:00:45,880
+Teremos cores especiais dependendo da classificação.
+
+11
+00:00:46,290 --> 00:00:48,510
+Então, se estiver acima de oito, será verde.
+
+12
+00:00:48,840 --> 00:00:50,970
+Se estiver entre cinco e oito, será laranja.
+
+13
+00:00:50,970 --> 00:00:53,250
+Se estiver abaixo de cinco, será vermelho.
+
+14
+00:00:53,670 --> 00:00:56,100
+OK, e também vamos adicionar a funcionalidade de pesquisa.
+
+15
+00:00:56,220 --> 00:01:01,650
+Se eu procurar a palavra hard e entrar, vai me dar todos os filmes com o título, com
+
+16
+00:01:01,650 --> 00:01:04,110
+a palavra difícil, ou pelo menos os primeiros 20 ou 30.
+
+17
+00:01:04,590 --> 00:01:09,000
+Se eu procurar, digamos, over, veja, eu vou conseguir filmes com over.
+
+18
+00:01:09,030 --> 00:01:15,180
+Portanto, não é um aplicativo gigante, mas dá uma boa ideia, você sabe, usando o fetch
+
+19
+00:01:15,180 --> 00:01:22,770
+API, trabalhando com um serviço de dados de terceiros ou API de dados e também colocando essas coisas no DOM,
+
+20
+00:01:22,770 --> 00:01:24,780
+adicionando os dados ao DOM à página.
+
+21
+00:01:25,050 --> 00:01:25,800
+Então é isso.
+
+22
+00:01:25,800 --> 00:01:26,970
+Vamos em frente e começar.

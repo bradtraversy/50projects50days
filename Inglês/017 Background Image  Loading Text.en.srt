@@ -1,0 +1,239 @@
+1
+00:00:00,240 --> 00:00:05,010
+So we're going to get started on the blurry loading project and the trial is going to be really simple,
+
+2
+00:00:05,010 --> 00:00:07,710
+is actually only two lines in the body.
+
+3
+00:00:07,920 --> 00:00:10,140
+Well, let's add a title here.
+
+4
+00:00:10,320 --> 00:00:17,850
+So call this blurry floating and then down here, let's get rid of the H1.
+
+5
+00:00:17,850 --> 00:00:22,900
+And this is going to be a section I'm going to give this a class of B.G. So this is going to be the
+
+6
+00:00:22,950 --> 00:00:27,030
+background image that we blur and then we'll have around.
+
+7
+00:00:27,030 --> 00:00:34,710
+The text will have a class of loading dash text and we just want to put in here zero percent and that
+
+8
+00:00:34,710 --> 00:00:39,220
+should do it as far as the as far as the HTML goes.
+
+9
+00:00:39,570 --> 00:00:44,240
+So let's jump in to our stylesheet and there's not too much we have to do here either.
+
+10
+00:00:44,250 --> 00:00:45,810
+I'm going to change the font.
+
+11
+00:00:46,260 --> 00:00:54,450
+So I just want this to be Google APIs dot com exists and we want to use a font family.
+
+12
+00:00:55,710 --> 00:00:58,110
+I'm going to use a family of Ubuntu.
+
+13
+00:01:01,400 --> 00:01:12,770
+I can smell family correctly and then let's change down here, change for to Bunta and then this stuff
+
+14
+00:01:12,770 --> 00:01:14,390
+can really all stay the same.
+
+15
+00:01:14,740 --> 00:01:16,240
+You don't have to change anything here.
+
+16
+00:01:16,250 --> 00:01:20,900
+We don't need Fleck's direction column, but it's not going to hurt if you do leave it.
+
+17
+00:01:21,440 --> 00:01:28,400
+Now for the background level, we have that section with the class of B.G. and we want to set a background.
+
+18
+00:01:28,730 --> 00:01:33,770
+So let's just use the background property and say we want this to be a neutral.
+
+19
+00:01:34,640 --> 00:01:39,440
+And the actual image that I'm going to use, I'm just going to copy and paste.
+
+20
+00:01:39,440 --> 00:01:41,540
+And of course, you can use any image you want.
+
+21
+00:01:41,870 --> 00:01:45,560
+If you want to use this one, you can get it from the link from the repository.
+
+22
+00:01:46,160 --> 00:01:48,300
+So let's make this have no repeat.
+
+23
+00:01:48,430 --> 00:01:54,080
+Let's make it center center on the X and Y axis and cover for the background position.
+
+24
+00:01:55,520 --> 00:01:57,650
+And we want to position this absolute.
+
+25
+00:02:03,120 --> 00:02:10,060
+And then let's set the top, so I'm going to initially just set the top and left to zero.
+
+26
+00:02:10,380 --> 00:02:14,010
+I'm going to change this and I'll show you why in a couple of minutes.
+
+27
+00:02:14,490 --> 00:02:25,010
+And then the width will set that to 100 viewport widths and the height to 100 viewport height.
+
+28
+00:02:25,020 --> 00:02:27,060
+So we just wanted to take up the whole viewport.
+
+29
+00:02:27,390 --> 00:02:34,200
+And let's add a Z index here of negative one, because we want this to be behind the zero percent or
+
+30
+00:02:34,200 --> 00:02:36,120
+whatever the percentages, the text.
+
+31
+00:02:36,720 --> 00:02:38,810
+And we want to add a filter here.
+
+32
+00:02:39,180 --> 00:02:44,040
+And initially the blur is going to be set to zero pixels.
+
+33
+00:02:45,930 --> 00:02:51,960
+And then for the loading text, we just want to increase the font size.
+
+34
+00:02:52,320 --> 00:02:59,370
+Let's set that set the font size to 50 pixels and let's set the color to white.
+
+35
+00:03:00,180 --> 00:03:02,370
+Really depends on the background image we use.
+
+36
+00:03:02,950 --> 00:03:03,350
+All right.
+
+37
+00:03:03,390 --> 00:03:04,350
+So that gives us this.
+
+38
+00:03:04,350 --> 00:03:09,090
+Now, I just want to show you something, Afie, because this is going to start blurry and then it's
+
+39
+00:03:09,090 --> 00:03:12,720
+going to make its way up or make its way down, I should say.
+
+40
+00:03:12,720 --> 00:03:15,500
+The higher the pixels for the blur, the more blurry it is.
+
+41
+00:03:15,510 --> 00:03:19,740
+So if I put like 70 pixels in here, that's what it looks like now.
+
+42
+00:03:19,770 --> 00:03:22,860
+Notice on the edges, this comes out quite a bit.
+
+43
+00:03:23,400 --> 00:03:25,380
+So I actually want to fix that.
+
+44
+00:03:25,380 --> 00:03:27,590
+I don't want it to come out that much.
+
+45
+00:03:27,960 --> 00:03:32,550
+So for the top and left, I'm going to set that to negative 30 pixels.
+
+46
+00:03:32,790 --> 00:03:36,720
+And it's also set the left to negative 30 pixels.
+
+47
+00:03:36,750 --> 00:03:42,450
+Now, if I do that, you're going to see there's less spacing on the left in the top, but there's more
+
+48
+00:03:42,450 --> 00:03:43,150
+over here.
+
+49
+00:03:43,440 --> 00:03:51,340
+So for the width and the height, what we can do is calculate so we can use calc and just wrap this
+
+50
+00:03:51,350 --> 00:03:56,130
+and we just want to add 60 pixels like that.
+
+51
+00:03:56,130 --> 00:03:59,310
+And now you can see that it's even on the left and right.
+
+52
+00:03:59,340 --> 00:04:01,160
+We want to do the same for the top and bottom.
+
+53
+00:04:01,170 --> 00:04:02,310
+So we'll do the same thing.
+
+54
+00:04:02,310 --> 00:04:08,670
+We'll just calc and we want to add 60 pixels here as well.
+
+55
+00:04:10,090 --> 00:04:11,880
+And now there's not as much space.
+
+56
+00:04:12,570 --> 00:04:12,970
+All right.
+
+57
+00:04:12,990 --> 00:04:14,880
+So I think that that looks a little better.
+
+58
+00:04:15,180 --> 00:04:17,780
+So let's put this back to zero pixels.
+
+59
+00:04:19,650 --> 00:04:25,110
+So in the next video, we want to add our JavaScript so that we can have this image basically start
+
+60
+00:04:25,110 --> 00:04:31,530
+blurry and then have it work its way up to being clear as this percentage loads here.

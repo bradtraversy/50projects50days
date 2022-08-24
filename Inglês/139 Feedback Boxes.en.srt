@@ -1,0 +1,575 @@
+1
+00:00:00,300 --> 00:00:06,750
+All right, let's get started with our feedback design or feedback UI design, and I just have my project
+
+2
+00:00:06,760 --> 00:00:07,640
+starter open here.
+
+3
+00:00:07,650 --> 00:00:08,790
+I do have a link to font.
+
+4
+00:00:08,790 --> 00:00:15,480
+Awesome, because on the you know, once we submit the feedback, there's an icon on that screen there.
+
+5
+00:00:15,480 --> 00:00:23,730
+So we're going to use that and we're just going to change the title here to let's say, let us know
+
+6
+00:00:24,690 --> 00:00:34,170
+your feedback and we're going to get rid of this H1 here and let's create a container here.
+
+7
+00:00:34,170 --> 00:00:41,150
+I'm going to give us an idea of panel and also class of panel Dasch container.
+
+8
+00:00:41,670 --> 00:00:54,170
+And in here, we're going to have a strong tag and let's say, how satisfied are you with our.
+
+9
+00:00:54,180 --> 00:00:59,100
+And then I just want to put a line break here to make sure that the rest of this goes on to a new line
+
+10
+00:00:59,400 --> 00:01:03,930
+and then say customer support performance.
+
+11
+00:01:05,970 --> 00:01:13,050
+And underneath that strong, we're going to have a ratings container, so it's a ratings Dasch container
+
+12
+00:01:13,050 --> 00:01:18,000
+and this is going to contain the three boxes with the, you know, those the faces.
+
+13
+00:01:18,330 --> 00:01:20,660
+So each one will have a class of rating.
+
+14
+00:01:21,270 --> 00:01:25,230
+So it's two rating and inside here will have an image.
+
+15
+00:01:26,970 --> 00:01:30,800
+And these images are actually from flat icon dot com.
+
+16
+00:01:30,810 --> 00:01:33,710
+So I'm just going to pieces and these are FGs.
+
+17
+00:01:34,030 --> 00:01:40,710
+I'm going to paste in that first one there and underneath the image still within the rating div will
+
+18
+00:01:40,710 --> 00:01:46,020
+have a small tag with the actual rating, so this would be unhappy.
+
+19
+00:01:46,800 --> 00:01:48,630
+So if I save that, that's what we're going to see.
+
+20
+00:01:49,860 --> 00:01:53,010
+It's not going to look too good until we get to the styling.
+
+21
+00:01:53,430 --> 00:01:54,650
+But for the other two.
+
+22
+00:01:54,660 --> 00:01:58,070
+So that's our first rating div and then we have two more.
+
+23
+00:01:58,410 --> 00:01:59,960
+So I'm just going to paste these in.
+
+24
+00:02:02,190 --> 00:02:03,990
+OK, so we have the first one here.
+
+25
+00:02:03,990 --> 00:02:08,340
+We have the second one which is neutral, which is a different image, and then we have this one here
+
+26
+00:02:08,340 --> 00:02:10,140
+satisfied and noticed.
+
+27
+00:02:10,140 --> 00:02:12,750
+The last one does have the active class on it.
+
+28
+00:02:12,750 --> 00:02:14,390
+So it'll have the outline.
+
+29
+00:02:14,820 --> 00:02:16,080
+So let's save that.
+
+30
+00:02:16,110 --> 00:02:18,340
+But we'll have the outline once we have the success.
+
+31
+00:02:18,360 --> 00:02:21,270
+Right now, it's just going to look like this, OK?
+
+32
+00:02:21,300 --> 00:02:22,850
+And then at the bottom, let's see.
+
+33
+00:02:22,870 --> 00:02:33,960
+We want to go outside of this div and this div and right above the ending panel contain or div and have
+
+34
+00:02:33,960 --> 00:02:34,530
+a button.
+
+35
+00:02:35,040 --> 00:02:39,990
+And I'm going to give this a class of B10 and let's give us an idea of send, because we're going to
+
+36
+00:02:39,990 --> 00:02:49,110
+need to add an event listener in the JavaScript onto that and we'll say send or view and that's it for
+
+37
+00:02:49,110 --> 00:02:49,730
+the HTML.
+
+38
+00:02:49,770 --> 00:02:54,990
+So let's jump into our stylesheet here and for a font we're going to use Monserrat.
+
+39
+00:02:54,990 --> 00:02:57,630
+So I'm going to just right here.
+
+40
+00:02:57,630 --> 00:02:58,920
+It ends with success.
+
+41
+00:02:58,920 --> 00:03:05,550
+Will do Questionmark family equals Monserrat.
+
+42
+00:03:06,030 --> 00:03:07,620
+And let's add that to the body.
+
+43
+00:03:12,040 --> 00:03:19,180
+OK, and for this stuff here, we're going to display flags and we actually don't need the Flex Direction
+
+44
+00:03:19,180 --> 00:03:23,440
+column, we do want to align center and height 100 viewport.
+
+45
+00:03:23,560 --> 00:03:24,180
+That's good.
+
+46
+00:03:24,820 --> 00:03:30,940
+And let's start on the panel container, which wraps around everything.
+
+47
+00:03:34,630 --> 00:03:38,110
+So panel container is going to have a background color of white.
+
+48
+00:03:40,170 --> 00:03:47,820
+And actually, one thing I want to do on the body is out of background, so on the body will say background
+
+49
+00:03:47,820 --> 00:03:54,790
+color and this is going to be hexadecimal value F F nine, f two.
+
+50
+00:03:55,140 --> 00:03:56,330
+So just like, great.
+
+51
+00:03:58,320 --> 00:04:00,020
+And you can you can barely see the difference.
+
+52
+00:04:00,030 --> 00:04:01,200
+So you can see the background.
+
+53
+00:04:01,200 --> 00:04:03,550
+It's almost like a very, very light tan color.
+
+54
+00:04:04,260 --> 00:04:14,040
+And I also want to add a box shadow on the panel container so we'll do zero zero for the offsets and
+
+55
+00:04:14,040 --> 00:04:19,790
+then 10 pixel blur and then GBA for the color, which is going to be black.
+
+56
+00:04:19,950 --> 00:04:22,680
+Zero zero zero and then zero point three.
+
+57
+00:04:23,670 --> 00:04:30,450
+OK, so you can see we just have this slight box, shadow border radius.
+
+58
+00:04:32,870 --> 00:04:39,560
+So I want this to have rounded corners just slightly, so do four pixels, border radius, and let's
+
+59
+00:04:39,560 --> 00:04:45,620
+set the font size of the text in here to a default of 90 percent.
+
+60
+00:04:46,310 --> 00:04:50,330
+And I want to display flaks.
+
+61
+00:04:50,330 --> 00:04:52,450
+As soon as I do that, it's going to look like this.
+
+62
+00:04:53,210 --> 00:04:54,030
+We don't want this.
+
+63
+00:04:54,030 --> 00:04:54,860
+We don't want to row.
+
+64
+00:04:54,860 --> 00:04:57,610
+We want these to be, you know, on top of each other.
+
+65
+00:04:57,620 --> 00:05:03,440
+So we'll set the flex direction to call them instead of Roe, which is going to make it look similar
+
+66
+00:05:03,440 --> 00:05:04,460
+to how it just did.
+
+67
+00:05:05,240 --> 00:05:07,220
+But we want to justify content center.
+
+68
+00:05:07,230 --> 00:05:10,880
+We want to align items center.
+
+69
+00:05:11,840 --> 00:05:15,370
+And let's go ahead and add some padding to this container.
+
+70
+00:05:15,380 --> 00:05:19,370
+So 30 pixels padding, take everything away from the edges.
+
+71
+00:05:19,370 --> 00:05:29,120
+Let's add a max width of 400 pixels here and let's text a line to the center, which I'm actually going
+
+72
+00:05:29,120 --> 00:05:29,980
+to put up here.
+
+73
+00:05:31,190 --> 00:05:36,770
+So next, we're just going to increase the line height of this right here, which I believe that's a
+
+74
+00:05:36,770 --> 00:05:37,730
+strong tag.
+
+75
+00:05:39,230 --> 00:05:41,510
+So, yeah, we just have that wrapped and strong.
+
+76
+00:05:41,510 --> 00:05:48,800
+So let's say panel container strong and let's set the line height to twenty pixels.
+
+77
+00:05:50,580 --> 00:05:56,640
+And then we're going to start to style the ratings, so ratings container wraps around this, the three
+
+78
+00:05:56,640 --> 00:05:58,880
+faces here, three boxes.
+
+79
+00:05:58,890 --> 00:06:02,730
+So it's a ratings Dasch container.
+
+80
+00:06:04,230 --> 00:06:11,130
+And for that, we want to display as a flex box, OK?
+
+81
+00:06:11,160 --> 00:06:12,570
+We want that as a flex row.
+
+82
+00:06:13,050 --> 00:06:17,850
+And then for margin here, let's do 20 pixels on the top and bottom.
+
+83
+00:06:19,940 --> 00:06:26,360
+Now, for each rating, remember, we have the class of rating and I'm going to set I want them all
+
+84
+00:06:26,360 --> 00:06:30,620
+to be equal columns, so let's use flex one for all of them.
+
+85
+00:06:31,760 --> 00:06:36,260
+And then we're going to set the cursor to a pointer because we're going to be clicking on them and then
+
+86
+00:06:36,260 --> 00:06:36,860
+padding.
+
+87
+00:06:37,900 --> 00:06:41,780
+Let's do 20 pixels all around, kind of separate them out.
+
+88
+00:06:41,780 --> 00:06:46,820
+And then for margin, let's do 10 pixels, top and bottom, five pixels left and right.
+
+89
+00:06:48,440 --> 00:06:48,890
+All right.
+
+90
+00:06:48,920 --> 00:06:51,710
+Now let's handle the hover.
+
+91
+00:06:51,710 --> 00:06:54,560
+We want to have that the box around it when we hover.
+
+92
+00:06:54,950 --> 00:07:00,860
+Also, we want to make it when we click on it so the box stays on it for the hover and active.
+
+93
+00:07:00,860 --> 00:07:06,070
+Let's do a class of rating and hover.
+
+94
+00:07:06,530 --> 00:07:11,480
+We also want this on the class of rating when it has a class of active.
+
+95
+00:07:14,360 --> 00:07:22,040
+So I'm going to set the border radius to four pixels and we're going to we're not going have a border,
+
+96
+00:07:22,060 --> 00:07:23,360
+we're going to have a box shadow.
+
+97
+00:07:23,960 --> 00:07:32,410
+So box shadow, let's do zero zero 10 pixels, our GPA and zero zero zero.
+
+98
+00:07:32,420 --> 00:07:36,250
+So red, green, blue zero and then zero point one for the alpha.
+
+99
+00:07:36,590 --> 00:07:39,590
+And you can see that the active one has that box around it.
+
+100
+00:07:39,590 --> 00:07:43,010
+And if I hover over any of them, it has that box as well.
+
+101
+00:07:43,760 --> 00:07:45,190
+Now the image.
+
+102
+00:07:45,200 --> 00:07:52,820
+So let's take the image that's in the rating class rating div and let's give that a width of 40 pixels.
+
+103
+00:07:53,600 --> 00:07:54,950
+It's going to make them a little smaller.
+
+104
+00:07:55,280 --> 00:08:00,800
+We also have the small tags which has the, you know, unhappy, neutral, satisfied, so let's say
+
+105
+00:08:00,800 --> 00:08:02,840
+rating small.
+
+106
+00:08:04,190 --> 00:08:07,820
+And I'm just going to change the color of that to five, five, five.
+
+107
+00:08:08,450 --> 00:08:17,630
+And let's set that to display in dash and block because these are small tags are inline by default.
+
+108
+00:08:17,870 --> 00:08:22,760
+And then I just want to add a margin to, say, 10 pixels, zero zero.
+
+109
+00:08:22,760 --> 00:08:24,080
+That'll push them down a little bit.
+
+110
+00:08:25,880 --> 00:08:31,340
+And then if it's active, I just want to change the color of the small to make it a little lighter.
+
+111
+00:08:31,350 --> 00:08:34,850
+So let's just take this.
+
+112
+00:08:36,200 --> 00:08:40,850
+So hover or small, I'm sorry, hover or active, but oops.
+
+113
+00:08:42,930 --> 00:08:51,620
+And then we just want to target the small tags for that and set that color to hexadecimal.
+
+114
+00:08:51,620 --> 00:08:52,490
+One, one, one.
+
+115
+00:08:54,730 --> 00:09:04,780
+OK, and then for the button style that so that has a class of buttons and set the background color
+
+116
+00:09:04,780 --> 00:09:16,360
+of that to hexadecimal value of three zero to D to be OK, it's going to be our background color.
+
+117
+00:09:16,630 --> 00:09:23,470
+So we want the color of the text to be white and let's set the border to zero.
+
+118
+00:09:23,590 --> 00:09:30,730
+Let's set the border radius to four pixels like everything else needs a little padding.
+
+119
+00:09:31,030 --> 00:09:38,650
+So we'll do padding 12 pixels top and bottom, 30 pixels left and right and make the cursor into a pointer.
+
+120
+00:09:40,790 --> 00:09:41,690
+OK, good.
+
+121
+00:09:42,250 --> 00:09:49,160
+Let's get rid of that outlines or say, class of BTN when it's in its focus state, we want to set the
+
+122
+00:09:49,160 --> 00:09:51,470
+outline to zero.
+
+123
+00:09:53,300 --> 00:09:53,840
+All right.
+
+124
+00:09:53,840 --> 00:09:57,500
+And then let's do big BTN.
+
+125
+00:09:57,980 --> 00:10:04,730
+And when it's in its active state, we'll go ahead and add a transform property and let's just scale
+
+126
+00:10:04,730 --> 00:10:05,480
+it down a little.
+
+127
+00:10:05,510 --> 00:10:09,050
+So from one, we'll go to nine point ninety.
+
+128
+00:10:09,440 --> 00:10:12,320
+So we just get that little, you know, scale down effect.
+
+129
+00:10:12,980 --> 00:10:20,960
+Now we can't see it just yet, but once we basically submit this form using JavaScript, we're going
+
+130
+00:10:20,960 --> 00:10:24,590
+to have an icon from font awesome.
+
+131
+00:10:24,590 --> 00:10:26,090
+Inserted with some text.
+
+132
+00:10:26,090 --> 00:10:28,540
+So I just want to add this style for that.
+
+133
+00:10:28,550 --> 00:10:30,810
+It's going to be a dash heart.
+
+134
+00:10:31,460 --> 00:10:33,220
+It's going to be the class for the icon.
+
+135
+00:10:33,230 --> 00:10:40,820
+I just want to make it red so color red and the font size, I'm going to make it bigger 30 pixels and
+
+136
+00:10:40,820 --> 00:10:44,990
+just set margin bottom just to push the content below it down.
+
+137
+00:10:44,990 --> 00:10:46,430
+Set that to 10 pixels.
+
+138
+00:10:46,730 --> 00:10:50,240
+OK, and that's it for this VSS so pretty simple.
+
+139
+00:10:50,870 --> 00:10:56,960
+In the next video, we're going to add the functionality where we can click and we can change the active
+
+140
+00:10:56,960 --> 00:11:00,110
+class and give it the the border, the or the box shadow.
+
+141
+00:11:00,290 --> 00:11:04,790
+And also so we can click this and it'll show us a page that basically says thank you.
+
+142
+00:11:04,900 --> 00:11:06,440
+You know, thank you for your feedback.
+
+143
+00:11:06,740 --> 00:11:07,040
+All right.
+
+144
+00:11:07,040 --> 00:11:08,150
+So we'll get into that next.

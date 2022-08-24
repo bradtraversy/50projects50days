@@ -1,0 +1,567 @@
+﻿1
+00:00:00,240 --> 00:00:04,530
+Muito bem, pessoal, vamos começar nosso projeto de navegação animado, então tenho meu
+
+2
+00:00:04,530 --> 00:00:10,140
+O clichê do BOLER aqui, um iniciador do projeto, e acabei de incluir o link do drible para o gráfico em
+
+3
+00:00:10,140 --> 00:00:10,970
+caso você esteja interessado.
+
+4
+00:00:10,980 --> 00:00:12,710
+Eu também queria dar-lhes crédito.
+
+5
+00:00:13,080 --> 00:00:22,690
+Então vamos começar aqui com o título Animated Navigation e o tempo que eu ia ser bem simples.
+
+6
+00:00:23,310 --> 00:00:28,040
+Então, queremos nos livrar disso e ter uma tag NAV que envolva tudo.
+
+7
+00:00:28,320 --> 00:00:33,830
+Agora, a maneira como essa animação vai funcionar é quando clicamos nisso.
+
+8
+00:00:34,530 --> 00:00:36,330
+Este está no estado de ativo.
+
+9
+00:00:36,330 --> 00:00:41,910
+Então, basicamente, teremos uma classe de ativos no NAV quando clicarmos nele no JavaScript, vai
+
+10
+00:00:41,910 --> 00:00:46,280
+para remover essa classe e temos várias transições para dar esse efeito.
+
+11
+00:00:46,680 --> 00:00:51,360
+OK, temos esse alongamento, temos esse movimento desaparece a opacidade.
+
+12
+00:00:51,690 --> 00:00:55,050
+Além disso, você pode ver que os links também estão girando.
+
+13
+00:00:55,050 --> 00:00:59,010
+E o X que as linhas viram são os X que se transformam em linhas.
+
+14
+00:00:59,220 --> 00:01:01,770
+Então vamos adicionar um monte de transições para eles.
+
+15
+00:01:02,040 --> 00:01:06,900
+Mas esta tag nav vai começar com uma classe de active porque queremos que ela esteja aberta quando for iniciada.
+
+16
+00:01:07,200 --> 00:01:11,370
+E também daremos uma ideia de NAV para agarrá-lo no JavaScript.
+
+17
+00:01:11,880 --> 00:01:20,490
+Então e aqui vamos adicionar nosso combustível e depois nosso aliado com um ataque que não leva a lugar nenhum, fique em casa e
+
+18
+00:01:20,490 --> 00:01:21,900
+então teremos quatro links.
+
+19
+00:01:21,910 --> 00:01:23,970
+Este próximo será trabalhos.
+
+20
+00:01:24,900 --> 00:01:32,280
+E então vamos fazer sobre e depois vamos fazer contato, OK, debaixo dos EUA, vamos ter
+
+21
+00:01:32,280 --> 00:01:32,820
+um botão.
+
+22
+00:01:34,020 --> 00:01:40,710
+Então este botão vai ter uma classe de ícone e dar uma ideia de alternância.
+
+23
+00:01:41,300 --> 00:01:45,330
+OK, então este botão é este aqui, o machado.
+
+24
+00:01:45,810 --> 00:01:48,560
+Mas aqui dentro, você vê que temos duas linhas, certo?
+
+25
+00:01:49,050 --> 00:01:50,690
+Então queremos essas duas linhas.
+
+26
+00:01:50,940 --> 00:01:55,140
+Então vamos fazer uma aula de linha e queremos duas dessas.
+
+27
+00:01:55,140 --> 00:02:00,990
+Então, vamos adicionar que agora precisamos de uma maneira de diferenciá-los, porque eles estarão girando de maneira diferente
+
+28
+00:02:01,590 --> 00:02:02,520
+na transição.
+
+29
+00:02:02,520 --> 00:02:07,320
+Então, vamos chamar este, linha um e este, linha dois.
+
+30
+00:02:08,290 --> 00:02:12,760
+E deve ser isso para o TML, então é assim que vai ficar, muito feio.
+
+31
+00:02:13,220 --> 00:02:17,340
+Então, vamos pular para o nosso estilo e vamos usar uma fonte diferente aqui.
+
+32
+00:02:17,350 --> 00:02:24,880
+Nós só queremos sucesso e depois substituímos isso por Muli Molly Mieuli.
+
+33
+00:02:24,880 --> 00:02:26,200
+Não sei pronunciar.
+
+34
+00:02:26,710 --> 00:02:28,440
+E então vamos adicionar isso aqui.
+
+35
+00:02:28,990 --> 00:02:37,840
+OK, agora para o fundo que vamos usar vamos colocar uma cor sólida aqui, mas então sob
+
+36
+00:02:37,840 --> 00:02:39,490
+vamos fazer um gradiente linear.
+
+37
+00:02:39,880 --> 00:02:44,080
+E estou colocando ambos apenas no caso de gradiente linear não ser suportado.
+
+38
+00:02:44,380 --> 00:02:51,730
+Então isso será hexadecimal e será um F bsf.
+
+39
+00:02:53,260 --> 00:02:58,720
+OK, então como um azul bem claro e então teremos uma imagem de fundo.
+
+40
+00:02:58,720 --> 00:03:07,180
+E para isso vamos usar um gradiente linear e faremos a direção para baixo e então
+
+41
+00:03:07,570 --> 00:03:09,750
+vamos usar esta cor aqui.
+
+42
+00:03:12,610 --> 00:03:13,960
+Então vou colar nessa cor.
+
+43
+00:03:13,960 --> 00:03:17,530
+Queremos isso em zero por cento e então vamos colocar uma vírgula aqui.
+
+44
+00:03:17,530 --> 00:03:22,350
+Teremos mais pasta nessa cor novamente e queremos que vá para 50.
+
+45
+00:03:22,420 --> 00:03:25,570
+Então, de zero por cento a 50 por cento terá essa cor.
+
+46
+00:03:26,050 --> 00:03:34,840
+E então queremos essa cor, esse azul, que é cinco cinco dois nove zero F nove.
+
+47
+00:03:35,440 --> 00:03:40,560
+E queremos que seja de 50% a 100%.
+
+48
+00:03:40,570 --> 00:03:43,690
+Então vamos pegar isso.
+
+49
+00:03:45,640 --> 00:03:48,870
+E aqui, queremos que isso vá para 100 por cento.
+
+50
+00:03:48,890 --> 00:03:51,700
+Se eu salvar isso, teremos essa cor dividida.
+
+51
+00:03:51,700 --> 00:03:55,330
+Olhe, agora, vamos ver, o que mais temos aqui?
+
+52
+00:03:55,330 --> 00:03:57,100
+Queremos exibir flaks?
+
+53
+00:03:57,100 --> 00:04:00,460
+Não precisamos da coluna de exibição Collum e nos livramos disso.
+
+54
+00:04:00,820 --> 00:04:08,020
+Também podemos nos livrar do estouro de itens ocultos para ocultos.
+
+55
+00:04:08,020 --> 00:04:09,610
+E eu vou apenas adicionar margem zero.
+
+56
+00:04:09,610 --> 00:04:11,620
+Eu provavelmente deveria ter colocado isso no clichê.
+
+57
+00:04:13,540 --> 00:04:14,600
+Então é isso para o corpo.
+
+58
+00:04:14,620 --> 00:04:24,280
+Agora vamos começar no nav aqui, então vamos pegar a tag NAV e vamos adicionar um plano de fundo, muito plano de fundo
+
+59
+00:04:24,280 --> 00:04:27,100
+cor de branco, está bem?
+
+60
+00:04:27,100 --> 00:04:30,670
+E vou adicionar 20 pixels de preenchimento em toda a volta.
+
+61
+00:04:31,330 --> 00:04:36,070
+E a largura disso será de 80%.
+
+62
+00:04:36,070 --> 00:04:38,440
+Mas isso é sinto muito, 80 pixels.
+
+63
+00:04:38,440 --> 00:04:40,560
+Mas isso está no estado não ativo.
+
+64
+00:04:40,570 --> 00:04:47,090
+Então, basicamente, quando estiver ativo, terá 350 pixels e estará ativo para começar.
+
+65
+00:04:47,410 --> 00:04:49,240
+OK, temos a classe ativa aqui.
+
+66
+00:04:49,250 --> 00:04:55,780
+Então vamos pular aqui bem rápido e dizer se ele tem a classe ativa nele, então vamos definir o
+
+67
+00:04:55,780 --> 00:04:59,260
+largura para 350 pixels assim.
+
+68
+00:05:00,010 --> 00:05:00,430
+Tudo bem.
+
+69
+00:05:00,430 --> 00:05:05,770
+E então eu só quero centralizar tudo aqui para que o NAV vá em frente e exiba flex.
+
+70
+00:05:06,380 --> 00:05:16,120
+Queremos colocar os itens de linha no centro e queremos justificar o conteúdo no centro.
+
+71
+00:05:17,830 --> 00:05:23,890
+E vamos adicionar um raio de borda de três pixels.
+
+72
+00:05:24,610 --> 00:05:26,610
+E também teremos uma sombra de caixa.
+
+73
+00:05:27,790 --> 00:05:34,630
+Então, para o deslocamento X, faremos zero, o Y fará dois pixels, a bola fará cinco pixels e o
+
+74
+00:05:34,630 --> 00:05:40,720
+a cor será um preto com transparência zero vírgula três.
+
+75
+00:05:41,290 --> 00:05:43,870
+Então, parece que está saindo um pouco da página.
+
+76
+00:05:45,490 --> 00:05:51,550
+Agora, quando removemos a classe ativa, eu apenas me livro disso manualmente.
+
+77
+00:05:51,550 --> 00:05:54,500
+Aqui você pode ver que vai encolhendo.
+
+78
+00:05:54,880 --> 00:05:56,770
+Agora, eu quero adicionar uma transição nisso.
+
+79
+00:05:56,770 --> 00:06:00,580
+Eu não quero apenas passar para a direita, você sabe, menor ou maior.
+
+80
+00:06:00,580 --> 00:06:02,560
+Eu quero ter uma transição agradável e suave.
+
+81
+00:06:02,560 --> 00:06:04,770
+Então vamos adicionar uma transição.
+
+82
+00:06:05,080 --> 00:06:10,300
+Então, isso levará qualquer propriedade à qual queremos adicionar a transição, que neste caso é o with
+
+83
+00:06:10,600 --> 00:06:16,810
+a duração que eu quero que dure, que é ponto seis segundos e o efeito que é linear, vai
+
+84
+00:06:16,810 --> 00:06:18,710
+para ser a mesma velocidade em todo.
+
+85
+00:06:19,150 --> 00:06:19,540
+Tudo bem.
+
+86
+00:06:19,540 --> 00:06:24,100
+Então agora vamos começar a fazer o que você sabe, a lista não ordenada.
+
+87
+00:06:24,100 --> 00:06:34,540
+Então Sanabel e para isso, vou mostrar o Flex, que o torna um container flex, faz todo o
+
+88
+00:06:34,540 --> 00:06:37,630
+itens de lista, itens flexíveis que se transformarão em uma linha.
+
+89
+00:06:37,990 --> 00:06:40,780
+Queremos nos livrar de todas as balas.
+
+90
+00:06:40,780 --> 00:06:43,890
+Então, menos tipo de estilo, vamos definir isso como nenhum.
+
+91
+00:06:45,040 --> 00:06:49,450
+E então vamos em frente e apenas remova qualquer margem e preenchimento padrão.
+
+92
+00:06:50,920 --> 00:06:51,340
+Ops.
+
+93
+00:06:54,640 --> 00:07:02,770
+OK, e então o que mais queremos fazer aqui, então com o com para isso a inicial com vai
+
+94
+00:07:02,770 --> 00:07:03,730
+ser nulo.
+
+95
+00:07:04,280 --> 00:07:10,150
+E a razão para isso é quando, quando não está ativo, queremos que a largura seja zero.
+
+96
+00:07:11,020 --> 00:07:11,610
+Tudo bem.
+
+97
+00:07:11,650 --> 00:07:16,270
+Agora queremos adicionar uma transição para a largura aqui também.
+
+98
+00:07:16,270 --> 00:07:25,320
+Então é uma transição na largura e vai ser zero vírgula seis segundos linear.
+
+99
+00:07:26,560 --> 00:07:34,000
+Agora, quando está ativo, digamos que quando a tag NAV tem uma classe de ativo, o que acontece agora, queremos
+
+100
+00:07:34,690 --> 00:07:37,540
+a largura dos EUA seja de 100 por cento.
+
+101
+00:07:39,960 --> 00:07:42,040
+OK, desculpe, vou colocá-lo aqui.
+
+102
+00:07:42,850 --> 00:07:49,880
+OK, então com isso 100 por cento e então acho que é tudo o que queremos lá.
+
+103
+00:07:50,380 --> 00:07:52,020
+Então vamos fazer os itens da lista.
+
+104
+00:07:53,380 --> 00:07:54,850
+Então nós temos o nosso NAV.
+
+105
+00:07:55,030 --> 00:08:01,790
+Você listará os itens e lembre-se, queremos que eles tenham esse efeito de rotação.
+
+106
+00:08:02,350 --> 00:08:12,670
+Então o que vamos fazer é usar transform e podemos usar rotações no eixo Y e começar aqui com zero
+
+107
+00:08:12,670 --> 00:08:13,480
+graus.
+
+108
+00:08:14,410 --> 00:08:18,670
+E vou mudar isso para o ato, para o estado ativo.
+
+109
+00:08:19,460 --> 00:08:20,650
+Vamos em frente e adicionar isso.
+
+110
+00:08:20,650 --> 00:08:28,000
+E, por padrão, a opacidade será zero, o que fará com que ela simplesmente desapareça.
+
+111
+00:08:28,210 --> 00:08:32,950
+E tudo bem porque queremos que ele seja exibido apenas quando estiver no estado ativo.
+
+112
+00:08:33,370 --> 00:08:40,570
+E então eu quero adicionar uma transformação de desculpe, uma transição para a propriedade transform, para a rotação,
+
+113
+00:08:40,570 --> 00:08:43,330
+porque queríamos ter essa rotação suave.
+
+114
+00:08:43,340 --> 00:08:47,140
+Você pode ver os aliados que giram.
+
+115
+00:08:47,440 --> 00:08:51,440
+E também pela opacidade, você pode ver como eles aparecem e desaparecem, agradáveis ​​e suaves.
+
+116
+00:08:51,820 --> 00:08:56,710
+Então, o que faremos é adicionar transição na transformação
+
+117
+00:08:59,170 --> 00:09:07,960
+e vamos fazer zero vírgula seis segundos linear e, em seguida, também adicionados à propriedade opacity, que irá
+
+118
+00:09:07,960 --> 00:09:11,260
+ser zero vírgula seis segundos de duração e linear.
+
+119
+00:09:15,670 --> 00:09:20,300
+Tudo bem, e então vamos ver, então quando estiver ativo, devemos vê-lo.
+
+120
+00:09:20,320 --> 00:09:29,230
+Então, digamos que agora o NAV está ativo e queremos direcionar o aliado quando o NAV estiver ativo e definir a opacidade
+
+121
+00:09:29,530 --> 00:09:31,240
+para um para que possamos vê-lo.
+
+122
+00:09:31,540 --> 00:09:38,500
+E também queremos definir a transformação para girar.
+
+123
+00:09:38,500 --> 00:09:39,070
+Por quê?
+
+124
+00:09:39,070 --> 00:09:41,460
+E vamos fazer 360 graus.
+
+125
+00:09:41,470 --> 00:09:44,350
+Nós só queremos fazer um giro 360 completo.
+
+126
+00:09:45,280 --> 00:09:51,510
+Você pode ver quando eu salvei, na verdade, nos mostra a transição ou a rotação, devo dizer.
+
+127
+00:09:52,300 --> 00:09:52,780
+Tudo bem.
+
+128
+00:09:52,900 --> 00:09:58,600
+Agora os links não parecem muito bons, então vamos fazer com que eles pareçam um pouco melhores.
+
+129
+00:09:58,600 --> 00:10:08,770
+Então vamos ver agora o VLA e queremos posicioná-los para serem relativos e a cor dos comprimentos que estou indo
+
+130
+00:10:08,770 --> 00:10:14,520
+para definir como preto e eu vou me livrar de qualquer decoração de subtexto subjacente.
+
+131
+00:10:15,230 --> 00:10:17,020
+O que é essa decoração de texto?
+
+132
+00:10:17,020 --> 00:10:18,430
+Queremos que não seja nada.
+
+133
+00:10:19,330 --> 00:10:26,620
+E então vou separá-los com uma margem à direita e à esquerda de dez pixels parece muito
+
+134
+00:10:26,620 --> 00:10:26,980
+Melhor.
+
+135
+00:10:27,970 --> 00:10:28,390
+Tudo bem.
+
+136
+00:10:28,390 --> 00:10:30,700
+Então acho que vamos parar por aqui.
+
+137
+00:10:30,700 --> 00:10:34,960
+E então, no próximo vídeo, vamos em frente e estilizar o ícone ou o botão.
+
+138
+00:10:35,440 --> 00:10:37,600
+O botão com a classe de ícone.
+
+139
+00:10:37,900 --> 00:10:43,840
+Coloque as linhas lá e vamos adicionar a rotação, transformar para isso, e então adicionar
+
+140
+00:10:43,840 --> 00:10:46,690
+o JavaScript com o ouvinte de eventos.
+
+141
+00:10:46,990 --> 00:10:47,290
+Tudo bem.
+
+142
+00:10:47,290 --> 00:10:48,520
+Então, vamos chegar a isso a seguir.

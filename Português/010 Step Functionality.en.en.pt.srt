@@ -1,0 +1,603 @@
+﻿1
+00:00:00,150 --> 00:00:02,880
+Então agora queremos começar em nosso JavaScript para este projeto.
+
+2
+00:00:02,910 --> 00:00:06,840
+Então, basicamente, queremos poder clicar em próximo e passar para o próximo.
+
+3
+00:00:07,140 --> 00:00:08,220
+Clique em anterior.
+
+4
+00:00:08,220 --> 00:00:10,110
+Não mudou para o anterior.
+
+5
+00:00:10,500 --> 00:00:12,740
+Então vamos começar trazendo o que precisamos.
+
+6
+00:00:12,750 --> 00:00:24,870
+Vamos trazer o progresso e igualar o elemento document doget por D e temos uma ideia do progresso.
+
+7
+00:00:25,110 --> 00:00:34,950
+OK, também queremos trazer os botões para que Prešov configure para preservar e, em seguida, temos o próximo
+
+8
+00:00:36,150 --> 00:00:38,760
+defina isso para o próximo.
+
+9
+00:00:38,760 --> 00:00:40,780
+E também queremos trazer em nossos círculos.
+
+10
+00:00:41,310 --> 00:00:46,740
+Então, para isso, como há mais de um, certifique-se de colocar um ponto aqui porque é o círculo da turma.
+
+11
+00:00:46,950 --> 00:00:54,090
+E como é mais de um, vamos usar o seletor de consulta all, que trará todos eles como
+
+12
+00:00:54,090 --> 00:00:56,400
+uma lista de nós, que é semelhante a uma matriz.
+
+13
+00:00:56,880 --> 00:00:58,420
+Então vamos chamar isso de círculos.
+
+14
+00:00:58,440 --> 00:00:58,780
+Tudo bem.
+
+15
+00:00:58,800 --> 00:01:00,930
+Então isso é tudo que queremos trazer do DOM.
+
+16
+00:01:01,440 --> 00:01:04,380
+Então isso aqui vai ser basicamente como um índice.
+
+17
+00:01:04,410 --> 00:01:09,600
+Vamos chamar isso de ativo atual, que representará o que estiver ativo, que
+
+18
+00:01:09,600 --> 00:01:11,220
+será definido como um por padrão.
+
+19
+00:01:11,790 --> 00:01:15,360
+E então vamos ter alguns ouvintes de eventos.
+
+20
+00:01:15,360 --> 00:01:18,650
+Então, na verdade, é o próximo verso.
+
+21
+00:01:18,900 --> 00:01:22,430
+Então, pegaremos o próximo botão e adicionaremos um ouvinte de evento a ele.
+
+22
+00:01:22,890 --> 00:01:24,870
+Queremos ouvir um clique.
+
+23
+00:01:25,440 --> 00:01:32,400
+E quando clicar, vamos executar uma função e queremos que seja qual for o ativo atual
+
+24
+00:01:32,400 --> 00:01:34,710
+está no momento e incrementá-lo em um.
+
+25
+00:01:34,720 --> 00:01:39,830
+Então mais mais você saberá se estiver definido como um, definirá como dois e assim por diante.
+
+26
+00:01:39,840 --> 00:01:45,860
+E, de fato, vamos em frente e o log do console atual está ativo.
+
+27
+00:01:45,870 --> 00:01:51,690
+E se formos até aqui e abrirmos o console, clico em próximo vai para dois, três, quatro ou cinco e
+
+28
+00:01:51,690 --> 00:01:52,320
+em breve.
+
+29
+00:01:54,200 --> 00:01:57,060
+Então vamos nos livrar disso.
+
+30
+00:01:57,480 --> 00:01:59,730
+Queremos mantê-lo dentro de seus limites.
+
+31
+00:01:59,730 --> 00:02:07,650
+Então, vamos garantir que, se chegar ao fim, não passe das quatro.
+
+32
+00:02:07,650 --> 00:02:09,540
+Então vamos fazer uma declaração if aqui.
+
+33
+00:02:09,540 --> 00:02:16,710
+E digamos que se o ativo atual for maior que e então podemos fazer círculos que trouxemos
+
+34
+00:02:16,710 --> 00:02:19,940
+e é uma lista de nós para que possamos tratá-la como uma matriz.
+
+35
+00:02:19,950 --> 00:02:22,950
+Portanto, tem uma propriedade de comprimento.
+
+36
+00:02:23,560 --> 00:02:29,400
+Então diremos se é maior que o comprimento do comprimento, ou seja, a quantidade de círculos neste caso para
+
+37
+00:02:29,820 --> 00:02:36,960
+então vamos definir o ativo atual, vamos definir isso para qualquer que seja o comprimento, que será, você sabe,
+
+38
+00:02:36,960 --> 00:02:37,740
+o último.
+
+39
+00:02:37,750 --> 00:02:40,350
+Então, vamos dizer círculos de comprimento de ponto.
+
+40
+00:02:42,290 --> 00:02:47,420
+OK, agora, se formos e clicarmos em Avançar, adicionaremos novamente ao log do console.
+
+41
+00:02:49,200 --> 00:02:57,120
+Tão atual, ativo e o próximo então dois, três, quatro e notado é ficar em quatro, não vai
+
+42
+00:02:57,120 --> 00:02:59,220
+para cinco, então é isso que queremos.
+
+43
+00:03:00,930 --> 00:03:07,140
+E então, por enquanto, obviamente, precisamos, você sabe, mostrar isso no dormitório.
+
+44
+00:03:07,140 --> 00:03:10,450
+Mas antes de fazermos isso, eu só quero criar o anterior.
+
+45
+00:03:10,450 --> 00:03:11,730
+Então eu vou copiar isso.
+
+46
+00:03:11,730 --> 00:03:20,160
+E digamos que temos o ouvinte de eventos e queremos ativar a corrente e queremos diminuir
+
+47
+00:03:20,160 --> 00:03:20,940
+isso por um.
+
+48
+00:03:20,940 --> 00:03:22,460
+Então vamos fazer menos menos.
+
+49
+00:03:22,800 --> 00:03:32,580
+E então para a verificação aqui, vamos dizer que se o ativo atual é menor que um, então sabemos
+
+50
+00:03:32,580 --> 00:03:33,720
+estamos bem no começo.
+
+51
+00:03:33,720 --> 00:03:39,310
+Então, queremos apenas definir o atual ativo como um, OK, porque não queremos que ele vá para baixo, você
+
+52
+00:03:39,330 --> 00:03:41,090
+sabe, zero negativo e assim por diante.
+
+53
+00:03:41,790 --> 00:03:43,740
+Portanto, temos esses dois ouvintes de eventos.
+
+54
+00:03:44,130 --> 00:03:49,350
+Agora, depois de fazermos isso, vamos chamar uma função chamada update.
+
+55
+00:03:51,840 --> 00:03:53,400
+Então, vamos chamar update lá.
+
+56
+00:03:53,400 --> 00:03:55,040
+Nós também vamos chamá-lo aqui.
+
+57
+00:03:56,550 --> 00:03:58,560
+Então, basicamente, vamos atualizar o dormitório.
+
+58
+00:03:58,920 --> 00:04:02,280
+Então aqui embaixo, vamos criar uma função chamada update.
+
+59
+00:04:06,260 --> 00:04:12,710
+E a primeira coisa que faremos aqui é pegar nossos círculos, que é uma lista de nós, e podemos percorrer esses
+
+60
+00:04:13,250 --> 00:04:17,050
+com um para cada e os quatro cada um leva em uma função.
+
+61
+00:04:17,060 --> 00:04:24,800
+Vou usar uma função de seta e queremos dizer para cada círculo e também vou obter
+
+62
+00:04:24,800 --> 00:04:26,870
+o índice, está bem?
+
+63
+00:04:27,020 --> 00:04:35,810
+Então, para cada círculo, vou verificar se o índice desse círculo em particular é menor que o
+
+64
+00:04:35,810 --> 00:04:37,520
+atual ativo.
+
+65
+00:04:37,910 --> 00:04:41,390
+Se for assim, vou adicionar a classe ativa a ela.
+
+66
+00:04:41,390 --> 00:04:43,190
+Então eu vou pegar esse círculo em particular.
+
+67
+00:04:43,310 --> 00:04:50,580
+Eu continuo escrevendo círculo errado e digo ponto sem classe e então podemos adicionar na classe de ativo.
+
+68
+00:04:51,770 --> 00:04:58,960
+OK, senão queremos fazer um círculo e remover a classe.
+
+69
+00:04:58,970 --> 00:05:00,770
+Então, remova o ponto sem classes
+
+70
+00:05:03,290 --> 00:05:04,070
+ativo.
+
+71
+00:05:05,630 --> 00:05:06,980
+OK, então eu vou salvar isso.
+
+72
+00:05:07,520 --> 00:05:13,760
+E agora, se eu clicar aqui, você verá que este segundo círculo agora está destacado ao clicar em próximo novamente.
+
+73
+00:05:13,760 --> 00:05:16,550
+Destacado em seguida novamente e assim por diante.
+
+74
+00:05:18,280 --> 00:05:18,820
+Tudo bem.
+
+75
+00:05:19,220 --> 00:05:23,320
+E percebo que ainda não podemos fazer o anterior, mas chegaremos a isso.
+
+76
+00:05:23,780 --> 00:05:32,330
+Então, depois disso para cada ano, vamos pegar todos os círculos ativos, porque, você sabe, quando clicarmos
+
+77
+00:05:32,330 --> 00:05:38,210
+este ativo está ativado agora em todos esses círculos. Posso mostrar aqui para que você possa ver as atividades em todos
+
+78
+00:05:38,210 --> 00:05:38,630
+deles.
+
+79
+00:05:39,660 --> 00:05:47,000
+Então, vou dizer const actives e definir isso para document dot, query selector all.
+
+80
+00:05:47,880 --> 00:05:50,690
+E queremos toda a classe de ativos.
+
+81
+00:05:52,670 --> 00:05:53,140
+Tudo bem.
+
+82
+00:05:53,180 --> 00:05:59,430
+Agora queremos lidar com a barra de progresso porque não queremos apenas os círculos acendendo.
+
+83
+00:05:59,660 --> 00:06:01,990
+Queremos que essas linhas também fiquem em azul claro.
+
+84
+00:06:02,330 --> 00:06:05,880
+Então, a maneira como podemos fazer isso, deixe-me antes de tudo, log do console.
+
+85
+00:06:05,910 --> 00:06:10,130
+Então, se eu disser ativos, vamos fazer o comprimento dos ativos.
+
+86
+00:06:11,250 --> 00:06:20,880
+E vamos fazer círculos de comprimento de ponto e ir ao nosso console aqui e clicar para chegarmos a quatro.
+
+87
+00:06:20,880 --> 00:06:27,270
+Então dois é o número de ativos e os círculos sempre serão quatro porque isso é tudo
+
+88
+00:06:27,270 --> 00:06:28,620
+círculos eu clico novamente.
+
+89
+00:06:28,620 --> 00:06:31,830
+Temos três, quatro, quatro, quatro.
+
+90
+00:06:32,760 --> 00:06:40,710
+Então eu quero uma porcentagem do nosso progresso, comprimento ou não largura, porque se olharmos
+
+91
+00:06:41,220 --> 00:06:43,950
+nossa classe de progresso, é uma largura de zero por cento.
+
+92
+00:06:43,960 --> 00:06:45,120
+Queremos mudar isso.
+
+93
+00:06:46,020 --> 00:06:50,970
+Quando vamos em frente e clicamos, queremos que isso mude para que a linha vá para o próximo, o próximo
+
+94
+00:06:50,970 --> 00:06:51,800
+um e assim por diante.
+
+95
+00:06:52,620 --> 00:07:01,890
+Então, se pegarmos o comprimento dos ativos, na verdade, vamos cancelar o log, pegar a divisão do comprimento ativo
+
+96
+00:07:01,890 --> 00:07:08,080
+que pelo comprimento de Circle obtemos vírgula cinco vírgula setenta e cinco e depois um.
+
+97
+00:07:08,250 --> 00:07:13,560
+Agora nosso objetivo é fazer com que esses sejam percentuais para o sucesso com a propriedade.
+
+98
+00:07:14,070 --> 00:07:23,910
+Então vamos colocar isso aqui, tudo isso entre parênteses, e então vamos multiplicar isso por um
+
+99
+00:07:23,910 --> 00:07:31,890
+cem e isso vai nos dar cinquenta, 75, 100, o que não é correto, porque 50 vai
+
+100
+00:07:31,890 --> 00:07:36,360
+para trazê-lo para aqui e então ele vai para 75.
+
+101
+00:07:36,360 --> 00:07:39,000
+Na verdade, podemos apenas tentar isso para que você possa ver.
+
+102
+00:07:39,270 --> 00:07:46,530
+Então, em vez de registrar isso no console, vamos nos livrar dos parênteses aqui e manteremos isso
+
+103
+00:07:46,530 --> 00:07:51,030
+embrulhado e defina o estilo de ponto de progresso.
+
+104
+00:07:51,810 --> 00:07:55,170
+E queremos a propriedade with, que inicialmente é zero por cento.
+
+105
+00:07:55,530 --> 00:07:58,710
+E vamos configurá-lo para isso e ver o que acontece se eu clicar em próximo.
+
+106
+00:07:59,010 --> 00:07:59,400
+Tudo bem.
+
+107
+00:07:59,400 --> 00:08:03,450
+Portanto, não estamos vendo a linha porque o que estamos fazendo aqui é definir a largura para 100.
+
+108
+00:08:03,600 --> 00:08:05,070
+Mas não há unidade.
+
+109
+00:08:05,070 --> 00:08:06,480
+Tem que ser 100 por cento.
+
+110
+00:08:06,810 --> 00:08:11,250
+Então, vou concatenar com um sinal de mais uma porcentagem.
+
+111
+00:08:11,940 --> 00:08:16,950
+Agora, vamos clicar em próximo e você pode ver a linha azul sendo preenchida, embora não vá para a direita
+
+112
+00:08:16,950 --> 00:08:25,320
+lugar, está passando dos dois porque lembre-se, foram 50, 75, 100, o que não queremos.
+
+113
+00:08:26,010 --> 00:08:31,650
+Queremos mudá-lo para ser como, você sabe, trinta e três por cento, 66 por cento.
+
+114
+00:08:31,950 --> 00:08:39,270
+Então, podemos consertar isso apenas pegando os círculos, alongando o comprimento dos ativos e subtraindo um de
+
+115
+00:08:39,270 --> 00:08:39,720
+Essa.
+
+116
+00:08:41,060 --> 00:08:46,220
+O que nos dará uma porcentagem menor, então vamos fazer isso e agora se eu clicar em próximo.
+
+117
+00:08:47,060 --> 00:08:48,250
+Espere um minuto, isso não está certo.
+
+118
+00:08:48,260 --> 00:08:53,630
+Temos que embrulhar isso e temos que embrulhar isso.
+
+119
+00:08:56,410 --> 00:08:56,870
+Aqui vamos nós.
+
+120
+00:08:57,260 --> 00:08:58,790
+Então agora vai para dois.
+
+121
+00:08:59,100 --> 00:09:04,520
+Então é em torno da largura é cerca de três por cento e depois vai para três, que é cerca de 66.
+
+122
+00:09:04,520 --> 00:09:05,240
+E depois em seguida.
+
+123
+00:09:05,240 --> 00:09:06,450
+E vai para quatro.
+
+124
+00:09:07,610 --> 00:09:08,030
+Tudo bem.
+
+125
+00:09:08,360 --> 00:09:12,680
+Agora, obviamente, não podemos voltar com o anterior.
+
+126
+00:09:12,680 --> 00:09:14,780
+Então vamos continuar aqui.
+
+127
+00:09:15,650 --> 00:09:21,700
+E eu quero primeiro verificar se vamos fazer uma instrução if aqui e verificar o ativo atual.
+
+128
+00:09:23,060 --> 00:09:30,950
+Portanto, se o ativo atual for igual a um, se estiver em primeiro lugar, queremos que o anterior seja desativado
+
+129
+00:09:30,950 --> 00:09:37,100
+para que possamos pegar o ponto anterior e, em seguida, podemos simplesmente definir desativado e podemos definir isso como verdadeiro.
+
+130
+00:09:37,340 --> 00:09:44,530
+Está inicialmente definido como verdadeiro, mas vamos fazer com que tiremos isso assim que clicarmos em próximo.
+
+131
+00:09:44,540 --> 00:09:46,820
+Mas se voltarmos, queremos voltar à verdade.
+
+132
+00:09:46,910 --> 00:09:54,500
+Então queremos definir isso e então vamos fazer um else se e para este outro se vamos dizer se a corrente
+
+133
+00:09:54,830 --> 00:09:56,500
+basicamente quero ver se é no final.
+
+134
+00:09:56,780 --> 00:10:03,740
+Então, se for igual ao comprimento total de círculos, círculos, comprimento, então sabemos que está no final.
+
+135
+00:10:03,920 --> 00:10:05,720
+Então, vamos desabilitar o próximo botão.
+
+136
+00:10:05,720 --> 00:10:12,140
+Então vamos pegar next e set disabled e definir como true else.
+
+137
+00:10:13,580 --> 00:10:17,150
+Então não queremos que nenhum deles seja desativado.
+
+138
+00:10:17,150 --> 00:10:23,140
+Então, vamos desativar o DOT anterior e defini-lo como false.
+
+139
+00:10:23,150 --> 00:10:25,430
+E também queremos fazer o mesmo com o próximo.
+
+140
+00:10:25,730 --> 00:10:29,930
+Isso significa que estamos no meio, então vamos salvar isso.
+
+141
+00:10:29,930 --> 00:10:30,830
+Vou clicar em seguida.
+
+142
+00:10:31,100 --> 00:10:36,730
+E agora anterior está disponível para nós se eu clicar em próximo novamente e depois em próximo novamente.
+
+143
+00:10:36,740 --> 00:10:43,910
+Agora não consigo clicar em próximo porque estamos no final do clique anterior volta atrás e depois fica desabilitado.
+
+144
+00:10:44,630 --> 00:10:45,590
+Certo, então é isso.
+
+145
+00:10:45,590 --> 00:10:52,040
+E eu sei que obviamente isso por si só não é muito útil para você, mas você pode pelo menos ver como a lógica funciona
+
+146
+00:10:52,040 --> 00:10:53,480
+até a barra de progresso.
+
+147
+00:10:53,480 --> 00:11:01,430
+E você pode usar isso em qualquer tipo de etapa, realmente um carrinho de compras, seja o que for, um formulário,
+
+148
+00:11:01,430 --> 00:11:02,360
+algum tipo de forma.
+
+149
+00:11:03,140 --> 00:11:07,400
+Portanto, sinta-se à vontade para pegar isso e correr com isso e criar algo maior e melhor.
+
+150
+00:11:08,090 --> 00:11:08,720
+Mas é isso.
+
+151
+00:11:08,730 --> 00:11:10,970
+Vamos em frente e passar para o próximo projeto.

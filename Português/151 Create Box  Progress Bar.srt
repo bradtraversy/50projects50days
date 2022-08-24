@@ -1,0 +1,675 @@
+﻿1
+00:00:00,330 --> 00:00:05,310
+OK, então vamos começar a nossa caixa de depoimentos, vou manter este navegador bonito
+
+2
+00:00:05,310 --> 00:00:09,270
+de largura apenas para que possamos ver a coisa toda em uma largura maior.
+
+3
+00:00:10,290 --> 00:00:13,920
+Então, no HTML aqui, eu só tenho um link para a fonte.
+
+4
+00:00:13,920 --> 00:00:14,490
+Incrível.
+
+5
+00:00:14,790 --> 00:00:18,900
+E você pode conseguir isso se for ao CDN, NJ Ask.com, basta procurar por fonte.
+
+6
+00:00:18,900 --> 00:00:19,530
+Incrível.
+
+7
+00:00:19,530 --> 00:00:20,580
+Ou apenas vá para a fonte.
+
+8
+00:00:20,580 --> 00:00:30,840
+Site incrível, pegue o link da CDN e vamos mudar o título aqui para uma caixa de depoimento e para baixo
+
+9
+00:00:30,840 --> 00:00:32,670
+aqui vou me livrar desse H1.
+
+10
+00:00:32,680 --> 00:00:34,260
+Então este vai ser o recipiente.
+
+11
+00:00:34,260 --> 00:00:38,370
+Então depoimento recipiente Dasch
+
+12
+00:00:40,920 --> 00:00:43,140
+e queremos que tenhamos uma barra de progresso.
+
+13
+00:00:43,140 --> 00:00:44,630
+Então eu vou adicionar isso aqui.
+
+14
+00:00:44,640 --> 00:00:48,600
+Então, apenas progresso barra de traço, nada dentro do div.
+
+15
+00:00:49,530 --> 00:00:52,800
+É para lá que a barra de progresso da linha animada irá.
+
+16
+00:00:52,800 --> 00:00:54,690
+E então queremos nossas cotações.
+
+17
+00:00:54,690 --> 00:00:57,240
+Então, vou nos dar uma aula de eFax por diversão.
+
+18
+00:00:57,240 --> 00:00:57,720
+Incrível.
+
+19
+00:00:58,050 --> 00:01:02,190
+E eu quero um traço de citação de traço.
+
+20
+00:01:02,310 --> 00:01:03,000
+Certo.
+
+21
+00:01:03,360 --> 00:01:08,580
+Mas também vou dar apenas uma classe de citação F e vou adicionar isso a ambos.
+
+22
+00:01:08,580 --> 00:01:12,840
+Então, vamos copiar isso e vamos fazer isso à esquerda.
+
+23
+00:01:13,890 --> 00:01:17,640
+E se eu salvar isso, veremos nossas duas citações aqui.
+
+24
+00:01:18,540 --> 00:01:22,950
+Então sob as aspas, teremos um parágrafo com a classe de depoimento.
+
+25
+00:01:22,950 --> 00:01:25,410
+E obviamente isso vai ser dinâmico.
+
+26
+00:01:25,410 --> 00:01:30,960
+Mas por enquanto, vou apenas colar algum texto para que você possa colocar o que quiser aqui ou pode
+
+27
+00:01:30,960 --> 00:01:35,220
+basta obter esse texto exato do repositório.
+
+28
+00:01:35,760 --> 00:01:36,150
+Tudo bem.
+
+29
+00:01:36,150 --> 00:01:40,380
+E então sob o parágrafo, teremos uma classe de usuário, que terá as coisas do usuário
+
+30
+00:01:40,380 --> 00:01:41,190
+como a imagem.
+
+31
+00:01:41,580 --> 00:01:42,840
+Então vamos dizer imagem.
+
+32
+00:01:42,840 --> 00:01:46,170
+Vou dar a isso uma classe de usuário dash image.
+
+33
+00:01:46,830 --> 00:01:52,260
+E para a imagem, vou pegá-la desse usuário aleatório.
+
+34
+00:01:53,400 --> 00:02:00,900
+Então, usuário aleatório me pontilha e barra os retratos da barra da API
+
+35
+00:02:03,750 --> 00:02:09,420
+e vamos fazer barra mulher barra quarenta e seis jpeg.
+
+36
+00:02:10,290 --> 00:02:15,540
+Então, apenas nos dê uma imagem aleatória de uma mulher e também vou dizer usuário.
+
+37
+00:02:16,200 --> 00:02:16,620
+Tudo bem.
+
+38
+00:02:16,620 --> 00:02:26,790
+Então eu salvei que agora sob a imagem vamos ter os detalhes do usuário para que tenhamos uma classe
+
+39
+00:02:26,790 --> 00:02:33,810
+de detalhes do usuário e então eu vou ter um H para e eu vou dar a isso uma classe de nome de usuário e nós estamos
+
+40
+00:02:33,810 --> 00:02:41,310
+vou dizer minhas milhas e depois um parágrafo com a classe de papel.
+
+41
+00:02:41,310 --> 00:02:43,890
+E seu papel vai ser marketing.
+
+42
+00:02:44,310 --> 00:02:44,970
+E é isso.
+
+43
+00:02:45,000 --> 00:02:46,050
+Isso é todo o HTML.
+
+44
+00:02:46,050 --> 00:02:46,980
+Tão simples.
+
+45
+00:02:47,400 --> 00:02:49,340
+Vamos pular para a folha de estilo aqui.
+
+46
+00:02:49,350 --> 00:02:56,160
+Agora, eu não vou usar a fonte Raboteau com isso, então eu quero me livrar de tudo até o sucesso.
+
+47
+00:02:56,670 --> 00:03:02,430
+E então a partir daqui vamos fazer um ponto de interrogação e igualar a família a.
+
+48
+00:03:02,430 --> 00:03:05,730
+E eu vou usar qual fonte estou usando aqui.
+
+49
+00:03:05,730 --> 00:03:16,950
+Monserrat Então M0 e T serat e eu vou pegar essa fonte e colocá-la aqui para o
+
+50
+00:03:16,950 --> 00:03:17,460
+corpo.
+
+51
+00:03:18,780 --> 00:03:20,550
+K muda a fonte para cima.
+
+52
+00:03:20,930 --> 00:03:26,850
+Eu vou adicionar uma cor de fundo levemente cinza claro ou um pouco mais escura com o cinza claro.
+
+53
+00:03:27,150 --> 00:03:33,240
+Então vamos fazer isso três vezes e exibir flex.
+
+54
+00:03:33,240 --> 00:03:34,440
+Queremos tudo centrado.
+
+55
+00:03:34,440 --> 00:03:35,340
+Está correto.
+
+56
+00:03:35,910 --> 00:03:40,740
+Altura 100 alturas da janela de visualização porque queremos que ela seja centralizada horizontalmente e verticalmente.
+
+57
+00:03:41,100 --> 00:03:46,140
+E então eu vou fazer um preenchimento de dez pixels apenas para quando estiver em telas menores.
+
+58
+00:03:46,650 --> 00:03:49,470
+Temos um pouco de, você sabe, Roma no limite aqui.
+
+59
+00:03:50,430 --> 00:03:56,790
+Então, este é o contêiner de depoimento que envolve tudo o estilo Sloots que podemos realmente fazer
+
+60
+00:03:56,790 --> 00:03:57,660
+este menor.
+
+61
+00:04:00,140 --> 00:04:02,420
+Sim, então vamos fazer o contêiner de depoimentos.
+
+62
+00:04:07,890 --> 00:04:12,340
+Então, para isso, vamos definir a cor de fundo.
+
+63
+00:04:12,360 --> 00:04:21,930
+Vou definir para um azul hexadecimal, que é quatro, sete, seis, C quatro, e definirei o
+
+64
+00:04:21,930 --> 00:04:23,780
+cor ser branca.
+
+65
+00:04:25,440 --> 00:04:30,900
+E vamos definir os cantos arredondados do raio da borda.
+
+66
+00:04:30,900 --> 00:04:38,970
+Então, vou definir isso para, digamos, 15 pixels e vamos fazer margem, 20 pixels, superior e inferior.
+
+67
+00:04:38,970 --> 00:04:40,200
+Auto esquerda e direita.
+
+68
+00:04:40,200 --> 00:04:47,660
+O preenchimento será 50, superior e inferior 80, 80 esquerdo e direito.
+
+69
+00:04:49,950 --> 00:04:53,680
+E então vamos dar um máximo com também.
+
+70
+00:04:53,700 --> 00:04:56,910
+Então, Max, o que vou fazer 768.
+
+71
+00:04:59,670 --> 00:05:06,420
+Sim, e então vou posicioná-lo relativo, porque as aspas dentro, eu quero posicioná-las
+
+72
+00:05:06,420 --> 00:05:09,570
+absoluto porque eu quero as citações como uma aqui e outra aqui.
+
+73
+00:05:10,050 --> 00:05:11,690
+Então, vamos realmente fazer isso a seguir.
+
+74
+00:05:11,700 --> 00:05:17,540
+Então, temos uma citação de traço em ambas as citações, então vou dar uma cor a elas.
+
+75
+00:05:17,550 --> 00:05:19,530
+Eu quero que eles sejam meio transparentes.
+
+76
+00:05:19,530 --> 00:05:21,750
+Então vamos fazer nosso Giba White.
+
+77
+00:05:22,050 --> 00:05:30,090
+Então 255 para vermelho, verde, azul e então zero ponto três para o alfa porque naquele tipo transparente
+
+78
+00:05:30,090 --> 00:05:32,540
+olhar e, em seguida, o tamanho da fonte.
+
+79
+00:05:32,540 --> 00:05:34,980
+Então, vamos torná-lo maior para vinte pixels.
+
+80
+00:05:36,060 --> 00:05:36,420
+Certo.
+
+81
+00:05:36,420 --> 00:05:43,680
+E então vamos posicioná-los para serem absolutos e vamos definir a partir dos 70 pixels superiores.
+
+82
+00:05:43,710 --> 00:05:47,030
+Então, se eu salvar isso, os dois estarão no mesmo local exato.
+
+83
+00:05:47,610 --> 00:05:51,420
+Então o que vamos fazer é pegar primeiro o kwoh certo.
+
+84
+00:05:51,420 --> 00:05:53,250
+Então traço de citação FAA.
+
+85
+00:05:53,310 --> 00:05:53,880
+Certo.
+
+86
+00:05:54,810 --> 00:05:57,420
+E vamos definir essa posição da esquerda.
+
+87
+00:05:57,930 --> 00:06:00,750
+Quarenta pixels, que vão movê-lo para cá.
+
+88
+00:06:00,790 --> 00:06:07,110
+Agora este, eu quero estar do outro lado, então vou copiar isso e vamos definir esta citação
+
+89
+00:06:07,110 --> 00:06:10,560
+esquerda e queremos ir da direita.
+
+90
+00:06:11,490 --> 00:06:12,660
+Quarenta pixels.
+
+91
+00:06:13,800 --> 00:06:14,120
+Bom.
+
+92
+00:06:15,540 --> 00:06:22,980
+Agora, se a tela for menor, tipo, você sabe, se estiver por perto, se estiver abaixo de setenta
+
+93
+00:06:22,980 --> 00:06:25,980
+sete, sessenta e oito, então vamos remover a citação.
+
+94
+00:06:26,040 --> 00:06:32,760
+Então, o que vamos fazer é adicionar uma consulta de mídia aqui fazendo em media e aqui dentro queremos definir
+
+95
+00:06:32,760 --> 00:06:42,390
+o máximo com até sete sessenta e oito pixels, o que significa que esses estilos só serão aplicados se for
+
+96
+00:06:42,390 --> 00:06:44,550
+abaixo de 768 pixels.
+
+97
+00:06:44,550 --> 00:06:51,760
+E vamos pegar as cotações de traço da FAA e não exibir nenhuma.
+
+98
+00:06:52,290 --> 00:06:54,890
+OK, então se for menor que isso, não exibirá nenhum.
+
+99
+00:06:55,950 --> 00:07:00,960
+Eu também vou diminuir o preenchimento no recipiente se for menor assim.
+
+100
+00:07:01,380 --> 00:07:06,210
+Então, vamos pegar o contêiner de depoimento e definir o preenchimento.
+
+101
+00:07:06,210 --> 00:07:12,750
+Acredito que tenha sido de cinquenta a vinte pixels, superior e inferior e trinta à esquerda e à direita.
+
+102
+00:07:13,050 --> 00:07:13,620
+Aqui vamos nós.
+
+103
+00:07:16,420 --> 00:07:24,100
+Tudo bem, então vamos passar das citações, eu quero voltar acima da consulta de mídia aqui e temos
+
+104
+00:07:24,100 --> 00:07:26,860
+o depoimento, qual é o parágrafo?
+
+105
+00:07:26,860 --> 00:07:30,010
+Então é um depoimento.
+
+106
+00:07:31,120 --> 00:07:39,300
+E eu só quero mudar a linha aqui para 28 pixels apenas para separar as linhas.
+
+107
+00:07:39,790 --> 00:07:45,430
+E quanto à linha de texto, vamos justificar assim.
+
+108
+00:07:46,800 --> 00:07:57,240
+OK, agora para a seção de usuário aqui, digamos usuário, e vou exibir como caixa flexível e quero centralizar
+
+109
+00:07:57,240 --> 00:08:05,820
+tudo, então vou alinhar o centro de itens e também justificar o centro de conteúdo.
+
+110
+00:08:07,660 --> 00:08:16,760
+Tudo bem, agora para a imagem que temos, a imagem do usuário mostra uma imagem do usuário do usuário, e eu quero que isso
+
+111
+00:08:16,760 --> 00:08:17,620
+ser circular.
+
+112
+00:08:17,630 --> 00:08:26,000
+Então eu vou fazer um raio de borda de 50 por cento para torná-lo circular, arredondado e vamos definir a altura
+
+113
+00:08:26,150 --> 00:08:29,720
+e a largura vamos fazer setenta e cinco pixels.
+
+114
+00:08:30,650 --> 00:08:38,870
+Então essa será a altura e a largura, diminua um pouco e eu vou definir o ajuste do objeto para
+
+115
+00:08:38,870 --> 00:08:43,310
+capa, que na verdade não precisamos ter.
+
+116
+00:08:43,310 --> 00:08:50,030
+Mas apenas para ter certeza de que cobre a parte de trás, não a imagem de fundo, mas a própria imagem
+
+117
+00:08:50,690 --> 00:08:52,550
+e, em seguida, detalhes do usuário.
+
+118
+00:08:52,730 --> 00:08:56,900
+Portanto, é um usuário detalhes do usuário.
+
+119
+00:08:58,310 --> 00:09:04,740
+Vou apenas adicionar amarelos de margem à margem esquerda de 10 pixels.
+
+120
+00:09:06,140 --> 00:09:11,210
+Então, isso aqui, nós só queremos algum espaçamento entre eles.
+
+121
+00:09:11,210 --> 00:09:13,700
+Aqui estão, você sabe, isso são bem distantes.
+
+122
+00:09:13,940 --> 00:09:16,720
+Então o nome de usuário, acredito que seja um H quatro.
+
+123
+00:09:17,150 --> 00:09:21,290
+Então vamos pegar o nome de usuário e vamos remover qualquer preenchimento dele.
+
+124
+00:09:21,500 --> 00:09:24,350
+Então me desculpe, margem, remova qualquer margem dele.
+
+125
+00:09:26,780 --> 00:09:38,330
+E então, para o papel de, digamos, rolo de usuário, vou definir o peso da fonte para garantir que a fonte
+
+126
+00:09:38,330 --> 00:09:42,560
+o peso está definido como normal e vamos definir a margem.
+
+127
+00:09:43,290 --> 00:09:46,640
+Faremos dois pixels no zero superior e inferior à esquerda e à direita.
+
+128
+00:09:47,010 --> 00:09:48,650
+Na verdade, isso é meio que juntos.
+
+129
+00:09:48,650 --> 00:09:49,850
+Então é para.
+
+130
+00:09:54,130 --> 00:09:55,330
+É para 10.
+
+131
+00:09:57,390 --> 00:09:58,120
+Sim, está tudo bem.
+
+132
+00:09:59,190 --> 00:10:05,220
+Então a barra de progresso agora é apenas um divx vazio, é onde vamos ter a animação
+
+133
+00:10:05,220 --> 00:10:05,760
+linha.
+
+134
+00:10:05,770 --> 00:10:08,580
+Então, vamos estilizar a barra de progresso.
+
+135
+00:10:10,820 --> 00:10:20,840
+Eu vou dar um fundo de fundo branco, cor de branco, e então vamos dar uma altura
+
+136
+00:10:20,840 --> 00:10:22,970
+de, digamos, quatro pixels.
+
+137
+00:10:23,550 --> 00:10:27,410
+Agora podemos ver a linha, a largura, certifique-se de que é 100 por cento.
+
+138
+00:10:29,000 --> 00:10:33,950
+E então teremos uma animação chamada Grow.
+
+139
+00:10:34,130 --> 00:10:37,400
+Nós não criamos isso ainda, mas vamos fazer isso levará 10 segundos.
+
+140
+00:10:37,670 --> 00:10:44,210
+OK, então isso é importante porque quando escrevemos nosso JavaScript, queremos que a caixa mude a cada 10
+
+141
+00:10:44,210 --> 00:10:45,220
+segundos também.
+
+142
+00:10:45,410 --> 00:10:52,910
+Queremos que essa barra de progresso demore 10 segundos para crescer e queremos que ela cresça em um estilo linear e
+
+143
+00:10:52,910 --> 00:10:57,940
+infinito para que se repita e que deve fazê-lo.
+
+144
+00:10:57,950 --> 00:11:00,100
+Só precisamos criar essa animação.
+
+145
+00:11:00,110 --> 00:11:02,490
+Então, vamos criar isso em um quadro-chave.
+
+146
+00:11:02,510 --> 00:11:07,790
+Então, os quadros-chave e chamam isso de crescer.
+
+147
+00:11:09,290 --> 00:11:11,060
+E isso vai ser bem simples.
+
+148
+00:11:11,060 --> 00:11:18,820
+Vamos apenas dizer que em zero por cento, queremos adicionar uma propriedade de transformação e queremos escalar X,
+
+149
+00:11:19,220 --> 00:11:20,870
+então vai na horizontal.
+
+150
+00:11:20,870 --> 00:11:23,630
+Então X e defina isso como zero.
+
+151
+00:11:24,050 --> 00:11:28,070
+Então agora se eu salvar, isso não está certo.
+
+152
+00:11:28,100 --> 00:11:29,810
+Isso vem do meio.
+
+153
+00:11:29,810 --> 00:11:35,330
+Então, podemos realmente mudar isso adicionando uma origem de transformação aqui.
+
+154
+00:11:35,360 --> 00:11:36,700
+Então transforme a origem.
+
+155
+00:11:36,710 --> 00:11:38,250
+Eu vou definir isso para a esquerda.
+
+156
+00:11:38,930 --> 00:11:39,470
+Aqui vamos nós.
+
+157
+00:11:39,470 --> 00:11:43,040
+Então isso dá, você sabe, posiciona de forma diferente.
+
+158
+00:11:43,040 --> 00:11:44,270
+Se também pudéssemos fazer o certo.
+
+159
+00:11:44,270 --> 00:11:45,770
+Se você quisesse ir assim.
+
+160
+00:11:46,580 --> 00:11:48,270
+Mas sim, vamos definir isso para a esquerda.
+
+161
+00:11:48,560 --> 00:11:52,840
+Então, isso leva 10 segundos no total para chegar ao final aqui, que é o que queremos.
+
+162
+00:11:53,390 --> 00:11:56,000
+Então, no próximo vídeo, vamos pular para o JavaScript.
+
+163
+00:11:56,000 --> 00:11:59,690
+E assim que chega ao fim, você pode ver agora que simplesmente não faz nada.
+
+164
+00:11:59,690 --> 00:12:00,730
+Apenas recomeça.
+
+165
+00:12:00,980 --> 00:12:02,540
+Queremos o depoimento.
+
+166
+00:12:02,540 --> 00:12:04,480
+Queremos que o conteúdo mude.
+
+167
+00:12:04,700 --> 00:12:08,720
+Então precisamos usar JavaScript para manipular o DOM.
+
+168
+00:12:08,930 --> 00:12:09,250
+Tudo bem.
+
+169
+00:12:09,260 --> 00:12:10,250
+Então faremos isso a seguir.

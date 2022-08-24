@@ -1,0 +1,327 @@
+1
+00:00:00,330 --> 00:00:03,990
+OK, so let's get started with the HTML and success.
+
+2
+00:00:04,020 --> 00:00:09,180
+So basically what we're going to do first is just create the three boxes.
+
+3
+00:00:10,020 --> 00:00:12,840
+We're just going to put it directly in the HTML later on.
+
+4
+00:00:12,870 --> 00:00:17,070
+That'll be replaced with JavaScript, because when we come to the page, we only want to see that one
+
+5
+00:00:17,070 --> 00:00:17,520
+box.
+
+6
+00:00:17,520 --> 00:00:22,680
+And then as soon as we hit a key, we'll see the three with the three values, the key, the key code
+
+7
+00:00:22,680 --> 00:00:23,310
+and the code.
+
+8
+00:00:23,700 --> 00:00:36,180
+So let's start here by just changing the title here to say, you know, just say event codes and then
+
+9
+00:00:37,050 --> 00:00:41,390
+we're going to have a wrapper div here with the idea of inserts.
+
+10
+00:00:42,090 --> 00:00:46,860
+And in here we're going to have some classes, some divs with the class of QI, which is basically just
+
+11
+00:00:46,860 --> 00:00:50,710
+the box, the border, the background color and so on.
+
+12
+00:00:51,120 --> 00:00:54,600
+So this will be let's just say it's the a key that we hit.
+
+13
+00:00:55,110 --> 00:00:56,940
+This will be dynamic later on.
+
+14
+00:00:56,940 --> 00:00:58,560
+We'll add this with the JavaScript.
+
+15
+00:00:58,560 --> 00:01:03,240
+But for now, I'm just going to hard code the letter A and have a small tag here.
+
+16
+00:01:06,630 --> 00:01:12,510
+And we'll just give this a label of event key, because that's what it is on the event object, it's
+
+17
+00:01:12,510 --> 00:01:14,190
+going to be the key value.
+
+18
+00:01:14,700 --> 00:01:17,630
+And then under that, d'Hiv will have another class of key.
+
+19
+00:01:18,210 --> 00:01:22,200
+And this is going to be the key code, which for A is 65.
+
+20
+00:01:22,200 --> 00:01:23,910
+So I'm just going to hard code that in there.
+
+21
+00:01:24,330 --> 00:01:31,220
+And let's say this is the event dot key code and then we'll have another class of key.
+
+22
+00:01:31,650 --> 00:01:35,190
+And this is going to be the code, which in this case would be Keet.
+
+23
+00:01:35,790 --> 00:01:45,330
+And inside small tags here will say event dot code and then we'll have one final div with the class
+
+24
+00:01:45,330 --> 00:01:45,890
+of key.
+
+25
+00:01:45,900 --> 00:01:48,870
+And this is just going to be like the welcome box.
+
+26
+00:01:48,880 --> 00:01:59,850
+It'll say press any key to get the key code and code will just say to get the key code.
+
+27
+00:02:02,030 --> 00:02:02,450
+All right.
+
+28
+00:02:02,460 --> 00:02:04,320
+So that should be it for the HTML.
+
+29
+00:02:04,320 --> 00:02:05,040
+Pretty simple.
+
+30
+00:02:05,790 --> 00:02:10,790
+Let's jump into the stylesheet and the styling is not going to be too bad either.
+
+31
+00:02:10,800 --> 00:02:12,270
+I just want to use a different font.
+
+32
+00:02:12,270 --> 00:02:13,860
+So I'm going to say success.
+
+33
+00:02:13,860 --> 00:02:24,060
+Questionmark family and let's put that to Ammu Ally and set that on the body here and move.
+
+34
+00:02:24,240 --> 00:02:27,360
+I change the font also on the body.
+
+35
+00:02:27,360 --> 00:02:38,910
+I'm going to add a background color of one three times and let's set we can get rid of the Flex Direction
+
+36
+00:02:38,910 --> 00:02:39,480
+column.
+
+37
+00:02:39,900 --> 00:02:43,890
+And I just want to add a text aligned center here.
+
+38
+00:02:44,730 --> 00:02:53,240
+So text align center and then all we really need to style is the key class and then the small tags inside.
+
+39
+00:02:53,250 --> 00:03:01,890
+So for key, let's give this a border so the border will be one pixel solid and it'll be hexadecimal
+
+40
+00:03:01,890 --> 00:03:02,970
+999.
+
+41
+00:03:04,020 --> 00:03:08,430
+And then I'm going to give it a slightly lighter background color of Tripoli.
+
+42
+00:03:09,660 --> 00:03:13,590
+And then let's add a box shadow, just a very slight shadow.
+
+43
+00:03:13,590 --> 00:03:21,510
+I'm going to do one one pixel for both the horizontal and vertical offset and three pixels for the blur
+
+44
+00:03:21,510 --> 00:03:27,990
+and then for the color of RGB, a black zero zero zero for red, green, blue and zero point one for
+
+45
+00:03:27,990 --> 00:03:28,400
+alpha.
+
+46
+00:03:28,410 --> 00:03:33,030
+So just a very slight shadow on the right and bottom.
+
+47
+00:03:34,020 --> 00:03:40,950
+So let's set I'm going to set the display actually to an inline flex.
+
+48
+00:03:42,150 --> 00:03:52,050
+OK, so they're going to be side by side and then let's set a line items to center and let's set the
+
+49
+00:03:52,650 --> 00:03:54,480
+font size to be bigger.
+
+50
+00:03:54,480 --> 00:04:01,950
+I'm going to set that to twenty pixels and lots of the padding of this of each one to twenty pixels.
+
+51
+00:04:03,450 --> 00:04:14,130
+And let's set the I'm actually going to set the flex direction to column and then let's set the margin
+
+52
+00:04:14,250 --> 00:04:15,570
+will break apart a little bit.
+
+53
+00:04:15,570 --> 00:04:19,440
+So let's do ten pixels margin
+
+54
+00:04:21,960 --> 00:04:24,270
+and let's see what else do we want to do here.
+
+55
+00:04:24,270 --> 00:04:26,370
+Let's set the font weight to Bould.
+
+56
+00:04:26,370 --> 00:04:30,810
+So I'll go right here and say font weights set that to bold.
+
+57
+00:04:34,440 --> 00:04:38,310
+What else do we want to do here is that the correct font doesn't look like it?
+
+58
+00:04:38,310 --> 00:04:39,190
+No, it's not.
+
+59
+00:04:39,210 --> 00:04:42,150
+So right here we should have an ampersand.
+
+60
+00:04:43,200 --> 00:04:43,740
+There we go.
+
+61
+00:04:45,720 --> 00:04:51,390
+And then let's set Menwith here for each box as well to 150.
+
+62
+00:04:54,300 --> 00:04:59,010
+All right, so now we'll do the small tags, actually, one more thing I want to do is position this
+
+63
+00:04:59,010 --> 00:05:05,150
+relative because the small tags inside of the key class are going to be positioned absolute.
+
+64
+00:05:05,400 --> 00:05:11,340
+So when you position something absolute and access, if you want to position it inside this container,
+
+65
+00:05:11,340 --> 00:05:13,610
+then you would make that position relative.
+
+66
+00:05:14,130 --> 00:05:23,740
+So let's take the key class and small tags inside of it and let's position that absolute.
+
+67
+00:05:24,030 --> 00:05:28,230
+As soon as I do that, it's going to, you know, it's going to get put here, but I actually want to
+
+68
+00:05:28,230 --> 00:05:29,400
+move it up here.
+
+69
+00:05:29,850 --> 00:05:33,930
+So let's set the top value to a negative.
+
+70
+00:05:33,930 --> 00:05:34,500
+So negative.
+
+71
+00:05:34,500 --> 00:05:41,520
+Twenty five, twenty four pixels because I want to bring it out of that box and I'll put the left value
+
+72
+00:05:41,520 --> 00:05:42,450
+to zero.
+
+73
+00:05:43,410 --> 00:05:44,640
+But I do want it in the middle.
+
+74
+00:05:44,640 --> 00:05:51,190
+So I'm going to set text a line to center and also set the width to 100 percent.
+
+75
+00:05:51,640 --> 00:05:57,690
+That, that'll put it in the middle let's add or let's change the color to five, five, five.
+
+76
+00:05:58,680 --> 00:06:00,020
+And I want it smaller.
+
+77
+00:06:00,030 --> 00:06:07,310
+So let's set the font size to 14 pixels dots and I think we should be good.
+
+78
+00:06:07,320 --> 00:06:07,640
+Yeah.
+
+79
+00:06:07,650 --> 00:06:09,140
+So that looks OK.
+
+80
+00:06:09,150 --> 00:06:13,890
+So in the next video, we want to give this some functionality where we don't even show these three
+
+81
+00:06:13,890 --> 00:06:16,110
+boxes until we actually hit a key.
+
+82
+00:06:16,350 --> 00:06:21,120
+And then obviously whatever key we hit, this data in here is going to be different.

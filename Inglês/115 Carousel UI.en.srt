@@ -1,0 +1,411 @@
+1
+00:00:00,210 --> 00:00:04,680
+All right, so we're going to get started on our image carousel, so I have my project starter open
+
+2
+00:00:04,680 --> 00:00:10,290
+and let's head to the title here and say Image Carousel.
+
+3
+00:00:10,320 --> 00:00:17,700
+And down here, we're going to have a div with a class of carousel that wraps around everything and
+
+4
+00:00:17,700 --> 00:00:20,190
+then side here will have our image container.
+
+5
+00:00:20,790 --> 00:00:27,930
+And I'm also going to give us an idea of IMG s four images and then you can just put image tags in here.
+
+6
+00:00:28,140 --> 00:00:29,910
+It can be as many images as you want.
+
+7
+00:00:30,570 --> 00:00:33,970
+I'm going to use for images from unselfconsciously.
+
+8
+00:00:34,230 --> 00:00:37,530
+These are just links to, you know, stock images.
+
+9
+00:00:37,770 --> 00:00:41,490
+And then I just have first image, second, third and fourth.
+
+10
+00:00:41,910 --> 00:00:44,670
+All of these should probably be consistent.
+
+11
+00:00:46,170 --> 00:00:50,730
+And then if I save that, you'll see we just have these large images now.
+
+12
+00:00:50,730 --> 00:00:53,450
+We do want previous and next buttons.
+
+13
+00:00:53,460 --> 00:00:58,500
+So outside of the image container, which ends at this div, we still want to be within the carousel.
+
+14
+00:00:58,770 --> 00:01:07,470
+Let's create a div with the class of buttons dash container and we'll have a button with an idea of
+
+15
+00:01:07,470 --> 00:01:11,640
+left and we'll see preview for the text so previous.
+
+16
+00:01:11,640 --> 00:01:14,700
+And then this one will be the next button and we'll call this one.
+
+17
+00:01:14,940 --> 00:01:15,500
+Right.
+
+18
+00:01:16,590 --> 00:01:18,960
+So that should be it for the HTML.
+
+19
+00:01:18,960 --> 00:01:19,670
+Pretty simple.
+
+20
+00:01:19,680 --> 00:01:25,950
+Let's jump into our stylesheet and in the body here we can keep most of the stuff.
+
+21
+00:01:25,950 --> 00:01:29,480
+We don't need to display Fluck column or flex direction column.
+
+22
+00:01:30,210 --> 00:01:31,830
+We don't need overflow hidden.
+
+23
+00:01:31,830 --> 00:01:32,850
+We'll get rid of that.
+
+24
+00:01:34,260 --> 00:01:36,390
+Let's see what else we want to do here.
+
+25
+00:01:37,350 --> 00:01:39,880
+That's pretty much it as far as the body goes.
+
+26
+00:01:39,900 --> 00:01:45,180
+So let's go down and let's do the class of carousel.
+
+27
+00:01:46,320 --> 00:01:48,270
+So this wraps around all the images.
+
+28
+00:01:48,270 --> 00:01:56,580
+I'm also going to just take the images themselves and I want to, first of all, set the width and the
+
+29
+00:01:56,580 --> 00:01:58,710
+height to 500 pixels.
+
+30
+00:01:58,810 --> 00:02:00,750
+So let's change this to height.
+
+31
+00:02:01,260 --> 00:02:07,230
+And then I just want to make sure that if it looks right, so we're going to set object fit to cover.
+
+32
+00:02:08,900 --> 00:02:09,440
+There we go.
+
+33
+00:02:09,560 --> 00:02:11,490
+Now we have our images.
+
+34
+00:02:11,790 --> 00:02:13,420
+We have our buttons down at the bottom.
+
+35
+00:02:13,830 --> 00:02:20,100
+So for the carousel, which wraps around everything, I'm going to add a box shadow here.
+
+36
+00:02:21,120 --> 00:02:25,520
+So box shadow takes in horizontal and vertical offset.
+
+37
+00:02:25,980 --> 00:02:32,250
+I'm going to do two pixels for both and then we'll do a five pixel blur and our for the color which
+
+38
+00:02:32,250 --> 00:02:33,000
+will be black.
+
+39
+00:02:33,000 --> 00:02:34,710
+So zero for red, green and blue.
+
+40
+00:02:34,920 --> 00:02:40,530
+And then the alpha value, which is that the level of transparency will be zero point three.
+
+41
+00:02:41,220 --> 00:02:44,520
+And then let's set the set.
+
+42
+00:02:44,520 --> 00:02:51,780
+The height here to five will do five hundred and thirty pixels because it has to account for the buttons
+
+43
+00:02:51,780 --> 00:02:58,050
+as well as the image, and then the width will be the width of the image which is five hundred pixels,
+
+44
+00:02:58,580 --> 00:03:03,540
+OK, and then I'm going to set overflow hidden so that nothing breaks out of the container.
+
+45
+00:03:04,070 --> 00:03:06,850
+Now we can still see part of the second image here.
+
+46
+00:03:07,350 --> 00:03:12,450
+So what we can do is take the image Dasch container.
+
+47
+00:03:12,990 --> 00:03:14,110
+OK, so image container.
+
+48
+00:03:14,120 --> 00:03:16,320
+Remember, that wraps around all the images.
+
+49
+00:03:16,320 --> 00:03:19,170
+I'm going to display that as a flex box.
+
+50
+00:03:19,470 --> 00:03:23,510
+So what that did is it put these into a flex row, which is horizontal.
+
+51
+00:03:23,730 --> 00:03:29,370
+Now we can only see one image because the image is 500 pixels wide and so is the container.
+
+52
+00:03:31,500 --> 00:03:36,630
+Now, the way that this is going to work in terms of the carousel, the slider is we're going to move
+
+53
+00:03:36,900 --> 00:03:42,810
+the image along the x axis using transform, translate X..
+
+54
+00:03:43,110 --> 00:03:50,610
+So what I'll do is set initially with set transform and then translate X, which basically means translating
+
+55
+00:03:50,610 --> 00:03:53,880
+it, moving it along the the X axis, which is vertical.
+
+56
+00:03:53,880 --> 00:03:58,590
+And we want to set that to an initial value of zero, which isn't going to change anything.
+
+57
+00:03:58,590 --> 00:04:04,950
+But we want to set that initially and then in the JavaScript will change this so that, you know, it
+
+58
+00:04:04,980 --> 00:04:07,050
+can move the images over.
+
+59
+00:04:07,050 --> 00:04:11,820
+So we'll we'll move it over 500 pixels and get the next image in.
+
+60
+00:04:11,820 --> 00:04:12,770
+That makes sense.
+
+61
+00:04:12,780 --> 00:04:14,910
+Now, we don't want to just flick flick right in.
+
+62
+00:04:14,910 --> 00:04:16,440
+We want it to have a transition.
+
+63
+00:04:16,770 --> 00:04:20,400
+So we want to make sure we add a transition property here.
+
+64
+00:04:20,820 --> 00:04:26,790
+And I'm going to set a transition on the transform property that I just created.
+
+65
+00:04:27,660 --> 00:04:33,700
+And then we'll do zero point five seconds for the duration and we'll do an ease in effect.
+
+66
+00:04:34,720 --> 00:04:37,980
+OK, so that should be it for the image container.
+
+67
+00:04:38,020 --> 00:04:39,570
+Now the buttons don't look too good.
+
+68
+00:04:39,570 --> 00:04:42,780
+So let's go ahead and I'm going to move this.
+
+69
+00:04:43,980 --> 00:04:46,440
+Let's move that up at the top.
+
+70
+00:04:46,440 --> 00:04:48,360
+Here we'll go, Underbody.
+
+71
+00:04:52,150 --> 00:05:03,610
+All right, and then for the button container, save button dash container and all I'm going to do is
+
+72
+00:05:03,610 --> 00:05:09,280
+display flex so each fluck, each button will be a flex item.
+
+73
+00:05:09,280 --> 00:05:17,020
+And then I'm going to justify content, which aligns them on the main access, which since it's erro,
+
+74
+00:05:17,020 --> 00:05:18,790
+it's going to be on the horizontal axis.
+
+75
+00:05:18,790 --> 00:05:24,970
+I want to do space between because I want to take the space that is remaining here next to the flex
+
+76
+00:05:24,970 --> 00:05:27,530
+items and put them put it in between the buttons.
+
+77
+00:05:27,550 --> 00:05:31,930
+So if I save that now, it's going to put each button on each side, which is what I want.
+
+78
+00:05:32,650 --> 00:05:34,930
+So now let's dial the buttons themselves.
+
+79
+00:05:35,260 --> 00:05:37,660
+So you know what?
+
+80
+00:05:37,660 --> 00:05:43,990
+Let's you can just grab it by button if you want, but I'm not actually going to give these a class
+
+81
+00:05:43,990 --> 00:05:50,020
+of B10 just preference so that to be ten.
+
+82
+00:05:50,530 --> 00:05:50,920
+All right.
+
+83
+00:05:50,930 --> 00:05:59,530
+And then we'll style dot btn and let's go ahead and set the background color and I'm going to use Rebecca
+
+84
+00:05:59,530 --> 00:06:06,940
+Purple for the background color and then set the color to white and let's get rid of the border.
+
+85
+00:06:07,000 --> 00:06:08,100
+So border none.
+
+86
+00:06:09,330 --> 00:06:13,330
+OK, and then let's add some padding.
+
+87
+00:06:13,780 --> 00:06:22,690
+When you do zero point five REM units, arem unit is just a multiplier of the root HTML element, which
+
+88
+00:06:22,690 --> 00:06:24,430
+by default is 16 pixels.
+
+89
+00:06:24,460 --> 00:06:28,870
+So point five, sixteen point five would be eight pixels.
+
+90
+00:06:29,560 --> 00:06:31,050
+And you can use pixels if you want.
+
+91
+00:06:31,100 --> 00:06:32,680
+Just just switching it up a little bit.
+
+92
+00:06:33,130 --> 00:06:43,560
+So cursor pointer and let's set the width to be almost houts do forty nine point five percent.
+
+93
+00:06:44,290 --> 00:06:47,740
+OK, so they take up almost half each.
+
+94
+00:06:48,130 --> 00:06:50,050
+And then I just want to add to the cover.
+
+95
+00:06:50,320 --> 00:06:57,610
+So b10 Colen Hover, we'll just set opacity to zero point nine.
+
+96
+00:06:57,610 --> 00:07:03,130
+So we have a slight fade out effect when we hover over and then let's get rid of any outline on the
+
+97
+00:07:03,130 --> 00:07:03,940
+focus state.
+
+98
+00:07:03,940 --> 00:07:10,150
+So button focus, we're going to set a line to none.
+
+99
+00:07:12,020 --> 00:07:14,680
+OK, so that's it for the CSFs.
+
+100
+00:07:14,680 --> 00:07:16,420
+Now obviously we want this to function.
+
+101
+00:07:16,420 --> 00:07:18,310
+We want to be able to click next and preview.
+
+102
+00:07:18,310 --> 00:07:22,420
+We also want it to to go automatically, to slide automatically.
+
+103
+00:07:22,420 --> 00:07:26,860
+So in the next video, we'll get into the JavaScript to add that functionality.

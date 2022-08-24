@@ -1,0 +1,75 @@
+1
+00:00:00,090 --> 00:00:05,070
+All right, so in this project, we're going to build a password generator, so the idea is we can choose
+
+2
+00:00:05,070 --> 00:00:07,110
+a line of 20 by default.
+
+3
+00:00:07,140 --> 00:00:12,900
+Let's say we want 10, a 10 character long password and we can choose if we want to include uppercase
+
+4
+00:00:12,900 --> 00:00:15,880
+letters, lowercase letters, numbers and symbols.
+
+5
+00:00:16,170 --> 00:00:21,450
+So let's say we want just uppercase, lowercase and numbers, but not symbols.
+
+6
+00:00:21,830 --> 00:00:22,710
+Click generate.
+
+7
+00:00:22,710 --> 00:00:23,790
+And that's what we get.
+
+8
+00:00:23,850 --> 00:00:29,610
+So we're going to get 10 if I change this to, let's say five and let's include symbols as well.
+
+9
+00:00:30,120 --> 00:00:35,700
+Now we're going to get you know, we're going to get a password with uppercase and lowercase letters,
+
+10
+00:00:35,700 --> 00:00:36,810
+numbers and symbols.
+
+11
+00:00:37,320 --> 00:00:41,460
+In addition to that, we're going to add the functionality where we can click this and it's going to
+
+12
+00:00:41,460 --> 00:00:43,560
+copy the password to the clipboard.
+
+13
+00:00:43,860 --> 00:00:49,960
+If I just go up here and my you are albar and paste, you'll see that it'll actually paste whatever
+
+14
+00:00:50,130 --> 00:00:52,540
+is in the password result here.
+
+15
+00:00:52,950 --> 00:00:53,350
+All right.
+
+16
+00:00:53,350 --> 00:00:55,040
+So let's go ahead and jump into it.
+
+17
+00:00:55,050 --> 00:00:55,740
+The JavaScript.
+
+18
+00:00:55,740 --> 00:01:00,300
+And this is going to be a little more complicated than a lot of the other projects, but we'll go ahead
+
+19
+00:01:00,300 --> 00:01:02,520
+and take it step by step and get it done.

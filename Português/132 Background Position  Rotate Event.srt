@@ -1,0 +1,595 @@
+﻿1
+00:00:00,150 --> 00:00:06,120
+OK, pessoal, agora queremos começar no JavaScript, que não é muito, na verdade, é apenas sobre
+
+2
+00:00:06,120 --> 00:00:08,310
+cerca de 20 linhas ou mais, um pouco menos.
+
+3
+00:00:09,090 --> 00:00:13,130
+Mas primeiro quero apenas explicar o que precisamos fazer com a posição de fundo.
+
+4
+00:00:13,500 --> 00:00:19,320
+Então, finalmente, como eu disse antes, todas essas caixas serão inseridas no DOM via JavaScript.
+
+5
+00:00:19,320 --> 00:00:23,700
+Nós não vamos ter estes codificados e também vamos adicionar uma posição de fundo para cada um.
+
+6
+00:00:23,730 --> 00:00:27,940
+Agora, vou fazer isso manualmente para que você possa ver quais serão os valores.
+
+7
+00:00:27,960 --> 00:00:34,980
+Então, para este primeiro, vamos em frente e definir um estilo aqui e definir a posição de fundo.
+
+8
+00:00:35,670 --> 00:00:40,590
+Portanto, a posição de fundo tem uma propriedade X e Y para esta primeira caixa.
+
+9
+00:00:40,590 --> 00:00:44,190
+Vai ser zero zero, OK, que é o padrão.
+
+10
+00:00:44,200 --> 00:00:47,400
+Então, quer dizer, nem vai mudar, mas essa vai ser a primeira.
+
+11
+00:00:47,400 --> 00:00:48,240
+O proximo.
+
+12
+00:00:48,780 --> 00:00:54,840
+Deixe-me copiar isso aqui, todo esse estilo e colocar isso.
+
+13
+00:00:54,840 --> 00:00:59,230
+E então este aqui, vamos pensar sobre onde isso precisa estar.
+
+14
+00:00:59,250 --> 00:01:03,400
+Então lembre-se, estes são cento e vinte e cinco pixels com e altura.
+
+15
+00:01:03,780 --> 00:01:10,070
+Então, para este, queremos que parte dos 125 pixels seja deslocada dessa maneira.
+
+16
+00:01:10,440 --> 00:01:10,960
+Tudo bem.
+
+17
+00:01:10,980 --> 00:01:18,240
+Então, com esta posição de fundo como primeiro valor é o valor X, então queremos ir menos um vinte
+
+18
+00:01:18,240 --> 00:01:19,590
+cinco pixels.
+
+19
+00:01:20,070 --> 00:01:25,160
+E se eu salvar isso agora você pode ver que basicamente parece que está conectado.
+
+20
+00:01:25,170 --> 00:01:30,500
+De fato, se nos livrarmos dessa grande classe e a salvarmos, ela estará conectada.
+
+21
+00:01:31,170 --> 00:01:36,570
+Então, para o próximo e se vocês quiserem parar um segundo e pensar no que devem colocar aqui,
+
+22
+00:01:37,860 --> 00:01:38,880
+vá em frente e faça isso.
+
+23
+00:01:38,890 --> 00:01:44,070
+Então fizemos para o valor X, para a segunda caixa, dissemos menos 125.
+
+24
+00:01:44,070 --> 00:01:47,610
+Agora, para este aqui, queremos dobrar isso.
+
+25
+00:01:47,670 --> 00:01:48,030
+Certo.
+
+26
+00:01:48,050 --> 00:01:52,170
+Então, em vez de menos 125, porque se eu fizer isso, vai combinar com este.
+
+27
+00:01:52,440 --> 00:01:55,390
+Queremos passar de mais 125.
+
+28
+00:01:55,390 --> 00:01:57,510
+Então, queremos mudar isso para 250 cinquenta.
+
+29
+00:01:58,290 --> 00:02:00,840
+OK, e agora parece que faz parte da imagem.
+
+30
+00:02:00,870 --> 00:02:04,080
+Como se fosse uma grande imagem para esta aqui, a quarta.
+
+31
+00:02:05,280 --> 00:02:08,790
+Vamos em frente e fazer menos três.
+
+32
+00:02:08,790 --> 00:02:11,520
+Setenta e cinco e então vamos.
+
+33
+00:02:11,530 --> 00:02:14,730
+Então agora temos nossa linha superior agora quatro para esta aqui.
+
+34
+00:02:15,120 --> 00:02:20,270
+Vai ser um pouco diferente porque agora estamos lidando com valores X e Y.
+
+35
+00:02:20,610 --> 00:02:24,650
+Então, para isso, para este, vamos ter e vou me livrar disso.
+
+36
+00:02:24,660 --> 00:02:28,350
+Estou apenas mostrando o que são, o que precisamos fazer dentro do JavaScript.
+
+37
+00:02:28,620 --> 00:02:34,560
+Mas isso vai ser zero no eixo X porque é o primeiro e vai estar no
+
+38
+00:02:34,560 --> 00:02:35,640
+eixo Y.
+
+39
+00:02:36,040 --> 00:02:39,940
+Queremos fazer menos quatro e vinte e cinco porque queremos trazê-lo à tona.
+
+40
+00:02:40,710 --> 00:02:44,130
+OK, agora o segundo que precisamos trazer.
+
+41
+00:02:45,280 --> 00:02:48,950
+Devo dizer que na verdade é o seis que precisamos trazer.
+
+42
+00:02:48,960 --> 00:02:57,120
+E então o que faríamos é no eixo x um vinte e cinco e depois no Y menos um vinte e cinco.
+
+43
+00:02:58,020 --> 00:02:58,710
+Aqui vamos nós.
+
+44
+00:02:59,190 --> 00:03:03,650
+OK, e então continuaríamos com isso, trazendo, trazendo isso e acabando.
+
+45
+00:03:04,170 --> 00:03:07,940
+Então, o que vou fazer é me livrar completamente de todas as caixas.
+
+46
+00:03:07,980 --> 00:03:10,170
+OK, nós só queremos ter o contêiner aqui.
+
+47
+00:03:10,450 --> 00:03:16,160
+Eu só quero ter essas caixas de identificação, caixas de classe e então isso vai desaparecer completamente.
+
+48
+00:03:16,410 --> 00:03:20,460
+Agora vamos pular, não entre no nosso script e faça isso com JavaScript.
+
+49
+00:03:20,470 --> 00:03:25,350
+Então, a primeira coisa que precisamos fazer é trazer todos os elementos de que precisamos, como o contêiner de caixas.
+
+50
+00:03:25,980 --> 00:03:31,980
+Então, usamos esse objeto de documento e vamos usar o método get elemento por D e vamos
+
+51
+00:03:31,980 --> 00:03:35,610
+obtenha o ID pelo ID das caixas.
+
+52
+00:03:36,030 --> 00:03:39,780
+E também queremos o botão porque precisamos adicionar um ouvinte de evento a ele.
+
+53
+00:03:39,790 --> 00:03:46,440
+Então, digamos const BTN e usaremos o elemento do documento por dia.
+
+54
+00:03:46,440 --> 00:03:48,200
+Acredite que tem uma ideia de B10.
+
+55
+00:03:48,780 --> 00:03:50,070
+OK, então nós trazemos aqueles.
+
+56
+00:03:50,070 --> 00:03:57,720
+Agora, a maneira como vou fazer isso é fazer uma função chamada create boxes e queremos
+
+57
+00:03:57,720 --> 00:04:02,670
+para chamar essa função e, em seguida, dentro das caixas de criação.
+
+58
+00:04:02,940 --> 00:04:07,670
+Precisamos criar quatro caixas para cada linha.
+
+59
+00:04:07,680 --> 00:04:11,030
+Então, quatro colunas de quatro linhas, quatro colunas.
+
+60
+00:04:11,280 --> 00:04:13,980
+Então, a maneira como podemos fazer isso é usar dois loops for.
+
+61
+00:04:14,730 --> 00:04:20,220
+OK, então vamos dizer for e não vou explicar o que é um loop for.
+
+62
+00:04:20,220 --> 00:04:24,810
+Espera-se que, você sabe, pelo menos os fundamentos antes de fazer este curso.
+
+63
+00:04:25,140 --> 00:04:29,460
+Então, digamos vamos eu, então queremos defini-lo como zero.
+
+64
+00:04:29,730 --> 00:04:36,450
+E então a condição aqui será se I for menor que quatro e então queremos incrementar I por
+
+65
+00:04:36,450 --> 00:04:36,900
+1.
+
+66
+00:04:37,560 --> 00:04:43,680
+OK, agora temos linhas e colunas aqui, então queremos colocar outro loop for e temos que usar algo
+
+67
+00:04:43,680 --> 00:04:44,640
+diferente de eu.
+
+68
+00:04:45,150 --> 00:04:46,470
+Então vamos fazer isso.
+
+69
+00:04:47,010 --> 00:04:48,350
+J é igual a zero.
+
+70
+00:04:48,810 --> 00:04:55,610
+E então enquanto J for menor que quatro e então J mais mais incrementá-lo em um.
+
+71
+00:04:56,070 --> 00:04:59,910
+Agora, aqui queremos construir essas 16 caixas.
+
+72
+00:05:00,550 --> 00:05:07,570
+OK, então isso vai passar 16 vezes e vamos criar isso com document e depois
+
+73
+00:05:07,570 --> 00:05:11,830
+existe um método chamado Create Element e queremos criar um membro div.
+
+74
+00:05:11,840 --> 00:05:16,930
+Então, estamos apenas criando essas divs aqui, isso é tudo.
+
+75
+00:05:17,110 --> 00:05:18,690
+Isso é tudo o que estamos fazendo agora.
+
+76
+00:05:20,530 --> 00:05:24,670
+E podemos até ir em frente e consolar a caixa de log.
+
+77
+00:05:25,180 --> 00:05:31,250
+E se formos até aqui e abrirmos nosso console, você verá que agora devemos ter 16 divs.
+
+78
+00:05:31,610 --> 00:05:33,830
+Agora, lembre-se, eles precisam ter a classe de caixa.
+
+79
+00:05:33,850 --> 00:05:40,390
+Então o que podemos fazer é pegar nossa variável box ou elemento box, pegar a lista de classes e chamar o método add.
+
+80
+00:05:40,930 --> 00:05:43,730
+E queremos adicionar a classe de box.
+
+81
+00:05:43,750 --> 00:05:46,820
+Então, se salvarmos isso agora, podemos ver isso aqui no console.
+
+82
+00:05:47,500 --> 00:05:49,740
+Agora é aqui que vamos fazer o posicionamento.
+
+83
+00:05:50,080 --> 00:05:57,730
+Então, para adicionar um estilo específico, podemos usar o estilo DOT e, em seguida, qualquer propriedade que desejarmos.
+
+84
+00:05:57,910 --> 00:05:59,950
+E tem que ser no caso do Camil, obviamente.
+
+85
+00:05:59,960 --> 00:06:05,920
+Então, queremos uma posição de fundo e não podemos fazer uma posição de Dasch em segundo plano, que é o que faríamos
+
+86
+00:06:05,920 --> 00:06:08,580
+caso façamos assim com o caso Camil.
+
+87
+00:06:08,590 --> 00:06:16,630
+Então, a posição de fundo e a maneira como podemos definir isso como dinâmico é que podemos colocar alguns literais de modelo
+
+88
+00:06:16,630 --> 00:06:20,020
+aqui para que possamos usar variáveis ​​e expressões.
+
+89
+00:06:20,950 --> 00:06:29,920
+E lembre-se, será algo como, você sabe, menos um vinte e um vinte e cinco pixels
+
+90
+00:06:29,920 --> 00:06:30,380
+zero.
+
+91
+00:06:30,380 --> 00:06:31,720
+Vai ser algo assim.
+
+92
+00:06:32,050 --> 00:06:33,870
+Mas é claro que isso vai ser dinâmico.
+
+93
+00:06:33,880 --> 00:06:37,540
+Então o que podemos fazer é colocar uma sintaxe de variável.
+
+94
+00:06:37,750 --> 00:06:43,270
+Então cifrão e chaves, podemos colocar uma variável ou uma expressão aqui e vamos
+
+95
+00:06:43,270 --> 00:06:52,630
+tomar J negativo porque lembre-se que vai ser negativo, negativo 125, negativo 250, etc.
+
+96
+00:06:52,960 --> 00:06:58,210
+Então, queremos pegar isso e multiplicá-lo por 125.
+
+97
+00:06:58,660 --> 00:06:59,740
+Então vai dar um loop.
+
+98
+00:06:59,740 --> 00:07:06,460
+Vai ser, você sabe, zero então menos 125, nativo de 50.
+
+99
+00:07:06,460 --> 00:07:07,870
+Negativo três setenta e cinco.
+
+100
+00:07:08,170 --> 00:07:09,640
+Então esse é o valor X.
+
+101
+00:07:09,640 --> 00:07:15,430
+Agora para o Y, vamos em frente e colocar outra expressão de variável aqui e usar negativo
+
+102
+00:07:15,430 --> 00:07:19,560
+olho e também multiplique por um vinte e cinco.
+
+103
+00:07:19,570 --> 00:07:27,460
+Portanto, isso fará exatamente o que fiz manualmente há alguns minutos, mas o adicionará através do JavaScript
+
+104
+00:07:27,460 --> 00:07:29,300
+dinamicamente com esses cálculos.
+
+105
+00:07:29,320 --> 00:07:31,900
+Agora, a última coisa que queremos fazer não é log do console.
+
+106
+00:07:32,320 --> 00:07:33,220
+Vamos nos livrar disso.
+
+107
+00:07:33,460 --> 00:07:42,040
+Queremos levar nosso contêiner de caixas de caixa que trouxemos anteriormente e queremos chamar Append Child
+
+108
+00:07:42,040 --> 00:07:43,670
+e queremos adicionar na caixa.
+
+109
+00:07:43,690 --> 00:07:47,320
+Então, se eu for em frente e salvar, vamos ver.
+
+110
+00:07:47,320 --> 00:07:48,790
+Algo não está certo aqui.
+
+111
+00:07:52,970 --> 00:07:59,930
+Vamos ver, então definimos a posição de fundo do estilo de início da caixa para oh, esqueci os pixels.
+
+112
+00:07:59,950 --> 00:08:07,040
+Então, agora é apenas defini-lo para os números que precisamos adicionar depois desses pixels.
+
+113
+00:08:07,730 --> 00:08:08,510
+E lá vamos nós.
+
+114
+00:08:09,440 --> 00:08:11,390
+Então agora temos a classe.
+
+115
+00:08:13,320 --> 00:08:19,230
+Ou desculpe, não temos a classe de grande, então são 500 pixels que os comprimem todos juntos
+
+116
+00:08:19,230 --> 00:08:20,840
+e não há meio termo.
+
+117
+00:08:21,060 --> 00:08:25,630
+Mas se eu adicionar a classe de grande, ela os separa, mas ainda está intacta.
+
+118
+00:08:25,860 --> 00:08:29,560
+Agora, queremos apenas adicionar um ouvinte de evento em vamos nos livrar dele.
+
+119
+00:08:30,150 --> 00:08:32,340
+Não, vamos manter a aula lá para começar.
+
+120
+00:08:32,610 --> 00:08:36,150
+Mas vamos voltar ao nosso roteiro e vamos subir aqui.
+
+121
+00:08:36,180 --> 00:08:39,960
+Na verdade, nós vamos e vamos fazer isso aqui.
+
+122
+00:08:39,960 --> 00:08:41,250
+Então vamos pegar nosso botão.
+
+123
+00:08:41,550 --> 00:08:43,910
+E queremos adicionar um ouvinte de eventos.
+
+124
+00:08:44,040 --> 00:08:45,870
+Então, queremos ouvir um evento específico.
+
+125
+00:08:45,900 --> 00:08:52,900
+Agora, isso leva no evento que queremos, que é um clique e depois uma função para que possamos colocar um
+
+126
+00:08:52,920 --> 00:08:55,920
+função ou podemos usar uma função de seta como esta.
+
+127
+00:08:56,900 --> 00:09:03,570
+OK, e nós só queremos, nem precisamos, já que isso será apenas uma linha de código, não precisamos
+
+128
+00:09:03,570 --> 00:09:05,790
+ainda precisa dessas chaves.
+
+129
+00:09:06,840 --> 00:09:16,440
+Então, vamos pegar o contêiner de caixas e pegar uma lista de classes e, em seguida, alternar para adicionar e remover
+
+130
+00:09:16,440 --> 00:09:17,870
+a classe dos grandes.
+
+131
+00:09:18,600 --> 00:09:19,770
+Então vamos salvar isso.
+
+132
+00:09:19,770 --> 00:09:20,790
+Vamos por aqui.
+
+133
+00:09:21,180 --> 00:09:23,480
+Vamos clicar e vamos lá.
+
+134
+00:09:24,390 --> 00:09:25,860
+Então, temos esse efeito legal.
+
+135
+00:09:27,870 --> 00:09:30,180
+E só para mostrar a você, deixe-me fazer isso maior.
+
+136
+00:09:30,300 --> 00:09:31,260
+Então, estamos quase terminando.
+
+137
+00:09:31,920 --> 00:09:39,090
+Se eu te mostrar no console, coloca isso aqui e a gente olha essa classe, né.
+
+138
+00:09:39,090 --> 00:09:41,250
+Então você pode ver que a classe de grande está lá.
+
+139
+00:09:41,250 --> 00:09:43,650
+Se eu clicar nele, ele adiciona e remove.
+
+140
+00:09:43,650 --> 00:09:45,270
+E é isso que causa esse efeito.
+
+141
+00:09:45,690 --> 00:09:48,450
+E temos esse giro no sucesso.
+
+142
+00:09:49,320 --> 00:09:49,700
+Certo.
+
+143
+00:09:49,710 --> 00:09:53,990
+Então, aqui, temos essa rotação que está causando isso.
+
+144
+00:09:54,010 --> 00:09:58,410
+Também temos uma transição de ponto quatro segundos.
+
+145
+00:09:58,530 --> 00:10:03,480
+Você pode aumentar isso se quiser ou diminuir isso se quiser uma velocidade diferente.
+
+146
+00:10:03,480 --> 00:10:05,360
+Mas sim, então é mais ou menos isso.
+
+147
+00:10:05,910 --> 00:10:06,330
+Tudo bem.
+
+148
+00:10:06,330 --> 00:10:08,430
+Espero que tenham gostado deste pequeno projeto.
+
+149
+00:10:08,430 --> 00:10:09,930
+E vamos para o próximo.

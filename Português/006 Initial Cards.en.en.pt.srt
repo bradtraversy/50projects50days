@@ -1,0 +1,511 @@
+﻿1
+00:00:00,150 --> 00:00:05,490
+Tudo bem, então neste vídeo, vamos fazer o acesso humano para os cartões de expansão e depois vamos
+
+2
+00:00:05,490 --> 00:00:07,590
+entrar no JavaScript no próximo vídeo.
+
+3
+00:00:07,920 --> 00:00:12,390
+Então temos projetos que são abertos, tenho meu índice HTML.
+
+4
+00:00:12,390 --> 00:00:21,720
+Vou seguir em frente e mudar o título aqui para cartões de expansão e depois vamos nos livrar desse H1
+
+5
+00:00:21,720 --> 00:00:22,140
+aqui.
+
+6
+00:00:22,860 --> 00:00:24,780
+E isso vai ser bem simples.
+
+7
+00:00:24,780 --> 00:00:31,500
+Nós vamos ter um container em torno de cinco divs com a classe de painel agora para este primeiro
+
+8
+00:00:31,500 --> 00:00:36,840
+um e teremos uma classe de painel e também uma classe de ativo, porque é assim que vamos contar
+
+9
+00:00:36,840 --> 00:00:38,760
+qual cartão será expandido.
+
+10
+00:00:38,760 --> 00:00:44,490
+Vai ter uma classe de ativo e dentro da div vai ser qualquer que seja o H três como
+
+11
+00:00:44,490 --> 00:00:46,890
+este vai ser, explorar o mundo.
+
+12
+00:00:46,890 --> 00:00:48,540
+Claro, você pode mudar isso se quiser.
+
+13
+00:00:48,960 --> 00:00:52,800
+E então teremos um estilo embutido para a imagem de fundo.
+
+14
+00:00:53,100 --> 00:00:56,130
+Então você pode facilmente, você sabe, mudar isso se quiser.
+
+15
+00:00:56,490 --> 00:01:06,000
+Então, digamos imagem de fundo e defina isso para um euro e aspas simples aqui com um link para uma imagem
+
+16
+00:01:06,000 --> 00:01:08,010
+que você pode usar o que quiser.
+
+17
+00:01:08,010 --> 00:01:15,140
+Vou pegar um link para uma imagem intacta e colá-la entre as aspas aqui.
+
+18
+00:01:16,230 --> 00:01:22,020
+OK, se eu salvar isso, vou ver apenas o conteúdo, que é o H3 com o plano de fundo
+
+19
+00:01:22,020 --> 00:01:26,500
+imagem por trás dele, mas só vai ocupar tanto quanto o conteúdo faz por agora.
+
+20
+00:01:27,270 --> 00:01:32,130
+Então, para os outros quatro desenvolvedores de painel, vou direto para isso, ainda dentro do contêiner e
+
+21
+00:01:32,130 --> 00:01:33,590
+Eu só estou indo para a pós-temporada.
+
+22
+00:01:33,600 --> 00:01:37,680
+E, claro, você pode pegá-los no repositório do projeto.
+
+23
+00:01:39,090 --> 00:01:46,290
+E, novamente, eles são apenas painéis com uma imagem de fundo no estilo inline e depois um H3 na div.
+
+24
+00:01:46,620 --> 00:01:51,000
+Florestas tão selvagens e uma cidade de praia nas nuvens das Montanhas de Inverno.
+
+25
+00:01:51,540 --> 00:01:55,770
+Então vamos salvar e agora podemos ver todos os H 3s um pouco da imagem de fundo.
+
+26
+00:01:56,280 --> 00:02:01,920
+Então agora vamos pular para a folha de estilo e começar a fazer isso parecer, você sabe, como alguns cartões que
+
+27
+00:02:01,920 --> 00:02:02,880
+podemos expandir.
+
+28
+00:02:03,270 --> 00:02:13,830
+Então, a fonte eu vou tirar isso e dizer CSFs, família de pontos de interrogação e definir isso para Ally.
+
+29
+00:02:15,030 --> 00:02:17,760
+E então vamos adicionar isso aqui no corpo.
+
+30
+00:02:17,880 --> 00:02:19,290
+Então isso vai mudar a fonte.
+
+31
+00:02:19,680 --> 00:02:26,520
+Não precisamos da coluna Flex Direct Direction e o resto pode permanecer o mesmo para o
+
+32
+00:02:26,520 --> 00:02:27,030
+corpo.
+
+33
+00:02:27,630 --> 00:02:36,360
+Agora, lembre-se, temos um contêiner em volta de todos os painéis, e tudo o que quero fazer aqui é exibir
+
+34
+00:02:36,360 --> 00:02:38,040
+isso como uma caixa flexível.
+
+35
+00:02:38,280 --> 00:02:41,010
+Então, imediatamente ele vai transformá-lo em uma linha flexível.
+
+36
+00:02:41,470 --> 00:02:45,090
+OK, então nosso contêiner aqui agora é uma caixa flexível.
+
+37
+00:02:45,090 --> 00:02:51,030
+Assim, quaisquer filhos imediatos, que são todos esses dispositivos, serão colocados horizontalmente em uma fileira.
+
+38
+00:02:51,570 --> 00:02:56,670
+Se quiséssemos um em cima do outro, poderíamos fazer uma coluna de direção flexível assim.
+
+39
+00:02:56,670 --> 00:02:57,180
+Mas nós não.
+
+40
+00:02:57,180 --> 00:02:59,430
+Nós os queremos em uma fileira agora.
+
+41
+00:02:59,430 --> 00:03:05,100
+Ele ocupa cem, você sabe, 100 larguras de janela de visualização agora ou 100 por cento da janela de visualização.
+
+42
+00:03:05,310 --> 00:03:12,270
+Então, vou definir a largura do contêiner para 90 VW, que é a largura da janela de visualização.
+
+43
+00:03:12,600 --> 00:03:17,920
+Então, se você pensar na largura como 100 fatias indo dessa maneira, estamos ocupando 90 das 100.
+
+44
+00:03:18,330 --> 00:03:21,840
+Então a próxima coisa que eu quero fazer são os painéis.
+
+45
+00:03:21,850 --> 00:03:23,390
+Então, isso é tudo que precisamos para o contêiner.
+
+46
+00:03:23,400 --> 00:03:27,510
+Então, para a classe do painel, ela já tem a imagem de fundo.
+
+47
+00:03:27,510 --> 00:03:31,670
+Mas vamos adicionar alguns outros atributos de fundo como o tamanho.
+
+48
+00:03:31,680 --> 00:03:34,320
+No momento, você só pode ver uma pequena parte da imagem.
+
+49
+00:03:35,310 --> 00:03:40,050
+Vou definir isso para automático e 100 por cento.
+
+50
+00:03:40,050 --> 00:03:42,780
+E agora você pode ver, você sabe, muito mais da imagem.
+
+51
+00:03:43,050 --> 00:03:44,970
+Eu vou definir a posição.
+
+52
+00:03:44,980 --> 00:03:49,470
+Então, a posição de fundo está definida para o centro.
+
+53
+00:03:50,370 --> 00:03:52,330
+E não quero repetir.
+
+54
+00:03:52,340 --> 00:03:56,790
+Então, vamos definir a repetição do traço de fundo para não repetir.
+
+55
+00:03:57,990 --> 00:04:04,780
+OK, e então para a altura deles, vamos fazer com que eles não tenham a altura total da viewport.
+
+56
+00:04:04,800 --> 00:04:06,950
+Vamos fazer 80 votos.
+
+57
+00:04:06,950 --> 00:04:09,630
+Então, 80 alturas de viewport, OK?
+
+58
+00:04:09,630 --> 00:04:10,930
+Está começando a parecer um pouco melhor.
+
+59
+00:04:11,370 --> 00:04:15,570
+Vamos definir a borda ou eu não sou a borda, mas o raio da borda.
+
+60
+00:04:15,570 --> 00:04:18,210
+Vou definir isso para 50 pixels.
+
+61
+00:04:18,210 --> 00:04:21,780
+Então, faça-os arredondados e você pode estilizá-los de maneira diferente, se quiser.
+
+62
+00:04:22,290 --> 00:04:25,500
+Vou definir a cor do texto dentro para ser branco.
+
+63
+00:04:25,890 --> 00:04:30,600
+Eu quero um ponteiro de cursor para que quando eu passar o mouse sobre ele, tenhamos um cursor.
+
+64
+00:04:31,170 --> 00:04:34,500
+Agora a largura podemos definir a prop flex..
+
+65
+00:04:34,510 --> 00:04:39,150
+Já que estamos usando flex box, vou defini-lo para um valor inicial de zero vírgula cinco.
+
+66
+00:04:39,150 --> 00:04:41,010
+Então, todos eles vão estar quites agora.
+
+67
+00:04:41,400 --> 00:04:46,170
+Mas quando tivermos a classe ativa, o que faremos é mudar isso para algo muito mais alto, como
+
+68
+00:04:46,170 --> 00:04:56,820
+Flexibilize cinco, OK, e vamos separá-los um pouco para adicionar uma margem de dez pixels e então vamos
+
+69
+00:04:56,820 --> 00:04:59,730
+tornar esta posição relativa.
+
+70
+00:04:59,770 --> 00:05:07,120
+Porque eu quero posicionar os três H e o lado absoluto, então isso significa que o contêiner H3
+
+71
+00:05:07,120 --> 00:05:10,900
+Divx, que é nosso elemento container, que é o painel tem que ser relativo.
+
+72
+00:05:11,890 --> 00:05:18,220
+E então, quando alteramos a largura do ativo, como quando clicamos e ele fica ativo, quero
+
+73
+00:05:18,220 --> 00:05:24,070
+para não apenas passar para um tamanho maior ou largura maior, mas eu queria ter uma transição.
+
+74
+00:05:24,070 --> 00:05:30,130
+Então digamos que vamos adicionar uma transição na propriedade flex e vamos torná-la zero vírgula sete segundos
+
+75
+00:05:30,130 --> 00:05:32,920
+para a duração com uma facilidade em vigor.
+
+76
+00:05:34,030 --> 00:05:35,500
+OK, então vamos salvar isso.
+
+77
+00:05:35,950 --> 00:05:42,190
+Agora, antes de chegarmos à classe ativa, vamos fazer os três H que estão dentro dos painéis.
+
+78
+00:05:42,190 --> 00:05:52,480
+Então temos o painel H três e vou definir o tamanho da fonte para vinte e quatro pixels e vamos definir o
+
+79
+00:05:52,480 --> 00:05:53,320
+posição.
+
+80
+00:05:53,980 --> 00:05:56,290
+Então a posição vai ser absoluta.
+
+81
+00:05:57,220 --> 00:05:58,720
+Por isso fiz isso relativo.
+
+82
+00:05:58,720 --> 00:06:03,150
+Queremos o absoluto H3 dentro dele e quero que esteja no canto inferior esquerdo.
+
+83
+00:06:03,160 --> 00:06:07,870
+Então, digamos 20 pixels da parte inferior e 20 pixels da esquerda.
+
+84
+00:06:07,930 --> 00:06:08,710
+Eu guardo isso.
+
+85
+00:06:08,710 --> 00:06:10,540
+Você pode ver que a posição mudou.
+
+86
+00:06:11,590 --> 00:06:14,470
+Vou definir a margem para zero nestes.
+
+87
+00:06:14,770 --> 00:06:18,970
+E também quero que a árvore mostre apenas se estiver ativa.
+
+88
+00:06:18,970 --> 00:06:19,270
+Certo.
+
+89
+00:06:19,270 --> 00:06:20,410
+Porque isso não parece bom.
+
+90
+00:06:20,410 --> 00:06:22,300
+Não podemos nem ler os títulos.
+
+91
+00:06:22,300 --> 00:06:27,700
+Então, vamos definir a capacidade para zero, o que apenas os tornará invisíveis.
+
+92
+00:06:28,010 --> 00:06:31,040
+OK, mas quando estiver ativo, mostraremos a eles.
+
+93
+00:06:31,450 --> 00:06:35,730
+Então vamos primeiro fazer o painel se estiver ativo.
+
+94
+00:06:35,740 --> 00:06:43,750
+Então, estamos apenas dizendo que se a div do painel também tiver uma classe ativa, mudará o fluxo do ponto zero
+
+95
+00:06:43,750 --> 00:06:46,330
+cinco, que é o valor inicial para cinco.
+
+96
+00:06:46,870 --> 00:06:56,470
+E agora você pode ver que é muito mais amplo para o H3, digamos que o painel ativo tenha três anos e tenha uma opacidade
+
+97
+00:06:56,470 --> 00:06:58,780
+de zero agora para cada painel.
+
+98
+00:06:58,780 --> 00:07:02,260
+Mas se estiver ativo, vamos definir a opacidade para um.
+
+99
+00:07:02,260 --> 00:07:05,110
+Dessa forma, podemos ver se está ativo.
+
+100
+00:07:06,440 --> 00:07:15,580
+OK, agora eu quero que se a tela for muito pequena mostremos apenas três em vez de cinco
+
+101
+00:07:15,580 --> 00:07:16,540
+destes cartões.
+
+102
+00:07:16,540 --> 00:07:25,120
+Para fazer isso, podemos adicionar uma consulta de mídia dizendo at media e podemos usar um min ou um max com, estou
+
+103
+00:07:25,120 --> 00:07:28,360
+vai dizer largura máxima de quatro oitenta pixels.
+
+104
+00:07:28,630 --> 00:07:34,150
+E o que isso significa é que qualquer estilo que eu colocar aqui só terá efeito se a tela estiver
+
+105
+00:07:34,150 --> 00:07:35,740
+abaixo de quarenta e oitenta pixels.
+
+106
+00:07:36,070 --> 00:07:41,800
+Então, uma coisa que eu quero fazer é que o contêiner seja inicialmente definido para uma largura de 90 larguras de janela de visualização.
+
+107
+00:07:42,130 --> 00:07:47,200
+Vamos configurá-lo para 100 larguras de janela de visualização em telas pequenas para que ocupe um pouco mais de espaço
+
+108
+00:07:47,200 --> 00:07:48,820
+e nos dá algum espaço extra.
+
+109
+00:07:49,330 --> 00:07:52,750
+OK, e então eu vou remover os dois últimos painéis.
+
+110
+00:07:53,170 --> 00:08:00,520
+E a maneira que eu posso fazer isso é dizendo, painel e eu posso usar o pseudo seletor usando dois pontos
+
+111
+00:08:00,520 --> 00:08:04,150
+aqui e depois um traço do tipo traço.
+
+112
+00:08:05,320 --> 00:08:07,330
+E eu quero os dois últimos.
+
+113
+00:08:07,330 --> 00:08:08,680
+Então são cinco no total.
+
+114
+00:08:09,040 --> 00:08:13,720
+Eu quero quatro e cinco para que eu possa pegar o tipo quatro.
+
+115
+00:08:13,750 --> 00:08:15,100
+Isso vai pegar esse.
+
+116
+00:08:15,550 --> 00:08:17,020
+Mas também quero o quinto.
+
+117
+00:08:17,020 --> 00:08:18,970
+Então eu vou copiar isso.
+
+118
+00:08:18,970 --> 00:08:25,420
+Coloque uma vírgula aqui e vamos também pegar o quinto último e vamos definir display para none, o que irá
+
+119
+00:08:25,420 --> 00:08:26,490
+apenas se livre deles.
+
+120
+00:08:26,830 --> 00:08:31,450
+Então agora você pode ver em telas pequenas que há apenas três imagens ou três cartões.
+
+121
+00:08:31,450 --> 00:08:33,910
+Se eu passar das quatro e oitenta agora são cinco.
+
+122
+00:08:34,810 --> 00:08:37,330
+OK, então é isso que essa consulta de mídia faz por nós.
+
+123
+00:08:37,420 --> 00:08:38,950
+Eu só vou fazer isso um pouco maior.
+
+124
+00:08:41,300 --> 00:08:43,640
+Assim que deve fazê-lo para o sucesso.
+
+125
+00:08:43,670 --> 00:08:48,950
+Agora, obviamente, queremos a funcionalidade em que clicamos em um deles e se expande e, você
+
+126
+00:08:48,950 --> 00:08:53,290
+sabe, o outro fica menor e podemos ver qual está ativo.
+
+127
+00:08:53,300 --> 00:08:55,720
+Então, para isso, precisamos de JavaScript.
+
+128
+00:08:55,730 --> 00:08:57,380
+Então é isso que vamos fazer no próximo vídeo.

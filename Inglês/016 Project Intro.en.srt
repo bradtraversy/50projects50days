@@ -1,0 +1,59 @@
+1
+00:00:00,420 --> 00:00:06,480
+So in this project, we're going to be building a blurry loading page or loading image, so if I come
+
+2
+00:00:06,480 --> 00:00:14,010
+to this page here, you'll see that the image starts blurred and we also start with, you know, zero
+
+3
+00:00:14,010 --> 00:00:18,420
+percent and then that goes up to 100 percent and the image comes into focus.
+
+4
+00:00:18,810 --> 00:00:21,600
+So you could use this to load just about anything.
+
+5
+00:00:21,600 --> 00:00:23,550
+We're just doing a blur effect on the image.
+
+6
+00:00:23,550 --> 00:00:24,870
+But you could load in your site.
+
+7
+00:00:24,870 --> 00:00:30,690
+You could have any other elements in the DOM load in that specific amount of time from when we go to
+
+8
+00:00:30,690 --> 00:00:37,410
+zero to 100 and we'll have to map different number ranges to the zero to 100 load.
+
+9
+00:00:37,740 --> 00:00:43,020
+For instance, the image blur is going to be 30 pixels when it starts and it's going to go down to zero
+
+10
+00:00:43,260 --> 00:00:45,230
+as we go from zero to 100.
+
+11
+00:00:45,240 --> 00:00:50,760
+And there's a stack overflow function that we're going to use to help us do that, to help us map one
+
+12
+00:00:50,760 --> 00:00:52,080
+number range to another.
+
+13
+00:00:52,410 --> 00:00:52,860
+All right.
+
+14
+00:00:52,860 --> 00:00:53,390
+So that's it.
+
+15
+00:00:53,400 --> 00:00:54,270
+Let's get started.

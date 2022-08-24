@@ -1,0 +1,567 @@
+﻿1
+00:00:00,210 --> 00:00:06,300
+OK, agora queremos tornar isso dinâmico e há algumas coisas que faremos em nosso JavaScript
+
+2
+00:00:06,300 --> 00:00:08,090
+arquivo, queremos executar nossa animação.
+
+3
+00:00:08,100 --> 00:00:12,870
+Também queremos controlar quando o contador é exibido e quando a mensagem final é exibida, a primeira coisa que
+
+4
+00:00:12,870 --> 00:00:16,430
+fazer é trazer com licença, trazer as coisas que precisamos do DOM.
+
+5
+00:00:16,440 --> 00:00:17,990
+Então, precisamos dos números.
+
+6
+00:00:18,810 --> 00:00:21,060
+Então, vamos usar document dot.
+
+7
+00:00:21,060 --> 00:00:25,980
+E, como há vários períodos que precisamos trazer, usaremos o seletor de consulta
+
+8
+00:00:25,980 --> 00:00:26,460
+tudo.
+
+9
+00:00:27,060 --> 00:00:33,240
+E queremos trazer a classe, diremos nums e depois os spans dentro de nums.
+
+10
+00:00:33,930 --> 00:00:34,290
+Tudo bem.
+
+11
+00:00:34,290 --> 00:00:39,480
+Agora, seletor de consulta, tudo é usado se houver vários elementos que você está selecionando e o que ele faz
+
+12
+00:00:39,480 --> 00:00:45,210
+é colocá-lo no que é chamado de lista de nós, que é como um array que você pode usar para cada
+
+13
+00:00:45,210 --> 00:00:45,510
+nele.
+
+14
+00:00:45,510 --> 00:00:48,830
+Você pode usar, você sabe, métodos de array e coisas assim.
+
+15
+00:00:49,500 --> 00:00:52,350
+Então, a próxima coisa que eu quero é o próprio contador.
+
+16
+00:00:52,350 --> 00:00:56,490
+Portanto, é um ponto de contador e documento e é apenas um único elemento.
+
+17
+00:00:56,490 --> 00:01:01,620
+Então, podemos apenas usar o seletor de consulta e queremos a classe de contador.
+
+18
+00:01:03,150 --> 00:01:03,960
+Copie isso para baixo.
+
+19
+00:01:03,990 --> 00:01:05,760
+Também queremos a mensagem final.
+
+20
+00:01:05,760 --> 00:01:15,270
+Então isso tem uma classe de final e vamos chamar isso de mensagem final e então queremos o replay também.
+
+21
+00:01:15,270 --> 00:01:25,050
+Então é um replay e acredito que seja um ID Então queremos mudar isso para um sem sinal e depois repetir
+
+22
+00:01:25,500 --> 00:01:28,290
+ou você pode usar para obter o elemento por bidi.
+
+23
+00:01:29,130 --> 00:01:34,890
+Então, queremos chamar uma função aqui quando isso começar, chamada run animation, porque queríamos executar
+
+24
+00:01:34,890 --> 00:01:36,000
+bem quando começa.
+
+25
+00:01:36,360 --> 00:01:39,690
+Então vamos chamar isso e então vamos criar essa função.
+
+26
+00:01:43,350 --> 00:01:50,700
+Tudo bem, agora queremos lidar com esses números aqui que estamos trazendo, você sabe, os três
+
+27
+00:01:50,700 --> 00:01:52,010
+de três a zero.
+
+28
+00:01:52,320 --> 00:01:59,460
+Então eu quero fazer um loop através deles para que eu possa pegar números, que é uma lista de nós, porque usamos query
+
+29
+00:01:59,460 --> 00:02:00,300
+seletor todos.
+
+30
+00:02:00,300 --> 00:02:05,220
+E como eu disse, não, isso é semelhante a um array e podemos usar o método for each para
+
+31
+00:02:05,220 --> 00:02:05,990
+loop.
+
+32
+00:02:06,390 --> 00:02:12,810
+Então, para cada um terá uma função que você pode colocar em uma função assim, ou você pode usar uma função de seta
+
+33
+00:02:12,810 --> 00:02:13,920
+que é um pouco mais limpo.
+
+34
+00:02:15,330 --> 00:02:22,920
+E o que isso leva, o que isso, esse retorno de chamada que colocamos para cada tomada é o que quisermos
+
+35
+00:02:22,920 --> 00:02:29,460
+para chamar este item num, como você quiser chamá-lo, ele apenas representa cada item individual no
+
+36
+00:02:29,460 --> 00:02:31,290
+lista de nós ou na matriz.
+
+37
+00:02:31,590 --> 00:02:37,320
+E então você pode passar um segundo parâmetro de índice, que será apenas, você sabe, começar em zero.
+
+38
+00:02:37,320 --> 00:02:41,490
+E então, quando passar pela próxima iteração, será um e depois dois e assim por diante, porque estamos
+
+39
+00:02:41,490 --> 00:02:42,530
+vai precisar do índice.
+
+40
+00:02:43,050 --> 00:02:51,450
+Então, dentro desse loop, vamos em frente e, na verdade, vamos considerar o log apenas para que eu possa mostrar a você.
+
+41
+00:02:51,450 --> 00:02:58,680
+Se também pudermos registrar NUM e indexar e abrirmos nossas ferramentas de desenvolvimento aqui.
+
+42
+00:02:58,920 --> 00:03:01,740
+Você pode realmente ver que colocamos isso aqui.
+
+43
+00:03:02,100 --> 00:03:03,510
+Você pode ver cada intervalo.
+
+44
+00:03:03,930 --> 00:03:06,510
+Então, o intervalo é o que temos aqui.
+
+45
+00:03:06,540 --> 00:03:11,610
+NUM não é apenas o NUM, é um elemento que trouxemos no intervalo.
+
+46
+00:03:11,610 --> 00:03:16,530
+Então ele vai mostrar o elemento inteiro e então este é o zero, este é o índice.
+
+47
+00:03:16,530 --> 00:03:19,100
+Então começa em zero tipo zero um, dois, três.
+
+48
+00:03:19,530 --> 00:03:22,830
+Então, temos acesso a esses dentro deste loop.
+
+49
+00:03:23,550 --> 00:03:30,030
+Agora vou criar uma variável aqui para obter o penúltimo valor porque vamos precisar disso
+
+50
+00:03:30,030 --> 00:03:32,190
+para fazer o que precisamos fazer.
+
+51
+00:03:32,440 --> 00:03:38,440
+Então, vou obter o comprimento total de nums usando a propriedade length e apenas menos um disso.
+
+52
+00:03:39,240 --> 00:03:45,750
+OK, a próxima coisa que queremos fazer é criar um ouvinte de evento porque queremos saber quando a animação
+
+53
+00:03:45,750 --> 00:03:46,380
+termina.
+
+54
+00:03:46,920 --> 00:03:49,620
+E na verdade vamos fechar isso.
+
+55
+00:03:49,830 --> 00:03:52,680
+Na verdade, existe um ouvinte de eventos chamado animação.
+
+56
+00:03:52,680 --> 00:03:54,460
+E então eu vou pegar NUM.
+
+57
+00:03:54,780 --> 00:03:59,100
+Então, basicamente, qualquer iteração em que estamos, qualquer item ou qualquer número.
+
+58
+00:03:59,460 --> 00:04:02,250
+E vamos adicionar um ouvinte de evento a isso.
+
+59
+00:04:03,180 --> 00:04:07,030
+E quando temos um evento de fim de animação.
+
+60
+00:04:07,470 --> 00:04:15,210
+OK, então apenas animação e vamos disparar uma função com um parâmetro de evento aqui e queremos
+
+61
+00:04:15,210 --> 00:04:23,460
+para primeiro verificar se a animação está terminando, se o nome é entrar e podemos fazer isso usando
+
+62
+00:04:23,460 --> 00:04:24,720
+esse parâmetro de evento.
+
+63
+00:04:24,760 --> 00:04:33,000
+Este E aqui, na verdade, podemos dizer o nome da animação que nos dará o nome da animação e
+
+64
+00:04:33,000 --> 00:04:35,110
+queremos ver se é igual para entrar.
+
+65
+00:04:36,000 --> 00:04:40,600
+OK, também queremos ver se o índice não é o último.
+
+66
+00:04:40,920 --> 00:04:51,330
+Então vamos fazer um e comercial duplo e depois queremos fazer o teste, o índice e ver se não é igual
+
+67
+00:04:51,330 --> 00:04:51,840
+para.
+
+68
+00:04:52,210 --> 00:04:59,230
+E o que vou fazer aqui é apenas adicionar o penúltimo aqui.
+
+69
+00:04:59,940 --> 00:05:07,560
+Então, se isso for verdade, queremos pegar o número atual e remover o in class e, em seguida,
+
+70
+00:05:07,560 --> 00:05:08,970
+adicione o outclass.
+
+71
+00:05:09,330 --> 00:05:12,170
+E é isso que vai dar isso, você sabe, efeitos de entrada e saída.
+
+72
+00:05:12,170 --> 00:05:21,180
+Então vamos pegar NUM na lista de classes de uso e então podemos usar o método add para adicionar uma classe e me desculpe,
+
+73
+00:05:21,180 --> 00:05:23,010
+um para remover primeiro.
+
+74
+00:05:23,430 --> 00:05:33,360
+Então, vamos remover e adicionar, OK, e tudo o que está fazendo é absorver
+
+75
+00:05:33,360 --> 00:05:35,550
+fora do número atual e adicionando Oh.
+
+76
+00:05:35,550 --> 00:05:40,380
+O que, por sua vez, vai chamar isso, que irá girá-lo para baixo dessa maneira.
+
+77
+00:05:41,070 --> 00:05:51,750
+OK, então a segunda condição aqui que eu quero verificar, digamos elusiva e bem aqui onde
+
+78
+00:05:51,750 --> 00:05:56,550
+removendo se entrar, removemos o in class, adicionando o out.
+
+79
+00:05:56,970 --> 00:05:59,390
+Agora queremos verificar se está saindo.
+
+80
+00:05:59,880 --> 00:06:09,720
+Então, digamos que se o nome da informação do ponto é igual a sair.
+
+81
+00:06:09,720 --> 00:06:15,000
+E também queremos ver se há um número depois dele porque não queremos adicionar na classe se houver
+
+82
+00:06:15,000 --> 00:06:16,530
+nenhum próximo elemento.
+
+83
+00:06:17,370 --> 00:06:22,020
+E podemos fazer isso verificando, digamos, e num ponto.
+
+84
+00:06:22,020 --> 00:06:27,780
+E então há um método chamado Next Element Sibling, que veremos se houver um próximo irmão.
+
+85
+00:06:27,780 --> 00:06:29,940
+Então esses vãos estão todos no mesmo nível.
+
+86
+00:06:29,940 --> 00:06:30,930
+Então eles são irmãos.
+
+87
+00:06:31,200 --> 00:06:34,710
+Então, se estamos aqui, ele vai verificar se isso existe.
+
+88
+00:06:35,010 --> 00:06:37,440
+Se isso acontecer, ele adicionará a classe de N.
+
+89
+00:06:37,800 --> 00:06:41,550
+Se não, então não é porque não há mais vãos.
+
+90
+00:06:42,130 --> 00:06:52,050
+Tudo bem, então diremos sem pontos, próximo elemento irmão, e aqui queremos pegar num ponto,
+
+91
+00:06:52,240 --> 00:07:00,130
+próximo elemento irmão e queremos adicionar a classe de N OK, então a lista de classes adiciona porque queremos adicionar
+
+92
+00:07:00,130 --> 00:07:01,000
+isso para o próximo.
+
+93
+00:07:01,000 --> 00:07:01,270
+Certo.
+
+94
+00:07:01,270 --> 00:07:02,680
+Não para os números atuais.
+
+95
+00:07:02,680 --> 00:07:09,100
+Então é por isso que estamos usando o próximo elemento irmão aqui e então estamos adicionando o in class.
+
+96
+00:07:09,850 --> 00:07:14,560
+OK, e então isso significa que terminamos.
+
+97
+00:07:14,560 --> 00:07:17,590
+Então queremos mostrar a mensagem final dentro do contador.
+
+98
+00:07:17,590 --> 00:07:23,770
+Então, digamos uma lista de classes de pontos do contador e queremos adicionar a isso.
+
+99
+00:07:23,770 --> 00:07:25,660
+Lembre-se, nós temos aquela aula hid.
+
+100
+00:07:25,840 --> 00:07:29,950
+OK, e então vamos levar a mensagem final
+
+101
+00:07:32,980 --> 00:07:35,170
+e queremos adicionar a classe show.
+
+102
+00:07:35,500 --> 00:07:38,970
+OK, então, quando terminar, apenas mostrará a mensagem final.
+
+103
+00:07:40,420 --> 00:07:44,410
+Então eu vou salvar isso e posso ver para onde vamos.
+
+104
+00:07:47,050 --> 00:07:53,950
+Então, a última coisa que precisamos fazer em nosso JavaScript é chamar isso de replay aqui, queremos poder
+
+105
+00:07:53,950 --> 00:07:55,950
+para clicar aqui e fazer acontecer novamente.
+
+106
+00:07:56,320 --> 00:07:58,810
+Então vamos criar uma função aqui.
+
+107
+00:07:58,810 --> 00:08:04,300
+E vamos chamar isso de redefinição, Dom, porque basicamente estamos redefinindo para o início
+
+108
+00:08:04,300 --> 00:08:05,260
+estado inicial.
+
+109
+00:08:05,740 --> 00:08:14,710
+Então, pegaremos o contador e a lista de classes, removeremos o ponto e queremos remover a classe alta.
+
+110
+00:08:15,250 --> 00:08:23,110
+E então na mensagem final, queremos remover a classe show.
+
+111
+00:08:24,460 --> 00:08:31,000
+OK, e então queremos percorrer os números novamente.
+
+112
+00:08:31,000 --> 00:08:36,130
+Então nums dot para cada e recebe uma função.
+
+113
+00:08:37,770 --> 00:08:38,920
+Então diremos não.
+
+114
+00:08:40,390 --> 00:08:43,000
+Então, para cada número, eu só quero limpar o valor.
+
+115
+00:08:43,020 --> 00:08:51,070
+Portanto, faça num dot class list dot value e defina-o apenas como uma string vazia.
+
+116
+00:08:52,060 --> 00:08:52,530
+Tudo bem.
+
+117
+00:08:52,540 --> 00:08:58,810
+E aqui queremos adicionar a classe in ao primeiro intervalo.
+
+118
+00:08:59,050 --> 00:09:04,980
+Então NUMS é uma lista de nós que é semelhante a um array para que possamos acessar elementos específicos.
+
+119
+00:09:04,990 --> 00:09:11,190
+Então, zero vai realmente me dar o primeiro aqui e queremos adicionar esta classe nele.
+
+120
+00:09:11,200 --> 00:09:11,570
+Certo.
+
+121
+00:09:11,590 --> 00:09:20,800
+Então, digamos nums zero class list dot add e queremos adicionar.
+
+122
+00:09:21,700 --> 00:09:22,050
+Tudo bem.
+
+123
+00:09:22,060 --> 00:09:26,170
+Então isso meio que redefinirá tudo para esse estado inicial aqui.
+
+124
+00:09:27,490 --> 00:09:31,920
+Agora queremos que isso aconteça quando clicarmos neste botão.
+
+125
+00:09:31,930 --> 00:09:40,960
+Então, vamos pegar o replay e adicionar um ouvinte de evento e queremos ouvir um evento de clique.
+
+126
+00:09:41,710 --> 00:09:48,010
+E quando isso acontecer, vamos chamar uma função e queremos redefinir Dom.
+
+127
+00:09:49,000 --> 00:09:51,460
+E também queremos executar a animação.
+
+128
+00:09:53,000 --> 00:09:53,330
+Tudo bem.
+
+129
+00:09:53,360 --> 00:09:54,280
+Então salve isso.
+
+130
+00:09:54,670 --> 00:09:59,080
+Então, assim que isso terminar, você pode ver que vamos fazer isso.
+
+131
+00:09:59,330 --> 00:10:00,900
+Vamos realmente centralizar isso.
+
+132
+00:10:00,910 --> 00:10:02,950
+Não sei por que não centralizamos isso.
+
+133
+00:10:02,950 --> 00:10:12,810
+Então vamos ver, mensagem final ou final e digamos text str text align center.
+
+134
+00:10:13,060 --> 00:10:13,600
+Aqui vamos nós.
+
+135
+00:10:14,230 --> 00:10:15,670
+OK, então se eu clicar em repetir.
+
+136
+00:10:15,910 --> 00:10:16,450
+Aqui vamos nós.
+
+137
+00:10:16,450 --> 00:10:17,230
+Acontece novamente.
+
+138
+00:10:19,210 --> 00:10:21,220
+OK, então isso deve fazê-lo.
+
+139
+00:10:21,550 --> 00:10:26,920
+Então nós temos essa pequena animação legal e você pode implementar isso em algum tipo de site ou aplicativo
+
+140
+00:10:26,920 --> 00:10:32,140
+para que você mostre sua, você sabe, sua tela quando ela carrega, você pode fazer um monte de coisas
+
+141
+00:10:32,140 --> 00:10:34,240
+com ele, mas é isso para este projeto.
+
+142
+00:10:34,240 --> 00:10:35,880
+E vamos pular para o próximo.

@@ -1,0 +1,407 @@
+﻿1
+00:00:00,150 --> 00:00:05,910
+OK, então podemos digitar um usuário, obter seus dados de perfil e consolá-lo, mas não queremos
+
+2
+00:00:05,910 --> 00:00:06,180
+faça isso.
+
+3
+00:00:06,210 --> 00:00:08,800
+Queremos adicioná-lo a este cartão aqui.
+
+4
+00:00:09,360 --> 00:00:12,460
+Então o que vamos fazer é criar uma nova função.
+
+5
+00:00:13,610 --> 00:00:21,720
+Vamos descer aqui e dizer função e vamos chamar isso de criar vamos chamá-lo de criar cartão de usuário.
+
+6
+00:00:23,850 --> 00:00:26,040
+E vai receber um usuário.
+
+7
+00:00:27,330 --> 00:00:33,510
+E queremos pegar, digamos, const card HTML.
+
+8
+00:00:33,520 --> 00:00:38,850
+Então, vamos criar uma variável aqui chamada HTML do cartão e defini-la para um conjunto de táticas.
+
+9
+00:00:39,180 --> 00:00:42,690
+E então vou pegar o que temos em nosso HTML, este cartão.
+
+10
+00:00:42,840 --> 00:00:49,320
+Então esse div aqui, tudo que está no Maine, eu vou pegar isso e cortar isso.
+
+11
+00:00:50,370 --> 00:00:52,470
+Na verdade, não precisamos de nada aqui.
+
+12
+00:00:54,300 --> 00:00:56,520
+Vamos salvar que vai embora.
+
+13
+00:00:56,820 --> 00:01:02,520
+E então em nosso script, nesta variável aqui neste modelo, literal, eu vou apenas
+
+14
+00:01:02,520 --> 00:01:05,610
+vá em frente e vamos assim e cole isso.
+
+15
+00:01:06,630 --> 00:01:07,050
+Tudo bem.
+
+16
+00:01:07,080 --> 00:01:08,520
+Então crie um cartão de usuário agora mesmo.
+
+17
+00:01:08,520 --> 00:01:11,820
+É tudo estático, você sabe, conteúdo.
+
+18
+00:01:12,330 --> 00:01:17,550
+Mas eu vou atrás das costas até aqui e sou malvado.
+
+19
+00:01:17,550 --> 00:01:19,300
+Na verdade, precisamos trazer Main, não é.
+
+20
+00:01:19,770 --> 00:01:20,070
+Sim.
+
+21
+00:01:20,070 --> 00:01:28,530
+Então, vamos em frente e trazer, digamos, Maine, que tem uma ideia do Maine, e depois
+
+22
+00:01:28,530 --> 00:01:35,880
+o literal do modelo dirá Maine dot enter html é igual a Maine.
+
+23
+00:01:37,650 --> 00:01:40,830
+Eu chamo-lhe um cartão de cartão html.
+
+24
+00:01:42,090 --> 00:01:44,010
+Então cartão html.
+
+25
+00:01:45,530 --> 00:01:54,980
+E vamos salvar isso e, assim que fizermos a solicitação aqui, obteremos os dados e, em vez de,
+
+26
+00:01:55,520 --> 00:02:04,760
+você sabe, log do console, vamos chamar create user card e vamos passar nossos dados, que é o usuário
+
+27
+00:02:04,760 --> 00:02:05,240
+dados.
+
+28
+00:02:05,630 --> 00:02:08,060
+E eles entendem que é passado aqui agora mesmo.
+
+29
+00:02:08,060 --> 00:02:10,790
+Vai ser a mesma estática, você sabe, conteúdo.
+
+30
+00:02:10,790 --> 00:02:12,950
+Mas vamos apenas ter certeza de que isso funciona pelo menos.
+
+31
+00:02:12,950 --> 00:02:19,670
+Então se eu digitar, você sabe, Brad, digite, OK, então nós pegamos um cartão, mas ainda tem John Doe nele.
+
+32
+00:02:19,670 --> 00:02:21,290
+Então vamos mudar essas coisas.
+
+33
+00:02:21,290 --> 00:02:27,170
+Agora temos acesso aos dados do usuário e, se você quiser ver exatamente o que isso lhe dá, podemos
+
+34
+00:02:27,170 --> 00:02:36,080
+pegue isso e você pode ir direto no seu navegador aqui e colar isso e colocar qualquer nome de usuário do GitHub
+
+35
+00:02:36,350 --> 00:02:37,700
+e você vai ver o que isso lhe dá.
+
+36
+00:02:37,700 --> 00:02:39,770
+Então você pode ver o avatar.
+
+37
+00:02:39,770 --> 00:02:47,530
+Você Eurail é o que queremos, que vamos querer o nome de usuário aqui.
+
+38
+00:02:47,570 --> 00:02:49,070
+Nós vamos querer a biografia.
+
+39
+00:02:49,730 --> 00:02:52,550
+Então, todos esses dados estão disponíveis para você.
+
+40
+00:02:52,560 --> 00:02:55,610
+Então vamos para a imagem aqui.
+
+41
+00:02:55,610 --> 00:02:56,630
+Vamos nos livrar disso.
+
+42
+00:02:56,630 --> 00:03:01,940
+E vamos colocar aqui o avatar do ponto do usuário sublinhando sua URL.
+
+43
+00:03:02,030 --> 00:03:07,670
+E então para o ALZ, vamos em frente e dizer usuário, vamos fazer o nome de usuário.
+
+44
+00:03:08,180 --> 00:03:16,040
+E aqui mesmo no H2, queremos usar o nome do ponto de usuário e depois a bios.
+
+45
+00:03:18,970 --> 00:03:29,180
+Então vamos nos livrar disso e vamos adicionar user dot bio e então temos aqui embaixo, como nossos seguidores
+
+46
+00:03:29,290 --> 00:03:39,940
+vai se livrar desses 300 aqui e vamos colocar no usuário dot seguidores e então temos nosso seguinte usuário
+
+47
+00:03:39,940 --> 00:03:42,190
+ponto a seguir.
+
+48
+00:03:43,000 --> 00:03:51,250
+E nossos repositórios serão user dot, public, underscore, rebholz.
+
+49
+00:03:51,250 --> 00:03:53,080
+E tudo isso vem da API.
+
+50
+00:03:53,080 --> 00:03:54,780
+Você pode ver aqui mesmo, repouso público.
+
+51
+00:03:55,240 --> 00:04:02,770
+Você tem outras coisas como gists públicas, blog da empresa que você pode usar e depois repostar aqui.
+
+52
+00:04:02,770 --> 00:04:07,150
+Vamos nos livrar deles porque na verdade faremos outro pedido para obter esses
+
+53
+00:04:07,150 --> 00:04:08,020
+e depois insira.
+
+54
+00:04:08,020 --> 00:04:10,060
+Mas vou me livrar deles por enquanto.
+
+55
+00:04:10,660 --> 00:04:12,010
+Então vamos salvar isso.
+
+56
+00:04:12,010 --> 00:04:15,550
+E vamos voltar ao nosso aplicativo aqui.
+
+57
+00:04:15,550 --> 00:04:20,260
+E vou procurar meu perfil e depois vamos.
+
+58
+00:04:20,260 --> 00:04:25,780
+Assim temos minha imagem, meu nome, minha bio número de seguidores seguindo.
+
+59
+00:04:26,200 --> 00:04:29,530
+Eu deveria seguir alguns repos de mais pessoas.
+
+60
+00:04:30,460 --> 00:04:30,780
+Bom.
+
+61
+00:04:31,660 --> 00:04:38,020
+Agora, ainda não temos os Repos, como você sabe, porque vamos chegar aos cinco primeiros
+
+62
+00:04:38,020 --> 00:04:40,000
+repos ou os cinco últimos.
+
+63
+00:04:40,450 --> 00:04:41,830
+Faremos isso no próximo vídeo.
+
+64
+00:04:41,830 --> 00:04:48,580
+Mas o que eu quero fazer é lidar com o erro, porque agora, se houver um erro, vamos
+
+65
+00:04:48,580 --> 00:04:53,980
+colocar algo que sabemos que provavelmente não é um nome e nada acontece.
+
+66
+00:04:54,340 --> 00:04:57,480
+Bem, algo acontece nos logs do console aqui.
+
+67
+00:04:57,850 --> 00:05:06,760
+Então, se houver um erro, vamos nos livrar disso e chamar uma função chamada create error
+
+68
+00:05:07,330 --> 00:05:07,990
+cartão.
+
+69
+00:05:10,080 --> 00:05:14,620
+Tudo bem, agora o que poderíamos fazer desta maneira.
+
+70
+00:05:14,640 --> 00:05:21,570
+Você também pode verificar respostas específicas como essa seria um 404 porque não seria encontrado.
+
+71
+00:05:21,810 --> 00:05:23,760
+Então nós poderíamos fazer um F aqui.
+
+72
+00:05:24,960 --> 00:05:37,860
+E poderíamos dizer que se o status do DOT da resposta do ponto de erro for igual a 404, então queremos fazer um create
+
+73
+00:05:37,860 --> 00:05:38,580
+cartão de erro.
+
+74
+00:05:38,970 --> 00:05:42,930
+E então você pode verificar outros tipos de respostas também.
+
+75
+00:05:43,560 --> 00:05:47,730
+Mas vamos em frente e deixamos assim, porque se ele tentar encontrar um usuário que não existe,
+
+76
+00:05:47,730 --> 00:05:50,240
+será um status 404.
+
+77
+00:05:50,790 --> 00:05:55,350
+Então, isso cria um cartão de erro, vamos na verdade você sabe o quê?
+
+78
+00:05:55,350 --> 00:05:56,840
+Vamos colocar uma mensagem aqui.
+
+79
+00:05:57,420 --> 00:06:07,320
+Portanto, criar cartão de erro receberá uma mensagem que diz que não há ou diremos apenas nenhum usuário.
+
+80
+00:06:10,450 --> 00:06:13,900
+Nenhum perfil com este nome de usuário.
+
+81
+00:06:14,560 --> 00:06:21,820
+Tudo bem, então vamos descer aqui e vamos criar essa função de função, criar cartão de erro, que
+
+82
+00:06:21,820 --> 00:06:29,920
+recebe uma mensagem e vamos fazer a mesma coisa que fizemos acima no cartão de usuário que criará
+
+83
+00:06:29,920 --> 00:06:30,670
+uma variável.
+
+84
+00:06:31,090 --> 00:06:41,920
+Chamaremos este cartão de HTML e definiremos como literal de modelo e teremos um div com a classe
+
+85
+00:06:43,480 --> 00:06:44,650
+de cartão
+
+86
+00:06:47,470 --> 00:06:56,980
+e dentro desta div teremos apenas um H1 com qualquer que seja essa mensagem.
+
+87
+00:06:58,140 --> 00:07:07,050
+OK, e então pegaremos o elemento principal e definiremos o HTML interno igual ao HTML do cartão.
+
+88
+00:07:07,420 --> 00:07:08,260
+Então vamos salvar isso.
+
+89
+00:07:08,260 --> 00:07:14,710
+Agora vou digitar algo aqui que definitivamente não é um nome e que não funcionou.
+
+90
+00:07:16,220 --> 00:07:16,610
+Ver.
+
+91
+00:07:23,550 --> 00:07:28,080
+Mensagem de erro de referência não é oh, eu coloquei uma mensagem MSG.
+
+92
+00:07:28,570 --> 00:07:29,800
+Tudo bem, vamos tentar isso de novo.
+
+93
+00:07:32,320 --> 00:07:33,280
+Então não há problema.
+
+94
+00:07:33,280 --> 00:07:34,840
+Nenhum perfil com este nome de usuário.
+
+95
+00:07:34,840 --> 00:07:39,910
+E isso vai nos dizer aqui embaixo que ele teve uma boa sensação no console, mas bom.
+
+96
+00:07:39,910 --> 00:07:40,600
+Isso é o que eu quero.
+
+97
+00:07:40,610 --> 00:07:46,450
+Então nós poderíamos tentar, tipo, você sabe, Floren Pop 17 e nós temos Florens.
+
+98
+00:07:46,780 --> 00:07:48,700
+Linda foto e perfil.
+
+99
+00:07:49,750 --> 00:07:50,110
+Tudo bem.
+
+100
+00:07:50,120 --> 00:07:53,410
+Então, no próximo vídeo, queremos trabalhar nos repositórios.
+
+101
+00:07:53,410 --> 00:07:59,800
+Queremos mostrar os cinco primeiros, não os cinco primeiros, os cinco mais recentes aqui com um link para clicar
+
+102
+00:07:59,800 --> 00:08:02,140
+e visite esses repositórios.

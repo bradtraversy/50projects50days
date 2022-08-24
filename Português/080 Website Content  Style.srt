@@ -1,0 +1,679 @@
+﻿1
+00:00:00,180 --> 00:00:03,990
+Tudo bem, então vamos começar em nosso sticky nav, e a maneira que eu vou fazer isso é que vamos fazer
+
+2
+00:00:03,990 --> 00:00:09,600
+todo o e-mail de vez em quando vamos estilizar todo o resto da página, incluindo a imagem principal,
+
+3
+00:00:09,780 --> 00:00:15,150
+a área do herói com a sobreposição e, no próximo vídeo, estilizará a navegação e adicionará um pouco
+
+4
+00:00:15,150 --> 00:00:21,180
+pouco de JavaScript que precisamos para dar aquele efeito onde está tornando-o ativo e
+
+5
+00:00:21,180 --> 00:00:23,880
+não está ativo, dependendo de onde estamos rolando na página.
+
+6
+00:00:24,180 --> 00:00:24,510
+Tudo bem.
+
+7
+00:00:24,520 --> 00:00:26,600
+Então vamos começar em nosso HTML aqui.
+
+8
+00:00:26,610 --> 00:00:30,930
+Diremos apenas navegação fixa para o título.
+
+9
+00:00:30,930 --> 00:00:35,970
+E aqui embaixo, a primeira coisa que vamos ter aqui é a navegação.
+
+10
+00:00:35,970 --> 00:00:40,530
+Então, vou usar uma tag de navegação HTML5 e também vou dar uma aula de NAV.
+
+11
+00:00:41,020 --> 00:00:46,950
+E lá dentro, queremos uma classe de contêiner porque não queremos tudo, não queremos o logotipo neste
+
+12
+00:00:46,950 --> 00:00:53,490
+lado e os links deste lado para grudar nas bordas se o navegador for muito longo ou muito largo.
+
+13
+00:00:53,610 --> 00:00:57,390
+Então, vamos nos contentar com uma largura máxima de mil e duzentos no contêiner.
+
+14
+00:00:57,810 --> 00:00:59,850
+E então aqui dentro queremos duas coisas.
+
+15
+00:00:59,850 --> 00:01:01,500
+Um vai ser o único.
+
+16
+00:01:01,720 --> 00:01:03,440
+Eu só vou dar a isso uma classe de logotipo.
+
+17
+00:01:03,660 --> 00:01:05,730
+Normalmente, você terá um link ao redor do logotipo.
+
+18
+00:01:05,730 --> 00:01:09,840
+Basta ir para, você sabe, esta página aqui e aqui dentro.
+
+19
+00:01:09,840 --> 00:01:16,290
+Eu direi apenas meu site, OK, e então sob o que queremos ter nossa lista não ordenada com nosso
+
+20
+00:01:16,290 --> 00:01:18,000
+itens da lista e nossos links.
+
+21
+00:01:18,420 --> 00:01:20,360
+E estes não vão realmente a lugar nenhum.
+
+22
+00:01:20,370 --> 00:01:23,510
+Digamos que a casa terá para estes.
+
+23
+00:01:23,520 --> 00:01:27,890
+Então vamos fazer em casa sobre os serviços.
+
+24
+00:01:27,900 --> 00:01:30,690
+Essas são as páginas padrão que usamos.
+
+25
+00:01:31,950 --> 00:01:37,480
+E então eu vou adicionar uma classe de ativos em casa.
+
+26
+00:01:37,710 --> 00:01:41,640
+Então, basicamente, queremos apenas um link de cor diferente para qualquer página em que você esteja.
+
+27
+00:01:42,150 --> 00:01:46,890
+Então, se eu salvar isso, vai parecer muito estranho apenas por causa dos estilos padrão que temos, colocando
+
+28
+00:01:46,890 --> 00:01:48,350
+tudo no meio e assim por diante.
+
+29
+00:01:48,900 --> 00:01:54,950
+Então, vamos passar para a navegação agora e teremos nossa área de heróis.
+
+30
+00:01:54,960 --> 00:01:56,580
+Então vamos ter uma classe de herói.
+
+31
+00:01:56,910 --> 00:02:02,430
+E também queremos o container aqui porque queremos conter o conteúdo e vamos fazer um H1.
+
+32
+00:02:02,430 --> 00:02:10,830
+Daremos boas-vindas ao meu site e, em seguida, um parágrafo e apenas entraremos no Lorem 10 para nos dar dez
+
+33
+00:02:10,830 --> 00:02:12,230
+palavras do texto.
+
+34
+00:02:12,950 --> 00:02:13,350
+Tudo bem.
+
+35
+00:02:13,350 --> 00:02:20,340
+Agora, sob o herói terá uma seção e a seção também usará a classe de contêiner e
+
+36
+00:02:20,340 --> 00:02:24,180
+também dê uma classe de conteúdo e faremos um H.
+
+37
+00:02:24,660 --> 00:02:31,170
+Vamos fazer um H2 aqui e dizer conteúdo um parágrafo.
+
+38
+00:02:31,170 --> 00:02:32,970
+Faremos Lorem cem.
+
+39
+00:02:34,060 --> 00:02:42,430
+E então sob esse parágrafo vai fazer, digamos, um H3 vai dizer conteúdo para obviamente isso seria
+
+40
+00:02:42,430 --> 00:02:44,400
+o que você quiser em seu site.
+
+41
+00:02:44,590 --> 00:02:45,970
+Então, nós só precisamos de algo.
+
+42
+00:02:46,450 --> 00:02:48,370
+Então, alguns parágrafos e títulos.
+
+43
+00:02:48,370 --> 00:02:48,670
+Bom.
+
+44
+00:02:49,080 --> 00:02:55,090
+Então agora o que eu vou fazer é apenas comentar o agora por enquanto, porque eu quero estilizar o resto
+
+45
+00:02:55,090 --> 00:02:55,600
+a página.
+
+46
+00:02:55,600 --> 00:02:59,530
+Dessa forma, podemos fazer tudo o que precisamos com a barra de navegação no próximo vídeo.
+
+47
+00:03:00,050 --> 00:03:06,310
+Então, em nossa folha de estilo aqui, vamos em frente e mudar no corpo.
+
+48
+00:03:06,320 --> 00:03:08,950
+Na verdade, não precisamos de flaks ou algo assim.
+
+49
+00:03:09,970 --> 00:03:12,250
+Então vamos nos livrar de tudo isso, na verdade.
+
+50
+00:03:13,300 --> 00:03:21,070
+E então vamos definir uma cor de dois, dois, dois para o texto e vamos usar open sans is a find.
+
+51
+00:03:21,070 --> 00:03:22,200
+Parece um pouco mais bonito.
+
+52
+00:03:23,020 --> 00:03:34,060
+Então, a família de pontos de interrogação de sucesso definiu isso para abrir mais Sande's e adicionaremos isso aqui sem sans.
+
+53
+00:03:35,080 --> 00:03:37,510
+E então eu quero adicionar um reset.
+
+54
+00:03:37,510 --> 00:03:42,230
+Então queremos tirar a margem e o preenchimento de tudo que inclui o corpo.
+
+55
+00:03:43,240 --> 00:03:49,240
+OK, então agora não há margem e preenchimento e, em seguida, no corpo, vou adicionar apenas preenchimento na parte inferior
+
+56
+00:03:50,020 --> 00:03:52,840
+de 50 pixels apenas para dar algum espaço na parte inferior.
+
+57
+00:03:53,560 --> 00:03:55,600
+Muito bem, agora o recipiente.
+
+58
+00:03:57,910 --> 00:04:05,050
+Vou definir uma largura máxima de mil e duzentos pixels e, em seguida, para a margem, queremos zero no topo e
+
+59
+00:04:05,050 --> 00:04:08,560
+inferior e depois automático à esquerda e à direita, o que o colocará no meio.
+
+60
+00:04:08,830 --> 00:04:13,150
+Agora, se eu esticar isso para que você possa ver em qualquer lugar em que usamos o contêiner, ele terminará aqui,
+
+61
+00:04:13,300 --> 00:04:16,810
+incluindo o NAV, que acabei de comentar agora.
+
+62
+00:04:17,680 --> 00:04:18,100
+Tudo bem.
+
+63
+00:04:18,130 --> 00:04:23,460
+Podemos fazer isso um pouco menor aqui e aqui.
+
+64
+00:04:23,770 --> 00:04:24,210
+Tudo bem.
+
+65
+00:04:24,430 --> 00:04:28,120
+Agora, as coisas do NAV irão para aqui.
+
+66
+00:04:28,120 --> 00:04:32,840
+Mas vamos apenas colocar um para fazer aqui, então para fazer agora.
+
+67
+00:04:33,920 --> 00:04:34,360
+Tudo bem.
+
+68
+00:04:34,360 --> 00:04:37,930
+Agora eu quero trabalhar na área do herói, que é essa aqui.
+
+69
+00:04:37,930 --> 00:04:43,810
+Eu quero que isso ocupe a tela inteira aqui, todas as alturas da janela de visualização com uma imagem de fundo,
+
+70
+00:04:43,810 --> 00:04:44,870
+com sobreposição.
+
+71
+00:04:45,130 --> 00:04:54,010
+Então, vamos pegar a classe de herói e vamos adicionar o plano de fundo.
+
+72
+00:04:55,290 --> 00:05:01,260
+Primeiro a imagem, então a imagem de fundo será neutra e eu vou pegá-la.
+
+73
+00:05:01,560 --> 00:05:07,320
+É do site pixels pontocom e, claro, você pode usar qualquer imagem que quiser aqui.
+
+74
+00:05:07,770 --> 00:05:12,720
+E se eu disser que só vamos ver até a altura do conteúdo, então não podemos nem, sabe,
+
+75
+00:05:12,720 --> 00:05:13,800
+decifre a imagem.
+
+76
+00:05:14,130 --> 00:05:15,570
+Mas vamos adicionar uma altura.
+
+77
+00:05:17,760 --> 00:05:21,650
+Na verdade, vou fazer isso um pouco mais amplo.
+
+78
+00:05:22,680 --> 00:05:25,960
+Então vamos fazer a altura disso, ocupar toda a viewport.
+
+79
+00:05:25,980 --> 00:05:29,220
+Então, cem alturas de viewport como essa agora.
+
+80
+00:05:29,220 --> 00:05:33,090
+Eu quero adicionar algumas propriedades de plano de fundo porque isso não parece como eu quero.
+
+81
+00:05:33,510 --> 00:05:41,760
+Então vamos definir primeiro, vamos fazer a repetição em segundo plano, definir isso como sem repetição, então vamos fazer o segundo plano
+
+82
+00:05:42,210 --> 00:05:45,420
+tamanho e vamos definir isso para cobrir.
+
+83
+00:05:46,100 --> 00:05:50,550
+OK, assim que eu fizer isso, podemos ver a imagem inteira e então vou posicioná-la.
+
+84
+00:05:50,560 --> 00:05:58,830
+Então, a posição de fundo, vamos definir isso para o centro inferior.
+
+85
+00:06:00,560 --> 00:06:01,070
+Tudo bem.
+
+86
+00:06:01,080 --> 00:06:04,080
+E então, sim, isso deve funcionar para a imagem de fundo.
+
+87
+00:06:06,850 --> 00:06:12,870
+OK, agora o conteúdo dentro, queremos lidar com isso, então vamos abaixo da altura aqui.
+
+88
+00:06:12,880 --> 00:06:27,160
+Vamos definir a cor disso para branco e vamos exibir pretos para que possamos justificar o centro de conteúdo
+
+89
+00:06:27,160 --> 00:06:33,810
+e também queremos alinhar os itens ao centro.
+
+90
+00:06:33,820 --> 00:06:34,990
+Então, ele vai colocá-lo bem no meio.
+
+91
+00:06:35,020 --> 00:06:39,820
+Também queremos enviar uma linha para o centro assim.
+
+92
+00:06:40,270 --> 00:06:42,010
+E vamos adicionar.
+
+93
+00:06:44,620 --> 00:06:51,700
+Vamos ver, vamos adicionar uma posição relativa, porque vamos adicionar uma sobreposição dentro dela,
+
+94
+00:06:52,060 --> 00:06:57,490
+que será posicionado absoluto, também quero adicionar um pouco de margem inferior para empurrar o conteúdo abaixo
+
+95
+00:06:57,490 --> 00:06:57,970
+baixo.
+
+96
+00:06:57,970 --> 00:07:01,450
+Então os 20 pixels, então isso ocupa cem alturas de viewport.
+
+97
+00:07:01,450 --> 00:07:04,010
+E então, quando rolamos, podemos ver o restante do conteúdo.
+
+98
+00:07:05,200 --> 00:07:11,110
+Agora para a sobreposição, queremos adicionar uma sobreposição porque esta imagem é muito brilhante.
+
+99
+00:07:11,140 --> 00:07:13,620
+Este é o contraste não está certo aqui.
+
+100
+00:07:13,690 --> 00:07:14,620
+Isso é ilegível.
+
+101
+00:07:14,630 --> 00:07:19,030
+Quero dizer, é legível, mas não é legível o suficiente.
+
+102
+00:07:19,510 --> 00:07:24,790
+Assim, poderíamos adicionar um elemento extra no HTML para adicionar a sobreposição.
+
+103
+00:07:25,600 --> 00:07:29,600
+Mas o que vamos fazer é usar o BD para pseudo seletor.
+
+104
+00:07:29,920 --> 00:07:37,300
+Então, se dissermos herói, dois pontos, dois pontos antes dele, basicamente você pode pensar nisso como adicionar como um
+
+105
+00:07:37,300 --> 00:07:38,970
+elemento fantasma ao estilo.
+
+106
+00:07:39,340 --> 00:07:46,630
+Então, antes e quando usamos antes ou depois, temos que adicionar conteúdo e você pode realmente armazenar algo.
+
+107
+00:07:47,520 --> 00:07:53,940
+Lá você pode adicionar conteúdo como hello, que está bem aqui, para que seja inserido com o.
+
+108
+00:07:54,630 --> 00:07:57,840
+Agora, não queremos adicionar nenhum texto, então vamos deixar em branco.
+
+109
+00:07:58,440 --> 00:08:03,010
+E então queremos que isso seja colocado sobre essa coisa toda, sobre o herói.
+
+110
+00:08:03,050 --> 00:08:09,750
+Então vamos posicioná-lo absoluto dentro do herói, que posicionamos relativo.
+
+111
+00:08:10,210 --> 00:08:13,300
+E depois que fizermos isso, queremos definir o topo.
+
+112
+00:08:13,800 --> 00:08:20,100
+Então, basicamente, digamos que vamos iniciá-lo no zero superior e na posição zero esquerda e queremos que ele cubra
+
+113
+00:08:20,100 --> 00:08:21,090
+a coisa toda.
+
+114
+00:08:21,090 --> 00:08:24,420
+Então, com cem por cento de altura, 100 por cento.
+
+115
+00:08:25,880 --> 00:08:26,300
+Tudo bem.
+
+116
+00:08:26,310 --> 00:08:32,580
+E então podemos adicionar um plano de fundo ou como cor de fundo.
+
+117
+00:08:32,850 --> 00:08:34,650
+Então cor de fundo.
+
+118
+00:08:35,730 --> 00:08:42,960
+Agora, se eu disser fundo, cor vermelha, você pode ver que ele adiciona uma sobreposição inteira a essa área porque
+
+119
+00:08:42,960 --> 00:08:44,250
+nós o posicionamos em relação.
+
+120
+00:08:44,250 --> 00:08:48,550
+Começamos no canto superior esquerdo e tivemos que ir total com altura total.
+
+121
+00:08:48,960 --> 00:08:51,770
+Agora, obviamente, não queremos uma cor sólida como esta.
+
+122
+00:08:52,110 --> 00:08:58,320
+Então o que vamos fazer é usar nosso GBA vermelho, verde, azul, alfa, e vamos torná-lo preto e alfa.
+
+123
+00:08:58,320 --> 00:09:01,750
+O último valor é a transparência ou a opacidade.
+
+124
+00:09:02,250 --> 00:09:04,830
+Então, vamos definir isso para zero vírgula seis.
+
+125
+00:09:05,160 --> 00:09:07,670
+E agora você pode ver que temos essa sobreposição.
+
+126
+00:09:07,680 --> 00:09:13,020
+Se eu fizer mais alto, como zero vírgula nove, se for mais escuro, se eu fizer zero vírgula dois, é mais claro.
+
+127
+00:09:13,020 --> 00:09:16,080
+Acho que seis é e acho que parece bom.
+
+128
+00:09:16,080 --> 00:09:17,620
+Ou talvez cinco.
+
+129
+00:09:18,540 --> 00:09:23,790
+Agora, o problema aqui é que o texto está realmente por trás da sobreposição.
+
+130
+00:09:23,790 --> 00:09:26,070
+Então o texto está escurecido, o que não queremos.
+
+131
+00:09:26,340 --> 00:09:33,120
+Então, vou definir um índice Z, que é basicamente o quão perto de você está o quão perto da tela um elemento
+
+132
+00:09:33,120 --> 00:09:33,450
+é.
+
+133
+00:09:33,720 --> 00:09:35,210
+Nós vamos empurrar isso de volta.
+
+134
+00:09:35,220 --> 00:09:45,330
+Então vamos fazer menos dois, o que não funcionou porque eu quero definir isso para menos um e definir isso
+
+135
+00:09:45,330 --> 00:09:46,910
+o herói para menos dois.
+
+136
+00:09:47,340 --> 00:09:48,810
+Então esse é o índice.
+
+137
+00:09:50,310 --> 00:09:52,590
+Vamos definir isso para menos dois.
+
+138
+00:09:53,160 --> 00:09:57,750
+E agora você pode ver que vai a imagem, a sobreposição e depois o texto.
+
+139
+00:09:59,280 --> 00:09:59,700
+Tudo bem.
+
+140
+00:09:59,710 --> 00:10:05,190
+Agora eu só quero fazer cada um um pouco maior e posicioná-lo melhor.
+
+141
+00:10:05,190 --> 00:10:17,340
+Então vamos fazer o herói H1 e definir o tamanho da fonte para quarenta e seis pixels e vamos adicionar a mesma margem.
+
+142
+00:10:18,150 --> 00:10:18,870
+Então margem.
+
+143
+00:10:18,870 --> 00:10:20,010
+Eu quero subir um pouco.
+
+144
+00:10:20,010 --> 00:10:28,020
+Então negativo 20 pixels zero e depois 20 pixels na parte inferior e depois para o parágrafo.
+
+145
+00:10:28,290 --> 00:10:38,490
+Então herói P vamos fazer o tamanho da fonte vinte pixels e vamos fazer o espaçamento das letras.
+
+146
+00:10:38,490 --> 00:10:39,090
+Vai fazer.
+
+147
+00:10:39,810 --> 00:10:41,610
+Faremos um pixel para isso.
+
+148
+00:10:42,970 --> 00:10:48,370
+Ritmo que parece um pouco melhor e, para o conteúdo, precisamos separar algumas dessas coisas
+
+149
+00:10:48,370 --> 00:10:48,590
+Fora.
+
+150
+00:10:48,640 --> 00:10:58,060
+Então, digamos que o conteúdo tenha dois anos e também tenhamos um H3 e digamos que o tamanho da fonte para isso servirá
+
+151
+00:10:58,330 --> 00:10:59,370
+vamos fazer uma porcentagem.
+
+152
+00:10:59,380 --> 00:11:03,190
+Portanto, cento e cinquenta por cento para aqueles.
+
+153
+00:11:04,090 --> 00:11:09,250
+E vamos também fazer uma margem de 10 pixels na parte superior e inferior.
+
+154
+00:11:09,250 --> 00:11:11,560
+Separe isso do parágrafo.
+
+155
+00:11:11,830 --> 00:11:19,360
+E então para os parágrafos, digamos conteúdo P, digamos cor cinco cinco cinco.
+
+156
+00:11:19,840 --> 00:11:23,760
+E a altura da linha pode ver como as linhas estão muito próximas.
+
+157
+00:11:23,770 --> 00:11:32,050
+Então vamos fazer uma altura de linha de 30 pixels e vamos fazer um espaçamento entre letras de um ponto e cinco pixels.
+
+158
+00:11:32,410 --> 00:11:39,580
+Então, se dermos uma olhada nos dados reais até certo ponto, isso é meio que muito.
+
+159
+00:11:39,850 --> 00:11:41,590
+Vamos fazer um ponto dois para isso.
+
+160
+00:11:43,240 --> 00:11:49,330
+Certo, e na verdade, vamos fazer 20 pixels nos títulos.
+
+161
+00:11:50,830 --> 00:11:51,820
+Tudo bem, então isso é bom.
+
+162
+00:11:53,740 --> 00:11:57,880
+Agora para o Navar e deixe-me mostrar se eu faço isso maior.
+
+163
+00:11:59,020 --> 00:12:05,740
+OK, parece que não é muito, mas é o começo de, você sabe, 90% dos sites
+
+164
+00:12:05,740 --> 00:12:08,040
+lá fora, apenas herói e depois algum conteúdo.
+
+165
+00:12:08,740 --> 00:12:11,350
+Então eu vou descomentar o NAV.
+
+166
+00:12:13,090 --> 00:12:18,810
+E assim que eu fizer isso, você verá que temos aqui completamente sem estilo.
+
+167
+00:12:19,030 --> 00:12:23,560
+Então, no próximo vídeo, vamos seguir em frente e estilizar o NAV e adicionar um pouco de JavaScript
+
+168
+00:12:23,560 --> 00:12:29,710
+adicionar e remover dinamicamente uma classe para basicamente dar aquele efeito que mostrei na introdução.
+
+169
+00:12:29,830 --> 00:12:30,160
+Tudo bem.
+
+170
+00:12:30,160 --> 00:12:31,570
+Então te vejo no próximo vídeo.

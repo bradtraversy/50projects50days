@@ -1,0 +1,379 @@
+1
+00:00:00,270 --> 00:00:06,360
+OK, so now we're going to make this function by having it count up to whatever this data target is
+
+2
+00:00:06,360 --> 00:00:07,730
+and we want to put it in here.
+
+3
+00:00:07,740 --> 00:00:10,230
+So basically the entire text of counter.
+
+4
+00:00:10,710 --> 00:00:12,480
+So we have multiple counters.
+
+5
+00:00:12,660 --> 00:00:16,640
+That means that we need to bring it in with query selector all.
+
+6
+00:00:16,680 --> 00:00:26,640
+So let's say CONSED counters, set that to document Dods query selector all all the classes of counter
+
+7
+00:00:26,640 --> 00:00:29,660
+and that's going to give us a node list which is similar to an array.
+
+8
+00:00:29,970 --> 00:00:34,980
+So we want to then loop through that with a for each, for each takes in a function.
+
+9
+00:00:35,160 --> 00:00:45,180
+So we'll say for each counter then let's first of all take the counter so that that specific element
+
+10
+00:00:45,180 --> 00:00:51,600
+and let's set the entire text to zero and I'm going to set it to a string of zero.
+
+11
+00:00:52,650 --> 00:00:58,340
+So now it's going to just show zero in, you know, inside of the div right here.
+
+12
+00:00:58,350 --> 00:00:59,640
+So that's in our text.
+
+13
+00:00:59,640 --> 00:01:06,060
+Will either you can either put something in there like we are now or you can get something from it with
+
+14
+00:01:06,360 --> 00:01:07,230
+inter text.
+
+15
+00:01:07,830 --> 00:01:15,420
+So I'm going to have a function in here called update counter and this is going to be an arrow function
+
+16
+00:01:16,110 --> 00:01:18,040
+and then we want to get the target.
+
+17
+00:01:18,060 --> 00:01:25,260
+So let's say const target, which is in the data target attributes so we can take the counter and we
+
+18
+00:01:25,260 --> 00:01:31,410
+can call doGet get attribute and the attribute we want to get is going to be data Dasch target.
+
+19
+00:01:32,010 --> 00:01:33,710
+Now this is going to be a string.
+
+20
+00:01:33,720 --> 00:01:38,790
+In fact, I'll go ahead and console log and I'm going to use the type of operator and show you what
+
+21
+00:01:38,790 --> 00:01:40,230
+data type target is.
+
+22
+00:01:40,230 --> 00:01:41,820
+Also the value of target.
+
+23
+00:01:42,650 --> 00:01:46,860
+If I go down here and I open up my console, actually nothing's going to show because we haven't called
+
+24
+00:01:46,860 --> 00:01:47,280
+this.
+
+25
+00:01:47,580 --> 00:01:52,710
+We want to call it so outside of update counter call update counter.
+
+26
+00:01:52,710 --> 00:01:57,720
+And it's going to just call it once and we're going to see the type, which is a string.
+
+27
+00:01:57,720 --> 00:02:04,110
+And then whatever the data target is now the changes to a number, which is what I want to do, because
+
+28
+00:02:04,110 --> 00:02:06,570
+we're going to want to do some math on it.
+
+29
+00:02:07,050 --> 00:02:13,990
+We could either wrap it in a number constructor or we could use pass int or we can just add a plus sign.
+
+30
+00:02:14,220 --> 00:02:18,460
+So if we save that now, you can see down here that turns it into a number.
+
+31
+00:02:19,830 --> 00:02:25,440
+So let's get rid of this and let's create another variable called C, and this is going to be whatever
+
+32
+00:02:25,440 --> 00:02:26,880
+is in the inner text.
+
+33
+00:02:26,880 --> 00:02:29,410
+We set it to zero here, but now we want to get it.
+
+34
+00:02:29,430 --> 00:02:35,550
+So let's say counter dot, enter text and we want that to be a number as well.
+
+35
+00:02:35,560 --> 00:02:42,410
+So I'm just going to add a plus sign here and then we're going to create the increment.
+
+36
+00:02:42,420 --> 00:02:47,000
+So we need to decide how how much do we want to increment this by?
+
+37
+00:02:47,010 --> 00:02:51,470
+And depending on that number, that'll depend on how fast or slow it is.
+
+38
+00:02:51,780 --> 00:02:53,490
+So we want the target.
+
+39
+00:02:54,150 --> 00:02:56,700
+Let's take the target and let's divide by.
+
+40
+00:02:56,700 --> 00:02:58,410
+And this could be anything you want.
+
+41
+00:02:59,280 --> 00:03:06,330
+If we divide it by if we just use target, it's just going to it's going to increment by itself.
+
+42
+00:03:06,340 --> 00:03:10,680
+So twelve 5000 and it'll just basically just flick right on the screen.
+
+43
+00:03:10,680 --> 00:03:12,810
+We want it to count upwards.
+
+44
+00:03:12,820 --> 00:03:14,880
+So I'm going to divide it by two hundred.
+
+45
+00:03:15,390 --> 00:03:17,400
+And you can experiment with this if you want.
+
+46
+00:03:17,430 --> 00:03:20,820
+Now I'm going to console log increment here.
+
+47
+00:03:23,310 --> 00:03:30,690
+So the first one remember that is twelve hundred and that divided by 200 will be sixty five thousand
+
+48
+00:03:31,500 --> 00:03:32,790
+by two hundred twenty five.
+
+49
+00:03:32,790 --> 00:03:36,120
+Seventy five hundred three seventy three thirty seven point five.
+
+50
+00:03:36,600 --> 00:03:41,540
+So let's go ahead and add an if statement here.
+
+51
+00:03:41,550 --> 00:03:49,230
+We want to make sure that that c no, we want to make sure that that is less than the target because
+
+52
+00:03:49,230 --> 00:03:50,790
+we don't want to go past the target.
+
+53
+00:03:51,150 --> 00:03:58,560
+So if it is, then let's take the counter and let's set the entire text and I'm going to set that to
+
+54
+00:03:58,560 --> 00:03:59,820
+a set of tactics.
+
+55
+00:04:00,270 --> 00:04:06,870
+And we want to take that C and we want to add whatever that increment is.
+
+56
+00:04:06,990 --> 00:04:09,600
+OK, but I also want to round this up.
+
+57
+00:04:09,600 --> 00:04:11,340
+So let's let's do math.
+
+58
+00:04:11,340 --> 00:04:12,420
+Dot, seal.
+
+59
+00:04:12,870 --> 00:04:18,370
+So math dot seal is going to round this number up, OK?
+
+60
+00:04:18,870 --> 00:04:27,360
+Now if I save that, you can see we get sixty 25, 38, which we just saw in the console, it was thirty
+
+61
+00:04:27,360 --> 00:04:30,390
+seven point five, but we're rounding it up now.
+
+62
+00:04:30,390 --> 00:04:33,270
+We want this not to just stop on the first increment.
+
+63
+00:04:33,270 --> 00:04:38,040
+We wanted to keep going until, you know, until it reaches this, this right here.
+
+64
+00:04:38,310 --> 00:04:40,860
+So we need to keep calling update counter.
+
+65
+00:04:41,490 --> 00:04:45,990
+Now, if we just call it like this, it's not going to work it.
+
+66
+00:04:46,230 --> 00:04:52,050
+I mean, it's going to go up, but it's not going to do that, you know, the count up, the animation
+
+67
+00:04:52,050 --> 00:04:52,890
+type effect.
+
+68
+00:04:53,280 --> 00:04:59,760
+So what we want to do is just pass this in a set time out and we want to run it, let's say.
+
+69
+00:04:59,840 --> 00:05:07,370
+Every hour, not every, but we want to wait one millisecond before we run it that way, it waits that
+
+70
+00:05:07,370 --> 00:05:12,710
+millisecond, which gives it time, and then it will go ahead and, you know, keep running and it's
+
+71
+00:05:12,710 --> 00:05:17,630
+incrementing by, you know, 60, 25, 38, whatever it was.
+
+72
+00:05:18,170 --> 00:05:20,930
+And if you want it to go slower, you could do.
+
+73
+00:05:21,180 --> 00:05:23,750
+You can make this a bigger number, like a thousand.
+
+74
+00:05:24,170 --> 00:05:31,130
+And you can see that takes longer if we do, let's say ten, very quick.
+
+75
+00:05:31,140 --> 00:05:33,770
+So it's up to you on how fast you want to make this.
+
+76
+00:05:33,770 --> 00:05:35,060
+I think 200 is good.
+
+77
+00:05:35,630 --> 00:05:37,430
+And then I just want to put an elsea.
+
+78
+00:05:37,430 --> 00:05:47,540
+So else then let's just set the counter dot in our text and set it directly to whatever the target is,
+
+79
+00:05:48,470 --> 00:05:54,380
+because we obviously we don't want it to go above these numbers which are in the target, and that's
+
+80
+00:05:54,380 --> 00:05:55,110
+pretty much it.
+
+81
+00:05:55,130 --> 00:06:01,970
+So obviously, if you wanted to change changes, if you wanted to do, you know, 500000 and save,
+
+82
+00:06:02,930 --> 00:06:08,540
+it's going to it's even though this is this number is way higher than these, it's still going to take
+
+83
+00:06:08,540 --> 00:06:09,760
+the same amount of time.
+
+84
+00:06:09,770 --> 00:06:15,470
+It's not like these will finish first and then this is going to finish after because we took whatever
+
+85
+00:06:15,470 --> 00:06:19,850
+the target is and we divide it by a specific number, OK?
+
+86
+00:06:19,850 --> 00:06:24,810
+And then it's going to increment by that so you can set these to absolutely anything.
+
+87
+00:06:25,430 --> 00:06:25,790
+All right.
+
+88
+00:06:25,790 --> 00:06:27,590
+So I hope that made sense.
+
+89
+00:06:27,590 --> 00:06:34,130
+And of course, you could add this to your website, just a little widget, and it doesn't have to be
+
+90
+00:06:34,130 --> 00:06:36,350
+follower's or it can be any number at all.
+
+91
+00:06:36,530 --> 00:06:39,850
+And it's pretty easy to to implement.
+
+92
+00:06:39,860 --> 00:06:41,840
+So no query or anything like that.
+
+93
+00:06:42,680 --> 00:06:43,270
+But that's it.
+
+94
+00:06:43,520 --> 00:06:44,380
+I hope you enjoyed it.
+
+95
+00:06:44,390 --> 00:06:46,190
+Let's move on to the next project.

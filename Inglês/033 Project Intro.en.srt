@@ -1,0 +1,91 @@
+1
+00:00:00,210 --> 00:00:06,120
+So in this project, we're going to build a little application that shows you the key code and the code
+
+2
+00:00:06,120 --> 00:00:07,900
+for any key on your keyboard.
+
+3
+00:00:07,920 --> 00:00:13,350
+So if I come to the page here, it says Press any key to get the key code, I'm going to hit Al and
+
+4
+00:00:13,350 --> 00:00:20,340
+it'll show me the actual key, which is L the key code, which is 76 and the code, which is key L if
+
+5
+00:00:20,340 --> 00:00:24,150
+I hit A by one, we get 49 digit one.
+
+6
+00:00:24,150 --> 00:00:27,720
+If I hit tab, we get tab nine is the key code.
+
+7
+00:00:28,050 --> 00:00:34,200
+So I mean this is going to be really simple, but it can be useful if you need to get the code for something.
+
+8
+00:00:34,830 --> 00:00:42,420
+I just want to show you if I search for JavaScript key codes, the first result here is, is the application
+
+9
+00:00:42,420 --> 00:00:43,750
+that this is based off of.
+
+10
+00:00:43,870 --> 00:00:51,090
+If I hit a key, gives me the code key code also gives you the the which property which is deprecated.
+
+11
+00:00:51,360 --> 00:00:53,430
+And I also want to mention that key code.
+
+12
+00:00:53,460 --> 00:00:56,580
+So this one right here is actually deprecated.
+
+13
+00:00:56,970 --> 00:01:05,640
+So if we look at the Murdochs, you'll see that this is deprecated and it's recommended to use DOT code,
+
+14
+00:01:05,640 --> 00:01:06,960
+which we're also showing.
+
+15
+00:01:07,410 --> 00:01:13,110
+And it says, you know, this property is useful when you want to handle keys based on their physical
+
+16
+00:01:13,110 --> 00:01:18,810
+positions on an input device rather than the characters associated with those keys common in games and
+
+17
+00:01:18,810 --> 00:01:19,620
+stuff like that.
+
+18
+00:01:20,010 --> 00:01:20,450
+All right.
+
+19
+00:01:20,460 --> 00:01:24,030
+So, I mean, this key code does still work.
+
+20
+00:01:24,030 --> 00:01:27,960
+If it doesn't, you know, if you're watching this in the future, then you can just simply get rid
+
+21
+00:01:27,960 --> 00:01:29,790
+of this box and just display the code.
+
+22
+00:01:30,150 --> 00:01:32,220
+But we're going to go ahead and get started.
+
+23
+00:01:32,580 --> 00:01:33,780
+So let's get into it.

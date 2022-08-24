@@ -1,0 +1,643 @@
+﻿1
+00:00:00,150 --> 00:00:08,040
+OK, agora que eu lhe dou apenas uma visão geral muito breve da solicitação e resposta HTP e da API Fetch,
+
+2
+00:00:08,310 --> 00:00:10,460
+vamos prosseguir e terminar nossa aplicação aqui.
+
+3
+00:00:10,470 --> 00:00:16,340
+Então eu tenho meu script, JS. E a primeira coisa que quero fazer é trazer o que preciso do Don.
+
+4
+00:00:16,350 --> 00:00:17,910
+Então temos nossa piada.
+
+5
+00:00:18,460 --> 00:00:26,970
+Vou chamar essa piada de Al para elemento de piada e definir isso como document doGet Element by D e that
+
+6
+00:00:26,970 --> 00:00:28,860
+deve ter uma idéia de piada.
+
+7
+00:00:29,280 --> 00:00:30,290
+Vamos apenas ter certeza.
+
+8
+00:00:30,600 --> 00:00:33,840
+Então, estamos recebendo este div aqui que envolve este texto.
+
+9
+00:00:34,050 --> 00:00:36,210
+Então, estamos trazendo isso para o nosso JavaScript.
+
+10
+00:00:36,540 --> 00:00:37,680
+Também queremos o botão.
+
+11
+00:00:37,700 --> 00:00:52,140
+Então, digamos que a piada B10 do Korn seja igual a documento ainda elemento por D e acho que costumava brincar com B10 aqui.
+
+12
+00:00:52,140 --> 00:00:55,360
+Então, estamos recebendo o botão também porque precisamos de um ouvinte de evento nele.
+
+13
+00:00:56,340 --> 00:00:56,730
+Tudo bem.
+
+14
+00:00:56,730 --> 00:01:06,480
+Então, quando chegamos a este aplicativo, queremos chamar uma função chamada gerar piada, então isso é
+
+15
+00:01:06,480 --> 00:01:07,200
+vai ser chamado.
+
+16
+00:01:07,200 --> 00:01:08,760
+Então nós queremos criar isso.
+
+17
+00:01:08,760 --> 00:01:14,630
+Então, digamos que a função gere piada e é aqui que queremos fazer nossa solicitação.
+
+18
+00:01:14,640 --> 00:01:16,740
+Agora, como eu disse, isso está embutido no navegador.
+
+19
+00:01:16,740 --> 00:01:18,840
+É uma API nativa.
+
+20
+00:01:18,840 --> 00:01:22,380
+Então não temos que incluir nenhum tipo de CDN nem nada.
+
+21
+00:01:23,250 --> 00:01:30,830
+E o que queremos fazer é fazer uma solicitação de recurso para uma URL específica, que será Seydou.
+
+22
+00:01:30,870 --> 00:01:33,210
+Ainda temos esta janela do navegador aberta.
+
+23
+00:01:37,120 --> 00:01:44,620
+Sim, então vai ser isso que eu posso ter papai Yocum, assim como nos diz aqui embaixo, para fazer um
+
+24
+00:01:44,620 --> 00:01:45,420
+pedido para.
+
+25
+00:01:46,540 --> 00:01:48,760
+Então vamos colar isso aí.
+
+26
+00:01:50,170 --> 00:01:57,850
+Agora, lembre-se, se fizermos uma solicitação get para isso sem o cabeçalho except de aplicativos, Jason,
+
+27
+00:01:57,850 --> 00:01:59,050
+ele vai nos dar HTML.
+
+28
+00:01:59,050 --> 00:02:00,190
+E não é isso que queremos.
+
+29
+00:02:00,670 --> 00:02:09,280
+Assim, podemos adicionar um objeto aqui com um valor de cabeçalhos e cabeçalhos será um objeto.
+
+30
+00:02:09,280 --> 00:02:12,820
+E então podemos colocar para a chave qual o cabeçalho que queremos.
+
+31
+00:02:12,820 --> 00:02:20,860
+Lembre-se de quando estávamos no Postman, eles nos causaram e também no Postman eu defini um cabeçalho de exceto como
+
+32
+00:02:20,860 --> 00:02:23,920
+a chave e o aplicativo Jason é o valor.
+
+33
+00:02:23,930 --> 00:02:25,630
+Então estamos fazendo a mesma coisa aqui.
+
+34
+00:02:26,020 --> 00:02:36,550
+Estamos dizendo exceto como a chave e definindo a barra do aplicativo Jason como o valor.
+
+35
+00:02:37,750 --> 00:02:44,140
+OK, agora geralmente o que eu gosto de fazer se estou adicionando cabeçalhos é que não são apenas cabeçalhos, mas qualquer coisa em
+
+36
+00:02:44,140 --> 00:02:45,010
+este objeto.
+
+37
+00:02:45,010 --> 00:02:47,350
+Vou pegar isso e colocar em uma variável.
+
+38
+00:02:47,350 --> 00:02:51,280
+Então eu vou cortar isso e vou colocar em uma variável chamada config.
+
+39
+00:02:51,760 --> 00:02:57,610
+E logo acima, direi apenas const config é igual a esse objeto.
+
+40
+00:02:57,670 --> 00:02:59,260
+Só acho que é mais limpo.
+
+41
+00:03:00,040 --> 00:03:03,120
+Mas você pode saber, é claro que você pode fazer o que acabei de fazer aqui.
+
+42
+00:03:03,490 --> 00:03:06,430
+Agora lembre-se, isso vai nos dar uma promessa de volta.
+
+43
+00:03:06,430 --> 00:03:12,310
+Então, temos que definir isso como ponto e lembrar de qual API de busca obtemos a resposta.
+
+44
+00:03:12,310 --> 00:03:13,480
+Você pode nos chamar do que quiser.
+
+45
+00:03:13,480 --> 00:03:14,140
+Resposta.
+
+46
+00:03:14,240 --> 00:03:22,060
+Eu costumo chamá-lo de Redds e esta é uma função de seta e nós só queremos chamar o Resource Jason para obter
+
+47
+00:03:22,060 --> 00:03:27,380
+os dados adjacentes e, em seguida, o segundo ponto nos dará os dados reais.
+
+48
+00:03:27,880 --> 00:03:33,190
+OK, então esta é outra função de seta e por enquanto vou apenas cancelar o log que dados nos dão e
+
+49
+00:03:33,190 --> 00:03:34,200
+Eu vou salvar isso.
+
+50
+00:03:34,930 --> 00:03:36,730
+Portanto, isso deve ser executado imediatamente.
+
+51
+00:03:36,730 --> 00:03:38,320
+Então vou abrir meu console.
+
+52
+00:03:38,740 --> 00:03:46,660
+E o que obtemos é um objeto com um ID, uma piada e um status, assim como você viu com Kerl, apenas
+
+53
+00:03:46,660 --> 00:03:47,950
+como você viu com o Postman.
+
+54
+00:03:47,950 --> 00:03:49,360
+É tudo a mesma API.
+
+55
+00:03:49,360 --> 00:03:55,150
+Estamos apenas acertando com métodos diferentes, tecnologias diferentes, você sabe, carteiro Kerl fetch
+
+56
+00:03:55,150 --> 00:03:55,640
+qualquer que seja.
+
+57
+00:03:56,560 --> 00:03:59,470
+Então, o que realmente queremos fazer com isso.
+
+58
+00:03:59,470 --> 00:04:03,010
+Queremos tirar a piada deste objeto e inseri-la aqui.
+
+59
+00:04:03,520 --> 00:04:13,390
+Então, nesta função de seta aqui, em vez do registro do console, vamos abrir um bloco de código e vamos
+
+60
+00:04:13,390 --> 00:04:19,450
+pegue o elemento joke que trouxemos acima e defina o HTML interno.
+
+61
+00:04:19,840 --> 00:04:24,280
+Vamos definir isso não apenas para dados, porque os dados são o objeto inteiro.
+
+62
+00:04:24,280 --> 00:04:30,280
+Queremos piada de DataDot porque estamos acessando essa piada de ponto de todo este objeto.
+
+63
+00:04:31,080 --> 00:04:31,510
+Tudo bem.
+
+64
+00:04:31,510 --> 00:04:33,100
+Então vamos em frente e salve isso.
+
+65
+00:04:33,100 --> 00:04:36,790
+E assim que a página recarrega, vemos uma piada aqui.
+
+66
+00:04:38,320 --> 00:04:41,770
+E quero dizer, isso ainda não vai funcionar porque ainda não o conectamos.
+
+67
+00:04:42,130 --> 00:04:43,960
+Mas pegamos meu rato de estimação.
+
+68
+00:04:43,960 --> 00:04:45,340
+Elvis morreu ontem à noite.
+
+69
+00:04:45,340 --> 00:04:46,600
+Ele foi pego em uma armadilha.
+
+70
+00:04:47,080 --> 00:04:51,550
+E se eu recarregar, a página ficará diferente, porque lembre-se, toda vez que você acessar essa API,
+
+71
+00:04:51,670 --> 00:04:53,320
+vai te dar uma piada diferente.
+
+72
+00:04:53,620 --> 00:04:55,910
+Eu trabalhava para um triturador de latas de refrigerante.
+
+73
+00:04:55,930 --> 00:04:59,740
+Foi tão deprimente porque isso é tão estúpido.
+
+74
+00:05:00,700 --> 00:05:01,240
+Mas sim.
+
+75
+00:05:01,240 --> 00:05:04,030
+Então agora estamos recebendo essa piada aqui.
+
+76
+00:05:04,030 --> 00:05:09,040
+A próxima coisa que quero fazer é apenas ligar e um botão sem eventos a este botão para que ele chame gere
+
+77
+00:05:09,040 --> 00:05:09,970
+brinca de novo.
+
+78
+00:05:10,450 --> 00:05:18,580
+Então, vamos subir aqui e dizer um botão de piada e adicionaremos um ouvinte de evento a ele e queremos
+
+79
+00:05:18,580 --> 00:05:20,320
+ouvir um clique.
+
+80
+00:05:21,040 --> 00:05:24,250
+E quando isso acontece, queremos chamar gerar piada.
+
+81
+00:05:24,460 --> 00:05:29,050
+E assim que eu salvar isso, teremos uma piada diferente porque sempre que salvarmos, ele chamará isso
+
+82
+00:05:29,050 --> 00:05:29,530
+função.
+
+83
+00:05:29,530 --> 00:05:33,130
+Mas também, se eu clicar neste botão, nos dará uma nova piada.
+
+84
+00:05:34,750 --> 00:05:35,140
+Tudo bem.
+
+85
+00:05:35,140 --> 00:05:39,460
+E você também pode verificar sua guia de rede para ver todas as solicitações recebidas.
+
+86
+00:05:39,460 --> 00:05:43,090
+Eu só vou deslocar isso por um segundo.
+
+87
+00:05:45,770 --> 00:05:51,500
+E se eu apenas recarregar isso, isso mostrará todos os arquivos que foram carregados, como nossa folha de estilo,
+
+88
+00:05:51,500 --> 00:05:51,940
+nosso roteiro.
+
+89
+00:05:52,040 --> 00:05:57,720
+Sim, mas se olharmos para o tipo, você verá que isso se encaixa bem aqui.
+
+90
+00:05:57,740 --> 00:05:59,540
+Isso fez uma chamada para isso.
+
+91
+00:05:59,540 --> 00:06:03,050
+Você, Aykan, tem piada de pai pontocom.
+
+92
+00:06:03,320 --> 00:06:04,520
+E podemos ver algumas coisas.
+
+93
+00:06:04,520 --> 00:06:09,350
+Vemos nossa resposta, que é, você sabe, a identificação, a piada e o status.
+
+94
+00:06:09,680 --> 00:06:11,360
+Também podemos verificar os cabeçalhos.
+
+95
+00:06:11,660 --> 00:06:14,690
+Então foi essa a requisição, a URL que foi feita.
+
+96
+00:06:14,960 --> 00:06:16,390
+Foi um pedido de obtenção.
+
+97
+00:06:16,400 --> 00:06:17,240
+Então esse é o método.
+
+98
+00:06:17,240 --> 00:06:19,040
+O código de status era 200.
+
+99
+00:06:20,090 --> 00:06:20,510
+O que mais?
+
+100
+00:06:20,510 --> 00:06:23,500
+O endereço remoto e, em seguida, quaisquer cabeçalhos aqui.
+
+101
+00:06:23,810 --> 00:06:27,080
+Portanto, há cabeçalhos de resposta e também cabeçalhos de solicitação.
+
+102
+00:06:27,560 --> 00:06:33,260
+E no cabeçalho da solicitação, devemos ter isso, exceto application, Jason, porque enviamos isso
+
+103
+00:06:33,260 --> 00:06:37,130
+foi resultado do que enviamos dentro das opções.
+
+104
+00:06:37,940 --> 00:06:39,890
+E então há um monte de outras coisas aqui também.
+
+105
+00:06:40,140 --> 00:06:44,960
+Então, sempre que você precisar ver, você sabe, dados que você recebe de volta, quando você faz qualquer tipo de solicitação,
+
+106
+00:06:44,960 --> 00:06:47,300
+você pode verificá-lo na guia de rede.
+
+107
+00:06:48,080 --> 00:06:50,500
+Então, vamos apenas anexar para reconectar isso.
+
+108
+00:06:51,410 --> 00:06:52,900
+Então é mais ou menos isso.
+
+109
+00:06:52,910 --> 00:06:59,000
+Nosso aplicativo é bem pequeno e simples, mas funciona e estamos fazendo uma solicitação a um terceiro
+
+110
+00:06:59,000 --> 00:06:59,680
+API.
+
+111
+00:07:00,440 --> 00:07:05,840
+Agora, a próxima coisa que quero mostrar é como usar uma pia, porque pessoalmente, não gosto de
+
+112
+00:07:05,840 --> 00:07:07,640
+esta então sintaxe.
+
+113
+00:07:08,060 --> 00:07:14,510
+Eu acho que parece meio confuso e podemos fazer com que pareça síncrono quando é realmente assíncrono
+
+114
+00:07:14,930 --> 00:07:20,810
+porque temos que usar isso porque isso pode acontecer, você sabe, enquanto outra coisa está acontecendo.
+
+115
+00:07:20,810 --> 00:07:25,760
+Então, o DOT basicamente diz quando isso terminar, então faça alguma coisa.
+
+116
+00:07:26,690 --> 00:07:29,420
+Então eu vou realmente comentar.
+
+117
+00:07:29,430 --> 00:07:34,150
+Vou copiar isso e comentar isso porque quero fazer isso de novo com uma pia de distância.
+
+118
+00:07:34,730 --> 00:07:42,170
+Agora, aqui, onde fazemos nosso pedido, vou me livrar de tudo aqui e do ponto então.
+
+119
+00:07:42,680 --> 00:07:46,130
+E o que podemos fazer é definir essa busca aqui.
+
+120
+00:07:46,460 --> 00:07:53,850
+Vou definir uma variável chamada Rez Response, como você quiser chamá-la, e defini-la igual à busca.
+
+121
+00:07:54,230 --> 00:08:00,040
+Agora, lembre-se, fetch é um coletor, então temos que esperar até que ele termine de buscar.
+
+122
+00:08:00,050 --> 00:08:02,060
+Então usamos a palavra-chave await.
+
+123
+00:08:02,360 --> 00:08:08,510
+Agora, sempre que você usar um wait dentro de uma função, você deve rotular essa função como assíncrona.
+
+124
+00:08:09,020 --> 00:08:14,390
+OK, é por isso que chama a função de dissipador, você rotula um coletor e, em seguida, qualquer promessa que
+
+125
+00:08:14,390 --> 00:08:18,410
+você quer colocar em uma variável, você vai colocar isso de lado antes dela.
+
+126
+00:08:19,430 --> 00:08:24,170
+Agora, isso nos dará exatamente como temos aqui embaixo, nos dará a resposta.
+
+127
+00:08:24,170 --> 00:08:26,510
+Mas precisamos ligar para esse residente, Jason.
+
+128
+00:08:26,810 --> 00:08:33,410
+Então, o que faríamos neste caso, usando a API fetch, poderíamos definir outra variável chamada data e
+
+129
+00:08:33,410 --> 00:08:35,930
+poderíamos definir isso para descansar JSON.
+
+130
+00:08:35,960 --> 00:08:38,240
+No entanto, isso também retorna uma promessa.
+
+131
+00:08:38,460 --> 00:08:43,270
+Então temos que esperar isso e então os dados estarão nessa variável.
+
+132
+00:08:43,280 --> 00:08:51,440
+Então, novamente, vamos descer aqui e vou copiar esta linha e vou definir essa piada
+
+133
+00:08:51,440 --> 00:08:55,430
+elemento em nosso HTML para dados e, em seguida, o valor da piada.
+
+134
+00:08:56,000 --> 00:08:56,360
+Tudo bem.
+
+135
+00:08:56,360 --> 00:08:57,410
+Então eu vou salvar isso.
+
+136
+00:08:57,410 --> 00:08:59,900
+E você pode ver que funciona exatamente da mesma maneira.
+
+137
+00:09:00,440 --> 00:09:07,430
+Eu acho que isso parece melhor e mais limpo porque, em vez dos pontos, estamos basicamente definindo
+
+138
+00:09:07,430 --> 00:09:13,280
+o que obtemos de buscar em uma variável regular e, em seguida, o que recebemos de volta do residente Jason
+
+139
+00:09:13,280 --> 00:09:16,130
+em uma variável e então podemos continuar.
+
+140
+00:09:16,130 --> 00:09:19,400
+Nós não temos que ter isso dentro de um ponto então.
+
+141
+00:09:19,760 --> 00:09:21,080
+E é tudo preferência.
+
+142
+00:09:21,350 --> 00:09:23,870
+Como eu disse, uma pia de distância é muito, muito popular.
+
+143
+00:09:23,960 --> 00:09:27,620
+Você provavelmente vai vê-lo mais do que não, pelo menos no código moderno.
+
+144
+00:09:27,620 --> 00:09:30,740
+Então definitivamente algo para entender.
+
+145
+00:09:30,740 --> 00:09:31,940
+Quero dizer, você não precisa usá-lo.
+
+146
+00:09:31,940 --> 00:09:34,160
+Se você preferir usar DOT, tudo bem.
+
+147
+00:09:34,940 --> 00:09:47,720
+Eu só vou colocar um comentário aqui e dizer que vamos dizer usando DOT, então aqui vamos dizer usando.
+
+148
+00:09:50,370 --> 00:09:51,380
+Um peso.
+
+149
+00:09:51,810 --> 00:09:53,950
+OK, então ambos fazem exatamente a mesma coisa.
+
+150
+00:09:53,970 --> 00:09:56,100
+Vou manter os dois aqui para referência.
+
+151
+00:09:56,850 --> 00:09:57,750
+Tudo bem, então é isso.
+
+152
+00:09:57,750 --> 00:09:59,040
+Projeto bem simples.
+
+153
+00:09:59,040 --> 00:10:00,300
+E vamos usar isso.
+
+154
+00:10:00,310 --> 00:10:05,600
+Isso é uma espécie de base para qualquer outro projeto que usamos quando fazemos solicitações HTP.
+
+155
+00:10:06,450 --> 00:10:12,810
+Como eu disse, existe uma biblioteca chamada Axios, que é o que eu prefiro usar porque é mais fácil
+
+156
+00:10:12,810 --> 00:10:13,190
+usar.
+
+157
+00:10:13,200 --> 00:10:16,860
+Você não tem que fazer as duas coisas prometidas, o residente, Jason.
+
+158
+00:10:17,130 --> 00:10:22,380
+Além disso, há outras coisas que você pode fazer que estão além do escopo dos projetos deste curso que
+
+159
+00:10:22,380 --> 00:10:22,920
+Eu prefiro.
+
+160
+00:10:22,950 --> 00:10:27,740
+Então provavelmente teremos um projeto usando Axios mais tarde, mas é isso.
+
+161
+00:10:27,750 --> 00:10:29,280
+Vamos em frente e entrar no próximo.

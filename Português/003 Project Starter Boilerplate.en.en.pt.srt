@@ -1,0 +1,515 @@
+﻿1
+00:00:00,210 --> 00:00:05,670
+OK, então eu só quero criar um projeto inicial, basicamente uma placa de caldeira que podemos usar em todos os
+
+2
+00:00:05,670 --> 00:00:09,480
+seguintes projetos para que não tenhamos que ficar recriando arquivos e assim por diante.
+
+3
+00:00:09,480 --> 00:00:11,780
+Você pode simplesmente duplicar esta pasta e renomeá-la.
+
+4
+00:00:12,150 --> 00:00:16,200
+Então eu chamei de Underscore, Project, Underscore, Stotra Underscore.
+
+5
+00:00:16,380 --> 00:00:21,750
+E a razão para os sublinhados é apenas porque não é um projeto real, é apenas o clichê.
+
+6
+00:00:22,140 --> 00:00:23,680
+Então, isso está completamente vazio.
+
+7
+00:00:23,730 --> 00:00:24,540
+Não há nada nele.
+
+8
+00:00:24,540 --> 00:00:26,250
+E eu vou abrir isso com o código VX.
+
+9
+00:00:26,460 --> 00:00:29,280
+Se estiver no Windows, você pode escrever, clicar e dizer abrir com código.
+
+10
+00:00:29,280 --> 00:00:34,860
+Se você estiver em um Mac, você pode arrastá-lo para o ícone do código de barras e ele deve abrir e você pode ver que está
+
+11
+00:00:34,860 --> 00:00:35,670
+completamente vazio.
+
+12
+00:00:35,670 --> 00:00:37,440
+Então eu vou criar três arquivos.
+
+13
+00:00:37,440 --> 00:00:39,390
+HTML indexado é o primeiro.
+
+14
+00:00:39,780 --> 00:00:44,940
+Então queremos nossa folha de estilo, que vou chamar de style dot access e depois queremos nosso JavaScript
+
+15
+00:00:44,940 --> 00:00:47,240
+arquivo, que vou chamar de script Jass.
+
+16
+00:00:47,550 --> 00:00:51,320
+Esses são os três arquivos principais que vamos usar em todos esses projetos.
+
+17
+00:00:51,780 --> 00:00:57,690
+Agora no HTML, eu vou usar o Emet e fazer a exclamação enter e isso vai dar
+
+18
+00:00:57,690 --> 00:01:05,100
+me apenas um clichê de uma página HTML com as tags de corpo de cabeça HTML cinco DOCTYPE e assim por diante.
+
+19
+00:01:05,100 --> 00:01:11,580
+E eu vou seguir em frente e ir até o título aqui e dizer meu projeto e podemos mudar isso
+
+20
+00:01:11,580 --> 00:01:12,660
+para cada projeto.
+
+21
+00:01:12,960 --> 00:01:19,470
+E então, no corpo, teremos apenas um H1 e diremos iniciador do projeto.
+
+22
+00:01:19,930 --> 00:01:25,860
+OK, agora para abrir isso, vou salvá-lo agora para abri-lo, você pode ir para o arquivo real
+
+23
+00:01:25,860 --> 00:01:30,740
+tipo, você sabe, vá aqui e abra o HTML indexado, mas vamos usar o servidor ao vivo.
+
+24
+00:01:31,140 --> 00:01:35,760
+Então, o que queremos fazer é apenas escrever, clicar e dizer abrir com servidor ao vivo.
+
+25
+00:01:37,720 --> 00:01:43,150
+E você pode ver que está aberto em meus hosts locais, endereço Ray Lookback, que é um dois sete zero
+
+26
+00:01:43,150 --> 00:01:45,480
+zero um na porta 5500.
+
+27
+00:01:45,790 --> 00:01:51,280
+Então, vou fazer isso menor e queremos ter certeza de incluir nossa folha de estilo aqui
+
+28
+00:01:51,280 --> 00:01:52,560
+em nosso JavaScript.
+
+29
+00:01:52,870 --> 00:01:59,800
+Então, vou fechar a barra lateral e adicionar aqui, diremos o link enter e para o tráfego,
+
+30
+00:01:59,800 --> 00:02:05,110
+queremos vincular à nossa folha de estilo e queremos vincular ao JavaScript aqui logo acima do final
+
+31
+00:02:05,110 --> 00:02:08,200
+body tag dirá script dois pontos SIRC.
+
+32
+00:02:08,440 --> 00:02:12,260
+E a fonte desse JavaScript será o script Gorgias.
+
+33
+00:02:12,620 --> 00:02:14,770
+OK, então agora ambos devem ser incluídos.
+
+34
+00:02:15,130 --> 00:02:18,700
+E isso é praticamente tudo que eu quero ter para o HTML inicial.
+
+35
+00:02:19,180 --> 00:02:22,540
+Agora, uma coisa que quero mencionar é que em alguns projetos usaremos a fonte.
+
+36
+00:02:22,540 --> 00:02:23,020
+Incrível.
+
+37
+00:02:23,020 --> 00:02:27,850
+Então você tem que incluir a folha de estilo incrível da fonte e há algumas maneiras de fazer isso.
+
+38
+00:02:27,850 --> 00:02:35,920
+Então, a primeira é realmente ir para font awesome dot com e você pode colocar seu endereço de e-mail aqui e
+
+39
+00:02:35,920 --> 00:02:39,940
+diga enviar código do kit e ele lhe dará um link para a fonte.
+
+40
+00:02:39,940 --> 00:02:40,980
+Sucesso incrível.
+
+41
+00:02:40,990 --> 00:02:42,130
+Agora não vamos fazer isso.
+
+42
+00:02:42,130 --> 00:02:48,160
+O que eu costumo fazer é ir para CDN, CDN, News.com e apenas procurar por fonte.
+
+43
+00:02:48,160 --> 00:02:48,760
+Incrível.
+
+44
+00:02:49,300 --> 00:02:51,630
+E você pode simplesmente pegar o link aqui.
+
+45
+00:02:51,640 --> 00:02:53,410
+Então este é o sucesso que você precisa.
+
+46
+00:02:53,680 --> 00:03:00,460
+Você pode copiar a tag do link e colocá-la logo acima do seu link para sua folha de estilo e então nós
+
+47
+00:03:00,460 --> 00:03:01,090
+pode usar fonte.
+
+48
+00:03:01,090 --> 00:03:01,480
+Incrível.
+
+49
+00:03:01,480 --> 00:03:04,630
+Então, alguns projetos que eu poderia começar com este link já aqui.
+
+50
+00:03:04,840 --> 00:03:07,480
+Se quiser, pode mantê-lo aqui, basta comentar.
+
+51
+00:03:07,570 --> 00:03:11,770
+E nos projetos em que o usamos, você pode descomentá-lo o que quiser, mas vou
+
+52
+00:03:11,770 --> 00:03:13,240
+ir em frente e deixá-lo de fora.
+
+53
+00:03:13,250 --> 00:03:16,600
+Eu só queria mencionar isso agora para nossa folha de estilo.
+
+54
+00:03:17,050 --> 00:03:19,240
+Eu quero começar com uma fonte padrão.
+
+55
+00:03:19,240 --> 00:03:21,010
+Eu quero começar com a fonte Raboteau.
+
+56
+00:03:21,310 --> 00:03:26,410
+Então, vou em frente e vou para as fontes do Google bem rápido.
+
+57
+00:03:27,700 --> 00:03:29,890
+E eu tenho isso aqui e um atalho.
+
+58
+00:03:30,190 --> 00:03:32,110
+E Rebadow está bem aqui.
+
+59
+00:03:32,110 --> 00:03:36,220
+Se você não vê-lo, você pode procurá-lo e você pode usar uma fonte diferente, se desejar.
+
+60
+00:03:36,220 --> 00:03:39,280
+Mas vou usar o Raboteau regular 400.
+
+61
+00:03:39,280 --> 00:03:43,660
+Então diga Selecione o estilo e, em seguida, Bould 700, selecione o estilo.
+
+62
+00:03:43,840 --> 00:03:48,630
+E aqui você pode usar um link em seu HTML ou uma importação em seu sucesso.
+
+63
+00:03:48,630 --> 00:03:49,840
+Então eu vou usar a importação.
+
+64
+00:03:50,230 --> 00:03:51,340
+Eu vou copiar isso.
+
+65
+00:03:51,430 --> 00:03:53,650
+Eu não preciso das tags de estilo, apenas a importação.
+
+66
+00:03:54,010 --> 00:03:58,080
+E então vamos voltar para nossa folha de estilo e colá-la lá.
+
+67
+00:03:58,270 --> 00:03:59,980
+Dessa forma, podemos usar essa fonte.
+
+68
+00:04:00,460 --> 00:04:00,880
+Tudo bem.
+
+69
+00:04:00,880 --> 00:04:04,330
+Então podemos fechar isso e vamos aplicar isso ao corpo.
+
+70
+00:04:04,330 --> 00:04:11,830
+Então diga família Font Dasch e defina isso para Raboteau sans serif.
+
+71
+00:04:12,190 --> 00:04:14,650
+Então eu salvei esse aviso de que ele recarrega automaticamente.
+
+72
+00:04:14,650 --> 00:04:18,580
+É porque estamos usando o servidor ao vivo e eu sei que muitos de vocês provavelmente já sabem de tudo isso
+
+73
+00:04:18,580 --> 00:04:23,770
+coisas, mas quero ter certeza de que fui claro porque sei que há iniciantes fazendo este curso.
+
+74
+00:04:24,460 --> 00:04:24,820
+Tudo bem.
+
+75
+00:04:24,820 --> 00:04:28,570
+Agora, eu também quero definir no seletor universal.
+
+76
+00:04:28,570 --> 00:04:29,860
+Então, um asterisco aqui.
+
+77
+00:04:30,190 --> 00:04:32,290
+Isso significa apenas que queremos aplicar isso a tudo.
+
+78
+00:04:32,290 --> 00:04:34,780
+Quero aplicar uma propriedade de dimensionamento de caixa.
+
+79
+00:04:34,780 --> 00:04:38,320
+Isso é algo que faço em quase todos os projetos ou acessos.
+
+80
+00:04:38,560 --> 00:04:43,480
+Queremos configurá-lo para bordo de uma caixa para que, se adicionarmos qualquer preenchimento ou borda a um elemento, ele não
+
+81
+00:04:43,480 --> 00:04:44,860
+realmente afetar a largura dele.
+
+82
+00:04:45,100 --> 00:04:47,470
+Então eu adiciono isso em quase tudo que faço.
+
+83
+00:04:47,980 --> 00:04:52,450
+E então no corpo aqui, eu realmente vou me livrar da margem.
+
+84
+00:04:52,450 --> 00:04:58,450
+Então, digamos margem zero, o espaço que você vê aqui é do H1 real.
+
+85
+00:04:58,870 --> 00:05:01,390
+E também vou exibir o Flex.
+
+86
+00:05:01,720 --> 00:05:07,390
+E a razão disso é porque eu quero centralizar tudo, porque a maioria dos projetos
+
+87
+00:05:07,390 --> 00:05:10,210
+serão algo que está bem no meio da janela de visualização.
+
+88
+00:05:10,660 --> 00:05:12,430
+Então eu vou exibir o Flex.
+
+89
+00:05:12,430 --> 00:05:17,920
+E só para falar um pouco sobre o Flex Box, para quem ainda não usou, vou
+
+90
+00:05:17,920 --> 00:05:20,590
+coloque mais dois elementos aqui.
+
+91
+00:05:20,590 --> 00:05:25,720
+Pode ser qualquer coisa, mas vou colocar uns dois e configurar para exibir flex, é
+
+92
+00:05:25,720 --> 00:05:26,800
+vai colocá-lo em uma linha.
+
+93
+00:05:26,800 --> 00:05:31,120
+Você pode ver como tudo que eu coloco no corpo agora fica assim, fica na horizontal.
+
+94
+00:05:31,450 --> 00:05:32,710
+Eu realmente não quero isso.
+
+95
+00:05:32,710 --> 00:05:40,180
+Eu quero que ele volte verticalmente, mas ainda seja uma caixa flexível para que possamos definir a direção flexível para a coluna se
+
+96
+00:05:40,180 --> 00:05:40,990
+Eu guardo isso.
+
+97
+00:05:40,990 --> 00:05:43,420
+Agora, você pode ver que ele volta verticalmente.
+
+98
+00:05:43,810 --> 00:05:50,560
+Agora, como esta é uma caixa flexível, posso usar itens de linha e quero um centro de itens de linha.
+
+99
+00:05:50,860 --> 00:05:56,380
+Agora, se sua caixa flexível for uma coluna como essa, um item de linha pertencerá ao alinhamento
+
+100
+00:05:56,380 --> 00:05:57,370
+horizontalmente.
+
+101
+00:05:57,730 --> 00:06:00,450
+Se for uma linha, pertenceria à vertical.
+
+102
+00:06:00,850 --> 00:06:01,240
+Tudo bem.
+
+103
+00:06:01,240 --> 00:06:03,760
+Então nós nós nós centralizamos horizontalmente.
+
+104
+00:06:03,760 --> 00:06:05,230
+Eu também quero centralizá-lo verticalmente.
+
+105
+00:06:05,230 --> 00:06:06,490
+Eu quero que fique bem no meio.
+
+106
+00:06:06,850 --> 00:06:10,650
+Então, para isso, podemos adicionar conteúdo justificado e defini-lo como centro.
+
+107
+00:06:10,930 --> 00:06:15,670
+Agora, observe como ele não se moveu para o centro aqui verticalmente, e isso é porque o corpo não
+
+108
+00:06:15,670 --> 00:06:16,660
+tem uma altura nele.
+
+109
+00:06:16,930 --> 00:06:20,830
+OK, precisamos que nossos blocos flexíveis tenham uma altura, então vamos definir um min.
+
+110
+00:06:21,130 --> 00:06:27,550
+Vamos apenas definir a altura para 100 vate, que é uma altura da janela de visualização e isso significa que ocupa toda a altura
+
+111
+00:06:27,550 --> 00:06:29,280
+do navegador, a viewport.
+
+112
+00:06:29,280 --> 00:06:32,440
+Então eu vou salvar e agora você pode ver que está centralizado nos dois sentidos.
+
+113
+00:06:32,950 --> 00:06:35,630
+OK, e então a última coisa que quero acrescentar aqui é apenas um over.
+
+114
+00:06:35,790 --> 00:06:36,220
+Fluxo.
+
+115
+00:06:36,630 --> 00:06:42,270
+E vou defini-lo como oculto porque não quero que as barras de rolagem sejam mostradas por padrão e isso é
+
+116
+00:06:42,270 --> 00:06:42,440
+isto.
+
+117
+00:06:42,450 --> 00:06:46,590
+Então, vou me livrar desses dois dois e manter o único lá.
+
+118
+00:06:46,720 --> 00:06:48,110
+OK, então é mais ou menos isso.
+
+119
+00:06:48,120 --> 00:06:53,390
+Sem JavaScript, porque isso é muito, muito, você sabe, muito diferente por projeto.
+
+120
+00:06:53,670 --> 00:06:58,290
+Eu só queria adicionar um estilo básico para mover tudo para o meio da fonte.
+
+121
+00:06:58,890 --> 00:07:04,880
+Também link em nossa folha de estilo e JavaScript porque não queremos fazer isso em todos os projetos.
+
+122
+00:07:05,130 --> 00:07:11,910
+Então, a partir de agora, você pode simplesmente copiar ou duplicar esta pasta e podemos ir em frente e acertar
+
+123
+00:07:11,910 --> 00:07:12,890
+no projeto.
+
+124
+00:07:13,140 --> 00:07:18,600
+Agora, se você quiser parar o servidor ao vivo, você vê esta pequena porta 5500, você pode clicar nela ou você pode
+
+125
+00:07:18,600 --> 00:07:20,970
+clique com o botão direito e você pode dizer parar o servidor ao vivo.
+
+126
+00:07:21,210 --> 00:07:25,380
+E agora vai parar de servir no localhost 5500.
+
+127
+00:07:25,780 --> 00:07:28,230
+OK, então isso vai ser praticamente o fluxo de trabalho.
+
+128
+00:07:28,260 --> 00:07:34,440
+Vamos em frente e usar este clichê aqui, o inicializador do projeto e usaremos o servidor ao vivo para executá-lo
+
+129
+00:07:34,440 --> 00:07:36,450
+e então vamos em frente e criamos nossos projetos.

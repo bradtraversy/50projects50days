@@ -1,0 +1,363 @@
+1
+00:00:00,060 --> 00:00:03,960
+OK, so we're going to get started on our drawing app and I'm just going to leave the browser a little
+
+2
+00:00:03,960 --> 00:00:09,330
+wider than usual just so we can fit the whole canvas in there because we wanted to be quite big since
+
+3
+00:00:09,330 --> 00:00:10,700
+it's a drawing area.
+
+4
+00:00:11,070 --> 00:00:17,940
+So for the title here, let's say drawing app, and we want to add our canvas element.
+
+5
+00:00:17,940 --> 00:00:19,830
+So it's a canvas.
+
+6
+00:00:20,010 --> 00:00:22,530
+I'm going to give it an idea of canvas as well.
+
+7
+00:00:23,310 --> 00:00:29,700
+And basically this just allows us to have an area that we can use the canvas API on.
+
+8
+00:00:29,710 --> 00:00:35,560
+So in JavaScript we can draw shapes and lines and do all types of cool stuff.
+
+9
+00:00:35,970 --> 00:00:43,030
+Now I do want to give this a width and give it a width of 800 and height.
+
+10
+00:00:43,050 --> 00:00:44,490
+So we have 800 height.
+
+11
+00:00:44,490 --> 00:00:49,850
+I might make that a little smaller later, but if I save that, we're not going to see anything.
+
+12
+00:00:49,860 --> 00:00:51,120
+The canvas is there.
+
+13
+00:00:51,390 --> 00:00:56,940
+If we open up our elements tab and the dev tools, you can see if I highlight over canvas, we can see
+
+14
+00:00:56,940 --> 00:01:01,730
+the outline of it and you can add access to this, like we could say style.
+
+15
+00:01:01,740 --> 00:01:03,600
+You don't have to write, have to do this.
+
+16
+00:01:03,600 --> 00:01:09,240
+But just to show you, we could say like background red and save and now you can see the outline of
+
+17
+00:01:09,240 --> 00:01:09,990
+our canvas.
+
+18
+00:01:10,830 --> 00:01:11,260
+All right.
+
+19
+00:01:11,440 --> 00:01:13,050
+I'm just going to get rid of that.
+
+20
+00:01:13,050 --> 00:01:17,670
+Nothing is going to go inside those inside the canvas tags.
+
+21
+00:01:19,010 --> 00:01:25,910
+But what we do want is an area under the canvas to have our toolbox, which is going to be like where
+
+22
+00:01:25,910 --> 00:01:31,360
+we can increase and decrease the size of the pen and so on and change the color and clear it.
+
+23
+00:01:31,580 --> 00:01:37,710
+So let's create a divide with the class of toolbox here and in here will have a button.
+
+24
+00:01:39,170 --> 00:01:42,470
+So this button will have an idea of decrease.
+
+25
+00:01:44,060 --> 00:01:51,160
+And I'm just going to put a minus sign inside the entire text here and then under that will have a span.
+
+26
+00:01:51,170 --> 00:01:54,390
+And this is going to have an idea of size.
+
+27
+00:01:54,410 --> 00:02:00,170
+So the initial size, I'm going to say 20 and then under that will have another button.
+
+28
+00:02:00,470 --> 00:02:02,770
+And this is going to have an idea of increase.
+
+29
+00:02:03,650 --> 00:02:05,730
+And inside here, we'll have a plus sign.
+
+30
+00:02:06,520 --> 00:02:08,010
+OK, we also want the color.
+
+31
+00:02:08,030 --> 00:02:09,460
+So let's say inputs.
+
+32
+00:02:09,470 --> 00:02:13,130
+And this is actually going to be a color input.
+
+33
+00:02:13,130 --> 00:02:16,780
+So each HTML5 has color inputs, so the type will be color.
+
+34
+00:02:17,390 --> 00:02:18,350
+We don't need the name.
+
+35
+00:02:18,950 --> 00:02:21,190
+The ID will also be color.
+
+36
+00:02:22,430 --> 00:02:24,800
+And then finally we want a button to clear it.
+
+37
+00:02:24,800 --> 00:02:30,320
+So say Button will give an idea of clear and I'm going to put an X inside of that.
+
+38
+00:02:30,470 --> 00:02:30,860
+All right.
+
+39
+00:02:30,860 --> 00:02:35,900
+So if I say that it's going to look like this, OK, now we're going to style and you can see the color
+
+40
+00:02:35,900 --> 00:02:38,120
+picker here, which is pretty cool.
+
+41
+00:02:38,900 --> 00:02:40,900
+It's just an HTML five input of color.
+
+42
+00:02:41,360 --> 00:02:42,980
+But let's jump into the stylesheet.
+
+43
+00:02:42,980 --> 00:02:45,940
+And surprisingly, we're not going to have to do too much here.
+
+44
+00:02:46,170 --> 00:02:47,680
+I'm going to keep the Roboto font.
+
+45
+00:02:47,690 --> 00:02:51,200
+Let's give the body a background color of light gray.
+
+46
+00:02:51,200 --> 00:02:53,810
+We'll do five, three times.
+
+47
+00:02:54,140 --> 00:02:57,500
+And then I want to get rid of overflow hidden case.
+
+48
+00:02:57,530 --> 00:02:58,370
+We have to scroll.
+
+49
+00:02:59,490 --> 00:03:08,690
+And that should do it for the body, for the canvas, so the canvas, I'm going to give a border, so
+
+50
+00:03:08,700 --> 00:03:09,760
+it's a border.
+
+51
+00:03:09,870 --> 00:03:14,320
+Let's do two pixels solid and I'm going to use steel blue.
+
+52
+00:03:15,420 --> 00:03:17,240
+Of course, you can use whatever color you want.
+
+53
+00:03:18,210 --> 00:03:22,710
+And then we have our toolbox, which has all the controls.
+
+54
+00:03:23,220 --> 00:03:32,070
+So for the toolbox, I'm going to set a background color of steel blue and I'm going to set a water.
+
+55
+00:03:33,390 --> 00:03:41,940
+Let's do border one pixel and solid and we'll use Slate Blue for that.
+
+56
+00:03:43,700 --> 00:03:45,100
+You can see that down here.
+
+57
+00:03:45,930 --> 00:03:51,750
+Now, I'm going to display this as a flex box so that everything inside of it are lined up as flex items.
+
+58
+00:03:52,200 --> 00:03:55,170
+And let's set a width of this.
+
+59
+00:03:55,480 --> 00:03:58,040
+I'm going to do a with of eight 04 pixels.
+
+60
+00:03:58,830 --> 00:04:05,340
+So that should just, you know, fill up the same with as the canvas and then padding.
+
+61
+00:04:05,490 --> 00:04:08,370
+Let's do one room padding like that.
+
+62
+00:04:08,670 --> 00:04:15,240
+Now, I want all of these controls here to have a just I want them to be in a big white box, everything.
+
+63
+00:04:15,250 --> 00:04:23,820
+So I want to take all of the direct children of Tool Box so we can target that with class toolbox and
+
+64
+00:04:23,820 --> 00:04:25,890
+we want the direct children.
+
+65
+00:04:25,900 --> 00:04:29,550
+Doesn't matter what the element is, button input, whatever span.
+
+66
+00:04:29,970 --> 00:04:38,760
+And let's set the background color to white and I'll just make this smaller so I can actually see.
+
+67
+00:04:40,500 --> 00:04:42,370
+So make the background color white.
+
+68
+00:04:42,390 --> 00:04:44,960
+Let's remove any border so border none.
+
+69
+00:04:45,810 --> 00:04:49,250
+And let's set them to display.
+
+70
+00:04:49,830 --> 00:04:58,350
+I'm going to use in my inline flex for the display and then we can a line item center and justify content
+
+71
+00:04:58,890 --> 00:04:59,530
+center.
+
+72
+00:05:00,510 --> 00:05:04,450
+OK, so they're all in the same level and let's make the font size much bigger.
+
+73
+00:05:04,470 --> 00:05:06,180
+We're going to use two REM units.
+
+74
+00:05:07,800 --> 00:05:11,910
+OK, let's give it a fixed height and width of 50 pixels.
+
+75
+00:05:12,150 --> 00:05:16,320
+So height and with.
+
+76
+00:05:17,440 --> 00:05:23,810
+All right, let's add some margin will do points to five REM spaced him out a little bit.
+
+77
+00:05:23,820 --> 00:05:29,100
+Let's do padding and padding will be same thing.
+
+78
+00:05:29,100 --> 00:05:30,480
+Point to five REM.
+
+79
+00:05:33,390 --> 00:05:42,480
+And I think I think that's it, yeah, so we have all these boxes now, the last one to clear, I want
+
+80
+00:05:42,480 --> 00:05:44,210
+that to be set over here.
+
+81
+00:05:45,180 --> 00:05:50,010
+So what I can do to target that is, say, the direct children of Tool Box.
+
+82
+00:05:50,010 --> 00:05:55,870
+But I only want the last ones when you use the pseudo selector of the last Dasch child.
+
+83
+00:05:56,310 --> 00:06:04,080
+OK, so it's the last child element in the toolbox and I'm just going to set margin dash left to auto.
+
+84
+00:06:04,470 --> 00:06:07,110
+And if I do that now, it gets pushed over to the side.
+
+85
+00:06:08,790 --> 00:06:09,470
+All right, cool.
+
+86
+00:06:09,480 --> 00:06:13,320
+Let's actually add a pointer as well.
+
+87
+00:06:15,450 --> 00:06:18,570
+OK, so that's pretty much it for the interface.
+
+88
+00:06:18,570 --> 00:06:23,580
+And I mean, of course, you can make this is as big or small as you want, but we're going to go with
+
+89
+00:06:23,580 --> 00:06:24,030
+this.
+
+90
+00:06:24,030 --> 00:06:29,730
+And in the next video, we'll start on our JavaScript will get into canvas so that we can actually draw
+
+91
+00:06:29,730 --> 00:06:32,610
+on this and control the pen and all that.

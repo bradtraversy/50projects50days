@@ -1,0 +1,239 @@
+﻿1
+00:00:00,240 --> 00:00:05,010
+Então, vamos começar o projeto de carregamento embaçado e o teste será muito simples,
+
+2
+00:00:05,010 --> 00:00:07,710
+é na verdade apenas duas linhas no corpo.
+
+3
+00:00:07,920 --> 00:00:10,140
+Bem, vamos adicionar um título aqui.
+
+4
+00:00:10,320 --> 00:00:17,850
+Então chame isso de flutuação embaçada e então aqui embaixo, vamos nos livrar do H1.
+
+5
+00:00:17,850 --> 00:00:22,900
+E esta vai ser uma seção Eu vou dar uma aula de BG Então esta vai ser a
+
+6
+00:00:22,950 --> 00:00:27,030
+imagem de fundo que desfocamos e então teremos por perto.
+
+7
+00:00:27,030 --> 00:00:34,710
+O texto terá uma classe de texto de traço de carregamento e queremos apenas colocar aqui zero por cento e isso
+
+8
+00:00:34,710 --> 00:00:39,220
+deve fazê-lo tanto quanto o HTML vai.
+
+9
+00:00:39,570 --> 00:00:44,240
+Então vamos pular para nossa folha de estilo e não há muito o que fazer aqui também.
+
+10
+00:00:44,250 --> 00:00:45,810
+Vou mudar a fonte.
+
+11
+00:00:46,260 --> 00:00:54,450
+Então, eu só quero que isso seja o Google APIs ponto com existe e queremos usar uma família de fontes.
+
+12
+00:00:55,710 --> 00:00:58,110
+Vou usar uma família do Ubuntu.
+
+13
+00:01:01,400 --> 00:01:12,770
+Eu posso sentir o cheiro da família corretamente e então vamos mudar aqui embaixo, mudar para Bunta e depois essas coisas
+
+14
+00:01:12,770 --> 00:01:14,390
+podem realmente permanecer todos iguais.
+
+15
+00:01:14,740 --> 00:01:16,240
+Você não precisa mudar nada aqui.
+
+16
+00:01:16,250 --> 00:01:20,900
+Não precisamos da coluna de direção de Fleck, mas não vai doer se você a deixar.
+
+17
+00:01:21,440 --> 00:01:28,400
+Agora para o nível de fundo, temos essa seção com a classe de BG e queremos definir um fundo.
+
+18
+00:01:28,730 --> 00:01:33,770
+Então, vamos usar a propriedade background e dizer que queremos que isso seja neutro.
+
+19
+00:01:34,640 --> 00:01:39,440
+E a imagem real que vou usar, vou copiar e colar.
+
+20
+00:01:39,440 --> 00:01:41,540
+E, claro, você pode usar qualquer imagem que desejar.
+
+21
+00:01:41,870 --> 00:01:45,560
+Se você quiser usar este, você pode obtê-lo no link do repositório.
+
+22
+00:01:46,160 --> 00:01:48,300
+Então vamos fazer isso não ter repetição.
+
+23
+00:01:48,430 --> 00:01:54,080
+Vamos torná-lo centralizado nos eixos X e Y e cobrir a posição de fundo.
+
+24
+00:01:55,520 --> 00:01:57,650
+E queremos posicionar esse absoluto.
+
+25
+00:02:03,120 --> 00:02:10,060
+E então vamos definir o topo, então inicialmente vou apenas definir o topo e a esquerda para zero.
+
+26
+00:02:10,380 --> 00:02:14,010
+Vou mudar isso e mostrarei o porquê em alguns minutos.
+
+27
+00:02:14,490 --> 00:02:25,010
+E então a largura irá definir isso para 100 larguras de janela de visualização e a altura para 100 de altura de janela de visualização.
+
+28
+00:02:25,020 --> 00:02:27,060
+Então, nós só queríamos ocupar toda a janela de visualização.
+
+29
+00:02:27,390 --> 00:02:34,200
+E vamos adicionar um índice Z aqui de um negativo, porque queremos que isso fique atrás de zero por cento ou
+
+30
+00:02:34,200 --> 00:02:36,120
+quaisquer que sejam as porcentagens, o texto.
+
+31
+00:02:36,720 --> 00:02:38,810
+E queremos adicionar um filtro aqui.
+
+32
+00:02:39,180 --> 00:02:44,040
+E inicialmente o desfoque será definido como zero pixels.
+
+33
+00:02:45,930 --> 00:02:51,960
+E para o texto de carregamento, queremos apenas aumentar o tamanho da fonte.
+
+34
+00:02:52,320 --> 00:02:59,370
+Vamos definir o tamanho da fonte para 50 pixels e vamos definir a cor para branco.
+
+35
+00:03:00,180 --> 00:03:02,370
+Realmente depende da imagem de fundo que usamos.
+
+36
+00:03:02,950 --> 00:03:03,350
+Tudo bem.
+
+37
+00:03:03,390 --> 00:03:04,350
+Então isso nos dá isso.
+
+38
+00:03:04,350 --> 00:03:09,090
+Agora, eu só quero te mostrar uma coisa, Afie, porque isso vai começar embaçado e então é
+
+39
+00:03:09,090 --> 00:03:12,720
+vai subir ou descer, devo dizer.
+
+40
+00:03:12,720 --> 00:03:15,500
+Quanto mais altos os pixels para o desfoque, mais desfocado ele fica.
+
+41
+00:03:15,510 --> 00:03:19,740
+Então, se eu colocar 70 pixels aqui, é assim que parece agora.
+
+42
+00:03:19,770 --> 00:03:22,860
+Observe nas bordas, isso sai um pouco.
+
+43
+00:03:23,400 --> 00:03:25,380
+Então eu realmente quero consertar isso.
+
+44
+00:03:25,380 --> 00:03:27,590
+Não quero que saia tanto.
+
+45
+00:03:27,960 --> 00:03:32,550
+Então, para a parte superior e esquerda, vou definir isso para 30 pixels negativos.
+
+46
+00:03:32,790 --> 00:03:36,720
+E também é definido à esquerda para 30 pixels negativos.
+
+47
+00:03:36,750 --> 00:03:42,450
+Agora, se eu fizer isso, você verá que há menos espaçamento à esquerda na parte superior, mas há mais
+
+48
+00:03:42,450 --> 00:03:43,150
+por aqui.
+
+49
+00:03:43,440 --> 00:03:51,340
+Então, para a largura e a altura, o que podemos fazer é calcular para que possamos usar calc e apenas envolver isso
+
+50
+00:03:51,350 --> 00:03:56,130
+e queremos apenas adicionar 60 pixels assim.
+
+51
+00:03:56,130 --> 00:03:59,310
+E agora você pode ver que está mesmo à esquerda e à direita.
+
+52
+00:03:59,340 --> 00:04:01,160
+Queremos fazer o mesmo para a parte superior e inferior.
+
+53
+00:04:01,170 --> 00:04:02,310
+Então faremos a mesma coisa.
+
+54
+00:04:02,310 --> 00:04:08,670
+Vamos apenas calcular e queremos adicionar 60 pixels aqui também.
+
+55
+00:04:10,090 --> 00:04:11,880
+E agora não há tanto espaço.
+
+56
+00:04:12,570 --> 00:04:12,970
+Tudo bem.
+
+57
+00:04:12,990 --> 00:04:14,880
+Então eu acho que isso parece um pouco melhor.
+
+58
+00:04:15,180 --> 00:04:17,780
+Então, vamos colocar isso de volta a zero pixels.
+
+59
+00:04:19,650 --> 00:04:25,110
+Então, no próximo vídeo, queremos adicionar nosso JavaScript para que essa imagem comece basicamente
+
+60
+00:04:25,110 --> 00:04:31,530
+embaçado e, em seguida, faça o caminho até ficar claro à medida que essa porcentagem é carregada aqui.

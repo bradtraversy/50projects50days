@@ -1,0 +1,67 @@
+1
+00:00:00,180 --> 00:00:01,770
+OK, welcome to your next project.
+
+2
+00:00:01,800 --> 00:00:07,890
+So this one, this is a pretty simple project, at least in terms of the JavaScript, it's only like
+
+3
+00:00:07,890 --> 00:00:08,970
+five lines or so.
+
+4
+00:00:09,120 --> 00:00:13,320
+Basically, we just need to add an event listener to this icon right here.
+
+5
+00:00:13,590 --> 00:00:17,940
+And once we click it, we're going to we're going to toggle an act of class.
+
+6
+00:00:18,240 --> 00:00:19,740
+And it's active right now.
+
+7
+00:00:19,740 --> 00:00:23,610
+But when I click it, you'll see what happens is a couple of things, really.
+
+8
+00:00:23,610 --> 00:00:31,230
+This container here, the nav shrinks, the links start to rotate, and then they ultimately disappear,
+
+9
+00:00:31,740 --> 00:00:33,570
+setting the opacity to zero.
+
+10
+00:00:33,960 --> 00:00:38,790
+And then the ex does a rotation and then turns into two lines.
+
+11
+00:00:39,230 --> 00:00:41,100
+OK, so it's a pretty cool effect.
+
+12
+00:00:41,100 --> 00:00:44,190
+And you could use this on any website or application.
+
+13
+00:00:45,020 --> 00:00:47,160
+We're going to be doing mostly CSFs here.
+
+14
+00:00:47,820 --> 00:00:53,610
+As you can see, we have quite a few transitions that are going to come into play when we toggle the
+
+15
+00:00:53,610 --> 00:00:56,250
+active class, which is what we're doing when we click this.
+
+16
+00:00:56,670 --> 00:00:57,000
+All right.
+
+17
+00:00:57,010 --> 00:00:58,470
+So let's go ahead and get into it.

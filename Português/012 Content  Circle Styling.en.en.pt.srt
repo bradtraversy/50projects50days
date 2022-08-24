@@ -1,0 +1,627 @@
+﻿1
+00:00:00,150 --> 00:00:03,360
+Tudo bem, então vamos começar aqui, eu tenho meu inicializador de projeto aberto.
+
+2
+00:00:03,360 --> 00:00:09,360
+Eu também tenho um link aqui para a fonte CDN incrível para que possamos usar alguns ícones para abrir e fechar
+
+3
+00:00:09,360 --> 00:00:09,930
+botões.
+
+4
+00:00:10,350 --> 00:00:19,380
+Então, no título aqui, vou apenas dizer navegação rotativa e aqui embaixo, vamos nos livrar disso.
+
+5
+00:00:19,380 --> 00:00:22,320
+Cada um, vamos ter um container que envolve tudo.
+
+6
+00:00:22,740 --> 00:00:29,910
+E aqui nós vamos ter um container de traço circular que vai envolver o círculo da classe
+
+7
+00:00:29,910 --> 00:00:30,450
+de círculo.
+
+8
+00:00:30,450 --> 00:00:32,660
+E este é basicamente o, você sabe, o círculo.
+
+9
+00:00:32,670 --> 00:00:34,470
+Vai estar no canto com os botões.
+
+10
+00:00:34,830 --> 00:00:37,950
+Então aqui, vamos ter um botão com a ideia de fechar.
+
+11
+00:00:38,340 --> 00:00:40,680
+E eu só quero usar um ícone da fonte.
+
+12
+00:00:40,680 --> 00:00:41,160
+Incrível.
+
+13
+00:00:41,160 --> 00:00:49,050
+Então eFax e depois um hífen será o ícone e logo abaixo dele terá um botão com a ideia
+
+14
+00:00:49,050 --> 00:00:49,740
+de aberto.
+
+15
+00:00:50,160 --> 00:00:57,990
+E este será o ícone eFax e, em seguida, uma barra de traço para nos dar assim, você sabe, no Hamberger.
+
+16
+00:00:57,990 --> 00:00:58,320
+Olhar.
+
+17
+00:00:59,610 --> 00:01:03,480
+Então, se eu salvar isso, veremos nossos dois botões aqui e agora queremos estar ainda dentro
+
+18
+00:01:03,480 --> 00:01:06,240
+o contêiner principal, mas fora do contêiner do círculo.
+
+19
+00:01:06,250 --> 00:01:11,640
+Logo acima da última div, teremos nosso conteúdo e você pode colocar absolutamente qualquer coisa
+
+20
+00:01:11,640 --> 00:01:19,350
+aqui neste conteúdo, Dev, vamos colocar em cada um um artigo incrível e pequenas tags
+
+21
+00:01:19,350 --> 00:01:26,460
+vamos colocar o autor, nosso bom amigo, Pop Estrangeiro e depois parágrafo, vamos fazer o Lorem 100 só para
+
+22
+00:01:26,460 --> 00:01:34,860
+jogue algum texto fictício lá embaixo do parágrafo, teremos outro H3 e diremos meu cachorro e
+
+23
+00:01:34,860 --> 00:01:36,150
+vamos ter uma foto de um cachorro.
+
+24
+00:01:36,150 --> 00:01:40,740
+Eu só vou recortar essa tag de imagem aqui.
+
+25
+00:01:40,740 --> 00:01:43,530
+E claro, como eu disse, você pode colocar o que quiser aqui.
+
+26
+00:01:43,560 --> 00:01:46,110
+Esta é apenas uma imagem inicial de um cachorro.
+
+27
+00:01:46,500 --> 00:01:52,110
+E então abaixo disso terá um parágrafo fará Lorem 75.
+
+28
+00:01:52,980 --> 00:02:03,030
+E salve e coloque um cachorrinho fofo na tela, então embaixo do container, para que o container termine
+
+29
+00:02:03,030 --> 00:02:09,750
+aqui, a última div, vamos colocar nosso nav, então vamos criar uma tag H2O five nav com o
+
+30
+00:02:09,750 --> 00:02:11,790
+URL e depois um aliado.
+
+31
+00:02:11,790 --> 00:02:13,620
+E eu vou usar ícones aqui também.
+
+32
+00:02:13,620 --> 00:02:25,590
+Então vamos fazer um fas e F a dash home e então ao lado desse ícone vamos ficar em casa e copiar isso para baixo
+
+33
+00:02:25,590 --> 00:02:26,460
+duas vezes.
+
+34
+00:02:26,580 --> 00:02:31,980
+Então este vai ser sobre, quero dizer, esses são provavelmente links B, mas tudo bem.
+
+35
+00:02:31,980 --> 00:02:33,230
+Você pode adicionar os links se quiser.
+
+36
+00:02:33,630 --> 00:02:42,000
+Então falha, vamos fazer o usuário dash Alz e então para isso vai ser contato, estes não vão ser
+
+37
+00:02:42,000 --> 00:02:43,230
+páginas reais.
+
+38
+00:02:45,420 --> 00:02:51,030
+O ponto deste projeto é a animação real e a posição do nav e tudo isso, não
+
+39
+00:02:51,030 --> 00:02:52,660
+as páginas internas reais.
+
+40
+00:02:53,100 --> 00:02:55,530
+Então isso usará o envelope.
+
+41
+00:02:56,790 --> 00:02:59,500
+OK, então isso deve fazer isso para o HTML.
+
+42
+00:02:59,500 --> 00:03:02,580
+Vamos pular para nossa folha de estilo e faremos uma boa parte disso.
+
+43
+00:03:02,580 --> 00:03:07,050
+Agora provavelmente teremos que dividi-lo em outro vídeo porque há um pouco de sucesso, mas estou
+
+44
+00:03:07,050 --> 00:03:08,850
+vai usar a fonte mais recente.
+
+45
+00:03:08,850 --> 00:03:15,540
+Então o sucesso Questionmark Family é igual a Lato e então vamos adicionar isso ao nosso corpo.
+
+46
+00:03:18,790 --> 00:03:19,470
+Tudo bem.
+
+47
+00:03:19,470 --> 00:03:21,000
+E então vamos ver.
+
+48
+00:03:21,030 --> 00:03:24,000
+Na verdade, não vamos usar todas essas coisas do Fleck aqui.
+
+49
+00:03:24,450 --> 00:03:30,330
+Então, vou me livrar de praticamente tudo isso, exceto.
+
+50
+00:03:33,460 --> 00:03:42,100
+Exceto pelo estouro oculto, que na verdade vou mudar para acidente de estouro, então o que isso
+
+51
+00:03:42,100 --> 00:03:46,010
+faz é apenas ocultar a barra de rolagem no eixo x.
+
+52
+00:03:46,030 --> 00:03:47,220
+Então indo por aqui.
+
+53
+00:03:47,470 --> 00:03:51,880
+Então, queremos ser capazes de rolar dessa maneira e, em seguida, margear zero.
+
+54
+00:03:51,880 --> 00:04:01,030
+E então vamos também adicionar uma cor de fundo de três três três, que é um cinza escuro.
+
+55
+00:04:01,030 --> 00:04:02,740
+E então vamos ter cor.
+
+56
+00:04:03,640 --> 00:04:09,880
+Ta ta dois, e eu sei que isso não parece certo, mas vamos definir o fundo do container
+
+57
+00:04:09,880 --> 00:04:11,230
+cor para uma cor clara.
+
+58
+00:04:11,230 --> 00:04:20,390
+Então vamos fazer a cor de fundo e vamos fazer três vezes agora com este container.
+
+59
+00:04:21,220 --> 00:04:27,610
+Basicamente, ele vai girar um pouco quando tiver uma classe específica de Chenab.
+
+60
+00:04:27,620 --> 00:04:34,180
+Portanto, antes de adicionar qualquer outra coisa ao contêiner, vamos fazer o contêiner quando ele mostrar o NAV e pudermos
+
+61
+00:04:34,180 --> 00:04:42,730
+gire-o com a propriedade transformada e, em seguida, gire e eu vou girá-lo 20 graus negativos.
+
+62
+00:04:44,230 --> 00:04:44,710
+Tudo bem.
+
+63
+00:04:44,710 --> 00:04:54,850
+E então vamos ver se voltamos aqui e adicionamos essa classe manualmente a este show NAV, então você
+
+64
+00:04:54,850 --> 00:04:56,350
+pode vê-lo girar.
+
+65
+00:04:56,740 --> 00:04:58,930
+E eu vou manter isso lá por um segundo.
+
+66
+00:05:00,490 --> 00:05:03,340
+Vamos querer mudar a origem da transformação.
+
+67
+00:05:03,940 --> 00:05:09,490
+Então, transforme a origem quando você girar a origem por padrão, será como no meio.
+
+68
+00:05:09,490 --> 00:05:10,900
+É só isso que vira.
+
+69
+00:05:10,900 --> 00:05:11,740
+Ele o gira.
+
+70
+00:05:12,100 --> 00:05:16,510
+No entanto, queremos que ele gire da posição superior esquerda.
+
+71
+00:05:16,510 --> 00:05:17,690
+Então ele gira.
+
+72
+00:05:17,710 --> 00:05:18,640
+Eu realmente não posso explicar.
+
+73
+00:05:18,680 --> 00:05:26,710
+Se você for à origem da transformação Amdocs for Fortran, poderá ver como funciona com diferentes
+
+74
+00:05:26,710 --> 00:05:27,250
+valores.
+
+75
+00:05:27,250 --> 00:05:33,340
+Mas queremos definir a propriedade de origem da transformação para o canto superior esquerdo.
+
+76
+00:05:33,920 --> 00:05:38,730
+OK, agora você pode ver que o ponto de rotação está aqui em cima em vez de no meio.
+
+77
+00:05:40,150 --> 00:05:45,850
+Agora queremos fazer a transição para isso porque não queremos apenas girar, você sabe, girar bem rápido.
+
+78
+00:05:45,850 --> 00:05:47,200
+Queremos que seja suave.
+
+79
+00:05:47,200 --> 00:05:50,710
+Então, vamos adicionar uma transição para isso.
+
+80
+00:05:51,040 --> 00:05:58,140
+E queremos fazer a transição da propriedade transform, digamos, zero vírgula cinco segundos e usaremos apenas linear.
+
+81
+00:05:58,150 --> 00:06:00,430
+Então é só, você sabe, tudo em uma velocidade ou qualquer outra coisa.
+
+82
+00:06:00,430 --> 00:06:05,520
+E você pode ver que realmente faz isso quando eu salvo porque temos essa classe nele.
+
+83
+00:06:06,490 --> 00:06:09,640
+Agora, vou seguir em frente e me livrar dessa classe por enquanto.
+
+84
+00:06:09,640 --> 00:06:14,710
+Mas sabemos que ele gira quando tem essa classe específica adicionada.
+
+85
+00:06:15,340 --> 00:06:20,750
+Então, algumas outras coisas que eu quero fazer aqui é apenas definir a largura para 100 larguras de janela de visualização.
+
+86
+00:06:20,770 --> 00:06:26,440
+Então, basicamente, pegue o todo, você sabe, toda a janela de visualização horizontalmente.
+
+87
+00:06:26,710 --> 00:06:33,670
+E então vamos definir a altura mínima para eu vou definir isso para cem alturas da janela de visualização.
+
+88
+00:06:33,670 --> 00:06:42,100
+Então, queremos ocupar toda a janela de visualização e, em seguida, para preenchimento, digamos preenchimento de cinquenta pixels em todos os
+
+89
+00:06:42,100 --> 00:06:46,540
+caminho de volta e isso deve fazer isso para o contêiner.
+
+90
+00:06:46,570 --> 00:06:55,330
+Agora vamos trabalhar no recipiente circular que está ao redor deste, então circule o recipiente Dasch.
+
+91
+00:06:56,620 --> 00:07:05,290
+E eu quero posicionar isso em uma posição fixa e queremos que seja como um semicírculo na borda
+
+92
+00:07:05,290 --> 00:07:06,070
+da página.
+
+93
+00:07:06,070 --> 00:07:13,090
+Então vamos definir isso para menos cem pixels para o topo e depois deixar a mesma coisa, menos 100
+
+94
+00:07:13,090 --> 00:07:13,720
+píxeis.
+
+95
+00:07:14,410 --> 00:07:17,220
+E agora nós simplesmente não vemos nada.
+
+96
+00:07:17,710 --> 00:07:20,500
+Basicamente, os botões não estão aparecendo agora.
+
+97
+00:07:20,920 --> 00:07:26,980
+Até agora o círculo em si, porque lembre-se, temos um container circle, mas também temos uma classe
+
+98
+00:07:26,980 --> 00:07:29,020
+de círculo que envolve o ícone.
+
+99
+00:07:29,040 --> 00:07:34,000
+Então é aqui que teremos como a cor de fundo, que será hexadecimal F
+
+100
+00:07:34,000 --> 00:07:36,520
+F sete nove sete nove.
+
+101
+00:07:37,000 --> 00:07:45,070
+E vamos definir uma altura de duzentos pixels em um com duzentos pixels e agora você pode ver
+
+102
+00:07:45,070 --> 00:07:46,180
+lá no canto.
+
+103
+00:07:47,740 --> 00:07:49,360
+Queremos que este seja um círculo.
+
+104
+00:07:49,360 --> 00:07:55,450
+Então o raio do Border Dasch, vamos definir isso para cinqüenta por cento, fazer isso um semicírculo.
+
+105
+00:07:55,600 --> 00:07:58,990
+Quero dizer, é um círculo completo, mas metade está fora da tela.
+
+106
+00:07:59,290 --> 00:07:59,890
+Foi o que fizemos.
+
+107
+00:07:59,890 --> 00:08:03,490
+100 negativos porque temos duzentos para a altura e a largura.
+
+108
+00:08:03,640 --> 00:08:07,570
+Se você aumentar ou diminuir isso, você deseja ajustar isso também.
+
+109
+00:08:07,810 --> 00:08:12,250
+E queremos posicionar este relativo para que possamos posicionar os botões dentro do absoluto.
+
+110
+00:08:12,760 --> 00:08:14,380
+E isso vai girar.
+
+111
+00:08:14,410 --> 00:08:19,780
+Então eu quero adicionar uma transição na transformação.
+
+112
+00:08:21,050 --> 00:08:28,280
+Property e vamos fazer a mesma coisa, zero vírgula cinco segundos lineares, é o mesmo que o container
+
+113
+00:08:28,280 --> 00:08:29,060
+rotação.
+
+114
+00:08:30,170 --> 00:08:30,610
+Tudo bem.
+
+115
+00:08:30,620 --> 00:08:36,050
+E então para os botões, digamos um botão de círculo.
+
+116
+00:08:37,770 --> 00:08:42,960
+E para estes, quero saber que não podemos vê-los no momento, vamos posicioná-los para
+
+117
+00:08:42,960 --> 00:08:51,630
+nossa única posição, eles meio que uma posição absoluta, absoluta, e vamos colocá-los no topo 50 por cento.
+
+118
+00:08:52,200 --> 00:08:56,070
+E da esquerda, 50 por cento.
+
+119
+00:08:57,810 --> 00:09:02,820
+E então vamos fazer a altura cem pixels.
+
+120
+00:09:04,560 --> 00:09:13,140
+E então vamos definir e eu sei que ainda não parece certo, vamos definir o plano de fundo para transparente.
+
+121
+00:09:14,300 --> 00:09:18,530
+E ambos estão certos e ambos estão no mesmo local exato agora, queremos tirar isso
+
+122
+00:09:18,530 --> 00:09:19,070
+fronteira.
+
+123
+00:09:19,220 --> 00:09:24,170
+Então Border zero, vamos definir o tamanho da fonte maior também.
+
+124
+00:09:24,170 --> 00:09:27,830
+Portanto, o tamanho da fonte definirá isso para vinte e seis pixels.
+
+125
+00:09:28,980 --> 00:09:32,310
+E vamos colocar a cor para o branco.
+
+126
+00:09:34,000 --> 00:09:40,600
+OK, e então eu só quero me livrar dessa borda, um estado de foco intenso, então vamos dizer círculo de pontos
+
+127
+00:09:41,230 --> 00:09:48,730
+e o botão que queremos direcionar o foco e definir a linha para nenhum.
+
+128
+00:09:51,340 --> 00:09:52,000
+OK bom.
+
+129
+00:09:54,460 --> 00:09:54,960
+Vamos ver.
+
+130
+00:09:54,970 --> 00:10:00,010
+Então cada um tem uma ideia de aberto, um tem uma ideia de fechamento.
+
+131
+00:10:00,010 --> 00:10:02,740
+Então, eu quero direcionar o aberto.
+
+132
+00:10:03,880 --> 00:10:12,070
+Então circule o botão da ideia de abrir e eu vou definir o valor da esquerda para 60.
+
+133
+00:10:13,140 --> 00:10:18,860
+Por cento, Ei, o botão de abrir é o que veremos inicialmente, e é onde quero que ele seja posicionado.
+
+134
+00:10:19,500 --> 00:10:28,470
+Então, para fechar, digamos, circule e queremos o botão que tenha a ideia de fechar.
+
+135
+00:10:29,700 --> 00:10:37,670
+E vou definir isso para o topo e para 60%, e isso é relativo ao círculo, OK?
+
+136
+00:10:37,680 --> 00:10:44,310
+E queremos girar este botão de fechar.
+
+137
+00:10:44,310 --> 00:10:52,230
+Então vamos usar, transformar, girar, e vamos girar 90 graus ou 90 graus.
+
+138
+00:10:52,920 --> 00:10:56,940
+E vamos definir essa origem de transformação.
+
+139
+00:10:59,400 --> 00:11:03,330
+Transform Origin também estará no canto superior esquerdo.
+
+140
+00:11:03,870 --> 00:11:06,260
+Então agora eu salvei e você não pode ver.
+
+141
+00:11:06,270 --> 00:11:06,980
+Está aqui em cima.
+
+142
+00:11:06,990 --> 00:11:14,340
+Na verdade, se eu pegar meu contêiner aqui e vamos definir apenas temporariamente, defina isso para 200 pixels.
+
+143
+00:11:15,830 --> 00:11:21,800
+Eu posso ver exatamente onde está posicionado, então basta colocar isso de volta para menos 100 e devemos ver
+
+144
+00:11:22,090 --> 00:11:27,680
+as linhas aqui e vai ficar fixo lá, não importa o quê.
+
+145
+00:11:28,910 --> 00:11:33,980
+Esta imagem, porém, vamos corrigir isso bem rápido.
+
+146
+00:11:34,370 --> 00:11:37,580
+Nós vamos fazer o resto desta temporada no próximo vídeo.
+
+147
+00:11:37,580 --> 00:11:46,130
+Mas eu só quero segmentar a imagem do conteúdo e definir uma largura máxima de cem por cento de seu contêiner
+
+148
+00:11:46,550 --> 00:11:47,510
+porque isso está me incomodando.
+
+149
+00:11:47,840 --> 00:11:50,810
+Mas, sim, você pode ter absolutamente qualquer conteúdo que quiser aqui.
+
+150
+00:11:51,050 --> 00:11:53,150
+E podemos ver a navegação e outras coisas aqui.
+
+151
+00:11:53,150 --> 00:11:59,000
+Mas no próximo vídeo, terminaremos o acesso e adicionaremos um pouco de JavaScript para ser
+
+152
+00:11:59,000 --> 00:12:05,270
+capaz de clicar nisso e, você sabe, adicionar a classe show NAV e fará para fazer todo o seu efeito de rotação.
+
+153
+00:12:06,140 --> 00:12:10,460
+Vamos realmente adicionar, no entanto, ao botão.
+
+154
+00:12:11,960 --> 00:12:16,340
+Vamos adicionar um ponteiro de cursor assim.
+
+155
+00:12:16,840 --> 00:12:17,170
+Tudo bem.
+
+156
+00:12:17,180 --> 00:12:17,660
+Então é isso.
+
+157
+00:12:17,660 --> 00:12:18,730
+Vejo vocês no próximo vídeo.

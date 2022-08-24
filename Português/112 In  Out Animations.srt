@@ -1,0 +1,427 @@
+﻿1
+00:00:00,330 --> 00:00:05,520
+OK, agora queremos começar a trabalhar nos números e naquela animação, então a primeira coisa que vamos
+
+2
+00:00:05,520 --> 00:00:07,350
+fazer é números de estilo.
+
+3
+00:00:07,380 --> 00:00:13,710
+Então lembre-se, temos a classe de números e vamos dar ao NUM a cor de um hexadecimal
+
+4
+00:00:13,710 --> 00:00:17,730
+valor de três quatro nove oito DB.
+
+5
+00:00:18,510 --> 00:00:25,470
+OK, então vamos dar a cor azul e queremos aumentar muito o tamanho da fonte.
+
+6
+00:00:25,480 --> 00:00:35,040
+Então vamos fazer 50 pixels e vamos posicionar este relativo porque o span dentro daquele que é
+
+7
+00:00:35,050 --> 00:00:38,300
+em torno de cada número, queremos que eles sejam posicionados de forma absoluta.
+
+8
+00:00:38,310 --> 00:00:40,580
+Portanto, o contêiner deve ser posicionado em relação.
+
+9
+00:00:41,010 --> 00:00:47,610
+E também vamos definir o estouro como oculto porque não queremos que nada saia do contêiner
+
+10
+00:00:47,820 --> 00:00:50,070
+e queremos definir uma largura e altura para isso.
+
+11
+00:00:50,550 --> 00:00:55,830
+Vamos definir a largura para 250 pixels e vamos definir a altura para o mesmo que a fonte
+
+12
+00:00:55,830 --> 00:00:57,690
+tamanho, que é de 50 pixels.
+
+13
+00:00:58,260 --> 00:00:58,710
+Tudo bem.
+
+14
+00:00:58,710 --> 00:01:02,970
+Agora, nós só queremos na verdade, quer saber?
+
+15
+00:01:02,970 --> 00:01:04,820
+Vamos posicionar os números primeiro.
+
+16
+00:01:04,830 --> 00:01:07,540
+Queremos que o número apareça bem no meio aqui.
+
+17
+00:01:07,560 --> 00:01:16,680
+Então, o que faremos é pegar os intervalos que estão nos números e queremos posicioná-los como absolutos
+
+18
+00:01:16,680 --> 00:01:19,650
+dentro de seu recipiente, dentro de nums.
+
+19
+00:01:20,130 --> 00:01:29,160
+E também queremos definir a posição para fazermos a partir dos 50% superiores e da esquerda, 50%
+
+20
+00:01:29,160 --> 00:01:29,830
+por cento.
+
+21
+00:01:31,800 --> 00:01:36,060
+OK, e então o que faremos é corrigir esse posicionamento.
+
+22
+00:01:36,060 --> 00:01:46,080
+Vamos adicionar uma transformação de tradução, desculpe, essas transformações inversas são traduzidas e, em seguida, menos 50
+
+23
+00:01:46,080 --> 00:01:46,800
+por cento.
+
+24
+00:01:47,670 --> 00:01:49,590
+50 por cento negativos.
+
+25
+00:01:51,180 --> 00:01:53,800
+OK, e agora você pode ver que está bem no meio.
+
+26
+00:01:55,020 --> 00:02:00,930
+Agora queremos começar com uma pequena rotação, porque você pode ver que a maneira como esses números
+
+27
+00:02:00,930 --> 00:02:05,100
+entram, eles vêm assim e eles giram eles giram.
+
+28
+00:02:05,110 --> 00:02:06,840
+Então nós vamos começar isso.
+
+29
+00:02:07,770 --> 00:02:11,850
+Então eles giram e nós vamos fazer cento e vinte graus.
+
+30
+00:02:11,850 --> 00:02:13,380
+Então vai começar assim.
+
+31
+00:02:13,620 --> 00:02:16,680
+Agora queremos mudar o que é chamado de origem da transformação.
+
+32
+00:02:16,680 --> 00:02:20,030
+Não queremos quando isso começar, não queremos que comece aqui.
+
+33
+00:02:20,040 --> 00:02:23,370
+Queríamos começar aqui quando gira assim.
+
+34
+00:02:23,670 --> 00:02:26,040
+Então deixe-me mostrar-lhe bem rápido
+
+35
+00:02:28,650 --> 00:02:30,030
+transformar origem.
+
+36
+00:02:31,260 --> 00:02:34,050
+Então aqui você pode vê-lo definido para o centro.
+
+37
+00:02:34,050 --> 00:02:39,110
+Mas o que vou fazer é configurá-lo para o centro inferior.
+
+38
+00:02:40,050 --> 00:02:42,810
+Então, se eu fizer isso, você pode ver que está posicionado de forma diferente.
+
+39
+00:02:42,810 --> 00:02:48,390
+Vai vir daqui em vez de bem no meio assim.
+
+40
+00:02:48,710 --> 00:02:49,160
+Tudo bem.
+
+41
+00:02:49,170 --> 00:02:50,070
+Então, ele só vai movê-lo.
+
+42
+00:02:50,100 --> 00:02:51,900
+Agora, você também pode fazer como o centro superior.
+
+43
+00:02:51,900 --> 00:02:52,890
+Pode vir dessa forma.
+
+44
+00:02:52,890 --> 00:02:55,350
+Então você pode mudar, você sabe, como ele gira.
+
+45
+00:02:55,650 --> 00:03:06,650
+Então eu vou em frente e definir a origem da transformação e vamos defini-la para o centro inferior.
+
+46
+00:03:06,660 --> 00:03:09,990
+E assim que eu salvar isso, não vamos ver nada aqui.
+
+47
+00:03:10,380 --> 00:03:15,890
+Agora, se esses 120 graus forem ajustados para zero, então poderemos vê-los.
+
+48
+00:03:16,200 --> 00:03:21,450
+E o que eu vou fazer é fazer a aula de N porque lembre-se, nós temos essa aula de final que começa
+
+49
+00:03:21,450 --> 00:03:25,020
+nos três e ter isso em zero graus.
+
+50
+00:03:25,020 --> 00:03:27,430
+Então isso que está em foco aqui.
+
+51
+00:03:27,780 --> 00:03:33,900
+Então vamos dizer NUMS e queremos pegar a banda que tem a classe disso.
+
+52
+00:03:33,920 --> 00:03:40,680
+E então vamos em frente e pegue essa linha aqui e mude isso para zero graus.
+
+53
+00:03:41,280 --> 00:03:45,360
+E dessa forma podemos ver qualquer número que tenha essa classe nele.
+
+54
+00:03:45,690 --> 00:03:52,290
+Agora, também queremos adicionar nossa animação à classe in e vamos chamar essa animação de entrar.
+
+55
+00:03:52,680 --> 00:03:59,970
+Será uma duração de zero vírgula cinco segundos e será para meus dois pontos aqui e então será um
+
+56
+00:04:00,570 --> 00:04:08,490
+vamos fazer com que ele esteja em vigor, OK, porque essencialmente o que queremos é que venha daqui e passe por cima
+
+57
+00:04:08,490 --> 00:04:10,410
+assim, como você pode ver aqui.
+
+58
+00:04:11,460 --> 00:04:11,900
+Tudo bem.
+
+59
+00:04:12,360 --> 00:04:18,450
+Então, cada número que está entrando tem que entrar e então teremos uma saída para ir por este caminho e estamos
+
+60
+00:04:18,450 --> 00:04:21,600
+vai usar transform, girar para poder fazer isso.
+
+61
+00:04:22,260 --> 00:04:24,250
+Então, podemos criar a saída também.
+
+62
+00:04:24,250 --> 00:04:27,890
+Vou copiar isso para que tenhamos uma aula de fora.
+
+63
+00:04:28,440 --> 00:04:32,190
+E isso não vai ter o ponto de partida aqui.
+
+64
+00:04:32,790 --> 00:04:33,930
+Então você se livra disso.
+
+65
+00:04:34,260 --> 00:04:36,980
+Vamos apenas chamar uma animação chamada Go Out.
+
+66
+00:04:37,650 --> 00:04:46,050
+Então, vamos criar essas duas animações, esses quadros-chave, digamos, quadros-chave, e este será o
+
+67
+00:04:46,050 --> 00:04:48,450
+ir em animação.
+
+68
+00:04:48,450 --> 00:04:52,400
+Agora teremos vários estados aqui, então vamos fazer zero por cento.
+
+69
+00:04:52,410 --> 00:04:53,850
+Será o nosso ponto de partida.
+
+70
+00:04:54,240 --> 00:05:04,560
+Então teremos 30 por cento e depois 60 por cento e depois 100 por cento, que é onde terminará.
+
+71
+00:05:05,160 --> 00:05:08,620
+Então, queremos apenas diferentes níveis de rotação nesses diferentes estados.
+
+72
+00:05:08,620 --> 00:05:14,730
+Então vou copiar esta linha aqui, transformar, traduzir e girar e vamos começar
+
+73
+00:05:15,660 --> 00:05:17,990
+em 120.
+
+74
+00:05:19,350 --> 00:05:25,320
+E porque nós estaremos, você sabe, aqui e depois em 30 por cento, eu realmente vou
+
+75
+00:05:25,320 --> 00:05:33,480
+ir para menos 20 porque eu não quero ir direto de 120 para zero, porque eu quero ter isso
+
+76
+00:05:33,480 --> 00:05:36,810
+pequeno efeito de salto para que você possa ver como ele avança.
+
+77
+00:05:36,810 --> 00:05:43,890
+E então de volta se você quiser, você pode fazer apenas um vinte e dois e então colocar, você sabe, aqui embaixo zero.
+
+78
+00:05:43,890 --> 00:05:44,490
+Isso é bom.
+
+79
+00:05:44,490 --> 00:05:49,500
+Mas se você quer esse efeito saltitante, vamos para 20 negativos a 30% e então vamos
+
+80
+00:05:49,500 --> 00:05:54,450
+para ir a dez graus a 60 por cento, o que lhe dará esse efeito.
+
+81
+00:05:54,600 --> 00:05:58,230
+E você pode ver quando eu salvá-lo, você pode ver como ele funciona.
+
+82
+00:05:58,230 --> 00:06:02,280
+Se eu tirar isso e fizer isso, ele simplesmente entra.
+
+83
+00:06:02,280 --> 00:06:06,540
+E é mais lento porque lembre-se que não importa o que aconteça, a duração sempre será zero ponto
+
+84
+00:06:06,540 --> 00:06:07,440
+cinco segundos.
+
+85
+00:06:09,210 --> 00:06:09,630
+Tudo bem.
+
+86
+00:06:09,630 --> 00:06:10,880
+Então entra.
+
+87
+00:06:10,890 --> 00:06:13,530
+Agora queremos criar nossa saída.
+
+88
+00:06:13,530 --> 00:06:18,750
+Então eu vou copiar isso e vamos mudar isso para sair.
+
+89
+00:06:19,020 --> 00:06:24,540
+E queremos começar em zero grau agora porque lembre-se, estamos começando aqui e saindo.
+
+90
+00:06:24,870 --> 00:06:29,340
+Então comece em zero graus e então não precisamos de 30 por cento, mas são 60.
+
+91
+00:06:29,820 --> 00:06:32,310
+Eu quero chegar a 20 graus.
+
+92
+00:06:33,120 --> 00:06:41,550
+E então em 100, quero ir para menos 120, que é obviamente o oposto de 120.
+
+93
+00:06:41,730 --> 00:06:43,710
+Então, 120 negativo estará aqui.
+
+94
+00:06:45,560 --> 00:06:49,250
+Tudo bem, então deve ser isso, a última coisa que quero fazer é apenas estilo.
+
+95
+00:06:49,250 --> 00:06:51,590
+Esta idade para sprog deveria ter feito isso antes.
+
+96
+00:06:51,600 --> 00:06:53,450
+Vou colocar isso aqui em algum lugar.
+
+97
+00:06:53,960 --> 00:07:07,040
+Basta dizer quatro anos, e ele definirá o tamanho da fonte para 20 pixels e margem de cinco pixels e vamos
+
+98
+00:07:07,040 --> 00:07:07,940
+torná-lo maiúsculo.
+
+99
+00:07:07,940 --> 00:07:10,960
+Portanto, a transformação de texto será em maiúsculas.
+
+100
+00:07:12,020 --> 00:07:12,560
+Aqui vamos nós.
+
+101
+00:07:13,340 --> 00:07:15,380
+OK, então temos nosso sucesso feito.
+
+102
+00:07:15,380 --> 00:07:22,340
+Agora temos que fazer algumas coisas no JavaScript que precisamos controlar quando queremos mostrar isso
+
+103
+00:07:22,340 --> 00:07:24,290
+e quando queremos mostrar nossa mensagem final.
+
+104
+00:07:24,530 --> 00:07:34,040
+Também precisamos basicamente percorrer esses intervalos aqui e adicionar e remover a classe de entrada e saída para que
+
+105
+00:07:34,040 --> 00:07:37,580
+podemos ter essa animação acontecendo continuamente.
+
+106
+00:07:37,860 --> 00:07:38,120
+Tudo bem.
+
+107
+00:07:38,120 --> 00:07:39,520
+Então vamos fazer isso no próximo vídeo.

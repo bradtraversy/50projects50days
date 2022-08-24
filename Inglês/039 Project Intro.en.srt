@@ -1,0 +1,51 @@
+1
+00:00:00,270 --> 00:00:06,390
+So this is a cool little project for picking random choices now we have this text area, and as soon
+
+2
+00:00:06,390 --> 00:00:12,870
+as I start to type, like I'll say choice one and you'll see it'll format down here is like a tag.
+
+3
+00:00:13,200 --> 00:00:19,860
+And to create another choice, I just need to put a comma and start to type again, say choice to another
+
+4
+00:00:19,860 --> 00:00:20,370
+comma.
+
+5
+00:00:20,370 --> 00:00:23,250
+Choice three, choice four.
+
+6
+00:00:23,250 --> 00:00:28,530
+Obviously I can do as many as I want and then as soon as I hit enter, it's going to give us this cool
+
+7
+00:00:28,530 --> 00:00:31,560
+little effect and it's going to stop on a random choice.
+
+8
+00:00:31,560 --> 00:00:33,340
+It's also going to clear the text area.
+
+9
+00:00:33,690 --> 00:00:34,170
+All right.
+
+10
+00:00:34,180 --> 00:00:41,580
+So if you just need if you need some little helper to help you make a choice between however many items,
+
+11
+00:00:41,580 --> 00:00:44,130
+however many objects, I mean, you could do numbers here.
+
+12
+00:00:46,590 --> 00:00:48,750
+And it's just going to stop on a random one.
+
+13
+00:00:49,110 --> 00:00:52,460
+OK, so that's what will be creating let's go ahead and get started.

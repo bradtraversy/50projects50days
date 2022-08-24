@@ -1,0 +1,547 @@
+﻿1
+00:00:00,060 --> 00:00:05,970
+Certo, então precisamos terminar nosso sucesso, temos que lidar com o NAV real aqui, mas
+
+2
+00:00:05,970 --> 00:00:08,790
+antes de fazermos isso, vou adicionar mais alguns estilos de conteúdo.
+
+3
+00:00:09,240 --> 00:00:23,250
+Então, para o conteúdo em si, vamos fazer uma largura máxima de 1000 pixels e vamos definir a margem.
+
+4
+00:00:23,850 --> 00:00:26,310
+Vamos fazer 50 pixels na parte superior e inferior.
+
+5
+00:00:26,310 --> 00:00:27,640
+Automático à esquerda e à direita.
+
+6
+00:00:27,960 --> 00:00:28,770
+Mantenha-o no meio.
+
+7
+00:00:28,800 --> 00:00:34,980
+Então, mesmo se esticarmos, você sabe, vai ter mil pixels mil pixels com Max.
+
+8
+00:00:35,640 --> 00:00:43,350
+E então para o conteúdo unilateral, cada um deles vai tirar a margem disso.
+
+9
+00:00:43,360 --> 00:00:44,730
+Portanto, margem zero.
+
+10
+00:00:44,730 --> 00:00:47,400
+E então para a pequena tag para o autor,
+
+11
+00:00:50,260 --> 00:00:58,350
+vamos definir uma cor de cinco cinco cinco e vamos definir um estilo de fonte de itálico.
+
+12
+00:00:59,280 --> 00:01:01,140
+E depois para os parágrafos.
+
+13
+00:01:02,220 --> 00:01:08,010
+Então, parágrafo de conteúdo, vamos definir a cor para três, três, três.
+
+14
+00:01:08,010 --> 00:01:13,080
+E vamos definir vamos aumentar a altura da linha para um ponto cinco.
+
+15
+00:01:14,520 --> 00:01:18,360
+E já temos a imagem 100% com bom.
+
+16
+00:01:18,850 --> 00:01:23,950
+Então agora só precisamos realmente lidar com a navegação, que está agora aqui embaixo.
+
+17
+00:01:24,090 --> 00:01:28,380
+E o que eu quero fazer, já que só veremos isso quando realmente girar, quando clicarmos
+
+18
+00:01:28,380 --> 00:01:31,170
+isso, vou adicionar o show agora.
+
+19
+00:01:31,920 --> 00:01:33,450
+Então mostre o painel de navegação.
+
+20
+00:01:33,570 --> 00:01:40,050
+Vou adicioná-lo manualmente por enquanto e depois a navegação real.
+
+21
+00:01:40,620 --> 00:01:42,930
+Queremos que isso seja posicionado aqui.
+
+22
+00:01:43,260 --> 00:01:43,590
+Certo.
+
+23
+00:01:43,640 --> 00:01:47,010
+Então, vamos fazer isso acima, onde fizemos o conteúdo.
+
+24
+00:01:47,550 --> 00:01:50,190
+E vou usar a tag nav como seletor.
+
+25
+00:01:50,610 --> 00:01:56,370
+E eu quero posicionar isso para ser consertado porque queremos que seja consertado até o fundo.
+
+26
+00:01:56,760 --> 00:02:03,770
+Então diremos corrigir e trazê-lo dos 40 pixels inferiores para cima e do zero esquerdo.
+
+27
+00:02:04,140 --> 00:02:08,700
+Então, isso coloca, você sabe, perto de onde nós realmente vamos querer.
+
+28
+00:02:09,300 --> 00:02:12,110
+E então vou definir um índice Z alto aqui.
+
+29
+00:02:12,120 --> 00:02:13,500
+Então está em cima.
+
+30
+00:02:13,680 --> 00:02:23,310
+Vamos fazer um índice Z de cem e então para a lista de navegação não ordenada.
+
+31
+00:02:23,610 --> 00:02:25,350
+Eu não estou em classe agora.
+
+32
+00:02:27,970 --> 00:02:36,370
+Então, para isso, vamos fazer uma margem, não uma margem, vamos fazer um estilo de vida de freira, para que fique
+
+33
+00:02:36,370 --> 00:02:43,780
+livrar desses marcadores e, em seguida, vou definir o tapping para a esquerda para 30 pixels e, em seguida, queremos estilizar
+
+34
+00:02:43,780 --> 00:02:44,950
+os itens da lista.
+
+35
+00:02:44,960 --> 00:02:47,800
+Então NAV, você vai se aliar.
+
+36
+00:02:50,050 --> 00:02:58,780
+E eu quero todas em maiúsculas, então vamos fazer um texto, transformar em maiúsculas, e vamos mudar essa cor
+
+37
+00:02:59,200 --> 00:03:01,930
+aos brancos.
+
+38
+00:03:02,930 --> 00:03:08,690
+E vamos definir uma margem de 40 pixels na parte superior e inferior, então vamos realmente separá-los
+
+39
+00:03:08,690 --> 00:03:12,200
+uns aos outros e então vamos.
+
+40
+00:03:13,530 --> 00:03:15,330
+Vamos trazer aqui.
+
+41
+00:03:15,360 --> 00:03:17,350
+Precisamos tê-lo inicialmente aqui.
+
+42
+00:03:17,370 --> 00:03:23,790
+Mais para a esquerda, porque vai entrar conforme isso gira ou logo depois de girar.
+
+43
+00:03:24,210 --> 00:03:30,360
+Então, para fazer isso, podemos usar transform e queremos traduzir no eixo X.
+
+44
+00:03:30,360 --> 00:03:33,340
+Então traduza X, queremos trazê-lo para a esquerda.
+
+45
+00:03:33,630 --> 00:03:34,970
+Então isso seria negativo.
+
+46
+00:03:35,400 --> 00:03:38,750
+Fará negativo 100 por cento.
+
+47
+00:03:40,380 --> 00:03:45,150
+Então, se eu salvar isso agora, você pode ver que está, você sabe, está bem aqui.
+
+48
+00:03:46,180 --> 00:03:47,340
+Ainda podemos ver um pouco.
+
+49
+00:03:47,340 --> 00:03:47,820
+Isso é bom.
+
+50
+00:03:47,820 --> 00:03:48,810
+Só vai entrar.
+
+51
+00:03:50,220 --> 00:03:51,990
+Mas queremos que isso aconteça sem problemas.
+
+52
+00:03:52,070 --> 00:03:54,440
+Então, vamos adicionar uma transição nisso.
+
+53
+00:03:54,450 --> 00:04:05,700
+Então, faça a transição da propriedade de transformação e faremos uma duração de zero ponto quatro segundos e usaremos esses
+
+54
+00:04:05,700 --> 00:04:06,450
+aqui.
+
+55
+00:04:09,660 --> 00:04:17,370
+E então vamos ver o que você sabe, vamos comentar isso por um minuto só para que possamos realmente ver
+
+56
+00:04:17,370 --> 00:04:17,700
+isto.
+
+57
+00:04:18,240 --> 00:04:21,270
+Eu quero este ou mais algum espaço entre o ícone.
+
+58
+00:04:21,280 --> 00:04:26,220
+Então vamos fazer nav ull i.
+
+59
+00:04:27,090 --> 00:04:39,450
+Bem, eu vou definir o tamanho da fonte, fazer 20 pixels e vamos definir a margem direita para 10 pixels.
+
+60
+00:04:42,840 --> 00:04:46,930
+OK, então torna o ícone um pouco maior, também coloque algum espaço entre eles.
+
+61
+00:04:48,580 --> 00:04:49,200
+Agora.
+
+62
+00:04:51,380 --> 00:04:58,300
+Vamos querer que cada um deles se destaque um pouco mais, meio que em um ângulo,
+
+63
+00:04:58,970 --> 00:05:07,850
+então o que podemos fazer é pegar o nav, digamos NAV, Ueli e então o aliado direto depois disso.
+
+64
+00:05:08,120 --> 00:05:12,470
+E vamos adicionar uma margem esquerda de 15 pixels.
+
+65
+00:05:12,500 --> 00:05:21,080
+Então, se eu salvar isso, o que acontece é que os aliados após a mentira inicial vão se destacar 15 pixels.
+
+66
+00:05:21,860 --> 00:05:25,130
+Agora, quero que este último se destaque ainda mais.
+
+67
+00:05:25,130 --> 00:05:28,730
+Então, o que vou fazer é pegar isso, copiá-lo.
+
+68
+00:05:29,120 --> 00:05:34,250
+E digamos Elai, mais Elai mais elai.
+
+69
+00:05:35,250 --> 00:05:40,920
+Então, basicamente, qualquer coisa depois, você sabe, este aqui, então o contato quando eu quiser me destacar,
+
+70
+00:05:40,920 --> 00:05:48,390
+o dobro de 30 pixels, agora você pode ver que está em um ângulo mais ou menos no mesmo ângulo que as páginas
+
+71
+00:05:48,390 --> 00:05:48,690
+aqui.
+
+72
+00:05:50,220 --> 00:05:57,990
+Então nós temos um inicialmente temos esse 100% negativo traduzindo X.
+
+73
+00:05:57,990 --> 00:06:04,110
+Então, se eu puder comentar que quase sai da tela, mas vamos querer que esses inicialmente
+
+74
+00:06:04,110 --> 00:06:06,840
+comece mais também para a esquerda.
+
+75
+00:06:06,850 --> 00:06:08,700
+Então eu vou copiar isso.
+
+76
+00:06:08,700 --> 00:06:13,110
+E para este, aqui temos nossa margem de 15.
+
+77
+00:06:13,110 --> 00:06:15,920
+Vamos fazer 150 por cento negativos.
+
+78
+00:06:16,230 --> 00:06:22,170
+E então para este aqui, vamos somar vamos fazer menos duzentos por cento porque precisamos deles para
+
+79
+00:06:22,170 --> 00:06:23,490
+acabar mais.
+
+80
+00:06:23,850 --> 00:06:28,980
+Agora, quando temos o show NAV aplicado, queremos realmente mostrar a navegação.
+
+81
+00:06:28,980 --> 00:06:30,780
+Tudo o que acabamos de fazer é o padrão.
+
+82
+00:06:30,780 --> 00:06:36,480
+Quando você acessa a página pela primeira vez, quando essa classe está realmente lá, o que está agora, porque nós manualmente
+
+83
+00:06:36,480 --> 00:06:39,870
+adicionado, queremos ver todas as coisas de navegação.
+
+84
+00:06:39,870 --> 00:06:42,150
+Então vamos.
+
+85
+00:06:44,830 --> 00:06:51,600
+Queremos fazer isso, vamos logo acima do nav aqui e digamos assim, o Container d'Hiv, quando
+
+86
+00:06:51,600 --> 00:07:02,760
+ele mostrou o Dasch NAV, então queremos levar os aliados de navegação direta depois disso e queremos
+
+87
+00:07:02,760 --> 00:07:03,810
+trazê-los à vista.
+
+88
+00:07:03,820 --> 00:07:11,130
+Então, vamos definir os atos de conversão de transformação em todos eles para zero, o que o levará ao seu,
+
+89
+00:07:11,130 --> 00:07:12,540
+você sabe, seu lugar original.
+
+90
+00:07:12,840 --> 00:07:14,640
+E eu quero adicionar um pouco de atraso.
+
+91
+00:07:14,640 --> 00:07:17,940
+Então diremos atraso de transição.
+
+92
+00:07:19,620 --> 00:07:26,250
+Soletre bem, atraso de transição, vou definir isso para zero ponto três segundos para que ele venha
+
+93
+00:07:26,250 --> 00:07:29,940
+em, você sabe, um pouco depois que eu esqueci meu ponto e vírgula.
+
+94
+00:07:30,250 --> 00:07:33,010
+Então ele vem um pouco depois da rotação.
+
+95
+00:07:34,020 --> 00:07:37,830
+Então agora podemos vê-lo porque temos esse show NAV.
+
+96
+00:07:40,260 --> 00:07:49,050
+Então, se tirarmos isso, teremos, você sabe, parece normal e, se o tivermos, você
+
+97
+00:07:49,050 --> 00:07:54,430
+pode ver que ele gira e mostra a navegação.
+
+98
+00:07:55,080 --> 00:07:58,920
+Agora queremos ter a funcionalidade em que clicamos nisso.
+
+99
+00:07:58,920 --> 00:08:02,260
+Em seguida, ele adiciona essa classe, o que será bem fácil.
+
+100
+00:08:02,280 --> 00:08:09,060
+Então vamos pular para o nosso script aqui e vamos criar uma variável chamada Open e vamos usar documentos ponto
+
+101
+00:08:09,540 --> 00:08:12,630
+obter elemento por D temos uma idéia de aberto.
+
+102
+00:08:13,670 --> 00:08:15,450
+Também temos uma ideia de fechar.
+
+103
+00:08:19,350 --> 00:08:25,860
+Tão perto, e então nós também queremos pegar o container tão consed container
+
+104
+00:08:28,260 --> 00:08:32,730
+kit elemento bidi na verdade não, isso é uma classe.
+
+105
+00:08:32,730 --> 00:08:41,530
+Então vamos dizer que você pode adicionar um ID ou você pode simplesmente usar o seletor Querrey e queremos um contêiner de ponto.
+
+106
+00:08:41,530 --> 00:08:42,370
+É uma aula.
+
+107
+00:08:42,390 --> 00:08:42,720
+Tudo bem.
+
+108
+00:08:42,730 --> 00:08:47,040
+Então, vamos abrir e adicionar um ouvinte de evento a isso.
+
+109
+00:08:51,300 --> 00:08:58,020
+Queremos ouvir um clique e, quando isso acontecer, vamos executar uma função restrita e
+
+110
+00:08:58,020 --> 00:09:07,320
+então queremos apenas pegar o container e da lista de classes, queremos adicionar a classe do show.
+
+111
+00:09:07,320 --> 00:09:10,850
+Dasch agora e depois fechar vai ser semelhante.
+
+112
+00:09:10,860 --> 00:09:12,270
+Então, eu sou alguém que vai copiar isso.
+
+113
+00:09:12,270 --> 00:09:20,190
+E vamos mudar isso para fechar e então vamos remover a lista de classes de contêineres.
+
+114
+00:09:22,170 --> 00:09:22,660
+Tudo bem.
+
+115
+00:09:23,130 --> 00:09:28,890
+Então eu salvo isso e clico em OK, então isso acontece.
+
+116
+00:09:29,850 --> 00:09:37,980
+Então deixe-me recarregar, então eu clico e isso gira essas filmagens, mas não podemos ver o close
+
+117
+00:09:37,980 --> 00:09:38,340
+aqui.
+
+118
+00:09:38,340 --> 00:09:44,070
+Então, para lidar com isso, vamos voltar ao nosso sucesso.
+
+119
+00:09:46,200 --> 00:09:53,240
+E basicamente queremos que o círculo gire quando houver aquele show agora da classe.
+
+120
+00:09:54,090 --> 00:09:56,610
+Então eu vou logo abaixo do círculo.
+
+121
+00:09:58,170 --> 00:10:00,540
+Então é um círculo e
+
+122
+00:10:03,270 --> 00:10:04,580
+ponto mostrar navegação
+
+123
+00:10:07,170 --> 00:10:10,820
+e então não somos realmente estilo, desculpe, não recipiente circular.
+
+124
+00:10:13,170 --> 00:10:18,360
+Então, quando o contêiner mostrar que eu apliquei a ele, queremos estilizar o círculo.
+
+125
+00:10:18,690 --> 00:10:21,340
+E o que queremos fazer com o círculo é girá-lo.
+
+126
+00:10:21,360 --> 00:10:29,430
+Então, digamos que transforme, gire e vamos girá-lo 70 graus negativos.
+
+127
+00:10:30,200 --> 00:10:37,050
+OK, então agora que ele gira, podemos ver o botão Fechar apenas por causa de onde ele está posicionado.
+
+128
+00:10:37,380 --> 00:10:40,020
+Quando esse círculo gira, ele simplesmente aparece.
+
+129
+00:10:41,410 --> 00:10:41,840
+Tudo bem.
+
+130
+00:10:41,850 --> 00:10:43,290
+Então isso parece muito bom.
+
+131
+00:10:44,640 --> 00:10:45,840
+Então não é tão ruim.
+
+132
+00:10:45,840 --> 00:10:52,200
+Quer dizer, estamos apenas adicionando ou removendo uma classe e definindo certos estilos no círculo
+
+133
+00:10:52,200 --> 00:10:56,580
+e na navegação, sabe, quando a gente tem aquela classe aplicada.
+
+134
+00:10:56,580 --> 00:10:59,520
+Então você pode usar isso com qualquer site, qualquer aplicativo.
+
+135
+00:10:59,830 --> 00:11:00,540
+Então é isso.
+
+136
+00:11:00,540 --> 00:11:02,160
+Vamos para o próximo vídeo.
+
+137
+00:11:02,160 --> 00:11:02,880
+Próximo projeto.

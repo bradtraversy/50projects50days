@@ -1,0 +1,575 @@
+1
+00:00:00,150 --> 00:00:04,110
+All right, so we're going to get started, I have my project starter open here, and I'm just going
+
+2
+00:00:04,110 --> 00:00:11,610
+to change the title here to pokey decks and we're going to have an H1 with pokey decks.
+
+3
+00:00:12,240 --> 00:00:16,980
+And I think that we're going to have a container that wraps around everything, which will have a class
+
+4
+00:00:16,980 --> 00:00:19,570
+of pokey dash container.
+
+5
+00:00:19,590 --> 00:00:27,120
+I'm also going to give you an idea of pokey container and inside here will be basically each card is
+
+6
+00:00:27,120 --> 00:00:34,380
+going to have a class of Pokémon and these are going to be there's going to be a bunch of these and
+
+7
+00:00:34,380 --> 00:00:36,390
+it's going to ultimately come from the JavaScript.
+
+8
+00:00:36,420 --> 00:00:41,880
+We're going to construct this div in the JavaScript, fetch the data and put the data inside here and
+
+9
+00:00:41,880 --> 00:00:42,810
+then put it in the dorm.
+
+10
+00:00:42,810 --> 00:00:48,270
+But right now I'm just going to hard code the HTML just so we can see it and we can at least style the
+
+11
+00:00:48,270 --> 00:00:48,720
+card.
+
+12
+00:00:49,590 --> 00:00:52,950
+So they're going to have an inline background.
+
+13
+00:00:52,960 --> 00:01:00,810
+So let's say style here and set the background color because each type is going to have a specific background
+
+14
+00:01:00,810 --> 00:01:01,230
+color.
+
+15
+00:01:01,480 --> 00:01:04,230
+OK, so apparently Pokémon, they have different types.
+
+16
+00:01:04,230 --> 00:01:09,740
+I honestly have never even looked at Pokémon, so I have no clue about it.
+
+17
+00:01:09,900 --> 00:01:11,840
+All I know is the data that we're fetching.
+
+18
+00:01:12,540 --> 00:01:17,480
+So if you're a big Pokemon fan and I make a mistake, please don't, you know, get pissed off at me.
+
+19
+00:01:18,000 --> 00:01:19,750
+So let's set the background.
+
+20
+00:01:19,780 --> 00:01:24,630
+I'm sorry, did that set the background color to be so red, green, blue.
+
+21
+00:01:24,640 --> 00:01:29,310
+Two, two, two, two, five, three and two to four.
+
+22
+00:01:30,250 --> 00:01:35,250
+OK, and then inside here, we want to have an image container div.
+
+23
+00:01:35,820 --> 00:01:39,060
+So let's say image container and then an image.
+
+24
+00:01:39,060 --> 00:01:41,250
+And I'm just going to grab the link here.
+
+25
+00:01:42,000 --> 00:01:45,210
+So this is a link to the Bulbasaur Pokémon.
+
+26
+00:01:46,860 --> 00:01:51,720
+So it's looks like this and it's going to be really big to begin with.
+
+27
+00:01:51,720 --> 00:01:53,970
+But when we get to the success, we'll fix that up.
+
+28
+00:01:54,270 --> 00:01:59,550
+So under the image container here, we're going have a class of info which will have some info on this
+
+29
+00:01:59,550 --> 00:02:00,750
+particular Pokémon.
+
+30
+00:02:01,350 --> 00:02:06,240
+So spane, let's give this a class of no and just hardcoded in here, zero zero one.
+
+31
+00:02:07,230 --> 00:02:11,670
+Ultimately, like I said, this stuff is going to come from, you know, the API.
+
+32
+00:02:12,060 --> 00:02:22,320
+So H3 with a class of name and we'll say it's Balbus or Balbus or like that, I believe.
+
+33
+00:02:23,100 --> 00:02:26,460
+And then small tag here with a class of type.
+
+34
+00:02:27,960 --> 00:02:32,130
+And let's just put a label of type and then another spane.
+
+35
+00:02:34,360 --> 00:02:38,260
+And inside here is going to be the type name which in this case is grass.
+
+36
+00:02:39,430 --> 00:02:41,110
+OK, so that should do it.
+
+37
+00:02:41,320 --> 00:02:45,150
+I'm also going to put a link to the design that this was inspired by from Dribble.
+
+38
+00:02:45,460 --> 00:02:48,790
+So I'm just going to pass that in down here just to give them credit.
+
+39
+00:02:50,200 --> 00:02:50,650
+All right.
+
+40
+00:02:50,650 --> 00:02:54,820
+Actually, one more thing I want to do is just create a couple of these cards.
+
+41
+00:02:54,820 --> 00:03:00,220
+So this divide the class of Pokémon, let's just copy that down twice so that there's three of these.
+
+42
+00:03:00,640 --> 00:03:02,070
+OK, so we have three of these cards.
+
+43
+00:03:02,080 --> 00:03:07,240
+And ultimately, again, this will be coming from the JavaScript, so we won't have this HTML in this
+
+44
+00:03:07,240 --> 00:03:09,100
+file, but we just want it.
+
+45
+00:03:09,100 --> 00:03:10,080
+There's a style.
+
+46
+00:03:10,450 --> 00:03:17,230
+So we're going to use the little fonts I'm going to grab from here to here and let's say questionmark
+
+47
+00:03:17,410 --> 00:03:20,530
+family set that to lieto.
+
+48
+00:03:20,890 --> 00:03:22,570
+So let's go.
+
+49
+00:03:22,570 --> 00:03:26,500
+And then Colen 300 and 400.
+
+50
+00:03:27,130 --> 00:03:30,070
+And then let's add that font family here.
+
+51
+00:03:31,840 --> 00:03:37,540
+So change that and then the background, so for the background, we're going to use a linear gradient,
+
+52
+00:03:37,870 --> 00:03:41,920
+but for any browser that doesn't support that, we're going to put a solid color first.
+
+53
+00:03:41,920 --> 00:03:46,600
+So EAFE, FBB will be the solid background.
+
+54
+00:03:46,600 --> 00:03:51,130
+And I know we can't really see it because of the cards here, but we'll fix that in a minute.
+
+55
+00:03:51,640 --> 00:03:59,470
+And then let's also set another set, another background here as a linear gradient direction will be
+
+56
+00:03:59,470 --> 00:04:00,610
+to the right.
+
+57
+00:04:00,610 --> 00:04:11,280
+First color is going to be D four D, three D D and then comma and then the next color will be EFP FPP.
+
+58
+00:04:12,520 --> 00:04:17,710
+OK, so that'll be the background which we can't currently see, and then all the Fleck's stuff can
+
+59
+00:04:17,710 --> 00:04:22,510
+stay, the alignment will get rid of the height 100 viewport, we'll get rid of the overflow hidden
+
+60
+00:04:22,510 --> 00:04:24,280
+because we do want scroll bars.
+
+61
+00:04:24,520 --> 00:04:27,170
+And now you can see the background gradient here.
+
+62
+00:04:28,870 --> 00:04:32,710
+So for the H1, I just want to separate out the letters.
+
+63
+00:04:32,710 --> 00:04:36,130
+A little soul set the letter spacing to three pixels.
+
+64
+00:04:39,120 --> 00:04:48,270
+And let's do the container, so the pokey dash container that wraps around everything on want to display
+
+65
+00:04:48,270 --> 00:04:50,910
+that as flax.
+
+66
+00:04:51,990 --> 00:04:58,200
+So if we look at our e-mail poky container wraps, all of these Pokémon, so basically all the cards.
+
+67
+00:04:58,380 --> 00:05:02,720
+So we want to use flex box to turn those into flex items into a row.
+
+68
+00:05:03,030 --> 00:05:06,060
+So display flex, it's going to put them side by side.
+
+69
+00:05:06,080 --> 00:05:10,130
+And I know the image is giant right now, but we'll fix that in a few minutes.
+
+70
+00:05:11,100 --> 00:05:12,270
+We want to display flaks.
+
+71
+00:05:12,270 --> 00:05:17,960
+We want it to WRAP'S If it goes out of its container, it'll wrap onto the onto the next line.
+
+72
+00:05:18,390 --> 00:05:21,450
+OK, and you can see now that it dropped down to the next line.
+
+73
+00:05:22,290 --> 00:05:29,550
+As far as the remaining space, we want to align items to space between.
+
+74
+00:05:33,260 --> 00:05:41,720
+And then let's justify content to the center and we want it to be in the middle, let's say margin zero,
+
+75
+00:05:41,720 --> 00:05:49,790
+top and bottom, auto left and right, and then offset a max width of twelve hundred pixels and we will
+
+76
+00:05:49,790 --> 00:05:50,990
+make this responsive.
+
+77
+00:05:52,280 --> 00:05:59,930
+OK, so now we have the class of Pokémon which wraps around all of you know, each one has a class of
+
+78
+00:05:59,930 --> 00:06:01,250
+Pokémon on each card.
+
+79
+00:06:02,700 --> 00:06:10,430
+And for this let's set a back an initial background color of Tripoli.
+
+80
+00:06:11,720 --> 00:06:16,040
+But these are going to be called background colors are going to be dynamic depending on whatever the
+
+81
+00:06:16,040 --> 00:06:16,820
+type is.
+
+82
+00:06:17,330 --> 00:06:19,190
+OK, but we'll set it to that initially.
+
+83
+00:06:19,190 --> 00:06:24,020
+Let's set the border radius to 10 pixels.
+
+84
+00:06:24,440 --> 00:06:25,100
+Actually, you know what?
+
+85
+00:06:25,100 --> 00:06:26,230
+We can't even see any of this.
+
+86
+00:06:26,240 --> 00:06:27,440
+So let's do the image.
+
+87
+00:06:27,440 --> 00:06:28,940
+Let's just take care of that image.
+
+88
+00:06:29,330 --> 00:06:36,020
+So the Pokémon image, Dasch container, let's do that first.
+
+89
+00:06:36,560 --> 00:06:44,150
+And for the container, we're going to set a background color of our GBA white.
+
+90
+00:06:44,190 --> 00:06:46,640
+So two five, five, four, Rajeeb.
+
+91
+00:06:47,090 --> 00:06:53,570
+And then for the alpha value will do zero point six for that.
+
+92
+00:06:54,190 --> 00:06:54,620
+Right.
+
+93
+00:06:54,620 --> 00:06:59,600
+And then we want these to be rounded images, but we're going to put the border radius on the image
+
+94
+00:06:59,600 --> 00:07:00,320
+container.
+
+95
+00:07:00,770 --> 00:07:02,390
+So that's going to be 50 percent.
+
+96
+00:07:02,990 --> 00:07:12,290
+And I want to have a with and height of 120 pixels.
+
+97
+00:07:14,370 --> 00:07:21,460
+Okay, so right now, the images is you can see these are lined up and you can see the image container,
+
+98
+00:07:21,460 --> 00:07:24,000
+but the images are busting out of the container.
+
+99
+00:07:24,460 --> 00:07:32,740
+So before we actually add anything on to that, I just want to do text line center.
+
+100
+00:07:33,070 --> 00:07:41,620
+But then for the images, let's grab this and say for each image, I want to set a max width on that
+
+101
+00:07:41,620 --> 00:07:45,300
+image to be 90 percent of its container.
+
+102
+00:07:45,310 --> 00:07:49,150
+So that will put it inside its container, which is that, you know, this right here.
+
+103
+00:07:49,630 --> 00:07:57,850
+And let's just also add a margin to a margin, top of 20 pixels.
+
+104
+00:07:59,500 --> 00:08:08,290
+All right, so now that we've done that, let's go back to to this class right here, the Pokémon class,
+
+105
+00:08:08,830 --> 00:08:11,380
+and I want to box shadow on these cards.
+
+106
+00:08:11,380 --> 00:08:13,840
+So let's set the box shadow here.
+
+107
+00:08:14,230 --> 00:08:22,720
+Will do zero four vertical I'm sorry, horizontal three pixels for the V offset and then 15 pixels for
+
+108
+00:08:22,720 --> 00:08:24,460
+the blur and then for the color.
+
+109
+00:08:24,460 --> 00:08:25,880
+It'll be Vuh.
+
+110
+00:08:26,450 --> 00:08:32,560
+Let's do 100 for each of those and then zero point five for the transparency.
+
+111
+00:08:33,040 --> 00:08:37,270
+So you can see now we have that box shadow for spacing.
+
+112
+00:08:37,270 --> 00:08:40,210
+Let's add the margin to ten pixels that will bring them apart.
+
+113
+00:08:40,220 --> 00:08:42,250
+We need some spacing inside the card.
+
+114
+00:08:42,520 --> 00:08:46,030
+So let's do twenty pixels inside and you can see it.
+
+115
+00:08:46,420 --> 00:08:51,340
+This gets knocked on to the next line because we have flex wrap.
+
+116
+00:08:52,690 --> 00:08:56,710
+If we didn't have this flex wrap right here, then it's not going to do that.
+
+117
+00:08:58,260 --> 00:09:05,130
+But this will help us make it responsive, and then finally, I just want to text a line to the center
+
+118
+00:09:06,760 --> 00:09:10,700
+right now for the bottom part here, the info.
+
+119
+00:09:10,710 --> 00:09:11,520
+Let's do that.
+
+120
+00:09:13,200 --> 00:09:17,520
+So it's a Pokémon dot info.
+
+121
+00:09:18,180 --> 00:09:22,940
+All I want on this particular class is a margin, top of 20 pixels.
+
+122
+00:09:22,940 --> 00:09:24,810
+So it's going to push everything down a little bit.
+
+123
+00:09:25,200 --> 00:09:28,070
+And then I want to style the number.
+
+124
+00:09:28,590 --> 00:09:31,770
+So it's a Pokémon info.
+
+125
+00:09:34,780 --> 00:09:42,130
+No, so I'm going to add a background color here and I'm going to use RGB because I want it to be like
+
+126
+00:09:42,740 --> 00:09:45,280
+a transparent looking background.
+
+127
+00:09:45,290 --> 00:09:49,150
+So let's do black and then zero point one.
+
+128
+00:09:49,900 --> 00:09:52,870
+OK, so you can see it gives it that transparent background.
+
+129
+00:09:52,870 --> 00:09:56,210
+Look, we're going to have a little bit of padding to it.
+
+130
+00:09:56,230 --> 00:10:07,900
+Let's do five pixels, top and bottom, 10 pixels left and right and set the border radius and we'll
+
+131
+00:10:07,900 --> 00:10:09,640
+do 10 pixels on that.
+
+132
+00:10:10,510 --> 00:10:12,440
+And let's make it a little smaller.
+
+133
+00:10:12,460 --> 00:10:18,090
+We'll do font size and we'll set it to zero point zero point eight AM units.
+
+134
+00:10:18,100 --> 00:10:23,680
+So that's going to just be whatever the the wrapper is, the container font size, it's going to multiply
+
+135
+00:10:23,680 --> 00:10:26,380
+it by zero point eight, which is going to make it a little smaller.
+
+136
+00:10:27,730 --> 00:10:30,210
+OK, so last thing is the name.
+
+137
+00:10:30,220 --> 00:10:46,300
+So it's a Pokémon info name at the margin to let's do 15 07 and then let's just do the letter spacing
+
+138
+00:10:46,300 --> 00:10:47,680
+to one pixel.
+
+139
+00:10:49,650 --> 00:10:54,990
+All right, so it looks pretty good and you see, if I extend it, it'll go they'll all be on the same
+
+140
+00:10:54,990 --> 00:10:55,400
+line.
+
+141
+00:10:57,360 --> 00:10:58,710
+So that's a success.
+
+142
+00:10:58,710 --> 00:11:04,710
+In the next video, we want to actually fetch this data because right now it's just we just put it in
+
+143
+00:11:04,710 --> 00:11:05,550
+the HTML.
+
+144
+00:11:05,550 --> 00:11:10,420
+We want to go ahead and fetch it from the API and inserted into the DOM.

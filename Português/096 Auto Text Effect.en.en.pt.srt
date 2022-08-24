@@ -1,0 +1,539 @@
+﻿1
+00:00:00,180 --> 00:00:05,580
+Tudo bem, então vamos começar nosso efeito de auto-taping e devemos ser capazes de fazê-lo
+
+2
+00:00:05,580 --> 00:00:06,890
+neste vídeo.
+
+3
+00:00:07,290 --> 00:00:12,000
+Então, vamos começar com a chamada TML desse fato de texto automático.
+
+4
+00:00:14,220 --> 00:00:16,810
+E vamos fazer um H1 aqui.
+
+5
+00:00:16,830 --> 00:00:21,600
+Vamos apenas dizer ponto inicial, ponto, ponto, porque a frase que será digitada é
+
+6
+00:00:21,600 --> 00:00:28,290
+vai ser definido no JavaScript e então vamos adicioná-lo a este H1 usando esta ideia de texto.
+
+7
+00:00:29,760 --> 00:00:35,100
+E abaixo disso, teremos um div que terá o controle de velocidade.
+
+8
+00:00:35,110 --> 00:00:41,930
+Então, teremos um rótulo para velocidade e dois pontos de velocidade e sob Neath que terá uma entrada.
+
+9
+00:00:41,940 --> 00:00:50,310
+E este será o tipo de número e o nome será velocidade e ID também será velocidade.
+
+10
+00:00:50,670 --> 00:00:54,060
+E também quero definir o valor inicial como um.
+
+11
+00:00:54,540 --> 00:01:01,530
+E podemos definir um imposto mínimo em vários campos para que os homens sejam um e então vamos definir o Max para cinco
+
+12
+00:01:02,070 --> 00:01:04,380
+e definiremos o valor da etapa.
+
+13
+00:01:05,010 --> 00:01:06,450
+O que definir isso para um?
+
+14
+00:01:06,460 --> 00:01:10,290
+Então, apenas conta para cima por um se você acertar a pequena seta para cima ou para baixo.
+
+15
+00:01:10,710 --> 00:01:11,070
+Tudo bem.
+
+16
+00:01:11,070 --> 00:01:12,030
+Então vamos salvar isso.
+
+17
+00:01:12,030 --> 00:01:13,230
+Vai ficar assim.
+
+18
+00:01:13,680 --> 00:01:16,130
+E vamos apenas adicionar nosso estilo aqui.
+
+19
+00:01:17,460 --> 00:01:24,810
+Então o corpo vamos adicionar uma cor de fundo e vamos usar dark samen para a cor de fundo
+
+20
+00:01:24,810 --> 00:01:28,560
+aqui e tudo o mais que podemos deixar.
+
+21
+00:01:28,560 --> 00:01:31,470
+Isso é bom para o div.
+
+22
+00:01:32,490 --> 00:01:37,500
+Então, basicamente, você sabe, onde controlamos a velocidade, vamos mudar isso.
+
+23
+00:01:38,310 --> 00:01:43,610
+Vou posicionar esses absolutos e quero que fique na parte inferior.
+
+24
+00:01:43,620 --> 00:01:46,110
+Então vamos fazer 20 pixels de baixo para cima.
+
+25
+00:01:46,470 --> 00:01:52,860
+Então mova-o para baixo e então vamos fazer um plano de fundo, como um transparente, quase transparente
+
+26
+00:01:52,860 --> 00:01:53,580
+fundo.
+
+27
+00:01:53,610 --> 00:01:57,840
+Usaremos um preto e zero ponto um.
+
+28
+00:01:59,700 --> 00:02:08,310
+E então vamos adicionar algum preenchimento a isso, então 10 pixels, superior e inferior, 20 pixels à esquerda e à direita,
+
+29
+00:02:09,510 --> 00:02:16,980
+e então vamos definir o tamanho da fonte para 18 pixels.
+
+30
+00:02:17,970 --> 00:02:18,440
+Tudo bem.
+
+31
+00:02:18,450 --> 00:02:21,840
+E então para a entrada em si, basta pegá-la por entrada.
+
+32
+00:02:22,380 --> 00:02:25,430
+Vamos definir a largura disso para 50 pixels.
+
+33
+00:02:25,440 --> 00:02:28,200
+Vamos definir o preenchimento.
+
+34
+00:02:29,170 --> 00:02:34,210
+Faremos cinco pixels e o tamanho da fonte que vou definir.
+
+35
+00:02:34,230 --> 00:02:35,870
+Vamos fazer 20 pixels.
+
+36
+00:02:36,120 --> 00:02:37,300
+Na verdade, isso é meio grande.
+
+37
+00:02:37,320 --> 00:02:44,840
+Vamos fazer 18 e então vamos definir o plano de fundo disso.
+
+38
+00:02:44,850 --> 00:02:49,590
+Eu quero definir isso para uma cor de fundo de salmão escuro também.
+
+39
+00:02:49,590 --> 00:02:50,730
+E depois a fronteira.
+
+40
+00:02:51,180 --> 00:02:52,560
+Nós apenas vamos nos livrar disso.
+
+41
+00:02:54,470 --> 00:02:54,840
+OK.
+
+42
+00:02:54,900 --> 00:02:59,460
+E então vamos enviar a linha para o centro.
+
+43
+00:03:00,570 --> 00:03:04,950
+E acho que devemos estar bem agora para o foco.
+
+44
+00:03:04,950 --> 00:03:07,850
+Tipo, se eu clicar aqui, quero me livrar dessa borda, desse contorno.
+
+45
+00:03:07,860 --> 00:03:15,150
+Então, digamos que para a entrada quando estiver em seu estado de foco, vamos definir o contorno como nenhum.
+
+46
+00:03:16,620 --> 00:03:16,980
+Tudo bem.
+
+47
+00:03:16,980 --> 00:03:21,000
+Então agora nós podemos, você sabe, aumentar essa diminuição em.
+
+48
+00:03:22,590 --> 00:03:28,040
+Então vamos pular para o nosso JavaScript, então vamos começar trazendo nosso elemento de texto.
+
+49
+00:03:28,050 --> 00:03:33,510
+Então, quando chamamos este texto de Al e queremos documentar o elemento Bindeez, e vamos trazê-lo
+
+50
+00:03:33,510 --> 00:03:35,250
+por sua ideia de texto.
+
+51
+00:03:35,280 --> 00:03:41,610
+Também queremos a velocidade para que o no input tenha uma ideia de velocidade.
+
+52
+00:03:42,030 --> 00:03:49,410
+Chamaremos esse elemento de velocidade e criarei uma variável de texto que terá o valor real
+
+53
+00:03:49,410 --> 00:03:53,100
+texto que queremos digitar, que eu quero dizer que adoramos programar.
+
+54
+00:03:55,170 --> 00:03:57,030
+E obviamente pode ser o que você quiser.
+
+55
+00:03:57,840 --> 00:04:01,140
+E então eu vou inicializar uma variável de índice em um.
+
+56
+00:04:01,140 --> 00:04:06,690
+E isso vai se referir a onde estamos no texto porque vamos digitá-lo um
+
+57
+00:04:06,690 --> 00:04:10,110
+por um e depois também a velocidade.
+
+58
+00:04:10,110 --> 00:04:11,880
+Então eu vou dizer vamos acelerar.
+
+59
+00:04:12,390 --> 00:04:15,980
+E você pode definir isso de muitas maneiras diferentes.
+
+60
+00:04:15,990 --> 00:04:20,430
+Vou pegar trezentos e dividir por qualquer que seja o valor disso.
+
+61
+00:04:20,910 --> 00:04:25,710
+Então vamos pegar o elemento de velocidade e podemos obter o valor com valor.
+
+62
+00:04:26,130 --> 00:04:31,770
+Então vai ser, você sabe, comece com trezentos dividido por um ou 300, divida por dois e isso é
+
+63
+00:04:31,770 --> 00:04:33,660
+vai torná-lo mais rápido à medida que aumentamos.
+
+64
+00:04:34,500 --> 00:04:38,250
+Agora vamos inicialmente chamar uma função chamada write text.
+
+65
+00:04:39,880 --> 00:04:41,890
+Então, queremos criar essa função.
+
+66
+00:04:45,090 --> 00:04:54,210
+E queremos pegar o elemento de texto e definir o texto inteiro também, e então começaremos com
+
+67
+00:04:54,210 --> 00:05:00,480
+apenas o W neste caso, porque será a primeira letra da string para que possamos pegar o
+
+68
+00:05:00,480 --> 00:05:08,820
+text, que é que adoramos programar e então chamamos dot, slice e com slice podemos obter um certo intervalo
+
+69
+00:05:08,820 --> 00:05:09,630
+da corda.
+
+70
+00:05:09,640 --> 00:05:17,370
+Então eu quero ir de zero a um neste caso, que o índice, que o índice começa em 1:00.
+
+71
+00:05:18,240 --> 00:05:18,690
+Tudo bem.
+
+72
+00:05:19,020 --> 00:05:21,840
+Então, se eu salvar isso, veremos apenas um W na tela.
+
+73
+00:05:22,530 --> 00:05:26,980
+Agora, depois de fazermos isso, queremos pegar o índice e incrementá-lo em um.
+
+74
+00:05:27,150 --> 00:05:29,460
+Então, adicionando um plus mais apenas conjuntos.
+
+75
+00:05:29,590 --> 00:05:32,850
+Você sabe, se sair um, vai para dois e três, quatro e assim por diante.
+
+76
+00:05:33,330 --> 00:05:34,620
+Sharlie, vocês sabem disso.
+
+77
+00:05:35,280 --> 00:05:41,280
+E então eu só quero verificar se é o final da string que estamos digitando para que possamos testar
+
+78
+00:05:41,280 --> 00:05:50,820
+e veja se o índice é maior que o comprimento do texto, que será todo o comprimento de qualquer
+
+79
+00:05:50,820 --> 00:05:51,660
+Nós temos aqui.
+
+80
+00:05:51,870 --> 00:05:56,190
+Se isso for verdade, vou redefinir o índice para um.
+
+81
+00:05:56,190 --> 00:05:57,510
+Então, ele só vai começar de novo.
+
+82
+00:05:58,530 --> 00:05:59,700
+Você não tem que fazer isso.
+
+83
+00:05:59,700 --> 00:06:01,890
+Você poderia simplesmente pará-lo ou o que quer que seja.
+
+84
+00:06:01,890 --> 00:06:04,830
+Mas vamos ter que continuar agora.
+
+85
+00:06:04,860 --> 00:06:07,790
+Precisamos que isso continue acontecendo, certo?
+
+86
+00:06:07,800 --> 00:06:10,470
+Então precisamos continuar chamando esse texto certo.
+
+87
+00:06:10,470 --> 00:06:15,960
+Então, aqui dentro, vamos marcar um tempo limite e queremos, queremos ligar.
+
+88
+00:06:15,960 --> 00:06:16,290
+Certo.
+
+89
+00:06:16,290 --> 00:06:17,550
+O texto definiria o tempo limite.
+
+90
+00:06:17,560 --> 00:06:20,190
+Será que ele executa uma função específica neste caso.
+
+91
+00:06:20,550 --> 00:06:26,190
+Escreva o texto e, em seguida, ele aguardará um determinado período de tempo.
+
+92
+00:06:26,190 --> 00:06:31,480
+Então, eu poderia dizer 100 milissegundos ou 1000 milissegundos, o que seria um segundo.
+
+93
+00:06:31,860 --> 00:06:33,660
+Agora eu não quero que isso seja codificado.
+
+94
+00:06:33,660 --> 00:06:35,640
+Eu quero esperar qualquer que seja a velocidade.
+
+95
+00:06:36,180 --> 00:06:41,180
+OK, então qualquer que seja essa velocidade, é o que queremos definir como um segundo argumento para definir o tempo, OK?
+
+96
+00:06:42,150 --> 00:06:46,790
+Agora, se eu salvar isso, ele seguirá em frente e começará a digitar.
+
+97
+00:06:46,800 --> 00:06:51,870
+Então, basicamente, é apenas chamar isso e, quando chega ao fim, começa de novo porque redefinimos
+
+98
+00:06:51,870 --> 00:06:52,920
+o índice para um.
+
+99
+00:06:54,150 --> 00:06:57,170
+E eu poderia definir isso para qualquer coisa que eu quiser aqui.
+
+100
+00:06:57,460 --> 00:07:02,330
+Então, se eu definir a velocidade para 1000, isso será a cada segundo.
+
+101
+00:07:02,340 --> 00:07:08,300
+Se eu definir para, digamos 10.000, será a cada dez segundos, 100 milissegundos.
+
+102
+00:07:08,310 --> 00:07:09,300
+Isso vai ser mais rápido.
+
+103
+00:07:09,300 --> 00:07:10,820
+Mas vou mantê-lo assim.
+
+104
+00:07:11,700 --> 00:07:12,630
+O que eu tinha disso.
+
+105
+00:07:12,630 --> 00:07:17,820
+E então para isso, queremos que isso controle, você sabe, quão rápido isso vai.
+
+106
+00:07:17,820 --> 00:07:23,100
+Então, vamos pegar o elemento de velocidade e adicionar um ouvinte de evento a ele.
+
+107
+00:07:23,720 --> 00:07:29,460
+Lembre-se, o elemento de velocidade não é uma entrada, e eu quero ouvir qualquer entrada, ou seja, se digitarmos
+
+108
+00:07:29,680 --> 00:07:37,470
+o número em ou se usarmos as teclas de seta e teremos uma função de seta aqui com nosso evento
+
+109
+00:07:37,470 --> 00:07:38,190
+objeto.
+
+110
+00:07:38,370 --> 00:07:46,710
+E quando isso é chamado, queremos apenas definir a velocidade igual a 300 dividido por qualquer que seja o valor
+
+111
+00:07:46,710 --> 00:07:47,000
+aqui.
+
+112
+00:07:47,010 --> 00:07:50,160
+Então e ponto alvo, ponto valor.
+
+113
+00:07:50,400 --> 00:07:54,870
+OK, então deve acontecer, você sabe, em tempo real ou qualquer outra coisa.
+
+114
+00:07:54,870 --> 00:07:57,660
+Se eu clicar em dois, vai começar a ir mais rápido.
+
+115
+00:07:58,020 --> 00:08:05,910
+Se eu clicar para três mais rápidos quatro, cinco e esse é o máximo que posso ir porque definimos esse máximo aqui.
+
+116
+00:08:06,120 --> 00:08:11,060
+Se eu definir isso para dez e posso digitar aqui também.
+
+117
+00:08:11,070 --> 00:08:13,620
+Então, se eu digitar dez, você verá o quão rápido ele vai.
+
+118
+00:08:14,160 --> 00:08:17,280
+Se eu digitar cinco fica um pouco mais lento, se eu digitar um.
+
+119
+00:08:18,270 --> 00:08:24,540
+Então, quero dizer que você provavelmente não teria esse controle em seu site real.
+
+120
+00:08:24,540 --> 00:08:27,750
+Como talvez você tivesse uma imagem de herói com isso, esse efeito.
+
+121
+00:08:28,020 --> 00:08:30,450
+Você provavelmente não daria o efeito de velocidade também.
+
+122
+00:08:30,450 --> 00:08:36,630
+Mas isso é apenas para aprender, você sabe, então você pode aprender como adicionar eventos e manipular o DOM
+
+123
+00:08:36,630 --> 00:08:38,670
+e fazer pequenas coisas como esta.
+
+124
+00:08:39,810 --> 00:08:46,860
+Mas é claro, isso seria legal ter em sua página de herói, seu banner de herói ou qualquer outra coisa
+
+125
+00:08:46,860 --> 00:08:47,730
+em seu site.
+
+126
+00:08:48,120 --> 00:08:48,930
+Então é isso.
+
+127
+00:08:48,930 --> 00:08:50,760
+Eu sei que este é um projeto muito curto.
+
+128
+00:08:51,090 --> 00:08:52,140
+Espero que tenha gostado.
+
+129
+00:08:52,140 --> 00:08:56,790
+Se você quiser adicionar a ele, talvez você possa adicionar uma entrada aqui ou aqui embaixo que você possa digitar
+
+130
+00:08:56,790 --> 00:08:59,190
+o texto e isso mudaria isso.
+
+131
+00:09:00,410 --> 00:09:07,200
+E eu posso até fazer alguns vídeos mais tarde, onde eu pego alguns dos projetos que já fizemos e adiciono
+
+132
+00:09:07,200 --> 00:09:07,650
+para isso.
+
+133
+00:09:07,650 --> 00:09:10,360
+Mas eu sugiro que você faça isso por conta própria também.
+
+134
+00:09:10,710 --> 00:09:11,970
+Muito bem, chega de divagações.
+
+135
+00:09:11,970 --> 00:09:13,350
+Vamos para o próximo vídeo.

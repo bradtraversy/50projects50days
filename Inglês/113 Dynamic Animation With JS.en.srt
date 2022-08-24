@@ -1,0 +1,567 @@
+1
+00:00:00,210 --> 00:00:06,300
+OK, so now we want to make this thing dynamic and there's a few things we're going to do in our JavaScript
+
+2
+00:00:06,300 --> 00:00:08,090
+file, we want to run our animation.
+
+3
+00:00:08,100 --> 00:00:12,870
+We also want to control when the counter shows and when the final message shows, the first thing we'll
+
+4
+00:00:12,870 --> 00:00:16,430
+do is bring in excuse me, bring in the stuff that we need from the DOM.
+
+5
+00:00:16,440 --> 00:00:17,990
+So we need the numbers.
+
+6
+00:00:18,810 --> 00:00:21,060
+So we're going to use document dot.
+
+7
+00:00:21,060 --> 00:00:25,980
+And then since there's multiple spans that we need to bring in, we're going to actually use query selector
+
+8
+00:00:25,980 --> 00:00:26,460
+all.
+
+9
+00:00:27,060 --> 00:00:33,240
+And we want to bring in the class, we'll say nums and then the spans within nums.
+
+10
+00:00:33,930 --> 00:00:34,290
+All right.
+
+11
+00:00:34,290 --> 00:00:39,480
+Now, query selector, all is used if there's multiple elements that you're selecting and what it does
+
+12
+00:00:39,480 --> 00:00:45,210
+is it puts it into what's called the node list, which is kind of like an array you can use for each
+
+13
+00:00:45,210 --> 00:00:45,510
+on it.
+
+14
+00:00:45,510 --> 00:00:48,830
+You can use, you know, array methods and stuff like that.
+
+15
+00:00:49,500 --> 00:00:52,350
+So next thing I want is the counter itself.
+
+16
+00:00:52,350 --> 00:00:56,490
+So it's a counter and document dot and it's just a single element.
+
+17
+00:00:56,490 --> 00:01:01,620
+So we can just use query selector and we want the class of counter.
+
+18
+00:01:03,150 --> 00:01:03,960
+Copy that down.
+
+19
+00:01:03,990 --> 00:01:05,760
+We also want the final message.
+
+20
+00:01:05,760 --> 00:01:15,270
+So that has a class of final and we'll call this final message and then we want the replay as well.
+
+21
+00:01:15,270 --> 00:01:25,050
+So it's a replay and that I believe is an I.D. So we want to change this to a no sign and then replay
+
+22
+00:01:25,500 --> 00:01:28,290
+or you can use to get element by bidi.
+
+23
+00:01:29,130 --> 00:01:34,890
+So we want to call a function here when this starts called run animation, because we wanted to run
+
+24
+00:01:34,890 --> 00:01:36,000
+right when it starts.
+
+25
+00:01:36,360 --> 00:01:39,690
+So let's call that and then let's create that function.
+
+26
+00:01:43,350 --> 00:01:50,700
+All right, now we want to deal with these numbers here that we're bringing in, you know, the three
+
+27
+00:01:50,700 --> 00:01:52,010
+to three through zero.
+
+28
+00:01:52,320 --> 00:01:59,460
+So I want to loop through those so I can take numbers, which is a node list, because we use query
+
+29
+00:01:59,460 --> 00:02:00,300
+selector all.
+
+30
+00:02:00,300 --> 00:02:05,220
+And like I said, I no, this is similar to an array and we can actually use the for each method to
+
+31
+00:02:05,220 --> 00:02:05,990
+loop through.
+
+32
+00:02:06,390 --> 00:02:12,810
+So for each will take in a function you can put in function like that, or you can use an arrow function
+
+33
+00:02:12,810 --> 00:02:13,920
+which is a bit cleaner.
+
+34
+00:02:15,330 --> 00:02:22,920
+And what this takes, what this, this callback that we put into for each takes is whatever we want
+
+35
+00:02:22,920 --> 00:02:29,460
+to call this num item, whatever you want to call it, it just represents each individual item in the
+
+36
+00:02:29,460 --> 00:02:31,290
+node list or in the array.
+
+37
+00:02:31,590 --> 00:02:37,320
+And then you can pass in a second parameter of index, which will just be, you know, to start at zero.
+
+38
+00:02:37,320 --> 00:02:41,490
+And then when it goes through the next iteration, it'll be one and then two and so on because we're
+
+39
+00:02:41,490 --> 00:02:42,530
+going to need the index.
+
+40
+00:02:43,050 --> 00:02:51,450
+So within this loop, let's go ahead and actually let's let's consider log just so I can show you.
+
+41
+00:02:51,450 --> 00:02:58,680
+If we can also log NUM and index and we go ahead and open up our dev tools here.
+
+42
+00:02:58,920 --> 00:03:01,740
+You can actually see we put the put this down here.
+
+43
+00:03:02,100 --> 00:03:03,510
+You can see each span.
+
+44
+00:03:03,930 --> 00:03:06,510
+So the span is what we're getting right here.
+
+45
+00:03:06,540 --> 00:03:11,610
+NUM it's not just the NUM, it's this is an element that we brought in the span.
+
+46
+00:03:11,610 --> 00:03:16,530
+So it's going to show the entire element and then this the zero, this is the index.
+
+47
+00:03:16,530 --> 00:03:19,100
+So it starts at zero sort of zero one, two, three.
+
+48
+00:03:19,530 --> 00:03:22,830
+So we have access to those within this loop.
+
+49
+00:03:23,550 --> 00:03:30,030
+Now I'm going to create a variable here to get the next to last value because we're going to need that
+
+50
+00:03:30,030 --> 00:03:32,190
+in order to to do what we need to do.
+
+51
+00:03:32,440 --> 00:03:38,440
+So I'm going to get the total length of nums using the length property and just minus one from that.
+
+52
+00:03:39,240 --> 00:03:45,750
+OK, next thing we want to do is create an event listener because we want to know when the animation
+
+53
+00:03:45,750 --> 00:03:46,380
+ends.
+
+54
+00:03:46,920 --> 00:03:49,620
+And there's actually let's close this.
+
+55
+00:03:49,830 --> 00:03:52,680
+There's actually an event listener called animation.
+
+56
+00:03:52,680 --> 00:03:54,460
+And so I'm going to take NUM.
+
+57
+00:03:54,780 --> 00:03:59,100
+So basically whatever iteration we're on, whatever item or whatever number.
+
+58
+00:03:59,460 --> 00:04:02,250
+And let's add an event listener to that.
+
+59
+00:04:03,180 --> 00:04:07,030
+And when we get an animation end event.
+
+60
+00:04:07,470 --> 00:04:15,210
+OK, so just animation and we're going to fire off a function with an event parameter here and we want
+
+61
+00:04:15,210 --> 00:04:23,460
+to first check to see if the animation that's ending, if the name is go in and we can do that using
+
+62
+00:04:23,460 --> 00:04:24,720
+that event parameter.
+
+63
+00:04:24,760 --> 00:04:33,000
+So this E here actually we can say animation name that'll give us whatever the animation name is and
+
+64
+00:04:33,000 --> 00:04:35,110
+we want to see if it's equal to go in.
+
+65
+00:04:36,000 --> 00:04:40,600
+OK, we also want to see if the index is is not the last.
+
+66
+00:04:40,920 --> 00:04:51,330
+So let's do a double ampersand and then we want to take the test, the index and see if that's not equal
+
+67
+00:04:51,330 --> 00:04:51,840
+to.
+
+68
+00:04:52,210 --> 00:04:59,230
+And what I'm going to do here is just actually I will just add next to the next to last here.
+
+69
+00:04:59,940 --> 00:05:07,560
+So if that's true, then we want to take the current number and we want to remove the in class and then
+
+70
+00:05:07,560 --> 00:05:08,970
+add the outclass.
+
+71
+00:05:09,330 --> 00:05:12,170
+And that's what's going to give it that, you know, in and out effects.
+
+72
+00:05:12,170 --> 00:05:21,180
+So let's take NUM in use class list and then we can use the add method to add a class and I'm sorry,
+
+73
+00:05:21,180 --> 00:05:23,010
+one to remove in first.
+
+74
+00:05:23,430 --> 00:05:33,360
+So we're going to remove in and then we're going to add out, OK, and all that's doing is taking in
+
+75
+00:05:33,360 --> 00:05:35,550
+off of the current number and adding Oh.
+
+76
+00:05:35,550 --> 00:05:40,380
+Which in turn is going to call this which will then rotate it down that way.
+
+77
+00:05:41,070 --> 00:05:51,750
+OK, so the second condition here that I want to check for, let's say elusive and right here where
+
+78
+00:05:51,750 --> 00:05:56,550
+removing if it's go in, then we're removing the in class, adding the out.
+
+79
+00:05:56,970 --> 00:05:59,390
+Now we want to check to see if it's go out.
+
+80
+00:05:59,880 --> 00:06:09,720
+So let's say if e dot information name is equal to go out.
+
+81
+00:06:09,720 --> 00:06:15,000
+And we also want to see if there's a number after it because we don't want to add in in class if there's
+
+82
+00:06:15,000 --> 00:06:16,530
+no next element.
+
+83
+00:06:17,370 --> 00:06:22,020
+And we can do that by checking let's say, and num dot.
+
+84
+00:06:22,020 --> 00:06:27,780
+And then there's a method called Next Element Sibling, which we'll see if there's a next sibling.
+
+85
+00:06:27,780 --> 00:06:29,940
+So these spans are all in the same level.
+
+86
+00:06:29,940 --> 00:06:30,930
+So they're siblings.
+
+87
+00:06:31,200 --> 00:06:34,710
+So if we're here, it's going to check to see if if this exists.
+
+88
+00:06:35,010 --> 00:06:37,440
+If it does, it's going to add the class of N.
+
+89
+00:06:37,800 --> 00:06:41,550
+If not, then it's not because there's there's no more span's.
+
+90
+00:06:42,130 --> 00:06:52,050
+All right, so we'll say no dots, next element sibling, and then in here we want to take num dot,
+
+91
+00:06:52,240 --> 00:07:00,130
+next element sibling and we want to add the class of N OK, so class list add because we want to add
+
+92
+00:07:00,130 --> 00:07:01,000
+it to the next one.
+
+93
+00:07:01,000 --> 00:07:01,270
+Right.
+
+94
+00:07:01,270 --> 00:07:02,680
+Not to the current numbers.
+
+95
+00:07:02,680 --> 00:07:09,100
+So that's why we're using next element sibling here and then we're adding the in class.
+
+96
+00:07:09,850 --> 00:07:14,560
+OK, and then else that means that we're done.
+
+97
+00:07:14,560 --> 00:07:17,590
+So we want to show the final message inside the counter.
+
+98
+00:07:17,590 --> 00:07:23,770
+So let's say counter dot class list and we want to add onto that.
+
+99
+00:07:23,770 --> 00:07:25,660
+Remember, we have that hyd class.
+
+100
+00:07:25,840 --> 00:07:29,950
+OK, and then we're going to take the final message
+
+101
+00:07:32,980 --> 00:07:35,170
+and we want to add the show class.
+
+102
+00:07:35,500 --> 00:07:38,970
+OK, so when it's done with, it's just going to show that final message.
+
+103
+00:07:40,420 --> 00:07:44,410
+So I'm going to save that and I can see where we go.
+
+104
+00:07:47,050 --> 00:07:53,950
+So the last thing we need to do in our JavaScript is call this this replay here, we want to be able
+
+105
+00:07:53,950 --> 00:07:55,950
+to click this and have it happen again.
+
+106
+00:07:56,320 --> 00:07:58,810
+So let's create a function up here.
+
+107
+00:07:58,810 --> 00:08:04,300
+And we're just going to call this a reset, Dom, because we're basically just resetting it to its start
+
+108
+00:08:04,300 --> 00:08:05,260
+starting state.
+
+109
+00:08:05,740 --> 00:08:14,710
+So we'll take counter and class list, dot remove and we want to remove the high class.
+
+110
+00:08:15,250 --> 00:08:23,110
+And then on the on the final message, we want to then remove the show class.
+
+111
+00:08:24,460 --> 00:08:31,000
+OK, and then we want to loop through the numbers again.
+
+112
+00:08:31,000 --> 00:08:36,130
+So nums dot for each and's takes in a function.
+
+113
+00:08:37,770 --> 00:08:38,920
+So we'll say no.
+
+114
+00:08:40,390 --> 00:08:43,000
+So for each number I just want to clear the value.
+
+115
+00:08:43,020 --> 00:08:51,070
+So do num dot class list dot value and set it to just an empty string.
+
+116
+00:08:52,060 --> 00:08:52,530
+All right.
+
+117
+00:08:52,540 --> 00:08:58,810
+And then here we want to add the class of in to the first span.
+
+118
+00:08:59,050 --> 00:09:04,980
+So NUMS is a node list which is similar to an array so we can access specific elements.
+
+119
+00:09:04,990 --> 00:09:11,190
+So zero is actually going to give me the first one here and we want to add this class of into it.
+
+120
+00:09:11,200 --> 00:09:11,570
+Right.
+
+121
+00:09:11,590 --> 00:09:20,800
+So let's say nums zero class list dot add and we want to add in.
+
+122
+00:09:21,700 --> 00:09:22,050
+All right.
+
+123
+00:09:22,060 --> 00:09:26,170
+So that will kind of just reset everything to this initial state here.
+
+124
+00:09:27,490 --> 00:09:31,920
+Now we want this to happen when we click this button.
+
+125
+00:09:31,930 --> 00:09:40,960
+So let's take the replay and let's add an event listener and we want to listen for a click event.
+
+126
+00:09:41,710 --> 00:09:48,010
+And when that happens, we're going to call a function and we want to reset Dom.
+
+127
+00:09:49,000 --> 00:09:51,460
+And we also want to run animation.
+
+128
+00:09:53,000 --> 00:09:53,330
+All right.
+
+129
+00:09:53,360 --> 00:09:54,280
+So save that.
+
+130
+00:09:54,670 --> 00:09:59,080
+So as soon as this ends, you can see that we get this go.
+
+131
+00:09:59,330 --> 00:10:00,900
+Let's actually center that.
+
+132
+00:10:00,910 --> 00:10:02,950
+I don't know why we didn't center that.
+
+133
+00:10:02,950 --> 00:10:12,810
+So let's see, final message or final and let's say text str text align center.
+
+134
+00:10:13,060 --> 00:10:13,600
+There we go.
+
+135
+00:10:14,230 --> 00:10:15,670
+OK, so if I click replay.
+
+136
+00:10:15,910 --> 00:10:16,450
+There we go.
+
+137
+00:10:16,450 --> 00:10:17,230
+It happens again.
+
+138
+00:10:19,210 --> 00:10:21,220
+OK, so that should do it.
+
+139
+00:10:21,550 --> 00:10:26,920
+So we have this cool little animation and you could implement this into some kind of website or app
+
+140
+00:10:26,920 --> 00:10:32,140
+so that you show your, you know, you show your screen once it loads, you could do a bunch of things
+
+141
+00:10:32,140 --> 00:10:34,240
+with it, but that's it for this project.
+
+142
+00:10:34,240 --> 00:10:35,880
+And let's jump into the next one.

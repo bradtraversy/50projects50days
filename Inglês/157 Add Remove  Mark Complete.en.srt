@@ -1,0 +1,355 @@
+1
+00:00:00,180 --> 00:00:02,080
+All right, so we're going to start in our JavaScript.
+
+2
+00:00:02,100 --> 00:00:07,950
+Now we're going to add the just the DOM functionality for now so we can add it to do and enter and it'll
+
+3
+00:00:07,950 --> 00:00:09,000
+get added here.
+
+4
+00:00:09,210 --> 00:00:14,850
+We'll be able to market as complete and remove it, but we'll do the local storage stuff in the video
+
+5
+00:00:14,850 --> 00:00:15,710
+after this one.
+
+6
+00:00:16,020 --> 00:00:18,580
+So let's go ahead and first bring in what we need.
+
+7
+00:00:18,600 --> 00:00:27,030
+So we want our form document get element by D form has an idea of form and then we also want our input
+
+8
+00:00:28,590 --> 00:00:29,940
+so we can get the value.
+
+9
+00:00:31,290 --> 00:00:32,850
+And that has an idea of input.
+
+10
+00:00:33,900 --> 00:00:43,750
+And we also want the to dos ul so say to dos you l and that has an idea of to dos.
+
+11
+00:00:44,360 --> 00:00:44,790
+All right.
+
+12
+00:00:44,820 --> 00:00:48,030
+Now on the form we're going to add an event listener.
+
+13
+00:00:48,630 --> 00:00:51,630
+We want to listen for a submit of the form.
+
+14
+00:00:51,630 --> 00:00:58,530
+When that happens, we'll have a function, takes an event, object as an argument, and then we can
+
+15
+00:00:58,530 --> 00:01:04,840
+take that event object and call prevent default to prevent the form from having its default behaviour.
+
+16
+00:01:05,340 --> 00:01:08,340
+Then we're going to call a function called ADD to do.
+
+17
+00:01:10,800 --> 00:01:11,260
+All right.
+
+18
+00:01:11,850 --> 00:01:18,600
+So for this function, say add to do and it's going to have the option to take in a to do.
+
+19
+00:01:20,460 --> 00:01:28,800
+And what we'll do is initialize a variable called to do text and set that to whatever the input value
+
+20
+00:01:28,800 --> 00:01:29,160
+is.
+
+21
+00:01:29,700 --> 00:01:41,970
+Now if a to do is passed in here, then we want to set to do text two to do and then dot text.
+
+22
+00:01:42,880 --> 00:01:48,510
+OK, if, if it's Pastan initially, if we're just submitting to do here, it's not going to get passed
+
+23
+00:01:48,510 --> 00:01:51,330
+and so it'll be whatever the value is.
+
+24
+00:01:51,680 --> 00:01:52,120
+All right.
+
+25
+00:01:52,140 --> 00:01:59,940
+In fact, we can just console log and see to do text is type something in hit enter and you can see
+
+26
+00:01:59,940 --> 00:02:00,830
+it's getting logged.
+
+27
+00:02:01,380 --> 00:02:01,810
+All right.
+
+28
+00:02:01,920 --> 00:02:09,210
+Now, next thing is to construct a list item.
+
+29
+00:02:09,210 --> 00:02:12,930
+So we just want to make sure that to do text exists.
+
+30
+00:02:13,770 --> 00:02:23,730
+So if to do text, then let's create a to do element and we'll set this to document create element and
+
+31
+00:02:23,730 --> 00:02:34,170
+we're going to create a list item and then we want to check to see, let's say, if to do and to do
+
+32
+00:02:34,170 --> 00:02:36,450
+dot completed.
+
+33
+00:02:37,440 --> 00:02:40,260
+Then we're going to add the class of completed.
+
+34
+00:02:40,270 --> 00:02:48,840
+So to do elements dot class list dot and we're going to add the class of completed.
+
+35
+00:02:49,570 --> 00:02:50,070
+All right.
+
+36
+00:02:50,160 --> 00:02:55,680
+Outside of that let's take the to do element and let's set the entire text.
+
+37
+00:02:56,880 --> 00:03:00,210
+So the list item in a text is going to get set to whatever to do.
+
+38
+00:03:00,210 --> 00:03:04,160
+Text is all right, so save that.
+
+39
+00:03:04,710 --> 00:03:07,550
+Now, if I do this, nothing is going to happen just yet.
+
+40
+00:03:08,610 --> 00:03:12,030
+Let's go ahead and add that to the DOM.
+
+41
+00:03:12,030 --> 00:03:20,070
+So we'll take the to dos you l so to dos you ul and we want to append a child element and what we want
+
+42
+00:03:20,070 --> 00:03:24,540
+to append is the to do element, which is the list item.
+
+43
+00:03:24,750 --> 00:03:26,400
+And I just want to clear the form.
+
+44
+00:03:26,400 --> 00:03:29,790
+So we'll take the input and we'll set the value equal to nothing.
+
+45
+00:03:30,180 --> 00:03:33,510
+So now if I say to do one enter.
+
+46
+00:03:34,080 --> 00:03:34,710
+To do.
+
+47
+00:03:34,800 --> 00:03:35,880
+To enter.
+
+48
+00:03:36,890 --> 00:03:39,580
+They're going to get at it now.
+
+49
+00:03:39,710 --> 00:03:43,400
+Nothing happens if I click or right click or or anything.
+
+50
+00:03:44,090 --> 00:03:45,890
+If I reload, they're going to go away.
+
+51
+00:03:46,460 --> 00:03:50,300
+So the keeping them there in local storage will do that in the next video.
+
+52
+00:03:50,300 --> 00:03:59,840
+But I do want to be able to at least delete them and and also mark them as completed.
+
+53
+00:03:59,850 --> 00:04:09,410
+So let's go right above where we added it to the dorm and let's take the specific to do element and
+
+54
+00:04:09,410 --> 00:04:10,850
+add an event listener to it.
+
+55
+00:04:11,670 --> 00:04:15,980
+So say add event listener and we want to listen for a click.
+
+56
+00:04:16,640 --> 00:04:20,870
+And when that happens, we'll have a function and just one line.
+
+57
+00:04:20,870 --> 00:04:22,310
+So we don't need curly braces.
+
+58
+00:04:22,610 --> 00:04:31,670
+We'll just take the to do element and we want to take the class list and call actually not add.
+
+59
+00:04:31,670 --> 00:04:34,280
+We want to toggle because we want to be able to toggle completed.
+
+60
+00:04:35,390 --> 00:04:37,770
+So toggle the class of completed.
+
+61
+00:04:38,440 --> 00:04:38,840
+All right.
+
+62
+00:04:38,900 --> 00:04:43,760
+Now if I save that this is they're going to go away when I save just because the page reloads.
+
+63
+00:04:44,120 --> 00:04:46,010
+But let's just say to do one.
+
+64
+00:04:46,340 --> 00:04:50,960
+And now if I click on it, you can see that the class of completed is applied.
+
+65
+00:04:50,960 --> 00:04:53,030
+If I click again, it's taken away.
+
+66
+00:04:53,030 --> 00:04:54,740
+So it's going to toggle that class.
+
+67
+00:04:55,710 --> 00:04:56,090
+All right.
+
+68
+00:04:56,090 --> 00:04:59,660
+Now to remove we want to do a right click.
+
+69
+00:05:00,200 --> 00:05:03,380
+So I'm going to add another event listener.
+
+70
+00:05:03,380 --> 00:05:09,440
+I'm going to just grab this and instead of click, we're going to listen for context menu.
+
+71
+00:05:09,440 --> 00:05:11,360
+So that's going to be a right click.
+
+72
+00:05:11,900 --> 00:05:16,130
+So when that happens, we want to prevent the default behavior.
+
+73
+00:05:16,130 --> 00:05:25,040
+So I'm going to say we want this to be to go to some curly braces that and we want to also pass in,
+
+74
+00:05:26,540 --> 00:05:27,830
+because right now, if you right.
+
+75
+00:05:27,830 --> 00:05:29,150
+Click, it's going to bring that up.
+
+76
+00:05:29,150 --> 00:05:29,900
+We don't want that.
+
+77
+00:05:29,900 --> 00:05:31,460
+We want to prevent that from happening.
+
+78
+00:05:31,460 --> 00:05:33,650
+So let's idot prevent default.
+
+79
+00:05:35,150 --> 00:05:40,340
+So if I were to put something in here and now I'm right clicking I'm not seeing the, you know, the
+
+80
+00:05:40,340 --> 00:05:42,560
+default, the native context menu.
+
+81
+00:05:43,490 --> 00:05:49,220
+What I want to do though is take that to do element and remove it completely from the DOM.
+
+82
+00:05:49,220 --> 00:05:50,520
+So we just call removes.
+
+83
+00:05:50,540 --> 00:05:54,260
+Now if I put something in here and I right.
+
+84
+00:05:54,260 --> 00:05:55,790
+Click That goes away.
+
+85
+00:05:55,790 --> 00:05:56,780
+That goes away.
+
+86
+00:05:56,960 --> 00:05:57,770
+That goes away.
+
+87
+00:05:58,530 --> 00:06:02,720
+OK, so that's pretty much it as far as the functionality for the DOM.
+
+88
+00:06:02,730 --> 00:06:08,270
+So in the next video we're going to apply local storage so that every time we reload or come back to
+
+89
+00:06:08,270 --> 00:06:09,890
+the page, they're not gone.

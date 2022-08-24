@@ -1,0 +1,411 @@
+﻿1
+00:00:00,210 --> 00:00:04,680
+Tudo bem, então vamos começar nosso carrossel de imagens, então eu tenho meu inicializador de projeto aberto
+
+2
+00:00:04,680 --> 00:00:10,290
+e vamos ao título aqui e digamos Carrossel de Imagens.
+
+3
+00:00:10,320 --> 00:00:17,700
+E aqui embaixo, teremos uma div com uma classe de carrossel que envolve tudo e
+
+4
+00:00:17,700 --> 00:00:20,190
+então o lado aqui terá nosso contêiner de imagem.
+
+5
+00:00:20,790 --> 00:00:27,930
+E eu também vou nos dar uma ideia das quatro imagens do IMG e então você pode simplesmente colocar tags de imagem aqui.
+
+6
+00:00:28,140 --> 00:00:29,910
+Pode ser quantas imagens você quiser.
+
+7
+00:00:30,570 --> 00:00:33,970
+Vou usar para imagens de inconscientemente.
+
+8
+00:00:34,230 --> 00:00:37,530
+Estes são apenas links para, você sabe, imagens de banco de imagens.
+
+9
+00:00:37,770 --> 00:00:41,490
+E então eu só tenho a primeira imagem, segunda, terceira e quarta.
+
+10
+00:00:41,910 --> 00:00:44,670
+Tudo isso provavelmente deve ser consistente.
+
+11
+00:00:46,170 --> 00:00:50,730
+E se eu salvar isso, você verá que temos essas imagens grandes agora.
+
+12
+00:00:50,730 --> 00:00:53,450
+Queremos botões anterior e próximo.
+
+13
+00:00:53,460 --> 00:00:58,500
+Portanto, fora do contêiner de imagem, que termina neste div, ainda queremos estar dentro do carrossel.
+
+14
+00:00:58,770 --> 00:01:07,470
+Vamos criar uma div com a classe de botões dash container e teremos um botão com uma ideia de
+
+15
+00:01:07,470 --> 00:01:11,640
+esquerda e veremos a pré-visualização do texto tão anterior.
+
+16
+00:01:11,640 --> 00:01:14,700
+E então este será o próximo botão e chamaremos este.
+
+17
+00:01:14,940 --> 00:01:15,500
+Certo.
+
+18
+00:01:16,590 --> 00:01:18,960
+Então deve ser isso para o HTML.
+
+19
+00:01:18,960 --> 00:01:19,670
+Bem simples.
+
+20
+00:01:19,680 --> 00:01:25,950
+Vamos pular para nossa folha de estilo e no corpo aqui podemos manter a maioria das coisas.
+
+21
+00:01:25,950 --> 00:01:29,480
+Não precisamos exibir a coluna Fluck ou a coluna de direção flexível.
+
+22
+00:01:30,210 --> 00:01:31,830
+Não precisamos de overflow escondido.
+
+23
+00:01:31,830 --> 00:01:32,850
+Nós vamos nos livrar disso.
+
+24
+00:01:34,260 --> 00:01:36,390
+Vamos ver o que mais queremos fazer aqui.
+
+25
+00:01:37,350 --> 00:01:39,880
+Isso é muito bonito, tanto quanto o corpo vai.
+
+26
+00:01:39,900 --> 00:01:45,180
+Então vamos descer e vamos fazer a aula de carrossel.
+
+27
+00:01:46,320 --> 00:01:48,270
+Então, isso envolve todas as imagens.
+
+28
+00:01:48,270 --> 00:01:56,580
+Também vou tirar as próprias imagens e quero, antes de tudo, definir a largura e o
+
+29
+00:01:56,580 --> 00:01:58,710
+altura para 500 pixels.
+
+30
+00:01:58,810 --> 00:02:00,750
+Então vamos mudar isso para altura.
+
+31
+00:02:01,260 --> 00:02:07,230
+E então eu só quero ter certeza de que, se parecer certo, vamos definir o ajuste do objeto para cobrir.
+
+32
+00:02:08,900 --> 00:02:09,440
+Aqui vamos nós.
+
+33
+00:02:09,560 --> 00:02:11,490
+Agora temos nossas imagens.
+
+34
+00:02:11,790 --> 00:02:13,420
+Temos nossos botões para baixo na parte inferior.
+
+35
+00:02:13,830 --> 00:02:20,100
+Então, para o carrossel, que envolve tudo, vou adicionar uma sombra de caixa aqui.
+
+36
+00:02:21,120 --> 00:02:25,520
+Portanto, a sombra da caixa leva em deslocamento horizontal e vertical.
+
+37
+00:02:25,980 --> 00:02:32,250
+Eu vou fazer dois pixels para ambos e então faremos um desfoque de cinco pixels e o nosso para a cor que
+
+38
+00:02:32,250 --> 00:02:33,000
+será preto.
+
+39
+00:02:33,000 --> 00:02:34,710
+Portanto, zero para vermelho, verde e azul.
+
+40
+00:02:34,920 --> 00:02:40,530
+E então o valor alfa, que é que o nível de transparência será zero vírgula três.
+
+41
+00:02:41,220 --> 00:02:44,520
+E então vamos definir o conjunto.
+
+42
+00:02:44,520 --> 00:02:51,780
+A altura aqui para cinco vai fazer quinhentos e trinta pixels porque tem que dar conta dos botões
+
+43
+00:02:51,780 --> 00:02:58,050
+assim como a imagem, e então a largura será a largura da imagem que é de quinhentos pixels,
+
+44
+00:02:58,580 --> 00:03:03,540
+OK, e então vou definir o estouro oculto para que nada saia do contêiner.
+
+45
+00:03:04,070 --> 00:03:06,850
+Agora ainda podemos ver parte da segunda imagem aqui.
+
+46
+00:03:07,350 --> 00:03:12,450
+Então, o que podemos fazer é pegar a imagem do contêiner Dasch.
+
+47
+00:03:12,990 --> 00:03:14,110
+OK, então contêiner de imagem.
+
+48
+00:03:14,120 --> 00:03:16,320
+Lembre-se, isso envolve todas as imagens.
+
+49
+00:03:16,320 --> 00:03:19,170
+Vou exibir isso como uma caixa flexível.
+
+50
+00:03:19,470 --> 00:03:23,510
+Então, o que isso fez foi colocá-los em uma linha flexível, que é horizontal.
+
+51
+00:03:23,730 --> 00:03:29,370
+Agora só podemos ver uma imagem porque a imagem tem 500 pixels de largura e o contêiner também.
+
+52
+00:03:31,500 --> 00:03:36,630
+Agora, do jeito que isso vai funcionar em termos de carrossel, o controle deslizante é que vamos mover
+
+53
+00:03:36,900 --> 00:03:42,810
+a imagem ao longo do eixo x usando transform, translate X..
+
+54
+00:03:43,110 --> 00:03:50,610
+Então, o que vou fazer é definir inicialmente com set transform e depois traduzir X, o que basicamente significa traduzir
+
+55
+00:03:50,610 --> 00:03:53,880
+ele, movendo-o ao longo do eixo X, que é vertical.
+
+56
+00:03:53,880 --> 00:03:58,590
+E queremos definir isso para um valor inicial de zero, o que não vai mudar nada.
+
+57
+00:03:58,590 --> 00:04:04,950
+Mas queremos definir isso inicialmente e depois no JavaScript mudaremos isso para que, você sabe,
+
+58
+00:04:04,980 --> 00:04:07,050
+pode mover as imagens.
+
+59
+00:04:07,050 --> 00:04:11,820
+Então, vamos movê-lo para mais de 500 pixels e obter a próxima imagem.
+
+60
+00:04:11,820 --> 00:04:12,770
+Isso faz sentido.
+
+61
+00:04:12,780 --> 00:04:14,910
+Agora, não queremos apenas fazer um movimento rápido.
+
+62
+00:04:14,910 --> 00:04:16,440
+Queremos que tenha uma transição.
+
+63
+00:04:16,770 --> 00:04:20,400
+Então, queremos ter certeza de adicionar uma propriedade de transição aqui.
+
+64
+00:04:20,820 --> 00:04:26,790
+E vou definir uma transição na propriedade transform que acabei de criar.
+
+65
+00:04:27,660 --> 00:04:33,700
+E então faremos zero vírgula cinco segundos para a duração e faremos um efeito de alívio.
+
+66
+00:04:34,720 --> 00:04:37,980
+OK, então deve ser isso para o contêiner de imagem.
+
+67
+00:04:38,020 --> 00:04:39,570
+Agora os botões não parecem muito bons.
+
+68
+00:04:39,570 --> 00:04:42,780
+Então vamos em frente e eu vou mover isso.
+
+69
+00:04:43,980 --> 00:04:46,440
+Vamos mover isso para cima.
+
+70
+00:04:46,440 --> 00:04:48,360
+Aqui vamos nós, Underbody.
+
+71
+00:04:52,150 --> 00:05:03,610
+Tudo bem, e então para o container do botão, salve o container do traço do botão e tudo o que vou fazer é
+
+72
+00:05:03,610 --> 00:05:09,280
+exibir flex para que cada golpe, cada botão seja um item flexível.
+
+73
+00:05:09,280 --> 00:05:17,020
+E depois vou justificar o conteúdo, que os alinha no acesso principal, que por ser erro,
+
+74
+00:05:17,020 --> 00:05:18,790
+vai estar no eixo horizontal.
+
+75
+00:05:18,790 --> 00:05:24,970
+Eu quero fazer espaço entre porque quero pegar o espaço que fica aqui ao lado do flex
+
+76
+00:05:24,970 --> 00:05:27,530
+itens e colocá-los entre os botões.
+
+77
+00:05:27,550 --> 00:05:31,930
+Então, se eu salvar isso agora, ele colocará cada botão em cada lado, que é o que eu quero.
+
+78
+00:05:32,650 --> 00:05:34,930
+Então agora vamos discar os próprios botões.
+
+79
+00:05:35,260 --> 00:05:37,660
+Então você sabe o quê?
+
+80
+00:05:37,660 --> 00:05:43,990
+Vamos, você pode simplesmente agarrá-lo pelo botão, se quiser, mas na verdade não vou dar uma aula a eles
+
+81
+00:05:43,990 --> 00:05:50,020
+de B10 apenas preferência para que seja dez.
+
+82
+00:05:50,530 --> 00:05:50,920
+Tudo bem.
+
+83
+00:05:50,930 --> 00:05:59,530
+E então vamos estilizar ponto btn e vamos em frente e definir a cor de fundo e eu vou usar Rebecca
+
+84
+00:05:59,530 --> 00:06:06,940
+Roxo para a cor de fundo e, em seguida, defina a cor para branco e vamos nos livrar da borda.
+
+85
+00:06:07,000 --> 00:06:08,100
+Então fronteira nenhuma.
+
+86
+00:06:09,330 --> 00:06:13,330
+OK, e então vamos adicionar um pouco de preenchimento.
+
+87
+00:06:13,780 --> 00:06:22,690
+Quando você faz zero vírgula cinco unidades REM, a unidade arem é apenas um multiplicador do elemento HTML raiz, que
+
+88
+00:06:22,690 --> 00:06:24,430
+por padrão é 16 pixels.
+
+89
+00:06:24,460 --> 00:06:28,870
+Então ponto cinco, dezesseis ponto cinco seriam oito pixels.
+
+90
+00:06:29,560 --> 00:06:31,050
+E você pode usar pixels se quiser.
+
+91
+00:06:31,100 --> 00:06:32,680
+Basta mudar um pouco.
+
+92
+00:06:33,130 --> 00:06:43,560
+Então o ponteiro do cursor e vamos definir a largura para ser quase horas, quarenta e nove vírgula cinco por cento.
+
+93
+00:06:44,290 --> 00:06:47,740
+OK, então eles ocupam quase metade cada.
+
+94
+00:06:48,130 --> 00:06:50,050
+E então eu só quero adicionar à capa.
+
+95
+00:06:50,320 --> 00:06:57,610
+Então b10 Colen Hover, vamos definir a opacidade para zero vírgula nove.
+
+96
+00:06:57,610 --> 00:07:03,130
+Então, temos um leve efeito de fade out quando passamos o mouse sobre e, em seguida, vamos nos livrar de qualquer contorno no
+
+97
+00:07:03,130 --> 00:07:03,940
+estado de foco.
+
+98
+00:07:03,940 --> 00:07:10,150
+Então, o foco do botão, vamos definir uma linha para none.
+
+99
+00:07:12,020 --> 00:07:14,680
+OK, então é isso para os CSFs.
+
+100
+00:07:14,680 --> 00:07:16,420
+Agora, obviamente, queremos que isso funcione.
+
+101
+00:07:16,420 --> 00:07:18,310
+Queremos poder clicar em próximo e visualizar.
+
+102
+00:07:18,310 --> 00:07:22,420
+Também queremos que ele vá automaticamente, deslize automaticamente.
+
+103
+00:07:22,420 --> 00:07:26,860
+Então, no próximo vídeo, entraremos no JavaScript para adicionar essa funcionalidade.

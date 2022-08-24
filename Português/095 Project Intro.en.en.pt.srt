@@ -1,0 +1,59 @@
+﻿1
+00:00:00,180 --> 00:00:01,710
+Ei, pessoal, bem-vindos ao seu próximo projeto.
+
+2
+00:00:01,740 --> 00:00:05,910
+Então este vai ser outro curto, podemos fazer isso em um único vídeo.
+
+3
+00:00:05,910 --> 00:00:10,010
+Então vamos ter esse efeito de texto automático, efeito de digitação automática.
+
+4
+00:00:10,020 --> 00:00:15,480
+E você provavelmente já viu isso em diferentes sites onde simplesmente digita por si só.
+
+5
+00:00:15,780 --> 00:00:19,530
+Então vamos adicionar este efeito ou com estilo isso, o que não vai demorar muito.
+
+6
+00:00:19,830 --> 00:00:22,530
+E também vamos adicionar esse controle de velocidade.
+
+7
+00:00:22,830 --> 00:00:24,500
+Então você pode ver que está em um agora.
+
+8
+00:00:24,510 --> 00:00:27,470
+E se eu chegar a dois, vai ser um pouco mais rápido.
+
+9
+00:00:27,480 --> 00:00:29,520
+Três quatro.
+
+10
+00:00:30,460 --> 00:00:34,960
+Cinco, então você pode ver que está ficando cada vez mais rápido e tem um máximo de 10 agora, é claro
+
+11
+00:00:34,960 --> 00:00:36,640
+você pode fazer o que quiser.
+
+12
+00:00:37,300 --> 00:00:42,550
+Então, isso é algo que você pode ver como um banner de herói em um site, obviamente provavelmente não
+
+13
+00:00:42,550 --> 00:00:45,100
+tem o controle de velocidade.
+
+14
+00:00:45,100 --> 00:00:50,580
+Mas, novamente, isso é apenas para aprender a adicionar ouvintes de eventos para fazer as coisas acontecerem no dormitório.
+
+15
+00:00:50,860 --> 00:00:54,070
+Então vamos em frente e começar e vejo você no próximo vídeo.

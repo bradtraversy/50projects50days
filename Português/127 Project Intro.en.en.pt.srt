@@ -1,0 +1,87 @@
+﻿1
+00:00:00,060 --> 00:00:05,160
+OK, então este é um projeto bem simples, o que vamos fazer aqui é ter um formulário.
+
+2
+00:00:05,320 --> 00:00:12,150
+É basicamente um formulário de login e o comprimento da senha será detectado.
+
+3
+00:00:12,150 --> 00:00:14,790
+E esta imagem, vai começar embaçada.
+
+4
+00:00:14,790 --> 00:00:20,130
+E à medida que a senha fica mais longa e mais forte, isso ficará mais claro.
+
+5
+00:00:20,140 --> 00:00:24,340
+Então você vai ver se eu for em frente e inserir um caractere, fica um pouco mais claro.
+
+6
+00:00:24,360 --> 00:00:26,220
+Outro outro.
+
+7
+00:00:27,180 --> 00:00:31,500
+E, eventualmente, acaba como uma imagem completamente clara.
+
+8
+00:00:31,740 --> 00:00:34,260
+Portanto, é uma maneira legal de testar a força da senha.
+
+9
+00:00:34,290 --> 00:00:35,820
+Agora, isso é obviamente muito simples.
+
+10
+00:00:35,820 --> 00:00:37,950
+Está indo apenas pelo comprimento da senha.
+
+11
+00:00:38,790 --> 00:00:45,030
+Você pode adicionar isso depois e você pode, você sabe, ver se há caracteres especiais ou maiúsculas
+
+12
+00:00:45,030 --> 00:00:46,530
+letras e números e tudo isso.
+
+13
+00:00:46,530 --> 00:00:48,960
+Mas isso vai ser bem simples para começar.
+
+14
+00:00:49,650 --> 00:00:54,870
+Também usaremos a estrutura Tailwind CSFs e usaremos apenas um CDN.
+
+15
+00:00:54,870 --> 00:00:57,900
+Nós não vamos, tipo, baixá-lo ou compilá-lo ou qualquer coisa assim.
+
+16
+00:00:57,900 --> 00:00:59,070
+Não estamos usando NPM.
+
+17
+00:00:59,340 --> 00:01:05,010
+Vamos apenas colocar o link da CDN para que possamos usar algumas das classes e tornar o estilo um pouco
+
+18
+00:01:05,010 --> 00:01:05,950
+mais fácil para nós.
+
+19
+00:01:05,970 --> 00:01:06,270
+Tudo bem.
+
+20
+00:01:06,270 --> 00:01:11,490
+Então você terá um pouco de experiência com algumas das caudas quando as classes utilitárias neste projeto como
+
+21
+00:01:11,490 --> 00:01:11,820
+Nós vamos.
+
+22
+00:01:11,940 --> 00:01:12,960
+OK, então vamos começar.

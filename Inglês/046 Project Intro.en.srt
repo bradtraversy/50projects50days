@@ -1,0 +1,47 @@
+1
+00:00:00,120 --> 00:00:03,840
+All right, so in this project, we're going to create an increment counter and I'm sure you've seen
+
+2
+00:00:03,840 --> 00:00:06,000
+this on websites somewhere.
+
+3
+00:00:06,270 --> 00:00:07,830
+Basically, we have these numbers.
+
+4
+00:00:07,830 --> 00:00:10,260
+I'm just using Twitter, YouTube, Facebook fans.
+
+5
+00:00:10,800 --> 00:00:11,960
+But this could be any number.
+
+6
+00:00:11,970 --> 00:00:18,690
+And when we come to the site, initially, you can see that it counts from zero up and we can set the
+
+7
+00:00:18,690 --> 00:00:24,310
+whatever the increment is, we can set that to whatever we'd like to make it faster or slower.
+
+8
+00:00:25,080 --> 00:00:29,220
+So we're going to first just create created style it we're going to make it responsive.
+
+9
+00:00:29,220 --> 00:00:35,460
+So when it's on a small screen, you know, it goes vertical and then we'll add the JavaScript to make
+
+10
+00:00:35,460 --> 00:00:36,750
+it increment like this.
+
+11
+00:00:36,900 --> 00:00:37,250
+All right.
+
+12
+00:00:37,260 --> 00:00:38,150
+So let's get started.

@@ -1,0 +1,87 @@
+1
+00:00:00,150 --> 00:00:04,860
+So in this project, we're going to be building a movie app and we're going to be using a third party
+
+2
+00:00:04,860 --> 00:00:13,590
+API from the movie DB Dog, which gives you, you know, a giant database of movies with the title and
+
+3
+00:00:13,590 --> 00:00:17,720
+ratings and images and just a whole bunch of data that we can work with.
+
+4
+00:00:17,730 --> 00:00:23,220
+So we're going to, first of all, create the UI, you know, add the e-mail access that we're going
+
+5
+00:00:23,220 --> 00:00:27,960
+to register an API key with the the TMD DB service.
+
+6
+00:00:28,270 --> 00:00:33,930
+We're going to add the JavaScript to make a request to get the data to show the most popular movies
+
+7
+00:00:33,930 --> 00:00:36,380
+at the time, which is what you can see here.
+
+8
+00:00:37,080 --> 00:00:41,700
+We're going to have this hover effect where it shows you the overview of each movie, shows you the
+
+9
+00:00:41,700 --> 00:00:42,270
+rating.
+
+10
+00:00:42,270 --> 00:00:45,880
+We're going to have special colours depending on what the rating is.
+
+11
+00:00:46,290 --> 00:00:48,510
+So if it's like above eight, it'll be green.
+
+12
+00:00:48,840 --> 00:00:50,970
+If it's between five and eight, it'll be orange.
+
+13
+00:00:50,970 --> 00:00:53,250
+If it's below five, it'll be red.
+
+14
+00:00:53,670 --> 00:00:56,100
+OK, and we're also going to add the search functionality.
+
+15
+00:00:56,220 --> 00:01:01,650
+If I search for the word hard and enter, it's going to get me all the movies with the title, with
+
+16
+00:01:01,650 --> 00:01:04,110
+the word hard, or at least the first 20 or 30.
+
+17
+00:01:04,590 --> 00:01:09,000
+If I search for, let's say, over, see, I'll get movies with over.
+
+18
+00:01:09,030 --> 00:01:15,180
+So it's it's not a giant application, but it gives you a good idea on, you know, using the fetch
+
+19
+00:01:15,180 --> 00:01:22,770
+API, working with a third party data service or data API and also putting that stuff into the DOM,
+
+20
+00:01:22,770 --> 00:01:24,780
+adding the data to the DOM to the page.
+
+21
+00:01:25,050 --> 00:01:25,800
+So that's it.
+
+22
+00:01:25,800 --> 00:01:26,970
+Let's go ahead and get started.

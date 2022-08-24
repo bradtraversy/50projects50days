@@ -1,0 +1,267 @@
+1
+00:00:00,270 --> 00:00:05,100
+All right, so before we jump in to our projects, I just want to go over my environment and what I'll
+
+2
+00:00:05,100 --> 00:00:11,770
+be using and there's not much to talk about because this is just vanilla JavaScript and HTML and access.
+
+3
+00:00:11,790 --> 00:00:13,850
+So there's no frameworks or anything like that.
+
+4
+00:00:14,190 --> 00:00:20,030
+Basically, the text editor I'm using is VSG Code Visual Studio Code, and that's what I recommend.
+
+5
+00:00:20,160 --> 00:00:22,050
+It's really popular on the Web dev community.
+
+6
+00:00:22,060 --> 00:00:25,380
+I'm sure a lot of you, if not most of you, are already using it.
+
+7
+00:00:25,560 --> 00:00:31,070
+But you don't have to you can use sublime text or Adam or something like that or some other idea.
+
+8
+00:00:31,080 --> 00:00:32,250
+That's absolutely fine.
+
+9
+00:00:32,610 --> 00:00:37,470
+But if you want to follow along to a tee with this course, then I would suggest using voice code,
+
+10
+00:00:37,470 --> 00:00:40,940
+which you can get from Code Dot, Visual Studio, Dotcom.
+
+11
+00:00:41,400 --> 00:00:45,510
+Now, I just want to jump into voice code real quick and I just have my project starter, which we're
+
+12
+00:00:45,510 --> 00:00:48,120
+actually going to create in the next video.
+
+13
+00:00:48,420 --> 00:00:52,950
+But I want to talk a little bit about the extensions I'm using as well as Emet.
+
+14
+00:00:53,250 --> 00:00:56,580
+So Emet is a tool that's preinstalled with VAR code.
+
+15
+00:00:56,580 --> 00:01:02,580
+If you're using something like Ademir Sublime text, you have to install Emet as a plug in or an extension
+
+16
+00:01:02,760 --> 00:01:05,070
+and it just helps you write faster html.
+
+17
+00:01:05,080 --> 00:01:08,790
+So if I want an H1, just H1 enter will give me my tags.
+
+18
+00:01:08,970 --> 00:01:13,380
+If I want to add a class I can do Dorte and then you know my class enter.
+
+19
+00:01:13,650 --> 00:01:17,940
+If I want to do two classes I could say my class to enter.
+
+20
+00:01:18,210 --> 00:01:24,240
+If I want to do an ID, I can do no sign and say my ID gives me an H1 with an ID.
+
+21
+00:01:24,240 --> 00:01:26,820
+If I want an ID and the class, I can do that.
+
+22
+00:01:28,020 --> 00:01:30,570
+OK, and if I'm using a div, I don't even need to.
+
+23
+00:01:31,200 --> 00:01:37,500
+I mean I can do div and then my class like that, but we don't even need to add the div we can just
+
+24
+00:01:37,500 --> 00:01:42,420
+to dot my class enter and it will automatically give us a div.
+
+25
+00:01:42,420 --> 00:01:43,560
+Same with the ID.
+
+26
+00:01:44,520 --> 00:01:50,730
+OK, and if we wanted like three divs, we can say d'Hiv and then times three, that'll give us three
+
+27
+00:01:50,730 --> 00:01:50,970
+d'Hiv.
+
+28
+00:01:50,980 --> 00:01:56,820
+So that's about the extent that I'll be using to I do have a complete crash course on YouTube on Emet,
+
+29
+00:01:56,820 --> 00:01:58,280
+if you want to learn more about it.
+
+30
+00:01:58,800 --> 00:01:59,160
+All right.
+
+31
+00:01:59,160 --> 00:02:04,500
+Now, let's take a look at the extensions I'm using so you don't need pretty much the only one I would
+
+32
+00:02:04,500 --> 00:02:11,700
+really suggest is live server that will allow you to open our project on a development server that will
+
+33
+00:02:11,700 --> 00:02:12,570
+auto reload.
+
+34
+00:02:12,570 --> 00:02:18,600
+Whenever we save either the HTML access or JavaScript, it'll auto reload so we don't have to keep clicking
+
+35
+00:02:18,600 --> 00:02:19,500
+the reload button.
+
+36
+00:02:19,920 --> 00:02:26,220
+Other than that, I'm using auto rename tag, which just renamed the end HTML tag.
+
+37
+00:02:26,220 --> 00:02:33,420
+Once you rename the beginning tag pretty self-explanatory bracket pair colorize are just colorize is
+
+38
+00:02:33,420 --> 00:02:36,180
+your brackets, your parentheses and curly braces.
+
+39
+00:02:36,180 --> 00:02:39,900
+You can see these outer curly braces are purple, the inner ones are blue.
+
+40
+00:02:39,900 --> 00:02:43,950
+If I had another set nested in the if those would be a different color as well.
+
+41
+00:02:44,490 --> 00:02:47,820
+And then I'm also using prettier which is a code formatter.
+
+42
+00:02:48,180 --> 00:02:51,480
+As far as formatting your code, I mean it's completely up to you.
+
+43
+00:02:51,480 --> 00:02:57,300
+I like to use single quotes as opposed to double quotes in my JavaScript.
+
+44
+00:02:57,300 --> 00:02:59,070
+I also don't use semicolons.
+
+45
+00:02:59,370 --> 00:03:04,770
+And to set that stuff you can just go to your settings with either command, command, comma, or you
+
+46
+00:03:04,770 --> 00:03:07,500
+can just click on the gear down here and go to settings.
+
+47
+00:03:07,890 --> 00:03:15,480
+And if you search for prettier, there's a bunch of, you know, options here for for your code.
+
+48
+00:03:15,780 --> 00:03:18,030
+I'm going to go down to this option here.
+
+49
+00:03:18,030 --> 00:03:20,400
+You can see I have semi unchecked.
+
+50
+00:03:20,400 --> 00:03:21,810
+I'm not using semicolons.
+
+51
+00:03:21,810 --> 00:03:24,810
+I also have single, quote, checked tab with of two.
+
+52
+00:03:25,020 --> 00:03:28,470
+So, I mean, it's completely up to you on how you want to format your code.
+
+53
+00:03:28,980 --> 00:03:31,830
+And I'm also using format on save.
+
+54
+00:03:32,280 --> 00:03:33,540
+You can see that's checked.
+
+55
+00:03:33,540 --> 00:03:38,160
+What that means is if something is wrong, it'll fix it when I save.
+
+56
+00:03:38,160 --> 00:03:43,290
+So for instance, even in the HTML, if I'm like over here and I save, it goes back into place.
+
+57
+00:03:43,620 --> 00:03:51,480
+If I go into my JavaScript and I create a variable here, like const X equals double quotes, I will
+
+58
+00:03:51,480 --> 00:03:53,610
+just say test and put a semicolon.
+
+59
+00:03:53,610 --> 00:03:59,250
+If I save it, format's it to the way that I specified, which is no semicolons and single quotes.
+
+60
+00:03:59,550 --> 00:03:59,970
+All right.
+
+61
+00:03:59,970 --> 00:04:02,790
+So I'm just going to get rid of that and that's it.
+
+62
+00:04:02,790 --> 00:04:04,650
+I mean, pretty simple stuff.
+
+63
+00:04:04,650 --> 00:04:08,490
+You can of course use whatever text editor you want, whatever settings you want.
+
+64
+00:04:08,490 --> 00:04:10,140
+I just wanted to show you what I'm working with.
+
+65
+00:04:10,470 --> 00:04:10,800
+All right.
+
+66
+00:04:10,800 --> 00:04:14,610
+So in the next video, we're going to start to create this little project starter, which we're going
+
+67
+00:04:14,610 --> 00:04:18,240
+to use as a boilerplate for all of our projects in this course.

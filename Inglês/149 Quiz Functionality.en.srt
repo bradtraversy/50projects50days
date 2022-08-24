@@ -1,0 +1,559 @@
+1
+00:00:00,210 --> 00:00:05,480
+OK, so now we want to go ahead and make this quiz function, we just have the UI for it now.
+
+2
+00:00:06,030 --> 00:00:09,990
+So for the quiz, for the questions and all that, it's going to go into an array.
+
+3
+00:00:09,990 --> 00:00:13,740
+And I'm just going to paste this in because I don't want to just type all this out.
+
+4
+00:00:14,400 --> 00:00:18,110
+And basically we have just a variable called quiz data.
+
+5
+00:00:18,120 --> 00:00:26,130
+It's an array of objects that has a question and it has an ABCDE answer and then it also has a correct.
+
+6
+00:00:26,610 --> 00:00:30,510
+So the correct is obviously going to be whichever one of these is correct.
+
+7
+00:00:30,930 --> 00:00:32,850
+And we just have some simple questions here.
+
+8
+00:00:32,880 --> 00:00:34,650
+Which language runs in a Web browser?
+
+9
+00:00:34,650 --> 00:00:37,140
+What is CSFs HTML stand for?
+
+10
+00:00:37,140 --> 00:00:38,540
+What year is JavaScript launch?
+
+11
+00:00:38,550 --> 00:00:43,040
+Obviously you can change this, but we're going to go ahead and go with these questions.
+
+12
+00:00:43,440 --> 00:00:45,420
+Now, let's bring in everything we need.
+
+13
+00:00:45,420 --> 00:00:49,830
+First of all, we need the quiz itself, which wraps around everything.
+
+14
+00:00:49,830 --> 00:00:59,730
+So it's to document doGet Element by D and we're going to get the ID of quiz now for the answers.
+
+15
+00:00:59,730 --> 00:01:05,340
+So let's say Consed and we'll call this answer Owles.
+
+16
+00:01:05,340 --> 00:01:13,340
+So answer elements and we want to use document dot query selector all because there's more than one
+
+17
+00:01:13,350 --> 00:01:13,700
+member.
+
+18
+00:01:13,710 --> 00:01:17,010
+Each of these has a class of answers.
+
+19
+00:01:17,010 --> 00:01:18,350
+So that's what we want to get here.
+
+20
+00:01:18,960 --> 00:01:25,260
+So it's a class of answer and then we want the question element.
+
+21
+00:01:25,270 --> 00:01:34,350
+So let's say consed question element and that's going to be document dot get element by D and the H2.
+
+22
+00:01:34,350 --> 00:01:37,330
+The question has an idea of question.
+
+23
+00:01:38,430 --> 00:01:41,880
+Now we want all the the answer IDs.
+
+24
+00:01:42,120 --> 00:01:51,690
+So basically you know a a text through D text, so let's say const a underscore text and set that to
+
+25
+00:01:51,690 --> 00:02:00,240
+document dot get element by D and that's going to be a underscore text and then I'm going to copy this
+
+26
+00:02:00,240 --> 00:02:01,790
+down three more times.
+
+27
+00:02:02,400 --> 00:02:03,570
+So this one.
+
+28
+00:02:03,870 --> 00:02:04,440
+This one.
+
+29
+00:02:04,440 --> 00:02:05,790
+Let's change that to be.
+
+30
+00:02:07,570 --> 00:02:12,420
+This one and this one will change to see this one, and this one will change too deep.
+
+31
+00:02:13,090 --> 00:02:15,330
+OK, and then finally, we just need to submit button.
+
+32
+00:02:15,340 --> 00:02:23,650
+So let's say consed submit beaten and set that to document dot get element bidi and we're going to get
+
+33
+00:02:23,650 --> 00:02:25,080
+the idea of submit.
+
+34
+00:02:26,430 --> 00:02:27,970
+OK, so that's everything we need.
+
+35
+00:02:27,970 --> 00:02:28,540
+For now.
+
+36
+00:02:29,950 --> 00:02:35,500
+We need an index of basically the question are the current quiz.
+
+37
+00:02:35,740 --> 00:02:40,860
+I guess each one of these pages in each one of these is going to be a quiz.
+
+38
+00:02:40,860 --> 00:02:48,910
+So let's say CONSED and we want the current quiz, which is going to always start at zero.
+
+39
+00:02:49,610 --> 00:02:53,230
+Right, because it's an array, it's going to zero, it starts in a zero index.
+
+40
+00:02:53,830 --> 00:02:58,300
+And actually we're going to set this this is going to change and be reassigned.
+
+41
+00:02:58,300 --> 00:02:59,770
+So we want to use the let here.
+
+42
+00:02:59,800 --> 00:03:04,390
+And then let's also create a variable for the score, which obviously starts at zero.
+
+43
+00:03:05,140 --> 00:03:10,960
+And then we're going to call load quiz, which is a function that we're going to create right now.
+
+44
+00:03:15,350 --> 00:03:26,330
+So low quiz, we want to get the current quiz data, so let's say consed current quiz data and we'll
+
+45
+00:03:26,330 --> 00:03:31,550
+set that to quiz data, which is the array that we have above.
+
+46
+00:03:31,850 --> 00:03:36,050
+And then the index for this is going to be the current quiz values.
+
+47
+00:03:36,050 --> 00:03:39,830
+So this right here, which is initially set to zero.
+
+48
+00:03:40,310 --> 00:03:44,150
+All right, then we want to get the question aliments.
+
+49
+00:03:45,980 --> 00:03:48,860
+So question Àlex, that should be a lowercase L.
+
+50
+00:03:52,810 --> 00:03:55,450
+OK, so question element in urtext.
+
+51
+00:03:57,300 --> 00:04:05,910
+And we're going to set that to whatever the current current quiz data question is, because current
+
+52
+00:04:05,910 --> 00:04:12,060
+quiz data is one of the objects in the array and we have a question value.
+
+53
+00:04:12,080 --> 00:04:15,190
+So that's what we're getting here and we're going to put it into that in our text.
+
+54
+00:04:15,190 --> 00:04:20,270
+So if I save, we're going to see the first one here which language runs in a Web browser.
+
+55
+00:04:20,280 --> 00:04:23,610
+If I change the current quiz, too, we're going to see the second question.
+
+56
+00:04:24,240 --> 00:04:24,720
+All right.
+
+57
+00:04:24,730 --> 00:04:25,340
+I'm sorry.
+
+58
+00:04:25,380 --> 00:04:28,140
+That would be the third one would be the second question.
+
+59
+00:04:29,440 --> 00:04:33,320
+OK, now for the for the answers.
+
+60
+00:04:33,330 --> 00:04:41,490
+Remember, we have a underscore text and we're going to set the inner text and let's set that to current
+
+61
+00:04:42,750 --> 00:04:43,950
+quiz data.
+
+62
+00:04:44,020 --> 00:04:44,850
+Dot a.
+
+63
+00:04:46,410 --> 00:04:51,330
+Because if we look and know, if we look up here, each one of these has a value, that's what we're
+
+64
+00:04:51,330 --> 00:04:57,630
+getting here and putting it into the underscore text I.D. We want to do the same for the other three.
+
+65
+00:04:58,290 --> 00:05:07,980
+So that'll be B and this will be B, text C text will be current quiz DataDot C, and then this one
+
+66
+00:05:07,980 --> 00:05:08,880
+will be D.
+
+67
+00:05:10,590 --> 00:05:16,380
+Now one issue we're going to have when we add our eventless are on the submit and we load the next quiz
+
+68
+00:05:16,380 --> 00:05:23,190
+or the next, you know, question answer that we're going to have the something selected and we want
+
+69
+00:05:23,190 --> 00:05:26,190
+to deselect everything beforehand.
+
+70
+00:05:26,190 --> 00:05:27,510
+So right.
+
+71
+00:05:27,510 --> 00:05:36,030
+When we load load the quiz here, let's called what's called deselect answers and then we'll create
+
+72
+00:05:36,030 --> 00:05:37,560
+that function down here.
+
+73
+00:05:40,680 --> 00:05:43,300
+So deselect answers, and this is pretty simple.
+
+74
+00:05:43,330 --> 00:05:50,220
+We already have our answers elements, which is a no list because we query selecter all and we just
+
+75
+00:05:50,220 --> 00:05:57,960
+want to loop through so for each and we'll say for each answer element, then let's set the at that
+
+76
+00:05:57,960 --> 00:05:59,730
+particular answer element.
+
+77
+00:06:00,870 --> 00:06:07,260
+We want to set the check to value equal to false which will remove any checks or any selections.
+
+78
+00:06:08,190 --> 00:06:08,610
+All right.
+
+79
+00:06:08,610 --> 00:06:13,830
+Now let's add an event listener so we have our submit button.
+
+80
+00:06:15,870 --> 00:06:17,340
+We want to add an event listener.
+
+81
+00:06:17,340 --> 00:06:19,770
+So we want to listen for a click event.
+
+82
+00:06:20,340 --> 00:06:26,920
+And when it's clicked, we're going to call a function and we need to get the answer.
+
+83
+00:06:26,960 --> 00:06:34,500
+So let's say CONSED answer and we'll set that to a function called Get Selected and we'll put that function
+
+84
+00:06:34,500 --> 00:06:40,730
+right up here, get selected and I'm going to initialize answer.
+
+85
+00:06:40,740 --> 00:06:46,610
+So I'm just going to initialize this variable and then take the answer elements and loop through.
+
+86
+00:06:46,620 --> 00:06:56,580
+So for each answer, for each answer element then I want to check to see which one is checked.
+
+87
+00:06:56,850 --> 00:07:04,530
+So we'll do an if statement here and just say if that particular answer element dot checked, which
+
+88
+00:07:04,530 --> 00:07:13,430
+gives us a true or false, then let's set answer equal to the answer element dot I.D..
+
+89
+00:07:13,680 --> 00:07:15,540
+OK, we're going to set it to whatever the ideas.
+
+90
+00:07:15,540 --> 00:07:20,130
+And then after this for each year, we're just going to return the answer.
+
+91
+00:07:21,500 --> 00:07:23,690
+All right, so that will get us the answer.
+
+92
+00:07:25,760 --> 00:07:31,520
+In fact, let's test that out if we do a console log of answer and then I'm going to go over here,
+
+93
+00:07:31,520 --> 00:07:35,300
+open up my console, I'm going to choose C, which is obviously wrong.
+
+94
+00:07:36,080 --> 00:07:44,960
+But you can see that at log's B, Python is C, Java is A, JavaScript is D, so we're getting the not
+
+95
+00:07:44,960 --> 00:07:47,950
+the correct answer, but we're getting the answer that's selected.
+
+96
+00:07:48,560 --> 00:07:50,990
+So now we want to match that with the correct answer.
+
+97
+00:07:51,030 --> 00:07:58,460
+So let's get rid of that and we'll say if there's an answer.
+
+98
+00:08:00,720 --> 00:08:11,460
+So if I answer, then we want to check to see if the answer is equal to the correct answer, which remember
+
+99
+00:08:11,460 --> 00:08:18,660
+is in the array, so we can use whois data and we want whatever the current quiz is.
+
+100
+00:08:18,660 --> 00:08:26,450
+So we pass in that current quiz index, which starts at zero, and we want to check the correct value.
+
+101
+00:08:27,000 --> 00:08:31,290
+So if the answer that we select is equal to that, then we know that that's correct.
+
+102
+00:08:31,320 --> 00:08:34,320
+So we want to take the score and just increment it by one.
+
+103
+00:08:34,530 --> 00:08:35,640
+So just score plus.
+
+104
+00:08:35,640 --> 00:08:36,150
+Plus.
+
+105
+00:08:36,960 --> 00:08:41,700
+OK, then we want to go on to the next quiz.
+
+106
+00:08:41,850 --> 00:08:45,540
+So I'm basically saying each each of these screens is a quiz.
+
+107
+00:08:45,870 --> 00:08:51,270
+So we'll take the current quiz and we'll just increment it to move on to the next.
+
+108
+00:08:51,300 --> 00:08:59,800
+Now let's check to see if the current quiz is less than the length of the array.
+
+109
+00:08:59,820 --> 00:09:05,850
+So if if it's less than the quiz data, the length, that means we're not at the end.
+
+110
+00:09:05,850 --> 00:09:10,620
+So we want to once again called load quiz or else.
+
+111
+00:09:10,650 --> 00:09:12,450
+So that means that we're at the end.
+
+112
+00:09:12,450 --> 00:09:18,210
+We answered the last question that I'm going to take the quiz element, which is just the entire wrapper,
+
+113
+00:09:18,540 --> 00:09:23,880
+and I'm going to set the entire HTML and let's add that to some back ticks.
+
+114
+00:09:25,680 --> 00:09:33,330
+And in here we'll put in H2 and just say you answered
+
+115
+00:09:35,520 --> 00:09:39,870
+correctly at and then we're going to put the score so in here.
+
+116
+00:09:40,650 --> 00:09:47,700
+So score slash and then whatever the length of the quizzes, so we can get that with the array, which
+
+117
+00:09:47,700 --> 00:09:51,000
+is quiz data and then the length.
+
+118
+00:09:51,240 --> 00:09:59,430
+So it'll be like, you know, three out of four or whatever, and then just put questions and are each
+
+119
+00:09:59,430 --> 00:10:04,110
+to OK and then let's have a reload button.
+
+120
+00:10:04,110 --> 00:10:15,080
+So round the two will have a button and we'll just do an in line on click here and set that to location
+
+121
+00:10:15,540 --> 00:10:16,260
+reload.
+
+122
+00:10:17,690 --> 00:10:22,970
+Which will just reload the page and it will start over and he'll say reload.
+
+123
+00:10:30,510 --> 00:10:36,690
+So let's save it, let's try it out, I'm just going to reload this and let's go ahead and select JavaScript.
+
+124
+00:10:37,860 --> 00:10:39,940
+So what is Cezannes stand for?
+
+125
+00:10:39,960 --> 00:10:43,780
+I'm going to choose the wrong answer on purpose here, html.
+
+126
+00:10:43,830 --> 00:10:47,460
+Stand for choose the right answer JavaScript.
+
+127
+00:10:47,460 --> 00:10:49,290
+I'll choose the right answer and submit.
+
+128
+00:10:49,290 --> 00:10:52,920
+And you can see I answered correctly at three out of four questions.
+
+129
+00:10:53,580 --> 00:10:54,690
+Let's rephrase that.
+
+130
+00:10:54,690 --> 00:11:01,830
+You answered three out of four questions correctly.
+
+131
+00:11:03,300 --> 00:11:09,180
+OK, and just to show you that the reload button works, I'm just going to choose a bunch of wrong answers
+
+132
+00:11:09,180 --> 00:11:09,570
+here.
+
+133
+00:11:10,230 --> 00:11:12,730
+And if I click reload, it starts the quiz over.
+
+134
+00:11:12,960 --> 00:11:13,320
+All right.
+
+135
+00:11:13,320 --> 00:11:15,420
+So very simple little application.
+
+136
+00:11:15,990 --> 00:11:18,180
+Obviously, you could add much more to this.
+
+137
+00:11:18,570 --> 00:11:22,940
+And if you wanted to add more questions, all you would do is add to this array, OK?
+
+138
+00:11:23,160 --> 00:11:28,320
+And you could have these questions coming from some kind of database, coming from some kind of API.
+
+139
+00:11:29,070 --> 00:11:29,660
+But that's it.
+
+140
+00:11:29,670 --> 00:11:31,470
+Let's go ahead and move on to the next one.

@@ -1,0 +1,447 @@
+1
+00:00:00,240 --> 00:00:04,050
+All right, so we're going to start on a JavaScript, but there's just a couple of things I want to
+
+2
+00:00:04,050 --> 00:00:05,400
+do here in the HTML.
+
+3
+00:00:05,400 --> 00:00:11,880
+One, I want to put a class on the button because I don't want to automatically add the ripple to all
+
+4
+00:00:11,880 --> 00:00:12,570
+buttons.
+
+5
+00:00:12,570 --> 00:00:17,400
+So we'll just add a class of ripple here and then we can get rid of the span because we're going to
+
+6
+00:00:17,400 --> 00:00:24,540
+be, you know, adding that through the JavaScript and will leave the styling for the button here.
+
+7
+00:00:24,960 --> 00:00:28,560
+But if we want it to have the ripple effect, then we'll add that class of ripple.
+
+8
+00:00:28,590 --> 00:00:37,050
+So let's say const buttons and we're going to use document dot, query selector all because we want
+
+9
+00:00:37,050 --> 00:00:40,920
+to be able to do this on multiple buttons as long as they have the class of Ripple.
+
+10
+00:00:41,860 --> 00:00:48,570
+OK, and then we'll take those buttons and let's add a foreach here and we'll say for each button,
+
+11
+00:00:50,190 --> 00:00:56,670
+let's take that button and let's add an event listener on them and it's going to listen for a click.
+
+12
+00:00:57,120 --> 00:01:02,760
+And when we click, we're going to run a function past in our of an attribute here, our event object
+
+13
+00:01:03,300 --> 00:01:04,020
+in the first.
+
+14
+00:01:04,230 --> 00:01:05,960
+We want to get a couple different values.
+
+15
+00:01:05,970 --> 00:01:12,240
+The first is going to be where we click in the viewport, but it's only going to fire off if we click
+
+16
+00:01:12,240 --> 00:01:14,460
+the button because that's where this event listener is.
+
+17
+00:01:14,760 --> 00:01:23,910
+So I'm going to call this value X and set it to that event object and then client X and then I'm going
+
+18
+00:01:23,910 --> 00:01:25,710
+to do the same for client client.
+
+19
+00:01:25,710 --> 00:01:28,500
+Why put that into a Y value?
+
+20
+00:01:28,830 --> 00:01:33,500
+And then just so you understand what we're getting here, let's consider log X and Y.
+
+21
+00:01:35,400 --> 00:01:39,480
+So I mean, if I click out here, nothing happens because the event listeners on the button.
+
+22
+00:01:39,490 --> 00:01:46,080
+But if I click like up in the top here, you'll notice it's not like, you know, two, three or something
+
+23
+00:01:46,080 --> 00:01:50,190
+like that because it's not getting where we click in the button, it's getting where we click in the
+
+24
+00:01:50,190 --> 00:01:51,440
+entire viewport.
+
+25
+00:01:52,020 --> 00:02:00,300
+So this is saying it's 160, 160 pixels over from the left because this is the X and then one ninety
+
+26
+00:02:00,300 --> 00:02:05,480
+nine is, you know, where we click down from the top because that's the Y axis.
+
+27
+00:02:06,090 --> 00:02:11,280
+So now that we have that, there's another thing that I want to get, which is the position of the the
+
+28
+00:02:11,280 --> 00:02:12,210
+button itself.
+
+29
+00:02:12,210 --> 00:02:14,130
+Where does it start on the X?
+
+30
+00:02:14,130 --> 00:02:15,420
+Where does it start on the Y?
+
+31
+00:02:15,960 --> 00:02:24,150
+So to get that, let's create a variable called button top and we'll set that to target, which is always
+
+32
+00:02:24,390 --> 00:02:28,470
+the element that that the event fires off of, in this case, the button.
+
+33
+00:02:28,800 --> 00:02:36,180
+And then there's a property called Offset Top, which is going to give us where it starts at the top.
+
+34
+00:02:36,180 --> 00:02:38,560
+We also want to get where it starts from the left.
+
+35
+00:02:39,090 --> 00:02:41,790
+So offset left will set that to button in the left.
+
+36
+00:02:42,480 --> 00:02:49,350
+So now, just to show you what that gives us, say, button, top and button left.
+
+37
+00:02:50,220 --> 00:02:54,180
+If I click it, it's always going to be the same no matter where I click, because what it's getting
+
+38
+00:02:54,180 --> 00:02:57,110
+is the position of the button itself, not where we click.
+
+39
+00:02:57,720 --> 00:03:01,770
+Now we want to calculate where in the button we click.
+
+40
+00:03:01,770 --> 00:03:05,550
+Like if I click up in the corner, it should be something like one one.
+
+41
+00:03:05,910 --> 00:03:06,300
+Right.
+
+42
+00:03:06,600 --> 00:03:13,200
+So the way that we can do that, let's say CONSE will call this X inside because it's the opposite position
+
+43
+00:03:13,200 --> 00:03:14,370
+inside the button.
+
+44
+00:03:14,940 --> 00:03:21,630
+And then we take the X value, which is the, you know, the where we click in the entire viewport and
+
+45
+00:03:21,630 --> 00:03:29,420
+then we just subtract from that the the top, the button top the offset from the element itself.
+
+46
+00:03:29,430 --> 00:03:30,360
+So button.
+
+47
+00:03:31,440 --> 00:03:36,000
+Top, and then we'll do the same for, say, button left.
+
+48
+00:03:36,040 --> 00:03:43,950
+This is going to be the Y value and this is going to be why inside and then will console log here X.
+
+49
+00:03:44,830 --> 00:03:52,120
+Inside and why inside, so now if I click over in the corner here, it should be some very low number.
+
+50
+00:03:52,840 --> 00:03:54,010
+Actually, that's not right.
+
+51
+00:03:54,640 --> 00:03:55,750
+Why is it negative?
+
+52
+00:04:00,850 --> 00:04:02,750
+Oh, I got these I did these wrong.
+
+53
+00:04:02,770 --> 00:04:03,940
+This should be button left.
+
+54
+00:04:05,560 --> 00:04:10,690
+Yeah, because this is the x axis and then this should be button top.
+
+55
+00:04:11,450 --> 00:04:16,160
+All right, now, if I click over in the corner, we get like four, three, five, three.
+
+56
+00:04:16,520 --> 00:04:21,530
+So it's getting from where the button starts over, that's going to be the X inside.
+
+57
+00:04:21,530 --> 00:04:24,970
+And then from where it starts on the top down is going to be the Y inside.
+
+58
+00:04:25,550 --> 00:04:26,840
+So we'll get rid of that.
+
+59
+00:04:27,200 --> 00:04:30,470
+And then we want to create a circle element.
+
+60
+00:04:30,680 --> 00:04:37,070
+So the span that we excuse me, the span we had in here before, we want to construct that from within
+
+61
+00:04:37,070 --> 00:04:38,030
+our JavaScript.
+
+62
+00:04:38,040 --> 00:04:43,790
+So let's say document create elements and we want to create a span.
+
+63
+00:04:44,330 --> 00:04:46,310
+We want to add a class to it.
+
+64
+00:04:46,320 --> 00:04:52,160
+So let's take our circle and say class list, dot add.
+
+65
+00:04:53,330 --> 00:05:00,650
+And we want to add the class of circle and then those positions where we have the top and left in the
+
+66
+00:05:00,650 --> 00:05:06,710
+inline style, well, we want to get that from these values right where wherever we're clicking.
+
+67
+00:05:07,160 --> 00:05:13,820
+So let's take the circle and style and we can set any excess property we want here.
+
+68
+00:05:13,820 --> 00:05:21,110
+We want to set the top value to whatever y inside is because why is the, you know, the Y axis.
+
+69
+00:05:21,650 --> 00:05:28,060
+But we want to just add on to that p x because we need to that's the format and access.
+
+70
+00:05:28,070 --> 00:05:30,770
+It'll be, you know, 10 pixels, whatever, whatever it has to be.
+
+71
+00:05:31,940 --> 00:05:33,830
+And I'm just going to copy that down.
+
+72
+00:05:33,830 --> 00:05:39,430
+And let's change this to X inside and change this to the left value.
+
+73
+00:05:40,040 --> 00:05:45,710
+And then down here, let's use the this key word pertaining to this this element.
+
+74
+00:05:45,710 --> 00:05:48,470
+And we want to append child.
+
+75
+00:05:49,100 --> 00:05:53,020
+So we're putting in the circle element.
+
+76
+00:05:53,690 --> 00:05:54,120
+All right.
+
+77
+00:05:54,140 --> 00:06:02,150
+So if I save that and I click, oh, you know what, since I use this, this isn't going to work with
+
+78
+00:06:02,150 --> 00:06:06,370
+an arrow function is has to be a regular formatted function.
+
+79
+00:06:06,380 --> 00:06:09,770
+So let's just get rid of the arrow here like that.
+
+80
+00:06:09,770 --> 00:06:17,710
+And then if I click now, you can see that the circle is is basically just showing up wherever I click.
+
+81
+00:06:17,720 --> 00:06:21,680
+Now, we do have one issue here that you can't really see from here.
+
+82
+00:06:21,680 --> 00:06:24,500
+But if I go down, look at all these circles.
+
+83
+00:06:24,890 --> 00:06:29,810
+So every time I click, it does add the circle, but it doesn't just remove it from the DOM.
+
+84
+00:06:30,620 --> 00:06:34,130
+That's the thing with vanilla JavaScript is you have to handle everything.
+
+85
+00:06:34,130 --> 00:06:37,580
+If you put something into the DOM, you have to handle handle taking it out.
+
+86
+00:06:38,120 --> 00:06:43,370
+Stuff like that is a lot easier if you're using something like react because you get a bunch of tools
+
+87
+00:06:43,370 --> 00:06:45,570
+to do to deal with the DOM.
+
+88
+00:06:46,100 --> 00:06:51,640
+So what we're going to have to do here is remove it from the DOM after, but we just want to wait a
+
+89
+00:06:52,400 --> 00:06:53,540
+certain amount of time.
+
+90
+00:06:53,540 --> 00:06:57,080
+So we're going to set time out, which takes in a function.
+
+91
+00:06:57,860 --> 00:07:01,490
+And what I want to do here is take the circle.
+
+92
+00:07:01,490 --> 00:07:06,260
+So the current the circle that we just appended into the DOM, we want to remove it.
+
+93
+00:07:06,260 --> 00:07:08,870
+So I'm going to call circle dot remove.
+
+94
+00:07:09,530 --> 00:07:09,950
+All right.
+
+95
+00:07:09,950 --> 00:07:12,080
+And then this takes time.
+
+96
+00:07:12,120 --> 00:07:17,090
+It takes a second argument of the time we want to wait, which is going to be 500 milliseconds.
+
+97
+00:07:17,390 --> 00:07:23,450
+So now when I click, you can see right down here, the arrow will show when the when the circle is
+
+98
+00:07:23,450 --> 00:07:28,340
+put in and then it's automatically taken out a half a second later.
+
+99
+00:07:29,840 --> 00:07:34,190
+OK, so you want to make sure that when you're using vanilla JavaScript and here you're adding stuff
+
+100
+00:07:34,190 --> 00:07:37,280
+to the DOM, you want to make sure that you clean up afterwards.
+
+101
+00:07:37,280 --> 00:07:41,600
+You don't want just a, you know, a shitload of circles in the in the button.
+
+102
+00:07:42,230 --> 00:07:42,650
+All right.
+
+103
+00:07:42,650 --> 00:07:43,280
+So that's it.
+
+104
+00:07:43,320 --> 00:07:44,570
+Hopefully you guys enjoyed this.
+
+105
+00:07:44,570 --> 00:07:50,690
+I know it's a very simple thing to just have a ripple, but if you're pretty new to JavaScript, this
+
+106
+00:07:50,690 --> 00:07:56,000
+should help you out, you know, finding out where you're clicking, finding out the position of a specific
+
+107
+00:07:56,000 --> 00:07:59,570
+element, adding an element, manipulating the style.
+
+108
+00:07:59,570 --> 00:08:04,280
+So there's quite a bit and just this tiny little project, if you're just learning JavaScript or you
+
+109
+00:08:04,280 --> 00:08:06,080
+don't know much about the Dom in general.
+
+110
+00:08:06,500 --> 00:08:06,800
+All right.
+
+111
+00:08:06,800 --> 00:08:07,230
+So that's it.
+
+112
+00:08:07,250 --> 00:08:09,200
+Let's go ahead and start on our next project.

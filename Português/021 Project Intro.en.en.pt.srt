@@ -1,0 +1,71 @@
+﻿1
+00:00:00,150 --> 00:00:04,680
+Ei, pessoal, neste projeto, vamos criar uma landing page dividida e eu fiz algo parecido
+
+2
+00:00:04,680 --> 00:00:11,280
+para isso no meu canal do YouTube há algum tempo, e vamos formatá-lo para PlayStation
+
+3
+00:00:11,280 --> 00:00:13,220
+cinco e série Xbox.
+
+4
+00:00:13,450 --> 00:00:16,860
+Então talvez você tenha uma loja e você sabe, esses acabaram de ser lançados.
+
+5
+00:00:16,870 --> 00:00:19,500
+Eu não posso nem colocar minhas mãos em um PlayStation 5 agora.
+
+6
+00:00:19,920 --> 00:00:24,120
+Mas, você sabe, podemos ter uma loja onde você pode vir e você pode escolher uma dessas.
+
+7
+00:00:24,300 --> 00:00:29,760
+E vamos criar esta tela dividida com uma imagem de fundo, com uma sobreposição, com algum conteúdo
+
+8
+00:00:29,760 --> 00:00:30,450
+lado de dentro.
+
+9
+00:00:30,450 --> 00:00:35,090
+E se clicarmos em um lado, ele se estenderá para 75%.
+
+10
+00:00:35,460 --> 00:00:37,080
+Do outro lado, 25%.
+
+11
+00:00:37,080 --> 00:00:40,020
+Se eu passar o mouse no lado direito, ele fará a mesma coisa.
+
+12
+00:00:40,350 --> 00:00:40,680
+Tudo bem.
+
+13
+00:00:40,680 --> 00:00:42,650
+Adicionaremos um pequeno efeito de foco a eles.
+
+14
+00:00:42,650 --> 00:00:45,120
+Então eu acho que é apenas uma pequena página de destino bonita.
+
+15
+00:00:45,420 --> 00:00:46,770
+Então é isso que estamos construindo.
+
+16
+00:00:46,770 --> 00:00:48,480
+Vai ser muito pesado CSFs.
+
+17
+00:00:48,720 --> 00:00:54,330
+Faremos um pouco de JavaScript no final para os efeitos de hover, mas muito sucesso neste projeto.
+
+18
+00:00:54,340 --> 00:00:55,320
+Então vamos pular.

@@ -1,0 +1,583 @@
+﻿1
+00:00:00,060 --> 00:00:04,890
+OK, agora vamos entrar no JavaScript e trabalhar com a API do GitHub e esta é a documentação
+
+2
+00:00:04,890 --> 00:00:06,930
+aqui, você não precisa ir para esta página.
+
+3
+00:00:06,930 --> 00:00:12,870
+Mas eu só quero mostrar a você, se formos para endpoints disponíveis para aplicativos GitHub, eles são como
+
+4
+00:00:12,870 --> 00:00:15,030
+os diversos recursos disponíveis.
+
+5
+00:00:15,040 --> 00:00:17,480
+Queremos lidar com usuários e repos.
+
+6
+00:00:17,490 --> 00:00:24,420
+Então, se eu clicar em usuários, podemos fazer uma solicitação de obtenção para a API e, em seguida, cortar usuários, o que dará
+
+7
+00:00:24,420 --> 00:00:26,460
+nos uma lista, uma matriz de usuários.
+
+8
+00:00:27,180 --> 00:00:31,320
+Queremos obter um nome de usuário específico com base no que digitamos na pesquisa.
+
+9
+00:00:31,350 --> 00:00:36,990
+Este é o pedido que vamos fazer e nos dá um exemplo de resposta que recebemos, que
+
+10
+00:00:36,990 --> 00:00:45,370
+inclui o login, que é o nome de usuário, o ID, o avatar, sua URL, se eles têm um blog,
+
+11
+00:00:45,370 --> 00:00:54,870
+você URL o nome deles, e-mail da empresa o número de seguidores de repositórios públicos a seguir.
+
+12
+00:00:54,870 --> 00:00:56,640
+Então, temos acesso a todos esses dados.
+
+13
+00:00:57,540 --> 00:01:02,280
+Agora, a outra coisa que queremos fazer é obter os repositórios de usuários para que possamos fazer isso.
+
+14
+00:01:02,490 --> 00:01:07,860
+Se você olhar para os repositórios e há um monte de endpoints aqui, mas se formos até o fundo,
+
+15
+00:01:07,860 --> 00:01:13,920
+você verá que podemos obter o nome de usuário dos usuários e, em seguida, reduzir os repositórios.
+
+16
+00:01:14,250 --> 00:01:17,010
+E então isso nos dará uma resposta que se parece com isso.
+
+17
+00:01:17,370 --> 00:01:21,900
+E é uma matriz de repositórios de usuários e podemos obter o nome.
+
+18
+00:01:21,900 --> 00:01:23,640
+Tudo o que realmente precisamos aqui é o nome.
+
+19
+00:01:24,060 --> 00:01:30,060
+E então queremos obter o HTML neutro, que nos dará o link para o repositório.
+
+20
+00:01:30,450 --> 00:01:30,780
+Tudo bem.
+
+21
+00:01:30,790 --> 00:01:36,390
+Então, esses são os dois endpoints com os quais vamos lidar, usuário barra nome de usuário e depois barra de usuário
+
+22
+00:01:36,390 --> 00:01:37,890
+nome de usuário barra repositórios.
+
+23
+00:01:38,790 --> 00:01:40,380
+Agora, há um limite.
+
+24
+00:01:40,380 --> 00:01:45,690
+Se você não usa autenticação com a API do GitHub, você tem um limite de uma certa quantidade de
+
+25
+00:01:45,690 --> 00:01:49,000
+pedidos por hora ou algo assim.
+
+26
+00:01:49,010 --> 00:01:54,510
+Então, se você vai entrar em produção, provavelmente vai querer ver a autenticação, mas não vamos
+
+27
+00:01:54,510 --> 00:01:57,040
+para entrar nisso neste tutorial em particular.
+
+28
+00:01:57,930 --> 00:02:04,540
+Agora, a primeira coisa que quero fazer é buscar um usuário específico do GitHub da API.
+
+29
+00:02:04,560 --> 00:02:06,390
+Agora vamos usar axios.
+
+30
+00:02:06,720 --> 00:02:13,740
+Então, eu vou ao CDN News.com e procuro por axios para que eu possa obter o link do CBN para que possamos
+
+31
+00:02:13,740 --> 00:02:14,880
+usar a biblioteca.
+
+32
+00:02:15,150 --> 00:02:17,390
+Então você quer este mindgames Axios?
+
+33
+00:02:17,410 --> 00:02:21,600
+Vou copiar a tag do script e colocá-la logo acima do meu script.
+
+34
+00:02:21,600 --> 00:02:23,900
+JS no índice HTML.
+
+35
+00:02:23,910 --> 00:02:31,350
+Agora temos acesso ao objeto Axios e podemos fazer requisições get, podemos fazer o post Axios Scott, podemos
+
+36
+00:02:31,350 --> 00:02:35,930
+podemos fazer put, que geralmente é como uma atualização e, em seguida, excluir se quisermos excluir.
+
+37
+00:02:36,360 --> 00:02:41,930
+E então se você apenas fizer axios como este e colocar o usuário Ellen aqui, isso será um pedido de obtenção.
+
+38
+00:02:41,940 --> 00:02:44,280
+É o mesmo que fazer Axios doGet.
+
+39
+00:02:44,280 --> 00:02:49,680
+Na verdade, tenho um curso intensivo completo sobre Axios no meu canal do YouTube, se você estiver interessado em aprender
+
+40
+00:02:49,680 --> 00:02:50,360
+mais sobre isso.
+
+41
+00:02:51,090 --> 00:02:55,530
+Então, a primeira coisa que farei aqui é criar uma constante para as URLs da API.
+
+42
+00:02:55,530 --> 00:03:05,070
+Então, basicamente, o URL raiz do GitHub na verdade é suas aspas simples, então https e será api
+
+43
+00:03:05,430 --> 00:03:10,590
+ponto github ponto com barra usuário barra.
+
+44
+00:03:10,590 --> 00:03:17,040
+Essa será a raiz porque faremos solicitações para essa barra e, em seguida, o nome do usuário
+
+45
+00:03:17,040 --> 00:03:20,130
+bem como barra o nome de usuário e, em seguida, os repositórios.
+
+46
+00:03:20,820 --> 00:03:24,780
+Tudo bem, então essa é a nossa rota, sua URL.
+
+47
+00:03:25,380 --> 00:03:33,510
+Agora, para usar axios, vamos primeiro criar uma função chamada Get User, e isso levará em
+
+48
+00:03:33,510 --> 00:03:35,280
+um nome de usuário que queremos obter.
+
+49
+00:03:36,570 --> 00:03:42,930
+E então para fazer os pedidos que podemos aceitar, podemos dizer Axios doGet ou podemos apenas fazer axios.
+
+50
+00:03:42,930 --> 00:03:44,340
+E isso será padrão para obter.
+
+51
+00:03:44,890 --> 00:03:51,970
+E aqui vou passar o Aperol, mas também quero o nome de usuário anexado a isso.
+
+52
+00:03:52,380 --> 00:03:59,280
+Então, neste caso, será esta barra e então qualquer que seja o nome de usuário que é passado agora,
+
+53
+00:03:59,280 --> 00:04:02,850
+isso retorna uma promessa e, finalmente, vou usar uma pia.
+
+54
+00:04:02,850 --> 00:04:11,030
+Mas apenas para mostrar a você, sem usar uma pia, podemos dizer então e obteremos os dados.
+
+55
+00:04:11,160 --> 00:04:13,470
+Vamos chamar esses dados na verdade.
+
+56
+00:04:13,470 --> 00:04:16,410
+Vamos chamar isso de pronto para resposta.
+
+57
+00:04:16,830 --> 00:04:18,360
+E não temos que fazer isso.
+
+58
+00:04:18,360 --> 00:04:23,190
+Não precisamos dizer o residente Jason, como fazemos com fetch, com fetch.
+
+59
+00:04:23,190 --> 00:04:26,910
+Temos que fazer isso e temos que fazer outra promessa e obter os dados.
+
+60
+00:04:27,210 --> 00:04:30,990
+Axios facilita porque não precisamos fazer isso.
+
+61
+00:04:31,440 --> 00:04:37,200
+Eu só quero consolar log rez e ver o que isso nos dá.
+
+62
+00:04:37,350 --> 00:04:42,920
+E os dados residentes devem ser os dados reais, mas um log do console foi o primeiro.
+
+63
+00:04:42,930 --> 00:04:47,100
+Agora, se algo der errado, queremos adicionar dot catch.
+
+64
+00:04:47,340 --> 00:04:51,150
+Quando temos uma promessa, podemos usar um catch se houver algum tipo de erro.
+
+65
+00:04:51,150 --> 00:04:56,690
+Então já passou um erro aqui e então vamos em frente e o console registra o erro.
+
+66
+00:04:57,390 --> 00:04:57,810
+Tudo bem.
+
+67
+00:04:57,810 --> 00:04:59,940
+Agora, vou apenas chamar esta função aqui.
+
+68
+00:05:00,010 --> 00:05:07,120
+Digamos que pegue yuzu e eu passarei meu nome de usuário do GitHub, e se formos até aqui e abrirmos o console,
+
+69
+00:05:07,120 --> 00:05:13,090
+nós recebemos um objeto de volta que tem configuração com um monte de coisas aqui.
+
+70
+00:05:13,330 --> 00:05:19,850
+Mas o que nos interessa, você também vê os cabeçalhos, o status da solicitação, que é 200 texto de status.
+
+71
+00:05:19,900 --> 00:05:23,920
+OK, mas os dados são onde os dados reais estarão.
+
+72
+00:05:23,920 --> 00:05:25,860
+E você pode ver meus dados do GitHub aqui.
+
+73
+00:05:26,500 --> 00:05:32,530
+Então, se eu cancelar os dados do recurso de log, isso nos dará apenas o objeto de que precisamos.
+
+74
+00:05:33,220 --> 00:05:33,580
+Tudo bem.
+
+75
+00:05:33,580 --> 00:05:39,870
+Portanto, não há necessidade de adicionar um segundo ponto com axios, que é uma das razões pelas quais eu prefiro.
+
+76
+00:05:40,660 --> 00:05:42,640
+Ele também tem mais recursos.
+
+77
+00:05:43,600 --> 00:05:50,350
+Agora, se algo der errado, essa captura será disparada, como se fizermos usuários w que não é um válido
+
+78
+00:05:50,350 --> 00:05:51,040
+ponto final.
+
+79
+00:05:51,730 --> 00:06:00,640
+Você verá que agora está registrando o erro, que é solicitação falhou o código de status por enquanto eu quero
+
+80
+00:06:00,640 --> 00:06:07,250
+para usar um coletor em vez de usar esse ponto, pegue a sintaxe.
+
+81
+00:06:07,660 --> 00:06:16,900
+Então o que vamos fazer é nos livrar disso e nossa função tem que ser uma pia e então seremos capazes de
+
+82
+00:06:16,900 --> 00:06:21,850
+basta criar uma variável aqui chamada Redds e definir isso para isso.
+
+83
+00:06:22,450 --> 00:06:27,370
+E então aqui embaixo devemos ser capazes de simplesmente cancelar os dados de log rez dot.
+
+84
+00:06:28,630 --> 00:06:31,180
+Se eu salvar isso, queremos mudar isso de volta.
+
+85
+00:06:32,870 --> 00:06:39,950
+Veja, estamos ficando indefinidos, e isso é porque eu não esperei o pedido do axios aqui, então nós
+
+86
+00:06:39,950 --> 00:06:41,210
+precisa afundar um peso.
+
+87
+00:06:41,480 --> 00:06:43,870
+E agora você pode ver que eu recebo meus dados de perfil.
+
+88
+00:06:44,360 --> 00:06:46,760
+Podemos dar um passo adiante e não usar o Redd's.
+
+89
+00:06:46,770 --> 00:06:54,680
+Podemos estruturar em D porque Rez é um objeto que tem propriedade de dados, que é outro objeto.
+
+90
+00:06:54,890 --> 00:06:59,960
+E podemos estruturar isso usando apenas chaves e dizer que queremos apenas retirar os dados.
+
+91
+00:07:00,470 --> 00:07:03,830
+E então aqui embaixo eu posso apenas registrar dados.
+
+92
+00:07:04,910 --> 00:07:06,220
+Agora, e se houver um erro?
+
+93
+00:07:06,230 --> 00:07:06,590
+O que é isso?
+
+94
+00:07:06,620 --> 00:07:08,190
+E se algo der errado?
+
+95
+00:07:08,210 --> 00:07:09,460
+Como lidamos com a captura?
+
+96
+00:07:09,470 --> 00:07:12,040
+Porque quando fazemos uma promessa regular, podemos pegar.
+
+97
+00:07:12,550 --> 00:07:15,290
+Bem, há um monte de maneiras que podemos lidar com isso.
+
+98
+00:07:15,770 --> 00:07:23,420
+O que costumo fazer é tentar pegar para que possamos dizer tente e, se algo der errado, vamos
+
+99
+00:07:23,420 --> 00:07:24,970
+pegar com um erro.
+
+100
+00:07:28,660 --> 00:07:38,050
+E vamos pegar isso e colocar isso no bloco da tribo assim, e então se algo der errado,
+
+101
+00:07:38,050 --> 00:07:47,860
+então vamos consolar o console, não registre o erro ou PRR o que você puder colocar o que quiser aqui,
+
+102
+00:07:47,860 --> 00:07:49,190
+erro ou erro.
+
+103
+00:07:49,930 --> 00:07:54,580
+Então, se eu salvar isso, obteremos o mesmo resultado e você verá se eu subir aqui e alterar a URL, estamos
+
+104
+00:07:54,580 --> 00:07:59,440
+obter a mesma coisa que obteríamos da captura do, você sabe, dot catch do
+
+105
+00:07:59,440 --> 00:08:00,790
+prometo que chegaremos aqui.
+
+106
+00:08:01,510 --> 00:08:01,950
+Tudo bem.
+
+107
+00:08:01,960 --> 00:08:03,040
+Espero que isso faça sentido.
+
+108
+00:08:04,000 --> 00:08:06,160
+E você pode usar este try catch com qualquer coisa.
+
+109
+00:08:06,160 --> 00:08:10,780
+Você pode usá-lo com a API de busca, embora o tratamento de erros seja um pouco mais complicado com o
+
+110
+00:08:10,780 --> 00:08:14,020
+Buscar API, que é outra razão pela qual eu gosto mais de axios.
+
+111
+00:08:14,860 --> 00:08:15,340
+Mas sim.
+
+112
+00:08:15,340 --> 00:08:18,640
+Então você pode tentar pegar em muitas situações diferentes.
+
+113
+00:08:19,060 --> 00:08:24,130
+Agora, no momento, estamos apenas codificando meu nome aqui, o que não quero fazer.
+
+114
+00:08:24,130 --> 00:08:25,810
+Eu quero obtê-lo a partir do formulário.
+
+115
+00:08:26,320 --> 00:08:30,100
+E você pode inicialmente chamar um usuário e mostrar ao usuário.
+
+116
+00:08:30,100 --> 00:08:35,670
+Mas não vamos apenas ter o formulário e, quando enviarmos o formulário, ele receberá o usuário.
+
+117
+00:08:35,680 --> 00:08:39,790
+Então vamos descer aqui e vamos pegar, na verdade, precisamos trazer o formulário.
+
+118
+00:08:40,210 --> 00:08:50,680
+Então vamos aqui e digamos const form e defina isso para documentar dot get element by D e temos
+
+119
+00:08:50,680 --> 00:09:00,970
+uma ideia de forma e então vamos descer aqui e dizer form dot add event listener e vamos ouvir
+
+120
+00:09:00,970 --> 00:09:02,530
+para um segmento.
+
+121
+00:09:03,760 --> 00:09:09,070
+Você poderia fazer isso como uma tecla para baixo também, mas você estaria fazendo uma solicitação toda vez que fizer uma
+
+122
+00:09:09,070 --> 00:09:09,790
+tecla para baixo.
+
+123
+00:09:10,930 --> 00:09:19,060
+Mas sim, vamos fazer um segmento com uma função de seta com nosso objeto de evento e queremos evitar que o
+
+124
+00:09:19,060 --> 00:09:20,110
+comportamento padrão.
+
+125
+00:09:20,110 --> 00:09:25,900
+Então, queremos fazer com que cada ponto impeça o padrão ou ele tentará enviar para um arquivo e, em seguida,
+
+126
+00:09:25,900 --> 00:09:33,790
+vamos colocar em uma variável chamada user e dot target dot value.
+
+127
+00:09:36,150 --> 00:09:43,380
+Na verdade, quer saber, vamos buscar a entrada, temos uma ideia de pesquisa, então vou
+
+128
+00:09:43,380 --> 00:09:50,490
+para trazer isso aqui assim e então, oops, o que eu acabei de fazer.
+
+129
+00:09:51,990 --> 00:09:57,660
+E então, quando trouxermos a pesquisa, definiremos isso em vez de IDOT Target, vamos defini-lo para a pesquisa
+
+130
+00:09:57,660 --> 00:09:58,260
+valor.
+
+131
+00:09:59,310 --> 00:10:02,310
+Então procure o valor do ponto assim.
+
+132
+00:10:02,850 --> 00:10:05,280
+E então queremos ter certeza de que há um usuário.
+
+133
+00:10:05,290 --> 00:10:15,690
+Então digamos que se usuário, então vamos chamar a função get user e vamos passar aqui o usuário e então eu quero
+
+134
+00:10:15,690 --> 00:10:17,070
+para limpar o valor de pesquisa.
+
+135
+00:10:17,070 --> 00:10:22,660
+Então, vamos dizer search dot value e definir isso como nada.
+
+136
+00:10:24,720 --> 00:10:28,460
+Então vamos salvar isso e vamos por aqui.
+
+137
+00:10:28,470 --> 00:10:30,540
+Não vamos ver nada acontecer aqui ainda.
+
+138
+00:10:30,540 --> 00:10:36,510
+Não fizemos nada com o DOM, mas ele deve pelo menos registrar no console os dados que você chama isso,
+
+139
+00:10:36,900 --> 00:10:42,100
+obtenha o valor de entrada de pesquisa aqui, faça a solicitação e o console registre os dados.
+
+140
+00:10:42,390 --> 00:10:46,170
+Então vamos procurar Floren Pop 17.
+
+141
+00:10:46,800 --> 00:10:51,300
+E aqui embaixo, você pode ver que está registrando os dados de Floren Pop.
+
+142
+00:10:52,590 --> 00:10:59,400
+OK, agora que podemos pesquisar dados de usuários no próximo vídeo, queremos
+
+143
+00:10:59,400 --> 00:11:00,300
+para pegar esses dados.
+
+144
+00:11:00,300 --> 00:11:02,670
+Queremos inseri-lo no dormitório.
+
+145
+00:11:02,940 --> 00:11:07,440
+Também teremos que fazer uma solicitação separada para obter esses repositórios.
+
+146
+00:11:07,560 --> 00:11:09,600
+OK, então vamos começar com isso no próximo vídeo.

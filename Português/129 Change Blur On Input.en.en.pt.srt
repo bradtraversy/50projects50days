@@ -1,0 +1,247 @@
+﻿1
+00:00:00,150 --> 00:00:05,520
+OK, agora queremos adicionar o JavaScript aqui, e esta é realmente uma área onde você pode
+
+2
+00:00:05,520 --> 00:00:07,720
+Pause o vídeo e tente fazer isso sozinho.
+
+3
+00:00:08,010 --> 00:00:14,190
+Então, basicamente, à medida que começamos a digitar, quanto maior o comprimento da senha, menos desfocado queremos que o
+
+4
+00:00:14,190 --> 00:00:14,910
+imagem ser.
+
+5
+00:00:14,920 --> 00:00:18,000
+E lembre-se, começa em 20 pixels.
+
+6
+00:00:18,240 --> 00:00:26,310
+Então você essencialmente quer subtrair desses 20 pixels, qualquer que seja o comprimento da senha, e
+
+7
+00:00:26,310 --> 00:00:28,260
+depois multiplique por dois.
+
+8
+00:00:28,260 --> 00:00:31,860
+Essa será a matemática que será usada aqui.
+
+9
+00:00:32,160 --> 00:00:34,590
+Então, se você quiser tentar você mesmo, você pode fazer isso.
+
+10
+00:00:34,770 --> 00:00:39,150
+Mas eu vou começar e trazer, antes de tudo, a entrada da senha.
+
+11
+00:00:39,510 --> 00:00:48,060
+Então vamos chamar essa variável de senha e documentar o elemento de Doggett por D e devemos ter uma ideia
+
+12
+00:00:48,060 --> 00:00:49,050
+de senha.
+
+13
+00:00:49,080 --> 00:00:51,270
+Deixe-me apenas verificar, certifique-se de colocar isso.
+
+14
+00:00:52,110 --> 00:00:52,470
+Sim.
+
+15
+00:00:52,470 --> 00:00:53,880
+Então ideia de senha.
+
+16
+00:00:53,880 --> 00:00:59,820
+E a outra coisa que queremos é o background, que é essa div aqui e que tem uma ideia de background.
+
+17
+00:00:59,820 --> 00:01:02,790
+Então vamos pegar isso também.
+
+18
+00:01:06,500 --> 00:01:13,340
+Vamos chamar isso de plano de fundo, tudo bem, agora precisamos de um ouvinte de evento na entrada de senha, então vamos
+
+19
+00:01:13,340 --> 00:01:17,600
+pegue essa entrada de senha e vamos adicionar um ouvinte de evento a ela.
+
+20
+00:01:17,600 --> 00:01:22,430
+E queremos ouvir qualquer entrada e então disparar uma função.
+
+21
+00:01:24,410 --> 00:01:25,960
+Então eu vou usar uma função de seta.
+
+22
+00:01:25,970 --> 00:01:30,050
+Vamos passar E aqui o parâmetro do evento porque precisamos obter o valor.
+
+23
+00:01:30,080 --> 00:01:36,820
+Então, digamos const input e vamos definir isso para o valor do ponto e destino.
+
+24
+00:01:37,220 --> 00:01:43,070
+OK, dessa forma obtemos a entrada e vamos em frente e testá-la com um log do console aqui e vamos
+
+25
+00:01:43,070 --> 00:01:46,820
+abra nosso console, livre-se disso.
+
+26
+00:01:47,150 --> 00:01:52,550
+E assim que eu começar a digitar, mostraremos o que estiver digitando, seja qual for a entrada.
+
+27
+00:01:53,030 --> 00:01:56,260
+Agora, a próxima coisa que queremos é o comprimento da entrada.
+
+28
+00:01:56,270 --> 00:02:04,940
+Então, vamos criar outra variável aqui chamada comprimento e defini-la para qualquer que seja o comprimento do ponto de entrada.
+
+29
+00:02:05,510 --> 00:02:10,100
+E podemos ir em frente e registrar o comprimento do console aqui.
+
+30
+00:02:10,100 --> 00:02:17,330
+Você vê, ele só vai nos dar o número, o comprimento, e então vamos pegar, vamos pegar
+
+31
+00:02:17,330 --> 00:02:20,200
+os vinte.
+
+32
+00:02:20,210 --> 00:02:23,390
+É para isso que temos o desfoque definido inicialmente.
+
+33
+00:02:23,420 --> 00:02:27,010
+E queremos subtrair disso o comprimento.
+
+34
+00:02:27,020 --> 00:02:32,840
+Vamos, na verdade, registrar isso no console.
+
+35
+00:02:35,190 --> 00:02:35,610
+Tudo bem.
+
+36
+00:02:35,630 --> 00:02:41,360
+Então, se eu digitar aqui, você verá que temos 19, 18, 17.
+
+37
+00:02:41,360 --> 00:02:50,840
+Então, na verdade, quero multiplicar isso por dois para que, se eu tiver um caractere, tenhamos 18, 16,
+
+38
+00:02:50,840 --> 00:02:55,010
+14, 12, porque quero que diminua em dois a cada vez.
+
+39
+00:02:55,970 --> 00:02:59,180
+E então, quando você sabe, começamos a chegar aqui.
+
+40
+00:02:59,180 --> 00:03:01,240
+Passamos zero e vamos negativo.
+
+41
+00:03:02,360 --> 00:03:07,670
+Então o que eu vou fazer é colocar isso em uma variável.
+
+42
+00:03:07,670 --> 00:03:10,670
+Chamaremos esse valor de desfoque.
+
+43
+00:03:13,210 --> 00:03:20,720
+E então pegaremos o plano de fundo e queremos editar as propriedades do filtro para avaliar as propriedades do filtro,
+
+44
+00:03:20,720 --> 00:03:27,220
+então diremos filtro de ponto de estilo e vamos definir isso para usarmos um modelo literal aqui.
+
+45
+00:03:27,230 --> 00:03:31,090
+Portanto, use táticas e defina-o para desfocar.
+
+46
+00:03:31,120 --> 00:03:35,970
+Então, o que estamos fazendo é basicamente definir esse valor aqui, o filtro e o desfoque.
+
+47
+00:03:36,370 --> 00:03:40,240
+E em vez de 20 pixels, vamos usar qualquer valor de desfoque.
+
+48
+00:03:41,530 --> 00:03:45,790
+Então, vamos passar o valor de desfoque e, em seguida, certifique-se de adicionar pixels depois disso.
+
+49
+00:03:46,540 --> 00:03:46,930
+Tudo bem.
+
+50
+00:03:46,930 --> 00:03:48,970
+Então agora voltamos aqui.
+
+51
+00:03:48,970 --> 00:03:50,860
+Vou fechar isso e começo a digitar.
+
+52
+00:03:50,860 --> 00:03:53,740
+Então, vou digitar algo e você pode ver que ficou um pouco menos embaçado.
+
+53
+00:03:54,250 --> 00:04:06,680
+Então deve ser em, o que, 18 agora e 16, 14, 12, 10, oito, seis, quatro, dois e zero.
+
+54
+00:04:06,700 --> 00:04:11,830
+Então agora qualquer coisa negativa obviamente ainda será uma imagem clara.
+
+55
+00:04:12,430 --> 00:04:17,870
+OK, agora este é um projeto muito bom para você expandir.
+
+56
+00:04:18,700 --> 00:04:22,000
+No momento, está apenas testando o comprimento da senha.
+
+57
+00:04:22,000 --> 00:04:29,920
+Mas você pode testar coisas como caracteres especiais e números e tudo isso, e você pode usar como
+
+58
+00:04:29,920 --> 00:04:31,020
+expressões regulares.
+
+59
+00:04:31,030 --> 00:04:33,310
+Há um monte de coisas que você poderia fazer.
+
+60
+00:04:33,580 --> 00:04:37,420
+Mas eu acho que é um bom projeto para adicionar.
+
+61
+00:04:37,780 --> 00:04:39,480
+Mas isso é tudo que vamos fazer por enquanto.
+
+62
+00:04:39,490 --> 00:04:41,170
+Então te vejo no próximo.

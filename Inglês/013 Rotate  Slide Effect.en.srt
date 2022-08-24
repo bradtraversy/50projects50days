@@ -1,0 +1,547 @@
+1
+00:00:00,060 --> 00:00:05,970
+All right, so we need to finish up our success, we have to deal with the actual NAV down here, but
+
+2
+00:00:05,970 --> 00:00:08,790
+before we do that, I'm just going to add a couple more content styles.
+
+3
+00:00:09,240 --> 00:00:23,250
+So for for the content itself, let's do a max width of 1000 pixels and we'll set margin.
+
+4
+00:00:23,850 --> 00:00:26,310
+Let's do 50 pixels on the top and bottom.
+
+5
+00:00:26,310 --> 00:00:27,640
+Auto on the left and right.
+
+6
+00:00:27,960 --> 00:00:28,770
+Keep it in the middle.
+
+7
+00:00:28,800 --> 00:00:34,980
+So even if we stretch it out, you know, it's going to have a thousand pixel thousand pixel with Max.
+
+8
+00:00:35,640 --> 00:00:43,350
+And then for the one sided content, each one of those is going to take the margin away from that.
+
+9
+00:00:43,360 --> 00:00:44,730
+So margin zero.
+
+10
+00:00:44,730 --> 00:00:47,400
+And then for the small tag for the author,
+
+11
+00:00:50,260 --> 00:00:58,350
+let's set a color of five five five and let's set a font style of italic.
+
+12
+00:00:59,280 --> 00:01:01,140
+And then for the paragraphs.
+
+13
+00:01:02,220 --> 00:01:08,010
+So content paragraph, we're going to set color to three, three, three.
+
+14
+00:01:08,010 --> 00:01:13,080
+And let's set let's increase the line height to one point five.
+
+15
+00:01:14,520 --> 00:01:18,360
+And we already have the image at 100 percent with good.
+
+16
+00:01:18,850 --> 00:01:23,950
+So now we just need to really deal with the navigation, which is right now is down here.
+
+17
+00:01:24,090 --> 00:01:28,380
+And what I want to do, since we're only going to see this when this actually rotates, when we click
+
+18
+00:01:28,380 --> 00:01:31,170
+this, I'm going to add the show now.
+
+19
+00:01:31,920 --> 00:01:33,450
+So show dash nav.
+
+20
+00:01:33,570 --> 00:01:40,050
+I'm going to manually add it for now and then the actual navigation.
+
+21
+00:01:40,620 --> 00:01:42,930
+We want that to be positioned over here.
+
+22
+00:01:43,260 --> 00:01:43,590
+Right.
+
+23
+00:01:43,640 --> 00:01:47,010
+So let's let's do this above where we did the content stuff.
+
+24
+00:01:47,550 --> 00:01:50,190
+And I'm just going to use the nav tag as a selector.
+
+25
+00:01:50,610 --> 00:01:56,370
+And I want to position this to be fixed because we want it fixed down to the bottom.
+
+26
+00:01:56,760 --> 00:02:03,770
+So we'll say fix and bring it from the bottom 40 pixels up and from the left zero.
+
+27
+00:02:04,140 --> 00:02:08,700
+So that puts it, you know, near where we're actually going to want it.
+
+28
+00:02:09,300 --> 00:02:12,110
+And then I'm just going to set a high Z index here.
+
+29
+00:02:12,120 --> 00:02:13,500
+So it's on top.
+
+30
+00:02:13,680 --> 00:02:23,310
+Let's do a Z index of one hundred and then for the you'll say nav unordered list.
+
+31
+00:02:23,610 --> 00:02:25,350
+I'm not class just now.
+
+32
+00:02:27,970 --> 00:02:36,370
+So for that, let's do a margin, not a margin, let's do a lifestyle type of nun, so that will get
+
+33
+00:02:36,370 --> 00:02:43,780
+rid of those bullet points and then I'm going to set patting left to 30 pixels and then we want to style
+
+34
+00:02:43,780 --> 00:02:44,950
+the list items.
+
+35
+00:02:44,960 --> 00:02:47,800
+So NAV, you'll ally.
+
+36
+00:02:50,050 --> 00:02:58,780
+And I want them all uppercase, so let's do a text, transform uppercase, and let's change that color
+
+37
+00:02:59,200 --> 00:03:01,930
+to whites.
+
+38
+00:03:02,930 --> 00:03:08,690
+And let's set a margin of 40 pixels on the top and bottom, so we're really going to separate them from
+
+39
+00:03:08,690 --> 00:03:12,200
+each other and then let's.
+
+40
+00:03:13,530 --> 00:03:15,330
+Let's bring it over here.
+
+41
+00:03:15,360 --> 00:03:17,350
+We need to have it initially over here.
+
+42
+00:03:17,370 --> 00:03:23,790
+More to the left, because it's going to come in as this rotates or right after rotates.
+
+43
+00:03:24,210 --> 00:03:30,360
+So to do that, we can use transform and we want to translate on the X axis.
+
+44
+00:03:30,360 --> 00:03:33,340
+So translate X, we want to bring it left.
+
+45
+00:03:33,630 --> 00:03:34,970
+So that would be negative.
+
+46
+00:03:35,400 --> 00:03:38,750
+Will do negative 100 percent.
+
+47
+00:03:40,380 --> 00:03:45,150
+So if I save that now, you can see that it's, you know, it's way over here.
+
+48
+00:03:46,180 --> 00:03:47,340
+We can still see it a little bit.
+
+49
+00:03:47,340 --> 00:03:47,820
+That's fine.
+
+50
+00:03:47,820 --> 00:03:48,810
+It's just going to come in.
+
+51
+00:03:50,220 --> 00:03:51,990
+But we want that to come in smoothly.
+
+52
+00:03:52,070 --> 00:03:54,440
+So let's add a transition on that.
+
+53
+00:03:54,450 --> 00:04:05,700
+So transition the transform property and we'll do a zero point four second duration and we'll use these
+
+54
+00:04:05,700 --> 00:04:06,450
+in here.
+
+55
+00:04:09,660 --> 00:04:17,370
+And then let's see for the you know, let's comment this out for a minute just so we can actually see
+
+56
+00:04:17,370 --> 00:04:17,700
+this.
+
+57
+00:04:18,240 --> 00:04:21,270
+I want the this or some more space between the icon.
+
+58
+00:04:21,280 --> 00:04:26,220
+So let's do nav u l l i.
+
+59
+00:04:27,090 --> 00:04:39,450
+Well, I am going to set the font size, do 20 pixels and let's set margin right to 10 pixels.
+
+60
+00:04:42,840 --> 00:04:46,930
+OK, so makes the icon a little bigger, also put some space in between them.
+
+61
+00:04:48,580 --> 00:04:49,200
+Now.
+
+62
+00:04:51,380 --> 00:04:58,300
+We're going to want each with each one of these to stick out a little more, kind of going at an angle,
+
+63
+00:04:58,970 --> 00:05:07,850
+so what we can do is take the nav, let's say NAV, Ueli and then the direct ally after that.
+
+64
+00:05:08,120 --> 00:05:12,470
+And let's add a margin left of 15 pixels.
+
+65
+00:05:12,500 --> 00:05:21,080
+So if I save that, what happens is the allies after the initial lie are going to stick out 15 pixels.
+
+66
+00:05:21,860 --> 00:05:25,130
+Now, I want this last one to stick out even more.
+
+67
+00:05:25,130 --> 00:05:28,730
+So what I'll do is take this, copy it.
+
+68
+00:05:29,120 --> 00:05:34,250
+And let's say Elai, plus Elai plus elai.
+
+69
+00:05:35,250 --> 00:05:40,920
+So basically, anything after, you know, this one here, so the contact when I want to stick out,
+
+70
+00:05:40,920 --> 00:05:48,390
+double that of 30 pixels, now you can see that it's at an angle kind of at the same angle as the pages
+
+71
+00:05:48,390 --> 00:05:48,690
+here.
+
+72
+00:05:50,220 --> 00:05:57,990
+So we have an initially we have this negative 100 percent translate X.
+
+73
+00:05:57,990 --> 00:06:04,110
+So if I can comment that it goes almost off the screen, but we're going to want these ones to initially
+
+74
+00:06:04,110 --> 00:06:06,840
+start out more over as well to the left.
+
+75
+00:06:06,850 --> 00:06:08,700
+So I'm going to copy that.
+
+76
+00:06:08,700 --> 00:06:13,110
+And for this one, here we have our our margin left 15.
+
+77
+00:06:13,110 --> 00:06:15,920
+Let's do negative 150 percent.
+
+78
+00:06:16,230 --> 00:06:22,170
+And then for this one here, let's add let's do negative two hundred percent because we need those to
+
+79
+00:06:22,170 --> 00:06:23,490
+be over more.
+
+80
+00:06:23,850 --> 00:06:28,980
+Now, when we have the show NAV applied, we wanted to actually show the navigation.
+
+81
+00:06:28,980 --> 00:06:30,780
+Everything we just did is the default.
+
+82
+00:06:30,780 --> 00:06:36,480
+When you first come to the page, when this class is actually there, which it is now, because we manually
+
+83
+00:06:36,480 --> 00:06:39,870
+added it, we want to see all the navigation stuff.
+
+84
+00:06:39,870 --> 00:06:42,150
+So let's go.
+
+85
+00:06:44,830 --> 00:06:51,600
+We want to do this, we'll go right above the nav here and let's say so, the Container d'Hiv, when
+
+86
+00:06:51,600 --> 00:07:02,760
+it has show Dasch NAV, then we want to take the direct navigation allies after that and we want to
+
+87
+00:07:02,760 --> 00:07:03,810
+bring them into view.
+
+88
+00:07:03,820 --> 00:07:11,130
+So let's set transform translate acts on all of those to zero, which is going to bring it to its,
+
+89
+00:07:11,130 --> 00:07:12,540
+you know, its original place.
+
+90
+00:07:12,840 --> 00:07:14,640
+And I want to add a little bit of a delay.
+
+91
+00:07:14,640 --> 00:07:17,940
+So we'll say transition delay.
+
+92
+00:07:19,620 --> 00:07:26,250
+Spell that right, transition delay, I'm going to set that to zero point three seconds so that it comes
+
+93
+00:07:26,250 --> 00:07:29,940
+in, you know, a little bit after I forgot my semicolon.
+
+94
+00:07:30,250 --> 00:07:33,010
+So it comes in a little bit after the rotation.
+
+95
+00:07:34,020 --> 00:07:37,830
+So now we're able to see it because we have that show NAV.
+
+96
+00:07:40,260 --> 00:07:49,050
+So if we take this off, then we just have, you know, just looks normal and then if we have it, you
+
+97
+00:07:49,050 --> 00:07:54,430
+can see it rotates and shows the the navigation.
+
+98
+00:07:55,080 --> 00:07:58,920
+Now we want to have the functionality where we click this.
+
+99
+00:07:58,920 --> 00:08:02,260
+Then it adds that class, which is going to be pretty easy.
+
+100
+00:08:02,280 --> 00:08:09,060
+So let's jump into our script here and let's create a variable called Open and we'll use documents dot
+
+101
+00:08:09,540 --> 00:08:12,630
+get element by D we have an idea of open.
+
+102
+00:08:13,670 --> 00:08:15,450
+We also have an idea of close.
+
+103
+00:08:19,350 --> 00:08:25,860
+So close, and then we also want to grab the container so consed container
+
+104
+00:08:28,260 --> 00:08:32,730
+kit element bidi actually no that's a that's a class.
+
+105
+00:08:32,730 --> 00:08:41,530
+So let's do I mean you could add an ID or you could just use Querrey selector and we want dot container.
+
+106
+00:08:41,530 --> 00:08:42,370
+It's a class.
+
+107
+00:08:42,390 --> 00:08:42,720
+All right.
+
+108
+00:08:42,730 --> 00:08:47,040
+So let's take open and let's add an event listener to that.
+
+109
+00:08:51,300 --> 00:08:58,020
+So we want to listen for a click, and when that happens, we're going to run a narrow function and
+
+110
+00:08:58,020 --> 00:09:07,320
+then we just want to take the container and from the class list, we want to add the class of the show.
+
+111
+00:09:07,320 --> 00:09:10,850
+Dasch now and then close is going to be similar.
+
+112
+00:09:10,860 --> 00:09:12,270
+So I'm someone's going to copy that.
+
+113
+00:09:12,270 --> 00:09:20,190
+And let's change this to close and then let's do container class list remove.
+
+114
+00:09:22,170 --> 00:09:22,660
+All right.
+
+115
+00:09:23,130 --> 00:09:28,890
+So I save that and I click, OK, so that happens.
+
+116
+00:09:29,850 --> 00:09:37,980
+So let me just reload, so I click and that rotates these shoot in, but we can't see the the close
+
+117
+00:09:37,980 --> 00:09:38,340
+here.
+
+118
+00:09:38,340 --> 00:09:44,070
+So to handle that, let's go back to our success.
+
+119
+00:09:46,200 --> 00:09:53,240
+And we basically just want the circle this to rotate when there's that show now of class.
+
+120
+00:09:54,090 --> 00:09:56,610
+So I'll go right below the circle.
+
+121
+00:09:58,170 --> 00:10:00,540
+So it's a circle and
+
+122
+00:10:03,270 --> 00:10:04,580
+dot show nav
+
+123
+00:10:07,170 --> 00:10:10,820
+and then we're not actually style I'm sorry, not circle container.
+
+124
+00:10:13,170 --> 00:10:18,360
+So when the container has shown that I've applied to it, then we want to style the circle.
+
+125
+00:10:18,690 --> 00:10:21,340
+And what we want to do with the circle is rotate it.
+
+126
+00:10:21,360 --> 00:10:29,430
+So let's say transform, rotate and we're going to rotate it negative 70 degrees.
+
+127
+00:10:30,200 --> 00:10:37,050
+OK, so now once it rotates, we can see the close button just because of where it's positioned.
+
+128
+00:10:37,380 --> 00:10:40,020
+When this circle rotates, it just comes into view.
+
+129
+00:10:41,410 --> 00:10:41,840
+All right.
+
+130
+00:10:41,850 --> 00:10:43,290
+So that looks pretty good.
+
+131
+00:10:44,640 --> 00:10:45,840
+So not too bad.
+
+132
+00:10:45,840 --> 00:10:52,200
+I mean, we're just adding or removing a class and we're setting certain certain styles on the circle
+
+133
+00:10:52,200 --> 00:10:56,580
+and on the navigation, you know, when we have that class applied.
+
+134
+00:10:56,580 --> 00:10:59,520
+So you could use this on with any website, any application.
+
+135
+00:10:59,830 --> 00:11:00,540
+So that's it.
+
+136
+00:11:00,540 --> 00:11:02,160
+Let's go on to the next video.
+
+137
+00:11:02,160 --> 00:11:02,880
+Next project.

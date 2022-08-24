@@ -1,0 +1,239 @@
+﻿1
+00:00:00,150 --> 00:00:05,250
+OK, então no último vídeo, fizemos nossa pequena animação, e agora podemos colocá-los onde quer que
+
+2
+00:00:05,250 --> 00:00:10,290
+quero, mas quero fazer com que, se tentarmos fazer os três, não nos deixe fazer o bem,
+
+3
+00:00:10,290 --> 00:00:11,270
+barato e rápido.
+
+4
+00:00:11,280 --> 00:00:12,780
+Então nós queremos ter.
+
+5
+00:00:12,780 --> 00:00:15,150
+Então, você sabe, pode ser barato e bom.
+
+6
+00:00:15,150 --> 00:00:18,810
+Pode fazer barato e rápido, mas não pode fazer todos os três.
+
+7
+00:00:18,820 --> 00:00:21,500
+Então, a primeira coisa que quero fazer é trazer tudo o que precisamos.
+
+8
+00:00:21,510 --> 00:00:25,680
+Vamos trazer as alternâncias, que são as próprias caixas de seleção.
+
+9
+00:00:25,680 --> 00:00:34,320
+Então, digamos ponto de documento, seletor de consulta, tudo porque há mais de um e queremos todos os
+
+10
+00:00:34,320 --> 00:00:39,420
+da classe de alternância e então vamos pegar cada um.
+
+11
+00:00:40,350 --> 00:00:43,920
+Basicamente, queremos pegar, você sabe, o rótulo.
+
+12
+00:00:44,400 --> 00:00:49,200
+Não sou a gravadora, mas a ideia do bom, barato e rápido.
+
+13
+00:00:49,210 --> 00:00:53,590
+Então, o alternador obtém tudo isso, mas queremos cada um ao seu lado.
+
+14
+00:00:54,030 --> 00:00:57,360
+Então aqui vamos dizer que eu bom.
+
+15
+00:00:57,390 --> 00:01:04,670
+Este será o seletor de consulta e defina isso como bom.
+
+16
+00:01:04,680 --> 00:01:15,750
+E então este aqui vai ser um seletor de consulta barato e vamos fazer de barato e então isso é
+
+17
+00:01:15,750 --> 00:01:19,640
+vai ser rápido, então eu jejuaria.
+
+18
+00:01:19,680 --> 00:01:24,460
+Certifique-se de usar o seletor de consulta, pois é um elemento único e rápido.
+
+19
+00:01:24,480 --> 00:01:26,580
+Então trouxemos tudo o que precisamos.
+
+20
+00:01:26,820 --> 00:01:33,750
+Agora eu vou pegar alternâncias e vou percorrer com um para cada e ver para cada alternância.
+
+21
+00:01:35,380 --> 00:01:37,110
+Vamos adicionar um ouvinte de eventos.
+
+22
+00:01:37,110 --> 00:01:45,240
+Então diga toggle dot add event listener e o evento será uma mudança.
+
+23
+00:01:45,720 --> 00:01:50,160
+Quando você tem uma caixa de seleção e deseja adicionar um evento a ela, você deseja usar alterar, não clicar.
+
+24
+00:01:51,240 --> 00:01:59,490
+Então, quando isso for executado, teremos uma função e teremos uma função chamada Do the Trick.
+
+25
+00:02:01,690 --> 00:02:10,300
+E passando o valor alvo, que é o que selecionamos e temos que passar aqui nosso evento
+
+26
+00:02:10,300 --> 00:02:10,990
+objeto.
+
+27
+00:02:12,340 --> 00:02:18,550
+OK, agora cada vez que clicarmos em um deles, ele irá disparar o evento de mudança
+
+28
+00:02:18,550 --> 00:02:23,460
+e vai fazer o truque e passar o que quer que o alvo esteja passando por aquele elemento.
+
+29
+00:02:23,800 --> 00:02:31,330
+Então vamos criar uma função chamada Do the Trick e vamos chamar a função de coleta.
+
+30
+00:02:32,160 --> 00:02:33,020
+É isso que é.
+
+31
+00:02:33,020 --> 00:02:34,150
+É aquele em que clicamos.
+
+32
+00:02:35,740 --> 00:02:43,120
+E queremos verificar primeiro se todos os três estão marcados para que possamos dizer se good dot verificado, porque
+
+33
+00:02:43,120 --> 00:02:45,760
+quando você tem uma caixa de seleção, você a traz para o dormitório.
+
+34
+00:02:45,760 --> 00:02:50,980
+Você pode acessar se estiver marcado ou não com Dorchak, então será verdadeiro ou falso.
+
+35
+00:02:51,420 --> 00:02:58,960
+Então diremos se o bom é verificado, se o barato é verificado e se é rápido.
+
+36
+00:03:00,810 --> 00:03:01,270
+Verificado.
+
+37
+00:03:01,680 --> 00:03:10,470
+OK, se isso for verdade, digamos que bom é igual ao cortado.
+
+38
+00:03:11,220 --> 00:03:16,590
+Então basicamente o que você sabe, o cortado, ou seja, o alvo que passou, e então vamos
+
+39
+00:03:16,590 --> 00:03:21,440
+para dizer ponto rápido verificado e queremos desmarcá-lo.
+
+40
+00:03:21,450 --> 00:03:23,880
+Então, vamos definir isso como falso.
+
+41
+00:03:25,300 --> 00:03:27,870
+OK, e então vamos dizer se.
+
+42
+00:03:30,440 --> 00:03:33,890
+Barato é o correto.
+
+43
+00:03:34,530 --> 00:03:42,560
+OK, então se clicarmos em barato, então pegaremos bem e vamos verificar e definir isso como falso.
+
+44
+00:03:45,000 --> 00:03:56,010
+E então, se tivermos rápido que é clicado, queremos definir barato verificado como falso.
+
+45
+00:03:56,580 --> 00:03:57,830
+Tudo bem, então vamos salvar isso.
+
+46
+00:03:57,840 --> 00:04:04,260
+Agora, se eu fizer um bom barato e clicar rápido, você verá o barato deslizar automaticamente de volta
+
+47
+00:04:04,260 --> 00:04:07,800
+porque é definido de volta para falso aqui.
+
+48
+00:04:08,390 --> 00:04:13,440
+OK, se eu clicar em barato, o bom será desmarcado.
+
+49
+00:04:14,410 --> 00:04:17,700
+Se eu clicar bem rápido vai ser desmarcado.
+
+50
+00:04:17,930 --> 00:04:25,890
+OK, se o barato já estiver selecionado, podemos fazer o bem e não o barato e não rápido.
+
+51
+00:04:25,890 --> 00:04:26,760
+Podemos fazer rápido.
+
+52
+00:04:26,760 --> 00:04:27,780
+Não é barato, não é bom.
+
+53
+00:04:27,780 --> 00:04:32,130
+Podemos fazer barato e rápido ou bom.
+
+54
+00:04:32,130 --> 00:04:33,450
+Mas não podemos fazer os três.
+
+55
+00:04:34,040 --> 00:04:35,340
+Ah é muito raro, pelo menos.
+
+56
+00:04:35,550 --> 00:04:37,290
+Portanto, é apenas um pequeno projeto divertido.
+
+57
+00:04:38,460 --> 00:04:45,240
+E você sabe, você pode usar esses controles deslizantes legais, essas caixas de seleção de estilo em sua interface do usuário.
+
+58
+00:04:46,400 --> 00:04:49,410
+A lógica aqui era apenas para se divertir.
+
+59
+00:04:49,710 --> 00:04:50,480
+Mas é isso.
+
+60
+00:04:50,500 --> 00:04:52,350
+Vamos em frente e começar a próxima.

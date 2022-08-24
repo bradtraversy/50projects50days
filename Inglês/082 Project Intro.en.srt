@@ -1,0 +1,79 @@
+1
+00:00:00,300 --> 00:00:01,920
+All right, welcome to your next project.
+
+2
+00:00:01,950 --> 00:00:05,670
+So in this one, we're going to build a vertical slider.
+
+3
+00:00:05,670 --> 00:00:09,720
+Basically, we have an image on the side and we have some text on this side.
+
+4
+00:00:09,720 --> 00:00:11,700
+And this could be any kind of content you want.
+
+5
+00:00:11,880 --> 00:00:17,250
+And then these two arrows here, if I click the up, what's going to happen is one side goes up, one
+
+6
+00:00:17,250 --> 00:00:23,070
+side goes down, but it brings into place the correct text area and the correct image.
+
+7
+00:00:23,070 --> 00:00:24,150
+So go up again.
+
+8
+00:00:24,510 --> 00:00:25,170
+Up again.
+
+9
+00:00:25,170 --> 00:00:26,580
+So we have four different sides.
+
+10
+00:00:26,580 --> 00:00:28,990
+If I click up again, it just goes back to the beginning.
+
+11
+00:00:29,250 --> 00:00:30,240
+Same with down.
+
+12
+00:00:31,300 --> 00:00:35,520
+So then it just goes the opposite way, so I think it's a it's a really cool looking slider.
+
+13
+00:00:35,770 --> 00:00:41,200
+It's not really responsive if we make this smaller, you can see it doesn't really look good on smaller
+
+14
+00:00:41,200 --> 00:00:43,420
+screens just because of the orientation of it.
+
+15
+00:00:43,720 --> 00:00:45,530
+But that's not really the point here.
+
+16
+00:00:45,550 --> 00:00:49,260
+This is this is made for, you know, a desktop, laptop, et cetera.
+
+17
+00:00:50,050 --> 00:00:54,820
+If you wanted to, you could go on and try to maybe switch the orientation on smaller screens.
+
+18
+00:00:55,090 --> 00:00:56,730
+But we're going to go ahead and build this out.
+
+19
+00:00:56,740 --> 00:00:58,690
+I think it's a really cool looking project.
+
+20
+00:00:58,900 --> 00:01:00,220
+So let's get started.

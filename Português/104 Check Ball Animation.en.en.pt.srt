@@ -1,0 +1,211 @@
+﻿1
+00:00:00,180 --> 00:00:06,990
+OK, agora queremos criar a animação para a bola se mover para frente e para trás quando clicamos nela, então
+
+2
+00:00:06,990 --> 00:00:09,720
+vamos ter duas animações.
+
+3
+00:00:09,750 --> 00:00:12,360
+Então, vamos criar esses quadros-chave.
+
+4
+00:00:12,630 --> 00:00:15,060
+Este vai ser chamado de slide on.
+
+5
+00:00:15,750 --> 00:00:19,710
+E isso só vai ter que ir daqui até aqui.
+
+6
+00:00:19,710 --> 00:00:25,800
+E vamos fazer isso apenas alterando o valor do eixo x de translação.
+
+7
+00:00:25,810 --> 00:00:31,880
+Então, usaremos uma propriedade de transformação e definiremos para converter X para ser mais avançado.
+
+8
+00:00:32,640 --> 00:00:34,000
+Também escalaremos um pouco.
+
+9
+00:00:34,020 --> 00:00:43,200
+Então vamos em frente e digamos que em zero por cento desta animação, queremos transformar e vamos
+
+10
+00:00:43,200 --> 00:00:48,780
+set translate X porque estamos movendo-o no eixo X da direita para a esquerda ou da esquerda para a direita.
+
+11
+00:00:48,810 --> 00:00:54,600
+Neste caso, vamos começar em zero e a escala vai começar em apenas um, que é o que
+
+12
+00:00:54,600 --> 00:00:56,190
+é por padrão.
+
+13
+00:00:56,700 --> 00:01:09,660
+E então, em 50%, queremos definir transform para traduzir X e ir de zero a vinte pixels e
+
+14
+00:01:09,660 --> 00:01:15,840
+em seguida, defina a escala para um ponto dois e depois para 100 por cento.
+
+15
+00:01:18,600 --> 00:01:29,280
+Digamos que 100%, queremos transformar, traduzir atos e isso terá 40 pixels e definir
+
+16
+00:01:29,280 --> 00:01:31,910
+escala de volta para um.
+
+17
+00:01:32,490 --> 00:01:34,260
+OK, então esse é o slide.
+
+18
+00:01:34,830 --> 00:01:37,940
+O slide fora basicamente vai ser assim para trás.
+
+19
+00:01:37,950 --> 00:01:42,960
+Então, eu vou apenas copiar isso e vamos definir isso para deslizar.
+
+20
+00:01:43,530 --> 00:01:50,190
+E zero por cento estará em 40 pixels porque estará na escala final um.
+
+21
+00:01:50,520 --> 00:01:57,720
+E o segundo terá os mesmos 20 pixels e o terceiro ou 100%, devo dizer, é
+
+22
+00:01:57,720 --> 00:02:01,350
+vai estar de volta a zero com uma escala de um.
+
+23
+00:02:01,670 --> 00:02:03,620
+OK, animações tão simples.
+
+24
+00:02:03,630 --> 00:02:07,430
+Agora, precisamos implementar isso porque, você sabe, não adicionamos isso a nada.
+
+25
+00:02:08,010 --> 00:02:19,590
+Então, para a bola, vamos adicionar animação e queremos definir isso para deslizar e dizer zero ponto três
+
+26
+00:02:19,590 --> 00:02:21,030
+segundos para a duração.
+
+27
+00:02:21,030 --> 00:02:24,150
+Queremos que seja linear e para a frente.
+
+28
+00:02:26,540 --> 00:02:33,500
+Tudo bem, e você pode ver assim que eu salvar, já que estou usando o servidor live, ele recarrega automaticamente.
+
+29
+00:02:33,550 --> 00:02:35,260
+Ele mostra essa animação.
+
+30
+00:02:35,570 --> 00:02:37,490
+Agora, quando clicamos nele, verificamos.
+
+31
+00:02:37,500 --> 00:02:39,350
+Queremos executar o slide.
+
+32
+00:02:39,980 --> 00:02:40,300
+Certo.
+
+33
+00:02:40,370 --> 00:02:43,820
+Então vamos bem aqui.
+
+34
+00:02:44,300 --> 00:02:51,290
+A maneira como podemos direcionar isso com nosso sucesso é a alternância, que é a entrada da caixa de seleção quando é
+
+35
+00:02:51,290 --> 00:02:51,840
+verificado.
+
+36
+00:02:52,000 --> 00:02:55,100
+OK, então Colin marcou OK significa no estado marcado.
+
+37
+00:02:55,520 --> 00:02:59,990
+Em seguida, queremos adicionar a classe label e depois a classe ball.
+
+38
+00:03:00,530 --> 00:03:01,840
+É isso que queremos animar.
+
+39
+00:03:02,270 --> 00:03:09,830
+OK, então isso é basicamente por padrão, ele terá o slide desativado, mas quando estiver marcado, ele executará o slide
+
+40
+00:03:09,830 --> 00:03:10,250
+sobre.
+
+41
+00:03:10,280 --> 00:03:20,750
+Então, vamos definir a animação para deslizar em zero ponto três segundos, linear e para frente.
+
+42
+00:03:21,590 --> 00:03:23,840
+OK, então salve isso.
+
+43
+00:03:23,840 --> 00:03:28,460
+E agora que o primeiro está marcado, você verá que ele foi empurrado para o lado.
+
+44
+00:03:28,990 --> 00:03:31,340
+Se eu recarregar isso, todos eles serão desmarcados.
+
+45
+00:03:31,760 --> 00:03:38,990
+Mas agora, se eu clicar nisso, clicar nisso, naquilo, e se eu clicar novamente, ele remove o verificado
+
+46
+00:03:38,990 --> 00:03:44,690
+e ele executa isso, que é slide off, que o traz de volta por causa de onde estamos configurando
+
+47
+00:03:44,690 --> 00:03:46,310
+no eixo x.
+
+48
+00:03:47,780 --> 00:03:48,250
+Tudo bem.
+
+49
+00:03:48,260 --> 00:03:49,810
+Então nós temos essa parte feita.
+
+50
+00:03:49,820 --> 00:03:56,270
+Agora, a única coisa que nos resta é a lógica porque não queremos poder dizer bom, rápido e
+
+51
+00:03:56,270 --> 00:03:59,410
+barato, porque é muito raro que você consiga isso.
+
+52
+00:03:59,420 --> 00:04:04,310
+Assim poderemos fazer barato e bom ou barato e rápido.
+
+53
+00:04:04,580 --> 00:04:07,010
+Então, adicionaremos um pouco de JavaScript a isso a seguir.

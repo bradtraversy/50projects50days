@@ -1,0 +1,675 @@
+﻿1
+00:00:00,060 --> 00:00:06,000
+Tudo bem, então vamos pular para o nosso HTML e ele vai mudar o título para as etapas de progresso
+
+2
+00:00:06,810 --> 00:00:11,280
+e no corpo aqui, vamos querer um container em volta de tudo.
+
+3
+00:00:11,820 --> 00:00:18,120
+E então, dentro desse contêiner, teremos um contêiner Dasch de progresso e, dentro dele, teremos
+
+4
+00:00:18,120 --> 00:00:19,440
+tem uma classe de progresso.
+
+5
+00:00:19,470 --> 00:00:23,290
+Também vou dar uma ideia de progresso, ok?
+
+6
+00:00:23,490 --> 00:00:25,640
+E nada vai entrar aqui.
+
+7
+00:00:25,650 --> 00:00:29,980
+Vamos usá-lo apenas para estilizar e para criar a linha.
+
+8
+00:00:29,980 --> 00:00:33,030
+E agora temos os círculos com os números dentro.
+
+9
+00:00:33,040 --> 00:00:36,180
+Então, dentro do contêiner de progresso.
+
+10
+00:00:36,180 --> 00:00:45,090
+Mas depois da div de progresso, teremos uma classe de circle e dependendo de qual estiver ativa,
+
+11
+00:00:45,090 --> 00:00:46,760
+terá um estilo diferente.
+
+12
+00:00:46,800 --> 00:00:52,050
+Então, o primeiro aqui, eu vou colocar manualmente uma classe de active e isso vai ser
+
+13
+00:00:52,050 --> 00:00:55,650
+um e então vamos copiar isso mais três vezes.
+
+14
+00:00:55,650 --> 00:00:57,990
+E não queremos ativo nesses outros.
+
+15
+00:00:58,410 --> 00:01:06,300
+E este será o passo dois e este será três e este será quatro.
+
+16
+00:01:06,300 --> 00:01:11,940
+E então vamos sair do container de progresso ainda dentro do container normal e ter nosso
+
+17
+00:01:11,940 --> 00:01:12,490
+botões.
+
+18
+00:01:12,510 --> 00:01:14,160
+Então isso vai ser aula.
+
+19
+00:01:14,370 --> 00:01:20,010
+Vamos dar uma classe de BTN e eu vou dar uma ideia de pre para prevue.
+
+20
+00:01:20,940 --> 00:01:26,460
+E também vou desabilitar isso por padrão porque vamos começar em um e não podemos
+
+21
+00:01:26,460 --> 00:01:28,170
+ir anterior se estivermos em um.
+
+22
+00:01:28,590 --> 00:01:33,300
+E vamos apenas dizer Prešov aqui, copie isso e este será o próximo.
+
+23
+00:01:33,880 --> 00:01:38,790
+Então vamos nos livrar de desativado aqui e mudar o ID para o próximo.
+
+24
+00:01:40,050 --> 00:01:41,370
+OK, então vamos salvar isso.
+
+25
+00:01:41,370 --> 00:01:43,470
+Vai parecer absolutamente horrível por agora.
+
+26
+00:01:43,830 --> 00:01:47,270
+Mas vamos pular para o nosso sucesso e começar a aprimorar isso.
+
+27
+00:01:47,850 --> 00:01:50,040
+Então eu vou usar a fonte multi.
+
+28
+00:01:50,040 --> 00:01:58,650
+Então vou me livrar disso aqui e dizer LCR, ponto de interrogação, família é igual a Ally.
+
+29
+00:02:00,180 --> 00:02:07,350
+E vou adicionar isso aqui e depois vou adicionar uma cor de fundo ao corpo.
+
+30
+00:02:07,860 --> 00:02:17,550
+Então a cor de fundo vai ser F6, F sete F, B e C exibem Fleck's.
+
+31
+00:02:17,550 --> 00:02:22,070
+Podemos nos livrar da coluna, justificar um centro de linha.
+
+32
+00:02:22,080 --> 00:02:23,600
+OK, esse material é tudo de bom.
+
+33
+00:02:24,450 --> 00:02:34,710
+Então, para o contêiner, vamos apenas enviar uma linha para o centro e depois para o contêiner de progresso.
+
+34
+00:02:40,580 --> 00:02:44,510
+Vamos exibir isso como uma caixa flexível.
+
+35
+00:02:44,690 --> 00:02:50,360
+OK, então ele vai lembrar que o container de progresso envolve isso aqui, não os botões.
+
+36
+00:02:50,510 --> 00:02:52,590
+Então coloque isso em uma linha flexível.
+
+37
+00:02:53,180 --> 00:02:58,140
+Agora, quanto ao conteúdo restante, vamos justificar o conteúdo.
+
+38
+00:02:58,730 --> 00:03:05,000
+Então eu quero pegar o espaço restante aqui e colocá-lo entre os elementos.
+
+39
+00:03:05,000 --> 00:03:08,510
+Então vamos usar o espaço entre, OK.
+
+40
+00:03:08,520 --> 00:03:09,890
+Então isso vai separá-los.
+
+41
+00:03:10,220 --> 00:03:14,660
+Vamos posicionar o relativo para que possamos posicionar outras coisas dentro dele.
+
+42
+00:03:14,660 --> 00:03:15,410
+Absoluto
+
+43
+00:03:15,830 --> 00:03:30,230
+Vamos adicionar uma margem inferior de 30 pixels e vamos definir uma largura máxima de 100 por cento e definir uma largura de 350
+
+44
+00:03:30,230 --> 00:03:30,950
+píxeis.
+
+45
+00:03:31,730 --> 00:03:34,070
+E você pode mudar isso, é claro, se quiser.
+
+46
+00:03:34,670 --> 00:03:39,710
+Então agora queremos começar a trabalhar na linha que vai passar pelo meio deles e então
+
+47
+00:03:39,710 --> 00:03:40,980
+vamos trabalhar nos círculos.
+
+48
+00:03:41,510 --> 00:03:44,630
+Agora, a maneira como vamos fazer isso é o progresso.
+
+49
+00:03:45,230 --> 00:03:50,390
+Esta div aqui vai ser a linha azul que muda, que tem uma transição.
+
+50
+00:03:50,390 --> 00:03:55,190
+Quando clicarmos em próximo, ele irá para dois, três, então ele irá para uma certa porcentagem e então vamos
+
+51
+00:03:55,190 --> 00:04:01,190
+ter uma linha cinza fraca atrás dela, que basicamente representa a linha vazia e isso vai
+
+52
+00:04:01,190 --> 00:04:05,000
+para estar no pseudo seletor anterior do contêiner de progresso.
+
+53
+00:04:05,450 --> 00:04:05,870
+Tudo bem.
+
+54
+00:04:05,870 --> 00:04:08,170
+Então vamos em frente e criar a linha azul primeiro.
+
+55
+00:04:08,180 --> 00:04:10,220
+Então isso vai estar em progresso.
+
+56
+00:04:11,930 --> 00:04:12,380
+Tudo bem.
+
+57
+00:04:12,380 --> 00:04:14,960
+Vamos definir uma cor de fundo.
+
+58
+00:04:15,590 --> 00:04:21,710
+Vamos configurá-lo para hexadecimal três, quatro, nove, oito DB.
+
+59
+00:04:23,030 --> 00:04:29,150
+E queremos posicionar isso como absoluto dentro do contêiner de progresso, que é posicionado em relação.
+
+60
+00:04:29,540 --> 00:04:35,300
+E até onde eu quero colocar, eu quero no meio, você sabe, verticalmente.
+
+61
+00:04:35,300 --> 00:04:44,810
+Então vamos fazer 50 por cento do topo e vamos do zero à esquerda e ele terá uma altura de quatro
+
+62
+00:04:44,810 --> 00:04:45,520
+píxeis.
+
+63
+00:04:45,530 --> 00:04:50,390
+Agora a largura vai começar como zero por cento porque vamos começar, você sabe, no
+
+64
+00:04:50,390 --> 00:04:53,570
+começando aqui, mas apenas por agora, para que possamos realmente vê-lo.
+
+65
+00:04:53,570 --> 00:04:55,010
+Vou definir para 50 por cento.
+
+66
+00:04:55,700 --> 00:04:57,440
+Agora, isso não está diretamente no meio.
+
+67
+00:04:57,440 --> 00:05:02,150
+O topo da linha está no meio, mas queremos que o meio esteja no meio.
+
+68
+00:05:02,490 --> 00:05:10,270
+Então, queremos adicionar uma transformação e definir a translação no eixo Y, que é o eixo vertical.
+
+69
+00:05:10,580 --> 00:05:12,650
+Quer subir 50 por cento.
+
+70
+00:05:13,450 --> 00:05:15,100
+OK, então agora deve estar bem no meio.
+
+71
+00:05:15,950 --> 00:05:21,590
+E também vamos definir um índice Z porque queremos ter certeza de que está atrás dos círculos, atrás dos números.
+
+72
+00:05:21,600 --> 00:05:23,300
+Então, vamos definir isso como um negativo.
+
+73
+00:05:24,560 --> 00:05:31,370
+E então isso terá uma transição, porque quando clicamos em anterior ou próximo, queremos
+
+74
+00:05:31,370 --> 00:05:35,900
+a linha para fazer a transição em uma determinada duração, não apenas mudar para a próxima.
+
+75
+00:05:35,910 --> 00:05:40,130
+Então vamos apenas dois vírgula quatro segundos com um efeito EZ.
+
+76
+00:05:41,990 --> 00:05:42,410
+Tudo bem.
+
+77
+00:05:42,420 --> 00:05:46,400
+Então, isso deve ser bom até onde isso vai.
+
+78
+00:05:46,430 --> 00:05:51,140
+Agora, vou mudar isso para zero por cento porque esse será o ponto de partida.
+
+79
+00:05:51,380 --> 00:05:56,000
+E eu vou copiar isso e ir logo acima dele.
+
+80
+00:05:57,260 --> 00:06:04,430
+E este será o contêiner de progresso e usaremos o seletor antes e, em seguida, isso
+
+81
+00:06:04,430 --> 00:06:06,860
+vai ser a linha cinza tênue atrás dele.
+
+82
+00:06:06,860 --> 00:06:09,890
+Então, vou usar E zero três vezes como plano de fundo.
+
+83
+00:06:10,580 --> 00:06:16,070
+Essas coordenadas vão ser o posicionamento vai ser o mesmo, a altura, a mesma.
+
+84
+00:06:16,070 --> 00:06:21,950
+A largura, no entanto, será cem mil e cem porque representará
+
+85
+00:06:21,950 --> 00:06:22,940
+a linha vazia.
+
+86
+00:06:23,480 --> 00:06:26,990
+E não precisamos de uma transição porque na verdade não vai fazer nada.
+
+87
+00:06:27,000 --> 00:06:29,120
+É apenas a linha por trás disso.
+
+88
+00:06:30,500 --> 00:06:32,420
+Então eu salvei.
+
+89
+00:06:32,420 --> 00:06:37,610
+Mas a razão pela qual não estamos vendo nada é que quando você usa antes ou depois, você precisa adicionar conteúdo,
+
+90
+00:06:37,610 --> 00:06:41,740
+que eu, muitas vezes esqueço e apenas defino como uma string vazia.
+
+91
+00:06:41,750 --> 00:06:44,610
+Então agora podemos ver a linha por trás disso.
+
+92
+00:06:44,630 --> 00:06:52,430
+Agora, se eu definir isso para, você sabe, 50 por cento, você pode ver agora que preenche essa linha cinza.
+
+93
+00:06:53,330 --> 00:06:57,530
+Mas vamos manter isso em zero por enquanto e vamos estilizar os círculos.
+
+94
+00:06:57,800 --> 00:07:00,740
+OK, então tudo o que nos resta agora são os círculos e os botões.
+
+95
+00:07:01,490 --> 00:07:03,260
+Então diga círculo.
+
+96
+00:07:06,950 --> 00:07:18,050
+E para isso, vamos dar uma cor de fundo branca, e vamos fazer uma cor de nove nove
+
+97
+00:07:18,050 --> 00:07:18,590
+nove.
+
+98
+00:07:18,920 --> 00:07:22,100
+Então, assim como uma cor cinza e.
+
+99
+00:07:23,190 --> 00:07:25,680
+Vamos ver, vamos fazer um raio de borda.
+
+100
+00:07:28,630 --> 00:07:37,180
+Raio da borda, queremos que sejamos arredondados em 50% e vamos definir uma altura de 30 pixels e vamos
+
+101
+00:07:37,180 --> 00:07:40,810
+também defina uma largura de 30 pixels.
+
+102
+00:07:42,130 --> 00:07:42,520
+Tudo bem.
+
+103
+00:07:42,550 --> 00:07:46,290
+Agora queremos centralizar os números no círculo.
+
+104
+00:07:46,300 --> 00:07:55,840
+Portanto, uma das maneiras mais fáceis de fazer isso é exibir o centro de itens de linha do Fleck e justificar o conteúdo
+
+105
+00:07:56,320 --> 00:07:56,860
+Centro.
+
+106
+00:07:56,890 --> 00:07:58,690
+Então, esses são colocados os números bem no meio.
+
+107
+00:07:59,830 --> 00:08:00,250
+Vamos ver.
+
+108
+00:08:00,250 --> 00:08:02,200
+Vamos dar-lhes uma fronteira.
+
+109
+00:08:02,650 --> 00:08:08,140
+Então a borda terá três pixels sólidos e vamos fazer um cinza claro.
+
+110
+00:08:08,140 --> 00:08:12,820
+Então E zero basicamente da mesma cor que a linha.
+
+111
+00:08:13,900 --> 00:08:17,720
+E eu acho que isso deve fazer isso.
+
+112
+00:08:17,740 --> 00:08:19,450
+Queremos adicionar uma transição.
+
+113
+00:08:21,340 --> 00:08:25,210
+A borda vai mudar dependendo de onde está a linha azul.
+
+114
+00:08:25,210 --> 00:08:27,790
+Se for até dois, então essa borda deve ser dois.
+
+115
+00:08:28,180 --> 00:08:33,310
+E isso vai pertencer à classe ativa, que será estilizada em um segundo.
+
+116
+00:08:33,310 --> 00:08:40,330
+Mas para a transição, vamos fazer o ponto quatro segundos de facilidade e depois vamos fazer a aula ativa.
+
+117
+00:08:40,540 --> 00:08:51,400
+Então circule, se ele tem a classe ativa nele, então vamos fazer a borda da cor e sentar os dois
+
+118
+00:08:51,820 --> 00:08:56,070
+três quatro nove oito DB
+
+119
+00:08:58,720 --> 00:09:07,720
+e isso deve ser o mesmo que ou é aqui três quatro nove oito que poderíamos realmente usar
+
+120
+00:09:08,050 --> 00:09:09,550
+algumas propriedades personalizadas aqui.
+
+121
+00:09:09,910 --> 00:09:13,360
+Tão desafiador definir propriedades personalizadas que são basicamente apenas variáveis.
+
+122
+00:09:13,360 --> 00:09:14,200
+Precisamos de um escopo.
+
+123
+00:09:14,200 --> 00:09:15,730
+Então, vou colocá-lo no escopo raiz.
+
+124
+00:09:16,820 --> 00:09:30,200
+E vamos colocar as rodas, uma linha caiu e definir que na verdade é a linha na linha do bufê.
+
+125
+00:09:31,960 --> 00:09:36,620
+A água caiu e pegue isso.
+
+126
+00:09:39,200 --> 00:09:40,790
+E coloque isso em seus.
+
+127
+00:09:42,440 --> 00:09:44,030
+E então vamos dizer.
+
+128
+00:09:47,950 --> 00:09:52,010
+Borda da linha vazia.
+
+129
+00:09:52,630 --> 00:09:54,430
+E isso vai ser aquele e0.
+
+130
+00:09:56,920 --> 00:10:07,800
+OK, agora podemos substituir isso por vare dash, linha do traço borda vazia.
+
+131
+00:10:09,270 --> 00:10:10,720
+Eu só vou copiar isso.
+
+132
+00:10:11,560 --> 00:10:17,350
+E este aqui, este vai ser oops, este vai ser o Phil.
+
+133
+00:10:17,530 --> 00:10:19,090
+Então linha fronteira Phil.
+
+134
+00:10:20,760 --> 00:10:25,780
+E este aqui estará com a borda da linha vazia.
+
+135
+00:10:25,800 --> 00:10:31,910
+Essa é a borda do círculo e, se estiver ativa, será preenchida.
+
+136
+00:10:33,420 --> 00:10:37,650
+Assim, se você quiser mudar as cores, você pode fazer isso facilmente lá em cima.
+
+137
+00:10:39,540 --> 00:10:39,990
+Tudo bem.
+
+138
+00:10:40,000 --> 00:10:42,270
+Agora vamos aos botões.
+
+139
+00:10:42,270 --> 00:10:43,920
+Essas são as últimas coisas que queremos estilizar.
+
+140
+00:10:43,920 --> 00:10:51,990
+Então BTN e isso vão ter a mesma cor de fundo do filme.
+
+141
+00:10:51,990 --> 00:10:54,290
+Então vamos em frente e adicionamos isso aqui também.
+
+142
+00:10:57,010 --> 00:11:10,420
+OK, e vamos definir a cor para branco e vamos remover a borda do botão, vamos definir o raio da borda
+
+143
+00:11:10,420 --> 00:11:14,900
+para seis pixels e defina o cursor para um ponteiro.
+
+144
+00:11:15,490 --> 00:11:18,760
+Vamos definir a certeza de que herdamos a família de fontes.
+
+145
+00:11:19,390 --> 00:11:22,090
+Então herde o bem.
+
+146
+00:11:22,110 --> 00:11:23,440
+Vamos adicionar um pouco de preenchimento.
+
+147
+00:11:23,950 --> 00:11:31,000
+Então vamos fazer oito pixels, superior e inferior, 30 pixels à esquerda e à direita e adicionar um pouco de margem.
+
+148
+00:11:31,480 --> 00:11:35,740
+Portanto, margem de cinco pixels e isso deve ser suficiente.
+
+149
+00:11:35,740 --> 00:11:44,090
+Vamos fazer com que o tamanho da fonte seja de 14 pixels, OK, e então teremos um pequeno efeito de escala no ativo.
+
+150
+00:11:44,110 --> 00:11:54,580
+Assim, quando clicamos nele de forma legal e ativa e adicionamos uma transformação, queremos reduzi-la um pouco.
+
+151
+00:11:54,610 --> 00:11:56,780
+Então de um vai dois vírgula noventa e oito.
+
+152
+00:11:57,640 --> 00:12:01,260
+Dessa forma, quando clicamos, você conhece esse pequeno fato.
+
+153
+00:12:01,270 --> 00:12:02,260
+Isso está desabilitado.
+
+154
+00:12:02,260 --> 00:12:03,310
+Lembre-se do anterior.
+
+155
+00:12:03,320 --> 00:12:06,250
+Então eu não posso clicar nisso, mas isso tem um pequeno efeito.
+
+156
+00:12:06,280 --> 00:12:07,780
+Vamos também nos livrar do contorno.
+
+157
+00:12:07,780 --> 00:12:14,740
+Portanto, quando o BTN estiver em seu estado de foco, queremos definir o contorno para zero ou nenhum.
+
+158
+00:12:17,950 --> 00:12:18,430
+Tudo bem.
+
+159
+00:12:18,580 --> 00:12:23,350
+Vamos também torná-lo se estiver desabilitado, se o botão estiver desabilitado, vamos torná-lo cinza.
+
+160
+00:12:23,350 --> 00:12:29,950
+Então, digamos que o botão Colen esteja desabilitado porque podemos direcionar isso e vamos definir o plano de fundo
+
+161
+00:12:30,130 --> 00:12:35,530
+cor para vare e vamos usar o vazio.
+
+162
+00:12:35,800 --> 00:12:41,440
+E também vou definir o cursor a partir de um ponteiro, defina-o como não permitido.
+
+163
+00:12:41,710 --> 00:12:47,380
+Dessa forma, se estiver desativado, não podemos saber, isso nos dá que o cursor não permitido não pode clicar
+
+164
+00:12:47,380 --> 00:12:47,590
+isto.
+
+165
+00:12:48,430 --> 00:12:50,350
+Então, isso faz isso para o estilo.
+
+166
+00:12:50,350 --> 00:12:55,060
+Então, no próximo vídeo, podemos ir em frente e adicionar o JavaScript para que possamos clicar em próximo, mover para
+
+167
+00:12:55,060 --> 00:12:59,680
+o segundo, terceiro, recua com o anterior e assim por diante.
+
+168
+00:12:59,770 --> 00:13:00,040
+Tudo bem.
+
+169
+00:13:00,040 --> 00:13:01,300
+Então te vejo no próximo vídeo.

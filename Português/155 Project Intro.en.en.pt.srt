@@ -1,0 +1,63 @@
+﻿1
+00:00:00,330 --> 00:00:05,370
+Tudo bem, então neste projeto, vamos criar uma lista de tarefas, que parece muito legal, bonita
+
+2
+00:00:05,370 --> 00:00:09,260
+bom design limpo, e podemos adicioná-lo para fazer aqui.
+
+3
+00:00:09,270 --> 00:00:12,600
+Vou apenas dizer para fazer um e você verá que é adicionado.
+
+4
+00:00:12,600 --> 00:00:14,250
+Vou ver fazer dois.
+
+5
+00:00:15,600 --> 00:00:17,040
+Para fazer três.
+
+6
+00:00:17,310 --> 00:00:19,560
+E vai continuar sendo adicionado aqui.
+
+7
+00:00:19,590 --> 00:00:23,940
+Agora, se eu recarregar isso, eles vão ficar porque na verdade vamos implementar armazenamento local
+
+8
+00:00:23,940 --> 00:00:24,490
+no final.
+
+9
+00:00:24,840 --> 00:00:28,200
+Então, primeiro vamos criar o design ou o layout aqui.
+
+10
+00:00:28,200 --> 00:00:34,650
+Então vamos adicionar a funcionalidade no dormitório onde podemos adicioná-la para fazer também podemos marcar como
+
+11
+00:00:34,650 --> 00:00:35,370
+concluído.
+
+12
+00:00:35,700 --> 00:00:42,030
+Então, se eu clicar com o botão esquerdo, ele marcará como concluído e, se eu clicar com o botão direito, ele realmente excluirá isso.
+
+13
+00:00:42,030 --> 00:00:43,020
+Para fazê-lo.
+
+14
+00:00:43,020 --> 00:00:46,290
+Vamos adicionar a funcionalidade do dormitório primeiro e depois adicionar.
+
+15
+00:00:46,290 --> 00:00:51,030
+O último vídeo seguirá em frente e implementará o armazenamento local para que você possa sair da página ou recarregar o
+
+16
+00:00:51,030 --> 00:00:53,250
+página e as tarefas permanecerão.

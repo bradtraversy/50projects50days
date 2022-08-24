@@ -1,0 +1,315 @@
+1
+00:00:00,470 --> 00:00:06,690
+So like I said, in this project, we're going to get into working with the API, making an HTTP request
+
+2
+00:00:06,690 --> 00:00:09,720
+to a third party API that gives us dad jokes.
+
+3
+00:00:10,020 --> 00:00:15,390
+But before we get into any of that, I just want to create the the HTML access, which isn't going to
+
+4
+00:00:15,390 --> 00:00:15,950
+be too much.
+
+5
+00:00:15,960 --> 00:00:18,770
+So we can probably get all that done in this video.
+
+6
+00:00:19,200 --> 00:00:24,210
+So let's go ahead and change the title here to Dad jokes.
+
+7
+00:00:26,350 --> 00:00:27,950
+And there's not going to be much here.
+
+8
+00:00:27,970 --> 00:00:41,530
+We're going to have a container that wraps in H3 and in this H3 will say, don't laugh challenge and
+
+9
+00:00:41,530 --> 00:00:48,680
+let's have a div here with an idea of joke and then I'm going to give it a class of joke for styling.
+
+10
+00:00:48,700 --> 00:00:51,510
+So basically, this is where the joke is going to go.
+
+11
+00:00:51,520 --> 00:00:53,860
+I'll just put a you know what?
+
+12
+00:00:53,890 --> 00:01:02,050
+We'll just do this joke goes here and that's going to be replaced once, you know, once we make the
+
+13
+00:01:02,050 --> 00:01:07,990
+request and we're able to put the joke into the DOM and then we want a button to get another joke.
+
+14
+00:01:07,990 --> 00:01:18,790
+So let's create a button here and let's give this an idea of joke BTN and then we'll give this a class
+
+15
+00:01:18,790 --> 00:01:25,480
+of BTN for styling and say, get another joke.
+
+16
+00:01:26,470 --> 00:01:28,660
+OK, so save that doesn't look too good.
+
+17
+00:01:28,670 --> 00:01:31,180
+So we're going to jump into our stylesheet here.
+
+18
+00:01:31,780 --> 00:01:35,110
+And let's see, let's give the body of background color.
+
+19
+00:01:37,270 --> 00:01:44,600
+So background color is going to be six eight six d e zero.
+
+20
+00:01:44,620 --> 00:01:47,020
+That's going to be our background is a blue.
+
+21
+00:01:47,530 --> 00:01:51,730
+And let's see, we want to leave all this stuff center center.
+
+22
+00:01:51,730 --> 00:01:52,090
+Good.
+
+23
+00:01:52,990 --> 00:02:00,070
+And then our container that wraps around everything to set that background color.
+
+24
+00:02:02,700 --> 00:02:09,600
+To white, white, OK, we'll go ahead and save that, some of the things we want to add to this container
+
+25
+00:02:09,600 --> 00:02:12,720
+is a border radius so we can give it some rounded corners.
+
+26
+00:02:12,750 --> 00:02:16,980
+Let's do 10 pixels and I'm going to add box shadow.
+
+27
+00:02:17,010 --> 00:02:20,640
+I'm going to add two shadows, which I'm actually just going to paste in here.
+
+28
+00:02:23,070 --> 00:02:23,950
+Ah, yeah.
+
+29
+00:02:23,970 --> 00:02:24,980
+Two shadows.
+
+30
+00:02:24,990 --> 00:02:26,680
+We have the first one here.
+
+31
+00:02:27,240 --> 00:02:35,800
+So zero 10 pixel for the offsets, 20 pixel blur color and this one here.
+
+32
+00:02:37,020 --> 00:02:40,600
+So if we save that, you can see we have rounded corners and we have a bit of a shadow.
+
+33
+00:02:41,280 --> 00:02:46,260
+Now we need some padding to take all the content away from the edges there.
+
+34
+00:02:46,270 --> 00:02:54,230
+So let's do 50 on the top and bottom 20 on the left and right, and then let's align everything text
+
+35
+00:02:54,240 --> 00:03:04,260
+aligned to the center and let's set a max with two one hundred percent and I'm going to set the width
+
+36
+00:03:04,770 --> 00:03:07,140
+to 800 pixels.
+
+37
+00:03:08,520 --> 00:03:13,200
+And let's actually add a little bit of padding on the body just so we have some space on the side on
+
+38
+00:03:13,200 --> 00:03:14,370
+these small screens.
+
+39
+00:03:14,670 --> 00:03:18,300
+So I'll say padding 20 pixels.
+
+40
+00:03:19,410 --> 00:03:19,800
+All right.
+
+41
+00:03:19,800 --> 00:03:24,090
+Now for the content in the container, let's do the H3.
+
+42
+00:03:25,230 --> 00:03:31,170
+So H3, I'm going to set the margin to zero.
+
+43
+00:03:31,170 --> 00:03:38,310
+And I'm also going to give it an opacity of zero point five just to kind of give it that transparent
+
+44
+00:03:38,310 --> 00:03:38,640
+look.
+
+45
+00:03:39,240 --> 00:03:44,970
+And I want to set letter spacing to two pixels.
+
+46
+00:03:46,650 --> 00:03:50,160
+OK, now for the joke of the class of joke.
+
+47
+00:03:51,330 --> 00:03:52,020
+Watch right now.
+
+48
+00:03:52,020 --> 00:03:56,940
+Just says JoCo joke goes here, but this will be the joke that we fetch from the API.
+
+49
+00:03:56,940 --> 00:04:06,180
+So I'm going to set this font size to be 30 pixels and let's set the letter spacing.
+
+50
+00:04:06,180 --> 00:04:17,730
+I'm going to set that to one pixel and I'm going to set the line height to 40 pixels and margin is going
+
+51
+00:04:17,730 --> 00:04:20,100
+to be 50 on the top and bottom.
+
+52
+00:04:20,700 --> 00:04:22,820
+And we'll say auto on the left and right.
+
+53
+00:04:22,830 --> 00:04:30,030
+So gives us plenty of room and give it a max width of six hundred pixels.
+
+54
+00:04:31,140 --> 00:04:32,320
+OK, so that's the joke.
+
+55
+00:04:32,820 --> 00:04:34,650
+Now the last thing we have is the button.
+
+56
+00:04:35,190 --> 00:04:43,920
+So that has a class of BTN and I'm going to give that a background color, same background color, and
+
+57
+00:04:43,950 --> 00:04:51,660
+that's going to be hexadecimal number which is going to be nine f six eight eight zero.
+
+58
+00:04:52,710 --> 00:04:56,160
+So purple color and border will be zero.
+
+59
+00:04:56,880 --> 00:05:01,350
+And let's set the border radius on the button to 10 pixels.
+
+60
+00:05:02,670 --> 00:05:07,920
+OK, let's make the color whites shall move that up there.
+
+61
+00:05:08,610 --> 00:05:13,470
+And let's give this a box shadow as well, which I'm going to just copy.
+
+62
+00:05:17,660 --> 00:05:23,150
+OK, there we go now we obviously need some padding there and change the font size, so it's that for
+
+63
+00:05:23,150 --> 00:05:28,100
+the padding will do 14 top and bottom, 40 left and right.
+
+64
+00:05:28,820 --> 00:05:35,060
+And let's up the font size, say, 16 pixels.
+
+65
+00:05:36,590 --> 00:05:38,030
+OK, that looks pretty good.
+
+66
+00:05:38,060 --> 00:05:43,640
+Let's make sure the cursor is a pointer and that should do it.
+
+67
+00:05:44,190 --> 00:05:45,140
+So now we have our button.
+
+68
+00:05:45,140 --> 00:05:46,610
+We want to get rid of that outline.
+
+69
+00:05:46,620 --> 00:05:56,480
+So let's say BTN when it's in its focus state, we want the outline to be zero so we don't have that
+
+70
+00:05:56,480 --> 00:05:57,440
+ugly outline.
+
+71
+00:05:58,010 --> 00:06:02,510
+And when it's active, when we click it, we'll just make it scaled down a little bit.
+
+72
+00:06:02,540 --> 00:06:10,430
+So let's say class button when it's active, meaning when we click and hold, we want to add a transform
+
+73
+00:06:10,430 --> 00:06:17,870
+effect and we're going to use scale and let's scale it from one to point nine eight.
+
+74
+00:06:17,870 --> 00:06:20,330
+So it'll just go down a little bit like that.
+
+75
+00:06:21,140 --> 00:06:23,810
+OK, so that's good enough for the styling.
+
+76
+00:06:24,170 --> 00:06:27,350
+In the next video, we're going to get into the Fetch API.
+
+77
+00:06:27,350 --> 00:06:29,360
+I'm going to talk a little bit about how that works.
+
+78
+00:06:29,360 --> 00:06:35,390
+I know a lot of you guys already know this, but just for those that don't, it's important to understand
+
+79
+00:06:35,390 --> 00:06:40,430
+at least the very basics about how Fetch works and how HTTP requests work.

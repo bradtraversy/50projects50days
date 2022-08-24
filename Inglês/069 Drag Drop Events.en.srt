@@ -1,0 +1,779 @@
+1
+00:00:00,240 --> 00:00:07,800
+OK, so now we want to fire off specific events at certain times during the whole drag process, so
+
+2
+00:00:07,800 --> 00:00:10,300
+first thing I want to do is create our drag functions.
+
+3
+00:00:10,320 --> 00:00:11,570
+I'm going to do that down here.
+
+4
+00:00:11,940 --> 00:00:17,220
+So the first one is drag start, and that does exactly what it says.
+
+5
+00:00:17,220 --> 00:00:20,400
+As soon as you pick something up and he starts to drag it, this will fire off.
+
+6
+00:00:20,400 --> 00:00:25,180
+And for now, I'm just going to do a console log for all of these and just say what they do.
+
+7
+00:00:25,230 --> 00:00:26,490
+So that's drag start.
+
+8
+00:00:26,970 --> 00:00:32,070
+And then I guess we'll just you we'll just copy this down a few times.
+
+9
+00:00:33,060 --> 00:00:34,170
+So we have drag start.
+
+10
+00:00:34,170 --> 00:00:35,520
+We also have drag end.
+
+11
+00:00:38,010 --> 00:00:43,860
+And you can check out these events in the Murdochs, too, but you'll see exactly when they fire off
+
+12
+00:00:44,370 --> 00:00:47,610
+the drag and we have drag over.
+
+13
+00:00:47,610 --> 00:00:51,360
+So when we drag over something, drag enter
+
+14
+00:00:53,820 --> 00:01:01,850
+and drag leave so we can enter and leave and we also have drag drop for when we drop.
+
+15
+00:01:02,820 --> 00:01:03,210
+All right.
+
+16
+00:01:03,210 --> 00:01:06,900
+And then we'll just change the this text here say drag drop.
+
+17
+00:01:06,900 --> 00:01:08,730
+This one is leave.
+
+18
+00:01:10,050 --> 00:01:19,110
+This one is enter and this one over and end.
+
+19
+00:01:19,410 --> 00:01:19,810
+All right.
+
+20
+00:01:19,830 --> 00:01:24,600
+So when do we want to fire these off while we need to bring in.
+
+21
+00:01:25,640 --> 00:01:34,550
+Or, you know what, we need to drag, which is the film class, and then all of these empty boxes,
+
+22
+00:01:34,550 --> 00:01:35,750
+which there's multiple of.
+
+23
+00:01:35,750 --> 00:01:35,990
+Right.
+
+24
+00:01:36,000 --> 00:01:38,270
+So we need to use query, select, they're all for those.
+
+25
+00:01:38,660 --> 00:01:47,630
+So let's first grab our fill, which is only one of so we'll say document dot, query selector, and
+
+26
+00:01:47,630 --> 00:01:50,240
+that has a class of fill.
+
+27
+00:01:50,930 --> 00:01:55,100
+And then we also want all the class of empty as more than one.
+
+28
+00:01:55,110 --> 00:01:57,520
+So we want to do query selector all.
+
+29
+00:01:57,530 --> 00:02:02,680
+We'll call this MTIs and let's do four fill.
+
+30
+00:02:02,690 --> 00:02:09,230
+We have to two events that we want to fire off and two of these functions drag's start in drag end.
+
+31
+00:02:09,830 --> 00:02:13,390
+So that applies to the fill to this image that I'm actually dragging.
+
+32
+00:02:13,790 --> 00:02:15,980
+So let's add an event listener on to this.
+
+33
+00:02:16,400 --> 00:02:19,400
+And I named the functions the same as the events.
+
+34
+00:02:19,400 --> 00:02:21,450
+Only the events are all lowercase.
+
+35
+00:02:21,500 --> 00:02:24,260
+So you want to do drag, start all lowercase.
+
+36
+00:02:24,260 --> 00:02:25,310
+That's the event name.
+
+37
+00:02:25,550 --> 00:02:31,820
+And then we're going to fall call drag star like that and we're going to do the same with drag.
+
+38
+00:02:31,820 --> 00:02:38,420
+And so make sure the second one has the camel case because that's the function and this is going to
+
+39
+00:02:38,420 --> 00:02:41,370
+be drag and all lowercase.
+
+40
+00:02:41,390 --> 00:02:41,690
+All right.
+
+41
+00:02:42,170 --> 00:02:45,020
+So let's go ahead and open up the console here.
+
+42
+00:02:45,030 --> 00:02:48,500
+I'm going to put this at the bottom.
+
+43
+00:02:51,250 --> 00:02:58,360
+And this kind of messes up the sizing of this, but I don't know, that's fine, I guess, because it'll
+
+44
+00:02:58,360 --> 00:02:59,550
+still pop in there.
+
+45
+00:03:00,880 --> 00:03:05,380
+So I'm going to click this and notice as soon as I pick it up, we get dragster.
+
+46
+00:03:06,070 --> 00:03:10,600
+And then when I let go, I get drag and drag, start drag.
+
+47
+00:03:10,600 --> 00:03:12,850
+And so we know that that's firing off.
+
+48
+00:03:13,480 --> 00:03:15,300
+So we know these functions are running.
+
+49
+00:03:16,060 --> 00:03:22,130
+Now, the rest of the functions here are going to go on the empty boxes.
+
+50
+00:03:22,600 --> 00:03:23,020
+All right.
+
+51
+00:03:23,020 --> 00:03:27,460
+So I'm going to there's a couple of ways we could do this.
+
+52
+00:03:27,460 --> 00:03:31,510
+We could use foreach we've been doing that quite a bit throughout the course.
+
+53
+00:03:31,510 --> 00:03:35,260
+So we're going to use a for loop here that we can do this as well.
+
+54
+00:03:35,260 --> 00:03:41,960
+And we'll say for const empty of empty.
+
+55
+00:03:41,980 --> 00:03:45,450
+So this is a form of loop the slot.
+
+56
+00:03:45,550 --> 00:03:50,590
+This should be MTIs because remember this is a node list which is basically an array.
+
+57
+00:03:50,920 --> 00:03:57,970
+And we're just saying for each empty of the MTIs array, then what we want to do, we want to use that
+
+58
+00:03:57,970 --> 00:04:01,370
+empty variable and we want to add an event listener.
+
+59
+00:04:01,420 --> 00:04:06,850
+So this is going to be for drag over and that's going to call the function drag over.
+
+60
+00:04:08,470 --> 00:04:09,820
+And we want four of these.
+
+61
+00:04:09,820 --> 00:04:16,570
+So this next one here is going to be drag, enter, drag, enter.
+
+62
+00:04:17,710 --> 00:04:22,780
+We have drag leave, drag leave.
+
+63
+00:04:22,780 --> 00:04:28,720
+Now, the last one is is a little different than the rest because all the other events start with drag.
+
+64
+00:04:29,060 --> 00:04:31,030
+This one is just drop.
+
+65
+00:04:31,370 --> 00:04:33,070
+So we don't want drag drop here.
+
+66
+00:04:33,070 --> 00:04:34,060
+We just want drop.
+
+67
+00:04:34,330 --> 00:04:38,380
+But I did call the function drag drop so they drag drop.
+
+68
+00:04:39,640 --> 00:04:39,970
+All right.
+
+69
+00:04:39,970 --> 00:04:42,280
+So now let's save that and I'm going to grab this.
+
+70
+00:04:42,730 --> 00:04:46,570
+You can see drag over is just keeps firing off.
+
+71
+00:04:46,840 --> 00:04:52,030
+And as long as we're moving over something, it just keeps firing off.
+
+72
+00:04:52,030 --> 00:04:54,370
+And you can see drag enter, drag leave.
+
+73
+00:04:55,650 --> 00:05:01,950
+OK, so so enter and leave just will run once like you enter when we enter this box here and then when
+
+74
+00:05:01,950 --> 00:05:07,440
+I leave it calls drag leave, but when I'm going anywhere over it, it calls drag over.
+
+75
+00:05:07,740 --> 00:05:12,570
+So hopefully you can see what exactly what the when these events are firing off.
+
+76
+00:05:13,410 --> 00:05:20,580
+Now, as far as these events down here, we'll start with Drag's Star, which is on the the Phil element.
+
+77
+00:05:20,580 --> 00:05:20,860
+Right.
+
+78
+00:05:20,880 --> 00:05:26,580
+It's on this right here, which is the as the has the background image.
+
+79
+00:05:26,880 --> 00:05:30,810
+So what I want to do with that first is add the class name of hold.
+
+80
+00:05:30,830 --> 00:05:36,990
+So I'm going to say this class name and this we can just assign a class or we can append a class.
+
+81
+00:05:37,110 --> 00:05:39,900
+In this case, we want to upend the class of hold.
+
+82
+00:05:39,900 --> 00:05:41,940
+We still want it to have the class of Phil.
+
+83
+00:05:42,090 --> 00:05:46,650
+So plus equal will append and then we just want to put space and then hold.
+
+84
+00:05:47,310 --> 00:05:47,730
+All right.
+
+85
+00:05:47,730 --> 00:05:53,460
+As soon as I do that, when I grab this, you'll see it has the the border around it, both the one
+
+86
+00:05:53,460 --> 00:05:55,080
+I'm holding and that image.
+
+87
+00:05:55,410 --> 00:05:59,340
+Now, as soon as I pull it out of the box, I want the box to clear up.
+
+88
+00:05:59,760 --> 00:06:05,850
+So what I'll do is I will say this class name and we want to just reassign it.
+
+89
+00:06:05,850 --> 00:06:09,060
+We can leave it empty or we can just put a class of invisible.
+
+90
+00:06:09,060 --> 00:06:12,540
+I know we don't have many styles for that, but we can set it to invisible.
+
+91
+00:06:13,080 --> 00:06:21,150
+And but if I go over here and I click, what happens is I don't even have time to grab it and to add
+
+92
+00:06:21,150 --> 00:06:27,990
+hold it just this happens like at the same time and invisible gets applied fact.
+
+93
+00:06:27,990 --> 00:06:32,760
+If I look down here, you see that has a class of invisible.
+
+94
+00:06:32,760 --> 00:06:35,220
+Phil is gone, hold is gone.
+
+95
+00:06:36,120 --> 00:06:41,130
+If I do it real quick, it's just open this up so you can see it has a class of fill.
+
+96
+00:06:41,130 --> 00:06:48,150
+And as soon as I click, I don't have any time to to basically grab it so we can just add a set time
+
+97
+00:06:48,150 --> 00:06:51,750
+out which takes in a function.
+
+98
+00:06:51,750 --> 00:06:54,690
+And what I want to add is this right here
+
+99
+00:06:57,210 --> 00:06:58,980
+and we can even put zero.
+
+100
+00:06:58,980 --> 00:07:01,380
+We don't have to put anything above zero here.
+
+101
+00:07:01,380 --> 00:07:04,230
+It'll just make it so that this happens first.
+
+102
+00:07:04,230 --> 00:07:04,550
+Right.
+
+103
+00:07:04,560 --> 00:07:08,990
+So if I go over here now, I can grab it and pull it out, OK?
+
+104
+00:07:09,060 --> 00:07:11,150
+And then that box then turns white.
+
+105
+00:07:11,760 --> 00:07:16,860
+Now, as far as our event listeners down here are functions, I'm going to start with drag start.
+
+106
+00:07:17,490 --> 00:07:18,660
+I'm going to get rid of this.
+
+107
+00:07:18,660 --> 00:07:28,170
+And I want to add the class name of hold when we start to drag and that whole class will put that border
+
+108
+00:07:28,170 --> 00:07:29,490
+on the fill.
+
+109
+00:07:29,490 --> 00:07:32,070
+Did for the div that has the background image.
+
+110
+00:07:32,370 --> 00:07:38,340
+Now we can use the this keyword, which is going to pertain to whichever element that the events fired
+
+111
+00:07:38,340 --> 00:07:42,150
+on in this case it's going to be fill, which is the div with the background image.
+
+112
+00:07:42,510 --> 00:07:46,920
+So I want to take that specific element and I want to add class name.
+
+113
+00:07:47,400 --> 00:07:50,190
+Now, this class name will just set the class.
+
+114
+00:07:50,190 --> 00:07:54,510
+I could set it equal to something which would replace any other class that's already there.
+
+115
+00:07:54,930 --> 00:07:57,930
+But I actually don't want to replace, I want to append.
+
+116
+00:07:57,930 --> 00:08:02,340
+So I'm going to say plus equals and then add space hold.
+
+117
+00:08:02,890 --> 00:08:08,010
+OK, so it's going to still have the fill class, but it will also have the old class.
+
+118
+00:08:08,670 --> 00:08:12,030
+So now let's go ahead and drag this and hold.
+
+119
+00:08:12,030 --> 00:08:15,900
+And you can see the border, the c the the gray border around the picture.
+
+120
+00:08:15,960 --> 00:08:20,860
+It's kind of faint because of the picture, but it's on this one and it's on the one that's still there.
+
+121
+00:08:21,420 --> 00:08:26,040
+Now, another thing I want to do is when I pull it off the box, I want this box to go white.
+
+122
+00:08:26,580 --> 00:08:31,320
+So we want to do that by getting rid of the fill class on that.
+
+123
+00:08:32,310 --> 00:08:40,170
+So let's say this dot class name and we could set it to nothing, but I'm going to set it to a class
+
+124
+00:08:40,170 --> 00:08:40,920
+of invisible.
+
+125
+00:08:41,910 --> 00:08:43,440
+It doesn't this class doesn't do any thing.
+
+126
+00:08:43,440 --> 00:08:46,920
+There's no styling for it, but it'll get rid of the whole class.
+
+127
+00:08:47,310 --> 00:08:55,110
+So if I open up my tools down here so you can see it has a class of fill now, as soon as I click,
+
+128
+00:08:55,350 --> 00:08:56,640
+it goes to invisible.
+
+129
+00:08:56,640 --> 00:09:01,110
+It doesn't even give me time to to drag it and to add the class of hold.
+
+130
+00:09:01,420 --> 00:09:08,250
+So what we'll do is add a set timeout, which just, you know, sets a time out for something to happen,
+
+131
+00:09:08,250 --> 00:09:09,360
+for a function to run.
+
+132
+00:09:09,360 --> 00:09:16,650
+So we want to add in a function here, our function, and I want this to run in here.
+
+133
+00:09:16,920 --> 00:09:18,690
+And I don't even have to put a time.
+
+134
+00:09:18,720 --> 00:09:24,210
+I can just put zero here and that well, that's enough for this to happen first so that it just doesn't
+
+135
+00:09:24,210 --> 00:09:25,700
+disappear when I click on it.
+
+136
+00:09:26,010 --> 00:09:32,220
+So now if I save, I'll go ahead and click and hold and I'm able to pull it out and then this goes white.
+
+137
+00:09:32,730 --> 00:09:34,260
+OK, so we have that done.
+
+138
+00:09:34,260 --> 00:09:38,220
+Now, when I draw up, it's just it's still gone because it has the class of invisible.
+
+139
+00:09:39,150 --> 00:09:43,470
+So we also have drag and on the fill element.
+
+140
+00:09:44,040 --> 00:09:50,430
+So if we go down actually drag and is right here, we want to then add the class name of Phil.
+
+141
+00:09:50,430 --> 00:09:55,070
+So let's say this dot class name and just set that to fill.
+
+142
+00:09:56,600 --> 00:10:00,230
+Because right now we're only dealing with the one we're clicking and dragging, we're only dealing with
+
+143
+00:10:00,230 --> 00:10:06,530
+this because those both of those have dragged start and drag end.
+
+144
+00:10:06,570 --> 00:10:09,920
+So right now, if I pull it off, you'll see this goes white.
+
+145
+00:10:09,920 --> 00:10:17,180
+I'm able to add the whole class when I let go, it goes back to the same place because this specific
+
+146
+00:10:17,180 --> 00:10:20,870
+element still it still has the fill, right.
+
+147
+00:10:20,870 --> 00:10:23,220
+This this isn't being added anywhere else.
+
+148
+00:10:23,720 --> 00:10:28,610
+What we want to happen is when we drop on one of these boxes, we want this div to go in, whichever
+
+149
+00:10:28,610 --> 00:10:29,530
+one we drop.
+
+150
+00:10:30,110 --> 00:10:32,110
+So we just close access.
+
+151
+00:10:32,870 --> 00:10:39,500
+So what we'll do is go down to drag drop and let's get rid of this.
+
+152
+00:10:41,060 --> 00:10:45,890
+And I want to say this dot class name set that to empty.
+
+153
+00:10:45,890 --> 00:10:52,840
+We always want to make sure that it has a class of empty right before we drop or when we drop it.
+
+154
+00:10:52,850 --> 00:10:59,240
+Then we also want to add the class or not the class, but the element of fill inside of whichever one,
+
+155
+00:10:59,450 --> 00:11:00,590
+you know, we drop on.
+
+156
+00:11:00,740 --> 00:11:02,540
+And we do that with the append method.
+
+157
+00:11:02,840 --> 00:11:08,210
+So I can say this, meaning the class of empty that did with the class of empty.
+
+158
+00:11:08,420 --> 00:11:12,760
+And then I want to append into that the fill of element.
+
+159
+00:11:13,490 --> 00:11:17,360
+Now, if I save this and I try to drop it here, you notice it's not working.
+
+160
+00:11:17,720 --> 00:11:22,090
+And the reason for that, I'm just going to bring this browser window over for a second.
+
+161
+00:11:22,640 --> 00:11:27,500
+So both the drag over and the drag enter events have a default action.
+
+162
+00:11:27,530 --> 00:11:32,690
+You can see drag over resets the current drag operation to none, which we don't want to happen.
+
+163
+00:11:33,110 --> 00:11:38,540
+Drag enter will reject the immediate user selection as the potential target element.
+
+164
+00:11:38,990 --> 00:11:41,000
+So we don't want either of those to happen.
+
+165
+00:11:41,000 --> 00:11:48,350
+So all we have to do is for drag over and drag enter is past in our event objects and call each dot
+
+166
+00:11:49,340 --> 00:11:50,900
+prevent default.
+
+167
+00:11:51,170 --> 00:11:54,860
+That'll stop the default behavior of these two events.
+
+168
+00:11:54,860 --> 00:12:00,380
+Just like if you submit a form and you don't want to actually submit it's am doing, you don't want
+
+169
+00:12:00,380 --> 00:12:02,450
+to actually submit it to the page.
+
+170
+00:12:02,450 --> 00:12:06,620
+You want to, you know, use JavaScript, you would prevent the default behavior.
+
+171
+00:12:07,040 --> 00:12:09,710
+So now let's go ahead and try it.
+
+172
+00:12:09,710 --> 00:12:15,110
+So I'll just go down here and let go and notice I'm able to now drop it wherever I want.
+
+173
+00:12:16,100 --> 00:12:19,040
+OK, so that's the drag and drop functionality.
+
+174
+00:12:19,040 --> 00:12:25,460
+But I also want to have an effect when I hover over these as well to make the the box I'm hovering over
+
+175
+00:12:25,460 --> 00:12:26,060
+docker.
+
+176
+00:12:26,600 --> 00:12:28,250
+So on drag enter.
+
+177
+00:12:29,420 --> 00:12:35,900
+After we prevent the default, we're going to take that element and we want to append the class name.
+
+178
+00:12:35,900 --> 00:12:41,240
+So plus I want to do plus equals and we want to add the class of covered.
+
+179
+00:12:42,020 --> 00:12:46,830
+So now if I take this, you can see every time I enter it adds that class.
+
+180
+00:12:46,880 --> 00:12:49,610
+So we actually want to clear that when we leave.
+
+181
+00:12:49,620 --> 00:12:56,540
+So on drag leave, we'll just go ahead and set the class name, we'll set it equals we don't want to
+
+182
+00:12:56,540 --> 00:12:59,630
+append, we just want to basically reset it.
+
+183
+00:12:59,630 --> 00:13:03,060
+So we'll set it to empty again.
+
+184
+00:13:04,910 --> 00:13:10,460
+So now if I go over here and I enter, it gets that dark background.
+
+185
+00:13:10,460 --> 00:13:12,860
+That's the class of hover, also the dashboard here.
+
+186
+00:13:13,220 --> 00:13:15,350
+But when I leave, it goes back to empty.
+
+187
+00:13:16,400 --> 00:13:20,090
+OK, so whatever I hover over, we get that effect and then I can drop it.
+
+188
+00:13:22,330 --> 00:13:22,730
+All right.
+
+189
+00:13:22,740 --> 00:13:30,050
+So, I mean, that's that's pretty much the basics of drag and drop with HTML, HTML5 and JavaScript.
+
+190
+00:13:30,380 --> 00:13:36,650
+So I mean, you can be more creative with this and you can create games and really cool interfaces.
+
+191
+00:13:36,650 --> 00:13:42,050
+But this should give you an idea of just how to you know, how to add these different events and do
+
+192
+00:13:42,050 --> 00:13:44,120
+certain things when they fire off.
+
+193
+00:13:44,420 --> 00:13:45,000
+So that's it.
+
+194
+00:13:45,020 --> 00:13:45,830
+Thanks for watching.
+
+195
+00:13:45,830 --> 00:13:47,270
+I'll see you in the next project.

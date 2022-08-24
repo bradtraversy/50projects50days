@@ -1,0 +1,83 @@
+1
+00:00:00,120 --> 00:00:05,040
+So in this project, we're going to create this, we're going to have this image here and you can see
+
+2
+00:00:05,040 --> 00:00:09,860
+it says double click on the image to heart it and it says you liked it zero times.
+
+3
+00:00:10,050 --> 00:00:15,100
+So when we click anywhere on this image, if I double click, you're going to see a heart pop up.
+
+4
+00:00:15,120 --> 00:00:19,980
+It's going to have a little CSFs Growe animation and it's going to show wherever we click.
+
+5
+00:00:20,520 --> 00:00:22,950
+Not only that, it's going to show how many times we clicked.
+
+6
+00:00:22,950 --> 00:00:24,440
+You can see you've clicked four times.
+
+7
+00:00:24,750 --> 00:00:28,350
+So the HTML and access for this is really, really easy.
+
+8
+00:00:28,560 --> 00:00:35,340
+When we get into the JavaScript, we're going to set a double click event and basically insert a heart
+
+9
+00:00:35,340 --> 00:00:37,710
+in the exact position where we click.
+
+10
+00:00:37,710 --> 00:00:43,230
+So we're going to be working with, you know, the on the event parameter we have are the event object.
+
+11
+00:00:43,230 --> 00:00:51,390
+We have the client X and client Y values the the event target offset left offset top so we can tell
+
+12
+00:00:51,390 --> 00:00:56,820
+exactly where this element comes in from the top and the left, because we need to calculate, calculate
+
+13
+00:00:56,820 --> 00:01:00,050
+that in in order to find the exact position in the image.
+
+14
+00:01:00,540 --> 00:01:05,220
+And another thing we'll do is instead of just using DB, I'll click the double click event.
+
+15
+00:01:05,460 --> 00:01:11,850
+We're going to use just a single click event and basically create our own double click event based on
+
+16
+00:01:11,850 --> 00:01:14,550
+the time between space, between clicks.
+
+17
+00:01:14,910 --> 00:01:20,160
+So if I just click once and then I wait, you know, a decent amount of time again, that's not going
+
+18
+00:01:20,160 --> 00:01:20,990
+to be a double click.
+
+19
+00:01:21,000 --> 00:01:26,340
+So we're going to test the time between clicks and basically create our own double click event.
+
+20
+00:01:26,640 --> 00:01:27,030
+All right.
+
+21
+00:01:27,030 --> 00:01:27,870
+So let's get into it.

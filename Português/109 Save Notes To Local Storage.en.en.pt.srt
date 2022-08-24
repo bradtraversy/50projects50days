@@ -1,0 +1,555 @@
+﻿1
+00:00:00,180 --> 00:00:06,660
+Tudo bem, agora queremos implementar o armazenamento local para que, quando adicionarmos uma nota aqui, basicamente
+
+2
+00:00:06,660 --> 00:00:12,620
+é salvo em nosso navegador, é salvo no armazenamento local, que é uma API nativa do navegador.
+
+3
+00:00:12,630 --> 00:00:18,120
+Não é como uma biblioteca extra ou qualquer coisa que temos que adicionar ou não precisamos de um CD e nem nada.
+
+4
+00:00:18,310 --> 00:00:26,040
+Então, basicamente, para definir itens, diríamos item de conjunto de pontos de armazenamento local e poderíamos definir uma chave como nome
+
+5
+00:00:26,040 --> 00:00:29,760
+e poderíamos definir um valor como Brad.
+
+6
+00:00:29,970 --> 00:00:32,400
+Então é assim que definiríamos algo para obter algo.
+
+7
+00:00:32,400 --> 00:00:39,510
+Diríamos que o armazenamento local doget item e receberíamos um nome e isso nos daria Brad.
+
+8
+00:00:39,520 --> 00:00:40,320
+Então é bem simples.
+
+9
+00:00:40,320 --> 00:00:41,790
+São apenas pares de valores-chave.
+
+10
+00:00:42,000 --> 00:00:47,820
+Na verdade, eles podem ir em frente e salvar isso e apenas executá-lo e podemos verificar o que temos no armazenamento local,
+
+11
+00:00:48,090 --> 00:00:54,510
+em nossas ferramentas de desenvolvimento se formos para a guia do aplicativo e se eu descer para armazenamento, armazenamento local e meu
+
+12
+00:00:54,510 --> 00:01:01,470
+host local, você verá que eu tenho esse par chave-valor com a chave é o nome dos valores Brad.
+
+13
+00:01:01,980 --> 00:01:07,500
+E então para se livrar dele, se você quiser excluir algo, você pode dizer armazenamento local, ponto, remover
+
+14
+00:01:07,500 --> 00:01:10,740
+nome do item.
+
+15
+00:01:10,740 --> 00:01:15,600
+E agora, se eu salvar isso neste recarrega, ele o cria, mas o remove e você pode ver
+
+16
+00:01:15,600 --> 00:01:16,410
+não há nada aqui.
+
+17
+00:01:16,420 --> 00:01:19,890
+Portanto, a API é bem simples de trabalhar agora.
+
+18
+00:01:19,890 --> 00:01:26,940
+Nós só podemos armazenar Strings no armazenamento local e se você quiser armazenar um objeto ou um array, como talvez
+
+19
+00:01:26,940 --> 00:01:33,330
+você tem um array com, você sabe, ID um ou qualquer outra coisa, você não pode armazená-lo assim.
+
+20
+00:01:33,330 --> 00:01:35,430
+Tem que ser realmente estratificado.
+
+21
+00:01:36,060 --> 00:01:37,470
+Então tem que ser uma string.
+
+22
+00:01:37,740 --> 00:01:46,890
+E você pode fazer isso com um método chamado that, um método chamado Jason Dot String Afie.
+
+23
+00:01:47,220 --> 00:01:53,790
+E você pode passar, você sabe, qualquer que seja esse objeto para objeto ou array ou qualquer outra coisa.
+
+24
+00:01:53,910 --> 00:02:01,920
+E então quando você retirar, você só precisa embrulhar isso em Jason Dot Pass e isso passaria
+
+25
+00:02:01,920 --> 00:02:04,920
+como uma matriz ou objeto ou o que você quiser.
+
+26
+00:02:05,340 --> 00:02:05,760
+Tudo bem.
+
+27
+00:02:05,790 --> 00:02:11,010
+Dito isso, vamos ter uma função aqui chamada atualizar URLs.
+
+28
+00:02:11,020 --> 00:02:17,490
+Portanto, isso atualizará nosso armazenamento local e executaremos isso se excluirmos ou formos
+
+29
+00:02:17,490 --> 00:02:19,100
+adicionando notas.
+
+30
+00:02:19,530 --> 00:02:21,140
+Então vamos começar adicionando.
+
+31
+00:02:21,360 --> 00:02:27,330
+Então, na nossa área de texto, quando estivermos digitando, vou ligar depois que adicionarmos ao, você
+
+32
+00:02:27,330 --> 00:02:29,040
+sabe, a entrada principal HTML.
+
+33
+00:02:29,370 --> 00:02:31,470
+Vou ligar para atualização.
+
+34
+00:02:33,150 --> 00:02:45,750
+OK, e então aqui, digamos texto de notas const e eu vou dizer ponto de documento, seletor de consulta
+
+35
+00:02:45,750 --> 00:02:46,320
+tudo.
+
+36
+00:02:46,860 --> 00:02:49,530
+E eu quero obter todas as áreas de texto.
+
+37
+00:02:49,890 --> 00:03:01,260
+OK, então diga área de texto e então eu vou criar um array aqui chamado Notes and Empty Array e eu
+
+38
+00:03:01,260 --> 00:03:08,290
+quero tomar as notas, texto e percorrer porque isso me dá uma lista sem.
+
+39
+00:03:08,310 --> 00:03:14,610
+Então, basicamente, todas as áreas de texto que tenho e vou percorrer com uma agência livre para cada nota,
+
+40
+00:03:15,930 --> 00:03:19,920
+vamos seguir em frente e pegar esse array de notas e vamos empurrá-lo.
+
+41
+00:03:20,400 --> 00:03:25,320
+Então, vamos adicionar para adicionar ao final, qualquer que seja o valor do ponto da nota.
+
+42
+00:03:27,930 --> 00:03:34,330
+OK, e esta nota, este é o que você sabe, para cada não adicionará o valor ao array.
+
+43
+00:03:35,070 --> 00:03:36,900
+Então o que eu vou fazer agora é apenas
+
+44
+00:03:39,690 --> 00:03:44,310
+Vou console logar o array de notas.
+
+45
+00:03:44,880 --> 00:03:49,770
+Ele diz que ainda não fizemos nada com armazenamento local, mas queremos apenas armazená-lo como uma string
+
+46
+00:03:49,770 --> 00:03:50,600
+de matriz fina.
+
+47
+00:03:51,120 --> 00:03:57,540
+Então, eu vou para o meu console aqui e vou adicionar uma nota e digitar aqui e você verá
+
+48
+00:03:57,540 --> 00:04:02,240
+que tudo que estou digitando está sendo armazenado dentro deste array.
+
+49
+00:04:02,880 --> 00:04:05,580
+Portanto, este é um array com apenas um único item, na verdade.
+
+50
+00:04:05,610 --> 00:04:07,110
+Vamos deixar isso um pouco mais claro.
+
+51
+00:04:07,110 --> 00:04:09,290
+Então eu vou dizer o item um.
+
+52
+00:04:09,690 --> 00:04:12,690
+Portanto, temos um array com uma unidade de string chamada item um.
+
+53
+00:04:12,690 --> 00:04:20,820
+Se eu criar outra nota e colocar aqui o item dois, o segundo item é o que estiver neste segundo
+
+54
+00:04:20,820 --> 00:04:21,170
+Nota.
+
+55
+00:04:21,690 --> 00:04:25,410
+Portanto, esta matriz é o que eu quero armazenar no armazenamento local.
+
+56
+00:04:25,590 --> 00:04:26,010
+Certo.
+
+57
+00:04:26,040 --> 00:04:30,390
+Então o que vamos fazer é, quer saber?
+
+58
+00:04:30,390 --> 00:04:32,220
+Acabei de mostrar o armazenamento local.
+
+59
+00:04:32,520 --> 00:04:39,960
+E queremos definir um item que vou chamar de chave disso serão notas e que eu quero
+
+60
+00:04:39,960 --> 00:04:41,240
+armazene minha matriz de notas.
+
+61
+00:04:41,250 --> 00:04:43,710
+No entanto, não posso simplesmente armazená-lo como uma matriz.
+
+62
+00:04:43,920 --> 00:04:44,280
+Certo.
+
+63
+00:04:44,280 --> 00:04:53,980
+Eu tenho que fazer uma seqüência de Jason Dot de Afie e então ir em frente e acrescentar que o nosso cercar isso.
+
+64
+00:04:54,210 --> 00:04:59,430
+Então agora vamos em frente e adicionar algo aqui.
+
+65
+00:04:59,430 --> 00:05:03,060
+Eu direi item ou digamos nota um.
+
+66
+00:05:03,990 --> 00:05:10,650
+Vou adicionar uma nova nota e dizer notas para agora se eu olhar na guia do meu aplicativo.
+
+67
+00:05:13,270 --> 00:05:20,630
+Você verá no meu armazenamento local, eu tenho uma sequência de boa matriz aqui, No.
+
+68
+00:05:20,710 --> 00:05:26,230
+Um, e eu vou fazer isso um pouco maior para que você possa ver, então não temos ninguém para conhecer para armazenar
+
+69
+00:05:26,380 --> 00:05:27,310
+armazenamento local.
+
+70
+00:05:28,300 --> 00:05:34,480
+OK, agora queremos carregar isso, como se eu recarregasse a página, não aparece no dormitório, mas é
+
+71
+00:05:34,480 --> 00:05:37,950
+no armazenamento local, então quero buscá-lo e exibir essas notas.
+
+72
+00:05:38,620 --> 00:05:40,510
+Então aqui em cima.
+
+73
+00:05:42,100 --> 00:05:50,680
+Vamos aqui e digamos notas CONSED e queremos extrair isso do armazenamento local.
+
+74
+00:05:50,690 --> 00:05:55,210
+Portanto, lembre-se, usamos o armazenamento local para obter o item e queremos obter as notas.
+
+75
+00:05:55,450 --> 00:05:58,630
+No entanto, não queremos que seja uma string, queremos que seja passado como um array.
+
+76
+00:05:58,630 --> 00:06:04,990
+Então, vou envolver isso em JSON dot pass.
+
+77
+00:06:06,340 --> 00:06:14,680
+OK, então agora se eu console as notas de log e vamos aqui para o nosso console, vamos ver as notas
+
+78
+00:06:14,680 --> 00:06:16,150
+que temos no armazenamento local.
+
+79
+00:06:17,350 --> 00:06:21,570
+E então o que vamos fazer é nos livrar disso e vamos verificar as notas.
+
+80
+00:06:21,580 --> 00:06:28,060
+Portanto, se houver notas no armazenamento local, vamos percorrer, digamos, notas para cada uma.
+
+81
+00:06:28,900 --> 00:06:36,370
+E vamos dizer para cada nota, eu quero chamar add new no, que adiciona ao dormitório.
+
+82
+00:06:36,370 --> 00:06:39,270
+E para o texto, será aquela nota em particular.
+
+83
+00:06:39,280 --> 00:06:40,180
+Então vamos economizar.
+
+84
+00:06:40,960 --> 00:06:41,760
+E lá vai ele.
+
+85
+00:06:41,770 --> 00:06:44,110
+Agora, eu tenho duas notas.
+
+86
+00:06:44,410 --> 00:06:46,630
+Ninguém tem ninguém escrito nele.
+
+87
+00:06:46,630 --> 00:06:47,200
+Um tem Não.
+
+88
+00:06:47,200 --> 00:06:47,950
+Dois escritos nele.
+
+89
+00:06:47,950 --> 00:06:50,380
+E é isso que temos em nosso armazenamento local.
+
+90
+00:06:51,970 --> 00:06:55,750
+Agora para deletar vai ser muito simples.
+
+91
+00:06:55,750 --> 00:07:02,500
+Nós podemos simplesmente descer aqui para onde nós removemos do dormitório, porque agora eu posso eu posso deletar
+
+92
+00:07:02,500 --> 00:07:03,100
+do dormitório.
+
+93
+00:07:03,100 --> 00:07:04,870
+Mas se eu recarregar, ele ainda está lá.
+
+94
+00:07:04,880 --> 00:07:05,170
+Certo?
+
+95
+00:07:05,180 --> 00:07:11,590
+Temos uma atualização, armazenamento local, então podemos simplesmente chamar atualizações, armazenamento local dentro do
+
+96
+00:07:11,590 --> 00:07:12,040
+excluir.
+
+97
+00:07:12,490 --> 00:07:14,230
+Então, agora, se eu excluir, isso desaparece.
+
+98
+00:07:14,230 --> 00:07:16,030
+E se eu recarregar, isso ainda vai embora.
+
+99
+00:07:16,450 --> 00:07:18,610
+Se eu olhar na minha guia de aplicativos.
+
+100
+00:07:21,230 --> 00:07:22,550
+Só não temos ninguém.
+
+101
+00:07:22,670 --> 00:07:27,020
+Se eu clicar em delete lá agora, está vazio, se eu recarregar nada.
+
+102
+00:07:28,640 --> 00:07:29,090
+Tudo bem.
+
+103
+00:07:29,090 --> 00:07:33,890
+Portanto, é uma maneira bastante simples de adicionar e remover.
+
+104
+00:07:33,920 --> 00:07:36,110
+Basicamente, temos um aplicativo crawdad.
+
+105
+00:07:36,110 --> 00:07:38,480
+Podemos criar, ler, atualizar e excluir notas.
+
+106
+00:07:39,050 --> 00:07:43,700
+E quero dizer, se eu adicionar se eu adicionar No.
+
+107
+00:07:43,710 --> 00:07:49,880
+Um e nota dois, que são salvos.
+
+108
+00:07:49,880 --> 00:07:50,210
+Certo.
+
+109
+00:07:50,390 --> 00:07:51,560
+E então se eu editar No.
+
+110
+00:07:51,560 --> 00:07:57,770
+Dois e mude para a nota três e depois recarregue, fica no No.
+
+111
+00:07:57,770 --> 00:08:03,350
+Três, porque toda vez que digito nessas áreas de texto, estou atualizando meu armazenamento local.
+
+112
+00:08:03,350 --> 00:08:07,370
+Está chamando esta função aqui e obtendo todas as áreas de texto.
+
+113
+00:08:07,700 --> 00:08:14,540
+Está deslizando por eles e adicionando o que estiver em cada um a um array, e então está salvando isso
+
+114
+00:08:14,540 --> 00:08:16,460
+array no armazenamento local como uma string.
+
+115
+00:08:16,700 --> 00:08:23,660
+E então estamos puxando-o aqui, analisando-o de uma string para um array, verificando e então
+
+116
+00:08:23,960 --> 00:08:26,120
+adicionando-o ao DOM com add new note.
+
+117
+00:08:26,360 --> 00:08:29,030
+E, claro, além disso, podemos adicionar markdown.
+
+118
+00:08:29,040 --> 00:08:35,830
+Então, se eu fizer este título e diremos apenas, eu não sei, eu sou.
+
+119
+00:08:41,090 --> 00:08:48,590
+OK, então isso exibe o markdown e se olharmos para o que temos no armazenamento local, será
+
+120
+00:08:48,590 --> 00:08:50,460
+uma versão string disso.
+
+121
+00:08:50,480 --> 00:08:56,960
+Então tem como você sabe, o sinal de números e então tem essas coisas aqui, os hífens, mas
+
+122
+00:08:56,960 --> 00:08:58,410
+vai passar markdown.
+
+123
+00:09:00,050 --> 00:09:00,500
+Tudo bem.
+
+124
+00:09:00,510 --> 00:09:01,460
+Então é isso.
+
+125
+00:09:01,460 --> 00:09:03,240
+Espero que tenha achado isso útil.
+
+126
+00:09:03,260 --> 00:09:07,880
+E se você não sabia sobre armazenamento local, você pode usá-lo, sabe, para muitas coisas diferentes.
+
+127
+00:09:08,180 --> 00:09:09,200
+Muito é muito útil.
+
+128
+00:09:09,200 --> 00:09:12,110
+Mesmo se eu fechar o navegador e voltar, ele estará lá.
+
+129
+00:09:12,110 --> 00:09:14,570
+Se desejar, você também pode usar o armazenamento de seção.
+
+130
+00:09:14,570 --> 00:09:15,710
+Eu poderia muito bem mencionar isso.
+
+131
+00:09:16,070 --> 00:09:19,970
+Então, se você seccionar o armazenamento, ele funciona da mesma maneira que você tem os mesmos métodos e outras coisas.
+
+132
+00:09:20,240 --> 00:09:22,940
+Mas se você fechar o navegador e voltar, ele desaparecerá.
+
+133
+00:09:23,300 --> 00:09:26,600
+O armazenamento local o manterá lá até que seja limpo.
+
+134
+00:09:26,900 --> 00:09:33,020
+E você também pode usar o armazenamento local limpo para limpar tudo o que puder, mesmo fora do botão de notas claras
+
+135
+00:09:33,230 --> 00:09:33,800
+por isso.
+
+136
+00:09:33,800 --> 00:09:36,990
+Isso pode ser algo que você mesmo pode adicionar.
+
+137
+00:09:37,490 --> 00:09:37,850
+Tudo bem.
+
+138
+00:09:37,860 --> 00:09:38,530
+Então é isso.
+
+139
+00:09:38,540 --> 00:09:41,090
+Vamos em frente e passar para o próximo projeto.

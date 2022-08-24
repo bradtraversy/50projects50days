@@ -1,0 +1,491 @@
+﻿1
+00:00:00,270 --> 00:00:06,420
+OK, agora que conseguimos encher e esvaziar esses copinhos aqui embaixo, queremos trabalhar no
+
+2
+00:00:06,420 --> 00:00:07,060
+grandes.
+
+3
+00:00:07,060 --> 00:00:11,280
+Então, vamos chamar a função que vamos criar em dois lugares.
+
+4
+00:00:11,280 --> 00:00:14,070
+Um vai estar certo quando o aplicativo carregar.
+
+5
+00:00:14,070 --> 00:00:18,150
+Então vamos chamar update big cup.
+
+6
+00:00:18,690 --> 00:00:21,720
+E também queremos chamá-lo quando clicamos em um deles.
+
+7
+00:00:21,750 --> 00:00:23,720
+Então, no final dos copos de destaque.
+
+8
+00:00:23,730 --> 00:00:31,800
+Então, logo abaixo do loop aqui, digamos que atualize o copo grande e vamos descer aqui e criar a função
+
+9
+00:00:31,800 --> 00:00:34,510
+atualize o copo grande.
+
+10
+00:00:36,600 --> 00:00:41,360
+Então a primeira coisa que eu quero fazer é pegar a quantidade, o número de copos cheios.
+
+11
+00:00:41,640 --> 00:00:42,900
+Então isso é bem fácil.
+
+12
+00:00:42,900 --> 00:00:48,540
+Podemos apenas criar uma variável chamada copos cheios ou vamos chamá-la de quatro copos, não quatro copos.
+
+13
+00:00:49,080 --> 00:00:51,720
+Então, copos cheios serão pontos de documentos.
+
+14
+00:00:54,330 --> 00:01:00,840
+Então document dot, query selector all porque queremos selecionar todos os copos completos.
+
+15
+00:01:01,230 --> 00:01:08,460
+Então aqui, vamos passar o resto da aula de copos pequenos e também ter a aula de queda no
+
+16
+00:01:08,460 --> 00:01:08,970
+investigação.
+
+17
+00:01:08,970 --> 00:01:12,770
+Selecione nossa consulta, selecione tudo o que podemos passar no próximo seletor.
+
+18
+00:01:13,050 --> 00:01:18,240
+Então, isso só vai ter todos os cheios e queremos obter o comprimento, então vamos dizer em comprimento.
+
+19
+00:01:18,690 --> 00:01:24,720
+E depois só para mostrar que podemos consolar logar os copos cheios.
+
+20
+00:01:25,720 --> 00:01:31,240
+E nós vamos descer aqui e vemos zero porque ele chama imediatamente, mas então eu vou clicar
+
+21
+00:01:31,240 --> 00:01:34,800
+neste aqui vemos que há dois, três, quatro e assim por diante.
+
+22
+00:01:35,260 --> 00:01:36,570
+Então temos os policiais completos.
+
+23
+00:01:37,000 --> 00:01:38,920
+Vamos também pegar o total de policiais.
+
+24
+00:01:39,670 --> 00:01:45,850
+Policiais totais, que vão ser todos os policiais pequenos.
+
+25
+00:01:45,850 --> 00:01:52,960
+Então, Langguth, não trouxemos policiais pequenos para cá, o que nos dá uma lista de não, que podemos chamar de alongar
+
+26
+00:01:53,260 --> 00:01:59,530
+para que possamos ver o total de policiais aqui, que sempre serão oito agora.
+
+27
+00:01:59,530 --> 00:02:07,000
+Eu quero esconder a porcentagem da qual não temos uma porcentagem real agora mesmo.
+
+28
+00:02:07,000 --> 00:02:09,610
+Mas digamos que gostamos de 20%.
+
+29
+00:02:10,420 --> 00:02:13,720
+Queremos que isso se esconda se estiver vazio.
+
+30
+00:02:15,160 --> 00:02:17,020
+Então, se não há policiais completos.
+
+31
+00:02:17,020 --> 00:02:18,250
+Então vamos dizer se.
+
+32
+00:02:20,550 --> 00:02:25,680
+Se full cops for igual a zero, significa que deve estar vazio.
+
+33
+00:02:25,710 --> 00:02:33,510
+Então queremos a porcentagem, queremos o estilo e vou definir a visibilidade igual a oculta.
+
+34
+00:02:36,240 --> 00:02:38,210
+E vamos também definir a altura.
+
+35
+00:02:38,580 --> 00:02:46,660
+Portanto, porcentagem da altura do estilo percentual.
+
+36
+00:02:46,740 --> 00:02:48,840
+Eu vou definir isso para zero.
+
+37
+00:02:49,950 --> 00:02:57,720
+OK, agora você pode ver esse tipo de flash por um segundo, mas na verdade está definindo como oculto
+
+38
+00:02:57,720 --> 00:02:59,270
+e definindo a altura zero.
+
+39
+00:02:59,790 --> 00:03:03,180
+Então, vou me livrar desses 20% codificados lá.
+
+40
+00:03:05,280 --> 00:03:07,710
+Agora vamos ter um L.
+
+41
+00:03:07,760 --> 00:03:13,440
+Então, basicamente, se houver algo nele, queremos essa porcentagem.
+
+42
+00:03:14,640 --> 00:03:15,600
+Queremos que isso apareça.
+
+43
+00:03:15,600 --> 00:03:18,320
+Então, vamos definir essa visibilidade de ponto de estilo.
+
+44
+00:03:20,490 --> 00:03:28,500
+Queremos definir isso agora para visível e vamos definir o estilo de ponto percentual.
+
+45
+00:03:28,890 --> 00:03:35,880
+E queremos definir a altura, o estilo, a altura e a altura que obteremos fazendo vamos
+
+46
+00:03:35,880 --> 00:03:43,740
+coloque alguns carrapatos aqui, mas podemos obter a altura pegando o copo cheio são copos cheios e dividimos
+
+47
+00:03:43,740 --> 00:03:50,520
+pelo total de copos e depois multiplique pela altura deste copo grande aqui, que se você se lembra
+
+48
+00:03:51,330 --> 00:03:53,190
+é trezentos e trinta pixels.
+
+49
+00:03:53,640 --> 00:03:58,590
+Então, seja qual for a altura, é por isso que queremos multiplicá-la e depois passar aqui.
+
+50
+00:03:58,590 --> 00:03:59,520
+Apenas pixels.
+
+51
+00:03:59,880 --> 00:04:00,960
+Vai salvar isso.
+
+52
+00:04:01,320 --> 00:04:02,120
+Feche isso.
+
+53
+00:04:02,760 --> 00:04:07,650
+Se eu acertar este primeiro aqui vai encher até o deles, deles.
+
+54
+00:04:10,960 --> 00:04:16,540
+OK, agora queremos que o texto diga a porcentagem também, agora estamos apenas preenchendo a altura,
+
+55
+00:04:17,470 --> 00:04:27,400
+então vamos definir a porcentagem em nosso texto e vamos definir isso para um conjunto de táticas.
+
+56
+00:04:27,940 --> 00:04:35,200
+E aqui mais uma vez, vamos pegar os copos cheios e queremos dividir isso pelo total de copos.
+
+57
+00:04:35,890 --> 00:04:42,630
+E vamos multiplicar isso por 100 porque queremos obter tipo, você sabe, 25 por cento tanto faz.
+
+58
+00:04:43,180 --> 00:04:44,200
+Então vou guardar isso.
+
+59
+00:04:44,210 --> 00:04:46,840
+Se eu clicar neste primeiro, obtemos doze vírgula cinco.
+
+60
+00:04:47,020 --> 00:04:50,400
+Na verdade, vamos adicionar um sinal de porcentagem aqui.
+
+61
+00:04:50,920 --> 00:04:54,900
+Então, temos doze vírgula cinco por cento, 25 por cento, 37.
+
+62
+00:04:54,940 --> 00:04:55,520
+Isso é metade.
+
+63
+00:04:55,520 --> 00:04:58,270
+Isso é cinqüenta e sessenta e dois e setenta e cinco.
+
+64
+00:04:58,270 --> 00:04:59,560
+Oitenta e sete vírgula cinco.
+
+65
+00:04:59,560 --> 00:05:00,190
+Cem.
+
+66
+00:05:00,880 --> 00:05:02,790
+Agora ainda temos isso aqui.
+
+67
+00:05:02,800 --> 00:05:06,280
+Isso permaneceu, o que não queremos mostrar se for outono.
+
+68
+00:05:06,700 --> 00:05:12,340
+Então, abaixo desta declaração if, vamos criar outra e vamos lidar com o restante
+
+69
+00:05:12,340 --> 00:05:12,700
+agora.
+
+70
+00:05:12,700 --> 00:05:21,280
+Então, queremos verificar se os copos cheios são iguais ao total de copos, ou seja, é queda.
+
+71
+00:05:21,760 --> 00:05:29,920
+Então, se estiver cheio, vamos pegar o restante e vamos definir a visibilidade do ponto de estilo para oculto
+
+72
+00:05:29,920 --> 00:05:31,180
+porque não queremos mostrar isso.
+
+73
+00:05:33,010 --> 00:05:35,440
+E então vamos também definir a altura para zero.
+
+74
+00:05:35,440 --> 00:05:39,390
+Assim permaneceu o estilo do ponto, a altura do ponto.
+
+75
+00:05:39,400 --> 00:05:40,840
+Nós vamos definir isso para zero.
+
+76
+00:05:40,840 --> 00:05:46,480
+Então salve e vamos ver isso permanecer até que esteja completamente cheio, então ele vai embora.
+
+77
+00:05:46,870 --> 00:05:49,450
+Mesmo que esteja aqui, podemos vê-lo agora.
+
+78
+00:05:49,870 --> 00:05:54,790
+É que não vemos mais o texto restante porque o removemos do DOM.
+
+79
+00:05:55,150 --> 00:05:59,490
+Definimos a visibilidade como oculta e nunca a configuramos de volta ou a altura.
+
+80
+00:05:59,710 --> 00:06:01,630
+Então aqui queremos ter um LS.
+
+81
+00:06:02,680 --> 00:06:10,210
+Em seguida, definiremos a visibilidade do ponto no estilo de ponto restante e queremos defini-la de volta para visível se não for
+
+82
+00:06:10,210 --> 00:06:10,570
+cheio.
+
+83
+00:06:10,570 --> 00:06:10,900
+Certo.
+
+84
+00:06:10,900 --> 00:06:12,340
+Então defina isso para visível.
+
+85
+00:06:12,880 --> 00:06:16,540
+E também queremos definir o texto de stay.
+
+86
+00:06:17,590 --> 00:06:24,730
+Então, se eu salvar isso agora, preenchê-lo e desaparecer, se não estiver totalmente cheio, veremos permanecer
+
+87
+00:06:24,730 --> 00:06:26,110
+mas não vemos os líderes.
+
+88
+00:06:26,350 --> 00:06:29,590
+Lembre-se que aqui temos um intervalo com a ideia de líderes.
+
+89
+00:06:29,590 --> 00:06:32,290
+Por isso, queremos mostrar aos líderes que permanecem.
+
+90
+00:06:33,100 --> 00:06:38,650
+Então, para fazer isso, digamos que permaneceu e queremos definir desculpe, não permanecer.
+
+91
+00:06:38,650 --> 00:06:39,880
+Queremos estabelecer líderes.
+
+92
+00:06:39,880 --> 00:06:41,420
+Nós trouxemos isso no início.
+
+93
+00:06:41,500 --> 00:06:42,940
+No início no topo.
+
+94
+00:06:43,230 --> 00:06:48,760
+Quer definir todo o texto disso e vamos colocar alguns tiques aqui.
+
+95
+00:06:50,800 --> 00:06:57,430
+E o que eu vou fazer é pegar dois e cinquenta, porque esse é o número aqui de mililitros.
+
+96
+00:06:57,850 --> 00:07:00,490
+E queremos dividir isso, não dividir.
+
+97
+00:07:00,490 --> 00:07:08,440
+Multiplique isso pelos copos cheios e queremos dividir isso por mil porque queríamos dizer:
+
+98
+00:07:08,440 --> 00:07:12,130
+você sabe, zero vírgula dois cinco ou zero vírgula cinco, tanto faz.
+
+99
+00:07:13,180 --> 00:07:17,800
+E então eu vou apenas ver o que isso faz, na verdade.
+
+100
+00:07:17,800 --> 00:07:19,360
+Então eu clico nisso.
+
+101
+00:07:19,360 --> 00:07:21,460
+Diz que resta zero vírgula dois cinco.
+
+102
+00:07:21,460 --> 00:07:22,240
+Isso não é verdade.
+
+103
+00:07:22,240 --> 00:07:26,740
+Na verdade, é zero vírgula dois cinco cheio de quatro de dois líderes.
+
+104
+00:07:26,740 --> 00:07:33,070
+Se eu clicar neste aqui, diz que ficou um clique aqui, um vírgula dois, restam cinco, o que
+
+105
+00:07:33,070 --> 00:07:34,240
+não está correto.
+
+106
+00:07:34,750 --> 00:07:35,140
+Certo.
+
+107
+00:07:35,140 --> 00:07:38,410
+Se eu clicar neste, um ponto setenta e cinco restantes não está correto.
+
+108
+00:07:38,410 --> 00:07:42,340
+Deve ser zero vírgula dois cinco permaneceu no local.
+
+109
+00:07:42,670 --> 00:07:51,730
+Então o que vamos fazer é colocar isso entre parênteses, o que acabamos de colocar aqui e vamos ao começo
+
+110
+00:07:51,730 --> 00:07:57,100
+aqui e diga dois, que é o número total de líderes e menos isso dele.
+
+111
+00:07:57,100 --> 00:08:03,040
+Agora, se eu clicar no primeiro, nós temos um sete cinco restantes clicando neste aqui nós só
+
+112
+00:08:03,040 --> 00:08:05,110
+ter ponto a cinco permaneceu.
+
+113
+00:08:06,190 --> 00:08:10,930
+OK, então, quero dizer, obviamente, se eu clicar aqui, é 100 por cento que temos zero restantes.
+
+114
+00:08:12,040 --> 00:08:12,640
+Então.
+
+115
+00:08:14,560 --> 00:08:15,850
+Então isso deve fazer bem.
+
+116
+00:08:15,880 --> 00:08:21,610
+Na verdade, eu quero colocar um L lá para os líderes, então logo após a chave, vamos colocar um
+
+117
+00:08:21,610 --> 00:08:22,020
+EU.
+
+118
+00:08:23,380 --> 00:08:28,810
+Então, dois líderes ficaram aqui, um vírgula cinco, sete ficaram.
+
+119
+00:08:28,810 --> 00:08:35,180
+E está doze vírgula cinco por cento cheio, 25 por cento cheio, um vírgula cinco líder restante.
+
+120
+00:08:35,200 --> 00:08:35,470
+Tudo bem.
+
+121
+00:08:35,470 --> 00:08:36,660
+Então parece estar funcionando.
+
+122
+00:08:36,670 --> 00:08:37,360
+Então é isso.
+
+123
+00:08:37,370 --> 00:08:39,310
+Vamos em frente e passar para o próximo projeto.

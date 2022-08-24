@@ -1,0 +1,95 @@
+﻿1
+00:00:00,060 --> 00:00:05,370
+Tudo bem, então neste projeto, vamos criar um jogo meio bobo, basicamente, temos isso
+
+2
+00:00:05,370 --> 00:00:09,770
+a primeira tela diz Pegue o inseto, que é o nome do jogo que jogamos.
+
+3
+00:00:10,050 --> 00:00:14,050
+Ele nos mostra esta tela onde podemos selecionar um inseto específico.
+
+4
+00:00:14,160 --> 00:00:15,570
+Qual é o seu inseto favorito?
+
+5
+00:00:15,900 --> 00:00:16,980
+Diremos voar.
+
+6
+00:00:17,400 --> 00:00:22,910
+E imediatamente uma mosca é colocada na tela e o cronômetro começa a funcionar, temos uma pontuação aqui.
+
+7
+00:00:22,920 --> 00:00:26,670
+Se eu clicar, ele irá em frente e gerará mais dois.
+
+8
+00:00:27,450 --> 00:00:27,840
+eu clico.
+
+9
+00:00:27,840 --> 00:00:30,960
+Aquele vai gerar para este vai gerar dois.
+
+10
+00:00:31,350 --> 00:00:33,380
+E eles basicamente vão continuar entrando.
+
+11
+00:00:33,390 --> 00:00:35,790
+Quanto mais rápido eu clicar, mais rápido eles virão.
+
+12
+00:00:36,420 --> 00:00:42,510
+E se você vir a pontuação quando chegar a 20, vou continuar clicando neles.
+
+13
+00:00:43,410 --> 00:00:48,120
+E quando chega a 20, recebemos uma mensagem que diz: você está irritado, mas está jogando um jogo impossível
+
+14
+00:00:48,120 --> 00:00:51,780
+jogo porque eles vão continuar vindo enquanto clicamos.
+
+15
+00:00:51,780 --> 00:00:52,980
+Isso nunca vai acabar.
+
+16
+00:00:53,010 --> 00:00:56,280
+O jogo não tem fim, então é impossível vencer.
+
+17
+00:00:56,280 --> 00:01:02,160
+É uma coisa meio boba, mas acho que há muito que podemos aprender em termos de, você sabe,
+
+18
+00:01:02,160 --> 00:01:07,260
+definindo um cronômetro e inserindo objetos aleatórios no dormitório.
+
+19
+00:01:07,260 --> 00:01:09,000
+Nós vamos ter uma rotação aleatória.
+
+20
+00:01:09,000 --> 00:01:11,100
+Você pode ver que todos eles estão enfrentando caminhos aleatórios.
+
+21
+00:01:12,090 --> 00:01:14,700
+Então eu acho que é um pequeno projeto legal.
+
+22
+00:01:14,700 --> 00:01:18,690
+Há bastante JavaScript em relação a muitos dos projetos deste curso.
+
+23
+00:01:19,080 --> 00:01:20,540
+Então eu acho que você vai gostar.
+
+24
+00:01:20,550 --> 00:01:22,170
+Vamos em frente e começar.

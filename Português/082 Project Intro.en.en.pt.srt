@@ -1,0 +1,79 @@
+﻿1
+00:00:00,300 --> 00:00:01,920
+Tudo bem, bem-vindo ao seu próximo projeto.
+
+2
+00:00:01,950 --> 00:00:05,670
+Então, neste, vamos construir um controle deslizante vertical.
+
+3
+00:00:05,670 --> 00:00:09,720
+Basicamente, temos uma imagem ao lado e temos algum texto deste lado.
+
+4
+00:00:09,720 --> 00:00:11,700
+E isso pode ser qualquer tipo de conteúdo que você quiser.
+
+5
+00:00:11,880 --> 00:00:17,250
+E então essas duas setas aqui, se eu clicar para cima, o que vai acontecer é um lado subir, um
+
+6
+00:00:17,250 --> 00:00:23,070
+lado desce, mas coloca a área de texto correta e a imagem correta.
+
+7
+00:00:23,070 --> 00:00:24,150
+Então suba novamente.
+
+8
+00:00:24,510 --> 00:00:25,170
+Para cima novamente.
+
+9
+00:00:25,170 --> 00:00:26,580
+Então temos quatro lados diferentes.
+
+10
+00:00:26,580 --> 00:00:28,990
+Se eu clicar novamente, ele volta ao início.
+
+11
+00:00:29,250 --> 00:00:30,240
+O mesmo com baixo.
+
+12
+00:00:31,300 --> 00:00:35,520
+Então, é o oposto, então eu acho que é um controle deslizante muito legal.
+
+13
+00:00:35,770 --> 00:00:41,200
+Não é realmente responsivo se fizermos isso menor, você pode ver que não fica bem em menores
+
+14
+00:00:41,200 --> 00:00:43,420
+telas apenas por causa da orientação do mesmo.
+
+15
+00:00:43,720 --> 00:00:45,530
+Mas esse não é realmente o ponto aqui.
+
+16
+00:00:45,550 --> 00:00:49,260
+Isso é feito para, você sabe, um desktop, laptop, etc.
+
+17
+00:00:50,050 --> 00:00:54,820
+Se você quisesse, poderia tentar mudar a orientação em telas menores.
+
+18
+00:00:55,090 --> 00:00:56,730
+Mas vamos seguir em frente e construir isso.
+
+19
+00:00:56,740 --> 00:00:58,690
+Acho um projeto muito legal.
+
+20
+00:00:58,900 --> 00:01:00,220
+Então vamos começar.

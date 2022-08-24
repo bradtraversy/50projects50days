@@ -1,0 +1,467 @@
+1
+00:00:00,270 --> 00:00:08,910
+OK, so now we want to basically save our to DOS to local storage and with local storage, we have a
+
+2
+00:00:09,090 --> 00:00:15,990
+browser API that we can use to say local storage, and we can set Eitam using set item.
+
+3
+00:00:16,380 --> 00:00:21,080
+We give it a key such as name and a value such as Brad.
+
+4
+00:00:21,540 --> 00:00:22,930
+So it's how we can set an item.
+
+5
+00:00:23,270 --> 00:00:27,510
+Now, when you save something in local storage, it's going to be saved as a string.
+
+6
+00:00:27,780 --> 00:00:34,560
+If you have an array or an object or something like that, you can save it, but you have to first wrap
+
+7
+00:00:34,560 --> 00:00:41,880
+it in Jason Dortch String Afie, which will do just that little string string, iffier object array,
+
+8
+00:00:41,880 --> 00:00:42,630
+whatever it is.
+
+9
+00:00:42,750 --> 00:00:48,450
+And then when you pull it out from local storage, sort of get something we say local storage doget
+
+10
+00:00:48,450 --> 00:00:53,490
+item and let's say it's like an object but it's string of.
+
+11
+00:00:53,850 --> 00:00:57,580
+So when you take it out you want to wrap it in Jason Dot parse.
+
+12
+00:00:58,020 --> 00:01:03,510
+OK, so you want to remember those two four objects in arrays and stuff, string Afie and parse.
+
+13
+00:01:04,710 --> 00:01:09,540
+OK, and to remove items you can do local storage not remove items.
+
+14
+00:01:09,540 --> 00:01:11,610
+So it's pretty easy API to work with.
+
+15
+00:01:12,330 --> 00:01:20,340
+Now we're going to go ahead and let's start with checking our local storage first, because obviously
+
+16
+00:01:20,340 --> 00:01:23,700
+if there are items in local storage, we want them to load here.
+
+17
+00:01:24,120 --> 00:01:35,340
+So up at the top, let's say conse to Duse, set that to local storage dot get item and we're going
+
+18
+00:01:35,340 --> 00:01:36,570
+to call it to Duse.
+
+19
+00:01:37,320 --> 00:01:40,140
+Now, as I said, it's going to be stored as a string.
+
+20
+00:01:40,290 --> 00:01:43,380
+We want to pass this back into an array.
+
+21
+00:01:43,380 --> 00:01:49,980
+So let's say Jason pass, OK, so that those will be put into DOS.
+
+22
+00:01:49,980 --> 00:01:57,090
+And then we want to say if there are to DOS in local storage, then let's go ahead and loop through
+
+23
+00:01:57,090 --> 00:01:57,660
+each one.
+
+24
+00:01:57,660 --> 00:02:10,950
+So to do support for each and say for each to do we want to add to do and pass in the to do OK or else
+
+25
+00:02:10,950 --> 00:02:15,660
+if there's not, I mean I guess we don't need that house because if there are to do that we'll do this.
+
+26
+00:02:15,660 --> 00:02:16,680
+If not, it won't.
+
+27
+00:02:17,190 --> 00:02:19,500
+So if I save that, you'll see it's not doing anything.
+
+28
+00:02:19,800 --> 00:02:26,190
+And if I open up my, my dev tools here and I go to application, you can see what you have in local
+
+29
+00:02:26,190 --> 00:02:27,320
+storage right here.
+
+30
+00:02:28,200 --> 00:02:34,410
+So we I actually have my empty notes, array or string a wide array from another app.
+
+31
+00:02:34,410 --> 00:02:38,610
+In this course we can clear local storage if we want.
+
+32
+00:02:38,650 --> 00:02:39,990
+I can't really see this.
+
+33
+00:02:40,770 --> 00:02:45,660
+So if I click that, that gets rid of it, this will clear all.
+
+34
+00:02:45,900 --> 00:02:48,600
+So there's nothing in local storage right now.
+
+35
+00:02:49,590 --> 00:02:52,050
+So it's not it's obviously not going to show any to DOS.
+
+36
+00:02:52,530 --> 00:03:02,550
+Now when we add a to do let's see, let's go down to the bottom here and at the very end we're going
+
+37
+00:03:02,550 --> 00:03:04,850
+to have a function called update URLs.
+
+38
+00:03:04,860 --> 00:03:07,110
+So we're going to update our local storage.
+
+39
+00:03:07,680 --> 00:03:13,440
+And basically we're just going to have one function that's going to take all of the to DOS and the list
+
+40
+00:03:13,440 --> 00:03:17,730
+item in the list items and put them into local storage.
+
+41
+00:03:17,730 --> 00:03:23,910
+And then we can call update local storage when we add them, also when we market as complete or when
+
+42
+00:03:23,910 --> 00:03:24,770
+we remove them.
+
+43
+00:03:24,780 --> 00:03:31,170
+So it's kind of a function that will run in multiple places instead of just having an add to do and
+
+44
+00:03:31,170 --> 00:03:35,430
+then a remove to do and then doing our local storage in separate functions.
+
+45
+00:03:35,880 --> 00:03:37,770
+So let's say update else.
+
+46
+00:03:38,910 --> 00:03:41,640
+And like I said, we're going to take all the list items.
+
+47
+00:03:42,000 --> 00:03:51,150
+So to DOS, let's say to DOS element plural and set that to document and then we'll use query selector
+
+48
+00:03:51,150 --> 00:03:56,670
+all because we're selecting all of the list items which will put that into a node list which is similar
+
+49
+00:03:56,670 --> 00:03:57,440
+to an array.
+
+50
+00:03:57,750 --> 00:04:06,720
+I'm also going to initialize a to DOS array and what I want to do, no pun intended, is take the to
+
+51
+00:04:06,720 --> 00:04:14,850
+DOS element, which is all our elements, which are all the list items, and I want to loop through
+
+52
+00:04:14,850 --> 00:04:15,180
+those.
+
+53
+00:04:15,180 --> 00:04:19,590
+So for each to do elements.
+
+54
+00:04:20,760 --> 00:04:26,760
+So for each one of these, I want to take that to DOS Array that I just initialized and I want to push
+
+55
+00:04:26,760 --> 00:04:27,390
+on to it.
+
+56
+00:04:27,690 --> 00:04:32,490
+And what I want to push is an object that has a text value.
+
+57
+00:04:32,490 --> 00:04:40,820
+So text for the key and then to do elements of the current, to do inter text, whatever is in the inner
+
+58
+00:04:40,860 --> 00:04:42,260
+text is going to get put in there.
+
+59
+00:04:42,570 --> 00:04:49,380
+We also want to know if it's completed so we'll have a completed property here with to do element,
+
+60
+00:04:49,380 --> 00:04:50,430
+make sure it's singular.
+
+61
+00:04:50,430 --> 00:04:52,890
+It's it's this specific to do in the loop.
+
+62
+00:04:53,460 --> 00:04:56,880
+We want to see if the class contains so.
+
+63
+00:04:56,880 --> 00:04:58,770
+Class list that contains.
+
+64
+00:05:01,330 --> 00:05:08,380
+And we want to see if it contains the class of completed, if it does, then this is going to be true.
+
+65
+00:05:08,380 --> 00:05:10,180
+If it doesn't, then it will be false.
+
+66
+00:05:10,930 --> 00:05:11,470
+All right.
+
+67
+00:05:11,500 --> 00:05:18,550
+So now that we have this to dos pushing on everything that's in the list item, let's update local storage.
+
+68
+00:05:18,550 --> 00:05:25,300
+So after this, for each which ends right here, let's take local storage and say set item.
+
+69
+00:05:26,440 --> 00:05:32,950
+And we want to set this as to Duse and it's going to be the to dos Arae.
+
+70
+00:05:32,950 --> 00:05:36,370
+However, that's that's going to be an array.
+
+71
+00:05:36,370 --> 00:05:40,320
+So we need to wrap that in dot string of five first.
+
+72
+00:05:41,140 --> 00:05:44,470
+So we want to wrap to DOS in that and then stored in local storage.
+
+73
+00:05:45,550 --> 00:05:45,940
+All right.
+
+74
+00:05:45,940 --> 00:05:55,750
+So now if I save and they go here and I say to do one enter, you can see that it gets added down here
+
+75
+00:05:55,750 --> 00:05:56,770
+in local storage.
+
+76
+00:05:56,770 --> 00:06:00,940
+The value it looks like an array, but an array of objects.
+
+77
+00:06:00,940 --> 00:06:02,290
+But it's actually a string.
+
+78
+00:06:02,290 --> 00:06:03,160
+It's stratified.
+
+79
+00:06:03,580 --> 00:06:11,710
+But when we pull it out up here, we pass it back into an array and then we go ahead and we loop through
+
+80
+00:06:11,710 --> 00:06:12,610
+and we show it here.
+
+81
+00:06:12,640 --> 00:06:20,830
+So now if I reload to do what is still there now, if I market as complete, it works in the DOM.
+
+82
+00:06:20,830 --> 00:06:26,500
+But if I reload, it's not marked as complete because we did not update local storage when we marked
+
+83
+00:06:26,500 --> 00:06:27,250
+it as complete.
+
+84
+00:06:27,260 --> 00:06:28,150
+So let's do that.
+
+85
+00:06:28,150 --> 00:06:31,510
+Let's go down to let's see.
+
+86
+00:06:31,900 --> 00:06:35,830
+So right here we toggle the class of complete.
+
+87
+00:06:35,830 --> 00:06:38,260
+We actually want to change this to be a code block.
+
+88
+00:06:38,920 --> 00:06:42,580
+So we want our curly braces because it's going to be more than one line.
+
+89
+00:06:43,970 --> 00:06:49,940
+All right, so after we mark it as complete, let's call up the local storage, we want to do the same
+
+90
+00:06:49,940 --> 00:06:51,010
+thing when we remove.
+
+91
+00:06:51,020 --> 00:06:55,080
+So right after remove, we want to call update local storage.
+
+92
+00:06:55,700 --> 00:06:59,380
+So now, if I were to let's add another one.
+
+93
+00:06:59,390 --> 00:07:00,680
+We'll see to do two.
+
+94
+00:07:01,640 --> 00:07:07,190
+And if I go ahead and mark that as complete, that should change in here.
+
+95
+00:07:07,190 --> 00:07:10,090
+And you can see right here to do one complete is false.
+
+96
+00:07:10,100 --> 00:07:12,150
+If I click, that changes it to true.
+
+97
+00:07:12,860 --> 00:07:18,320
+And now if I reload, it's still there because it's again, it's fetching from local storage.
+
+98
+00:07:19,070 --> 00:07:20,270
+If I remove.
+
+99
+00:07:20,270 --> 00:07:20,660
+So if I.
+
+100
+00:07:20,660 --> 00:07:20,900
+Right.
+
+101
+00:07:20,900 --> 00:07:24,800
+Click here and reload and see it's still gone.
+
+102
+00:07:24,800 --> 00:07:25,010
+Right.
+
+103
+00:07:25,010 --> 00:07:25,820
+Click again.
+
+104
+00:07:25,820 --> 00:07:27,650
+That updates local storage as well.
+
+105
+00:07:27,660 --> 00:07:31,100
+So we have this one function that takes care.
+
+106
+00:07:31,100 --> 00:07:32,480
+We can just put it anywhere.
+
+107
+00:07:32,480 --> 00:07:39,530
+We want to update the local storage at any time based on the list items and based on if they're, you
+
+108
+00:07:39,530 --> 00:07:40,640
+know, completed or not.
+
+109
+00:07:41,540 --> 00:07:41,900
+All right.
+
+110
+00:07:41,900 --> 00:07:43,220
+So hopefully that makes sense.
+
+111
+00:07:43,220 --> 00:07:48,470
+I think it's it's a decent amount of functionality for such a small amount of code.
+
+112
+00:07:48,650 --> 00:07:53,900
+And I'd encourage you to create a different type of vape, maybe a workout tracker or something like
+
+113
+00:07:53,900 --> 00:07:59,150
+that with, you know, more fields and a different design and maybe add some other functionality like
+
+114
+00:07:59,150 --> 00:08:02,480
+update so you can update the resource as well.
+
+115
+00:08:02,900 --> 00:08:03,200
+All right.
+
+116
+00:08:03,200 --> 00:08:03,890
+So that's it, guys.
+
+117
+00:08:03,890 --> 00:08:06,800
+Hopefully you enjoyed this and I will see you in the next video.

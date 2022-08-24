@@ -1,0 +1,51 @@
+﻿1
+00:00:00,300 --> 00:00:04,200
+Ei, pessoal, este projeto, vamos criar algo bem simples, mas também algo
+
+2
+00:00:04,200 --> 00:00:07,560
+isso é muito útil que você vê bastante, e isso é uma navegação fixa.
+
+3
+00:00:07,770 --> 00:00:11,160
+Então, temos isso no topo do nosso pequeno site aqui.
+
+4
+00:00:11,830 --> 00:00:14,240
+Vamos criar esta imagem de herói com uma sobreposição.
+
+5
+00:00:14,250 --> 00:00:17,040
+Então vamos estilizar, você sabe, um pouco deste site aqui.
+
+6
+00:00:17,040 --> 00:00:20,040
+Mas o ponto principal é o Navar que gruda no topo.
+
+7
+00:00:20,250 --> 00:00:25,350
+E quando eu rolo para baixo e chego a um certo ponto, você pode ver que ele faz algumas coisas.
+
+8
+00:00:25,350 --> 00:00:31,340
+Muda sua cor, muda a cor do texto e diminui o preenchimento e o torna menor.
+
+9
+00:00:31,530 --> 00:00:36,600
+Se eu voltar ao topo, ele volta a ficar preto e adiciona esse preenchimento.
+
+10
+00:00:36,600 --> 00:00:38,610
+Assim, conseguimos esse pequeno efeito agradável.
+
+11
+00:00:38,820 --> 00:00:41,310
+E você vê muito isso em diferentes sites.
+
+12
+00:00:41,550 --> 00:00:46,910
+Então achamos que seria uma boa adição ao curso e aos projetos.
+
+13
+00:00:47,190 --> 00:00:48,740
+Então vamos em frente e começar.

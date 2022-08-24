@@ -1,0 +1,359 @@
+1
+00:00:00,060 --> 00:00:03,850
+OK, so we're able to create our tags here with commas.
+
+2
+00:00:03,870 --> 00:00:06,590
+Now we want the random select functionality.
+
+3
+00:00:06,600 --> 00:00:10,730
+So in our event listener, let's check to see if we hit enter.
+
+4
+00:00:11,310 --> 00:00:18,330
+So we'll say if and then on this event object, we have a key property and we're going to say if the
+
+5
+00:00:18,330 --> 00:00:20,940
+key is equal to enter.
+
+6
+00:00:21,780 --> 00:00:22,200
+All right.
+
+7
+00:00:22,210 --> 00:00:29,070
+Now, if we hit enter, we're going to call a function called Random Select, which we haven't created
+
+8
+00:00:29,070 --> 00:00:29,320
+yet.
+
+9
+00:00:29,340 --> 00:00:31,230
+I also want to clear the input.
+
+10
+00:00:31,560 --> 00:00:36,650
+So we're actually just going to wait a couple milliseconds before we do that.
+
+11
+00:00:36,660 --> 00:00:43,470
+So in the set, time will pass in an arrow function and we just want to wait 10 milliseconds and then
+
+12
+00:00:43,470 --> 00:00:51,210
+clear the input value with e dot target dot value, and we're just going to set that to nothing.
+
+13
+00:00:51,840 --> 00:00:52,290
+All right.
+
+14
+00:00:52,290 --> 00:01:02,220
+So let's create random select down here, function, random, select, and for now we'll just console
+
+15
+00:01:02,220 --> 00:01:03,450
+log one, two, three.
+
+16
+00:01:03,460 --> 00:01:09,840
+And if I open up my console and you know, I can type stuff down here and then enter, then you see
+
+17
+00:01:09,840 --> 00:01:11,880
+it fires off that function.
+
+18
+00:01:12,000 --> 00:01:20,460
+And it also clears this up here now in the random select, we're going to go ahead and set a value of
+
+19
+00:01:20,460 --> 00:01:22,770
+times and I'm going to set that to 30.
+
+20
+00:01:22,780 --> 00:01:28,080
+And what this represents is the number of times it's going to highlight each one before it stops.
+
+21
+00:01:28,110 --> 00:01:32,730
+So, you know, the one, two, three, four, and it'll go to thirty or whatever you put this to.
+
+22
+00:01:33,780 --> 00:01:39,060
+And then we're going to have we're going to have to set an interval, because this is going to repeat
+
+23
+00:01:39,060 --> 00:01:43,910
+this highlight of each one, the highlight and the remove of highlight of each one.
+
+24
+00:01:44,220 --> 00:01:51,890
+So let's create a variable called interval and we want to use the set interval function.
+
+25
+00:01:52,620 --> 00:01:59,910
+So for the for the time here, we want this to happen, let's say, every 100 milliseconds.
+
+26
+00:02:00,330 --> 00:02:04,890
+And what we want to happen is we want to pick a random tag.
+
+27
+00:02:05,280 --> 00:02:13,890
+So let's say conse random tag and set that to a function called pick random tag.
+
+28
+00:02:15,040 --> 00:02:25,960
+And before we move on, we'll create that so it's a function pick random tag and we want to take all
+
+29
+00:02:25,960 --> 00:02:33,160
+the tags so we can use document, dot, query, selector, all, and we want to get all the elements
+
+30
+00:02:33,160 --> 00:02:37,540
+of the class of tag, which would be all these, all of these, all the spans.
+
+31
+00:02:38,110 --> 00:02:41,260
+And then to get a random one, let's return.
+
+32
+00:02:43,380 --> 00:02:50,820
+And we're going to return tags, so tags when we use query selector all, it's a node list that we bring
+
+33
+00:02:50,820 --> 00:02:51,080
+in.
+
+34
+00:02:51,300 --> 00:02:56,070
+So all of these will be put into the node list, which is similar to an array with an index.
+
+35
+00:02:56,400 --> 00:03:03,840
+So the index is going to be random and we'll use math dot floor to round down math dot random, which
+
+36
+00:03:03,840 --> 00:03:05,310
+will give us a random decimal.
+
+37
+00:03:05,340 --> 00:03:13,740
+We just want to multiply that by the length of the tags array or not array, but no lists, which is
+
+38
+00:03:13,740 --> 00:03:14,850
+similar to an array.
+
+39
+00:03:15,300 --> 00:03:17,220
+So that'll give us a random tag.
+
+40
+00:03:18,570 --> 00:03:22,750
+I'm also going to create two more functions down here just to highlight and highlight.
+
+41
+00:03:23,010 --> 00:03:31,710
+So we'll call this highlight tag and it's going to take in a specific tag element and then we're going
+
+42
+00:03:31,710 --> 00:03:39,060
+to take that tag element and we're going to just add a out of class with classless dot ad and we're
+
+43
+00:03:39,060 --> 00:03:44,250
+going to add the highlight class and then we want one to remove the highlights.
+
+44
+00:03:44,280 --> 00:03:50,490
+So we'll call this on highlight tag and we're just going to remove instead of add.
+
+45
+00:03:53,240 --> 00:03:53,520
+Base.
+
+46
+00:03:53,670 --> 00:04:00,590
+Now back up to here, so we have this intervale, it's going to fire off every 100 milliseconds, it's
+
+47
+00:04:00,590 --> 00:04:05,180
+going to pick a random tag, and then we want to highlight that random tag.
+
+48
+00:04:05,360 --> 00:04:13,060
+So highlight tag pass in our random tag and then we want to highlight.
+
+49
+00:04:13,520 --> 00:04:19,430
+So I'm going to have a set time out here, which is going to take in a function and we're just going
+
+50
+00:04:19,430 --> 00:04:24,090
+to wait 100 milliseconds here to highlight.
+
+51
+00:04:25,130 --> 00:04:31,310
+OK, so in here we'll say on highlight tag and want to pass in our random tags.
+
+52
+00:04:31,330 --> 00:04:39,500
+So with this, if I were to create my tags and then hit enter, you can see what's happening every 100
+
+53
+00:04:39,500 --> 00:04:40,270
+milliseconds.
+
+54
+00:04:40,280 --> 00:04:47,360
+It's highlight's picking a random tag to start at and then it's highlighting a random tag and then 100
+
+55
+00:04:47,360 --> 00:04:49,360
+milliseconds after it's on highlighting.
+
+56
+00:04:49,370 --> 00:04:51,860
+So that's just going to keep going forever right now.
+
+57
+00:04:52,790 --> 00:04:53,170
+All right.
+
+58
+00:04:53,210 --> 00:04:54,980
+I'm just going to reload to stop that.
+
+59
+00:04:55,610 --> 00:04:58,730
+And now what we can do is go under.
+
+60
+00:05:02,300 --> 00:05:09,350
+So function, we still want to be within our random select, but we want to go down here and I'm going
+
+61
+00:05:09,350 --> 00:05:19,490
+to have a set time out with a function and I want this to run after whatever the Times is.
+
+62
+00:05:19,820 --> 00:05:23,270
+I want to multiply that by 100 milliseconds.
+
+63
+00:05:23,600 --> 00:05:29,630
+So the 30 here, multiply that by whatever the time this is, which is 100 milliseconds.
+
+64
+00:05:30,680 --> 00:05:37,910
+OK, we could even put that we could put that in a separate variable if we wanted to, but anyway,
+
+65
+00:05:37,910 --> 00:05:39,710
+we want to clear our individual.
+
+66
+00:05:39,720 --> 00:05:41,690
+So you have an interval that runs.
+
+67
+00:05:41,870 --> 00:05:45,150
+There's a function called clear interval to stop it.
+
+68
+00:05:45,170 --> 00:05:47,030
+So we want to pass in our interval.
+
+69
+00:05:47,180 --> 00:05:49,970
+Then we want to pick a random tag to stop on.
+
+70
+00:05:49,980 --> 00:05:52,220
+So let's create let's do a set time.
+
+71
+00:05:55,010 --> 00:06:05,170
+And this is going to be 100 milliseconds and inside the set time out, I want to get a random tag.
+
+72
+00:06:05,180 --> 00:06:13,790
+So once again, we'll create a random tag and set that to pick random tag and then we want to highlight
+
+73
+00:06:13,790 --> 00:06:13,930
+it.
+
+74
+00:06:14,090 --> 00:06:19,460
+So it's a highlight tag and pass in our random tag.
+
+75
+00:06:20,690 --> 00:06:28,160
+OK, so this up here is is causing that, you know, shifting it to each one, highlighting and highlighting
+
+76
+00:06:28,160 --> 00:06:29,540
+after a certain amount of time.
+
+77
+00:06:29,690 --> 00:06:35,330
+And then this takes care of stopping it and just picking a random tag to land on and highlight.
+
+78
+00:06:36,080 --> 00:06:37,320
+Hopefully that makes sense.
+
+79
+00:06:37,850 --> 00:06:40,380
+So let's do one, two, three, four, five.
+
+80
+00:06:40,640 --> 00:06:43,440
+These can be numbers or strings or whatever you want to put in here.
+
+81
+00:06:43,460 --> 00:06:48,160
+Let's do up to ten and then I'm going to hit enter.
+
+82
+00:06:49,730 --> 00:06:57,260
+So it should run 30 times and then it's going to stop on a random tag or in this case number.
+
+83
+00:06:57,260 --> 00:06:59,060
+But of course it can be anything.
+
+84
+00:06:59,930 --> 00:07:01,190
+And let's try that again.
+
+85
+00:07:01,190 --> 00:07:05,390
+Same thing which we did one through ten and hit enter.
+
+86
+00:07:05,390 --> 00:07:07,220
+So it landed on three last time.
+
+87
+00:07:08,180 --> 00:07:09,320
+Now it lands on one.
+
+88
+00:07:10,670 --> 00:07:19,160
+All right, so you have choice, one choice to choice, three, enter, and it's just a cool little
+
+89
+00:07:19,160 --> 00:07:21,650
+application to pick a random choice.
+
+90
+00:07:23,090 --> 00:07:24,040
+All right, so that's it.

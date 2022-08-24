@@ -1,0 +1,551 @@
+1
+00:00:00,390 --> 00:00:06,720
+OK, so now we want to start on the Navar and I wanted to separate this out because, you know, the
+
+2
+00:00:06,720 --> 00:00:10,110
+website you're going to use this on in the future will be completely different.
+
+3
+00:00:10,120 --> 00:00:12,260
+So I want the Navar will be the same.
+
+4
+00:00:12,270 --> 00:00:13,890
+So I wanted to do that all in one video.
+
+5
+00:00:14,310 --> 00:00:18,060
+So let's go ahead and grab the nav tag.
+
+6
+00:00:18,570 --> 00:00:20,550
+OK, so that surrounds everything.
+
+7
+00:00:20,550 --> 00:00:28,080
+And I'm going to add a position to this, because right now you can see if I scroll it just you know,
+
+8
+00:00:28,080 --> 00:00:32,340
+it's just in the regular position and I can scroll out, you know, out of it.
+
+9
+00:00:32,580 --> 00:00:37,520
+So I want to position that fixed to the top as soon as I do that.
+
+10
+00:00:37,530 --> 00:00:41,010
+Now, no matter where I scroll, it's always going to be up at the top.
+
+11
+00:00:41,940 --> 00:00:49,450
+Now I'm going to set a background, let's do a background color and I'm going to do two, two, two
+
+12
+00:00:49,470 --> 00:00:53,620
+for the background color and I'm going to set the top.
+
+13
+00:00:53,640 --> 00:01:00,420
+So it's going to be zero from the top and zero from both the left and the right, which is going to
+
+14
+00:01:00,420 --> 00:01:04,060
+make it go all the way across like that, OK?
+
+15
+00:01:04,190 --> 00:01:11,850
+And then we're going to want to add a transition here, because when we start to scroll, it's going
+
+16
+00:01:11,850 --> 00:01:15,330
+to change color and it's going to it's going to lessen the padding.
+
+17
+00:01:15,330 --> 00:01:16,380
+It's going to have that effect.
+
+18
+00:01:16,390 --> 00:01:18,840
+So we don't want that to just flicker in.
+
+19
+00:01:18,840 --> 00:01:22,490
+We want that to, you know, to add a smooth transition.
+
+20
+00:01:22,710 --> 00:01:29,130
+So we'll transition all elements or I'm sorry, all properties that can be transitioned in point three
+
+21
+00:01:29,130 --> 00:01:31,650
+seconds with an ease in our effect.
+
+22
+00:01:32,970 --> 00:01:33,390
+All right.
+
+23
+00:01:33,390 --> 00:01:36,480
+And then let's start to style some of this other stuff.
+
+24
+00:01:36,480 --> 00:01:43,920
+The container, basically, I want to put, you know, the logo on this side and the well on this side.
+
+25
+00:01:44,160 --> 00:01:50,070
+So the container is going to be the flex box because the H1 in the U.S. will be the flex items inside
+
+26
+00:01:50,070 --> 00:01:50,360
+of it.
+
+27
+00:01:50,880 --> 00:01:56,250
+So if we look at our HTML, if I put the flex on now, then that's going to make the container the flex
+
+28
+00:01:56,250 --> 00:01:57,420
+item, which I don't want.
+
+29
+00:01:57,630 --> 00:02:01,170
+So I want this to be the flex box in these two to be the flex item.
+
+30
+00:02:01,500 --> 00:02:11,640
+So let's go right under that and do now have a container and set that to display flex, which automatically
+
+31
+00:02:11,640 --> 00:02:15,120
+is going to put the H1 in the U.S. side by side in a row.
+
+32
+00:02:15,660 --> 00:02:22,710
+And I want to basically take this space here and put it in between these so we can use justify content
+
+33
+00:02:22,830 --> 00:02:26,580
+space between and that will push that over to the side.
+
+34
+00:02:27,420 --> 00:02:37,200
+OK, I also want to align some or let's do a line items center which will center it, you know, this
+
+35
+00:02:37,200 --> 00:02:37,620
+way.
+
+36
+00:02:38,400 --> 00:02:41,160
+And then let's also add some padding.
+
+37
+00:02:41,310 --> 00:02:48,450
+Let's do 20 pixels top and bottom for the padding and we'll take care of this these list items in a
+
+38
+00:02:48,450 --> 00:02:48,780
+minute.
+
+39
+00:02:49,680 --> 00:02:51,120
+OK, so we have that.
+
+40
+00:02:52,410 --> 00:02:59,130
+We're also going to add this transition onto the container because we're going to change the padding
+
+41
+00:02:59,130 --> 00:03:02,690
+value when we scroll and we add the active class.
+
+42
+00:03:03,390 --> 00:03:11,400
+Now for the U.S., you say NAV, you well, we want these items, the list items to be in a row.
+
+43
+00:03:11,400 --> 00:03:12,930
+So we'll display flex.
+
+44
+00:03:12,930 --> 00:03:14,780
+That'll automatically put them into a row.
+
+45
+00:03:14,790 --> 00:03:16,800
+We want to get rid of any bullet points.
+
+46
+00:03:17,190 --> 00:03:18,710
+So that's going to be set to none.
+
+47
+00:03:19,170 --> 00:03:24,840
+And let's line items to the center.
+
+48
+00:03:24,840 --> 00:03:33,000
+And that should be it will justify the center as well.
+
+49
+00:03:33,930 --> 00:03:35,370
+And then for the links.
+
+50
+00:03:36,270 --> 00:03:40,920
+So we have our actually, I, I just use NAV here.
+
+51
+00:03:40,920 --> 00:03:46,040
+We want to use the class of NAV because you might have a nav somewhere else, you know.
+
+52
+00:03:47,490 --> 00:03:48,870
+So next is the link.
+
+53
+00:03:48,900 --> 00:03:51,600
+So let's say class nav Maytag's.
+
+54
+00:03:52,080 --> 00:03:58,980
+I'm going to set the color to whites and let's get rid of that underline with text decoration none.
+
+55
+00:04:00,030 --> 00:04:09,240
+And let's spread these out so we'll do a padding of seven pixels, top and bottom, fifteen pixels left
+
+56
+00:04:09,240 --> 00:04:12,360
+and right that'll, you know, separate them out a bit.
+
+57
+00:04:13,800 --> 00:04:15,990
+And then I'm also going to add the transition.
+
+58
+00:04:15,990 --> 00:04:21,030
+I'm going to copy this and put that here as well.
+
+59
+00:04:23,350 --> 00:04:30,700
+All right, so, I mean, we have a sticky now, nav, pretty much all you have to do is is position
+
+60
+00:04:30,700 --> 00:04:34,420
+at fixed like this and it'll stick.
+
+61
+00:04:34,420 --> 00:04:40,250
+But we want to have that effect where when we hit a certain point, it turns white.
+
+62
+00:04:40,300 --> 00:04:42,970
+And it also has a little bit less padding.
+
+63
+00:04:43,460 --> 00:04:47,200
+OK, so when you scroll up and down and we'll give it that effect, so we're going to have a class of
+
+64
+00:04:47,200 --> 00:04:47,920
+active.
+
+65
+00:04:49,510 --> 00:04:49,950
+All right.
+
+66
+00:04:49,960 --> 00:04:54,840
+So let's say class now have class active.
+
+67
+00:04:54,850 --> 00:05:04,600
+So when it's active, I want the background color to be white and we can go ahead and add that right
+
+68
+00:05:04,600 --> 00:05:06,340
+here manually.
+
+69
+00:05:06,370 --> 00:05:11,710
+Let's just add active and now you can see it's white so we can at least see it in style it.
+
+70
+00:05:13,330 --> 00:05:18,970
+And then I'm also going to add let's make the links, the active links black.
+
+71
+00:05:19,570 --> 00:05:25,420
+So now active a set the color to black.
+
+72
+00:05:27,030 --> 00:05:27,510
+All right.
+
+73
+00:05:27,520 --> 00:05:33,550
+And then let's do let's add a box shadow when it's active as well.
+
+74
+00:05:34,300 --> 00:05:46,790
+So box shadow do for the offsets zero and two pixels, 10 pixel blur, Rajiva Black and zero point three
+
+75
+00:05:46,790 --> 00:05:48,490
+is just a little bit of box shadow.
+
+76
+00:05:49,900 --> 00:05:53,650
+Now the container, when it's active, I want to have less padding.
+
+77
+00:05:53,650 --> 00:05:56,520
+It has 20 to begin with.
+
+78
+00:05:56,860 --> 00:05:59,770
+So what I'll do is grab that.
+
+79
+00:05:59,770 --> 00:06:03,730
+And right here, let's say nav
+
+80
+00:06:05,920 --> 00:06:06,850
+active.
+
+81
+00:06:07,060 --> 00:06:12,860
+So the active nav container, I'm going to change it from twenty to ten pixels, right?
+
+82
+00:06:12,910 --> 00:06:18,270
+Now, if I say we can see it's skinnier and then I just want to have the hover, I want it to be ratified,
+
+83
+00:06:18,280 --> 00:06:22,510
+hover or if or if the link has a class of active.
+
+84
+00:06:22,840 --> 00:06:28,030
+In fact, maybe we should call it something different because we call this active so we can call it
+
+85
+00:06:28,030 --> 00:06:28,620
+current.
+
+86
+00:06:29,680 --> 00:06:42,340
+And then what we'll do is say NAV, if the A tag has a class of current or the nav a is being covered,
+
+87
+00:06:43,480 --> 00:06:53,800
+then let's make the color of this hexadecimal see zero three nine to be, which is a red color and we'll
+
+88
+00:06:53,800 --> 00:06:57,130
+make the font weight make that bold.
+
+89
+00:06:57,220 --> 00:06:57,600
+All right.
+
+90
+00:06:57,660 --> 00:07:04,090
+If I say we can see the current link, is that red color and if I hover, it's that red color and that's
+
+91
+00:07:04,090 --> 00:07:07,760
+going to be whether the Navar is white or black, active or not.
+
+92
+00:07:07,780 --> 00:07:12,400
+So I'm going to remove the active class on the NAV now goes back to being black.
+
+93
+00:07:12,790 --> 00:07:17,800
+So what the JavaScript is going to be used for is when we hit a certain point, when we scroll, we
+
+94
+00:07:17,800 --> 00:07:20,470
+want it to turn into the active nav bar.
+
+95
+00:07:20,860 --> 00:07:21,220
+Right.
+
+96
+00:07:21,240 --> 00:07:23,170
+So let's go to our JavaScript here.
+
+97
+00:07:23,470 --> 00:07:24,870
+And this isn't going to be difficult.
+
+98
+00:07:24,880 --> 00:07:26,770
+We're going to bring in our NAV.
+
+99
+00:07:26,770 --> 00:07:35,770
+So let's say Korn's now equals document dot query selector and will select it by the class of NAV.
+
+100
+00:07:36,310 --> 00:07:42,640
+And then we want to add on the window in event listener and we want to listen for a scroll.
+
+101
+00:07:43,360 --> 00:07:46,840
+And when we scroll, we're going to call a function called fixed nav.
+
+102
+00:07:47,680 --> 00:07:53,720
+OK, so down here, let's say function Fixx NAV loops no space.
+
+103
+00:07:55,120 --> 00:07:56,740
+So function fixed nav.
+
+104
+00:07:57,040 --> 00:08:00,550
+And we want to check the the scroll points.
+
+105
+00:08:00,550 --> 00:08:07,450
+So I'm just going to do a console log here of window dots and then scroll y because we're using we're
+
+106
+00:08:07,450 --> 00:08:09,940
+talking about the Y axis which is vertical.
+
+107
+00:08:10,360 --> 00:08:14,560
+So I'm going to open this up and as I scroll you can see it's going to give me that value.
+
+108
+00:08:15,070 --> 00:08:25,040
+And I also want to see the NAV element and check its offset height.
+
+109
+00:08:26,590 --> 00:08:29,590
+So if I scroll, you can see that the nav bars offset high.
+
+110
+00:08:29,590 --> 00:08:32,500
+It's seventy three and it's always going to it's going to stay seventy three.
+
+111
+00:08:33,310 --> 00:08:39,130
+But what we'll do, I want to figure out a point where we want to actually turn this into the active,
+
+112
+00:08:40,180 --> 00:08:41,470
+the active nav bar.
+
+113
+00:08:41,480 --> 00:08:45,040
+So what I'll do is actually do an if statement here.
+
+114
+00:08:45,040 --> 00:08:55,780
+So let's say if and we'll say if the scroll y position is greater than the nav offset height and we'll
+
+115
+00:08:55,780 --> 00:08:57,520
+just add one fifty to that.
+
+116
+00:08:57,520 --> 00:09:00,650
+So that's going to bring it down, you know, to to this area.
+
+117
+00:09:01,120 --> 00:09:08,380
+So if that's true, then let's take the nav and add the class.
+
+118
+00:09:08,380 --> 00:09:12,070
+So classless dot ad of active.
+
+119
+00:09:12,820 --> 00:09:13,110
+Right.
+
+120
+00:09:13,160 --> 00:09:16,300
+So we want to add active and else.
+
+121
+00:09:16,900 --> 00:09:20,790
+So if it's not if it's less than that then we want to remove the class.
+
+122
+00:09:20,800 --> 00:09:22,600
+So we'll just copy.
+
+123
+00:09:22,690 --> 00:09:30,550
+That and instead of ad, we're going to remove, all right, so I'll save that and now I'll start to
+
+124
+00:09:30,550 --> 00:09:31,120
+scroll.
+
+125
+00:09:31,540 --> 00:09:37,960
+And as soon as I hit this point where this is true, where it's the scroll, why value is greater than
+
+126
+00:09:37,960 --> 00:09:42,870
+the offset height plus one 150, then it turns to active.
+
+127
+00:09:43,420 --> 00:09:47,370
+OK, so it's going to take this height plus one, you know, 150.
+
+128
+00:09:47,890 --> 00:09:56,710
+So right around this point right here, OK, it's going to turn and if we go back up, it goes back
+
+129
+00:09:56,710 --> 00:09:57,240
+to normal.
+
+130
+00:09:57,520 --> 00:10:02,500
+So you see this effect a lot on Web sites and there's no need for Junqueira.
+
+131
+00:10:02,520 --> 00:10:04,740
+There's no need for any extra library.
+
+132
+00:10:04,750 --> 00:10:06,010
+It's very, very simple.
+
+133
+00:10:06,760 --> 00:10:12,200
+So you can use this for, you know, your Web sites and user interfaces from now on.
+
+134
+00:10:12,640 --> 00:10:13,210
+So that's it.
+
+135
+00:10:13,220 --> 00:10:18,220
+Hopefully this helps you out and, you know, gives you something you can use in the future.
+
+136
+00:10:18,490 --> 00:10:19,190
+And that's it.
+
+137
+00:10:19,210 --> 00:10:19,950
+Thanks for watching.
+
+138
+00:10:19,960 --> 00:10:21,340
+I'll see you in the next project.

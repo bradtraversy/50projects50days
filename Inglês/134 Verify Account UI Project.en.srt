@@ -1,0 +1,675 @@
+1
+00:00:00,060 --> 00:00:05,400
+OK, so let's start on our HTML here, and I have my browser a little wider than usual just because
+
+2
+00:00:05,400 --> 00:00:06,910
+of the width of the UI.
+
+3
+00:00:07,290 --> 00:00:13,290
+So in the title, I'm just going to change that to verify counts.
+
+4
+00:00:13,290 --> 00:00:17,660
+And down here, we're going to have a container.
+
+5
+00:00:20,040 --> 00:00:27,990
+And in this container, let's do an H2 and just say verify your account and then a paragraph and I'm
+
+6
+00:00:27,990 --> 00:00:35,250
+going to just copy and paste that paragraph in which basically just says, you know, we emailed you
+
+7
+00:00:35,250 --> 00:00:42,150
+a six digit code, enter the code below, and then let's do a code dash container, which is going to
+
+8
+00:00:42,150 --> 00:00:45,480
+wrap around the code, which is going to be six inputs.
+
+9
+00:00:45,870 --> 00:00:51,630
+So let's say input and let's give this a class of code, except it's not going to be text, it's going
+
+10
+00:00:51,630 --> 00:01:02,220
+to be a number type and we're going to add a placeholder of zero and then let's set a minimum and a
+
+11
+00:01:02,220 --> 00:01:02,670
+Mac.
+
+12
+00:01:02,690 --> 00:01:06,360
+So on a number input, we can set a minimum, which is going to be zero.
+
+13
+00:01:06,660 --> 00:01:13,070
+And Max, let's set that to nine and let's make this required, OK?
+
+14
+00:01:13,070 --> 00:01:14,280
+And then I'm gonna copy this down.
+
+15
+00:01:14,280 --> 00:01:16,660
+That's two, three, four or five, six.
+
+16
+00:01:16,690 --> 00:01:23,840
+So we want six total and then outside of the the code container still within the regular container.
+
+17
+00:01:23,850 --> 00:01:26,220
+Let's do a small tag with a class of info.
+
+18
+00:01:26,730 --> 00:01:32,130
+And in here I'm just going to paste in some text and basically just says, you know, this is the design
+
+19
+00:01:32,130 --> 00:01:38,370
+only we don't actually take your email, we don't have your email and that should do it for the HTML.
+
+20
+00:01:38,380 --> 00:01:42,780
+So let's jump into our stylesheet here and I'm going to use the Molay font.
+
+21
+00:01:43,530 --> 00:01:57,270
+So success question mark and set the family to emulate I and then say Colen 300 for the weight 700.
+
+22
+00:01:57,810 --> 00:02:00,840
+And then we're going to change that here as well.
+
+23
+00:02:02,820 --> 00:02:06,510
+And let's just add a very light background color to the body.
+
+24
+00:02:06,960 --> 00:02:14,550
+So for that we're going to do hexadecimal F, B, F, C do CFT.
+
+25
+00:02:15,180 --> 00:02:17,310
+OK, so not much of a difference.
+
+26
+00:02:17,310 --> 00:02:19,290
+It's just it's a light gray, very light gray.
+
+27
+00:02:19,860 --> 00:02:21,410
+And we can get rid of flex direction.
+
+28
+00:02:21,420 --> 00:02:21,870
+Whoops.
+
+29
+00:02:21,900 --> 00:02:27,210
+Didn't want to do that and get rid of Flex Direction column, which I just did.
+
+30
+00:02:28,350 --> 00:02:32,100
+And then the rest of that can stay container.
+
+31
+00:02:32,760 --> 00:02:35,070
+So container wraps around everything.
+
+32
+00:02:36,330 --> 00:02:45,660
+And for that I want to do a background color of white and then let's do a border of three pixels, black
+
+33
+00:02:45,660 --> 00:02:53,670
+and solid, and we'll give it some rounded corners of border radius, ten pixels to add some padding,
+
+34
+00:02:54,330 --> 00:02:55,650
+gives them some space in there.
+
+35
+00:02:56,130 --> 00:03:04,770
+So padding will be thirty pixels and let's do a max width for this container of will do 1000 pixels
+
+36
+00:03:05,130 --> 00:03:12,030
+and then let's text align everything to the center and that should do it for the container.
+
+37
+00:03:12,030 --> 00:03:20,700
+Now for the code container which wraps around these right here, all these inputs do that code container.
+
+38
+00:03:24,150 --> 00:03:29,550
+And we're going to display flex, so we're going to make this a flex box, which will make all the items,
+
+39
+00:03:29,550 --> 00:03:33,480
+all the inputs, flex items, and I want a line to the center.
+
+40
+00:03:34,920 --> 00:03:38,270
+So we want line items and justify content to the center.
+
+41
+00:03:38,970 --> 00:03:45,060
+And let's also just add a margin to the container, 40 pixels on the top and bottom.
+
+42
+00:03:45,810 --> 00:03:49,680
+OK, now we want to do each individual input, which has a class of code.
+
+43
+00:03:50,310 --> 00:03:54,590
+So I'm going to set the border radius to five pixels.
+
+44
+00:03:54,600 --> 00:03:57,830
+I'm going to make the font size much bigger.
+
+45
+00:03:57,840 --> 00:04:08,910
+So 75 pixels and we'll give this fixed height of, let's say, 120 and a with of 100 pixels.
+
+46
+00:04:10,180 --> 00:04:15,960
+And then for the for the border, let's do border one pixel and we're going to make it really light.
+
+47
+00:04:15,960 --> 00:04:19,960
+So we'll do solid and then triple E.
+
+48
+00:04:21,150 --> 00:04:22,790
+OK, so very faint border.
+
+49
+00:04:22,800 --> 00:04:27,620
+And then for the margin, I'm just going to do a one on one percent margin.
+
+50
+00:04:28,200 --> 00:04:29,860
+So kind of break them up a little bit.
+
+51
+00:04:29,880 --> 00:04:30,740
+Texta line.
+
+52
+00:04:30,750 --> 00:04:32,340
+Obviously we want the numbers in the middle.
+
+53
+00:04:32,340 --> 00:04:33,810
+So text align center.
+
+54
+00:04:34,770 --> 00:04:44,190
+Let's set the font weight, make sure that that is set to 300 and then I think that's it.
+
+55
+00:04:45,510 --> 00:04:47,100
+So that looks pretty good.
+
+56
+00:04:47,350 --> 00:04:49,760
+We're going to get rid of these arrows here.
+
+57
+00:04:49,770 --> 00:04:50,850
+I don't want those.
+
+58
+00:04:51,660 --> 00:04:57,360
+The way we can do that is by taking the class of code, which is the input, and then colon, colon
+
+59
+00:04:57,660 --> 00:05:00,030
+dash, web kit dash.
+
+60
+00:05:01,900 --> 00:05:02,330
+What is it?
+
+61
+00:05:02,350 --> 00:05:07,330
+Outer outer spin button, and then we want the inner spin button as well.
+
+62
+00:05:07,360 --> 00:05:17,080
+So code colon, colon dash, web kit dash, inner spin button and we're going to set dash web kits,
+
+63
+00:05:17,710 --> 00:05:19,480
+appearance to none.
+
+64
+00:05:19,660 --> 00:05:22,400
+And let's set margin to zero.
+
+65
+00:05:22,810 --> 00:05:25,390
+So if I do that now, you can see that those are gone.
+
+66
+00:05:25,450 --> 00:05:29,850
+However, that's going to be chrome and safari to get rid of those arrows on Firefox.
+
+67
+00:05:29,890 --> 00:05:38,740
+We can go right into code, into the code class and use Mozi Dash appearance and we can set it to TextField
+
+68
+00:05:39,970 --> 00:05:42,680
+so that should get rid of the arrows on Firefox.
+
+69
+00:05:43,210 --> 00:05:45,520
+Now when I click in here we put something.
+
+70
+00:05:48,410 --> 00:05:54,050
+I already had zero in there, if I put a number in here and go to the next one, I want this to have
+
+71
+00:05:54,050 --> 00:06:00,790
+like a box shadow around it and change the border color so we can do that by using the valid state.
+
+72
+00:06:00,800 --> 00:06:12,890
+So if we take the input of code and say Colen valid, let's do a border color of three four nine eight
+
+73
+00:06:13,490 --> 00:06:18,140
+DB and then let's change our let's add a box shadow.
+
+74
+00:06:19,250 --> 00:06:29,230
+So Box Shadow will do zero 10 pixel offsets, 10 pixel blur negative five pixel and then legba.
+
+75
+00:06:29,240 --> 00:06:37,010
+So the color got the X, the color is going to be black with zero point two five for the alpha.
+
+76
+00:06:37,340 --> 00:06:41,740
+So now if it has the number in it, you'll see that it has this border.
+
+77
+00:06:41,750 --> 00:06:43,640
+It also has the box shadow.
+
+78
+00:06:45,290 --> 00:06:50,690
+Now for the for this down here, I'm just going to add a little bit of style to that which has the class
+
+79
+00:06:50,690 --> 00:06:51,380
+of info.
+
+80
+00:06:52,310 --> 00:06:57,440
+So out of background color of E.A. three times.
+
+81
+00:06:59,010 --> 00:07:05,360
+And let's let's display this as an inline block because it's a it's a small tag, so it's displayed
+
+82
+00:07:05,360 --> 00:07:06,650
+in line by default.
+
+83
+00:07:07,160 --> 00:07:17,960
+And I'm going to add padding to it of ten pixels and let's do a line height of twenty pixels and let's
+
+84
+00:07:17,960 --> 00:07:22,810
+do a max width of 400 pixels.
+
+85
+00:07:22,820 --> 00:07:28,960
+So just kind of squeeze in and we'll change the let's do color seven seven seven.
+
+86
+00:07:30,200 --> 00:07:31,070
+So it's very light.
+
+87
+00:07:32,000 --> 00:07:38,030
+And also a border radius will make its border radius five pixels.
+
+88
+00:07:39,590 --> 00:07:47,840
+OK, now I do want to have this wrap because if we you know, if we make this smaller, just kind of
+
+89
+00:07:47,840 --> 00:07:48,680
+cuts off.
+
+90
+00:07:49,490 --> 00:07:57,650
+So what we'll do is just add let's add a media query here, so say media, and let's do a max width
+
+91
+00:07:57,650 --> 00:08:00,430
+of 600 pixels.
+
+92
+00:08:01,160 --> 00:08:10,520
+So when this is six hundred pixels or less, let's take the code container and set Fleck's wrap to rap.
+
+93
+00:08:10,850 --> 00:08:12,890
+So that way it goes on to the next line.
+
+94
+00:08:13,610 --> 00:08:17,800
+And then I'm also going to shrink the inputs a little bit.
+
+95
+00:08:17,810 --> 00:08:25,280
+So code, let's set the font size, which I think is 75 by default, will set it to 60.
+
+96
+00:08:25,970 --> 00:08:31,040
+And the height, which I think is 100, will set that to 80 or it's 120.
+
+97
+00:08:31,040 --> 00:08:38,540
+I believe we'll set that to 80 and then let's set a max width of 70 pixels.
+
+98
+00:08:38,720 --> 00:08:40,340
+OK, so it'll make it a little smaller.
+
+99
+00:08:42,140 --> 00:08:48,620
+You know, rap, all right, so that's it for the success of the JavaScript isn't going to be too bad.
+
+100
+00:08:49,640 --> 00:08:55,970
+What we want to do, though, is make it so when I click in here and I put it, I type a number and
+
+101
+00:08:55,970 --> 00:08:57,250
+then I type another number.
+
+102
+00:08:57,440 --> 00:08:59,480
+I don't want it to be in the same box.
+
+103
+00:08:59,480 --> 00:09:02,770
+I want it to be in the next one so we can quickly just type the code in.
+
+104
+00:09:03,380 --> 00:09:03,800
+All right.
+
+105
+00:09:03,810 --> 00:09:11,150
+So let's jump into our JavaScript and let's bring in the inputs so we'll say const codes because they
+
+106
+00:09:11,180 --> 00:09:16,670
+all the class of code and we're going to use document dot, query selector, all because there's more
+
+107
+00:09:16,670 --> 00:09:18,260
+than one that we want to grab.
+
+108
+00:09:18,620 --> 00:09:22,340
+So the class of code that will put these into a node list.
+
+109
+00:09:22,890 --> 00:09:25,150
+Now, we initially want to focus on the first one.
+
+110
+00:09:25,160 --> 00:09:29,360
+So just like an array with a node list, I can take an index.
+
+111
+00:09:29,390 --> 00:09:34,180
+I want zero, which is the first one, and I'm going to call the focus method.
+
+112
+00:09:34,580 --> 00:09:40,370
+So as soon as I do that and when we come to the page, it's going to automatically put the cursor in
+
+113
+00:09:40,370 --> 00:09:45,050
+there, because when we come to the page, we wanted to just go right into the first one and then as
+
+114
+00:09:45,050 --> 00:09:48,670
+we type go across, you know, across these inputs.
+
+115
+00:09:49,220 --> 00:09:53,930
+So next thing we'll do is take the codes and we can loop through with a foreach.
+
+116
+00:09:54,500 --> 00:10:01,940
+So I'm going to say for each code and I'm also going to grab the index of each code, each input, and
+
+117
+00:10:01,940 --> 00:10:03,310
+I want to add an event listener.
+
+118
+00:10:03,320 --> 00:10:05,150
+So code add event listener.
+
+119
+00:10:05,810 --> 00:10:07,790
+I want to listen for the key down event.
+
+120
+00:10:09,260 --> 00:10:13,010
+And when that happens, we're going to run a function with an event object.
+
+121
+00:10:14,450 --> 00:10:22,010
+And I want to just check to see if the key so I can take this event object and say, Dorcy.
+
+122
+00:10:22,490 --> 00:10:30,830
+So if that is greater than or equal to zero and I also want to check to see if it's less than nine.
+
+123
+00:10:30,830 --> 00:10:36,540
+So e dot key if that's less than or equal to nine.
+
+124
+00:10:37,100 --> 00:10:41,210
+Now, if that happens, I want to then move to the next one.
+
+125
+00:10:41,220 --> 00:10:48,110
+So if I type like two in here, I want this to focus on the next code and the next input so we can do
+
+126
+00:10:48,110 --> 00:10:53,720
+that by taking codes, which is a node list or basically an array.
+
+127
+00:10:54,020 --> 00:10:58,210
+And we want to set, let's say, index.
+
+128
+00:10:58,490 --> 00:11:03,170
+So when we loop through, we have an index that starts at zero, then the next one will be one, two
+
+129
+00:11:03,170 --> 00:11:03,800
+and so on.
+
+130
+00:11:04,020 --> 00:11:07,970
+We just want to add one to that index and we want to focus on that one.
+
+131
+00:11:09,590 --> 00:11:13,910
+Now, if I go down here and I do that, it does move to the next one.
+
+132
+00:11:13,910 --> 00:11:14,480
+But notice it.
+
+133
+00:11:15,110 --> 00:11:19,880
+Whatever I hit, which was a three in this case, it goes into the second one here.
+
+134
+00:11:19,880 --> 00:11:22,280
+If I hit it again, I mean, that works.
+
+135
+00:11:22,280 --> 00:11:28,250
+But for that first one, we want it to go in that first box so we can just add a little set time out
+
+136
+00:11:28,250 --> 00:11:32,570
+here and wait, you know, ten milliseconds or so and then do it.
+
+137
+00:11:32,580 --> 00:11:35,450
+So set time out, which takes in a function.
+
+138
+00:11:36,860 --> 00:11:41,810
+So I'm just going to take this and put that here.
+
+139
+00:11:41,810 --> 00:11:45,530
+Since it's a one liner, we don't need curly braces and then set time.
+
+140
+00:11:45,530 --> 00:11:49,640
+I'll take the second argument of the time out, which is going to be for us.
+
+141
+00:11:49,640 --> 00:11:51,200
+We'll just say ten milliseconds.
+
+142
+00:11:51,500 --> 00:11:57,380
+So that way if I go down here and I put something in here, it waits and then it allows us to put the
+
+143
+00:11:57,380 --> 00:12:00,590
+number in the first one and then we can keep going.
+
+144
+00:12:00,980 --> 00:12:08,300
+Now, if we hit delete, I want it's not doing anything now, but I want it to go back to the one before
+
+145
+00:12:08,300 --> 00:12:08,480
+it.
+
+146
+00:12:08,720 --> 00:12:11,420
+If, you know, if we mess up and we need to put a different number.
+
+147
+00:12:11,420 --> 00:12:19,730
+And so let's do an else if and I want to check to see if the delete button is hit or the backspace key.
+
+148
+00:12:19,730 --> 00:12:21,920
+So let's say e dot key.
+
+149
+00:12:22,520 --> 00:12:30,920
+If it is equal to backspace, which with an uppercase B, then I want to do the same thing that I did
+
+150
+00:12:30,920 --> 00:12:36,280
+here, except I want to do index minus one to move backwards.
+
+151
+00:12:36,290 --> 00:12:42,350
+So now if I do like three, five, six and then say I messed up with the six, I can go back.
+
+152
+00:12:43,130 --> 00:12:49,310
+However, this gets kind of messy because now if I hit delete again to try to delete that six, it goes
+
+153
+00:12:49,310 --> 00:12:50,420
+back to the next one.
+
+154
+00:12:50,630 --> 00:12:52,550
+And then I end up with two numbers there.
+
+155
+00:12:52,550 --> 00:12:54,880
+So it's still it's kind of messed up right now.
+
+156
+00:12:55,640 --> 00:12:57,890
+So this is a really easy fix.
+
+157
+00:12:57,890 --> 00:13:05,450
+What we can do is as soon as we hit, you know, a number here, we want to basically just clear it
+
+158
+00:13:05,450 --> 00:13:08,300
+out so we can take, we'll say codes.
+
+159
+00:13:08,600 --> 00:13:15,920
+And then whatever the current index is, we're going to set the value to an empty string to just nothing.
+
+160
+00:13:16,040 --> 00:13:22,130
+So now if I do like two, seven, six, and let's say that six was a mistake, I can hit backspace and
+
+161
+00:13:22,130 --> 00:13:24,490
+then hit another number and it will replace it.
+
+162
+00:13:25,010 --> 00:13:31,940
+OK, five backspace, change that to a seven, three, four and then whatever, whatever you would have
+
+163
+00:13:31,940 --> 00:13:33,530
+happen after you enter the code.
+
+164
+00:13:33,530 --> 00:13:35,080
+This is just the UI part of it.
+
+165
+00:13:35,780 --> 00:13:36,230
+All right.
+
+166
+00:13:36,230 --> 00:13:41,240
+So, yeah, hopefully you guys enjoyed this and we shouldn't end up.
+
+167
+00:13:41,300 --> 00:13:46,880
+With two numbers in any of the spaces, no matter how fast we type or anything like that.
+
+168
+00:13:47,270 --> 00:13:48,070
+All right, so that's it.
+
+169
+00:13:48,080 --> 00:13:50,390
+Let's go ahead and move on to the next project.

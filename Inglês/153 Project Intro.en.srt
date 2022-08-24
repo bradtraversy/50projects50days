@@ -1,0 +1,63 @@
+1
+00:00:00,210 --> 00:00:05,040
+All right, and this project, we're going to build a random image feed where we come to the page and
+
+2
+00:00:05,040 --> 00:00:11,010
+it's just going to get a bunch of random images for us and we'll be able to, in the JavaScript, put
+
+3
+00:00:11,010 --> 00:00:12,780
+in the number of rows we want here.
+
+4
+00:00:12,780 --> 00:00:18,660
+I have five rows of images, three in each column or three columns in each row, I should say.
+
+5
+00:00:18,930 --> 00:00:21,050
+And we're not using any kind of API or anything.
+
+6
+00:00:21,060 --> 00:00:29,340
+What we're going to do is get the images from this this neutral source start on, splash dot com random,
+
+7
+00:00:29,580 --> 00:00:34,360
+and then you can put slash and then a size like 300 by 300.
+
+8
+00:00:34,860 --> 00:00:41,670
+OK, if I put, let's say 300 by three one, that's going to give me a different image.
+
+9
+00:00:42,570 --> 00:00:49,470
+And what we'll do is have that size will generate a random size and then insert those images into the
+
+10
+00:00:49,470 --> 00:00:50,880
+dorm using JavaScript.
+
+11
+00:00:50,890 --> 00:00:55,260
+So no API, no no feature requests or anything like that.
+
+12
+00:00:55,440 --> 00:00:58,290
+We're just going to insert random images into the dorm.
+
+13
+00:00:58,310 --> 00:01:00,150
+So this will be a very short project.
+
+14
+00:01:00,150 --> 00:01:03,390
+We can probably get it done in like a ten minute video.
+
+15
+00:01:03,480 --> 00:01:03,810
+All right.
+
+16
+00:01:03,810 --> 00:01:04,640
+So let's get started.

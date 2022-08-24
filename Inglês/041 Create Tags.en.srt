@@ -1,0 +1,323 @@
+1
+00:00:00,090 --> 00:00:05,160
+All right, so in this video, we want to create our tags, we want to be able to type in here and split
+
+2
+00:00:05,160 --> 00:00:07,630
+by a comma and create tags below.
+
+3
+00:00:08,130 --> 00:00:12,960
+So one thing I want to do in this case, though, is on the H3, I'm just going to add a text, a line
+
+4
+00:00:12,960 --> 00:00:13,590
+of center.
+
+5
+00:00:13,590 --> 00:00:15,960
+And just to center that, I think that looks a little better.
+
+6
+00:00:16,500 --> 00:00:22,290
+And then in our script file, we want to get the tags element, which is this right here, this div
+
+7
+00:00:22,290 --> 00:00:23,700
+with the idea of tags.
+
+8
+00:00:24,000 --> 00:00:32,190
+So let's call this tags Al and set that document get element by D and we want the idea of tags.
+
+9
+00:00:32,580 --> 00:00:34,560
+And then I also want the text area.
+
+10
+00:00:35,610 --> 00:00:46,140
+So we have an I.D. of text area and let's call this text area and those are the only two things you
+
+11
+00:00:46,140 --> 00:00:47,000
+want to bring in.
+
+12
+00:00:47,010 --> 00:00:50,760
+So then I want to automatically focus on the text area.
+
+13
+00:00:50,760 --> 00:00:56,190
+So we're going to call the focus method, which if we go to the page, it'll automatically put the cursor
+
+14
+00:00:56,190 --> 00:00:58,020
+in there and we can start typing.
+
+15
+00:00:58,650 --> 00:01:01,540
+Now we want an event listener on the text area.
+
+16
+00:01:01,550 --> 00:01:06,080
+So add event listener and we want to listen for a key up.
+
+17
+00:01:06,090 --> 00:01:07,640
+So you've key down and key up.
+
+18
+00:01:07,650 --> 00:01:11,930
+We're listening when when you press down and then you let go, that's going to fire this off.
+
+19
+00:01:12,420 --> 00:01:16,050
+And when that happens, it's passed in our event parameter here.
+
+20
+00:01:17,430 --> 00:01:23,670
+When that happens, we're going to call a function called create tags and we want to pass in each target
+
+21
+00:01:24,360 --> 00:01:27,120
+dot value, which is going to be whatever we type in.
+
+22
+00:01:27,330 --> 00:01:36,990
+So if we create a function called create tags, say input and we console log the input we got down here
+
+23
+00:01:36,990 --> 00:01:41,280
+and we open up our console and I start to type, you should see what we type down here.
+
+24
+00:01:42,510 --> 00:01:42,890
+All right.
+
+25
+00:01:43,470 --> 00:01:48,900
+Now, the way we're going to do this is we want to take whatever, whatever we type in.
+
+26
+00:01:48,900 --> 00:01:50,150
+And then we put a comma.
+
+27
+00:01:50,730 --> 00:01:57,930
+We want to split at that comma and create an array of, you know, whatever is on either side of these
+
+28
+00:01:57,930 --> 00:01:58,380
+comments.
+
+29
+00:01:58,380 --> 00:02:01,280
+So this would create an array with this as the first value.
+
+30
+00:02:01,290 --> 00:02:04,170
+This is the second we can do that using split.
+
+31
+00:02:04,560 --> 00:02:10,230
+So let's say const tags and let's set that to input, which is a string.
+
+32
+00:02:10,530 --> 00:02:15,210
+We want to split it by the comma and turn it into an array.
+
+33
+00:02:15,240 --> 00:02:22,740
+So now if a console log here tags and I go and I say, let's just put a one in here, oops.
+
+34
+00:02:22,920 --> 00:02:23,780
+What happens?
+
+35
+00:02:24,150 --> 00:02:25,710
+Split is not a function.
+
+36
+00:02:26,730 --> 00:02:28,500
+So split I put a one.
+
+37
+00:02:28,680 --> 00:02:33,000
+You can see we have an array with one value of one, which is a string.
+
+38
+00:02:33,300 --> 00:02:36,600
+If I put a two it's going to just be an array with a 12.
+
+39
+00:02:36,600 --> 00:02:42,810
+But if I put a comma and then a two, then we have of an array with two values, one and two.
+
+40
+00:02:42,990 --> 00:02:44,710
+So it's going to split it by the comma.
+
+41
+00:02:45,150 --> 00:02:47,850
+Now, I don't want to be able to have space like that.
+
+42
+00:02:48,060 --> 00:02:56,190
+So what we'll do is add on to this dot filter and filter is also a high order array method that allows
+
+43
+00:02:56,190 --> 00:03:00,820
+you to return certain things based on a conditional.
+
+44
+00:03:01,110 --> 00:03:08,310
+So we'll say for each tag, let's say tag, dot, trem, which will just trim off any white space,
+
+45
+00:03:08,310 --> 00:03:14,070
+if that is not equal to an empty string, then will return that.
+
+46
+00:03:14,070 --> 00:03:17,510
+And then we just want a map which will just manipulate the array.
+
+47
+00:03:17,940 --> 00:03:24,390
+So for each tag we want to return an array with the tag, but we want to trim.
+
+48
+00:03:24,660 --> 00:03:26,740
+So we're just saying it can't be an empty string.
+
+49
+00:03:26,760 --> 00:03:29,280
+Also, we're going to trim any white space.
+
+50
+00:03:29,350 --> 00:03:35,250
+Now, if I save that and I do one space, you can see that it's not actually added the spaces.
+
+51
+00:03:35,250 --> 00:03:40,920
+And in there I can put comma to space and the space is not added in there.
+
+52
+00:03:42,420 --> 00:03:48,240
+And if I just do like comma and then another comma, it doesn't add another, it doesn't do anything
+
+53
+00:03:48,360 --> 00:03:49,420
+because of our filter.
+
+54
+00:03:50,220 --> 00:03:50,610
+All right.
+
+55
+00:03:50,610 --> 00:03:57,930
+So now that we've established that, let's get these tags put into our HTML, so we'll get rid of that
+
+56
+00:03:57,930 --> 00:04:01,020
+and let's take the tags element and clear it.
+
+57
+00:04:02,430 --> 00:04:04,230
+Otherwise they're just going to pile up.
+
+58
+00:04:04,260 --> 00:04:10,860
+So before we do anything, we'll just clear that and then we'll take our tags, which is an array.
+
+59
+00:04:10,860 --> 00:04:14,730
+And we want to loop through loops with for each.
+
+60
+00:04:15,030 --> 00:04:16,770
+For each.
+
+61
+00:04:17,820 --> 00:04:27,180
+So for each tag, let's create a tag element with document dot create element.
+
+62
+00:04:27,180 --> 00:04:28,670
+And we want to create a span.
+
+63
+00:04:29,850 --> 00:04:31,680
+We also want to add a class to that.
+
+64
+00:04:31,690 --> 00:04:36,930
+So let's take the tag element and let's classless dot add.
+
+65
+00:04:38,520 --> 00:04:46,320
+Class of tag, and then we want to set the entire text of that, so we'll take the tag element and set
+
+66
+00:04:46,320 --> 00:04:51,990
+the entire text to whatever the tag is, because we're looping through it here.
+
+67
+00:04:52,290 --> 00:04:55,160
+We get each one and we're going to put that as the inner text.
+
+68
+00:04:55,170 --> 00:04:57,990
+And then finally, we want to take the tags element.
+
+69
+00:04:58,350 --> 00:04:59,870
+So make sure you have the S here.
+
+70
+00:04:59,880 --> 00:05:07,200
+This is the the idea of, you know, the div with the idea of tags and we want to append child and we're
+
+71
+00:05:07,200 --> 00:05:09,800
+going to add each of those tag elements in.
+
+72
+00:05:10,320 --> 00:05:12,330
+So if I go ahead and I do.
+
+73
+00:05:12,720 --> 00:05:13,400
+Hello.
+
+74
+00:05:14,220 --> 00:05:15,570
+So it starts to type down.
+
+75
+00:05:15,570 --> 00:05:21,950
+There is a tag, if I do a comma and I put in a world, that's going to be the second tag.
+
+76
+00:05:21,960 --> 00:05:24,000
+So it's going to separate it by the commas.
+
+77
+00:05:24,780 --> 00:05:25,140
+All right.
+
+78
+00:05:25,150 --> 00:05:28,770
+So we have the ability to create these tags.
+
+79
+00:05:28,980 --> 00:05:35,310
+What we want to do next is have the ability to hit, enter and then have it randomly select.
+
+80
+00:05:35,310 --> 00:05:39,170
+And it's going to highlight and it'll give that cool little animation as well.
+
+81
+00:05:39,480 --> 00:05:41,130
+So we'll do that in the next video.

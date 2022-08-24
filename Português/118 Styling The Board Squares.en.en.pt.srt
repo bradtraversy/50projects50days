@@ -1,0 +1,243 @@
+﻿1
+00:00:00,390 --> 00:00:03,150
+OK, vamos em frente e começar neste projeto de hoverboard.
+
+2
+00:00:03,180 --> 00:00:11,010
+Então, no HTML aqui, vamos mudar o título para hoverboard e tudo o que teremos neste HTML
+
+3
+00:00:11,010 --> 00:00:17,070
+é uma classe de container, pois neste container teremos um monte de divs com a classe
+
+4
+00:00:17,070 --> 00:00:19,430
+de quadrado como este.
+
+5
+00:00:19,440 --> 00:00:26,550
+Na verdade, o que vou fazer é só colocar um pouco aqui agora, mas depois vamos nos livrar desses
+
+6
+00:00:26,550 --> 00:00:31,320
+porque eles serão inseridos via JavaScript e vamos definir uma certa quantidade de quadrados
+
+7
+00:00:31,320 --> 00:00:32,870
+para ser pintado na tela.
+
+8
+00:00:33,180 --> 00:00:41,370
+Então, por enquanto, vamos jogar isso e vamos pular para nossa folha de estilo e vamos ver o corpo
+
+9
+00:00:41,370 --> 00:00:41,790
+aqui.
+
+10
+00:00:41,800 --> 00:00:46,560
+Vamos definir um plano de fundo e eu vou definir isso para um.
+
+11
+00:00:46,560 --> 00:00:47,100
+Um á um.
+
+12
+00:00:50,780 --> 00:00:57,740
+Então, quer dizer, isso realmente não importa, mas não estamos tendo nenhuma briga aqui, se você quiser adicionar algumas
+
+13
+00:00:57,740 --> 00:01:00,530
+texto ou algo assim, você pode, mas eu vou me livrar de tudo isso.
+
+14
+00:01:00,540 --> 00:01:02,620
+Não precisamos disso, está bem?
+
+15
+00:01:02,630 --> 00:01:04,760
+E então vamos exibir flex.
+
+16
+00:01:05,600 --> 00:01:11,080
+E não precisamos do Collum só para colocar tudo no meio.
+
+17
+00:01:11,090 --> 00:01:11,930
+Nós vamos manter isso.
+
+18
+00:01:12,380 --> 00:01:17,390
+E então temos o container, que na verdade deu uma classe.
+
+19
+00:01:17,390 --> 00:01:17,930
+Vamos.
+
+20
+00:01:19,850 --> 00:01:27,530
+Vamos dar um ID também, então um contêiner de ID, porque vou usar isso para o JavaScript
+
+21
+00:01:28,220 --> 00:01:38,880
+e então aqui, digamos class container e queremos exibir flex na verdade antes de fazermos o container.
+
+22
+00:01:38,900 --> 00:01:40,130
+Vamos fazer os quadrados.
+
+23
+00:01:40,820 --> 00:01:50,300
+Vou comentar isso por um segundo e então vamos adicionar nossa classe quadrada e definir um plano de fundo
+
+24
+00:01:50,510 --> 00:01:54,210
+cor e cor de fundo.
+
+25
+00:01:54,230 --> 00:01:59,900
+Vou definir isso para hexadecimal um D três vezes.
+
+26
+00:02:01,760 --> 00:02:04,080
+Então vamos ver.
+
+27
+00:02:04,140 --> 00:02:06,190
+Não podemos ver nada ainda.
+
+28
+00:02:06,200 --> 00:02:16,100
+Vamos adicionar uma sombra de caixa de zero zero para os deslocamentos para desfoque de pixel e preto.
+
+29
+00:02:20,400 --> 00:02:26,760
+OK, e então para podermos ver os quadrados, temos que adicionar a altura e a largura.
+
+30
+00:02:26,760 --> 00:02:33,230
+Então, vamos dar a eles uma altura e largura de 16 pixels.
+
+31
+00:02:33,690 --> 00:02:39,240
+Então vamos fazer a altura, largura de 16.
+
+32
+00:02:39,240 --> 00:02:39,450
+Bom.
+
+33
+00:02:39,450 --> 00:02:41,940
+Então agora podemos pelo menos ver os quadrados.
+
+34
+00:02:42,760 --> 00:02:46,240
+Vou apenas adicionar uma margem de dois pixels também.
+
+35
+00:02:46,240 --> 00:02:50,570
+Basta separá-los um pouco e vamos querer fazer a transição.
+
+36
+00:02:50,580 --> 00:02:55,050
+Então, finalmente, vamos pintá-los na tela e fazer com que quando
+
+37
+00:02:55,050 --> 00:03:02,110
+a gente entra ele fica com uma determinada cor, uma cor aleatória, e quando sai, ele se livra dessa cor.
+
+38
+00:03:02,110 --> 00:03:05,930
+E queremos que isso aconteça com um pequeno efeito de fade.
+
+39
+00:03:06,360 --> 00:03:16,290
+Então, vou adicionar uma transição aqui para, digamos, dois segundos de facilidade e também vamos definir para o
+
+40
+00:03:16,290 --> 00:03:17,490
+tampa quadrada.
+
+41
+00:03:19,260 --> 00:03:28,590
+Então, quando passarmos o mouse sobre ele, definirei a duração da transição para zero segundos para que tenhamos
+
+42
+00:03:28,590 --> 00:03:35,520
+um efeito onde quando passamos o mouse sobre ele, ele imediatamente acende.
+
+43
+00:03:35,970 --> 00:03:42,630
+E então, quando terminarmos, levará basicamente dois segundos para que a cor desapareça.
+
+44
+00:03:42,630 --> 00:03:44,310
+Então vai ter aquele efeito de fade.
+
+45
+00:03:44,870 --> 00:03:49,320
+OK, não vamos ver isso ainda, mas vamos chegar a isso.
+
+46
+00:03:49,770 --> 00:03:52,920
+Então veja o container, queremos exibir o Flex.
+
+47
+00:03:52,920 --> 00:03:55,860
+Assim que eu fizer isso, ele será exibido em uma linha.
+
+48
+00:03:56,520 --> 00:04:03,120
+E eu só quero definir itens de linha para centralizar e justificar o conteúdo para centralizar.
+
+49
+00:04:03,570 --> 00:04:05,360
+E eu quero isso para embrulhar.
+
+50
+00:04:05,380 --> 00:04:11,180
+Então vamos definir flex wrap para wrap.
+
+51
+00:04:12,220 --> 00:04:17,400
+Não vamos ver diferença agora porque não temos tantas caixas, mas queremos dar
+
+52
+00:04:17,400 --> 00:04:21,930
+esta uma largura máxima de 400 pixels.
+
+53
+00:04:22,860 --> 00:04:26,610
+OK, então, se for além disso, deve passar para a próxima linha.
+
+54
+00:04:26,610 --> 00:04:33,250
+Então, apenas para testar isso, vamos pegar estes e vamos criar um monte deles e salvar.
+
+55
+00:04:33,250 --> 00:04:39,120
+E agora você pode ver quando passar dos 400 pixels ou o que quer que seja, ele vai passar para a próxima linha.
+
+56
+00:04:40,020 --> 00:04:41,460
+OK, então isso parece bom.
+
+57
+00:04:43,980 --> 00:04:46,240
+Acho que é tudo o que precisamos fazer para a temporada.
+
+58
+00:04:46,290 --> 00:04:52,860
+Então, vamos limpar todos esses quadrados, porque como eu disse, vamos pintá-los com o JavaScript
+
+59
+00:04:52,860 --> 00:04:55,980
+dependendo, você sabe, o que definimos para a quantidade de quadrados.
+
+60
+00:04:56,430 --> 00:04:59,070
+E isso é tudo o que precisamos é apenas um contêiner.
+
+61
+00:04:59,370 --> 00:05:03,480
+Então, no próximo vídeo, vamos pular para o nosso JavaScript e começar com isso.

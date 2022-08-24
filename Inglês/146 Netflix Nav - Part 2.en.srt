@@ -1,0 +1,607 @@
+1
+00:00:00,270 --> 00:00:05,190
+All right, so now we're going to finish most of the cost and then add the JavaScript for the button
+
+2
+00:00:05,190 --> 00:00:11,550
+functionality, and then I want to add some other effects later so we can delay because we have three
+
+3
+00:00:11,550 --> 00:00:13,770
+boxes, the red, white and black.
+
+4
+00:00:13,770 --> 00:00:16,200
+And I want them to come out like one after another.
+
+5
+00:00:16,200 --> 00:00:18,480
+So we will add some transition delays.
+
+6
+00:00:18,840 --> 00:00:21,200
+But for now, let's finish the basic styling.
+
+7
+00:00:21,210 --> 00:00:25,420
+So we're going to add now black ember, this black, red and white.
+
+8
+00:00:25,430 --> 00:00:32,300
+So for black, let's set the background color to be and let's do three, four for black.
+
+9
+00:00:32,660 --> 00:00:35,020
+I'm sorry for red three one.
+
+10
+00:00:35,100 --> 00:00:36,680
+So just really low numbers.
+
+11
+00:00:36,690 --> 00:00:39,060
+It's not quite black, but it's dark.
+
+12
+00:00:39,450 --> 00:00:42,270
+We can't see it yet because we want to add a width.
+
+13
+00:00:42,270 --> 00:00:51,290
+Let's do 60 percent and then I want to add a max width of 480.
+
+14
+00:00:52,470 --> 00:00:55,140
+So it shouldn't come out past 480 no matter what.
+
+15
+00:00:55,140 --> 00:00:56,250
+And then a Menwith.
+
+16
+00:00:57,270 --> 00:00:59,550
+So the Menwith will do three 20.
+
+17
+00:01:00,900 --> 00:01:01,440
+All right.
+
+18
+00:01:01,440 --> 00:01:02,100
+And then.
+
+19
+00:01:02,730 --> 00:01:04,300
+Yeah, that should do it for now.
+
+20
+00:01:05,730 --> 00:01:14,730
+So then the red let's do Naved Dash Red and we're going to set our background color for that to be and
+
+21
+00:01:14,730 --> 00:01:17,160
+then pass in for red two to nine.
+
+22
+00:01:17,160 --> 00:01:21,670
+So really high number and then nine and 20.
+
+23
+00:01:22,800 --> 00:01:24,870
+OK, now we can't see that just yet.
+
+24
+00:01:25,540 --> 00:01:26,970
+So let's.
+
+25
+00:01:28,060 --> 00:01:33,950
+Let's add a width of 95 percent.
+
+26
+00:01:35,350 --> 00:01:41,140
+OK, so now you can see the red comes out, but you can still see the black behind it on the side here,
+
+27
+00:01:41,440 --> 00:01:42,450
+which is what we want.
+
+28
+00:01:44,050 --> 00:01:49,060
+And then for the white part, so it's a Naved Dash White.
+
+29
+00:01:52,060 --> 00:01:58,330
+For that, the background color is going to be pure white, so I'll just use hexadecimal and we want
+
+30
+00:01:58,330 --> 00:02:07,300
+it to come out, so let's say with 95 percent and now we have what looks like a black and red stripe
+
+31
+00:02:07,300 --> 00:02:07,610
+here.
+
+32
+00:02:08,020 --> 00:02:11,650
+So when it comes out and goes in, it's going to do it at different rates.
+
+33
+00:02:11,650 --> 00:02:12,760
+We're going to add a delay.
+
+34
+00:02:12,760 --> 00:02:16,930
+But like I said, I just want to get the basic styling down first.
+
+35
+00:02:17,530 --> 00:02:19,270
+So I'm also going to add padding here.
+
+36
+00:02:19,270 --> 00:02:24,070
+Since this is wrapping, the content will do 40 pixels padding, move everything in.
+
+37
+00:02:24,520 --> 00:02:30,670
+Let's position this relative because we are going to want to position the close button absolute within
+
+38
+00:02:30,670 --> 00:02:30,850
+it.
+
+39
+00:02:31,780 --> 00:02:34,360
+And yeah, that's it for now.
+
+40
+00:02:35,470 --> 00:02:43,390
+And then for the close button, say close dash BTN, we're going to position that absolute.
+
+41
+00:02:43,390 --> 00:02:53,800
+And where I want to put this within the nav white container is 40 pixels from the top and 30 pixels
+
+42
+00:02:53,920 --> 00:02:54,800
+from the right.
+
+43
+00:02:55,210 --> 00:03:01,660
+So now you can see that we're also going to make it a little lighter by adding an opacity value of zero
+
+44
+00:03:01,660 --> 00:03:03,880
+point three, which will feed it out a bit.
+
+45
+00:03:06,010 --> 00:03:07,150
+Now, let's see.
+
+46
+00:03:07,540 --> 00:03:09,880
+This is what we have left is the list.
+
+47
+00:03:10,570 --> 00:03:18,490
+So let's say for the class of list, which is the the initial you will and I want to get rid of any
+
+48
+00:03:18,490 --> 00:03:19,240
+bullet points.
+
+49
+00:03:19,240 --> 00:03:22,150
+So list, style type, we're going to set that to none.
+
+50
+00:03:23,950 --> 00:03:30,590
+And the padding, I'm going to get rid of the default padding zero and then the list items.
+
+51
+00:03:30,590 --> 00:03:34,870
+So list L, I want to spread them out.
+
+52
+00:03:34,870 --> 00:03:39,670
+So margin 20 pixels on the top and bottom that'll spread them out.
+
+53
+00:03:39,680 --> 00:03:49,690
+Then we're going to do the links so the ally tags and let's set the color of that, the color I'm going
+
+54
+00:03:49,690 --> 00:03:55,540
+to set to be the same black that we have for the background of one of the maps.
+
+55
+00:03:56,170 --> 00:03:58,960
+And then let's make the font size.
+
+56
+00:03:59,320 --> 00:04:02,980
+Font size is going to be fourteen pixels.
+
+57
+00:04:02,980 --> 00:04:08,770
+I've got my semicolon here, OK, and then we want to get rid of the text underline.
+
+58
+00:04:09,970 --> 00:04:15,280
+So text decoration is going to be fun and let's also make it uppercase.
+
+59
+00:04:15,280 --> 00:04:16,840
+So text transform.
+
+60
+00:04:17,140 --> 00:04:19,060
+I'm going to set that to uppercase.
+
+61
+00:04:20,020 --> 00:04:20,350
+All right.
+
+62
+00:04:20,360 --> 00:04:21,310
+So looks pretty good.
+
+63
+00:04:21,310 --> 00:04:26,410
+Now we do have a little nested within the list and you can see it has the bullet points here.
+
+64
+00:04:26,410 --> 00:04:36,340
+So let's say list and then the you'll within the list will set the list style type to none.
+
+65
+00:04:36,790 --> 00:04:41,680
+And for padding left, it's a padding left.
+
+66
+00:04:41,680 --> 00:04:45,220
+We're going to set that to twenty pixels because we do want it to stick out a bit.
+
+67
+00:04:46,060 --> 00:04:46,390
+All right.
+
+68
+00:04:46,390 --> 00:04:51,460
+So I think that looks pretty good and that's most of the CSFs.
+
+69
+00:04:51,460 --> 00:04:56,440
+Now, I want to jump into the JavaScript here, and there's basically three things you want to grab
+
+70
+00:04:56,440 --> 00:05:03,220
+the open button, the closed button and the nav, although we have multiple classes of NAV one on each
+
+71
+00:05:03,220 --> 00:05:04,360
+of these colors.
+
+72
+00:05:04,870 --> 00:05:13,090
+So let's first bring in, let's say, open, underscore, beaten, and we're going to use document dot,
+
+73
+00:05:13,090 --> 00:05:14,470
+query selector.
+
+74
+00:05:14,470 --> 00:05:19,180
+And that has a class of open dash BTN.
+
+75
+00:05:19,750 --> 00:05:26,650
+So it's just a convention that Floren and I like to use is dashes or hyphens and access.
+
+76
+00:05:26,650 --> 00:05:31,000
+And then if you're going to create a variable here, you can't use a hyphen.
+
+77
+00:05:31,000 --> 00:05:35,500
+So you use an underscore or sometimes you'll see, you know, the camel case.
+
+78
+00:05:35,500 --> 00:05:40,480
+But in this case, we're just going to do underscore and then we're going to get the close button as
+
+79
+00:05:40,480 --> 00:05:40,990
+well.
+
+80
+00:05:42,430 --> 00:05:44,470
+And you could use an underscore in your classes.
+
+81
+00:05:44,470 --> 00:05:46,240
+I just don't like doing that.
+
+82
+00:05:47,860 --> 00:05:50,560
+So close button now for the NAV.
+
+83
+00:05:50,590 --> 00:05:52,060
+We have multiple of those.
+
+84
+00:05:52,060 --> 00:06:00,790
+So what that means is we have to use query selector all and we want to grab the class of NAV and that
+
+85
+00:06:00,790 --> 00:06:04,150
+will give us a node list that we can basically loop through.
+
+86
+00:06:05,380 --> 00:06:08,140
+So let's take the open button and let's add an event listener.
+
+87
+00:06:08,200 --> 00:06:08,500
+Right.
+
+88
+00:06:08,530 --> 00:06:11,230
+So out of that listener, we want to listen for click event.
+
+89
+00:06:12,730 --> 00:06:15,010
+When that happens will fire off a function.
+
+90
+00:06:15,400 --> 00:06:21,340
+And we don't have to use curly races here, but I'm going to just to make it neater.
+
+91
+00:06:22,000 --> 00:06:25,510
+So we'll take our NAVs and we're going to loop through.
+
+92
+00:06:25,600 --> 00:06:31,090
+So for each because there's multiple NAVs and we'll save for each nav element.
+
+93
+00:06:31,630 --> 00:06:38,440
+We want to take that nav element and we want to add the visible class.
+
+94
+00:06:38,440 --> 00:06:47,140
+So l dot class list dot add and we want to add the class visible.
+
+95
+00:06:48,220 --> 00:06:48,640
+All right.
+
+96
+00:06:48,640 --> 00:06:49,810
+Because we're adding it on.
+
+97
+00:06:50,050 --> 00:06:55,330
+Multiple now, that's why we have to loop through the node list here now, close button is going to
+
+98
+00:06:55,330 --> 00:06:58,190
+be pretty much the same thing, except we're removing the class.
+
+99
+00:06:58,190 --> 00:07:04,270
+So I'm going to put that in here and grab the close button at a click event.
+
+100
+00:07:04,540 --> 00:07:10,620
+And then for each nav, we want to then remove the class visible.
+
+101
+00:07:10,810 --> 00:07:11,170
+All right.
+
+102
+00:07:11,170 --> 00:07:17,140
+So I'll save that and I'm going to go ahead and delete these visible classes that I just, you know,
+
+103
+00:07:17,500 --> 00:07:18,790
+hardcoded in here.
+
+104
+00:07:19,090 --> 00:07:20,260
+So I'll get rid of those.
+
+105
+00:07:20,560 --> 00:07:22,190
+And it should now be off the screen.
+
+106
+00:07:22,210 --> 00:07:24,820
+If I click, it's going to go ahead and open.
+
+107
+00:07:24,820 --> 00:07:26,890
+If I click, the exit closes.
+
+108
+00:07:27,160 --> 00:07:29,650
+Now, it doesn't have the effect that I want.
+
+109
+00:07:29,830 --> 00:07:35,390
+I want it to be I want the three parts to come out kind of separately to give it a cool little effect.
+
+110
+00:07:35,890 --> 00:07:45,760
+So in our stylesheet here, we're going to add on to let's see, so on the nav black, basically, we're
+
+111
+00:07:45,760 --> 00:07:48,840
+going to just add transition delays on certain colors.
+
+112
+00:07:49,180 --> 00:07:51,970
+So now black right here.
+
+113
+00:07:52,030 --> 00:07:57,910
+Let's say we want to add a transition delay, which means that it'll just wait however long we we put
+
+114
+00:07:57,910 --> 00:08:00,070
+here before it actually fires off.
+
+115
+00:08:00,430 --> 00:08:02,680
+So I'm going to delay it by point.
+
+116
+00:08:02,890 --> 00:08:05,290
+Four seconds for the black.
+
+117
+00:08:05,860 --> 00:08:09,100
+OK, so now we close.
+
+118
+00:08:09,100 --> 00:08:11,570
+You can see the black takes a little longer.
+
+119
+00:08:12,970 --> 00:08:20,260
+Now we also want to add a delay or I should say remove the delay on the visible for black.
+
+120
+00:08:20,410 --> 00:08:28,090
+So what we'll do is say now dash black and if it has the class of visible, then we want the transition
+
+121
+00:08:28,090 --> 00:08:31,120
+delay to be zero seconds.
+
+122
+00:08:33,260 --> 00:08:33,710
+All right.
+
+123
+00:08:36,530 --> 00:08:40,100
+So it comes right out and then it kind of lags when it goes back in.
+
+124
+00:08:40,640 --> 00:08:47,810
+So on the red we have now red right here, let's add a transition delay, which is going to be a little
+
+125
+00:08:47,810 --> 00:08:51,100
+faster than the black because it's it doesn't stick out as much.
+
+126
+00:08:51,110 --> 00:08:59,300
+So let's do instead of what we do for for the Black Point, for let's do point two seconds for that.
+
+127
+00:08:59,300 --> 00:09:06,430
+And now you can see it has that effect where, you know, the red goes in and then the black goes in.
+
+128
+00:09:07,130 --> 00:09:09,890
+Now, when it's visible on that red
+
+129
+00:09:12,590 --> 00:09:20,160
+navarrette visible, basically when we open it, we want to add a transition delay of point two seconds.
+
+130
+00:09:20,900 --> 00:09:26,850
+So now when I open, you can see that the red has a little delay.
+
+131
+00:09:27,350 --> 00:09:31,280
+Now we want to do the same for the white because you can see when it opens, the red and the white come
+
+132
+00:09:31,280 --> 00:09:32,900
+in at the same exact time.
+
+133
+00:09:33,140 --> 00:09:33,760
+I don't want that.
+
+134
+00:09:33,770 --> 00:09:35,980
+I want the white to fan in as well.
+
+135
+00:09:36,530 --> 00:09:39,550
+So let's go to now of white.
+
+136
+00:09:40,280 --> 00:09:48,080
+And when it's not visible, we're going to set the transition delay to zero seconds.
+
+137
+00:09:48,080 --> 00:09:49,600
+But on the visible.
+
+138
+00:09:50,450 --> 00:09:51,880
+So now dash white.
+
+139
+00:09:51,890 --> 00:09:55,390
+And when when I say visible, that is basically when it opens.
+
+140
+00:09:57,260 --> 00:10:01,760
+So when the visible let's do a transition delay of point four seconds.
+
+141
+00:10:02,370 --> 00:10:08,540
+OK, so now you can see black, red, white when it goes in white, red, black.
+
+142
+00:10:10,500 --> 00:10:12,930
+So it's just the timing of the transition delay.
+
+143
+00:10:14,760 --> 00:10:16,760
+All right, and that that's pretty much it.
+
+144
+00:10:16,770 --> 00:10:18,550
+So it's just a cool little effect.
+
+145
+00:10:18,970 --> 00:10:22,620
+It's of course, it's responsive, you know, small screens.
+
+146
+00:10:23,130 --> 00:10:24,270
+This will work fine.
+
+147
+00:10:25,560 --> 00:10:26,040
+But yeah.
+
+148
+00:10:26,040 --> 00:10:28,110
+So that's going to be it for this project.
+
+149
+00:10:28,110 --> 00:10:29,250
+Guys hopefully liked it.
+
+150
+00:10:29,250 --> 00:10:33,900
+And obviously you can branded as something else, just Netflix seem to go with the colors.
+
+151
+00:10:34,710 --> 00:10:35,190
+So that's it.
+
+152
+00:10:35,220 --> 00:10:37,590
+Thanks for watching and I'll see you in the next project.

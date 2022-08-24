@@ -1,0 +1,487 @@
+1
+00:00:00,210 --> 00:00:06,880
+OK, so let's get started on our password image strength project, whatever you want to call it.
+
+2
+00:00:07,320 --> 00:00:13,450
+We'll go ahead and just call this password password strength background.
+
+3
+00:00:16,350 --> 00:00:21,900
+Now, this is going to be a little different because we're actually going to use Tailwind CSFs, which
+
+4
+00:00:21,900 --> 00:00:27,900
+is a framework access framework, just so we don't have to actually write a lot of success.
+
+5
+00:00:27,910 --> 00:00:29,610
+And it's just a really cool framework.
+
+6
+00:00:29,610 --> 00:00:35,610
+We're not going to get deep into it and, you know, and compile it or anything like that.
+
+7
+00:00:35,610 --> 00:00:37,020
+We're just going to use a CDN.
+
+8
+00:00:37,020 --> 00:00:46,620
+So if we go to a CDN J.S. dot com and just type in tailwind, we want to grab this and this right here,
+
+9
+00:00:46,620 --> 00:00:49,560
+this tailwind dot access.
+
+10
+00:00:49,560 --> 00:00:51,270
+We're going to copy that link tag.
+
+11
+00:00:51,720 --> 00:00:57,450
+And let's put that right above our custom style access and we'll save that.
+
+12
+00:00:57,450 --> 00:01:02,660
+You can see the font already changed and we're now using the default tailwind access.
+
+13
+00:01:04,110 --> 00:01:07,320
+So for the HTML, let's let's close this.
+
+14
+00:01:07,320 --> 00:01:14,010
+First of all, actually will open up the rest of our files here and then close that and let's get rid
+
+15
+00:01:14,010 --> 00:01:15,990
+of this H1 here.
+
+16
+00:01:16,350 --> 00:01:24,690
+So I want to have a background image that we can work with to, you know, add that blur effect to.
+
+17
+00:01:24,690 --> 00:01:33,090
+So I'm going to have a div here with the class of background and also an I.D. of background and nothing's
+
+18
+00:01:33,090 --> 00:01:33,980
+going to go inside of it.
+
+19
+00:01:33,990 --> 00:01:36,030
+We're just going to use that for the background.
+
+20
+00:01:36,030 --> 00:01:42,930
+And then let's have basically a wrapper around everything and we're going to give us a few tailwind
+
+21
+00:01:42,930 --> 00:01:45,490
+classes like BGU Dash White.
+
+22
+00:01:47,100 --> 00:01:51,300
+So this is going to be the box in the middle with the with the form the form fields.
+
+23
+00:01:51,610 --> 00:01:53,040
+I'm also going to make it rounded.
+
+24
+00:01:53,040 --> 00:01:58,080
+So we'll add rounded and these are tailwind classes so we don't have to actually create the access for
+
+25
+00:01:58,080 --> 00:01:58,380
+this.
+
+26
+00:01:58,810 --> 00:01:59,730
+Want some padding.
+
+27
+00:01:59,730 --> 00:02:02,850
+So I'm going to do p dash tend to do padding all around.
+
+28
+00:02:03,180 --> 00:02:08,790
+I want center so text center and let's add a shadow to it as well.
+
+29
+00:02:08,800 --> 00:02:12,340
+So Shadow will do shadow MMD Shadow Medium.
+
+30
+00:02:12,810 --> 00:02:13,260
+All right.
+
+31
+00:02:13,290 --> 00:02:16,830
+Now and again, these are Tailwind classes.
+
+32
+00:02:17,010 --> 00:02:20,550
+If you're interested in tailwind, I have a crash course on YouTube.
+
+33
+00:02:20,550 --> 00:02:24,720
+There's there's a lot of videos on YouTube is paid and free courses.
+
+34
+00:02:25,260 --> 00:02:28,080
+It's a really, really cool framework if you want to look more into it.
+
+35
+00:02:29,010 --> 00:02:30,540
+So here I'm going to have an H1.
+
+36
+00:02:30,840 --> 00:02:36,900
+I'm going to give this a class of text, dash three Excel to make it a little bigger.
+
+37
+00:02:37,410 --> 00:02:44,200
+And inside here, we're just going to say image, password, strength.
+
+38
+00:02:46,740 --> 00:02:47,970
+You can put whatever you want.
+
+39
+00:02:47,970 --> 00:02:48,930
+I'm just putting that.
+
+40
+00:02:48,930 --> 00:02:51,240
+And then we'll put a paragraph here.
+
+41
+00:02:51,240 --> 00:02:58,170
+I'm going to give this paragraph a class of text which will make the text smaller and then text dash
+
+42
+00:02:58,170 --> 00:03:03,570
+grea dash 700, which will give it a shade of grey.
+
+43
+00:03:03,570 --> 00:03:10,050
+And we're just going to say change the password to see the effect.
+
+44
+00:03:11,580 --> 00:03:12,020
+All right.
+
+45
+00:03:12,030 --> 00:03:14,510
+And then under that paragraph, we're going to have a div.
+
+46
+00:03:14,790 --> 00:03:17,910
+Let's give this a class of Mooi.
+
+47
+00:03:17,910 --> 00:03:22,530
+So my intelligence is margined on the Y axis, which is top and bottom.
+
+48
+00:03:22,830 --> 00:03:27,540
+I'm going to do dash four and it's also do text dash left.
+
+49
+00:03:28,020 --> 00:03:33,540
+And in the stiv here, we're going to have our label and our input for the email.
+
+50
+00:03:33,840 --> 00:03:36,810
+So let's add let's just go down here a little bit.
+
+51
+00:03:36,810 --> 00:03:37,890
+Let's add a label.
+
+52
+00:03:38,640 --> 00:03:40,440
+So the label is going to have a class.
+
+53
+00:03:40,440 --> 00:03:43,890
+We'll do text Gray Dash nine hundred.
+
+54
+00:03:44,580 --> 00:03:47,520
+And in the Slovo, we're just going to say email whoops.
+
+55
+00:03:47,730 --> 00:03:48,330
+Oh yeah.
+
+56
+00:03:48,330 --> 00:03:49,680
+We can say for email.
+
+57
+00:03:49,680 --> 00:03:56,340
+And then inside here we want to say email and then under that label we're going to have our input.
+
+58
+00:03:56,340 --> 00:03:59,190
+So this input is going to have a few classes.
+
+59
+00:03:59,640 --> 00:04:02,970
+We're going to have border, let's do block.
+
+60
+00:04:02,970 --> 00:04:05,700
+So it's a block level, it reaches all the way across.
+
+61
+00:04:06,040 --> 00:04:07,740
+Let's make sure the width is full.
+
+62
+00:04:07,740 --> 00:04:17,130
+So w dash full padding to P two once a margin on the top, so empty dash two and I want it rounded.
+
+63
+00:04:17,130 --> 00:04:19,080
+So I'm going to add the rounded class.
+
+64
+00:04:19,770 --> 00:04:27,000
+OK, and then we want to have a few other attributes so we have input type text in the classes.
+
+65
+00:04:27,240 --> 00:04:36,450
+I'm also going to add an idea of email and I'm going to add a placeholder as well and just say enter.
+
+66
+00:04:38,940 --> 00:04:39,590
+Email.
+
+67
+00:04:41,670 --> 00:04:47,940
+All rights that should be good, it's actually put a call in after the label so you can see over here
+
+68
+00:04:48,730 --> 00:04:51,320
+we have our email now we want to do the passwords.
+
+69
+00:04:51,340 --> 00:04:54,630
+I'm going to copy this div that wraps the label and the input.
+
+70
+00:04:55,220 --> 00:05:00,450
+You know, let's put that here and just change this to password.
+
+71
+00:05:01,910 --> 00:05:07,440
+Let's change the type two password and the classes here.
+
+72
+00:05:07,440 --> 00:05:17,020
+We can actually just leave those the I.D. password and the placeholder enter password.
+
+73
+00:05:17,970 --> 00:05:18,450
+All right.
+
+74
+00:05:18,450 --> 00:05:20,090
+So now we have our two fields.
+
+75
+00:05:20,090 --> 00:05:22,710
+The last thing we want is the button.
+
+76
+00:05:23,250 --> 00:05:29,730
+So let's go outside of this div here and let's put in a button here.
+
+77
+00:05:30,120 --> 00:05:32,310
+So this is going to have quite a few classes.
+
+78
+00:05:32,310 --> 00:05:40,680
+I want BGU Dash Black and let's do text dash white and for padding, let's do piecewise of padding on
+
+79
+00:05:40,680 --> 00:05:45,930
+the top and bottom two and let's do margined top to push it down a bit.
+
+80
+00:05:45,930 --> 00:05:47,700
+Will do empty two.
+
+81
+00:05:48,300 --> 00:05:53,850
+And I want to display this actually it's too empty for and I want this to be an inline block.
+
+82
+00:05:53,970 --> 00:06:00,930
+So we'll add the inline block class and let's do with dash full and rounded.
+
+83
+00:06:01,890 --> 00:06:04,410
+OK, so those are the classes we want for the text.
+
+84
+00:06:04,410 --> 00:06:13,770
+We'll just say submit and let's give it a type of submit as well, even though it doesn't really matter.
+
+85
+00:06:14,970 --> 00:06:17,130
+But we'll just go ahead and save that good.
+
+86
+00:06:18,060 --> 00:06:18,420
+All right.
+
+87
+00:06:19,620 --> 00:06:23,480
+So now for this for the customer access, let's go to our stylesheet.
+
+88
+00:06:23,490 --> 00:06:27,090
+A lot of the styling is already there from the tail when utility classes.
+
+89
+00:06:27,090 --> 00:06:30,650
+But we want to give it that background image with the blur.
+
+90
+00:06:31,020 --> 00:06:35,310
+So as far as what we have in our default styling, I'm just going to get rid of the fonts.
+
+91
+00:06:35,970 --> 00:06:39,270
+We don't need to include that with Castalian has its own font.
+
+92
+00:06:39,930 --> 00:06:48,390
+And then for the styling of the background, we have a class of background and all that is, is a div
+
+93
+00:06:48,390 --> 00:06:49,170
+at the top.
+
+94
+00:06:49,560 --> 00:06:49,950
+Right.
+
+95
+00:06:49,960 --> 00:06:55,000
+So we want this to cover everything and we want to add the background image to that.
+
+96
+00:06:55,530 --> 00:06:58,910
+So let's first of all, set the background image.
+
+97
+00:06:58,920 --> 00:07:04,170
+So it's going to set background to a neutral and the image link I'm going to paste in.
+
+98
+00:07:04,320 --> 00:07:09,120
+And you can if you want to use the same image, you can just you know, you can either copy this, you
+
+99
+00:07:09,120 --> 00:07:10,650
+can get it from the repository.
+
+100
+00:07:10,920 --> 00:07:17,580
+Let's set it to no repeat and let's set the positioning to center center on the X and Y axis and then
+
+101
+00:07:17,580 --> 00:07:19,840
+cover for the background size.
+
+102
+00:07:20,760 --> 00:07:24,240
+Now, we're not going to see anything just yet because it's just an empty div.
+
+103
+00:07:24,240 --> 00:07:31,920
+We want to position this to be absolute and we want to set I'm going to set the top to be a little further
+
+104
+00:07:31,920 --> 00:07:33,000
+than the edge.
+
+105
+00:07:33,000 --> 00:07:39,960
+So we'll do negative twenty pixels and let's set bottom to negative twenty.
+
+106
+00:07:39,990 --> 00:07:49,470
+We're going to set it on all sides of top bottom left, negative twenty and write negative twenty.
+
+107
+00:07:50,820 --> 00:07:53,250
+And if I do that we're going to see the image here.
+
+108
+00:07:53,250 --> 00:08:01,740
+Now it's it's covering, it's covering the, the login box which obviously we don't want.
+
+109
+00:08:01,740 --> 00:08:03,870
+So we'll just change the Z index.
+
+110
+00:08:04,320 --> 00:08:10,650
+Let's make this the index to negative one and then the login box will be on top of it.
+
+111
+00:08:10,650 --> 00:08:13,860
+Now I want to start start the image out to be blurred.
+
+112
+00:08:14,070 --> 00:08:20,160
+And then the longer the password gets, the less the the the less of a blur the image will have.
+
+113
+00:08:20,490 --> 00:08:26,970
+So insists we have this filter property and we're going to use Blur and we're going to set it to twenty
+
+114
+00:08:26,970 --> 00:08:29,900
+pixels blur like that.
+
+115
+00:08:29,910 --> 00:08:34,620
+So basically the higher this is, if I set this to thirty, it's going to be even more blurry, but
+
+116
+00:08:34,620 --> 00:08:41,760
+we're going to set it to twenty zero obviously is knobler ten is a little blurry, but we're going to
+
+117
+00:08:41,760 --> 00:08:44,040
+set this to twenty to start off with.
+
+118
+00:08:44,460 --> 00:08:48,150
+OK, so that's all we need to do for the HTML and access.
+
+119
+00:08:48,390 --> 00:08:52,530
+In the next video we're going to do the JavaScript which should be really, really quick.
+
+120
+00:08:52,530 --> 00:08:55,350
+It's only like nine lines of code or something like that.
+
+121
+00:08:55,590 --> 00:08:55,950
+All right.
+
+122
+00:08:55,950 --> 00:08:56,970
+So we'll do that next.

@@ -1,0 +1,79 @@
+﻿1
+00:00:00,330 --> 00:00:06,510
+Tudo bem, então neste projeto, vamos construir uma animação de rolagem, que é bem simples.
+
+2
+00:00:06,510 --> 00:00:08,960
+Nós provavelmente podemos fazer tudo isso em um vídeo.
+
+3
+00:00:08,970 --> 00:00:10,460
+No entanto, é muito útil.
+
+4
+00:00:10,560 --> 00:00:16,080
+Você pode ver esses sites onde você começa a rolar em partes do site, você sabe, imagens ou seções
+
+5
+00:00:16,080 --> 00:00:17,700
+do site começam a entrar.
+
+6
+00:00:18,000 --> 00:00:20,190
+Então, acabei de criar esses blocos de conteúdo.
+
+7
+00:00:20,190 --> 00:00:22,020
+E você pode ver que há três para começar.
+
+8
+00:00:22,350 --> 00:00:28,640
+Mas se eu for e começar a rolar para baixo, o próximo vem da esquerda, desça um pouco mais.
+
+9
+00:00:28,650 --> 00:00:32,810
+O próximo vem da direita e vai alternar de onde vem.
+
+10
+00:00:33,120 --> 00:00:37,700
+Então, vamos usar as transições dos CSFs para que isso ocorra sem problemas.
+
+11
+00:00:37,770 --> 00:00:43,290
+Vamos usar JavaScript para dizer basicamente onde está o ponto de gatilho para a próxima caixa.
+
+12
+00:00:43,290 --> 00:00:43,590
+dentro.
+
+13
+00:00:43,710 --> 00:00:46,550
+E então vamos adicionar uma classe específica para mostrá-la.
+
+14
+00:00:46,830 --> 00:00:52,590
+E então, se eu voltar, ele removerá a classe quando atingir o ponto de gatilho e tudo, você
+
+15
+00:00:52,590 --> 00:00:53,760
+sabe, deslize de volta para fora.
+
+16
+00:00:54,120 --> 00:00:54,540
+Tudo bem.
+
+17
+00:00:54,550 --> 00:00:56,160
+Então eu acho que é muito útil.
+
+18
+00:00:56,160 --> 00:01:00,000
+Você pode usar isso em muitos usos diferentes e sites diferentes.
+
+19
+00:01:00,300 --> 00:01:01,010
+Então é isso.
+
+20
+00:01:01,020 --> 00:01:01,830
+Vamos entrar nisso.

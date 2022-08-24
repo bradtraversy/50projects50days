@@ -1,0 +1,35 @@
+﻿1
+00:00:00,150 --> 00:00:05,160
+Tudo bem, então este é um dos projetos mais legais que vamos construir este relógio temático onde
+
+2
+00:00:05,160 --> 00:00:12,000
+usamos o acesso ao estilo, essas mãos aqui, essas agulhas, que obviamente são a hora, o
+
+3
+00:00:12,000 --> 00:00:16,710
+minuto e segundo, e então vamos usar JavaScript para alimentá-lo e fazer com que ele mostre o atual
+
+4
+00:00:16,710 --> 00:00:17,340
+Tempo.
+
+5
+00:00:17,340 --> 00:00:20,760
+Vamos atualizá-lo a cada segundo para que seja como um relógio real.
+
+6
+00:00:21,000 --> 00:00:25,590
+Vamos mostrar uma leitura digital da hora, do dia, da data, e também vamos
+
+7
+00:00:25,590 --> 00:00:29,220
+capaz de alternar para o modo escuro e, em seguida, de volta para o modo claro.
+
+8
+00:00:29,250 --> 00:00:31,880
+Portanto, este é um dos meus projetos favoritos deste curso.
+
+9
+00:00:32,160 --> 00:00:33,900
+Então vamos em frente e pular.

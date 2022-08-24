@@ -1,0 +1,307 @@
+1
+00:00:00,540 --> 00:00:03,130
+All right, so let's get started with our button ripple effect.
+
+2
+00:00:03,160 --> 00:00:06,680
+So the idea is we want to have a button and then we click on it.
+
+3
+00:00:06,690 --> 00:00:13,320
+We're going to basically have our JavaScript create a specific span that will have a class of circle.
+
+4
+00:00:13,320 --> 00:00:18,590
+And we're going to style that to basically be like a round white circle with an animation.
+
+5
+00:00:18,600 --> 00:00:24,360
+So it scales up and we want to set the the position of it.
+
+6
+00:00:24,360 --> 00:00:28,350
+So the top and left position, we want to set to where we click.
+
+7
+00:00:28,770 --> 00:00:31,820
+So we don't want to just always ripple in the center.
+
+8
+00:00:31,830 --> 00:00:33,350
+We want it to ripple wherever we click.
+
+9
+00:00:33,360 --> 00:00:39,290
+So we're going to have to do that within, you know, with a combination of CSR and JavaScript.
+
+10
+00:00:39,600 --> 00:00:41,910
+So let's call this button ripple effect.
+
+11
+00:00:44,200 --> 00:00:51,820
+And all we're going to have here is a button, we'll say click me, and then for now, I'm going to
+
+12
+00:00:51,820 --> 00:00:55,260
+hard code the span in here just so that we can style it.
+
+13
+00:00:55,270 --> 00:01:00,790
+But ultimately, like I said, this will come from JavaScript, so this will have a class of circle.
+
+14
+00:01:01,830 --> 00:01:07,340
+Then I'm going to just put some inline style in here for the position of it, so for this will just
+
+15
+00:01:07,340 --> 00:01:16,100
+say top, I'll say twenty seven pixel semicolon and then from the left, I'll do like 82 pixels.
+
+16
+00:01:17,880 --> 00:01:21,810
+OK, so we just have our button, and that's all we need for the HTML, very, very simple.
+
+17
+00:01:22,410 --> 00:01:25,260
+Stylesheet is is pretty easy as well.
+
+18
+00:01:25,270 --> 00:01:32,910
+I'm going to add a background comes out of background color of black.
+
+19
+00:01:35,620 --> 00:01:43,000
+And then let's see that that's fine for the body, we can leave those styles and then button what style
+
+20
+00:01:43,000 --> 00:01:52,110
+that I'm going to give it a background color of purple and let's give it a color of white, OK?
+
+21
+00:01:52,120 --> 00:01:56,440
+And then for the border, we'll do one pixel purple solid.
+
+22
+00:01:59,820 --> 00:02:08,340
+And then for the font size, let's set that to 14 pixels and make it uppercase, so text, not text,
+
+23
+00:02:08,340 --> 00:02:14,940
+uppercase, text transform, we're going to set to uppercase and let's set the letter spacing.
+
+24
+00:02:15,980 --> 00:02:22,820
+Set that to two pixels, not 20 pixels, two pixels, spread it apart just a little bit, and then for
+
+25
+00:02:22,820 --> 00:02:32,720
+padding on the button, lets to do 20 pixels top and bottom, 30 pixels left and right, and then let's
+
+26
+00:02:32,720 --> 00:02:40,910
+set the overflow to hidden so that nothing comes out of the button and then just margin 10 pixels on
+
+27
+00:02:40,910 --> 00:02:41,830
+the top and bottom.
+
+28
+00:02:42,290 --> 00:02:49,280
+So obviously you could use this, you know, you could use this in any of your websites or applications.
+
+29
+00:02:49,940 --> 00:02:53,210
+So now let's do the circle that we just hardcoded inside.
+
+30
+00:02:53,220 --> 00:03:00,430
+So we'll save button, dot, circle, and we want to position this to be absolute.
+
+31
+00:03:00,890 --> 00:03:07,810
+And remember, we have in here, we have the inline styles of top and left.
+
+32
+00:03:07,820 --> 00:03:12,770
+This is going to just be basically random, not random, but based on where we click.
+
+33
+00:03:13,040 --> 00:03:17,870
+And we're going to do that through the JavaScript, but we're just setting it hardcoded for now.
+
+34
+00:03:18,260 --> 00:03:19,610
+So position absolute.
+
+35
+00:03:19,610 --> 00:03:22,790
+Let's give it a background color of white.
+
+36
+00:03:22,790 --> 00:03:25,910
+And of course, we could change some of these values to make it look a little different.
+
+37
+00:03:26,750 --> 00:03:34,640
+We'll give it a whiff of 100 pixels and also a height of 100 pixels.
+
+38
+00:03:36,050 --> 00:03:39,560
+And the reason that it's up there right now is because I positioned it.
+
+39
+00:03:39,560 --> 00:03:40,190
+Absolutely.
+
+40
+00:03:40,190 --> 00:03:42,390
+But I forgot to position the button relative.
+
+41
+00:03:42,410 --> 00:03:48,100
+So right now it's being positioned absolute in the browser window instead of the button.
+
+42
+00:03:48,440 --> 00:03:51,260
+So let's just add here position.
+
+43
+00:03:52,460 --> 00:03:54,160
+We want to do position relative.
+
+44
+00:03:54,470 --> 00:03:56,370
+So now it's going to be relative to the button.
+
+45
+00:03:58,550 --> 00:04:02,390
+So basically this is put wherever we you know, wherever we put this here.
+
+46
+00:04:02,390 --> 00:04:05,320
+If I if I say top zero, that's going to move it up.
+
+47
+00:04:05,600 --> 00:04:07,100
+So it's just a random position.
+
+48
+00:04:08,550 --> 00:04:13,490
+And then let's see, we want to we want it to be a circle.
+
+49
+00:04:13,490 --> 00:04:19,400
+So so at the border radius to 50 percent and then.
+
+50
+00:04:21,000 --> 00:04:28,380
+It's on the on the X and Y axis, so translate, I'm sorry, transform.
+
+51
+00:04:30,840 --> 00:04:36,230
+Translated, We want to position this to be basically in the middle of where we put that point.
+
+52
+00:04:36,660 --> 00:04:44,730
+So to do that, let's do negative 50 percent and negative 50 percent on the X and Y axis.
+
+53
+00:04:45,890 --> 00:04:48,450
+OK, so now you can see where it's positioned.
+
+54
+00:04:51,000 --> 00:04:52,590
+Let's see, what else do we want to do here?
+
+55
+00:04:54,060 --> 00:04:56,220
+That's pretty much it for the styling.
+
+56
+00:04:57,390 --> 00:05:03,140
+Oh, one thing I want to do is take that focus or take that outline off the focus of the button.
+
+57
+00:05:03,690 --> 00:05:09,300
+So button, when it's in its focus, they set the outline to.
+
+58
+00:05:11,080 --> 00:05:19,010
+Right now, this we want this to have an animation where it scales up and disappears.
+
+59
+00:05:19,660 --> 00:05:21,730
+So let's start this off.
+
+60
+00:05:24,270 --> 00:05:29,850
+With a scale, so I'm adding another transform value, we already have translate, but we can add more
+
+61
+00:05:29,850 --> 00:05:31,390
+than one transform value.
+
+62
+00:05:31,710 --> 00:05:39,690
+I want to start this off with a scale of zero, and then we're going to have an animation called Scale
+
+63
+00:05:40,110 --> 00:05:44,640
+and it will last point five seconds for the duration and we'll use these out.
+
+64
+00:05:47,160 --> 00:05:51,570
+OK, now the animation, we need to create that, so let's say keyframes.
+
+65
+00:05:54,580 --> 00:06:02,470
+And we called it scale, and we're just going to use a two here because we want it to go from its original
+
+66
+00:06:02,470 --> 00:06:05,660
+scale of zero and we want to change the trend.
+
+67
+00:06:05,680 --> 00:06:07,540
+Actually, I'm just going to copy this.
+
+68
+00:06:10,140 --> 00:06:13,470
+And paste that in, and we wanted to scale up to three.
+
+69
+00:06:14,590 --> 00:06:20,860
+You can see when I save with live servery, you can see the animation now that that's, you know, it
+
+70
+00:06:20,860 --> 00:06:22,400
+just takes up the entire thing.
+
+71
+00:06:22,420 --> 00:06:25,000
+We also want it to disappear within that time.
+
+72
+00:06:25,000 --> 00:06:27,410
+So we'll set the capacity to zero.
+
+73
+00:06:27,730 --> 00:06:30,600
+So now you can see as it scales up, it just disappears.
+
+74
+00:06:31,620 --> 00:06:35,190
+OK, or it has that has that fading out effect, really.
+
+75
+00:06:36,720 --> 00:06:41,520
+So that's pretty much it for for the success and the next video, we're going to make it so that when
+
+76
+00:06:41,520 --> 00:06:49,050
+we click, we want to target where we click and then have that effect come from, you know, wherever
+
+77
+00:06:49,050 --> 00:06:49,620
+we click.

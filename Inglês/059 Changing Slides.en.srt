@@ -1,0 +1,435 @@
+1
+00:00:00,210 --> 00:00:05,100
+OK, so now that we have the talent that's done, we want to jump into the JavaScript and we want to
+
+2
+00:00:05,100 --> 00:00:12,210
+make this function so that when we click the arrow, it slides the background image and also changes
+
+3
+00:00:12,210 --> 00:00:12,790
+this image.
+
+4
+00:00:12,810 --> 00:00:15,000
+So let's first bring in everything we need.
+
+5
+00:00:15,270 --> 00:00:20,190
+We want the body itself, which we can get from the document object and then body.
+
+6
+00:00:20,850 --> 00:00:23,140
+And let's grab the slides.
+
+7
+00:00:23,160 --> 00:00:26,430
+Now, Slide's is more than one of the slide classes.
+
+8
+00:00:27,060 --> 00:00:29,130
+We have five divs with the class of slides.
+
+9
+00:00:29,130 --> 00:00:35,400
+So we're going to use document dot, query selector all because there's multiple.
+
+10
+00:00:35,400 --> 00:00:42,510
+So we want all with the class of slide and then we want the right and left buttons.
+
+11
+00:00:42,660 --> 00:00:48,270
+So there's a const left vts and set that to document.
+
+12
+00:00:48,270 --> 00:00:57,030
+Dot will use get element by D because we have an I.D. of left and then we also want the idea of right
+
+13
+00:00:57,870 --> 00:00:59,760
+and we'll call this one right button.
+
+14
+00:01:02,340 --> 00:01:08,010
+And then I'm going to initialize a variable here called Active Slide so we know which one we're on.
+
+15
+00:01:08,010 --> 00:01:19,290
+It's going to start at zero and then we'll have a function say function and we'll call this set B.G.
+
+16
+00:01:19,440 --> 00:01:20,730
+to body.
+
+17
+00:01:20,910 --> 00:01:23,760
+So this is going to set the background to the body.
+
+18
+00:01:24,030 --> 00:01:28,620
+And I'm actually going to go in the style access and get rid of on the body here.
+
+19
+00:01:28,620 --> 00:01:31,980
+Remember, I put I hardcoded the background image.
+
+20
+00:01:31,980 --> 00:01:33,060
+I'm going to get rid of that.
+
+21
+00:01:33,690 --> 00:01:35,370
+So we don't see that there anymore.
+
+22
+00:01:36,120 --> 00:01:45,310
+And we want to, in this function, take the body and add a style of background image.
+
+23
+00:01:45,840 --> 00:01:51,270
+So when we deal with access through JavaScript, it's going to be Camil case like this.
+
+24
+00:01:51,270 --> 00:01:53,900
+You're not going to use dashes or hyphens, whatever.
+
+25
+00:01:54,640 --> 00:02:00,870
+So set the background image to and we're going to have our slides now.
+
+26
+00:02:00,870 --> 00:02:07,740
+Slides is when you use this query selector, all this is going to be what's called a node list.
+
+27
+00:02:07,740 --> 00:02:14,130
+So it's similar to an array and we can say, you know, slide zero for the first one, one for the second
+
+28
+00:02:14,130 --> 00:02:14,850
+and so on.
+
+29
+00:02:15,180 --> 00:02:19,620
+We're going to put the active slide in here, which starts at zero.
+
+30
+00:02:20,040 --> 00:02:27,300
+And then we want to do dot style dot background image because that's what we want to get.
+
+31
+00:02:28,380 --> 00:02:36,540
+So we're getting we look at our HTML, we're getting the first slide, which is this div here, right
+
+32
+00:02:36,540 --> 00:02:36,960
+here.
+
+33
+00:02:36,990 --> 00:02:42,300
+And we're getting the background image, you URL, which is going to be this, and we're going to set
+
+34
+00:02:42,300 --> 00:02:43,520
+that to the body.
+
+35
+00:02:43,830 --> 00:02:45,300
+Now we want to call this.
+
+36
+00:02:45,750 --> 00:02:49,920
+So I'm just going to go right above this and say set B.G. to body.
+
+37
+00:02:50,370 --> 00:02:55,500
+And if I go ahead and save that now you can see we have our background image, our first image.
+
+38
+00:02:56,940 --> 00:03:03,420
+Now we want to be able to set the active slide to the next image.
+
+39
+00:03:03,420 --> 00:03:09,360
+So let's also create a function called set active slide.
+
+40
+00:03:11,790 --> 00:03:17,760
+And what we'll do is take the slides that we brought in, which remember is a node list and we want
+
+41
+00:03:17,760 --> 00:03:18,510
+to loop through.
+
+42
+00:03:18,510 --> 00:03:24,110
+I'm going to use the foreach method here and see for each slide and this is going to take an arrow function.
+
+43
+00:03:25,560 --> 00:03:31,710
+So for each slide, I'm going to take that slide and remove the class.
+
+44
+00:03:31,740 --> 00:03:38,010
+So if we do classless dot remove, we can remove a specific class and that's going to be active.
+
+45
+00:03:38,760 --> 00:03:40,530
+OK, so we're going to remove that.
+
+46
+00:03:40,530 --> 00:03:44,340
+And since we used an arrow function, we don't even need these curly braces.
+
+47
+00:03:44,340 --> 00:03:45,300
+We can just do that.
+
+48
+00:03:47,430 --> 00:03:52,010
+And then after that, for each, I'm going to take slides again.
+
+49
+00:03:52,020 --> 00:03:55,110
+That's the no list and take the active slide.
+
+50
+00:03:55,740 --> 00:03:58,800
+And I want to add the class of of active to that.
+
+51
+00:03:58,800 --> 00:04:00,270
+So class list.
+
+52
+00:04:01,940 --> 00:04:11,870
+Don't add and add the class of active now if I go up to the top here and I change the active slide to
+
+53
+00:04:11,900 --> 00:04:14,660
+one, it's going to have the background image.
+
+54
+00:04:14,660 --> 00:04:16,490
+The second one is the background image.
+
+55
+00:04:16,610 --> 00:04:17,570
+Change it to two.
+
+56
+00:04:17,810 --> 00:04:23,450
+It'll be the third one because remember, it's it's a no list, which is basically like an array.
+
+57
+00:04:23,450 --> 00:04:24,800
+So it's zero based.
+
+58
+00:04:25,670 --> 00:04:29,270
+And that's being changed down here.
+
+59
+00:04:29,300 --> 00:04:32,570
+We're setting the background image to whatever that active slide is.
+
+60
+00:04:32,570 --> 00:04:36,410
+So zero and then it's one to zero.
+
+61
+00:04:36,410 --> 00:04:37,670
+One, two, three, four.
+
+62
+00:04:38,240 --> 00:04:45,980
+Now, for the front image, we just need to change the class of active to whichever one we want to display.
+
+63
+00:04:45,980 --> 00:04:49,760
+So if I manually come down here and put it on the second one, that's going to show.
+
+64
+00:04:50,070 --> 00:04:57,400
+So what we'll do is add event listeners onto these arrows so that we can increment this active slide.
+
+65
+00:04:58,010 --> 00:05:06,200
+So let's go right here and let's take the right button and let's add an event listener and we want to
+
+66
+00:05:06,200 --> 00:05:07,490
+listen for click.
+
+67
+00:05:08,360 --> 00:05:12,080
+And once we do that, we're going to run a function using an arrow function.
+
+68
+00:05:12,980 --> 00:05:17,720
+So on the right button, we want to take the active slide in increment by one.
+
+69
+00:05:17,720 --> 00:05:28,100
+So we'll just do plus plus now we want to check for the end so we can say if the active slide is greater
+
+70
+00:05:28,100 --> 00:05:34,040
+than the slides at length, which will give us the total length of the node list, but we want to just
+
+71
+00:05:34,040 --> 00:05:35,420
+take one off of that.
+
+72
+00:05:35,630 --> 00:05:39,050
+And if that's true, then we want to set it back to zero.
+
+73
+00:05:39,050 --> 00:05:42,580
+So we'll set active slide equal to zero.
+
+74
+00:05:43,010 --> 00:05:47,850
+Now, once we set the active slide, we just want to call the two functions down below.
+
+75
+00:05:47,870 --> 00:05:53,510
+So the first one is going to be set, BGU to body, because that will set the background and then we
+
+76
+00:05:53,510 --> 00:05:57,670
+want to set the active slide.
+
+77
+00:05:58,430 --> 00:05:58,850
+All right.
+
+78
+00:05:58,850 --> 00:05:59,870
+So we'll save that.
+
+79
+00:05:59,870 --> 00:06:04,400
+And now if I come over and I click on this, you'll see that it'll go to the next image.
+
+80
+00:06:04,400 --> 00:06:07,570
+It changes the background, which also has that transition on it.
+
+81
+00:06:07,580 --> 00:06:10,790
+Remember, we added that transition to the body.
+
+82
+00:06:11,270 --> 00:06:17,450
+So you have that kind of stat, that effect there, that slide effect, or it's more like a stretch
+
+83
+00:06:17,450 --> 00:06:18,230
+kind of effect.
+
+84
+00:06:18,890 --> 00:06:21,920
+And if we get to the last one, it just starts over.
+
+85
+00:06:24,210 --> 00:06:32,460
+OK, so we have, let's see, first image, second, third, fourth, fifth, and then it starts over
+
+86
+00:06:32,470 --> 00:06:34,140
+so that functionality is done.
+
+87
+00:06:34,500 --> 00:06:39,330
+Now we're going to do essentially the same thing with the left button just in the opposite direction.
+
+88
+00:06:39,330 --> 00:06:42,420
+So I'm going to copy everything from the right button listener.
+
+89
+00:06:42,960 --> 00:06:46,200
+And let's set this to the left button.
+
+90
+00:06:46,530 --> 00:06:50,010
+And on Click, we want to decrement the slide.
+
+91
+00:06:50,020 --> 00:06:53,010
+So minus minus it's going to take, you know, take away one.
+
+92
+00:06:53,430 --> 00:06:59,880
+And we want to check for the beginning so we can simply check and see if active slide, if it's going
+
+93
+00:06:59,880 --> 00:07:03,690
+to be greater than, I'm sorry, less than zero.
+
+94
+00:07:04,050 --> 00:07:10,710
+Then we want to set the active slide to the end to the last one, which is going to be slides, dot
+
+95
+00:07:10,800 --> 00:07:16,910
+length, slides, dot length and then just minus one off of that.
+
+96
+00:07:17,400 --> 00:07:22,260
+OK, and then again, just call set background to body and set active slides.
+
+97
+00:07:22,290 --> 00:07:29,370
+Now I can go forward and go backwards and if I'm on the first one and I go backwards, it takes me right
+
+98
+00:07:29,370 --> 00:07:30,330
+to the last one.
+
+99
+00:07:32,330 --> 00:07:33,380
+All right, cool.
+
+100
+00:07:34,700 --> 00:07:42,870
+So that gives us a nice little slideshow, obviously, this itself isn't too useful.
+
+101
+00:07:42,890 --> 00:07:45,620
+I mean, I guess it would be if it's like an image gallery.
+
+102
+00:07:45,980 --> 00:07:52,670
+But I mean, I want you to just kind of understand the whole logic of this, bringing in the all the
+
+103
+00:07:52,670 --> 00:08:00,500
+slides with Querrey Selecter, all having the background change to whatever the background images for
+
+104
+00:08:00,500 --> 00:08:08,450
+that specific slide and then looping through all the slides, removing the act of class and then adding
+
+105
+00:08:08,450 --> 00:08:10,610
+the act of class onto the next one.
+
+106
+00:08:11,030 --> 00:08:17,220
+OK, which is going to be either, you know, increment or decrement, depending on which arrow we click.
+
+107
+00:08:17,660 --> 00:08:18,560
+So that's it.
+
+108
+00:08:18,560 --> 00:08:20,360
+Hopefully guys like this project.
+
+109
+00:08:20,370 --> 00:08:21,700
+Let's jump into the next one.

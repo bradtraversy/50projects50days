@@ -1,0 +1,307 @@
+﻿1
+00:00:00,540 --> 00:00:03,130
+Tudo bem, então vamos começar com nosso efeito cascata de botão.
+
+2
+00:00:03,160 --> 00:00:06,680
+Então a ideia é que queremos ter um botão e então clicamos nele.
+
+3
+00:00:06,690 --> 00:00:13,320
+Vamos basicamente fazer com que nosso JavaScript crie um intervalo específico que terá uma classe de círculo.
+
+4
+00:00:13,320 --> 00:00:18,590
+E vamos estilizá-lo para ser basicamente como um círculo branco redondo com uma animação.
+
+5
+00:00:18,600 --> 00:00:24,360
+Então, ele aumenta e queremos definir a posição dele.
+
+6
+00:00:24,360 --> 00:00:28,350
+Então, a posição superior e esquerda, queremos definir para onde clicamos.
+
+7
+00:00:28,770 --> 00:00:31,820
+Portanto, não queremos apenas sempre ondular no centro.
+
+8
+00:00:31,830 --> 00:00:33,350
+Queremos que ele ondula onde quer que cliquemos.
+
+9
+00:00:33,360 --> 00:00:39,290
+Então, vamos ter que fazer isso dentro, você sabe, com uma combinação de CSR e JavaScript.
+
+10
+00:00:39,600 --> 00:00:41,910
+Então vamos chamar este botão de efeito cascata.
+
+11
+00:00:44,200 --> 00:00:51,820
+E tudo o que teremos aqui é um botão, diremos clique em mim e, por enquanto, vou
+
+12
+00:00:51,820 --> 00:00:55,260
+codificar o intervalo aqui apenas para que possamos estilizá-lo.
+
+13
+00:00:55,270 --> 00:01:00,790
+Mas no final das contas, como eu disse, isso virá do JavaScript, então isso terá uma classe de círculo.
+
+14
+00:01:01,830 --> 00:01:07,340
+Então eu vou apenas colocar algum estilo embutido aqui para a posição dele, então, para isso, apenas
+
+15
+00:01:07,340 --> 00:01:16,100
+digamos no topo, direi vinte e sete pixels ponto-e-vírgula e, a partir da esquerda, farei 82 pixels.
+
+16
+00:01:17,880 --> 00:01:21,810
+OK, então temos apenas nosso botão, e isso é tudo que precisamos para o HTML, muito, muito simples.
+
+17
+00:01:22,410 --> 00:01:25,260
+A folha de estilo também é muito fácil.
+
+18
+00:01:25,270 --> 00:01:32,910
+Eu vou adicionar um fundo sai da cor de fundo de preto.
+
+19
+00:01:35,620 --> 00:01:43,000
+E então vamos ver se está bom para o corpo, podemos deixar esses estilos e depois abotoar qual estilo
+
+20
+00:01:43,000 --> 00:01:52,110
+que eu vou dar uma cor de fundo roxa e vamos dar uma cor branca, ok?
+
+21
+00:01:52,120 --> 00:01:56,440
+E então para a borda, faremos um pixel roxo sólido.
+
+22
+00:01:59,820 --> 00:02:08,340
+E, em seguida, para o tamanho da fonte, vamos definir para 14 pixels e torná-lo maiúsculo, então texto, não texto,
+
+23
+00:02:08,340 --> 00:02:14,940
+maiúsculas, transformação de texto, vamos definir para maiúsculas e vamos definir o espaçamento entre letras.
+
+24
+00:02:15,980 --> 00:02:22,820
+Defina isso para dois pixels, não 20 pixels, dois pixels, afaste-os um pouco e, em seguida, para
+
+25
+00:02:22,820 --> 00:02:32,720
+preenchimento no botão, vamos fazer 20 pixels para cima e para baixo, 30 pixels para a esquerda e para a direita, e então vamos
+
+26
+00:02:32,720 --> 00:02:40,910
+defina o estouro para oculto para que nada saia do botão e, em seguida, apenas coloque 10 pixels na margem
+
+27
+00:02:40,910 --> 00:02:41,830
+a parte superior e inferior.
+
+28
+00:02:42,290 --> 00:02:49,280
+Então, obviamente, você pode usar isso, você sabe, você pode usar isso em qualquer um dos seus sites ou aplicativos.
+
+29
+00:02:49,940 --> 00:02:53,210
+Então agora vamos fazer o círculo que acabamos de codificar dentro.
+
+30
+00:02:53,220 --> 00:03:00,430
+Então vamos salvar botão, ponto, círculo, e queremos posicionar isso como absoluto.
+
+31
+00:03:00,890 --> 00:03:07,810
+E lembre-se, temos aqui, temos os estilos embutidos de cima e de esquerda.
+
+32
+00:03:07,820 --> 00:03:12,770
+Isso será basicamente aleatório, não aleatório, mas baseado em onde clicamos.
+
+33
+00:03:13,040 --> 00:03:17,870
+E vamos fazer isso por meio do JavaScript, mas estamos apenas configurando-o em código fixo por enquanto.
+
+34
+00:03:18,260 --> 00:03:19,610
+Portanto, posição absoluta.
+
+35
+00:03:19,610 --> 00:03:22,790
+Vamos dar uma cor de fundo branca.
+
+36
+00:03:22,790 --> 00:03:25,910
+E, claro, poderíamos alterar alguns desses valores para torná-lo um pouco diferente.
+
+37
+00:03:26,750 --> 00:03:34,640
+Vamos dar um sopro de 100 pixels e também uma altura de 100 pixels.
+
+38
+00:03:36,050 --> 00:03:39,560
+E a razão pela qual está lá em cima agora é porque eu a posicionei.
+
+39
+00:03:39,560 --> 00:03:40,190
+Absolutamente.
+
+40
+00:03:40,190 --> 00:03:42,390
+Mas esqueci de posicionar o botão relativo.
+
+41
+00:03:42,410 --> 00:03:48,100
+Então agora está sendo posicionado absoluto na janela do navegador em vez do botão.
+
+42
+00:03:48,440 --> 00:03:51,260
+Então vamos apenas adicionar aqui a posição.
+
+43
+00:03:52,460 --> 00:03:54,160
+Queremos fazer a posição relativa.
+
+44
+00:03:54,470 --> 00:03:56,370
+Então agora vai ser relativo ao botão.
+
+45
+00:03:58,550 --> 00:04:02,390
+Então, basicamente, isso é colocado onde quer que você saiba, onde quer que coloquemos isso aqui.
+
+46
+00:04:02,390 --> 00:04:05,320
+Se eu disser top zero, isso vai subir.
+
+47
+00:04:05,600 --> 00:04:07,100
+Portanto, é apenas uma posição aleatória.
+
+48
+00:04:08,550 --> 00:04:13,490
+E então vamos ver, queremos que seja um círculo.
+
+49
+00:04:13,490 --> 00:04:19,400
+Então, no raio da fronteira para 50 por cento e depois.
+
+50
+00:04:21,000 --> 00:04:28,380
+Está no eixo X e Y, então traduza, desculpe, transforme.
+
+51
+00:04:30,840 --> 00:04:36,230
+Traduzido, queremos posicionar isso basicamente no meio de onde colocamos esse ponto.
+
+52
+00:04:36,660 --> 00:04:44,730
+Então, para fazer isso, vamos fazer 50% negativos e 50% negativos nos eixos X e Y.
+
+53
+00:04:45,890 --> 00:04:48,450
+OK, agora você pode ver onde está posicionado.
+
+54
+00:04:51,000 --> 00:04:52,590
+Vamos ver, o que mais queremos fazer aqui?
+
+55
+00:04:54,060 --> 00:04:56,220
+Isso é muito bonito para o estilo.
+
+56
+00:04:57,390 --> 00:05:03,140
+Ah, uma coisa que eu quero fazer é tirar esse foco ou tirar esse contorno do foco do botão.
+
+57
+00:05:03,690 --> 00:05:09,300
+Então botão, quando está em seu foco, eles definem o contorno para.
+
+58
+00:05:11,080 --> 00:05:19,010
+No momento, queremos que isso tenha uma animação em que aumente e desapareça.
+
+59
+00:05:19,660 --> 00:05:21,730
+Então vamos começar isso.
+
+60
+00:05:24,270 --> 00:05:29,850
+Com uma escala, então estou adicionando outro valor de transformação, já temos traduzir, mas podemos adicionar mais
+
+61
+00:05:29,850 --> 00:05:31,390
+de um valor de transformação.
+
+62
+00:05:31,710 --> 00:05:39,690
+Eu quero começar com uma escala de zero, e então teremos uma animação chamada Scale
+
+63
+00:05:40,110 --> 00:05:44,640
+e durará cinco segundos e vamos usá-los.
+
+64
+00:05:47,160 --> 00:05:51,570
+OK, agora a animação, precisamos criar isso, então vamos dizer quadros-chave.
+
+65
+00:05:54,580 --> 00:06:02,470
+Chamamos isso de escala, e vamos usar um dois aqui porque queremos que ele vá de seu original
+
+66
+00:06:02,470 --> 00:06:05,660
+escala de zero e queremos mudar a tendência.
+
+67
+00:06:05,680 --> 00:06:07,540
+Na verdade, vou copiar isso.
+
+68
+00:06:10,140 --> 00:06:13,470
+E cole isso, e queríamos escalar até três.
+
+69
+00:06:14,590 --> 00:06:20,860
+Você pode ver quando eu salvo com o servidor ao vivo, você pode ver a animação agora que isso é, você sabe,
+
+70
+00:06:20,860 --> 00:06:22,400
+apenas ocupa a coisa toda.
+
+71
+00:06:22,420 --> 00:06:25,000
+Também queremos que ela desapareça dentro desse prazo.
+
+72
+00:06:25,000 --> 00:06:27,410
+Então vamos definir a capacidade para zero.
+
+73
+00:06:27,730 --> 00:06:30,600
+Então agora você pode ver como ele aumenta, ele simplesmente desaparece.
+
+74
+00:06:31,620 --> 00:06:35,190
+OK, ou tem aquele efeito de desvanecimento, na verdade.
+
+75
+00:06:36,720 --> 00:06:41,520
+Então é isso que temos para o sucesso e o próximo vídeo, vamos fazer com que quando
+
+76
+00:06:41,520 --> 00:06:49,050
+clicamos, queremos segmentar onde clicamos e, em seguida, ter esse efeito, você sabe, onde quer que
+
+77
+00:06:49,050 --> 00:06:49,620
+nós clicamos.

@@ -1,0 +1,423 @@
+﻿1
+00:00:00,150 --> 00:00:04,890
+OK, agora queremos iniciar o JavaScript para este projeto agora mesmo, quando esta barra de progresso chegar
+
+2
+00:00:04,890 --> 00:00:07,200
+no final, ele apenas recomeça e nada muda.
+
+3
+00:00:07,200 --> 00:00:08,240
+Não é dinâmico.
+
+4
+00:00:08,550 --> 00:00:10,310
+Então é aí que entra o JavaScript.
+
+5
+00:00:10,320 --> 00:00:13,440
+Então vamos começar pegando tudo o que precisamos.
+
+6
+00:00:13,450 --> 00:00:18,960
+Queremos o recipiente de depoimentos e depoimentos.
+
+7
+00:00:21,330 --> 00:00:33,570
+Então eu vou usar o document dot, query selector e temos uma classe de container de depoimentos.
+
+8
+00:00:33,570 --> 00:00:34,680
+Então vamos pegar isso.
+
+9
+00:00:35,640 --> 00:00:38,880
+Vamos pegar o depoimento em si, que é o texto.
+
+10
+00:00:38,880 --> 00:00:45,870
+Então a gente quer a classe do depoimento disso e depois a gente quer a imagem.
+
+11
+00:00:47,070 --> 00:00:56,940
+Então vamos chamar essa imagem de usuário e isso tem uma classe de imagem de traço de usuário.
+
+12
+00:00:57,810 --> 00:01:03,600
+E também queremos o nome de usuário que tenha uma classe de nome de usuário, porque isso é tudo o que precisamos
+
+13
+00:01:03,600 --> 00:01:04,470
+para a SWAPO.
+
+14
+00:01:05,340 --> 00:01:06,360
+Então nome de usuário.
+
+15
+00:01:06,360 --> 00:01:08,100
+E então, finalmente, queremos o papel.
+
+16
+00:01:09,780 --> 00:01:14,960
+Então classe de papel e mude isso para rolar.
+
+17
+00:01:14,970 --> 00:01:15,290
+Tudo bem.
+
+18
+00:01:15,300 --> 00:01:17,760
+Então, estamos pegando tudo o que precisamos do DOM.
+
+19
+00:01:17,760 --> 00:01:19,770
+Na verdade, vamos apenas tornar isso um pouco maior.
+
+20
+00:01:22,960 --> 00:01:28,480
+OK, assim que fizermos isso, precisamos ter nosso depoimento armazenado em algum lugar.
+
+21
+00:01:28,510 --> 00:01:30,840
+Agora vamos tê-los em um array.
+
+22
+00:01:31,240 --> 00:01:36,490
+Então vamos chamar isso de depoimentos que não temos.
+
+23
+00:01:36,490 --> 00:01:36,870
+Sim.
+
+24
+00:01:36,870 --> 00:01:38,550
+Então não temos depoimentos aqui.
+
+25
+00:01:38,560 --> 00:01:40,380
+Eu chamo o contêiner de depoimentos.
+
+26
+00:01:40,900 --> 00:01:44,530
+Então, isso vai ser apenas um array que eu vou pegar e colar.
+
+27
+00:01:44,530 --> 00:01:47,740
+Agora, em última análise, você pode ter essas coisas vindo de um banco de dados.
+
+28
+00:01:47,740 --> 00:01:52,780
+Você poderia fazer uma simples solicitação de busca se tivesse algum tipo de API de back-end que
+
+29
+00:01:52,780 --> 00:01:54,280
+serviu esses dados de Jason.
+
+30
+00:01:54,640 --> 00:01:57,400
+Mas para nós, nós vamos apenas tê-lo aqui.
+
+31
+00:01:57,400 --> 00:02:03,970
+E quero dizer, isso pode ser algo que você queira seguir em frente e fazer você mesmo em muitos desses projetos.
+
+32
+00:02:03,970 --> 00:02:08,220
+Eu sugeriria tentar adicioná-los, torná-los melhores, torná-los seus.
+
+33
+00:02:08,920 --> 00:02:10,480
+Então nós temos esses depoimentos.
+
+34
+00:02:10,660 --> 00:02:15,940
+Vou definir uma variável para o nosso índice e isso vai começar em um.
+
+35
+00:02:16,900 --> 00:02:23,020
+E então o que vamos fazer é criar uma função para atualizar o depoimento, porque é isso que queremos
+
+36
+00:02:23,020 --> 00:02:30,940
+essencialmente queremos atualizar esses dados, esse texto, o usuário, a imagem e assim por diante.
+
+37
+00:02:31,810 --> 00:02:39,850
+Então, o que faremos aqui é obter esse array de depoimentos e podemos acessar se tivermos,
+
+38
+00:02:39,850 --> 00:02:42,910
+como, você sabe, depoimentos um.
+
+39
+00:02:42,910 --> 00:02:52,200
+Vou apenas registrar isso no console por enquanto e descer aqui e vou ligar, atualizar, testemunhar.
+
+40
+00:02:52,210 --> 00:02:59,220
+E se formos até aqui e checarmos nosso console e vermos que temos um objeto com Junn Char.
+
+41
+00:02:59,800 --> 00:03:04,240
+Então, se subirmos aqui, você verá que Junn Char é o segundo.
+
+42
+00:03:04,990 --> 00:03:07,290
+Tudo bem, porque os arrays são baseados em zero.
+
+43
+00:03:07,780 --> 00:03:09,030
+Então nós temos o char de junho.
+
+44
+00:03:11,230 --> 00:03:18,100
+E obviamente, se colocarmos como dois, vamos obter o próximo usuário, que é essa Iida A. Niskanen?
+
+45
+00:03:18,460 --> 00:03:18,880
+Não sei.
+
+46
+00:03:18,880 --> 00:03:20,620
+Floren escolhe alguns nomes estranhos.
+
+47
+00:03:21,520 --> 00:03:25,260
+Então isso é depoimentos para que é a terceira posição.
+
+48
+00:03:25,600 --> 00:03:30,130
+Então o que eu quero fazer é passar aqui o index.
+
+49
+00:03:30,850 --> 00:03:32,710
+E eu quero tirar disso.
+
+50
+00:03:32,710 --> 00:03:39,160
+Vou usar apenas a estruturação d para retirar os campos porque não quero ter que dizer depoimentos,
+
+51
+00:03:39,160 --> 00:03:44,290
+ponto, índice, ponto, você sabe, nome do ponto ou qualquer outra coisa.
+
+52
+00:03:45,310 --> 00:03:48,640
+Então temos esses campos aqui, nome, cargo, foto e texto.
+
+53
+00:03:48,910 --> 00:03:56,680
+Então, o que vou fazer é dizer Consed e, com alguns colchetes aqui, quero extrair desse item,
+
+54
+00:03:56,680 --> 00:04:07,390
+Eu quero puxar o nome, o cargo, a foto e o texto de qualquer depoimento atual
+
+55
+00:04:07,390 --> 00:04:09,760
+está usando este índice.
+
+56
+00:04:10,450 --> 00:04:13,120
+E então vamos tomar depoimento.
+
+57
+00:04:13,780 --> 00:04:17,380
+Então depoimento vai ser o parágrafo que eu trouxe acima.
+
+58
+00:04:17,380 --> 00:04:24,900
+Então traga isso e eu vou definir o HTML interno igual ao texto do depoimento atual,
+
+59
+00:04:25,690 --> 00:04:26,250
+OK?
+
+60
+00:04:26,260 --> 00:04:29,040
+E então vamos tirar a imagem.
+
+61
+00:04:29,650 --> 00:04:31,630
+Então, como eu chamo isso.
+
+62
+00:04:33,280 --> 00:04:36,310
+Então imagem do usuário, queremos definir isso.
+
+63
+00:04:37,360 --> 00:04:40,790
+Então, digamos imagem do usuário e queremos definir a fonte.
+
+64
+00:04:40,810 --> 00:04:46,060
+Vamos dizer que a fonte da imagem do usuário é igual à foto que extraímos do depoimento atual.
+
+65
+00:04:47,080 --> 00:04:53,290
+Então queremos pegar o nome de usuário e defini-lo em nosso HTML e vamos defini-lo como
+
+66
+00:04:53,290 --> 00:04:56,080
+seja qual for o nome do depoimento atual.
+
+67
+00:04:56,080 --> 00:05:04,840
+E então, finalmente, o papel do papel define o HTML interno e vamos definir isso para a posição.
+
+68
+00:05:06,100 --> 00:05:08,050
+Portanto, o papel é o mesmo que a posição.
+
+69
+00:05:10,000 --> 00:05:15,790
+O nome de usuário é o mesmo nome que usamos em classes diferentes no HTML.
+
+70
+00:05:16,300 --> 00:05:21,880
+Então, agora depois de fazermos isso, depois de definir tudo isso, queremos pegar esse índice atual e incrementá-lo
+
+71
+00:05:21,880 --> 00:05:22,540
+por um.
+
+72
+00:05:22,550 --> 00:05:24,450
+Então é só indexar mais mais.
+
+73
+00:05:25,090 --> 00:05:28,530
+Agora, se chegarmos ao fim, queremos começar de novo.
+
+74
+00:05:28,540 --> 00:05:30,910
+Queremos voltar ao primeiro depoimento.
+
+75
+00:05:30,910 --> 00:05:32,860
+Então, vamos criar uma instrução if aqui.
+
+76
+00:05:33,340 --> 00:05:43,330
+E digamos que se o índice for maior que os depoimentos dot Langguth.
+
+77
+00:05:43,330 --> 00:05:50,090
+Então, toda a extensão da matriz e acredito que temos sete desses sete depoimentos no total.
+
+78
+00:05:50,110 --> 00:05:52,450
+Então a última vai ser a sexta posição.
+
+79
+00:05:52,460 --> 00:05:56,050
+Então, queremos dizer a duração dos depoimentos menos um.
+
+80
+00:05:56,050 --> 00:06:03,130
+Se o índice for maior que isso, então vamos definir o índice para zero e estou definindo o índice para
+
+81
+00:06:03,130 --> 00:06:07,750
+um inicialmente aqui em cima porque o primeiro já está no HTML aqui.
+
+82
+00:06:08,300 --> 00:06:13,810
+OK, então isso será exibido primeiro e, assim que os dez segundos passarem, quando a barra de progresso
+
+83
+00:06:13,810 --> 00:06:16,270
+está no ar, queremos ligar, atualizar, depoimento.
+
+84
+00:06:16,750 --> 00:06:20,620
+Então, de volta ao JavaScript, temos a chamada de função aqui.
+
+85
+00:06:20,620 --> 00:06:21,580
+Mas o que queremos fazer é.
+
+86
+00:06:21,990 --> 00:06:29,340
+Isso em um intervalo definido, porque queremos que isso seja chamado a cada 10 segundos, então definido em Deyrolle leva
+
+87
+00:06:29,340 --> 00:06:35,460
+em uma função que, neste caso, será nosso depoimento de atualização e, em seguida, a quantidade de milissegundos
+
+88
+00:06:35,460 --> 00:06:36,570
+que queremos chamar isso.
+
+89
+00:06:36,570 --> 00:06:41,160
+Então, 10.000 milissegundos, que serão 10 segundos.
+
+90
+00:06:41,460 --> 00:06:44,940
+E é muito importante que isso corresponda.
+
+91
+00:06:46,810 --> 00:06:47,800
+Isso aqui.
+
+92
+00:06:48,250 --> 00:06:52,660
+Então, se você quer que isso seja mais curto, se você quer que seja de cinco segundos, apenas mude para cinco segundos,
+
+93
+00:06:52,850 --> 00:06:54,520
+mude isso para cinco mil.
+
+94
+00:06:54,640 --> 00:06:56,050
+OK, então vamos salvar isso.
+
+95
+00:06:56,450 --> 00:06:57,680
+Vamos ver o que acontece.
+
+96
+00:06:58,960 --> 00:07:03,010
+Então, assim que isso chegar ao fim, todo esse conteúdo deve mudar.
+
+97
+00:07:05,760 --> 00:07:06,640
+Pronto, lá vai ele.
+
+98
+00:07:06,660 --> 00:07:13,590
+Agora você pode ver o texto alterado, a imagem do usuário, o nome do usuário e a função foram alterados porque
+
+99
+00:07:13,590 --> 00:07:16,920
+nós os atribuímos a qualquer que seja o índice atual.
+
+100
+00:07:19,130 --> 00:07:23,810
+E você pode fazer coisas como mudar a cor de fundo ou algo assim também.
+
+101
+00:07:25,040 --> 00:07:29,150
+E como eu disse, você pode puxar esses dados em vez de ter apenas uma matriz estática.
+
+102
+00:07:29,150 --> 00:07:33,100
+Você pode puxá-lo de um banco de dados ou puxá-lo de algum tipo de API.
+
+103
+00:07:33,320 --> 00:07:34,590
+Portanto, há muito que você poderia fazer aqui.
+
+104
+00:07:34,610 --> 00:07:38,720
+Isso é basicamente apenas a interface do usuário voltada para a frente.
+
+105
+00:07:39,140 --> 00:07:41,110
+Mas, mas isso vai ser isso por agora, pessoal.
+
+106
+00:07:41,120 --> 00:07:44,150
+Espero que tenham gostado deste projeto e nos vemos no próximo.

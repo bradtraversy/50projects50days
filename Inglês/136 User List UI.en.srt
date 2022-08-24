@@ -1,0 +1,587 @@
+1
+00:00:00,210 --> 00:00:03,790
+All right, so we're gonna get started on the on access for this project.
+
+2
+00:00:03,810 --> 00:00:08,520
+So let's jump into our index e-mail here for the project starter.
+
+3
+00:00:09,150 --> 00:00:11,760
+So we're going to call this live user filter.
+
+4
+00:00:13,500 --> 00:00:16,900
+And let's go ahead and get rid of this one here.
+
+5
+00:00:16,920 --> 00:00:25,530
+So basically, we're going to have a we're going to have a container here and then we want the the input
+
+6
+00:00:25,530 --> 00:00:28,650
+and underneath that will have an analyst with the users.
+
+7
+00:00:28,890 --> 00:00:33,750
+Ultimately, the users will come from the API that we're going to fetch from, you know, through the
+
+8
+00:00:33,750 --> 00:00:34,530
+JavaScript.
+
+9
+00:00:34,920 --> 00:00:37,530
+But for now, we're just going to hardcoded them just so we can see it.
+
+10
+00:00:37,550 --> 00:00:38,400
+We can style it.
+
+11
+00:00:38,580 --> 00:00:40,940
+Then we'll move on to, you know, making it dynamic.
+
+12
+00:00:41,250 --> 00:00:43,290
+So let's create a header here.
+
+13
+00:00:43,860 --> 00:00:45,750
+Go ahead and just create a class of header.
+
+14
+00:00:46,810 --> 00:00:55,870
+And let's use an age for give it a class of title and say live use or filter, and underneath that age
+
+15
+00:00:55,870 --> 00:00:59,620
+four, I'm going to put a small tag and give this a class of subtitle.
+
+16
+00:01:00,670 --> 00:01:07,720
+And here we'll say search by name and or location.
+
+17
+00:01:09,540 --> 00:01:15,930
+And then under that small tag is going to be our input and the input is going to have an idea of filter.
+
+18
+00:01:17,080 --> 00:01:24,010
+Type text, and let's just add a placeholder to it, so Placeholder will say search.
+
+19
+00:01:25,870 --> 00:01:31,450
+OK, so that's the header, so we can go underneath that div, actually we can use a header tag here,
+
+20
+00:01:33,160 --> 00:01:37,210
+he's a header tag and then underneath the header, let's do our U.
+
+21
+00:01:37,210 --> 00:01:40,210
+L am going to give this an idea of result.
+
+22
+00:01:40,250 --> 00:01:45,540
+This is where we want our results to show up and we're going to give it a class of user Dasch list.
+
+23
+00:01:48,030 --> 00:01:48,400
+All right.
+
+24
+00:01:48,400 --> 00:01:54,460
+So inside this ule, like I said, the the list items are going to be generated with dynamic data,
+
+25
+00:01:54,460 --> 00:01:56,290
+but for now, we're just going to hardcoded them.
+
+26
+00:01:56,290 --> 00:02:07,870
+So let's add an image here and I'm going to use https and let's use random user MI API, which where
+
+27
+00:02:08,140 --> 00:02:10,900
+we're just going to get just a static image now.
+
+28
+00:02:11,650 --> 00:02:16,780
+But later on, when we actually fetch the users, the random users, it's going to be from the same
+
+29
+00:02:17,200 --> 00:02:17,800
+API.
+
+30
+00:02:17,800 --> 00:02:24,460
+You can use it just to insert a random user image or you can make a request to get some Jason data for
+
+31
+00:02:24,460 --> 00:02:25,420
+random users.
+
+32
+00:02:25,660 --> 00:02:35,080
+So right now we're just going to do portrait portraits slash and then we can do like women slash 33
+
+33
+00:02:35,380 --> 00:02:36,010
+JPEG.
+
+34
+00:02:37,250 --> 00:02:39,760
+If I save that, we're going to get a random image here.
+
+35
+00:02:39,760 --> 00:02:46,000
+And then for the ALZ, we'll just use a name, say, Sahra, and under the image here we're going to
+
+36
+00:02:46,000 --> 00:02:54,280
+have a class of user dash info and in here will have an H for with the name, let's say Sarah Smith.
+
+37
+00:02:54,730 --> 00:03:02,020
+And underneath that let's do a paragraph with the location will say Wexford Ireland.
+
+38
+00:03:06,000 --> 00:03:12,270
+And then what I'll do is just copy that list item and I'll just put two more, I'm just going to use
+
+39
+00:03:12,270 --> 00:03:13,440
+the same image and name.
+
+40
+00:03:13,440 --> 00:03:16,790
+It's fine because like I said, this is going to come in from the API.
+
+41
+00:03:16,800 --> 00:03:20,940
+Ultimately, we also want an ally for that.
+
+42
+00:03:20,940 --> 00:03:23,430
+Just says loading while we're fetching the data.
+
+43
+00:03:23,440 --> 00:03:24,900
+So I'm going to put that in as well.
+
+44
+00:03:24,900 --> 00:03:30,300
+So that has to be a list item within page three that says loading dot, dot, dot.
+
+45
+00:03:31,030 --> 00:03:33,130
+OK, so that'll be our HTML.
+
+46
+00:03:33,150 --> 00:03:35,030
+Now let's jump into our stylesheet.
+
+47
+00:03:36,300 --> 00:03:41,250
+So for the styling, see, we use this font for the body.
+
+48
+00:03:41,730 --> 00:03:55,020
+I'm going to add a background color of hexadecimal, Efate F nine F.D. and C display Fleck's.
+
+49
+00:03:55,020 --> 00:03:59,670
+We can get rid of the Flex Direction column on everything centered.
+
+50
+00:04:00,120 --> 00:04:01,200
+OK, that's good.
+
+51
+00:04:01,230 --> 00:04:04,500
+Now the container wraps around everything.
+
+52
+00:04:05,280 --> 00:04:13,070
+So for that, let's add a border radius of five pixels and I'm going to add a box shadow.
+
+53
+00:04:14,880 --> 00:04:23,460
+So for the box shadow, let's do three pixels for both of the offsets, 10 pixels, blah, blah, for
+
+54
+00:04:23,460 --> 00:04:30,840
+the color, which is going to be black, and then zero point three for the transparency actions to point
+
+55
+00:04:30,840 --> 00:04:31,380
+to.
+
+56
+00:04:33,460 --> 00:04:37,060
+And why aren't we seeing that, because I spelt container wrong.
+
+57
+00:04:38,380 --> 00:04:38,900
+There we go.
+
+58
+00:04:38,900 --> 00:04:42,280
+So now you can see the border radius with the box shadow.
+
+59
+00:04:43,490 --> 00:04:47,260
+Let's also add overflow hidden.
+
+60
+00:04:48,660 --> 00:04:53,170
+So how many scroll bars, the width, I'm going to set that to 300 pixels.
+
+61
+00:04:54,030 --> 00:04:56,120
+OK, so that should do it for the container.
+
+62
+00:04:56,700 --> 00:05:01,860
+So the title here, let's remove any margin from that.
+
+63
+00:05:02,310 --> 00:05:11,520
+So margin zero and then for the subtitle, oops, let's go let's go under here and add the subtitle.
+
+64
+00:05:12,900 --> 00:05:18,660
+And I want to display that as an inline block because remember that's a small tag which by default is
+
+65
+00:05:18,660 --> 00:05:19,290
+in line.
+
+66
+00:05:19,620 --> 00:05:29,100
+And then I'm going to add a margin of five pixels, zero 20 pixels, and I'm going to add an opacity
+
+67
+00:05:29,100 --> 00:05:33,810
+of zero point eight, which will make it even, you know, faded a little bit.
+
+68
+00:05:34,830 --> 00:05:36,750
+And let's see for the header.
+
+69
+00:05:38,950 --> 00:05:40,290
+So we have a class of header.
+
+70
+00:05:41,430 --> 00:05:44,460
+Let's add a background color for that.
+
+71
+00:05:45,150 --> 00:05:53,490
+And that's going to be three, say, three five seven DB for that background.
+
+72
+00:05:54,240 --> 00:05:56,340
+And then the color will be white.
+
+73
+00:05:58,620 --> 00:06:05,310
+And then let's add padding for let's do 30 pixels, top and bottom, 20 pixels left and right.
+
+74
+00:06:05,460 --> 00:06:08,670
+OK, so our header is starting to look a little better now.
+
+75
+00:06:08,670 --> 00:06:10,470
+The input, we want to style that.
+
+76
+00:06:10,470 --> 00:06:13,920
+So let's say the header input.
+
+77
+00:06:14,580 --> 00:06:22,230
+I want to set the background color to be a value.
+
+78
+00:06:24,030 --> 00:06:31,800
+Zero zero zero so black and then zero point three, so it just looks, you know, has that kind of transparent
+
+79
+00:06:31,800 --> 00:06:34,740
+look to get a get rid of that ugly border.
+
+80
+00:06:36,430 --> 00:06:38,040
+Let's do a border radius.
+
+81
+00:06:38,050 --> 00:06:45,640
+We're going to make this rounded, so 50 pixels for that and the color of the text is going to be white.
+
+82
+00:06:46,960 --> 00:06:50,050
+And let's set the font size.
+
+83
+00:06:51,280 --> 00:06:58,780
+So font size is going to set to 14 pixels, this is on the input and then we're going to set the padding.
+
+84
+00:07:01,140 --> 00:07:08,250
+Let's do 10 top and bottom, 15 left and right, and then let's make it go all the way across so we'll
+
+85
+00:07:08,250 --> 00:07:10,170
+set the with two 100 percent.
+
+86
+00:07:12,670 --> 00:07:13,100
+All right.
+
+87
+00:07:15,490 --> 00:07:24,880
+And I also want to get rid of this this border here, so let's say heter input's focus, we want to
+
+88
+00:07:24,880 --> 00:07:29,010
+set the outline to let's do not.
+
+89
+00:07:30,350 --> 00:07:37,720
+OK, so of get rid of that ugly outline, good, so the next thing I want to do is this user list here.
+
+90
+00:07:38,210 --> 00:07:50,930
+So it's a you and has a class of user Dasch list and let's set the background color to white and let's
+
+91
+00:07:50,930 --> 00:07:53,990
+set the list style.
+
+92
+00:07:54,360 --> 00:07:57,260
+We'll do list style, type none, which will get rid of the bullet points.
+
+93
+00:07:57,260 --> 00:07:58,160
+We don't want those.
+
+94
+00:07:58,580 --> 00:08:07,850
+And then I'm going to remove any margin and let's set a max height here of 400 pixels because you don't
+
+95
+00:08:07,850 --> 00:08:09,080
+want this to be too long.
+
+96
+00:08:09,080 --> 00:08:14,930
+We're actually going to have a little scroll here, if, you know, to to check out all the users in
+
+97
+00:08:14,930 --> 00:08:21,440
+the list and then let's do an overflow, because right now we won't have any scroll bars.
+
+98
+00:08:21,440 --> 00:08:26,420
+But if we set overflow, why so basically on the Y axis, let's set that to auto.
+
+99
+00:08:27,260 --> 00:08:31,730
+And if we need scroll bars, it's going to give us this little scroll bar on the side, which doesn't
+
+100
+00:08:31,730 --> 00:08:32,330
+look too bad.
+
+101
+00:08:33,680 --> 00:08:38,020
+And then finally, let's set padding to zero as well.
+
+102
+00:08:38,450 --> 00:08:41,240
+And I'm just going to move that up next to the margin.
+
+103
+00:08:42,680 --> 00:08:43,010
+All right.
+
+104
+00:08:43,010 --> 00:08:44,180
+So now the list items.
+
+105
+00:08:45,280 --> 00:08:56,710
+So we have our user list and we want to style the allies I'm going to display as a flex box and let's
+
+106
+00:08:56,710 --> 00:08:59,890
+set padding to 20 pixels.
+
+107
+00:09:01,050 --> 00:09:06,970
+OK, now let's do let's see.
+
+108
+00:09:10,100 --> 00:09:20,210
+All right, let's do the let's do the image so we have a user list image and I want it to be rounded,
+
+109
+00:09:20,210 --> 00:09:23,230
+so we'll use border radius at that to 50 percent.
+
+110
+00:09:23,240 --> 00:09:24,350
+That'll make it rounded.
+
+111
+00:09:24,770 --> 00:09:29,480
+And let's do object fit cover.
+
+112
+00:09:30,760 --> 00:09:36,940
+We want the whole image to show in there, and then we're going to make the width and the height 50
+
+113
+00:09:36,940 --> 00:09:37,630
+pixels.
+
+114
+00:09:41,360 --> 00:09:49,640
+OK, so kind of small, but I think that looks all right, the user info, so we have user dash list,
+
+115
+00:09:49,640 --> 00:09:53,780
+dot user info.
+
+116
+00:09:56,150 --> 00:10:02,690
+For that, let's set margin left to take it away from the image, some margin left 10 pixels that will
+
+117
+00:10:02,690 --> 00:10:07,820
+push it over and then let's set on the floor.
+
+118
+00:10:07,820 --> 00:10:18,500
+I'm just going to grab this through the floor and they're going to set margin zero zero ten pixels.
+
+119
+00:10:19,370 --> 00:10:21,050
+And for the paragraph,
+
+120
+00:10:24,020 --> 00:10:31,010
+let's just set the font size to 12 pixels will make that a little smaller.
+
+121
+00:10:31,670 --> 00:10:31,990
+All right.
+
+122
+00:10:32,040 --> 00:10:33,080
+That doesn't look too bad.
+
+123
+00:10:35,300 --> 00:10:37,910
+Let's have a border one, a border in between.
+
+124
+00:10:37,910 --> 00:10:41,180
+But we don't want to border on the last list item.
+
+125
+00:10:41,690 --> 00:10:47,720
+So what we can do is say user list and then the ally.
+
+126
+00:10:47,720 --> 00:10:50,660
+And I'm going to use the pseudo selector of not.
+
+127
+00:10:50,990 --> 00:10:57,890
+And in here we use the pseudo of last of type.
+
+128
+00:10:59,790 --> 00:11:07,920
+So basically what we're saying here is, you know, any list item that is not the last, then we want
+
+129
+00:11:07,920 --> 00:11:09,150
+to add a border bottom.
+
+130
+00:11:09,170 --> 00:11:17,580
+So let's say border dash bottom and we'll set that to one pixel solid and let's do triple E for the
+
+131
+00:11:17,580 --> 00:11:18,060
+color.
+
+132
+00:11:18,490 --> 00:11:20,360
+OK, so we have a slight border there.
+
+133
+00:11:22,200 --> 00:11:27,840
+Now we're going to have a class of hide because when we start to, you know, filter these users, if
+
+134
+00:11:27,840 --> 00:11:32,060
+it matches, we want to add the class of hide, which will basically display none.
+
+135
+00:11:32,370 --> 00:11:35,130
+So let's say user list elai.
+
+136
+00:11:35,130 --> 00:11:41,340
+And if it has a class of hide, then we're going to want to display none.
+
+137
+00:11:41,710 --> 00:11:51,150
+OK, so if I manually, you know, come over here and put on one of these allies, a class of high that's
+
+138
+00:11:51,150 --> 00:11:51,990
+going to get rid of it.
+
+139
+00:11:52,290 --> 00:11:57,130
+OK, but obviously that will be dynamic because we want to filter it out with whatever we type here.
+
+140
+00:11:58,140 --> 00:11:59,510
+So I think we should be good.
+
+141
+00:12:00,000 --> 00:12:05,900
+The loading you know, the loading will show before any any of these users show.
+
+142
+00:12:05,910 --> 00:12:09,180
+Right now, we just hardcoded it in here just so we could see.
+
+143
+00:12:09,360 --> 00:12:14,700
+So now I'm just going to remove everything, all these allies except for the loading.
+
+144
+00:12:15,450 --> 00:12:19,890
+So we'll get rid of those now that we know that those are styled correctly and save.
+
+145
+00:12:20,190 --> 00:12:24,270
+OK, so our basically our UI here is is complete.
+
+146
+00:12:24,270 --> 00:12:26,820
+We just now need to make it function with JavaScript.
+
+147
+00:12:26,820 --> 00:12:28,410
+So we'll do that in the next video.

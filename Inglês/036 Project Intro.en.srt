@@ -1,0 +1,55 @@
+1
+00:00:00,480 --> 00:00:05,350
+All right, so Dribble Dotcom is actually a great place to get inspiration for projects.
+
+2
+00:00:05,370 --> 00:00:10,170
+This is a dribble by effort by James called Fake Hugh.
+
+3
+00:00:10,560 --> 00:00:15,610
+And you can see it's basically just these cards that you can expand that have questions and answers.
+
+4
+00:00:15,960 --> 00:00:18,900
+So this is what we're going to create based off that dribble.
+
+5
+00:00:19,200 --> 00:00:22,110
+And we're going to use quite a bit of success because we're going to use font.
+
+6
+00:00:22,110 --> 00:00:22,590
+Awesome.
+
+7
+00:00:22,590 --> 00:00:27,240
+But we're not going to just put these these common icons right in the HTML.
+
+8
+00:00:27,240 --> 00:00:34,020
+We're going to use UCSC using the specific Unicode for these fonts, for these icons, and then we're
+
+9
+00:00:34,020 --> 00:00:40,050
+going to position them and then we'll add the JavaScript so that we can close and open each of these
+
+10
+00:00:40,050 --> 00:00:41,640
+tabs to see the answer.
+
+11
+00:00:42,270 --> 00:00:49,350
+OK, so the CSFs will probably take up most of our time and then the JavaScript is pretty easy.
+
+12
+00:00:49,500 --> 00:00:52,890
+We just need to toggle the act of class basically on the parent node.
+
+13
+00:00:53,190 --> 00:00:53,700
+So that's it.
+
+14
+00:00:53,700 --> 00:00:54,860
+Let's go ahead and get into it.

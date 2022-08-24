@@ -1,0 +1,363 @@
+﻿1
+00:00:00,060 --> 00:00:03,960
+OK, então vamos começar nosso aplicativo de desenho e vou deixar o navegador um pouco
+
+2
+00:00:03,960 --> 00:00:09,330
+mais largo do que o normal só para que possamos encaixar toda a tela lá porque queríamos ser bem grandes desde
+
+3
+00:00:09,330 --> 00:00:10,700
+é uma área de desenho.
+
+4
+00:00:11,070 --> 00:00:17,940
+Então, para o título aqui, digamos aplicativo de desenho, e queremos adicionar nosso elemento de tela.
+
+5
+00:00:17,940 --> 00:00:19,830
+Então é uma tela.
+
+6
+00:00:20,010 --> 00:00:22,530
+Vou dar uma ideia de tela também.
+
+7
+00:00:23,310 --> 00:00:29,700
+E basicamente isso nos permite ter uma área na qual podemos usar a API de tela.
+
+8
+00:00:29,710 --> 00:00:35,560
+Então em JavaScript podemos desenhar formas e linhas e fazer todo tipo de coisas legais.
+
+9
+00:00:35,970 --> 00:00:43,030
+Agora eu quero dar uma largura e uma largura de 800 e altura.
+
+10
+00:00:43,050 --> 00:00:44,490
+Então temos 800 de altura.
+
+11
+00:00:44,490 --> 00:00:49,850
+Eu posso fazer isso um pouco menor mais tarde, mas se eu salvar isso, não vamos ver nada.
+
+12
+00:00:49,860 --> 00:00:51,120
+A lona está lá.
+
+13
+00:00:51,390 --> 00:00:56,940
+Se abrirmos nossa guia de elementos e as ferramentas de desenvolvimento, você pode ver se eu destacar sobre a tela, podemos ver
+
+14
+00:00:56,940 --> 00:01:01,730
+o contorno dele e você pode adicionar acesso a isso, como poderíamos dizer style.
+
+15
+00:01:01,740 --> 00:01:03,600
+Você não tem que escrever, tem que fazer isso.
+
+16
+00:01:03,600 --> 00:01:09,240
+Mas só para mostrar, poderíamos dizer como fundo vermelho e salvar e agora você pode ver o contorno de
+
+17
+00:01:09,240 --> 00:01:09,990
+nossa tela.
+
+18
+00:01:10,830 --> 00:01:11,260
+Tudo bem.
+
+19
+00:01:11,440 --> 00:01:13,050
+Eu só vou me livrar disso.
+
+20
+00:01:13,050 --> 00:01:17,670
+Nada vai entrar naqueles dentro das tags de tela.
+
+21
+00:01:19,010 --> 00:01:25,910
+Mas o que queremos é uma área sob a tela para ter nossa caixa de ferramentas, que será como onde
+
+22
+00:01:25,910 --> 00:01:31,360
+podemos aumentar e diminuir o tamanho da caneta e assim por diante e mudar a cor e limpá-la.
+
+23
+00:01:31,580 --> 00:01:37,710
+Então vamos criar uma divisão com a classe da caixa de ferramentas aqui e aqui terá um botão.
+
+24
+00:01:39,170 --> 00:01:42,470
+Então este botão terá uma ideia de diminuição.
+
+25
+00:01:44,060 --> 00:01:51,160
+E eu vou colocar um sinal de menos dentro de todo o texto aqui e logo abaixo disso terá um intervalo.
+
+26
+00:01:51,170 --> 00:01:54,390
+E isso vai ter uma ideia de tamanho.
+
+27
+00:01:54,410 --> 00:02:00,170
+Então o tamanho inicial, eu vou dizer 20 e então abaixo disso terá outro botão.
+
+28
+00:02:00,470 --> 00:02:02,770
+E isso vai ter uma ideia de aumento.
+
+29
+00:02:03,650 --> 00:02:05,730
+E aqui dentro, teremos um sinal de mais.
+
+30
+00:02:06,520 --> 00:02:08,010
+Ok, também queremos a cor.
+
+31
+00:02:08,030 --> 00:02:09,460
+Então vamos dizer entradas.
+
+32
+00:02:09,470 --> 00:02:13,130
+E isso vai realmente ser uma entrada de cor.
+
+33
+00:02:13,130 --> 00:02:16,780
+Assim, cada HTML5 tem entradas de cores, então o tipo será colorido.
+
+34
+00:02:17,390 --> 00:02:18,350
+Não precisamos do nome.
+
+35
+00:02:18,950 --> 00:02:21,190
+O ID também será colorido.
+
+36
+00:02:22,430 --> 00:02:24,800
+E então, finalmente, queremos um botão para limpá-lo.
+
+37
+00:02:24,800 --> 00:02:30,320
+Então digamos que Button vai dar uma ideia de clear e eu vou colocar um X dentro disso.
+
+38
+00:02:30,470 --> 00:02:30,860
+Tudo bem.
+
+39
+00:02:30,860 --> 00:02:35,900
+Então, se eu disser que vai ficar assim, OK, agora vamos estilizar e você pode ver a cor
+
+40
+00:02:35,900 --> 00:02:38,120
+selecionador aqui, o que é muito legal.
+
+41
+00:02:38,900 --> 00:02:40,900
+É apenas uma entrada HTML de cinco cores.
+
+42
+00:02:41,360 --> 00:02:42,980
+Mas vamos pular para a folha de estilo.
+
+43
+00:02:42,980 --> 00:02:45,940
+E surpreendentemente, não teremos que fazer muito aqui.
+
+44
+00:02:46,170 --> 00:02:47,680
+Vou manter a fonte Roboto.
+
+45
+00:02:47,690 --> 00:02:51,200
+Vamos dar ao corpo uma cor de fundo cinza claro.
+
+46
+00:02:51,200 --> 00:02:53,810
+Faremos cinco, três vezes.
+
+47
+00:02:54,140 --> 00:02:57,500
+E então eu quero me livrar do caso oculto de estouro.
+
+48
+00:02:57,530 --> 00:02:58,370
+Temos que rolar.
+
+49
+00:02:59,490 --> 00:03:08,690
+E isso deve servir para o corpo, para a tela, então a tela, eu vou dar uma borda, então
+
+50
+00:03:08,700 --> 00:03:09,760
+é uma fronteira.
+
+51
+00:03:09,870 --> 00:03:14,320
+Vamos fazer dois pixels sólidos e vou usar o azul de aço.
+
+52
+00:03:15,420 --> 00:03:17,240
+Claro, você pode usar a cor que quiser.
+
+53
+00:03:18,210 --> 00:03:22,710
+E então temos nossa caixa de ferramentas, que tem todos os controles.
+
+54
+00:03:23,220 --> 00:03:32,070
+Então, para a caixa de ferramentas, vou definir uma cor de fundo azul aço e vou definir uma água.
+
+55
+00:03:33,390 --> 00:03:41,940
+Vamos fazer a borda de um pixel e sólido e usaremos Slate Blue para isso.
+
+56
+00:03:43,700 --> 00:03:45,100
+Você pode ver isso aqui embaixo.
+
+57
+00:03:45,930 --> 00:03:51,750
+Agora, vou exibir isso como uma caixa flexível para que tudo dentro dela seja alinhado como itens flexíveis.
+
+58
+00:03:52,200 --> 00:03:55,170
+E vamos definir uma largura disso.
+
+59
+00:03:55,480 --> 00:03:58,040
+Vou fazer um com oito 04 pixels.
+
+60
+00:03:58,830 --> 00:04:05,340
+Então, isso deve apenas, você sabe, preencher o mesmo com a tela e, em seguida, preencher.
+
+61
+00:04:05,490 --> 00:04:08,370
+Vamos fazer um preenchimento de quarto assim.
+
+62
+00:04:08,670 --> 00:04:15,240
+Agora, eu quero que todos esses controles aqui tenham apenas eu quero que eles estejam em uma grande caixa branca, tudo.
+
+63
+00:04:15,250 --> 00:04:23,820
+Então, eu quero pegar todos os filhos diretos da Caixa de Ferramentas para que possamos segmentar isso com a caixa de ferramentas da classe e
+
+64
+00:04:23,820 --> 00:04:25,890
+queremos os filhos diretos.
+
+65
+00:04:25,900 --> 00:04:29,550
+Não importa qual seja o elemento, a entrada do botão, qualquer intervalo.
+
+66
+00:04:29,970 --> 00:04:38,760
+E vamos definir a cor de fundo para branco e eu vou fazer isso menor para que eu possa realmente ver.
+
+67
+00:04:40,500 --> 00:04:42,370
+Portanto, faça a cor de fundo branca.
+
+68
+00:04:42,390 --> 00:04:44,960
+Vamos remover qualquer borda para nenhuma borda.
+
+69
+00:04:45,810 --> 00:04:49,250
+E vamos configurá-los para serem exibidos.
+
+70
+00:04:49,830 --> 00:04:58,350
+Vou usar no meu inline flex para o display e então podemos centralizar o item de linha e justificar o conteúdo
+
+71
+00:04:58,890 --> 00:04:59,530
+Centro.
+
+72
+00:05:00,510 --> 00:05:04,450
+OK, então eles estão todos no mesmo nível e vamos aumentar o tamanho da fonte.
+
+73
+00:05:04,470 --> 00:05:06,180
+Vamos usar duas unidades REM.
+
+74
+00:05:07,800 --> 00:05:11,910
+OK, vamos dar uma altura e largura fixas de 50 pixels.
+
+75
+00:05:12,150 --> 00:05:16,320
+Então, altura e com.
+
+76
+00:05:17,440 --> 00:05:23,810
+Tudo bem, vamos adicionar alguma margem fará pontos para cinco REM espaçados um pouco.
+
+77
+00:05:23,820 --> 00:05:29,100
+Vamos fazer preenchimento e preenchimento será a mesma coisa.
+
+78
+00:05:29,100 --> 00:05:30,480
+Aponte para cinco REM.
+
+79
+00:05:33,390 --> 00:05:42,480
+E acho que é isso, sim, então temos todas essas caixas agora, a última a ser limpa, eu quero
+
+80
+00:05:42,480 --> 00:05:44,210
+que seja colocado aqui.
+
+81
+00:05:45,180 --> 00:05:50,010
+Então, o que posso fazer para direcionar isso é, digamos, os filhos diretos do Tool Box.
+
+82
+00:05:50,010 --> 00:05:55,870
+Mas eu só quero os últimos quando você usar o pseudo seletor do último filho Dasch.
+
+83
+00:05:56,310 --> 00:06:04,080
+OK, então é o último elemento filho na caixa de ferramentas e vou definir o traço de margem para a esquerda como automático.
+
+84
+00:06:04,470 --> 00:06:07,110
+E se eu fizer isso agora, ele é empurrado para o lado.
+
+85
+00:06:08,790 --> 00:06:09,470
+Tudo bem, legal.
+
+86
+00:06:09,480 --> 00:06:13,320
+Vamos adicionar um ponteiro também.
+
+87
+00:06:15,450 --> 00:06:18,570
+OK, então isso é muito bonito para a interface.
+
+88
+00:06:18,570 --> 00:06:23,580
+E quero dizer, é claro, você pode fazer com que isso seja tão grande ou pequeno quanto você quiser, mas vamos com
+
+89
+00:06:23,580 --> 00:06:24,030
+isto.
+
+90
+00:06:24,030 --> 00:06:29,730
+E no próximo vídeo, começaremos em nosso JavaScript entrará em canvas para que possamos realmente desenhar
+
+91
+00:06:29,730 --> 00:06:32,610
+sobre isso e controlar a caneta e tudo isso.

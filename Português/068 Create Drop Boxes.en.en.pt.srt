@@ -1,0 +1,283 @@
+﻿1
+00:00:00,330 --> 00:00:04,290
+Tudo bem, então vamos começar em um projeto de arrastar e soltar, então eu tenho meu projeto inicial
+
+2
+00:00:04,290 --> 00:00:04,850
+abrir.
+
+3
+00:00:04,860 --> 00:00:08,370
+Vou mudar isso para arrastar e soltar.
+
+4
+00:00:09,930 --> 00:00:12,240
+E o HTML vai ser muito, muito simples.
+
+5
+00:00:12,240 --> 00:00:16,020
+Basicamente, teremos um monte de caixas com a classe vazia.
+
+6
+00:00:16,020 --> 00:00:21,330
+Então, digamos que a classe esteja vazia e queremos cinco delas.
+
+7
+00:00:21,340 --> 00:00:23,130
+Então vamos dizer vezes cinco.
+
+8
+00:00:23,790 --> 00:00:28,530
+E o primeiro aqui, quero ter a imagem que podemos arrastar e soltar.
+
+9
+00:00:28,530 --> 00:00:32,100
+Então dentro dessa div, vou ter uma classe de preenchimento.
+
+10
+00:00:32,580 --> 00:00:38,780
+E também queremos adicionar um atributo aqui de Dragonball, OK, porque queremos que isso seja Dragonball
+
+11
+00:00:38,790 --> 00:00:39,600
+dentro do navegador.
+
+12
+00:00:39,600 --> 00:00:42,360
+Então, queremos definir Dragonball igual a true.
+
+13
+00:00:43,260 --> 00:00:44,130
+E é isso.
+
+14
+00:00:44,130 --> 00:00:46,110
+Isso é tudo que precisamos para o nosso HTML.
+
+15
+00:00:46,710 --> 00:00:50,550
+Então agora vamos pular para nossa folha de estilo e vamos começar a criar isso.
+
+16
+00:00:50,560 --> 00:00:54,630
+Então, na verdade, não precisamos de nenhuma fonte porque não há texto.
+
+17
+00:00:55,110 --> 00:01:00,230
+Então, vamos nos livrar disso para a direção flexível.
+
+18
+00:01:00,240 --> 00:01:03,120
+Não vou usar uma coluna a menos que esteja em uma tela menor.
+
+19
+00:01:03,130 --> 00:01:08,460
+Então o que eu vou fazer é me livrar da coluna Flex Direction, mas apenas criar uma media query aqui embaixo.
+
+20
+00:01:10,230 --> 00:01:20,220
+Então digamos que se for uma largura máxima de 800 pixels, então se estiver abaixo de 800 pixels, então no corpo, queremos
+
+21
+00:01:20,220 --> 00:01:23,850
+a direção flexível para ser uma coluna.
+
+22
+00:01:25,530 --> 00:01:32,760
+OK, e então no corpo, a única outra coisa que vou fazer aqui é adicionar uma cor de fundo de aço
+
+23
+00:01:32,760 --> 00:01:33,220
+azul.
+
+24
+00:01:34,200 --> 00:01:34,620
+Tudo bem.
+
+25
+00:01:34,620 --> 00:01:38,840
+Então agora queremos estilizar as caixas com a classe vazia.
+
+26
+00:01:39,570 --> 00:01:41,430
+Então, digamos que a classe esteja vazia.
+
+27
+00:01:43,500 --> 00:01:47,130
+E eu vou, na verdade, não precisamos de uma tela aqui.
+
+28
+00:01:47,520 --> 00:01:58,200
+Vamos fazer uma altura de 150 pixels e uma largura de 150 pixels e faremos uma margem de 10 pixels.
+
+29
+00:01:58,740 --> 00:02:05,070
+E eu vou ter uma borda sólida de três pixels e.
+
+30
+00:02:06,800 --> 00:02:16,400
+Preto, e vamos dar um fundo de branco, OK, então há nossas caixas, essas são caixas vazias.
+
+31
+00:02:17,810 --> 00:02:24,070
+Agora, quando temos nossa imagem aqui, na verdade, vamos apenas fazer a classe de preenchimento.
+
+32
+00:02:24,080 --> 00:02:30,110
+Então, em vazio, teremos nossa classe de preenchimento e teremos uma imagem de fundo aqui.
+
+33
+00:02:30,500 --> 00:02:33,590
+E eu vou usar uma imagem aleatória intocada.
+
+34
+00:02:33,920 --> 00:02:35,820
+Então será uma imagem diferente a cada vez.
+
+35
+00:02:36,500 --> 00:02:47,570
+Então, para a Terra, é uma bagunça e vai ser fonte dot no splash dot com e depois slash random
+
+36
+00:02:47,570 --> 00:02:48,830
+e então você pode fazer um tamanho.
+
+37
+00:02:48,830 --> 00:02:54,560
+Então eu vou fazer um 50 x 150 será 150 por 150.
+
+38
+00:02:55,280 --> 00:02:59,060
+Vou definir a altura disso para um e quarenta e cinco pixels.
+
+39
+00:02:59,600 --> 00:03:02,180
+E vamos configurar a partir de um ponto e vírgula.
+
+40
+00:03:04,050 --> 00:03:12,240
+E vamos definir a largura para um e quarenta e cinco pixels e vamos olhar o cursor para um ponteiro, e se eu salvar
+
+41
+00:03:12,240 --> 00:03:16,590
+isso, você verá que temos uma imagem aleatória e será uma imagem diferente a cada vez.
+
+42
+00:03:16,890 --> 00:03:24,360
+E eu sou capaz de arrastar isso e ver que se eu não tiver isso, se eu definir isso como falso.
+
+43
+00:03:26,570 --> 00:03:31,490
+E agora você vê, eu realmente não posso pegá-lo e arrastá-lo, então você quer ter certeza de que esse atributo
+
+44
+00:03:31,490 --> 00:03:34,010
+é sempre definido como true se você estiver usando arrastar e soltar.
+
+45
+00:03:35,330 --> 00:03:40,380
+Agora, queremos ter alguns estilos específicos ao arrastá-lo.
+
+46
+00:03:40,400 --> 00:03:45,920
+Então, por exemplo, quando eu clico e seguro e arrasto, quero que tenha uma borda
+
+47
+00:03:45,950 --> 00:03:48,530
+como uma borda branca acinzentada ao redor.
+
+48
+00:03:48,800 --> 00:03:58,730
+Então eu vou ter uma classe aqui de espera e vou dizer borda para que o sólido vamos fazer cinco pixels
+
+49
+00:03:58,880 --> 00:04:00,040
+CCC.
+
+50
+00:04:00,650 --> 00:04:02,420
+Agora, isso não vai ser aplicado.
+
+51
+00:04:02,630 --> 00:04:07,640
+Mas quando chegamos ao nosso JavaScript, quando temos esse evento em que o estamos realizando, queríamos adicionar
+
+52
+00:04:07,640 --> 00:04:08,210
+a fronteira.
+
+53
+00:04:08,480 --> 00:04:09,800
+Posso adicionar manualmente.
+
+54
+00:04:09,800 --> 00:04:15,680
+Se eu for aqui e disser espera agora, você pode ver que há aquela borda cinza ao redor, mas eu só quero
+
+55
+00:04:15,680 --> 00:04:17,780
+quando estou realmente segurando.
+
+56
+00:04:18,500 --> 00:04:22,010
+E também quero estilizar essas caixas se passarmos o mouse.
+
+57
+00:04:22,040 --> 00:04:28,070
+Então, se eu pegar isso e passar o mouse sobre uma caixa, quero que ela tenha um fundo escuro e também um painel
+
+58
+00:04:28,110 --> 00:04:28,750
+em torno dele.
+
+59
+00:04:28,760 --> 00:04:30,770
+Então vamos ter uma aula chamada Harvard.
+
+60
+00:04:31,640 --> 00:04:36,890
+Então você só precisa descobrir os estilos dos diferentes estados dos eventos de arrastar, porque há
+
+61
+00:04:37,100 --> 00:04:39,250
+há vários eventos de arrastar que podemos usar.
+
+62
+00:04:39,800 --> 00:04:45,290
+Então, vamos definir a cor de fundo disso para três, três, três, se tiver a classe
+
+63
+00:04:45,290 --> 00:04:56,420
+de Harvard e digamos também a cor da borda, vamos definir isso para branco e vamos definir o estilo da borda.
+
+64
+00:04:58,010 --> 00:04:59,840
+Vamos definir isso como tracejado
+
+65
+00:05:02,390 --> 00:05:02,730
+esperanças.
+
+66
+00:05:03,050 --> 00:05:07,020
+Continue esquecendo minha borda branca de ponto e vírgula.
+
+67
+00:05:07,030 --> 00:05:08,000
+Você não precisa disso.
+
+68
+00:05:09,570 --> 00:05:15,660
+OK, então isso ainda não será exibido porque precisamos aplicar isso com o JavaScript, então em
+
+69
+00:05:15,660 --> 00:05:17,810
+o próximo vídeo saltou, ele irá saltar para o nosso script.
+
+70
+00:05:17,960 --> 00:05:18,330
+Sim.
+
+71
+00:05:18,690 --> 00:05:21,560
+E começaremos a adicionar todos os nossos diferentes eventos de arrastar.

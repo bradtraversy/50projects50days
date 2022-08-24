@@ -1,0 +1,67 @@
+1
+00:00:00,450 --> 00:00:06,000
+All right, so in this project, we're going to create a verify account UI and you might have seen this
+
+2
+00:00:06,000 --> 00:00:12,180
+if you you know, you sign up for something or whatever and they send you a code and you have to validate
+
+3
+00:00:12,180 --> 00:00:15,230
+that code on a Web site or some kind of app.
+
+4
+00:00:15,600 --> 00:00:17,090
+And this is just the UI part.
+
+5
+00:00:17,100 --> 00:00:23,240
+We're not adding any kind of functionality other than the UI and typing in numbers and having it hot
+
+6
+00:00:23,250 --> 00:00:26,220
+to each input here, because these are all separate inputs.
+
+7
+00:00:26,670 --> 00:00:31,230
+So basically when you come to the page, it's going to focus on the first one and I can put in a number
+
+8
+00:00:31,470 --> 00:00:33,480
+and then it's going to bring me to the next input.
+
+9
+00:00:33,750 --> 00:00:35,700
+I can put another number, another one.
+
+10
+00:00:36,000 --> 00:00:40,950
+And then if I want to change a number, if I want to go back, I can hit backspace and put a different
+
+11
+00:00:40,950 --> 00:00:43,200
+number in continue on.
+
+12
+00:00:43,200 --> 00:00:46,310
+If I want to change that again, I can change that and then enter.
+
+13
+00:00:46,470 --> 00:00:51,750
+And then you would have it, you know, validate with whatever with your database and authentication
+
+14
+00:00:51,750 --> 00:00:52,530
+and all that stuff.
+
+15
+00:00:52,530 --> 00:00:53,910
+But this is just the UI.
+
+16
+00:00:54,180 --> 00:00:56,980
+So that's what we're going to be building in this project.
+
+17
+00:00:57,000 --> 00:00:58,300
+Let's go ahead and get started.

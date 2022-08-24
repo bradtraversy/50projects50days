@@ -1,0 +1,423 @@
+1
+00:00:00,240 --> 00:00:06,420
+So now we want to work on actually having this percentage change, so we want it to go from zero to
+
+2
+00:00:06,420 --> 00:00:12,450
+100 and then the background image is going to start blurry and then it's going to go to clear as this
+
+3
+00:00:12,450 --> 00:00:12,940
+loads.
+
+4
+00:00:13,380 --> 00:00:18,090
+So first thing, we'll just bring in the two elements we have, which are the load text.
+
+5
+00:00:18,750 --> 00:00:30,210
+So let's say document, dot, query, selector, query selector, and we have a class of text or what
+
+6
+00:00:30,210 --> 00:00:31,710
+we call loading text.
+
+7
+00:00:33,480 --> 00:00:35,370
+And then we also want the background.
+
+8
+00:00:35,380 --> 00:00:40,020
+So that has a class of B.G. and we'll just call this B.G..
+
+9
+00:00:40,590 --> 00:00:45,230
+OK, now I'm going to initialize a value here called load, which is going to start at zero.
+
+10
+00:00:45,240 --> 00:00:53,350
+Obviously it's going to go from zero to 100 and we're going to have a function here called blurring.
+
+11
+00:00:54,960 --> 00:00:59,970
+And right now, I just want to take that load value and increment it by one, and then I'm going to
+
+12
+00:00:59,970 --> 00:01:02,910
+go ahead and just cancel log load.
+
+13
+00:01:03,180 --> 00:01:09,600
+Now, the way we want to run this function is in an interval, and I want it to run every 30 milliseconds.
+
+14
+00:01:09,600 --> 00:01:13,050
+So let's create a variable here called INT.
+
+15
+00:01:13,380 --> 00:01:19,740
+We'll say let in and set this to set interval and the function we want to run is the blurring function
+
+16
+00:01:19,740 --> 00:01:22,110
+and let's say every 30 milliseconds.
+
+17
+00:01:22,150 --> 00:01:23,580
+OK, this is not 30 seconds.
+
+18
+00:01:23,580 --> 00:01:25,860
+This is 30 milliseconds, which is very quick.
+
+19
+00:01:26,310 --> 00:01:27,330
+I'm going to save this.
+
+20
+00:01:27,330 --> 00:01:33,300
+And if we go and we open up our dev tools here we go to the console, you're going to see it's just
+
+21
+00:01:33,300 --> 00:01:38,790
+going to go from zero and it's going to increment every 30 milliseconds forever.
+
+22
+00:01:38,820 --> 00:01:39,900
+It's just going to keep going.
+
+23
+00:01:40,260 --> 00:01:41,550
+Obviously, we don't want that.
+
+24
+00:01:41,550 --> 00:01:43,850
+We want it to go from zero to 100.
+
+25
+00:01:44,160 --> 00:01:47,820
+So what we'll do here actually leave the console log for now.
+
+26
+00:01:48,270 --> 00:01:57,810
+And let's say if let's say if the load value is greater than 99, then we want to stop that interval.
+
+27
+00:01:57,810 --> 00:02:00,860
+In the way we do that is with the clear interval function.
+
+28
+00:02:01,260 --> 00:02:05,940
+So we want to pass in int because that represents this set intervals.
+
+29
+00:02:05,970 --> 00:02:09,220
+Now if I save that when it gets to 100, it should stop.
+
+30
+00:02:10,050 --> 00:02:12,660
+OK, so that's what we want now.
+
+31
+00:02:12,660 --> 00:02:17,250
+Instead of just console logging, obviously we have some stuff in the DOM that we want to work with,
+
+32
+00:02:17,250 --> 00:02:18,170
+that we want to change.
+
+33
+00:02:18,180 --> 00:02:19,530
+One is going to be the text.
+
+34
+00:02:19,890 --> 00:02:28,290
+So let's take the load text and set the inner text value and I'm going to set that to let's use some
+
+35
+00:02:28,290 --> 00:02:30,180
+template string, template string here.
+
+36
+00:02:30,180 --> 00:02:36,190
+And we want the load, OK, whatever that is at the time, and then just a percentage sign.
+
+37
+00:02:36,930 --> 00:02:41,220
+So if I save that, you'll see that this will start counting up to one hundred.
+
+38
+00:02:42,180 --> 00:02:48,120
+And also the way that I want this to to show is not only count up to one hundred, but it's going to
+
+39
+00:02:48,120 --> 00:02:55,500
+start fully, fully opaque and then it's going to start to fade out as it loads up.
+
+40
+00:02:56,130 --> 00:02:56,570
+All right.
+
+41
+00:02:56,580 --> 00:03:02,580
+So what we'll do is take the load text and set the opacity.
+
+42
+00:03:02,580 --> 00:03:07,370
+So let's say style dot opacity, oops, dot opacity.
+
+43
+00:03:08,760 --> 00:03:15,300
+And this is going to be tricky because the opacity value isn't going to be the load value because that
+
+44
+00:03:15,300 --> 00:03:17,190
+goes from zero to 100.
+
+45
+00:03:17,430 --> 00:03:20,010
+Opacity goes from zero to one.
+
+46
+00:03:20,520 --> 00:03:20,900
+Right.
+
+47
+00:03:20,910 --> 00:03:26,250
+So it's going to start at or actually in our case, we want it to start full, you know, fully opaque.
+
+48
+00:03:26,250 --> 00:03:28,230
+So one and we want it to go to zero.
+
+49
+00:03:28,710 --> 00:03:37,080
+So we have to map a range of numbers, basically zero to 100 to going from one to zero in the same amount
+
+50
+00:03:37,080 --> 00:03:37,650
+of time.
+
+51
+00:03:38,280 --> 00:03:44,010
+Now, there's actually a stack overflow post that we're going to use here to reference.
+
+52
+00:03:46,260 --> 00:03:52,920
+And this person asks either in JavaScript or J query to map a range of numbers to another range of numbers,
+
+53
+00:03:52,920 --> 00:03:53,880
+because that's what we want to do.
+
+54
+00:03:53,880 --> 00:04:00,030
+We want to map zero to 100 to one to zero for the opacity.
+
+55
+00:04:00,930 --> 00:04:02,270
+And this is the question here.
+
+56
+00:04:02,280 --> 00:04:05,820
+But the answer that I want to show you is this one here.
+
+57
+00:04:06,840 --> 00:04:07,740
+So it's pretty simple.
+
+58
+00:04:07,740 --> 00:04:13,470
+It takes in a number, it takes in the minimum and the maximum of the number, which in our case is
+
+59
+00:04:13,470 --> 00:04:16,000
+going to be zero and one hundred.
+
+60
+00:04:16,050 --> 00:04:23,070
+So the load and then outman is going to be one opacity one, and then, oh, Max is going to be zero,
+
+61
+00:04:23,490 --> 00:04:27,570
+OK, because we want it to go from solid to disappear.
+
+62
+00:04:28,590 --> 00:04:32,910
+So I'm going to actually put this link here.
+
+63
+00:04:32,910 --> 00:04:37,140
+I'm going to put this at the bottom of the file just in case you need to look at it.
+
+64
+00:04:37,620 --> 00:04:44,160
+And then I'm going to grab this function here called scale and we're going to put this right here.
+
+65
+00:04:46,770 --> 00:04:53,430
+And then what we can do is when we're setting this opacity, we'll run it through scale and we're going
+
+66
+00:04:53,430 --> 00:04:55,560
+to pass in the number, which is load.
+
+67
+00:04:56,100 --> 00:04:59,970
+So that's basically that's the amount of time that we want this stuff.
+
+68
+00:05:00,030 --> 00:05:09,450
+To happen, so when that goes from zero to 100, we want a map opacity to from one to zero, if we were
+
+69
+00:05:09,450 --> 00:05:13,260
+starting invisible and going to opaque, then we would do zero one.
+
+70
+00:05:13,260 --> 00:05:15,030
+But we're doing it the other way around.
+
+71
+00:05:15,300 --> 00:05:16,420
+Hopefully that makes sense.
+
+72
+00:05:16,440 --> 00:05:20,850
+So let's go to the page here and I'm going to save this little run.
+
+73
+00:05:21,240 --> 00:05:26,280
+And now you can see it's going to just slowly fade out as it gets closer to 100.
+
+74
+00:05:27,060 --> 00:05:27,420
+All right.
+
+75
+00:05:27,420 --> 00:05:29,760
+So this is actually a really handy little function.
+
+76
+00:05:30,090 --> 00:05:32,220
+Let's put this let's.
+
+77
+00:05:34,280 --> 00:05:40,190
+Put this right up here so we know that that goes with that and stack overflow is great for a little
+
+78
+00:05:40,190 --> 00:05:42,920
+functions like this to do a specific task.
+
+79
+00:05:43,220 --> 00:05:49,120
+Now we have to do the same thing for the blurr because I don't want the blur to be from 100 pixels.
+
+80
+00:05:49,130 --> 00:05:51,890
+I want it to be 30, 30 is the max.
+
+81
+00:05:52,100 --> 00:05:54,140
+So I'll just show you right here.
+
+82
+00:05:54,140 --> 00:05:58,370
+If I sit in the access, that's the max blur I want to do.
+
+83
+00:05:58,370 --> 00:06:01,990
+I don't want to set this to, you know, 100 like that.
+
+84
+00:06:02,810 --> 00:06:09,860
+So we have to map the zero to 100 to 30 to zero because we're going to start blurred.
+
+85
+00:06:09,860 --> 00:06:14,300
+So we want to start at 30 pixels and bring it down to zero when the load is done.
+
+86
+00:06:14,640 --> 00:06:17,990
+So let's take the B.G. the background and let's take style.
+
+87
+00:06:19,400 --> 00:06:27,740
+We want to do style dot filter and we're going to set that to template literal and let's say blurr.
+
+88
+00:06:28,340 --> 00:06:35,210
+And inside here, inside Blur, we're going to open up our variable syntax, our expression syntax,
+
+89
+00:06:35,210 --> 00:06:36,770
+and we're going to call scale.
+
+90
+00:06:37,610 --> 00:06:41,570
+And we want to scale the load just like we did with the opacity.
+
+91
+00:06:42,050 --> 00:06:45,440
+And it's going to be from zero to 100 for that load.
+
+92
+00:06:45,440 --> 00:06:52,760
+And then we want the blurr to go from 30 to zero in that same amount of time that that load goes from
+
+93
+00:06:52,940 --> 00:06:54,200
+zero to 100.
+
+94
+00:06:54,210 --> 00:06:55,250
+So let's save that.
+
+95
+00:06:57,880 --> 00:07:05,950
+And, oh, I forgot pixels, so we have to have the NUM, you have to have pics in here, so after this
+
+96
+00:07:05,950 --> 00:07:09,220
+expression we'll do X and there we go.
+
+97
+00:07:11,440 --> 00:07:18,100
+So now you can see that the background image is going to go from blur, a blur of 30 pixels down to
+
+98
+00:07:18,100 --> 00:07:22,030
+zero in the same amount of time that the load goes from zero to 100.
+
+99
+00:07:22,420 --> 00:07:24,730
+Same thing with the opacity of the number.
+
+100
+00:07:25,210 --> 00:07:25,630
+All right.
+
+101
+00:07:25,640 --> 00:07:26,960
+So that's pretty much it.
+
+102
+00:07:26,980 --> 00:07:29,430
+And of course, you could load in anything you want.
+
+103
+00:07:29,440 --> 00:07:31,890
+I chose to do just an image and blurred in.
+
+104
+00:07:31,900 --> 00:07:37,330
+But, you know, you could add other effects with stuff that you add to the HTML that you add to the
+
+105
+00:07:37,330 --> 00:07:39,480
+DOM, but that's it for this project.
+
+106
+00:07:39,490 --> 00:07:41,140
+Let's go ahead and move on to the next one.

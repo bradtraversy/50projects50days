@@ -1,0 +1,635 @@
+﻿1
+00:00:00,630 --> 00:00:06,270
+OK, então este é um projeto muito útil, mas simples, então provavelmente podemos fazer isso em um vídeo.
+
+2
+00:00:06,420 --> 00:00:08,790
+Então, vamos pular para o início do nosso projeto aqui.
+
+3
+00:00:08,790 --> 00:00:16,770
+E para o título, vou chamar essa animação de rolagem e vamos descer aqui para
+
+4
+00:00:16,770 --> 00:00:17,310
+o corpo.
+
+5
+00:00:17,310 --> 00:00:24,880
+E tudo o que realmente precisamos é de um monte de caixas que acabariam por conter o conteúdo do seu site.
+
+6
+00:00:24,900 --> 00:00:27,750
+Não vamos perder tempo criando conteúdo.
+
+7
+00:00:27,750 --> 00:00:31,530
+Nós vamos ter um monte de caixas e então aplicar a animação a elas.
+
+8
+00:00:32,070 --> 00:00:40,710
+Eu só vou colocar um H1 aqui e dizer role para ver a animação e então abaixo disso terá
+
+9
+00:00:40,710 --> 00:00:42,480
+uma classe de caixa.
+
+10
+00:00:42,810 --> 00:00:48,850
+E vou colocar um H2 com a palavra conteúdo e vamos copiar isso.
+
+11
+00:00:48,870 --> 00:00:49,950
+Teremos um monte desses.
+
+12
+00:00:52,330 --> 00:00:58,080
+Agora, em última análise, como eu disse, você teria esses cartões ou apenas seções do seu site,
+
+13
+00:00:58,090 --> 00:01:02,440
+o que quer que você queira trazer com essa animação de slides.
+
+14
+00:01:03,030 --> 00:01:10,090
+Então vamos para nossa folha de estilo aqui e eu vou adicionar uma cor de fundo.
+
+15
+00:01:12,880 --> 00:01:25,720
+E vamos fazer esse efeito hexadecimal seis para uma espécie de fundo bronzeado e então vamos fazer C display
+
+16
+00:01:25,720 --> 00:01:28,760
+direção justificada flexível.
+
+17
+00:01:28,780 --> 00:01:29,610
+OK, então isso é bom.
+
+18
+00:01:29,890 --> 00:01:35,870
+Vou me livrar da altura e do estouro oculto porque queremos uma barra de rolagem.
+
+19
+00:01:35,890 --> 00:01:38,560
+Obviamente, esta é uma animação de rolagem.
+
+20
+00:01:38,980 --> 00:01:49,410
+E então para o H1 quando é apenas definir a margem para 10 pixels e então vamos criar o estilo para as caixas.
+
+21
+00:01:50,260 --> 00:01:56,410
+Então, vou usar uma cor de fundo azul aço para tornar a cor do texto branca.
+
+22
+00:01:58,570 --> 00:02:04,840
+E eu vou exibir o Flex porque eu só quero alinhar o H2 que está dentro do centro, tanto
+
+23
+00:02:04,840 --> 00:02:06,340
+horizontal e verticalmente.
+
+24
+00:02:06,340 --> 00:02:13,270
+Portanto, exiba o centro de itens de linha flexível e justifique o centro de conteúdo.
+
+25
+00:02:14,500 --> 00:02:22,450
+E vamos definir uma largura de 400 pixels na caixa e vamos fazer uma altura de duzentos pixels.
+
+26
+00:02:23,760 --> 00:02:25,570
+OK, queremos separá-los.
+
+27
+00:02:25,570 --> 00:02:31,090
+Então vamos fazer uma margem de 10 pixels e vamos fazer um raio de borda.
+
+28
+00:02:32,980 --> 00:02:36,900
+Então, o que um raio fará com 10 pixels e vamos adicionar uma pequena sombra de caixa.
+
+29
+00:02:37,720 --> 00:02:40,840
+Obviamente, essas coisas não são necessárias, mas eu só quero fazer com que pareça decente.
+
+30
+00:02:41,350 --> 00:02:49,690
+Portanto, não use dois pixels e quatro pixels para os deslocamentos, cinco pixels para o desfoque, RGB para a cor,
+
+31
+00:02:49,690 --> 00:02:53,860
+que vai ser zero zero zero zero ponto três para o valor alfa.
+
+32
+00:02:54,190 --> 00:03:00,370
+E então para a animação, vamos usar a propriedade transform com translate X, porque isso é
+
+33
+00:03:00,370 --> 00:03:03,600
+o que queremos fazer é movê-los ao longo do eixo X.
+
+34
+00:03:04,210 --> 00:03:11,980
+Então, inicialmente, vamos definir box a classe de transformação de caixa e queremos definir a tradução.
+
+35
+00:03:11,980 --> 00:03:12,520
+Por quê?
+
+36
+00:03:12,910 --> 00:03:15,940
+Quer dizer, desculpe, traduza X, que é horizontal.
+
+37
+00:03:15,940 --> 00:03:17,170
+É o eixo X.
+
+38
+00:03:18,520 --> 00:03:24,430
+Aqueles de vocês querem meu ponto e vírgula aqui e eu vou definir isso para dois.
+
+39
+00:03:24,430 --> 00:03:25,870
+Portanto, zero é o padrão.
+
+40
+00:03:25,870 --> 00:03:27,700
+Se eu defini-lo para zero, não há nenhuma mudança.
+
+41
+00:03:27,700 --> 00:03:35,050
+Se eu defini-lo para, digamos, 100 pixels e dizer que você pode ver que ele é movido para mais de cem pixels,
+
+42
+00:03:35,050 --> 00:03:37,170
+movido para a direita.
+
+43
+00:03:38,260 --> 00:03:43,300
+Então, o que vou fazer é definir isso para duzentos por cento, o que vai tirá-lo da tela
+
+44
+00:03:43,630 --> 00:03:44,530
+Para a direita.
+
+45
+00:03:45,220 --> 00:03:52,390
+E então o que vai acontecer é se tivermos a classe de show, então vamos dizer box com a classe de
+
+46
+00:03:52,390 --> 00:04:01,150
+show, então vamos definir a transformação e traduzir por que eu traduzo X para zero, que é o
+
+47
+00:04:01,150 --> 00:04:01,800
+predefinição.
+
+48
+00:04:02,260 --> 00:04:07,990
+Então, se eu for aqui e aplicar uma classe de show a este primeiro, vai aparecer porque é
+
+49
+00:04:07,990 --> 00:04:12,310
+na posição normal, o resto deles ainda está duzentos por cento aqui.
+
+50
+00:04:13,330 --> 00:04:20,650
+E então o que faremos é uma transição para que, quando essa classe for adicionada, ela faça a transição
+
+51
+00:04:20,650 --> 00:04:23,110
+em suavemente daqui.
+
+52
+00:04:23,840 --> 00:04:24,310
+Tudo bem.
+
+53
+00:04:24,310 --> 00:04:28,360
+Então, queremos adicionar uma transição na propriedade transform.
+
+54
+00:04:29,080 --> 00:04:32,800
+Faremos uma duração zero ponto quatro segundos com um efeito EZ.
+
+55
+00:04:34,210 --> 00:04:41,740
+OK, agora do jeito que está agora, se adicionarmos o JavaScript e adicionarmos a funcionalidade de rolagem e eles virão
+
+56
+00:04:41,740 --> 00:04:44,260
+entrar, todos eles virão deste lado.
+
+57
+00:04:44,560 --> 00:04:49,960
+Na verdade, quero que todos os outros venham de lados diferentes.
+
+58
+00:04:50,320 --> 00:04:59,110
+Então, o que podemos fazer é aqui, vamos pegar nossa classe de caixa e usar anthe of type, que é um
+
+59
+00:04:59,110 --> 00:05:04,870
+pseudo seletor, e podemos selecionar todos os elementos pares, todas as caixas pares.
+
+60
+00:05:05,410 --> 00:05:08,230
+OK, então basicamente, você sabe, todos os outros.
+
+61
+00:05:08,620 --> 00:05:16,720
+E o que faremos é em vez de definir a inicial, a transformação inicial traduz X para duzentos
+
+62
+00:05:16,720 --> 00:05:21,400
+por cento, vamos definir para menos duzentos por cento, o que vai colocar OK, colocá-los
+
+63
+00:05:21,400 --> 00:05:22,120
+por aqui.
+
+64
+00:05:22,120 --> 00:05:27,190
+Então todos os pares estão agora aqui, todos os ímpares estão deste lado.
+
+65
+00:05:27,640 --> 00:05:32,740
+OK, e então quando nós os fizermos entrar, quando nós adicionarmos dinamicamente a classe de show, eles vão
+
+66
+00:05:32,740 --> 00:05:34,270
+para vir de lados diferentes.
+
+67
+00:05:35,180 --> 00:05:35,620
+Tudo bem.
+
+68
+00:05:35,620 --> 00:05:42,480
+E também temos que descobrir onde queremos que eles apareçam enquanto rolamos.
+
+69
+00:05:43,840 --> 00:05:46,390
+Assim que deve fazê-lo para o sucesso.
+
+70
+00:05:46,390 --> 00:05:48,700
+Na verdade, eu só quero fazer o H2 um pouco maior.
+
+71
+00:05:48,700 --> 00:06:00,940
+Então, digamos box para definir o tamanho da fonte para quarenta e cinco pixels e então vamos pular para o nosso JavaScript e
+
+72
+00:06:00,940 --> 00:06:03,370
+a primeira coisa que queremos fazer é trazer nossas caixas.
+
+73
+00:06:03,400 --> 00:06:07,240
+Então, digamos caixas const e consulta de ponto de documento.
+
+74
+00:06:07,780 --> 00:06:11,320
+Queremos todos os seletores de consulta porque há mais de um.
+
+75
+00:06:11,880 --> 00:06:19,920
+Então isso irá colocá-lo em um array ou uma lista de nós, e então queremos disparar um evento quando rolarmos.
+
+76
+00:06:19,920 --> 00:06:23,870
+Então, na janela, vamos adicionar um ouvinte de eventos de scroll.
+
+77
+00:06:26,190 --> 00:06:32,910
+E quando isso acontecer, teremos uma função chamada checkboxes porque queremos verificar o posicionamento
+
+78
+00:06:32,910 --> 00:06:36,930
+de cada caixa e uma caixa pode ser qualquer coisa.
+
+79
+00:06:36,930 --> 00:06:41,440
+Pode ser qualquer seção do seu site ou uma imagem ou qualquer outra coisa.
+
+80
+00:06:42,450 --> 00:06:52,410
+Então, vamos ter essas caixas de seleção de função e precisamos descobrir onde está o ponto de gatilho?
+
+81
+00:06:52,410 --> 00:06:56,940
+Onde queremos quando estamos rolando para baixo, onde queremos que eles comecem a entrar?
+
+82
+00:06:57,780 --> 00:07:02,430
+Então, vamos usar window dot em nossa altura.
+
+83
+00:07:03,210 --> 00:07:05,100
+Na verdade, podemos apenas logar no console.
+
+84
+00:07:08,050 --> 00:07:15,250
+Isso para que você possa ver e vamos executar caixas de seleção para começar de qualquer maneira aqui, então vamos
+
+85
+00:07:15,250 --> 00:07:15,990
+adiante e execute isso.
+
+86
+00:07:16,000 --> 00:07:21,690
+E então, se eu abrir isso, você verá que oitenta e oito é a altura da janela, sem contar o console.
+
+87
+00:07:21,700 --> 00:07:26,680
+Se eu mover este console para cima e recarregar agora que a altura é quatro ou seis.
+
+88
+00:07:27,280 --> 00:07:30,690
+Então, estamos obtendo a altura interna e queremos o ponto de gatilho.
+
+89
+00:07:30,700 --> 00:07:38,620
+Então, basicamente, onde queremos, você sabe, é uma rolagem, vamos querer que seja um pouco
+
+90
+00:07:38,620 --> 00:07:40,810
+menor que a altura interna.
+
+91
+00:07:41,440 --> 00:07:48,040
+E não podemos usar um número fixo porque a altura pode ser diferente em qualquer
+
+92
+00:07:48,040 --> 00:07:48,800
+em qualquer ponto.
+
+93
+00:07:49,300 --> 00:07:57,270
+Então o que vamos fazer é dividir isso por cinco e depois multiplicar por quatro.
+
+94
+00:07:57,850 --> 00:08:03,790
+Então agora nós apenas recarregamos isso para que você possa ver que a altura aqui é 666.
+
+95
+00:08:04,240 --> 00:08:09,550
+Se eu salvar isso agora, isso nos dá esta equação aqui, nos dá cinco e trinta e dois.
+
+96
+00:08:10,450 --> 00:08:10,900
+Tudo bem.
+
+97
+00:08:10,900 --> 00:08:13,570
+Então esse será o nosso ponto de gatilho.
+
+98
+00:08:14,200 --> 00:08:18,910
+Então, na verdade, vou colocar isso em uma variável.
+
+99
+00:08:19,090 --> 00:08:20,700
+Vamos chamá-lo de fundo do gatilho.
+
+100
+00:08:22,960 --> 00:08:26,310
+Então, onde na janela queremos acionar?
+
+101
+00:08:27,400 --> 00:08:29,110
+Então nós temos isso agora.
+
+102
+00:08:29,710 --> 00:08:35,680
+Vamos em frente e pegar nossas caixas, que trouxemos, que é uma lista não que podemos percorrer.
+
+103
+00:08:37,570 --> 00:08:39,700
+E vamos economizar para cada caixa.
+
+104
+00:08:41,740 --> 00:08:43,390
+Sim, para cada caixa.
+
+105
+00:08:45,450 --> 00:08:52,500
+Vamos pegar o topo da caixa, e quando eu digo caixa, você sabe, eu quero dizer os elementos aqui, então consed
+
+106
+00:08:52,860 --> 00:08:59,580
+topo da caixa, vou definir isso para a caixa com a qual estamos lidando, porque lembre-se, estamos
+
+107
+00:08:59,580 --> 00:09:07,650
+fazendo um loop por eles e temos esse método chamado obter o cliente delimitador destruído.
+
+108
+00:09:08,220 --> 00:09:11,760
+Então, eu realmente tenho isso, quero mostrar a você bem rápido
+
+109
+00:09:15,150 --> 00:09:17,060
+só para você entender o que isso faz.
+
+110
+00:09:19,170 --> 00:09:26,940
+Então esse método retorna com o que é chamado de objeto Dom ract, e é basicamente um retângulo
+
+111
+00:09:26,940 --> 00:09:29,780
+descrito como o tamanho e a posição de um retângulo.
+
+112
+00:09:30,090 --> 00:09:36,420
+Então, ele retorna que fornecer informações sobre o tamanho de um elemento e sua posição em relação ao
+
+113
+00:09:36,420 --> 00:09:37,020
+janela de exibição.
+
+114
+00:09:37,040 --> 00:09:38,790
+Então, onde está a janela de visualização?
+
+115
+00:09:39,270 --> 00:09:41,940
+E há um monte de propriedades que podemos usar nisso.
+
+116
+00:09:41,940 --> 00:09:47,640
+Se descermos aqui, temos a altura da largura xy onde está, onde está o topo, onde está a direita,
+
+117
+00:09:47,640 --> 00:09:49,430
+onde está o fundo, onde está a esquerda.
+
+118
+00:09:49,680 --> 00:09:53,700
+Então, queremos ver onde está o topo dessa caixa em particular.
+
+119
+00:09:53,970 --> 00:09:56,070
+Então, vamos adicionar aqui dot top.
+
+120
+00:09:57,210 --> 00:09:59,970
+OK, então isso nos dará o valor máximo.
+
+121
+00:10:01,830 --> 00:10:09,810
+E então tudo o que precisamos fazer depois disso é ver se o topo da caixa é menor que o fundo do gatilho.
+
+122
+00:10:10,500 --> 00:10:12,900
+Se for, queremos adicionar a classe de show.
+
+123
+00:10:13,350 --> 00:10:17,490
+Se não for, se for mais do que queremos remover a classe de show.
+
+124
+00:10:18,000 --> 00:10:31,200
+Então, digamos que a parte superior da caixa é menor que a parte inferior do gatilho, então vamos pegar essa caixa e adicionar
+
+125
+00:10:31,200 --> 00:10:39,420
+uma classe ou lista sem classes, adicionamos show ou então queremos removê-lo.
+
+126
+00:10:39,420 --> 00:10:41,670
+Então, caixa de lista de classes de ações.
+
+127
+00:10:43,800 --> 00:10:46,350
+Mostrar ponto remover.
+
+128
+00:10:49,670 --> 00:10:59,360
+OK, agora vou remover este show que adicionamos manualmente, agora observe que é
+
+129
+00:10:59,360 --> 00:11:02,280
+mostrando apenas os três primeiros porque eles estão dentro do alcance.
+
+130
+00:11:02,690 --> 00:11:07,660
+Agora, quando começarmos a rolar, ele disparará um evento.
+
+131
+00:11:07,670 --> 00:11:11,210
+E a razão pela qual vemos estes entrarem inicialmente é por causa disso aqui.
+
+132
+00:11:11,210 --> 00:11:15,670
+Se não tivermos isso, não vamos vê-los porque ainda não aconteceu.
+
+133
+00:11:15,680 --> 00:11:16,940
+Se eu rolar, ele faz.
+
+134
+00:11:17,300 --> 00:11:21,950
+Quero dizer, se você quiser que a funcionalidade não seja exibida até você rolar, tudo bem.
+
+135
+00:11:21,950 --> 00:11:24,320
+Mas normalmente você mostraria tudo acima da dobra.
+
+136
+00:11:24,680 --> 00:11:28,760
+Então, executamos isso inicialmente primeiro, depois começamos a rolar.
+
+137
+00:11:29,090 --> 00:11:35,060
+E assim que isso for verdade, assim que o topo da próxima caixa for menor que o ponto inferior do gatilho,
+
+138
+00:11:35,540 --> 00:11:40,610
+que é um pouco menor do que, você sabe, toda a altura da janela de visualização, virá
+
+139
+00:11:40,610 --> 00:11:42,970
+in porque adiciona essa classe de show.
+
+140
+00:11:43,400 --> 00:11:47,970
+E o que essa classe de show faz é colocá-lo em sua posição normal.
+
+141
+00:11:48,500 --> 00:11:55,100
+Agora, se é mesmo que começa aqui, então vem dessa maneira, se não é mesmo, começa
+
+142
+00:11:55,100 --> 00:11:57,080
+por aqui e vem dessa maneira.
+
+143
+00:11:57,080 --> 00:11:59,990
+Assim, todos os outros vêm de uma direção diferente.
+
+144
+00:12:01,130 --> 00:12:05,830
+E enquanto rolamos para cima, ele ainda vai disparar este evento e ainda vai verificar isso.
+
+145
+00:12:06,260 --> 00:12:09,280
+Portanto, se isso não for verdade, ele removerá a classe.
+
+146
+00:12:09,290 --> 00:12:13,700
+Então, à medida que rolamos para cima, você verá que eles começarão a sair.
+
+147
+00:12:16,550 --> 00:12:21,860
+Agora, uma coisa que acabei de notar é que tenho uma barra de rolagem horizontal aqui e não quero isso.
+
+148
+00:12:21,860 --> 00:12:33,560
+Então, no meu sucesso, vou apenas adicionar ao corpo aqui e direi estouro, estouro X, porque isso
+
+149
+00:12:33,560 --> 00:12:35,660
+é a barra de rolagem do eixo X.
+
+150
+00:12:35,990 --> 00:12:40,350
+Vamos definir isso como oculto para nos livrarmos dessa barra de rolagem horizontal.
+
+151
+00:12:41,180 --> 00:12:41,570
+Tudo bem.
+
+152
+00:12:41,580 --> 00:12:42,490
+Tão fácil.
+
+153
+00:12:42,500 --> 00:12:49,580
+E quero dizer, muitas pessoas usam Shakeri para algo assim ou uma biblioteca como Animate on scroll.
+
+154
+00:12:49,760 --> 00:12:52,130
+Animate on scroll é realmente uma biblioteca muito legal.
+
+155
+00:12:52,310 --> 00:12:55,850
+E se você quiser fazer algumas coisas divertidas, então você pode usar isso.
+
+156
+00:12:55,850 --> 00:13:01,640
+Mas quero dizer, se é apenas algo simples e você está apenas trazendo elementos ao rolar para baixo,
+
+157
+00:13:01,670 --> 00:13:03,680
+isso é muito leve.
+
+158
+00:13:03,680 --> 00:13:07,520
+Você sabe, sem bibliotecas extras ou qualquer coisa e é muito fácil fazer isso.
+
+159
+00:13:07,520 --> 00:13:11,180
+Espero que tenham achado isso útil e nos vemos no próximo projeto.

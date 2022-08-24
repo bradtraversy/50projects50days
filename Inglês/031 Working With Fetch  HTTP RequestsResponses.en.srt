@@ -1,0 +1,355 @@
+1
+00:00:00,360 --> 00:00:06,360
+All right, so this is the first project where we're actually dealing with working with a third party
+
+2
+00:00:06,360 --> 00:00:10,050
+API using fetch to make an HTTP request.
+
+3
+00:00:10,080 --> 00:00:15,920
+So I'm just going to go over a little bit of this before we get into the next video and write our JavaScript.
+
+4
+00:00:16,410 --> 00:00:21,170
+So the API we're working with an API is just application programming interface.
+
+5
+00:00:21,570 --> 00:00:24,120
+We're working with something called the Jason API.
+
+6
+00:00:24,120 --> 00:00:29,370
+It serves Jason data, which is essentially like a like a JavaScript object.
+
+7
+00:00:29,370 --> 00:00:30,420
+It looks like this.
+
+8
+00:00:30,810 --> 00:00:32,550
+So Curly braces.
+
+9
+00:00:32,790 --> 00:00:36,210
+Jason does use double quotes on the keys and the values.
+
+10
+00:00:36,870 --> 00:00:41,850
+But you can see this is just an object with an I.D., a joke and a status.
+
+11
+00:00:42,180 --> 00:00:48,210
+So if we make an requests, I get requests to this particular you URL.
+
+12
+00:00:48,690 --> 00:00:50,330
+We should get something like this.
+
+13
+00:00:50,340 --> 00:00:53,020
+Now, there's a few different formats.
+
+14
+00:00:53,490 --> 00:00:56,400
+The default is going to be HTML and we don't want that.
+
+15
+00:00:56,400 --> 00:00:58,500
+We want applications, JSON.
+
+16
+00:00:58,770 --> 00:01:04,290
+So to get that, we actually have to send a header because when you send HGP request, you can send
+
+17
+00:01:04,290 --> 00:01:09,800
+headers and we want to send a header of accept equal to applications, Jason.
+
+18
+00:01:10,110 --> 00:01:13,180
+And there's there's many, many different ways to make requests.
+
+19
+00:01:13,200 --> 00:01:15,390
+We're going to be using fetch within our application.
+
+20
+00:01:15,660 --> 00:01:19,410
+You could even use Kerl, which is a terminal program.
+
+21
+00:01:19,410 --> 00:01:21,630
+So I'll just show you real quick.
+
+22
+00:01:22,560 --> 00:01:24,900
+Let me open up a new terminal here.
+
+23
+00:01:27,380 --> 00:01:33,610
+And if I pace that end, so basically I'm just using Carl to make a get request to this Eurail and I'm
+
+24
+00:01:33,620 --> 00:01:40,880
+adding the header accept application JSON, and if I do, that is I'll get that object with an ID,
+
+25
+00:01:40,910 --> 00:01:42,170
+a joke and a status.
+
+26
+00:01:42,440 --> 00:01:47,930
+And each call I make is going to be a different joke because they're random jokes, OK, with a different
+
+27
+00:01:47,930 --> 00:01:48,440
+ID.
+
+28
+00:01:48,950 --> 00:01:53,090
+So another really nice tool to work with APIs is postman.
+
+29
+00:01:53,150 --> 00:01:55,010
+And you guys don't have to download this or anything.
+
+30
+00:01:55,010 --> 00:01:57,590
+I just want to show you that I can make the same request.
+
+31
+00:01:57,920 --> 00:02:05,180
+So I'm going to make that request to I want to get rid of that to this you URL.
+
+32
+00:02:05,480 --> 00:02:11,810
+And if I do that without adding the except header value, I'm going to get HTML back.
+
+33
+00:02:11,810 --> 00:02:15,080
+This is HTML, so I want Jason back.
+
+34
+00:02:15,080 --> 00:02:23,630
+So I'm going to add in headers for a key I'll except and for a value it's going to be application JSON
+
+35
+00:02:23,870 --> 00:02:26,390
+and if I send that then I get Jason back.
+
+36
+00:02:26,390 --> 00:02:29,840
+So I just get this simple object just like you saw when I used Kerl.
+
+37
+00:02:30,320 --> 00:02:36,110
+And as far as these methods get, just means you're getting data or getting something from the server
+
+38
+00:02:36,440 --> 00:02:39,300
+post you typically use when you're submitting data.
+
+39
+00:02:39,320 --> 00:02:46,430
+So if you're submitting like a contact form or maybe you have an admin screen where you're we are adding
+
+40
+00:02:46,430 --> 00:02:52,580
+a new blog post or something that would be a post request put is used for updating data that's on the
+
+41
+00:02:52,580 --> 00:02:53,110
+server.
+
+42
+00:02:53,120 --> 00:02:54,050
+Same with Patch.
+
+43
+00:02:54,290 --> 00:02:59,810
+And then delete is to delete data on the server and then these these down here you don't really have
+
+44
+00:02:59,810 --> 00:03:00,440
+to worry about.
+
+45
+00:03:00,440 --> 00:03:04,810
+Those are rarely used, at least for, you know, the stuff that I do.
+
+46
+00:03:05,780 --> 00:03:09,070
+So that's Posman and you can download it if you want.
+
+47
+00:03:09,080 --> 00:03:12,230
+I think it's get Posman dot com if you want to mess around with it.
+
+48
+00:03:13,010 --> 00:03:16,940
+But what we want to do is make that request from our application.
+
+49
+00:03:17,210 --> 00:03:20,870
+And the way we can do that is with using the API.
+
+50
+00:03:21,020 --> 00:03:29,180
+So the API provides a JavaScript interface for accessing and manipulating parts of the pipeline, such
+
+51
+00:03:29,180 --> 00:03:30,740
+as requests and responses.
+
+52
+00:03:31,190 --> 00:03:37,130
+And there's an example right here and it doesn't have to be a third party API like we're using.
+
+53
+00:03:37,130 --> 00:03:38,600
+It could be your own back end.
+
+54
+00:03:38,600 --> 00:03:46,670
+So you could build an API with, like Express, no Jasin Express or Python, Django or Laravel or whatever
+
+55
+00:03:46,670 --> 00:03:47,270
+it might be.
+
+56
+00:03:47,750 --> 00:03:51,320
+Or you can actually get just standard Jason files with Fach.
+
+57
+00:03:51,320 --> 00:03:55,490
+It doesn't have to be some, you know, some complicated API.
+
+58
+00:03:55,910 --> 00:04:02,900
+Now when you call fetch to neutral, it returns a promise because it fetches the data asynchronously.
+
+59
+00:04:03,320 --> 00:04:10,660
+So you have this dot then when when it finishes and the API is a little weird because you have to then
+
+60
+00:04:10,700 --> 00:04:14,930
+the first one you get the response and then you say, well, I want the Jason data.
+
+61
+00:04:14,930 --> 00:04:20,630
+So this is just an arrow function that we pass in and we're saying response dot Jason.
+
+62
+00:04:20,900 --> 00:04:26,720
+And then we have another dot then because this returns a promise as well, and that gives us the actual
+
+63
+00:04:26,720 --> 00:04:27,120
+data.
+
+64
+00:04:27,140 --> 00:04:31,670
+So in this case, we would be logging the data that's in this movie's Jason file.
+
+65
+00:04:32,270 --> 00:04:34,790
+So this is a get request by default.
+
+66
+00:04:34,790 --> 00:04:41,420
+If he wanted to make like a post or request, you would you would pass in the URL just as we did above.
+
+67
+00:04:41,420 --> 00:04:48,750
+But then you'd have this extra options, value our object and you'd pass in the method that you want.
+
+68
+00:04:48,800 --> 00:04:50,720
+So in this case, it's a post request.
+
+69
+00:04:51,110 --> 00:04:54,650
+And if you are submitting form data, you would pass that in the body.
+
+70
+00:04:54,890 --> 00:05:00,740
+Like if you had a registration form with the name email password, that stuff would all go in the body.
+
+71
+00:05:01,430 --> 00:05:05,720
+OK, and I'm not going to get too deep into this because what we're doing is pretty simple.
+
+72
+00:05:06,590 --> 00:05:12,080
+So we're going to make a get request to get our joke, put it in our interface or in our, you know,
+
+73
+00:05:12,080 --> 00:05:13,250
+in our application.
+
+74
+00:05:13,520 --> 00:05:19,970
+I'm also going to show you afterwards how we can use a different syntax than this dot then.
+
+75
+00:05:20,300 --> 00:05:24,980
+So there's something called a sink, a await, which makes it a little cleaner, at least in my opinion.
+
+76
+00:05:24,980 --> 00:05:30,140
+And I think it's it seems to be, you know, the more popular thing to do when using promises is to
+
+77
+00:05:30,140 --> 00:05:34,040
+use a sink away rather than DOT then because this can get quite messy.
+
+78
+00:05:34,820 --> 00:05:36,410
+So we'll look into that as well.
+
+79
+00:05:36,830 --> 00:05:38,510
+So hopefully that makes sense.
+
+80
+00:05:38,510 --> 00:05:39,770
+If it doesn't, don't worry about it.
+
+81
+00:05:39,770 --> 00:05:44,720
+We're going to be doing a few projects with, you know, dealing with APIs, dealing with fetch.
+
+82
+00:05:45,080 --> 00:05:51,920
+And there's also a library called Axios, which I actually prefer over fetch, but fetch is built into
+
+83
+00:05:51,920 --> 00:05:52,490
+the browser.
+
+84
+00:05:52,490 --> 00:05:56,330
+You don't have to add a CDN or install it or anything like that.
+
+85
+00:05:56,660 --> 00:05:57,080
+All right.
+
+86
+00:05:57,090 --> 00:06:05,270
+So in the next video, we'll go ahead and make our request to our API using fetch and put it into the
+
+87
+00:06:05,480 --> 00:06:06,800
+application here.
+
+88
+00:06:06,800 --> 00:06:07,580
+Get a joke.
+
+89
+00:06:07,580 --> 00:06:11,240
+We'll also have this button, make another request to get another joke.

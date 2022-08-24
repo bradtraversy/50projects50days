@@ -1,0 +1,759 @@
+1
+00:00:00,420 --> 00:00:05,070
+OK, so now we're going to get into the JavaScript and basically we want to be able to double click
+
+2
+00:00:05,070 --> 00:00:08,530
+on any area on the image and have the heart appear.
+
+3
+00:00:08,550 --> 00:00:14,340
+We basically want to insert the heart icon into the dorm and we already have the keys for it to grow
+
+4
+00:00:14,340 --> 00:00:15,480
+and have that effect.
+
+5
+00:00:15,990 --> 00:00:19,490
+So let's start off by bringing in the Love Me class.
+
+6
+00:00:20,250 --> 00:00:27,690
+So you just document dot query selector and we're going to bring in the class of love me.
+
+7
+00:00:27,720 --> 00:00:32,610
+And then we also want the times, which I believe has an idea of time.
+
+8
+00:00:32,620 --> 00:00:37,560
+So that's going to be this zero right here, because we want to change that when we double click.
+
+9
+00:00:38,280 --> 00:00:38,730
+All right.
+
+10
+00:00:38,740 --> 00:00:43,470
+Now we'll take that love me class here that love me variable.
+
+11
+00:00:43,800 --> 00:00:47,160
+And we want to add an event listener and I want to double click now.
+
+12
+00:00:47,400 --> 00:00:48,840
+There's an easy way to do this.
+
+13
+00:00:48,840 --> 00:00:50,850
+We can pass and double click.
+
+14
+00:00:51,970 --> 00:00:55,920
+And then when we double click, we're going to fire off function.
+
+15
+00:00:55,920 --> 00:00:58,650
+And let's just do a console log of one, two, three.
+
+16
+00:00:58,800 --> 00:01:01,260
+So we'll go over here and open up our console.
+
+17
+00:01:01,650 --> 00:01:01,880
+Sure.
+
+18
+00:01:01,890 --> 00:01:02,550
+Save this.
+
+19
+00:01:02,820 --> 00:01:06,000
+And if I double click, we see one, two, three gets logged.
+
+20
+00:01:06,360 --> 00:01:09,150
+Now, we're going to make this a little more complicated.
+
+21
+00:01:09,150 --> 00:01:15,360
+And instead of just using double click, I want to use a single click, but create our own double click.
+
+22
+00:01:15,750 --> 00:01:21,450
+And if you want to pause the video and try to do this yourself, basically we're just going to test
+
+23
+00:01:21,450 --> 00:01:23,070
+the time between clicks.
+
+24
+00:01:23,280 --> 00:01:28,680
+And if it's less than a certain amount like let's say eight hundred milliseconds, then that's going
+
+25
+00:01:28,680 --> 00:01:30,030
+to be considered a double click.
+
+26
+00:01:30,030 --> 00:01:34,560
+If it's if it's, you know, the time range is wider between clicks, then that's not going to be a
+
+27
+00:01:34,560 --> 00:01:35,150
+double click.
+
+28
+00:01:35,520 --> 00:01:37,470
+So if you want to try that yourself, you can.
+
+29
+00:01:38,130 --> 00:01:43,680
+But I'm going to go ahead and just create a variable up here called click time.
+
+30
+00:01:46,110 --> 00:01:57,030
+And down here, let's check to see if the time is equal to zero, so quick time is equal to zero, then
+
+31
+00:01:57,060 --> 00:02:01,230
+we're going to set the clock time to new.
+
+32
+00:02:01,500 --> 00:02:04,640
+We're going to use the date constructor and the get time method here.
+
+33
+00:02:05,220 --> 00:02:11,850
+So we're going to set that and then I'll just go ahead and cancel log click time so you can see what
+
+34
+00:02:11,850 --> 00:02:12,500
+that gives us.
+
+35
+00:02:12,520 --> 00:02:17,640
+So if I go over here and I just click once, I'm going to see the value of click time, which had the
+
+36
+00:02:17,640 --> 00:02:19,260
+current time when I clicked.
+
+37
+00:02:19,260 --> 00:02:22,170
+And it's not going to work again because it's in this if statement.
+
+38
+00:02:22,620 --> 00:02:25,690
+Time is no longer equal to zero, so that's not going to work.
+
+39
+00:02:26,220 --> 00:02:26,630
+All right.
+
+40
+00:02:26,640 --> 00:02:27,690
+So we want to do that.
+
+41
+00:02:27,690 --> 00:02:36,870
+And then else so if it's not equal to zero, then we want to do another test here and check to see if
+
+42
+00:02:38,070 --> 00:02:45,780
+the let's actually let's let's put this in parentheses, another set of parentheses and let's say if
+
+43
+00:02:45,780 --> 00:02:51,530
+the new dates don't get time, so we're just checking the current timestamp.
+
+44
+00:02:51,750 --> 00:03:02,010
+So if that is or if that minus the click time, I should say, if that is greater than 800 milliseconds,
+
+45
+00:03:02,700 --> 00:03:07,370
+then for now, let's just console log one, two, three else.
+
+46
+00:03:09,540 --> 00:03:16,490
+So if it's not less than 800, then we're going to just reset the clock time to zero.
+
+47
+00:03:17,730 --> 00:03:19,620
+I'm sorry, not zero the current day time.
+
+48
+00:03:20,430 --> 00:03:26,570
+So new date does get time, OK?
+
+49
+00:03:26,730 --> 00:03:32,100
+Now, if I go over here and I double click, I see one, two, three by single click.
+
+50
+00:03:32,100 --> 00:03:35,850
+Nothing happens if I single click and then I wait and single click.
+
+51
+00:03:36,210 --> 00:03:40,980
+That's not considered a double click because that is, that's greater than 800 milliseconds.
+
+52
+00:03:41,550 --> 00:03:48,150
+So if I do a quick that's less than 800 milliseconds and that gives me my double click functionality.
+
+53
+00:03:48,870 --> 00:03:54,780
+OK, so I mean you could use double as an event, but just to make it a little more fun, we just added
+
+54
+00:03:54,780 --> 00:03:57,610
+a click and then created our own double click event.
+
+55
+00:03:58,650 --> 00:03:59,070
+All right.
+
+56
+00:03:59,080 --> 00:04:04,050
+So when this happens, when we actually double click what we want to do, we're going to create our
+
+57
+00:04:04,050 --> 00:04:11,460
+call, I should say, a function called create heart, and we're going to pass the event parameter into
+
+58
+00:04:11,460 --> 00:04:11,820
+that.
+
+59
+00:04:12,090 --> 00:04:16,710
+And then because we need to map where the mouse is in the image, because that's where we want the heart
+
+60
+00:04:16,710 --> 00:04:17,340
+to appear.
+
+61
+00:04:17,550 --> 00:04:19,590
+We also want to set the click time.
+
+62
+00:04:19,830 --> 00:04:21,600
+We want to set that back to zero.
+
+63
+00:04:22,710 --> 00:04:28,380
+OK, so if I double click, it's going to tell me create heart is not a function or it's not defined.
+
+64
+00:04:28,650 --> 00:04:31,090
+So let's go ahead and define it down here.
+
+65
+00:04:31,110 --> 00:04:34,200
+It's a function create heart.
+
+66
+00:04:35,310 --> 00:04:42,000
+This is going to take in the event value here actually will make this let's make this an arrow function
+
+67
+00:04:42,000 --> 00:04:48,330
+so const create hearts and set that to an arrow.
+
+68
+00:04:49,170 --> 00:04:55,920
+So let's build a heart icon so we'll create a variable called heart and set that to document create
+
+69
+00:04:55,920 --> 00:04:56,400
+element.
+
+70
+00:04:57,270 --> 00:04:59,100
+So create element does just that.
+
+71
+00:04:59,130 --> 00:05:07,770
+We can create a div or any kind of html tag or each element I can use and I tag here and I want to add
+
+72
+00:05:07,770 --> 00:05:09,060
+a couple of classes to it.
+
+73
+00:05:09,060 --> 00:05:13,950
+So let's say heart dot class list dot add.
+
+74
+00:05:14,460 --> 00:05:15,870
+So remember with font awesome.
+
+75
+00:05:15,870 --> 00:05:24,120
+We have the first class and then I also want to add the a dash heart class.
+
+76
+00:05:25,560 --> 00:05:34,230
+OK, so now we have this heart element but we want to insert this wherever we're clicking now with this
+
+77
+00:05:34,230 --> 00:05:41,130
+event that's passed in here, ultimately coming from here from the the click event here, we can get
+
+78
+00:05:41,130 --> 00:05:41,970
+the position.
+
+79
+00:05:41,970 --> 00:05:46,020
+So let's say CONSED and we'll call this X.
+
+80
+00:05:46,020 --> 00:05:47,790
+So this is on the X axis.
+
+81
+00:05:48,150 --> 00:06:01,380
+So on this event object, we have clients client X and then let's do call this Y and let's do client
+
+82
+00:06:01,830 --> 00:06:07,020
+Y, and then I just want to show you the values for this so we're going to can't type, we're going
+
+83
+00:06:07,020 --> 00:06:15,240
+to just cancel log X and Y now I'm going to go over here and click somewhere and I get one twenty two,
+
+84
+00:06:15,240 --> 00:06:16,140
+one thirty three.
+
+85
+00:06:16,140 --> 00:06:21,330
+If I go up in the corner here I get a ninety nine, I go over here.
+
+86
+00:06:22,170 --> 00:06:23,940
+So three seventy seven.
+
+87
+00:06:23,940 --> 00:06:26,340
+So the first value is on the x axis.
+
+88
+00:06:26,340 --> 00:06:29,550
+I'm way over here so the X value is three seventy seven.
+
+89
+00:06:29,730 --> 00:06:32,520
+I'm pretty close to the top so it's ninety two here.
+
+90
+00:06:32,520 --> 00:06:33,480
+It's eighty seven.
+
+91
+00:06:33,720 --> 00:06:36,810
+And this is just in you know in the viewport here.
+
+92
+00:06:37,500 --> 00:06:42,480
+So if I go way over here and I click you can see eighty five.
+
+93
+00:06:43,110 --> 00:06:43,560
+All right.
+
+94
+00:06:43,560 --> 00:06:44,680
+So it gives me the exact.
+
+95
+00:06:44,830 --> 00:06:47,180
+Coordinates of where I'm clicking, which is what I want.
+
+96
+00:06:47,380 --> 00:06:55,360
+Now, another value or two values that I want to get are the offset left in offset right values.
+
+97
+00:06:55,380 --> 00:07:01,870
+So the this E that is getting passed in here pertains to this element, right?
+
+98
+00:07:01,870 --> 00:07:02,980
+That the whole image.
+
+99
+00:07:03,190 --> 00:07:10,000
+So we want to get the offset from the left and we want to get the offset from the right so that we can
+
+100
+00:07:10,570 --> 00:07:18,520
+basically we can subtract that from whatever these x y values are, because we wanted to show, you
+
+101
+00:07:18,520 --> 00:07:24,010
+know, within this image here that this is this is our our working space, not the entire viewport.
+
+102
+00:07:24,010 --> 00:07:27,610
+So we want to subtract this and this from wherever we're clicking.
+
+103
+00:07:27,880 --> 00:07:28,260
+All right.
+
+104
+00:07:28,270 --> 00:07:34,840
+And on that event parameter, on that e value, we can use offset left and offset top.
+
+105
+00:07:34,840 --> 00:07:46,270
+So let's say const and let's set left offsets and set that to E and this is actually on the target property.
+
+106
+00:07:46,270 --> 00:07:54,100
+So idot target, dot offset or I'm sorry, left offset and then we want the top as well.
+
+107
+00:07:54,310 --> 00:07:59,990
+So this one is going to be top offset and top offset.
+
+108
+00:08:00,400 --> 00:08:07,030
+OK, so now we want to basically take our X and Y values, which is in the place in the viewport that
+
+109
+00:08:07,030 --> 00:08:10,650
+we click and we want to subtract left and top from those.
+
+110
+00:08:10,930 --> 00:08:20,910
+So let's say const X inside, so inside the image and set that to X what we want to minus the left offset.
+
+111
+00:08:21,310 --> 00:08:27,310
+OK, we're going to do the same thing with Y and we're going to minus the top offset because X is right
+
+112
+00:08:27,310 --> 00:08:28,890
+and left wise up and down.
+
+113
+00:08:29,320 --> 00:08:31,800
+So this is going to be Y inside.
+
+114
+00:08:32,460 --> 00:08:36,450
+OK, now you can get rid of this console log.
+
+115
+00:08:36,460 --> 00:08:44,760
+Actually let's console log just to see what we get for X inside and Y inside, so we'll save that.
+
+116
+00:08:44,770 --> 00:08:46,930
+And now if I click way end up in this corner.
+
+117
+00:08:47,680 --> 00:08:49,780
+OK, so I'm getting not a number.
+
+118
+00:08:50,560 --> 00:08:52,110
+OK, so I screwed this up.
+
+119
+00:08:52,120 --> 00:08:53,140
+This shouldn't be.
+
+120
+00:08:53,140 --> 00:08:54,760
+It's not left offset.
+
+121
+00:08:54,760 --> 00:08:56,260
+It's offset left.
+
+122
+00:08:57,310 --> 00:09:00,940
+So offset left, I must adjust that the autocomplete.
+
+123
+00:09:01,270 --> 00:09:04,710
+So this is offset top.
+
+124
+00:09:04,720 --> 00:09:05,100
+All right.
+
+125
+00:09:05,110 --> 00:09:07,750
+So let's save that now and let's go up into this corner.
+
+126
+00:09:07,930 --> 00:09:12,970
+And now you'll see that these values are relative to the image rather than the viewport.
+
+127
+00:09:12,970 --> 00:09:15,880
+Before it was like, what, eighty five or something like that.
+
+128
+00:09:16,210 --> 00:09:19,900
+But now so that's two one and that's one one.
+
+129
+00:09:20,290 --> 00:09:22,530
+OK, so that's the start of the corner here.
+
+130
+00:09:23,350 --> 00:09:26,920
+So that gives us the correct coordinates within the image, not the viewport.
+
+131
+00:09:27,430 --> 00:09:33,100
+So now that we have those values, what we'll do is take the heart that we created.
+
+132
+00:09:33,100 --> 00:09:42,130
+We created that element and we want to set the style top property now in the success for the Love Me
+
+133
+00:09:42,130 --> 00:09:42,550
+heart.
+
+134
+00:09:42,590 --> 00:09:48,820
+Remember, we positioned that absolu so we can use top left, bottom right CSFs properties, but we
+
+135
+00:09:48,820 --> 00:09:49,960
+don't want to set them here.
+
+136
+00:09:49,960 --> 00:09:52,510
+We don't want a hard code them because it's dynamic.
+
+137
+00:09:52,510 --> 00:09:54,460
+It's going to be wherever it's set here.
+
+138
+00:09:54,730 --> 00:10:01,930
+So I'm going to set the top value and I'm going to set that to let's actually just put a template literal
+
+139
+00:10:01,930 --> 00:10:06,670
+in here and we want to set it to Y inside.
+
+140
+00:10:07,270 --> 00:10:13,060
+Remember, this is the top, so we want the Y axis, which is top and bottom, and then we just want
+
+141
+00:10:13,060 --> 00:10:16,910
+to add pixels and then we want to do the same here.
+
+142
+00:10:16,930 --> 00:10:21,610
+This will be X inside and here we're going to set the left property.
+
+143
+00:10:22,930 --> 00:10:24,610
+OK, so we're going to insert it there.
+
+144
+00:10:24,640 --> 00:10:27,010
+Now, it's not going to show up just yet.
+
+145
+00:10:27,160 --> 00:10:34,000
+So if I double click, it's not going to do anything because we need to add it to the love me element
+
+146
+00:10:34,000 --> 00:10:36,250
+we want to append child.
+
+147
+00:10:36,400 --> 00:10:39,490
+OK, so we're adding it in the love me element.
+
+148
+00:10:39,490 --> 00:10:40,210
+The heart.
+
+149
+00:10:41,650 --> 00:10:42,060
+All right.
+
+150
+00:10:42,070 --> 00:10:45,310
+So if I go ahead and I click now, there we go.
+
+151
+00:10:45,320 --> 00:10:48,990
+So we're inserting that heart wherever we click in the image.
+
+152
+00:10:49,870 --> 00:10:56,260
+So even though this is a very, very simple project in terms of like functionality, if you didn't know
+
+153
+00:10:56,260 --> 00:11:01,500
+that you can get the positioning of the mouse and stuff and then how to get the exact position within
+
+154
+00:11:01,630 --> 00:11:06,660
+inner element, this can be very helpful for many other, you know, larger projects.
+
+155
+00:11:07,600 --> 00:11:08,710
+So we're not done yet.
+
+156
+00:11:08,710 --> 00:11:10,470
+We want to do this time thing.
+
+157
+00:11:11,170 --> 00:11:12,910
+And this is going to be pretty easy.
+
+158
+00:11:13,150 --> 00:11:16,270
+We're just going to initialize another variable up here.
+
+159
+00:11:16,270 --> 00:11:21,220
+We'll call this times collect and set that to zero by default.
+
+160
+00:11:21,430 --> 00:11:26,410
+And we already brought the Times element in which is a span right here with the idea of times.
+
+161
+00:11:26,860 --> 00:11:34,540
+So we'll say times dot in our HTML and set that two times clicked, but that's going to be zero.
+
+162
+00:11:34,540 --> 00:11:39,820
+So we would just want to increment it and we can do that by just adding a plus plus at the beginning
+
+163
+00:11:39,820 --> 00:11:41,570
+and that will increment it by one.
+
+164
+00:11:41,890 --> 00:11:46,780
+So now if we go over here and I double click, you'll see you liked it one times to three.
+
+165
+00:11:47,200 --> 00:11:49,810
+And obviously it doesn't matter, you know, where we click.
+
+166
+00:11:50,350 --> 00:11:56,950
+Now, one thing I want to show you is in the elements tab, we see just kind of double click.
+
+167
+00:11:56,980 --> 00:12:04,240
+So this is going to put in the the eye tag here with the, you know, FASFA heart.
+
+168
+00:12:04,240 --> 00:12:05,480
+But look how many there are.
+
+169
+00:12:06,010 --> 00:12:12,700
+So basically, we're just we keep putting them in, but they don't they disappear because of this,
+
+170
+00:12:13,300 --> 00:12:15,070
+because we're setting the opacity to zero.
+
+171
+00:12:15,070 --> 00:12:16,410
+But they're all still there.
+
+172
+00:12:16,480 --> 00:12:23,470
+So to fix this, we want to remove each heart after, let's say, one second.
+
+173
+00:12:23,740 --> 00:12:31,060
+So we'll use a set time out here and this will just run a function after a certain amount of time.
+
+174
+00:12:31,060 --> 00:12:36,010
+So the second argument we pass in is that amount of time, which I'm going to do one second, which
+
+175
+00:12:36,010 --> 00:12:37,420
+is a thousand milliseconds.
+
+176
+00:12:37,780 --> 00:12:43,150
+And we don't even actually need curly braces because all we're doing is this heart hardcourt remove.
+
+177
+00:12:43,690 --> 00:12:45,410
+So we're just removing it from the dawn.
+
+178
+00:12:45,430 --> 00:12:53,530
+So now if we take a look at down here in So Love Me Right Now is empty, I'm going to double click and
+
+179
+00:12:53,530 --> 00:12:57,280
+now and you can see it gets filled in.
+
+180
+00:12:57,460 --> 00:12:59,110
+I can't even click it fast enough.
+
+181
+00:12:59,110 --> 00:13:01,870
+Actually, you know, what I'll do is just change this to five seconds.
+
+182
+00:13:02,650 --> 00:13:05,980
+So I'll click and you'll see the heart is in there.
+
+183
+00:13:06,040 --> 00:13:09,040
+After five seconds, it removes.
+
+184
+00:13:09,040 --> 00:13:11,080
+OK, but I want to set that to one second.
+
+185
+00:13:11,080 --> 00:13:13,560
+I just just slowed it down to show you.
+
+186
+00:13:13,810 --> 00:13:16,270
+So now it's not going to fill up with all these hearts.
+
+187
+00:13:16,510 --> 00:13:18,340
+They get removed after one second.
+
+188
+00:13:19,360 --> 00:13:19,750
+All right.
+
+189
+00:13:19,750 --> 00:13:21,400
+So that's pretty much it.
+
+190
+00:13:21,440 --> 00:13:24,940
+Hopefully you guys enjoyed this project and we'll move on to the next.

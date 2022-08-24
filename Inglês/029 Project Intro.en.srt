@@ -1,0 +1,79 @@
+1
+00:00:00,300 --> 00:00:06,560
+OK, so in this project, we're going to be building dad joke application where it gives us a joke.
+
+2
+00:00:06,570 --> 00:00:08,190
+So I had a clock yesterday.
+
+3
+00:00:08,190 --> 00:00:09,660
+It was so time consuming.
+
+4
+00:00:09,910 --> 00:00:14,730
+They're just silly little jokes and we can click a button to get a new joke and we can keep getting
+
+5
+00:00:14,730 --> 00:00:15,330
+new jokes.
+
+6
+00:00:15,330 --> 00:00:22,140
+And we're we're getting this from is actually a third party API that I can has dad joke dotcom.
+
+7
+00:00:22,320 --> 00:00:29,460
+And if you go to that you URL slash API, you can see basically the documentation for this API and we're
+
+8
+00:00:29,460 --> 00:00:36,810
+going to use the fetch API that's built into the browser to make a request and get an object with an
+
+9
+00:00:36,810 --> 00:00:39,240
+I.D., a joke and a status.
+
+10
+00:00:39,240 --> 00:00:43,710
+And we're going to take that joke and we're going to put it into our application here.
+
+11
+00:00:44,100 --> 00:00:44,490
+All right.
+
+12
+00:00:44,490 --> 00:00:51,660
+So I'm going to actually have a section in this project where I strictly go over HTTP request and response,
+
+13
+00:00:51,990 --> 00:00:55,140
+how that works, as well as how the API works.
+
+14
+00:00:55,410 --> 00:01:01,020
+And then, you know, after we build out the interface with H2O and access, we'll add our JavaScript.
+
+15
+00:01:01,230 --> 00:01:06,450
+I'm going to show you how we can use fetch normally and how we can also use it with something called
+
+16
+00:01:06,450 --> 00:01:07,350
+a sink away.
+
+17
+00:01:07,350 --> 00:01:12,180
+Because when you deal with that, you deal with something called promises, which we'll get into as
+
+18
+00:01:12,180 --> 00:01:12,510
+well.
+
+19
+00:01:12,660 --> 00:01:12,960
+All right.
+
+20
+00:01:12,960 --> 00:01:13,920
+So let's get started.

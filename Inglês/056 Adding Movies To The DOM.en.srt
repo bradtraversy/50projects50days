@@ -1,0 +1,475 @@
+1
+00:00:00,240 --> 00:00:07,350
+So we have our get movies function here to actually fetch the movies by Yooralla, we have our search
+
+2
+00:00:07,350 --> 00:00:12,810
+functionality, but we don't have any functionality where it's it's putting anything into the dorm.
+
+3
+00:00:12,810 --> 00:00:19,050
+So where we have this data results instead of console logging, I'm going to have a function called
+
+4
+00:00:19,050 --> 00:00:20,630
+show movies.
+
+5
+00:00:21,660 --> 00:00:26,070
+So let's create a function, show movies.
+
+6
+00:00:26,640 --> 00:00:30,720
+And it's going to take in it's going to take in the data, but we'll call it movies.
+
+7
+00:00:31,920 --> 00:00:38,730
+And let's first of all, clear the main, which is, you know, the whole main part here, because we're
+
+8
+00:00:38,730 --> 00:00:40,290
+going to initially list movies.
+
+9
+00:00:40,440 --> 00:00:45,210
+But then when we search, we don't want to we don't want to add them on to the movies that are already
+
+10
+00:00:45,210 --> 00:00:45,560
+here.
+
+11
+00:00:45,570 --> 00:00:46,880
+We want to replace them.
+
+12
+00:00:47,160 --> 00:00:53,370
+So we're going to take Main, which I actually have to bring in, and set the inner loops, main dot
+
+13
+00:00:54,180 --> 00:00:55,410
+in our HTML.
+
+14
+00:00:55,420 --> 00:00:59,240
+We're going to set that to nothing, just going to clear it.
+
+15
+00:01:00,600 --> 00:01:09,300
+Let's go ahead and bring that in up here so we have const main and let's set that to document.
+
+16
+00:01:10,260 --> 00:01:12,240
+I think I gave it an idea of me.
+
+17
+00:01:14,100 --> 00:01:15,430
+It's just double check here.
+
+18
+00:01:15,450 --> 00:01:19,020
+Yeah, so main ID main, so I want to bring that in.
+
+19
+00:01:19,500 --> 00:01:24,990
+We want to, first of all, clear it, then we want to take the movies, which is the data that's fetched
+
+20
+00:01:24,990 --> 00:01:26,180
+and loop through those.
+
+21
+00:01:26,190 --> 00:01:34,080
+So for each for each takes in a function, we'll use an arrow function here.
+
+22
+00:01:34,080 --> 00:01:35,520
+We'll see for each movie.
+
+23
+00:01:38,130 --> 00:01:48,810
+And then from this movie that's passed in, we should have access to movie title and vote average stuff
+
+24
+00:01:48,810 --> 00:01:49,290
+like that.
+
+25
+00:01:49,290 --> 00:01:52,480
+You saw you saw the response with all the data.
+
+26
+00:01:52,740 --> 00:01:54,630
+Now I'm going to use this structuring here.
+
+27
+00:01:54,630 --> 00:02:02,070
+So to do this, we can pull we can pull values out of the movie object, OK, because that's what movie
+
+28
+00:02:02,070 --> 00:02:02,370
+is.
+
+29
+00:02:02,370 --> 00:02:04,440
+It's an object with all the movie data.
+
+30
+00:02:04,830 --> 00:02:11,310
+And if we put curly braces here, we can pull out, for instance, the title and then it will just be
+
+31
+00:02:11,310 --> 00:02:12,450
+a variable of title.
+
+32
+00:02:12,450 --> 00:02:19,560
+Instead of having to use movie title, we'll get the poster underscore path, which is the image we're
+
+33
+00:02:19,560 --> 00:02:28,290
+going to get the vote underscore average and we're going to get the overview is a lot of other data
+
+34
+00:02:28,290 --> 00:02:33,240
+that you can get from this object, from the array, but that's what we're going to use.
+
+35
+00:02:34,020 --> 00:02:34,440
+All right.
+
+36
+00:02:34,470 --> 00:02:39,930
+Now, we want to create a movie element because what we're going to do now is, is construct one of
+
+37
+00:02:39,960 --> 00:02:46,350
+these divs or multiple of these divs here with the real data and then put it into the dorm.
+
+38
+00:02:46,350 --> 00:02:55,290
+So let's say CONSED, we'll call this movie L movie elements and then document dots, create elements.
+
+39
+00:02:56,430 --> 00:03:03,900
+We want to create a div scissoring and then we're going to take that movie element and add a class to
+
+40
+00:03:03,900 --> 00:03:04,020
+it.
+
+41
+00:03:04,030 --> 00:03:10,500
+So class list dot add and we're going to add the class of movie that's going to give us our initial
+
+42
+00:03:10,500 --> 00:03:18,200
+div and then we'll take that movie elements and put into it let's say in our HTML said that to some
+
+43
+00:03:18,210 --> 00:03:23,240
+back text and then what I'll do is grab one of these divs of movie.
+
+44
+00:03:23,250 --> 00:03:26,730
+So grab this first one and I'm just going to delete all of them.
+
+45
+00:03:29,280 --> 00:03:37,260
+So all we should have in the table is the header and the main nothing in it, so save that, that's
+
+46
+00:03:37,260 --> 00:03:40,890
+going to disappear for now and then let's paste in
+
+47
+00:03:43,380 --> 00:03:47,820
+that and just clean this up a little bit.
+
+48
+00:03:51,060 --> 00:03:51,450
+All right.
+
+49
+00:03:51,460 --> 00:03:54,660
+So let's see.
+
+50
+00:03:54,660 --> 00:03:57,270
+So we have our image now for the image.
+
+51
+00:03:57,270 --> 00:04:04,190
+Let's get rid of this hardcoded image and let's put in our expression syntax.
+
+52
+00:04:04,200 --> 00:04:07,020
+Now, this is where we we have the poster path.
+
+53
+00:04:07,020 --> 00:04:07,350
+Right.
+
+54
+00:04:07,770 --> 00:04:09,930
+But that only includes the image name.
+
+55
+00:04:09,930 --> 00:04:11,400
+It doesn't include the path.
+
+56
+00:04:11,400 --> 00:04:19,260
+So here we're going to add our image, underscore path variable, and then we're going to just add on
+
+57
+00:04:19,260 --> 00:04:20,670
+to that the poster path.
+
+58
+00:04:22,440 --> 00:04:32,340
+And then for the alter, we'll just put in the title and then the title will go here and the H3 title.
+
+59
+00:04:32,340 --> 00:04:36,510
+And then we have our we have our our vote average.
+
+60
+00:04:37,470 --> 00:04:39,630
+So I'm going to put that in here vote average.
+
+61
+00:04:39,630 --> 00:04:45,180
+But remember, we also have the classes like green, orange and red.
+
+62
+00:04:45,780 --> 00:04:52,050
+So I'm going to actually have a separate function that I'm going to create real quick down here, basically
+
+63
+00:04:52,050 --> 00:05:03,030
+like a utility function called get, we'll say get class by rate and pass in the vote, which is going
+
+64
+00:05:03,030 --> 00:05:04,920
+to be the, you know, the vote average.
+
+65
+00:05:05,520 --> 00:05:08,240
+And we're just going to see what that is.
+
+66
+00:05:08,250 --> 00:05:21,270
+So we'll say if let's say if the vote is greater than or equal to eight, then let's return from this
+
+67
+00:05:21,270 --> 00:05:28,290
+function, a string of green and then let's do else.
+
+68
+00:05:28,290 --> 00:05:37,530
+If the vote is, let's say, greater than or equal to five, then let's return
+
+69
+00:05:39,900 --> 00:05:42,400
+orange or else.
+
+70
+00:05:42,870 --> 00:05:47,970
+So if it's less than that, then let's return red.
+
+71
+00:05:49,500 --> 00:05:49,880
+All right.
+
+72
+00:05:49,890 --> 00:05:55,230
+And then what we'll do is go up back up here where we have this where I put this class of green.
+
+73
+00:05:55,230 --> 00:05:56,190
+Let's get rid of that.
+
+74
+00:05:56,970 --> 00:06:05,670
+And we're going to put in here the get what I call it, get class by race and we're going to pass in
+
+75
+00:06:05,670 --> 00:06:08,370
+here the vote average.
+
+76
+00:06:08,880 --> 00:06:10,920
+OK, so that'll get passed in here.
+
+77
+00:06:10,920 --> 00:06:16,110
+And then depending on what that is, it's going to give us either green, orange or red.
+
+78
+00:06:16,870 --> 00:06:21,690
+And then the last thing we want in this scenario, HTML, is the overview.
+
+79
+00:06:21,690 --> 00:06:28,170
+Let's get rid of that and just put in the overview, OK?
+
+80
+00:06:28,170 --> 00:06:30,320
+And then we actually need to put it into the DOM.
+
+81
+00:06:30,330 --> 00:06:39,240
+So let's go under here and let's take the main element and let's append the child as we're putting this
+
+82
+00:06:39,240 --> 00:06:42,920
+into the main and we want to spend the movie element.
+
+83
+00:06:44,160 --> 00:06:44,550
+All right.
+
+84
+00:06:44,560 --> 00:06:48,420
+So now if I save that, we should see our movies.
+
+85
+00:06:51,970 --> 00:06:53,500
+And that looks a little weird.
+
+86
+00:07:00,790 --> 00:07:04,210
+All right, what does it look like that we just
+
+87
+00:07:07,270 --> 00:07:09,090
+see what this looks like in the dorm?
+
+88
+00:07:09,830 --> 00:07:18,240
+So we have main we have div class movie, so it looks like we have to dive class movie nested DIDs.
+
+89
+00:07:18,250 --> 00:07:19,120
+Why is that?
+
+90
+00:07:20,350 --> 00:07:27,700
+Oh, because we we had the d'Hiv hardcoded before, but here we're actually creating it and then we're
+
+91
+00:07:27,700 --> 00:07:28,180
+adding it.
+
+92
+00:07:28,190 --> 00:07:31,450
+So we just want to get rid of this and this last div.
+
+93
+00:07:33,650 --> 00:07:37,790
+All right, so let's save that and that should fix it good.
+
+94
+00:07:40,680 --> 00:07:46,170
+And it just wraps it's just a flex box that wraps the items, but yeah, and we if we hover over it,
+
+95
+00:07:46,170 --> 00:07:47,360
+we get our overview.
+
+96
+00:07:48,750 --> 00:07:52,680
+Cool now for the search.
+
+97
+00:07:53,040 --> 00:07:58,560
+That should just work, because what happens when we search, when we, you know, fire off a submit
+
+98
+00:07:58,560 --> 00:08:04,650
+here takes the value, the search value checks, make sure it's their calls, get movies and hits the
+
+99
+00:08:04,650 --> 00:08:09,910
+search API and then in turn, you know, calls this and loads it into the dorm.
+
+100
+00:08:09,940 --> 00:08:12,660
+So, again, I'm going to search for the word hard.
+
+101
+00:08:13,720 --> 00:08:19,410
+And if I hit enter, I get all these movies where the title has the word hard.
+
+102
+00:08:21,420 --> 00:08:21,810
+All right.
+
+103
+00:08:21,810 --> 00:08:27,540
+So it's not the most advanced movie application you can find on the Internet, but I think it gives
+
+104
+00:08:27,540 --> 00:08:35,640
+you a, you know, a good idea on how to work with a third party API, how to, you know, fetch data
+
+105
+00:08:35,670 --> 00:08:37,660
+inserted into the dorm and so on.
+
+106
+00:08:38,160 --> 00:08:38,530
+All right.
+
+107
+00:08:38,560 --> 00:08:39,290
+That's it, guys.
+
+108
+00:08:39,300 --> 00:08:40,740
+Hopefully like this project.
+
+109
+00:08:41,040 --> 00:08:46,380
+And like I've said many times, if you want to want to add on to this, that be great.
+
+110
+00:08:46,380 --> 00:08:52,020
+If you can add, you know, a more data or maybe you could have where you click on this and it goes
+
+111
+00:08:52,020 --> 00:08:56,250
+to the single page, you know, this is quite a few things you could do.
+
+112
+00:08:56,250 --> 00:08:57,630
+You could add pagination.
+
+113
+00:08:57,640 --> 00:09:05,610
+So I would encourage you to look more into that because again, tutorials, courses, there are only
+
+114
+00:09:05,610 --> 00:09:11,970
+half the battle you need to come up with, with your own ideas and, you know, add your own functionality
+
+115
+00:09:11,970 --> 00:09:14,760
+and it's going to take more work than just following a tutorial.
+
+116
+00:09:14,760 --> 00:09:18,600
+You're going to have to do some research and see how you do certain things.
+
+117
+00:09:18,600 --> 00:09:22,680
+But that's that's the other half of learning, in my opinion.
+
+118
+00:09:23,040 --> 00:09:24,360
+So that's it.
+
+119
+00:09:24,360 --> 00:09:26,250
+Let's go ahead and move on to the next video.

@@ -1,0 +1,923 @@
+﻿1
+00:00:00,240 --> 00:00:05,490
+Muito bem, pessoal, vamos começar o projeto de fundo da caixa 3D, então tenho meu projeto
+
+2
+00:00:05,490 --> 00:00:07,880
+starter abra meus três arquivos aqui.
+
+3
+00:00:08,130 --> 00:00:10,530
+Agora, o HTML para isso será muito simples.
+
+4
+00:00:10,530 --> 00:00:13,130
+Na verdade, só terá duas linhas no corpo.
+
+5
+00:00:13,140 --> 00:00:20,250
+Um será o botão e o outro será o recipiente da caixa e depois as 16 caixas individuais que vão
+
+6
+00:00:20,250 --> 00:00:22,110
+para transformar em uma caixa.
+
+7
+00:00:22,110 --> 00:00:26,060
+Quando clicamos no botão, eles serão criados a partir do JavaScript.
+
+8
+00:00:26,070 --> 00:00:31,020
+No entanto, por enquanto, até chegarmos a isso, vou apenas codificá-los e removê-los mais tarde
+
+9
+00:00:31,020 --> 00:00:33,120
+em e adicione nosso JavaScript.
+
+10
+00:00:33,360 --> 00:00:33,750
+Tudo bem.
+
+11
+00:00:33,750 --> 00:00:35,810
+Então vamos em frente e começar aqui.
+
+12
+00:00:35,830 --> 00:00:45,570
+Vamos apenas mudar o título para ver o fundo do 3D Box e vamos nos livrar desse H1 e vamos colocar nosso
+
+13
+00:00:45,570 --> 00:00:47,370
+botão para que tenhamos um botão.
+
+14
+00:00:47,370 --> 00:00:51,200
+E vou dar uma ideia do BTN e uma aula de magia.
+
+15
+00:00:51,930 --> 00:00:54,120
+E aqui dentro veremos magia.
+
+16
+00:00:54,120 --> 00:00:57,200
+E vou colar um emoji aqui.
+
+17
+00:00:58,500 --> 00:01:03,240
+Você não precisa, mas se você quiser isso, você pode simplesmente pegá-lo no repositório e então vamos
+
+18
+00:01:03,240 --> 00:01:04,740
+para ter nosso recipiente de caixas.
+
+19
+00:01:04,770 --> 00:01:10,350
+Isso vai ter uma ideia de caixas porque precisamos usá-lo dentro do JavaScript e para estilizar
+
+20
+00:01:10,350 --> 00:01:12,060
+adicionaremos uma classe de caixas.
+
+21
+00:01:12,420 --> 00:01:17,580
+E aqui dentro, como eu disse, isso vai vir do JavaScript, mas por enquanto,
+
+22
+00:01:17,760 --> 00:01:19,140
+vamos apenas codificá-los.
+
+23
+00:01:19,140 --> 00:01:23,460
+Então vamos em frente e digamos uma classe de caixa e queremos 16.
+
+24
+00:01:23,460 --> 00:01:29,250
+Então vamos fazer asterisco 16 enter e isso nos dará 16 divs com a classe de caixa.
+
+25
+00:01:29,760 --> 00:01:30,870
+Vá em frente e salve isso.
+
+26
+00:01:30,870 --> 00:01:34,770
+E tudo o que veremos é o botão, porque obviamente são apenas divs vazios.
+
+27
+00:01:35,040 --> 00:01:36,870
+Mas temos que ir em frente e estilizá-los.
+
+28
+00:01:37,170 --> 00:01:39,510
+Então, vamos pular para o nosso acesso ao estilo.
+
+29
+00:01:39,810 --> 00:01:43,110
+E temos nosso clichê, nossa fonte Raboteau.
+
+30
+00:01:43,380 --> 00:01:45,750
+Vamos usar a fonte Poppins para os botões.
+
+31
+00:01:45,750 --> 00:01:53,120
+Então, o que vou fazer é duplicar isso e vamos bem aqui, bem antes do e comercial,
+
+32
+00:01:53,580 --> 00:01:58,800
+se livrar disso e vamos colocar coberturas assim.
+
+33
+00:01:58,800 --> 00:02:04,920
+E então aqui embaixo no corpo, vamos adicionar uma cor de fundo, um cinza bem claro.
+
+34
+00:02:04,920 --> 00:02:07,770
+Então vai ser FA três vezes.
+
+35
+00:02:08,290 --> 00:02:11,370
+Não consigo nem ver a diferença, mas apenas um fundo cinza claro.
+
+36
+00:02:11,790 --> 00:02:16,670
+E então vamos começar com o estilo do botão, que tem uma classe de mágica.
+
+37
+00:02:17,130 --> 00:02:18,990
+Então é mágica.
+
+38
+00:02:18,990 --> 00:02:23,370
+E vamos dar a isso uma cor de fundo amarela.
+
+39
+00:02:23,370 --> 00:02:30,540
+Então vamos usar hexadecimal aqui com o valor de F nove, CA dois para.
+
+40
+00:02:31,020 --> 00:02:32,340
+OK, então esse seria o plano de fundo.
+
+41
+00:02:32,340 --> 00:02:34,860
+A cor vai ser branca.
+
+42
+00:02:35,280 --> 00:02:40,920
+Vamos adicionar nossa família de fontes aqui de Hobbins.
+
+43
+00:02:43,170 --> 00:02:51,240
+Sans serif, salve esse bem, quer se livrar dessa borda feia e vamos fazer vamos dar um pouco
+
+44
+00:02:51,240 --> 00:02:52,350
+cantos arredondados.
+
+45
+00:02:52,620 --> 00:03:04,110
+Então raio da borda, raio da borda, vou fazer três pixels e vamos fazer o tamanho da fonte 16 pixels.
+
+46
+00:03:04,470 --> 00:03:06,350
+Adicione um pouco de preenchimento para torná-lo maior.
+
+47
+00:03:06,360 --> 00:03:10,430
+Vai fazer doze na parte superior e inferior 20 à esquerda e à direita.
+
+48
+00:03:10,440 --> 00:03:10,880
+Bom.
+
+49
+00:03:12,000 --> 00:03:16,640
+Queremos ter um ponteiro de cursor para que, quando passarmos o mouse sobre ele, tenhamos nosso ponteiro.
+
+50
+00:03:17,160 --> 00:03:20,100
+Vamos, vamos posicionar isso no topo.
+
+51
+00:03:20,100 --> 00:03:26,100
+Então eu vou usar position fixed que vamos posicioná-lo fixo na janela do navegador e veremos
+
+52
+00:03:26,100 --> 00:03:28,620
+dos 20 primeiros pixels.
+
+53
+00:03:28,920 --> 00:03:35,400
+Então, vamos movê-lo para cima e também adicionar um pouco de espaçamento entre letras para espaçar um pouco as letras.
+
+54
+00:03:35,400 --> 00:03:37,230
+Faremos um pixel para isso.
+
+55
+00:03:37,230 --> 00:03:37,620
+Bom.
+
+56
+00:03:38,280 --> 00:03:43,590
+E vamos ver, também vamos adicionar uma pequena sombra de caixa na parte inferior.
+
+57
+00:03:44,550 --> 00:03:50,670
+Então, para o Box Shadow, temos nosso deslocamento X, que vou definir como zero, e depois o deslocamento Y.
+
+58
+00:03:51,000 --> 00:03:56,550
+Eu vou definir isso para três pixels porque eu só quero que fique um pouco aqui embaixo no eixo Y,
+
+59
+00:03:56,700 --> 00:03:57,630
+bem no fundo.
+
+60
+00:03:57,960 --> 00:04:01,220
+E então para a cor que usaremos em RGB, um amarelo.
+
+61
+00:04:01,500 --> 00:04:03,210
+Então vermelho, verde, azul, alfa.
+
+62
+00:04:03,220 --> 00:04:11,340
+Então dois quatro nove quatro quatro vermelho, 202 para verde, trinta e seis para azul e então para o alfa, que
+
+63
+00:04:11,340 --> 00:04:13,980
+é a transparência vai fazer zero vírgula cinco.
+
+64
+00:04:14,280 --> 00:04:17,400
+Então agora você pode ver que há uma pequena sombra de caixa embaixo.
+
+65
+00:04:18,300 --> 00:04:18,780
+Tudo bem.
+
+66
+00:04:18,780 --> 00:04:23,700
+Agora eu quero me livrar desse contorno feio no estado de foco.
+
+67
+00:04:23,700 --> 00:04:29,700
+Então, o que podemos fazer é fazer a aula de mágica e dizer estado de foco.
+
+68
+00:04:29,700 --> 00:04:34,470
+Queremos definir a propriedade de contorno para não nos livrarmos disso.
+
+69
+00:04:34,470 --> 00:04:39,360
+E também quero um efeito que quando clicamos, clicamos e seguramos, quando está em seu estado ativo,
+
+70
+00:04:39,840 --> 00:04:43,470
+que ele desça um pouco e se livre da sombra da caixa.
+
+71
+00:04:43,480 --> 00:04:46,340
+Então dá o efeito de passar por cima da sombra da caixa.
+
+72
+00:04:46,680 --> 00:04:51,570
+Então, como podemos fazer isso é com a magia no estado ativo.
+
+73
+00:04:51,570 --> 00:04:58,140
+Queremos primeiro remover as sombras da caixa ou definir a sombra da caixa como nenhuma, e então vamos em frente e definir
+
+74
+00:04:58,140 --> 00:05:02,100
+a propriedade transform e vamos usar translate.
+
+75
+00:05:02,100 --> 00:05:02,580
+Por quê?
+
+76
+00:05:02,580 --> 00:05:03,840
+Porque queremos traduzir.
+
+77
+00:05:03,840 --> 00:05:08,610
+Queremos movê-lo ao longo do eixo Y, apenas dois pixels, o que o moverá para baixo.
+
+78
+00:05:08,760 --> 00:05:11,130
+Se eu fizesse dois pixels negativos, ele iria movê-lo para cima.
+
+79
+00:05:11,550 --> 00:05:12,660
+Então vamos salvar isso.
+
+80
+00:05:12,660 --> 00:05:17,430
+E agora você pode ver quando eu clico e seguro basicamente como cobre a sombra da caixa.
+
+81
+00:05:18,540 --> 00:05:19,050
+Tudo bem.
+
+82
+00:05:19,050 --> 00:05:26,940
+Então, eu também vou adicionar a este botão mágico, um índice Z de nós vamos colocar cem porque eu quero
+
+83
+00:05:26,940 --> 00:05:34,020
+que esteja sempre no topo, mesmo que o navegador seja muito curto e a imagem que as caixas vão abaixo,
+
+84
+00:05:34,020 --> 00:05:35,430
+Eu quero que o botão fique no topo.
+
+85
+00:05:36,210 --> 00:05:36,570
+Tudo bem.
+
+86
+00:05:36,570 --> 00:05:37,860
+Então isso cuida disso.
+
+87
+00:05:37,860 --> 00:05:39,630
+Agora vamos começar nas caixas.
+
+88
+00:05:39,750 --> 00:05:46,710
+Então temos o container boxes e então temos a classe box individual.
+
+89
+00:05:46,740 --> 00:05:50,700
+Agora, quero poder ver o que estamos fazendo com as caixas.
+
+90
+00:05:50,700 --> 00:05:57,030
+Por enquanto, vou apenas adicionar um fundo amarelo e a altura e a largura aqui são muito
+
+91
+00:05:57,030 --> 00:05:57,780
+importante.
+
+92
+00:05:57,780 --> 00:06:00,990
+Então isso vai ser um vinte e cinco para ambos.
+
+93
+00:06:01,860 --> 00:06:04,340
+OK, então a largura será um vinte e cinco.
+
+94
+00:06:05,250 --> 00:06:12,450
+Agora a razão para isso é porque a caixa é o recipiente que vai ter que fazer uma altura.
+
+95
+00:06:14,240 --> 00:06:16,700
+Vai ter um Hitner com 500.
+
+96
+00:06:19,850 --> 00:06:27,590
+Que é um um vinte e cinco vezes quatro é 500, e queremos quatro agora para criar as linhas e
+
+97
+00:06:27,590 --> 00:06:33,590
+colunas com nosso sucesso, iremos em frente e usaremos flex box no container.
+
+98
+00:06:33,590 --> 00:06:36,860
+Então, digamos exibir flex.
+
+99
+00:06:37,640 --> 00:06:39,560
+Assim que eu faço isso, todos eles são colocados em uma fila.
+
+100
+00:06:39,560 --> 00:06:42,050
+No entanto, eles não estão sendo derrubados para o próximo.
+
+101
+00:06:42,620 --> 00:06:44,770
+Quero dizer, há apenas quatro que podem caber aqui.
+
+102
+00:06:44,870 --> 00:06:46,370
+Então eu quero que eles embrulhem.
+
+103
+00:06:46,370 --> 00:06:51,500
+Basicamente, se atingir a borda, quero que eles passem para a próxima linha, criem uma nova linha para que possamos
+
+104
+00:06:51,500 --> 00:06:55,760
+diga flex wrap e defina isso para wrap.
+
+105
+00:06:56,150 --> 00:07:01,310
+OK, agora a razão pela qual parece um grande bloco é porque os números aqui são exatos, certo?
+
+106
+00:07:01,310 --> 00:07:03,770
+Um vinte e cinco vezes quatro é quinhentos.
+
+107
+00:07:03,770 --> 00:07:05,980
+Então não há meio termo aqui.
+
+108
+00:07:06,350 --> 00:07:13,590
+Agora, em última análise, o que eu quero fazer é clicar neste botão e separá-los, separar cada caixa.
+
+109
+00:07:13,640 --> 00:07:17,770
+Então, o que vou fazer é adicionar uma classe a isso chamada big.
+
+110
+00:07:18,320 --> 00:07:19,520
+OK, eu vou salvar isso.
+
+111
+00:07:19,520 --> 00:07:27,290
+E aí eu vou dizer aqui embaixo, se a caixa é turma, também tem turma grande, então vamos
+
+112
+00:07:27,290 --> 00:07:30,500
+adiante e estenda a largura e a altura para seiscentos pixels.
+
+113
+00:07:30,530 --> 00:07:34,460
+OK, então de 500 para 600, 600.
+
+114
+00:07:34,910 --> 00:07:37,770
+E isso vai tornar o contêiner maior.
+
+115
+00:07:37,790 --> 00:07:40,670
+Agora, isso obviamente não parece certo.
+
+116
+00:07:40,670 --> 00:07:46,550
+Queremos que este espaço restante aqui seja em torno de cada elemento, em torno de cada caixa.
+
+117
+00:07:46,970 --> 00:07:54,770
+Então, o que podemos fazer é onde exibimos flex aqui, podemos definir o conteúdo justificado como espaço
+
+118
+00:07:54,770 --> 00:07:55,520
+por aí.
+
+119
+00:07:55,970 --> 00:08:00,500
+Agora, se eu salvar isso, você pode ver agora que o espaço restante está em torno de cada elemento.
+
+120
+00:08:00,620 --> 00:08:01,070
+Tudo bem.
+
+121
+00:08:01,070 --> 00:08:08,720
+Também vamos adicionar uma posição para que a posição relativa às caixas e, em seguida, aqui para cada
+
+122
+00:08:08,720 --> 00:08:13,980
+box, vamos em frente e substituir o amarelo por uma imagem com esse gif.
+
+123
+00:08:14,430 --> 00:08:19,790
+OK, então vamos dizer imagem de fundo e queremos definir isso para você, Earl.
+
+124
+00:08:20,390 --> 00:08:24,980
+E o link eu vou colar e esse é do Jiffy dot com.
+
+125
+00:08:25,130 --> 00:08:29,510
+E se você quiser usar um gif diferente deste site ou qualquer outra coisa, você pode fazer isso.
+
+126
+00:08:29,930 --> 00:08:32,180
+Então eu vou em frente e salve isso.
+
+127
+00:08:32,990 --> 00:08:39,230
+E agora você pode ver que temos esta imagem em cada caixa como plano de fundo.
+
+128
+00:08:39,670 --> 00:08:40,100
+Tudo bem.
+
+129
+00:08:40,130 --> 00:08:45,190
+Agora, em última análise, vamos querer mudar o posicionamento e o tamanho de cada um deles.
+
+130
+00:08:45,500 --> 00:08:53,780
+Então, vamos adicionar uma repetição de plano de fundo e definir isso como sem repetição.
+
+131
+00:08:54,050 --> 00:09:02,990
+E para o tamanho do plano de fundo do tamanho, queremos definir isso para o mesmo tamanho que o inicial
+
+132
+00:09:02,990 --> 00:09:05,890
+caixas porque queremos que ocupe toda essa coisa.
+
+133
+00:09:06,260 --> 00:09:09,380
+No momento, temos a classe de grandes, então está em 600.
+
+134
+00:09:09,650 --> 00:09:16,910
+Mas, em última análise, queremos que o tamanho seja de 500 pixels em X e Y.
+
+135
+00:09:18,310 --> 00:09:23,390
+OK, então agora você pode ver que está esticado e você só pode ver parte da imagem e é o
+
+136
+00:09:23,390 --> 00:09:25,070
+mesma peça em cada caixa.
+
+137
+00:09:25,220 --> 00:09:31,530
+Mas mais tarde vamos mudar o posicionamento de cada um deles para que pareça uma grande imagem.
+
+138
+00:09:32,360 --> 00:09:32,740
+Tudo bem.
+
+139
+00:09:33,350 --> 00:09:36,470
+Então vamos ver a próxima coisa que vamos fazer aqui.
+
+140
+00:09:36,740 --> 00:09:43,460
+Queremos ter uma posição relativa nisso porque usaremos o antes e o depois
+
+141
+00:09:43,460 --> 00:09:46,670
+pseudo seletor para dar aquela aparência de borda cúbica.
+
+142
+00:09:47,600 --> 00:09:49,570
+E precisamos posicionar esse absoluto.
+
+143
+00:09:49,580 --> 00:09:52,340
+Então, queremos que o contêiner disso seja relativo.
+
+144
+00:09:53,180 --> 00:09:58,340
+Agora, outra coisa que queremos fazer é quando clicarmos neste botão, o que vai acontecer é que vai
+
+145
+00:09:58,340 --> 00:10:00,780
+para alternar esta grande classe, OK?
+
+146
+00:10:00,800 --> 00:10:03,710
+Então, vai disso para aquilo.
+
+147
+00:10:03,710 --> 00:10:06,500
+E quando isso acontecer, eu quero ter um efeito de rotação.
+
+148
+00:10:06,800 --> 00:10:13,940
+Então, queremos adicionar uma rotação para às caixas se tiver essa classe grande.
+
+149
+00:10:14,330 --> 00:10:18,330
+Então vamos aqui e vamos dizer isso.
+
+150
+00:10:18,470 --> 00:10:20,930
+Boxes tem a grande classe.
+
+151
+00:10:20,930 --> 00:10:30,890
+Queremos que cada caixa individual tenha uma transformação e vamos usar girar Z com 360 graus
+
+152
+00:10:30,920 --> 00:10:32,850
+ângulo, está bem?
+
+153
+00:10:33,950 --> 00:10:35,180
+Agora nós queremos isso.
+
+154
+00:10:35,180 --> 00:10:38,360
+Quando isso acontecer, queremos que ele faça uma boa transição.
+
+155
+00:10:38,360 --> 00:10:41,960
+Então vamos adicionar uma transição em duas caixas.
+
+156
+00:10:43,940 --> 00:10:53,000
+Então faça a transição apenas para que você saiba que gira suavemente e usaremos quatro ponto quatro segundos com um efeito EZ.
+
+157
+00:10:53,000 --> 00:10:57,290
+E então eu vou copiar isso e colocar a transição na caixa também.
+
+158
+00:10:57,710 --> 00:11:02,090
+E agora, assim que eu salvo, você pode ver que realmente faz esse efeito.
+
+159
+00:11:02,880 --> 00:11:09,560
+OK, porque quando essa grande classe for adicionada, ela seguirá em frente e fará isso.
+
+160
+00:11:09,560 --> 00:11:15,070
+E vamos fazer com que esse botão adicione e remova essa classe, o que fará com que funcione
+
+161
+00:11:15,080 --> 00:11:15,890
+no lugar.
+
+162
+00:11:16,460 --> 00:11:19,140
+OK, então ele vai girar ou.
+
+163
+00:11:19,320 --> 00:11:24,860
+Eu deveria dizer girar e depois ir todos juntos, e então ele vai girar e se separar.
+
+164
+00:11:25,610 --> 00:11:25,970
+Tudo bem.
+
+165
+00:11:25,970 --> 00:11:27,150
+Espero que isso faça sentido.
+
+166
+00:11:27,830 --> 00:11:34,130
+Agora, a última coisa que quero fazer aqui é adicionar esse tipo de efeito cúbico.
+
+167
+00:11:34,130 --> 00:11:40,070
+Portanto, não apenas queremos, como uma borda à direita e à esquerda, mas queremos que ela seja enviesada.
+
+168
+00:11:40,070 --> 00:11:42,140
+Então fica assim em um ângulo.
+
+169
+00:11:42,620 --> 00:11:49,670
+Então, para fazer isso, para fazer o lado certo, vamos usar o pseudo seletor depois para que possamos pegar
+
+170
+00:11:49,670 --> 00:11:53,350
+a classe de caixa e, em seguida, diga dois-pontos duplos depois.
+
+171
+00:11:54,050 --> 00:11:56,830
+E você pode usar isso para inserir conteúdo.
+
+172
+00:11:56,870 --> 00:12:00,340
+Ele precisa desse valor de conteúdo e poderíamos até colocar algo aqui.
+
+173
+00:12:00,740 --> 00:12:04,910
+E agora você pode ver que depois desse elemento de caixa, ele coloca telo.
+
+174
+00:12:05,090 --> 00:12:06,110
+Mas não queremos isso.
+
+175
+00:12:06,140 --> 00:12:07,460
+Nós só queremos deixar isso em branco.
+
+176
+00:12:07,700 --> 00:12:12,680
+A única razão pela qual precisamos disso é adicionar algum estilo para que você possa pensar nisso como um
+
+177
+00:12:12,680 --> 00:12:13,860
+elemento invisível.
+
+178
+00:12:15,320 --> 00:12:23,630
+Quanto ao estilo, vamos adicionar uma cor de fundo e vamos usar o fundo
+
+179
+00:12:23,630 --> 00:12:32,060
+cor de F o que é, F sessenta e cinco D vai ser o fundo.
+
+180
+00:12:32,150 --> 00:12:33,710
+Não vamos ver nada ainda.
+
+181
+00:12:33,710 --> 00:12:36,460
+Precisamos adicionar o dimensionamento e a posição e coisas assim.
+
+182
+00:12:37,400 --> 00:12:46,730
+Então, queremos posicionar isso absoluto OK, então estamos posicionando em absoluto e você precisa ter relativo
+
+183
+00:12:46,730 --> 00:12:49,190
+na caixa porque absoluto deve ser.
+
+184
+00:12:49,400 --> 00:12:50,870
+É relativo à caixa.
+
+185
+00:12:50,870 --> 00:12:51,170
+Certo.
+
+186
+00:12:52,190 --> 00:12:56,810
+E então para o posicionamento, as coordenadas farão oito pixels a partir do topo.
+
+187
+00:12:56,810 --> 00:13:02,570
+Queremos porque queremos empurrá-lo um pouco para baixo porque vamos adicionar essa inclinação e depois
+
+188
+00:13:02,930 --> 00:13:09,860
+vamos fazer da direita vamos fazer 15 pixels negativos porque queremos que seja, você sabe, indo assim
+
+189
+00:13:09,860 --> 00:13:10,220
+caminho.
+
+190
+00:13:10,700 --> 00:13:17,360
+E então para a altura, queremos que ele ocupe cem por cento de seu contêiner, que neste
+
+191
+00:13:17,360 --> 00:13:18,950
+caso é a própria caixa.
+
+192
+00:13:19,340 --> 00:13:22,160
+E então a largura será de 15 pixels.
+
+193
+00:13:22,500 --> 00:13:28,400
+Então, se eu salvar isso, você pode ver que temos essa parte amarela aqui e está um pouco abaixada porque
+
+194
+00:13:28,400 --> 00:13:29,030
+destes oito.
+
+195
+00:13:29,030 --> 00:13:32,080
+Na verdade, se eu colocar um zero aqui, você pode ver que é flash.
+
+196
+00:13:32,090 --> 00:13:33,350
+No entanto, eu quero usar isso.
+
+197
+00:13:33,720 --> 00:13:38,240
+Eu quero ter esse efeito de SKU aqui e aqui.
+
+198
+00:13:38,240 --> 00:13:39,530
+Então vai ser dos dois lados.
+
+199
+00:13:39,770 --> 00:13:47,150
+E para fazer isso, podemos usar transform e queremos inclinar no eixo Y porque é para cima e para baixo
+
+200
+00:13:47,150 --> 00:13:47,660
+vertical.
+
+201
+00:13:47,660 --> 00:13:50,600
+Então incline y quarenta e cinco graus.
+
+202
+00:13:50,600 --> 00:13:56,390
+E se eu salvar isso agora, você pode ver que temos esse efeito de sair aqui e ir, você sabe,
+
+203
+00:13:56,390 --> 00:13:59,780
+em um ângulo inclinado na parte superior e inferior.
+
+204
+00:14:00,350 --> 00:14:02,180
+Agora queremos fazer a mesma coisa aqui.
+
+205
+00:14:02,180 --> 00:14:07,070
+Nós basicamente queremos vir daqui e passar para que pareça ter aquele efeito 3D.
+
+206
+00:14:07,490 --> 00:14:12,740
+Então, na verdade, vou apenas copiar essa coisa toda e agora vamos usar antes.
+
+207
+00:14:14,150 --> 00:14:18,110
+OK, e para a cor de fundo, vamos alterá-la um pouco.
+
+208
+00:14:18,110 --> 00:14:20,130
+Vamos usar as mesmas vestes amarelas.
+
+209
+00:14:21,050 --> 00:14:23,630
+Vamos usar o mesmo amarelo que usamos.
+
+210
+00:14:27,590 --> 00:14:32,750
+Ou é ou é o amarelo que usei para o botão aqui.
+
+211
+00:14:33,320 --> 00:14:40,370
+Então, vamos copiar essa cor de fundo aqui e definir isso aqui.
+
+212
+00:14:40,910 --> 00:14:42,560
+OK, apenas um amarelo ligeiramente diferente.
+
+213
+00:14:42,920 --> 00:14:48,590
+E para o posicionamento, queremos que seja absoluto, embora queiramos mudar.
+
+214
+00:14:49,670 --> 00:14:53,120
+Vamos ver de baixo.
+
+215
+00:14:54,860 --> 00:15:01,370
+Queremos ir menos quinze e depois da esquerda.
+
+216
+00:15:04,200 --> 00:15:06,190
+Queremos ir oito pixels.
+
+217
+00:15:06,460 --> 00:15:11,190
+OK, então é basicamente o inverso do que tínhamos antes e então a altura, a largura vai
+
+218
+00:15:11,190 --> 00:15:15,140
+será 100 por cento e então a altura será 15.
+
+219
+00:15:15,150 --> 00:15:18,680
+Então é basicamente apenas a versão horizontal do que acabamos de fazer.
+
+220
+00:15:18,930 --> 00:15:22,820
+E então queremos inclinar no eixo x porque é horizontal.
+
+221
+00:15:22,950 --> 00:15:23,960
+Então vou guardar isso.
+
+222
+00:15:24,330 --> 00:15:27,700
+E agora você pode ver que basicamente temos a mesma coisa, mas indo dessa maneira.
+
+223
+00:15:28,080 --> 00:15:33,300
+Então, o que queremos fazer no próximo vídeo é, claro, adicionar a funcionalidade onde clicamos
+
+224
+00:15:33,300 --> 00:15:39,390
+este botão e ele gira um pouco e entra no que parece ser uma grande imagem.
+
+225
+00:15:39,660 --> 00:15:40,800
+E queremos ser capazes de alternar isso.
+
+226
+00:15:40,800 --> 00:15:43,330
+Mas também precisamos mudar a posição de fundo.
+
+227
+00:15:43,350 --> 00:15:49,680
+Precisamos tornar essa dinâmica dentro dessas caixas, porque agora elas estão todas na mesma posição,
+
+228
+00:15:49,680 --> 00:15:51,480
+que obviamente não parece certo.
+
+229
+00:15:51,480 --> 00:15:53,520
+Queremos que pareça uma grande imagem.
+
+230
+00:15:53,790 --> 00:15:54,150
+Tudo bem.
+
+231
+00:15:54,150 --> 00:15:55,770
+Então é isso que vamos abordar a seguir.

@@ -1,0 +1,267 @@
+﻿1
+00:00:00,270 --> 00:00:05,100
+Tudo bem, então antes de entrarmos em nossos projetos, eu só quero passar por cima do meu ambiente e o que eu vou
+
+2
+00:00:05,100 --> 00:00:11,770
+estar usando e não há muito o que falar porque isso é apenas JavaScript e HTML e acesso vanilla.
+
+3
+00:00:11,790 --> 00:00:13,850
+Então não há frameworks ou algo assim.
+
+4
+00:00:14,190 --> 00:00:20,030
+Basicamente, o editor de texto que estou usando é o VSG Code Visual Studio Code, e é isso que eu recomendo.
+
+5
+00:00:20,160 --> 00:00:22,050
+É muito popular na comunidade de desenvolvedores da Web.
+
+6
+00:00:22,060 --> 00:00:25,380
+Tenho certeza que muitos de vocês, se não a maioria de vocês, já estão usando.
+
+7
+00:00:25,560 --> 00:00:31,070
+Mas você não precisa usar texto sublime ou Adam ou algo assim ou alguma outra ideia.
+
+8
+00:00:31,080 --> 00:00:32,250
+Isso é absolutamente bom.
+
+9
+00:00:32,610 --> 00:00:37,470
+Mas se você quiser acompanhar este curso, sugiro usar o código de voz,
+
+10
+00:00:37,470 --> 00:00:40,940
+que você pode obter do Code Dot, Visual Studio, Dotcom.
+
+11
+00:00:41,400 --> 00:00:45,510
+Agora, eu só quero pular para o código de voz bem rápido e eu tenho meu projeto inicial, que estamos
+
+12
+00:00:45,510 --> 00:00:48,120
+realmente vai criar no próximo vídeo.
+
+13
+00:00:48,420 --> 00:00:52,950
+Mas quero falar um pouco sobre as extensões que estou usando assim como o Emet.
+
+14
+00:00:53,250 --> 00:00:56,580
+Portanto, o Emet é uma ferramenta pré-instalada com código VAR.
+
+15
+00:00:56,580 --> 00:01:02,580
+Se você estiver usando algo como o texto Ademir Sublime, você precisa instalar o Emet como um plug-in ou uma extensão
+
+16
+00:01:02,760 --> 00:01:05,070
+e isso apenas ajuda você a escrever html mais rápido.
+
+17
+00:01:05,080 --> 00:01:08,790
+Então, se eu quiser um H1, apenas H1 enter me dará minhas tags.
+
+18
+00:01:08,970 --> 00:01:13,380
+Se eu quiser adicionar uma aula eu posso fazer Dorte e aí você sabe que minha aula entra.
+
+19
+00:01:13,650 --> 00:01:17,940
+Se eu quiser fazer duas aulas eu poderia dizer minha aula para entrar.
+
+20
+00:01:18,210 --> 00:01:24,240
+Se eu quiser fazer um ID, não posso fazer nenhum sinal e dizer que meu ID me dá um H1 com um ID.
+
+21
+00:01:24,240 --> 00:01:26,820
+Se eu quiser um ID e a classe, eu posso fazer isso.
+
+22
+00:01:28,020 --> 00:01:30,570
+OK, e se estou usando uma div, nem preciso.
+
+23
+00:01:31,200 --> 00:01:37,500
+Quero dizer, posso fazer div e depois minha classe assim, mas nem precisamos adicionar o div, podemos apenas
+
+24
+00:01:37,500 --> 00:01:42,420
+para pontilhar minha classe entre e ele nos dará automaticamente um div.
+
+25
+00:01:42,420 --> 00:01:43,560
+O mesmo com a identificação.
+
+26
+00:01:44,520 --> 00:01:50,730
+OK, e se quisermos três divs, podemos dizer d'Hiv e depois três vezes, isso nos dará três
+
+27
+00:01:50,730 --> 00:01:50,970
+d'Hiv.
+
+28
+00:01:50,980 --> 00:01:56,820
+Então é isso que vou usar para ter um curso intensivo completo no YouTube no Emet,
+
+29
+00:01:56,820 --> 00:01:58,280
+se você quiser aprender mais sobre isso.
+
+30
+00:01:58,800 --> 00:01:59,160
+Tudo bem.
+
+31
+00:01:59,160 --> 00:02:04,500
+Agora, vamos dar uma olhada nas extensões que estou usando para que você não precise da única que eu precisaria
+
+32
+00:02:04,500 --> 00:02:11,700
+realmente sugiro é o servidor ao vivo que permitirá que você abra nosso projeto em um servidor de desenvolvimento que
+
+33
+00:02:11,700 --> 00:02:12,570
+recarregamento automático.
+
+34
+00:02:12,570 --> 00:02:18,600
+Sempre que salvarmos o acesso HTML ou JavaScript, ele será recarregado automaticamente para que não precisemos continuar clicando
+
+35
+00:02:18,600 --> 00:02:19,500
+o botão recarregar.
+
+36
+00:02:19,920 --> 00:02:26,220
+Fora isso, estou usando a tag de renomeação automática, que acabou de renomear a tag HTML final.
+
+37
+00:02:26,220 --> 00:02:33,420
+Depois de renomear a tag inicial, o par de colchetes autoexplicativo colorize é apenas colorize is
+
+38
+00:02:33,420 --> 00:02:36,180
+seus colchetes, seus parênteses e chaves.
+
+39
+00:02:36,180 --> 00:02:39,900
+Você pode ver que essas chaves externas são roxas, as internas são azuis.
+
+40
+00:02:39,900 --> 00:02:43,950
+Se eu tivesse outro conjunto aninhado no if, eles também seriam de uma cor diferente.
+
+41
+00:02:44,490 --> 00:02:47,820
+E também estou usando o mais bonito, que é um formatador de código.
+
+42
+00:02:48,180 --> 00:02:51,480
+No que diz respeito à formatação do seu código, quero dizer que depende completamente de você.
+
+43
+00:02:51,480 --> 00:02:57,300
+Eu gosto de usar aspas simples em vez de aspas duplas no meu JavaScript.
+
+44
+00:02:57,300 --> 00:02:59,070
+Eu também não uso ponto e vírgula.
+
+45
+00:02:59,370 --> 00:03:04,770
+E para definir essas coisas, você pode simplesmente acessar suas configurações com comando, comando, vírgula ou você
+
+46
+00:03:04,770 --> 00:03:07,500
+pode apenas clicar na engrenagem aqui em baixo e ir para configurações.
+
+47
+00:03:07,890 --> 00:03:15,480
+E se você procurar por mais bonito, há um monte de opções aqui para o seu código.
+
+48
+00:03:15,780 --> 00:03:18,030
+Eu vou descer para esta opção aqui.
+
+49
+00:03:18,030 --> 00:03:20,400
+Você pode ver que eu tenho semi desmarcado.
+
+50
+00:03:20,400 --> 00:03:21,810
+Não estou usando ponto e vírgula.
+
+51
+00:03:21,810 --> 00:03:24,810
+Eu também tenho uma guia única, aspas, marcada com dois.
+
+52
+00:03:25,020 --> 00:03:28,470
+Então, quer dizer, depende completamente de você como você deseja formatar seu código.
+
+53
+00:03:28,980 --> 00:03:31,830
+E também estou usando o formato ao salvar.
+
+54
+00:03:32,280 --> 00:03:33,540
+Você pode ver que está marcado.
+
+55
+00:03:33,540 --> 00:03:38,160
+O que isso significa é que se algo estiver errado, ele será corrigido quando eu salvar.
+
+56
+00:03:38,160 --> 00:03:43,290
+Então, por exemplo, mesmo no HTML, se eu estiver aqui e salvar, ele volta ao lugar.
+
+57
+00:03:43,620 --> 00:03:51,480
+Se eu entrar no meu JavaScript e criar uma variável aqui, como const X é igual a aspas duplas, vou
+
+58
+00:03:51,480 --> 00:03:53,610
+basta dizer teste e colocar um ponto e vírgula.
+
+59
+00:03:53,610 --> 00:03:59,250
+Se eu salvá-lo, formate-o da maneira que especifiquei, que é sem ponto e vírgula e aspas simples.
+
+60
+00:03:59,550 --> 00:03:59,970
+Tudo bem.
+
+61
+00:03:59,970 --> 00:04:02,790
+Então eu vou me livrar disso e é isso.
+
+62
+00:04:02,790 --> 00:04:04,650
+Quero dizer, coisas bem simples.
+
+63
+00:04:04,650 --> 00:04:08,490
+É claro que você pode usar o editor de texto que quiser, as configurações que desejar.
+
+64
+00:04:08,490 --> 00:04:10,140
+Só queria mostrar com o que estou trabalhando.
+
+65
+00:04:10,470 --> 00:04:10,800
+Tudo bem.
+
+66
+00:04:10,800 --> 00:04:14,610
+Então, no próximo vídeo, vamos começar a criar este pequeno projeto inicial, que vamos
+
+67
+00:04:14,610 --> 00:04:18,240
+para usar como um clichê para todos os nossos projetos neste curso.

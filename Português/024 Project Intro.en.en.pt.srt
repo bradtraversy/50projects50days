@@ -1,0 +1,43 @@
+﻿1
+00:00:00,210 --> 00:00:01,680
+Tudo bem, bem-vindo ao seu próximo projeto.
+
+2
+00:00:01,710 --> 00:00:09,130
+Então, neste, vamos construir um formulário de login simples aqui com um efeito de onda nos rótulos.
+
+3
+00:00:09,330 --> 00:00:15,000
+Então, se eu for em frente e clicar aqui na entrada, você verá que o rótulo vai acenar.
+
+4
+00:00:15,510 --> 00:00:19,720
+OK, então temos aquela pequena animação legal quando clicamos aqui e quando clicamos fora.
+
+5
+00:00:20,220 --> 00:00:25,470
+Então, basicamente, a maneira como vamos fazer isso é envolver um intervalo em torno de cada um deles usando JavaScript
+
+6
+00:00:25,770 --> 00:00:30,630
+e adicione uma transição para que o rótulo se mova para cima quando focamos na entrada.
+
+7
+00:00:30,900 --> 00:00:34,020
+Mas também vamos adicionar um atraso de transição dinâmico.
+
+8
+00:00:34,020 --> 00:00:38,790
+Então dá aquele efeito de onda para que cada letra suba em um momento diferente.
+
+9
+00:00:39,300 --> 00:00:39,690
+Tudo bem.
+
+10
+00:00:39,700 --> 00:00:40,880
+Então é isso que vamos fazer.
+
+11
+00:00:40,890 --> 00:00:42,360
+Vamos em frente e entrar nisso.

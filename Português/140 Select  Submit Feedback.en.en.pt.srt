@@ -1,0 +1,707 @@
+﻿1
+00:00:00,180 --> 00:00:04,140
+Tudo bem, agora vamos adicionar o JavaScript para este projeto e vamos fazer isso
+
+2
+00:00:04,140 --> 00:00:05,110
+um pouco diferente.
+
+3
+00:00:05,130 --> 00:00:09,780
+Tivemos alguns projetos em que tivemos que clicar em algo e apenas alterar a classe para ativa.
+
+4
+00:00:10,140 --> 00:00:15,480
+E basicamente o que fizemos foi fazer um loop pelos elementos e depois adicionar um ouvinte de evento no
+
+5
+00:00:15,480 --> 00:00:16,140
+cada um.
+
+6
+00:00:16,380 --> 00:00:21,760
+Neste projeto, usaremos algo chamado borbulhamento de eventos para não precisar adicionar um ouvinte de eventos
+
+7
+00:00:21,840 --> 00:00:23,190
+em cada elemento.
+
+8
+00:00:23,400 --> 00:00:28,830
+Quer dizer, tudo bem se você fizer isso em um caso como este em que temos três, mas e se você tiver 200
+
+9
+00:00:28,830 --> 00:00:31,980
+uma tabela com 200 usuários com 200 botões de exclusão?
+
+10
+00:00:32,190 --> 00:00:36,600
+Você provavelmente não vai querer adicionar um ouvinte de evento em cada botão de exclusão para que você possa
+
+11
+00:00:36,600 --> 00:00:39,860
+aproveitar o borbulhamento de eventos e a propagação de eventos.
+
+12
+00:00:40,290 --> 00:00:42,660
+Então, a primeira coisa que vamos fazer é trazer o que precisamos.
+
+13
+00:00:42,690 --> 00:00:51,540
+Vamos trazer classificações e classificações, pois existem várias classificações, que são essas três caixas,
+
+14
+00:00:51,540 --> 00:00:52,080
+basicamente.
+
+15
+00:00:52,090 --> 00:01:00,690
+Então, queremos usar o seletor de consulta all e obter a classe de classificação e isso nos dará uma lista de nós com
+
+16
+00:01:00,690 --> 00:01:03,070
+os três esses três elementos aqui.
+
+17
+00:01:03,510 --> 00:01:06,410
+Também queremos copiar isso duas vezes.
+
+18
+00:01:06,420 --> 00:01:15,120
+Então também queremos o botão enviar e que tenha uma ideia de envio e queremos apenas usar o seletor de consulta
+
+19
+00:01:15,120 --> 00:01:16,360
+porque é apenas um elemento.
+
+20
+00:01:16,770 --> 00:01:17,760
+Mesma coisa aqui.
+
+21
+00:01:17,760 --> 00:01:25,910
+Queremos pegar o painel, que tem uma ideia de painel assim.
+
+22
+00:01:26,820 --> 00:01:27,210
+Tudo bem.
+
+23
+00:01:27,210 --> 00:01:30,180
+Agora, como eu disse, há algumas maneiras de fazer isso.
+
+24
+00:01:30,180 --> 00:01:34,800
+Poderíamos tirar as classificações e poderíamos fazer um foreach.
+
+25
+00:01:34,950 --> 00:01:36,810
+Poderíamos economizar para cada classificação.
+
+26
+00:01:37,440 --> 00:01:42,750
+Queremos pegar essa classificação e adicionar um ouvinte de evento em um evento de clique e assim por diante.
+
+27
+00:01:43,140 --> 00:01:44,430
+Mas em vez de fazer isso.
+
+28
+00:01:45,510 --> 00:01:50,940
+Vamos usar o borbulhamento de eventos ou vamos aproveitar o borbulhamento de eventos, basicamente, quando
+
+29
+00:01:50,940 --> 00:01:57,420
+se tivermos um evento neste botão aqui e eu clicar nele, ele será acionado para o botão,
+
+30
+00:01:57,420 --> 00:02:01,010
+mas também vai disparar para qualquer um de seus pais.
+
+31
+00:02:01,020 --> 00:02:04,460
+Então este painel, esta caixa aqui é um pai do botão.
+
+32
+00:02:04,770 --> 00:02:13,800
+Então, se eu pegasse esse painel e adicionasse um ouvinte de evento a ele para um evento de clique e dissesse quando
+
+33
+00:02:14,370 --> 00:02:21,330
+o painel é clicado, então vamos logar no console, vamos apenas logar no console, clique, e eu vou
+
+34
+00:02:21,330 --> 00:02:23,150
+aqui e abra meu console.
+
+35
+00:02:23,160 --> 00:02:29,970
+Agora, se eu clicar neste botão, você verá que recebemos um clique mesmo que não seja isso não esteja no botão,
+
+36
+00:02:29,970 --> 00:02:32,010
+não está no botão enviar, está no painel.
+
+37
+00:02:32,400 --> 00:02:34,760
+Mas o painel é um pai do botão.
+
+38
+00:02:34,770 --> 00:02:41,410
+Se olharmos para os elementos aqui e verificarmos o botão, você pode ver que está dentro do painel, OK?
+
+39
+00:02:41,790 --> 00:02:48,630
+Agora, mesmo se eu clicar como uma dessas imagens, os rostos sorridentes, isso ainda vai disparar
+
+40
+00:02:48,630 --> 00:02:50,700
+desligado porque está dentro do painel.
+
+41
+00:02:50,700 --> 00:02:53,250
+Então eu estou clicando aqui e está borbulhando para o painel.
+
+42
+00:02:53,850 --> 00:02:56,480
+Se eu clicar neste aqui, vai funcionar.
+
+43
+00:02:56,730 --> 00:03:04,080
+Agora, também quero mostrar a você, se passarmos um objeto de evento e depois consolemos log e dot target,
+
+44
+00:03:04,080 --> 00:03:06,570
+você pode chamar isso de E ou de ventilação, o que quiser.
+
+45
+00:03:06,780 --> 00:03:12,150
+Mas se olharmos para o alvo e eu clicar no botão, ele nos mostrará o elemento exato em que clico
+
+46
+00:03:12,150 --> 00:03:12,390
+sobre.
+
+47
+00:03:12,390 --> 00:03:18,600
+Se eu clicar nesta imagem, me mostra a imagem, se eu clicar nesta caixa, não na imagem, mas apenas dentro
+
+48
+00:03:18,600 --> 00:03:22,800
+a caixa, que é uma div com a classe do próprio painel de classificação.
+
+49
+00:03:23,040 --> 00:03:28,290
+Se eu clicar fora do painel, ele não fará nada porque para no painel.
+
+50
+00:03:28,620 --> 00:03:31,710
+OK, então qualquer coisa que eu clicar aqui, vai disparar este evento.
+
+51
+00:03:32,130 --> 00:03:39,300
+Agora, o que quero fazer é direcionar essas imagens porque quero clicar nessas imagens e depois
+
+52
+00:03:39,300 --> 00:03:42,030
+implementar, você sabe, alternar a classe ativa.
+
+53
+00:03:42,360 --> 00:03:49,290
+Então eu vou checar aqui, digamos, se ele pontilhar alvos.
+
+54
+00:03:49,710 --> 00:03:56,940
+Então, se eu vir alvo de ponto, isso vai olhar para qualquer elemento em que eu clicar e nós
+
+55
+00:03:56,940 --> 00:04:00,930
+pode olhar para diferentes aspectos deste elemento.
+
+56
+00:04:00,930 --> 00:04:02,640
+Quero ver a lista de classes.
+
+57
+00:04:03,120 --> 00:04:10,260
+Então eu vou dizer se e ponto target class list, que é a lista de classes, mas então eu posso adicionar isso
+
+58
+00:04:10,260 --> 00:04:15,420
+método de contém e posso dizer, ele contém a classe de classificação?
+
+59
+00:04:15,690 --> 00:04:19,710
+Se isso acontecer, o destino de log do console.
+
+60
+00:04:20,370 --> 00:04:26,460
+Então agora se eu clicar na imagem aviso que não está fazendo nada porque essa imagem não tem uma classe
+
+61
+00:04:26,460 --> 00:04:27,150
+de classificação.
+
+62
+00:04:27,360 --> 00:04:33,450
+Se eu clicar na caixa fora da imagem, você sabe, nesta caixa, mas não na imagem, então funciona.
+
+63
+00:04:33,810 --> 00:04:34,740
+E eu não quero fazer isso.
+
+64
+00:04:34,740 --> 00:04:37,880
+Quero que esteja na própria imagem, na carinha sorridente.
+
+65
+00:04:38,280 --> 00:04:46,230
+Então, o que eu poderia fazer é dizer se o destino se o que eu clicar, se a lista de classes do nó pai contiver
+
+66
+00:04:46,230 --> 00:04:48,670
+classificação e, em seguida, dispare isso.
+
+67
+00:04:48,690 --> 00:04:55,830
+Então agora se eu clicar na imagem, você pode ver que funciona bem, porque estou dizendo que se o nó pai
+
+68
+00:04:56,070 --> 00:05:02,400
+classless contém classificação, o que ele faz, que podemos ver aqui, o pai da imagem é este e
+
+69
+00:05:02,430 --> 00:05:03,600
+tem uma classe de classificação.
+
+70
+00:05:03,990 --> 00:05:08,880
+Assim, você pode segmentar elementos diferentes com base em praticamente qualquer coisa.
+
+71
+00:05:08,880 --> 00:05:13,350
+O IDE, a classe, o tipo de elemento é o nome do nó.
+
+72
+00:05:13,350 --> 00:05:16,540
+Existem todas as propriedades diferentes, você sabe, que você pode usar.
+
+73
+00:05:17,070 --> 00:05:23,970
+Então, eu vou usar isso e vou dizer, se isso for verdade, então eu quero pegar E dot target
+
+74
+00:05:24,540 --> 00:05:28,860
+e eu quero adicionar a classe de ativo, mas não no destino porque essa é a imagem.
+
+75
+00:05:28,860 --> 00:05:36,570
+Eu quero pegar o nó pai e depois pegar uma lista de classes, chamar ad e adicionar active.
+
+76
+00:05:38,130 --> 00:05:41,340
+Então agora eu vou fechar isso por enquanto.
+
+77
+00:05:41,370 --> 00:05:45,270
+Então agora se eu for e clicar na imagem, você verá que agora ela tem uma caixa ao redor dela.
+
+78
+00:05:45,270 --> 00:05:46,130
+Está ativo.
+
+79
+00:05:46,530 --> 00:05:47,310
+Clique nisso.
+
+80
+00:05:47,340 --> 00:05:48,640
+Isso também está ativo.
+
+81
+00:05:48,990 --> 00:05:51,780
+Agora, o problema é que eles estão todos ativos, o que não queremos.
+
+82
+00:05:51,780 --> 00:05:54,990
+Portanto, precisamos remover todas as classes ativas de antemão.
+
+83
+00:05:55,380 --> 00:06:00,600
+Então o que vamos fazer é chamar uma função aqui, digamos remove active.
+
+84
+00:06:01,290 --> 00:06:06,720
+E eu vou descer aqui e criar uma função chamada remove active.
+
+85
+00:06:08,070 --> 00:06:09,420
+E já fizemos isso antes.
+
+86
+00:06:09,420 --> 00:06:16,860
+Poderíamos fazer avaliações e fazer um foreach e, você sabe, remover todas as classes ativas.
+
+87
+00:06:17,130 --> 00:06:20,220
+Vou usar um loop for, o que provavelmente não é algo que eu faria.
+
+88
+00:06:20,220 --> 00:06:22,020
+Mas só para mudar um pouco as coisas.
+
+89
+00:06:22,030 --> 00:06:25,290
+Então, digamos que eu seja igual a zero.
+
+90
+00:06:25,440 --> 00:06:32,620
+Então, eu vou começar do zero e a condição será se eu for menor que as classificações Daudt
+
+91
+00:06:32,640 --> 00:06:33,300
+comprimento.
+
+92
+00:06:33,840 --> 00:06:37,570
+E também queremos incrementar em um em cada iteração.
+
+93
+00:06:37,890 --> 00:06:41,820
+Então a classificação é o que você conhece, essas três caixas aqui.
+
+94
+00:06:41,820 --> 00:06:44,590
+Então, vamos apenas dizer se é se eu como.
+
+95
+00:06:44,690 --> 00:06:51,470
+Menos do que o tamanho, então vamos em frente e pegar as classificações, que é uma lista de não, que
+
+96
+00:06:51,470 --> 00:06:52,520
+é semelhante a uma matriz.
+
+97
+00:06:52,520 --> 00:07:02,590
+Então queremos que o índice de I e então class list dot remova e queremos remover a classe ativa.
+
+98
+00:07:03,560 --> 00:07:03,890
+Tudo bem.
+
+99
+00:07:03,890 --> 00:07:09,560
+Agora, se eu clicar no segundo, você verá que ele está ativo e tirou o primeiro ou o que
+
+100
+00:07:09,560 --> 00:07:13,160
+realmente aconteceu é que ele tirou todos eles e depois colocou no segundo.
+
+101
+00:07:13,280 --> 00:07:14,680
+Eu clico aqui, mesma coisa.
+
+102
+00:07:15,020 --> 00:07:18,560
+Então agora eu posso mudar para, você sabe, o que eu quiser.
+
+103
+00:07:20,600 --> 00:07:29,360
+Agora, eu também quero quando eu clicar em um desses, eu quero salvar o que quer que a classificação seja neutra
+
+104
+00:07:29,360 --> 00:07:35,600
+e feliz e assim por diante, porque eu quero colocar isso quando clicar em enviar eu quero colocar isso no painel.
+
+105
+00:07:36,500 --> 00:07:44,750
+Então, vou inicializar uma variável muito antiga aqui chamada Selected Rating e configurá-la inicialmente para
+
+106
+00:07:44,750 --> 00:07:48,020
+satisfeito, porque é isso que vai acontecer.
+
+107
+00:07:48,020 --> 00:07:50,030
+Você sabe, quando recarregamos, chegamos à página.
+
+108
+00:07:50,030 --> 00:07:50,870
+Isso é o que está acontecendo.
+
+109
+00:07:51,500 --> 00:07:59,120
+E aqui embaixo, quando clicarmos, vou pegar a classificação selecionada e defini-la
+
+110
+00:07:59,120 --> 00:08:03,650
+para E Target, que é o que eu clico, que é a imagem.
+
+111
+00:08:03,980 --> 00:08:06,110
+E obviamente, não quero colocar a imagem aqui.
+
+112
+00:08:06,110 --> 00:08:14,480
+Eu quero esse texto, que se olharmos na aba de elementos aqui, o texto está na pequena tag logo abaixo
+
+113
+00:08:14,480 --> 00:08:14,990
+imagem.
+
+114
+00:08:15,260 --> 00:08:18,760
+Tão pequeno é um irmão para a imagem certa.
+
+115
+00:08:19,100 --> 00:08:23,170
+A classificação é um pai para a imagem pequena como um irmão lá no mesmo nível.
+
+116
+00:08:23,450 --> 00:08:30,440
+Então, aqui podemos usar o ponto próximo elemento irmão.
+
+117
+00:08:30,890 --> 00:08:31,240
+Certo.
+
+118
+00:08:31,250 --> 00:08:32,840
+Então isso vai selecionar a tag pequena.
+
+119
+00:08:32,840 --> 00:08:34,010
+Esse é o próximo irmão.
+
+120
+00:08:34,010 --> 00:08:36,290
+E eu quero o HTML interno.
+
+121
+00:08:36,290 --> 00:08:40,580
+Eu quero o conteúdo dentro dele e vou colocar isso nessa variável.
+
+122
+00:08:40,580 --> 00:08:42,410
+Então agora se eu console log.
+
+123
+00:08:44,800 --> 00:08:45,580
+Próximo.
+
+124
+00:08:47,110 --> 00:08:50,470
+Não ao lado de apenas irmão para classificação selecionada do log do console.
+
+125
+00:08:51,580 --> 00:08:56,010
+E eles clicam em um desses, ficamos neutros, insatisfeitos, satisfeitos, bons.
+
+126
+00:08:56,350 --> 00:08:59,970
+Eu só queria guardar que vou me livrar desse log do console.
+
+127
+00:09:01,270 --> 00:09:05,320
+Agora, quando enviamos isso quando enviamos revisão, não vai realmente a lugar algum.
+
+128
+00:09:05,320 --> 00:09:06,580
+Não está enviando um formulário.
+
+129
+00:09:06,580 --> 00:09:08,730
+Mas eu só quero mudar a interface do usuário aqui.
+
+130
+00:09:09,160 --> 00:09:13,170
+Então vamos aqui e dizer o botão enviar.
+
+131
+00:09:13,690 --> 00:09:18,430
+Queremos adicionar um ouvinte de evento de clique.
+
+132
+00:09:20,440 --> 00:09:30,910
+E digamos que quando clicamos, queremos pegar o painel e queremos alterar todo o HTML para vamos
+
+133
+00:09:30,910 --> 00:09:38,350
+use um literal de modelo aqui e queremos colocar as tags I, então queremos um ícone.
+
+134
+00:09:38,350 --> 00:09:43,180
+Então a aula vai ser FRSS fa dash heart.
+
+135
+00:09:47,020 --> 00:09:49,510
+OK, e então abaixo disso, vamos colocar um forte
+
+136
+00:09:52,150 --> 00:09:54,500
+e aqui vamos apenas agradecer.
+
+137
+00:09:55,720 --> 00:10:01,060
+Abaixo disso, eu só quero espaçar, vou colocar uma quebra de linha com licença, e depois forte
+
+138
+00:10:03,850 --> 00:10:12,940
+e aqui, eu quero um feedback seguro de dois pontos e, em seguida, minha sintaxe de variável para que eu possa colocar a classificação selecionada.
+
+139
+00:10:13,690 --> 00:10:18,190
+E então vamos colocar um parágrafo aqui.
+
+140
+00:10:18,190 --> 00:10:30,040
+Diremos que usaremos seus comentários para melhorar nosso suporte ao cliente.
+
+141
+00:10:31,240 --> 00:10:31,630
+Tudo bem.
+
+142
+00:10:31,640 --> 00:10:38,560
+Então, agora, se eu for até aqui e suspeitar de neutro e clicar em enviar revisão, obteremos o correto, você sabe,
+
+143
+00:10:38,560 --> 00:10:40,960
+painel aqui, feedback, neutro e assim por diante.
+
+144
+00:10:40,960 --> 00:10:48,130
+Mas temos um erro aqui em baixo tipo erro que diz que não é possível ler a lista de classes de propriedades de null online sete,
+
+145
+00:10:48,130 --> 00:10:49,190
+que está bem aqui.
+
+146
+00:10:50,080 --> 00:10:53,350
+Então lembre-se de como o borbulhar funciona.
+
+147
+00:10:53,350 --> 00:10:59,190
+Se eu clicar aqui, vai chamar você sabe, vai borbulhar para o painel.
+
+148
+00:10:59,650 --> 00:11:04,420
+Portanto, mesmo que eu tenha o ouvinte de eventos no botão enviar, ele também chamará o do painel.
+
+149
+00:11:04,750 --> 00:11:10,990
+E nesse caso, isso não existe mais porque alteramos todo o HTML interno do
+
+150
+00:11:10,990 --> 00:11:11,530
+painel.
+
+151
+00:11:12,220 --> 00:11:16,180
+Então, para corrigir isso, quero segmentar isso.
+
+152
+00:11:16,600 --> 00:11:18,130
+Você sabe, eu não quero usar painel aqui.
+
+153
+00:11:18,130 --> 00:11:19,570
+Eu quero direcioná-lo ainda mais.
+
+154
+00:11:19,960 --> 00:11:28,270
+Então, usarei o contêiner de classificações, que envolve essas três caixas porque o botão não está na lista de classificação
+
+155
+00:11:28,270 --> 00:11:31,070
+container, então não vai disparar se o usarmos.
+
+156
+00:11:31,550 --> 00:11:39,460
+Então aqui, vou copiar isso e dizer contêiner de classificações e queremos usar o seletor de consulta
+
+157
+00:11:39,460 --> 00:11:41,640
+porque é apenas um elemento.
+
+158
+00:11:41,650 --> 00:11:52,510
+E, em seguida, a classe de recipiente Dasch classificações e, em vez de painel, digamos, recipiente de classificações.
+
+159
+00:11:52,840 --> 00:11:58,690
+Agora, se eu selecionar algo e enviar uma revisão, não receberemos esse erro porque isso não é
+
+160
+00:11:58,690 --> 00:12:04,420
+sendo demitido porque não é um pai do botão enviar, OK?
+
+161
+00:12:04,450 --> 00:12:06,270
+Na verdade é irmão.
+
+162
+00:12:06,520 --> 00:12:09,430
+Portanto, temos o contêiner de classificações e, em seguida, temos o botão de envio.
+
+163
+00:12:10,200 --> 00:12:10,570
+Tudo bem.
+
+164
+00:12:10,570 --> 00:12:16,510
+Espero que faça sentido que você possa ler mais sobre borbulhamento de eventos, propagação de eventos.
+
+165
+00:12:17,350 --> 00:12:22,840
+E também, se eu não clicar em nada e enviar, ainda verei satisfeito porque definimos isso inicialmente
+
+166
+00:12:22,840 --> 00:12:23,290
+aqui.
+
+167
+00:12:24,210 --> 00:12:24,640
+Tudo bem.
+
+168
+00:12:25,150 --> 00:12:26,560
+Então espero que você tenha gostado disso.
+
+169
+00:12:26,560 --> 00:12:30,880
+Novamente, existem muitas maneiras diferentes de fazer coisas com JavaScript vanilla.
+
+170
+00:12:30,880 --> 00:12:37,240
+Mas eu só queria mostrar um pouco sobre os métodos de balbucio de eventos ou, desculpe, propriedades como
+
+171
+00:12:37,240 --> 00:12:40,120
+Nó pai, próximo elemento irmão.
+
+172
+00:12:40,120 --> 00:12:44,860
+Isso ajuda você a navegar no DOM porque às vezes você precisa acessar outros elementos.
+
+173
+00:12:45,130 --> 00:12:49,000
+E há apenas uma tonelada de métodos diferentes para fazer isso.
+
+174
+00:12:49,000 --> 00:12:50,560
+Então, eu queria apresentar alguns deles.
+
+175
+00:12:50,920 --> 00:12:51,280
+Tudo bem.
+
+176
+00:12:51,280 --> 00:12:51,680
+É isso.
+
+177
+00:12:51,700 --> 00:12:54,220
+Obrigado por assistir e nos vemos no próximo projeto.

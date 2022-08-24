@@ -1,0 +1,75 @@
+﻿1
+00:00:00,300 --> 00:00:04,710
+Tudo bem, neste projeto, vamos construir uma contagem regressiva animada e o que você está vendo
+
+2
+00:00:04,710 --> 00:00:07,800
+aqui é basicamente a mensagem final ou o estado final.
+
+3
+00:00:07,980 --> 00:00:14,280
+Mas se eu clicar em replay ou apenas recarregar a página, você pode ver que temos uma animação muito legal
+
+4
+00:00:14,280 --> 00:00:15,750
+de três a zero.
+
+5
+00:00:15,750 --> 00:00:20,220
+E, claro, você pode fazer os números que quiser, o intervalo que quiser.
+
+6
+00:00:20,520 --> 00:00:25,500
+E é algo que você pode colocar antes que seu site seja carregado ou antes que seu aplicativo seja carregado.
+
+7
+00:00:25,800 --> 00:00:31,290
+Temos apenas uma tela muito simples aqui, mas este pode ser o seu site ou qualquer outra coisa, e podemos apenas
+
+8
+00:00:31,290 --> 00:00:33,340
+clique em repetir para fazer isso continuar acontecendo.
+
+9
+00:00:33,660 --> 00:00:39,000
+Então o que vamos fazer aqui é lidar com animações de CSFs, keyframes.
+
+10
+00:00:39,240 --> 00:00:45,570
+Nós vamos usar a propriedade transform com escala de rotação de translação e então vamos usar
+
+11
+00:00:45,570 --> 00:00:53,010
+algum JavaScript para verificar basicamente certas condições e adicionar ou remover certas classes com base
+
+12
+00:00:53,010 --> 00:00:54,090
+nessas condições.
+
+13
+00:00:54,270 --> 00:01:00,420
+Porque precisamos saber, você sabe, se devemos adicionar a classe in ou a classe out para criar
+
+14
+00:01:00,420 --> 00:01:02,500
+a rotação ou devemos pará-la?
+
+15
+00:01:02,520 --> 00:01:04,520
+Estamos no final dos números e assim por diante.
+
+16
+00:01:04,530 --> 00:01:07,950
+Portanto, há um pouco de lógica que temos que adicionar com JavaScript.
+
+17
+00:01:08,580 --> 00:01:12,510
+Mas o que fazemos é bastante com keyframes, animações.
+
+18
+00:01:12,570 --> 00:01:12,870
+Tudo bem.
+
+19
+00:01:12,870 --> 00:01:13,740
+Então vamos entrar nisso.

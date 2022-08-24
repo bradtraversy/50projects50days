@@ -1,0 +1,475 @@
+﻿1
+00:00:00,240 --> 00:00:07,350
+Então, temos nossa função obter filmes aqui para realmente buscar os filmes de Yooralla, temos nossa pesquisa
+
+2
+00:00:07,350 --> 00:00:12,810
+funcionalidade, mas não temos nenhuma funcionalidade onde é colocar algo no dormitório.
+
+3
+00:00:12,810 --> 00:00:19,050
+Então, onde temos esses resultados de dados em vez do registro do console, terei uma função chamada
+
+4
+00:00:19,050 --> 00:00:20,630
+mostrar filmes.
+
+5
+00:00:21,660 --> 00:00:26,070
+Então vamos criar uma função, mostrar filmes.
+
+6
+00:00:26,640 --> 00:00:30,720
+E vai absorver os dados, mas chamaremos de filmes.
+
+7
+00:00:31,920 --> 00:00:38,730
+E vamos primeiro limpar o principal, que é, você sabe, toda a parte principal aqui, porque estamos
+
+8
+00:00:38,730 --> 00:00:40,290
+vai inicialmente listar filmes.
+
+9
+00:00:40,440 --> 00:00:45,210
+Mas então, quando pesquisamos, não queremos, não queremos adicioná-los aos filmes que já estão
+
+10
+00:00:45,210 --> 00:00:45,560
+aqui.
+
+11
+00:00:45,570 --> 00:00:46,880
+Queremos substituí-los.
+
+12
+00:00:47,160 --> 00:00:53,370
+Então, vamos pegar Main, que eu realmente tenho que trazer, e definir os loops internos, ponto principal
+
+13
+00:00:54,180 --> 00:00:55,410
+em nosso HTML.
+
+14
+00:00:55,420 --> 00:00:59,240
+Nós vamos definir isso para nada, apenas vamos limpá-lo.
+
+15
+00:01:00,600 --> 00:01:09,300
+Vamos em frente e trazer isso aqui para que tenhamos const main e vamos definir isso para documentar.
+
+16
+00:01:10,260 --> 00:01:12,240
+Acho que lhe dei uma ideia de mim.
+
+17
+00:01:14,100 --> 00:01:15,430
+É só checar aqui.
+
+18
+00:01:15,450 --> 00:01:19,020
+Sim, então o ID principal é o principal, então eu quero trazer isso.
+
+19
+00:01:19,500 --> 00:01:24,990
+Queremos, em primeiro lugar, limpá-lo, depois queremos pegar os filmes, que são os dados que são buscados
+
+20
+00:01:24,990 --> 00:01:26,180
+e loop através deles.
+
+21
+00:01:26,190 --> 00:01:34,080
+Então, para cada para cada leva em uma função, usaremos uma função de seta aqui.
+
+22
+00:01:34,080 --> 00:01:35,520
+Vamos ver para cada filme.
+
+23
+00:01:38,130 --> 00:01:48,810
+E a partir deste filme que passou, devemos ter acesso ao título do filme e votar em coisas médias
+
+24
+00:01:48,810 --> 00:01:49,290
+Curtiu isso.
+
+25
+00:01:49,290 --> 00:01:52,480
+Você viu que viu a resposta com todos os dados.
+
+26
+00:01:52,740 --> 00:01:54,630
+Agora vou usar essa estruturação aqui.
+
+27
+00:01:54,630 --> 00:02:02,070
+Então, para fazer isso, podemos extrair valores do objeto de filme, OK, porque é isso que o filme
+
+28
+00:02:02,070 --> 00:02:02,370
+é.
+
+29
+00:02:02,370 --> 00:02:04,440
+É um objeto com todos os dados do filme.
+
+30
+00:02:04,830 --> 00:02:11,310
+E se colocarmos chaves aqui, podemos retirar, por exemplo, o título e então será apenas
+
+31
+00:02:11,310 --> 00:02:12,450
+uma variável de título.
+
+32
+00:02:12,450 --> 00:02:19,560
+Em vez de usar o título do filme, obteremos o caminho de sublinhado do pôster, que é a imagem que estamos
+
+33
+00:02:19,560 --> 00:02:28,290
+vamos obter a média de sublinhado de votos e obter a visão geral de muitos outros dados
+
+34
+00:02:28,290 --> 00:02:33,240
+que você pode obter desse objeto, do array, mas é isso que vamos usar.
+
+35
+00:02:34,020 --> 00:02:34,440
+Tudo bem.
+
+36
+00:02:34,470 --> 00:02:39,930
+Agora, queremos criar um elemento de filme porque o que vamos fazer agora é construir um dos
+
+37
+00:02:39,960 --> 00:02:46,350
+esses divs ou vários desses divs aqui com os dados reais e depois coloque no dormitório.
+
+38
+00:02:46,350 --> 00:02:55,290
+Então, digamos CONSED, vamos chamar esse filme de L de elementos de filme e então documentar pontos, criar elementos.
+
+39
+00:02:56,430 --> 00:03:03,900
+Queremos criar um div scissoring e então vamos pegar esse elemento de filme e adicionar uma classe a
+
+40
+00:03:03,900 --> 00:03:04,020
+isto.
+
+41
+00:03:04,030 --> 00:03:10,500
+Então, a lista de classes dot add e vamos adicionar a classe de filme que vai nos dar nossa inicial
+
+42
+00:03:10,500 --> 00:03:18,200
+div e, em seguida, pegaremos os elementos do filme e colocaremos nele, digamos em nosso HTML, dissemos isso para alguns
+
+43
+00:03:18,210 --> 00:03:23,240
+back text e então o que vou fazer é pegar uma dessas divs de filme.
+
+44
+00:03:23,250 --> 00:03:26,730
+Então pegue este primeiro e eu vou apagar todos eles.
+
+45
+00:03:29,280 --> 00:03:37,260
+Então, tudo o que devemos ter na tabela é o cabeçalho e o principal nada nele, então salve isso, isso é
+
+46
+00:03:37,260 --> 00:03:40,890
+vai desaparecer por enquanto e então vamos colar
+
+47
+00:03:43,380 --> 00:03:47,820
+isso e apenas limpar isso um pouco.
+
+48
+00:03:51,060 --> 00:03:51,450
+Tudo bem.
+
+49
+00:03:51,460 --> 00:03:54,660
+Então vamos ver.
+
+50
+00:03:54,660 --> 00:03:57,270
+Então temos nossa imagem agora para a imagem.
+
+51
+00:03:57,270 --> 00:04:04,190
+Vamos nos livrar dessa imagem codificada e vamos colocar nossa sintaxe de expressão.
+
+52
+00:04:04,200 --> 00:04:07,020
+Agora, é aqui que temos o caminho do pôster.
+
+53
+00:04:07,020 --> 00:04:07,350
+Certo.
+
+54
+00:04:07,770 --> 00:04:09,930
+Mas isso inclui apenas o nome da imagem.
+
+55
+00:04:09,930 --> 00:04:11,400
+Não inclui o caminho.
+
+56
+00:04:11,400 --> 00:04:19,260
+Então aqui vamos adicionar nossa imagem, variável de caminho de sublinhado, e então vamos adicionar
+
+57
+00:04:19,260 --> 00:04:20,670
+para isso o caminho do pôster.
+
+58
+00:04:22,440 --> 00:04:32,340
+E então para o alter, nós apenas colocaremos o título e então o título irá aqui e o título H3.
+
+59
+00:04:32,340 --> 00:04:36,510
+E então temos nossa média de votos.
+
+60
+00:04:37,470 --> 00:04:39,630
+Então eu vou colocar isso aqui na média de votos.
+
+61
+00:04:39,630 --> 00:04:45,180
+Mas lembre-se, também temos as classes como verde, laranja e vermelho.
+
+62
+00:04:45,780 --> 00:04:52,050
+Então, na verdade, vou ter uma função separada que vou criar bem rápido aqui, basicamente
+
+63
+00:04:52,050 --> 00:05:03,030
+como uma função de utilidade chamada get, diremos obter classe por taxa e passar na votação, que vai
+
+64
+00:05:03,030 --> 00:05:04,920
+ser a, você sabe, a média de votos.
+
+65
+00:05:05,520 --> 00:05:08,240
+E vamos ver o que é isso.
+
+66
+00:05:08,250 --> 00:05:21,270
+Então vamos dizer se vamos dizer se o voto é maior ou igual a oito, então vamos voltar disso
+
+67
+00:05:21,270 --> 00:05:28,290
+função, uma seqüência de verde e, em seguida, vamos fazer mais.
+
+68
+00:05:28,290 --> 00:05:37,530
+Se a votação for, digamos, maior ou igual a cinco, então vamos retornar
+
+69
+00:05:39,900 --> 00:05:42,400
+laranja ou então.
+
+70
+00:05:42,870 --> 00:05:47,970
+Então, se for menor que isso, vamos retornar vermelho.
+
+71
+00:05:49,500 --> 00:05:49,880
+Tudo bem.
+
+72
+00:05:49,890 --> 00:05:55,230
+E então o que vamos fazer é voltar aqui em cima onde temos isso onde eu coloco essa classe de verde.
+
+73
+00:05:55,230 --> 00:05:56,190
+Vamos nos livrar disso.
+
+74
+00:05:56,970 --> 00:06:05,670
+E vamos colocar aqui o pega como eu chamo, classe por corrida e vamos passar
+
+75
+00:06:05,670 --> 00:06:08,370
+aqui a média de votos.
+
+76
+00:06:08,880 --> 00:06:10,920
+OK, então isso será passado aqui.
+
+77
+00:06:10,920 --> 00:06:16,110
+E então dependendo do que isso é, vai nos dar verde, laranja ou vermelho.
+
+78
+00:06:16,870 --> 00:06:21,690
+E então a última coisa que queremos neste cenário, HTML, é a visão geral.
+
+79
+00:06:21,690 --> 00:06:28,170
+Vamos nos livrar disso e apenas colocar a visão geral, OK?
+
+80
+00:06:28,170 --> 00:06:30,320
+E então nós realmente precisamos colocá-lo no DOM.
+
+81
+00:06:30,330 --> 00:06:39,240
+Então vamos aqui e vamos pegar o elemento principal e vamos anexar o filho enquanto estamos colocando isso
+
+82
+00:06:39,240 --> 00:06:42,920
+no main e queremos passar o elemento movie.
+
+83
+00:06:44,160 --> 00:06:44,550
+Tudo bem.
+
+84
+00:06:44,560 --> 00:06:48,420
+Então agora, se eu salvar isso, devemos ver nossos filmes.
+
+85
+00:06:51,970 --> 00:06:53,500
+E isso parece um pouco estranho.
+
+86
+00:07:00,790 --> 00:07:04,210
+Tudo bem, como é que acabamos de
+
+87
+00:07:07,270 --> 00:07:09,090
+ver o que isso parece no dormitório?
+
+88
+00:07:09,830 --> 00:07:18,240
+Então, temos main, temos o filme da classe div, então parece que temos que mergulhar nos DIDs aninhados do filme da classe.
+
+89
+00:07:18,250 --> 00:07:19,120
+Por que é que?
+
+90
+00:07:20,350 --> 00:07:27,700
+Ah, porque nós tínhamos o d'Hiv codificado antes, mas aqui estamos realmente criando e então estamos
+
+91
+00:07:27,700 --> 00:07:28,180
+adicionando-o.
+
+92
+00:07:28,190 --> 00:07:31,450
+Então, nós só queremos nos livrar desta e desta última div.
+
+93
+00:07:33,650 --> 00:07:37,790
+Tudo bem, então vamos salvar isso e isso deve corrigi-lo bem.
+
+94
+00:07:40,680 --> 00:07:46,170
+E apenas envolve, é apenas uma caixa flexível que envolve os itens, mas sim, e nós, se passarmos o mouse sobre ela,
+
+95
+00:07:46,170 --> 00:07:47,360
+temos nossa visão geral.
+
+96
+00:07:48,750 --> 00:07:52,680
+Legal agora para a pesquisa.
+
+97
+00:07:53,040 --> 00:07:58,560
+Isso deve funcionar, porque o que acontece quando pesquisamos, quando nós, você sabe, disparamos um envio
+
+98
+00:07:58,560 --> 00:08:04,650
+aqui pega o valor, o valor da pesquisa verifica, certifica-se que são as suas chamadas, pega os filmes e bate no
+
+99
+00:08:04,650 --> 00:08:09,910
+search API e, por sua vez, você sabe, chama isso e o carrega no dormitório.
+
+100
+00:08:09,940 --> 00:08:12,660
+Então, novamente, vou procurar a palavra difícil.
+
+101
+00:08:13,720 --> 00:08:19,410
+E se eu apertar enter, recebo todos esses filmes onde o título tem a palavra difícil.
+
+102
+00:08:21,420 --> 00:08:21,810
+Tudo bem.
+
+103
+00:08:21,810 --> 00:08:27,540
+Portanto, não é o aplicativo de filmes mais avançado que você pode encontrar na Internet, mas acho que dá
+
+104
+00:08:27,540 --> 00:08:35,640
+você tem uma boa ideia sobre como trabalhar com uma API de terceiros, como, você sabe, buscar dados
+
+105
+00:08:35,670 --> 00:08:37,660
+inserido no dormitório e assim por diante.
+
+106
+00:08:38,160 --> 00:08:38,530
+Tudo bem.
+
+107
+00:08:38,560 --> 00:08:39,290
+É isso, pessoal.
+
+108
+00:08:39,300 --> 00:08:40,740
+Espero que goste deste projeto.
+
+109
+00:08:41,040 --> 00:08:46,380
+E como eu disse muitas vezes, se você quiser adicionar algo a isso, ótimo.
+
+110
+00:08:46,380 --> 00:08:52,020
+Se você pode adicionar, você sabe, mais dados ou talvez você possa ter onde você clica nisso e vai
+
+111
+00:08:52,020 --> 00:08:56,250
+para a página única, você sabe, essas são algumas coisas que você pode fazer.
+
+112
+00:08:56,250 --> 00:08:57,630
+Você pode adicionar paginação.
+
+113
+00:08:57,640 --> 00:09:05,610
+Então eu encorajo você a olhar mais para isso porque, novamente, tutoriais, cursos, existem apenas
+
+114
+00:09:05,610 --> 00:09:11,970
+metade da batalha que você precisa criar, com suas próprias ideias e, você sabe, adicionar sua própria funcionalidade
+
+115
+00:09:11,970 --> 00:09:14,760
+e vai dar mais trabalho do que apenas seguir um tutorial.
+
+116
+00:09:14,760 --> 00:09:18,600
+Você vai ter que fazer alguma pesquisa e ver como você faz certas coisas.
+
+117
+00:09:18,600 --> 00:09:22,680
+Mas essa é a outra metade do aprendizado, na minha opinião.
+
+118
+00:09:23,040 --> 00:09:24,360
+Então é isso.
+
+119
+00:09:24,360 --> 00:09:26,250
+Vamos em frente e passar para o próximo vídeo.

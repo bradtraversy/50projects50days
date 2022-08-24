@@ -1,0 +1,687 @@
+1
+00:00:00,180 --> 00:00:05,820
+OK, so it started on our HTML and most of the stuff that we're going to do right now, the card with
+
+2
+00:00:05,820 --> 00:00:11,670
+the user info inside of it, that's going to ultimately come from JavaScript with the dynamic data from
+
+3
+00:00:11,850 --> 00:00:13,590
+the API after we fetch it.
+
+4
+00:00:13,600 --> 00:00:18,660
+But for now, I'm just going to just type out the HTML, just hardcoded so we can at least see it and
+
+5
+00:00:18,660 --> 00:00:19,300
+style it.
+
+6
+00:00:19,860 --> 00:00:20,220
+All right.
+
+7
+00:00:20,230 --> 00:00:31,470
+So for the title here, it's a GitHub profiles and then down here let's create a form.
+
+8
+00:00:31,890 --> 00:00:37,400
+And this form is going to have a class of user form and it's going to have an idea of form.
+
+9
+00:00:38,610 --> 00:00:39,660
+We don't need an action.
+
+10
+00:00:41,740 --> 00:00:51,390
+OK, and then inside this form, we're going to have a single input and give it an idea of search and
+
+11
+00:00:51,390 --> 00:00:52,740
+let's add a placeholder.
+
+12
+00:00:54,990 --> 00:01:03,570
+And for the placeholder, we'll say search a GitHub user, save that.
+
+13
+00:01:03,570 --> 00:01:07,850
+We have an input here and I'm not going to put a submit button.
+
+14
+00:01:07,860 --> 00:01:09,990
+We're just going to type the user in and enter.
+
+15
+00:01:10,290 --> 00:01:17,670
+You can add a submit button if you want, and then let's go underneath the form and we're going to use
+
+16
+00:01:17,670 --> 00:01:21,740
+the HTML five main tag and give us an idea of Maine.
+
+17
+00:01:22,080 --> 00:01:25,370
+Now, ultimately, this is all we're going to have in our HTML.
+
+18
+00:01:25,380 --> 00:01:30,890
+Whatever the card, the user profile card is going to get inserted in here by the JavaScript.
+
+19
+00:01:30,900 --> 00:01:34,680
+But like I said, for now, we're just going to type it out so we can see it in style it.
+
+20
+00:01:35,970 --> 00:01:43,410
+So we want a class of card and in that class will have a div with an image inside with a class of avatar.
+
+21
+00:01:44,220 --> 00:01:49,320
+And I'm just going to put up a dummy image from the random user API.
+
+22
+00:01:49,320 --> 00:02:01,170
+So we'll say random user dot me slash API slash portrait's slash and I'm just going to use men slash
+
+23
+00:02:01,170 --> 00:02:03,420
+30 dot jpeg.
+
+24
+00:02:04,770 --> 00:02:09,750
+Now that you just give us a random user of some guy now under the stiv here.
+
+25
+00:02:09,870 --> 00:02:12,510
+So card we're going to use flex box to align it.
+
+26
+00:02:12,510 --> 00:02:18,060
+This will be the first flexitime and then we'll have another div with the class of user info with all
+
+27
+00:02:18,060 --> 00:02:21,930
+the user's info such as the user name which will put in an H2.
+
+28
+00:02:21,930 --> 00:02:29,910
+For now I'm just going to say John Doe and then a bio which right now just do LAAM 10, some dummy text
+
+29
+00:02:29,910 --> 00:02:37,050
+in there and then under the paragraph, under the bio we want a little and let's do a list item.
+
+30
+00:02:37,050 --> 00:02:42,390
+So this will be like the number of followers, we'll say three hundred and then put some strong tags
+
+31
+00:02:42,390 --> 00:02:46,080
+in and say followers and I'm just going to copy that down twice.
+
+32
+00:02:46,080 --> 00:02:52,800
+This one here is going to be following the following will say one hundred and then this will be the
+
+33
+00:02:52,800 --> 00:03:04,170
+number of repos, say thirty three posts and then under the rule will have the actual repositories of
+
+34
+00:03:04,200 --> 00:03:04,590
+the user.
+
+35
+00:03:04,590 --> 00:03:06,990
+We're going to get the latest five repositories.
+
+36
+00:03:07,290 --> 00:03:09,450
+So let's have an idea of repose here.
+
+37
+00:03:10,560 --> 00:03:18,120
+And then each one is just going to be a link with the class of repos and then the text they'll just
+
+38
+00:03:18,120 --> 00:03:21,780
+say Rebo one and we'll just do three.
+
+39
+00:03:23,190 --> 00:03:24,870
+And that's it for the HTML.
+
+40
+00:03:24,870 --> 00:03:26,460
+So it's going to look like this so far.
+
+41
+00:03:26,790 --> 00:03:31,440
+So let's start to style this as far as the eye can make this smaller.
+
+42
+00:03:31,450 --> 00:03:36,720
+Now, as far as the font goes, we're going to use a font called Poppins.
+
+43
+00:03:36,870 --> 00:03:45,060
+So I'm going to just replace Raboteau with Poppins and the wait, let's do two hundred and four hundred
+
+44
+00:03:46,890 --> 00:03:50,220
+and change the family down here to Poppins.
+
+45
+00:03:52,250 --> 00:03:56,660
+OK, and then let's see, we're going to add a background color.
+
+46
+00:04:01,220 --> 00:04:11,090
+What else do we want to use hexadecimal value to a two and then a seven two, so it's a dark blue and
+
+47
+00:04:11,090 --> 00:04:13,960
+then we'll make the color of the text white.
+
+48
+00:04:15,650 --> 00:04:16,100
+All right.
+
+49
+00:04:16,100 --> 00:04:19,010
+And then let's see for this stuff.
+
+50
+00:04:19,010 --> 00:04:20,090
+This is all good.
+
+51
+00:04:22,070 --> 00:04:24,620
+Yeah, we'll just keep the rest of the body stuff here.
+
+52
+00:04:25,820 --> 00:04:27,530
+So the user form.
+
+53
+00:04:31,010 --> 00:04:37,850
+For that, I want to just set the set a width of one hundred percent so it goes all the way across its
+
+54
+00:04:37,850 --> 00:04:40,250
+container and this is the form, not the input.
+
+55
+00:04:40,850 --> 00:04:47,900
+And then I'm going to set a max width of 700 pixels.
+
+56
+00:04:49,450 --> 00:04:49,930
+All right.
+
+57
+00:04:49,940 --> 00:04:56,180
+And then for the input, experts say user form input.
+
+58
+00:04:59,180 --> 00:05:03,200
+What set the width of that to be 100 percent?
+
+59
+00:05:04,460 --> 00:05:07,460
+And we want to style this to look a lot better.
+
+60
+00:05:08,390 --> 00:05:15,590
+I'm going to also display it as a block level elements and then let's set a background color to the
+
+61
+00:05:15,590 --> 00:05:16,070
+input.
+
+62
+00:05:16,550 --> 00:05:22,080
+And that's going to be for C two eight eight five.
+
+63
+00:05:22,730 --> 00:05:26,060
+So like a purplish color, let's take away the border.
+
+64
+00:05:26,060 --> 00:05:28,400
+So say border none.
+
+65
+00:05:29,030 --> 00:05:34,650
+And let's set a border radius and we'll do 10 pixels on that.
+
+66
+00:05:35,780 --> 00:05:38,630
+OK, let's make the color white.
+
+67
+00:05:41,700 --> 00:05:47,910
+And let's make the let's give it some padding, so I'm just I'm going to use Rhim units here.
+
+68
+00:05:47,910 --> 00:05:54,720
+So one room, which is just a multiplier of the root HTML element, which by default is 16 pixels.
+
+69
+00:05:54,960 --> 00:05:57,870
+So we're just saying padding 16 pixels right now.
+
+70
+00:05:58,710 --> 00:05:59,100
+All right.
+
+71
+00:05:59,110 --> 00:06:04,320
+And then I just want to add a margin bottom for that I'm going to use to RAM, which in this case will
+
+72
+00:06:04,320 --> 00:06:05,610
+be 32 pixels.
+
+73
+00:06:06,300 --> 00:06:17,660
+And let's set the font family to inherit and let's set the font size to be bigger than that.
+
+74
+00:06:17,670 --> 00:06:19,170
+I'm just going to set it to one ram.
+
+75
+00:06:21,570 --> 00:06:27,170
+And let's add a box shadow or a couple of box shadows, and I'm just going to pace this in.
+
+76
+00:06:29,110 --> 00:06:33,260
+OK, so our first shadow here with the offsets, the blur and the color.
+
+77
+00:06:33,270 --> 00:06:35,910
+And then we have our second shadow here.
+
+78
+00:06:37,050 --> 00:06:37,490
+All right.
+
+79
+00:06:37,500 --> 00:06:43,080
+And then if I click inside of it, we get this outline, which I don't want to keep.
+
+80
+00:06:43,110 --> 00:06:55,410
+So let's use our dash form input and then Colen focus and then we want to set the outline to none.
+
+81
+00:06:57,990 --> 00:06:58,430
+All right.
+
+82
+00:06:58,440 --> 00:07:00,330
+And let's also make the placeholder white.
+
+83
+00:07:00,330 --> 00:07:06,330
+So if you want to change the color of a placeholder, we can say user form input and then Kalanchoe
+
+84
+00:07:06,330 --> 00:07:15,630
+and placeholder and let's say color and we'll set that to hexadecimal triple B, so make it a little
+
+85
+00:07:15,630 --> 00:07:16,050
+lighter.
+
+86
+00:07:17,700 --> 00:07:22,020
+All right, now let's work on the card, which is around all of the rest of this.
+
+87
+00:07:22,710 --> 00:07:24,450
+So class card.
+
+88
+00:07:25,950 --> 00:07:35,330
+And for this let's set a max width of 800 pixels and we are going to make this responsive as well.
+
+89
+00:07:36,540 --> 00:07:39,280
+And then the background color.
+
+90
+00:07:39,300 --> 00:07:44,530
+Let's set that to four C two eight eight five.
+
+91
+00:07:45,630 --> 00:07:47,610
+So it's the same as the input background.
+
+92
+00:07:48,510 --> 00:07:54,510
+And let's set the border radius to 20 pixels.
+
+93
+00:07:57,470 --> 00:08:05,240
+All right, and then let's add a box shadow for this as well, so I'm actually going to copy this.
+
+94
+00:08:07,190 --> 00:08:09,590
+OK, we're going to use the same box shadow is that.
+
+95
+00:08:12,810 --> 00:08:13,150
+Good.
+
+96
+00:08:13,170 --> 00:08:18,520
+And then after that, let's display everything as a floral display.
+
+97
+00:08:18,540 --> 00:08:19,590
+This is a flex box.
+
+98
+00:08:19,590 --> 00:08:25,800
+So the two items inside are the image, the div with the image and then the user info div that has everything
+
+99
+00:08:25,800 --> 00:08:26,360
+else in it.
+
+100
+00:08:27,030 --> 00:08:38,010
+So I'm going to set padding on the card to three ram and let's set margin to zero top and bottom.
+
+101
+00:08:38,040 --> 00:08:41,130
+Let's do one point five ram on the left and right.
+
+102
+00:08:41,440 --> 00:08:42,910
+So that pushes it in a little bit.
+
+103
+00:08:43,410 --> 00:08:43,830
+All right.
+
+104
+00:08:43,860 --> 00:08:45,630
+So it doesn't go any further than that.
+
+105
+00:08:46,380 --> 00:08:50,410
+And we will add a media query to kind of stack those rows.
+
+106
+00:08:50,430 --> 00:08:52,290
+I'm sorry, those columns as well.
+
+107
+00:08:53,880 --> 00:08:59,670
+But let's go ahead and work on the avatar so we have a class of avatar.
+
+108
+00:09:00,750 --> 00:09:02,700
+I want this to be rounded with a border.
+
+109
+00:09:02,700 --> 00:09:10,380
+So set the border radius to 50 percent and then let's set the border.
+
+110
+00:09:11,190 --> 00:09:19,620
+Going to give it a quite thick border, 10 pixels solid, and then the color will be to a to a seven
+
+111
+00:09:19,620 --> 00:09:30,750
+to and let's give it a height of 150 pixels and we'll do a width of 150 as well.
+
+112
+00:09:33,150 --> 00:09:37,790
+And now we have the user info, which is all of this over here.
+
+113
+00:09:37,800 --> 00:09:48,390
+So let's take the user info class and I'm going to set the color of the text to triple E.
+
+114
+00:09:49,770 --> 00:09:55,290
+And just add a little bit of margin left to bring it away from the image, so I'm going to use to ram
+
+115
+00:09:55,320 --> 00:10:00,480
+units here, so push that away, the H2.
+
+116
+00:10:00,480 --> 00:10:05,880
+So user info H2, we're going to get rid of any margin on the top.
+
+117
+00:10:05,880 --> 00:10:11,310
+So margin top zero and for the U.S. to.
+
+118
+00:10:15,710 --> 00:10:27,440
+For the URL, I'm going to display flaks, and this is this right here, so I'm going to display Flex
+
+119
+00:10:27,860 --> 00:10:31,630
+and actually let's take away any bullet points or style type.
+
+120
+00:10:31,640 --> 00:10:38,170
+We're going to set that to none and then display flex and the we want to justify the content.
+
+121
+00:10:38,220 --> 00:10:41,000
+So this is the horizontal spacing.
+
+122
+00:10:41,000 --> 00:10:48,140
+We're going to set the space between the elements like that and just get rid of any padding.
+
+123
+00:10:52,500 --> 00:10:59,050
+And let's set a max width on this to 400 pixels now for the list item.
+
+124
+00:10:59,090 --> 00:11:09,510
+So these right here, let's grab this and say for the allies, I'm going to display flaks.
+
+125
+00:11:10,170 --> 00:11:17,430
+And also I want to just align items to center on the cross access.
+
+126
+00:11:18,300 --> 00:11:23,190
+And then for the strong tag, the number is right next to the text here.
+
+127
+00:11:23,190 --> 00:11:29,780
+So let's grab actually, we'll just grab this and save for the strong tags.
+
+128
+00:11:31,080 --> 00:11:40,530
+I'm going to set the font size to zero point nine REM and then let's also move it over a bit.
+
+129
+00:11:40,530 --> 00:11:41,970
+So the margin left.
+
+130
+00:11:42,510 --> 00:11:44,560
+I'll use zero point five REM.
+
+131
+00:11:46,400 --> 00:11:47,500
+All right, good.
+
+132
+00:11:47,940 --> 00:11:51,950
+Now, the repos down here, obviously you need to style those.
+
+133
+00:11:51,960 --> 00:11:54,480
+So let's take the class of repo.
+
+134
+00:11:54,840 --> 00:11:57,810
+So all all of those links have a class of rebo.
+
+135
+00:11:57,810 --> 00:12:01,410
+Let's get rid of the underlying subtext decoration.
+
+136
+00:12:01,410 --> 00:12:01,800
+None.
+
+137
+00:12:02,250 --> 00:12:05,880
+And let's set the color of these two white.
+
+138
+00:12:06,830 --> 00:12:19,070
+And I'm also going to set a background color to to a to a seven to oops and what happened there and
+
+139
+00:12:19,070 --> 00:12:19,400
+why.
+
+140
+00:12:19,460 --> 00:12:20,510
+Why isn't this working?
+
+141
+00:12:22,340 --> 00:12:23,330
+Oh yeah.
+
+142
+00:12:23,330 --> 00:12:24,760
+These should be rebo.
+
+143
+00:12:27,230 --> 00:12:27,610
+All right.
+
+144
+00:12:29,300 --> 00:12:30,940
+So we have our background color.
+
+145
+00:12:30,950 --> 00:12:35,440
+Let's do font size and font size.
+
+146
+00:12:35,450 --> 00:12:37,460
+I'm going to stick to zero point seven REM.
+
+147
+00:12:38,930 --> 00:12:44,410
+So make those smaller and then let's add some padding and you don't have to use REM units.
+
+148
+00:12:44,420 --> 00:12:47,270
+I just we just wanted to kind of change things up a bit.
+
+149
+00:12:47,420 --> 00:12:54,560
+So we're going to do point to five REM top and bottom and then zero point five REM left and right.
+
+150
+00:12:55,790 --> 00:13:09,680
+OK, and then let's set the margin or set margin right to zero point five REM and let's do margin bottom
+
+151
+00:13:10,820 --> 00:13:18,250
+zero point five REM, just in case the Repos go on to the next line and think that's it.
+
+152
+00:13:18,280 --> 00:13:27,170
+Let's display as an inline block instead of inline and ultimately you'll be able to click on these and
+
+153
+00:13:27,170 --> 00:13:28,880
+go to the the Repos.
+
+154
+00:13:29,420 --> 00:13:30,520
+But that's pretty much it.
+
+155
+00:13:30,530 --> 00:13:35,810
+Now, I do want to make this more responsive because, you know, if it's on really small screens,
+
+156
+00:13:36,140 --> 00:13:38,180
+it's going to look kind of weird.
+
+157
+00:13:38,180 --> 00:13:46,760
+So I'm just going to add a media query here so we'll see media with the max width of I'm going to do
+
+158
+00:13:46,760 --> 00:13:48,050
+500 pixels.
+
+159
+00:13:48,410 --> 00:13:51,470
+So if it's under 500 pixels, let's take the card.
+
+160
+00:13:51,980 --> 00:13:56,570
+And it's displayed flex, but it's a flex row, meaning it goes horizontal.
+
+161
+00:13:56,570 --> 00:14:00,160
+Let's change the flex direction to a column.
+
+162
+00:14:00,410 --> 00:14:05,330
+If I do that, it's going to put the two elements, the two flex items on top of each other.
+
+163
+00:14:06,050 --> 00:14:11,530
+And then let's just align to the middle so we can align items to the center.
+
+164
+00:14:12,770 --> 00:14:14,060
+OK, so that looks pretty good.
+
+165
+00:14:14,540 --> 00:14:18,020
+And the form let's take the user form.
+
+166
+00:14:18,890 --> 00:14:23,540
+And initially I think it has a max width of 800 pixels.
+
+167
+00:14:23,540 --> 00:14:26,300
+So I'm going to set it Max with a four hundred pixels.
+
+168
+00:14:27,120 --> 00:14:28,970
+OK, so I think that looks pretty good.
+
+169
+00:14:30,410 --> 00:14:32,350
+So now it is responsive.
+
+170
+00:14:32,960 --> 00:14:39,200
+So in the next video we obviously want to make this function so we can reach out to the GitHub API and
+
+171
+00:14:39,200 --> 00:14:46,220
+fetch a user and we're actually going to use axios, which is an HTTP library, as opposed to using
+
+172
+00:14:46,430 --> 00:14:48,350
+fetch which is built into the browser.

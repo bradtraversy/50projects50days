@@ -1,0 +1,243 @@
+1
+00:00:00,390 --> 00:00:03,150
+OK, let's go ahead and start on this hoverboard project.
+
+2
+00:00:03,180 --> 00:00:11,010
+So in the HTML here, let's change the title up to hoverboard and all we're going to have in this HTML
+
+3
+00:00:11,010 --> 00:00:17,070
+is a class of container, because in this container we're going to have a bunch of divs with the class
+
+4
+00:00:17,070 --> 00:00:19,430
+of square like this.
+
+5
+00:00:19,440 --> 00:00:26,550
+In fact, what I'll do is just I'll put some in here now, but later on we're going to get rid of these
+
+6
+00:00:26,550 --> 00:00:31,320
+because they're going to get inserted via JavaScript and we're going to set a certain amount of squares
+
+7
+00:00:31,320 --> 00:00:32,870
+to be painted on to the screen.
+
+8
+00:00:33,180 --> 00:00:41,370
+So for now, we'll just throw these in and let's jump into our stylesheet and let's see for the body
+
+9
+00:00:41,370 --> 00:00:41,790
+here.
+
+10
+00:00:41,800 --> 00:00:46,560
+Let's set a background and I'm going to set that to one.
+
+11
+00:00:46,560 --> 00:00:47,100
+One, one.
+
+12
+00:00:50,780 --> 00:00:57,740
+So, I mean, it doesn't really matter, but we're not having any fights here, if you want to add some
+
+13
+00:00:57,740 --> 00:01:00,530
+text or something, you can, but I'm just going to get rid of all that.
+
+14
+00:01:00,540 --> 00:01:02,620
+We don't need it, OK?
+
+15
+00:01:02,630 --> 00:01:04,760
+And then let's do display flex.
+
+16
+00:01:05,600 --> 00:01:11,080
+And we don't need Collum just to put everything in the middle.
+
+17
+00:01:11,090 --> 00:01:11,930
+We're going to keep this.
+
+18
+00:01:12,380 --> 00:01:17,390
+And then we have the container, which actually gave it a class.
+
+19
+00:01:17,390 --> 00:01:17,930
+Let's.
+
+20
+00:01:19,850 --> 00:01:27,530
+Let's give it an I.D. as well, so I.D. container, because I'm going to use that for the JavaScript
+
+21
+00:01:28,220 --> 00:01:38,880
+and then here, let's say class container and we want to display flex actually before we do the container.
+
+22
+00:01:38,900 --> 00:01:40,130
+Let's do the squares.
+
+23
+00:01:40,820 --> 00:01:50,300
+So I'm just going to comment that out for a second and then let's add our square class and set a background
+
+24
+00:01:50,510 --> 00:01:54,210
+color and background color.
+
+25
+00:01:54,230 --> 00:01:59,900
+I'm going to set this to hexadecimal one D three times.
+
+26
+00:02:01,760 --> 00:02:04,080
+So let's see.
+
+27
+00:02:04,140 --> 00:02:06,190
+We can't see anything just yet.
+
+28
+00:02:06,200 --> 00:02:16,100
+Let's add a box shadow of zero zero for the offsets to pixel blur and black.
+
+29
+00:02:20,400 --> 00:02:26,760
+OK, and then for us to be able to see the squares, we have to add height and the width.
+
+30
+00:02:26,760 --> 00:02:33,230
+So let's give these a height and the width of 16 pixels.
+
+31
+00:02:33,690 --> 00:02:39,240
+So we'll do height, width of 16.
+
+32
+00:02:39,240 --> 00:02:39,450
+Good.
+
+33
+00:02:39,450 --> 00:02:41,940
+So now we can at least see the squares.
+
+34
+00:02:42,760 --> 00:02:46,240
+I'm going to just add a margin of two pixels as well.
+
+35
+00:02:46,240 --> 00:02:50,570
+Just pull them apart a little bit and we're going to want to transition.
+
+36
+00:02:50,580 --> 00:02:55,050
+So ultimately we're going to paint these on the screen and then we're going to make it so that when
+
+37
+00:02:55,050 --> 00:03:02,110
+we enter it turns a certain color, a random color, and when we leave it, it gets rid of that color.
+
+38
+00:03:02,110 --> 00:03:05,930
+And we want that to happen at kind of with a little fade effect.
+
+39
+00:03:06,360 --> 00:03:16,290
+So I'm going to add a transition here for, let's say, two seconds ease and let's also set for the
+
+40
+00:03:16,290 --> 00:03:17,490
+square cover.
+
+41
+00:03:19,260 --> 00:03:28,590
+So when we hover over it, I'm going to set the transition duration to zero seconds so that we have
+
+42
+00:03:28,590 --> 00:03:35,520
+an effect where when we hover over it, it immediately lights up.
+
+43
+00:03:35,970 --> 00:03:42,630
+And then when we come off of it, it will basically take two seconds for the color to disappear.
+
+44
+00:03:42,630 --> 00:03:44,310
+So it'll have that fade effect.
+
+45
+00:03:44,870 --> 00:03:49,320
+OK, we're not going to see that just yet, but we'll we'll get to that.
+
+46
+00:03:49,770 --> 00:03:52,920
+So the container see, we want to display Flex.
+
+47
+00:03:52,920 --> 00:03:55,860
+As soon as I do that, it's going to display in a row.
+
+48
+00:03:56,520 --> 00:04:03,120
+And I just want to set a line items to center and justify content to center.
+
+49
+00:04:03,570 --> 00:04:05,360
+And I want these to wrap.
+
+50
+00:04:05,380 --> 00:04:11,180
+So we'll set flex wrap to wrap.
+
+51
+00:04:12,220 --> 00:04:17,400
+We're not going to see a difference now because we don't have that many boxes, but we want to give
+
+52
+00:04:17,400 --> 00:04:21,930
+this a max width of 400 pixels.
+
+53
+00:04:22,860 --> 00:04:26,610
+OK, so if it goes beyond that, then it should wrap onto the next line.
+
+54
+00:04:26,610 --> 00:04:33,250
+So just to test that out, let's take these and let's create a bunch of them and save.
+
+55
+00:04:33,250 --> 00:04:39,120
+And now you can see when it gets past that 400 pixels or whatever, it will wrap onto the next line.
+
+56
+00:04:40,020 --> 00:04:41,460
+OK, so that looks good.
+
+57
+00:04:43,980 --> 00:04:46,240
+I think that's all we need to do for the season.
+
+58
+00:04:46,290 --> 00:04:52,860
+So let's clear out all of these squares, because like I said, we're going to paint them with the JavaScript
+
+59
+00:04:52,860 --> 00:04:55,980
+depending on, you know, what we set for the amount of squares.
+
+60
+00:04:56,430 --> 00:04:59,070
+And that's all we need is just this one container.
+
+61
+00:04:59,370 --> 00:05:03,480
+So in the next video, we'll jump into our JavaScript and we'll get started on that.

@@ -1,0 +1,71 @@
+﻿1
+00:00:00,240 --> 00:00:04,710
+Tudo bem, então este será um projeto bem simples, mas acho que é útil porque há
+
+2
+00:00:04,710 --> 00:00:10,770
+muitas vezes quando você precisa notificar um usuário sobre algo, seja um erro ou apenas um pouco
+
+3
+00:00:10,770 --> 00:00:14,700
+bloco de informações, e muitas vezes você verá essas notificações tost.
+
+4
+00:00:14,700 --> 00:00:20,160
+Então, algo que vai aparecer às vezes está no canto aqui, às vezes está aqui embaixo.
+
+5
+00:00:20,160 --> 00:00:22,680
+Ou você pode colocá-lo no meio onde quiser, realmente.
+
+6
+00:00:22,980 --> 00:00:29,760
+E você pode ver que ele realmente desaparece depois de alguns segundos porque você não quer que ele fique
+
+7
+00:00:29,760 --> 00:00:30,120
+lá.
+
+8
+00:00:30,120 --> 00:00:35,370
+E podemos ter várias notificações porque talvez várias coisas tenham acontecido e todas elas simplesmente
+
+9
+00:00:35,370 --> 00:00:37,140
+ir embora depois de um certo período de tempo.
+
+10
+00:00:37,440 --> 00:00:41,490
+Agora vamos torná-lo divertido e apenas randomizar as mensagens e os tipos.
+
+11
+00:00:41,490 --> 00:00:44,130
+Você verá que alguns deles têm cores diferentes.
+
+12
+00:00:44,310 --> 00:00:49,770
+Assim como verde é sucesso, vermelho é sempre roxo é informação.
+
+13
+00:00:49,920 --> 00:00:51,360
+Então vamos randomizar esses.
+
+14
+00:00:51,360 --> 00:00:57,000
+Mas também vou mostrar como você pode adicionar uma mensagem específica e um tipo específico.
+
+15
+00:00:57,150 --> 00:01:00,510
+E você pode usar isso na validação de formulário ou algo assim.
+
+16
+00:01:00,840 --> 00:01:01,200
+Tudo bem.
+
+17
+00:01:01,210 --> 00:01:01,740
+Então é isso.
+
+18
+00:01:01,740 --> 00:01:02,850
+Vamos em frente e entrar nisso.

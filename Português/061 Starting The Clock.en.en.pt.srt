@@ -1,0 +1,595 @@
+﻿1
+00:00:00,390 --> 00:00:07,170
+Então, vamos começar aqui em nosso TML, digamos, para o título Thene Clock e nos livrar de
+
+2
+00:00:07,170 --> 00:00:14,460
+o H1 e vou colar no link do drible para o que você sabe, o que foi esse projeto
+
+3
+00:00:14,460 --> 00:00:16,290
+inspirado apenas para dar-lhes crédito.
+
+4
+00:00:16,890 --> 00:00:21,810
+E teremos um relógio, mas também teremos uma maneira de alternar o modo de luz e o
+
+5
+00:00:21,810 --> 00:00:22,500
+modo escuro.
+
+6
+00:00:22,520 --> 00:00:23,660
+Então isso vai ser um botão.
+
+7
+00:00:24,030 --> 00:00:26,310
+Então teremos um botão com a classe de alternância.
+
+8
+00:00:27,240 --> 00:00:30,390
+E aqui por enquanto, é um modo escuro.
+
+9
+00:00:32,010 --> 00:00:38,880
+E abaixo disso, teremos nosso contêiner de traço de relógio e isso incluirá o relógio
+
+10
+00:00:38,880 --> 00:00:39,540
+em si.
+
+11
+00:00:39,540 --> 00:00:44,540
+Então eu vou ter uma aula de relógio e o relógio vai ter três agulhas.
+
+12
+00:00:44,550 --> 00:00:49,320
+Então, digamos agulha de classe e vamos criar três desses.
+
+13
+00:00:49,680 --> 00:00:55,560
+E então cada um terá sua aula separada para que possamos dizer qual é a hora, qual
+
+14
+00:00:55,560 --> 00:00:59,860
+é o minuto e qual é o segundo.
+
+15
+00:01:00,450 --> 00:01:04,020
+OK, e por baixo disso só queremos viver com o Center Point.
+
+16
+00:01:04,050 --> 00:01:09,480
+Isso será o centro do relógio e, em seguida, fora da div do relógio, mas ainda dentro do contêiner
+
+17
+00:01:09,480 --> 00:01:16,080
+teremos uma aula de tempo e isso virá do JavaScript.
+
+18
+00:01:16,080 --> 00:01:23,850
+Mas por enquanto vou apenas codificar as doze horas e depois também queremos a data e o formato
+
+19
+00:01:23,850 --> 00:01:32,520
+disso vai ser como segunda-feira, segunda-feira, novembro, e então o dia será em um intervalo.
+
+20
+00:01:32,520 --> 00:01:36,090
+Então, digamos span com uma classe de círculo.
+
+21
+00:01:36,630 --> 00:01:39,820
+E então aqui vou colocar para alguma segunda-feira, 2 de novembro.
+
+22
+00:01:40,380 --> 00:01:40,770
+Tudo bem.
+
+23
+00:01:40,780 --> 00:01:43,250
+Então, se eu salvar isso, é assim que isso vai ficar.
+
+24
+00:01:43,800 --> 00:01:49,170
+Então vamos pular para a nossa folha de estilo e não sei se vamos conseguir toda a CIA.
+
+25
+00:01:49,180 --> 00:01:50,910
+Devemos ser capazes de fazer todo o sucesso.
+
+26
+00:01:51,930 --> 00:01:53,970
+Então eu vou trazer e ver.
+
+27
+00:01:53,970 --> 00:01:56,040
+Na verdade, vamos usar uma fonte chamada Habbo.
+
+28
+00:01:56,880 --> 00:02:04,860
+Então vamos daqui para o sucesso e sucesso.
+
+29
+00:02:04,860 --> 00:02:09,870
+Questione a família e sente-se lá para HCB.
+
+30
+00:02:09,880 --> 00:02:12,330
+Ah, então vai ser a nossa principal diversão.
+
+31
+00:02:12,330 --> 00:02:16,710
+Digamos que Colen trezentos e então vamos adicionar isso aqui.
+
+32
+00:02:17,700 --> 00:02:19,230
+Salve Hebel.
+
+33
+00:02:19,230 --> 00:02:20,020
+Você pode ver a fonte.
+
+34
+00:02:20,240 --> 00:02:21,810
+A diversão agora mudou.
+
+35
+00:02:22,410 --> 00:02:27,990
+E então vamos ver para o corpo aqui seu display flex.
+
+36
+00:02:27,990 --> 00:02:29,310
+Queremos alinhar o centro.
+
+37
+00:02:29,310 --> 00:02:32,490
+Podemos nos livrar da direção flexível.
+
+38
+00:02:34,920 --> 00:02:39,090
+E saiba que o resto deve ficar bem agora no que diz respeito às cores.
+
+39
+00:02:39,120 --> 00:02:46,740
+Na verdade, vou usar algumas propriedades personalizadas, então vou subir aqui e digamos na rota
+
+40
+00:02:46,760 --> 00:02:57,390
+escopo, eu quero ter uma cor primária de preto e depois uma secundária
+
+41
+00:02:59,820 --> 00:03:02,550
+cor de branco.
+
+42
+00:03:04,570 --> 00:03:12,900
+Basicamente, isso será para o modo regular ou modo leve, devo dizer, e então se o
+
+43
+00:03:13,170 --> 00:03:19,260
+HTML tem uma classe de dark, porque na verdade vamos mudar isso dentro do JavaScript para habilitar
+
+44
+00:03:19,590 --> 00:03:25,890
+modo, então vamos definir a cor primária, porque você pode ter escopos diferentes para diferentes
+
+45
+00:03:25,890 --> 00:03:26,510
+variáveis.
+
+46
+00:03:26,520 --> 00:03:34,320
+Então, se estiver neste escopo escuro primário, a cor primária, desculpe, o escopo Teladoc e o primário
+
+47
+00:03:34,320 --> 00:03:42,390
+a cor será branca e as cores primárias como os ponteiros do relógio e coisas assim, o texto
+
+48
+00:03:43,230 --> 00:03:45,270
+e depois o secundário.
+
+49
+00:03:48,020 --> 00:04:00,140
+A cor será vamos fazer três, três três, então cinza escuro real e então diremos HTML tingido de escuro e
+
+50
+00:04:00,140 --> 00:04:11,030
+vamos definir a cor de fundo aqui para fazer um que seja quase preto e depois
+
+51
+00:04:11,030 --> 00:04:12,740
+a cor.
+
+52
+00:04:12,860 --> 00:04:15,200
+Então o texto vai ser a cor primária.
+
+53
+00:04:15,200 --> 00:04:24,440
+Então var dash dash cor primária e vai ser branco porque nesse escopo as cores primárias são brancas
+
+54
+00:04:24,440 --> 00:04:30,350
+em qualquer outro lugar, a cor primária será preta e, obviamente, você não precisará usar propriedades personalizadas.
+
+55
+00:04:30,350 --> 00:04:36,590
+Mas pensei em fazer isso para que pudéssemos facilmente, você sabe, mudar isso aqui em vez de ir
+
+56
+00:04:36,590 --> 00:04:38,920
+através e mudando cada um mais tarde.
+
+57
+00:04:39,980 --> 00:04:47,390
+Então, quando clicamos no Doc Mode e isso muda, você sabe, o plano de fundo fica escuro e tudo mais
+
+58
+00:04:47,390 --> 00:04:53,300
+ficar branco, quero que tenha uma transição para que tenha um efeito de desbotamento em vez de apenas,
+
+59
+00:04:53,600 --> 00:04:55,880
+você sabe, passando para uma cor diferente.
+
+60
+00:04:56,270 --> 00:05:06,500
+Então, vou adicionar uma planilha aqui em HTML no elemento H2O, vamos fazer a transição, digamos, fazer a transição de todos
+
+61
+00:05:06,500 --> 00:05:10,340
+zero ponto cinco segundos com uma facilidade de efeito.
+
+62
+00:05:10,580 --> 00:05:14,900
+OK, dessa forma, quando a cor de fundo mudar, ela desaparecerá.
+
+63
+00:05:17,210 --> 00:05:21,560
+Agora vamos começar com as coisas aqui para a alternância.
+
+64
+00:05:23,720 --> 00:05:32,900
+Então, o botão de alternância, vamos fazer a cor de fundo e vamos definir um custo para o nosso
+
+65
+00:05:32,900 --> 00:05:38,300
+nossas propriedades personalizadas de cor primária, que será preta por padrão.
+
+66
+00:05:38,300 --> 00:05:43,820
+E então vamos definir a cor para a cor secundária.
+
+67
+00:05:47,170 --> 00:05:55,950
+OK, então da cor secundária e vamos nos livrar da borda, vamos definir um raio de borda de quatro pixels,
+
+68
+00:05:56,470 --> 00:06:05,590
+vamos definir o preenchimento para oito pixels, superior e inferior, 12 pixels à esquerda e à direita.
+
+69
+00:06:07,400 --> 00:06:17,120
+E o que mais, vamos posicionar isso, então eu vou posicionar isso para ser absoluto e eu quero isso
+
+70
+00:06:17,120 --> 00:06:19,910
+no topo, então vamos dizer cem pixels abaixo do topo.
+
+71
+00:06:20,240 --> 00:06:23,810
+E então isso tem esse esboço quando é quando nos concentramos nele.
+
+72
+00:06:23,820 --> 00:06:31,700
+Então, digamos alternar quando estiver em seu estado de foco, queremos definir o contorno como nenhum.
+
+73
+00:06:33,640 --> 00:06:38,980
+OK, então agora vamos começar na verdade, vamos dar uma maldição, maldição ou nomeadores também.
+
+74
+00:06:42,770 --> 00:06:50,420
+OK, então vamos começar no recipiente do relógio, que envolve as agulhas e envolve as
+
+75
+00:06:51,080 --> 00:07:00,350
+o ponto central, então o contêiner do traço do relógio e vou exibi-lo como uma caixa flexível.
+
+76
+00:07:01,550 --> 00:07:06,820
+E então vamos definir a direção flexível de RO.
+
+77
+00:07:06,830 --> 00:07:15,390
+Vamos defini-lo para uma coluna e vou justificar o conteúdo para este espaço.
+
+78
+00:07:15,440 --> 00:07:20,370
+Vamos fazer o espaço entre e, em seguida, os itens de linha para o centro.
+
+79
+00:07:21,200 --> 00:07:27,110
+Agora não podemos ver muito dentro desse contêiner porque tudo é apenas uma div vazia.
+
+80
+00:07:28,640 --> 00:07:31,130
+Então vamos em frente e começar a estilizar as coisas dentro.
+
+81
+00:07:31,140 --> 00:07:38,990
+Então, temos uma classe de relógio que será posicionada relativa para que possamos posicionar as coisas dentro de
+
+82
+00:07:38,990 --> 00:07:39,100
+isto.
+
+83
+00:07:39,110 --> 00:07:39,850
+Absoluto.
+
+84
+00:07:39,860 --> 00:07:45,740
+E vou definir a largura e a altura para duzentos pixels.
+
+85
+00:07:48,120 --> 00:07:54,900
+OK, e então vamos fazer as agulhas agora cada agulha, hora, minuto e segundo tem essa agulha
+
+86
+00:07:54,900 --> 00:08:01,620
+classe e vou dar a este relógio uma cor de fundo temporária, apenas um cinza claro.
+
+87
+00:08:01,650 --> 00:08:02,690
+Eu não vou manter isso aqui.
+
+88
+00:08:02,700 --> 00:08:06,480
+É só para podermos ver o contorno do relógio e podermos posicionar as agulhas.
+
+89
+00:08:07,110 --> 00:08:12,780
+Então vamos ter uma aula de agulha básica e temos a hora, o minuto e a segunda agulha.
+
+90
+00:08:12,780 --> 00:08:21,330
+Mas esta é a classe base e queremos que a cor de fundo seja qualquer que seja a cor primária
+
+91
+00:08:21,330 --> 00:08:21,720
+é.
+
+92
+00:08:22,230 --> 00:08:28,500
+E então vamos posicionar este absoluto dentro da classe clock e as classes clock relativas.
+
+93
+00:08:28,890 --> 00:08:30,510
+Portanto, posição absoluta.
+
+94
+00:08:30,510 --> 00:08:37,710
+E vamos colocar de cima, digamos 50% e da esquerda.
+
+95
+00:08:38,560 --> 00:08:44,590
+Cinquenta por cento e vamos dar uma altura inicial de sessenta e cinco pixels, obviamente cada agulha, você
+
+96
+00:08:44,590 --> 00:08:52,720
+sabe, a hora vai ser menor que o minuto, mas vai fazer a hora 65 ou a base
+
+97
+00:08:52,720 --> 00:08:57,700
+agulha 65 e então a largura das agulhas será de três pixels.
+
+98
+00:08:59,470 --> 00:08:59,850
+Tudo bem.
+
+99
+00:08:59,860 --> 00:09:03,320
+Então você pode ver que está posicionado bem aqui.
+
+100
+00:09:03,340 --> 00:09:10,300
+Agora, uma coisa que eu quero adicionar a isso é uma origem de transformação porque vamos girar essas agulhas
+
+101
+00:09:10,300 --> 00:09:11,200
+ou essas mãos.
+
+102
+00:09:12,340 --> 00:09:13,390
+Eu vejo agulha ou mão.
+
+103
+00:09:13,390 --> 00:09:14,350
+Quero dizer, a mesma coisa.
+
+104
+00:09:15,400 --> 00:09:21,160
+Então, vamos usar, transformar, girar, mas não quero que gire do meio.
+
+105
+00:09:21,490 --> 00:09:27,580
+Eu quero que ele gire a partir do centro inferior, você sabe, então é assim.
+
+106
+00:09:27,970 --> 00:09:30,520
+Quer dizer, eu realmente não posso mostrar a você com meu mouse, mas você sabe o que quero dizer.
+
+107
+00:09:30,520 --> 00:09:31,840
+Não quero que gire no meio.
+
+108
+00:09:31,840 --> 00:09:33,970
+Eu quero girar no centro inferior.
+
+109
+00:09:33,980 --> 00:09:40,030
+Então, vamos definir a origem da transformação para o centro inferior.
+
+110
+00:09:41,380 --> 00:09:48,370
+OK, e então vamos pegar, digamos, uma agulha e depois horas até a nossa aula.
+
+111
+00:09:50,020 --> 00:09:51,580
+Está definido para transformar
+
+112
+00:09:54,670 --> 00:09:58,210
+e vamos traduzir porque queremos avançar, certo?
+
+113
+00:09:58,220 --> 00:10:04,090
+Queremos que o fundo disso esteja aqui em cima porque este é basicamente o relógio.
+
+114
+00:10:04,090 --> 00:10:05,150
+Essa é a praça.
+
+115
+00:10:05,440 --> 00:10:13,180
+Então vamos traduzir na verdade vamos usar traduzir porque queremos que seja diretamente no meio
+
+116
+00:10:14,170 --> 00:10:19,780
+no eixo X, porque agora, quero dizer, parece que está no meio, mas é o começo
+
+117
+00:10:19,780 --> 00:10:20,480
+isso está no meio.
+
+118
+00:10:20,500 --> 00:10:31,570
+Então, digamos 50% negativos em X e então queremos movê-lo 100% para cima.
+
+119
+00:10:33,080 --> 00:10:38,800
+Agora, isso aqui é a nossa agulha, certo.
+
+120
+00:10:38,800 --> 00:10:41,980
+Esses aqui embaixo ainda são os outros dois porque nós temos três.
+
+121
+00:10:41,980 --> 00:10:43,510
+Temos a hora, minuto e segundo.
+
+122
+00:10:44,350 --> 00:10:46,570
+Então tudo o que mudamos agora é a hora.
+
+123
+00:10:47,560 --> 00:10:52,140
+Agora, também queremos adicionar uma rotação porque é assim que vamos fazer essa coisa se mover.
+
+124
+00:10:52,150 --> 00:10:57,460
+Então, vamos definir que será definido como zero graus inicialmente, o que se eu disser que é a mesma coisa,
+
+125
+00:10:57,730 --> 00:11:02,470
+se eu defini-lo para, digamos, 30 graus, você verá que ele gira como um relógio.
+
+126
+00:11:03,190 --> 00:11:06,040
+Então, quero dizer, vamos entrar nisso mais tarde.
+
+127
+00:11:06,040 --> 00:11:11,950
+Mas é assim que vamos fazer essa coisa se mover com transform girar agora por um minuto.
+
+128
+00:11:12,760 --> 00:11:13,280
+Vamos ver.
+
+129
+00:11:13,300 --> 00:11:18,520
+Vamos copiar isso porque queremos na mesma posição, digamos oito minutos.
+
+130
+00:11:18,880 --> 00:11:20,980
+E isso vai ser o mesmo.
+
+131
+00:11:20,980 --> 00:11:22,540
+Vai começar em zero graus.
+
+132
+00:11:22,540 --> 00:11:26,890
+Mas eu quero a altura em vez de sessenta e cinco pixels.
+
+133
+00:11:26,890 --> 00:11:28,540
+Eu quero que seja 100 pixels.
+
+134
+00:11:29,230 --> 00:11:34,000
+Então, se eu salvar isso agora, você pode ver que temos o minuto colocado aqui também.
+
+135
+00:11:34,000 --> 00:11:35,230
+Mas é mais longo.
+
+136
+00:11:35,410 --> 00:11:43,330
+Na verdade, se eu girar este 30 e salvar, você verá que agora o ponteiro mais longo é girado 30 graus.
+
+137
+00:11:43,570 --> 00:11:48,010
+Mas queríamos começar do zero agora para o segundo, vamos.
+
+138
+00:11:49,720 --> 00:12:00,430
+Apenas pegue isso e vamos mudar isso para o nosso Neidl de segunda mão ou segundo, e então isso pode ficar o
+
+139
+00:12:00,430 --> 00:12:03,130
+mesmo, vamos caminhar e permanecer o mesmo também.
+
+140
+00:12:03,730 --> 00:12:09,970
+O que eu quero mudar é a cor de fundo, e quero que fique avermelhada.
+
+141
+00:12:09,970 --> 00:12:20,860
+Então vai ser hexadecimal E sete quatro, C, três C, então é como uma cor laranja avermelhada.
+
+142
+00:12:21,700 --> 00:12:26,230
+E você vê se eu girar isso, então essa será nossa segunda mão.
+
+143
+00:12:27,350 --> 00:12:33,470
+Agora, o ponto central, que é bem aqui onde temos um mergulho para isso feito com a classe de Centerpoint,
+
+144
+00:12:33,800 --> 00:12:39,070
+vamos querer estilizar isso para ser como um círculo com uma borda.
+
+145
+00:12:39,560 --> 00:12:44,510
+Então acho que podemos parar por aqui e continuaremos com isso no próximo vídeo, porque há
+
+146
+00:12:44,510 --> 00:12:46,250
+ainda resta um pouco de sucesso.
+
+147
+00:12:46,520 --> 00:12:49,280
+E eu não quero que o vídeo tome muito tempo.
+
+148
+00:12:49,550 --> 00:12:49,900
+Tudo bem.
+
+149
+00:12:49,940 --> 00:12:51,910
+Vejo você no próximo e vamos terminar isso.

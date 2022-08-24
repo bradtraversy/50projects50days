@@ -1,0 +1,55 @@
+﻿1
+00:00:00,240 --> 00:00:05,190
+OK, então neste projeto, vamos criar um filtro de usuário ao vivo onde vamos buscar
+
+2
+00:00:05,190 --> 00:00:09,310
+um monte de usuários de uma API chamada Random User Dot Me.
+
+3
+00:00:09,690 --> 00:00:15,390
+Então, vamos buscá-los, colocá-los aqui, e então poderemos filtrar esses usuários.
+
+4
+00:00:15,420 --> 00:00:21,930
+Então, se eu apenas digitar um, está aqui qualquer usuário que tenha um R em seu nome ou em sua localização
+
+5
+00:00:21,930 --> 00:00:27,960
+vai mostrar que eu vou fazer o nosso oh, digamos que vamos procurar por esse cara romano.
+
+6
+00:00:27,960 --> 00:00:33,840
+Então nosso M e você vê que o único usuário que combina com isso é Roman Roberts.
+
+7
+00:00:33,840 --> 00:00:37,320
+E se eu deletar, ainda vai continuar filtrando.
+
+8
+00:00:37,680 --> 00:00:44,820
+OK, se eu quiser procurar por tudo isso e se eu excluir, ele corresponderá apenas ao que eu colocar
+
+9
+00:00:44,820 --> 00:00:45,250
+aqui.
+
+10
+00:00:45,300 --> 00:00:45,590
+Tudo bem.
+
+11
+00:00:45,600 --> 00:00:47,300
+Então, vamos lidar com a API.
+
+12
+00:00:47,490 --> 00:00:54,020
+Vamos usar um sink await em oposição à sintaxe then para fetch, que retorna uma promessa.
+
+13
+00:00:54,330 --> 00:01:00,240
+Então, primeiro criaremos o estilo de interface do usuário com acesso e, em seguida, buscaremos os dados e implementaremos o
+
+14
+00:01:00,240 --> 00:01:00,870
+filtragem.

@@ -1,0 +1,63 @@
+1
+00:00:00,150 --> 00:00:04,200
+All right, guys, in this project, we're going to create a hoverboard, so it's just kind of a cool
+
+2
+00:00:04,200 --> 00:00:05,010
+little effect.
+
+3
+00:00:05,280 --> 00:00:07,610
+We're going to paint these boxes onto the screen.
+
+4
+00:00:07,620 --> 00:00:12,510
+We're going to style them with success, and we're going to basically set a certain number.
+
+5
+00:00:12,930 --> 00:00:17,490
+So right now, it's set to 500 in the JavaScript and it's going to paint that number of boxes.
+
+6
+00:00:17,760 --> 00:00:22,890
+And then we're going to have event listeners for most over and most out so that when we hover over,
+
+7
+00:00:22,890 --> 00:00:25,180
+it's going to give us a random color.
+
+8
+00:00:25,530 --> 00:00:29,100
+OK, so you can see if I hover over that, it's blue, then it's purple.
+
+9
+00:00:29,100 --> 00:00:35,580
+So we'll have an array of colors that will basically have to choose from for each box when we hover
+
+10
+00:00:35,580 --> 00:00:35,930
+over it.
+
+11
+00:00:35,940 --> 00:00:37,530
+So it gives us this cool effect.
+
+12
+00:00:37,770 --> 00:00:43,650
+And this could be used for some kind of drawing application or something like that will be using CSFs
+
+13
+00:00:43,650 --> 00:00:44,370
+transition.
+
+14
+00:00:44,380 --> 00:00:47,010
+So we have that cool fadeout effect as well.
+
+15
+00:00:47,250 --> 00:00:47,660
+All right.
+
+16
+00:00:47,670 --> 00:00:48,950
+So let's go ahead and get started.

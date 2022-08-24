@@ -1,0 +1,423 @@
+1
+00:00:00,150 --> 00:00:04,890
+OK, so now we want to start the JavaScript for this project right now, when this progress bar hits
+
+2
+00:00:04,890 --> 00:00:07,200
+the end, it just starts over and nothing changes.
+
+3
+00:00:07,200 --> 00:00:08,240
+It's not dynamic.
+
+4
+00:00:08,550 --> 00:00:10,310
+So that's where JavaScript comes in.
+
+5
+00:00:10,320 --> 00:00:13,440
+So let's start off by just grabbing everything we need.
+
+6
+00:00:13,450 --> 00:00:18,960
+We want the testimonials and testimonials container.
+
+7
+00:00:21,330 --> 00:00:33,570
+So I'm just going to use document dot, query selector and we have a class of testimonials container.
+
+8
+00:00:33,570 --> 00:00:34,680
+So we'll grab that.
+
+9
+00:00:35,640 --> 00:00:38,880
+Let's grab the testimonial itself, which is the text.
+
+10
+00:00:38,880 --> 00:00:45,870
+So we want the class of testimonial that and then we want the image.
+
+11
+00:00:47,070 --> 00:00:56,940
+So we'll call this user image and that has a class of user dash image.
+
+12
+00:00:57,810 --> 00:01:03,600
+And we also want the user name that has a class of user name, because this is all stuff that we need
+
+13
+00:01:03,600 --> 00:01:04,470
+to SWAPO.
+
+14
+00:01:05,340 --> 00:01:06,360
+So user name.
+
+15
+00:01:06,360 --> 00:01:08,100
+And then finally we want the role.
+
+16
+00:01:09,780 --> 00:01:14,960
+So class of role and change that to roll.
+
+17
+00:01:14,970 --> 00:01:15,290
+All right.
+
+18
+00:01:15,300 --> 00:01:17,760
+So we're grabbing everything that we need from the DOM.
+
+19
+00:01:17,760 --> 00:01:19,770
+Let's actually just make this a little bigger.
+
+20
+00:01:22,960 --> 00:01:28,480
+OK, so once we do that, we need to have our testimonial stored somewhere.
+
+21
+00:01:28,510 --> 00:01:30,840
+Now we're just going to have them right in an array.
+
+22
+00:01:31,240 --> 00:01:36,490
+So let's call this testimonials we don't have.
+
+23
+00:01:36,490 --> 00:01:36,870
+Yes.
+
+24
+00:01:36,870 --> 00:01:38,550
+So we don't have testimonials up here.
+
+25
+00:01:38,560 --> 00:01:40,380
+I call the testimonials container.
+
+26
+00:01:40,900 --> 00:01:44,530
+So this is just going to be an array which I'm going to grab and paste in.
+
+27
+00:01:44,530 --> 00:01:47,740
+Now, ultimately, you could have this stuff coming from a database.
+
+28
+00:01:47,740 --> 00:01:52,780
+You could just make a, you know, a simple fetch request if you had some kind of back end API that
+
+29
+00:01:52,780 --> 00:01:54,280
+served this Jason data.
+
+30
+00:01:54,640 --> 00:01:57,400
+But for us, we're just going to have it right in here.
+
+31
+00:01:57,400 --> 00:02:03,970
+And I mean, that might be something you want to move on and do yourself in a lot of these projects.
+
+32
+00:02:03,970 --> 00:02:08,220
+I would suggest trying to add on to them, make them better, make them your own.
+
+33
+00:02:08,920 --> 00:02:10,480
+So we have these testimonials.
+
+34
+00:02:10,660 --> 00:02:15,940
+I'm going to define a variable for our index and that's going to start at one.
+
+35
+00:02:16,900 --> 00:02:23,020
+And then what we'll do is create a function to update the testimonial, because that's what we want
+
+36
+00:02:23,020 --> 00:02:30,940
+to do essentially is we want to update this data, this text, the user, the image and so on.
+
+37
+00:02:31,810 --> 00:02:39,850
+So what we'll do here is get from so we have this testimonials array and we can access if we have,
+
+38
+00:02:39,850 --> 00:02:42,910
+like, you know, testimonials one.
+
+39
+00:02:42,910 --> 00:02:52,200
+I'm just going to console log this for now and go down here and I'm just going to call, update, testimonial.
+
+40
+00:02:52,210 --> 00:02:59,220
+And if we go over here and we check out our console and see we have an object with Junn Char.
+
+41
+00:02:59,800 --> 00:03:04,240
+So if we go up here, you'll see Junn Char is the second one.
+
+42
+00:03:04,990 --> 00:03:07,290
+All right, because arrays are zero based.
+
+43
+00:03:07,780 --> 00:03:09,030
+So we have June char.
+
+44
+00:03:11,230 --> 00:03:18,100
+And obviously, if we put like two, we're going to get the next user, which is this Iida A. Niskanen?
+
+45
+00:03:18,460 --> 00:03:18,880
+I don't know.
+
+46
+00:03:18,880 --> 00:03:20,620
+Floren chooses some weird names.
+
+47
+00:03:21,520 --> 00:03:25,260
+So that's testimonials to which is the third position.
+
+48
+00:03:25,600 --> 00:03:30,130
+So what I want to do is just pass in here the index.
+
+49
+00:03:30,850 --> 00:03:32,710
+And I want to take from that.
+
+50
+00:03:32,710 --> 00:03:39,160
+I'm going to use just d structuring to pull out the fields because I don't want to have to say testimonials,
+
+51
+00:03:39,160 --> 00:03:44,290
+dot, index, dot, you know, dot name or whatever.
+
+52
+00:03:45,310 --> 00:03:48,640
+So we have these fields here, name, position, photo and text.
+
+53
+00:03:48,910 --> 00:03:56,680
+So what I'll do is say Consed and then with some curly brackets here, I want to pull from that item,
+
+54
+00:03:56,680 --> 00:04:07,390
+I want to pull the name, the position, the photo and the text from whatever the current testimonial
+
+55
+00:04:07,390 --> 00:04:09,760
+is using this index.
+
+56
+00:04:10,450 --> 00:04:13,120
+And then let's take testimonial.
+
+57
+00:04:13,780 --> 00:04:17,380
+So testimonial is going to be the paragraph that I brought in up above.
+
+58
+00:04:17,380 --> 00:04:24,900
+So bring that in and I'm going to set the inner HTML equal to the text of the current testimonial,
+
+59
+00:04:25,690 --> 00:04:26,250
+OK?
+
+60
+00:04:26,260 --> 00:04:29,040
+And then we're going to take the image.
+
+61
+00:04:29,650 --> 00:04:31,630
+So what does I call that.
+
+62
+00:04:33,280 --> 00:04:36,310
+So user image, we want to set that.
+
+63
+00:04:37,360 --> 00:04:40,790
+So let's say user image and we want to set the source.
+
+64
+00:04:40,810 --> 00:04:46,060
+We're going to say user image source equals the photo that we pull from the current testimonial.
+
+65
+00:04:47,080 --> 00:04:53,290
+Then we want to take the user name and we want to set that in our HTML and we're going to set that to
+
+66
+00:04:53,290 --> 00:04:56,080
+whatever the name is of the current testimonial.
+
+67
+00:04:56,080 --> 00:05:04,840
+And then finally, the role of the role set the inner HTML and we're going to set that to the position.
+
+68
+00:05:06,100 --> 00:05:08,050
+So the role is the same as the position.
+
+69
+00:05:10,000 --> 00:05:15,790
+The user name is the same as the name that we just use different classes in the in the HTML.
+
+70
+00:05:16,300 --> 00:05:21,880
+So now after we do that, after we set all that, we want to take that current index and increment it
+
+71
+00:05:21,880 --> 00:05:22,540
+by one.
+
+72
+00:05:22,550 --> 00:05:24,450
+So just index plus plus.
+
+73
+00:05:25,090 --> 00:05:28,530
+Now if we get to the end, we want to start over.
+
+74
+00:05:28,540 --> 00:05:30,910
+We want to go back to the first testimonial.
+
+75
+00:05:30,910 --> 00:05:32,860
+So let's create an if statement here.
+
+76
+00:05:33,340 --> 00:05:43,330
+And let's say if the if the index is greater than the testimonials dot Langguth.
+
+77
+00:05:43,330 --> 00:05:50,090
+So the entire length of the array and I believe we have seven of these total seven testimonials.
+
+78
+00:05:50,110 --> 00:05:52,450
+So the last one is going to be the six position.
+
+79
+00:05:52,460 --> 00:05:56,050
+So we want to say testimonials length minus one.
+
+80
+00:05:56,050 --> 00:06:03,130
+If index is greater than that, then we're just going to set index to zero and I'm setting index to
+
+81
+00:06:03,130 --> 00:06:07,750
+one initially up here because the first one is already in the HTML here.
+
+82
+00:06:08,300 --> 00:06:13,810
+OK, so that's going to show first and then as soon as the ten seconds pass, when that progress bar
+
+83
+00:06:13,810 --> 00:06:16,270
+is up, we want to call, update, testimonial.
+
+84
+00:06:16,750 --> 00:06:20,620
+So back in the JavaScript we have the function call right here.
+
+85
+00:06:20,620 --> 00:06:21,580
+But what we want to do is.
+
+86
+00:06:21,990 --> 00:06:29,340
+This into a set interval, because we want this to be called every 10 seconds, so set in Deyrolle takes
+
+87
+00:06:29,340 --> 00:06:35,460
+in a function which in this case is going to be our update testimonial and then the amount of milliseconds
+
+88
+00:06:35,460 --> 00:06:36,570
+that we want to call this.
+
+89
+00:06:36,570 --> 00:06:41,160
+So 10000 milliseconds, which is going to be 10 seconds.
+
+90
+00:06:41,460 --> 00:06:44,940
+And it's very important that this matches.
+
+91
+00:06:46,810 --> 00:06:47,800
+This right here.
+
+92
+00:06:48,250 --> 00:06:52,660
+So if you want this to be shorter, if you want it to be five seconds, just change this to five seconds,
+
+93
+00:06:52,850 --> 00:06:54,520
+change this to five thousand.
+
+94
+00:06:54,640 --> 00:06:56,050
+OK, so let's save that.
+
+95
+00:06:56,450 --> 00:06:57,680
+Let's see what happens.
+
+96
+00:06:58,960 --> 00:07:03,010
+So as soon as this hits the end, it should all this content should change.
+
+97
+00:07:05,760 --> 00:07:06,640
+OK, there he goes.
+
+98
+00:07:06,660 --> 00:07:13,590
+Now you can see the text changed, the user image, the user name and the role have all changed because
+
+99
+00:07:13,590 --> 00:07:16,920
+we assign them to whatever the current index is.
+
+100
+00:07:19,130 --> 00:07:23,810
+And you could do things like change the background color or something like that as well.
+
+101
+00:07:25,040 --> 00:07:29,150
+And like I said, you could pull this data instead of having just a static array.
+
+102
+00:07:29,150 --> 00:07:33,100
+You could pull it from a database or pull it from some kind of API.
+
+103
+00:07:33,320 --> 00:07:34,590
+So there's a lot you could do here.
+
+104
+00:07:34,610 --> 00:07:38,720
+This is basically just the, you know, the front facing user interface.
+
+105
+00:07:39,140 --> 00:07:41,110
+But but that's going to be it for now, guys.
+
+106
+00:07:41,120 --> 00:07:44,150
+Hopefully you enjoyed this project and I'll see you in the next one.

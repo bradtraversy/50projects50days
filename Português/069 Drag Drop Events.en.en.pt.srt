@@ -1,0 +1,779 @@
+﻿1
+00:00:00,240 --> 00:00:07,800
+OK, agora queremos disparar eventos específicos em determinados momentos durante todo o processo de arrastar, então
+
+2
+00:00:07,800 --> 00:00:10,300
+a primeira coisa que quero fazer é criar nossas funções de arrastar.
+
+3
+00:00:10,320 --> 00:00:11,570
+Eu vou fazer isso aqui embaixo.
+
+4
+00:00:11,940 --> 00:00:17,220
+Então, o primeiro é o início arrastado, e isso faz exatamente o que diz.
+
+5
+00:00:17,220 --> 00:00:20,400
+Assim que você pegar algo e ele começar a arrastá-lo, isso será disparado.
+
+6
+00:00:20,400 --> 00:00:25,180
+E por enquanto, vou fazer um log de console para todos eles e apenas dizer o que eles fazem.
+
+7
+00:00:25,230 --> 00:00:26,490
+Então isso é arrastar start.
+
+8
+00:00:26,970 --> 00:00:32,070
+E então acho que vamos apenas copiar isso algumas vezes.
+
+9
+00:00:33,060 --> 00:00:34,170
+Então, temos o início do arrasto.
+
+10
+00:00:34,170 --> 00:00:35,520
+Também temos ponta de arrasto.
+
+11
+00:00:38,010 --> 00:00:43,860
+E você pode conferir esses eventos nos Murdochs também, mas você verá exatamente quando eles disparam
+
+12
+00:00:44,370 --> 00:00:47,610
+o arrasto e temos o arrasto.
+
+13
+00:00:47,610 --> 00:00:51,360
+Então, quando arrastamos algo, arraste enter
+
+14
+00:00:53,820 --> 00:01:01,850
+e arrastar sair para podermos entrar e sair e também temos arrastar soltar para quando soltarmos.
+
+15
+00:01:02,820 --> 00:01:03,210
+Tudo bem.
+
+16
+00:01:03,210 --> 00:01:06,900
+E então vamos mudar este texto aqui, digamos arrastar e soltar.
+
+17
+00:01:06,900 --> 00:01:08,730
+Este é licença.
+
+18
+00:01:10,050 --> 00:01:19,110
+Este é entrar e este terminar e terminar.
+
+19
+00:01:19,410 --> 00:01:19,810
+Tudo bem.
+
+20
+00:01:19,830 --> 00:01:24,600
+Então, quando queremos dispará-los enquanto precisamos trazer.
+
+21
+00:01:25,640 --> 00:01:34,550
+Ou, você sabe, precisamos arrastar, que é a aula de cinema, e todas essas caixas vazias,
+
+22
+00:01:34,550 --> 00:01:35,750
+do qual há vários.
+
+23
+00:01:35,750 --> 00:01:35,990
+Certo.
+
+24
+00:01:36,000 --> 00:01:38,270
+Então, precisamos usar query, select, eles são todos para isso.
+
+25
+00:01:38,660 --> 00:01:47,630
+Então, vamos primeiro pegar nosso preenchimento, que é apenas um, então diremos ponto de documento, seletor de consulta e
+
+26
+00:01:47,630 --> 00:01:50,240
+que tem uma classe de preenchimento.
+
+27
+00:01:50,930 --> 00:01:55,100
+E também queremos toda a classe de vazio como mais de um.
+
+28
+00:01:55,110 --> 00:01:57,520
+Então, queremos fazer seletor de consulta all.
+
+29
+00:01:57,530 --> 00:02:02,680
+Vamos chamar isso de MTIs e vamos fazer quatro preenchimentos.
+
+30
+00:02:02,690 --> 00:02:09,230
+Temos dois eventos que queremos disparar e duas dessas funções de arrastar começam no final do arrasto.
+
+31
+00:02:09,830 --> 00:02:13,390
+Isso se aplica ao preenchimento desta imagem que estou arrastando.
+
+32
+00:02:13,790 --> 00:02:15,980
+Então, vamos adicionar um ouvinte de evento a isso.
+
+33
+00:02:16,400 --> 00:02:19,400
+E eu nomeei as funções da mesma forma que os eventos.
+
+34
+00:02:19,400 --> 00:02:21,450
+Apenas os eventos são todos em minúsculas.
+
+35
+00:02:21,500 --> 00:02:24,260
+Então você quer arrastar, comece tudo em minúsculas.
+
+36
+00:02:24,260 --> 00:02:25,310
+Esse é o nome do evento.
+
+37
+00:02:25,550 --> 00:02:31,820
+E então vamos chamar de drag star assim e vamos fazer o mesmo com drag.
+
+38
+00:02:31,820 --> 00:02:38,420
+E então certifique-se de que o segundo tem a caixa do camelo porque essa é a função e isso vai
+
+39
+00:02:38,420 --> 00:02:41,370
+ser arrastar e tudo em minúsculas.
+
+40
+00:02:41,390 --> 00:02:41,690
+Tudo bem.
+
+41
+00:02:42,170 --> 00:02:45,020
+Então vamos em frente e abrir o console aqui.
+
+42
+00:02:45,030 --> 00:02:48,500
+Eu vou colocar isso no fundo.
+
+43
+00:02:51,250 --> 00:02:58,360
+E isso meio que atrapalha o tamanho disso, mas eu não sei, tudo bem, eu acho, porque vai
+
+44
+00:02:58,360 --> 00:02:59,550
+ainda aparece lá.
+
+45
+00:03:00,880 --> 00:03:05,380
+Então eu vou clicar aqui e perceber que assim que eu pegar, teremos dragster.
+
+46
+00:03:06,070 --> 00:03:10,600
+E então, quando eu solto, eu arrasto e arrasto, começo a arrastar.
+
+47
+00:03:10,600 --> 00:03:12,850
+E então sabemos que isso está disparando.
+
+48
+00:03:13,480 --> 00:03:15,300
+Então, sabemos que essas funções estão em execução.
+
+49
+00:03:16,060 --> 00:03:22,130
+Agora, o resto das funções aqui vão para as caixas vazias.
+
+50
+00:03:22,600 --> 00:03:23,020
+Tudo bem.
+
+51
+00:03:23,020 --> 00:03:27,460
+Então, eu vou dizer que há algumas maneiras de fazermos isso.
+
+52
+00:03:27,460 --> 00:03:31,510
+Poderíamos usar foreach, temos feito isso bastante ao longo do curso.
+
+53
+00:03:31,510 --> 00:03:35,260
+Então, vamos usar um loop for aqui para que possamos fazer isso também.
+
+54
+00:03:35,260 --> 00:03:41,960
+E diremos para const vazio de vazio.
+
+55
+00:03:41,980 --> 00:03:45,450
+Portanto, esta é uma forma de loop no slot.
+
+56
+00:03:45,550 --> 00:03:50,590
+Isso deve ser MTIs porque lembre-se de que esta é uma lista de nós que é basicamente uma matriz.
+
+57
+00:03:50,920 --> 00:03:57,970
+E estamos apenas dizendo para cada vazio do array MTIs, então o que queremos fazer, queremos usar isso
+
+58
+00:03:57,970 --> 00:04:01,370
+variável vazia e queremos adicionar um ouvinte de evento.
+
+59
+00:04:01,420 --> 00:04:06,850
+Então isso vai ser para arrastar e isso vai chamar a função de arrastar.
+
+60
+00:04:08,470 --> 00:04:09,820
+E queremos quatro destes.
+
+61
+00:04:09,820 --> 00:04:16,570
+Então este próximo aqui vai ser arrastar, entrar, arrastar, entrar.
+
+62
+00:04:17,710 --> 00:04:22,780
+Temos arrastar licença, arrastar licença.
+
+63
+00:04:22,780 --> 00:04:28,720
+Agora, o último é um pouco diferente do resto porque todos os outros eventos começam com arrasto.
+
+64
+00:04:29,060 --> 00:04:31,030
+Este é apenas gota.
+
+65
+00:04:31,370 --> 00:04:33,070
+Portanto, não queremos arrastar e soltar aqui.
+
+66
+00:04:33,070 --> 00:04:34,060
+Nós só queremos gota.
+
+67
+00:04:34,330 --> 00:04:38,380
+Mas eu chamei a função de arrastar e soltar para que eles arrastassem e soltassem.
+
+68
+00:04:39,640 --> 00:04:39,970
+Tudo bem.
+
+69
+00:04:39,970 --> 00:04:42,280
+Então agora vamos salvar isso e eu vou pegar isso.
+
+70
+00:04:42,730 --> 00:04:46,570
+Você pode ver que o arrastar continua disparando.
+
+71
+00:04:46,840 --> 00:04:52,030
+E enquanto estamos nos movendo sobre alguma coisa, ela continua disparando.
+
+72
+00:04:52,030 --> 00:04:54,370
+E você pode ver arrastar entrar, arrastar sair.
+
+73
+00:04:55,650 --> 00:05:01,950
+OK, então entrar e sair só será executado uma vez como você entra quando entramos nesta caixa aqui e depois quando
+
+74
+00:05:01,950 --> 00:05:07,440
+Eu deixo chama arrastar sair, mas quando estou indo a qualquer lugar, ele chama arrastar.
+
+75
+00:05:07,740 --> 00:05:12,570
+Então, espero que você possa ver o que exatamente quando esses eventos estão disparando.
+
+76
+00:05:13,410 --> 00:05:20,580
+Agora, com relação a esses eventos aqui embaixo, vamos começar com Drag's Star, que está no elemento Phil.
+
+77
+00:05:20,580 --> 00:05:20,860
+Certo.
+
+78
+00:05:20,880 --> 00:05:26,580
+É sobre isso aqui, que é o que tem a imagem de fundo.
+
+79
+00:05:26,880 --> 00:05:30,810
+Então, o que eu quero fazer com isso primeiro é adicionar o nome da classe de espera.
+
+80
+00:05:30,830 --> 00:05:36,990
+Então, vou dizer o nome da classe e podemos apenas atribuir uma classe ou podemos anexar uma classe.
+
+81
+00:05:37,110 --> 00:05:39,900
+Neste caso, queremos inverter a classe de espera.
+
+82
+00:05:39,900 --> 00:05:41,940
+Ainda queremos que tenha a classe de Phil.
+
+83
+00:05:42,090 --> 00:05:46,650
+Então, mais igual será acrescentado e, em seguida, queremos apenas colocar espaço e segurar.
+
+84
+00:05:47,310 --> 00:05:47,730
+Tudo bem.
+
+85
+00:05:47,730 --> 00:05:53,460
+Assim que eu fizer isso, quando eu pegar isso, você verá que tem a borda ao redor, tanto a
+
+86
+00:05:53,460 --> 00:05:55,080
+Eu estou segurando e essa imagem.
+
+87
+00:05:55,410 --> 00:05:59,340
+Agora, assim que eu puxá-lo para fora da caixa, quero que a caixa fique limpa.
+
+88
+00:05:59,760 --> 00:06:05,850
+Então, o que vou fazer é dizer o nome dessa classe e queremos apenas reatribuí-la.
+
+89
+00:06:05,850 --> 00:06:09,060
+Podemos deixá-lo vazio ou podemos simplesmente colocar uma classe de invisível.
+
+90
+00:06:09,060 --> 00:06:12,540
+Eu sei que não temos muitos estilos para isso, mas podemos definir como invisível.
+
+91
+00:06:13,080 --> 00:06:21,150
+E mas se eu for aqui e clicar, o que acontece é que eu nem tenho tempo de pegar e adicionar
+
+92
+00:06:21,150 --> 00:06:27,990
+segure-o apenas isso acontece como ao mesmo tempo e invisível fica aplicado fato.
+
+93
+00:06:27,990 --> 00:06:32,760
+Se eu olhar aqui embaixo, você verá que tem uma classe de invisível.
+
+94
+00:06:32,760 --> 00:06:35,220
+Phil se foi, espera se foi.
+
+95
+00:06:36,120 --> 00:06:41,130
+Se eu fizer isso bem rápido, é só abrir isso para que você possa ver que tem uma classe de preenchimento.
+
+96
+00:06:41,130 --> 00:06:48,150
+E assim que clico, não tenho tempo para basicamente pegá-lo, para que possamos adicionar um tempo definido
+
+97
+00:06:48,150 --> 00:06:51,750
+out que recebe uma função.
+
+98
+00:06:51,750 --> 00:06:54,690
+E o que eu quero adicionar é isso aqui
+
+99
+00:06:57,210 --> 00:06:58,980
+e podemos até colocar zero.
+
+100
+00:06:58,980 --> 00:07:01,380
+Não temos que colocar nada acima de zero aqui.
+
+101
+00:07:01,380 --> 00:07:04,230
+Isso fará com que isso aconteça primeiro.
+
+102
+00:07:04,230 --> 00:07:04,550
+Certo.
+
+103
+00:07:04,560 --> 00:07:08,990
+Então, se eu for até aqui agora, posso pegar e tirar, ok?
+
+104
+00:07:09,060 --> 00:07:11,150
+E então essa caixa fica branca.
+
+105
+00:07:11,760 --> 00:07:16,860
+Agora, no que diz respeito aos nossos ouvintes de eventos aqui em baixo são funções, vou começar com arrastar start.
+
+106
+00:07:17,490 --> 00:07:18,660
+Eu vou me livrar disso.
+
+107
+00:07:18,660 --> 00:07:28,170
+E eu quero adicionar o nome da classe de espera quando começarmos a arrastar e toda a classe colocará essa borda
+
+108
+00:07:28,170 --> 00:07:29,490
+no preenchimento.
+
+109
+00:07:29,490 --> 00:07:32,070
+Fiz para a div que tem a imagem de fundo.
+
+110
+00:07:32,370 --> 00:07:38,340
+Agora podemos usar a palavra-chave this, que pertencerá a qualquer elemento que os eventos dispararam
+
+111
+00:07:38,340 --> 00:07:42,150
+neste caso será fill, que é a div com a imagem de fundo.
+
+112
+00:07:42,510 --> 00:07:46,920
+Então eu quero pegar esse elemento específico e quero adicionar o nome da classe.
+
+113
+00:07:47,400 --> 00:07:50,190
+Agora, esse nome de classe apenas definirá a classe.
+
+114
+00:07:50,190 --> 00:07:54,510
+Eu poderia defini-lo igual a algo que substituiria qualquer outra classe que já estivesse lá.
+
+115
+00:07:54,930 --> 00:07:57,930
+Mas na verdade não quero substituir, quero acrescentar.
+
+116
+00:07:57,930 --> 00:08:02,340
+Então eu vou dizer mais igual e depois adicionar espaço de espera.
+
+117
+00:08:02,890 --> 00:08:08,010
+OK, então ainda terá a classe de preenchimento, mas também terá a classe antiga.
+
+118
+00:08:08,670 --> 00:08:12,030
+Então agora vamos em frente e arraste isso e segure.
+
+119
+00:08:12,030 --> 00:08:15,900
+E você pode ver a borda, o c a borda cinza ao redor da imagem.
+
+120
+00:08:15,960 --> 00:08:20,860
+Está meio fraco por causa da foto, mas está nesta e está na que ainda está lá.
+
+121
+00:08:21,420 --> 00:08:26,040
+Agora, outra coisa que eu quero fazer é quando eu tirar da caixa, eu quero que essa caixa fique branca.
+
+122
+00:08:26,580 --> 00:08:31,320
+Então, queremos fazer isso eliminando a classe de preenchimento sobre isso.
+
+123
+00:08:32,310 --> 00:08:40,170
+Então, digamos que esse nome de classe de ponto e poderíamos defini-lo como nada, mas vou defini-lo como uma classe
+
+124
+00:08:40,170 --> 00:08:40,920
+de invisível.
+
+125
+00:08:41,910 --> 00:08:43,440
+Não esta classe não faz nada.
+
+126
+00:08:43,440 --> 00:08:46,920
+Não há estilo para isso, mas vai se livrar de toda a classe.
+
+127
+00:08:47,310 --> 00:08:55,110
+Então, se eu abrir minhas ferramentas aqui para que você possa ver que tem uma classe de preenchimento agora, assim que eu clicar,
+
+128
+00:08:55,350 --> 00:08:56,640
+fica invisível.
+
+129
+00:08:56,640 --> 00:09:01,110
+Não dá nem tempo de arrastar e adicionar a classe de espera.
+
+130
+00:09:01,420 --> 00:09:08,250
+Então, o que faremos é adicionar um tempo limite definido, que apenas, você sabe, define um tempo limite para que algo aconteça,
+
+131
+00:09:08,250 --> 00:09:09,360
+para que uma função seja executada.
+
+132
+00:09:09,360 --> 00:09:16,650
+Então, queremos adicionar uma função aqui, nossa função, e quero que isso seja executado aqui.
+
+133
+00:09:16,920 --> 00:09:18,690
+E eu nem preciso colocar um tempo.
+
+134
+00:09:18,720 --> 00:09:24,210
+Eu posso simplesmente colocar zero aqui e bem, isso é suficiente para que isso aconteça primeiro para que isso não aconteça
+
+135
+00:09:24,210 --> 00:09:25,700
+desaparecem quando eu clico nele.
+
+136
+00:09:26,010 --> 00:09:32,220
+Então, agora, se eu salvar, vou em frente e clique e segure e posso retirá-lo e isso fica branco.
+
+137
+00:09:32,730 --> 00:09:34,260
+OK, então nós temos isso feito.
+
+138
+00:09:34,260 --> 00:09:38,220
+Agora, quando eu desenhei, é só que ainda sumiu porque tem a classe de invisível.
+
+139
+00:09:39,150 --> 00:09:43,470
+Portanto, também temos arrastar e no elemento de preenchimento.
+
+140
+00:09:44,040 --> 00:09:50,430
+Então, se descermos, arrastar e estiver bem aqui, queremos adicionar o nome da classe de Phil.
+
+141
+00:09:50,430 --> 00:09:55,070
+Então, digamos este nome de classe de ponto e apenas defina-o para preencher.
+
+142
+00:09:56,600 --> 00:10:00,230
+Porque agora estamos lidando apenas com o que estamos clicando e arrastando, estamos lidando apenas com
+
+143
+00:10:00,230 --> 00:10:06,530
+isso porque ambos arrastaram o início e o fim.
+
+144
+00:10:06,570 --> 00:10:09,920
+Então agora, se eu conseguir, você verá que isso fica branco.
+
+145
+00:10:09,920 --> 00:10:17,180
+Eu sou capaz de adicionar a classe inteira quando eu deixo ir, ela volta para o mesmo lugar porque esse específico
+
+146
+00:10:17,180 --> 00:10:20,870
+elemento ainda tem o preenchimento, certo.
+
+147
+00:10:20,870 --> 00:10:23,220
+Isso não está sendo adicionado em nenhum outro lugar.
+
+148
+00:10:23,720 --> 00:10:28,610
+O que queremos que aconteça é que, quando cairmos em uma dessas caixas, queremos que essa div entre, seja qual for
+
+149
+00:10:28,610 --> 00:10:29,530
+um nós derrubamos.
+
+150
+00:10:30,110 --> 00:10:32,110
+Então nós apenas fechamos o acesso.
+
+151
+00:10:32,870 --> 00:10:39,500
+Então o que vamos fazer é descer para arrastar e soltar e vamos nos livrar disso.
+
+152
+00:10:41,060 --> 00:10:45,890
+E eu quero dizer que esse nome de classe de ponto define isso como vazio.
+
+153
+00:10:45,890 --> 00:10:52,840
+Nós sempre queremos ter certeza de que ele tem uma classe de vazio logo antes de descartar ou quando o descartamos.
+
+154
+00:10:52,850 --> 00:10:59,240
+Então também queremos adicionar a classe ou não a classe, mas o elemento de preenchimento dentro de qualquer uma,
+
+155
+00:10:59,450 --> 00:11:00,590
+você sabe, nós caímos em.
+
+156
+00:11:00,740 --> 00:11:02,540
+E fazemos isso com o método append.
+
+157
+00:11:02,840 --> 00:11:08,210
+Então eu posso dizer isso, significando a classe de vazio que fez com a classe de vazio.
+
+158
+00:11:08,420 --> 00:11:12,760
+E então eu quero anexar a isso o preenchimento do elemento.
+
+159
+00:11:13,490 --> 00:11:17,360
+Agora, se eu salvar isso e tentar soltá-lo aqui, você percebe que não está funcionando.
+
+160
+00:11:17,720 --> 00:11:22,090
+E a razão para isso, vou trazer esta janela do navegador por um segundo.
+
+161
+00:11:22,640 --> 00:11:27,500
+Portanto, os eventos drag over e drag enter têm uma ação padrão.
+
+162
+00:11:27,530 --> 00:11:32,690
+Você pode ver que arrastar redefine a operação de arrastar atual para nenhuma, o que não queremos que aconteça.
+
+163
+00:11:33,110 --> 00:11:38,540
+Arrastar enter rejeitará a seleção imediata do usuário como o elemento de destino potencial.
+
+164
+00:11:38,990 --> 00:11:41,000
+Portanto, não queremos que nada disso aconteça.
+
+165
+00:11:41,000 --> 00:11:48,350
+Então tudo o que temos a fazer é arrastar e arrastar enter é passado em nossos objetos de evento e chamar cada ponto
+
+166
+00:11:49,340 --> 00:11:50,900
+impedir o padrão.
+
+167
+00:11:51,170 --> 00:11:54,860
+Isso interromperá o comportamento padrão desses dois eventos.
+
+168
+00:11:54,860 --> 00:12:00,380
+Assim como se você enviar um formulário e não quiser enviar o que estou fazendo, você não quer
+
+169
+00:12:00,380 --> 00:12:02,450
+para realmente enviá-lo para a página.
+
+170
+00:12:02,450 --> 00:12:06,620
+Você quer, você sabe, usar JavaScript, você evitaria o comportamento padrão.
+
+171
+00:12:07,040 --> 00:12:09,710
+Então agora vamos em frente e experimentá-lo.
+
+172
+00:12:09,710 --> 00:12:15,110
+Então eu vou descer aqui e deixar ir e perceber que agora posso soltá-lo onde eu quiser.
+
+173
+00:12:16,100 --> 00:12:19,040
+OK, então essa é a funcionalidade de arrastar e soltar.
+
+174
+00:12:19,040 --> 00:12:25,460
+Mas também quero ter um efeito quando eu passar o mouse sobre eles também para fazer a caixa sobre a qual estou passando o mouse
+
+175
+00:12:25,460 --> 00:12:26,060
+estivador.
+
+176
+00:12:26,600 --> 00:12:28,250
+Então, arraste entrar.
+
+177
+00:12:29,420 --> 00:12:35,900
+Depois de evitarmos o padrão, pegaremos esse elemento e queremos anexar o nome da classe.
+
+178
+00:12:35,900 --> 00:12:41,240
+Então mais eu quero fazer mais igual e queremos adicionar a classe de coberto.
+
+179
+00:12:42,020 --> 00:12:46,830
+Então agora se eu pegar isso, você pode ver toda vez que eu entro adiciona aquela classe.
+
+180
+00:12:46,880 --> 00:12:49,610
+Então, na verdade, queremos esclarecer isso quando sairmos.
+
+181
+00:12:49,620 --> 00:12:56,540
+Então, ao arrastar, vamos em frente e definimos o nome da classe, vamos defini-lo igual ao que não queremos
+
+182
+00:12:56,540 --> 00:12:59,630
+append, queremos basicamente redefini-lo.
+
+183
+00:12:59,630 --> 00:13:03,060
+Então vamos defini-lo para vazio novamente.
+
+184
+00:13:04,910 --> 00:13:10,460
+Então agora se eu for aqui e entrar, fica aquele fundo escuro.
+
+185
+00:13:10,460 --> 00:13:12,860
+Essa é a classe de hover, também o painel aqui.
+
+186
+00:13:13,220 --> 00:13:15,350
+Mas quando eu saio, ele volta a ficar vazio.
+
+187
+00:13:16,400 --> 00:13:20,090
+OK, então o que quer que eu passe o mouse sobre, nós obtemos esse efeito e então eu posso abandoná-lo.
+
+188
+00:13:22,330 --> 00:13:22,730
+Tudo bem.
+
+189
+00:13:22,740 --> 00:13:30,050
+Então, quero dizer, isso é basicamente o básico de arrastar e soltar com HTML, HTML5 e JavaScript.
+
+190
+00:13:30,380 --> 00:13:36,650
+Quer dizer, você pode ser mais criativo com isso e criar jogos e interfaces muito legais.
+
+191
+00:13:36,650 --> 00:13:42,050
+Mas isso deve lhe dar uma idéia de como você sabe, como adicionar esses diferentes eventos e fazer
+
+192
+00:13:42,050 --> 00:13:44,120
+certas coisas quando eles disparam.
+
+193
+00:13:44,420 --> 00:13:45,000
+Então é isso.
+
+194
+00:13:45,020 --> 00:13:45,830
+Obrigado por assistir.
+
+195
+00:13:45,830 --> 00:13:47,270
+Vejo você no próximo projeto.

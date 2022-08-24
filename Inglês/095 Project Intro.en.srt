@@ -1,0 +1,59 @@
+1
+00:00:00,180 --> 00:00:01,710
+Hey, guys, welcome to your next project.
+
+2
+00:00:01,740 --> 00:00:05,910
+So this is going to be another short one, we can get this done in a single video.
+
+3
+00:00:05,910 --> 00:00:10,010
+So we're going to have this auto text effect, auto typing effect.
+
+4
+00:00:10,020 --> 00:00:15,480
+And you've probably seen this on what, different websites where it just kind of types it out by itself.
+
+5
+00:00:15,780 --> 00:00:19,530
+So we're going to add this effect or in style this, which isn't going to take too much.
+
+6
+00:00:19,830 --> 00:00:22,530
+And then also we're going to add this speed control.
+
+7
+00:00:22,830 --> 00:00:24,500
+So you can see it's at one right now.
+
+8
+00:00:24,510 --> 00:00:27,470
+And if I make it to two, it's going to go a little faster.
+
+9
+00:00:27,480 --> 00:00:29,520
+Three, four.
+
+10
+00:00:30,460 --> 00:00:34,960
+Five, so you can see it just keeps getting faster and it has a max of 10 right now, would of course
+
+11
+00:00:34,960 --> 00:00:36,640
+you could make that whatever you want.
+
+12
+00:00:37,300 --> 00:00:42,550
+So this is something you might see on like a hero banner on a website, obviously probably wouldn't
+
+13
+00:00:42,550 --> 00:00:45,100
+have the speed control.
+
+14
+00:00:45,100 --> 00:00:50,580
+But again, this is just to learn to add event listeners to make things happen in the dorm.
+
+15
+00:00:50,860 --> 00:00:54,070
+So let's go ahead and get started and I'll see you in the next video.

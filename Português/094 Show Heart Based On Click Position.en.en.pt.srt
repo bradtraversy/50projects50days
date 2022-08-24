@@ -1,0 +1,759 @@
+﻿1
+00:00:00,420 --> 00:00:05,070
+OK, agora vamos entrar no JavaScript e basicamente queremos poder clicar duas vezes
+
+2
+00:00:05,070 --> 00:00:08,530
+em qualquer área da imagem e faça com que o coração apareça.
+
+3
+00:00:08,550 --> 00:00:14,340
+Basicamente queremos inserir o ícone do coração no dormitório e já temos as chaves para que ele cresça
+
+4
+00:00:14,340 --> 00:00:15,480
+e ter esse efeito.
+
+5
+00:00:15,990 --> 00:00:19,490
+Então vamos começar trazendo a aula Love Me.
+
+6
+00:00:20,250 --> 00:00:27,690
+Então você apenas documenta o seletor de consulta de ponto e nós vamos trazer a classe de me ame.
+
+7
+00:00:27,720 --> 00:00:32,610
+E depois também queremos os tempos, que acredito ter uma ideia de tempo.
+
+8
+00:00:32,620 --> 00:00:37,560
+Então vai ser esse zero aqui, porque queremos mudar isso quando clicamos duas vezes.
+
+9
+00:00:38,280 --> 00:00:38,730
+Tudo bem.
+
+10
+00:00:38,740 --> 00:00:43,470
+Agora vamos fazer aquela aula de me ame aqui que a variável me ama.
+
+11
+00:00:43,800 --> 00:00:47,160
+E queremos adicionar um ouvinte de eventos e quero clicar duas vezes agora.
+
+12
+00:00:47,400 --> 00:00:48,840
+Há uma maneira fácil de fazer isso.
+
+13
+00:00:48,840 --> 00:00:50,850
+Podemos passar e clicar duas vezes.
+
+14
+00:00:51,970 --> 00:00:55,920
+E então, quando clicamos duas vezes, vamos disparar a função.
+
+15
+00:00:55,920 --> 00:00:58,650
+E vamos fazer um log do console de um, dois, três.
+
+16
+00:00:58,800 --> 00:01:01,260
+Então vamos até aqui e abrir nosso console.
+
+17
+00:01:01,650 --> 00:01:01,880
+Claro.
+
+18
+00:01:01,890 --> 00:01:02,550
+Guarde isso.
+
+19
+00:01:02,820 --> 00:01:06,000
+E se eu clicar duas vezes, vemos que um, dois, três são registrados.
+
+20
+00:01:06,360 --> 00:01:09,150
+Agora, vamos tornar isso um pouco mais complicado.
+
+21
+00:01:09,150 --> 00:01:15,360
+E em vez de usar apenas um clique duplo, quero usar um clique único, mas criar nosso próprio clique duplo.
+
+22
+00:01:15,750 --> 00:01:21,450
+E se você quiser pausar o vídeo e tentar fazer isso sozinho, basicamente vamos testar
+
+23
+00:01:21,450 --> 00:01:23,070
+o tempo entre os cliques.
+
+24
+00:01:23,280 --> 00:01:28,680
+E se for menos do que uma certa quantidade, digamos, oitocentos milissegundos, então isso vai
+
+25
+00:01:28,680 --> 00:01:30,030
+ser considerado um clique duplo.
+
+26
+00:01:30,030 --> 00:01:34,560
+Se for, você sabe, o intervalo de tempo é maior entre os cliques, então não será um
+
+27
+00:01:34,560 --> 00:01:35,150
+Duplo click.
+
+28
+00:01:35,520 --> 00:01:37,470
+Então, se você quiser tentar isso sozinho, você pode.
+
+29
+00:01:38,130 --> 00:01:43,680
+Mas vou seguir em frente e criar uma variável aqui chamada tempo de clique.
+
+30
+00:01:46,110 --> 00:01:57,030
+E aqui embaixo, vamos verificar se o tempo é igual a zero, então o quick time é igual a zero, então
+
+31
+00:01:57,060 --> 00:02:01,230
+vamos definir a hora do relógio para novo.
+
+32
+00:02:01,500 --> 00:02:04,640
+Vamos usar o construtor de data e o método get time aqui.
+
+33
+00:02:05,220 --> 00:02:11,850
+Então, vamos definir isso e, em seguida, vou cancelar o tempo de clique do log para que você possa ver o que
+
+34
+00:02:11,850 --> 00:02:12,500
+que nos dá.
+
+35
+00:02:12,520 --> 00:02:17,640
+Então, se eu for aqui e clicar apenas uma vez, vou ver o valor do tempo de clique, que teve o
+
+36
+00:02:17,640 --> 00:02:19,260
+hora atual quando eu cliquei.
+
+37
+00:02:19,260 --> 00:02:22,170
+E não vai funcionar novamente porque está nesta instrução if.
+
+38
+00:02:22,620 --> 00:02:25,690
+O tempo não é mais igual a zero, então isso não vai funcionar.
+
+39
+00:02:26,220 --> 00:02:26,630
+Tudo bem.
+
+40
+00:02:26,640 --> 00:02:27,690
+Então nós queremos fazer isso.
+
+41
+00:02:27,690 --> 00:02:36,870
+E então, se não for igual a zero, queremos fazer outro teste aqui e verificar se
+
+42
+00:02:38,070 --> 00:02:45,780
+vamos colocar isso entre parênteses, outro conjunto de parênteses e digamos se
+
+43
+00:02:45,780 --> 00:02:51,530
+as novas datas não têm hora, então estamos apenas verificando o timestamp atual.
+
+44
+00:02:51,750 --> 00:03:02,010
+Então, se for ou se for menos o tempo de clique, devo dizer, se for maior que 800 milissegundos,
+
+45
+00:03:02,700 --> 00:03:07,370
+então, por enquanto, vamos apenas consolar o log um, dois, três mais.
+
+46
+00:03:09,540 --> 00:03:16,490
+Então, se não for menor que 800, vamos redefinir o relógio para zero.
+
+47
+00:03:17,730 --> 00:03:19,620
+Desculpe, não zerar a hora do dia atual.
+
+48
+00:03:20,430 --> 00:03:26,570
+Então, nova data tem hora, ok?
+
+49
+00:03:26,730 --> 00:03:32,100
+Agora, se eu for aqui e clicar duas vezes, vejo um, dois, três por um clique.
+
+50
+00:03:32,100 --> 00:03:35,850
+Nada acontece se eu clicar uma vez e depois esperar e clicar uma vez.
+
+51
+00:03:36,210 --> 00:03:40,980
+Isso não é considerado um clique duplo porque é maior que 800 milissegundos.
+
+52
+00:03:41,550 --> 00:03:48,150
+Então, se eu fizer um rápido que seja inferior a 800 milissegundos e isso me dê a funcionalidade de duplo clique.
+
+53
+00:03:48,870 --> 00:03:54,780
+OK, quero dizer que você pode usar o dobro como um evento, mas apenas para torná-lo um pouco mais divertido, acabamos de adicionar
+
+54
+00:03:54,780 --> 00:03:57,610
+um clique e, em seguida, criamos nosso próprio evento de duplo clique.
+
+55
+00:03:58,650 --> 00:03:59,070
+Tudo bem.
+
+56
+00:03:59,080 --> 00:04:04,050
+Então, quando isso acontecer, quando realmente clicarmos duas vezes no que queremos fazer, criaremos nosso
+
+57
+00:04:04,050 --> 00:04:11,460
+chamar, devo dizer, uma função chamada create heart, e vamos passar o parâmetro event para
+
+58
+00:04:11,460 --> 00:04:11,820
+este.
+
+59
+00:04:12,090 --> 00:04:16,710
+E então porque precisamos mapear onde o mouse está na imagem, porque é onde queremos que o coração
+
+60
+00:04:16,710 --> 00:04:17,340
+aparecer.
+
+61
+00:04:17,550 --> 00:04:19,590
+Também queremos definir o tempo de clique.
+
+62
+00:04:19,830 --> 00:04:21,600
+Queremos definir isso de volta para zero.
+
+63
+00:04:22,710 --> 00:04:28,380
+OK, então se eu clicar duas vezes, ele vai me dizer que criar coração não é uma função ou não está definido.
+
+64
+00:04:28,650 --> 00:04:31,090
+Então vamos em frente e defini-lo aqui.
+
+65
+00:04:31,110 --> 00:04:34,200
+É uma função criar coração.
+
+66
+00:04:35,310 --> 00:04:42,000
+Isso vai receber o valor do evento aqui na verdade vai fazer isso vamos fazer disso uma função de seta
+
+67
+00:04:42,000 --> 00:04:48,330
+então const crie corações e defina isso como uma seta.
+
+68
+00:04:49,170 --> 00:04:55,920
+Então vamos construir um ícone de coração para criar uma variável chamada coração e defini-la para documentar criar
+
+69
+00:04:55,920 --> 00:04:56,400
+elemento.
+
+70
+00:04:57,270 --> 00:04:59,100
+Então criar elemento faz exatamente isso.
+
+71
+00:04:59,130 --> 00:05:07,770
+Podemos criar uma div ou qualquer tipo de tag html ou cada elemento que eu possa usar e eu tag aqui e quero adicionar
+
+72
+00:05:07,770 --> 00:05:09,060
+um par de aulas para ele.
+
+73
+00:05:09,060 --> 00:05:13,950
+Então, digamos coração dot class list dot add.
+
+74
+00:05:14,460 --> 00:05:15,870
+Então lembre-se com fonte incrível.
+
+75
+00:05:15,870 --> 00:05:24,120
+Nós temos a primeira classe e então eu também quero adicionar a classe de um traço de coração.
+
+76
+00:05:25,560 --> 00:05:34,230
+OK, agora temos este elemento de coração, mas queremos inseri-lo onde quer que estejamos clicando agora com este
+
+77
+00:05:34,230 --> 00:05:41,130
+evento que passou aqui, em última análise, vindo daqui do evento click aqui, podemos obter
+
+78
+00:05:41,130 --> 00:05:41,970
+a posição.
+
+79
+00:05:41,970 --> 00:05:46,020
+Então, digamos CONSED e chamaremos isso de X.
+
+80
+00:05:46,020 --> 00:05:47,790
+Então isso está no eixo X.
+
+81
+00:05:48,150 --> 00:06:01,380
+Então neste objeto de evento, temos clientes cliente X e então vamos chamar esse Y e vamos fazer cliente
+
+82
+00:06:01,830 --> 00:06:07,020
+Y, e então eu só quero mostrar os valores para isso, então não podemos digitar, vamos
+
+83
+00:06:07,020 --> 00:06:15,240
+para cancelar o log X e Y agora eu vou aqui e clico em algum lugar e eu recebo um vinte e dois,
+
+84
+00:06:15,240 --> 00:06:16,140
+um trinta e três.
+
+85
+00:06:16,140 --> 00:06:21,330
+Se eu subir no canto aqui eu pego noventa e nove, eu vou aqui.
+
+86
+00:06:22,170 --> 00:06:23,940
+Então três setenta e sete.
+
+87
+00:06:23,940 --> 00:06:26,340
+Portanto, o primeiro valor está no eixo x.
+
+88
+00:06:26,340 --> 00:06:29,550
+Estou bem aqui, então o valor de X é três e setenta e sete.
+
+89
+00:06:29,730 --> 00:06:32,520
+Estou bem perto do topo, então são noventa e dois aqui.
+
+90
+00:06:32,520 --> 00:06:33,480
+São oitenta e sete.
+
+91
+00:06:33,720 --> 00:06:36,810
+E isso está apenas em você sabe na janela de visualização aqui.
+
+92
+00:06:37,500 --> 00:06:42,480
+Então, se eu for até aqui e clicar, você verá oitenta e cinco.
+
+93
+00:06:43,110 --> 00:06:43,560
+Tudo bem.
+
+94
+00:06:43,560 --> 00:06:44,680
+Então me dá o exato.
+
+95
+00:06:44,830 --> 00:06:47,180
+Coordenadas de onde estou clicando, que é o que eu quero.
+
+96
+00:06:47,380 --> 00:06:55,360
+Agora, outro valor ou dois valores que eu quero obter são o deslocamento à esquerda nos valores de deslocamento à direita.
+
+97
+00:06:55,380 --> 00:07:01,870
+Então esse E que está sendo passado aqui pertence a esse elemento, certo?
+
+98
+00:07:01,870 --> 00:07:02,980
+Que toda a imagem.
+
+99
+00:07:03,190 --> 00:07:10,000
+Queremos obter o deslocamento da esquerda e queremos obter o deslocamento da direita para que possamos
+
+100
+00:07:10,570 --> 00:07:18,520
+basicamente, podemos subtrair isso de quaisquer que sejam esses valores xy, porque queríamos mostrar que você
+
+101
+00:07:18,520 --> 00:07:24,010
+saiba, dentro desta imagem aqui que este é o nosso nosso espaço de trabalho, não toda a janela de visualização.
+
+102
+00:07:24,010 --> 00:07:27,610
+Então, queremos subtrair isso e isso de onde estivermos clicando.
+
+103
+00:07:27,880 --> 00:07:28,260
+Tudo bem.
+
+104
+00:07:28,270 --> 00:07:34,840
+E nesse parâmetro de evento, nesse valor e, podemos usar offset left e offset top.
+
+105
+00:07:34,840 --> 00:07:46,270
+Então, digamos const e vamos definir deslocamentos à esquerda e definir isso para E e isso está na verdade na propriedade de destino.
+
+106
+00:07:46,270 --> 00:07:54,100
+Então idot target, dot offset ou desculpe, left offset e então queremos o topo também.
+
+107
+00:07:54,310 --> 00:07:59,990
+Então este vai ser o deslocamento superior e o deslocamento superior.
+
+108
+00:08:00,400 --> 00:08:07,030
+OK, agora queremos basicamente pegar nossos valores X e Y, que está no lugar na janela de visualização que
+
+109
+00:08:07,030 --> 00:08:10,650
+clicamos e queremos subtrair esquerda e superior deles.
+
+110
+00:08:10,930 --> 00:08:20,910
+Então vamos dizer const X dentro, então dentro da imagem e defina isso para X o que queremos menos o deslocamento esquerdo.
+
+111
+00:08:21,310 --> 00:08:27,310
+OK, vamos fazer a mesma coisa com Y e vamos menos o deslocamento superior porque X está certo
+
+112
+00:08:27,310 --> 00:08:28,890
+e esquerda sábio para cima e para baixo.
+
+113
+00:08:29,320 --> 00:08:31,800
+Então isso vai ser Y dentro.
+
+114
+00:08:32,460 --> 00:08:36,450
+OK, agora você pode se livrar deste log do console.
+
+115
+00:08:36,460 --> 00:08:44,760
+Na verdade, vamos logar no console apenas para ver o que obtemos para X dentro e Y dentro, então vamos salvar isso.
+
+116
+00:08:44,770 --> 00:08:46,930
+E agora, se eu clicar, vou parar neste canto.
+
+117
+00:08:47,680 --> 00:08:49,780
+OK, então eu não estou recebendo um número.
+
+118
+00:08:50,560 --> 00:08:52,110
+OK, então eu estraguei tudo.
+
+119
+00:08:52,120 --> 00:08:53,140
+Isso não deveria ser.
+
+120
+00:08:53,140 --> 00:08:54,760
+Não fica deslocado.
+
+121
+00:08:54,760 --> 00:08:56,260
+Está deslocado para a esquerda.
+
+122
+00:08:57,310 --> 00:09:00,940
+Então offset para a esquerda, devo ajustar o autocomplete.
+
+123
+00:09:01,270 --> 00:09:04,710
+Portanto, este é o deslocamento superior.
+
+124
+00:09:04,720 --> 00:09:05,100
+Tudo bem.
+
+125
+00:09:05,110 --> 00:09:07,750
+Então vamos salvar isso agora e vamos subir para este canto.
+
+126
+00:09:07,930 --> 00:09:12,970
+E agora você verá que esses valores são relativos à imagem e não à janela de visualização.
+
+127
+00:09:12,970 --> 00:09:15,880
+Antes era tipo, o que, oitenta e cinco ou algo assim.
+
+128
+00:09:16,210 --> 00:09:19,900
+Mas agora então isso é dois um e isso é um um.
+
+129
+00:09:20,290 --> 00:09:22,530
+OK, então esse é o começo da curva aqui.
+
+130
+00:09:23,350 --> 00:09:26,920
+Isso nos dá as coordenadas corretas dentro da imagem, não na viewport.
+
+131
+00:09:27,430 --> 00:09:33,100
+Então agora que temos esses valores, o que vamos fazer é pegar o coração que criamos.
+
+132
+00:09:33,100 --> 00:09:42,130
+Criamos esse elemento e queremos definir a propriedade top de estilo agora no sucesso do Love Me
+
+133
+00:09:42,130 --> 00:09:42,550
+coração.
+
+134
+00:09:42,590 --> 00:09:48,820
+Lembre-se, posicionamos esse absolu para que possamos usar as propriedades CSFs superior esquerda e inferior direita, mas
+
+135
+00:09:48,820 --> 00:09:49,960
+não quero defini-los aqui.
+
+136
+00:09:49,960 --> 00:09:52,510
+Nós não queremos um código rígido deles porque é dinâmico.
+
+137
+00:09:52,510 --> 00:09:54,460
+Vai ser onde quer que seja colocado aqui.
+
+138
+00:09:54,730 --> 00:10:01,930
+Então, vou definir o valor superior e vou definir isso para, na verdade, apenas colocar um literal de modelo
+
+139
+00:10:01,930 --> 00:10:06,670
+aqui e queremos defini-lo como Y dentro.
+
+140
+00:10:07,270 --> 00:10:13,060
+Lembre-se, este é o topo, então queremos o eixo Y, que é superior e inferior, e então queremos apenas
+
+141
+00:10:13,060 --> 00:10:16,910
+para adicionar pixels e queremos fazer o mesmo aqui.
+
+142
+00:10:16,930 --> 00:10:21,610
+Este será o X dentro e aqui vamos definir a propriedade left.
+
+143
+00:10:22,930 --> 00:10:24,610
+OK, então vamos inseri-lo lá.
+
+144
+00:10:24,640 --> 00:10:27,010
+Agora, não vai aparecer ainda.
+
+145
+00:10:27,160 --> 00:10:34,000
+Então, se eu clicar duas vezes, não fará nada porque precisamos adicioná-lo ao elemento love me
+
+146
+00:10:34,000 --> 00:10:36,250
+queremos anexar filho.
+
+147
+00:10:36,400 --> 00:10:39,490
+OK, então estamos adicionando no elemento me ame.
+
+148
+00:10:39,490 --> 00:10:40,210
+O coração.
+
+149
+00:10:41,650 --> 00:10:42,060
+Tudo bem.
+
+150
+00:10:42,070 --> 00:10:45,310
+Então, se eu for em frente e clicar agora, lá vamos nós.
+
+151
+00:10:45,320 --> 00:10:48,990
+Então, estamos inserindo esse coração onde quer que cliquemos na imagem.
+
+152
+00:10:49,870 --> 00:10:56,260
+Então, embora este seja um projeto muito, muito simples em termos de funcionalidade, se você não sabia
+
+153
+00:10:56,260 --> 00:11:01,500
+que você pode obter o posicionamento do mouse e outras coisas e, em seguida, como obter a posição exata dentro
+
+154
+00:11:01,630 --> 00:11:06,660
+elemento interno, isso pode ser muito útil para muitos outros projetos maiores.
+
+155
+00:11:07,600 --> 00:11:08,710
+Então ainda não terminamos.
+
+156
+00:11:08,710 --> 00:11:10,470
+Queremos fazer essa coisa de tempo.
+
+157
+00:11:11,170 --> 00:11:12,910
+E isso vai ser bem fácil.
+
+158
+00:11:13,150 --> 00:11:16,270
+Vamos inicializar outra variável aqui.
+
+159
+00:11:16,270 --> 00:11:21,220
+Chamaremos esse time collect e definiremos como zero por padrão.
+
+160
+00:11:21,430 --> 00:11:26,410
+E já trouxemos o elemento Times que é um span aqui com a ideia de tempos.
+
+161
+00:11:26,860 --> 00:11:34,540
+Então vamos dizer times dot em nosso HTML e definir que duas vezes clicado, mas isso será zero.
+
+162
+00:11:34,540 --> 00:11:39,820
+Então, gostaríamos apenas de incrementá-lo e podemos fazer isso apenas adicionando um plus plus no início
+
+163
+00:11:39,820 --> 00:11:41,570
+e isso irá incrementá-lo em um.
+
+164
+00:11:41,890 --> 00:11:46,780
+Então agora se formos aqui e eu clicar duas vezes, você verá que gostou de uma a três vezes.
+
+165
+00:11:47,200 --> 00:11:49,810
+E obviamente não importa, você sabe, onde clicamos.
+
+166
+00:11:50,350 --> 00:11:56,950
+Agora, uma coisa que eu quero mostrar é na aba de elementos, vemos apenas um tipo de clique duplo.
+
+167
+00:11:56,980 --> 00:12:04,240
+Então, isso vai colocar a etiqueta do olho aqui com o coração FASFA.
+
+168
+00:12:04,240 --> 00:12:05,480
+Mas veja quantos são.
+
+169
+00:12:06,010 --> 00:12:12,700
+Então, basicamente, continuamos colocando-os, mas eles não desaparecem por causa disso,
+
+170
+00:12:13,300 --> 00:12:15,070
+porque estamos definindo a opacidade para zero.
+
+171
+00:12:15,070 --> 00:12:16,410
+Mas todos eles ainda estão lá.
+
+172
+00:12:16,480 --> 00:12:23,470
+Então, para corrigir isso, queremos remover cada coração após, digamos, um segundo.
+
+173
+00:12:23,740 --> 00:12:31,060
+Então, usaremos um tempo definido aqui e isso apenas executará uma função após um certo período de tempo.
+
+174
+00:12:31,060 --> 00:12:36,010
+Então o segundo argumento que passamos é a quantidade de tempo, que vou fazer um segundo, que
+
+175
+00:12:36,010 --> 00:12:37,420
+é mil milissegundos.
+
+176
+00:12:37,780 --> 00:12:43,150
+E na verdade nem precisamos de chaves porque tudo o que estamos fazendo é remover o coração em quadra dura.
+
+177
+00:12:43,690 --> 00:12:45,410
+Então, estamos apenas removendo-o desde o amanhecer.
+
+178
+00:12:45,430 --> 00:12:53,530
+Então agora se dermos uma olhada aqui em So Love Me Right Now está vazio, eu vou clicar duas vezes e
+
+179
+00:12:53,530 --> 00:12:57,280
+agora e você pode ver que é preenchido.
+
+180
+00:12:57,460 --> 00:12:59,110
+Não consigo nem clicar rápido o suficiente.
+
+181
+00:12:59,110 --> 00:13:01,870
+Na verdade, você sabe, o que vou fazer é mudar isso para cinco segundos.
+
+182
+00:13:02,650 --> 00:13:05,980
+Então eu vou clicar e você verá que o coração está lá.
+
+183
+00:13:06,040 --> 00:13:09,040
+Após cinco segundos, ele remove.
+
+184
+00:13:09,040 --> 00:13:11,080
+OK, mas eu quero definir isso para um segundo.
+
+185
+00:13:11,080 --> 00:13:13,560
+Eu só desacelerei para mostrar a você.
+
+186
+00:13:13,810 --> 00:13:16,270
+Então agora não vai encher com todos esses corações.
+
+187
+00:13:16,510 --> 00:13:18,340
+Eles são removidos após um segundo.
+
+188
+00:13:19,360 --> 00:13:19,750
+Tudo bem.
+
+189
+00:13:19,750 --> 00:13:21,400
+Então é mais ou menos isso.
+
+190
+00:13:21,440 --> 00:13:24,940
+Espero que tenham gostado deste projeto e vamos passar para o próximo.

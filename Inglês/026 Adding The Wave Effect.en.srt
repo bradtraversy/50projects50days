@@ -1,0 +1,495 @@
+1
+00:00:00,150 --> 00:00:08,100
+OK, so we're going to finish this form up, so I'm going to work on the labels here, so down here
+
+2
+00:00:08,100 --> 00:00:14,850
+we'll just take form control labels and we want to position those to be absolute
+
+3
+00:00:16,980 --> 00:00:20,480
+and absolute.
+
+4
+00:00:21,330 --> 00:00:28,860
+And that's because the the form control itself is relatives or positioning absolute within that.
+
+5
+00:00:29,460 --> 00:00:33,890
+And we're going to put from the top 15 pixels and from the left zero.
+
+6
+00:00:34,710 --> 00:00:39,420
+Now, right now, the way it is, if I start to type in here, it's going to just cover the label.
+
+7
+00:00:39,870 --> 00:00:43,920
+But ultimately the label is going to wave upwards when we click in here.
+
+8
+00:00:44,550 --> 00:00:45,020
+All right.
+
+9
+00:00:45,060 --> 00:00:52,890
+Now, before we actually style the span, I want to add it, because right now there is no span.
+
+10
+00:00:52,890 --> 00:00:54,210
+You know, we don't have this.
+
+11
+00:00:54,210 --> 00:00:56,400
+It's just label and then the word.
+
+12
+00:00:56,640 --> 00:01:01,730
+So we're going to use JavaScript to basically turn this into this.
+
+13
+00:01:02,010 --> 00:01:06,570
+So let's jump into our script, J.S. And first thing we want to do is bring in our labels.
+
+14
+00:01:07,320 --> 00:01:14,880
+So let's use document dot, query selector all because it doesn't matter how many labels are we want
+
+15
+00:01:14,880 --> 00:01:22,770
+to get them all so formed dash control label and that will give us a no list of all the labels.
+
+16
+00:01:23,220 --> 00:01:27,030
+So since it's a no list, we can go ahead and use for each on it.
+
+17
+00:01:27,030 --> 00:01:37,830
+And we'll say for each label, for each label, I'm going to take the label dot in our HTML and set
+
+18
+00:01:37,830 --> 00:01:38,120
+it.
+
+19
+00:01:38,880 --> 00:01:41,250
+Now first, there's a couple of things we want to do.
+
+20
+00:01:41,250 --> 00:01:48,030
+We want to get the inner text in our text, which is just going to be, you know, each letter.
+
+21
+00:01:48,360 --> 00:01:52,230
+So e mail in this case for the first one.
+
+22
+00:01:52,680 --> 00:01:54,800
+And then I'm going to split it into an array.
+
+23
+00:01:54,810 --> 00:01:57,350
+I'm going to go on to the next line and call DOT split.
+
+24
+00:01:57,870 --> 00:02:03,900
+And what that does, if we put an empty string in here, is it splits the letters into an array.
+
+25
+00:02:03,900 --> 00:02:08,430
+So it'll be an array with the first value will be the second will be M and so on.
+
+26
+00:02:08,940 --> 00:02:11,370
+Now from that I want to manipulate it.
+
+27
+00:02:11,370 --> 00:02:19,470
+So I'm going to use dot map, which you can use on an array, which now this is to turn it into an array
+
+28
+00:02:19,470 --> 00:02:20,490
+of something else.
+
+29
+00:02:20,490 --> 00:02:27,150
+And what we want to turn it into for now is an array of the letters with a spin around it with a transition
+
+30
+00:02:27,150 --> 00:02:27,720
+delay.
+
+31
+00:02:28,200 --> 00:02:35,640
+So let's say map and this just takes in an arrow function and we're just going to use tactics here because
+
+32
+00:02:35,640 --> 00:02:40,020
+we want to just turn it directly into an array of span's that we're going to have here.
+
+33
+00:02:40,350 --> 00:02:43,410
+But we need to pass in here for each letter.
+
+34
+00:02:43,740 --> 00:02:49,830
+And then I also want the index, which just starts at zero and increments for every item in the array.
+
+35
+00:02:50,280 --> 00:02:53,520
+And I want to turn it into, let's say, spane.
+
+36
+00:02:56,700 --> 00:03:00,280
+And inside here, we want to have whatever the letter is.
+
+37
+00:03:01,320 --> 00:03:06,030
+So this will turn it into an array of letters with a spin around it.
+
+38
+00:03:06,060 --> 00:03:07,620
+Now, obviously, we don't want an array.
+
+39
+00:03:07,620 --> 00:03:13,860
+We want it to be a string so we can use join and just pass in an empty string and that will turn it
+
+40
+00:03:13,860 --> 00:03:15,390
+back into a string.
+
+41
+00:03:15,990 --> 00:03:20,850
+OK, so basically we have the inner text, so we're looping through the label, we have the inner text,
+
+42
+00:03:20,850 --> 00:03:28,380
+e-mail, e-mail for the first one was splitting it into an array which will put each letter on its own
+
+43
+00:03:29,370 --> 00:03:30,420
+item in the array.
+
+44
+00:03:30,690 --> 00:03:35,520
+Then we're mapping it to create an array of the letter with a span around it.
+
+45
+00:03:35,700 --> 00:03:37,680
+Then we're turning it back into a string.
+
+46
+00:03:37,920 --> 00:03:41,670
+So if I save this now, we don't see any difference here.
+
+47
+00:03:41,670 --> 00:03:50,520
+But if I open up my elements tab and they click on the label here, you'll see that now they're wrapped
+
+48
+00:03:50,520 --> 00:03:51,330
+in Span's.
+
+49
+00:03:52,530 --> 00:03:55,250
+So I'm not going to add the delay, the transition delay just yet.
+
+50
+00:03:55,260 --> 00:03:56,790
+Let's go back to our success.
+
+51
+00:03:56,790 --> 00:04:00,510
+And now that we have the span's, we can add stot, we can add styling for it.
+
+52
+00:04:01,320 --> 00:04:03,110
+So let's see.
+
+53
+00:04:03,150 --> 00:04:05,490
+Let's do the just the span in general first.
+
+54
+00:04:05,490 --> 00:04:09,660
+So we'll say form control labels, spane.
+
+55
+00:04:10,950 --> 00:04:20,130
+And I'm going to display let's do display in line block its in line by default and then I'm going to
+
+56
+00:04:20,130 --> 00:04:28,140
+increase the font size to eighteen pixels because before this wouldn't have worked because we didn't
+
+57
+00:04:28,140 --> 00:04:29,550
+have spins around them.
+
+58
+00:04:30,750 --> 00:04:41,640
+And then let's do a min dash width of five pixels and we're going to add a transition on this because
+
+59
+00:04:41,640 --> 00:04:45,270
+when it, when we add the transform value actually we'll add that first.
+
+60
+00:04:45,900 --> 00:04:57,150
+So let's go up here or down here rather and let's say form, control, input, focus.
+
+61
+00:04:57,150 --> 00:04:59,940
+So focus meaning, you know, when we click.
+
+62
+00:05:00,010 --> 00:05:07,720
+Inside, we want the direct label span and we also want to do this on the validation, so I'll actually
+
+63
+00:05:07,720 --> 00:05:09,070
+just copy this down.
+
+64
+00:05:09,070 --> 00:05:13,960
+And we also want the valid state, so input valid.
+
+65
+00:05:15,880 --> 00:05:20,290
+And what we'll do is just, first of all, change the color to light blue.
+
+66
+00:05:21,400 --> 00:05:25,400
+So if I click in here, you can see the label turns light blue.
+
+67
+00:05:25,840 --> 00:05:29,960
+I also want to turn the the border light blue as well.
+
+68
+00:05:30,370 --> 00:05:39,220
+So up here where we did the outline on the input, focus and valid, let's do bottom or I'm sorry for
+
+69
+00:05:39,280 --> 00:05:47,610
+the bottom border bottom and let's set that or border bottom color rather and set that to light blue.
+
+70
+00:05:47,620 --> 00:05:53,260
+So that way when we click in here, both the border and the text here is light blue.
+
+71
+00:05:55,150 --> 00:06:01,290
+Now, see, we want to move this up basically when we click in here.
+
+72
+00:06:01,690 --> 00:06:06,970
+So to do that, we can add a transform and we want to use translate.
+
+73
+00:06:06,970 --> 00:06:07,630
+Why?
+
+74
+00:06:07,630 --> 00:06:11,920
+Because we're translating we're dealing with it on the Y access.
+
+75
+00:06:12,350 --> 00:06:13,350
+So translate why.
+
+76
+00:06:13,360 --> 00:06:14,350
+And I want to move it up.
+
+77
+00:06:14,350 --> 00:06:15,850
+So it has to be a negative number.
+
+78
+00:06:15,850 --> 00:06:17,830
+If I want to move it down, it would be positive.
+
+79
+00:06:18,220 --> 00:06:20,230
+So let's do negative 30 pixels.
+
+80
+00:06:20,230 --> 00:06:24,910
+So when I click in here, you can see they move up and they just flicker up.
+
+81
+00:06:24,910 --> 00:06:25,900
+It's not smooth.
+
+82
+00:06:25,900 --> 00:06:30,180
+So that's why I'm going to have to transition onto the span right here.
+
+83
+00:06:30,190 --> 00:06:37,960
+So let's say transition and we'll do zero point three seconds and then we could do like an ease ease
+
+84
+00:06:37,960 --> 00:06:38,920
+in, ease out.
+
+85
+00:06:38,920 --> 00:06:43,860
+I'm going to use a cubic busia, so cubic bezier.
+
+86
+00:06:43,870 --> 00:06:52,030
+And then for the values here, basically what this is, is it defines a cubic bezier, defines a curve
+
+87
+00:06:52,360 --> 00:06:57,790
+and we can use it as a transition effect with a variable speed from start to end.
+
+88
+00:06:58,060 --> 00:07:06,460
+And it takes in four points which are p0 p1 p2p three, P zero and P three of a start and the end of
+
+89
+00:07:06,490 --> 00:07:07,050
+the curve.
+
+90
+00:07:07,510 --> 00:07:13,300
+So I mean you can get a lot more complicated if you're doing like really cool animations.
+
+91
+00:07:13,300 --> 00:07:14,500
+But this is pretty simple.
+
+92
+00:07:14,500 --> 00:07:16,780
+We're just going to do a couple values here.
+
+93
+00:07:16,810 --> 00:07:27,400
+Zero point six eight negative zero point five five zero point two six five and one point five five.
+
+94
+00:07:27,400 --> 00:07:30,040
+So we'll have a variable speed on this transition.
+
+95
+00:07:30,320 --> 00:07:34,570
+So if I click in here, you can see now it doesn't just flick up.
+
+96
+00:07:34,570 --> 00:07:36,990
+It has that cool, almost like a bounce effect.
+
+97
+00:07:39,040 --> 00:07:42,130
+Now, we don't want the whole thing to go up at once.
+
+98
+00:07:42,130 --> 00:07:43,030
+You could do that.
+
+99
+00:07:43,030 --> 00:07:45,100
+I mean, you could leave it like that if you want.
+
+100
+00:07:45,730 --> 00:07:48,250
+But I want to have that wave effect.
+
+101
+00:07:48,270 --> 00:07:56,500
+So that's where the transition delay comes in, because we already have the transition and it's transitioning
+
+102
+00:07:56,500 --> 00:08:01,000
+the this right here, the transform translate where it moves up.
+
+103
+00:08:01,450 --> 00:08:11,680
+So in our script here, let's add onto the spane and inline style and we'll set that to say transition,
+
+104
+00:08:12,070 --> 00:08:14,290
+dash, delay.
+
+105
+00:08:15,160 --> 00:08:19,740
+Now, when we set this, we don't want to send it to a fixed value because it'll do the same thing.
+
+106
+00:08:19,760 --> 00:08:22,810
+It'll just wait and it'll flicker them all up at the same time.
+
+107
+00:08:22,810 --> 00:08:28,420
+So what I'm going to do here is use the index, which starts at zero, then one, two, three and so
+
+108
+00:08:28,420 --> 00:08:31,300
+on, and I'm going to multiply it by fifty.
+
+109
+00:08:31,660 --> 00:08:32,920
+So the first one will be zero.
+
+110
+00:08:32,920 --> 00:08:38,700
+Second one fifty third one will be, you know, 150, then 200, 250 and so on.
+
+111
+00:08:39,070 --> 00:08:40,240
+So now I'll save that.
+
+112
+00:08:40,240 --> 00:08:43,690
+And if I click OK, that didn't work.
+
+113
+00:08:47,450 --> 00:08:53,150
+Oh, we need to add the milliseconds, so after the transition delay, no, we need to have mass.
+
+114
+00:08:54,170 --> 00:08:54,580
+All right.
+
+115
+00:08:54,950 --> 00:08:55,670
+And there we go.
+
+116
+00:08:57,830 --> 00:08:59,480
+And of course, you could change this.
+
+117
+00:08:59,480 --> 00:09:00,850
+Like we could do 30.
+
+118
+00:09:03,800 --> 00:09:05,750
+We could do three hundred.
+
+119
+00:09:07,150 --> 00:09:09,070
+Which is going to be very slow.
+
+120
+00:09:10,850 --> 00:09:17,540
+So three hundred milliseconds, I think that 50 is good, though he can make it faster, like 10.
+
+121
+00:09:20,350 --> 00:09:27,880
+But it's you can barely see the wave, so I think 50 is is a good number, so keep it at 50, Ms.
+
+122
+00:09:30,390 --> 00:09:33,340
+All right, so that's how you can add this cool little effect.
+
+123
+00:09:33,750 --> 00:09:34,350
+So that's it.
+
+124
+00:09:34,360 --> 00:09:37,760
+Hopefully guys like this project and we'll move on to the next one.

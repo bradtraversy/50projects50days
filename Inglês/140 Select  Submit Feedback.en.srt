@@ -1,0 +1,707 @@
+1
+00:00:00,180 --> 00:00:04,140
+All right, so now we're going to add the JavaScript for this project and we're going to do do this
+
+2
+00:00:04,140 --> 00:00:05,110
+a little bit different.
+
+3
+00:00:05,130 --> 00:00:09,780
+We've had a few projects where we've had to click on something and just change the class to active.
+
+4
+00:00:10,140 --> 00:00:15,480
+And basically what we've done is kind of loop through the elements and then add an event listener on
+
+5
+00:00:15,480 --> 00:00:16,140
+each one.
+
+6
+00:00:16,380 --> 00:00:21,760
+In this project, we're going to use something called event bubbling to not have to add an event listener
+
+7
+00:00:21,840 --> 00:00:23,190
+on each element.
+
+8
+00:00:23,400 --> 00:00:28,830
+I mean, it's fine if you do in a case like this where we have three, but what if you have like 200
+
+9
+00:00:28,830 --> 00:00:31,980
+a table with 200 users with 200 delete buttons?
+
+10
+00:00:32,190 --> 00:00:36,600
+You're probably not going to want to add an event listener in every single delete button so you can
+
+11
+00:00:36,600 --> 00:00:39,860
+take advantage of event bubbling and event propagation.
+
+12
+00:00:40,290 --> 00:00:42,660
+So first thing we're going to do is bring in what we need.
+
+13
+00:00:42,690 --> 00:00:51,540
+Let's bring in ratings and ratings is there's those multiple ratings, which are the these three boxes,
+
+14
+00:00:51,540 --> 00:00:52,080
+basically.
+
+15
+00:00:52,090 --> 00:01:00,690
+So we want to use query selector all and get the class of rating and that'll give us a node list with
+
+16
+00:01:00,690 --> 00:01:03,070
+the three these three elements here.
+
+17
+00:01:03,510 --> 00:01:06,410
+We also want let's just copy this down twice.
+
+18
+00:01:06,420 --> 00:01:15,120
+So we also want the send button and that has an idea of send and we want to just use query selector
+
+19
+00:01:15,120 --> 00:01:16,360
+because it's just one element.
+
+20
+00:01:16,770 --> 00:01:17,760
+Same thing here.
+
+21
+00:01:17,760 --> 00:01:25,910
+We want to grab the panel, which has an idea of panel like that.
+
+22
+00:01:26,820 --> 00:01:27,210
+All right.
+
+23
+00:01:27,210 --> 00:01:30,180
+Now, like I said, there's a few ways we could do this.
+
+24
+00:01:30,180 --> 00:01:34,800
+We could take the ratings and we could do a foreach.
+
+25
+00:01:34,950 --> 00:01:36,810
+We could save for each rating.
+
+26
+00:01:37,440 --> 00:01:42,750
+We want to take that rating and add an event listener at a click event and so on.
+
+27
+00:01:43,140 --> 00:01:44,430
+But instead of doing that.
+
+28
+00:01:45,510 --> 00:01:50,940
+We're going to use event bubbling or we're going to take advantage of event bubbling, basically, when
+
+29
+00:01:50,940 --> 00:01:57,420
+we if we have an event on this button here and I click it, it's going to fire off for the button,
+
+30
+00:01:57,420 --> 00:02:01,010
+but it's also going to fire off for any of its parents.
+
+31
+00:02:01,020 --> 00:02:04,460
+So this panel, this box here is a parent of the button.
+
+32
+00:02:04,770 --> 00:02:13,800
+So if I were to take that panel and add an event listener onto it for a click event and then say when
+
+33
+00:02:14,370 --> 00:02:21,330
+the panel is clicked, then let's console log, we'll just console log, click, and I'm going to go
+
+34
+00:02:21,330 --> 00:02:23,150
+over here and open up my console.
+
+35
+00:02:23,160 --> 00:02:29,970
+Now, if I click this button, you'll see we get click even though it's not this isn't on the button,
+
+36
+00:02:29,970 --> 00:02:32,010
+it's not on send button, it's on the panel.
+
+37
+00:02:32,400 --> 00:02:34,760
+But the panel is a parent of the button.
+
+38
+00:02:34,770 --> 00:02:41,410
+If we look at elements here and we check out the button, you can see it's inside panel, OK?
+
+39
+00:02:41,790 --> 00:02:48,630
+Now, even if I were to click like one of these images, the smiley faces, that's still going to fire
+
+40
+00:02:48,630 --> 00:02:50,700
+that off because that's inside the panel.
+
+41
+00:02:50,700 --> 00:02:53,250
+So I'm clicking here and it's bubbling up to panel.
+
+42
+00:02:53,850 --> 00:02:56,480
+If I click on this this right here, it's going to work.
+
+43
+00:02:56,730 --> 00:03:04,080
+Now, I also want to show you, if we pass in an event object and then we console log e dot target,
+
+44
+00:03:04,080 --> 00:03:06,570
+you can call this E or a vent, whatever you want.
+
+45
+00:03:06,780 --> 00:03:12,150
+But if we look at the target and I click on the button, it shows us the exact element that I click
+
+46
+00:03:12,150 --> 00:03:12,390
+on.
+
+47
+00:03:12,390 --> 00:03:18,600
+If I click on this image, shows me the image, if I click on this box, not the image, but just inside
+
+48
+00:03:18,600 --> 00:03:22,800
+the box, that's a div with the class of rating panel itself.
+
+49
+00:03:23,040 --> 00:03:28,290
+If I click outside the panel, it's not going to do anything because it stops at the panel.
+
+50
+00:03:28,620 --> 00:03:31,710
+OK, so anything I click in here, it's going to fire this event off.
+
+51
+00:03:32,130 --> 00:03:39,300
+Now, what I want to do is target the these images because I want to click on these images and then
+
+52
+00:03:39,300 --> 00:03:42,030
+implement, you know, switching the active class.
+
+53
+00:03:42,360 --> 00:03:49,290
+So I'm going to check here, let's say, if he dot targets.
+
+54
+00:03:49,710 --> 00:03:56,940
+So if I see dot target, that's going to that's going to look at whatever element I click on and we
+
+55
+00:03:56,940 --> 00:04:00,930
+can look at different different aspects of this element.
+
+56
+00:04:00,930 --> 00:04:02,640
+I want to look at the class list.
+
+57
+00:04:03,120 --> 00:04:10,260
+So I'm going to say if e dot target class list, which is the list of classes, but then I can add this
+
+58
+00:04:10,260 --> 00:04:15,420
+method of contains and I can say, does it contain the class of rating?
+
+59
+00:04:15,690 --> 00:04:19,710
+If it does, then console log target.
+
+60
+00:04:20,370 --> 00:04:26,460
+So now if I click on the image notice it's not doing anything because this image does not have a class
+
+61
+00:04:26,460 --> 00:04:27,150
+of rating.
+
+62
+00:04:27,360 --> 00:04:33,450
+If I click on the box outside of the image, you know, in this box, but not the image, then it works.
+
+63
+00:04:33,810 --> 00:04:34,740
+And I don't want to do that.
+
+64
+00:04:34,740 --> 00:04:37,880
+I want it to be on the image itself, on the smiley face.
+
+65
+00:04:38,280 --> 00:04:46,230
+So what I could do is say if the target if what I click on, if the parent node class list contains
+
+66
+00:04:46,230 --> 00:04:48,670
+rating, then fire this off.
+
+67
+00:04:48,690 --> 00:04:55,830
+So now if I click on the image, you can see that it works OK, because I'm saying if the parent node
+
+68
+00:04:56,070 --> 00:05:02,400
+classless contains rating, which it does, which we can see right here, the image parent is this and
+
+69
+00:05:02,430 --> 00:05:03,600
+has a class of rating.
+
+70
+00:05:03,990 --> 00:05:08,880
+So you can target different elements based on pretty much anything really.
+
+71
+00:05:08,880 --> 00:05:13,350
+The IDE, the class, the type of element it is the node name.
+
+72
+00:05:13,350 --> 00:05:16,540
+There's there's all different, you know, properties that you can use.
+
+73
+00:05:17,070 --> 00:05:23,970
+So I'm just going to use this and I'm going to say, if this is true, then I want to take E dot target
+
+74
+00:05:24,540 --> 00:05:28,860
+and I want to add the class of active, but not on the target because that's the image.
+
+75
+00:05:28,860 --> 00:05:36,570
+I want to take the parent node and then take a class list, call ad and add active.
+
+76
+00:05:38,130 --> 00:05:41,340
+So now I'm just going to close this up for now.
+
+77
+00:05:41,370 --> 00:05:45,270
+So now if I go and I click on the image, you'll see now it has the box around it.
+
+78
+00:05:45,270 --> 00:05:46,130
+It's active.
+
+79
+00:05:46,530 --> 00:05:47,310
+Click on that.
+
+80
+00:05:47,340 --> 00:05:48,640
+That's also active.
+
+81
+00:05:48,990 --> 00:05:51,780
+Now, the problem is they're all active, which we don't want.
+
+82
+00:05:51,780 --> 00:05:54,990
+So we need to remove all the active classes beforehand.
+
+83
+00:05:55,380 --> 00:06:00,600
+So what we'll do is call a function here, let's say remove active.
+
+84
+00:06:01,290 --> 00:06:06,720
+And I'm going to go down here and create a function called remove active.
+
+85
+00:06:08,070 --> 00:06:09,420
+And we've done this before.
+
+86
+00:06:09,420 --> 00:06:16,860
+We could take ratings and do a foreach and, you know, remove all the the the active classes.
+
+87
+00:06:17,130 --> 00:06:20,220
+I'm going to use a for loop, which is probably not something I would do.
+
+88
+00:06:20,220 --> 00:06:22,020
+But just to switch things up a little bit.
+
+89
+00:06:22,030 --> 00:06:25,290
+So let's say let I equals zero.
+
+90
+00:06:25,440 --> 00:06:32,620
+So I is going to start at zero and the condition is going to be if I is less than the ratings Daudt
+
+91
+00:06:32,640 --> 00:06:33,300
+length.
+
+92
+00:06:33,840 --> 00:06:37,570
+And then we also want to increment by one through each iteration.
+
+93
+00:06:37,890 --> 00:06:41,820
+So ratings is the you know, the these three boxes here.
+
+94
+00:06:41,820 --> 00:06:44,590
+So we're just going to say if it's if I as.
+
+95
+00:06:44,690 --> 00:06:51,470
+Less than whatever the length is, then let's go ahead and take ratings, which is a no list, which
+
+96
+00:06:51,470 --> 00:06:52,520
+is similar to an array.
+
+97
+00:06:52,520 --> 00:07:02,590
+So we want whatever the index of I and then class list dot remove and we want to remove the active class.
+
+98
+00:07:03,560 --> 00:07:03,890
+All right.
+
+99
+00:07:03,890 --> 00:07:09,560
+So now if I click on the second one, you'll see it's active and it took it off the first one or what
+
+100
+00:07:09,560 --> 00:07:13,160
+actually happened is it took it off all of them and then put it on the second one.
+
+101
+00:07:13,280 --> 00:07:14,680
+I click here, same thing.
+
+102
+00:07:15,020 --> 00:07:18,560
+So now I can switch it to, you know, whatever one I want.
+
+103
+00:07:20,600 --> 00:07:29,360
+Now, I also want to when I click on one of these, I want to save whatever the the rating is neutral
+
+104
+00:07:29,360 --> 00:07:35,600
+and happy and so on, because I want to put that in when we click send I want to put that in the panel.
+
+105
+00:07:36,500 --> 00:07:44,750
+So I'm going to initialize a very old variable up here called Selected Rating and set it initially to
+
+106
+00:07:44,750 --> 00:07:48,020
+satisfied, because that's what it's going to be on.
+
+107
+00:07:48,020 --> 00:07:50,030
+You know, when we reload, we come to the page.
+
+108
+00:07:50,030 --> 00:07:50,870
+That's what it's on.
+
+109
+00:07:51,500 --> 00:07:59,120
+And then down here, when we click, I'm going to take that selected rating and I'm going to set it
+
+110
+00:07:59,120 --> 00:08:03,650
+to E Target, which is what I click on, which is the image.
+
+111
+00:08:03,980 --> 00:08:06,110
+And obviously, I don't want to put the image in here.
+
+112
+00:08:06,110 --> 00:08:14,480
+I want this text, which if we look at the elements tab here, the text is in the small tag right below
+
+113
+00:08:14,480 --> 00:08:14,990
+image.
+
+114
+00:08:15,260 --> 00:08:18,760
+So small is a sibling to image right.
+
+115
+00:08:19,100 --> 00:08:23,170
+Rating is a parent to image small as a sibling there on the same level.
+
+116
+00:08:23,450 --> 00:08:30,440
+So here we can use dot next element sibling.
+
+117
+00:08:30,890 --> 00:08:31,240
+Right.
+
+118
+00:08:31,250 --> 00:08:32,840
+So that's going to select the small tag.
+
+119
+00:08:32,840 --> 00:08:34,010
+That's the next sibling.
+
+120
+00:08:34,010 --> 00:08:36,290
+And I want the inner HTML.
+
+121
+00:08:36,290 --> 00:08:40,580
+I want the content inside of it and I'm going to put that into this variable.
+
+122
+00:08:40,580 --> 00:08:42,410
+So now if I console log.
+
+123
+00:08:44,800 --> 00:08:45,580
+Next.
+
+124
+00:08:47,110 --> 00:08:50,470
+Not next to only sibling for console log selected rating.
+
+125
+00:08:51,580 --> 00:08:56,010
+And they click on one of these, we get neutral, unhappy, satisfied, good.
+
+126
+00:08:56,350 --> 00:08:59,970
+I just wanted to store that I'm going to just get rid of this console log.
+
+127
+00:09:01,270 --> 00:09:05,320
+Now, when we send this when we send review, it's not going to actually go anywhere.
+
+128
+00:09:05,320 --> 00:09:06,580
+It's not submitting a form.
+
+129
+00:09:06,580 --> 00:09:08,730
+But I just want to change the UI here.
+
+130
+00:09:09,160 --> 00:09:13,170
+So let's go right here and say send button.
+
+131
+00:09:13,690 --> 00:09:18,430
+We want to add an event listener of click.
+
+132
+00:09:20,440 --> 00:09:30,910
+And let's say when we click, we want to take the panel and we want to change the entire HTML to let's
+
+133
+00:09:30,910 --> 00:09:38,350
+use a template literal here and we want to put in I tag those so we want an icon.
+
+134
+00:09:38,350 --> 00:09:43,180
+So class is going to be FRSS f a dash heart.
+
+135
+00:09:47,020 --> 00:09:49,510
+OK, and then under that, let's put a strong
+
+136
+00:09:52,150 --> 00:09:54,500
+and here we're just going to say thank you.
+
+137
+00:09:55,720 --> 00:10:01,060
+Under that, I just want to space I'm going to put a line break excuse me, and then strong
+
+138
+00:10:03,850 --> 00:10:12,940
+and in here, I want a safe feedback colon and then my variable syntax so I can put in selected rating.
+
+139
+00:10:13,690 --> 00:10:18,190
+And then let's just put a paragraph in here.
+
+140
+00:10:18,190 --> 00:10:30,040
+We'll say we'll use your feedback to improve our customer support.
+
+141
+00:10:31,240 --> 00:10:31,630
+All right.
+
+142
+00:10:31,640 --> 00:10:38,560
+So now if I go over here and I suspect neutral and I click send review, we get the correct, you know,
+
+143
+00:10:38,560 --> 00:10:40,960
+panel here, feedback, neutral and so on.
+
+144
+00:10:40,960 --> 00:10:48,130
+But we have an error down here type error that says cannot read property class list of null online seven,
+
+145
+00:10:48,130 --> 00:10:49,190
+which is right here.
+
+146
+00:10:50,080 --> 00:10:53,350
+So remember how the bubbling works.
+
+147
+00:10:53,350 --> 00:10:59,190
+If I click this, it's going to call you know, it's going to bubble up to panel.
+
+148
+00:10:59,650 --> 00:11:04,420
+So even though I have the event listener on send button, it's also going to call the one on panel.
+
+149
+00:11:04,750 --> 00:11:10,990
+And in that case, this this doesn't exist anymore because we've changed the whole inner HTML of the
+
+150
+00:11:10,990 --> 00:11:11,530
+panel.
+
+151
+00:11:12,220 --> 00:11:16,180
+So to fix this, I want to target this.
+
+152
+00:11:16,600 --> 00:11:18,130
+You know, I don't want to use panel here.
+
+153
+00:11:18,130 --> 00:11:19,570
+I want to target it further.
+
+154
+00:11:19,960 --> 00:11:28,270
+So I'll use the ratings container, which wraps these three boxes because the button is not in rating's
+
+155
+00:11:28,270 --> 00:11:31,070
+container, so it's not going to fire that off if we use it.
+
+156
+00:11:31,550 --> 00:11:39,460
+So here, I'm just going to copy this down and say ratings container and we want to use query selector
+
+157
+00:11:39,460 --> 00:11:41,640
+because it's just one element.
+
+158
+00:11:41,650 --> 00:11:52,510
+And then the class of ratings Dasch container and then instead of panel, say, ratings container.
+
+159
+00:11:52,840 --> 00:11:58,690
+So now if I select something and send review, we're not going to get that error because this is not
+
+160
+00:11:58,690 --> 00:12:04,420
+being fired off because it's not a parent of send button, OK?
+
+161
+00:12:04,450 --> 00:12:06,270
+It's actually sibling.
+
+162
+00:12:06,520 --> 00:12:09,430
+So we have ratings container and then we have send button.
+
+163
+00:12:10,200 --> 00:12:10,570
+All right.
+
+164
+00:12:10,570 --> 00:12:16,510
+I hope that makes sense that you can read more about event bubbling, event propagation.
+
+165
+00:12:17,350 --> 00:12:22,840
+And also, if I don't click anything and send, I should still see satisfied because we set that initially
+
+166
+00:12:22,840 --> 00:12:23,290
+here.
+
+167
+00:12:24,210 --> 00:12:24,640
+All right.
+
+168
+00:12:25,150 --> 00:12:26,560
+So hopefully you enjoyed this.
+
+169
+00:12:26,560 --> 00:12:30,880
+Again, this there's so many different ways to do stuff with vanilla JavaScript.
+
+170
+00:12:30,880 --> 00:12:37,240
+But I just wanted to show you a little bit about event babbling methods or I'm sorry, properties like
+
+171
+00:12:37,240 --> 00:12:40,120
+Parent Node, Next Element Sibling.
+
+172
+00:12:40,120 --> 00:12:44,860
+This helps you navigate the DOM because you need sometimes you need to get to other elements.
+
+173
+00:12:45,130 --> 00:12:49,000
+And there's just a ton of different methods to to do that.
+
+174
+00:12:49,000 --> 00:12:50,560
+So I wanted to introduce some of those.
+
+175
+00:12:50,920 --> 00:12:51,280
+All right.
+
+176
+00:12:51,280 --> 00:12:51,680
+That's it.
+
+177
+00:12:51,700 --> 00:12:54,220
+Thanks for watching and I'll see you in the next project.

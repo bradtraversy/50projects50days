@@ -1,0 +1,67 @@
+﻿1
+00:00:00,300 --> 00:00:05,760
+Tudo bem, neste projeto, vamos criar um pequeno aplicativo de quiz, então temos essa pergunta
+
+2
+00:00:05,760 --> 00:00:08,370
+aqui, qual idioma é executado em um navegador da Web?
+
+3
+00:00:08,610 --> 00:00:11,400
+E temos algumas respostas, algumas de múltipla escolha.
+
+4
+00:00:11,700 --> 00:00:14,010
+Vamos seguir em frente e escolher JavaScript e enviar.
+
+5
+00:00:14,280 --> 00:00:15,990
+E isso vai nos levar para a próxima pergunta.
+
+6
+00:00:15,990 --> 00:00:17,580
+Para que servem os FCS?
+
+7
+00:00:17,580 --> 00:00:24,300
+Folhas de estilo centrais, folhas de estilo em cascata, folhas simples em cascata, carros, SUVs, veleiros, vá
+
+8
+00:00:24,300 --> 00:00:26,970
+adiante e escolha cartas, carros, SUV, veleiros.
+
+9
+00:00:27,510 --> 00:00:30,030
+E então o que significa cada HTML?
+
+10
+00:00:30,600 --> 00:00:32,310
+Linguagem de marcação de hipertexto?
+
+11
+00:00:32,310 --> 00:00:36,270
+E então em que ano foi o lançamento do JavaScript, que foi 1995?
+
+12
+00:00:36,660 --> 00:00:41,400
+E você pode ver que respondemos três das quatro perguntas corretamente e podemos recarregar o questionário.
+
+13
+00:00:41,410 --> 00:00:44,030
+Portanto, é bastante simples em termos de funcionalidade.
+
+14
+00:00:44,760 --> 00:00:51,240
+O que vamos fazer é criar um modelo básico que podemos usar para inserir as perguntas e respostas usando
+
+15
+00:00:51,240 --> 00:00:57,570
+uma matriz JavaScript e, em seguida, adicionaremos a funcionalidade para selecionar uma resposta e verificá-la e assim por diante.
+
+16
+00:00:57,600 --> 00:00:59,360
+Adicione à pontuação e incremente-a.
+
+17
+00:00:59,700 --> 00:01:01,200
+Então vamos em frente e começar.

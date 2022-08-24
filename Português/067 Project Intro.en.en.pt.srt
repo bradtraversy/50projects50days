@@ -1,0 +1,59 @@
+﻿1
+00:00:00,360 --> 00:00:05,250
+Tudo bem, então neste projeto, eu quero entrar um pouco na funcionalidade de arrastar e soltar, então
+
+2
+00:00:05,250 --> 00:00:08,340
+vamos apenas criar esses estilos de caixas, essas caixas.
+
+3
+00:00:08,340 --> 00:00:14,280
+Teremos um div dentro de uma dessas caixas que tem uma imagem de fundo vindo de um splash,
+
+4
+00:00:14,280 --> 00:00:15,390
+apenas uma imagem aleatória.
+
+5
+00:00:15,720 --> 00:00:18,870
+E você vê, se eu pegar, algumas coisas acontecem.
+
+6
+00:00:18,870 --> 00:00:24,750
+A imagem que estou segurando tem uma classe de espera, que dá uma borda cinza, que você não pode realmente
+
+7
+00:00:24,750 --> 00:00:25,020
+Vejo.
+
+8
+00:00:25,020 --> 00:00:27,030
+É muito fraco, mas tem uma borda.
+
+9
+00:00:27,250 --> 00:00:34,770
+E então cada uma dessas caixas sobre as quais passo o mouse recebe uma turma de Harvard, que tem um fundo de fundo,
+
+10
+00:00:35,040 --> 00:00:38,580
+um fundo escuro e um painel branco.
+
+11
+00:00:38,730 --> 00:00:43,770
+E então, se eu cair, ele vai realmente entrar em qualquer um desses que estão pairando.
+
+12
+00:00:44,790 --> 00:00:45,170
+Tudo bem.
+
+13
+00:00:45,180 --> 00:00:50,670
+Portanto, é um projeto muito simples, mas fornece uma compreensão básica de como o arrastar e soltar funciona.
+
+14
+00:00:50,670 --> 00:00:56,150
+E você pode então construir algumas interfaces muito legais ou até mesmo jogos e coisas assim.
+
+15
+00:00:56,400 --> 00:00:58,400
+Então vamos em frente e pular e começar.

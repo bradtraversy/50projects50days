@@ -1,0 +1,123 @@
+1
+00:00:00,240 --> 00:00:03,040
+All right, guys, so we're going to do quite a bit in this project.
+
+2
+00:00:03,060 --> 00:00:07,670
+We're going to use the GitHub API to fetch users.
+
+3
+00:00:07,680 --> 00:00:12,180
+We're going to able to search for GitHub users to get some of their profile data and display it in a
+
+4
+00:00:12,180 --> 00:00:12,690
+card.
+
+5
+00:00:12,900 --> 00:00:19,080
+And we're also going to make a separate request to get the user's latest five repositories, or however,
+
+6
+00:00:19,080 --> 00:00:22,320
+however many want to add, to add to the card.
+
+7
+00:00:22,340 --> 00:00:25,040
+So to give you an example here, I can search for a user.
+
+8
+00:00:25,410 --> 00:00:32,850
+I'll go ahead and search for myself and you'll see that my avatar pops up my name, my bio followers,
+
+9
+00:00:32,850 --> 00:00:35,730
+following my latest five repost.
+
+10
+00:00:36,180 --> 00:00:41,430
+If I search for Floren Pop 17, you'll see the pull heads up.
+
+11
+00:00:41,430 --> 00:00:43,260
+So, of course you can search for your own.
+
+12
+00:00:43,500 --> 00:00:48,420
+And if I search for just something that isn't going to be a name, it'll say there's no profile with
+
+13
+00:00:48,420 --> 00:00:49,230
+this username.
+
+14
+00:00:49,230 --> 00:00:51,430
+So we'll do a little bit of error handling as well.
+
+15
+00:00:51,900 --> 00:00:54,670
+So these are the docs for the GitHub rest API.
+
+16
+00:00:55,200 --> 00:00:57,180
+This is the newer version of the docs.
+
+17
+00:00:57,180 --> 00:01:03,150
+And you can basically see, you know, how you can fetch users and what kind of data you get.
+
+18
+00:01:03,540 --> 00:01:08,760
+And then the other thing we're going to do is use Axios instead of the fetch API.
+
+19
+00:01:09,060 --> 00:01:11,660
+So Axios is a library.
+
+20
+00:01:11,670 --> 00:01:16,980
+It's a promise based HDB client library for the browser and no Ge'ez.
+
+21
+00:01:16,980 --> 00:01:25,740
+So I prefer Axios personally when I do any kind of larger or medium size to larger projects, I'll use
+
+22
+00:01:25,740 --> 00:01:26,460
+axios.
+
+23
+00:01:26,460 --> 00:01:28,050
+It has better features.
+
+24
+00:01:28,050 --> 00:01:28,800
+In my opinion.
+
+25
+00:01:28,800 --> 00:01:34,440
+It's easier to use the error handling is better, so I definitely prefer it.
+
+26
+00:01:34,450 --> 00:01:39,870
+So I did want to add it to at least one of the projects in this course and we'll be using it with a
+
+27
+00:01:39,870 --> 00:01:40,590
+sink away.
+
+28
+00:01:40,590 --> 00:01:44,700
+But I'll show you how to use it just with regular, you know, then syntax as well.
+
+29
+00:01:45,120 --> 00:01:46,380
+So that's what we'll be building.
+
+30
+00:01:46,380 --> 00:01:48,300
+Guys, hopefully you enjoy this project.
+
+31
+00:01:48,300 --> 00:01:49,500
+Let's go ahead and get into it.

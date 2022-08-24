@@ -1,0 +1,575 @@
+﻿1
+00:00:00,090 --> 00:00:06,270
+OK, vamos começar agora, este projeto em particular tem três telas diferentes que
+
+2
+00:00:06,270 --> 00:00:08,910
+alternar entre a tela inicial.
+
+3
+00:00:08,950 --> 00:00:12,630
+Quando clicamos em jogar, escolhemos nosso inseto e então temos a tela do jogo.
+
+4
+00:00:12,630 --> 00:00:17,610
+Então, temos que quebrar isso e podemos ter que alternar do acesso ao JavaScript para
+
+5
+00:00:17,610 --> 00:00:25,170
+tipo de obter certas coisas para mostrar para que possamos, você sabe, adicionar a lógica e também estilizá-la.
+
+6
+00:00:25,560 --> 00:00:35,700
+Então eu vou adicionar um título aqui de Pegue o Inseto e cada tela vai ter uma classe de tela
+
+7
+00:00:35,700 --> 00:00:36,360
+em torno dele.
+
+8
+00:00:36,360 --> 00:00:40,380
+O primeiro terá apenas um H1 dirá pegar o inseto.
+
+9
+00:00:40,780 --> 00:00:49,410
+Então o título e depois terá um botão e uma classe de ETN para styling e uma ideia de start dash BTN
+
+10
+00:00:49,980 --> 00:00:52,120
+e apenas dizer jogar o jogo.
+
+11
+00:00:52,560 --> 00:00:53,100
+Tudo bem.
+
+12
+00:00:53,520 --> 00:00:56,670
+E então a próxima subclasse de tela da tela.
+
+13
+00:00:57,150 --> 00:01:01,170
+E esta será a tela de seleção de insetos.
+
+14
+00:01:01,500 --> 00:01:08,430
+Então, teremos um H1 e diremos qual é o seu entre aspas, diremos favorito porque obviamente ninguém
+
+15
+00:01:08,430 --> 00:01:19,080
+tem um inseto favorito e então as escolhas vão ser numa escola com a turma de insetos que
+
+16
+00:01:19,290 --> 00:01:24,270
+list e um item de lista dentro do item de lista será um botão.
+
+17
+00:01:24,540 --> 00:01:32,940
+Vou dar a este botão uma classe de Choose Dasch insect B10 e dentro do botão, um parágrafo
+
+18
+00:01:32,940 --> 00:01:34,350
+com o nome do inseto.
+
+19
+00:01:34,350 --> 00:01:36,570
+Então voe para a primeira imagem.
+
+20
+00:01:37,200 --> 00:01:46,710
+A imagem vai ser um link da PMG Image ou IMG AKAM e passar e voar até lá.
+
+21
+00:01:47,280 --> 00:01:47,760
+Tudo bem.
+
+22
+00:01:47,760 --> 00:01:50,760
+Então é isso que as escolhas vão ser.
+
+23
+00:01:50,760 --> 00:01:53,340
+Um item de lista com um botão com uma imagem dentro.
+
+24
+00:01:53,340 --> 00:01:58,770
+Então eu vou pegar os outros três e colá-los porque é a mesma coisa, apenas diferente
+
+25
+00:01:58,770 --> 00:01:59,430
+contente.
+
+26
+00:02:00,180 --> 00:02:05,880
+Então, se eu salvar que algumas dessas imagens são muito grandes, o que vamos corrigir quando chegarmos ao
+
+27
+00:02:05,880 --> 00:02:06,500
+Acesso.
+
+28
+00:02:06,510 --> 00:02:07,950
+Então não podemos ver mais nada.
+
+29
+00:02:08,460 --> 00:02:13,740
+Mas a única coisa que temos que adicionar agora é a última tela, que é a tela do jogo.
+
+30
+00:02:13,740 --> 00:02:22,470
+Então isso vai ter uma classe de tela e também game dash container e vai ter um H3 com ideia de
+
+31
+00:02:22,470 --> 00:02:23,130
+Tempo.
+
+32
+00:02:23,820 --> 00:02:27,210
+Diremos hora Kolan zero zero, dois pontos zero zero.
+
+33
+00:02:27,660 --> 00:02:33,810
+Vamos ter um H3 aqui com uma ideia de pontuação e digamos pontuação dois pontos.
+
+34
+00:02:33,810 --> 00:02:38,700
+Defina isso para zero para começar e depois um H5 com uma ideia de mensagem.
+
+35
+00:02:39,090 --> 00:02:40,950
+Esta vai ser a nossa mensagem boba.
+
+36
+00:02:40,950 --> 00:02:46,050
+Nós só vamos dizer, você está irritado ainda?
+
+37
+00:02:46,050 --> 00:02:47,670
+E então teremos uma quebra de linha.
+
+38
+00:02:48,030 --> 00:02:57,210
+E depois dessa quebra de linha, diremos que você está jogando um jogo impossível.
+
+39
+00:02:59,280 --> 00:03:06,390
+Tudo bem, então agora vamos em frente e vamos para nossa folha de estilo e não queremos usar display Fleck's
+
+40
+00:03:06,390 --> 00:03:09,320
+aqui, então vou me livrar dessas linhas aqui.
+
+41
+00:03:09,330 --> 00:03:12,360
+Não precisamos disso, ok?
+
+42
+00:03:12,370 --> 00:03:15,580
+E vou salvar e podemos ver o texto agora, a fonte que vamos usar.
+
+43
+00:03:15,600 --> 00:03:18,990
+Vamos subir aqui e nos livrar disso.
+
+44
+00:03:19,470 --> 00:03:32,820
+Portanto, a família de fontes será pressione mais iniciar mais dois P e queremos que os CSFs não sejam acessados.
+
+45
+00:03:33,190 --> 00:03:40,440
+E então, para a família de fontes no corpo, será pressionado o início de P, o que nos dá isso
+
+46
+00:03:40,620 --> 00:03:47,490
+muito legal como o visual antigo do jogo da Nintendo e, em seguida, vamos ver o corpo.
+
+47
+00:03:47,490 --> 00:03:50,470
+Eu acho que você deve ser bom aqui.
+
+48
+00:03:50,790 --> 00:03:52,140
+É o centro da linha texta.
+
+49
+00:03:54,510 --> 00:03:56,820
+Então, centro da linha de texto para o corpo.
+
+50
+00:03:58,110 --> 00:03:58,500
+Tudo bem.
+
+51
+00:03:58,500 --> 00:04:05,820
+Agora, cada tela vai ocupar toda a janela de visualização, então faremos isso primeiro.
+
+52
+00:04:05,820 --> 00:04:10,380
+Vamos definir a classe da tela e queremos exibir o Flex.
+
+53
+00:04:10,710 --> 00:04:13,380
+Assim que eu faço isso, cria uma linha, que eu não quero.
+
+54
+00:04:13,380 --> 00:04:15,030
+Eu quero que eles fiquem um em cima do outro.
+
+55
+00:04:15,030 --> 00:04:19,650
+Assim, o Flex Direct Direction será a coluna que os colocará de volta no topo.
+
+56
+00:04:19,710 --> 00:04:25,470
+É um centro de item de linha e vamos justificar o centro de conteúdo.
+
+57
+00:04:26,280 --> 00:04:29,760
+E então eu vou definir a altura para ser a altura total.
+
+58
+00:04:29,760 --> 00:04:42,030
+Então VH e então a largura estará cheia com 200 pés W e se eu fizer isso, então ele define cada um para tomar
+
+59
+00:04:42,030 --> 00:04:43,100
+a tela inteira.
+
+60
+00:04:44,910 --> 00:04:50,760
+Agora, essas imagens estão meio que bagunçando tudo porque são muito grandes.
+
+61
+00:04:50,760 --> 00:04:51,900
+Então vamos lidar com isso.
+
+62
+00:04:51,900 --> 00:05:02,160
+Antes de fazermos qualquer outra coisa, vou definir vamos escolher o traço de insetos ou traço de inseto
+
+63
+00:05:02,160 --> 00:05:14,790
+btn e vou definir a largura para cem pixels e altura, cem pixels e objeto
+
+64
+00:05:15,210 --> 00:05:17,100
+ajuste será contido.
+
+65
+00:05:18,090 --> 00:05:22,800
+Então isso só vai diminuir as imagens e agora estamos vendo apenas a primeira tela.
+
+66
+00:05:23,370 --> 00:05:23,850
+Tudo bem.
+
+67
+00:05:23,850 --> 00:05:27,510
+Então vamos em frente e estilizar isso.
+
+68
+00:05:27,510 --> 00:05:30,780
+Agora eu quero uma cor de fundo no corpo.
+
+69
+00:05:32,520 --> 00:05:43,920
+Então a cor de fundo e vamos definir cinco um seis DF e então a cor será branca.
+
+70
+00:05:45,600 --> 00:05:49,860
+OK, e então para o botão, isso tem uma classe de botões.
+
+71
+00:05:49,860 --> 00:05:51,090
+Então é estilo isso.
+
+72
+00:05:52,680 --> 00:05:54,540
+Sim, vamos colocar isso aqui.
+
+73
+00:05:57,090 --> 00:06:09,960
+Então borda zero, vamos definir a cor de fundo para branco e vamos definir a cor para o mesmo azul.
+
+74
+00:06:09,960 --> 00:06:11,640
+Então cinco um seis.
+
+75
+00:06:13,140 --> 00:06:14,490
+Você conhece essa cor aí.
+
+76
+00:06:16,360 --> 00:06:17,290
+Espere, isso não está certo.
+
+77
+00:06:19,090 --> 00:06:26,570
+Cinco um seis cinco um seis DF para a cor.
+
+78
+00:06:27,160 --> 00:06:27,550
+Tudo bem.
+
+79
+00:06:27,550 --> 00:06:33,540
+E então o preenchimento, vamos fazer 15 pixels, superior e inferior, 20 à esquerda e à direita.
+
+80
+00:06:34,030 --> 00:06:36,970
+E a família de fontes que queremos herdar.
+
+81
+00:06:36,970 --> 00:06:40,150
+Queremos que seja a fonte de início de imprensa.
+
+82
+00:06:40,150 --> 00:06:50,140
+Então vamos definir isso para herdar e vamos adicionar um ponteiro de cursor e acho que devemos ser bons.
+
+83
+00:06:51,400 --> 00:06:56,890
+OK, então temos um pouco, vamos realmente nos livrar dessa velha linha.
+
+84
+00:06:56,890 --> 00:07:02,260
+Portanto, concentre-se na linha de zero.
+
+85
+00:07:02,260 --> 00:07:07,240
+E então eu também vou definir um hover para vte e hover state.
+
+86
+00:07:07,600 --> 00:07:12,550
+Vamos apenas ver a opacidade e defini-la como zero vírgula nove.
+
+87
+00:07:14,580 --> 00:07:20,430
+OK, então essa é a nossa jogada e acho que é tudo o que temos para a primeira tela.
+
+88
+00:07:21,010 --> 00:07:25,240
+Então, o que vou fazer para mudar as telas é entrar no JavaScript.
+
+89
+00:07:26,080 --> 00:07:31,090
+Eu sei que estamos meio que pulando aqui um pouco, mas vamos pegar a tela.
+
+90
+00:07:31,090 --> 00:07:38,480
+Então, digamos telas CONSED e digamos seletor de consulta de ponto de documento porque há mais de um.
+
+91
+00:07:39,160 --> 00:07:49,600
+Então pegue todas as classes de tela e eu quero apenas mudar a tela pegando telas.
+
+92
+00:07:49,600 --> 00:07:53,140
+E o primeiro vai ser o índice zero.
+
+93
+00:07:53,650 --> 00:08:02,290
+E eu vou adicionar uma classe, digamos, class list dot add e vamos adicionar uma classe up now
+
+94
+00:08:02,290 --> 00:08:09,160
+em nossa folha de estilo ou temos nossa classe de tela vai logo abaixo dela e diz tela.
+
+95
+00:08:09,520 --> 00:08:20,920
+E se tem classe de cima, o que queremos fazer é chamar A ou vamos apenas fazer o topo da margem e puxá-lo para cima.
+
+96
+00:08:20,920 --> 00:08:23,680
+Tão negativo cem alturas de viewport.
+
+97
+00:08:24,100 --> 00:08:26,440
+Se eu salvar isso agora, veremos o próximo.
+
+98
+00:08:27,280 --> 00:08:30,580
+Se eu fizer duzentos, veremos a última tela.
+
+99
+00:08:30,790 --> 00:08:32,830
+OK, porque eles estão apenas um em cima do outro.
+
+100
+00:08:32,830 --> 00:08:35,530
+Alguns apenas o topo da margem vai movê-los para cima.
+
+101
+00:08:35,770 --> 00:08:36,820
+Então, estamos movendo-os para cima.
+
+102
+00:08:36,820 --> 00:08:38,200
+Uma altura inteira da janela de visualização.
+
+103
+00:08:38,210 --> 00:08:39,490
+Então, toda a janela.
+
+104
+00:08:40,140 --> 00:08:40,540
+Tudo bem.
+
+105
+00:08:40,540 --> 00:08:43,950
+Então agora podemos continuar e podemos estilizar esta página.
+
+106
+00:08:45,160 --> 00:08:50,470
+Agora, eu só quero adicionar vamos ver os links.
+
+107
+00:08:51,070 --> 00:08:55,030
+Portanto, para todos os links que temos, quero garantir que as cores sejam brancas.
+
+108
+00:08:55,960 --> 00:09:03,060
+E então, para qualquer um, vou adicionar uma altura de linha de um ponto para.
+
+109
+00:09:04,640 --> 00:09:06,730
+Muito bem, agora podemos estilizar esta página.
+
+110
+00:09:06,740 --> 00:09:12,550
+Então, esta lista de insetos, vamos descer aqui acima, onde fizemos a imagem do botão de escolha do inseto.
+
+111
+00:09:12,790 --> 00:09:14,170
+Isso faz parte desta página.
+
+112
+00:09:14,470 --> 00:09:22,690
+Vamos fazer listas de insetos, que é o OVNI, e queremos que eles fiquem lado a lado.
+
+113
+00:09:22,690 --> 00:09:24,100
+Então vamos exibir flex.
+
+114
+00:09:24,100 --> 00:09:28,540
+Isso vai transformá-lo em uma linha flexível e eu vou ter certeza de que eles se enrolam.
+
+115
+00:09:28,540 --> 00:09:37,180
+Então flex rappel set para embrulhar esse set, você sabe, faça eles irem para a próxima linha e então vamos justificar
+
+116
+00:09:37,180 --> 00:09:42,580
+centro de conteúdo e retire todos os marcadores.
+
+117
+00:09:42,580 --> 00:09:47,080
+O tipo de estilo Soulis deve ser nenhum e eliminar qualquer preenchimento.
+
+118
+00:09:47,080 --> 00:09:48,460
+O preenchimento deve ser zero.
+
+119
+00:09:49,510 --> 00:09:52,210
+E então vamos adicionar alguma margem aos itens da lista.
+
+120
+00:09:52,210 --> 00:10:00,880
+Então lista de insetos elai, vamos adicionar uma margem de dez pixels, meio que dividi-los um pouco
+
+121
+00:10:01,450 --> 00:10:04,570
+e agora queremos estilizar o próprio botão.
+
+122
+00:10:05,020 --> 00:10:07,780
+Então logo acima de onde temos a imagem, vamos fazer o botão.
+
+123
+00:10:08,230 --> 00:10:17,650
+Vamos tornar a cor de fundo transparente e dar uma borda de dois pixels, branco sólido.
+
+124
+00:10:20,430 --> 00:10:28,230
+E vamos tornar a cor do texto branca e vamos fazer um ponteiro do cursor quando passamos o mouse sobre ele e
+
+125
+00:10:28,230 --> 00:10:30,900
+então a família de fontes, é um botão.
+
+126
+00:10:30,900 --> 00:10:41,340
+Então, queremos herdar a fonte e a largura e a altura serão cento e cinquenta pixels.
+
+127
+00:10:44,610 --> 00:10:53,610
+Tudo bem, e você pode ver que ele se encaixa em telas pequenas, tudo bem, então mantenha-o assim.
+
+128
+00:10:54,880 --> 00:11:06,700
+Por enquanto, então passe o mouse, vamos descer aqui e digamos que ela vá logo acima, então escolha inseto
+
+129
+00:11:06,700 --> 00:11:07,810
+botão pairar.
+
+130
+00:11:10,470 --> 00:11:21,090
+Eu posso soletrar então passe o mouse, vamos fazer uma cor de fundo branca e vamos fazer a cor hexadecimal cinco
+
+131
+00:11:21,090 --> 00:11:22,110
+um seis.
+
+132
+00:11:23,130 --> 00:11:27,270
+Isso aqui, DF Então, se eu passar o mouse sobre isso, ótimo.
+
+133
+00:11:28,680 --> 00:11:30,030
+E então se estiver ativo.
+
+134
+00:11:30,040 --> 00:11:34,710
+Então, quando clicamos, vamos fazer uma cor de fundo.
+
+135
+00:11:34,710 --> 00:11:42,870
+Então, diremos escolher o botão de inseto quando estiver ativo, faça a cor de fundo e usaremos nosso
+
+136
+00:11:42,910 --> 00:11:45,540
+GPA aqui e branco.
+
+137
+00:11:45,540 --> 00:11:51,090
+Então dois cinco, cinco para vermelho, verde, azul e então zero vírgula sete para o alfa.
+
+138
+00:11:51,540 --> 00:11:53,970
+OK, então temos esse tipo de efeito.
+
+139
+00:11:56,850 --> 00:12:02,910
+Tudo bem, agora para o resto disso, o contêiner do jogo e outras coisas, vamos fazer isso no
+
+140
+00:12:02,910 --> 00:12:10,890
+próximo vídeo, mas vamos mudar a página e vamos fazer isso agora apenas alterando esta tela para
+
+141
+00:12:10,890 --> 00:12:13,520
+de 100 negativos, 200 negativos.
+
+142
+00:12:13,530 --> 00:12:16,080
+Então agora podemos ver a tela final.
+
+143
+00:12:16,260 --> 00:12:16,710
+Tudo bem.
+
+144
+00:12:16,720 --> 00:12:19,710
+Vamos começar vamos continuar estilizando isso no próximo vídeo.

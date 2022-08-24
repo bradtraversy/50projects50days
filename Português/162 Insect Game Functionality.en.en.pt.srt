@@ -1,0 +1,967 @@
+﻿1
+00:00:00,090 --> 00:00:04,020
+Tudo bem, agora vamos começar no JavaScript e vamos ter algumas funções
+
+2
+00:00:04,020 --> 00:00:05,210
+aqui para fazer coisas diferentes.
+
+3
+00:00:05,210 --> 00:00:08,000
+Então, tentaremos fazer isso na ordem que fizer mais sentido.
+
+4
+00:00:08,790 --> 00:00:10,640
+Primeiro, precisamos trazer tudo o que precisamos.
+
+5
+00:00:10,650 --> 00:00:13,160
+Então já temos nossas telas.
+
+6
+00:00:13,620 --> 00:00:21,180
+E além das telas, vamos querer os botões que escolhem os botões Insec.
+
+7
+00:00:21,210 --> 00:00:31,770
+Então, vamos uma classe de escolha dash insect dash B10 e há várias delas.
+
+8
+00:00:31,770 --> 00:00:39,660
+Então, estamos usando query, select all e diremos escolher, sublinhar inseto, sublinhar botões porque
+
+9
+00:00:39,660 --> 00:00:41,070
+é porque há mais de um.
+
+10
+00:00:41,660 --> 00:00:44,790
+Logo em seguida, queremos obter o botão Iniciar.
+
+11
+00:00:44,800 --> 00:00:53,720
+Então, digamos que o conteúdo comece sublinhando b10 e defina isso para documentar ponto e é isso que eu acredito.
+
+12
+00:00:53,750 --> 00:00:54,020
+Certo.
+
+13
+00:00:54,030 --> 00:01:04,980
+Então, vamos ver que nosso botão iniciar é um ID, então document dot get element by bidi e isso é
+
+14
+00:01:04,980 --> 00:01:06,830
+iniciar traço BGN.
+
+15
+00:01:07,250 --> 00:01:07,560
+Tudo bem.
+
+16
+00:01:07,560 --> 00:01:09,300
+Então vou copiar isso.
+
+17
+00:01:09,720 --> 00:01:12,630
+A próxima coisa que queremos é o contêiner do jogo
+
+18
+00:01:15,510 --> 00:01:25,560
+jogo e o contêiner de sublinhado do jogo e o contêiner do jogo é uma classe para que pudéssemos fazer isso, poderíamos
+
+19
+00:01:25,560 --> 00:01:37,050
+adicione um ID, mas usaremos apenas o seletor de consulta aqui e selecionaremos a classe do contêiner do jogo.
+
+20
+00:01:37,860 --> 00:01:38,370
+Tudo bem.
+
+21
+00:01:38,370 --> 00:01:44,100
+E então vou copiar este botão iniciar novamente porque queremos obter um elemento de que queremos
+
+22
+00:01:44,100 --> 00:01:51,870
+para obter o tempo e vou chamar este tempo de Al para elemento de tempo.
+
+23
+00:01:51,870 --> 00:01:53,670
+Também queremos o elemento de pontuação.
+
+24
+00:01:54,240 --> 00:01:57,540
+Então marque al que tem a ideia de pontuação.
+
+25
+00:01:58,470 --> 00:02:03,420
+E então temos também a mensagem que tem uma ideia de mensagem.
+
+26
+00:02:05,400 --> 00:02:06,120
+Mensagem.
+
+27
+00:02:06,120 --> 00:02:10,920
+Na verdade, acho que faz sentido usar uma ideia de contêiner de jogo.
+
+28
+00:02:10,930 --> 00:02:18,180
+Então vamos mudar isso para obter o elemento por ID e apenas nos livrarmos do DOT e depois no nosso HTML.
+
+29
+00:02:20,500 --> 00:02:21,900
+Isso aqui.
+
+30
+00:02:22,120 --> 00:02:28,600
+Faz mais sentido fazer isso de qualquer maneira, mas nós o estilizamos com o contêiner do jogo, então vamos deixar
+
+31
+00:02:28,600 --> 00:02:28,960
+este.
+
+32
+00:02:28,960 --> 00:02:33,850
+Mas vamos adicionar uma ideia de container de jogo.
+
+33
+00:02:35,260 --> 00:02:35,710
+Tudo bem.
+
+34
+00:02:35,710 --> 00:02:40,320
+Então, acho que temos tudo o que precisamos de mensagem ainda.
+
+35
+00:02:40,360 --> 00:02:44,150
+Vou apenas mover o container do jogo para cima do elemento tempo.
+
+36
+00:02:45,280 --> 00:02:45,700
+Tudo bem.
+
+37
+00:02:45,700 --> 00:02:51,430
+Agora, no que diz respeito a algumas variáveis ​​globais, queremos segundos, que será zero por padrão.
+
+38
+00:02:51,430 --> 00:02:55,540
+Queremos o placar, que vai ser zero, obviamente.
+
+39
+00:02:55,810 --> 00:03:03,610
+E então o inseto selecionado, que será um objeto com a ordenação da fonte da imagem e o
+
+40
+00:03:03,610 --> 00:03:04,450
+imagem AWALT.
+
+41
+00:03:04,450 --> 00:03:06,950
+Mas vamos apenas defini-lo como um objeto vazio por enquanto.
+
+42
+00:03:07,960 --> 00:03:12,460
+Agora, quando clicamos no botão iniciar, digamos botão iniciar, vamos adicionar um ouvinte de eventos
+
+43
+00:03:12,460 --> 00:03:14,980
+e ouvir um clique.
+
+44
+00:03:14,980 --> 00:03:20,230
+E quando isso acontecer, vamos em frente e mudar a tela.
+
+45
+00:03:20,230 --> 00:03:25,540
+Então diremos telas, que é uma lista de nós de todas as classes, você sabe, as classes de tela.
+
+46
+00:03:25,990 --> 00:03:28,270
+Queremos o primeiro.
+
+47
+00:03:28,270 --> 00:03:29,620
+Então o índice zero.
+
+48
+00:03:29,620 --> 00:03:32,620
+E então queremos adicionar uma lista de classe ou fora da classe.
+
+49
+00:03:32,950 --> 00:03:42,640
+Portanto, a adição sem classes e a classe up apenas definirão a margem superior para alturas de janela de visualização negativas de 100,
+
+50
+00:03:42,640 --> 00:03:43,630
+que deve trocá-lo.
+
+51
+00:03:43,900 --> 00:03:45,940
+Agora eu quero que ele tenha uma transição.
+
+52
+00:03:46,480 --> 00:03:53,500
+Então na tela, vamos adicionar uma transição na propriedade margin zero ponto cinco segundos e vamos facilitar
+
+53
+00:03:54,310 --> 00:04:00,380
+de transição e vamos facilitar.
+
+54
+00:04:01,780 --> 00:04:02,210
+Tudo bem.
+
+55
+00:04:02,230 --> 00:04:12,700
+Então eu salvo meu JavaScript e clico agora para que ele faça uma transição e adicione aquela margem superior e agora
+
+56
+00:04:12,700 --> 00:04:14,000
+vemos nossa segunda tela.
+
+57
+00:04:14,560 --> 00:04:16,840
+Agora, se você recarregar, vai ficar na tela.
+
+58
+00:04:16,840 --> 00:04:22,630
+Então, se por algum motivo você tiver que voltar para a primeira tela, vá em frente e pare o servidor ao vivo
+
+59
+00:04:22,630 --> 00:04:26,490
+e reiniciado agora para os botões aqui.
+
+60
+00:04:27,700 --> 00:04:28,870
+Nós trouxemos isso, certo?
+
+61
+00:04:31,210 --> 00:04:31,560
+Sim.
+
+62
+00:04:31,570 --> 00:04:34,600
+Então temos esse inseto de Chew, o de Beaton.
+
+63
+00:04:35,440 --> 00:04:40,750
+Então, vamos em frente e percorrer com um para cada e salvar para cada botão.
+
+64
+00:04:42,850 --> 00:04:49,540
+Queremos adicionar um ouvinte de evento para vte e adicionar um ouvinte de evento e ouvir um clique.
+
+65
+00:04:50,680 --> 00:04:58,450
+E quando isso acontecer, executaremos uma função e eu quero obter, digamos, imagem e desse particular
+
+66
+00:04:58,450 --> 00:05:05,170
+botão podemos usar o seletor de consulta, então o seletor de consulta desse botão queremos a imagem que está dentro
+
+67
+00:05:05,170 --> 00:05:13,450
+dele e, em seguida, queremos a fonte que é o link para a imagem para que possamos obtê-lo pegando essa imagem
+
+68
+00:05:13,450 --> 00:05:15,070
+e obter um atributo.
+
+69
+00:05:16,070 --> 00:05:24,040
+Então, queremos obter o atributo source e também queremos o atributo AltX e diremos const
+
+70
+00:05:24,040 --> 00:05:25,570
+AWALT por isso.
+
+71
+00:05:26,680 --> 00:05:27,160
+Tudo bem.
+
+72
+00:05:27,160 --> 00:05:34,570
+E agora este inseto selecionado aqui, vamos seguir em frente e defini-lo como um objeto com a fonte
+
+73
+00:05:34,570 --> 00:05:37,030
+e a arte desse inseto.
+
+74
+00:05:37,910 --> 00:05:40,750
+OK, e então queremos mudar as telas.
+
+75
+00:05:41,140 --> 00:05:42,340
+Então telas.
+
+76
+00:05:42,670 --> 00:05:48,520
+Desta vez vamos selecionar a segunda tela que tem um índice de uma lista de classes, e queremos
+
+77
+00:05:48,520 --> 00:05:51,510
+para então adicionar a classe de up.
+
+78
+00:05:51,520 --> 00:05:58,330
+Agora, antes de fazermos isso, antes de tentarmos isso, também vamos chamar uma função chamada create
+
+79
+00:05:58,330 --> 00:06:04,420
+inseto, porque assim que clicamos nele, queremos que ele gere ou crie um inseto e coloque
+
+80
+00:06:04,420 --> 00:06:05,740
+em um local aleatório.
+
+81
+00:06:06,190 --> 00:06:14,170
+Então, vou definir um tempo aqui e configurá-lo por um segundo para chamar create insect.
+
+82
+00:06:14,530 --> 00:06:20,590
+Então crie insetos em 1000 milissegundos, que é um segundo.
+
+83
+00:06:20,890 --> 00:06:23,770
+E então nós também precisamos como iniciar o cronômetro e outras coisas.
+
+84
+00:06:23,770 --> 00:06:28,290
+Então, teremos uma função de iniciar o jogo também.
+
+85
+00:06:29,020 --> 00:06:30,420
+Então vai esperar um segundo.
+
+86
+00:06:30,430 --> 00:06:32,020
+Vai começar o jogo imediatamente.
+
+87
+00:06:32,290 --> 00:06:35,110
+Vai esperar um segundo e chamar criar insetos.
+
+88
+00:06:35,110 --> 00:06:37,830
+Então, precisamos dessas duas funções.
+
+89
+00:06:39,640 --> 00:06:44,740
+Então, digamos que a função diga criar um inseto.
+
+90
+00:06:45,700 --> 00:06:50,080
+Então é isso que vai inseri-lo no dormitório.
+
+91
+00:06:50,080 --> 00:06:56,680
+Então vamos dizer insetos consed e vamos documentar o elemento create.
+
+92
+00:06:57,610 --> 00:06:59,400
+OK, então vamos criar uma div.
+
+93
+00:06:59,530 --> 00:07:05,440
+Lembro que inserimos isso manualmente no último vídeo para que div queiramos adicionar uma classe dois, então vamos
+
+94
+00:07:05,440 --> 00:07:15,690
+pegue inseto e digamos uma lista de classes, adicione adicione a classe de inseto.
+
+95
+00:07:16,090 --> 00:07:19,260
+Agora precisamos obter um local aleatório para colocá-lo.
+
+96
+00:07:19,390 --> 00:07:24,010
+E lembre-se, na classe dos insetos?
+
+97
+00:07:26,340 --> 00:07:31,900
+Lembre-se, temos posição absoluta e eu mostrei a você o topo e a esquerda no último vídeo para colocá-lo onde quer que seja
+
+98
+00:07:31,900 --> 00:07:35,000
+queremos, esse topo e a esquerda serão aleatórios.
+
+99
+00:07:35,380 --> 00:07:42,490
+Então o que vamos fazer é um concurso e vamos usar essa estruturação para obter o valor de X e Y de
+
+100
+00:07:42,490 --> 00:07:46,570
+uma função que criamos chamada get random location.
+
+101
+00:07:47,470 --> 00:07:47,920
+Tudo bem.
+
+102
+00:07:47,930 --> 00:07:52,720
+Então vamos criar uma função, obter uma localização aleatória.
+
+103
+00:07:54,790 --> 00:08:00,910
+E a maneira como isso vai funcionar é que precisamos descobrir a largura e a altura da janela porque
+
+104
+00:08:00,910 --> 00:08:05,080
+queremos ter certeza de que ele seja colocado na janela, não em algum lugar, você sabe, ao lado.
+
+105
+00:08:05,420 --> 00:08:14,160
+Então vamos dizer consed com definir isso para a janela, pontilhar nossa largura, o que nos dará os pixels de,
+
+106
+00:08:14,200 --> 00:08:15,700
+você sabe, por mais largo que seja.
+
+107
+00:08:15,730 --> 00:08:16,870
+Mesma coisa com a altura.
+
+108
+00:08:18,460 --> 00:08:25,540
+Então a altura será o ponto da janela em nossa altura.
+
+109
+00:08:26,380 --> 00:08:26,800
+Tudo bem.
+
+110
+00:08:26,800 --> 00:08:34,420
+E então, para obter o valor x, dirá const X e definirá como math dot random.
+
+111
+00:08:34,720 --> 00:08:36,230
+Isso nos dará um decimal aleatório.
+
+112
+00:08:36,250 --> 00:08:46,210
+Queremos multiplicar isso por, digamos, seja qual for a largura da janela, menos duzentos mais 100,
+
+113
+00:08:46,600 --> 00:08:52,510
+porque queremos que seja, você sabe, não queremos que seja muito além da borda ou como metade do
+
+114
+00:08:52,510 --> 00:08:52,780
+borda.
+
+115
+00:08:52,780 --> 00:08:54,310
+Você quer que seja em algum lugar aqui.
+
+116
+00:08:55,720 --> 00:08:59,840
+Então para y vamos fazer a mesma coisa, exceto com a altura.
+
+117
+00:09:02,530 --> 00:09:11,440
+Então isso será y e então o que vamos retornar disso é um objeto com X e Y e então nós estamos
+
+118
+00:09:11,440 --> 00:09:15,250
+puxando esses valores da função aqui para obter esse ponto aleatório.
+
+119
+00:09:15,790 --> 00:09:23,710
+Então vamos pegar o inseto que estamos construindo aqui e definir o estilo e definir o valor máximo
+
+120
+00:09:24,340 --> 00:09:26,320
+para o que quer que y seja.
+
+121
+00:09:26,320 --> 00:09:29,890
+Então aqui vamos dizer y pixels.
+
+122
+00:09:30,800 --> 00:09:31,180
+Tudo bem.
+
+123
+00:09:31,180 --> 00:09:35,200
+E então faremos o mesmo para X, que será o valor da esquerda.
+
+124
+00:09:35,620 --> 00:09:39,100
+Lembre-se, nós os codificamos no último vídeo, mas agora eles serão aleatórios.
+
+125
+00:09:40,180 --> 00:09:44,140
+Agora, isso não vai, não vai inseri-lo no dormitório ainda.
+
+126
+00:09:44,410 --> 00:09:50,410
+Precisamos pegar nosso HTML interno, tipo, o que queremos dentro dele, que vai ser um
+
+127
+00:09:50,410 --> 00:09:51,040
+imagem.
+
+128
+00:09:51,580 --> 00:09:52,780
+Portanto, uma marca de imagem.
+
+129
+00:09:53,980 --> 00:10:04,030
+E aqui queremos ter a fonte e a fonte será o inseto selecionado, que é
+
+130
+00:10:04,030 --> 00:10:05,710
+um objeto com uma fonte.
+
+131
+00:10:05,730 --> 00:10:16,930
+E também queremos o valor de origem e então o AltX será o valor AWALT do inseto selecionado.
+
+132
+00:10:17,260 --> 00:10:21,550
+Agora eu também quero que tenha um auto, não um auto, uma rotação aleatória.
+
+133
+00:10:21,550 --> 00:10:23,070
+Não quero que fique sempre assim.
+
+134
+00:10:23,080 --> 00:10:25,840
+Às vezes, pode estar virado para este lado ou para aquele lado ou para baixo.
+
+135
+00:10:26,470 --> 00:10:29,230
+Então, adicionaremos um estilo embutido
+
+136
+00:10:31,990 --> 00:10:33,630
+certo neste estilo.
+
+137
+00:10:33,640 --> 00:10:42,490
+Vamos adicionar transform e com transform você pode girar um elemento e queremos que seja uma rotação aleatória.
+
+138
+00:10:42,490 --> 00:10:53,500
+Então aqui, digamos que math dot random e random devem ter parênteses e então queremos multiplicar
+
+139
+00:10:53,500 --> 00:11:00,980
+isso por 360 e graus porque girar leva um número e depois dg
+
+140
+00:11:01,210 --> 00:11:06,190
+Então, apenas nos dá um número aleatório entre, você sabe, abaixo de três e sessenta.
+
+141
+00:11:07,440 --> 00:11:07,810
+Tudo bem.
+
+142
+00:11:07,820 --> 00:11:10,340
+Então isso vai adicionar o HTML.
+
+143
+00:11:10,360 --> 00:11:14,010
+Agora vamos querer adicioná-lo ao DOM.
+
+144
+00:11:14,020 --> 00:11:20,600
+Portanto, pegue o contêiner do jogo e acrescente filho porque estamos colocando-o no contêiner do jogo.
+
+145
+00:11:21,730 --> 00:11:26,140
+Agora também queremos adicionar um ouvinte de eventos porque queremos poder clicar no inseto.
+
+146
+00:11:26,470 --> 00:11:31,490
+Então, vamos pegar o inseto e adicionar um ouvinte de evento.
+
+147
+00:11:32,050 --> 00:11:39,610
+Então, quando clicamos em um inseto, vamos chamar uma função chamada catch inseto.
+
+148
+00:11:41,050 --> 00:11:41,470
+Tudo bem.
+
+149
+00:11:41,470 --> 00:11:44,500
+Então vamos descer aqui e criar a função.
+
+150
+00:11:45,790 --> 00:11:47,500
+Pegar inseto.
+
+151
+00:11:50,900 --> 00:11:56,300
+E, por enquanto, vou apenas consolar o log um, dois, três, só para ver se isso funciona para isso
+
+152
+00:11:56,300 --> 00:11:56,690
+ponto.
+
+153
+00:11:56,690 --> 00:12:01,430
+Então eu vou em frente e clicar na mosca e lá vamos nós.
+
+154
+00:12:01,460 --> 00:12:04,010
+Então ela desce e a mosca é colocada aqui.
+
+155
+00:12:04,010 --> 00:12:08,470
+Se eu clicar nele, se eu abrir meu console, vejo um, dois, três.
+
+156
+00:12:08,480 --> 00:12:10,540
+Eu também vejo jogo estrela não está definido.
+
+157
+00:12:10,550 --> 00:12:13,310
+Então Star Game é o que vai fazer o cronômetro e outras coisas.
+
+158
+00:12:13,820 --> 00:12:24,020
+Então, na verdade, vou reiniciar este servidor bem rápido e, em seguida, para iniciar o jogo, vamos colocar isso
+
+159
+00:12:24,020 --> 00:12:33,440
+no topo aqui porque nós criamos o inseto e iniciamos o jogo também tem que iniciar ou tem que ser executado.
+
+160
+00:12:34,280 --> 00:12:36,140
+E isso vai ser.
+
+161
+00:12:37,890 --> 00:12:42,450
+Basicamente começar o jogo, vamos definir um intervalo, o que significa que vamos definir algo para
+
+162
+00:12:42,450 --> 00:12:51,360
+continuar acontecendo e queremos executar uma função chamada aumentar o tempo, e queremos que isso aconteça a cada
+
+163
+00:12:51,360 --> 00:12:51,860
+segundo.
+
+164
+00:12:51,870 --> 00:12:54,090
+Portanto, a cada 1000 milissegundos.
+
+165
+00:12:54,660 --> 00:13:02,570
+Então é uma função aumentar o tempo e queremos nossos minutos.
+
+166
+00:13:02,910 --> 00:13:10,320
+Então, digamos que eles sejam iguais, vamos arredondar para baixo alguns pontos matemáticos e queremos levar nossos segundos
+
+167
+00:13:10,320 --> 00:13:12,120
+e divida por 60.
+
+168
+00:13:12,120 --> 00:13:13,320
+Isso nos dará nossos minutos.
+
+169
+00:13:13,770 --> 00:13:21,210
+E então, para nossos segundos, vamos definir isso para qualquer que seja o segundo, módulo 60.
+
+170
+00:13:21,210 --> 00:13:24,220
+Portanto, o restante de 60.
+
+171
+00:13:24,660 --> 00:13:32,170
+Agora, se os minutos ou segundos forem menores que 10, se forem seis, queríamos dizer zero seis para
+
+172
+00:13:32,250 --> 00:13:33,270
+um minuto e segundos.
+
+173
+00:13:33,270 --> 00:13:41,370
+Então, digamos que um minuto é igual e depois uma condicional se minuto for menor que dez, então estamos apenas usando
+
+174
+00:13:41,370 --> 00:13:50,280
+um ternário aqui, então vamos adicionar um zero a minutos ou então será apenas um minuto e então
+
+175
+00:13:50,280 --> 00:13:51,750
+faremos o mesmo por um segundo.
+
+176
+00:13:52,290 --> 00:13:57,420
+Este seja um segundo e diga se este será o segundo.
+
+177
+00:13:58,500 --> 00:13:59,250
+Segundo.
+
+178
+00:14:03,440 --> 00:14:04,580
+OK então.
+
+179
+00:14:06,570 --> 00:14:14,970
+Sim, e depois de fazermos isso, precisamos pegar nosso elemento de tempo do dormitório e definir o interior
+
+180
+00:14:16,220 --> 00:14:26,670
+HTML e vamos configurá-lo para dizer hora Colen minuto e dois pontos e depois segundo.
+
+181
+00:14:27,890 --> 00:14:32,090
+Tudo bem, porém, é claro, precisamos aumentar os segundos ou incrementar os segundos em um.
+
+182
+00:14:34,580 --> 00:14:36,760
+Tudo bem, então é isso.
+
+183
+00:14:38,420 --> 00:14:39,410
+Então vamos tentar isso.
+
+184
+00:14:39,410 --> 00:14:45,320
+Vou salvar e depois jogar um jogo, escolher uma aranha.
+
+185
+00:14:45,980 --> 00:14:51,380
+Spider é colocado e você pode ver que o tempo está correndo, OK?
+
+186
+00:14:51,410 --> 00:14:53,030
+Agora, se eu clicar, nada está acontecendo.
+
+187
+00:14:53,030 --> 00:14:56,920
+Vai apenas logar no console porque é tudo o que fiz aqui para o Catch Insect.
+
+188
+00:14:57,440 --> 00:15:03,050
+Então, quando clicamos em um inseto, o que queremos que aconteça é aumentar a pontuação.
+
+189
+00:15:03,500 --> 00:15:11,100
+Então, vamos chamar uma função chamada aumentar pontuação e vamos em frente e adicionar isso aqui, aumentar
+
+190
+00:15:11,490 --> 00:15:12,620
+a pontuação.
+
+191
+00:15:14,870 --> 00:15:18,020
+Então, queremos apenas incrementar a pontuação em um.
+
+192
+00:15:18,020 --> 00:15:19,430
+Então pontuação mais mais.
+
+193
+00:15:19,820 --> 00:15:31,250
+E então queremos pontuar, pegar os elementos de pontuação e definir o HTML interno para pontuar carvão e depois o que for
+
+194
+00:15:31,250 --> 00:15:32,150
+a pontuação é.
+
+195
+00:15:32,510 --> 00:15:40,280
+Agora, se você quiser inserir a mensagem irritante, podemos colocar uma condicional aqui e dizer se o
+
+196
+00:15:40,280 --> 00:15:49,340
+pontuação for maior que 19, ou seja, se você atingir 20, pegaremos a mensagem e adicionaremos a classe de
+
+197
+00:15:49,340 --> 00:15:49,910
+visível.
+
+198
+00:15:49,940 --> 00:15:57,260
+Portanto, a lista de classes dot adiciona e adiciona a classe invisível visível, o que fará com que ela desça.
+
+199
+00:15:58,490 --> 00:15:58,940
+Tudo bem.
+
+200
+00:15:58,970 --> 00:16:00,590
+Agora que vai aumentar a pontuação.
+
+201
+00:16:01,370 --> 00:16:09,620
+E depois de fazermos isso, queremos adicionar uma classe ao inseto para que essa palavra-chave possamos usar,
+
+202
+00:16:09,800 --> 00:16:16,010
+que pertence ao inseto clicado para que possamos adicionar uma classe a ele.
+
+203
+00:16:16,850 --> 00:16:24,920
+Claro, porque lembre-se, o que a classe do tribunal faz é reduzi-la a zero.
+
+204
+00:16:24,920 --> 00:16:30,260
+Então começa a escala um, que é a escala normal zero fará com que ela desapareça, mas não vai
+
+205
+00:16:30,260 --> 00:16:31,460
+removê-lo do dormitório.
+
+206
+00:16:31,790 --> 00:16:33,620
+Então é isso que queremos fazer depois disso.
+
+207
+00:16:33,980 --> 00:16:38,750
+E vamos definir um tempo limite porque não queremos tentar removê-lo, você sabe, muito rapidamente.
+
+208
+00:16:38,750 --> 00:16:40,790
+Então vamos definir um tempo limite.
+
+209
+00:16:40,970 --> 00:16:43,580
+Ele vai desaparecer imediatamente por causa desta classe.
+
+210
+00:16:43,580 --> 00:16:47,860
+Ele diminui, mas depois de dois segundos irá removê-lo.
+
+211
+00:16:47,870 --> 00:16:53,960
+Então vamos dizer que esse ponto ou movimento realmente chega.
+
+212
+00:16:57,130 --> 00:17:01,840
+Isso começou seu movimento e, em seguida, faça isso dois segundos depois.
+
+213
+00:17:02,380 --> 00:17:08,890
+OK, então queremos começar a adicionar mais insetos, então teremos uma função chamada add insects.
+
+214
+00:17:10,000 --> 00:17:18,670
+E isso será muito simples porque tudo o que estamos fazendo é chamar create insect depois de uma certa quantidade
+
+215
+00:17:18,670 --> 00:17:19,320
+de tempo.
+
+216
+00:17:20,140 --> 00:17:27,580
+Então vamos definir um tempo limite e então vamos chamar cria insecto após um segundo e vamos criar outro
+
+217
+00:17:27,580 --> 00:17:29,520
+após um vírgula cinco segundos.
+
+218
+00:17:29,860 --> 00:17:34,120
+Então vai ser impossível porque toda vez que você clicar em um, mais aparecerão.
+
+219
+00:17:34,780 --> 00:17:35,260
+Certo.
+
+220
+00:17:35,590 --> 00:17:37,090
+E só vai continuar.
+
+221
+00:17:37,090 --> 00:17:39,820
+Assim e não há fim para o jogo.
+
+222
+00:17:40,750 --> 00:17:42,990
+Então vamos salvar e vamos experimentar.
+
+223
+00:17:43,030 --> 00:17:50,980
+Então eu vou jogar com Choose a Fly e nós pegamos um inseto aleatório em uma rotação aleatória.
+
+224
+00:17:51,760 --> 00:17:52,660
+O temporizador está indo.
+
+225
+00:17:52,660 --> 00:17:58,140
+Eu clico nele, temos outro, temos mais dois cliques que mais dois virão depois desse,
+
+226
+00:17:59,050 --> 00:18:00,340
+mais dois depois desse.
+
+227
+00:18:00,610 --> 00:18:07,180
+E quanto mais rápido eu for, você sabe, mais eles virão e quando minha pontuação chegar a 20.
+
+228
+00:18:08,530 --> 00:18:16,840
+Então 14, 15, 16, 17, 18, 19, 20, diz, você está irritado, mas você está jogando um jogo impossível
+
+229
+00:18:17,200 --> 00:18:21,670
+e você pode continuar jogando até a pontuação, continuará subindo, o cronômetro continuará.
+
+230
+00:18:21,670 --> 00:18:24,610
+Mas é obviamente impossível ganhar.
+
+231
+00:18:24,610 --> 00:18:25,810
+Eles vão continuar vindo.
+
+232
+00:18:27,610 --> 00:18:28,030
+Tudo bem.
+
+233
+00:18:28,030 --> 00:18:29,500
+Então é uma coisa meio idiota.
+
+234
+00:18:30,130 --> 00:18:35,860
+É um jogo meio estúpido, mas, você sabe, dá uma ideia de como fazer algo como
+
+235
+00:18:35,860 --> 00:18:36,190
+isto.
+
+236
+00:18:36,190 --> 00:18:38,170
+E você poderia torná-lo um jogo real.
+
+237
+00:18:38,170 --> 00:18:45,100
+Talvez você tenha que obter uma certa quantia depois de um certo período de tempo, mas mostra como definir
+
+238
+00:18:45,100 --> 00:18:50,890
+até um cronômetro e uma pontuação e adicione coisas ao dormitório em posições aleatórias.
+
+239
+00:18:50,890 --> 00:18:55,660
+E você pode se livrar desta mensagem, se quiser, apenas comentando isso aqui.
+
+240
+00:18:56,660 --> 00:18:57,160
+Tudo bem.
+
+241
+00:18:57,160 --> 00:18:58,180
+Então é isso, galera.
+
+242
+00:18:58,330 --> 00:19:02,800
+Espero que tenham gostado deste pequeno projeto, o jogo bobo, e nos vemos no próximo projeto.

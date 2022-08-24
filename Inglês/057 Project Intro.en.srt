@@ -1,0 +1,55 @@
+1
+00:00:00,270 --> 00:00:04,980
+OK, so in this project, we're going to build an image slider, but we're also going to have the background
+
+2
+00:00:04,980 --> 00:00:06,170
+image change as well.
+
+3
+00:00:06,180 --> 00:00:10,190
+And you can see the background is basically in line with this image here.
+
+4
+00:00:10,500 --> 00:00:14,330
+So we're going to have some event listeners on these arrows and these buttons.
+
+5
+00:00:14,550 --> 00:00:20,130
+So when I click, it's going to change this image but also change the background image and position
+
+6
+00:00:20,130 --> 00:00:21,720
+it into the right place.
+
+7
+00:00:22,080 --> 00:00:26,490
+So you'll see that these are basically connected, this foreground image in the background.
+
+8
+00:00:27,040 --> 00:00:27,480
+All right.
+
+9
+00:00:27,480 --> 00:00:32,790
+So with the both background images, just one is on this, the slide element and then one is on the
+
+10
+00:00:32,790 --> 00:00:33,810
+body element.
+
+11
+00:00:34,080 --> 00:00:39,510
+And we're going to add some JavaScript to to add these event listeners and have everything lined up
+
+12
+00:00:39,510 --> 00:00:40,080
+nicely.
+
+13
+00:00:40,410 --> 00:00:40,800
+All right.
+
+14
+00:00:40,810 --> 00:00:41,870
+So let's get started.

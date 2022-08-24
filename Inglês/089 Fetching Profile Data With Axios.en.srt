@@ -1,0 +1,583 @@
+1
+00:00:00,060 --> 00:00:04,890
+OK, so now we're going to get into the JavaScript and working with the GitHub API and this is the docs
+
+2
+00:00:04,890 --> 00:00:06,930
+right here, you don't have to go to this page.
+
+3
+00:00:06,930 --> 00:00:12,870
+But I just want to show you, if we go down to endpoints available for GitHub apps, these are like
+
+4
+00:00:12,870 --> 00:00:15,030
+the different resources that are available.
+
+5
+00:00:15,040 --> 00:00:17,480
+We want to deal with users and repos.
+
+6
+00:00:17,490 --> 00:00:24,420
+So if I click on users, we can make a get request to the API and then slash users, which will give
+
+7
+00:00:24,420 --> 00:00:26,460
+us a list, an array of users.
+
+8
+00:00:27,180 --> 00:00:31,320
+We want to get a specific user name based on what we type in the search.
+
+9
+00:00:31,350 --> 00:00:36,990
+So this is the request we're going to make and it gives us an example of a response that we get, which
+
+10
+00:00:36,990 --> 00:00:45,370
+includes the login, which is the user name, the ID, the avatar, you URL the if they have a blog,
+
+11
+00:00:45,370 --> 00:00:54,870
+you URL their name, company email the number of of public repos followers following.
+
+12
+00:00:54,870 --> 00:00:56,640
+So we have access to all this data.
+
+13
+00:00:57,540 --> 00:01:02,280
+Now the other thing we want to do is get the users repos so we can do that.
+
+14
+00:01:02,490 --> 00:01:07,860
+If you look at repos and there's a whole bunch of endpoints here, but if we go down to the very bottom,
+
+15
+00:01:07,860 --> 00:01:13,920
+you'll see we can do get users the user name and then slash repos.
+
+16
+00:01:14,250 --> 00:01:17,010
+And then that will give us a response that looks like this.
+
+17
+00:01:17,370 --> 00:01:21,900
+And it's an array of the users repositories and we can get the name.
+
+18
+00:01:21,900 --> 00:01:23,640
+All we really need here is the name.
+
+19
+00:01:24,060 --> 00:01:30,060
+And then we want to get the HTML neutral, which will give us the link to the repository.
+
+20
+00:01:30,450 --> 00:01:30,780
+All right.
+
+21
+00:01:30,790 --> 00:01:36,390
+So those are the two endpoints that we're going to deal with, user slash user name and then user slash
+
+22
+00:01:36,390 --> 00:01:37,890
+user name slash repos.
+
+23
+00:01:38,790 --> 00:01:40,380
+Now, there is a limit.
+
+24
+00:01:40,380 --> 00:01:45,690
+If you if you don't use authentication with the GitHub API, you have a limit of a certain amount of
+
+25
+00:01:45,690 --> 00:01:49,000
+requests per hour or something like that.
+
+26
+00:01:49,010 --> 00:01:54,510
+So if you are to go into production, you probably want to look at authentication, but we're not going
+
+27
+00:01:54,510 --> 00:01:57,040
+to get into that in this particular tutorial.
+
+28
+00:01:57,930 --> 00:02:04,540
+Now, the first thing that I want to do is, is be able to fetch a specific GitHub user from the API.
+
+29
+00:02:04,560 --> 00:02:06,390
+Now we're going to be using axios.
+
+30
+00:02:06,720 --> 00:02:13,740
+So I'm going to go to CDN News.com and search for axios so that I can get that CBN link so that we can
+
+31
+00:02:13,740 --> 00:02:14,880
+use the library.
+
+32
+00:02:15,150 --> 00:02:17,390
+So you want this Axios mindgames?
+
+33
+00:02:17,410 --> 00:02:21,600
+I'm going to copy the script tag and put that right above my script.
+
+34
+00:02:21,600 --> 00:02:23,900
+J.S. in the index HTML.
+
+35
+00:02:23,910 --> 00:02:31,350
+Now we have access to the Axios object and we can make get requests, we can do Axios Scott post, we
+
+36
+00:02:31,350 --> 00:02:35,930
+can do put, which is usually like an update and then delete if we want to delete.
+
+37
+00:02:36,360 --> 00:02:41,930
+And then if you just do axios like this and put the user Ellen here, that's going to be a get request.
+
+38
+00:02:41,940 --> 00:02:44,280
+It's the same as doing Axios doGet.
+
+39
+00:02:44,280 --> 00:02:49,680
+I actually have a full crash course on Axios on my YouTube channel, if you're interested in learning
+
+40
+00:02:49,680 --> 00:02:50,360
+more about it.
+
+41
+00:02:51,090 --> 00:02:55,530
+So first thing I'll do here is create a constant for the API URLs.
+
+42
+00:02:55,530 --> 00:03:05,070
+So basically the root GitHub you URL actually is you single quotes, so https and it's going to be api
+
+43
+00:03:05,430 --> 00:03:10,590
+dot github dot com slash user slash.
+
+44
+00:03:10,590 --> 00:03:17,040
+That's going to be the root because we're going to make requests to this slash and then the user name
+
+45
+00:03:17,040 --> 00:03:20,130
+as well as slash user name and then the repos.
+
+46
+00:03:20,820 --> 00:03:24,780
+All right, so that's our route, your URL.
+
+47
+00:03:25,380 --> 00:03:33,510
+Now to use axios, let's first just let's create a function called Get User, and this will take in
+
+48
+00:03:33,510 --> 00:03:35,280
+a user name that we want to get.
+
+49
+00:03:36,570 --> 00:03:42,930
+And then to make the requests we can take, we can either say Axios doGet or we can just do axios.
+
+50
+00:03:42,930 --> 00:03:44,340
+And that will default to get.
+
+51
+00:03:44,890 --> 00:03:51,970
+And in here I'm going to pass in the Aperol, but I also want the user name attached to that.
+
+52
+00:03:52,380 --> 00:03:59,280
+So in this case, it's going to be this slash and then whatever the user name that's passed in now,
+
+53
+00:03:59,280 --> 00:04:02,850
+this returns a promise and ultimately I'm going to use a sink away.
+
+54
+00:04:02,850 --> 00:04:11,030
+But just to show you, without using a sink away, we can say then and we'll get data.
+
+55
+00:04:11,160 --> 00:04:13,470
+Let's call this data actually.
+
+56
+00:04:13,470 --> 00:04:16,410
+Let's call this ready for response.
+
+57
+00:04:16,830 --> 00:04:18,360
+And we don't have to do this.
+
+58
+00:04:18,360 --> 00:04:23,190
+We don't have to say resident Jason, like we do with fetch, with fetch.
+
+59
+00:04:23,190 --> 00:04:26,910
+We have to do that and we have to do another promise and get the data.
+
+60
+00:04:27,210 --> 00:04:30,990
+Axios makes it easier because we don't need to do that.
+
+61
+00:04:31,440 --> 00:04:37,200
+I just want to console log rez and see what that gives us.
+
+62
+00:04:37,350 --> 00:04:42,920
+And resident data should be the actual data, but a console log was first.
+
+63
+00:04:42,930 --> 00:04:47,100
+Now, if something goes wrong, then we want to add dot catch.
+
+64
+00:04:47,340 --> 00:04:51,150
+When we have a promise, we can use a catch if if there's some kind of error.
+
+65
+00:04:51,150 --> 00:04:56,690
+So it's past an error here and then we'll just go ahead and console log the error.
+
+66
+00:04:57,390 --> 00:04:57,810
+All right.
+
+67
+00:04:57,810 --> 00:04:59,940
+Now, I'm going to just call this function right here.
+
+68
+00:05:00,010 --> 00:05:07,120
+Let's say get yuzu and I'll pass in my GitHub username, and if we go over here and open the console,
+
+69
+00:05:07,120 --> 00:05:13,090
+we get an object back which has config with just a whole bunch of stuff here.
+
+70
+00:05:13,330 --> 00:05:19,850
+But what we're interested in, you also see the headers, the request status, which is 200 status text.
+
+71
+00:05:19,900 --> 00:05:23,920
+OK, but data is where the actual data is going to be.
+
+72
+00:05:23,920 --> 00:05:25,860
+And you can see my GitHub data here.
+
+73
+00:05:26,500 --> 00:05:32,530
+So if I cancel log resource data, that's going to give us just the object that we need.
+
+74
+00:05:33,220 --> 00:05:33,580
+All right.
+
+75
+00:05:33,580 --> 00:05:39,870
+So there's no need to add a second dot then with axios, which is one of the reasons why I prefer it.
+
+76
+00:05:40,660 --> 00:05:42,640
+It also has more features.
+
+77
+00:05:43,600 --> 00:05:50,350
+Now, if something goes wrong, this catch will fire off, like if we do users w which is not a valid
+
+78
+00:05:50,350 --> 00:05:51,040
+endpoint.
+
+79
+00:05:51,730 --> 00:06:00,640
+You'll see that now it's logging the error, which is request failed the status code for for now I want
+
+80
+00:06:00,640 --> 00:06:07,250
+to use a sink away instead of using this dot, then catch syntax.
+
+81
+00:06:07,660 --> 00:06:16,900
+So what we'll do is just get rid of that and our function has to be a sink and then we'll be able to
+
+82
+00:06:16,900 --> 00:06:21,850
+just create a variable here called Redds and set that to that.
+
+83
+00:06:22,450 --> 00:06:27,370
+And then down here we should be able to just cancel log rez dot data.
+
+84
+00:06:28,630 --> 00:06:31,180
+If I save that, we want to change this back.
+
+85
+00:06:32,870 --> 00:06:39,950
+See, we're getting undefined, and that's because I did not await the the axios request here, so we
+
+86
+00:06:39,950 --> 00:06:41,210
+need to sink a weight.
+
+87
+00:06:41,480 --> 00:06:43,870
+And now you can see I get my profile data.
+
+88
+00:06:44,360 --> 00:06:46,760
+We can take this a step further and not use Redd's.
+
+89
+00:06:46,770 --> 00:06:54,680
+We can D structure because Rez is an object that has property of data, which is another object.
+
+90
+00:06:54,890 --> 00:06:59,960
+And we can d structure that by just using curly braces and say we just want to take out data.
+
+91
+00:07:00,470 --> 00:07:03,830
+And then down here I can just log data.
+
+92
+00:07:04,910 --> 00:07:06,220
+Now what if there's an error?
+
+93
+00:07:06,230 --> 00:07:06,590
+What's that?
+
+94
+00:07:06,620 --> 00:07:08,190
+What if something goes wrong?
+
+95
+00:07:08,210 --> 00:07:09,460
+How do we handle the catch?
+
+96
+00:07:09,470 --> 00:07:12,040
+Because when we do a regular promise, we can do catch.
+
+97
+00:07:12,550 --> 00:07:15,290
+Well, there's a bunch of ways we can handle this.
+
+98
+00:07:15,770 --> 00:07:23,420
+What I usually do is to a try catch so we can just say try and then if something goes wrong, we'll
+
+99
+00:07:23,420 --> 00:07:24,970
+catch with an error.
+
+100
+00:07:28,660 --> 00:07:38,050
+And let's take this and let's put this into the tribe block like that, and then if something goes wrong,
+
+101
+00:07:38,050 --> 00:07:47,860
+then we'll console console, don't log the error or PRR whatever you can put whatever you want here,
+
+102
+00:07:47,860 --> 00:07:49,190
+error or error.
+
+103
+00:07:49,930 --> 00:07:54,580
+So if I save that, we get the same result and you'll see if I go up here and I change the URL, we're
+
+104
+00:07:54,580 --> 00:07:59,440
+going to get the same thing that we would get from the catch from the, you know, dot catch from the
+
+105
+00:07:59,440 --> 00:08:00,790
+promise we'll get here.
+
+106
+00:08:01,510 --> 00:08:01,950
+All right.
+
+107
+00:08:01,960 --> 00:08:03,040
+Hopefully that makes sense.
+
+108
+00:08:04,000 --> 00:08:06,160
+And you can use this try catch with anything.
+
+109
+00:08:06,160 --> 00:08:10,780
+You could use it with the fetch API, although error handling is a little more complicated with the
+
+110
+00:08:10,780 --> 00:08:14,020
+Fetch API, which is another reason that I like axios better.
+
+111
+00:08:14,860 --> 00:08:15,340
+But yeah.
+
+112
+00:08:15,340 --> 00:08:18,640
+So you can just try catch in many different situations.
+
+113
+00:08:19,060 --> 00:08:24,130
+Now at the moment we're just I'm just hard coding my name in here, which I don't want to do.
+
+114
+00:08:24,130 --> 00:08:25,810
+I want to get it from the form.
+
+115
+00:08:26,320 --> 00:08:30,100
+And you could initially call a user and show the user.
+
+116
+00:08:30,100 --> 00:08:35,670
+But we're not we're just going to have the form and then when we submit the form, it'll get the user.
+
+117
+00:08:35,680 --> 00:08:39,790
+So let's go down here and let's take actually, we need to bring the form in.
+
+118
+00:08:40,210 --> 00:08:50,680
+So let's go right here and say const form and set that to document dot get element by D and we have
+
+119
+00:08:50,680 --> 00:09:00,970
+an idea of form and then let's go down here and say form dot add event listener and we're going to listen
+
+120
+00:09:00,970 --> 00:09:02,530
+for a segment.
+
+121
+00:09:03,760 --> 00:09:09,070
+You could do this on like a key down as well, but you would be making a request every time you do a
+
+122
+00:09:09,070 --> 00:09:09,790
+key down.
+
+123
+00:09:10,930 --> 00:09:19,060
+But yeah, let's do a segment with an arrow function with our event object and we want to prevent the
+
+124
+00:09:19,060 --> 00:09:20,110
+default behavior.
+
+125
+00:09:20,110 --> 00:09:25,900
+So we want to do each dot prevent default or it's actually going to try to submit to a file and then
+
+126
+00:09:25,900 --> 00:09:33,790
+we'll put into a variable called user e dot target dot value.
+
+127
+00:09:36,150 --> 00:09:43,380
+Actually, you know what, let's bring in search the input, we have an idea of search, so I'm going
+
+128
+00:09:43,380 --> 00:09:50,490
+to bring that in here like that and then, oops, what I just do.
+
+129
+00:09:51,990 --> 00:09:57,660
+And then once we bring search in, will set this instead of IDOT Target, let's set it to the search
+
+130
+00:09:57,660 --> 00:09:58,260
+value.
+
+131
+00:09:59,310 --> 00:10:02,310
+So search dot value like that.
+
+132
+00:10:02,850 --> 00:10:05,280
+And then we want to make sure that there's a user.
+
+133
+00:10:05,290 --> 00:10:15,690
+So say if user then let's call the get user function and let's pass in here the user and then I want
+
+134
+00:10:15,690 --> 00:10:17,070
+to clear the search value.
+
+135
+00:10:17,070 --> 00:10:22,660
+So we'll say search dot value and set that to nothing.
+
+136
+00:10:24,720 --> 00:10:28,460
+So let's save that and let's go over here.
+
+137
+00:10:28,470 --> 00:10:30,540
+We're not going to see anything happen down here yet.
+
+138
+00:10:30,540 --> 00:10:36,510
+We haven't done anything with the DOM, but it should at least console log the data that you call this,
+
+139
+00:10:36,900 --> 00:10:42,100
+get the search input value in here, make the request and console log the data.
+
+140
+00:10:42,390 --> 00:10:46,170
+So let's look for Floren Pop 17.
+
+141
+00:10:46,800 --> 00:10:51,300
+And down here, you can see that it's logging the data for Floren Pop.
+
+142
+00:10:52,590 --> 00:10:59,400
+OK, so now that we're actually able to, you know, search for users data in the next video, we want
+
+143
+00:10:59,400 --> 00:11:00,300
+to take this data.
+
+144
+00:11:00,300 --> 00:11:02,670
+We want to insert it into the dorm.
+
+145
+00:11:02,940 --> 00:11:07,440
+We're also going to have to make a separate request to get these repositories as well.
+
+146
+00:11:07,560 --> 00:11:09,600
+OK, so we'll start on that in the next video.

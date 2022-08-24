@@ -1,0 +1,495 @@
+1
+00:00:00,150 --> 00:00:05,880
+All right, so we're going to get started on our Netflix branded navigation here, so I have my products
+
+2
+00:00:05,910 --> 00:00:11,730
+Storrar I do have a link to the font awesome CDN because we will be using two icons from font.
+
+3
+00:00:11,730 --> 00:00:12,300
+Awesome.
+
+4
+00:00:12,690 --> 00:00:16,190
+So down in the body, who actually gets to the title first.
+
+5
+00:00:16,230 --> 00:00:22,650
+So in the title here and it changes to Netflix, mobile navigation.
+
+6
+00:00:22,950 --> 00:00:24,290
+That's the name of the project.
+
+7
+00:00:24,690 --> 00:00:28,860
+And then down here we're going to first have our open button.
+
+8
+00:00:30,180 --> 00:00:32,100
+So let's add a button here.
+
+9
+00:00:32,430 --> 00:00:37,410
+And this is going to have two classes, NAV, Dash, BTN, which is going to be on both the open and
+
+10
+00:00:37,410 --> 00:00:45,150
+close and then open Dash BTN and we're going to use an icon with the class of facts and then a dash
+
+11
+00:00:45,150 --> 00:00:49,070
+Barzeh, which will give us a hamburger menu, hamburger menu icon.
+
+12
+00:00:49,740 --> 00:00:55,140
+So under that we're going to have the image, the logo, the Netflix logo is going to go in the middle
+
+13
+00:00:55,140 --> 00:00:55,860
+of the page.
+
+14
+00:00:56,040 --> 00:00:58,080
+It's also going to go in the NAV itself.
+
+15
+00:00:58,080 --> 00:00:59,130
+So we'll have two of them.
+
+16
+00:00:59,460 --> 00:01:06,600
+But let's say image with the class of a logo and the AltX will just say logo and then the source is
+
+17
+00:01:06,600 --> 00:01:08,490
+going to come from a remote link.
+
+18
+00:01:08,910 --> 00:01:13,080
+You can, of course download any logo or any image and put it in here.
+
+19
+00:01:13,410 --> 00:01:19,950
+But I'm just going to link to this Netflix logo and then let's do a paragraph with the class of text.
+
+20
+00:01:19,950 --> 00:01:23,910
+And I just want that to say mobile navigation.
+
+21
+00:01:23,920 --> 00:01:26,310
+So this is just the content that's going to go in the middle.
+
+22
+00:01:26,310 --> 00:01:28,220
+And right now the logo is huge.
+
+23
+00:01:28,230 --> 00:01:34,500
+In fact, I'm just going to add in the stylesheet real quick logo and let's say with one hundred and
+
+24
+00:01:34,530 --> 00:01:35,670
+fifty pixels.
+
+25
+00:01:36,660 --> 00:01:37,020
+All right.
+
+26
+00:01:37,020 --> 00:01:42,810
+Just so we can actually see stuff now, underneath that, under the paragraph is where we're going to
+
+27
+00:01:42,810 --> 00:01:47,310
+have our navigation is going to be three separate parts that that slide out.
+
+28
+00:01:47,310 --> 00:01:49,370
+You're going to have the red, white and black.
+
+29
+00:01:49,830 --> 00:01:54,120
+So what we're going to what we're going to do is have three NAV classes.
+
+30
+00:01:54,120 --> 00:02:01,170
+The first one is also going to have nav dash black and then inside that will have another nav class
+
+31
+00:02:01,170 --> 00:02:10,700
+with a class of nav dash red and then another one with nav and let's to nav dash black, not black.
+
+32
+00:02:10,710 --> 00:02:11,970
+We already did black white.
+
+33
+00:02:12,930 --> 00:02:17,670
+So the white is where the actual content is going to go, the, the links and stuff.
+
+34
+00:02:18,660 --> 00:02:23,370
+First thing I'm going to put in here is the close button so that have a class of nav btn just like the
+
+35
+00:02:23,370 --> 00:02:31,200
+open and then let's do close dash BTN as well and we'll use eFax for a dash times.
+
+36
+00:02:32,370 --> 00:02:39,060
+OK, so there's a close button and underneath the button is going to be another image for our logo.
+
+37
+00:02:39,060 --> 00:02:42,720
+So I'm just going to grab this here and put that here.
+
+38
+00:02:45,310 --> 00:02:52,330
+OK, and then we want our our links or our menu items, so we're going to have a you Alan Unnoted list
+
+39
+00:02:52,330 --> 00:02:57,370
+with a class of list and let's do an ally here with a link inside of it.
+
+40
+00:02:57,560 --> 00:02:59,230
+Link doesn't have to go anywhere.
+
+41
+00:02:59,800 --> 00:03:01,690
+And this will say teams.
+
+42
+00:03:02,360 --> 00:03:04,210
+We're going to have three here to begin with.
+
+43
+00:03:04,210 --> 00:03:13,660
+So teams, locations and let's say life at Netflix.
+
+44
+00:03:14,080 --> 00:03:16,630
+Now, within this, we're going to have a nested well.
+
+45
+00:03:16,930 --> 00:03:19,060
+So let's put another list item here.
+
+46
+00:03:19,060 --> 00:03:24,220
+But inside that will have a pool and a list item with a link.
+
+47
+00:03:25,210 --> 00:03:30,100
+And this is going to say Netflix culture.
+
+48
+00:03:30,100 --> 00:03:34,390
+Memmo, we're going to make all these uppercase using access so it doesn't matter if you make these
+
+49
+00:03:34,390 --> 00:03:35,860
+lower case or upper case.
+
+50
+00:03:38,020 --> 00:03:43,540
+So let's see, we have that and then we have work life balance.
+
+51
+00:03:45,470 --> 00:03:46,450
+Then we're going to do.
+
+52
+00:03:50,060 --> 00:03:58,580
+Inclusion and diversity and blog.
+
+53
+00:04:00,080 --> 00:04:04,460
+All right, so those are links, so it doesn't look very good, but we're going to go ahead and style
+
+54
+00:04:04,460 --> 00:04:04,810
+it now.
+
+55
+00:04:04,820 --> 00:04:05,960
+So let's jump in here.
+
+56
+00:04:06,680 --> 00:04:09,860
+And I'm not sure if we'll get to all the success in this video.
+
+57
+00:04:09,860 --> 00:04:11,960
+We might have to do the rest in the next one.
+
+58
+00:04:11,960 --> 00:04:14,120
+But let's start here with the fonts.
+
+59
+00:04:14,120 --> 00:04:16,400
+I'm going to use the Mieuli font.
+
+60
+00:04:17,120 --> 00:04:22,070
+So it's a question mark family and set that to them.
+
+61
+00:04:22,130 --> 00:04:25,910
+You apply and then we'll add that down here.
+
+62
+00:04:27,770 --> 00:04:32,240
+And maybe I could display Fleck's column.
+
+63
+00:04:32,240 --> 00:04:32,930
+That's good.
+
+64
+00:04:33,950 --> 00:04:35,960
+Height 100 viewport heights.
+
+65
+00:04:36,380 --> 00:04:42,140
+We don't really need an overflow and then we don't really need margin zero because we want it to be,
+
+66
+00:04:42,140 --> 00:04:43,420
+you know, right at the edge here.
+
+67
+00:04:44,810 --> 00:04:46,300
+So that should be good for the body.
+
+68
+00:04:46,910 --> 00:04:50,180
+The this text that's in the main part of the page.
+
+69
+00:04:51,290 --> 00:04:52,850
+I want that to be uppercase.
+
+70
+00:04:52,850 --> 00:04:58,280
+So we're going to say text transform, set that to uppercase.
+
+71
+00:04:59,090 --> 00:05:01,720
+And then that's I mean, that's pretty much it for the entire page.
+
+72
+00:05:01,730 --> 00:05:04,220
+Of course, you could put whatever you want here.
+
+73
+00:05:05,360 --> 00:05:11,420
+So we just have, you know, the where is it up here, the image in the text.
+
+74
+00:05:11,420 --> 00:05:15,530
+But you would have your page content here and then have the menu down here.
+
+75
+00:05:16,580 --> 00:05:20,330
+So next thing I want to do is the NAV button, which is this one here.
+
+76
+00:05:20,330 --> 00:05:22,880
+I want to position it up here, make it look a little better.
+
+77
+00:05:23,270 --> 00:05:33,170
+So let's add nav dash button and let's take away the borders of water.
+
+78
+00:05:33,170 --> 00:05:33,680
+None.
+
+79
+00:05:34,850 --> 00:05:37,070
+And this applies to both buttons.
+
+80
+00:05:38,180 --> 00:05:39,350
+So bored or none.
+
+81
+00:05:39,350 --> 00:05:41,630
+And then the background, we want to get rid of that grey.
+
+82
+00:05:41,630 --> 00:05:44,000
+So we're going to set it to transparent.
+
+83
+00:05:44,420 --> 00:05:47,450
+We're also going to make sure the cursor is a pointer.
+
+84
+00:05:47,450 --> 00:05:51,170
+And let's set the font size to a little bit bigger.
+
+85
+00:05:51,170 --> 00:05:52,220
+Twenty pixels.
+
+86
+00:05:53,000 --> 00:05:55,160
+So that's the nav button, which is on both.
+
+87
+00:05:55,170 --> 00:05:58,880
+Now let's do just the open button, so open dash button.
+
+88
+00:05:59,450 --> 00:06:03,110
+And for that we want to position that fixed within the viewport.
+
+89
+00:06:03,380 --> 00:06:04,610
+So position fixed.
+
+90
+00:06:04,610 --> 00:06:10,880
+And I want it to be ten pixels from the top and ten pixels from the left which is going to place it
+
+91
+00:06:10,880 --> 00:06:12,200
+right up here in the corner.
+
+92
+00:06:14,030 --> 00:06:19,610
+So for the nav now remember this three NAVs here.
+
+93
+00:06:19,610 --> 00:06:26,240
+So we're going to style the nav and then each color because it's going to come out to a certain point
+
+94
+00:06:26,240 --> 00:06:27,920
+so we can see all three colors.
+
+95
+00:06:28,370 --> 00:06:38,690
+So let's do the nav first so the nav class and that's going to be position fixed and we want it to be
+
+96
+00:06:38,690 --> 00:06:40,610
+right, right in the top corner.
+
+97
+00:06:40,610 --> 00:06:44,540
+So top zero left zero.
+
+98
+00:06:45,260 --> 00:06:47,510
+OK, so you're going to see that move up if you save.
+
+99
+00:06:47,960 --> 00:06:51,620
+And then the height of this is going to be the entire viewport.
+
+100
+00:06:51,620 --> 00:06:53,300
+So 100 viewport heights.
+
+101
+00:06:53,900 --> 00:06:54,380
+All right.
+
+102
+00:06:54,380 --> 00:07:02,990
+And then as far as you know, the sliding effect here, the way we do that is with a transition on the
+
+103
+00:07:02,990 --> 00:07:11,270
+transform property using translate excuse, translate X effects, you know, moving along the X axis,
+
+104
+00:07:11,270 --> 00:07:13,040
+which is the horizontal axis.
+
+105
+00:07:13,040 --> 00:07:18,860
+So let's add a transform here and let's say we want to translate on the x axis.
+
+106
+00:07:19,400 --> 00:07:24,830
+And to start off, we want it to be way over to the left off the screen, which will do negative one
+
+107
+00:07:24,830 --> 00:07:31,100
+hundred percent, which brings it off the screen now to have it come in.
+
+108
+00:07:31,100 --> 00:07:34,790
+What's going to happen is we're going to add the class of visible to each of these.
+
+109
+00:07:34,790 --> 00:07:36,380
+I'm just going to add it manually now.
+
+110
+00:07:36,380 --> 00:07:41,390
+But later on, we'll remove this and we'll just have it done with JavaScript.
+
+111
+00:07:42,080 --> 00:07:46,340
+But just so we can see it, we're going to set visible on all three of those, make sure it's on all
+
+112
+00:07:46,340 --> 00:07:46,820
+three.
+
+113
+00:07:47,240 --> 00:07:49,640
+And then what we'll do is take NAV.
+
+114
+00:07:49,640 --> 00:07:58,970
+And if it has a class of visible, then I'm going to copy this transform here and set it back to its
+
+115
+00:07:58,970 --> 00:08:00,740
+normal position, which is zero.
+
+116
+00:08:01,280 --> 00:08:04,760
+So now we can see it because visible is on all three of those.
+
+117
+00:08:05,930 --> 00:08:10,730
+Now we want it to have a smooth transition when it switches from this to this and back.
+
+118
+00:08:10,730 --> 00:08:15,800
+So we'll set a transition on the transform property.
+
+119
+00:08:16,340 --> 00:08:19,760
+And let's do point three seconds for the duration.
+
+120
+00:08:19,760 --> 00:08:22,970
+So how long it takes and then ease in out.
+
+121
+00:08:23,450 --> 00:08:23,780
+All right.
+
+122
+00:08:23,780 --> 00:08:26,660
+So I think that that's all we're going to do in this video.
+
+123
+00:08:26,660 --> 00:08:31,400
+And the next one will continue with the styling and then we'll add the JavaScript so we can make the
+
+124
+00:08:31,400 --> 00:08:33,560
+the open and close buttons function.

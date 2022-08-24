@@ -1,0 +1,667 @@
+1
+00:00:00,150 --> 00:00:04,770
+OK, so we're going to get started on our FAA cue project, so I just have my project starter, but
+
+2
+00:00:04,770 --> 00:00:07,360
+I also have a link to the font awesome CD.
+
+3
+00:00:07,380 --> 00:00:15,230
+And so you can, you know, grab this from the repository or from font, awesome dot com or from CBSNews.com.
+
+4
+00:00:15,660 --> 00:00:25,020
+And then for the title here, let's say F a Q and then in the body we're going to have an H1 and say
+
+5
+00:00:26,310 --> 00:00:32,930
+frequently asked questions and write under the one we're going to have a container.
+
+6
+00:00:32,940 --> 00:00:37,160
+Let's call this fake new dash container.
+
+7
+00:00:40,320 --> 00:00:44,340
+And inside here we're going to have our fake new device.
+
+8
+00:00:44,520 --> 00:00:48,690
+And whichever ones are showing the answer, we'll have a class of active.
+
+9
+00:00:50,310 --> 00:00:54,000
+OK, so I'm only going to put active on the first one for now.
+
+10
+00:00:54,210 --> 00:00:56,630
+And you can have more than one active at the same time.
+
+11
+00:00:56,640 --> 00:01:02,510
+It's not like they're the expanding, you know, the expanding tabs that we did or expanding cards,
+
+12
+00:01:02,520 --> 00:01:02,860
+whatever.
+
+13
+00:01:03,330 --> 00:01:06,540
+So in here in the queue, we're going to have a title.
+
+14
+00:01:06,540 --> 00:01:18,510
+So each three dot F.A.A. Q Dash title, let's say, why shouldn't we trust atoms?
+
+15
+00:01:19,350 --> 00:01:24,630
+And then we're going to have a paragraph of the class of fake Q Dasch text.
+
+16
+00:01:25,410 --> 00:01:27,320
+And this will basically be the answer.
+
+17
+00:01:27,330 --> 00:01:30,070
+We'll say they make up everything.
+
+18
+00:01:30,090 --> 00:01:31,920
+So these are just like stupid little jokes.
+
+19
+00:01:33,150 --> 00:01:35,040
+Of course you can change it to whatever you like.
+
+20
+00:01:35,370 --> 00:01:36,510
+Then we want our button.
+
+21
+00:01:36,520 --> 00:01:42,360
+Now we're going to have either a Chevron, either Chevron down button.
+
+22
+00:01:42,540 --> 00:01:47,400
+If it's retracted and if it's expanded, we'll have an X button or times button.
+
+23
+00:01:47,410 --> 00:01:49,110
+So let's do an eye tag here.
+
+24
+00:01:49,680 --> 00:01:50,970
+So fast font.
+
+25
+00:01:50,970 --> 00:01:51,480
+Awesome.
+
+26
+00:01:51,480 --> 00:01:55,230
+Efate dash, Chevron dash down.
+
+27
+00:01:55,680 --> 00:02:01,740
+And under that we're going to have an FAA dash times, which is an X.
+
+28
+00:02:02,490 --> 00:02:04,830
+OK, so if I save this, it's going to look like that.
+
+29
+00:02:06,870 --> 00:02:10,680
+Now we're going to have three more of these or four total.
+
+30
+00:02:10,890 --> 00:02:12,420
+So I'm just going to paste these in.
+
+31
+00:02:12,420 --> 00:02:18,840
+I'm going to go still within the container, but right under the first fake hair and paste these in
+
+32
+00:02:18,840 --> 00:02:19,650
+and save.
+
+33
+00:02:19,650 --> 00:02:23,130
+And I can see we just have actually we have five total.
+
+34
+00:02:25,050 --> 00:02:29,700
+OK, so I mean you can grab these if you don't want to just copy them from here, you can grab them
+
+35
+00:02:29,700 --> 00:02:32,220
+from the final repository.
+
+36
+00:02:32,530 --> 00:02:32,880
+All right.
+
+37
+00:02:32,880 --> 00:02:37,770
+But basically they're just an F a Q with a title text and the two buttons.
+
+38
+00:02:38,170 --> 00:02:39,990
+So now it's jumping to the stylesheet.
+
+39
+00:02:40,530 --> 00:02:44,460
+And as far as the font goes, I'm going to use the Mully font.
+
+40
+00:02:44,460 --> 00:02:51,480
+So I'm going to say success, questionmark family and set that equal to Muli.
+
+41
+00:02:52,020 --> 00:02:54,300
+And then let's in the body set that font
+
+42
+00:02:57,780 --> 00:03:01,710
+and we could do this like display flex to center and all that.
+
+43
+00:03:01,710 --> 00:03:04,500
+But I'm going to just center it directly on the container.
+
+44
+00:03:04,500 --> 00:03:10,140
+So I'm just going to add a background color here of F zero three times, which is like gray.
+
+45
+00:03:10,620 --> 00:03:20,430
+And then for the H1, let's set a margin will do 50 pixels, top zero and then 30 pixels.
+
+46
+00:03:20,430 --> 00:03:26,970
+And I want to text line that to the center and then let's center the container.
+
+47
+00:03:26,980 --> 00:03:32,160
+So remember, we have a Q dash container
+
+48
+00:03:34,560 --> 00:03:46,580
+and for that let's set a max width of 600 pixels and to keep it in the middle, because right now can
+
+49
+00:03:46,600 --> 00:03:47,800
+see it stuck to the edge.
+
+50
+00:03:47,800 --> 00:03:48,870
+You want to keep it in the middle.
+
+51
+00:03:48,870 --> 00:03:55,590
+So we'll set a margin zero for top and bottom and auto on the left and right, which is going to keep
+
+52
+00:03:55,590 --> 00:03:57,480
+it in the middle of that six hundred pixels.
+
+53
+00:03:58,290 --> 00:03:58,660
+All right.
+
+54
+00:03:58,680 --> 00:04:03,660
+So for each F a Q, we want to add some styles.
+
+55
+00:04:03,660 --> 00:04:07,410
+So let's add a background color of transparent.
+
+56
+00:04:08,190 --> 00:04:12,660
+Basically, the active one is going to have a white background, but the ones that are active are going
+
+57
+00:04:12,660 --> 00:04:13,680
+to be transparent.
+
+58
+00:04:14,400 --> 00:04:17,910
+And let's set the border to one pixel solid.
+
+59
+00:04:17,910 --> 00:04:26,220
+And for the color, we're going to use nine F A for a eight, gives it a border.
+
+60
+00:04:26,550 --> 00:04:32,670
+Also going to add a border radius of ten pixels, make the corners a little rounded margin.
+
+61
+00:04:32,670 --> 00:04:36,930
+Let's do twenty pixels on the top and bottom there on the left and right.
+
+62
+00:04:37,410 --> 00:04:39,750
+That will separate them out then for padding.
+
+63
+00:04:40,170 --> 00:04:40,500
+Oops.
+
+64
+00:04:41,730 --> 00:04:42,690
+For padding.
+
+65
+00:04:42,690 --> 00:04:49,770
+Let's do thirty pixels all the way around and I'm going to position this relative so that we can position
+
+66
+00:04:49,770 --> 00:04:58,370
+stuff absolute within the Q and let's add an overflow of hidden so that nothing comes out of the container.
+
+67
+00:04:58,770 --> 00:04:59,790
+Also we want to.
+
+68
+00:05:00,410 --> 00:05:10,460
+Transition when we open and close or expand and collapse, so let's add a transition and just to zero
+
+69
+00:05:10,460 --> 00:05:12,020
+point three seconds each.
+
+70
+00:05:12,080 --> 00:05:16,310
+So basically anything that's that that can transition will in this amount of time.
+
+71
+00:05:16,610 --> 00:05:20,900
+Now for the FAA cue that's active, let's say FAA cue.
+
+72
+00:05:20,900 --> 00:05:29,600
+If it has a class of active, then I want to set a background color of white and the first one is active.
+
+73
+00:05:29,610 --> 00:05:30,950
+So it's background color of why.
+
+74
+00:05:30,950 --> 00:05:38,090
+I also want to give it a background icon or actually to background icons positioned in a certain way.
+
+75
+00:05:38,360 --> 00:05:46,460
+Now we know how to put font awesome icons in directly in the HTML with specific classes we can also
+
+76
+00:05:46,460 --> 00:05:47,210
+insert them with.
+
+77
+00:05:47,890 --> 00:05:56,330
+So if you've never done this before, if we go to font awesome dotcom and we search for an icon, I
+
+78
+00:05:56,330 --> 00:05:57,410
+won't comment.
+
+79
+00:05:59,920 --> 00:06:07,540
+And let's check out this right, and actually this this one right here comment, so if you notice,
+
+80
+00:06:07,550 --> 00:06:10,590
+it gives you the class so we can directly insert it in the H2O.
+
+81
+00:06:10,600 --> 00:06:15,070
+We also get this Unicode value of F zero seven five.
+
+82
+00:06:15,070 --> 00:06:16,900
+Every icon has a different value.
+
+83
+00:06:17,870 --> 00:06:23,170
+So we can actually use this to insert an icon using success.
+
+84
+00:06:24,220 --> 00:06:30,580
+So I want to have actually two of these common icons as a background here on active.
+
+85
+00:06:31,410 --> 00:06:35,340
+Well, one thing I did forget is the box shadow, which I'm just going to paste in.
+
+86
+00:06:35,350 --> 00:06:42,490
+So it's just two shadows with zero on the horizontal offset, three on the vertical, six blur, and
+
+87
+00:06:42,490 --> 00:06:45,160
+then this is the color and then a second shadow.
+
+88
+00:06:45,670 --> 00:06:49,240
+So just so it looks like it's coming off the page a little bit.
+
+89
+00:06:50,140 --> 00:06:57,430
+But back to the to the icons where I'm going to add the CSFs for this is on the before and after pseudo
+
+90
+00:06:57,430 --> 00:06:59,630
+selector for fake active.
+
+91
+00:06:59,980 --> 00:07:07,840
+So if I had to say colon colon before I can pass in a content value here and I can put anything I want,
+
+92
+00:07:07,840 --> 00:07:08,050
+like.
+
+93
+00:07:08,050 --> 00:07:08,540
+Hello.
+
+94
+00:07:08,920 --> 00:07:13,210
+So before this fake U active you can see it's inserting Halo.
+
+95
+00:07:13,210 --> 00:07:14,620
+I can also use after.
+
+96
+00:07:14,980 --> 00:07:22,680
+So I'm going to also say f a Q active after and now you can see Halo after it.
+
+97
+00:07:23,470 --> 00:07:31,120
+Now instead of using text here for content, we're going to put in that Unicode character.
+
+98
+00:07:31,150 --> 00:07:37,030
+Now when you use font awesome like this and you put in the Unicode, you want to use backslash and then
+
+99
+00:07:37,030 --> 00:07:41,240
+whatever the code is, which in our case is F zero seven five.
+
+100
+00:07:41,650 --> 00:07:47,110
+Now, if I just save that, we're just going to see this square because we need to include the font
+
+101
+00:07:47,860 --> 00:07:49,420
+family for font.
+
+102
+00:07:49,420 --> 00:07:49,930
+Awesome.
+
+103
+00:07:50,110 --> 00:07:53,410
+Which is actually going to be font space.
+
+104
+00:07:53,410 --> 00:07:56,350
+Awesome space five space free.
+
+105
+00:07:57,080 --> 00:08:02,010
+And now if I save that, you can see that I've inserted those two icons.
+
+106
+00:08:02,710 --> 00:08:04,450
+Now we obviously want to style this.
+
+107
+00:08:04,450 --> 00:08:12,260
+Let's go ahead and add a color here of hexadecimal to E, C, C, seven one.
+
+108
+00:08:14,080 --> 00:08:15,960
+OK, gives it that green color.
+
+109
+00:08:16,240 --> 00:08:24,360
+Let's set the font size and let's put that to seven REM units, which makes it much bigger.
+
+110
+00:08:25,330 --> 00:08:34,130
+So it's basically seven times whatever the root HTML element font size is, which initially is sixteen
+
+111
+00:08:34,150 --> 00:08:34,780
+pixels.
+
+112
+00:08:35,950 --> 00:08:40,780
+So in addition to that we want to position oops, what the heck is that.
+
+113
+00:08:41,830 --> 00:08:43,990
+We want to position absolute
+
+114
+00:08:46,570 --> 00:08:47,770
+and let's set.
+
+115
+00:08:47,770 --> 00:08:49,420
+I don't want them to be so dark.
+
+116
+00:08:49,420 --> 00:08:54,340
+So let's set the opacity here to we'll do zero point two.
+
+117
+00:08:54,700 --> 00:09:01,480
+That's going to make them much lighter and for the position let's say from the top will do twenty pixels.
+
+118
+00:09:01,480 --> 00:09:04,090
+Remember this is for both before and after.
+
+119
+00:09:04,540 --> 00:09:09,730
+So what we're doing now is positioning, positioning them both in the same place, but then we'll grab
+
+120
+00:09:09,730 --> 00:09:11,800
+one of them and move it a little bit.
+
+121
+00:09:12,250 --> 00:09:17,110
+So top twenty pixels left twenty pixels.
+
+122
+00:09:17,110 --> 00:09:22,210
+And if I save that it looks like there's only one, but they're actually both just in the same exact
+
+123
+00:09:22,210 --> 00:09:22,900
+position.
+
+124
+00:09:23,230 --> 00:09:30,880
+And I want to set a Z index of zero so that we make sure that it's behind everything else.
+
+125
+00:09:31,510 --> 00:09:34,570
+Now like I said, they're both in the same position.
+
+126
+00:09:34,570 --> 00:09:36,820
+So what I'll do is take the one that's before.
+
+127
+00:09:36,820 --> 00:09:44,920
+So I'm just going to grab this class for this selector and I'm going to change the color of it to let's
+
+128
+00:09:44,920 --> 00:09:49,390
+do three, four, nine, eight DB.
+
+129
+00:09:49,750 --> 00:09:55,150
+So give it a blue color and then let's set the position top.
+
+130
+00:09:55,150 --> 00:09:57,850
+So remember, it's already positioned to absolute right here.
+
+131
+00:09:57,850 --> 00:10:01,510
+So we don't have to add that here, but we want to change these coordinates.
+
+132
+00:10:01,930 --> 00:10:05,930
+So from the top, let's say negative ten pixels.
+
+133
+00:10:05,930 --> 00:10:13,450
+So it's going to move it up negative ten pixels from, you know, from the initial zero and then left.
+
+134
+00:10:13,450 --> 00:10:16,360
+Let's do negative thirty pixels.
+
+135
+00:10:16,870 --> 00:10:20,260
+So now I'll save that and you can see that that's been moved.
+
+136
+00:10:21,190 --> 00:10:28,510
+Another thing that I want to do is rotate it, because right now the little point is over here off the
+
+137
+00:10:28,510 --> 00:10:28,870
+screen.
+
+138
+00:10:28,870 --> 00:10:33,850
+I want to basically turn it around so we can use transform translate for that.
+
+139
+00:10:34,240 --> 00:10:39,550
+So let's say transform and not translate.
+
+140
+00:10:39,550 --> 00:10:43,990
+I'm sorry, rotate, because we want to rotate this on the Y axis.
+
+141
+00:10:43,990 --> 00:10:47,890
+So it's going to be rotate y and let's rotate it halfway.
+
+142
+00:10:47,890 --> 00:10:49,990
+So 180 degrees.
+
+143
+00:10:50,410 --> 00:10:54,370
+And now if I save, you can see that this blue one has been rotated.
+
+144
+00:10:54,610 --> 00:10:58,990
+Now we could have just as well used the comments icon this one.
+
+145
+00:10:58,990 --> 00:10:59,170
+Right.
+
+146
+00:10:59,260 --> 00:11:04,930
+Air, which looks very similar, and we could have just just done before and added it, but this makes
+
+147
+00:11:04,930 --> 00:11:10,990
+it a little more interesting using using, you know, multiple icons and just positioning them differently
+
+148
+00:11:10,990 --> 00:11:15,550
+so you could do whatever you want as a background here or in anything that you create.
+
+149
+00:11:16,300 --> 00:11:20,650
+So now what I want to do is the title and the text here.
+
+150
+00:11:21,460 --> 00:11:29,040
+So let's go down here and say a dash title or F a Q sorry for the title.
+
+151
+00:11:29,050 --> 00:11:34,060
+All I want to do is add margin, say zero top 35
+
+152
+00:11:36,400 --> 00:11:37,390
+35 right.
+
+153
+00:11:37,390 --> 00:11:39,340
+Zero bottom zero left.
+
+154
+00:11:40,420 --> 00:11:47,620
+And for the text say fake you dash text for this.
+
+155
+00:11:48,040 --> 00:11:53,680
+We're going to I'm just going to add a margin here of thirty pixels zero zero.
+
+156
+00:11:54,130 --> 00:11:59,230
+But I don't want this to show unless it's unless it has the active class.
+
+157
+00:11:59,240 --> 00:12:02,110
+So let's initially set this to display none.
+
+158
+00:12:02,950 --> 00:12:05,980
+And now we can't see any of the text, any of the answers.
+
+159
+00:12:06,160 --> 00:12:17,580
+However, if it's active, so fake, active and f a Q dash text, then we want to display as a block.
+
+160
+00:12:18,310 --> 00:12:21,430
+So now we can only see the answer for the one that is active.
+
+161
+00:12:22,340 --> 00:12:29,260
+OK, if I were to add active on another one like this one here, if I add that class of active that's
+
+162
+00:12:29,260 --> 00:12:34,090
+going to give it all those properties and it's going to show the question I'm sorry, the answer as
+
+163
+00:12:34,090 --> 00:12:34,440
+well.
+
+164
+00:12:36,100 --> 00:12:40,780
+Now I'm going to stop here and in the next video, we're going to handle these buttons because we only
+
+165
+00:12:40,780 --> 00:12:43,030
+want the X to show if it's active.
+
+166
+00:12:43,030 --> 00:12:47,800
+We only want the Chevron to show if it's not, we also need to style them and then we'll add a little
+
+167
+00:12:47,800 --> 00:12:52,180
+bit of JavaScript to be able to click and expand each F you.

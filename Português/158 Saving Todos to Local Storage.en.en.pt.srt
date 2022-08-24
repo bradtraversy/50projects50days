@@ -1,0 +1,467 @@
+﻿1
+00:00:00,270 --> 00:00:08,910
+OK, agora queremos basicamente salvar nosso DOS para armazenamento local e com armazenamento local, temos um
+
+2
+00:00:09,090 --> 00:00:15,990
+API do navegador que podemos usar para dizer armazenamento local, e podemos definir o Eitam usando set item.
+
+3
+00:00:16,380 --> 00:00:21,080
+Damos a ele uma chave como nome e um valor como Brad.
+
+4
+00:00:21,540 --> 00:00:22,930
+Então é assim que podemos definir um item.
+
+5
+00:00:23,270 --> 00:00:27,510
+Agora, quando você salva algo no armazenamento local, ele será salvo como uma string.
+
+6
+00:00:27,780 --> 00:00:34,560
+Se você tem um array ou um objeto ou algo assim, você pode salvá-lo, mas primeiro você precisa encapsular
+
+7
+00:00:34,560 --> 00:00:41,880
+em Jason Dortch String Afie, que fará apenas aquela pequena string de string, array de objetos mais iffier,
+
+8
+00:00:41,880 --> 00:00:42,630
+o que quer que seja.
+
+9
+00:00:42,750 --> 00:00:48,450
+E então, quando você o retira do armazenamento local, obtém algo que dizemos armazenamento local doget
+
+10
+00:00:48,450 --> 00:00:53,490
+item e digamos que é como um objeto, mas é uma string de.
+
+11
+00:00:53,850 --> 00:00:57,580
+Então, quando você o retira, deseja envolvê-lo na análise de Jason Dot.
+
+12
+00:00:58,020 --> 00:01:03,510
+OK, então você quer se lembrar desses dois quatro objetos em arrays e outras coisas, string Afie e parse.
+
+13
+00:01:04,710 --> 00:01:09,540
+OK, e para remover itens, você pode fazer armazenamento local e não remover itens.
+
+14
+00:01:09,540 --> 00:01:11,610
+Portanto, é muito fácil trabalhar com a API.
+
+15
+00:01:12,330 --> 00:01:20,340
+Agora vamos em frente e vamos começar verificando nosso armazenamento local primeiro, porque obviamente
+
+16
+00:01:20,340 --> 00:01:23,700
+se houver itens no armazenamento local, queremos que eles sejam carregados aqui.
+
+17
+00:01:24,120 --> 00:01:35,340
+Então, no topo, digamos que Duse, defina isso para armazenamento local dot get item e vamos
+
+18
+00:01:35,340 --> 00:01:36,570
+para chamá-lo para Duse.
+
+19
+00:01:37,320 --> 00:01:40,140
+Agora, como eu disse, ele será armazenado como uma string.
+
+20
+00:01:40,290 --> 00:01:43,380
+Queremos passar isso de volta para uma matriz.
+
+21
+00:01:43,380 --> 00:01:49,980
+Então digamos que Jason passe, OK, para que eles sejam colocados no DOS.
+
+22
+00:01:49,980 --> 00:01:57,090
+E então queremos dizer se há DOS no armazenamento local, então vamos em frente e percorrer
+
+23
+00:01:57,090 --> 00:01:57,660
+cada um.
+
+24
+00:01:57,660 --> 00:02:10,950
+Então, para dar suporte para cada um e dizer para cada fazer, queremos adicionar o fazer e passar o fazer OK ou então
+
+25
+00:02:10,950 --> 00:02:15,660
+se não houver, quero dizer, acho que não precisamos daquela casa, porque se houver para fazer isso, faremos isso.
+
+26
+00:02:15,660 --> 00:02:16,680
+Se não, não vai.
+
+27
+00:02:17,190 --> 00:02:19,500
+Então, se eu salvar isso, você verá que não está fazendo nada.
+
+28
+00:02:19,800 --> 00:02:26,190
+E se eu abrir minhas ferramentas de desenvolvimento aqui e for para o aplicativo, você poderá ver o que tem no local
+
+29
+00:02:26,190 --> 00:02:27,320
+armazenamento aqui.
+
+30
+00:02:28,200 --> 00:02:34,410
+Então, eu realmente tenho minhas notas vazias, array ou string uma grande variedade de outro aplicativo.
+
+31
+00:02:34,410 --> 00:02:38,610
+Neste curso, podemos limpar o armazenamento local, se quisermos.
+
+32
+00:02:38,650 --> 00:02:39,990
+Eu realmente não posso ver isso.
+
+33
+00:02:40,770 --> 00:02:45,660
+Então, se eu clicar nele, isso se livrará dele, isso limpará tudo.
+
+34
+00:02:45,900 --> 00:02:48,600
+Portanto, não há nada no armazenamento local no momento.
+
+35
+00:02:49,590 --> 00:02:52,050
+Então não é, obviamente, não vai mostrar nenhum para o DOS.
+
+36
+00:02:52,530 --> 00:03:02,550
+Agora, quando adicionamos um afazer, vamos ver, vamos até o fundo aqui e no final vamos
+
+37
+00:03:02,550 --> 00:03:04,850
+para ter uma função chamada atualizar URLs.
+
+38
+00:03:04,860 --> 00:03:07,110
+Então, vamos atualizar nosso armazenamento local.
+
+39
+00:03:07,680 --> 00:03:13,440
+E basicamente teremos apenas uma função que levará tudo para o DOS e a lista
+
+40
+00:03:13,440 --> 00:03:17,730
+item nos itens da lista e coloque-os no armazenamento local.
+
+41
+00:03:17,730 --> 00:03:23,910
+E então podemos chamar o armazenamento local de atualização quando os adicionamos, também quando comercializamos como completos ou quando
+
+42
+00:03:23,910 --> 00:03:24,770
+nós os removemos.
+
+43
+00:03:24,780 --> 00:03:31,170
+Portanto, é uma função que será executada em vários lugares, em vez de apenas ter um add para fazer e
+
+44
+00:03:31,170 --> 00:03:35,430
+em seguida, uma remoção para fazer e, em seguida, fazer nosso armazenamento local em funções separadas.
+
+45
+00:03:35,880 --> 00:03:37,770
+Então, digamos atualize outra coisa.
+
+46
+00:03:38,910 --> 00:03:41,640
+E como eu disse, vamos pegar todos os itens da lista.
+
+47
+00:03:42,000 --> 00:03:51,150
+Então, para o DOS, digamos para o elemento DOS no plural e defina-o como document e, em seguida, usaremos o seletor de consulta
+
+48
+00:03:51,150 --> 00:03:56,670
+tudo porque estamos selecionando todos os itens da lista que os colocarão em uma lista de nós semelhante
+
+49
+00:03:56,670 --> 00:03:57,440
+a uma matriz.
+
+50
+00:03:57,750 --> 00:04:06,720
+Eu também vou inicializar um array para DOS e o que eu quero fazer, sem trocadilhos, é levar o
+
+51
+00:04:06,720 --> 00:04:14,850
+Elemento DOS, que são todos os nossos elementos, que são todos os itens da lista, e eu quero percorrer
+
+52
+00:04:14,850 --> 00:04:15,180
+Essa.
+
+53
+00:04:15,180 --> 00:04:19,590
+Então, para cada um fazer elementos.
+
+54
+00:04:20,760 --> 00:04:26,760
+Então, para cada um deles, quero levar isso para o DOS Array que acabei de inicializar e quero enviar
+
+55
+00:04:26,760 --> 00:04:27,390
+para isso.
+
+56
+00:04:27,690 --> 00:04:32,490
+E o que eu quero enviar é um objeto que tenha um valor de texto.
+
+57
+00:04:32,490 --> 00:04:40,820
+Então, texto para a chave e, em seguida, para fazer elementos do atual, para fazer intertexto, o que estiver no interior
+
+58
+00:04:40,860 --> 00:04:42,260
+texto vai ser colocado lá.
+
+59
+00:04:42,570 --> 00:04:49,380
+Também queremos saber se foi concluído, então teremos uma propriedade concluída aqui com o elemento a fazer,
+
+60
+00:04:49,380 --> 00:04:50,430
+certifique-se de que é singular.
+
+61
+00:04:50,430 --> 00:04:52,890
+É isso específico para fazer no loop.
+
+62
+00:04:53,460 --> 00:04:56,880
+Queremos ver se a classe contém isso.
+
+63
+00:04:56,880 --> 00:04:58,770
+Lista de classes que contém.
+
+64
+00:05:01,330 --> 00:05:08,380
+E queremos ver se ele contém a classe de concluído, se ele contém, então isso será verdade.
+
+65
+00:05:08,380 --> 00:05:10,180
+Se isso não acontecer, então será falso.
+
+66
+00:05:10,930 --> 00:05:11,470
+Tudo bem.
+
+67
+00:05:11,500 --> 00:05:18,550
+Então, agora que temos isso para fazer empurrando tudo o que está no item da lista, vamos atualizar o armazenamento local.
+
+68
+00:05:18,550 --> 00:05:25,300
+Então, depois disso, para cada um que termina aqui, vamos pegar o armazenamento local e dizer set item.
+
+69
+00:05:26,440 --> 00:05:32,950
+E queremos definir isso como Duse e será o dos Arae.
+
+70
+00:05:32,950 --> 00:05:36,370
+No entanto, isso é que vai ser uma matriz.
+
+71
+00:05:36,370 --> 00:05:40,320
+Então, precisamos envolver isso em uma sequência de pontos de cinco primeiro.
+
+72
+00:05:41,140 --> 00:05:44,470
+Então, queremos envolver o DOS nisso e depois armazenar no armazenamento local.
+
+73
+00:05:45,550 --> 00:05:45,940
+Tudo bem.
+
+74
+00:05:45,940 --> 00:05:55,750
+Então agora se eu salvar e eles forem aqui e eu disser para fazer uma entrada, você pode ver que ela é adicionada aqui
+
+75
+00:05:55,750 --> 00:05:56,770
+no armazenamento local.
+
+76
+00:05:56,770 --> 00:06:00,940
+O valor parece um array, mas um array de objetos.
+
+77
+00:06:00,940 --> 00:06:02,290
+Mas na verdade é uma corda.
+
+78
+00:06:02,290 --> 00:06:03,160
+É estratificado.
+
+79
+00:06:03,580 --> 00:06:11,710
+Mas quando o retiramos aqui, passamos de volta para uma matriz e depois seguimos em frente e percorremos
+
+80
+00:06:11,710 --> 00:06:12,610
+e mostramos aqui.
+
+81
+00:06:12,640 --> 00:06:20,830
+Então agora se eu recarregar para fazer o que ainda está lá agora, se eu comercializar como completo, funciona no DOM.
+
+82
+00:06:20,830 --> 00:06:26,500
+Mas se eu recarregar, não é marcado como concluído porque não atualizamos o armazenamento local quando marcamos
+
+83
+00:06:26,500 --> 00:06:27,250
+ele como completo.
+
+84
+00:06:27,260 --> 00:06:28,150
+Então vamos fazer isso.
+
+85
+00:06:28,150 --> 00:06:31,510
+Vamos descer para ver.
+
+86
+00:06:31,900 --> 00:06:35,830
+Então aqui nós alternamos a classe de completo.
+
+87
+00:06:35,830 --> 00:06:38,260
+Na verdade, queremos mudar isso para ser um bloco de código.
+
+88
+00:06:38,920 --> 00:06:42,580
+Então nós queremos nossas chaves porque vai ser mais de uma linha.
+
+89
+00:06:43,970 --> 00:06:49,940
+Tudo bem, então depois de marcarmos como concluído, vamos chamar o armazenamento local, queremos fazer o mesmo
+
+90
+00:06:49,940 --> 00:06:51,010
+coisa quando removemos.
+
+91
+00:06:51,020 --> 00:06:55,080
+Então, logo após a remoção, queremos chamar o armazenamento local de atualização.
+
+92
+00:06:55,700 --> 00:06:59,380
+Então agora, se eu fosse adicionar outro.
+
+93
+00:06:59,390 --> 00:07:00,680
+Vamos ver para fazer dois.
+
+94
+00:07:01,640 --> 00:07:07,190
+E se eu seguir em frente e marcar isso como completo, isso deve mudar aqui.
+
+95
+00:07:07,190 --> 00:07:10,090
+E você pode ver aqui para fazer um completo é falso.
+
+96
+00:07:10,100 --> 00:07:12,150
+Se eu clicar, isso muda para true.
+
+97
+00:07:12,860 --> 00:07:18,320
+E agora, se eu recarregar, ainda está lá porque está novamente, está buscando no armazenamento local.
+
+98
+00:07:19,070 --> 00:07:20,270
+Se eu remover.
+
+99
+00:07:20,270 --> 00:07:20,660
+Então se eu.
+
+100
+00:07:20,660 --> 00:07:20,900
+Certo.
+
+101
+00:07:20,900 --> 00:07:24,800
+Clique aqui e recarregue e veja que ainda sumiu.
+
+102
+00:07:24,800 --> 00:07:25,010
+Certo.
+
+103
+00:07:25,010 --> 00:07:25,820
+Clique novamente.
+
+104
+00:07:25,820 --> 00:07:27,650
+Isso também atualiza o armazenamento local.
+
+105
+00:07:27,660 --> 00:07:31,100
+Então nós temos essa função que cuida.
+
+106
+00:07:31,100 --> 00:07:32,480
+Podemos simplesmente colocá-lo em qualquer lugar.
+
+107
+00:07:32,480 --> 00:07:39,530
+Queremos atualizar o armazenamento local a qualquer momento com base nos itens da lista e se eles estiverem, você
+
+108
+00:07:39,530 --> 00:07:40,640
+sabe, concluído ou não.
+
+109
+00:07:41,540 --> 00:07:41,900
+Tudo bem.
+
+110
+00:07:41,900 --> 00:07:43,220
+Então, espero que isso faça sentido.
+
+111
+00:07:43,220 --> 00:07:48,470
+Eu acho que é uma quantidade decente de funcionalidade para uma quantidade tão pequena de código.
+
+112
+00:07:48,650 --> 00:07:53,900
+E eu encorajo você a criar um tipo diferente de vape, talvez um rastreador de treino ou algo como
+
+113
+00:07:53,900 --> 00:07:59,150
+isso com, você sabe, mais campos e um design diferente e talvez adicionar alguma outra funcionalidade como
+
+114
+00:07:59,150 --> 00:08:02,480
+update para que você também possa atualizar o recurso.
+
+115
+00:08:02,900 --> 00:08:03,200
+Tudo bem.
+
+116
+00:08:03,200 --> 00:08:03,890
+Então é isso, galera.
+
+117
+00:08:03,890 --> 00:08:06,800
+Espero que tenham gostado e nos vemos no próximo vídeo.

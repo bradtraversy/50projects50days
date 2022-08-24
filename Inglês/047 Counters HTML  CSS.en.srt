@@ -1,0 +1,263 @@
+1
+00:00:00,180 --> 00:00:04,710
+All right, let's get started on our increment counter so I have my project.
+
+2
+00:00:05,190 --> 00:00:06,240
+I also have a link to font.
+
+3
+00:00:06,240 --> 00:00:12,480
+Awesome, because we will be adding the social media icons, which, of course, is optional and let's
+
+4
+00:00:12,480 --> 00:00:16,350
+say increment counter.
+
+5
+00:00:16,350 --> 00:00:26,470
+And in the body here, we're going to have three divs at the class of counter dash container.
+
+6
+00:00:26,970 --> 00:00:31,380
+OK, so in this kind of container, we're going to have the icon.
+
+7
+00:00:31,380 --> 00:00:33,180
+So let's do an eye tag now.
+
+8
+00:00:33,180 --> 00:00:39,870
+When you use social media icons with font, awesome, it's fab class instead of fax and then F.A.A.
+
+9
+00:00:39,870 --> 00:00:42,330
+dash and this one is going to be Twitter.
+
+10
+00:00:43,560 --> 00:00:45,720
+And I'm going to make it a little bigger with font.
+
+11
+00:00:45,720 --> 00:00:46,110
+Awesome.
+
+12
+00:00:46,110 --> 00:00:48,710
+You can also add the class of a dash.
+
+13
+00:00:48,720 --> 00:00:56,820
+Let's do three x, so three times the normal size and then we're going to have a class of counter and
+
+14
+00:00:56,850 --> 00:00:59,170
+this is where the number is going to go.
+
+15
+00:00:59,190 --> 00:01:07,740
+However, right now I'm just going to hardcoded, but it's ultimately going to come from a an attribute,
+
+16
+00:01:07,740 --> 00:01:15,210
+a data attribute that we're going to call data target and we're going to set that to twelve twelve thousand
+
+17
+00:01:16,350 --> 00:01:17,730
+instead of two, whatever you want.
+
+18
+00:01:18,330 --> 00:01:25,870
+And then we're going to have a span with just the text that this is the Twitter followers, OK?
+
+19
+00:01:25,950 --> 00:01:30,520
+And we're going to have two more of these and you can have as many counters as you want.
+
+20
+00:01:31,470 --> 00:01:34,620
+So the second one here is going to be YouTube.
+
+21
+00:01:36,060 --> 00:01:40,230
+And this lets say this will be 5000.
+
+22
+00:01:43,780 --> 00:01:51,280
+And the date of Target 5000 and let's change Twitter followers to YouTube
+
+23
+00:01:53,530 --> 00:02:03,040
+subscribers and then this one down here, let's make this Facebook and then four followers or fans,
+
+24
+00:02:03,040 --> 00:02:03,990
+whatever will do.
+
+25
+00:02:04,000 --> 00:02:16,180
+Seventy five hundred and seventy five hundred will change this text here to Facebook fans.
+
+26
+00:02:16,780 --> 00:02:17,190
+All right.
+
+27
+00:02:17,830 --> 00:02:19,190
+So that's what it's going to look like now.
+
+28
+00:02:19,210 --> 00:02:21,070
+Let's go ahead and style this stuff.
+
+29
+00:02:21,970 --> 00:02:25,080
+So the font I want to use is Raboteau mono.
+
+30
+00:02:25,510 --> 00:02:31,840
+So up here, I would say success question mark and then let's change.
+
+31
+00:02:32,550 --> 00:02:33,570
+We'll get rid of this.
+
+32
+00:02:34,030 --> 00:02:44,200
+So the family is going to be Rebadow plus mono like that, and then we'll change the font family here
+
+33
+00:02:44,200 --> 00:02:46,170
+to Raboteau mono.
+
+34
+00:02:47,440 --> 00:02:53,140
+OK, is it kind of that typewriter look and then let's add a background color here.
+
+35
+00:02:53,470 --> 00:02:57,070
+So background color is going to be a purplish color.
+
+36
+00:02:57,080 --> 00:03:03,250
+So h e for for add it will make the text white.
+
+37
+00:03:06,940 --> 00:03:14,630
+And then let's see if Filloux Direction column, I'm going to get rid of that, I actually want it to
+
+38
+00:03:14,630 --> 00:03:19,910
+be I want it to look like this, except on you know, when it's on small screens, it'll go this way.
+
+39
+00:03:20,060 --> 00:03:22,640
+So we'll just add a media query at the end.
+
+40
+00:03:23,780 --> 00:03:27,380
+So let's set a line item.
+
+41
+00:03:27,390 --> 00:03:28,050
+That's good.
+
+42
+00:03:28,070 --> 00:03:28,330
+All right.
+
+43
+00:03:28,340 --> 00:03:38,000
+So the counter container counter dash container, I'm going to display flex.
+
+44
+00:03:39,260 --> 00:03:41,910
+And this I want to display as a column.
+
+45
+00:03:41,930 --> 00:03:46,780
+Remember, the counter container is each one of these which we're making a flex box and we don't want
+
+46
+00:03:46,790 --> 00:03:47,420
+to go this way.
+
+47
+00:03:47,420 --> 00:03:49,640
+We want them to be stacked on top of each other.
+
+48
+00:03:49,880 --> 00:04:00,440
+So let's set the flex direction there to column and let's justify content center and let's add a margin.
+
+49
+00:04:00,890 --> 00:04:06,620
+So just to add some spacing, we'll do 30 pixels, top and bottom, 50 left and right.
+
+50
+00:04:08,420 --> 00:04:16,500
+And then let's see for the counter, class or counter, I'm going to set the font size.
+
+51
+00:04:16,520 --> 00:04:20,210
+This is the you know, the text that's going to increment.
+
+52
+00:04:20,210 --> 00:04:23,630
+I'm going to set that to 60 pixels are going to make that quite big.
+
+53
+00:04:24,020 --> 00:04:29,570
+And then let's add a margin, top of ten pixels.
+
+54
+00:04:31,550 --> 00:04:37,040
+And it's also a line in the in the container here.
+
+55
+00:04:37,040 --> 00:04:37,840
+Count a container.
+
+56
+00:04:37,850 --> 00:04:44,550
+Let's do a text, a line of text dash line to the center.
+
+57
+00:04:45,710 --> 00:04:45,990
+Good.
+
+58
+00:04:47,990 --> 00:04:52,250
+Now, when it's on small screens like this, I want it to go the other way.
+
+59
+00:04:52,250 --> 00:05:00,050
+So let's create a media query here by saying at media and a max width of, let's say five eighty.
+
+60
+00:05:01,560 --> 00:05:10,370
+So meaning anything under five eighty pixels, then I want the body flex direction to be a column instead
+
+61
+00:05:10,370 --> 00:05:10,940
+of a row.
+
+62
+00:05:11,670 --> 00:05:11,990
+All right.
+
+63
+00:05:11,990 --> 00:05:12,670
+So there we go.
+
+64
+00:05:14,330 --> 00:05:18,230
+Now, we don't need to have these these hard coded numbers in here.
+
+65
+00:05:18,230 --> 00:05:23,620
+We can get rid of these because that's going to be input by the JavaScript.
+
+66
+00:05:23,630 --> 00:05:27,470
+So in the next video, we'll jump into our script JS and we'll continue with that.

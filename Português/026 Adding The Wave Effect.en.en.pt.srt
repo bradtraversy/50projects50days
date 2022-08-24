@@ -1,0 +1,495 @@
+﻿1
+00:00:00,150 --> 00:00:08,100
+OK, então vamos terminar este formulário, então vou trabalhar nos rótulos aqui, então aqui embaixo
+
+2
+00:00:08,100 --> 00:00:14,850
+vamos apenas pegar rótulos de controle de formulário e queremos posicioná-los para serem absolutos
+
+3
+00:00:16,980 --> 00:00:20,480
+e absoluto.
+
+4
+00:00:21,330 --> 00:00:28,860
+E isso porque o próprio controle de formulário é relativo ou posicionamento absoluto dentro dele.
+
+5
+00:00:29,460 --> 00:00:33,890
+E vamos colocar do topo 15 pixels e do zero esquerdo.
+
+6
+00:00:34,710 --> 00:00:39,420
+Agora, agora mesmo, do jeito que está, se eu começar a digitar aqui, vai apenas cobrir o rótulo.
+
+7
+00:00:39,870 --> 00:00:43,920
+Mas, em última análise, o rótulo vai acenar para cima quando clicarmos aqui.
+
+8
+00:00:44,550 --> 00:00:45,020
+Tudo bem.
+
+9
+00:00:45,060 --> 00:00:52,890
+Agora, antes de realmente estilizar o intervalo, quero adicioná-lo, porque agora não há intervalo.
+
+10
+00:00:52,890 --> 00:00:54,210
+Você sabe, nós não temos isso.
+
+11
+00:00:54,210 --> 00:00:56,400
+É apenas rótulo e depois a palavra.
+
+12
+00:00:56,640 --> 00:01:01,730
+Então, vamos usar JavaScript para basicamente transformar isso nisso.
+
+13
+00:01:02,010 --> 00:01:06,570
+Então vamos pular para o nosso script, JS E a primeira coisa que queremos fazer é trazer nossos rótulos.
+
+14
+00:01:07,320 --> 00:01:14,880
+Então vamos usar document dot, query selector tudo porque não importa quantos rótulos queremos
+
+15
+00:01:14,880 --> 00:01:22,770
+para obter todos os rótulos de controle de traço formados e isso nos dará uma lista não de todos os rótulos.
+
+16
+00:01:23,220 --> 00:01:27,030
+Então, uma vez que é uma lista não, podemos ir em frente e usar para cada um nela.
+
+17
+00:01:27,030 --> 00:01:37,830
+E diremos para cada rótulo, para cada rótulo, vou pegar o ponto do rótulo em nosso HTML e definir
+
+18
+00:01:37,830 --> 00:01:38,120
+isto.
+
+19
+00:01:38,880 --> 00:01:41,250
+Agora, primeiro, há algumas coisas que queremos fazer.
+
+20
+00:01:41,250 --> 00:01:48,030
+Queremos obter o texto interno em nosso texto, que será apenas, você sabe, cada letra.
+
+21
+00:01:48,360 --> 00:01:52,230
+Então e-mail neste caso para o primeiro.
+
+22
+00:01:52,680 --> 00:01:54,800
+E então eu vou dividi-lo em uma matriz.
+
+23
+00:01:54,810 --> 00:01:57,350
+Vou passar para a próxima linha e ligar para DOT split.
+
+24
+00:01:57,870 --> 00:02:03,900
+E o que isso faz, se colocarmos uma string vazia aqui, é dividir as letras em um array.
+
+25
+00:02:03,900 --> 00:02:08,430
+Então será um array com o primeiro valor será o segundo será M e assim por diante.
+
+26
+00:02:08,940 --> 00:02:11,370
+Agora, a partir disso, quero manipulá-lo.
+
+27
+00:02:11,370 --> 00:02:19,470
+Então eu vou usar o dot map, que você pode usar em um array, que agora é para transformá-lo em um array
+
+28
+00:02:19,470 --> 00:02:20,490
+de outra coisa.
+
+29
+00:02:20,490 --> 00:02:27,150
+E o que queremos transformar agora é uma matriz de letras com uma rotação em torno dela com uma transição
+
+30
+00:02:27,150 --> 00:02:27,720
+atraso.
+
+31
+00:02:28,200 --> 00:02:35,640
+Então, digamos map e isso leva apenas uma função de seta e vamos usar táticas aqui porque
+
+32
+00:02:35,640 --> 00:02:40,020
+queremos apenas transformá-lo diretamente em uma matriz de spans que teremos aqui.
+
+33
+00:02:40,350 --> 00:02:43,410
+Mas precisamos passar aqui para cada letra.
+
+34
+00:02:43,740 --> 00:02:49,830
+E então eu também quero o índice, que começa em zero e incrementa para cada item na matriz.
+
+35
+00:02:50,280 --> 00:02:53,520
+E eu quero transformá-lo em, digamos, spane.
+
+36
+00:02:56,700 --> 00:03:00,280
+E aqui dentro, queremos ter qualquer que seja a letra.
+
+37
+00:03:01,320 --> 00:03:06,030
+Então isso vai transformá-lo em uma matriz de letras com um giro em torno dele.
+
+38
+00:03:06,060 --> 00:03:07,620
+Agora, obviamente, não queremos um array.
+
+39
+00:03:07,620 --> 00:03:13,860
+Queremos que seja uma string para que possamos usar join e apenas passar uma string vazia e isso a transformará
+
+40
+00:03:13,860 --> 00:03:15,390
+de volta em uma corda.
+
+41
+00:03:15,990 --> 00:03:20,850
+OK, basicamente temos o texto interno, então estamos percorrendo o rótulo, temos o texto interno,
+
+42
+00:03:20,850 --> 00:03:28,380
+e-mail, e-mail para o primeiro foi dividi-lo em uma matriz que colocará cada letra por conta própria
+
+43
+00:03:29,370 --> 00:03:30,420
+item na matriz.
+
+44
+00:03:30,690 --> 00:03:35,520
+Em seguida, estamos mapeando-o para criar uma matriz da letra com um intervalo em torno dela.
+
+45
+00:03:35,700 --> 00:03:37,680
+Então vamos transformá-lo de volta em uma string.
+
+46
+00:03:37,920 --> 00:03:41,670
+Então, se eu salvar isso agora, não veremos nenhuma diferença aqui.
+
+47
+00:03:41,670 --> 00:03:50,520
+Mas se eu abrir minha guia de elementos e eles clicarem no rótulo aqui, você verá que agora eles estão agrupados
+
+48
+00:03:50,520 --> 00:03:51,330
+no Span.
+
+49
+00:03:52,530 --> 00:03:55,250
+Então eu não vou adicionar o atraso, o atraso de transição ainda.
+
+50
+00:03:55,260 --> 00:03:56,790
+Vamos voltar ao nosso sucesso.
+
+51
+00:03:56,790 --> 00:04:00,510
+E agora que temos o span, podemos adicionar stot, podemos adicionar estilo para ele.
+
+52
+00:04:01,320 --> 00:04:03,110
+Então vamos ver.
+
+53
+00:04:03,150 --> 00:04:05,490
+Vamos fazer o intervalo em geral primeiro.
+
+54
+00:04:05,490 --> 00:04:09,660
+Então diremos rótulos de controle de formulário, spane.
+
+55
+00:04:10,950 --> 00:04:20,130
+E eu vou exibir vamos exibir em bloco de linha está em linha por padrão e então eu vou
+
+56
+00:04:20,130 --> 00:04:28,140
+aumentar o tamanho da fonte para dezoito pixels porque antes isso não funcionaria porque não
+
+57
+00:04:28,140 --> 00:04:29,550
+tem giros em torno deles.
+
+58
+00:04:30,750 --> 00:04:41,640
+E então vamos fazer uma largura mínima do traço de cinco pixels e vamos adicionar uma transição nisso porque
+
+59
+00:04:41,640 --> 00:04:45,270
+quando, quando adicionamos o valor de transformação, na verdade, adicionamos isso primeiro.
+
+60
+00:04:45,900 --> 00:04:57,150
+Então vamos subir aqui ou descer aqui e digamos forma, controle, entrada, foco.
+
+61
+00:04:57,150 --> 00:04:59,940
+Então foque no significado, você sabe, quando clicamos.
+
+62
+00:05:00,010 --> 00:05:07,720
+Dentro, queremos o intervalo de rótulo direto e também queremos fazer isso na validação, então vou
+
+63
+00:05:07,720 --> 00:05:09,070
+basta copiar isso.
+
+64
+00:05:09,070 --> 00:05:13,960
+E também queremos o estado válido, então insira válido.
+
+65
+00:05:15,880 --> 00:05:20,290
+E o que faremos é, primeiro, mudar a cor para azul claro.
+
+66
+00:05:21,400 --> 00:05:25,400
+Então, se eu clicar aqui, você verá que o rótulo fica azul claro.
+
+67
+00:05:25,840 --> 00:05:29,960
+Eu também quero transformar a borda em azul claro também.
+
+68
+00:05:30,370 --> 00:05:39,220
+Então, aqui em cima onde fizemos o esboço da entrada, foco e válido, vamos fazer a parte de baixo ou me desculpem
+
+69
+00:05:39,280 --> 00:05:47,610
+a borda inferior inferior e vamos definir isso ou a cor inferior da borda e definir isso para azul claro.
+
+70
+00:05:47,620 --> 00:05:53,260
+Dessa forma, quando clicamos aqui, tanto a borda quanto o texto aqui são azuis claros.
+
+71
+00:05:55,150 --> 00:06:01,290
+Agora, veja, queremos mover isso basicamente para cima quando clicarmos aqui.
+
+72
+00:06:01,690 --> 00:06:06,970
+Então, para fazer isso, podemos adicionar uma transformação e queremos usar translate.
+
+73
+00:06:06,970 --> 00:06:07,630
+Por quê?
+
+74
+00:06:07,630 --> 00:06:11,920
+Porque estamos traduzindo, estamos lidando com isso no acesso Y.
+
+75
+00:06:12,350 --> 00:06:13,350
+Então traduza o porquê.
+
+76
+00:06:13,360 --> 00:06:14,350
+E eu quero movê-lo para cima.
+
+77
+00:06:14,350 --> 00:06:15,850
+Então tem que ser um número negativo.
+
+78
+00:06:15,850 --> 00:06:17,830
+Se eu quiser movê-lo para baixo, seria positivo.
+
+79
+00:06:18,220 --> 00:06:20,230
+Então vamos fazer 30 pixels negativos.
+
+80
+00:06:20,230 --> 00:06:24,910
+Então, quando eu clico aqui, você pode ver que eles se movem para cima e apenas piscam.
+
+81
+00:06:24,910 --> 00:06:25,900
+Não é liso.
+
+82
+00:06:25,900 --> 00:06:30,180
+Então é por isso que eu vou ter que fazer a transição para a extensão aqui.
+
+83
+00:06:30,190 --> 00:06:37,960
+Então vamos dizer transição e faremos zero vírgula três segundos e então poderíamos fazer uma facilidade fácil
+
+84
+00:06:37,960 --> 00:06:38,920
+entrar, aliviar.
+
+85
+00:06:38,920 --> 00:06:43,860
+Vou usar um busia cúbico, então bezier cúbico.
+
+86
+00:06:43,870 --> 00:06:52,030
+E então para os valores aqui, basicamente o que é isso, é definir um bezier cúbico, define uma curva
+
+87
+00:06:52,360 --> 00:06:57,790
+e podemos usá-lo como efeito de transição com velocidade variável do início ao fim.
+
+88
+00:06:58,060 --> 00:07:06,460
+E leva em quatro pontos que são p0 p1 p2p três, P zero e P três de um início e o fim de
+
+89
+00:07:06,490 --> 00:07:07,050
+a curva.
+
+90
+00:07:07,510 --> 00:07:13,300
+Então, quero dizer, você pode ficar muito mais complicado se estiver fazendo animações muito legais.
+
+91
+00:07:13,300 --> 00:07:14,500
+Mas isso é bem simples.
+
+92
+00:07:14,500 --> 00:07:16,780
+Nós vamos apenas fazer alguns valores aqui.
+
+93
+00:07:16,810 --> 00:07:27,400
+Zero vírgula seis oito negativo zero vírgula cinco cinco zero vírgula dois seis cinco e um vírgula cinco cinco.
+
+94
+00:07:27,400 --> 00:07:30,040
+Então teremos uma velocidade variável nesta transição.
+
+95
+00:07:30,320 --> 00:07:34,570
+Então, se eu clicar aqui, você pode ver agora que não é apenas um movimento rápido.
+
+96
+00:07:34,570 --> 00:07:36,990
+Tem aquele legal, quase como um efeito de salto.
+
+97
+00:07:39,040 --> 00:07:42,130
+Agora, não queremos que tudo suba de uma vez.
+
+98
+00:07:42,130 --> 00:07:43,030
+Você poderia fazer isso.
+
+99
+00:07:43,030 --> 00:07:45,100
+Quer dizer, você pode deixar assim se quiser.
+
+100
+00:07:45,730 --> 00:07:48,250
+Mas eu quero ter esse efeito de onda.
+
+101
+00:07:48,270 --> 00:07:56,500
+Então é aí que entra o atraso da transição, porque já temos a transição e ela está em transição
+
+102
+00:07:56,500 --> 00:08:01,000
+isso aqui, a transformação traduz onde ela sobe.
+
+103
+00:08:01,450 --> 00:08:11,680
+Então, em nosso script aqui, vamos adicionar o estilo spane e inline e vamos definir isso como transição,
+
+104
+00:08:12,070 --> 00:08:14,290
+traço, atraso.
+
+105
+00:08:15,160 --> 00:08:19,740
+Agora, quando configuramos isso, não queremos enviá-lo para um valor fixo porque fará a mesma coisa.
+
+106
+00:08:19,760 --> 00:08:22,810
+Ele vai esperar e vai piscar todos eles ao mesmo tempo.
+
+107
+00:08:22,810 --> 00:08:28,420
+Então o que vou fazer aqui é usar o índice, que começa em zero, depois um, dois, três e assim
+
+108
+00:08:28,420 --> 00:08:31,300
+em diante, e eu vou multiplicá-lo por cinquenta.
+
+109
+00:08:31,660 --> 00:08:32,920
+Então o primeiro será zero.
+
+110
+00:08:32,920 --> 00:08:38,700
+O segundo e cinquenta e terceiro será, você sabe, 150, depois 200, 250 e assim por diante.
+
+111
+00:08:39,070 --> 00:08:40,240
+Então agora eu vou salvar isso.
+
+112
+00:08:40,240 --> 00:08:43,690
+E se eu clicar em OK, isso não funcionou.
+
+113
+00:08:47,450 --> 00:08:53,150
+Oh, precisamos adicionar os milissegundos, então após o atraso de transição, não, precisamos ter massa.
+
+114
+00:08:54,170 --> 00:08:54,580
+Tudo bem.
+
+115
+00:08:54,950 --> 00:08:55,670
+E lá vamos nós.
+
+116
+00:08:57,830 --> 00:08:59,480
+E, claro, você pode mudar isso.
+
+117
+00:08:59,480 --> 00:09:00,850
+Como se pudéssemos fazer 30.
+
+118
+00:09:03,800 --> 00:09:05,750
+Poderíamos fazer trezentos.
+
+119
+00:09:07,150 --> 00:09:09,070
+O que vai ser muito lento.
+
+120
+00:09:10,850 --> 00:09:17,540
+Então, trezentos milissegundos, acho que 50 é bom, embora ele possa torná-lo mais rápido, como 10.
+
+121
+00:09:20,350 --> 00:09:27,880
+Mas você mal consegue ver a onda, então acho que 50 é um bom número, então mantenha em 50, Sra.
+
+122
+00:09:30,390 --> 00:09:33,340
+Tudo bem, então é assim que você pode adicionar esse pequeno efeito legal.
+
+123
+00:09:33,750 --> 00:09:34,350
+Então é isso.
+
+124
+00:09:34,360 --> 00:09:37,760
+Espero que os caras gostem desse projeto e vamos passar para o próximo.

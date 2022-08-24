@@ -1,0 +1,587 @@
+﻿1
+00:00:00,210 --> 00:00:03,790
+Tudo bem, então vamos começar o acesso para este projeto.
+
+2
+00:00:03,810 --> 00:00:08,520
+Então, vamos pular para o nosso e-mail de índice aqui para o início do projeto.
+
+3
+00:00:09,150 --> 00:00:11,760
+Então, vamos chamar isso de filtro de usuário ao vivo.
+
+4
+00:00:13,500 --> 00:00:16,900
+E vamos em frente e nos livrar deste aqui.
+
+5
+00:00:16,920 --> 00:00:25,530
+Então, basicamente, vamos ter um contêiner aqui e queremos a entrada
+
+6
+00:00:25,530 --> 00:00:28,650
+e abaixo disso terá um analista com os usuários.
+
+7
+00:00:28,890 --> 00:00:33,750
+Em última análise, os usuários virão da API da qual buscaremos, você sabe, por meio do
+
+8
+00:00:33,750 --> 00:00:34,530
+JavaScript.
+
+9
+00:00:34,920 --> 00:00:37,530
+Mas, por enquanto, vamos apenas codificá-los para que possamos vê-los.
+
+10
+00:00:37,550 --> 00:00:38,400
+Podemos estilizá-lo.
+
+11
+00:00:38,580 --> 00:00:40,940
+Então vamos passar para, você sabe, torná-lo dinâmico.
+
+12
+00:00:41,250 --> 00:00:43,290
+Então vamos criar um cabeçalho aqui.
+
+13
+00:00:43,860 --> 00:00:45,750
+Vá em frente e apenas crie uma classe de header.
+
+14
+00:00:46,810 --> 00:00:55,870
+E vamos usar uma idade para dar uma classe de título e dizer uso ao vivo ou filtro, e abaixo dessa idade
+
+15
+00:00:55,870 --> 00:00:59,620
+quatro, vou colocar uma pequena etiqueta e dar uma classe de legenda.
+
+16
+00:01:00,670 --> 00:01:07,720
+E aqui diremos pesquisar por nome e/ou localização.
+
+17
+00:01:09,540 --> 00:01:15,930
+E então sob essa pequena tag estará nossa entrada e a entrada terá uma ideia de filtro.
+
+18
+00:01:17,080 --> 00:01:24,010
+Digite o texto e vamos apenas adicionar um espaço reservado a ele, para que o espaço reservado diga pesquisa.
+
+19
+00:01:25,870 --> 00:01:31,450
+OK, então esse é o cabeçalho, para que possamos ir abaixo dessa div, na verdade, podemos usar uma tag de cabeçalho aqui,
+
+20
+00:01:33,160 --> 00:01:37,210
+ele é uma tag de cabeçalho e abaixo do cabeçalho, vamos fazer nosso U.
+
+21
+00:01:37,210 --> 00:01:40,210
+Vou dar uma ideia de resultado.
+
+22
+00:01:40,250 --> 00:01:45,540
+É aqui que queremos que nossos resultados apareçam e vamos fornecer uma classe de lista de usuários Dasch.
+
+23
+00:01:48,030 --> 00:01:48,400
+Tudo bem.
+
+24
+00:01:48,400 --> 00:01:54,460
+Então, dentro desta ule, como eu disse, os itens da lista serão gerados com dados dinâmicos,
+
+25
+00:01:54,460 --> 00:01:56,290
+mas por enquanto, vamos apenas codificá-los.
+
+26
+00:01:56,290 --> 00:02:07,870
+Então, vamos adicionar uma imagem aqui e eu vou usar https e vamos usar a API MI de usuário aleatório, que onde
+
+27
+00:02:08,140 --> 00:02:10,900
+vamos obter apenas uma imagem estática agora.
+
+28
+00:02:11,650 --> 00:02:16,780
+Mas mais tarde, quando realmente buscarmos os usuários, os usuários aleatórios, será do mesmo
+
+29
+00:02:17,200 --> 00:02:17,800
+API.
+
+30
+00:02:17,800 --> 00:02:24,460
+Você pode usá-lo apenas para inserir uma imagem de usuário aleatória ou pode fazer uma solicitação para obter alguns dados de Jason para
+
+31
+00:02:24,460 --> 00:02:25,420
+usuários aleatórios.
+
+32
+00:02:25,660 --> 00:02:35,080
+Então agora vamos apenas fazer retratos slash e então podemos fazer como as mulheres slash 33
+
+33
+00:02:35,380 --> 00:02:36,010
+JPEG.
+
+34
+00:02:37,250 --> 00:02:39,760
+Se eu salvar isso, teremos uma imagem aleatória aqui.
+
+35
+00:02:39,760 --> 00:02:46,000
+E então para o ALZ, vamos usar um nome, digamos, Sahra, e abaixo da imagem aqui vamos
+
+36
+00:02:46,000 --> 00:02:54,280
+tem uma classe de user dash info e aqui vai ter um H for com o nome, digamos Sarah Smith.
+
+37
+00:02:54,730 --> 00:03:02,020
+E abaixo disso vamos fazer um parágrafo com a localização vai dizer Wexford Ireland.
+
+38
+00:03:06,000 --> 00:03:12,270
+E então o que vou fazer é copiar esse item da lista e colocar mais dois, vou usar
+
+39
+00:03:12,270 --> 00:03:13,440
+a mesma imagem e nome.
+
+40
+00:03:13,440 --> 00:03:16,790
+Tudo bem porque, como eu disse, isso virá da API.
+
+41
+00:03:16,800 --> 00:03:20,940
+Em última análise, também queremos um aliado para isso.
+
+42
+00:03:20,940 --> 00:03:23,430
+Apenas diz carregando enquanto estamos buscando os dados.
+
+43
+00:03:23,440 --> 00:03:24,900
+Então eu vou colocar isso também.
+
+44
+00:03:24,900 --> 00:03:30,300
+Então isso tem que ser um item de lista na página três que diz carregando ponto, ponto, ponto.
+
+45
+00:03:31,030 --> 00:03:33,130
+OK, então esse será o nosso HTML.
+
+46
+00:03:33,150 --> 00:03:35,030
+Agora vamos pular para nossa folha de estilo.
+
+47
+00:03:36,300 --> 00:03:41,250
+Então, para o estilo, veja, usamos essa fonte para o corpo.
+
+48
+00:03:41,730 --> 00:03:55,020
+Vou adicionar uma cor de fundo hexadecimal, Efate F nove FD e C exibem Fleck's.
+
+49
+00:03:55,020 --> 00:03:59,670
+Podemos nos livrar da coluna Flex Direction em tudo centralizado.
+
+50
+00:04:00,120 --> 00:04:01,200
+OK, assim está bom.
+
+51
+00:04:01,230 --> 00:04:04,500
+Agora o container envolve tudo.
+
+52
+00:04:05,280 --> 00:04:13,070
+Então, para isso, vamos adicionar um raio de borda de cinco pixels e eu vou adicionar uma sombra de caixa.
+
+53
+00:04:14,880 --> 00:04:23,460
+Então, para a sombra da caixa, vamos fazer três pixels para ambos os deslocamentos, 10 pixels, blá, blá, para
+
+54
+00:04:23,460 --> 00:04:30,840
+a cor, que será preta, e então zero ponto três para as ações de transparência apontarem
+
+55
+00:04:30,840 --> 00:04:31,380
+para.
+
+56
+00:04:33,460 --> 00:04:37,060
+E por que não estamos vendo isso, porque eu escrevi container errado.
+
+57
+00:04:38,380 --> 00:04:38,900
+Aqui vamos nós.
+
+58
+00:04:38,900 --> 00:04:42,280
+Então agora você pode ver o raio da borda com a sombra da caixa.
+
+59
+00:04:43,490 --> 00:04:47,260
+Vamos também adicionar overflow oculto.
+
+60
+00:04:48,660 --> 00:04:53,170
+Então, quantas barras de rolagem, a largura, vou definir isso para 300 pixels.
+
+61
+00:04:54,030 --> 00:04:56,120
+OK, então isso deve fazer isso para o contêiner.
+
+62
+00:04:56,700 --> 00:05:01,860
+Então o título aqui, vamos remover qualquer margem disso.
+
+63
+00:05:02,310 --> 00:05:11,520
+Então margem zero e então para a legenda, oops, vamos lá, vamos por baixo aqui e adicionar a legenda.
+
+64
+00:05:12,900 --> 00:05:18,660
+E eu quero exibir isso como um bloco embutido porque lembre-se de que é uma pequena tag que, por padrão, é
+
+65
+00:05:18,660 --> 00:05:19,290
+em linha.
+
+66
+00:05:19,620 --> 00:05:29,100
+E então eu vou adicionar uma margem de cinco pixels, zero 20 pixels, e eu vou adicionar uma opacidade
+
+67
+00:05:29,100 --> 00:05:33,810
+de zero vírgula oito, o que o tornará igual, você sabe, um pouco desbotado.
+
+68
+00:05:34,830 --> 00:05:36,750
+E vamos ver o cabeçalho.
+
+69
+00:05:38,950 --> 00:05:40,290
+Então temos uma classe de cabeçalho.
+
+70
+00:05:41,430 --> 00:05:44,460
+Vamos adicionar uma cor de fundo para isso.
+
+71
+00:05:45,150 --> 00:05:53,490
+E isso vai ser três, digamos, três cinco sete DB para esse plano de fundo.
+
+72
+00:05:54,240 --> 00:05:56,340
+E então a cor será branca.
+
+73
+00:05:58,620 --> 00:06:05,310
+E então vamos adicionar preenchimento para vamos fazer 30 pixels, superior e inferior, 20 pixels à esquerda e à direita.
+
+74
+00:06:05,460 --> 00:06:08,670
+OK, então nosso cabeçalho está começando a parecer um pouco melhor agora.
+
+75
+00:06:08,670 --> 00:06:10,470
+A entrada, queremos estilizar isso.
+
+76
+00:06:10,470 --> 00:06:13,920
+Então, digamos que a entrada do cabeçalho.
+
+77
+00:06:14,580 --> 00:06:22,230
+Eu quero definir a cor de fundo para ser um valor.
+
+78
+00:06:24,030 --> 00:06:31,800
+Zero zero zero tão preto e depois zero ponto três, então parece, você sabe, tem esse tipo de transparência
+
+79
+00:06:31,800 --> 00:06:34,740
+procure se livrar dessa borda feia.
+
+80
+00:06:36,430 --> 00:06:38,040
+Vamos fazer um raio de borda.
+
+81
+00:06:38,050 --> 00:06:45,640
+Vamos arredondar isso, então 50 pixels para isso e a cor do texto será branca.
+
+82
+00:06:46,960 --> 00:06:50,050
+E vamos definir o tamanho da fonte.
+
+83
+00:06:51,280 --> 00:06:58,780
+Portanto, o tamanho da fonte será definido para 14 pixels, isso está na entrada e, em seguida, definiremos o preenchimento.
+
+84
+00:07:01,140 --> 00:07:08,250
+Vamos fazer 10 em cima e embaixo, 15 à esquerda e à direita, e então vamos fazer todo o caminho para que possamos
+
+85
+00:07:08,250 --> 00:07:10,170
+defina o com dois 100 por cento.
+
+86
+00:07:12,670 --> 00:07:13,100
+Tudo bem.
+
+87
+00:07:15,490 --> 00:07:24,880
+E eu também quero me livrar dessa borda aqui, então vamos dizer que o foco da entrada é diferente, queremos
+
+88
+00:07:24,880 --> 00:07:29,010
+defina o contorno para não vamos.
+
+89
+00:07:30,350 --> 00:07:37,720
+OK, então se livrar desse contorno feio, bom, então a próxima coisa que eu quero fazer é esta lista de usuários aqui.
+
+90
+00:07:38,210 --> 00:07:50,930
+Então é você e tem uma classe de usuário Dasch list e vamos definir a cor de fundo para branco e vamos
+
+91
+00:07:50,930 --> 00:07:53,990
+definir o estilo da lista.
+
+92
+00:07:54,360 --> 00:07:57,260
+Faremos o estilo de lista, digite none, o que eliminará os marcadores.
+
+93
+00:07:57,260 --> 00:07:58,160
+Nós não queremos isso.
+
+94
+00:07:58,580 --> 00:08:07,850
+E então eu vou remover qualquer margem e vamos definir uma altura máxima aqui de 400 pixels porque você não
+
+95
+00:08:07,850 --> 00:08:09,080
+quer que isso seja muito longo.
+
+96
+00:08:09,080 --> 00:08:14,930
+Na verdade, teremos uma pequena rolagem aqui, se, você sabe, para verificar todos os usuários em
+
+97
+00:08:14,930 --> 00:08:21,440
+a lista e então vamos fazer um overflow, pois agora não teremos barras de rolagem.
+
+98
+00:08:21,440 --> 00:08:26,420
+Mas se definirmos overflow, por que basicamente no eixo Y, vamos definir isso como automático.
+
+99
+00:08:27,260 --> 00:08:31,730
+E se precisarmos de barras de rolagem, isso nos dará essa pequena barra de rolagem na lateral, que não
+
+100
+00:08:31,730 --> 00:08:32,330
+parece muito ruim.
+
+101
+00:08:33,680 --> 00:08:38,020
+E, finalmente, vamos definir o preenchimento para zero também.
+
+102
+00:08:38,450 --> 00:08:41,240
+E eu vou mover isso para perto da margem.
+
+103
+00:08:42,680 --> 00:08:43,010
+Tudo bem.
+
+104
+00:08:43,010 --> 00:08:44,180
+Então agora os itens da lista.
+
+105
+00:08:45,280 --> 00:08:56,710
+Então, temos nossa lista de usuários e queremos estilizar os aliados que vou exibir como uma caixa flexível e vamos
+
+106
+00:08:56,710 --> 00:08:59,890
+defina o preenchimento para 20 pixels.
+
+107
+00:09:01,050 --> 00:09:06,970
+OK, agora vamos fazer vamos ver.
+
+108
+00:09:10,100 --> 00:09:20,210
+Tudo bem, vamos fazer vamos fazer a imagem para que tenhamos uma imagem de lista de usuários e eu quero que ela seja arredondada,
+
+109
+00:09:20,210 --> 00:09:23,230
+então usaremos o raio da borda para 50%.
+
+110
+00:09:23,240 --> 00:09:24,350
+Isso vai torná-lo arredondado.
+
+111
+00:09:24,770 --> 00:09:29,480
+E vamos fazer a capa de ajuste de objeto.
+
+112
+00:09:30,760 --> 00:09:36,940
+Queremos que a imagem inteira apareça lá, e então vamos fazer a largura e a altura 50
+
+113
+00:09:36,940 --> 00:09:37,630
+píxeis.
+
+114
+00:09:41,360 --> 00:09:49,640
+OK, tão pequeno, mas acho que está tudo bem, as informações do usuário, então temos a lista de traços do usuário,
+
+115
+00:09:49,640 --> 00:09:53,780
+informações do usuário do ponto.
+
+116
+00:09:56,150 --> 00:10:02,690
+Para isso, vamos definir margem esquerda para tirá-la da imagem, alguma margem esquerda de 10 pixels que irá
+
+117
+00:10:02,690 --> 00:10:07,820
+empurre-o e, em seguida, vamos definir no chão.
+
+118
+00:10:07,820 --> 00:10:18,500
+Eu vou pegar isso no chão e eles vão definir a margem zero zero dez pixels.
+
+119
+00:10:19,370 --> 00:10:21,050
+E para o parágrafo,
+
+120
+00:10:24,020 --> 00:10:31,010
+vamos apenas definir o tamanho da fonte para 12 pixels para torná-lo um pouco menor.
+
+121
+00:10:31,670 --> 00:10:31,990
+Tudo bem.
+
+122
+00:10:32,040 --> 00:10:33,080
+Isso não parece tão ruim.
+
+123
+00:10:35,300 --> 00:10:37,910
+Vamos ter uma fronteira, uma fronteira no meio.
+
+124
+00:10:37,910 --> 00:10:41,180
+Mas não queremos fazer fronteira com o último item da lista.
+
+125
+00:10:41,690 --> 00:10:47,720
+Então o que podemos fazer é dizer lista de usuários e depois o aliado.
+
+126
+00:10:47,720 --> 00:10:50,660
+E vou usar o pseudo seletor de not.
+
+127
+00:10:50,990 --> 00:10:57,890
+E aqui usamos o pseudo do último do tipo.
+
+128
+00:10:59,790 --> 00:11:07,920
+Basicamente, o que estamos dizendo aqui é, você sabe, qualquer item da lista que não seja o último, então queremos
+
+129
+00:11:07,920 --> 00:11:09,150
+para adicionar um fundo de borda.
+
+130
+00:11:09,170 --> 00:11:17,580
+Digamos que a borda inferior do traço e vamos definir isso para um pixel sólido e vamos fazer o triplo E para o
+
+131
+00:11:17,580 --> 00:11:18,060
+cor.
+
+132
+00:11:18,490 --> 00:11:20,360
+OK, então temos uma pequena borda lá.
+
+133
+00:11:22,200 --> 00:11:27,840
+Agora vamos ter uma classe de hide porque quando começarmos a filtrar esses usuários, se
+
+134
+00:11:27,840 --> 00:11:32,060
+corresponde, queremos adicionar a classe de ocultar, que basicamente não exibirá nenhum.
+
+135
+00:11:32,370 --> 00:11:35,130
+Então, digamos que a lista de usuários elai.
+
+136
+00:11:35,130 --> 00:11:41,340
+E se ele tem uma classe de ocultar, então não queremos exibir nenhum.
+
+137
+00:11:41,710 --> 00:11:51,150
+OK, então se eu manualmente, você sabe, vier aqui e colocar um desses aliados, uma classe de alta que é
+
+138
+00:11:51,150 --> 00:11:51,990
+vai se livrar dele.
+
+139
+00:11:52,290 --> 00:11:57,130
+OK, mas obviamente isso será dinâmico porque queremos filtrá-lo com o que digitarmos aqui.
+
+140
+00:11:58,140 --> 00:11:59,510
+Então eu acho que devemos ser bons.
+
+141
+00:12:00,000 --> 00:12:05,900
+O carregamento que você conhece, o carregamento será exibido antes que qualquer um desses usuários apareça.
+
+142
+00:12:05,910 --> 00:12:09,180
+Agora, nós apenas codificamos aqui apenas para que pudéssemos ver.
+
+143
+00:12:09,360 --> 00:12:14,700
+Então agora vou remover tudo, todos esses aliados, exceto o carregamento.
+
+144
+00:12:15,450 --> 00:12:19,890
+Então, vamos nos livrar deles agora que sabemos que estão estilizados corretamente e salvar.
+
+145
+00:12:20,190 --> 00:12:24,270
+OK, então basicamente nossa interface do usuário aqui está completa.
+
+146
+00:12:24,270 --> 00:12:26,820
+Só agora precisamos fazê-lo funcionar com JavaScript.
+
+147
+00:12:26,820 --> 00:12:28,410
+Então faremos isso no próximo vídeo.

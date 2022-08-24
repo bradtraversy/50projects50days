@@ -1,0 +1,687 @@
+﻿1
+00:00:00,180 --> 00:00:05,820
+OK, então começou em nosso HTML e na maioria das coisas que vamos fazer agora, o cartão com
+
+2
+00:00:05,820 --> 00:00:11,670
+as informações do usuário dentro dele, que virão do JavaScript com os dados dinâmicos de
+
+3
+00:00:11,850 --> 00:00:13,590
+a API depois de buscá-la.
+
+4
+00:00:13,600 --> 00:00:18,660
+Mas, por enquanto, vou apenas digitar o HTML, apenas codificado para que possamos pelo menos vê-lo e
+
+5
+00:00:18,660 --> 00:00:19,300
+estilize.
+
+6
+00:00:19,860 --> 00:00:20,220
+Tudo bem.
+
+7
+00:00:20,230 --> 00:00:31,470
+Então, para o título aqui, é um perfil do GitHub e aqui embaixo vamos criar um formulário.
+
+8
+00:00:31,890 --> 00:00:37,400
+E este formulário terá uma classe de formulário de usuário e terá uma ideia de formulário.
+
+9
+00:00:38,610 --> 00:00:39,660
+Não precisamos de uma ação.
+
+10
+00:00:41,740 --> 00:00:51,390
+OK, e dentro deste formulário, vamos ter uma única entrada e dar uma ideia de pesquisa e
+
+11
+00:00:51,390 --> 00:00:52,740
+vamos adicionar um espaço reservado.
+
+12
+00:00:54,990 --> 00:01:03,570
+E para o espaço reservado, diremos pesquisar um usuário do GitHub, salve isso.
+
+13
+00:01:03,570 --> 00:01:07,850
+Temos uma entrada aqui e não vou colocar um botão de envio.
+
+14
+00:01:07,860 --> 00:01:09,990
+Vamos apenas digitar o usuário e entrar.
+
+15
+00:01:10,290 --> 00:01:17,670
+Você pode adicionar um botão de envio se quiser, e então vamos abaixo do formulário e vamos usar
+
+16
+00:01:17,670 --> 00:01:21,740
+a tag principal HTML cinco e nos dá uma idéia do Maine.
+
+17
+00:01:22,080 --> 00:01:25,370
+Agora, em última análise, isso é tudo o que teremos em nosso HTML.
+
+18
+00:01:25,380 --> 00:01:30,890
+Qualquer que seja o cartão, o cartão de perfil do usuário será inserido aqui pelo JavaScript.
+
+19
+00:01:30,900 --> 00:01:34,680
+Mas como eu disse, por enquanto, vamos apenas digitá-lo para que possamos vê-lo com estilo.
+
+20
+00:01:35,970 --> 00:01:43,410
+Então queremos uma classe de cartão e nessa classe teremos uma div com uma imagem dentro com uma classe de avatar.
+
+21
+00:01:44,220 --> 00:01:49,320
+E vou colocar uma imagem fictícia da API de usuário aleatório.
+
+22
+00:01:49,320 --> 00:02:01,170
+Então, vamos dizer usuário aleatório dot me slash API slash slash do portrait e eu vou usar men slash
+
+23
+00:02:01,170 --> 00:02:03,420
+JPEG de 30 pontos.
+
+24
+00:02:04,770 --> 00:02:09,750
+Agora que você acabou de nos dar um usuário aleatório de algum cara agora sob o stiv aqui.
+
+25
+00:02:09,870 --> 00:02:12,510
+Então, vamos usar o flex box para alinhá-lo.
+
+26
+00:02:12,510 --> 00:02:18,060
+Este será o primeiro flexitime e depois teremos outro div com a classe de informações do usuário com todos
+
+27
+00:02:18,060 --> 00:02:21,930
+as informações do usuário, como o nome do usuário, que colocará um H2.
+
+28
+00:02:21,930 --> 00:02:29,910
+Por enquanto eu vou apenas dizer John Doe e depois uma biografia que agora é apenas LAAM 10, algum texto fictício
+
+29
+00:02:29,910 --> 00:02:37,050
+lá e depois sob o parágrafo, sob a bio queremos um pouco e vamos fazer um item de lista.
+
+30
+00:02:37,050 --> 00:02:42,390
+Então isso será como o número de seguidores, vamos dizer trezentos e depois colocar algumas tags fortes
+
+31
+00:02:42,390 --> 00:02:46,080
+entrar e dizer seguidores e eu vou copiar isso duas vezes.
+
+32
+00:02:46,080 --> 00:02:52,800
+Esse aqui vai seguir o seguinte vai dizer cem e aí vai ser o
+
+33
+00:02:52,800 --> 00:03:04,170
+número de repos, digamos trinta e três posts e então sob a regra terá os repositórios reais de
+
+34
+00:03:04,200 --> 00:03:04,590
+o usuário.
+
+35
+00:03:04,590 --> 00:03:06,990
+Vamos obter os últimos cinco repositórios.
+
+36
+00:03:07,290 --> 00:03:09,450
+Então vamos ter uma idéia de repouso aqui.
+
+37
+00:03:10,560 --> 00:03:18,120
+E então cada um será apenas um link com a classe de repositórios e então o texto que eles apenas
+
+38
+00:03:18,120 --> 00:03:21,780
+diga Rebo um e faremos apenas três.
+
+39
+00:03:23,190 --> 00:03:24,870
+E é isso para o HTML.
+
+40
+00:03:24,870 --> 00:03:26,460
+Então vai ficar assim até agora.
+
+41
+00:03:26,790 --> 00:03:31,440
+Então vamos começar a estilizar isso até onde o olho pode fazer isso menor.
+
+42
+00:03:31,450 --> 00:03:36,720
+Agora, no que diz respeito à fonte, vamos usar uma fonte chamada Poppins.
+
+43
+00:03:36,870 --> 00:03:45,060
+Então vou substituir o Raboteau por Poppins e espere, vamos fazer duzentos e quatrocentos
+
+44
+00:03:46,890 --> 00:03:50,220
+e mudar a família aqui para Poppins.
+
+45
+00:03:52,250 --> 00:03:56,660
+OK, e então vamos ver, vamos adicionar uma cor de fundo.
+
+46
+00:04:01,220 --> 00:04:11,090
+O que mais queremos usar o valor hexadecimal para dois e depois sete dois, então é um azul escuro e
+
+47
+00:04:11,090 --> 00:04:13,960
+então vamos tornar a cor do texto branca.
+
+48
+00:04:15,650 --> 00:04:16,100
+Tudo bem.
+
+49
+00:04:16,100 --> 00:04:19,010
+E então vamos ver para essas coisas.
+
+50
+00:04:19,010 --> 00:04:20,090
+Isso é tudo de bom.
+
+51
+00:04:22,070 --> 00:04:24,620
+Sim, vamos manter o resto do corpo aqui.
+
+52
+00:04:25,820 --> 00:04:27,530
+Assim, o formulário do usuário.
+
+53
+00:04:31,010 --> 00:04:37,850
+Para isso, quero apenas definir a largura do conjunto de cem por cento para que ele percorra todo o seu
+
+54
+00:04:37,850 --> 00:04:40,250
+container e este é o formulário, não a entrada.
+
+55
+00:04:40,850 --> 00:04:47,900
+E então eu vou definir uma largura máxima de 700 pixels.
+
+56
+00:04:49,450 --> 00:04:49,930
+Tudo bem.
+
+57
+00:04:49,940 --> 00:04:56,180
+E, em seguida, para a entrada, os especialistas dizem que a entrada do formulário do usuário.
+
+58
+00:04:59,180 --> 00:05:03,200
+O que definiu a largura disso para ser 100%?
+
+59
+00:05:04,460 --> 00:05:07,460
+E queremos estilizar isso para parecer muito melhor.
+
+60
+00:05:08,390 --> 00:05:15,590
+Vou exibi-lo também como elementos de nível de bloco e, em seguida, vamos definir uma cor de fundo para o
+
+61
+00:05:15,590 --> 00:05:16,070
+entrada.
+
+62
+00:05:16,550 --> 00:05:22,080
+E isso vai ser para C dois oito oito cinco.
+
+63
+00:05:22,730 --> 00:05:26,060
+Então, como uma cor púrpura, vamos tirar a borda.
+
+64
+00:05:26,060 --> 00:05:28,400
+Então diga fronteira nenhuma.
+
+65
+00:05:29,030 --> 00:05:34,650
+E vamos definir um raio de borda e faremos 10 pixels nele.
+
+66
+00:05:35,780 --> 00:05:38,630
+OK, vamos fazer a cor branca.
+
+67
+00:05:41,700 --> 00:05:47,910
+E vamos dar um estofamento, então vou usar unidades Rhim aqui.
+
+68
+00:05:47,910 --> 00:05:54,720
+Portanto, uma sala, que é apenas um multiplicador do elemento HTML raiz, que por padrão é de 16 pixels.
+
+69
+00:05:54,960 --> 00:05:57,870
+Então, estamos apenas dizendo preenchimento de 16 pixels agora.
+
+70
+00:05:58,710 --> 00:05:59,100
+Tudo bem.
+
+71
+00:05:59,110 --> 00:06:04,320
+E então eu só quero adicionar uma margem inferior para que eu vou usar a RAM, que neste caso vai
+
+72
+00:06:04,320 --> 00:06:05,610
+ser 32 pixels.
+
+73
+00:06:06,300 --> 00:06:17,660
+E vamos definir a família de fontes para herdar e vamos definir o tamanho da fonte para ser maior que isso.
+
+74
+00:06:17,670 --> 00:06:19,170
+Eu só vou configurá-lo para um ram.
+
+75
+00:06:21,570 --> 00:06:27,170
+E vamos adicionar uma sombra de caixa ou algumas sombras de caixa, e eu vou apenas acompanhar isso.
+
+76
+00:06:29,110 --> 00:06:33,260
+OK, então nossa primeira sombra aqui com os deslocamentos, o desfoque e a cor.
+
+77
+00:06:33,270 --> 00:06:35,910
+E então temos nossa segunda sombra aqui.
+
+78
+00:06:37,050 --> 00:06:37,490
+Tudo bem.
+
+79
+00:06:37,500 --> 00:06:43,080
+E então, se eu clicar dentro dele, obtemos este esboço, que não quero manter.
+
+80
+00:06:43,110 --> 00:06:55,410
+Então, vamos usar nossa entrada de formulário de traço e, em seguida, o foco de Colen e, em seguida, queremos definir o contorno para none.
+
+81
+00:06:57,990 --> 00:06:58,430
+Tudo bem.
+
+82
+00:06:58,440 --> 00:07:00,330
+E vamos também tornar o espaço reservado branco.
+
+83
+00:07:00,330 --> 00:07:06,330
+Então, se você quiser alterar a cor de um espaço reservado, podemos dizer entrada de formulário do usuário e, em seguida, Kalanchoe
+
+84
+00:07:06,330 --> 00:07:15,630
+e espaço reservado e digamos cor e vamos definir isso para hexadecimal triplo B, então faça um pouco
+
+85
+00:07:15,630 --> 00:07:16,050
+isqueiro.
+
+86
+00:07:17,700 --> 00:07:22,020
+Tudo bem, agora vamos trabalhar no cartão, que está em torno de todo o resto.
+
+87
+00:07:22,710 --> 00:07:24,450
+Então cartão de classe.
+
+88
+00:07:25,950 --> 00:07:35,330
+E para isso vamos definir uma largura máxima de 800 pixels e vamos torná-lo responsivo também.
+
+89
+00:07:36,540 --> 00:07:39,280
+E depois a cor de fundo.
+
+90
+00:07:39,300 --> 00:07:44,530
+Vamos definir isso para quatro C dois oito oito cinco.
+
+91
+00:07:45,630 --> 00:07:47,610
+Portanto, é o mesmo que o plano de fundo de entrada.
+
+92
+00:07:48,510 --> 00:07:54,510
+E vamos definir o raio da borda para 20 pixels.
+
+93
+00:07:57,470 --> 00:08:05,240
+Tudo bem, e então vamos adicionar uma sombra de caixa para isso também, então eu vou copiar isso.
+
+94
+00:08:07,190 --> 00:08:09,590
+OK, vamos usar a mesma sombra de caixa é essa.
+
+95
+00:08:12,810 --> 00:08:13,150
+Bom.
+
+96
+00:08:13,170 --> 00:08:18,520
+E depois disso, vamos exibir tudo como uma exibição floral.
+
+97
+00:08:18,540 --> 00:08:19,590
+Esta é uma caixa flexível.
+
+98
+00:08:19,590 --> 00:08:25,800
+Então os dois itens dentro são a imagem, o div com a imagem e então o div de informações do usuário que tem tudo
+
+99
+00:08:25,800 --> 00:08:26,360
+mais nele.
+
+100
+00:08:27,030 --> 00:08:38,010
+Então, vou definir o preenchimento do cartão para três ram e vamos definir a margem para zero superior e inferior.
+
+101
+00:08:38,040 --> 00:08:41,130
+Vamos fazer um vírgula cinco ram à esquerda e à direita.
+
+102
+00:08:41,440 --> 00:08:42,910
+Então isso empurra um pouco.
+
+103
+00:08:43,410 --> 00:08:43,830
+Tudo bem.
+
+104
+00:08:43,860 --> 00:08:45,630
+Então não vai além disso.
+
+105
+00:08:46,380 --> 00:08:50,410
+E adicionaremos uma consulta de mídia para empilhar essas linhas.
+
+106
+00:08:50,430 --> 00:08:52,290
+Sinto muito, essas colunas também.
+
+107
+00:08:53,880 --> 00:08:59,670
+Mas vamos em frente e trabalhar no avatar para que tenhamos uma classe de avatar.
+
+108
+00:09:00,750 --> 00:09:02,700
+Eu quero que isso seja arredondado com uma borda.
+
+109
+00:09:02,700 --> 00:09:10,380
+Então defina o raio da borda para 50 por cento e então vamos definir a borda.
+
+110
+00:09:11,190 --> 00:09:19,620
+Vou dar uma borda bem grossa, 10 pixels sólidos, e então a cor será de um a sete
+
+111
+00:09:19,620 --> 00:09:30,750
+e vamos dar uma altura de 150 pixels e vamos fazer uma largura de 150 também.
+
+112
+00:09:33,150 --> 00:09:37,790
+E agora temos as informações do usuário, que é tudo isso aqui.
+
+113
+00:09:37,800 --> 00:09:48,390
+Então, vamos pegar a classe de informações do usuário e vou definir a cor do texto para triplo E.
+
+114
+00:09:49,770 --> 00:09:55,290
+E apenas adicione um pouco de margem para afastá-lo da imagem, então vou usar para ram
+
+115
+00:09:55,320 --> 00:10:00,480
+unidades aqui, então afaste isso, o H2.
+
+116
+00:10:00,480 --> 00:10:05,880
+Então, informações do usuário H2, vamos nos livrar de qualquer margem no topo.
+
+117
+00:10:05,880 --> 00:10:11,310
+Então margem zero e para os EUA.
+
+118
+00:10:15,710 --> 00:10:27,440
+Para o URL, vou exibir flaks, e isso é aqui, então vou exibir Flex
+
+119
+00:10:27,860 --> 00:10:31,630
+e, na verdade, vamos eliminar qualquer marcador ou tipo de estilo.
+
+120
+00:10:31,640 --> 00:10:38,170
+Vamos definir isso como none e exibir flex e queremos justificar o conteúdo.
+
+121
+00:10:38,220 --> 00:10:41,000
+Então esse é o espaçamento horizontal.
+
+122
+00:10:41,000 --> 00:10:48,140
+Vamos definir o espaço entre os elementos assim e nos livrar de qualquer preenchimento.
+
+123
+00:10:52,500 --> 00:10:59,050
+E vamos definir uma largura máxima para 400 pixels agora para o item da lista.
+
+124
+00:10:59,090 --> 00:11:09,510
+Então, esses aqui, vamos pegar isso e dizer para os aliados, vou exibir críticas.
+
+125
+00:11:10,170 --> 00:11:17,430
+E também quero alinhar os itens ao centro do acesso cruzado.
+
+126
+00:11:18,300 --> 00:11:23,190
+E para a marca forte, o número está ao lado do texto aqui.
+
+127
+00:11:23,190 --> 00:11:29,780
+Então vamos pegar na verdade, vamos pegar isso e salvar para as tags fortes.
+
+128
+00:11:31,080 --> 00:11:40,530
+Vou definir o tamanho da fonte para zero vírgula nove REM e, em seguida, também vamos movê-lo um pouco.
+
+129
+00:11:40,530 --> 00:11:41,970
+Então a margem esquerda.
+
+130
+00:11:42,510 --> 00:11:44,560
+Vou usar zero vírgula cinco REM.
+
+131
+00:11:46,400 --> 00:11:47,500
+Tudo bem, bom.
+
+132
+00:11:47,940 --> 00:11:51,950
+Agora, os repositórios aqui, obviamente, você precisa estilizá-los.
+
+133
+00:11:51,960 --> 00:11:54,480
+Então vamos fazer a classe de repo.
+
+134
+00:11:54,840 --> 00:11:57,810
+Portanto, todos esses links têm uma classe de rebo.
+
+135
+00:11:57,810 --> 00:12:01,410
+Vamos nos livrar da decoração de subtexto subjacente.
+
+136
+00:12:01,410 --> 00:12:01,800
+Nenhum.
+
+137
+00:12:02,250 --> 00:12:05,880
+E vamos definir a cor desses dois brancos.
+
+138
+00:12:06,830 --> 00:12:19,070
+E também vou definir uma cor de fundo de a a sete a oops e o que aconteceu lá e
+
+139
+00:12:19,070 --> 00:12:19,400
+Por quê.
+
+140
+00:12:19,460 --> 00:12:20,510
+Por que isso não está funcionando?
+
+141
+00:12:22,340 --> 00:12:23,330
+Oh sim.
+
+142
+00:12:23,330 --> 00:12:24,760
+Estes devem ser rebo.
+
+143
+00:12:27,230 --> 00:12:27,610
+Tudo bem.
+
+144
+00:12:29,300 --> 00:12:30,940
+Então temos nossa cor de fundo.
+
+145
+00:12:30,950 --> 00:12:35,440
+Vamos fazer o tamanho da fonte e o tamanho da fonte.
+
+146
+00:12:35,450 --> 00:12:37,460
+Vou ficar com zero vírgula sete REM.
+
+147
+00:12:38,930 --> 00:12:44,410
+Então, faça-os menores e, em seguida, vamos adicionar um pouco de preenchimento e você não precisa usar unidades REM.
+
+148
+00:12:44,420 --> 00:12:47,270
+Eu só queríamos mudar um pouco as coisas.
+
+149
+00:12:47,420 --> 00:12:54,560
+Então, vamos apontar para cinco REM em cima e em baixo e então zero ponto cinco REM para a esquerda e para a direita.
+
+150
+00:12:55,790 --> 00:13:09,680
+OK, e então vamos definir a margem ou definir a margem direita para zero vírgula cinco REM e vamos fazer a margem inferior
+
+151
+00:13:10,820 --> 00:13:18,250
+zero vírgula cinco REM, caso o Repos vá para a próxima linha e pense que é isso.
+
+152
+00:13:18,280 --> 00:13:27,170
+Vamos exibir como um bloco embutido em vez de embutido e, finalmente, você poderá clicar neles e
+
+153
+00:13:27,170 --> 00:13:28,880
+vá para o Repos.
+
+154
+00:13:29,420 --> 00:13:30,520
+Mas é mais ou menos isso.
+
+155
+00:13:30,530 --> 00:13:35,810
+Agora, eu quero tornar isso mais responsivo porque, você sabe, se for em telas muito pequenas,
+
+156
+00:13:36,140 --> 00:13:38,180
+vai parecer meio estranho.
+
+157
+00:13:38,180 --> 00:13:46,760
+Então, vou adicionar uma consulta de mídia aqui para ver a mídia com a largura máxima de que vou fazer
+
+158
+00:13:46,760 --> 00:13:48,050
+500 pixels.
+
+159
+00:13:48,410 --> 00:13:51,470
+Então, se estiver abaixo de 500 pixels, vamos pegar o cartão.
+
+160
+00:13:51,980 --> 00:13:56,570
+E é exibido flex, mas é uma linha flexível, o que significa que fica na horizontal.
+
+161
+00:13:56,570 --> 00:14:00,160
+Vamos mudar a direção do flex para uma coluna.
+
+162
+00:14:00,410 --> 00:14:05,330
+Se eu fizer isso, ele colocará os dois elementos, os dois itens flexíveis um em cima do outro.
+
+163
+00:14:06,050 --> 00:14:11,530
+E então vamos alinhar ao meio para que possamos alinhar os itens ao centro.
+
+164
+00:14:12,770 --> 00:14:14,060
+OK, então isso parece muito bom.
+
+165
+00:14:14,540 --> 00:14:18,020
+E o formulário vamos pegar o formulário do usuário.
+
+166
+00:14:18,890 --> 00:14:23,540
+E inicialmente eu acho que tem uma largura máxima de 800 pixels.
+
+167
+00:14:23,540 --> 00:14:26,300
+Então eu vou definir Max com quatrocentos pixels.
+
+168
+00:14:27,120 --> 00:14:28,970
+OK, então eu acho que parece muito bom.
+
+169
+00:14:30,410 --> 00:14:32,350
+Então agora é responsivo.
+
+170
+00:14:32,960 --> 00:14:39,200
+Então, no próximo vídeo, obviamente queremos fazer essa função para que possamos acessar a API do GitHub e
+
+171
+00:14:39,200 --> 00:14:46,220
+buscar um usuário e vamos usar axios, que é uma biblioteca HTTP, em vez de usar
+
+172
+00:14:46,430 --> 00:14:48,350
+fetch que está embutido no navegador.

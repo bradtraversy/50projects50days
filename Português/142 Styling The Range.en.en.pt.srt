@@ -1,0 +1,599 @@
+﻿1
+00:00:00,180 --> 00:00:05,070
+Tudo bem, então vamos começar nosso controle deslizante de alcance personalizado e o Tmall será realmente
+
+2
+00:00:05,070 --> 00:00:05,430
+simples.
+
+3
+00:00:05,430 --> 00:00:07,650
+Vamos usar apenas uma entrada com um tipo de intervalo.
+
+4
+00:00:07,650 --> 00:00:13,700
+Mas o estilo é bastante complicado porque eles aparecem diferentes dependendo do navegador em que você está.
+
+5
+00:00:13,710 --> 00:00:17,940
+Então vamos ter que adicionar estilos para todos os navegadores.
+
+6
+00:00:17,940 --> 00:00:22,530
+Basicamente, a Web que usamos o prefixo do kit da Web será o Chrome e o safari.
+
+7
+00:00:22,860 --> 00:00:30,240
+Os prefixos Mozi como Firefox e AMS seriam, você sabe, Microsoft, Internet Explorer.
+
+8
+00:00:30,630 --> 00:00:36,420
+E o que eu tenho aqui é o Chrome na lateral, mas também tenho o Firefox, então podemos verificar
+
+9
+00:00:36,420 --> 00:00:37,610
+isso também.
+
+10
+00:00:38,190 --> 00:00:40,650
+Então, como eu disse, o e-mail é bem simples.
+
+11
+00:00:40,650 --> 00:00:49,980
+Digamos apenas um controle deslizante de intervalo personalizado e teremos um H aqui com a mesma coisa, personalizado
+
+12
+00:00:50,790 --> 00:00:52,500
+controle deslizante de intervalo.
+
+13
+00:00:52,500 --> 00:00:57,090
+E então vamos fazer uma classe de contêiner de traço de intervalo.
+
+14
+00:00:59,430 --> 00:01:04,530
+E aqui dentro teremos uma entrada com o tipo de intervalo que não precisamos de nome.
+
+15
+00:01:04,980 --> 00:01:09,360
+O ID será intervalo e podemos definir um imposto mínimo sobre isso.
+
+16
+00:01:09,390 --> 00:01:13,470
+Então, basicamente, onde queremos que comece, que será zero e onde queremos que termine,
+
+17
+00:01:13,470 --> 00:01:14,670
+que vai ser cem.
+
+18
+00:01:15,210 --> 00:01:22,320
+E abaixo disso, vamos colocar um rótulo para intervalo e eu vou apenas codificar 50 lá para
+
+19
+00:01:22,320 --> 00:01:22,740
+agora.
+
+20
+00:01:22,980 --> 00:01:26,360
+Em última análise, isso vai mudar dependendo de onde isso é.
+
+21
+00:01:26,520 --> 00:01:30,720
+Então, se estiver no início, será zero no final, cem e então qualquer coisa no meio.
+
+22
+00:01:30,900 --> 00:01:33,870
+Ele também será posicionado logo acima disso.
+
+23
+00:01:33,870 --> 00:01:35,820
+E queremos que ela se mova junto com isso.
+
+24
+00:01:35,820 --> 00:01:37,890
+Então, precisaremos usar JavaScript para fazer isso.
+
+25
+00:01:38,310 --> 00:01:39,690
+Mas isso é tudo para o HTML.
+
+26
+00:01:39,690 --> 00:01:42,230
+Muito simples para os CSFs.
+
+27
+00:01:42,240 --> 00:01:44,280
+Vamos trazer a pequena fonte.
+
+28
+00:01:44,610 --> 00:01:51,300
+Então família é igual a Platão e vamos aplicar isso aqui.
+
+29
+00:01:52,710 --> 00:02:01,920
+E eu vejo como eu disse, basicamente vamos ter que estilizar a faixa, então essa é a faixa,
+
+30
+00:02:01,920 --> 00:02:04,260
+esta linha aqui e então este é o polegar.
+
+31
+00:02:04,620 --> 00:02:10,650
+Teremos que estilizar ambos de maneira diferente para basicamente todos os diferentes navegadores.
+
+32
+00:02:13,150 --> 00:02:19,630
+Então o corpo aqui, vou manter o mesmo, vamos mover o título para o topo, então estou apenas
+
+33
+00:02:19,630 --> 00:02:27,190
+vai posicioná-lo absoluto dentro do corpo e, em seguida, dizer dos 10 primeiros pixels apenas para movê-lo
+
+34
+00:02:27,190 --> 00:02:31,330
+para fora do caminho e, em seguida, para o contêiner de alcance.
+
+35
+00:02:34,080 --> 00:02:41,250
+Eu quero posicionar esse relativo, porque o rótulo está bem aqui, o número vai ser posicionado
+
+36
+00:02:41,250 --> 00:02:46,030
+absoluto dentro dele e vamos calcular a posição em JavaScript para que possa seguir o
+
+37
+00:02:46,050 --> 00:02:46,770
+polegar aqui.
+
+38
+00:02:47,700 --> 00:02:52,860
+Agora, temos alguns estilos básicos para o intervalo.
+
+39
+00:02:52,860 --> 00:02:58,850
+Então, digamos input, e podemos direcioná-lo com colchetes e adicionar tipo igual a intervalo.
+
+40
+00:03:00,900 --> 00:03:07,880
+E eu vou definir a largura para 300 pixels, ficar um pouco mais largo e com margem.
+
+41
+00:03:07,890 --> 00:03:12,810
+Vou fazer apenas 18 pixels na parte superior e inferior porque o rótulo ficará acima dela.
+
+42
+00:03:12,840 --> 00:03:14,250
+Queremos algum espaço acima dele.
+
+43
+00:03:15,450 --> 00:03:18,300
+Então vamos ver.
+
+44
+00:03:18,300 --> 00:03:24,660
+Estou tentando pensar antes de podermos estilizar isso porque na verdade não podemos estilizá-lo como está.
+
+45
+00:03:24,660 --> 00:03:28,410
+Precisamos basicamente fazer com que isso desapareça.
+
+46
+00:03:28,410 --> 00:03:31,220
+E podemos fazer isso com o Dash Web Kit.
+
+47
+00:03:31,230 --> 00:03:33,100
+E eu estou falando sobre a pista da linha.
+
+48
+00:03:33,600 --> 00:03:39,710
+Então, se fizermos uma aparência de kit da Web e definirmos como none e salvar, você verá que ela desaparece.
+
+49
+00:03:39,720 --> 00:03:42,330
+Agora, podemos realmente estilizá-lo por conta própria.
+
+50
+00:03:42,900 --> 00:03:46,940
+Mas antes de fazermos isso, vamos estilizar o rótulo de fato.
+
+51
+00:03:47,100 --> 00:03:49,260
+Vamos nos dar um pano de fundo.
+
+52
+00:03:50,820 --> 00:03:57,510
+Vamos dizer vamos fazer a imagem de fundo e vamos usar um pequeno gradiente linear, digamos 135 graus.
+
+53
+00:03:58,110 --> 00:04:11,900
+E então para a cor aqui, vamos fazer o valor hexadecimal F cinco F sete FA e isso é de zero por cento.
+
+54
+00:04:11,910 --> 00:04:20,340
+E então a próxima cor, vamos fazer hexadecimal C três CF cada dois a cem por cento.
+
+55
+00:04:20,830 --> 00:04:21,320
+Eles são.
+
+56
+00:04:21,330 --> 00:04:26,550
+Então você pode ver que isso é apenas branco agora, OK, porque nós não fizemos aquela aparência de web kit.
+
+57
+00:04:27,060 --> 00:04:30,120
+Então, eu só quero antes de fazer a faixa, eu quero estilizar o rótulo.
+
+58
+00:04:30,120 --> 00:04:31,320
+Eu só quero colocá-lo acima.
+
+59
+00:04:31,320 --> 00:04:32,880
+Vai começar no meio aqui.
+
+60
+00:04:33,600 --> 00:04:41,970
+Então vamos pegar o intervalo e vamos dizer mais rótulo.
+
+61
+00:04:42,960 --> 00:04:55,920
+E para o rótulo, vamos definir a cor de fundo para branco e vamos posicioná-lo.
+
+62
+00:04:56,460 --> 00:04:59,400
+Então, estou em uma posição absoluta dentro do contêiner de intervalo.
+
+63
+00:05:00,500 --> 00:05:08,780
+E diremos que queremos a partir do topo negativo de 25 pixels, então mova-o para cima e queremos que fique no meio
+
+64
+00:05:08,780 --> 00:05:09,590
+do intervalo.
+
+65
+00:05:09,590 --> 00:05:13,280
+Então vamos dizer da esquerda.
+
+66
+00:05:15,040 --> 00:05:24,780
+Vamos fazer cento e dez pixels e vamos dar uma largura de 80 pixels e preenchimento.
+
+67
+00:05:25,780 --> 00:05:28,660
+Faremos cinco pixels na parte superior e inferior.
+
+68
+00:05:29,770 --> 00:05:42,010
+Vamos enviar a linha para o centro e vamos fazer um raio mais amplo para pixels e vamos adicionar uma pequena caixa
+
+69
+00:05:42,010 --> 00:05:42,570
+sombra.
+
+70
+00:05:44,170 --> 00:05:53,920
+Então vamos fazer zero zero para os deslocamentos, cinco pixels para o desfoque, nosso GBA preto e zero ponto três.
+
+71
+00:05:54,740 --> 00:05:56,320
+Então isso dá uma pequena sombra de caixa.
+
+72
+00:05:56,680 --> 00:05:57,110
+Tudo bem.
+
+73
+00:05:57,400 --> 00:06:01,030
+Então, começa no meio direito onde o polegar começa.
+
+74
+00:06:01,300 --> 00:06:05,020
+E, finalmente, quando adicionarmos nosso JavaScript, ele seguirá isso.
+
+75
+00:06:05,020 --> 00:06:06,160
+Mas isso é bom por enquanto.
+
+76
+00:06:06,490 --> 00:06:07,930
+Então agora vamos discar a faixa.
+
+77
+00:06:08,320 --> 00:06:15,640
+E isso só vai ser quatro para Chrome e Safari agora porque vamos pegar a entrada
+
+78
+00:06:15,640 --> 00:06:20,970
+alcance e, em seguida, faça Colen Colen Web Kit Dash.
+
+79
+00:06:20,980 --> 00:06:22,390
+E é esta é a pista.
+
+80
+00:06:22,390 --> 00:06:24,910
+Então, queremos uma pista Runnable deslizante.
+
+81
+00:06:25,190 --> 00:06:26,530
+É isso que estamos estilizando aqui.
+
+82
+00:06:27,100 --> 00:06:31,300
+E eu vou definir o plano de fundo para roxo.
+
+83
+00:06:32,560 --> 00:06:34,660
+Assim que eu faço isso, a cor muda.
+
+84
+00:06:34,660 --> 00:06:40,810
+Mas você verá se eu for para o Firefox, ainda está branco porque precisamos usar o prefixo emoji para isso.
+
+85
+00:06:42,370 --> 00:06:43,990
+Mas vamos fazer cromo primeiro.
+
+86
+00:06:44,620 --> 00:06:45,570
+Tão roxo.
+
+87
+00:06:45,580 --> 00:06:55,270
+Vamos fazer um raio de traço de borda e vamos definir isso para pixels e vamos definir a largura.
+
+88
+00:06:56,160 --> 00:07:03,090
+Para 100 por cento, a altura eu vou definir isso para 10 pixels, torná-lo um pouco mais fino e definir o
+
+89
+00:07:03,090 --> 00:07:07,650
+cursor para um ponteiro para que estilize a faixa em cromo.
+
+90
+00:07:08,820 --> 00:07:11,580
+Agora queremos fazer o polegar, que é essa parte redonda.
+
+91
+00:07:12,030 --> 00:07:14,250
+Agora, novamente, não podemos estilizá-lo diretamente.
+
+92
+00:07:14,610 --> 00:07:27,390
+Então, vamos primeiro selecioná-lo com dash web, kit, dash, slider, thumb, e temos que adicionar Web kit dash
+
+93
+00:07:27,480 --> 00:07:29,550
+aparência nenhuma.
+
+94
+00:07:30,150 --> 00:07:31,980
+OK, então agora ele desaparece completamente.
+
+95
+00:07:31,980 --> 00:07:33,820
+Mas podemos, podemos personalizá-lo.
+
+96
+00:07:33,840 --> 00:07:43,020
+Agora vamos dar-lhe uma altura de vinte e quatro pixels e uma largura de vinte e quatro pixels e vamos dar-lhe
+
+97
+00:07:43,020 --> 00:07:46,770
+um fundo branco.
+
+98
+00:07:47,040 --> 00:07:49,230
+Então agora você pode ver que é apenas um, é apenas um quadrado.
+
+99
+00:07:49,230 --> 00:07:51,150
+Então você pode, você pode adicionar imagens.
+
+100
+00:07:51,150 --> 00:07:52,920
+Você pode isso como quiser.
+
+101
+00:07:54,300 --> 00:07:56,040
+Nós vamos apenas fazer um círculo.
+
+102
+00:07:56,050 --> 00:08:02,420
+Então, digamos que o raio do traço da borda seja 50%, o que o transformará em um círculo.
+
+103
+00:08:02,430 --> 00:08:06,720
+Vou dar uma borda, um pixel, roxo sólido.
+
+104
+00:08:09,670 --> 00:08:17,890
+E está fora da pista, está muito baixo, então digamos margem superior e vamos fazer sete pixels negativos,
+
+105
+00:08:18,700 --> 00:08:20,380
+então isso vai empurrá-lo mais para cima.
+
+106
+00:08:21,980 --> 00:08:27,750
+E eu acho que isso é realmente tudo que eu quero fazer.
+
+107
+00:08:27,760 --> 00:08:30,250
+Agora, essa borda ao redor, queremos nos livrar disso.
+
+108
+00:08:31,750 --> 00:08:34,690
+Então vamos pegar vamos colocar isso.
+
+109
+00:08:37,830 --> 00:08:46,200
+Aqui em cima, vamos dizer alcance, e então quando estiver em seu estado de foco, vamos definir o contorno para não.
+
+110
+00:08:47,770 --> 00:08:53,230
+OK, então isso elimina essa borda feia e, novamente, se você verificar o Firefox, ainda parece
+
+111
+00:08:53,230 --> 00:08:55,870
+isso porque ainda não adicionamos o prefixo.
+
+112
+00:08:58,410 --> 00:09:05,410
+Tudo bem, e acho que acho que é isso, tanto quanto o estilo vai para o Chrome.
+
+113
+00:09:05,430 --> 00:09:10,190
+Então agora o que vamos fazer para o Firefox e vamos apenas comentar aqui.
+
+114
+00:09:10,200 --> 00:09:14,430
+Então isso é para Chrome e Safari.
+
+115
+00:09:15,480 --> 00:09:24,450
+E então vou copiar o que fizemos aqui com a faixa e o polegar e digamos que o Firefox
+
+116
+00:09:24,450 --> 00:09:25,080
+cole isso.
+
+117
+00:09:25,080 --> 00:09:33,420
+E agora, em vez de kit Web, pista Runnable deslizante, é Mozi Range Track.
+
+118
+00:09:33,450 --> 00:09:38,280
+Então Dash e Mosi, alcance do traço, faixa do traço.
+
+119
+00:09:39,240 --> 00:09:46,650
+E no que diz respeito aos estilos aqui, vou manter o que temos e, em seguida, para o intervalo que vai
+
+120
+00:09:46,650 --> 00:09:52,170
+para ser o intervalo de traço Mozi.
+
+121
+00:09:52,170 --> 00:09:53,070
+Traço polegar.
+
+122
+00:09:53,230 --> 00:09:55,020
+Sinto muito pelo polegar, não pelo alcance.
+
+123
+00:09:56,070 --> 00:09:57,570
+Então é a pista e o polegar.
+
+124
+00:09:58,020 --> 00:10:06,390
+Agora vou salvar isso e ir para o Firefox agora e você pode ver que temos praticamente a mesma coisa.
+
+125
+00:10:06,930 --> 00:10:11,990
+Por alguma razão, ele tem esse fundo branco e não consigo descobrir como me livrar disso.
+
+126
+00:10:12,300 --> 00:10:20,100
+Então, uma coisa que podemos fazer é aumentar a altura no Firefox para 12 pixels e o roxo deve cobrir
+
+127
+00:10:20,100 --> 00:10:20,580
+o branco.
+
+128
+00:10:20,600 --> 00:10:23,790
+Acho que poderíamos fazer 13 assim.
+
+129
+00:10:25,650 --> 00:10:27,570
+Você pode ter que mexer um pouco com isso.
+
+130
+00:10:29,490 --> 00:10:33,390
+Vamos também adicionar um ponteiro de cursor aqui.
+
+131
+00:10:33,390 --> 00:10:36,090
+Então diga ponteiro do cursor lá.
+
+132
+00:10:36,210 --> 00:10:39,150
+Vamos adicionar isso aqui também no kit da Web.
+
+133
+00:10:42,290 --> 00:10:47,690
+Então é só que ele se comporta um pouco diferente em outros navegadores, então você só quer estar ciente disso.
+
+134
+00:10:48,740 --> 00:10:54,350
+Agora, para a Microsoft, quero dizer, eu não tenho, você sabe, o Internet Explorer nesta máquina.
+
+135
+00:10:54,350 --> 00:11:04,490
+Não posso testá-lo, mas vou pegar o que temos para copiar o que fizemos para o Firefox.
+
+136
+00:11:09,270 --> 00:11:18,960
+E Seiichi, então o prefixo que queremos usar aqui é uma bagunça, e vai ser pista de bigode.
+
+137
+00:11:20,930 --> 00:11:22,700
+E isso vai ser.
+
+138
+00:11:24,630 --> 00:11:26,820
+Bigode Thum.
+
+139
+00:11:30,190 --> 00:11:34,210
+E quero dizer, se você quiser testá-lo em um Internet Explorer, você pode se parecer um pouco estranho, você
+
+140
+00:11:34,210 --> 00:11:36,310
+pode, é claro, mudar algumas dessas coisas.
+
+141
+00:11:37,630 --> 00:11:39,800
+Mas, sim, eu vou mantê-lo assim.
+
+142
+00:11:41,110 --> 00:11:42,880
+Então agora temos o estilo para baixo.
+
+143
+00:11:42,880 --> 00:11:44,520
+Firefox parece bom.
+
+144
+00:11:44,530 --> 00:11:45,580
+Vou manter isso aberto.
+
+145
+00:11:45,880 --> 00:11:46,480
+Cromada.
+
+146
+00:11:47,470 --> 00:11:52,480
+E claro, se você quiser mudar as cores ou mudar a forma disso ou o tamanho do polegar aqui,
+
+147
+00:11:52,480 --> 00:11:53,230
+você pode fazer isso.
+
+148
+00:11:53,560 --> 00:12:00,320
+Mas no próximo vídeo, queremos fazer essa função para que esse número mude dependendo do valor.
+
+149
+00:12:00,340 --> 00:12:05,040
+Além disso, queremos que a posição do rótulo siga o polegar à medida que o movemos.
+
+150
+00:12:05,320 --> 00:12:06,820
+Então vamos entrar nisso a seguir.

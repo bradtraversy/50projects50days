@@ -1,0 +1,63 @@
+1
+00:00:00,150 --> 00:00:05,520
+OK, so in this project, we're going to work a little bit with the HTML5 audio tag and we're going
+
+2
+00:00:05,520 --> 00:00:08,550
+to create this sound board so we have these different effects.
+
+3
+00:00:08,580 --> 00:00:10,140
+We just give you a sample.
+
+4
+00:00:20,270 --> 00:00:25,370
+Hopefully you can hear that, so basically we click a button, it makes a sound effect, and if the
+
+5
+00:00:25,370 --> 00:00:29,420
+sound is still playing and we click another one, it's going to stop that effect and start the next
+
+6
+00:00:29,420 --> 00:00:29,720
+one.
+
+7
+00:00:29,960 --> 00:00:32,720
+So we can do this by using audio tags.
+
+8
+00:00:33,500 --> 00:00:37,420
+So an additional five, you have the audio tag, you can show controls.
+
+9
+00:00:37,430 --> 00:00:38,360
+We're not going to do that.
+
+10
+00:00:38,370 --> 00:00:40,140
+We're going to do everything through JavaScript.
+
+11
+00:00:40,430 --> 00:00:47,630
+So basically, if you capture an audio element with, you know, get element by idea, whatever, you
+
+12
+00:00:47,630 --> 00:00:56,520
+have some methods and properties on that object that you bring in, such as play, pause and so on.
+
+13
+00:00:56,540 --> 00:00:59,180
+So this is the Amdocs.
+
+14
+00:00:59,180 --> 00:01:03,890
+If you want to take a look at that and see the different methods, what we're doing is pretty simple,
+
+15
+00:01:04,160 --> 00:01:08,860
+but I think it's a nice addition to the course working with the audio element.
+
+16
+00:01:08,870 --> 00:01:10,450
+So let's go ahead and get into it.

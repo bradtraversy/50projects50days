@@ -1,0 +1,91 @@
+1
+00:00:00,150 --> 00:00:07,800
+Hey, guys, this is another project from Dribble, so this is by a DIKO gas bar, hopefully I pronounce
+
+2
+00:00:07,800 --> 00:00:10,890
+that right and this is a survey or feedback UI design.
+
+3
+00:00:11,100 --> 00:00:16,620
+And basically we just have, you know, these a couple of smiley faces with unhappy, neutral, satisfied,
+
+4
+00:00:16,860 --> 00:00:22,830
+and we can submit the feedback and then just show a thank you message here.
+
+5
+00:00:23,130 --> 00:00:24,360
+So that's what we're going to do.
+
+6
+00:00:24,360 --> 00:00:25,760
+And this is the project here.
+
+7
+00:00:25,770 --> 00:00:29,520
+So it says, how satisfied are you with our customer support performance?
+
+8
+00:00:29,790 --> 00:00:31,050
+We have three choices.
+
+9
+00:00:31,050 --> 00:00:35,540
+I can click on one and you'll see that it highlights it with the box here.
+
+10
+00:00:35,850 --> 00:00:41,430
+So basically, we're just going to change the class to active and I'll click send review and then we
+
+11
+00:00:41,430 --> 00:00:41,640
+see.
+
+12
+00:00:41,640 --> 00:00:45,750
+Thank you with whatever we chose for the feedback, which is satisfied.
+
+13
+00:00:45,990 --> 00:00:50,020
+And it says we'll use your feedback to to improve our performance.
+
+14
+00:00:50,430 --> 00:00:50,790
+All right.
+
+15
+00:00:50,800 --> 00:00:55,710
+So pretty simple, but when we get to the JavaScript, we're going to do things a little different instead
+
+16
+00:00:55,710 --> 00:01:02,290
+of just looping through, you know, these these ratings here, these boxes and adding an event listener
+
+17
+00:01:02,290 --> 00:01:07,860
+on each one, we're going to take advantage of event bubbling and add an event listener to one of the
+
+18
+00:01:07,860 --> 00:01:12,240
+parent nodes and then target the specific rating nodes.
+
+19
+00:01:12,270 --> 00:01:12,660
+All right.
+
+20
+00:01:12,660 --> 00:01:19,680
+We're going to look at some different properties for dealing with the DOM and, you know, moving to
+
+21
+00:01:19,680 --> 00:01:25,080
+different elements and stuff like that and also, of course, the success to create this interface.
+
+22
+00:01:25,170 --> 00:01:25,500
+All right.
+
+23
+00:01:25,500 --> 00:01:26,340
+So let's get started.

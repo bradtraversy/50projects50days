@@ -1,0 +1,443 @@
+﻿1
+00:00:00,300 --> 00:00:03,090
+Muito bem, vamos começar com o nosso formulário de pesquisa oculto.
+
+2
+00:00:03,150 --> 00:00:06,720
+Então, em nosso tempo aqui, eu tenho meu projeto iniciado.
+
+3
+00:00:06,730 --> 00:00:13,500
+Você também pode ver que tenho o link incrível da fonte aqui porque usaremos o ícone de pesquisa para
+
+4
+00:00:13,500 --> 00:00:13,980
+o botão.
+
+5
+00:00:14,400 --> 00:00:17,100
+Então, vamos mudar isso para uma pesquisa oculta.
+
+6
+00:00:18,690 --> 00:00:27,360
+E então aqui embaixo no corpo, vamos criar uma div com a classe search e essa div vai
+
+7
+00:00:27,360 --> 00:00:30,940
+envolva tanto a entrada quanto o botão, e isso é tudo o que temos.
+
+8
+00:00:30,960 --> 00:00:33,030
+Então vamos adicionar a entrada.
+
+9
+00:00:33,030 --> 00:00:41,420
+Eu vou dar a isso uma classe de entrada e o tipo será texto.
+
+10
+00:00:41,430 --> 00:00:43,020
+Vamos também adicionar um espaço reservado.
+
+11
+00:00:44,520 --> 00:00:48,200
+Portanto, o espaço reservado será apenas pesquisa, ponto, ponto, ponto.
+
+12
+00:00:48,870 --> 00:00:55,230
+E logo após a entrada terá o botão e o botão terá uma classe de batidas
+
+13
+00:00:55,310 --> 00:00:58,380
+e dentro desse botão terá uma etiqueta de identificação com a fonte.
+
+14
+00:00:58,410 --> 00:00:59,490
+Ícone incrível.
+
+15
+00:00:59,490 --> 00:01:04,940
+Então fase e um traço procure o ícone.
+
+16
+00:01:05,520 --> 00:01:06,230
+Então eu guardo.
+
+17
+00:01:06,270 --> 00:01:07,320
+Nós vamos ver isso.
+
+18
+00:01:07,350 --> 00:01:09,950
+Apenas um formulário de pesquisa feio e comum.
+
+19
+00:01:10,320 --> 00:01:12,350
+Então vamos pular para o nosso sucesso.
+
+20
+00:01:12,900 --> 00:01:22,200
+Basicamente, o que queremos fazer é ter uma classe de ativo e quando estiver ativo, a entrada
+
+21
+00:01:22,200 --> 00:01:25,350
+aqui se expandirá e o botão se moverá.
+
+22
+00:01:25,470 --> 00:01:28,380
+E queríamos começar apenas mostrando o botão.
+
+23
+00:01:28,840 --> 00:01:34,750
+Então, vamos pegar alguns estilos gerais aqui primeiro no que diz respeito ao corpo.
+
+24
+00:01:34,770 --> 00:01:41,340
+Eu quero adicionar um plano de fundo, digamos uma imagem de plano de fundo, e vou usar um gradiente linear para
+
+25
+00:01:41,340 --> 00:01:42,710
+veremos um gradiente linear.
+
+26
+00:01:43,080 --> 00:01:55,770
+Vamos fazer um gradiente de 90 graus e quatro cores farão o valor hexadecimal de 75 F, F, F, e vamos
+
+27
+00:01:55,770 --> 00:02:01,450
+faça hexadecimal sete um cinco oito E dois.
+
+28
+00:02:02,120 --> 00:02:09,690
+OK, então essas serão nossas cores e precisamos colocar um ponto e vírgula aqui que eu esqueci.
+
+29
+00:02:10,350 --> 00:02:10,950
+Onde estou?
+
+30
+00:02:10,950 --> 00:02:11,760
+Onde está meu cursor.
+
+31
+00:02:14,410 --> 00:02:19,600
+OK, agora temos esse gradiente de fundo, você provavelmente pode torná-lo um pouco menor aqui.
+
+32
+00:02:22,660 --> 00:02:28,810
+OK, então o plano de fundo agora queremos exibir o alinhamento de tudo do Fleck ao centro.
+
+33
+00:02:28,820 --> 00:02:31,150
+Não precisamos, não precisamos, onde está?
+
+34
+00:02:31,150 --> 00:02:35,450
+Flex Direction como uma viewport de altura de coluna 100.
+
+35
+00:02:35,450 --> 00:02:36,280
+É bom.
+
+36
+00:02:36,970 --> 00:02:39,820
+A classe de pesquisa.
+
+37
+00:02:39,820 --> 00:02:46,060
+Vou posicionar esse relativo para que possamos posicionar as coisas dentro dele absolu.
+
+38
+00:02:46,060 --> 00:02:49,300
+E vamos definir a altura inicial aqui para 50 pixels.
+
+39
+00:02:50,560 --> 00:02:57,640
+E então para a entrada, quero dizer, isso tem uma classe de entrada na verdade.
+
+40
+00:02:57,640 --> 00:03:10,890
+Vamos fazer a entrada de pesquisa e vamos definir uma cor de fundo de branco e vamos definir uma borda de zero.
+
+41
+00:03:10,900 --> 00:03:18,250
+Retire qualquer borda e eu vou fazer o tamanho da fonte 18 pixels para torná-lo um pouco maior.
+
+42
+00:03:18,940 --> 00:03:32,650
+E vamos definir o preenchimento para 15 pixels ao redor e vamos definir a altura para 50 pixels e
+
+43
+00:03:32,650 --> 00:03:37,020
+vamos definir a largura para 50 pixels.
+
+44
+00:03:37,720 --> 00:03:43,660
+Então vai começar curto assim, mas depois teremos uma animação ou uma transição para expandir
+
+45
+00:03:43,660 --> 00:03:43,810
+isto.
+
+46
+00:03:44,890 --> 00:03:50,410
+Então eu quero adicionar aqui uma transição na propriedade largura.
+
+47
+00:03:50,610 --> 00:03:55,690
+OK, queremos que a largura tenha uma transição que dure zero vírgula três segundos com um
+
+48
+00:03:55,690 --> 00:03:56,530
+Efeito EZ.
+
+49
+00:03:58,720 --> 00:04:08,470
+Agora, para o botão, vamos estilizá-lo, para que tenha uma classe de BTN e vamos definir um plano de fundo
+
+50
+00:04:09,280 --> 00:04:10,990
+cor de branco.
+
+51
+00:04:13,220 --> 00:04:16,920
+E vamos definir uma borda de zero.
+
+52
+00:04:17,570 --> 00:04:25,410
+Queremos que o cursor seja um ponteiro quando passamos o mouse sobre ele, queremos um tamanho de fonte de vinte e quatro pixels.
+
+53
+00:04:25,760 --> 00:04:27,920
+Então lembre-se, este é o botão com o ícone.
+
+54
+00:04:28,250 --> 00:04:37,850
+E eu quero posicionar esse absoluto dentro da classe de pesquisa aqui, o contêiner de pesquisa
+
+55
+00:04:37,850 --> 00:04:42,890
+e digamos do zero superior e do zero esquerdo.
+
+56
+00:04:44,000 --> 00:04:49,250
+E então vamos dar a isso uma altura e largura de 50 pixels.
+
+57
+00:04:52,610 --> 00:04:58,940
+OK, então isso coloca bem no meio e então eu quero fazer a transição nisso, porque o que nós
+
+58
+00:04:58,940 --> 00:05:02,090
+quer fazer com o botão é movê-lo.
+
+59
+00:05:02,090 --> 00:05:05,510
+Queremos que a entrada para ele expanda a largura.
+
+60
+00:05:05,630 --> 00:05:10,640
+Temos a transição para isso aqui, o botão que queremos empurrar.
+
+61
+00:05:10,850 --> 00:05:14,480
+OK, então a entrada fica mais ampla, o botão é pressionado.
+
+62
+00:05:14,480 --> 00:05:17,170
+Então vamos usar transform nisso.
+
+63
+00:05:17,180 --> 00:05:23,650
+Então, queremos adicionar uma transição para transformar a mesma quantidade de tempo que a largura na entrada e facilitar
+
+64
+00:05:23,660 --> 00:05:24,170
+efeito.
+
+65
+00:05:26,870 --> 00:05:34,460
+OK, e então queremos nos livrar de qualquer contorno, então vamos pegar, digamos, o BTN quando estiver em seu
+
+66
+00:05:34,460 --> 00:05:40,140
+estado de foco e também a entrada quando está em seu estado de foco.
+
+67
+00:05:40,610 --> 00:05:43,850
+Queremos definir o contorno para none.
+
+68
+00:05:45,020 --> 00:05:46,810
+OK, agora não vemos esse contorno.
+
+69
+00:05:47,720 --> 00:05:52,190
+E então, finalmente, queremos fazer a pesquisa.
+
+70
+00:05:54,540 --> 00:06:03,330
+Entradas, mas quando está ativa, então a classe de pesquisa, se tiver uma classe ativa, queremos a entrada
+
+71
+00:06:03,330 --> 00:06:08,010
+para ir para 200 pixels do que era, 50?
+
+72
+00:06:08,450 --> 00:06:09,980
+Sim, então começa em 50.
+
+73
+00:06:10,380 --> 00:06:18,480
+E então, quando e quando o elemento de pesquisa tiver uma classe ativa, a largura irá para 200.
+
+74
+00:06:18,690 --> 00:06:21,070
+E também queremos que o botão se mova.
+
+75
+00:06:21,150 --> 00:06:25,320
+Temos uma tendência, uma transição na transformação, mas ainda não criamos isso.
+
+76
+00:06:25,570 --> 00:06:34,190
+Então também quando a busca tem a classe de ativo nela que queremos pegar o botão, queremos definir
+
+77
+00:06:34,200 --> 00:06:36,960
+transformar e queremos movê-lo.
+
+78
+00:06:37,170 --> 00:06:39,660
+Queremos movê-lo ao longo do eixo X.
+
+79
+00:06:39,670 --> 00:06:44,070
+Queremos movê-lo para a direita para que possamos usar o translate X.
+
+80
+00:06:44,370 --> 00:06:50,340
+Então traduza no eixo X e vamos movê-lo por cento e noventa e oito pixels.
+
+81
+00:06:52,080 --> 00:06:52,530
+Tudo bem.
+
+82
+00:06:54,060 --> 00:06:59,460
+Então, se eu salvar isso, não veremos nenhuma diferença aqui porque precisamos de um pouco de JavaScript
+
+83
+00:06:59,460 --> 00:07:05,240
+para poder dar essa classe e você verá se eu coloco manualmente a classe ativa aqui.
+
+84
+00:07:05,520 --> 00:07:06,030
+Aqui vamos nós.
+
+85
+00:07:06,030 --> 00:07:06,840
+Ele se expande.
+
+86
+00:07:07,260 --> 00:07:09,240
+Então JavaScript vai ser muito simples.
+
+87
+00:07:09,360 --> 00:07:11,880
+Vamos em frente e trazer a pesquisa.
+
+88
+00:07:12,450 --> 00:07:14,130
+Então documente ponto.
+
+89
+00:07:16,080 --> 00:07:17,190
+Seletor de consultas.
+
+90
+00:07:18,540 --> 00:07:25,230
+E queremos pegar a classe de pesquisa e então vamos pegar também o BGN.
+
+91
+00:07:27,680 --> 00:07:36,980
+PETN, e então vamos pegar a entrada de entrada e então eu vou pegar o botão e queremos um evento
+
+92
+00:07:36,980 --> 00:07:41,020
+listener sobre isso, então queremos adicionar um listener de evento de um evento de clique.
+
+93
+00:07:43,190 --> 00:07:47,240
+E quando clicarmos, vamos chamar uma função de seta aqui.
+
+94
+00:07:47,240 --> 00:07:50,030
+E tudo o que queremos fazer é fazer a pesquisa.
+
+95
+00:07:50,690 --> 00:07:53,360
+Lembre-se do div de pesquisa, que acabei de mostrar a você?
+
+96
+00:07:53,360 --> 00:07:57,390
+Se eu colocar uma classe ativa nisso, ela alarga, aperta o botão.
+
+97
+00:07:57,620 --> 00:07:58,610
+Então é isso que queremos fazer.
+
+98
+00:07:58,620 --> 00:08:06,230
+Queremos dizer a partir da pesquisa, temos nossa lista de classes e, em seguida, há um método chamado alternar para alternar
+
+99
+00:08:06,230 --> 00:08:08,450
+uma classe, basicamente, basta adicioná-la e removê-la.
+
+100
+00:08:08,450 --> 00:08:11,200
+Então, vamos alternar a classe de active.
+
+101
+00:08:11,510 --> 00:08:16,800
+Eu também quero definir o foco na entrada, que podemos usar apenas o método de foco.
+
+102
+00:08:17,270 --> 00:08:17,690
+Tudo bem.
+
+103
+00:08:17,700 --> 00:08:23,990
+Então, se eu for aqui e clicar, ele não apenas abre e, você sabe, aperta o botão, amplia
+
+104
+00:08:23,990 --> 00:08:27,320
+a entrada, mas também se concentra no que está lá.
+
+105
+00:08:27,650 --> 00:08:34,310
+E se eu clicar volta e você pode ver apenas os projetos que fizemos até agora e alguns dos
+
+106
+00:08:34,310 --> 00:08:41,630
+que vamos fazer muito disso apenas colocando classes específicas em nosso JavaScript,
+
+107
+00:08:41,630 --> 00:08:46,880
+através de eventos, você sabe, clicando ou passando o mouse sobre algo e fazendo um evento longe de onde
+
+108
+00:08:46,880 --> 00:08:52,730
+basta adicionar ou remover ou alternar uma classe e então temos uma transição para nos dar uma pequena animação legal.
+
+109
+00:08:52,940 --> 00:08:58,070
+Portanto, há muito pouca necessidade de algo como Jan para fazer coisas assim.
+
+110
+00:08:58,130 --> 00:09:04,640
+Você acabou de usar o JavaScript vanilla para misturar com sucesso e pode fazer praticamente qualquer tipo de animação
+
+111
+00:09:04,640 --> 00:09:06,650
+que você pode fazer com a consulta J com bastante facilidade.

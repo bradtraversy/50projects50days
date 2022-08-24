@@ -1,0 +1,427 @@
+1
+00:00:00,150 --> 00:00:06,480
+OK, so now we want to start to deal with the hover effects we want when we hover on this side on the
+
+2
+00:00:06,480 --> 00:00:07,740
+left, it's going to spread out.
+
+3
+00:00:07,740 --> 00:00:09,540
+It's going to the width will be wider.
+
+4
+00:00:09,570 --> 00:00:11,090
+Same thing if we hover over here.
+
+5
+00:00:11,490 --> 00:00:16,830
+So I'm going to manually just add on the on the container, the div with the class of container, I'm
+
+6
+00:00:16,830 --> 00:00:22,070
+going to add hover left and save that just so we can style it and see what we're doing.
+
+7
+00:00:22,440 --> 00:00:31,140
+So let's say for the class of hover dash left when that one when that's active then we want to take
+
+8
+00:00:31,140 --> 00:00:38,610
+the left side and we want to increase the width and this is going to be in a custom property or a variable
+
+9
+00:00:38,610 --> 00:00:41,340
+called hover dash width.
+
+10
+00:00:42,090 --> 00:00:48,510
+Now at the same time, when when Hover Left is active, the right side is going to be smaller.
+
+11
+00:00:48,510 --> 00:00:54,660
+So we then want to set that with to a variable called other with.
+
+12
+00:00:56,410 --> 00:00:56,880
+All right.
+
+13
+00:00:56,880 --> 00:00:59,690
+And then we'll go up here and we'll set those variables.
+
+14
+00:00:59,730 --> 00:01:02,690
+When I say variables are custom properties, I mean the same thing.
+
+15
+00:01:03,240 --> 00:01:10,650
+So dash, dash, hover, dash width is going to be seventy five percent and you can change this ratio
+
+16
+00:01:10,650 --> 00:01:11,280
+if you want.
+
+17
+00:01:11,820 --> 00:01:16,870
+So other with is going to be twenty five percent.
+
+18
+00:01:17,880 --> 00:01:22,920
+Now if I save that hover left is applied to this, to the container.
+
+19
+00:01:22,920 --> 00:01:26,070
+So the left side is now wider and 75 percent.
+
+20
+00:01:26,070 --> 00:01:29,520
+The other side is 25, which is what we want now.
+
+21
+00:01:29,520 --> 00:01:39,300
+At the same time, let's copy these two lines and say if hover right is applied, then we want the right
+
+22
+00:01:39,300 --> 00:01:41,120
+side to be over with.
+
+23
+00:01:41,670 --> 00:01:49,200
+And then down here, if hover right is applied, we want the left side to be the other with.
+
+24
+00:01:49,230 --> 00:01:54,570
+So now if I go when I apply here, I have a right and save.
+
+25
+00:01:54,570 --> 00:01:56,030
+Now this side is wider.
+
+26
+00:01:56,340 --> 00:01:57,840
+So that's exactly what we want.
+
+27
+00:01:59,760 --> 00:02:06,540
+Now I am going to add the JavaScript now so that this gets added dynamically instead of us having to
+
+28
+00:02:06,540 --> 00:02:07,660
+actually put it in here.
+
+29
+00:02:07,680 --> 00:02:09,390
+So now it's going to go back to normal.
+
+30
+00:02:09,780 --> 00:02:14,130
+And if we go into our JavaScript here, let's bring in the left side.
+
+31
+00:02:14,130 --> 00:02:15,240
+So conse left.
+
+32
+00:02:15,240 --> 00:02:22,350
+I'm going to use document dot query selector and we want to select the class of left.
+
+33
+00:02:22,950 --> 00:02:24,030
+Copy that down.
+
+34
+00:02:24,030 --> 00:02:25,980
+We also want to grab the right side.
+
+35
+00:02:27,390 --> 00:02:29,070
+So that'll be right.
+
+36
+00:02:29,070 --> 00:02:34,740
+And then we also want to grab the container because that's where we're adding the classes to and removing
+
+37
+00:02:34,740 --> 00:02:35,780
+the classes from.
+
+38
+00:02:35,790 --> 00:02:42,960
+So container and then we'll take the left, we'll add an event listener with ADD event listener and
+
+39
+00:02:42,960 --> 00:02:48,470
+this time we're listening on a mouse enter event, which is basically a hover.
+
+40
+00:02:49,170 --> 00:02:54,020
+And then when that happens, we're going to call an arrow function and take the container.
+
+41
+00:02:54,030 --> 00:02:57,720
+I don't need to put curly braces, since this is just one line in this function.
+
+42
+00:02:58,230 --> 00:03:05,910
+I'm going to take the container and I'm going to call class list dot add to add a class and I'm going
+
+43
+00:03:05,910 --> 00:03:08,850
+to add the class of hover dash left.
+
+44
+00:03:08,850 --> 00:03:14,620
+So I'm just dynamically doing what I just manually did in the in the, in the HTML.
+
+45
+00:03:15,540 --> 00:03:16,050
+All right.
+
+46
+00:03:16,050 --> 00:03:22,110
+Now if I save this and I go and I hover over it, you can see that it gets wider and just stays there.
+
+47
+00:03:22,290 --> 00:03:24,740
+So we need to take care of removing it as well.
+
+48
+00:03:25,320 --> 00:03:30,950
+So say left out event listener in this time it's going to be mouse leave, right.
+
+49
+00:03:30,960 --> 00:03:35,580
+So mouse leave and then we want to remove the hover left.
+
+50
+00:03:35,610 --> 00:03:43,440
+So now you can see that I can go in, gets wider, I move, it gets thinner and we want to do the same
+
+51
+00:03:43,440 --> 00:03:44,070
+for the right.
+
+52
+00:03:44,080 --> 00:03:53,430
+So I'm just going to copy that and we will take, let's say this, this and this and this and change
+
+53
+00:03:53,430 --> 00:03:54,030
+it all to.
+
+54
+00:03:54,030 --> 00:03:54,590
+Right.
+
+55
+00:03:55,260 --> 00:03:59,940
+OK, so when we add we mouse enter the right, it's going to add however right.
+
+56
+00:03:59,970 --> 00:04:01,650
+When we leave it's going to remove Huba.
+
+57
+00:04:01,650 --> 00:04:01,960
+Right.
+
+58
+00:04:02,460 --> 00:04:04,230
+So now I can go on either side.
+
+59
+00:04:04,590 --> 00:04:07,560
+Now it's just flicking back and forth which I don't like.
+
+60
+00:04:07,560 --> 00:04:10,410
+So we just want to add a smooth transition.
+
+61
+00:04:10,890 --> 00:04:14,340
+So we just need to take let's take a split.
+
+62
+00:04:14,340 --> 00:04:14,820
+Right.
+
+63
+00:04:15,000 --> 00:04:19,320
+I'm going to go right here and say split right, split.
+
+64
+00:04:19,320 --> 00:04:20,730
+Dasch left.
+
+65
+00:04:21,390 --> 00:04:24,980
+And let's also grab the pseudo selectors to split up.
+
+66
+00:04:25,050 --> 00:04:28,260
+Split right.
+
+67
+00:04:28,260 --> 00:04:34,470
+Kalanchoe and before and split it left.
+
+68
+00:04:35,610 --> 00:04:46,140
+Colon, colon before and we're just going to add a transition, so transition on all and the speed is
+
+69
+00:04:46,140 --> 00:04:54,200
+going to be inside of a variable called speed and we'll do an easing out effect.
+
+70
+00:04:54,840 --> 00:04:58,270
+So let's go up here and apply a speed variable.
+
+71
+00:04:59,190 --> 00:05:01,370
+That way you can just change it here if you want.
+
+72
+00:05:01,380 --> 00:05:09,270
+So speed is going to be 1000 times or 1000 milliseconds, which is one second and now.
+
+73
+00:05:11,580 --> 00:05:13,260
+OK, it looks like the overlay.
+
+74
+00:05:13,980 --> 00:05:15,990
+Let's see what they mess up down here.
+
+75
+00:05:17,370 --> 00:05:18,880
+So transition.
+
+76
+00:05:18,900 --> 00:05:19,950
+So I've split.
+
+77
+00:05:21,800 --> 00:05:28,280
+A split dash left should be split, Ditlev, so the overlay was working, but the actual left wasn't.
+
+78
+00:05:28,310 --> 00:05:31,570
+So now you can see that it's working.
+
+79
+00:05:33,560 --> 00:05:34,440
+So it looks pretty good.
+
+80
+00:05:34,470 --> 00:05:40,630
+The last thing I want to do is on smaller screens, like under 800.
+
+81
+00:05:40,640 --> 00:05:44,000
+I want to just make the H1 smaller and the buttons smaller.
+
+82
+00:05:44,010 --> 00:05:45,860
+So let's add a media query here.
+
+83
+00:05:46,460 --> 00:05:59,870
+So we'll say media, let's say Max with 800 pixels, then let's take the H1 and let's set the font size
+
+84
+00:05:59,870 --> 00:06:03,390
+to set it to two ram.
+
+85
+00:06:03,410 --> 00:06:07,750
+So from forum to two ram and then for the button.
+
+86
+00:06:08,510 --> 00:06:14,240
+So BTN let's set the width to twelve ram.
+
+87
+00:06:14,240 --> 00:06:18,620
+I think it was 15 to begin with and we'll also lessen the padding.
+
+88
+00:06:18,620 --> 00:06:22,070
+So padding will do one point two ram
+
+89
+00:06:24,510 --> 00:06:25,520
+and let's see.
+
+90
+00:06:25,550 --> 00:06:28,700
+So these are kind of far away so.
+
+91
+00:06:30,120 --> 00:06:36,630
+I guess we can move the H1 down a bit, so from the top, I believe it was 20 percent, let's do 30
+
+92
+00:06:36,630 --> 00:06:38,370
+percent and that will move it down.
+
+93
+00:06:39,030 --> 00:06:39,330
+All right.
+
+94
+00:06:39,330 --> 00:06:41,940
+So I think that looks pretty good, even on smaller screens.
+
+95
+00:06:43,170 --> 00:06:45,230
+So that's when we hit 800 pixels.
+
+96
+00:06:46,980 --> 00:06:47,990
+So that's going to be it.
+
+97
+00:06:48,000 --> 00:06:53,760
+And if you guys want to change up the content, obviously, I just thought this was a good idea because
+
+98
+00:06:53,760 --> 00:06:55,020
+of the time of year.
+
+99
+00:06:55,020 --> 00:06:56,910
+And, you know, the systems are coming out.
+
+100
+00:06:56,910 --> 00:06:57,810
+They're really popular.
+
+101
+00:06:57,820 --> 00:07:01,740
+I, I have yet to find find a PlayStation five myself.
+
+102
+00:07:02,130 --> 00:07:04,170
+So I just thought it'd be a good idea.
+
+103
+00:07:04,170 --> 00:07:06,090
+But of course, you can change the content up.
+
+104
+00:07:06,570 --> 00:07:06,900
+All right.
+
+105
+00:07:06,900 --> 00:07:07,310
+That's it.
+
+106
+00:07:07,320 --> 00:07:08,190
+Thanks for watching.
+
+107
+00:07:08,190 --> 00:07:11,190
+Hopefully you enjoyed this project and I will see you in the next one.

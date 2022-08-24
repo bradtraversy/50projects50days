@@ -1,0 +1,755 @@
+﻿1
+00:00:00,390 --> 00:00:03,040
+Vamos começar em nosso slide vertical.
+
+2
+00:00:03,120 --> 00:00:10,080
+E eu tenho a janela do meu navegador bastante ampla porque isso não é realmente responsivo apenas por causa da orientação
+
+3
+00:00:10,080 --> 00:00:11,850
+de como o controle deslizante é.
+
+4
+00:00:12,090 --> 00:00:15,080
+Portanto, não ficará bem em um smartphone ou algo assim.
+
+5
+00:00:15,090 --> 00:00:16,880
+Isso não é realmente o que isso é voltado para.
+
+6
+00:00:17,400 --> 00:00:23,550
+Então, vou manter isso um pouco mais amplo e apenas clicar para frente e para trás por enquanto em nosso HTML, nós
+
+7
+00:00:23,550 --> 00:00:29,520
+apenas tenho um iniciador de projeto de produto e tenho um link para a fonte CDN incrível porque estaremos usando
+
+8
+00:00:29,520 --> 00:00:30,830
+ícones para os botões.
+
+9
+00:00:31,380 --> 00:00:40,830
+Então vamos começar aqui e mudar isso para controle deslizante vertical e então teremos um contêiner
+
+10
+00:00:40,830 --> 00:00:42,320
+que envolve tudo.
+
+11
+00:00:42,330 --> 00:00:51,000
+Então, vamos dar a este div uma classe de contêiner de traço deslizante e há basicamente três três partes separadas.
+
+12
+00:00:51,030 --> 00:00:54,570
+Primeiro temos o slide do traço esquerdo.
+
+13
+00:00:55,080 --> 00:00:58,350
+Esta será a área de texto.
+
+14
+00:00:58,350 --> 00:01:06,030
+Então, teremos um H1 e um parágrafo e, em seguida, o slide certo e eu preencherei isso em um pouco
+
+15
+00:01:06,030 --> 00:01:06,300
+pedaço.
+
+16
+00:01:06,690 --> 00:01:10,170
+Mas o slide certo serão as imagens.
+
+17
+00:01:10,170 --> 00:01:10,430
+Certo?
+
+18
+00:01:10,440 --> 00:01:13,080
+Então eles são basicamente imagens de fundo de dígitos.
+
+19
+00:01:13,440 --> 00:01:15,570
+E abaixo disso, queremos nossos botões.
+
+20
+00:01:15,780 --> 00:01:19,380
+Então, digamos botões de traço de ação.
+
+21
+00:01:20,550 --> 00:01:29,400
+E nosso primeiro botão aqui vai ter uma classe de botão de traço para baixo e eu vou usar fonte incrível
+
+22
+00:01:29,400 --> 00:01:29,880
+ícone.
+
+23
+00:01:29,880 --> 00:01:35,520
+Então Fayaz E nós queremos um traço seta para baixo.
+
+24
+00:01:36,540 --> 00:01:39,210
+OK, então vá em frente e economize esse peso.
+
+25
+00:01:39,210 --> 00:01:41,610
+Isso é agora o espaço Faez.
+
+26
+00:01:42,600 --> 00:01:48,090
+Restringido e, em seguida, para a seta para cima, vamos pegar este botão, copiá-lo e vamos mudar
+
+27
+00:01:48,090 --> 00:01:53,000
+este para cima e altere este ícone para cima.
+
+28
+00:01:53,820 --> 00:01:55,130
+E agora temos nossos botões.
+
+29
+00:01:55,650 --> 00:02:04,170
+Então, para o lado esquerdo, vamos entrar nesse div e vamos ter um monte de divs em cada
+
+30
+00:02:04,170 --> 00:02:04,530
+1.
+
+31
+00:02:05,160 --> 00:02:13,830
+Então, para este, dirá flor da natureza e um parágrafo dirá tudo em rosa.
+
+32
+00:02:14,490 --> 00:02:19,350
+E então cada div terá um estilo embutido com uma cor de fundo.
+
+33
+00:02:19,500 --> 00:02:25,050
+Dessa forma, quando você quiser adicionar novos slides ou novos divs, basta colocar a cor de fundo aqui
+
+34
+00:02:25,050 --> 00:02:27,380
+em vez de criar uma classe inteira separada para ele.
+
+35
+00:02:28,020 --> 00:02:34,410
+Então, digamos a cor de fundo e faremos FD três cinco cinco cinco.
+
+36
+00:02:35,610 --> 00:02:36,360
+Então eu guardo.
+
+37
+00:02:36,390 --> 00:02:38,010
+Nós vamos ver isso agora.
+
+38
+00:02:38,010 --> 00:02:41,610
+Teremos mais três destes, que vou colar porque é a mesma coisa.
+
+39
+00:02:41,610 --> 00:02:43,430
+São apenas cores e conteúdos diferentes.
+
+40
+00:02:44,040 --> 00:02:51,420
+Então, se eu salvar isso, você pode ver o que temos aqui agora para o slide certo será apenas um monte
+
+41
+00:02:51,420 --> 00:02:52,860
+de imagens de fundo.
+
+42
+00:02:52,860 --> 00:02:54,600
+Então eu vou pegar isso.
+
+43
+00:02:55,470 --> 00:03:00,660
+E estou apenas usando links para imagens iniciais, apenas para imagens de estoque.
+
+44
+00:03:00,960 --> 00:03:05,400
+Então você pode ver que temos uma div com uma imagem de fundo, sua URL e temos para isso.
+
+45
+00:03:05,670 --> 00:03:10,500
+Agora, se eu salvar, não veremos isso agora porque não temos nenhum conteúdo dentro do
+
+46
+00:03:10,500 --> 00:03:14,070
+div e não há altura ou com aplicado ao elemento.
+
+47
+00:03:14,520 --> 00:03:16,380
+Então não vamos ver as imagens ainda.
+
+48
+00:03:16,890 --> 00:03:22,200
+Agora, uma coisa que quero mencionar é por causa da forma como os slides, um lado sobe, um lado vai
+
+49
+00:03:22,200 --> 00:03:29,850
+abaixo, temos esta primeira div, esta flor da natureza vai na verdade com a última imagem div aqui.
+
+50
+00:03:30,180 --> 00:03:30,540
+Tudo bem.
+
+51
+00:03:30,550 --> 00:03:36,930
+Então, se eu olhar para esta última imagem, vou copiar seu URL e colar isso e você pode ver
+
+52
+00:03:36,930 --> 00:03:38,160
+essa é a flor rosa.
+
+53
+00:03:38,460 --> 00:03:44,700
+Então, a maneira como você faria isso, se você quiser adicionar mais, é se você adicionar um no final aqui, você está
+
+54
+00:03:44,700 --> 00:03:46,830
+vai adicionar um no início aqui.
+
+55
+00:03:47,290 --> 00:03:48,180
+OK, veja a batida.
+
+56
+00:03:48,490 --> 00:03:50,610
+O último aqui é Flying Eagle.
+
+57
+00:03:50,880 --> 00:03:55,680
+E se dermos uma olhada nisso, teremos a Águia Voadora.
+
+58
+00:03:55,680 --> 00:03:58,120
+Então essa é a ordem dos elementos.
+
+59
+00:03:58,650 --> 00:04:01,920
+Então agora vamos pular para o nosso sucesso e vamos começar aqui.
+
+60
+00:04:02,100 --> 00:04:05,090
+Então, no que diz respeito à fonte, vou usar open sans.
+
+61
+00:04:05,490 --> 00:04:18,480
+Então, digamos que família seja igual a aberto mais sans e vamos mudar isso para abrir Sans, OK, e eu posso
+
+62
+00:04:18,480 --> 00:04:24,270
+faça isso menor aqui, então faça isso menor e faça isso um pouco menor por enquanto.
+
+63
+00:04:26,160 --> 00:04:30,050
+Agora, o corpo, na verdade, não precisamos de todas essas coisas como display flex.
+
+64
+00:04:30,060 --> 00:04:35,280
+Eu só quero a família de fontes e quero que a altura seja 100 alturas da janela de visualização.
+
+65
+00:04:35,940 --> 00:04:37,500
+Então vai ser assim agora.
+
+66
+00:04:37,500 --> 00:04:40,530
+E eu quero apenas definir uma redefinição na margem e no preenchimento.
+
+67
+00:04:40,530 --> 00:04:44,280
+Portanto, para o seletor universal, o preenchimento de margem será definido como zero.
+
+68
+00:04:44,580 --> 00:04:47,220
+Isso vai remover a margem e o preenchimento de tudo.
+
+69
+00:04:49,500 --> 00:04:56,160
+Agora, no que diz respeito ao contêiner deslizante, que envolve tudo.
+
+70
+00:04:57,600 --> 00:05:02,850
+Então, no contêiner deslizante, vou definir a posição para relativa, porque vamos definir
+
+71
+00:05:02,850 --> 00:05:09,270
+tudo dentro dele como absoluto dentro desse contêiner e, em seguida, basta definir o estouro para oculto
+
+72
+00:05:09,870 --> 00:05:13,920
+e defina a largura para 100 larguras de janela de visualização.
+
+73
+00:05:13,950 --> 00:05:17,790
+Então VW, que vai tirar o buraco com e mesmo com a altura.
+
+74
+00:05:17,820 --> 00:05:19,220
+Isso vai ser vago.
+
+75
+00:05:19,230 --> 00:05:20,250
+Informe as alturas.
+
+76
+00:05:21,100 --> 00:05:21,480
+Tudo bem.
+
+77
+00:05:21,480 --> 00:05:24,750
+E então vamos em frente e começar no slide da esquerda.
+
+78
+00:05:28,360 --> 00:05:36,250
+Então, para o lado esquerdo, quero definir a altura para 100 por cento e vamos acertar o relógio.
+
+79
+00:05:36,400 --> 00:05:38,340
+Vamos fazer a largura primeiro.
+
+80
+00:05:38,530 --> 00:05:43,240
+Portanto, a largura será de 35% do contêiner.
+
+81
+00:05:44,370 --> 00:05:50,130
+OK, a parte da imagem será um pouco maior, o poder da imagem será de 65% e estamos
+
+82
+00:05:50,130 --> 00:05:59,220
+vai posicionar esse absoluto e do zero de cima, do zero da esquerda.
+
+83
+00:05:59,610 --> 00:06:05,570
+E então o que queremos fazer é atingir o lado da divisão imediata, que são cada um deles aqui.
+
+84
+00:06:05,970 --> 00:06:10,740
+Então, digamos slide esquerdo, div imediato.
+
+85
+00:06:12,250 --> 00:06:19,150
+E eu quero definir para isso a altura, pois eu quero que a altura seja a coisa toda, então um desses
+
+86
+00:06:19,150 --> 00:06:20,740
+deve ocupar toda a altura.
+
+87
+00:06:21,190 --> 00:06:27,010
+Portanto, haverá 100 a 100 por cento e, em seguida, a largura será de 100 por cento.
+
+88
+00:06:27,010 --> 00:06:30,360
+Mas é 100 por cento do seu recipiente, que é de 35 por cento.
+
+89
+00:06:30,700 --> 00:06:37,260
+Então, se eu salvar isso agora, podemos ver essa flor da natureza e ela ocupa toda a altura aqui.
+
+90
+00:06:37,780 --> 00:06:41,900
+E quando adicionarmos a funcionalidade de slide, ela mostrará o próximo.
+
+91
+00:06:43,090 --> 00:06:44,890
+Agora, queremos estilizar isso um pouco melhor.
+
+92
+00:06:44,900 --> 00:06:50,480
+Então, vamos exibir flex para que cada div seja flex de exibição.
+
+93
+00:06:50,500 --> 00:06:51,900
+Agora está em uma linha agora.
+
+94
+00:06:51,910 --> 00:06:54,580
+É por isso que é horizontal.
+
+95
+00:06:54,970 --> 00:07:02,710
+Então, queremos mudar a direção do flex para uma coluna e então podemos alinhar horizontalmente e verticalmente.
+
+96
+00:07:02,710 --> 00:07:11,440
+Então alinhe o centro do item de linha e então vamos justificar o centro de conteúdo e isso irá alinhá-lo dessa forma.
+
+97
+00:07:12,640 --> 00:07:15,310
+E então vamos também fazer a cor branca.
+
+98
+00:07:17,820 --> 00:07:27,760
+OK, e então vamos pegar o H1, então deslize para a esquerda H1 e vamos definir o tamanho da fonte para ser um pouco maior.
+
+99
+00:07:27,780 --> 00:07:32,970
+Vamos definir isso para 40 pixels e adicionar um pouco de margem inferior porque lembre-se,
+
+100
+00:07:32,970 --> 00:07:38,250
+tiramos a margem de tudo, 10 pixels para separar da parte do parágrafo.
+
+101
+00:07:38,580 --> 00:07:40,410
+E então eu só quero movê-lo um pouco para cima.
+
+102
+00:07:40,410 --> 00:07:45,170
+Então a margem superior compensa uma margem negativa, 30 pixels, o que a puxará um pouco para cima.
+
+103
+00:07:47,130 --> 00:07:56,640
+Tudo bem, então esse é o slide esquerdo agora, o slide direito, slide direito e o conjunto, a altura para
+
+104
+00:07:56,640 --> 00:08:08,640
+100 por cento nessa posição, absoluto do zero e depois da esquerda, vou trinta
+
+105
+00:08:08,640 --> 00:08:11,990
+cinco por cento porque isso com esses trinta e cinco por cento.
+
+106
+00:08:12,210 --> 00:08:15,840
+Então, para o slide certo, estou posicionando um absoluto dentro do contêiner.
+
+107
+00:08:16,050 --> 00:08:20,340
+Então, eu quero começar aqui, o que seria 35% a partir da esquerda.
+
+108
+00:08:21,390 --> 00:08:21,780
+Tudo bem.
+
+109
+00:08:21,790 --> 00:08:25,320
+E então queremos definir a largura para sessenta e cinco por cento.
+
+110
+00:08:27,760 --> 00:08:29,020
+Certo, e então.
+
+111
+00:08:30,750 --> 00:08:39,630
+Para realmente mostrar a imagem, vamos direcionar o dispositivo, então a diretiva Rightside e eu só quero definir
+
+112
+00:08:39,630 --> 00:08:45,270
+algumas propriedades de plano de fundo como repetição de plano de fundo para que não haja repetição, já temos o plano de fundo
+
+113
+00:08:45,270 --> 00:08:47,220
+imagem definida em linha.
+
+114
+00:08:47,310 --> 00:08:47,520
+Certo.
+
+115
+00:08:47,610 --> 00:08:48,980
+Isso já está definido aqui.
+
+116
+00:08:49,260 --> 00:08:52,650
+Então, eu só quero adicionar algumas outras propriedades de plano de fundo, como o tamanho.
+
+117
+00:08:53,100 --> 00:08:54,420
+Então, qual é o fundo?
+
+118
+00:08:54,420 --> 00:08:56,040
+Tamanho vai ser capa.
+
+119
+00:08:56,460 --> 00:09:04,310
+Eu quero mostrar a imagem inteira e, em seguida, a posição do plano de fundo será centralizada nos eixos X e Y.
+
+120
+00:09:04,770 --> 00:09:09,840
+Ainda não podemos vê-lo porque precisamos aplicar uma altura a ele.
+
+121
+00:09:10,050 --> 00:09:14,520
+Assim, a altura e a largura serão ambas 100%.
+
+122
+00:09:14,550 --> 00:09:16,200
+Então, ocupa toda a parte lá.
+
+123
+00:09:16,410 --> 00:09:17,910
+E agora podemos ver a imagem.
+
+124
+00:09:17,940 --> 00:09:22,710
+Agora, esta não é a imagem que realmente queremos mostrar com esta flor da natureza.
+
+125
+00:09:22,710 --> 00:09:29,310
+Mas, como eu disse, desde a maneira como os estamos deslizando, quando chegarmos ao nosso JavaScript, vamos
+
+126
+00:09:29,310 --> 00:09:33,960
+para configurá-lo para que este seja o texto certo ou o slide direito esquerdo para esta imagem.
+
+127
+00:09:34,230 --> 00:09:37,290
+Mas, por enquanto, vamos em frente e estilizar nossos botões.
+
+128
+00:09:37,290 --> 00:09:40,680
+Então vamos ter alguns estilos gerais de botões.
+
+129
+00:09:40,680 --> 00:09:50,040
+Mas antes de fazermos isso, quero apenas segmentar a ação do contêiner deslizante, o que chamo de ação,
+
+130
+00:09:50,040 --> 00:09:52,700
+traço, Fortin e Button.
+
+131
+00:09:54,780 --> 00:09:58,290
+E quero dizer, poderíamos colocar o estilo geral aqui também.
+
+132
+00:09:58,290 --> 00:10:00,830
+Mas caso você queira adicionar outros botões em algum lugar.
+
+133
+00:10:01,140 --> 00:10:04,550
+Portanto, isso será posicionado como absolutos.
+
+134
+00:10:05,850 --> 00:10:11,670
+E assim que eu fizer isso, você pode ver aqui em cima, há dois botões aqui, mas ambos são
+
+135
+00:10:11,670 --> 00:10:13,410
+exatamente no mesmo lugar agora.
+
+136
+00:10:14,460 --> 00:10:19,020
+Vou mover ambos para uma posição de 35 por cento à esquerda.
+
+137
+00:10:19,500 --> 00:10:24,210
+OK, então ele vai empurrá-los e então vamos de cima para baixo até a metade, nós vamos
+
+138
+00:10:24,210 --> 00:10:25,620
+dizer 50 por cento para baixo.
+
+139
+00:10:25,890 --> 00:10:30,300
+Agora, ambos os botões estão aqui e queremos garantir que eles estejam sempre no topo.
+
+140
+00:10:30,300 --> 00:10:33,570
+Então vamos fazer um índice Z de um.
+
+141
+00:10:36,000 --> 00:10:36,420
+Tudo bem.
+
+142
+00:10:36,430 --> 00:10:39,780
+E depois para o botão para baixo.
+
+143
+00:10:39,990 --> 00:10:48,030
+Então, vamos pegar isso aqui e dizer botão de traço de classe para baixo.
+
+144
+00:10:51,390 --> 00:11:01,020
+Eu vou definir uma borda, na verdade, vamos posicioná-la primeiro para que possamos usar, transformar e depois
+
+145
+00:11:01,020 --> 00:11:07,210
+traduzir no eixo x, porque o que eu quero fazer é mover este botão para a esquerda.
+
+146
+00:11:07,650 --> 00:11:13,220
+Então, se colocarmos um número positivo aqui, farei apenas 100% do elemento.
+
+147
+00:11:13,740 --> 00:11:16,640
+Vai movê-lo para a esquerda, o que eu não quero.
+
+148
+00:11:16,650 --> 00:11:17,790
+Eu quero isso para a direita.
+
+149
+00:11:17,800 --> 00:11:19,200
+Então isso vai ser me desculpe.
+
+150
+00:11:19,500 --> 00:11:20,550
+Isso vai movê-lo para a direita.
+
+151
+00:11:20,550 --> 00:11:21,610
+Eu quero para a esquerda.
+
+152
+00:11:21,630 --> 00:11:23,060
+Então isso vai ser negativo.
+
+153
+00:11:23,460 --> 00:11:26,070
+Então agora está em ambos os lados desta linha aqui.
+
+154
+00:11:26,680 --> 00:11:27,120
+Tudo bem.
+
+155
+00:11:27,130 --> 00:11:30,930
+E então, até onde vão as fronteiras.
+
+156
+00:11:32,460 --> 00:11:39,570
+Na verdade, vamos fazer isso em um segundo, vamos primeiro fazer o botão para cima, então este é
+
+157
+00:11:39,570 --> 00:11:44,060
+vai ser um botão e queremos realmente mover este para baixo.
+
+158
+00:11:44,070 --> 00:11:45,420
+Então vamos traduzir.
+
+159
+00:11:45,420 --> 00:11:46,050
+Por quê?
+
+160
+00:11:46,620 --> 00:11:47,040
+Eu sinto Muito.
+
+161
+00:11:47,040 --> 00:11:47,700
+Agora mova-o para baixo.
+
+162
+00:11:47,700 --> 00:11:48,420
+Mova-o para cima.
+
+163
+00:11:48,420 --> 00:11:53,280
+Este aqui, eu quero subir cem por cento, então vamos fazer cem por cento negativos.
+
+164
+00:11:53,290 --> 00:11:58,460
+Então agora você pode ver o posicionamento dessas setas agora para o estilo.
+
+165
+00:11:59,430 --> 00:12:00,990
+Assim, o estilo geral do botão.
+
+166
+00:12:00,990 --> 00:12:11,640
+Vamos subir aqui para o botão e vamos definir uma cor de fundo branca e vamos nos livrar da borda.
+
+167
+00:12:11,640 --> 00:12:20,880
+Então border none e vamos fazer a cor cinza vai fazer o triplo J e vamos fazer do cursor um ponteiro.
+
+168
+00:12:21,360 --> 00:12:23,700
+Vamos aumentar um pouco o tamanho da fonte.
+
+169
+00:12:23,700 --> 00:12:30,870
+Faremos dezesseis pixels, vamos preencher quinze pixels em toda a volta.
+
+170
+00:12:31,530 --> 00:12:41,790
+OK, então você pode ver que parece um pouco mais bonito e ao passar o mouse é um botão, no entanto, disse a cor para dois
+
+171
+00:12:41,790 --> 00:12:46,020
+para dois um pouco mais escuro e não queremos nenhum contorno.
+
+172
+00:12:46,020 --> 00:12:53,660
+Portanto, qualquer botão no estado de foco queremos definir o contorno como nenhum.
+
+173
+00:12:53,790 --> 00:12:54,270
+Tudo bem.
+
+174
+00:12:54,510 --> 00:12:56,400
+Agora, se passarmos o mouse, fica mais escuro.
+
+175
+00:12:56,650 --> 00:13:02,910
+Eu quero ter alguns cantos arredondados na parte inferior para este e para o topo para este.
+
+176
+00:13:03,240 --> 00:13:09,690
+Abaixo, onde temos esses botões para baixo e para cima, vamos adicionar o botão para baixo.
+
+177
+00:13:09,690 --> 00:13:10,740
+Diremos fronteira.
+
+178
+00:13:12,360 --> 00:13:13,500
+Nós vamos dizer fronteira.
+
+179
+00:13:15,690 --> 00:13:16,860
+Este é o botão para baixo.
+
+180
+00:13:16,860 --> 00:13:27,030
+Então, vamos fazer o raio superior esquerdo superior e definir isso para cinco pixels para que você possa ver que isso tem o arredondado
+
+181
+00:13:27,030 --> 00:13:27,960
+cantos aqui.
+
+182
+00:13:29,400 --> 00:13:34,620
+E então vamos fazer o raio inferior esquerdo.
+
+183
+00:13:36,420 --> 00:13:39,030
+Então agora este lado é arredondado.
+
+184
+00:13:39,030 --> 00:13:42,210
+Eu quero fazer o mesmo neste, mas no lado oposto.
+
+185
+00:13:42,600 --> 00:13:43,890
+Então vou copiar isso.
+
+186
+00:13:43,890 --> 00:13:48,960
+E em vez de esquerda, vamos pegar isso e isso.
+
+187
+00:13:49,620 --> 00:13:50,880
+Mude isso para a direita.
+
+188
+00:13:51,760 --> 00:13:58,090
+Eu disse, agora, esses botões parecem muito bons, OK, e obviamente isso ainda não faz nada
+
+189
+00:13:58,090 --> 00:14:02,470
+porque precisamos adicionar nosso JavaScript, então é isso que faremos no próximo vídeo.

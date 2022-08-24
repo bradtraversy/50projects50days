@@ -1,0 +1,379 @@
+﻿1
+00:00:00,270 --> 00:00:06,360
+OK, então agora vamos fazer esta função fazendo com que ela conte até o destino de dados
+
+2
+00:00:06,360 --> 00:00:07,730
+e queremos colocá-lo aqui.
+
+3
+00:00:07,740 --> 00:00:10,230
+Então, basicamente, todo o texto do counter.
+
+4
+00:00:10,710 --> 00:00:12,480
+Portanto, temos vários contadores.
+
+5
+00:00:12,660 --> 00:00:16,640
+Isso significa que precisamos trazê-lo com o seletor de consulta all.
+
+6
+00:00:16,680 --> 00:00:26,640
+Então, digamos contadores CONSED, defina isso para documentar o seletor de consulta Dods todas as classes de contador
+
+7
+00:00:26,640 --> 00:00:29,660
+e isso nos dará uma lista de nós que é semelhante a um array.
+
+8
+00:00:29,970 --> 00:00:34,980
+Então, queremos percorrer isso com um para cada, pois cada um recebe uma função.
+
+9
+00:00:35,160 --> 00:00:45,180
+Então, vamos dizer que para cada contador, primeiro vamos pegar o contador para que esse elemento específico
+
+10
+00:00:45,180 --> 00:00:51,600
+e vamos definir o texto inteiro para zero e eu vou defini-lo para uma string de zero.
+
+11
+00:00:52,650 --> 00:00:58,340
+Então agora vai mostrar zero, você sabe, dentro da div aqui.
+
+12
+00:00:58,350 --> 00:00:59,640
+Então isso está no nosso texto.
+
+13
+00:00:59,640 --> 00:01:06,060
+Você pode colocar algo lá como estamos agora ou você pode obter algo com
+
+14
+00:01:06,360 --> 00:01:07,230
+intertexto.
+
+15
+00:01:07,830 --> 00:01:15,420
+Então eu vou ter uma função aqui chamada contador de atualização e isso vai ser uma função de seta
+
+16
+00:01:16,110 --> 00:01:18,040
+e então queremos obter o alvo.
+
+17
+00:01:18,060 --> 00:01:25,260
+Digamos que const target, que está nos atributos de destino de dados para que possamos pegar o contador e
+
+18
+00:01:25,260 --> 00:01:31,410
+pode chamar o atributo get doGet e o atributo que queremos obter será o destino Dasch de dados.
+
+19
+00:01:32,010 --> 00:01:33,710
+Agora isso vai ser uma string.
+
+20
+00:01:33,720 --> 00:01:38,790
+Na verdade, vou em frente e log do console e vou usar o tipo de operador e mostrar o que
+
+21
+00:01:38,790 --> 00:01:40,230
+O destino do tipo de dados é.
+
+22
+00:01:40,230 --> 00:01:41,820
+Também o valor do alvo.
+
+23
+00:01:42,650 --> 00:01:46,860
+Se eu descer aqui e abrir meu console, na verdade nada vai aparecer porque não ligamos
+
+24
+00:01:46,860 --> 00:01:47,280
+isto.
+
+25
+00:01:47,580 --> 00:01:52,710
+Queremos chamá-lo assim fora do contador de atualização de chamada de atualização do contador.
+
+26
+00:01:52,710 --> 00:01:57,720
+E vai chamá-lo apenas uma vez e vamos ver o tipo, que é uma string.
+
+27
+00:01:57,720 --> 00:02:04,110
+E então, qualquer que seja o destino de dados, agora as alterações em um número, que é o que eu quero fazer, porque
+
+28
+00:02:04,110 --> 00:02:06,570
+nós vamos querer fazer algumas contas sobre isso.
+
+29
+00:02:07,050 --> 00:02:13,990
+Podemos envolvê-lo em um construtor de número ou podemos usar pass int ou podemos apenas adicionar um sinal de mais.
+
+30
+00:02:14,220 --> 00:02:18,460
+Então, se salvarmos isso agora, você pode ver aqui embaixo que o transforma em um número.
+
+31
+00:02:19,830 --> 00:02:25,440
+Então vamos nos livrar disso e vamos criar outra variável chamada C, e isso vai ser qualquer coisa
+
+32
+00:02:25,440 --> 00:02:26,880
+está no texto interno.
+
+33
+00:02:26,880 --> 00:02:29,410
+Definimos como zero aqui, mas agora queremos obtê-lo.
+
+34
+00:02:29,430 --> 00:02:35,550
+Então, digamos contador de pontos, digite o texto e queremos que seja um número também.
+
+35
+00:02:35,560 --> 00:02:42,410
+Então, vou apenas adicionar um sinal de mais aqui e então vamos criar o incremento.
+
+36
+00:02:42,420 --> 00:02:47,000
+Então, precisamos decidir quanto queremos incrementar isso?
+
+37
+00:02:47,010 --> 00:02:51,470
+E dependendo desse número, isso vai depender de quão rápido ou lento ele é.
+
+38
+00:02:51,780 --> 00:02:53,490
+Então nós queremos o alvo.
+
+39
+00:02:54,150 --> 00:02:56,700
+Vamos pegar o alvo e vamos dividir por.
+
+40
+00:02:56,700 --> 00:02:58,410
+E isso pode ser o que você quiser.
+
+41
+00:02:59,280 --> 00:03:06,330
+Se dividirmos por se usarmos apenas target, ele vai incrementar sozinho.
+
+42
+00:03:06,340 --> 00:03:10,680
+Então, 12 5000 e ele vai basicamente passar direto na tela.
+
+43
+00:03:10,680 --> 00:03:12,810
+Queremos que ele conte para cima.
+
+44
+00:03:12,820 --> 00:03:14,880
+Então vou dividir por duzentos.
+
+45
+00:03:15,390 --> 00:03:17,400
+E você pode experimentar isso se quiser.
+
+46
+00:03:17,430 --> 00:03:20,820
+Agora vou consolar o incremento de log aqui.
+
+47
+00:03:23,310 --> 00:03:30,690
+Então o primeiro lembre-se que é mil e duzentos e que dividido por 200 será sessenta e cinco mil
+
+48
+00:03:31,500 --> 00:03:32,790
+por duzentos e vinte e cinco.
+
+49
+00:03:32,790 --> 00:03:36,120
+Setenta quinhentos e três setenta e três trinta e sete vírgula cinco.
+
+50
+00:03:36,600 --> 00:03:41,540
+Então vamos em frente e adicionar uma instrução if aqui.
+
+51
+00:03:41,550 --> 00:03:49,230
+Queremos ter certeza de que c não, queremos ter certeza de que isso é menor do que o alvo porque
+
+52
+00:03:49,230 --> 00:03:50,790
+não queremos passar do alvo.
+
+53
+00:03:51,150 --> 00:03:58,560
+Então, se for, então vamos pegar o contador e vamos definir o texto inteiro e eu vou definir isso para
+
+54
+00:03:58,560 --> 00:03:59,820
+um conjunto de táticas.
+
+55
+00:04:00,270 --> 00:04:06,870
+E queremos pegar esse C e queremos adicionar o que quer que seja esse incremento.
+
+56
+00:04:06,990 --> 00:04:09,600
+OK, mas eu também quero arredondar isso.
+
+57
+00:04:09,600 --> 00:04:11,340
+Então vamos fazer matemática.
+
+58
+00:04:11,340 --> 00:04:12,420
+Ponto, selo.
+
+59
+00:04:12,870 --> 00:04:18,370
+Então, o selo de pontos matemáticos vai arredondar esse número, OK?
+
+60
+00:04:18,870 --> 00:04:27,360
+Agora, se eu salvar isso, você pode ver que temos sessenta 25, 38, que acabamos de ver no console, eram trinta
+
+61
+00:04:27,360 --> 00:04:30,390
+sete vírgula cinco, mas estamos arredondando agora.
+
+62
+00:04:30,390 --> 00:04:33,270
+Queremos que isso não pare apenas no primeiro incremento.
+
+63
+00:04:33,270 --> 00:04:38,040
+Queríamos continuar até, você sabe, até chegar a isso, isso aqui.
+
+64
+00:04:38,310 --> 00:04:40,860
+Portanto, precisamos continuar chamando o contador de atualização.
+
+65
+00:04:41,490 --> 00:04:45,990
+Agora, se chamarmos assim, não vai funcionar.
+
+66
+00:04:46,230 --> 00:04:52,050
+Quer dizer, vai subir, mas não vai fazer isso, você sabe, a contagem, a animação
+
+67
+00:04:52,050 --> 00:04:52,890
+efeito de tipo.
+
+68
+00:04:53,280 --> 00:04:59,760
+Então, o que queremos fazer é apenas passar isso em um tempo definido e queremos executá-lo, digamos.
+
+69
+00:04:59,840 --> 00:05:07,370
+A cada hora, não a cada, mas queremos esperar um milissegundo antes de executá-lo dessa maneira, ele espera isso
+
+70
+00:05:07,370 --> 00:05:12,710
+milissegundo, o que dá tempo, e então ele vai em frente e, você sabe, continua correndo e é
+
+71
+00:05:12,710 --> 00:05:17,630
+incrementando por, você sabe, 60, 25, 38, o que quer que fosse.
+
+72
+00:05:18,170 --> 00:05:20,930
+E se você quiser que ele vá mais devagar, você pode fazer.
+
+73
+00:05:21,180 --> 00:05:23,750
+Você pode fazer disso um número maior, como mil.
+
+74
+00:05:24,170 --> 00:05:31,130
+E você pode ver que leva mais tempo se fizermos, digamos dez, muito rápido.
+
+75
+00:05:31,140 --> 00:05:33,770
+Então cabe a você o quão rápido você quer fazer isso.
+
+76
+00:05:33,770 --> 00:05:35,060
+Acho que 200 é bom.
+
+77
+00:05:35,630 --> 00:05:37,430
+E então eu só quero colocar um elsea.
+
+78
+00:05:37,430 --> 00:05:47,540
+Então, vamos apenas definir o ponto do contador em nosso texto e defini-lo diretamente para qualquer que seja o destino,
+
+79
+00:05:48,470 --> 00:05:54,380
+porque obviamente não queremos que ultrapasse esses números que estão na meta, e isso é
+
+80
+00:05:54,380 --> 00:05:55,110
+bastante isso.
+
+81
+00:05:55,130 --> 00:06:01,970
+Então, obviamente, se você quiser alterar as alterações, se você quiser fazer, você sabe, 500.000 e salvar,
+
+82
+00:06:02,930 --> 00:06:08,540
+vai, mesmo que esse número seja bem maior que esses, ainda vai demorar
+
+83
+00:06:08,540 --> 00:06:09,760
+a mesma quantidade de tempo.
+
+84
+00:06:09,770 --> 00:06:15,470
+Não é como se isso terminasse primeiro e isso terminasse depois, porque pegamos o que quer que
+
+85
+00:06:15,470 --> 00:06:19,850
+o alvo é e dividimos por um número específico, ok?
+
+86
+00:06:19,850 --> 00:06:24,810
+E então ele vai incrementar por isso para que você possa configurá-los para absolutamente qualquer coisa.
+
+87
+00:06:25,430 --> 00:06:25,790
+Tudo bem.
+
+88
+00:06:25,790 --> 00:06:27,590
+Então espero que tenha feito sentido.
+
+89
+00:06:27,590 --> 00:06:34,130
+E, claro, você pode adicionar isso ao seu site, apenas um pequeno widget, e não precisa ser
+
+90
+00:06:34,130 --> 00:06:36,350
+seguidor ou pode ser qualquer número.
+
+91
+00:06:36,530 --> 00:06:39,850
+E é bem fácil de implementar.
+
+92
+00:06:39,860 --> 00:06:41,840
+Portanto, nenhuma consulta ou qualquer coisa assim.
+
+93
+00:06:42,680 --> 00:06:43,270
+Mas é isso.
+
+94
+00:06:43,520 --> 00:06:44,380
+Espero que tenha gostado.
+
+95
+00:06:44,390 --> 00:06:46,190
+Vamos para o próximo projeto.

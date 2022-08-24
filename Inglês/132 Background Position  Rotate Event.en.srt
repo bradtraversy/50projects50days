@@ -1,0 +1,595 @@
+1
+00:00:00,150 --> 00:00:06,120
+OK, guys, now we want to start on the JavaScript, which isn't a lot, actually, it's only about
+
+2
+00:00:06,120 --> 00:00:08,310
+about 20 lines or so, a little less.
+
+3
+00:00:09,090 --> 00:00:13,130
+But I first want to just explain what we need to do with the background position.
+
+4
+00:00:13,500 --> 00:00:19,320
+So ultimately, as I said before, all of these boxes are going to be inserted to the DOM via JavaScript.
+
+5
+00:00:19,320 --> 00:00:23,700
+We're not going to have these hardcoded and we're also going to add a background position to each one.
+
+6
+00:00:23,730 --> 00:00:27,940
+Now, I'm going to do that manually just so you can see what the values are going to be.
+
+7
+00:00:27,960 --> 00:00:34,980
+So for this first one, we'll just go ahead and set a style here and set the background position.
+
+8
+00:00:35,670 --> 00:00:40,590
+So background position has an X and Y property for this first box.
+
+9
+00:00:40,590 --> 00:00:44,190
+It's going to be zero zero, OK, which is the default.
+
+10
+00:00:44,200 --> 00:00:47,400
+So, I mean, it's not even going to change, but that's going to be the first one.
+
+11
+00:00:47,400 --> 00:00:48,240
+The next one.
+
+12
+00:00:48,780 --> 00:00:54,840
+Let me just copy this right here, this whole style and put that.
+
+13
+00:00:54,840 --> 00:00:59,230
+And so this one here, let's let's think about where this needs to be.
+
+14
+00:00:59,250 --> 00:01:03,400
+So remember, these are one hundred and twenty five pixels with and height.
+
+15
+00:01:03,780 --> 00:01:10,070
+So for this one, we want part of the 125 pixels to be shifted this way.
+
+16
+00:01:10,440 --> 00:01:10,960
+All right.
+
+17
+00:01:10,980 --> 00:01:18,240
+So with this background position as first value is the X value, so we want to go negative one twenty
+
+18
+00:01:18,240 --> 00:01:19,590
+five pixels.
+
+19
+00:01:20,070 --> 00:01:25,160
+And if I save that now you can see that it basically looks like it's connected.
+
+20
+00:01:25,170 --> 00:01:30,500
+In fact, if we get rid of this big class and we save it is connected.
+
+21
+00:01:31,170 --> 00:01:36,570
+So for the next one and if you guys want to take a second and think about what you should put here,
+
+22
+00:01:37,860 --> 00:01:38,880
+go ahead and do that.
+
+23
+00:01:38,890 --> 00:01:44,070
+So we did for the X value, for the second box, we said negative 125.
+
+24
+00:01:44,070 --> 00:01:47,610
+Now for this one here, we want to actually double that.
+
+25
+00:01:47,670 --> 00:01:48,030
+Right.
+
+26
+00:01:48,050 --> 00:01:52,170
+So instead of negative 125, because if I do that, it's going to just match this one.
+
+27
+00:01:52,440 --> 00:01:55,390
+We want to go over 125 more.
+
+28
+00:01:55,390 --> 00:01:57,510
+So we want to change this to 250 fifty.
+
+29
+00:01:58,290 --> 00:02:00,840
+OK, and now it looks like it's part of the image.
+
+30
+00:02:00,870 --> 00:02:04,080
+Like it's one big image for this one here, the fourth one.
+
+31
+00:02:05,280 --> 00:02:08,790
+Let's go ahead and do negative three.
+
+32
+00:02:08,790 --> 00:02:11,520
+Seventy five and then we go.
+
+33
+00:02:11,530 --> 00:02:14,730
+So now we have our top row now four for this one here.
+
+34
+00:02:15,120 --> 00:02:20,270
+It's going to be a bit different because now we're dealing with both X and Y values.
+
+35
+00:02:20,610 --> 00:02:24,650
+So for that for this one, we're going to have and I'm going to get rid of this.
+
+36
+00:02:24,660 --> 00:02:28,350
+I'm just showing you what these are, what we need to do within the JavaScript.
+
+37
+00:02:28,620 --> 00:02:34,560
+But this is going to be zero on the X axis because it's it's the first one and it's going to be on the
+
+38
+00:02:34,560 --> 00:02:35,640
+Y axis.
+
+39
+00:02:36,040 --> 00:02:39,940
+We want to do negative four and twenty five because we want to bring it up.
+
+40
+00:02:40,710 --> 00:02:44,130
+OK, now the second one we need to bring over and up.
+
+41
+00:02:45,280 --> 00:02:48,950
+I should say that it's actually the six one we need to bring over.
+
+42
+00:02:48,960 --> 00:02:57,120
+And so what we would do is on the x axis one twenty five and then on the Y negative one twenty five.
+
+43
+00:02:58,020 --> 00:02:58,710
+There we go.
+
+44
+00:02:59,190 --> 00:03:03,650
+OK, and then we would just continue that, bringing in, bringing these up and over.
+
+45
+00:03:04,170 --> 00:03:07,940
+So what I'll do is just completely get rid of all the boxes.
+
+46
+00:03:07,980 --> 00:03:10,170
+OK, we just want to have the container here.
+
+47
+00:03:10,450 --> 00:03:16,160
+I just want to have this ID boxes, class boxes and then that's going to completely go away.
+
+48
+00:03:16,410 --> 00:03:20,460
+Now we're going to jump don't jump into our script and do this with JavaScript.
+
+49
+00:03:20,470 --> 00:03:25,350
+So first thing we need to do is bring in any elements that we need, such as the boxes container.
+
+50
+00:03:25,980 --> 00:03:31,980
+So we use that document object and we're going to use the method get element by D and we're going to
+
+51
+00:03:31,980 --> 00:03:35,610
+get the ID by the boxes ID.
+
+52
+00:03:36,030 --> 00:03:39,780
+And then we also want the button because we need to add an event listener to that.
+
+53
+00:03:39,790 --> 00:03:46,440
+So let's say const BTN and we'll use document element by day.
+
+54
+00:03:46,440 --> 00:03:48,200
+Believe it has an idea of B10.
+
+55
+00:03:48,780 --> 00:03:50,070
+OK, so we bring those in.
+
+56
+00:03:50,070 --> 00:03:57,720
+Now the way that I'm going to do this is we're going to do a function called create boxes and we want
+
+57
+00:03:57,720 --> 00:04:02,670
+to call that function and then inside create boxes.
+
+58
+00:04:02,940 --> 00:04:07,670
+We need to create four boxes for each row.
+
+59
+00:04:07,680 --> 00:04:11,030
+So four columns of four rows, four columns.
+
+60
+00:04:11,280 --> 00:04:13,980
+So the way we can do that is we can use two for loops.
+
+61
+00:04:14,730 --> 00:04:20,220
+OK, so let's say for and I'm not going explain what a for loop is.
+
+62
+00:04:20,220 --> 00:04:24,810
+It is expected that, you know, at least the fundamentals before taking this course.
+
+63
+00:04:25,140 --> 00:04:29,460
+So let's say let's I so we want to set it to zero.
+
+64
+00:04:29,730 --> 00:04:36,450
+And then the condition here is going to be if I is less than four and then we want to increment I by
+
+65
+00:04:36,450 --> 00:04:36,900
+one.
+
+66
+00:04:37,560 --> 00:04:43,680
+OK, now we have rows and columns here, so we want to put another for loop and we have to use something
+
+67
+00:04:43,680 --> 00:04:44,640
+different than I.
+
+68
+00:04:45,150 --> 00:04:46,470
+So let's do that.
+
+69
+00:04:47,010 --> 00:04:48,350
+J equals zero.
+
+70
+00:04:48,810 --> 00:04:55,610
+And then as long as J is less than four and then J plus plus increment it by one.
+
+71
+00:04:56,070 --> 00:04:59,910
+Now within here we want to construct those 16 boxes.
+
+72
+00:05:00,550 --> 00:05:07,570
+OK, so this is going to look through 16 times and we're going to create this with document and then
+
+73
+00:05:07,570 --> 00:05:11,830
+there's a method called Create Element and we want to create a div member.
+
+74
+00:05:11,840 --> 00:05:16,930
+So we're just creating these these divs here, that's all.
+
+75
+00:05:17,110 --> 00:05:18,690
+That's all we're doing right now.
+
+76
+00:05:20,530 --> 00:05:24,670
+And we can even go ahead and console log box.
+
+77
+00:05:25,180 --> 00:05:31,250
+And if we go over here and open our console, you see that we now have should be 16 divs.
+
+78
+00:05:31,610 --> 00:05:33,830
+Now, remember, they need to have the class of box.
+
+79
+00:05:33,850 --> 00:05:40,390
+So what we can do is take our box variable or box element, take the class list and call the add method.
+
+80
+00:05:40,930 --> 00:05:43,730
+And we want to add the class of box.
+
+81
+00:05:43,750 --> 00:05:46,820
+So if we save that now, we can see that over here in the console.
+
+82
+00:05:47,500 --> 00:05:49,740
+Now this is where we're going to do the positioning.
+
+83
+00:05:50,080 --> 00:05:57,730
+So to add a specific style, we can use DOT style and then whatever property we want.
+
+84
+00:05:57,910 --> 00:05:59,950
+And it has to be in Camil case, obviously.
+
+85
+00:05:59,960 --> 00:06:05,920
+So we want background position and we can't do background Dasch position, which is what we would do
+
+86
+00:06:05,920 --> 00:06:08,580
+in case we do it like this with Camil case.
+
+87
+00:06:08,590 --> 00:06:16,630
+So background position and the way we can set this to be dynamic is we can put some template literals
+
+88
+00:06:16,630 --> 00:06:20,020
+here so that we can use variables and expressions.
+
+89
+00:06:20,950 --> 00:06:29,920
+And remember, it's going to be something like, you know, negative one twenty one twenty five pixels
+
+90
+00:06:29,920 --> 00:06:30,380
+zero.
+
+91
+00:06:30,380 --> 00:06:31,720
+It's going to be something like this.
+
+92
+00:06:32,050 --> 00:06:33,870
+But of course this is going to be dynamic.
+
+93
+00:06:33,880 --> 00:06:37,540
+So what we can do is we can put a variable syntax.
+
+94
+00:06:37,750 --> 00:06:43,270
+So dollar sign and curly braces, we can put in a variable or an expression in here and we're going
+
+95
+00:06:43,270 --> 00:06:52,630
+to take negative J because remember it's going to be negative, negative 125, negative 250, etc..
+
+96
+00:06:52,960 --> 00:06:58,210
+So we want to take that and multiply it by 125.
+
+97
+00:06:58,660 --> 00:06:59,740
+So it'll loop through.
+
+98
+00:06:59,740 --> 00:07:06,460
+It'll be, you know, zero then negative 125, native to 50.
+
+99
+00:07:06,460 --> 00:07:07,870
+Negative three seventy five.
+
+100
+00:07:08,170 --> 00:07:09,640
+So that's the X value.
+
+101
+00:07:09,640 --> 00:07:15,430
+Now for the Y, we're going to go ahead and put another variable expression in here and use negative
+
+102
+00:07:15,430 --> 00:07:19,560
+eye and also multiply by one twenty five.
+
+103
+00:07:19,570 --> 00:07:27,460
+So this will do exactly what I did manually a few minutes ago, but it will add it through the JavaScript
+
+104
+00:07:27,460 --> 00:07:29,300
+dynamically with these calculations.
+
+105
+00:07:29,320 --> 00:07:31,900
+Now the last thing we want to do is not console log.
+
+106
+00:07:32,320 --> 00:07:33,220
+Let's get rid of that.
+
+107
+00:07:33,460 --> 00:07:42,040
+We want to take our box boxes container that we brought in earlier and we want to call Append Child
+
+108
+00:07:42,040 --> 00:07:43,670
+and we want to add in the box.
+
+109
+00:07:43,690 --> 00:07:47,320
+So if I go ahead and save, let's see.
+
+110
+00:07:47,320 --> 00:07:48,790
+Something's not right here.
+
+111
+00:07:52,970 --> 00:07:59,930
+Let's see, so we set the box start style background position to oh, I forgot pixels.
+
+112
+00:07:59,950 --> 00:08:07,040
+So right now it's just setting it to the numbers we need to actually add in after these pixels.
+
+113
+00:08:07,730 --> 00:08:08,510
+And there we go.
+
+114
+00:08:09,440 --> 00:08:11,390
+So right now we have the class.
+
+115
+00:08:13,320 --> 00:08:19,230
+Or I'm sorry, we don't have the class of big, so it's 500 pixels which squishes them all together
+
+116
+00:08:19,230 --> 00:08:20,840
+and there's no in between.
+
+117
+00:08:21,060 --> 00:08:25,630
+But if I add the class of big, it separates them, but it's still intact.
+
+118
+00:08:25,860 --> 00:08:29,560
+Now, we just want to add an event listener onto let's actually get rid of.
+
+119
+00:08:30,150 --> 00:08:32,340
+No, we'll keep the class there to start with.
+
+120
+00:08:32,610 --> 00:08:36,150
+But let's go back to our script and let's go up here.
+
+121
+00:08:36,180 --> 00:08:39,960
+Actually, we'll go and we'll do it right here.
+
+122
+00:08:39,960 --> 00:08:41,250
+So we'll take our button.
+
+123
+00:08:41,550 --> 00:08:43,910
+And we want to add an event listener.
+
+124
+00:08:44,040 --> 00:08:45,870
+So we want to listen for a specific event.
+
+125
+00:08:45,900 --> 00:08:52,900
+Now, this takes in the event we want, which is a click and then a function so we can either put a
+
+126
+00:08:52,920 --> 00:08:55,920
+function or we can use an arrow function like this.
+
+127
+00:08:56,900 --> 00:09:03,570
+OK, and we just want to we don't even need since this is only going to be one line of code, we don't
+
+128
+00:09:03,570 --> 00:09:05,790
+even need these curly braces.
+
+129
+00:09:06,840 --> 00:09:16,440
+So we'll just take the boxes container and take a class list and then toggle so it'll add and remove
+
+130
+00:09:16,440 --> 00:09:17,870
+the class of big.
+
+131
+00:09:18,600 --> 00:09:19,770
+So let's save that.
+
+132
+00:09:19,770 --> 00:09:20,790
+Let's go over here.
+
+133
+00:09:21,180 --> 00:09:23,480
+Let's click and there we go.
+
+134
+00:09:24,390 --> 00:09:25,860
+So we get that cool effect.
+
+135
+00:09:27,870 --> 00:09:30,180
+And just to show you, let me just make this bigger.
+
+136
+00:09:30,300 --> 00:09:31,260
+So we're just about done.
+
+137
+00:09:31,920 --> 00:09:39,090
+If I show you in the console, put this over here and we look at this class, right.
+
+138
+00:09:39,090 --> 00:09:41,250
+So you can see that the class of big is there.
+
+139
+00:09:41,250 --> 00:09:43,650
+If I click that, it adds and removes it.
+
+140
+00:09:43,650 --> 00:09:45,270
+And that's what causes that effect.
+
+141
+00:09:45,690 --> 00:09:48,450
+And we have that rotate in the success.
+
+142
+00:09:49,320 --> 00:09:49,700
+Right.
+
+143
+00:09:49,710 --> 00:09:53,990
+So right here, we have this rotate which is causing that to happen.
+
+144
+00:09:54,010 --> 00:09:58,410
+We also have a transition of point four seconds.
+
+145
+00:09:58,530 --> 00:10:03,480
+You can increase that if you want or decrease that if you want a different speed.
+
+146
+00:10:03,480 --> 00:10:05,360
+But yeah, so that's pretty much it.
+
+147
+00:10:05,910 --> 00:10:06,330
+All right.
+
+148
+00:10:06,330 --> 00:10:08,430
+So hopefully you enjoyed this little project.
+
+149
+00:10:08,430 --> 00:10:09,930
+And let's move on to the next one.

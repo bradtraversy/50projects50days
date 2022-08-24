@@ -1,0 +1,515 @@
+1
+00:00:00,210 --> 00:00:05,670
+OK, so I just want to create a project starter, basically a boiler plate that we can use in all the
+
+2
+00:00:05,670 --> 00:00:09,480
+following projects so we don't have to keep recreating files and so on.
+
+3
+00:00:09,480 --> 00:00:11,780
+You can just duplicate this folder and rename it.
+
+4
+00:00:12,150 --> 00:00:16,200
+So I called it Underscore, Project, Underscore, Stotra Underscore.
+
+5
+00:00:16,380 --> 00:00:21,750
+And the reason for the underscores is just because it's not an actual project, it's just the boilerplate.
+
+6
+00:00:22,140 --> 00:00:23,680
+So this is completely empty.
+
+7
+00:00:23,730 --> 00:00:24,540
+There's nothing in it.
+
+8
+00:00:24,540 --> 00:00:26,250
+And I'm going to open this with VX code.
+
+9
+00:00:26,460 --> 00:00:29,280
+If you're on Windows, you can write, click and say open with code.
+
+10
+00:00:29,280 --> 00:00:34,860
+If you're on a Mac, you can drag it down to your bar code icon and it should open and you can see it's
+
+11
+00:00:34,860 --> 00:00:35,670
+completely empty.
+
+12
+00:00:35,670 --> 00:00:37,440
+So I'm going to create three files.
+
+13
+00:00:37,440 --> 00:00:39,390
+Indexed HTML is the first one.
+
+14
+00:00:39,780 --> 00:00:44,940
+Then we want our stylesheet, which I'm going to call style dot access and then we want our JavaScript
+
+15
+00:00:44,940 --> 00:00:47,240
+file, which I'm going to call script Jass.
+
+16
+00:00:47,550 --> 00:00:51,320
+So these are the three main files that we're going to use in all of these projects.
+
+17
+00:00:51,780 --> 00:00:57,690
+Now in the HTML, I'm going to go ahead and use Emet and do exclamation enter and that's going to give
+
+18
+00:00:57,690 --> 00:01:05,100
+me just a boilerplate of an HTML page with the HTML five DOCTYPE head body tags and so on.
+
+19
+00:01:05,100 --> 00:01:11,580
+And I'm just going to go ahead and tab down to the title here and say my project and we can change this
+
+20
+00:01:11,580 --> 00:01:12,660
+for every project.
+
+21
+00:01:12,960 --> 00:01:19,470
+And then in the body we'll just have an H1 and we'll say project starter.
+
+22
+00:01:19,930 --> 00:01:25,860
+OK, now to open this, I'm going to save this now to open it, you could go to your the actual file
+
+23
+00:01:25,860 --> 00:01:30,740
+like, you know, go here and open indexed HTML, but we're going to be using live server.
+
+24
+00:01:31,140 --> 00:01:35,760
+So what we want to do is just write, click and say open with live server.
+
+25
+00:01:37,720 --> 00:01:43,150
+And you can see that it's open on my local hosts, Ray Lookback address, which is one two seven zero
+
+26
+00:01:43,150 --> 00:01:45,480
+zero one in Port 5500.
+
+27
+00:01:45,790 --> 00:01:51,280
+So I'm just going to make this smaller and we want to make sure that we include our stylesheet here
+
+28
+00:01:51,280 --> 00:01:52,560
+in our JavaScript.
+
+29
+00:01:52,870 --> 00:01:59,800
+So I'm just going to close the sidebar up and let's add here, we'll say link enter and for the traffic,
+
+30
+00:01:59,800 --> 00:02:05,110
+we want to link to our stylesheet and we want to link to the JavaScript down here right above the ending
+
+31
+00:02:05,110 --> 00:02:08,200
+body tag will say script colon SIRC.
+
+32
+00:02:08,440 --> 00:02:12,260
+And the source for this JavaScript is going to be script Gorgias.
+
+33
+00:02:12,620 --> 00:02:14,770
+OK, so now both of those should be included.
+
+34
+00:02:15,130 --> 00:02:18,700
+And that's pretty much all I want to have for the starting HTML.
+
+35
+00:02:19,180 --> 00:02:22,540
+Now, one thing I want to mention is in some projects will be using font.
+
+36
+00:02:22,540 --> 00:02:23,020
+Awesome.
+
+37
+00:02:23,020 --> 00:02:27,850
+So you have to include the font awesome style sheet and there's a couple of ways to do that.
+
+38
+00:02:27,850 --> 00:02:35,920
+So the first is to actually go to font awesome dot com and you can put your email address in here and
+
+39
+00:02:35,920 --> 00:02:39,940
+say send kit code and it'll give you a link to the font.
+
+40
+00:02:39,940 --> 00:02:40,980
+Awesome success.
+
+41
+00:02:40,990 --> 00:02:42,130
+Now we're not going to do that.
+
+42
+00:02:42,130 --> 00:02:48,160
+What I usually do is go to CDN, CDN, News.com and just search for font.
+
+43
+00:02:48,160 --> 00:02:48,760
+Awesome.
+
+44
+00:02:49,300 --> 00:02:51,630
+And you can just simply grab the link right here.
+
+45
+00:02:51,640 --> 00:02:53,410
+So this is the success that you need.
+
+46
+00:02:53,680 --> 00:03:00,460
+You can copy the link tag and you can put that right above your link to your stylesheet and then we
+
+47
+00:03:00,460 --> 00:03:01,090
+can use font.
+
+48
+00:03:01,090 --> 00:03:01,480
+Awesome.
+
+49
+00:03:01,480 --> 00:03:04,630
+So some projects I might start off with this link already here.
+
+50
+00:03:04,840 --> 00:03:07,480
+If you want, you can keep it here, just comment it out.
+
+51
+00:03:07,570 --> 00:03:11,770
+And then on projects where we use it, you can uncommented it whatever you want, but I'm just going
+
+52
+00:03:11,770 --> 00:03:13,240
+to go ahead and leave it out.
+
+53
+00:03:13,250 --> 00:03:16,600
+I just wanted to mention that now for our stylesheet.
+
+54
+00:03:17,050 --> 00:03:19,240
+I do want to start with a default font.
+
+55
+00:03:19,240 --> 00:03:21,010
+I want to start with the Raboteau font.
+
+56
+00:03:21,310 --> 00:03:26,410
+So I'm going to go ahead and just go to Google fonts real quick.
+
+57
+00:03:27,700 --> 00:03:29,890
+And I have it up here and a shortcut.
+
+58
+00:03:30,190 --> 00:03:32,110
+And Rebadow is right here.
+
+59
+00:03:32,110 --> 00:03:36,220
+If you don't see it, you can search for it and you can use a different font if you'd like.
+
+60
+00:03:36,220 --> 00:03:39,280
+But I'm going to use Raboteau regular 400.
+
+61
+00:03:39,280 --> 00:03:43,660
+So say Select the style and then Bould 700, select the style.
+
+62
+00:03:43,840 --> 00:03:48,630
+And over here you can either use a link in your HTML or an import in your success.
+
+63
+00:03:48,630 --> 00:03:49,840
+So I'm going to use the import.
+
+64
+00:03:50,230 --> 00:03:51,340
+I'm going to copy this.
+
+65
+00:03:51,430 --> 00:03:53,650
+I don't need the style tags, just the import.
+
+66
+00:03:54,010 --> 00:03:58,080
+And then we'll go back into our style sheet and just paste that in there.
+
+67
+00:03:58,270 --> 00:03:59,980
+That way we can use that font.
+
+68
+00:04:00,460 --> 00:04:00,880
+All right.
+
+69
+00:04:00,880 --> 00:04:04,330
+So we can close this up and let's apply that to the body.
+
+70
+00:04:04,330 --> 00:04:11,830
+So say Font Dasch family and set that to Raboteau sans serif.
+
+71
+00:04:12,190 --> 00:04:14,650
+So I save that notice that it auto reloads.
+
+72
+00:04:14,650 --> 00:04:18,580
+It's because we're using live server and I know a lot of you guys probably already know all of this
+
+73
+00:04:18,580 --> 00:04:23,770
+stuff, but I want to make sure that I'm clear because I know that there are beginners taking this course.
+
+74
+00:04:24,460 --> 00:04:24,820
+All right.
+
+75
+00:04:24,820 --> 00:04:28,570
+Now, I also want to set on the universal selector.
+
+76
+00:04:28,570 --> 00:04:29,860
+So an asterisk here.
+
+77
+00:04:30,190 --> 00:04:32,290
+This just means we want to apply this to everything.
+
+78
+00:04:32,290 --> 00:04:34,780
+I want to apply a box sizing property.
+
+79
+00:04:34,780 --> 00:04:38,320
+This is something I do in just about every project or access.
+
+80
+00:04:38,560 --> 00:04:43,480
+We want to set it to board a box so that if we add any padding or any border on to an element, it doesn't
+
+81
+00:04:43,480 --> 00:04:44,860
+actually affect the width of it.
+
+82
+00:04:45,100 --> 00:04:47,470
+So I add this on just about everything I do.
+
+83
+00:04:47,980 --> 00:04:52,450
+And then in the body here, I'm actually going to get rid of the margin.
+
+84
+00:04:52,450 --> 00:04:58,450
+So let's say margin zero, the space you see here is from the the actual H1.
+
+85
+00:04:58,870 --> 00:05:01,390
+And I'm also going to display Flex.
+
+86
+00:05:01,720 --> 00:05:07,390
+And the reason for this is because I want to center everything, because a lot of the most of the projects
+
+87
+00:05:07,390 --> 00:05:10,210
+are going to be something that's right in the middle of the viewport.
+
+88
+00:05:10,660 --> 00:05:12,430
+So I'm going to display Flex.
+
+89
+00:05:12,430 --> 00:05:17,920
+And just to talk a little bit about Flex Box, for those of you that haven't used it, I'm going to
+
+90
+00:05:17,920 --> 00:05:20,590
+put two more elements in here.
+
+91
+00:05:20,590 --> 00:05:25,720
+It could be anything, but I'm just going to put some twos and just setting it to display flex, it's
+
+92
+00:05:25,720 --> 00:05:26,800
+going to put it in a row.
+
+93
+00:05:26,800 --> 00:05:31,120
+You can see how everything I put in the body now goes this way, goes horizontal.
+
+94
+00:05:31,450 --> 00:05:32,710
+I don't actually want that.
+
+95
+00:05:32,710 --> 00:05:40,180
+I want it to go back vertical, but still be a flex box so we can set the flex direction to column if
+
+96
+00:05:40,180 --> 00:05:40,990
+I save that.
+
+97
+00:05:40,990 --> 00:05:43,420
+Now, you can see it goes back vertical.
+
+98
+00:05:43,810 --> 00:05:50,560
+Now, since this is a flex box, I can go ahead and use a line items and I want a line item center.
+
+99
+00:05:50,860 --> 00:05:56,380
+Now, if your flex box is a column like this is then a line items is going to pertain to aligning it
+
+100
+00:05:56,380 --> 00:05:57,370
+horizontally.
+
+101
+00:05:57,730 --> 00:06:00,450
+If it's a row, it would pertain to vertical.
+
+102
+00:06:00,850 --> 00:06:01,240
+All right.
+
+103
+00:06:01,240 --> 00:06:03,760
+So we we we centered it horizontally.
+
+104
+00:06:03,760 --> 00:06:05,230
+I also want to center it vertical.
+
+105
+00:06:05,230 --> 00:06:06,490
+I want it to be right in the middle.
+
+106
+00:06:06,850 --> 00:06:10,650
+So for that we can add justify content and set it to center.
+
+107
+00:06:10,930 --> 00:06:15,670
+Now, notice how it didn't move to the center here vertically, and that's because the body doesn't
+
+108
+00:06:15,670 --> 00:06:16,660
+have a height on it.
+
+109
+00:06:16,930 --> 00:06:20,830
+OK, we need our flex blocks to have a height, so let's set a min.
+
+110
+00:06:21,130 --> 00:06:27,550
+We'll just set height to 100 vate, which is a viewport height and that means take up the entire height
+
+111
+00:06:27,550 --> 00:06:29,280
+of the the browser, the viewport.
+
+112
+00:06:29,280 --> 00:06:32,440
+So I'm going to save and now you can see it's centered both ways.
+
+113
+00:06:32,950 --> 00:06:35,630
+OK, and then the last thing I want to add here is just an over.
+
+114
+00:06:35,790 --> 00:06:36,220
+Flow.
+
+115
+00:06:36,630 --> 00:06:42,270
+And I'm going to set it to hidden because I don't want scroll bars to be shown by default and that's
+
+116
+00:06:42,270 --> 00:06:42,440
+it.
+
+117
+00:06:42,450 --> 00:06:46,590
+So I'll just get rid of these two twos and just keep the one there.
+
+118
+00:06:46,720 --> 00:06:48,110
+OK, so that's pretty much it.
+
+119
+00:06:48,120 --> 00:06:53,390
+No JavaScript, because that's very, very, you know, very differently per project.
+
+120
+00:06:53,670 --> 00:06:58,290
+I just wanted to add some basic styling to kind of move everything to the middle out of font.
+
+121
+00:06:58,890 --> 00:07:04,880
+Also link in our style sheet and JavaScript because we don't want to do that in every single project.
+
+122
+00:07:05,130 --> 00:07:11,910
+So from now on, you can just simply copy or duplicate this folder and we can go ahead and get right
+
+123
+00:07:11,910 --> 00:07:12,890
+into the project.
+
+124
+00:07:13,140 --> 00:07:18,600
+Now, if you want to stop live server, you see this little port 5500, you can click that or you can
+
+125
+00:07:18,600 --> 00:07:20,970
+right click and you can say stop live server.
+
+126
+00:07:21,210 --> 00:07:25,380
+And now it's going to stop serving on that on localhost 5500.
+
+127
+00:07:25,780 --> 00:07:28,230
+OK, so that's going to be pretty much the workflow.
+
+128
+00:07:28,260 --> 00:07:34,440
+We'll go ahead and use this boilerplate here, the project starter and will use live server to run it
+
+129
+00:07:34,440 --> 00:07:36,450
+and then we'll go ahead and create our projects.

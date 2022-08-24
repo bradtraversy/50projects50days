@@ -1,0 +1,427 @@
+﻿1
+00:00:00,150 --> 00:00:06,480
+OK, agora queremos começar a lidar com os efeitos de foco que queremos quando passamos o mouse deste lado na
+
+2
+00:00:06,480 --> 00:00:07,740
+esquerda, ele vai se espalhar.
+
+3
+00:00:07,740 --> 00:00:09,540
+Ele vai para a largura será mais largo.
+
+4
+00:00:09,570 --> 00:00:11,090
+A mesma coisa se passarmos por aqui.
+
+5
+00:00:11,490 --> 00:00:16,830
+Então vou adicionar manualmente no container, o div com a classe do container, estou
+
+6
+00:00:16,830 --> 00:00:22,070
+vamos adicionar o mouse para a esquerda e salvá-lo apenas para que possamos estilizá-lo e ver o que estamos fazendo.
+
+7
+00:00:22,440 --> 00:00:31,140
+Então, digamos que para a classe de hover dash esquerda quando aquele quando está ativo, queremos pegar
+
+8
+00:00:31,140 --> 00:00:38,610
+do lado esquerdo e queremos aumentar a largura e isso ficará em uma propriedade personalizada ou em uma variável
+
+9
+00:00:38,610 --> 00:00:41,340
+chamado de largura do traço de foco.
+
+10
+00:00:42,090 --> 00:00:48,510
+Agora, ao mesmo tempo, quando o Hover Left estiver ativo, o lado direito será menor.
+
+11
+00:00:48,510 --> 00:00:54,660
+Então, queremos definir isso com uma variável chamada other with.
+
+12
+00:00:56,410 --> 00:00:56,880
+Tudo bem.
+
+13
+00:00:56,880 --> 00:00:59,690
+E então vamos subir aqui e vamos definir essas variáveis.
+
+14
+00:00:59,730 --> 00:01:02,690
+Quando digo que variáveis ​​são propriedades personalizadas, quero dizer a mesma coisa.
+
+15
+00:01:03,240 --> 00:01:10,650
+Então traço, traço, foco, largura do traço vai ser setenta e cinco por cento e você pode alterar essa proporção
+
+16
+00:01:10,650 --> 00:01:11,280
+Se você quiser.
+
+17
+00:01:11,820 --> 00:01:16,870
+Então, outro com vai ser vinte e cinco por cento.
+
+18
+00:01:17,880 --> 00:01:22,920
+Agora se eu salvar esse hover para a esquerda é aplicado a isso, ao container.
+
+19
+00:01:22,920 --> 00:01:26,070
+Portanto, o lado esquerdo agora é mais largo e 75%.
+
+20
+00:01:26,070 --> 00:01:29,520
+O outro lado é 25, que é o que queremos agora.
+
+21
+00:01:29,520 --> 00:01:39,300
+Ao mesmo tempo, vamos copiar essas duas linhas e dizer que se o cursor direito for aplicado, queremos o direito
+
+22
+00:01:39,300 --> 00:01:41,120
+lado para acabar.
+
+23
+00:01:41,670 --> 00:01:49,200
+E então aqui embaixo, se passar o mouse para a direita for aplicado, queremos que o lado esquerdo seja o outro.
+
+24
+00:01:49,230 --> 00:01:54,570
+Então agora se eu for quando me inscrevo aqui, tenho direito e economizo.
+
+25
+00:01:54,570 --> 00:01:56,030
+Agora este lado é mais largo.
+
+26
+00:01:56,340 --> 00:01:57,840
+Então é exatamente isso que queremos.
+
+27
+00:01:59,760 --> 00:02:06,540
+Agora vou adicionar o JavaScript agora para que isso seja adicionado dinamicamente em vez de termos que
+
+28
+00:02:06,540 --> 00:02:07,660
+realmente colocá-lo aqui.
+
+29
+00:02:07,680 --> 00:02:09,390
+Então agora vai voltar ao normal.
+
+30
+00:02:09,780 --> 00:02:14,130
+E se entrarmos em nosso JavaScript aqui, vamos trazer o lado esquerdo.
+
+31
+00:02:14,130 --> 00:02:15,240
+Então, conse esquerda.
+
+32
+00:02:15,240 --> 00:02:22,350
+Vou usar o seletor de consulta de ponto de documento e queremos selecionar a classe da esquerda.
+
+33
+00:02:22,950 --> 00:02:24,030
+Copie isso para baixo.
+
+34
+00:02:24,030 --> 00:02:25,980
+Também queremos pegar o lado direito.
+
+35
+00:02:27,390 --> 00:02:29,070
+Então está certo.
+
+36
+00:02:29,070 --> 00:02:34,740
+E também queremos pegar o contêiner porque é onde estamos adicionando as classes e removendo
+
+37
+00:02:34,740 --> 00:02:35,780
+as aulas de.
+
+38
+00:02:35,790 --> 00:02:42,960
+Então container e então vamos pegar a esquerda, vamos adicionar um event listener com ADD event listener e
+
+39
+00:02:42,960 --> 00:02:48,470
+desta vez estamos ouvindo um evento de mouse enter, que é basicamente um hover.
+
+40
+00:02:49,170 --> 00:02:54,020
+E então, quando isso acontecer, vamos chamar uma função de seta e pegar o contêiner.
+
+41
+00:02:54,030 --> 00:02:57,720
+Não preciso colocar chaves, pois esta é apenas uma linha nesta função.
+
+42
+00:02:58,230 --> 00:03:05,910
+vou pegar o container e vou chamar class list dot add para adicionar uma classe e vou
+
+43
+00:03:05,910 --> 00:03:08,850
+para adicionar a classe de traço de foco à esquerda.
+
+44
+00:03:08,850 --> 00:03:14,620
+Então, estou apenas fazendo dinamicamente o que acabei de fazer manualmente no, no HTML.
+
+45
+00:03:15,540 --> 00:03:16,050
+Tudo bem.
+
+46
+00:03:16,050 --> 00:03:22,110
+Agora, se eu salvar isso e passar o mouse sobre ele, você pode ver que ele fica mais largo e fica lá.
+
+47
+00:03:22,290 --> 00:03:24,740
+Portanto, precisamos cuidar de removê-lo também.
+
+48
+00:03:25,320 --> 00:03:30,950
+Então, digamos que o ouvinte de evento deixado de fora desta vez será a saída do mouse, certo.
+
+49
+00:03:30,960 --> 00:03:35,580
+Então, saia do mouse e queremos remover o foco para a esquerda.
+
+50
+00:03:35,610 --> 00:03:43,440
+Então agora você pode ver que eu posso entrar, fica mais largo, eu me movo, fica mais fino e queremos fazer o mesmo
+
+51
+00:03:43,440 --> 00:03:44,070
+para o direito.
+
+52
+00:03:44,080 --> 00:03:53,430
+Então eu vou copiar isso e vamos pegar, vamos dizer isso, isso e isso e isso e mudar
+
+53
+00:03:53,430 --> 00:03:54,030
+tudo para.
+
+54
+00:03:54,030 --> 00:03:54,590
+Certo.
+
+55
+00:03:55,260 --> 00:03:59,940
+OK, então, quando adicionamos, inserimos o mouse à direita, ele adicionará da maneira certa.
+
+56
+00:03:59,970 --> 00:04:01,650
+Quando sairmos, ele removerá Huba.
+
+57
+00:04:01,650 --> 00:04:01,960
+Certo.
+
+58
+00:04:02,460 --> 00:04:04,230
+Então agora eu posso ir em ambos os lados.
+
+59
+00:04:04,590 --> 00:04:07,560
+Agora é apenas um movimento para frente e para trás, o que eu não gosto.
+
+60
+00:04:07,560 --> 00:04:10,410
+Então, queremos apenas adicionar uma transição suave.
+
+61
+00:04:10,890 --> 00:04:14,340
+Então, nós só precisamos tomar, vamos fazer uma divisão.
+
+62
+00:04:14,340 --> 00:04:14,820
+Certo.
+
+63
+00:04:15,000 --> 00:04:19,320
+Eu vou bem aqui e dizer racha bem, racha.
+
+64
+00:04:19,320 --> 00:04:20,730
+Dasch saiu.
+
+65
+00:04:21,390 --> 00:04:24,980
+E vamos também pegar os pseudoseletores para dividir.
+
+66
+00:04:25,050 --> 00:04:28,260
+Divida à direita.
+
+67
+00:04:28,260 --> 00:04:34,470
+Kalanchoe e antes e dividiu à esquerda.
+
+68
+00:04:35,610 --> 00:04:46,140
+Dois pontos, dois pontos antes e vamos apenas adicionar uma transição, então a transição em tudo e a velocidade é
+
+69
+00:04:46,140 --> 00:04:54,200
+estará dentro de uma variável chamada velocidade e faremos um efeito de atenuação.
+
+70
+00:04:54,840 --> 00:04:58,270
+Então vamos subir aqui e aplicar uma variável de velocidade.
+
+71
+00:04:59,190 --> 00:05:01,370
+Dessa forma, você pode alterá-lo aqui, se quiser.
+
+72
+00:05:01,380 --> 00:05:09,270
+Então a velocidade será 1000 vezes ou 1000 milissegundos, que é um segundo e agora.
+
+73
+00:05:11,580 --> 00:05:13,260
+OK, parece que a sobreposição.
+
+74
+00:05:13,980 --> 00:05:15,990
+Vamos ver o que eles bagunçam aqui embaixo.
+
+75
+00:05:17,370 --> 00:05:18,880
+Então transição.
+
+76
+00:05:18,900 --> 00:05:19,950
+Então eu me separei.
+
+77
+00:05:21,800 --> 00:05:28,280
+Um traço dividido à esquerda deve ser dividido, Ditlev, então a sobreposição estava funcionando, mas a esquerda real não estava.
+
+78
+00:05:28,310 --> 00:05:31,570
+Então agora você pode ver que está funcionando.
+
+79
+00:05:33,560 --> 00:05:34,440
+Então parece muito bom.
+
+80
+00:05:34,470 --> 00:05:40,630
+A última coisa que quero fazer é em telas menores, como abaixo de 800.
+
+81
+00:05:40,640 --> 00:05:44,000
+Eu quero apenas tornar o H1 menor e os botões menores.
+
+82
+00:05:44,010 --> 00:05:45,860
+Então, vamos adicionar uma consulta de mídia aqui.
+
+83
+00:05:46,460 --> 00:05:59,870
+Então vamos dizer mídia, digamos Max com 800 pixels, então vamos pegar o H1 e vamos definir o tamanho da fonte
+
+84
+00:05:59,870 --> 00:06:03,390
+para configurá-lo para dois ram.
+
+85
+00:06:03,410 --> 00:06:07,750
+Então, do fórum para dois ram e depois para o botão.
+
+86
+00:06:08,510 --> 00:06:14,240
+Então BTN vamos definir a largura para doze ram.
+
+87
+00:06:14,240 --> 00:06:18,620
+Acho que eram 15 para começar e também diminuiremos o preenchimento.
+
+88
+00:06:18,620 --> 00:06:22,070
+Então o preenchimento fará um ponto dois ram
+
+89
+00:06:24,510 --> 00:06:25,520
+e vamos ver.
+
+90
+00:06:25,550 --> 00:06:28,700
+Então, esses são meio distantes.
+
+91
+00:06:30,120 --> 00:06:36,630
+Acho que podemos mover o H1 um pouco para baixo, então, de cima, acredito que foram 20%, vamos fazer 30
+
+92
+00:06:36,630 --> 00:06:38,370
+por cento e isso vai movê-lo para baixo.
+
+93
+00:06:39,030 --> 00:06:39,330
+Tudo bem.
+
+94
+00:06:39,330 --> 00:06:41,940
+Então eu acho que parece muito bom, mesmo em telas menores.
+
+95
+00:06:43,170 --> 00:06:45,230
+Então é quando atingimos 800 pixels.
+
+96
+00:06:46,980 --> 00:06:47,990
+Então vai ser isso.
+
+97
+00:06:48,000 --> 00:06:53,760
+E se vocês quiserem mudar o conteúdo, obviamente, achei que era uma boa ideia porque
+
+98
+00:06:53,760 --> 00:06:55,020
+da época do ano.
+
+99
+00:06:55,020 --> 00:06:56,910
+E, você sabe, os sistemas estão saindo.
+
+100
+00:06:56,910 --> 00:06:57,810
+Eles são realmente populares.
+
+101
+00:06:57,820 --> 00:07:01,740
+Eu, eu ainda tenho que encontrar um PlayStation cinco.
+
+102
+00:07:02,130 --> 00:07:04,170
+Então eu apenas pensei que seria uma boa ideia.
+
+103
+00:07:04,170 --> 00:07:06,090
+Mas é claro que você pode alterar o conteúdo.
+
+104
+00:07:06,570 --> 00:07:06,900
+Tudo bem.
+
+105
+00:07:06,900 --> 00:07:07,310
+É isso.
+
+106
+00:07:07,320 --> 00:07:08,190
+Obrigado por assistir.
+
+107
+00:07:08,190 --> 00:07:11,190
+Espero que tenham gostado deste projeto e nos vemos no próximo.

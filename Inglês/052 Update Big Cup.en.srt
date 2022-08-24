@@ -1,0 +1,491 @@
+1
+00:00:00,270 --> 00:00:06,420
+OK, so now that we were able to fill and empty these small cups down here, we want to work on the
+
+2
+00:00:06,420 --> 00:00:07,060
+big ones.
+
+3
+00:00:07,060 --> 00:00:11,280
+So we're going to actually call the function we're going to create in two places.
+
+4
+00:00:11,280 --> 00:00:14,070
+One is going to be right when the the application loads.
+
+5
+00:00:14,070 --> 00:00:18,150
+So let's call update big cup.
+
+6
+00:00:18,690 --> 00:00:21,720
+And then we also want to call it when we click on one of these.
+
+7
+00:00:21,750 --> 00:00:23,720
+So at the end of highlight cups.
+
+8
+00:00:23,730 --> 00:00:31,800
+So right under the loop here, let's say update big cup and let's go down here and let's create function
+
+9
+00:00:31,800 --> 00:00:34,510
+update big cup.
+
+10
+00:00:36,600 --> 00:00:41,360
+So the first thing I want to do is get the amount, the number of full glasses.
+
+11
+00:00:41,640 --> 00:00:42,900
+So that's pretty easy.
+
+12
+00:00:42,900 --> 00:00:48,540
+We can just create a variable called full glasses or let's call it four cups, not four glasses.
+
+13
+00:00:49,080 --> 00:00:51,720
+So full cups is going to be document dots.
+
+14
+00:00:54,330 --> 00:01:00,840
+So document dot, query selector all because we want to select all the full cups.
+
+15
+00:01:01,230 --> 00:01:08,460
+So in here, let's pass in the rest of the class of cups small and also have the class of fall in the
+
+16
+00:01:08,460 --> 00:01:08,970
+inquiry.
+
+17
+00:01:08,970 --> 00:01:12,770
+Select our inquiry, select are all we can pass in next selector.
+
+18
+00:01:13,050 --> 00:01:18,240
+So this is just going to get all the full ones and we want to get the length, so let's say at length.
+
+19
+00:01:18,690 --> 00:01:24,720
+And then just to show you that we can console log the full cups.
+
+20
+00:01:25,720 --> 00:01:31,240
+And we'll go down here and we see zero because it calls it right away, but then I'm going to click
+
+21
+00:01:31,240 --> 00:01:34,800
+on this one here we see that there's two, three, four and so on.
+
+22
+00:01:35,260 --> 00:01:36,570
+So we have the full cops.
+
+23
+00:01:37,000 --> 00:01:38,920
+Let's also get the total cops.
+
+24
+00:01:39,670 --> 00:01:45,850
+So consed total cops, which is just going to be all the small cops.
+
+25
+00:01:45,850 --> 00:01:52,960
+So Langguth, no small cops we brought in up here, which gives us a no list which we can call lengthen
+
+26
+00:01:53,260 --> 00:01:59,530
+so we can see the total cops here, which is always going to be eight right now.
+
+27
+00:01:59,530 --> 00:02:07,000
+I want to hide the percentage which we don't have an actual percentage in there right now anyways.
+
+28
+00:02:07,000 --> 00:02:09,610
+But let's just say we did like 20 percent.
+
+29
+00:02:10,420 --> 00:02:13,720
+We want that to hide if if it's empty.
+
+30
+00:02:15,160 --> 00:02:17,020
+So if there's no full cops.
+
+31
+00:02:17,020 --> 00:02:18,250
+So let's say if.
+
+32
+00:02:20,550 --> 00:02:25,680
+If full cops is equal to zero, that means that it should be empty.
+
+33
+00:02:25,710 --> 00:02:33,510
+So we want the percentage, we want the style and I'm going to set the visibility equal to hidden.
+
+34
+00:02:36,240 --> 00:02:38,210
+And let's also set the height.
+
+35
+00:02:38,580 --> 00:02:46,660
+So percentage of percentage style height.
+
+36
+00:02:46,740 --> 00:02:48,840
+I'm going to set that to zero.
+
+37
+00:02:49,950 --> 00:02:57,720
+OK, now you can see that kind of flashes for a second there, but it is actually setting it to hidden
+
+38
+00:02:57,720 --> 00:02:59,270
+and setting it the height zero.
+
+39
+00:02:59,790 --> 00:03:03,180
+So I'm just going to get rid of that hardcoded 20 percent there.
+
+40
+00:03:05,280 --> 00:03:07,710
+Now let's have an L.
+
+41
+00:03:07,760 --> 00:03:13,440
+So basically, if if it has something in it, then we want that percentage.
+
+42
+00:03:14,640 --> 00:03:15,600
+We want it to show.
+
+43
+00:03:15,600 --> 00:03:18,320
+So let's set this style dot visibility.
+
+44
+00:03:20,490 --> 00:03:28,500
+We want to set that now to visible and let's set percentage dot style.
+
+45
+00:03:28,890 --> 00:03:35,880
+And we want to set the height, style, height and the height we're going to actually get by doing let's
+
+46
+00:03:35,880 --> 00:03:43,740
+put some back ticks in here, but we can get the height by taking the full glass are full cups and divide
+
+47
+00:03:43,740 --> 00:03:50,520
+it by the total cups and then multiply it by the height of this large cup here, which if you remember
+
+48
+00:03:51,330 --> 00:03:53,190
+is three hundred and thirty pixels.
+
+49
+00:03:53,640 --> 00:03:58,590
+So whatever, whatever the height is, that's what we want to multiply it by and then pass in here.
+
+50
+00:03:58,590 --> 00:03:59,520
+Just pixels.
+
+51
+00:03:59,880 --> 00:04:00,960
+It's going to save that.
+
+52
+00:04:01,320 --> 00:04:02,120
+Close this up.
+
+53
+00:04:02,760 --> 00:04:07,650
+If I hit this first one here it's going to fill it up to their, their.
+
+54
+00:04:10,960 --> 00:04:16,540
+OK, now we want the text to say the percentage as well, right now we're only filling the height,
+
+55
+00:04:17,470 --> 00:04:27,400
+so let's set the percentage in our text and we're going to set that to a set of tactics.
+
+56
+00:04:27,940 --> 00:04:35,200
+And and here once again, we're going to get the full cups and we want to divide that by the total cups.
+
+57
+00:04:35,890 --> 00:04:42,630
+And let's multiply that by 100 because we want to get like, you know, 25 percent whatever.
+
+58
+00:04:43,180 --> 00:04:44,200
+So I'll save that.
+
+59
+00:04:44,210 --> 00:04:46,840
+If I click this first one, we get twelve point five.
+
+60
+00:04:47,020 --> 00:04:50,400
+Actually, let's just add a percentage sign right here.
+
+61
+00:04:50,920 --> 00:04:54,900
+So we get twelve point five percent, 25 percent, 37.
+
+62
+00:04:54,940 --> 00:04:55,520
+That's half.
+
+63
+00:04:55,520 --> 00:04:58,270
+That's fifty sixty two seventy five.
+
+64
+00:04:58,270 --> 00:04:59,560
+Eighty seven point five.
+
+65
+00:04:59,560 --> 00:05:00,190
+One hundred.
+
+66
+00:05:00,880 --> 00:05:02,790
+Now we still have this up here.
+
+67
+00:05:02,800 --> 00:05:06,280
+This remained, which we don't want to show if this is fall.
+
+68
+00:05:06,700 --> 00:05:12,340
+So underneath this if statement here, let's create another one and we're going to deal with the remain
+
+69
+00:05:12,340 --> 00:05:12,700
+now.
+
+70
+00:05:12,700 --> 00:05:21,280
+So we want to check to see if full cups is equal to the total cups, meaning it's fall.
+
+71
+00:05:21,760 --> 00:05:29,920
+So if it's full, we're going to take remained and we're going to set the style dot visibility to hidden
+
+72
+00:05:29,920 --> 00:05:31,180
+because we don't want to show that.
+
+73
+00:05:33,010 --> 00:05:35,440
+And then let's also set the height to zero.
+
+74
+00:05:35,440 --> 00:05:39,390
+So remained dot style, dot height.
+
+75
+00:05:39,400 --> 00:05:40,840
+We're going to set that to zero.
+
+76
+00:05:40,840 --> 00:05:46,480
+So save and we're going to see this remained until it's completely full, then it goes away.
+
+77
+00:05:46,870 --> 00:05:49,450
+Even if it's here we can see it now.
+
+78
+00:05:49,870 --> 00:05:54,790
+It's we we don't see the remain text anymore because we've removed it from the DOM.
+
+79
+00:05:55,150 --> 00:05:59,490
+We've set the visibility to hidden and we've never set it back or the height.
+
+80
+00:05:59,710 --> 00:06:01,630
+So here we want to have an LS.
+
+81
+00:06:02,680 --> 00:06:10,210
+Then we'll set remained dot style dot visibility and we want to set that back to visible if it's not
+
+82
+00:06:10,210 --> 00:06:10,570
+full.
+
+83
+00:06:10,570 --> 00:06:10,900
+Right.
+
+84
+00:06:10,900 --> 00:06:12,340
+So set that to visible.
+
+85
+00:06:12,880 --> 00:06:16,540
+And we also want to set the text of remained.
+
+86
+00:06:17,590 --> 00:06:24,730
+So if I just save this right now, fill it up and disappears, if it's not totally full we do see remain
+
+87
+00:06:24,730 --> 00:06:26,110
+but we don't see the leaders.
+
+88
+00:06:26,350 --> 00:06:29,590
+Remember up here we have a span with the idea of leaders.
+
+89
+00:06:29,590 --> 00:06:32,290
+So we want to show the leaders that are remaining.
+
+90
+00:06:33,100 --> 00:06:38,650
+So to do that, let's say remained and we want to set I'm sorry, not remain.
+
+91
+00:06:38,650 --> 00:06:39,880
+We want to set leaders.
+
+92
+00:06:39,880 --> 00:06:41,420
+We brought that in up at the beginning.
+
+93
+00:06:41,500 --> 00:06:42,940
+At the beginning at the top.
+
+94
+00:06:43,230 --> 00:06:48,760
+Want to set the entire text of that and let's put some back ticks here.
+
+95
+00:06:50,800 --> 00:06:57,430
+And what I'm going to do is take two fifty, because that's the number down here of milliliters.
+
+96
+00:06:57,850 --> 00:07:00,490
+And we want to divide that, not divide.
+
+97
+00:07:00,490 --> 00:07:08,440
+Multiply that by the full cups and then we want to divide that by a thousand because we wanted to say,
+
+98
+00:07:08,440 --> 00:07:12,130
+you know, zero point two five or zero point five, whatever.
+
+99
+00:07:13,180 --> 00:07:17,800
+And then I'm going to just let's just see what this does, actually.
+
+100
+00:07:17,800 --> 00:07:19,360
+So I click on that.
+
+101
+00:07:19,360 --> 00:07:21,460
+It says zero point two five remain.
+
+102
+00:07:21,460 --> 00:07:22,240
+That's not true.
+
+103
+00:07:22,240 --> 00:07:26,740
+It's actually zero point two five full of four of two leaders.
+
+104
+00:07:26,740 --> 00:07:33,070
+If I click on this one here, it says one remained click here, one point two, five remain, which
+
+105
+00:07:33,070 --> 00:07:34,240
+is not correct.
+
+106
+00:07:34,750 --> 00:07:35,140
+Right.
+
+107
+00:07:35,140 --> 00:07:38,410
+If I click on this one, one point seventy five remain is not correct.
+
+108
+00:07:38,410 --> 00:07:42,340
+It should be zero point two five remained on the spot.
+
+109
+00:07:42,670 --> 00:07:51,730
+So what we'll do is let's wrap this in parentheses, what we just put here and let's go to the beginning
+
+110
+00:07:51,730 --> 00:07:57,100
+here and say two, which is the total number of leaders and minus that from it.
+
+111
+00:07:57,100 --> 00:08:03,040
+Now, if I click on the first one, we have one seven five remained by click on this one here we only
+
+112
+00:08:03,040 --> 00:08:05,110
+have point to five remained.
+
+113
+00:08:06,190 --> 00:08:10,930
+OK, so, I mean, obviously, if I click here, it's 100 percent we have zero remained.
+
+114
+00:08:12,040 --> 00:08:12,640
+So.
+
+115
+00:08:14,560 --> 00:08:15,850
+So that should do it good.
+
+116
+00:08:15,880 --> 00:08:21,610
+Actually, I want to put an L there for leaders, so right after the curly brace, we'll just put an
+
+117
+00:08:21,610 --> 00:08:22,020
+L.
+
+118
+00:08:23,380 --> 00:08:28,810
+So two leaders remained here, one point five, seven remained.
+
+119
+00:08:28,810 --> 00:08:35,180
+And it's twelve point five percent full, 25 percent full, one point five leader remaining.
+
+120
+00:08:35,200 --> 00:08:35,470
+All right.
+
+121
+00:08:35,470 --> 00:08:36,660
+So seems to be working.
+
+122
+00:08:36,670 --> 00:08:37,360
+So that's it.
+
+123
+00:08:37,370 --> 00:08:39,310
+Let's go ahead and move on to the next project.

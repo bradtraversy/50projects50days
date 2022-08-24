@@ -1,0 +1,355 @@
+﻿1
+00:00:00,180 --> 00:00:02,080
+Tudo bem, então vamos começar em nosso JavaScript.
+
+2
+00:00:02,100 --> 00:00:07,950
+Agora vamos adicionar apenas a funcionalidade DOM por enquanto, para que possamos adicioná-la a fazer e entrar e será
+
+3
+00:00:07,950 --> 00:00:09,000
+seja adicionado aqui.
+
+4
+00:00:09,210 --> 00:00:14,850
+Poderemos comercializá-lo como completo e removê-lo, mas faremos o armazenamento local no vídeo
+
+5
+00:00:14,850 --> 00:00:15,710
+depois deste.
+
+6
+00:00:16,020 --> 00:00:18,580
+Então vamos em frente e primeiro trazer o que precisamos.
+
+7
+00:00:18,600 --> 00:00:27,030
+Então, queremos que nosso documento de formulário get element by D form tenha uma ideia de formulário e também queremos nossa entrada
+
+8
+00:00:28,590 --> 00:00:29,940
+para que possamos obter o valor.
+
+9
+00:00:31,290 --> 00:00:32,850
+E isso tem uma ideia de entrada.
+
+10
+00:00:33,900 --> 00:00:43,750
+E nós também queremos o dos ul so dizer aos dos you l e isso tem uma idéia do to dos.
+
+11
+00:00:44,360 --> 00:00:44,790
+Tudo bem.
+
+12
+00:00:44,820 --> 00:00:48,030
+Agora no formulário vamos adicionar um ouvinte de eventos.
+
+13
+00:00:48,630 --> 00:00:51,630
+Queremos ouvir um envio do formulário.
+
+14
+00:00:51,630 --> 00:00:58,530
+Quando isso acontecer, teremos uma função, pega um evento, objeto como argumento, e então podemos
+
+15
+00:00:58,530 --> 00:01:04,840
+pegue esse objeto de evento e chame prevent default para evitar que o formulário tenha seu comportamento padrão.
+
+16
+00:01:05,340 --> 00:01:08,340
+Então vamos chamar uma função chamada ADD para fazer.
+
+17
+00:01:10,800 --> 00:01:11,260
+Tudo bem.
+
+18
+00:01:11,850 --> 00:01:18,600
+Então, para esta função, digamos add to do e ela terá a opção de receber um a fazer.
+
+19
+00:01:20,460 --> 00:01:28,800
+E o que faremos é inicializar uma variável chamada para fazer texto e defini-la para qualquer valor de entrada
+
+20
+00:01:28,800 --> 00:01:29,160
+é.
+
+21
+00:01:29,700 --> 00:01:41,970
+Agora, se um a fazer for passado aqui, queremos definir para fazer o texto dois a fazer e, em seguida, dot text.
+
+22
+00:01:42,880 --> 00:01:48,510
+OK, se, se for Pastan inicialmente, se estivermos apenas enviando para fazer aqui, não será aprovado
+
+23
+00:01:48,510 --> 00:01:51,330
+e assim será qualquer que seja o valor.
+
+24
+00:01:51,680 --> 00:01:52,120
+Tudo bem.
+
+25
+00:01:52,140 --> 00:01:59,940
+Na verdade, podemos apenas logar no console e ver se o texto é digitar algo pressionando enter e você pode ver
+
+26
+00:01:59,940 --> 00:02:00,830
+está sendo registrado.
+
+27
+00:02:01,380 --> 00:02:01,810
+Tudo bem.
+
+28
+00:02:01,920 --> 00:02:09,210
+Agora, a próxima coisa é construir um item de lista.
+
+29
+00:02:09,210 --> 00:02:12,930
+Então, nós só queremos ter certeza de que o texto existe.
+
+30
+00:02:13,770 --> 00:02:23,730
+Então, se for fazer texto, vamos criar um elemento a fazer e vamos definir isso para documentar criar elemento e
+
+31
+00:02:23,730 --> 00:02:34,170
+vamos criar um item de lista e depois queremos verificar para ver, digamos, se fazer e fazer
+
+32
+00:02:34,170 --> 00:02:36,450
+ponto concluído.
+
+33
+00:02:37,440 --> 00:02:40,260
+Então vamos adicionar a classe de concluído.
+
+34
+00:02:40,270 --> 00:02:48,840
+Então, para fazer elementos dot class list dot e vamos adicionar a classe de completed.
+
+35
+00:02:49,570 --> 00:02:50,070
+Tudo bem.
+
+36
+00:02:50,160 --> 00:02:55,680
+Fora isso vamos pegar o elemento a fazer e vamos definir todo o texto.
+
+37
+00:02:56,880 --> 00:03:00,210
+Portanto, o item da lista em um texto será definido para o que fazer.
+
+38
+00:03:00,210 --> 00:03:04,160
+O texto está correto, então salve isso.
+
+39
+00:03:04,710 --> 00:03:07,550
+Agora, se eu fizer isso, nada vai acontecer ainda.
+
+40
+00:03:08,610 --> 00:03:12,030
+Vamos em frente e adicionar isso ao DOM.
+
+41
+00:03:12,030 --> 00:03:20,070
+Então, vamos pegar o dos you l e dos you ul e queremos anexar um elemento filho e o que queremos
+
+42
+00:03:20,070 --> 00:03:24,540
+anexar é o elemento a fazer, que é o item da lista.
+
+43
+00:03:24,750 --> 00:03:26,400
+E eu só quero limpar o formulário.
+
+44
+00:03:26,400 --> 00:03:29,790
+Então, pegaremos a entrada e definiremos o valor igual a nada.
+
+45
+00:03:30,180 --> 00:03:33,510
+Então agora se eu disser para fazer um entre.
+
+46
+00:03:34,080 --> 00:03:34,710
+Façam.
+
+47
+00:03:34,800 --> 00:03:35,880
+Entrar.
+
+48
+00:03:36,890 --> 00:03:39,580
+Eles vão chegar a isso agora.
+
+49
+00:03:39,710 --> 00:03:43,400
+Nada acontece se eu clicar ou clicar com o botão direito ou qualquer coisa.
+
+50
+00:03:44,090 --> 00:03:45,890
+Se eu recarregar, eles vão embora.
+
+51
+00:03:46,460 --> 00:03:50,300
+Então, mantê-los lá no armazenamento local fará isso no próximo vídeo.
+
+52
+00:03:50,300 --> 00:03:59,840
+Mas eu quero poder pelo menos excluí-los e também marcá-los como concluídos.
+
+53
+00:03:59,850 --> 00:04:09,410
+Então, vamos logo acima de onde o adicionamos ao dormitório e vamos pegar o elemento específico para fazer e
+
+54
+00:04:09,410 --> 00:04:10,850
+adicione um ouvinte de evento a ele.
+
+55
+00:04:11,670 --> 00:04:15,980
+Então, digamos adicionar ouvinte de evento e queremos ouvir um clique.
+
+56
+00:04:16,640 --> 00:04:20,870
+E quando isso acontecer, teremos uma função e apenas uma linha.
+
+57
+00:04:20,870 --> 00:04:22,310
+Então não precisamos de chaves.
+
+58
+00:04:22,610 --> 00:04:31,670
+Nós apenas pegaremos o elemento to do e queremos pegar a lista de classes e chamar, na verdade, não adicionar.
+
+59
+00:04:31,670 --> 00:04:34,280
+Queremos alternar porque queremos poder alternar concluído.
+
+60
+00:04:35,390 --> 00:04:37,770
+Então alterne a classe de concluído.
+
+61
+00:04:38,440 --> 00:04:38,840
+Tudo bem.
+
+62
+00:04:38,900 --> 00:04:43,760
+Agora, se eu salvar isso, eles desaparecerão quando eu salvar apenas porque a página é recarregada.
+
+63
+00:04:44,120 --> 00:04:46,010
+Mas vamos apenas dizer para fazer um.
+
+64
+00:04:46,340 --> 00:04:50,960
+E agora se eu clicar nele, você pode ver que a classe de concluído é aplicada.
+
+65
+00:04:50,960 --> 00:04:53,030
+Se eu clicar novamente, ele é retirado.
+
+66
+00:04:53,030 --> 00:04:54,740
+Então ele vai alternar essa classe.
+
+67
+00:04:55,710 --> 00:04:56,090
+Tudo bem.
+
+68
+00:04:56,090 --> 00:04:59,660
+Agora para remover queremos fazer um clique direito.
+
+69
+00:05:00,200 --> 00:05:03,380
+Então, vou adicionar outro ouvinte de eventos.
+
+70
+00:05:03,380 --> 00:05:09,440
+Eu vou pegar isso e em vez de clicar, vamos ouvir o menu de contexto.
+
+71
+00:05:09,440 --> 00:05:11,360
+Então isso vai ser um clique direito.
+
+72
+00:05:11,900 --> 00:05:16,130
+Então, quando isso acontece, queremos evitar o comportamento padrão.
+
+73
+00:05:16,130 --> 00:05:25,040
+Então, vou dizer que queremos que isso vá para algumas chaves que e também queremos passar,
+
+74
+00:05:26,540 --> 00:05:27,830
+porque agora, se você está certo.
+
+75
+00:05:27,830 --> 00:05:29,150
+Clique, ele vai trazer isso à tona.
+
+76
+00:05:29,150 --> 00:05:29,900
+Nós não queremos isso.
+
+77
+00:05:29,900 --> 00:05:31,460
+Queremos evitar que isso aconteça.
+
+78
+00:05:31,460 --> 00:05:33,650
+Então vamos evitar o default.
+
+79
+00:05:35,150 --> 00:05:40,340
+Então, se eu colocar algo aqui e agora estou clicando com o botão direito, não estou vendo o, você sabe, o
+
+80
+00:05:40,340 --> 00:05:42,560
+padrão, o menu de contexto nativo.
+
+81
+00:05:43,490 --> 00:05:49,220
+O que eu quero fazer é pegar esse elemento e removê-lo completamente do DOM.
+
+82
+00:05:49,220 --> 00:05:50,520
+Então, apenas chamamos removes.
+
+83
+00:05:50,540 --> 00:05:54,260
+Agora se eu colocar algo aqui e eu certo.
+
+84
+00:05:54,260 --> 00:05:55,790
+Clique em Isso vai embora.
+
+85
+00:05:55,790 --> 00:05:56,780
+Isso vai embora.
+
+86
+00:05:56,960 --> 00:05:57,770
+Isso vai embora.
+
+87
+00:05:58,530 --> 00:06:02,720
+OK, então é basicamente isso no que diz respeito à funcionalidade do DOM.
+
+88
+00:06:02,730 --> 00:06:08,270
+Então, no próximo vídeo, vamos aplicar o armazenamento local para que toda vez que recarregarmos ou voltarmos ao
+
+89
+00:06:08,270 --> 00:06:09,890
+a página, eles não sumiram.

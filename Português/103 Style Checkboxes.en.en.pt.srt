@@ -1,0 +1,407 @@
+﻿1
+00:00:00,180 --> 00:00:05,040
+Tudo bem, então vamos começar, eu acabei de abrir meu projeto inicial aqui e vamos mudar
+
+2
+00:00:05,040 --> 00:00:12,450
+o título aqui vamos chamar de bom, barato, rápido.
+
+3
+00:00:12,900 --> 00:00:18,450
+E basicamente teremos apenas algumas caixas de seleção, mas vamos estilizá-las para parecerem realmente
+
+4
+00:00:18,450 --> 00:00:18,750
+legal.
+
+5
+00:00:18,780 --> 00:00:24,270
+Vamos adicionar alguma animação e vamos adicionar alguma lógica para que você não possa escolher, por exemplo,
+
+6
+00:00:24,270 --> 00:00:28,550
+todos os três porque é difícil conseguir um projeto que seja bom, barato e rápido.
+
+7
+00:00:28,590 --> 00:00:31,820
+Eles são baratos e rápidos ou baratos e bons.
+
+8
+00:00:32,070 --> 00:00:34,590
+Então, adicionaremos alguma lógica com JavaScript mais tarde.
+
+9
+00:00:35,040 --> 00:00:37,200
+Então vamos em frente e adicionar aqui.
+
+10
+00:00:37,830 --> 00:00:40,380
+Na verdade, vou usar um H dois aqui.
+
+11
+00:00:40,380 --> 00:00:48,960
+Então vamos colocar um H dois e dizer, como você quer que seu projeto seja?
+
+12
+00:00:51,450 --> 00:00:53,220
+E então teremos nossa alternância.
+
+13
+00:00:53,460 --> 00:00:59,220
+Então, teremos três divs separadas com a classe de contêiner de alternância que cercará
+
+14
+00:00:59,220 --> 00:01:03,180
+a entrada, o rótulo e o texto, o texto do span.
+
+15
+00:01:03,570 --> 00:01:13,740
+Então, vamos criar um contêiner de alternância de traço e aqui vamos colocar uma entrada com o tipo de caixa de seleção.
+
+16
+00:01:14,710 --> 00:01:16,150
+E não precisamos de um nome.
+
+17
+00:01:16,840 --> 00:01:26,350
+Não precisamos de um nome para o ID, diremos bom e também vamos dar uma classe de Torkel.
+
+18
+00:01:28,340 --> 00:01:29,490
+OK, então essa é a nossa entrada.
+
+19
+00:01:29,500 --> 00:01:34,720
+Agora queremos um rótulo porque quando você tem um rótulo para um campo de formulário, você pode clicar nesse rótulo e
+
+20
+00:01:34,720 --> 00:01:39,160
+neste caso, ele marcará ou desmarcará a caixa de seleção.
+
+21
+00:01:39,490 --> 00:01:41,210
+Então vamos dizer rótulo para sempre.
+
+22
+00:01:41,290 --> 00:01:47,080
+Portanto, o ID deve corresponder ao ID da entrada, deve corresponder aos quatro atributos no rótulo.
+
+23
+00:01:47,740 --> 00:01:55,930
+E então eu também vou dar a isso uma classe de rótulo e então dentro do rótulo nós vamos ter
+
+24
+00:01:55,930 --> 00:01:57,120
+uma classe de bola.
+
+25
+00:01:57,160 --> 00:02:03,280
+Então esta vai ser a parte redonda do controle deslizante, o que você quiser chamar
+
+26
+00:02:03,280 --> 00:02:06,880
+isso, isso vai e volta que vamos animar.
+
+27
+00:02:07,270 --> 00:02:09,370
+Então não vamos colocar nada nesta div.
+
+28
+00:02:09,370 --> 00:02:11,290
+Nós só queremos tê-lo aqui para estilizar.
+
+29
+00:02:11,770 --> 00:02:16,660
+E fora do rótulo, teremos um intervalo com o texto.
+
+30
+00:02:16,660 --> 00:02:17,830
+Então isso vai dizer bom.
+
+31
+00:02:18,340 --> 00:02:24,670
+Direi que não vai ficar muito bom até somarmos nosso sucesso, mas queremos três desses.
+
+32
+00:02:24,700 --> 00:02:31,510
+Então, este div do contêiner de alternância, vou pegar esse espaço aqui e aqui e depois apenas
+
+33
+00:02:31,510 --> 00:02:32,290
+mudança.
+
+34
+00:02:32,410 --> 00:02:33,910
+O segundo vai ser barato.
+
+35
+00:02:33,910 --> 00:02:35,340
+Então vamos mudar isso.
+
+36
+00:02:35,800 --> 00:02:40,810
+Na verdade, essa ideia aqui, os quatro e isso é muito barato.
+
+37
+00:02:41,260 --> 00:02:45,760
+E vamos apenas adicionar letras maiúsculas aqui.
+
+38
+00:02:47,450 --> 00:02:50,800
+Não, eu tenho barato no último vai ser rápido.
+
+39
+00:02:50,800 --> 00:02:58,330
+Então, vamos mudar isso muito rápido e apenas fazer isso em letras maiúsculas
+
+40
+00:03:00,670 --> 00:03:03,400
+que e que deve fazê-lo para o HDMI.
+
+41
+00:03:03,400 --> 00:03:04,400
+Também bem simples.
+
+42
+00:03:04,880 --> 00:03:08,650
+Agora, o sucesso vai realmente mudar a aparência disso.
+
+43
+00:03:08,650 --> 00:03:11,180
+Então temos muito o que fazer aqui.
+
+44
+00:03:11,230 --> 00:03:13,930
+Nem todos, nem muito, mas vamos fazer alguma animação.
+
+45
+00:03:14,860 --> 00:03:16,960
+Vamos começar com o corpo aqui.
+
+46
+00:03:16,960 --> 00:03:23,200
+Então, vamos ficar com a exibição da fonte Raboteau, itens de linha flexíveis que não precisamos.
+
+47
+00:03:24,460 --> 00:03:26,560
+Bem, sim, vamos manter a coluna.
+
+48
+00:03:27,670 --> 00:03:30,730
+Acho que não temos que mudar nada aqui, então podemos deixar isso.
+
+49
+00:03:31,080 --> 00:03:34,960
+Então, vamos começar a estilizar o contêiner de alternância.
+
+50
+00:03:36,280 --> 00:03:42,850
+Então, no contêiner de alternância, vou exibir o Flex e quero usar uma linha.
+
+51
+00:03:42,850 --> 00:03:46,120
+Os itens aqui para exibir tudo são alinhados ao centro.
+
+52
+00:03:46,420 --> 00:03:53,890
+Vou adicionar uma margem aqui de dez pixels na parte superior e inferior e, em seguida, uma largura de 200 pixels para
+
+53
+00:03:53,890 --> 00:03:59,140
+lembre-se de que o contêiner envolve a entrada, o rótulo e o texto do intervalo.
+
+54
+00:04:00,810 --> 00:04:02,820
+Agora, a classe de alternância,
+
+55
+00:04:06,390 --> 00:04:12,000
+então temos a classe do Torgau, que é o próprio input, o checkbox, não queremos
+
+56
+00:04:12,000 --> 00:04:18,060
+mostre isso porque basicamente estamos substituindo isso pelo visual legal da bola ou o que quer que você
+
+57
+00:04:18,060 --> 00:04:20,170
+quero chamá-lo, o controle deslizante, a bola, o que for.
+
+58
+00:04:20,550 --> 00:04:28,490
+Então vamos pegar a classe de alternância e vou definir a visibilidade como oculta.
+
+59
+00:04:30,300 --> 00:04:33,180
+Então agora não podemos ver a caixa de seleção real.
+
+60
+00:04:33,190 --> 00:04:34,650
+Agora temos o rótulo
+
+61
+00:04:37,110 --> 00:04:40,780
+e para o rótulo, vamos dar uma olhada nisso.
+
+62
+00:04:41,860 --> 00:04:48,240
+Vamos dar-lhe uma largura de 40 ou 80 pixels e depois vamos dar-lhe uma altura de quarenta pixels.
+
+63
+00:04:49,560 --> 00:04:52,100
+OK, então, quero dizer, é só que está aqui.
+
+64
+00:04:52,110 --> 00:04:53,040
+Você ainda não pode ver.
+
+65
+00:04:53,050 --> 00:04:58,500
+Então vamos dar uma cor de fundo cinza.
+
+66
+00:04:58,500 --> 00:05:01,800
+Então vamos usar D zero três vezes aqui.
+
+67
+00:05:01,890 --> 00:05:02,460
+Aqui vamos nós.
+
+68
+00:05:02,940 --> 00:05:05,340
+Queremos que tenha cantos realmente arredondados.
+
+69
+00:05:05,340 --> 00:05:13,530
+Então, vou definir o raio da borda para 50 pixels assim e queremos definir um ponteiro de cursor.
+
+70
+00:05:13,680 --> 00:05:15,810
+Então, quando passamos o mouse sobre ele, temos um cursor.
+
+71
+00:05:16,110 --> 00:05:21,720
+Vou exibi-lo como um bloco embutido porque está alinhado por padrão.
+
+72
+00:05:22,290 --> 00:05:28,890
+E eu quero poder adicionar uma margem de zero 15 zero.
+
+73
+00:05:29,430 --> 00:05:36,090
+OK, então eu meio que coloquei algum espaço em torno disso e isso realmente deveria servir para a própria gravadora.
+
+74
+00:05:37,780 --> 00:05:44,080
+Agora, se estiver marcado, quero que a cor de fundo do rótulo mude.
+
+75
+00:05:44,110 --> 00:05:49,630
+Então, o que podemos fazer é alternar, que é a caixa de seleção, e podemos dizer dois pontos marcados, que
+
+76
+00:05:49,630 --> 00:05:58,940
+significa que quando está no estado marcado, queremos estilizar o rótulo e definir a cor de fundo.
+
+77
+00:05:58,960 --> 00:06:06,070
+Vou configurá-lo para o valor hexadecimal oito E quatro para um D assim.
+
+78
+00:06:06,280 --> 00:06:10,150
+Agora, assim que faço isso, o primeiro fica roxo porque está marcado.
+
+79
+00:06:10,150 --> 00:06:14,010
+Se eu clicar novamente, ele será desmarcado e ficará cinza.
+
+80
+00:06:14,470 --> 00:06:15,880
+OK, então agora podemos fazer isso.
+
+81
+00:06:17,390 --> 00:06:19,420
+Agora, a próxima coisa que quero fazer é a bola.
+
+82
+00:06:19,420 --> 00:06:27,370
+Queremos ter aquele pequeno círculo dentro, então temos uma classe de bola e vamos definir o plano de fundo para
+
+83
+00:06:27,370 --> 00:06:34,540
+isso para o branco, que você não vai ver porque não tem nenhum conteúdo e também não
+
+84
+00:06:34,540 --> 00:06:35,380
+tem altura ou largura.
+
+85
+00:06:35,380 --> 00:06:40,030
+Então vamos definir a altura para trinta e quatro pixels e também a largura.
+
+86
+00:06:40,740 --> 00:06:43,530
+Vamos definir isso para trinta e quatro pixels.
+
+87
+00:06:43,970 --> 00:06:46,780
+OK, então você pode ver o quadrado branco aqui.
+
+88
+00:06:46,780 --> 00:06:53,970
+Queremos que seja redondo, então vamos definir o raio da borda para 50%.
+
+89
+00:06:55,060 --> 00:06:57,010
+OK, e então queremos posicioná-lo.
+
+90
+00:06:57,020 --> 00:07:09,580
+Então, vamos posicionar isso absoluto e na verdade vamos querer ter a posição do rótulo relativa
+
+91
+00:07:09,580 --> 00:07:13,690
+porque estamos posicionando a bola absolu dentro do rótulo.
+
+92
+00:07:13,690 --> 00:07:16,690
+Portanto, o rótulo deve ser posicionado em relação.
+
+93
+00:07:16,690 --> 00:07:20,300
+Então vamos adicionar isso aqui relativo.
+
+94
+00:07:21,220 --> 00:07:23,020
+OK, então vamos para a posição absoluta.
+
+95
+00:07:23,020 --> 00:07:29,170
+E então, onde queremos colocá-lo dentro do rótulo, vamos fazer três pixels a partir do topo e
+
+96
+00:07:29,170 --> 00:07:33,290
+vamos fazer três pixels da esquerda.
+
+97
+00:07:33,640 --> 00:07:36,060
+OK, então ele se encaixa bem ali, bonito e confortável.
+
+98
+00:07:37,450 --> 00:07:44,340
+E também é apenas um centro de itens de linha e justifica o centro de conteúdo também.
+
+99
+00:07:45,790 --> 00:07:49,500
+OK, agora quando eu clico, você pode ver que fica roxo.
+
+100
+00:07:49,540 --> 00:07:51,390
+Não temos a animação aqui.
+
+101
+00:07:51,820 --> 00:07:54,910
+Então o que vamos fazer no próximo vídeo é adicionar a animação.
+
+102
+00:07:54,910 --> 00:07:59,020
+Então, quando clicamos, ele desliza e clica novamente, desliza para trás.

@@ -1,0 +1,71 @@
+1
+00:00:00,150 --> 00:00:04,680
+Hey, guys, in this project, we're going to be creating a split landing page and I did something similar
+
+2
+00:00:04,680 --> 00:00:11,280
+to this on my YouTube channel a while ago, and we're going to actually format it to be PlayStation
+
+3
+00:00:11,280 --> 00:00:13,220
+five and Xbox series.
+
+4
+00:00:13,450 --> 00:00:16,860
+So maybe you have a store and you know, these these are just released.
+
+5
+00:00:16,870 --> 00:00:19,500
+I can't even get my hands on a PlayStation five right now.
+
+6
+00:00:19,920 --> 00:00:24,120
+But, you know, we might have a store where you can come and you can choose one of these.
+
+7
+00:00:24,300 --> 00:00:29,760
+And we're going to create this split screen with a background image, with an overlay, with some content
+
+8
+00:00:29,760 --> 00:00:30,450
+inside.
+
+9
+00:00:30,450 --> 00:00:35,090
+And if we click on one side, it's going to stretch out to 75 percent.
+
+10
+00:00:35,460 --> 00:00:37,080
+The other side, 25 percent.
+
+11
+00:00:37,080 --> 00:00:40,020
+If I hover on the right side, it's going to do the same thing.
+
+12
+00:00:40,350 --> 00:00:40,680
+All right.
+
+13
+00:00:40,680 --> 00:00:42,650
+We'll add a little hover effect onto these.
+
+14
+00:00:42,650 --> 00:00:45,120
+So I think it's just a nice looking little landing page.
+
+15
+00:00:45,420 --> 00:00:46,770
+So that's what we building.
+
+16
+00:00:46,770 --> 00:00:48,480
+It's going to be very CSFs heavy.
+
+17
+00:00:48,720 --> 00:00:54,330
+We'll do a little bit of JavaScript at the end for the hover effects, but lots of success in this project.
+
+18
+00:00:54,340 --> 00:00:55,320
+So let's jump in.

@@ -1,0 +1,555 @@
+1
+00:00:00,180 --> 00:00:06,660
+All right, so now we want to implement local storage so that when we add a note here, it basically
+
+2
+00:00:06,660 --> 00:00:12,620
+gets saved in our browser, gets saved in local storage, which is a it's a native browser API.
+
+3
+00:00:12,630 --> 00:00:18,120
+It's not like an extra library or anything that we have to add or we don't need a CD and or anything.
+
+4
+00:00:18,310 --> 00:00:26,040
+So basically to set items, we would say local storage dot set item and we could set a key like name
+
+5
+00:00:26,040 --> 00:00:29,760
+and we could set a value like Brad.
+
+6
+00:00:29,970 --> 00:00:32,400
+So that's how we would set something to get something.
+
+7
+00:00:32,400 --> 00:00:39,510
+We would say local storage doget item and we would get a name and that would give us Brad.
+
+8
+00:00:39,520 --> 00:00:40,320
+So it's pretty simple.
+
+9
+00:00:40,320 --> 00:00:41,790
+It's just key value pairs.
+
+10
+00:00:42,000 --> 00:00:47,820
+In fact, they can go ahead and save this and just run this and we can check what we have in local storage,
+
+11
+00:00:48,090 --> 00:00:54,510
+in our dev tools if we go to the application tab and if I go down to storage, local storage and my
+
+12
+00:00:54,510 --> 00:01:01,470
+local host, you'll see I have this key value pair with the key is name the values Brad.
+
+13
+00:01:01,980 --> 00:01:07,500
+And then to get rid of it, if you want to delete something, you can say local storage, dot, remove
+
+14
+00:01:07,500 --> 00:01:10,740
+item name.
+
+15
+00:01:10,740 --> 00:01:15,600
+And now if I save this in this reloads, it does create it, but then it removes it and you can see
+
+16
+00:01:15,600 --> 00:01:16,410
+there's nothing there.
+
+17
+00:01:16,420 --> 00:01:19,890
+So the API is pretty simple to work with now.
+
+18
+00:01:19,890 --> 00:01:26,940
+We can only store String's in local storage and if you want to store an object or an array, like maybe
+
+19
+00:01:26,940 --> 00:01:33,330
+you have an array with, you know, I.D. one or whatever, you can't store it like this.
+
+20
+00:01:33,330 --> 00:01:35,430
+It has to actually be stratified.
+
+21
+00:01:36,060 --> 00:01:37,470
+So it has to be a string.
+
+22
+00:01:37,740 --> 00:01:46,890
+And you can do that with a method called that, a method called Jason Dot String Afie.
+
+23
+00:01:47,220 --> 00:01:53,790
+And you can pass in, you know, whatever that object to object is or array or whatever.
+
+24
+00:01:53,910 --> 00:02:01,920
+And then when you pull it out, you just have to wrap this in Jason Dot Pass and that would pass it
+
+25
+00:02:01,920 --> 00:02:04,920
+as an array or object or whatever you want it to be.
+
+26
+00:02:05,340 --> 00:02:05,760
+All right.
+
+27
+00:02:05,790 --> 00:02:11,010
+So with that said, let's have a function here called update URLs.
+
+28
+00:02:11,020 --> 00:02:17,490
+So this is going to update our local storage and we're going to run this whether we delete or we're
+
+29
+00:02:17,490 --> 00:02:19,100
+adding notes.
+
+30
+00:02:19,530 --> 00:02:21,140
+So we'll start with adding.
+
+31
+00:02:21,360 --> 00:02:27,330
+So in our text area when we're typing out, I'm actually going to call after we add it to the, you
+
+32
+00:02:27,330 --> 00:02:29,040
+know, the main entry HTML.
+
+33
+00:02:29,370 --> 00:02:31,470
+I'm going to call update.
+
+34
+00:02:33,150 --> 00:02:45,750
+OK, and then down here, let's say const notes text and I'm going to say document dot, query selector
+
+35
+00:02:45,750 --> 00:02:46,320
+all.
+
+36
+00:02:46,860 --> 00:02:49,530
+And I want to get all of the text areas.
+
+37
+00:02:49,890 --> 00:03:01,260
+OK, so say text area and then I'm going to create an array here called Notes and Empty Array and I
+
+38
+00:03:01,260 --> 00:03:08,290
+want to take the notes, text and loop through because this gives me a no list.
+
+39
+00:03:08,310 --> 00:03:14,610
+So basically all the text areas I have and I'm going to loop through with a free agency for each note,
+
+40
+00:03:15,930 --> 00:03:19,920
+we're going to go ahead and take that notes array and we're going to push onto it.
+
+41
+00:03:20,400 --> 00:03:25,320
+So we're going to add to add to the end of it, whatever the note dot value.
+
+42
+00:03:27,930 --> 00:03:34,330
+OK, and this note, this is the you know, for each no will add the value to the array.
+
+43
+00:03:35,070 --> 00:03:36,900
+So what I'm going to do now is just
+
+44
+00:03:39,690 --> 00:03:44,310
+I'm going to console log the notes array.
+
+45
+00:03:44,880 --> 00:03:49,770
+It says we have not doing anything with local storage yet, but we just want to store it as a string
+
+46
+00:03:49,770 --> 00:03:50,600
+of fine array.
+
+47
+00:03:51,120 --> 00:03:57,540
+So I'm going to just go to my console here and I'm going to add a note and type in here and you'll see
+
+48
+00:03:57,540 --> 00:04:02,240
+that everything I'm typing is getting stored inside of this array.
+
+49
+00:04:02,880 --> 00:04:05,580
+So this is an array with just a single item, actually.
+
+50
+00:04:05,610 --> 00:04:07,110
+Let's make this a little more clear.
+
+51
+00:04:07,110 --> 00:04:09,290
+So I'll say item one.
+
+52
+00:04:09,690 --> 00:04:12,690
+So we have an array with one string unit called item one.
+
+53
+00:04:12,690 --> 00:04:20,820
+If I create another note and I put in here item two, the second item is whatever is in this second
+
+54
+00:04:20,820 --> 00:04:21,170
+note.
+
+55
+00:04:21,690 --> 00:04:25,410
+So this array is what I want to store in local storage.
+
+56
+00:04:25,590 --> 00:04:26,010
+Right.
+
+57
+00:04:26,040 --> 00:04:30,390
+So what we'll do is, you know what?
+
+58
+00:04:30,390 --> 00:04:32,220
+I just showed you local storage.
+
+59
+00:04:32,520 --> 00:04:39,960
+And we want to set an item I'm going to call the key of this is going to be notes and that I want to
+
+60
+00:04:39,960 --> 00:04:41,240
+store my notes array.
+
+61
+00:04:41,250 --> 00:04:43,710
+However, I can't just store it as an array.
+
+62
+00:04:43,920 --> 00:04:44,280
+Right.
+
+63
+00:04:44,280 --> 00:04:53,980
+I have to Jason Dot string of Afie and then go ahead and add that our surround that.
+
+64
+00:04:54,210 --> 00:04:59,430
+So now let's go ahead and add something here.
+
+65
+00:04:59,430 --> 00:05:03,060
+I'll say item or let's say note one.
+
+66
+00:05:03,990 --> 00:05:10,650
+I'm going to add a new note and say notes to now if I look in my application tab.
+
+67
+00:05:13,270 --> 00:05:20,630
+You'll see in my local storage, I have it's a string of fine array of right here, No.
+
+68
+00:05:20,710 --> 00:05:26,230
+One, and I'll just make this a little bigger so you can see so we have no one to know to stored in
+
+69
+00:05:26,380 --> 00:05:27,310
+local storage.
+
+70
+00:05:28,300 --> 00:05:34,480
+OK, now we want to load this, like if I reload the page, it's not showing in the dorm, but it is
+
+71
+00:05:34,480 --> 00:05:37,950
+in local storage, so I want to fetch it and display those notes.
+
+72
+00:05:38,620 --> 00:05:40,510
+So up at the top here.
+
+73
+00:05:42,100 --> 00:05:50,680
+Let's go right here and let's say CONSED notes and we want to pull this from local storage.
+
+74
+00:05:50,690 --> 00:05:55,210
+So remember, we use local storage to get item and we want to get the notes.
+
+75
+00:05:55,450 --> 00:05:58,630
+However, we don't want it to be a string, we want it passed as an array.
+
+76
+00:05:58,630 --> 00:06:04,990
+So I'm going to wrap this in JSON dot pass.
+
+77
+00:06:06,340 --> 00:06:14,680
+OK, so now if I console log notes and we go down here to our console, we're going to see the notes
+
+78
+00:06:14,680 --> 00:06:16,150
+that we have in local storage.
+
+79
+00:06:17,350 --> 00:06:21,570
+And then what we'll do is get rid of that and let's check for notes.
+
+80
+00:06:21,580 --> 00:06:28,060
+So if there's notes in local storage, then let's loop through, let's say, notes for each.
+
+81
+00:06:28,900 --> 00:06:36,370
+And we're going to say for each note, I want to call add new no, which adds it to the dorm.
+
+82
+00:06:36,370 --> 00:06:39,270
+And for the text, it'll be that that particular note.
+
+83
+00:06:39,280 --> 00:06:40,180
+So let's save.
+
+84
+00:06:40,960 --> 00:06:41,760
+And there he goes.
+
+85
+00:06:41,770 --> 00:06:44,110
+Now, I have two notes.
+
+86
+00:06:44,410 --> 00:06:46,630
+One has no one written in it.
+
+87
+00:06:46,630 --> 00:06:47,200
+One has No.
+
+88
+00:06:47,200 --> 00:06:47,950
+Two written in it.
+
+89
+00:06:47,950 --> 00:06:50,380
+And that's what we have in our local storage.
+
+90
+00:06:51,970 --> 00:06:55,750
+Now to delete is going to be very simple.
+
+91
+00:06:55,750 --> 00:07:02,500
+We can just simply go down here to where we remove from the dorm, because right now I can I can delete
+
+92
+00:07:02,500 --> 00:07:03,100
+from the dorm.
+
+93
+00:07:03,100 --> 00:07:04,870
+But if I reload, it's still there.
+
+94
+00:07:04,880 --> 00:07:05,170
+Right?
+
+95
+00:07:05,180 --> 00:07:11,590
+We have an update, local storage, so we can just simply now call updates, local storage inside the
+
+96
+00:07:11,590 --> 00:07:12,040
+delete.
+
+97
+00:07:12,490 --> 00:07:14,230
+So now if I delete, that goes away.
+
+98
+00:07:14,230 --> 00:07:16,030
+And if I reload, that's still gone.
+
+99
+00:07:16,450 --> 00:07:18,610
+If I look in my application tab.
+
+100
+00:07:21,230 --> 00:07:22,550
+We only have no one.
+
+101
+00:07:22,670 --> 00:07:27,020
+If I click delete there now, it's empty, if I reload nothing.
+
+102
+00:07:28,640 --> 00:07:29,090
+All right.
+
+103
+00:07:29,090 --> 00:07:33,890
+So it's that's a pretty simple way to be able to add and remove.
+
+104
+00:07:33,920 --> 00:07:36,110
+Basically, we have a crawdad application.
+
+105
+00:07:36,110 --> 00:07:38,480
+We can create, read, update and delete notes.
+
+106
+00:07:39,050 --> 00:07:43,700
+And I mean, if I add if I add No.
+
+107
+00:07:43,710 --> 00:07:49,880
+One and note two, that gets saved.
+
+108
+00:07:49,880 --> 00:07:50,210
+Right.
+
+109
+00:07:50,390 --> 00:07:51,560
+And then if I edit No.
+
+110
+00:07:51,560 --> 00:07:57,770
+Two and change it to note three and then reload, it stays at No.
+
+111
+00:07:57,770 --> 00:08:03,350
+Three, because every time I type in to these text areas, it's updating my local storage.
+
+112
+00:08:03,350 --> 00:08:07,370
+It's calling this function here and getting all the text areas.
+
+113
+00:08:07,700 --> 00:08:14,540
+It's slipping through those and adding whatever is in each one to an array, and then it's saving that
+
+114
+00:08:14,540 --> 00:08:16,460
+array in local storage as a string.
+
+115
+00:08:16,700 --> 00:08:23,660
+And then we're pulling it out up here, parsing it from a string to an array, checking for it and then
+
+116
+00:08:23,960 --> 00:08:26,120
+adding it to the DOM with add new note.
+
+117
+00:08:26,360 --> 00:08:29,030
+And of course, in addition to that, we can add markdown.
+
+118
+00:08:29,040 --> 00:08:35,830
+So if I make this heading and we'll just say, I don't know, I'm.
+
+119
+00:08:41,090 --> 00:08:48,590
+OK, so that displays the markdown and if we look at what we have in local storage, it's going to be
+
+120
+00:08:48,590 --> 00:08:50,460
+a string version of this.
+
+121
+00:08:50,480 --> 00:08:56,960
+So it has like the you know, the numbers sign and then it has these things here, the hyphens, but
+
+122
+00:08:56,960 --> 00:08:58,410
+it's going to pass markdown.
+
+123
+00:09:00,050 --> 00:09:00,500
+All right.
+
+124
+00:09:00,510 --> 00:09:01,460
+So that's it.
+
+125
+00:09:01,460 --> 00:09:03,240
+Hopefully found this useful.
+
+126
+00:09:03,260 --> 00:09:07,880
+And if you didn't know about local storage, you can use it, you know, for many different things.
+
+127
+00:09:08,180 --> 00:09:09,200
+Very it's very helpful.
+
+128
+00:09:09,200 --> 00:09:12,110
+Even if I closed the browser and come back, it'll be there.
+
+129
+00:09:12,110 --> 00:09:14,570
+If you want, you can use section storage as well.
+
+130
+00:09:14,570 --> 00:09:15,710
+I might as well mention this.
+
+131
+00:09:16,070 --> 00:09:19,970
+So if you section storage, it works the same way you have the same methods and stuff.
+
+132
+00:09:20,240 --> 00:09:22,940
+But if you close the browser and come back, it'll be gone.
+
+133
+00:09:23,300 --> 00:09:26,600
+Local storage will keep it there until it's it's cleared.
+
+134
+00:09:26,900 --> 00:09:33,020
+And you can also use local storage clear to clear everything you could even out of clear notes button
+
+135
+00:09:33,230 --> 00:09:33,800
+for that.
+
+136
+00:09:33,800 --> 00:09:36,990
+That may be like something that you can add yourself.
+
+137
+00:09:37,490 --> 00:09:37,850
+All right.
+
+138
+00:09:37,860 --> 00:09:38,530
+So that's it.
+
+139
+00:09:38,540 --> 00:09:41,090
+Let's go ahead and move on to the next project.

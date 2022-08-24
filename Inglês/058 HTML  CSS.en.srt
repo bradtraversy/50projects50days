@@ -1,0 +1,683 @@
+1
+00:00:00,150 --> 00:00:05,670
+OK, so we're going to get started on the HTML and access, I have my project starter open here, the
+
+2
+00:00:05,670 --> 00:00:06,750
+index HTML.
+
+3
+00:00:07,200 --> 00:00:12,780
+I do have a link to font awesome because we'll be using a couple of icons for the buttons, the arrows.
+
+4
+00:00:13,140 --> 00:00:21,300
+So down in the title here, let's get rid of that and change it to background slider and get rid of
+
+5
+00:00:21,300 --> 00:00:27,660
+this H1 here and we're going to have a wrapper container called slider dash container.
+
+6
+00:00:27,660 --> 00:00:31,920
+And in here we were going to have five divs with the class of slide.
+
+7
+00:00:32,100 --> 00:00:36,760
+And the first one, I'm also going to give a class of active that's going to represent the current image
+
+8
+00:00:36,760 --> 00:00:37,800
+or the active image.
+
+9
+00:00:38,340 --> 00:00:38,730
+All right.
+
+10
+00:00:38,730 --> 00:00:40,200
+So go ahead and do that.
+
+11
+00:00:40,200 --> 00:00:42,300
+And nothing is going to go in these devs.
+
+12
+00:00:42,300 --> 00:00:45,870
+We're going to add in inline style for the background image.
+
+13
+00:00:46,500 --> 00:00:51,110
+So let's say background image and set that to you earlier.
+
+14
+00:00:51,960 --> 00:00:56,580
+And then inside here, we're going to put a link to an image which I'm going to grab real quick.
+
+15
+00:00:57,270 --> 00:01:02,190
+And if you want these exact images, you can get them from the the final repository.
+
+16
+00:01:03,300 --> 00:01:09,870
+So that's all that these divs are going to be just a class of slide with a inline style background image.
+
+17
+00:01:10,320 --> 00:01:15,270
+So I'm going to just grab and paste the the other four.
+
+18
+00:01:16,140 --> 00:01:17,990
+So this div ends here.
+
+19
+00:01:18,000 --> 00:01:23,400
+You still want to be within the container and I'm going to paste these other four in and save so the
+
+20
+00:01:23,400 --> 00:01:25,500
+other four don't have the class of active.
+
+21
+00:01:25,500 --> 00:01:32,240
+Only the first one should have the active class and then under all those divs but still in the container.
+
+22
+00:01:32,250 --> 00:01:37,530
+So right above the last div here we're going to have our buttons and this one is going to have a class
+
+23
+00:01:37,530 --> 00:01:47,880
+of arrow and the class of arrow dash left or left arrow and then also inside of left.
+
+24
+00:01:48,660 --> 00:01:51,660
+And the button itself is going to be a font awesome icon.
+
+25
+00:01:51,660 --> 00:01:58,110
+So I tag class of eFax and then f a dash arrow dash left.
+
+26
+00:01:58,750 --> 00:01:59,190
+All right.
+
+27
+00:01:59,190 --> 00:02:07,950
+And then we'll go ahead and just copy that down and let's replace left here, here and here with right.
+
+28
+00:02:09,750 --> 00:02:10,940
+OK, and that should do it.
+
+29
+00:02:10,950 --> 00:02:13,710
+So I'm going to save and this is all we're going to see for now.
+
+30
+00:02:14,100 --> 00:02:20,070
+We don't see the background image because these divs have no content and we didn't set a height or width
+
+31
+00:02:20,370 --> 00:02:21,240
+on these div.
+
+32
+00:02:21,240 --> 00:02:23,220
+So we're not going to see the images just yet.
+
+33
+00:02:24,270 --> 00:02:30,360
+Now let's jump into our stylesheet and ultimately the background image is going to get generated through
+
+34
+00:02:30,360 --> 00:02:31,260
+the JavaScript.
+
+35
+00:02:31,260 --> 00:02:42,060
+But for now, I'm going to just just hard code a background image and I'm going to use the first image
+
+36
+00:02:42,060 --> 00:02:45,150
+from the HTML here from this first div.
+
+37
+00:02:45,990 --> 00:02:49,890
+I'm just going to grab that and we'll go ahead and put that in there.
+
+38
+00:02:50,250 --> 00:02:55,410
+And if I say we should now see that background image, I'm going to add some background properties.
+
+39
+00:02:55,980 --> 00:03:04,680
+So let's add the position to the background position will be center on both the X and Y axis and let's
+
+40
+00:03:04,680 --> 00:03:08,700
+add a background size and set that to cover.
+
+41
+00:03:10,110 --> 00:03:10,870
+And there we go.
+
+42
+00:03:12,000 --> 00:03:18,000
+Now, I'm also going to add a transition here because ultimately we're going to change images.
+
+43
+00:03:18,210 --> 00:03:23,870
+And I just want to have like kind of a little little slide effect or slide transition.
+
+44
+00:03:23,880 --> 00:03:31,530
+So on the on the body, let's add a zero point for second transition and we'll use the EAS effect.
+
+45
+00:03:31,530 --> 00:03:34,160
+And you can see when I save it kind of shows you that.
+
+46
+00:03:35,670 --> 00:03:36,360
+All right.
+
+47
+00:03:36,390 --> 00:03:42,900
+Now for the overlay, because we don't want this whole like we don't want this image to be this bright.
+
+48
+00:03:43,210 --> 00:03:48,510
+So for the overlay, I'm going to take the body and use the before pseudo selector.
+
+49
+00:03:49,950 --> 00:03:55,830
+And when we use before or after, we have to add content here, which we're not actually adding any
+
+50
+00:03:55,830 --> 00:03:56,340
+content.
+
+51
+00:03:56,340 --> 00:03:57,660
+So just leave that blank.
+
+52
+00:03:57,900 --> 00:04:02,970
+And what we're essentially doing is just putting an overlay over this image here.
+
+53
+00:04:02,970 --> 00:04:06,870
+So we want to position this to be absolute.
+
+54
+00:04:07,000 --> 00:04:13,500
+It's going to be absolute and then from the top so top zero and left zero.
+
+55
+00:04:13,890 --> 00:04:19,830
+So we're just starting in the top left corner and then we want the width to be 100 percent and we want
+
+56
+00:04:19,830 --> 00:04:23,010
+the height to be 100 viewport height.
+
+57
+00:04:23,010 --> 00:04:25,440
+So we want to just take up the entire viewport.
+
+58
+00:04:26,340 --> 00:04:34,320
+And then for the background, the same background color, we're going to set that to be a and set it
+
+59
+00:04:34,320 --> 00:04:40,440
+to black and then let's do zero point seven for the for the Alpha, for the transparency.
+
+60
+00:04:40,980 --> 00:04:45,660
+Now you can see we have the overlay with the arrows are actually behind the overlay and we don't want
+
+61
+00:04:45,660 --> 00:04:45,960
+that.
+
+62
+00:04:45,960 --> 00:04:50,910
+So I'm going to set the Z index to negative one.
+
+63
+00:04:50,910 --> 00:04:51,960
+I'm going to set it lower.
+
+64
+00:04:51,960 --> 00:04:55,330
+So now that everything will be on top of the overlay.
+
+65
+00:04:56,160 --> 00:04:58,350
+So now let's go ahead and add.
+
+66
+00:05:00,020 --> 00:05:09,590
+The slider container styles, so we're going to have a box shadow here and we're going to have to shadows,
+
+67
+00:05:09,590 --> 00:05:14,090
+the first will do zero two zero three pixels.
+
+68
+00:05:15,110 --> 00:05:23,630
+So the horizontal and vertical offset and then the Blu will do six pixels and the color RGB A, which
+
+69
+00:05:23,630 --> 00:05:24,890
+is going to be black.
+
+70
+00:05:25,370 --> 00:05:32,570
+And for the alpha value, let's do zero point one six and then we'll put a comma here for the next shadow,
+
+71
+00:05:32,570 --> 00:05:43,910
+which will be zero three pixels, six pixels are GBA and zero zero zero and zero point two three.
+
+72
+00:05:44,190 --> 00:05:46,910
+And we can't see that yet because we don't have any content.
+
+73
+00:05:46,940 --> 00:05:48,380
+We also don't have a height or with.
+
+74
+00:05:48,380 --> 00:05:49,760
+So let's set a height here.
+
+75
+00:05:50,660 --> 00:06:00,710
+We'll do 70 viewport heights and let's give this a width of 70 VW, which is viewport widths.
+
+76
+00:06:01,280 --> 00:06:03,260
+And now you can see the outline here.
+
+77
+00:06:03,260 --> 00:06:04,850
+You can see the box shadows.
+
+78
+00:06:06,530 --> 00:06:13,670
+And then I also want to just add position relative, because the slides are going to be positioned absolute
+
+79
+00:06:13,670 --> 00:06:20,900
+within the container and then also overflow hidden because we don't want anything going out of the container.
+
+80
+00:06:20,900 --> 00:06:22,310
+So we'll set that as well.
+
+81
+00:06:23,330 --> 00:06:30,500
+Now we have multiple divs with background images and each one has a class of slide, but only one should
+
+82
+00:06:30,500 --> 00:06:31,870
+have a class of active.
+
+83
+00:06:32,150 --> 00:06:42,830
+So I'm going to set slide initially, set the opacity to zero and then down here, let's say slide with
+
+84
+00:06:42,830 --> 00:06:48,950
+the class of active, then that's going to have an opacity one.
+
+85
+00:06:49,310 --> 00:06:50,900
+So we only see the first one.
+
+86
+00:06:51,140 --> 00:06:54,820
+OK, now this slide class, we have to add a bunch of other stuff here.
+
+87
+00:06:55,160 --> 00:06:57,500
+Remember, this has the background image on it.
+
+88
+00:06:57,890 --> 00:07:01,080
+It's just in line, so it's not in the style sheet.
+
+89
+00:07:01,190 --> 00:07:03,940
+So I do want to set well, you know what?
+
+90
+00:07:03,950 --> 00:07:07,370
+Let's do the heightened with first so that we can actually see the image.
+
+91
+00:07:07,370 --> 00:07:15,290
+So we'll do a height of one hundred viewport heights in a width of 100 viewport widths.
+
+92
+00:07:16,250 --> 00:07:18,530
+OK, so that obviously doesn't look right.
+
+93
+00:07:18,530 --> 00:07:20,510
+We want to add some background position.
+
+94
+00:07:22,460 --> 00:07:33,650
+So background position is going to be center center on both X and Y and let's do a background size of
+
+95
+00:07:33,650 --> 00:07:36,620
+cover and there we go.
+
+96
+00:07:37,460 --> 00:07:47,810
+Now, I do want to set the position of this to absolute and then I want to set from the top negative
+
+97
+00:07:47,810 --> 00:07:49,100
+15 pixels.
+
+98
+00:07:49,100 --> 00:07:51,590
+So it's going to move it up a little bit.
+
+99
+00:07:51,590 --> 00:07:57,170
+And then let's say from the left, negative are not fifteen pixels.
+
+100
+00:07:57,170 --> 00:08:00,500
+Fifteen vich like that.
+
+101
+00:08:01,400 --> 00:08:03,050
+And then the left is going to be negative.
+
+102
+00:08:03,050 --> 00:08:04,580
+Fifteen VW.
+
+103
+00:08:06,260 --> 00:08:06,710
+All right.
+
+104
+00:08:06,860 --> 00:08:13,220
+And then we're going to have a transition on this because these, these are going to be switched the
+
+105
+00:08:13,220 --> 00:08:15,440
+background images and we want a nice transition.
+
+106
+00:08:15,440 --> 00:08:17,870
+So let's do zero point four seconds.
+
+107
+00:08:19,220 --> 00:08:23,870
+And he used an EZ effect and just set the Z index to one.
+
+108
+00:08:24,050 --> 00:08:25,580
+So it's always on top.
+
+109
+00:08:26,120 --> 00:08:27,590
+Now for the Arrow.
+
+110
+00:08:28,550 --> 00:08:38,000
+Let's go ahead and add that class here, and I'm going to position both both of the buttons of the class
+
+111
+00:08:38,000 --> 00:08:46,190
+of our I'm going to position them to be fixed and then to see them just tempora, because ultimately
+
+112
+00:08:46,190 --> 00:08:48,950
+they're going to be like, you know, over here and over here.
+
+113
+00:08:49,100 --> 00:08:51,560
+But right now they're behind this.
+
+114
+00:08:51,560 --> 00:08:55,430
+So and this slide has a Z index of one.
+
+115
+00:08:55,940 --> 00:08:59,920
+So let's set the Z index of this just temporarily.
+
+116
+00:08:59,930 --> 00:09:01,400
+I'm going to set it to 100.
+
+117
+00:09:01,670 --> 00:09:07,790
+So now that we can see them and since we position them fixed, they're basically both in the same spot.
+
+118
+00:09:08,380 --> 00:09:09,350
+But we'll fix that.
+
+119
+00:09:09,350 --> 00:09:11,150
+Let's just add some style to them.
+
+120
+00:09:12,530 --> 00:09:18,710
+So we'll add a background, let's say background color transparent.
+
+121
+00:09:20,520 --> 00:09:30,480
+OK, and now let's make the actual side some padding there, so padding will do 20 pixels kind of break
+
+122
+00:09:30,480 --> 00:09:35,430
+it up a little bit, let's put the font size because remember, we're using font awesome icons.
+
+123
+00:09:35,430 --> 00:09:38,310
+So we're going to have the font size to 30 pixels.
+
+124
+00:09:39,810 --> 00:09:43,710
+And then let's set the I want to move it down.
+
+125
+00:09:43,830 --> 00:09:51,840
+Actually, before we do that, let's do the border, which I'm going to do two pixels solid and orange
+
+126
+00:09:51,840 --> 00:09:52,890
+for the color.
+
+127
+00:09:54,840 --> 00:09:59,700
+And then let's say from the top, let's go down 50 percent.
+
+128
+00:09:59,700 --> 00:10:01,350
+But we want to be in the exact middle.
+
+129
+00:10:01,350 --> 00:10:03,660
+We don't want just the top of it to be in the middle.
+
+130
+00:10:03,960 --> 00:10:07,290
+So the way we can do that is by adding a transformed property.
+
+131
+00:10:08,610 --> 00:10:12,000
+So transform and we want to set translate.
+
+132
+00:10:12,600 --> 00:10:13,200
+Why?
+
+133
+00:10:13,200 --> 00:10:20,880
+Because this is on the Y axis, which is the vertical axis, and we just want negative 50 percent,
+
+134
+00:10:20,880 --> 00:10:24,080
+which will move it up into the exact middle.
+
+135
+00:10:24,090 --> 00:10:26,500
+So the middle of this is now right in the middle.
+
+136
+00:10:28,530 --> 00:10:31,560
+Now for the let's see.
+
+137
+00:10:31,560 --> 00:10:35,370
+So we have a left arrow and a right arrow.
+
+138
+00:10:36,210 --> 00:10:40,440
+If we look back here, we have left arrow, left our right arrow.
+
+139
+00:10:40,440 --> 00:10:42,440
+So I'm going to position those.
+
+140
+00:10:42,450 --> 00:10:46,470
+So let's say a left arrow.
+
+141
+00:10:46,480 --> 00:10:50,970
+And remember, the arrows are positioned fixed.
+
+142
+00:10:51,000 --> 00:10:55,950
+I'm going to set the left position and pass in a calc value here.
+
+143
+00:10:55,950 --> 00:11:05,100
+So this will calculate whatever I put in here, which is going to be 15 viewport widths, minus 65 pixels.
+
+144
+00:11:05,520 --> 00:11:10,380
+And if I save that, you can see that now this is over here, the left arrow.
+
+145
+00:11:10,680 --> 00:11:11,640
+So the right arrow.
+
+146
+00:11:11,640 --> 00:11:13,230
+We want to calculate that.
+
+147
+00:11:13,290 --> 00:11:21,240
+So let's just copy this and let's get right arrow.
+
+148
+00:11:21,240 --> 00:11:27,810
+And instead of selling the left position, we want to set from the right the same thing, 15 VW minus
+
+149
+00:11:28,080 --> 00:11:29,070
+sixty five.
+
+150
+00:11:29,370 --> 00:11:32,140
+And that should put that and put them in the right spot.
+
+151
+00:11:33,030 --> 00:11:39,210
+Now we don't want these to actually be have a higher Z index than this because you can see right here
+
+152
+00:11:39,510 --> 00:11:40,620
+it's going over it.
+
+153
+00:11:40,620 --> 00:11:46,530
+So we're going to get rid of that Z index of 100 and save and now you can't see the edge.
+
+154
+00:11:46,530 --> 00:11:48,540
+It's just kind of coming off of the image.
+
+155
+00:11:48,840 --> 00:11:52,170
+And then one other thing, when I click on this, you see that outline?
+
+156
+00:11:52,170 --> 00:11:53,240
+We want to get rid of that.
+
+157
+00:11:53,580 --> 00:11:56,250
+So let's go up here and say Arrow.
+
+158
+00:11:56,280 --> 00:12:03,010
+When it's in the focus state, we want to set the outline to zero.
+
+159
+00:12:03,480 --> 00:12:05,400
+So now we shouldn't have that outline.
+
+160
+00:12:05,580 --> 00:12:07,350
+And we also want the arrow to be white.
+
+161
+00:12:07,350 --> 00:12:14,070
+So right here, arrow, let's go color and set that to white.
+
+162
+00:12:15,990 --> 00:12:16,510
+All right, cool.
+
+163
+00:12:16,530 --> 00:12:17,980
+So that gives us a success.
+
+164
+00:12:18,120 --> 00:12:18,720
+One other thing.
+
+165
+00:12:18,720 --> 00:12:21,150
+Let's make it a point when we hover over it.
+
+166
+00:12:21,150 --> 00:12:23,640
+So we'll add cursor pointer.
+
+167
+00:12:25,350 --> 00:12:25,870
+There we go.
+
+168
+00:12:26,250 --> 00:12:28,320
+So our success is done now.
+
+169
+00:12:28,320 --> 00:12:30,240
+We want obviously, we want this to function.
+
+170
+00:12:30,240 --> 00:12:33,570
+We want to be able to slide the image, also the background image.
+
+171
+00:12:33,900 --> 00:12:36,450
+So in the next video, we'll start on the JavaScript.

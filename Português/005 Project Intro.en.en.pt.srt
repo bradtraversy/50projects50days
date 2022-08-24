@@ -1,0 +1,47 @@
+﻿1
+00:00:00,240 --> 00:00:04,020
+Tudo bem, então neste projeto, vamos construir alguns cartões de expansão, basicamente
+
+2
+00:00:04,020 --> 00:00:08,220
+para estilizar esses painéis para ter uma imagem de fundo e um título.
+
+3
+00:00:08,220 --> 00:00:13,230
+Vamos usar flex blocks para alinhar tudo e então adicionar um pouco de JavaScript para que quando
+
+4
+00:00:13,230 --> 00:00:20,550
+clicamos em um deles, ele muda a classe para ativa e depois expande com a transição dos CSFs
+
+5
+00:00:20,550 --> 00:00:20,900
+caso.
+
+6
+00:00:20,910 --> 00:00:22,920
+Usaremos JavaScript para o evento.
+
+7
+00:00:22,920 --> 00:00:28,530
+Os ouvintes usarão transições CSS para suavizar o fato de que você verá o título
+
+8
+00:00:28,530 --> 00:00:32,160
+não entra até que o cartão esteja totalmente expandido também.
+
+9
+00:00:32,440 --> 00:00:34,830
+E estamos usando apenas imagens de fundo e títulos.
+
+10
+00:00:34,830 --> 00:00:39,950
+Mas você pode transformá-los em depoimentos ou tons falsos ou o que quer que seja.
+
+11
+00:00:39,960 --> 00:00:41,590
+Então espero que gostem.
+
+12
+00:00:41,610 --> 00:00:43,580
+Vamos em frente e pular e começar.

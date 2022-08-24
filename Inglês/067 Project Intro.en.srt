@@ -1,0 +1,59 @@
+1
+00:00:00,360 --> 00:00:05,250
+All right, so in this project, I want to get into a little bit of drag and drop functionality, so
+
+2
+00:00:05,250 --> 00:00:08,340
+we're going to just create these boxes style, these boxes.
+
+3
+00:00:08,340 --> 00:00:14,280
+We're going to have one div inside one of these boxes that has a background image coming from one splash,
+
+4
+00:00:14,280 --> 00:00:15,390
+just a random image.
+
+5
+00:00:15,720 --> 00:00:18,870
+And you see, if I grab it, a couple of things happen.
+
+6
+00:00:18,870 --> 00:00:24,750
+The the image I'm holding has a class of hold, which gives it a gray border, which you can't really
+
+7
+00:00:24,750 --> 00:00:25,020
+see.
+
+8
+00:00:25,020 --> 00:00:27,030
+It's very faint, but it has a border.
+
+9
+00:00:27,250 --> 00:00:34,770
+And then each one of these boxes I hover over gets a class of Harvard, which gets a back of a background,
+
+10
+00:00:35,040 --> 00:00:38,580
+a dark background and a white dashboard.
+
+11
+00:00:38,730 --> 00:00:43,770
+And then if I drop, it'll actually go in whichever of these hovering over.
+
+12
+00:00:44,790 --> 00:00:45,170
+All right.
+
+13
+00:00:45,180 --> 00:00:50,670
+So it's a very simple project, but it gives you a basic understanding of how drag and drop works.
+
+14
+00:00:50,670 --> 00:00:56,150
+And you can then go on to build some really cool interfaces or even games and stuff like that.
+
+15
+00:00:56,400 --> 00:00:58,400
+So let's go ahead and jump in and get started.

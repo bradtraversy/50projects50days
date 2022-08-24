@@ -1,0 +1,679 @@
+1
+00:00:00,210 --> 00:00:04,920
+All right, guys, so we're going to bring out the timeline access for this drink water project, so
+
+2
+00:00:04,920 --> 00:00:10,860
+let's jump right into our next TML and for the title here, I'm going to change that to drink water
+
+3
+00:00:12,120 --> 00:00:18,690
+and then in the body, let's get rid of this one and we're going to have an one for the heading here
+
+4
+00:00:18,690 --> 00:00:20,280
+and just say drink water.
+
+5
+00:00:20,670 --> 00:00:23,640
+And underneath that will have an H3 with our goal.
+
+6
+00:00:23,640 --> 00:00:27,270
+And our goal is going to be to leaders.
+
+7
+00:00:28,560 --> 00:00:31,960
+And then underneath that, let's have a class of cup.
+
+8
+00:00:32,610 --> 00:00:39,240
+Now, this class of cup is going to be basically just like the shape of the cup, the the flat top and
+
+9
+00:00:39,240 --> 00:00:41,090
+then the rounded kind of shape.
+
+10
+00:00:41,310 --> 00:00:45,800
+And this is going to be used on the big cup and all the small cups, the eight small cups.
+
+11
+00:00:46,620 --> 00:00:49,500
+So this first one we're doing, though, is going to be the big cup.
+
+12
+00:00:49,800 --> 00:00:52,640
+And inside here, we're going to have a class of remained.
+
+13
+00:00:53,160 --> 00:00:59,570
+And this is basically going to have, you know, the the amount that is remaining for your goal.
+
+14
+00:00:59,970 --> 00:01:05,850
+So inside remained actually want to add an I.D. to this as well, because I'm going to use an ID to
+
+15
+00:01:05,850 --> 00:01:07,620
+grab onto it in the JavaScript.
+
+16
+00:01:07,890 --> 00:01:09,570
+So let's just say remained.
+
+17
+00:01:09,870 --> 00:01:15,180
+And then in here we'll have a span and let's give this an I.D. of leaders.
+
+18
+00:01:15,970 --> 00:01:22,620
+And for now, we'll put it in here one point five L and then we want a small tag with just kind of a
+
+19
+00:01:22,620 --> 00:01:24,540
+label that's just going to say remained.
+
+20
+00:01:25,840 --> 00:01:28,110
+Obviously, this span, this is going to change.
+
+21
+00:01:28,110 --> 00:01:30,210
+This small tag is not it's just static.
+
+22
+00:01:30,780 --> 00:01:36,970
+So underneath the remains div, but still within the cup, we're also going to have a percentage.
+
+23
+00:01:37,800 --> 00:01:42,810
+So this will be like the percentage that has been, you know, that you've drank and this will be an
+
+24
+00:01:42,810 --> 00:01:46,170
+I.D. also of percentage.
+
+25
+00:01:47,370 --> 00:01:52,830
+And then inside here I'm just going to do it's going to put 20 percent, but that's going to be dynamic
+
+26
+00:01:53,250 --> 00:01:56,850
+now underneath this last div so that this is the the cup div.
+
+27
+00:01:57,150 --> 00:02:06,480
+We're going to have paragraph with the class of text and in here we'll just say select how many glasses
+
+28
+00:02:06,480 --> 00:02:09,840
+of water that you have.
+
+29
+00:02:10,620 --> 00:02:11,120
+Drink.
+
+30
+00:02:11,850 --> 00:02:17,250
+OK, and then underneath the paragraph let's have a class of cups because this is where all the little
+
+31
+00:02:17,250 --> 00:02:24,700
+cups are going to go, which are also going to have a class of cup but also a class of cup dash small.
+
+32
+00:02:25,320 --> 00:02:31,630
+OK, and then here we'll say 250 ml and we want eight of these splits.
+
+33
+00:02:31,680 --> 00:02:33,480
+We'll put a space here.
+
+34
+00:02:33,900 --> 00:02:37,820
+So let's do it's one, two, three, four, five, six, seven, eight.
+
+35
+00:02:38,160 --> 00:02:42,780
+And I'm just going to add the class of full to a couple of these because the full class is going to
+
+36
+00:02:42,780 --> 00:02:45,930
+give you know, it's going to look like there's like there's water in it.
+
+37
+00:02:45,930 --> 00:02:47,730
+It's going to be have a blue background.
+
+38
+00:02:48,300 --> 00:02:50,220
+So we'll say full on the first two.
+
+39
+00:02:50,490 --> 00:02:52,260
+And that should do it for the TML.
+
+40
+00:02:52,380 --> 00:02:55,720
+It's going to look like this and jump into our success.
+
+41
+00:02:55,750 --> 00:03:02,640
+I'm going to use the Monserrat font, so I'm going to grab from here, delete that and say success.
+
+42
+00:03:02,640 --> 00:03:11,520
+Family and family is going to be Munt what is amont Sirat to ours.
+
+43
+00:03:12,120 --> 00:03:21,120
+And for the wait, let's do Colen 400, karma 600 like that and then we'll change your boto to Monserrat
+
+44
+00:03:23,610 --> 00:03:24,580
+Montserrat.
+
+45
+00:03:24,840 --> 00:03:26,850
+I have trouble spelling that for some reason.
+
+46
+00:03:27,300 --> 00:03:34,290
+OK, and then for the body here, let's give this a background color and we're going to use hexadecimal
+
+47
+00:03:34,290 --> 00:03:42,300
+value three four nine for e for OK and then we'll give it a color.
+
+48
+00:03:42,600 --> 00:03:45,540
+Text color will be white, it's more readable.
+
+49
+00:03:46,860 --> 00:03:51,300
+And then let's see as far as the body here we can get rid of.
+
+50
+00:03:54,200 --> 00:04:01,710
+And see, we don't actually need justify content or hype or overflow hidden and then margin, I'm going
+
+51
+00:04:01,710 --> 00:04:07,020
+to set just margin bottom of 40 pixels like that.
+
+52
+00:04:07,590 --> 00:04:15,510
+And then we have some general styles like one for the one I'm going to set margin to do 10 pixels,
+
+53
+00:04:15,510 --> 00:04:28,200
+zero zero, and then the H3, which is the goal when to set the font weight, let's set the font weight
+
+54
+00:04:28,200 --> 00:04:33,060
+to 400 and let's set the margin to 10 on the top and bottom.
+
+55
+00:04:34,410 --> 00:04:34,860
+All right.
+
+56
+00:04:34,860 --> 00:04:36,380
+Now we have our cup.
+
+57
+00:04:36,870 --> 00:04:43,260
+So the class of cup, this is for the the one big cup that's going to be up here and for the eight small
+
+58
+00:04:43,260 --> 00:04:43,740
+ones.
+
+59
+00:04:44,010 --> 00:04:46,310
+So it's just going to kind of give it that shape.
+
+60
+00:04:46,830 --> 00:04:53,040
+So let's start with giving them a background color of white, OK?
+
+61
+00:04:53,070 --> 00:04:54,120
+It's going to look like that.
+
+62
+00:04:54,600 --> 00:04:59,360
+And the border here is going to be let's do four pixels solid.
+
+63
+00:04:59,700 --> 00:05:07,020
+Now, this color I'm going to use as the water color as well as the the font color.
+
+64
+00:05:07,770 --> 00:05:12,240
+So I'm just going to put some of these colors in custom properties.
+
+65
+00:05:12,240 --> 00:05:13,920
+So up at the top, you don't have to do this.
+
+66
+00:05:13,920 --> 00:05:20,550
+But since we're going to be repeating some of these colors on the root scope, I'm going to say border
+
+67
+00:05:20,670 --> 00:05:33,000
+dash color and we're going to set that to the value of hexadecimal one for for FC six, OK, which is
+
+68
+00:05:33,000 --> 00:05:39,690
+going to be like that darker blue and then for the border here will pass in VA.
+
+69
+00:05:39,690 --> 00:05:43,710
+And I will say VA will pass in the border color like that.
+
+70
+00:05:44,580 --> 00:05:50,490
+And then the color is also going to be the same color as the border.
+
+71
+00:05:50,490 --> 00:05:55,320
+So the text color and then let's set a border radius.
+
+72
+00:05:55,540 --> 00:05:57,750
+I want the top to be straight edged.
+
+73
+00:05:57,750 --> 00:06:02,820
+So zero zero and the bottom left and right will be 40 pixels.
+
+74
+00:06:04,060 --> 00:06:09,060
+OK, now let's give this these a height.
+
+75
+00:06:09,060 --> 00:06:14,940
+I'm going to use three hundred and thirty pixels for the height and then the width is going to be 150
+
+76
+00:06:14,940 --> 00:06:15,500
+pixels.
+
+77
+00:06:15,510 --> 00:06:20,610
+Now at the moment, all of these are big cups, right?
+
+78
+00:06:20,620 --> 00:06:22,170
+So they're all this height and with.
+
+79
+00:06:22,170 --> 00:06:27,240
+But later on, we're going to have to remember we have this small class, so we're going to make these
+
+80
+00:06:27,240 --> 00:06:28,260
+smaller later.
+
+81
+00:06:28,560 --> 00:06:31,320
+But the initial the initial Highton width will be this.
+
+82
+00:06:32,430 --> 00:06:39,150
+And then we also want to add, let's say, margin 30 pixels on the top and bottom.
+
+83
+00:06:40,380 --> 00:06:42,240
+And I'm going to display.
+
+84
+00:06:43,360 --> 00:06:53,490
+Flex and let's set the flex direction to column, so we want that want the flex items to be on top of
+
+85
+00:06:53,490 --> 00:06:59,880
+each other and I think that should be let's set overflow to hidden as well.
+
+86
+00:06:59,890 --> 00:07:06,990
+So nothing comes out of the container and we should be good now for the small cups, let's say wherever
+
+87
+00:07:06,990 --> 00:07:11,880
+there's a cup, a glass of cup and also a cup small.
+
+88
+00:07:12,750 --> 00:07:15,870
+Then let's set the width of that.
+
+89
+00:07:15,870 --> 00:07:26,280
+So instead of instead of, you know, 330 pixels, let's set the the width to 50 pixels and let's set
+
+90
+00:07:26,280 --> 00:07:31,080
+a height of ninety five pixels.
+
+91
+00:07:31,860 --> 00:07:33,570
+So you can see now these are smaller.
+
+92
+00:07:33,900 --> 00:07:39,210
+Now, the the way that the bottom looks, this looks way more rounded because it's smaller.
+
+93
+00:07:39,220 --> 00:07:44,220
+So we want to set instead of having a border radius of, you know, 40 pixels on the bottom, let's
+
+94
+00:07:44,220 --> 00:07:51,210
+set these to 15 on the bottom and it'll look more, you know, more similar to how this looks.
+
+95
+00:07:52,230 --> 00:07:59,490
+OK, and then let's set let's do a background color of our GBA.
+
+96
+00:08:01,950 --> 00:08:10,800
+Not RGB Q or RGB A and white, so 255 for red, green, blue, and then the alpha value will be zero
+
+97
+00:08:10,800 --> 00:08:19,560
+point nine and then let's set the set a cursor to a pointer because we're going to be clicking on these
+
+98
+00:08:19,570 --> 00:08:20,270
+to fill them up.
+
+99
+00:08:20,280 --> 00:08:27,300
+So we want that cursor to be a pointer and I'm going to set the font size on this to 14 pixels.
+
+100
+00:08:28,050 --> 00:08:29,450
+And let's set
+
+101
+00:08:32,880 --> 00:08:41,960
+I'm also going to do a line items to the center because we already have display flex.
+
+102
+00:08:41,970 --> 00:08:44,370
+Remember, the class has display flex.
+
+103
+00:08:44,370 --> 00:08:46,060
+So I want to line items to the center.
+
+104
+00:08:46,080 --> 00:08:57,830
+I also want to justify content to the center and text a line whoops and also text a line to the center.
+
+105
+00:08:58,350 --> 00:09:06,060
+OK, so I can see that the this text is in the middle and let's add a margin of five pixels.
+
+106
+00:09:07,050 --> 00:09:13,470
+And I want to transition on this as well because when we click on it to fill, we want that like transition
+
+107
+00:09:14,490 --> 00:09:14,960
+effect.
+
+108
+00:09:14,970 --> 00:09:20,970
+So it's two zero point three seconds and we use the EZ effect.
+
+109
+00:09:23,430 --> 00:09:31,980
+OK, and I think we should be good as far as as far as the small cups, now, we do have a class of
+
+110
+00:09:31,980 --> 00:09:36,860
+cups, plural, wrapped around this, and we want to set that to Aflex block.
+
+111
+00:09:36,880 --> 00:09:38,120
+So these are in a row.
+
+112
+00:09:38,520 --> 00:09:44,430
+So let's add the class of cups and set that to display flex.
+
+113
+00:09:44,430 --> 00:09:47,250
+And as soon as I do that, it's going to display them all in a row.
+
+114
+00:09:47,670 --> 00:09:50,100
+I do want them to knock on to the next line.
+
+115
+00:09:51,180 --> 00:09:59,520
+So what we'll do is set a flex wrap value of rap and it's not going to go on the next line yet because
+
+116
+00:09:59,520 --> 00:10:00,990
+we need to add a whip here.
+
+117
+00:10:01,740 --> 00:10:08,610
+So the width I'm going to set on cups is going to be two hundred and eighty pixels and that should just
+
+118
+00:10:08,610 --> 00:10:13,320
+be enough to wrap, you know, after the fourth one, it's going to knock the next one on to the next
+
+119
+00:10:13,320 --> 00:10:13,740
+line.
+
+120
+00:10:15,330 --> 00:10:15,770
+All right.
+
+121
+00:10:15,780 --> 00:10:23,080
+I'm just going to line items center and justify content center as well.
+
+122
+00:10:24,670 --> 00:10:25,010
+Good.
+
+123
+00:10:25,470 --> 00:10:28,640
+Now for the full cups from the first to have a class of full.
+
+124
+00:10:28,650 --> 00:10:37,470
+So I'll say any class of cup that has cup small and fall, I'm going to set the background color to
+
+125
+00:10:38,430 --> 00:10:47,490
+actually I'm going to set this as the as a variable and we'll call this fill color.
+
+126
+00:10:48,120 --> 00:10:54,630
+And then up here, let's set on the root scope fill color.
+
+127
+00:10:54,630 --> 00:11:02,160
+And this is going to be hexadecimal value six so six A B three F eight.
+
+128
+00:11:04,320 --> 00:11:09,890
+And now you can see that the first two have this background color because they have that class of fall
+
+129
+00:11:09,900 --> 00:11:10,780
+now the full class.
+
+130
+00:11:10,800 --> 00:11:13,500
+We also want to have the color of the text to be white.
+
+131
+00:11:14,070 --> 00:11:17,700
+So that's a little more readable and that should do it.
+
+132
+00:11:17,850 --> 00:11:23,040
+Now for the four up here, we have the remained remember, a divide with the class of remained and the
+
+133
+00:11:23,040 --> 00:11:24,690
+did with the class of percentage.
+
+134
+00:11:25,110 --> 00:11:26,850
+So four remained.
+
+135
+00:11:31,610 --> 00:11:40,400
+Let's see, so remained, I'm going to add display flex, I want to center everything so we'll say a
+
+136
+00:11:40,400 --> 00:11:49,300
+line item center, justify content center and text a line center.
+
+137
+00:11:50,840 --> 00:11:56,960
+And actually, let's set the flex direction, set that to column.
+
+138
+00:12:01,290 --> 00:12:08,390
+OK, and then I want this to take up, you know, most of this right here, so we'll set the Fleck's
+
+139
+00:12:08,390 --> 00:12:15,890
+value to one and then let's add a transition here as well, because when it fills, we want to have
+
+140
+00:12:15,890 --> 00:12:19,010
+that kind of like, you know, transition animation effects.
+
+141
+00:12:19,010 --> 00:12:24,680
+So zero point three seconds is now the span.
+
+142
+00:12:24,680 --> 00:12:26,870
+So inside the member inside remained.
+
+143
+00:12:27,350 --> 00:12:35,960
+We have this span which has the, you know, wraps around the one point five L so let's say remained
+
+144
+00:12:36,140 --> 00:12:36,980
+span.
+
+145
+00:12:37,860 --> 00:12:46,130
+And I just want to set the font size on that to twenty pixels and let's set the font weight to bold.
+
+146
+00:12:48,140 --> 00:12:57,680
+OK, and then we have the small tag, so say remained small, which is just the text right here remained
+
+147
+00:12:58,040 --> 00:13:02,720
+and I just want to set that font size to 12 pixels.
+
+148
+00:13:04,130 --> 00:13:07,130
+All right, now for the percentage part, which is down here.
+
+149
+00:13:09,620 --> 00:13:18,710
+So percentage I'm going to set the background color and I'm going to use the the full color here, so
+
+150
+00:13:18,710 --> 00:13:31,940
+let's take the variable of full color and set that and then make the font size to 30 pixels.
+
+151
+00:13:31,940 --> 00:13:33,320
+And we want to center this.
+
+152
+00:13:33,830 --> 00:13:47,690
+So let's add display flex and we're going to set a line items to center and justify content to center
+
+153
+00:13:47,690 --> 00:13:48,860
+that will put that in the middle.
+
+154
+00:13:51,470 --> 00:13:53,710
+Let's make the font weight bold as well.
+
+155
+00:13:56,400 --> 00:14:08,820
+So what we will do bold work and then let's set the height to zero, so we'll have an initial height
+
+156
+00:14:08,820 --> 00:14:11,280
+of zero and then transition.
+
+157
+00:14:12,290 --> 00:14:16,890
+We're also going to add here to zero point three seconds, EE's.
+
+158
+00:14:20,150 --> 00:14:23,900
+All right, I think that should do it and then for the techs down here.
+
+159
+00:14:27,080 --> 00:14:32,960
+So that's a paragraph with a class of text and all I want to do here is just make sure we text a line
+
+160
+00:14:33,710 --> 00:14:40,370
+to the center and let's also add margin to zero zero five pixels.
+
+161
+00:14:40,790 --> 00:14:41,400
+All right, cool.
+
+162
+00:14:41,420 --> 00:14:43,520
+So that should be good for the CSFs.
+
+163
+00:14:43,520 --> 00:14:47,880
+Now, in the index HTML, we can get rid of the full class here on both of these.
+
+164
+00:14:47,900 --> 00:14:50,050
+I just wanted to test it out, make sure it looks right.
+
+165
+00:14:50,450 --> 00:14:54,290
+Also, the data like the 20 percent, we don't need that.
+
+166
+00:14:54,300 --> 00:14:58,310
+That looks kind of weird because this is empty, but we can still see the top of the 20 percent.
+
+167
+00:14:59,510 --> 00:15:00,880
+I mean, you could leave it there.
+
+168
+00:15:00,890 --> 00:15:05,120
+It's going to get overwritten by what we have in our JavaScript, but we'll just get rid of that.
+
+169
+00:15:05,810 --> 00:15:10,730
+And then also the one point five L that's going to come from the JavaScript as well.
+
+170
+00:15:11,180 --> 00:15:15,290
+OK, so in the next video, we'll go ahead and we'll start on our script JS file.

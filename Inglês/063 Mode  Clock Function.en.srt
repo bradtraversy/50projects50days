@@ -1,0 +1,903 @@
+1
+00:00:00,120 --> 00:00:03,700
+All right, so now comes the fun part and, well, I guess it depends on who you are.
+
+2
+00:00:03,720 --> 00:00:09,200
+Some people do like the UI, the CSI stuff, but I like to make things actually function.
+
+3
+00:00:09,570 --> 00:00:14,210
+So we're going to jump into the JavaScript and let's bring in everything we need.
+
+4
+00:00:14,220 --> 00:00:22,710
+So we'll say the our element document dots and I'm going to use query selector and we want to grab the
+
+5
+00:00:22,710 --> 00:00:24,610
+class of our.
+
+6
+00:00:24,630 --> 00:00:29,910
+So it's going to be the needled class of our and let's just copy this down a bunch of times.
+
+7
+00:00:30,780 --> 00:00:38,640
+So we want the our we want the minute and the second and let's change these variable names.
+
+8
+00:00:38,640 --> 00:00:49,880
+So this will be minute elements and second element and then this is going to be for the time.
+
+9
+00:00:52,080 --> 00:01:01,680
+So that has a class of time and we want the date so date and we also want the toggle switch or toggle
+
+10
+00:01:01,680 --> 00:01:02,120
+button.
+
+11
+00:01:02,550 --> 00:01:08,970
+So this over here will be the date element and then this will be the toggle.
+
+12
+00:01:09,630 --> 00:01:09,950
+All right.
+
+13
+00:01:09,960 --> 00:01:11,580
+So that's all the stuff we need to bring in.
+
+14
+00:01:12,810 --> 00:01:18,180
+So we want to create a couple arrays, one for days and one for months.
+
+15
+00:01:18,570 --> 00:01:21,930
+And and you'll see why in a little bit.
+
+16
+00:01:21,930 --> 00:01:26,040
+But I'm just going to season because there's no reason for you to watch me type this out.
+
+17
+00:01:26,050 --> 00:01:31,230
+It's just two arrays, one call days, Sunday through Saturday, one called months, January through
+
+18
+00:01:31,230 --> 00:01:31,770
+December.
+
+19
+00:01:31,770 --> 00:01:32,670
+So very simple.
+
+20
+00:01:33,360 --> 00:01:39,780
+And before we do anything with the date, the time or the clock, I want to handle the dark mode, which
+
+21
+00:01:39,780 --> 00:01:40,830
+is going to be pretty simple.
+
+22
+00:01:40,830 --> 00:01:48,660
+Basically, we just need to change the R add, add or remove the class of dark to to the HTML element.
+
+23
+00:01:49,770 --> 00:01:52,680
+And we also want to change the text of this.
+
+24
+00:01:52,950 --> 00:01:56,190
+Right now we're in regular or light mode, so it says dark mode.
+
+25
+00:01:56,190 --> 00:01:59,010
+If you change the dark mode, it should then say light mode.
+
+26
+00:01:59,250 --> 00:02:01,050
+So this isn't going to be too hard at all.
+
+27
+00:02:01,050 --> 00:02:02,760
+We just want to take our toggle button.
+
+28
+00:02:02,760 --> 00:02:08,910
+If you guys want to pause the video and figure this out, you know, I'm sure that a lot of you can
+
+29
+00:02:08,910 --> 00:02:10,680
+do can do this without watching.
+
+30
+00:02:11,340 --> 00:02:14,490
+So I'm going to continue here and just add an event listener.
+
+31
+00:02:14,490 --> 00:02:24,990
+So we want to listen for a click and let's pass in a function here with our event object and create
+
+32
+00:02:24,990 --> 00:02:26,760
+a variable here called HTML.
+
+33
+00:02:26,760 --> 00:02:33,360
+And then we're just going to use document dot, query selector and we're going to select the HTML element.
+
+34
+00:02:33,610 --> 00:02:39,990
+So basically the root element and we're going to check to see if it has the class of dark.
+
+35
+00:02:39,990 --> 00:02:46,650
+So let's say if html dot class list dot and then there's contains method.
+
+36
+00:02:47,370 --> 00:02:57,480
+If it contains dark then let's take HTML and let's take our class list object and call the remove method.
+
+37
+00:02:57,480 --> 00:03:04,350
+Here we want to remove dark and let's also set e dot target, which means the element we click on,
+
+38
+00:03:04,350 --> 00:03:05,580
+which is the toggle button.
+
+39
+00:03:06,030 --> 00:03:10,170
+We're going to set the HTML.
+
+40
+00:03:11,200 --> 00:03:12,930
+I do in here in our HTML.
+
+41
+00:03:12,930 --> 00:03:19,860
+We're going to set that to dark mode because we're in light mode, right.
+
+42
+00:03:19,860 --> 00:03:23,430
+If it contains dark and then we remove, it means red light mode.
+
+43
+00:03:23,430 --> 00:03:31,110
+So we want the button to say dark mode or else then let's just copy this.
+
+44
+00:03:31,560 --> 00:03:38,280
+And instead of remove, we want to add the class of dark and we want to change the text here to light
+
+45
+00:03:38,280 --> 00:03:38,610
+mode.
+
+46
+00:03:39,480 --> 00:03:39,840
+All right.
+
+47
+00:03:39,840 --> 00:03:41,370
+So let's go over here and let's click it.
+
+48
+00:03:42,000 --> 00:03:44,880
+And you can see it fades into dark mode.
+
+49
+00:03:45,390 --> 00:03:51,900
+The button is now light and the text in all that is all the correct colour because of, you know, the
+
+50
+00:03:51,900 --> 00:03:57,150
+primary and secondary colours, which we defined up here basically on the root scope.
+
+51
+00:03:57,510 --> 00:03:59,370
+It's it's the light mode colours.
+
+52
+00:03:59,370 --> 00:04:04,710
+But if the if HTML has a class of dark, then it's going to be reversed.
+
+53
+00:04:05,410 --> 00:04:09,900
+OK, so and we have that transition because we did add a success transition.
+
+54
+00:04:11,430 --> 00:04:13,410
+So that's that's the easy part.
+
+55
+00:04:13,410 --> 00:04:16,350
+Now we want to do the the clock.
+
+56
+00:04:16,350 --> 00:04:23,430
+So we're going to have let's go under the event listener here and let's create a function called Set
+
+57
+00:04:23,670 --> 00:04:24,270
+Time.
+
+58
+00:04:26,880 --> 00:04:35,820
+So first thing I'm going to do is set a variable of time and set it to new date and just to show you
+
+59
+00:04:35,820 --> 00:04:41,140
+what that gives us or console long time here and I open up my console.
+
+60
+00:04:41,160 --> 00:04:44,400
+Actually, we have to call this set time.
+
+61
+00:04:45,370 --> 00:04:51,580
+And it gives me this, all right, now, with this time variable, I can get specific things like the
+
+62
+00:04:51,580 --> 00:04:54,400
+month, the day, the hours, all that stuff.
+
+63
+00:04:54,400 --> 00:04:56,980
+So I'm going to put those into separate variables.
+
+64
+00:04:56,990 --> 00:05:03,880
+So for the month, we can set we can get it from time, dot, and then there's a get month method that
+
+65
+00:05:03,880 --> 00:05:05,200
+we can call to get that.
+
+66
+00:05:05,210 --> 00:05:11,350
+Let's do the day so we can do time, dot get day.
+
+67
+00:05:11,920 --> 00:05:15,760
+And if you want to console log these to see exactly what it gives you, you can do that.
+
+68
+00:05:16,290 --> 00:05:17,610
+Let's get the hours.
+
+69
+00:05:17,830 --> 00:05:23,830
+So time to get ours and then we want the hours for the clock.
+
+70
+00:05:23,830 --> 00:05:25,950
+Because remember the clock is is what.
+
+71
+00:05:26,320 --> 00:05:27,400
+It's 12 hours.
+
+72
+00:05:27,400 --> 00:05:27,570
+Right.
+
+73
+00:05:27,580 --> 00:05:29,260
+It's not a 24 hour clock.
+
+74
+00:05:29,650 --> 00:05:32,680
+I mean you could do that if you want, but I'm going to make it a 12 hour clock.
+
+75
+00:05:32,680 --> 00:05:35,650
+So let's say hours for a clock.
+
+76
+00:05:36,170 --> 00:05:40,780
+We're going to set that to whatever the hours is with Modulus.
+
+77
+00:05:40,810 --> 00:05:43,690
+We can use the modulus operator from twelve.
+
+78
+00:05:43,690 --> 00:05:45,640
+So whatever the remainder is basically.
+
+79
+00:05:46,780 --> 00:05:55,570
+And then for the minutes, say, koans minutes, we can use time to get minutes.
+
+80
+00:05:56,000 --> 00:05:59,950
+Make sure you put parentheses on these gets and then seconds.
+
+81
+00:06:00,310 --> 00:06:05,940
+So consed seconds equals time, doget seconds.
+
+82
+00:06:07,360 --> 00:06:07,750
+All right.
+
+83
+00:06:07,750 --> 00:06:10,230
+So that will give us a whole bunch of stuff.
+
+84
+00:06:10,900 --> 00:06:12,430
+Now as far as.
+
+85
+00:06:13,580 --> 00:06:20,420
+Making the clock work, let's just close that up, because that ruins the UI here and of course, you
+
+86
+00:06:20,420 --> 00:06:25,660
+could put the button somewhere else if you want, but basically we want to take each of the needles.
+
+87
+00:06:25,660 --> 00:06:30,230
+So like the our element and we want to set the on the style.
+
+88
+00:06:30,950 --> 00:06:35,210
+We want to set the transform, OK.
+
+89
+00:06:35,360 --> 00:06:36,740
+And set it to some back text.
+
+90
+00:06:36,740 --> 00:06:42,920
+Now, in our success, you can see for like the hour we have transform translate negative 50, negative
+
+91
+00:06:42,920 --> 00:06:43,460
+100.
+
+92
+00:06:43,460 --> 00:06:46,640
+And then the rotate is what we really want to focus on here.
+
+93
+00:06:47,960 --> 00:06:50,230
+The rotate is going to depend on the time.
+
+94
+00:06:50,870 --> 00:06:58,880
+So let's just copy this and we'll just just put that right in there like that so that if I say if it's
+
+95
+00:06:58,880 --> 00:07:03,200
+not going to look any different, if I change this to, you know, 30 degrees.
+
+96
+00:07:06,310 --> 00:07:07,380
+Why isn't that working?
+
+97
+00:07:09,980 --> 00:07:11,100
+Transform.
+
+98
+00:07:11,400 --> 00:07:13,070
+Oh, I copied this, too.
+
+99
+00:07:14,150 --> 00:07:14,630
+There we go.
+
+100
+00:07:14,640 --> 00:07:17,480
+So you can see that now the our hand is rotated 30 degrees.
+
+101
+00:07:17,490 --> 00:07:22,490
+So this obviously needs to be dynamic and it needs to pertain to whatever the time is.
+
+102
+00:07:23,060 --> 00:07:28,670
+Now, the way we're going to do this is by using very helpful utility function that I've actually used
+
+103
+00:07:28,880 --> 00:07:31,070
+in quite a few projects in this course.
+
+104
+00:07:31,310 --> 00:07:32,900
+And that's the scale function.
+
+105
+00:07:33,440 --> 00:07:35,210
+So I'm going to paste this in.
+
+106
+00:07:35,450 --> 00:07:40,570
+I'm using an arrow function and it needs to be above set time where we actually use it.
+
+107
+00:07:40,850 --> 00:07:43,310
+And this is the link to the stack overflow page.
+
+108
+00:07:43,850 --> 00:07:49,790
+And this comes in handy because what we need to do is, is map, as it says right here, map a range
+
+109
+00:07:49,790 --> 00:07:51,880
+of numbers to another range of numbers.
+
+110
+00:07:52,310 --> 00:07:56,100
+So we want to map the hours, which is, you know, 12.
+
+111
+00:07:56,570 --> 00:07:59,060
+So it's essentially zero to eleven.
+
+112
+00:07:59,060 --> 00:08:05,830
+We want to map that to zero to 360 because there's 360 degrees in our clock in our circle.
+
+113
+00:08:06,470 --> 00:08:08,450
+So four rotate.
+
+114
+00:08:08,450 --> 00:08:16,160
+Let's go ahead and pass in our variable syntax and we're going to set that call scale.
+
+115
+00:08:16,160 --> 00:08:21,950
+And the numbers of the first argument we want to pass in is going to be hours for clock.
+
+116
+00:08:22,530 --> 00:08:29,870
+OK, so the hours, 4:00 right now for me, it's one thirty eight p.m. so this should be one and then
+
+117
+00:08:30,320 --> 00:08:32,210
+the inmind.
+
+118
+00:08:32,210 --> 00:08:36,440
+So the minimum end is going to be zero, the maximum 11.
+
+119
+00:08:36,450 --> 00:08:40,910
+So it's zero to eleven, which which is a 12 hour format.
+
+120
+00:08:41,270 --> 00:08:49,760
+And then we want to map that to zero to 360, OK, because it's 360 degrees and then we want to just
+
+121
+00:08:50,090 --> 00:08:53,360
+add the digits here, just like we have here.
+
+122
+00:08:53,360 --> 00:08:54,140
+It has to have that.
+
+123
+00:08:55,610 --> 00:09:00,410
+So if I save that now, you can see that the hour hand is placed in a specific position.
+
+124
+00:09:00,410 --> 00:09:11,060
+And if we look at it, let's look at the div here for our and it has a rotate value of thirty two point
+
+125
+00:09:11,060 --> 00:09:13,280
+seven to seven three degrees.
+
+126
+00:09:13,760 --> 00:09:21,260
+So it basically took the time, the hours for clock and mapped that to a position in the 360 degree
+
+127
+00:09:21,620 --> 00:09:22,160
+clock.
+
+128
+00:09:22,770 --> 00:09:25,790
+OK, we want to do the same thing, four minutes and seconds.
+
+129
+00:09:26,210 --> 00:09:30,380
+So let's grab that and paste that in and let's do the minutes.
+
+130
+00:09:30,380 --> 00:09:35,630
+So we'll take the minute element and and then rotate here.
+
+131
+00:09:35,630 --> 00:09:40,550
+We're going to use scale, but we don't want to use ours for clock because now we're dealing with minutes.
+
+132
+00:09:41,060 --> 00:09:44,870
+So we want minutes, which we got from here.
+
+133
+00:09:45,830 --> 00:09:50,330
+And then instead of zero to 11, we want zero to 59.
+
+134
+00:09:50,710 --> 00:09:57,300
+OK, so 60 Minutes in an hour and then we want to map that to zero to 360.
+
+135
+00:09:57,320 --> 00:10:03,540
+So if I save that now, the minute hand is over here and then the same thing, four seconds.
+
+136
+00:10:04,760 --> 00:10:16,830
+So second element, we want to scale seconds and that's also zero to fifty nine to three 360 degrees.
+
+137
+00:10:17,180 --> 00:10:20,300
+Now, right now, it's just clock that's kind of frozen in time.
+
+138
+00:10:20,300 --> 00:10:21,830
+We want it to to operate.
+
+139
+00:10:21,830 --> 00:10:22,730
+We want it to tick.
+
+140
+00:10:23,060 --> 00:10:25,610
+So the set time, we need to keep calling this.
+
+141
+00:10:25,880 --> 00:10:33,140
+So will you set interval, which takes in a function which in our case is set time and we want to call
+
+142
+00:10:33,140 --> 00:10:34,290
+that every second.
+
+143
+00:10:34,310 --> 00:10:37,310
+So every 1000 milliseconds and they'll save.
+
+144
+00:10:37,550 --> 00:10:44,450
+And now you can see that the second hand is going to tick every second and you should move along as
+
+145
+00:10:44,450 --> 00:10:44,810
+well.
+
+146
+00:10:46,580 --> 00:10:47,050
+All right.
+
+147
+00:10:47,090 --> 00:10:49,160
+So we have that working.
+
+148
+00:10:50,420 --> 00:10:53,480
+Let's just try out a transition to the needle.
+
+149
+00:10:55,980 --> 00:11:10,410
+Yeah, let's do a transition here, so set transition to transition all to zero point five seconds and
+
+150
+00:11:10,410 --> 00:11:15,390
+ease in just so it kind of when these move, I mean, you're going to barely see them move just like
+
+151
+00:11:15,390 --> 00:11:16,380
+on a regular clock.
+
+152
+00:11:17,490 --> 00:11:20,430
+But when they do, we want to transition now.
+
+153
+00:11:20,430 --> 00:11:23,970
+We want to handle this part here, which is the time and the date.
+
+154
+00:11:24,180 --> 00:11:31,980
+So let's go into set time below, you know, where we set all the the hands or needles, whatever you
+
+155
+00:11:31,980 --> 00:11:32,700
+want to call them.
+
+156
+00:11:33,210 --> 00:11:37,290
+And every time it reaches the end, you know, it's going to do that spin, but it should be accurate.
+
+157
+00:11:39,210 --> 00:11:42,090
+So what do we want to do here?
+
+158
+00:11:42,100 --> 00:11:43,830
+Let's take our time element.
+
+159
+00:11:45,000 --> 00:11:45,420
+All right.
+
+160
+00:11:45,420 --> 00:11:49,790
+So our time element, we want to set the inner HTML.
+
+161
+00:11:51,900 --> 00:11:53,640
+So there's two ways we can do this.
+
+162
+00:11:53,640 --> 00:11:59,910
+We can use ours, which will give us, you know, military time.
+
+163
+00:12:00,120 --> 00:12:05,280
+It'll be when it's one o'clock, it'll say 13 and then 14, 15, so on.
+
+164
+00:12:05,640 --> 00:12:07,380
+Or we can do the 12 hour clock.
+
+165
+00:12:07,770 --> 00:12:09,630
+I'm going to go with the 12 hour clock.
+
+166
+00:12:10,110 --> 00:12:14,370
+So I'm going to set it to its back ticks here.
+
+167
+00:12:15,240 --> 00:12:20,520
+And we want to use if you want to do the twenty four hour clock, you can use ours.
+
+168
+00:12:20,520 --> 00:12:22,440
+I'm going to use ours for clock.
+
+169
+00:12:23,800 --> 00:12:24,240
+All right.
+
+170
+00:12:24,240 --> 00:12:26,670
+And then we'll have a colon and then we want the minutes.
+
+171
+00:12:26,670 --> 00:12:33,300
+Now, we do want to have a zero in front of the minute.
+
+172
+00:12:33,300 --> 00:12:33,720
+Right?
+
+173
+00:12:33,870 --> 00:12:37,080
+So if it's if it's twelve or five.
+
+174
+00:12:37,080 --> 00:12:37,440
+Right.
+
+175
+00:12:37,440 --> 00:12:42,090
+We don't want it to just say twelve colon five, which is what minutes gives us.
+
+176
+00:12:42,090 --> 00:12:44,580
+So we want to check to see if it's less than ten.
+
+177
+00:12:44,580 --> 00:12:46,310
+If it is then we'll add a zero.
+
+178
+00:12:46,770 --> 00:12:54,750
+So here, let's open up another, you know, variable syntax and let's say if minutes I'm going to use
+
+179
+00:12:54,750 --> 00:12:55,710
+a ternary here.
+
+180
+00:12:55,920 --> 00:13:02,910
+So if minutes is less than ten then let's add a zero.
+
+181
+00:13:02,910 --> 00:13:12,330
+So we'll put in a set of tactics and say zero and then whatever the whatever the minutes is.
+
+182
+00:13:12,810 --> 00:13:18,090
+And then we'll go outside of the back ticks here and say else then just put in whatever the minutes
+
+183
+00:13:18,090 --> 00:13:18,390
+is.
+
+184
+00:13:19,140 --> 00:13:20,250
+So let's save that.
+
+185
+00:13:20,250 --> 00:13:22,350
+And you can see I get one forty three.
+
+186
+00:13:24,030 --> 00:13:29,850
+Now at the moment there's no way to tell if this is a.m. or p.m. I mean you're probably going to know,
+
+187
+00:13:29,850 --> 00:13:32,270
+but we should put that somewhere.
+
+188
+00:13:32,700 --> 00:13:39,390
+So what we'll do is add let's add a variable up here, call it AMPM.
+
+189
+00:13:40,110 --> 00:13:44,010
+And the way that we can get this is by checking the hours.
+
+190
+00:13:44,430 --> 00:13:45,810
+So I'll use a ternary here.
+
+191
+00:13:45,810 --> 00:13:55,020
+I'll say if ours is greater than or equal to twelve, then let's set PMB else.
+
+192
+00:13:55,140 --> 00:14:02,400
+Let's set this string to an OK and then we'll go down here and right after five minutes let's put in
+
+193
+00:14:02,790 --> 00:14:04,140
+ampm.
+
+194
+00:14:04,860 --> 00:14:07,020
+So now I get one forty four p.m..
+
+195
+00:14:09,210 --> 00:14:17,130
+So for the date let's do that, let's go right here and say date element and I'm going to set that equal
+
+196
+00:14:17,130 --> 00:14:19,110
+to some tactics.
+
+197
+00:14:19,110 --> 00:14:23,790
+And in here this is where we're going to use our days in Monterrey.
+
+198
+00:14:24,150 --> 00:14:35,790
+So I'll say day or days and I want to use the day that I got from here as an index for the days, OK,
+
+199
+00:14:36,510 --> 00:14:39,750
+because it's going to be, you know, zero one, two, three and so on.
+
+200
+00:14:40,800 --> 00:14:42,960
+So that'll give us the day.
+
+201
+00:14:42,960 --> 00:14:52,410
+And then for the month, let's put a comma here and oops, not there here, because we want like this
+
+202
+00:14:52,410 --> 00:14:58,560
+Monday and then comma and then November or whatever the whatever the month is.
+
+203
+00:14:59,130 --> 00:15:07,140
+So let's take the months away and for the index we're going to use the month that we got from up here.
+
+204
+00:15:08,880 --> 00:15:09,330
+All right.
+
+205
+00:15:09,330 --> 00:15:11,070
+And then let's see.
+
+206
+00:15:11,070 --> 00:15:13,020
+So we have that, then we have a span.
+
+207
+00:15:13,650 --> 00:15:20,340
+So let's put a spanner in here, give it a class, let's use a circle
+
+208
+00:15:22,770 --> 00:15:23,610
+span.
+
+209
+00:15:23,610 --> 00:15:32,400
+And then in here is where we want the day so we can actually just put in here the date variable, which
+
+210
+00:15:33,480 --> 00:15:35,160
+wait a minute, we not put this.
+
+211
+00:15:36,630 --> 00:15:37,620
+We didn't do this.
+
+212
+00:15:37,890 --> 00:15:38,340
+All right.
+
+213
+00:15:38,340 --> 00:15:47,250
+So let's copy this down another day and let's say date and set that to get date.
+
+214
+00:15:50,140 --> 00:15:50,560
+All right.
+
+215
+00:15:52,950 --> 00:16:00,390
+So I saved that and now I should be able to get rid of everything that we have inside this div with
+
+216
+00:16:00,390 --> 00:16:06,150
+the class of date, and if I save should get rid of this to.
+
+217
+00:16:07,510 --> 00:16:09,580
+And that's see, that's not showing up.
+
+218
+00:16:10,810 --> 00:16:17,950
+Oh, I need to set in our HTML and then we go so we get the same thing Monday, November 2nd.
+
+219
+00:16:19,420 --> 00:16:20,650
+OK, so now this works.
+
+220
+00:16:20,650 --> 00:16:21,670
+This is dynamic.
+
+221
+00:16:22,420 --> 00:16:24,700
+We can change to dark motor light mode.
+
+222
+00:16:25,150 --> 00:16:30,520
+And hopefully this just gives you a better understanding of how to deal with, like, success and changing
+
+223
+00:16:30,520 --> 00:16:34,210
+specific styles and stuff like that.
+
+224
+00:16:34,630 --> 00:16:35,020
+All right.
+
+225
+00:16:35,030 --> 00:16:36,430
+So that's going to be it for this project.
+
+226
+00:16:36,430 --> 00:16:39,400
+Guys, I hope you enjoyed this and I will see you in the next one.

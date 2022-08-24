@@ -1,0 +1,55 @@
+﻿1
+00:00:00,480 --> 00:00:05,350
+Tudo bem, então o Dribble Dotcom é na verdade um ótimo lugar para buscar inspiração para projetos.
+
+2
+00:00:05,370 --> 00:00:10,170
+Este é um drible por esforço de James chamado Fake Hugh.
+
+3
+00:00:10,560 --> 00:00:15,610
+E você pode ver que são basicamente apenas esses cartões que você pode expandir que têm perguntas e respostas.
+
+4
+00:00:15,960 --> 00:00:18,900
+Então é isso que vamos criar com base nesse drible.
+
+5
+00:00:19,200 --> 00:00:22,110
+E vamos usar bastante sucesso porque vamos usar fonte.
+
+6
+00:00:22,110 --> 00:00:22,590
+Incrível.
+
+7
+00:00:22,590 --> 00:00:27,240
+Mas não vamos simplesmente colocar esses ícones comuns no HTML.
+
+8
+00:00:27,240 --> 00:00:34,020
+Vamos usar o UCSC usando o Unicode específico para essas fontes, para esses ícones, e então vamos
+
+9
+00:00:34,020 --> 00:00:40,050
+vamos posicioná-los e, em seguida, adicionaremos o JavaScript para que possamos fechar e abrir cada um desses
+
+10
+00:00:40,050 --> 00:00:41,640
+abas para ver a resposta.
+
+11
+00:00:42,270 --> 00:00:49,350
+OK, então os CSFs provavelmente vão ocupar a maior parte do nosso tempo e então o JavaScript é bem fácil.
+
+12
+00:00:49,500 --> 00:00:52,890
+Nós só precisamos alternar o ato de classe basicamente no nó pai.
+
+13
+00:00:53,190 --> 00:00:53,700
+Então é isso.
+
+14
+00:00:53,700 --> 00:00:54,860
+Vamos em frente e entrar nisso.

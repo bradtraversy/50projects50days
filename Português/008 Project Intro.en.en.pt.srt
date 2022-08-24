@@ -1,0 +1,63 @@
+﻿1
+00:00:00,210 --> 00:00:05,100
+Tudo bem, então neste projeto, vamos construir algumas etapas de progresso e você pode vê-las em
+
+2
+00:00:05,490 --> 00:00:12,720
+diferentes tipos de sites com formulários, você sabe, multi basicamente como formulários de vários níveis, compras
+
+3
+00:00:12,720 --> 00:00:17,730
+carrinhos, coisas assim, apenas uma barra de progresso que começa em um e segue aqui.
+
+4
+00:00:18,090 --> 00:00:22,530
+Então não teremos nenhum formulário nem nada, mas teremos esses botões para controlar os passos.
+
+5
+00:00:22,530 --> 00:00:23,510
+Então começa às 13h.
+
+6
+00:00:23,790 --> 00:00:25,170
+Ele tem esse contorno azul.
+
+7
+00:00:25,500 --> 00:00:28,210
+Se eu clicar em próximo, então ele vai para dois.
+
+8
+00:00:28,230 --> 00:00:35,100
+Assim, a linha que obtemos a transição passa para dois para que a borda se acenda, clique em próximo novamente.
+
+9
+00:00:35,100 --> 00:00:39,510
+E observe no início, anterior está desabilitado, então não há motivo para clicar em anterior.
+
+10
+00:00:39,930 --> 00:00:41,100
+E então podemos continuar.
+
+11
+00:00:41,110 --> 00:00:44,490
+E quando clicamos, quando chegamos ao último, o próximo está desabilitado.
+
+12
+00:00:44,820 --> 00:00:46,740
+OK, então podemos apenas ir e voltar.
+
+13
+00:00:46,740 --> 00:00:51,990
+E se estivermos no final desabilitados, se estivermos no final aqui, então o próximo estará desabilitado.
+
+14
+00:00:52,260 --> 00:00:52,530
+Tudo bem.
+
+15
+00:00:52,530 --> 00:00:58,530
+Então vamos começar com o estilo HTML, estilizá-lo com CSFs e então adicionaremos a funcionalidade com
+
+16
+00:00:58,530 --> 00:00:59,280
+JavaScript.

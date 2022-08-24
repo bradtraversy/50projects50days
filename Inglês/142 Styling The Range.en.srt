@@ -1,0 +1,599 @@
+1
+00:00:00,180 --> 00:00:05,070
+All right, so we're going to get started on our custom range slider and the Tmall is going to be really
+
+2
+00:00:05,070 --> 00:00:05,430
+simple.
+
+3
+00:00:05,430 --> 00:00:07,650
+We're just going to use an input with a type of range.
+
+4
+00:00:07,650 --> 00:00:13,700
+But the styling is pretty tricky because these show up different depending on the browser you're on.
+
+5
+00:00:13,710 --> 00:00:17,940
+So we're going to have to add styles for all of the browsers.
+
+6
+00:00:17,940 --> 00:00:22,530
+Basically Web that we using the web kit prefix is going to be Chrome and safari.
+
+7
+00:00:22,860 --> 00:00:30,240
+The Mozi prefixes as Firefox and AMS would be, you know, Microsoft, Internet Explorer.
+
+8
+00:00:30,630 --> 00:00:36,420
+And what I'm what I have here is Chrome on the side, but I also have Firefox as well, so we can check
+
+9
+00:00:36,420 --> 00:00:37,610
+that too.
+
+10
+00:00:38,190 --> 00:00:40,650
+So the like I said, the e-mail is pretty simple.
+
+11
+00:00:40,650 --> 00:00:49,980
+So let's just say custom range slider and we're just going to have an H here with the same thing, custom
+
+12
+00:00:50,790 --> 00:00:52,500
+range slider.
+
+13
+00:00:52,500 --> 00:00:57,090
+And then let's do a class of range dash container.
+
+14
+00:00:59,430 --> 00:01:04,530
+And inside here we'll have an input with the type of range we don't need a name.
+
+15
+00:01:04,980 --> 00:01:09,360
+The ID will be range and we can set a minimum tax on this.
+
+16
+00:01:09,390 --> 00:01:13,470
+So basically where we want it to start, which is going to be zero and then where we want it to end,
+
+17
+00:01:13,470 --> 00:01:14,670
+which is going to be one hundred.
+
+18
+00:01:15,210 --> 00:01:22,320
+And then underneath that, let's put a label for range and I'm going to just hard code 50 in there for
+
+19
+00:01:22,320 --> 00:01:22,740
+now.
+
+20
+00:01:22,980 --> 00:01:26,360
+Ultimately, this is going to change depending on where this is.
+
+21
+00:01:26,520 --> 00:01:30,720
+So if it's at the beginning, it'll be zero at the end, hundred and then anything in between.
+
+22
+00:01:30,900 --> 00:01:33,870
+It's also going to be positioned right above this.
+
+23
+00:01:33,870 --> 00:01:35,820
+And we want it to move along with this.
+
+24
+00:01:35,820 --> 00:01:37,890
+So we'll need to use JavaScript to do that.
+
+25
+00:01:38,310 --> 00:01:39,690
+But that's it for the HTML.
+
+26
+00:01:39,690 --> 00:01:42,230
+Very simple for the CSFs.
+
+27
+00:01:42,240 --> 00:01:44,280
+Let's bring in the little font.
+
+28
+00:01:44,610 --> 00:01:51,300
+So family equals Plato and let's apply that down here.
+
+29
+00:01:52,710 --> 00:02:01,920
+And I see so like I said, we're basically going to have to style the track, so this is the track,
+
+30
+00:02:01,920 --> 00:02:04,260
+this line here and then this is the thumb.
+
+31
+00:02:04,620 --> 00:02:10,650
+We're going to have to style both of those differently for for basically all of the different browsers.
+
+32
+00:02:13,150 --> 00:02:19,630
+So the body here, I'm just going to keep the same let's move the heading up to the top, so I'm just
+
+33
+00:02:19,630 --> 00:02:27,190
+going to position it absolute within the body and then say from the top 10 pixels just to move that
+
+34
+00:02:27,190 --> 00:02:31,330
+up out of the way and then for the range container.
+
+35
+00:02:34,080 --> 00:02:41,250
+I want to position that relative, because the label this right here, the number is going to be positioned
+
+36
+00:02:41,250 --> 00:02:46,030
+absolute within it and we're going to calculate the position in JavaScript so that it can follow the
+
+37
+00:02:46,050 --> 00:02:46,770
+thumb here.
+
+38
+00:02:47,700 --> 00:02:52,860
+Now, we do have some some base styles for the range.
+
+39
+00:02:52,860 --> 00:02:58,850
+So let's say input, and we can target it with brackets and adding type equals range.
+
+40
+00:03:00,900 --> 00:03:07,880
+And I'm going to set the width to 300 pixels, get a little wider and margin.
+
+41
+00:03:07,890 --> 00:03:12,810
+I'm going to just do 18 pixels on the top and bottom because the label is going to be above it.
+
+42
+00:03:12,840 --> 00:03:14,250
+We want some space above it.
+
+43
+00:03:15,450 --> 00:03:18,300
+So let's see.
+
+44
+00:03:18,300 --> 00:03:24,660
+I'm trying to think before we can style this because we can't actually style it as is.
+
+45
+00:03:24,660 --> 00:03:28,410
+We need to basically make it go away.
+
+46
+00:03:28,410 --> 00:03:31,220
+And we can do that with dash web kit.
+
+47
+00:03:31,230 --> 00:03:33,100
+And I'm talking about the track the line.
+
+48
+00:03:33,600 --> 00:03:39,710
+So if we do a Web kit appearance and set that to none and save, you'll see that it goes away.
+
+49
+00:03:39,720 --> 00:03:42,330
+Now, we can actually style it on our own.
+
+50
+00:03:42,900 --> 00:03:46,940
+But before we do that, let's style the label actually know.
+
+51
+00:03:47,100 --> 00:03:49,260
+Let's let's give us a background.
+
+52
+00:03:50,820 --> 00:03:57,510
+We'll say let's do background image and we'll use a little linear gradient, let's say 135 degrees.
+
+53
+00:03:58,110 --> 00:04:11,900
+And then for the color here, let's do hexadecimal value F five F seven F A and that's from zero percent.
+
+54
+00:04:11,910 --> 00:04:20,340
+And then the next color, let's do hexadecimal C three C F each two to one hundred percent.
+
+55
+00:04:20,830 --> 00:04:21,320
+They are.
+
+56
+00:04:21,330 --> 00:04:26,550
+So you can see that this is just white now, OK, because we did that web kit appearance none.
+
+57
+00:04:27,060 --> 00:04:30,120
+So I just want to before we do the track, I want to style the label.
+
+58
+00:04:30,120 --> 00:04:31,320
+I just want to put it above.
+
+59
+00:04:31,320 --> 00:04:32,880
+It'll start off in the middle here.
+
+60
+00:04:33,600 --> 00:04:41,970
+So we'll take the range and let's do let's say plus label.
+
+61
+00:04:42,960 --> 00:04:55,920
+And for the label, we're going to set the background color to white and let's let's position it.
+
+62
+00:04:56,460 --> 00:04:59,400
+So I'm in a position that absolute within the range container.
+
+63
+00:05:00,500 --> 00:05:08,780
+And we'll say we want it from the top negative 25 pixels, so of move it up and we want it in the middle
+
+64
+00:05:08,780 --> 00:05:09,590
+of the range.
+
+65
+00:05:09,590 --> 00:05:13,280
+So we'll say from the from the left.
+
+66
+00:05:15,040 --> 00:05:24,780
+Let's do one hundred and ten pixels and let's give it a width of 80 pixels and padding.
+
+67
+00:05:25,780 --> 00:05:28,660
+We'll do five pixels top and bottom.
+
+68
+00:05:29,770 --> 00:05:42,010
+Let's text the line to the center and let's do a broader radius for pixels and let's add a little box
+
+69
+00:05:42,010 --> 00:05:42,570
+shadow.
+
+70
+00:05:44,170 --> 00:05:53,920
+So we'll do zero zero for the offsets, five pixels for the blur, our GBA black and zero point three.
+
+71
+00:05:54,740 --> 00:05:56,320
+So that gives a little box shadow.
+
+72
+00:05:56,680 --> 00:05:57,110
+All right.
+
+73
+00:05:57,400 --> 00:06:01,030
+So it starts off in the middle right where the thumb starts.
+
+74
+00:06:01,300 --> 00:06:05,020
+And ultimately, when we add our JavaScript will have it follow along this.
+
+75
+00:06:05,020 --> 00:06:06,160
+But that's good for now.
+
+76
+00:06:06,490 --> 00:06:07,930
+So now let's dial the track.
+
+77
+00:06:08,320 --> 00:06:15,640
+And this is only going to be four for Chrome and Safari right now because we're going to take the input
+
+78
+00:06:15,640 --> 00:06:20,970
+range and then do Colen Colen Web Kit Dash.
+
+79
+00:06:20,980 --> 00:06:22,390
+And it's this is the track.
+
+80
+00:06:22,390 --> 00:06:24,910
+So we want slider Runnable track.
+
+81
+00:06:25,190 --> 00:06:26,530
+That's what we're styling here.
+
+82
+00:06:27,100 --> 00:06:31,300
+And I'm going to set the background to purple.
+
+83
+00:06:32,560 --> 00:06:34,660
+So as soon as I do that, the color changes.
+
+84
+00:06:34,660 --> 00:06:40,810
+But you'll see if I go to Firefox, it's still white because we need to use the emoji prefix for that.
+
+85
+00:06:42,370 --> 00:06:43,990
+But let's do chrome first.
+
+86
+00:06:44,620 --> 00:06:45,570
+So purple.
+
+87
+00:06:45,580 --> 00:06:55,270
+Let's do a border dash radius and we'll set that for pixels and let's set the width.
+
+88
+00:06:56,160 --> 00:07:03,090
+To 100 percent, the height I'm going to set that to 10 pixels, make it a little thinner and set the
+
+89
+00:07:03,090 --> 00:07:07,650
+cursor to a pointer so that styles the track in chrome.
+
+90
+00:07:08,820 --> 00:07:11,580
+Now we want to do the thumb, which is this round part.
+
+91
+00:07:12,030 --> 00:07:14,250
+Now, again, we can't style it directly.
+
+92
+00:07:14,610 --> 00:07:27,390
+So let's first select it with dash web, kit, dash, slider, thumb, and we have to add Web kit dash
+
+93
+00:07:27,480 --> 00:07:29,550
+appearance none.
+
+94
+00:07:30,150 --> 00:07:31,980
+OK, so now it completely goes away.
+
+95
+00:07:31,980 --> 00:07:33,820
+But we can, we can customize it.
+
+96
+00:07:33,840 --> 00:07:43,020
+Now let's give it a height of twenty four pixels and a width of twenty four pixels and we'll give it
+
+97
+00:07:43,020 --> 00:07:46,770
+a background of white.
+
+98
+00:07:47,040 --> 00:07:49,230
+So now you can see it's just a, it's just a square.
+
+99
+00:07:49,230 --> 00:07:51,150
+So you can, you can add images.
+
+100
+00:07:51,150 --> 00:07:52,920
+You can this however you want.
+
+101
+00:07:54,300 --> 00:07:56,040
+We're just going to make it a circle.
+
+102
+00:07:56,050 --> 00:08:02,420
+So let's say border dash radius 50 percent, which will turn it into a circle.
+
+103
+00:08:02,430 --> 00:08:06,720
+I'm going to give it a border, one pixel, solid purple.
+
+104
+00:08:09,670 --> 00:08:17,890
+And it's it's off the track, it's too low, so let's say margin top and let's do negative seven pixels,
+
+105
+00:08:18,700 --> 00:08:20,380
+so that'll push it up more.
+
+106
+00:08:21,980 --> 00:08:27,750
+And I think that's really all I want to do.
+
+107
+00:08:27,760 --> 00:08:30,250
+Now, this border around it, we want to get rid of that.
+
+108
+00:08:31,750 --> 00:08:34,690
+So let's take let's put this.
+
+109
+00:08:37,830 --> 00:08:46,200
+Up here, so we'll say range, and then when it's in its focus state, let's set the outline to not.
+
+110
+00:08:47,770 --> 00:08:53,230
+OK, so that gets rid of that ugly border and again, if you check Firefox out, it still looks like
+
+111
+00:08:53,230 --> 00:08:55,870
+this because we haven't added the prefix yet.
+
+112
+00:08:58,410 --> 00:09:05,410
+All right, and I think I think that's I think that's it as far as the style goes for Chrome.
+
+113
+00:09:05,430 --> 00:09:10,190
+So now what we'll do for Firefox and let's just sort of comment right here.
+
+114
+00:09:10,200 --> 00:09:14,430
+So this is for Chrome and Safari.
+
+115
+00:09:15,480 --> 00:09:24,450
+And then I'm going to just copy what we did here with the track and the thumb and let's say Firefox
+
+116
+00:09:24,450 --> 00:09:25,080
+paste that.
+
+117
+00:09:25,080 --> 00:09:33,420
+And now instead of Web kit, slider Runnable track, it's Mozi Range Track.
+
+118
+00:09:33,450 --> 00:09:38,280
+So Dash and Mosi, dash range, dash track.
+
+119
+00:09:39,240 --> 00:09:46,650
+And as far as the styles here, I'm going to just keep what we have and then for the range it's going
+
+120
+00:09:46,650 --> 00:09:52,170
+to be Mozi dash range.
+
+121
+00:09:52,170 --> 00:09:53,070
+Dash thumb.
+
+122
+00:09:53,230 --> 00:09:55,020
+I'm sorry for the thumb, not the range.
+
+123
+00:09:56,070 --> 00:09:57,570
+So it's the track and the thumb.
+
+124
+00:09:58,020 --> 00:10:06,390
+Now I'm just going to save this and go to Firefox now and you can see we have pretty much the same thing.
+
+125
+00:10:06,930 --> 00:10:11,990
+For some reason it has this white background and I can't figure out how to get rid of that.
+
+126
+00:10:12,300 --> 00:10:20,100
+So one thing we could do is increase the height on Firefox to 12 pixels and the purple should cover
+
+127
+00:10:20,100 --> 00:10:20,580
+the white.
+
+128
+00:10:20,600 --> 00:10:23,790
+I guess we could do like 13 like that.
+
+129
+00:10:25,650 --> 00:10:27,570
+You might have to kind of mess around with it a little bit.
+
+130
+00:10:29,490 --> 00:10:33,390
+Let's also add a cursor pointer to this right here.
+
+131
+00:10:33,390 --> 00:10:36,090
+So say cursor pointer there.
+
+132
+00:10:36,210 --> 00:10:39,150
+We'll add that up here as well on the Web kit.
+
+133
+00:10:42,290 --> 00:10:47,690
+So it's just it behaves a little different in in other browsers, so you just want to be aware of that.
+
+134
+00:10:48,740 --> 00:10:54,350
+Now, for Microsoft, I mean, I don't have, you know, Internet Explorer on this machine.
+
+135
+00:10:54,350 --> 00:11:04,490
+I can't test it, but I'm just going to grab what we have for we'll just copy what we did for Firefox.
+
+136
+00:11:09,270 --> 00:11:18,960
+And Seiichi, so the prefix we want to use here is a mess, and it's going to be moustached track.
+
+137
+00:11:20,930 --> 00:11:22,700
+And this is going to be.
+
+138
+00:11:24,630 --> 00:11:26,820
+Moustache Thum.
+
+139
+00:11:30,190 --> 00:11:34,210
+And I mean, if you want to test it on an Internet Explorer, you can if it looks a little weird, you
+
+140
+00:11:34,210 --> 00:11:36,310
+can, of course, change some of this stuff up.
+
+141
+00:11:37,630 --> 00:11:39,800
+But, yeah, I'm just going to keep it like that.
+
+142
+00:11:41,110 --> 00:11:42,880
+So now we have the style down.
+
+143
+00:11:42,880 --> 00:11:44,520
+Firefox looks looks good.
+
+144
+00:11:44,530 --> 00:11:45,580
+I'll keep that open.
+
+145
+00:11:45,880 --> 00:11:46,480
+Chrome.
+
+146
+00:11:47,470 --> 00:11:52,480
+And of course, if you want to change colors or change the shape of this or the size of the thumb here,
+
+147
+00:11:52,480 --> 00:11:53,230
+you can do that.
+
+148
+00:11:53,560 --> 00:12:00,320
+But in the next video, we want to make this function so that this number changes depending on the value.
+
+149
+00:12:00,340 --> 00:12:05,040
+Also, we want the position of the label to follow the thumb as we move it.
+
+150
+00:12:05,320 --> 00:12:06,820
+So we'll get into that next.

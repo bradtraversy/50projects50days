@@ -1,0 +1,507 @@
+﻿1
+00:00:00,150 --> 00:00:04,680
+Tudo bem, vamos começar a navegação de guias para dispositivos móveis, então vamos em frente e criar o
+
+2
+00:00:04,710 --> 00:00:05,660
+interface de usuário.
+
+3
+00:00:05,670 --> 00:00:09,290
+Acabei de abrir meu projeto Project Starter aqui.
+
+4
+00:00:09,300 --> 00:00:11,370
+Vamos abrir todos esses arquivos.
+
+5
+00:00:12,570 --> 00:00:18,720
+E também estou trazendo fontes incríveis usando o CDN porque usaremos ícones incríveis de fontes para
+
+6
+00:00:18,720 --> 00:00:19,700
+os itens do menu.
+
+7
+00:00:19,980 --> 00:00:29,960
+Então, vamos chamar essa navegação de guia móvel e nos livrar disso.
+
+8
+00:00:30,390 --> 00:00:33,300
+Então tudo vai ser embrulhado em uma classe de telefone.
+
+9
+00:00:34,680 --> 00:00:39,060
+Então, teremos como um contêiner de interface do usuário de telefone aqui.
+
+10
+00:00:39,450 --> 00:00:44,400
+E então, para as imagens, vou colá-las.
+
+11
+00:00:44,400 --> 00:00:45,870
+Deixe-me colar no primeiro.
+
+12
+00:00:47,730 --> 00:00:49,170
+Então, estes são do splash.
+
+13
+00:00:49,170 --> 00:00:55,260
+Claro que você pode usar qualquer imagem que quiser ou nem precisa usar imagens se quiser que seja conteúdo
+
+14
+00:00:55,260 --> 00:00:57,510
+ou qualquer conteúdo de texto, tudo bem.
+
+15
+00:00:57,720 --> 00:01:02,730
+Mas estamos dando a isso uma classe de conteúdo para que todos tenham essa classe de conteúdo.
+
+16
+00:01:03,030 --> 00:01:06,320
+Mas o que estiver mostrando vai ter uma aula de show.
+
+17
+00:01:06,960 --> 00:01:14,460
+OK, então vou pegar as outras três imagens, que todas têm a classe de conteúdo, mas não têm
+
+18
+00:01:14,460 --> 00:01:15,720
+a classe de espetáculo.
+
+19
+00:01:16,290 --> 00:01:18,530
+OK, apenas o primeiro tem a aula ou show.
+
+20
+00:01:18,540 --> 00:01:23,730
+Então, deixe-me empurrar essas três ou quatro imagens.
+
+21
+00:01:24,060 --> 00:01:31,770
+Agora, a navegação que vamos colocar logo abaixo da última imagem aqui, vamos colocar uma tag nav e em
+
+22
+00:01:31,770 --> 00:01:37,980
+aqui vamos ter um pouco com um item de lista e então teremos nosso ícone.
+
+23
+00:01:37,980 --> 00:01:38,910
+Então vamos usar a fonte.
+
+24
+00:01:38,910 --> 00:01:39,570
+Incrível aqui.
+
+25
+00:01:39,570 --> 00:01:48,630
+Vai ser Fayaz e um traço home e abaixo disso terá um parágrafo com o texto de home.
+
+26
+00:01:49,290 --> 00:01:51,630
+OK, agora essas imagens vão ser gigantes.
+
+27
+00:01:51,630 --> 00:01:56,820
+Então ignore isso por enquanto e então vamos copiar este item da lista aqui.
+
+28
+00:01:57,960 --> 00:01:59,130
+Teremos mais três.
+
+29
+00:02:00,300 --> 00:02:09,810
+Então o segundo aqui, o ícone será Box e este vai dar trabalho e este aqui.
+
+30
+00:02:10,860 --> 00:02:18,420
+Vamos fazer o livro de ícones Dash Open e este será o blog.
+
+31
+00:02:19,800 --> 00:02:26,980
+E então este último aqui será para usuários e este será sobre nós.
+
+32
+00:02:28,090 --> 00:02:29,350
+Tudo bem, então isso deve fazê-lo.
+
+33
+00:02:30,220 --> 00:02:37,090
+Vamos pular para a folha de estilo aqui e vou usar Open Sans para meu phonte, então vou pegar
+
+34
+00:02:37,090 --> 00:02:38,950
+livrar disso.
+
+35
+00:02:39,970 --> 00:02:50,030
+Então, para o sucesso e, em seguida, ponto de interrogação e digamos que família é igual a aberta, mais a de Sande.
+
+36
+00:02:50,620 --> 00:02:55,780
+E então para a família aqui, diremos open sans.
+
+37
+00:02:56,920 --> 00:03:02,610
+E queremos uma cor de fundo no corpo aqui.
+
+38
+00:03:03,850 --> 00:03:04,810
+Então cor de fundo.
+
+39
+00:03:04,810 --> 00:03:09,640
+Vou usar Rajiva tão vermelho e vai ficar 155.
+
+40
+00:03:10,300 --> 00:03:17,080
+Verde será 89, azul será 182 e o valor alfa será zero vírgula sete.
+
+41
+00:03:19,480 --> 00:03:25,660
+OK, então nos dê essa cor roxa e então veremos a direção do flex.
+
+42
+00:03:25,660 --> 00:03:34,150
+Podemos nos livrar dessa meia-noite, preparamos estouro oculto e você pode ir em frente e rolar
+
+43
+00:03:34,150 --> 00:03:36,700
+para baixo, veja todas as imagens realmente lá.
+
+44
+00:03:36,880 --> 00:03:37,840
+Estão todos fora de sintonia.
+
+45
+00:03:37,840 --> 00:03:39,640
+Então vamos corrigir isso em breve.
+
+46
+00:03:40,450 --> 00:03:44,740
+Assim, a classe de espuma envolve tudo.
+
+47
+00:03:46,180 --> 00:03:55,150
+E para isso, vamos definir a posição disso para ser relativa para que possamos posicionar as coisas absolutas dentro
+
+48
+00:03:55,150 --> 00:03:55,330
+isto.
+
+49
+00:03:55,870 --> 00:03:59,290
+E eu vou definir o overflow para oculto nisso.
+
+50
+00:04:00,720 --> 00:04:09,120
+E vamos definir a borda para que tenhamos uma borda de três pixels sólidos e a cor será
+
+51
+00:04:09,120 --> 00:04:13,890
+triplo ele e vamos definir um raio de borda.
+
+52
+00:04:15,790 --> 00:04:25,240
+E também o raio da borda para 15 pixels e então vamos na altura disso para seiscentos pixels e
+
+53
+00:04:25,240 --> 00:04:28,250
+a largura será 340.
+
+54
+00:04:29,540 --> 00:04:34,300
+OK, agora podemos ver nossa imagem, o conteúdo dentro.
+
+55
+00:04:34,300 --> 00:04:36,490
+Assim, cada imagem tem uma classe de conteúdo.
+
+56
+00:04:36,490 --> 00:04:36,760
+Certo.
+
+57
+00:04:36,780 --> 00:04:41,680
+Então, digamos telefone e depois o conteúdo, que é a imagem.
+
+58
+00:04:42,430 --> 00:04:45,880
+Vamos definir inicialmente a opacidade para zero.
+
+59
+00:04:45,880 --> 00:04:48,130
+Assim que eu fizer isso, porém, ele vai embora.
+
+60
+00:04:48,130 --> 00:04:51,790
+Vou apenas comentar isso por enquanto para que possamos estilizar o resto.
+
+61
+00:04:52,350 --> 00:05:04,120
+Vamos definir o ajuste do objeto para cobrir e vamos definir a posição disso como absoluta e, em seguida, definiremos de
+
+62
+00:05:04,120 --> 00:05:08,890
+do zero superior e do zero esquerdo.
+
+63
+00:05:10,400 --> 00:05:14,990
+E você pode ver uma imagem diferente também, porque lembre-se, elas são apenas todas as imagens que
+
+64
+00:05:14,990 --> 00:05:16,420
+eles estão apenas no mesmo lugar.
+
+65
+00:05:17,060 --> 00:05:18,770
+E então para a altura disso.
+
+66
+00:05:19,950 --> 00:05:27,450
+Basicamente, teremos aqui nossas guias e terão cerca de 60 pixels de altura.
+
+67
+00:05:27,460 --> 00:05:33,720
+Então o que vamos fazer é usar calc aqui e podemos calcular, diremos 100 por cento da alta, mas menos
+
+68
+00:05:33,720 --> 00:05:39,150
+digamos, 60 pixels para que nos dê um pouco de espaço lá embaixo.
+
+69
+00:05:39,540 --> 00:05:46,050
+E vamos garantir que a largura seja 100% e teremos uma transição em
+
+70
+00:05:46,050 --> 00:05:51,480
+isso, porque quando mudamos a imagem, basicamente quando nós, você sabe, giramos a classe do show,
+
+71
+00:05:51,480 --> 00:05:54,270
+queríamos ter esse tipo de fade em vigor.
+
+72
+00:05:54,280 --> 00:05:59,820
+Portanto, a transição será na propriedade de opacidade zero vírgula quatro segundos.
+
+73
+00:05:59,820 --> 00:06:00,780
+E ele é.
+
+74
+00:06:03,480 --> 00:06:11,550
+Agora, o conteúdo que tem show, então digamos o conteúdo do phone dash, se ele tem uma classe de show, queremos
+
+75
+00:06:11,550 --> 00:06:13,620
+a opacidade para ser um.
+
+76
+00:06:13,890 --> 00:06:17,520
+Então, vamos voltar aqui e descomentar isso dessa maneira.
+
+77
+00:06:17,520 --> 00:06:23,730
+A única imagem que vai mostrar ou o único conteúdo que vai mostrar tem aquela opacidade de um.
+
+78
+00:06:24,130 --> 00:06:28,770
+OK, então é este primeiro aqui porque tem essa classe.
+
+79
+00:06:28,770 --> 00:06:33,570
+Se eu continuar, eu coloco show nesse aqui, vai mostrar aquela imagem ok?
+
+80
+00:06:33,570 --> 00:06:35,090
+E não precisa ser uma imagem.
+
+81
+00:06:35,100 --> 00:06:37,930
+Pode ser algum tipo de conteúdo, se você quiser.
+
+82
+00:06:38,190 --> 00:06:40,620
+Agora é estilo, a navegação.
+
+83
+00:06:40,620 --> 00:06:50,370
+Então o NAV, eu quero posicioná-lo para ser absoluto dentro do contêiner de telefone para que você possa ver que nós
+
+84
+00:06:50,370 --> 00:06:52,070
+pode vê-lo agora, mas não parece muito bom.
+
+85
+00:06:52,080 --> 00:06:59,700
+Vamos colocar no fundo para vermos do zero de baixo e do zero da esquerda, que vai
+
+86
+00:06:59,700 --> 00:07:00,690
+para movê-lo para baixo.
+
+87
+00:07:01,080 --> 00:07:07,800
+E então vamos definir uma margem no topo de cinco pixels negativos, o que só vai aumentar um pouco
+
+88
+00:07:07,800 --> 00:07:15,150
+bit e vamos definir a largura para que a largura aqui seja 100%.
+
+89
+00:07:15,730 --> 00:07:23,760
+OK, agora vamos estilizar, vamos estilizar o menu porque, você sabe, não queremos que isso fique na vertical.
+
+90
+00:07:23,760 --> 00:07:24,930
+Não queremos pontos de lista.
+
+91
+00:07:24,930 --> 00:07:26,550
+Queremos que passe por aqui.
+
+92
+00:07:26,820 --> 00:07:28,320
+Então vamos começar com os EUA.
+
+93
+00:07:28,380 --> 00:07:38,610
+Vamos dizer agora, bem, vou definir a cor de fundo para branco e vamos defini-la para exibir
+
+94
+00:07:38,610 --> 00:07:44,370
+flex para que todos os itens da lista sejam alinhados em uma linha como itens flexíveis.
+
+95
+00:07:44,700 --> 00:07:50,640
+Vou definir o tipo de estilo de lista como nenhum porque não quero nenhum marcador.
+
+96
+00:07:51,370 --> 00:07:56,490
+Vou definir o preenchimento e a margem para zero.
+
+97
+00:07:57,920 --> 00:08:05,750
+E a altura será de 60 pixels e você pode alterar isso, mas deve corresponder ao que você tiver
+
+98
+00:08:05,750 --> 00:08:11,890
+aqui neste valor de cálculo onde estamos tirando isso de 100 por cento da altura do telefone.
+
+99
+00:08:13,250 --> 00:08:15,110
+E acho que é tudo o que queremos fazer lá.
+
+100
+00:08:15,110 --> 00:08:18,680
+Agora para os itens da lista, digamos que os itens da lista NAV.
+
+101
+00:08:19,610 --> 00:08:23,110
+Vamos fazer uma cor de fundo na verdade.
+
+102
+00:08:23,120 --> 00:08:25,790
+Queremos a cor de sete.
+
+103
+00:08:26,780 --> 00:08:34,700
+Isso fará com que eles fiquem mais claros como um ponteiro de cursor e queremos que eles sejam todos espalhados da mesma forma
+
+104
+00:08:34,700 --> 00:08:35,060
+largura.
+
+105
+00:08:35,060 --> 00:08:37,010
+Portanto, fora do valor flexível de um.
+
+106
+00:08:37,700 --> 00:08:46,000
+E o preenchimento, vamos fazer 10 pixels em toda a volta e vamos colocar um texto no centro da linha.
+
+107
+00:08:46,010 --> 00:08:53,660
+Então mova o texto da esquerda para o centro e então vamos ver se o texto aqui embaixo é
+
+108
+00:08:53,660 --> 00:08:54,890
+envolto em um parágrafo.
+
+109
+00:08:54,890 --> 00:09:03,560
+Então diremos NAV Ally parágrafo ou nav realmente não importa, mas vamos selecionar o parágrafo
+
+110
+00:09:03,560 --> 00:09:06,740
+e vou apenas alterar o tamanho da fonte para 12 pixels.
+
+111
+00:09:06,740 --> 00:09:12,800
+Então faça um pouco menor e então vamos na margem para dois pixels, zero superior e inferior, esquerda
+
+112
+00:09:12,800 --> 00:09:13,250
+e certo.
+
+113
+00:09:14,240 --> 00:09:17,720
+Portanto, os parágrafos têm uma margem de 10 pixels por padrão.
+
+114
+00:09:17,720 --> 00:09:21,290
+Nós apenas reduzimos para dois quando, você sabe, tirou esse espaço.
+
+115
+00:09:21,650 --> 00:09:23,990
+E então qualquer um que esteja coberto fica ativo.
+
+116
+00:09:23,990 --> 00:09:25,280
+Eu quero mudar a cor.
+
+117
+00:09:25,290 --> 00:09:29,150
+Então, digamos que o NAV irá se aliar.
+
+118
+00:09:30,230 --> 00:09:32,450
+E também queremos NAV.
+
+119
+00:09:32,870 --> 00:09:35,720
+Você será aliado se tiver ativo
+
+120
+00:09:38,600 --> 00:09:39,200
+cor.
+
+121
+00:09:40,220 --> 00:09:46,080
+E vamos definir isso para hexadecimal oito E quatro para um D.
+
+122
+00:09:47,960 --> 00:09:56,870
+Então basicamente temos você sabe, temos a classe show na imagem e é isso que queremos
+
+123
+00:09:56,870 --> 00:09:57,430
+mostrar.
+
+124
+00:09:57,980 --> 00:10:04,940
+E então qualquer guia aqui que estiver ativa, também teremos uma classe de ativos como esta.
+
+125
+00:10:07,560 --> 00:10:15,180
+E agora você pode ver, já que eu coloquei essa classe de ativo, ele tem aquela cor roxa, então isso deve ser
+
+126
+00:10:15,180 --> 00:10:19,530
+para o sucesso no próximo vídeo, vamos em frente e fazer esta função onde podemos clicar em
+
+127
+00:10:19,530 --> 00:10:25,110
+um desses e ele mudará o conteúdo para, você sabe, qualquer guia em que estivermos clicando.

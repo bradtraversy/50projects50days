@@ -1,0 +1,395 @@
+﻿1
+00:00:00,180 --> 00:00:06,030
+OK, então este será provavelmente um dos projetos mais curtos, se não o mais curto, deste curso,
+
+2
+00:00:06,030 --> 00:00:08,370
+mas vamos fazer algumas coisas legais com sucesso.
+
+3
+00:00:08,790 --> 00:00:15,870
+Então, vamos mudar o título aqui em nosso inicializador de projeto para Connecticut, carregador de Connecticut, e estamos
+
+4
+00:00:15,870 --> 00:00:17,220
+vai ter em nosso HTML.
+
+5
+00:00:17,220 --> 00:00:22,320
+Aqui está uma classe de div cinética com uma classe de like e pronto.
+
+6
+00:00:22,980 --> 00:00:30,780
+Então, em nossa folha de estilo aqui, não precisamos trazer uma fonte porque não temos texto para que possamos nos livrar
+
+7
+00:00:30,780 --> 00:00:32,580
+desta família de fontes aqui.
+
+8
+00:00:32,580 --> 00:00:34,500
+Vou adicionar uma cor de fundo.
+
+9
+00:00:35,070 --> 00:00:43,650
+Digamos que a cor de fundo e vamos definir isso para o valor hexadecimal de dois três três cinco
+
+10
+00:00:43,650 --> 00:00:46,500
+zero, o que nos dará esse fundo azul.
+
+11
+00:00:46,980 --> 00:00:50,460
+E queremos mostrar a direção correta do Fleck.
+
+12
+00:00:50,490 --> 00:00:55,880
+Vou me livrar da direção da coluna e justificar e alinhar ao centro.
+
+13
+00:00:57,090 --> 00:01:04,260
+E então vamos fazer a aula de cinética, que vou posicionar isso.
+
+14
+00:01:05,370 --> 00:01:11,790
+Eu quero posicionar este relativo porque na verdade vamos usar os pseudo seletores antes e depois
+
+15
+00:01:11,790 --> 00:01:16,150
+para criar nossos triângulos e queremos posicioná-los absolutos dentro desta classe.
+
+16
+00:01:16,170 --> 00:01:17,730
+Então isso tem que ser relativo.
+
+17
+00:01:18,300 --> 00:01:23,100
+Quando você posiciona algo absoluto e quer dentro de um container específico como este, o
+
+18
+00:01:23,100 --> 00:01:30,780
+container precisa ser relativo e então vamos definir a altura e a largura para 80 pixels.
+
+19
+00:01:32,530 --> 00:01:35,990
+OK, isso é tudo que precisamos para a aula de cinética.
+
+20
+00:01:36,000 --> 00:01:39,150
+Agora queremos fazer o pseudo seletor antes e depois.
+
+21
+00:01:39,170 --> 00:01:48,900
+Então vamos dizer carvão cinético e carvão e depois e também cólon cinético antes.
+
+22
+00:01:50,040 --> 00:01:53,120
+E estamos usando ambos porque teremos dois triângulos.
+
+23
+00:01:53,550 --> 00:02:00,390
+Então, quando você usa antes e depois ou antes ou depois, você precisa adicionar essa propriedade de conteúdo, que
+
+24
+00:02:00,390 --> 00:02:02,070
+vamos apenas definir para uma string vazia.
+
+25
+00:02:02,070 --> 00:02:04,020
+Na verdade, não estamos inserindo nada aqui.
+
+26
+00:02:04,380 --> 00:02:10,760
+E então queremos que isso seja posicionado de forma absoluta dentro desse contêiner relativo.
+
+27
+00:02:11,430 --> 00:02:16,920
+E então, para a posição, faremos zero à esquerda.
+
+28
+00:02:17,460 --> 00:02:19,590
+E queremos criar um triângulo agora.
+
+29
+00:02:19,590 --> 00:02:27,240
+E CSFs, o que você pode fazer é criar basicamente uma caixa com altura e largura zero, que
+
+30
+00:02:27,240 --> 00:02:27,900
+definir aqui.
+
+31
+00:02:27,900 --> 00:02:33,390
+E então você pode definir uma borda e definir o que quiser.
+
+32
+00:02:33,390 --> 00:02:35,200
+Quanto maior a largura, maior o triângulo.
+
+33
+00:02:35,200 --> 00:02:39,570
+Vamos fazer 50 pixels sólidos e queremos torná-lo transparente.
+
+34
+00:02:39,690 --> 00:02:41,970
+OK, então não poderemos ver nada ainda.
+
+35
+00:02:42,390 --> 00:02:44,190
+Mas o que vamos fazer está no fundo.
+
+36
+00:02:44,190 --> 00:02:50,040
+Então, vamos dizer a cor do traço inferior da borda e vamos definir isso para branco.
+
+37
+00:02:50,630 --> 00:02:54,720
+Assim que faço isso, vejo que obtemos um triângulo porque essencialmente temos nosso limite inferior, que
+
+38
+00:02:54,720 --> 00:02:59,100
+é branco, mas o esquerdo, o esquerdo, o direito e o de cima são transparentes.
+
+39
+00:02:59,100 --> 00:03:01,010
+Eles são eles são apenas transparentes.
+
+40
+00:03:01,590 --> 00:03:08,490
+Então, se eu quisesse que isso ficasse virado para baixo, eu poderia definir isso para a cor superior branca ou eu poderia definir a parte superior e inferior
+
+41
+00:03:09,000 --> 00:03:11,790
+para branco e dar-lhe um efeito de ampulheta.
+
+42
+00:03:12,120 --> 00:03:15,630
+Então é apenas algo legal que você pode fazer com acesso.
+
+43
+00:03:15,630 --> 00:03:17,250
+Eu só quero que isso seja o fundo, no entanto.
+
+44
+00:03:17,730 --> 00:03:18,150
+Tudo bem.
+
+45
+00:03:18,150 --> 00:03:23,190
+E há dois triângulos aqui em ambos no antes e depois.
+
+46
+00:03:23,190 --> 00:03:25,080
+Eles estão apenas posicionados no mesmo lugar.
+
+47
+00:03:25,080 --> 00:03:27,540
+Então, podemos, parece que há um.
+
+48
+00:03:28,590 --> 00:03:33,570
+Agora queremos adicionar uma animação, uma animação de rotação.
+
+49
+00:03:34,050 --> 00:03:35,640
+Então vamos definir.
+
+50
+00:03:36,690 --> 00:03:42,870
+Na verdade, antes de fazermos isso, vamos pegar apenas o antes, porque os estilos de bovver para ambos antes
+
+51
+00:03:42,870 --> 00:03:49,410
+e depois, queremos girar antes para que fique aqui deste lado para que possamos girar com o
+
+52
+00:03:49,410 --> 00:03:50,910
+transformar propriedade.
+
+53
+00:03:51,360 --> 00:03:54,030
+Então, digamos transformar e depois girar.
+
+54
+00:03:54,420 --> 00:03:57,240
+E eu quero girar isso 90 graus.
+
+55
+00:03:57,990 --> 00:04:00,980
+E esse é apenas o anterior, que agora está aqui.
+
+56
+00:04:01,440 --> 00:04:04,050
+OK, então temos os triângulos antes e depois.
+
+57
+00:04:04,350 --> 00:04:07,230
+Agora para a animação, vamos usar keyframes.
+
+58
+00:04:07,230 --> 00:04:18,360
+Então, digamos que os quadros-chave chamarão isso de girar a e, para o acho que os prazos aqui, dirão zero
+
+59
+00:04:18,360 --> 00:04:20,290
+por cento, 25 por cento.
+
+60
+00:04:20,880 --> 00:04:22,200
+Eu só quero mudar.
+
+61
+00:04:22,200 --> 00:04:29,460
+Eu quero adicionar a transformação aqui para girar e definir isso como zero.
+
+62
+00:04:29,820 --> 00:04:33,000
+Então vai começar zero zero graus.
+
+63
+00:04:33,430 --> 00:04:33,750
+Tudo bem.
+
+64
+00:04:33,750 --> 00:04:34,680
+Então podemos começar por aí.
+
+65
+00:04:34,680 --> 00:04:46,260
+E então para 50 por cento e 75 por cento, vamos definir a transformação gira e vamos definir isso
+
+66
+00:04:46,260 --> 00:04:48,390
+a 180 graus.
+
+67
+00:04:49,380 --> 00:04:53,910
+E então para cem por cento são até 100 por cento.
+
+68
+00:04:53,910 --> 00:04:56,520
+Nós vamos rodar todo o caminho.
+
+69
+00:04:56,940 --> 00:04:57,750
+Nós não queremos fazer isso.
+
+70
+00:04:57,750 --> 00:05:04,400
+Queremos transformar e depois girar.
+
+71
+00:05:04,410 --> 00:05:07,800
+E isso vai ser 360 graus.
+
+72
+00:05:10,170 --> 00:05:12,570
+Tudo bem, vamos colocar nossos pontos e vírgulas aqui.
+
+73
+00:05:15,530 --> 00:05:23,570
+Tudo bem, então eu quero aplicar isso aqui no antes e depois, então aplicamos uma animação de quadro-chave
+
+74
+00:05:23,570 --> 00:05:31,490
+com a propriedade de animação e digamos girar a queremos que a duração seja de dois segundos.
+
+75
+00:05:32,090 --> 00:05:34,510
+Vai ser de forma linear.
+
+76
+00:05:34,520 --> 00:05:35,530
+Vai ser infinito.
+
+77
+00:05:35,540 --> 00:05:40,180
+Então vai continuar e então um atraso de zero vírgula cinco segundos.
+
+78
+00:05:41,630 --> 00:05:43,560
+Então é isso que vai fazer por enquanto.
+
+79
+00:05:44,060 --> 00:05:48,440
+E também queremos adicionar uma rotação diferente no antes.
+
+80
+00:05:48,830 --> 00:05:51,080
+Então vou copiar tudo isso aqui.
+
+81
+00:05:55,600 --> 00:06:01,270
+OK, e basicamente o que está acontecendo é, você sabe, começa em zero quatro, gire A e então vai
+
+82
+00:06:01,270 --> 00:06:05,820
+para 180, então vai daqui até aqui e depois 360.
+
+83
+00:06:07,060 --> 00:06:08,910
+Então apenas faz um círculo completo.
+
+84
+00:06:09,400 --> 00:06:16,330
+E então, para este, isso será girar B e eu só quero adicionar valores diferentes até onde
+
+85
+00:06:16,330 --> 00:06:18,940
+como, você sabe, até onde estamos girando.
+
+86
+00:06:18,940 --> 00:06:28,660
+Então vamos fazer 90 graus para o primeiro e então este vai ser para 70 graus e então este
+
+87
+00:06:28,660 --> 00:06:32,380
+um vai ser 450 graus.
+
+88
+00:06:32,620 --> 00:06:37,330
+E queremos aplicar girar a isso antes do seletor.
+
+89
+00:06:37,780 --> 00:06:50,160
+Então vamos dizer animação e queremos aplicar girar B e torná-lo dois segundos, linear e infinito.
+
+90
+00:06:50,890 --> 00:06:51,320
+Tudo bem.
+
+91
+00:06:51,340 --> 00:06:57,460
+E você pode ter que recarregar porque já que estamos usando o servidor ao vivo e deve ficar assim.
+
+92
+00:06:58,000 --> 00:07:04,600
+Então, basicamente, um triângulo segue o outro e você pode experimentar se quiser, mude o
+
+93
+00:07:04,600 --> 00:07:06,310
+rotações e coisas assim.
+
+94
+00:07:06,670 --> 00:07:08,770
+Mas isso vai ser tudo para este projeto.
+
+95
+00:07:08,770 --> 00:07:13,080
+Eu sei que este foi curto, mas você pode usar isso como um carregador para o seu site ou qualquer outra coisa.
+
+96
+00:07:13,090 --> 00:07:18,610
+Eu acho muito legal e te dá um pouco de experiência com algumas animações e como
+
+97
+00:07:18,610 --> 00:07:22,090
+para criar triângulos e sextas ou setas, como quiser chamá-los.
+
+98
+00:07:22,510 --> 00:07:23,240
+Tudo bem, é isso.
+
+99
+00:07:23,260 --> 00:07:24,880
+Vamos para o próximo projeto.

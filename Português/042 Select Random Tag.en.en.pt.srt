@@ -1,0 +1,359 @@
+﻿1
+00:00:00,060 --> 00:00:03,850
+OK, então podemos criar nossas tags aqui com vírgulas.
+
+2
+00:00:03,870 --> 00:00:06,590
+Agora queremos a funcionalidade de seleção aleatória.
+
+3
+00:00:06,600 --> 00:00:10,730
+Então, em nosso ouvinte de eventos, vamos verificar se apertamos enter.
+
+4
+00:00:11,310 --> 00:00:18,330
+Então diremos se e então neste objeto de evento, temos uma propriedade chave e vamos dizer se o
+
+5
+00:00:18,330 --> 00:00:20,940
+chave é igual a entrar.
+
+6
+00:00:21,780 --> 00:00:22,200
+Tudo bem.
+
+7
+00:00:22,210 --> 00:00:29,070
+Agora, se apertarmos enter, vamos chamar uma função chamada Random Select, que não criamos
+
+8
+00:00:29,070 --> 00:00:29,320
+ainda.
+
+9
+00:00:29,340 --> 00:00:31,230
+Eu também quero limpar a entrada.
+
+10
+00:00:31,560 --> 00:00:36,650
+Então, na verdade, vamos esperar alguns milissegundos antes de fazer isso.
+
+11
+00:00:36,660 --> 00:00:43,470
+Então, no set, o tempo passará em uma função de seta e queremos apenas esperar 10 milissegundos e depois
+
+12
+00:00:43,470 --> 00:00:51,210
+limpe o valor de entrada com e dot target dot value, e vamos definir isso como nada.
+
+13
+00:00:51,840 --> 00:00:52,290
+Tudo bem.
+
+14
+00:00:52,290 --> 00:01:02,220
+Então vamos criar random select aqui embaixo, function, random, select, e por enquanto vamos apenas consolar
+
+15
+00:01:02,220 --> 00:01:03,450
+registre um, dois, três.
+
+16
+00:01:03,460 --> 00:01:09,840
+E se eu abrir meu console e você sabe, eu posso digitar coisas aqui e depois entrar, então você vê
+
+17
+00:01:09,840 --> 00:01:11,880
+ele dispara essa função.
+
+18
+00:01:12,000 --> 00:01:20,460
+E também esclarece isso aqui agora na seleção aleatória, vamos seguir em frente e definir um valor de
+
+19
+00:01:20,460 --> 00:01:22,770
+vezes e vou definir isso para 30.
+
+20
+00:01:22,780 --> 00:01:28,080
+E o que isso representa é o número de vezes que vai destacar cada um antes de parar.
+
+21
+00:01:28,110 --> 00:01:32,730
+Então, você sabe, um, dois, três, quatro, e vai para trinta ou o que você colocar isso.
+
+22
+00:01:33,780 --> 00:01:39,060
+E então vamos ter que definir um intervalo, porque isso vai se repetir
+
+23
+00:01:39,060 --> 00:01:43,910
+esse destaque de cada um, o destaque e a retirada de destaque de cada um.
+
+24
+00:01:44,220 --> 00:01:51,890
+Então vamos criar uma variável chamada interval e queremos usar a função set interval.
+
+25
+00:01:52,620 --> 00:01:59,910
+Então, por enquanto, queremos que isso aconteça, digamos, a cada 100 milissegundos.
+
+26
+00:02:00,330 --> 00:02:04,890
+E o que queremos que aconteça é que queremos escolher uma tag aleatória.
+
+27
+00:02:05,280 --> 00:02:13,890
+Então, digamos que seja uma tag aleatória e defina isso para uma função chamada pick random tag.
+
+28
+00:02:15,040 --> 00:02:25,960
+E antes de seguirmos em frente, vamos criá-lo, então é uma tag aleatória de escolha de função e queremos levar todos
+
+29
+00:02:25,960 --> 00:02:33,160
+as tags para que possamos usar document, dot, query, selector, all, e queremos obter todos os elementos
+
+30
+00:02:33,160 --> 00:02:37,540
+da classe de tag, que seriam todos esses, todos esses, todos os spans.
+
+31
+00:02:38,110 --> 00:02:41,260
+E então para obter um aleatório, vamos retornar.
+
+32
+00:02:43,380 --> 00:02:50,820
+E vamos retornar tags, então tags quando usamos o seletor de consulta all, é uma lista de nós que trazemos
+
+33
+00:02:50,820 --> 00:02:51,080
+dentro.
+
+34
+00:02:51,300 --> 00:02:56,070
+Então, tudo isso será colocado na lista de nós, que é semelhante a um array com um índice.
+
+35
+00:02:56,400 --> 00:03:03,840
+Então, o índice será aleatório e usaremos math dot floor para arredondar para baixo o math dot random, o que
+
+36
+00:03:03,840 --> 00:03:05,310
+nos dará um decimal aleatório.
+
+37
+00:03:05,340 --> 00:03:13,740
+Nós só queremos multiplicar isso pelo comprimento do array de tags ou não do array, mas sem listas, que é
+
+38
+00:03:13,740 --> 00:03:14,850
+semelhante a uma matriz.
+
+39
+00:03:15,300 --> 00:03:17,220
+Isso nos dará uma tag aleatória.
+
+40
+00:03:18,570 --> 00:03:22,750
+Também vou criar mais duas funções aqui embaixo só para destacar e destacar.
+
+41
+00:03:23,010 --> 00:03:31,710
+Chamaremos essa tag de destaque e ela incluirá um elemento de tag específico e, em seguida, vamos
+
+42
+00:03:31,710 --> 00:03:39,060
+para pegar esse elemento de tag e vamos apenas adicionar um anúncio fora da classe com ponto sem classe e estamos
+
+43
+00:03:39,060 --> 00:03:44,250
+vamos adicionar a classe de destaque e, em seguida, queremos um para remover os destaques.
+
+44
+00:03:44,280 --> 00:03:50,490
+Então, vamos chamar isso de marca de destaque e vamos apenas remover em vez de adicionar.
+
+45
+00:03:53,240 --> 00:03:53,520
+Base.
+
+46
+00:03:53,670 --> 00:04:00,590
+Agora de volta para aqui, então temos este intervalo, vai disparar a cada 100 milissegundos, é
+
+47
+00:04:00,590 --> 00:04:05,180
+vamos escolher uma tag aleatória e, em seguida, queremos destacar essa tag aleatória.
+
+48
+00:04:05,360 --> 00:04:13,060
+Então, destaque a passagem da tag em nossa tag aleatória e, em seguida, queremos destacar.
+
+49
+00:04:13,520 --> 00:04:19,430
+Então eu vou ter um tempo definido aqui, que vai levar em uma função e nós vamos
+
+50
+00:04:19,430 --> 00:04:24,090
+esperar 100 milissegundos aqui para destacar.
+
+51
+00:04:25,130 --> 00:04:31,310
+OK, então aqui vamos falar sobre a tag de destaque e queremos passar nossas tags aleatórias.
+
+52
+00:04:31,330 --> 00:04:39,500
+Com isso, se eu criasse minhas tags e pressionasse enter, você pode ver o que está acontecendo a cada 100
+
+53
+00:04:39,500 --> 00:04:40,270
+milissegundos.
+
+54
+00:04:40,280 --> 00:04:47,360
+O destaque é escolher uma tag aleatória para começar e, em seguida, destacar uma tag aleatória e, em seguida, 100
+
+55
+00:04:47,360 --> 00:04:49,360
+milissegundos depois de estar em destaque.
+
+56
+00:04:49,370 --> 00:04:51,860
+Então isso vai continuar para sempre agora.
+
+57
+00:04:52,790 --> 00:04:53,170
+Tudo bem.
+
+58
+00:04:53,210 --> 00:04:54,980
+Eu só vou recarregar para parar com isso.
+
+59
+00:04:55,610 --> 00:04:58,730
+E agora o que podemos fazer é afundar.
+
+60
+00:05:02,300 --> 00:05:09,350
+Então, ainda queremos estar dentro de nossa seleção aleatória, mas queremos descer aqui e vou
+
+61
+00:05:09,350 --> 00:05:19,490
+ter um tempo limite definido com uma função e quero que isso seja executado após o que o Times é.
+
+62
+00:05:19,820 --> 00:05:23,270
+Eu quero multiplicar isso por 100 milissegundos.
+
+63
+00:05:23,600 --> 00:05:29,630
+Então, os 30 aqui, multiplique isso por qualquer que seja o tempo, que é 100 milissegundos.
+
+64
+00:05:30,680 --> 00:05:37,910
+Ok, poderíamos até colocar isso em uma variável separada se quiséssemos, mas de qualquer maneira,
+
+65
+00:05:37,910 --> 00:05:39,710
+queremos limpar nosso indivíduo.
+
+66
+00:05:39,720 --> 00:05:41,690
+Então você tem um intervalo que corre.
+
+67
+00:05:41,870 --> 00:05:45,150
+Existe uma função chamada intervalo claro para pará-lo.
+
+68
+00:05:45,170 --> 00:05:47,030
+Então queremos passar no nosso intervalo.
+
+69
+00:05:47,180 --> 00:05:49,970
+Então queremos escolher uma tag aleatória para parar.
+
+70
+00:05:49,980 --> 00:05:52,220
+Então vamos criar vamos fazer um tempo definido.
+
+71
+00:05:55,010 --> 00:06:05,170
+E isso será de 100 milissegundos e dentro do tempo limite definido, quero obter uma tag aleatória.
+
+72
+00:06:05,180 --> 00:06:13,790
+Então, mais uma vez, vamos criar uma tag aleatória e configurá-la para escolher uma tag aleatória e, em seguida, queremos destacar
+
+73
+00:06:13,790 --> 00:06:13,930
+isto.
+
+74
+00:06:14,090 --> 00:06:19,460
+Então é uma marca de destaque e passa nossa marca aleatória.
+
+75
+00:06:20,690 --> 00:06:28,160
+OK, então isso aqui está causando isso, você sabe, mudando para cada um, destacando e destacando
+
+76
+00:06:28,160 --> 00:06:29,540
+depois de um certo tempo.
+
+77
+00:06:29,690 --> 00:06:35,330
+E então isso cuida de pará-lo e apenas escolher uma tag aleatória para pousar e destacar.
+
+78
+00:06:36,080 --> 00:06:37,320
+Espero que isso faça sentido.
+
+79
+00:06:37,850 --> 00:06:40,380
+Então vamos fazer um, dois, três, quatro, cinco.
+
+80
+00:06:40,640 --> 00:06:43,440
+Estes podem ser números ou strings ou o que você quiser colocar aqui.
+
+81
+00:06:43,460 --> 00:06:48,160
+Vamos fazer até dez e então eu vou apertar enter.
+
+82
+00:06:49,730 --> 00:06:57,260
+Então ele deve rodar 30 vezes e então vai parar em uma tag aleatória ou neste caso num número.
+
+83
+00:06:57,260 --> 00:06:59,060
+Mas claro que pode ser qualquer coisa.
+
+84
+00:06:59,930 --> 00:07:01,190
+E vamos tentar isso de novo.
+
+85
+00:07:01,190 --> 00:07:05,390
+A mesma coisa que fizemos de um a dez e apertamos enter.
+
+86
+00:07:05,390 --> 00:07:07,220
+Então caiu em três da última vez.
+
+87
+00:07:08,180 --> 00:07:09,320
+Agora cai em um.
+
+88
+00:07:10,670 --> 00:07:19,160
+Tudo bem, então você tem escolha, uma escolha para escolha, três, entre, e é apenas um pouco legal
+
+89
+00:07:19,160 --> 00:07:21,650
+aplicativo para escolher uma escolha aleatória.
+
+90
+00:07:23,090 --> 00:07:24,040
+Tudo bem, então é isso.

@@ -1,0 +1,43 @@
+1
+00:00:00,180 --> 00:00:05,640
+OK, so this is going to be one of the shortest projects in this course, but it's a cool little widget
+
+2
+00:00:05,640 --> 00:00:09,050
+that you can add to your website or to your application.
+
+3
+00:00:09,060 --> 00:00:10,080
+It's a hidden search.
+
+4
+00:00:10,320 --> 00:00:14,790
+And we just have this button here with a little search icon from font.
+
+5
+00:00:14,790 --> 00:00:15,330
+Awesome.
+
+6
+00:00:15,480 --> 00:00:22,230
+And as soon as I click it, if I was offered JavaScript event, that activates a specific class where
+
+7
+00:00:22,230 --> 00:00:29,280
+we add a transition for the width of this input to get wider and the button to move over using a transform
+
+8
+00:00:29,280 --> 00:00:32,970
+translate X, and if I click it again, it's going to shrink back up.
+
+9
+00:00:33,210 --> 00:00:39,690
+OK, so we'll be using CSFs transitions along with just a little bit of JavaScript to add the event
+
+10
+00:00:39,870 --> 00:00:42,060
+and toggle the class.
+
+11
+00:00:42,120 --> 00:00:43,460
+All right, so let's get started.

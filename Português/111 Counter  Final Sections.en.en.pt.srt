@@ -1,0 +1,495 @@
+﻿1
+00:00:00,090 --> 00:00:04,830
+Tudo bem, então vamos começar aqui, estou com o projeto final aberto e você vai ver que tem
+
+2
+00:00:04,830 --> 00:00:07,920
+basicamente duas telas ou dois estados.
+
+3
+00:00:07,920 --> 00:00:10,680
+Temos a contagem regressiva e depois temos esta mensagem final.
+
+4
+00:00:10,950 --> 00:00:16,500
+Então vamos começar com o HTML, criando essas duas seções e então vamos em frente e
+
+5
+00:00:16,500 --> 00:00:17,730
+vamos começar a estilizá-lo.
+
+6
+00:00:18,030 --> 00:00:24,810
+Então, eu tenho meu clichê inicial do projeto aberto aqui e vou mudar o título para,
+
+7
+00:00:24,810 --> 00:00:31,100
+digamos, contagem regressiva animada e se livrar desse H1.
+
+8
+00:00:31,500 --> 00:00:33,660
+Então, basicamente, como eu disse, temos duas seções.
+
+9
+00:00:33,660 --> 00:00:35,000
+Temos o contador.
+
+10
+00:00:35,400 --> 00:00:39,720
+Então, esses serão os números e esse será o título que diz: prepare-se.
+
+11
+00:00:39,960 --> 00:00:44,880
+E então, sob esse div de fechamento, teremos uma aula de final, que vai
+
+12
+00:00:44,880 --> 00:00:48,700
+para ser isso, você sabe, o botão, o replay e assim por diante.
+
+13
+00:00:48,990 --> 00:00:56,010
+Então, dentro do contador, queremos ter uma classe chamada Nums, OK, Nums.
+
+14
+00:00:56,010 --> 00:00:59,220
+Então, isso vai envolver os números que estarão no Span.
+
+15
+00:00:59,580 --> 00:01:01,470
+Então serão quatro ao todo.
+
+16
+00:01:01,470 --> 00:01:09,240
+Então vamos criar quatro spans com os números, três a um e zero.
+
+17
+00:01:09,930 --> 00:01:14,190
+E o que queremos fazer aqui, já que queremos apenas um número por vez, teremos
+
+18
+00:01:14,190 --> 00:01:16,560
+uma classe de N e qualquer outra coisa.
+
+19
+00:01:16,560 --> 00:01:21,720
+Em última análise, qualquer número que tenha essa classe será o número exibido,
+
+20
+00:01:22,110 --> 00:01:28,290
+OK, agora sob esses intervalos e, em seguida, sob este div, vamos ter em cada quatro e estamos
+
+21
+00:01:28,290 --> 00:01:29,970
+só vou dizer prepare-se.
+
+22
+00:01:30,790 --> 00:01:39,330
+E então aqui embaixo na aula final aqui, esse div que vamos colocar, cada um diz vá e nós estamos
+
+23
+00:01:39,330 --> 00:01:41,730
+vai ter um botão para reproduzi-lo.
+
+24
+00:01:41,730 --> 00:01:47,280
+Então, vou dar uma ideia de replay para que possamos agarrá-lo no JavaScript mais tarde e
+
+25
+00:01:47,280 --> 00:01:48,270
+apenas diga repetição.
+
+26
+00:01:48,690 --> 00:01:49,080
+Tudo bem.
+
+27
+00:01:49,090 --> 00:01:49,830
+Então deve ser isso.
+
+28
+00:01:49,830 --> 00:01:56,700
+Agora podemos ver as duas seções, o contador e a final agora, mas vamos mostrar apenas uma em
+
+29
+00:01:56,700 --> 00:01:59,070
+uma vez e faremos isso dentro do sucesso.
+
+30
+00:01:59,370 --> 00:02:01,280
+Então vamos pular para o estilo.
+
+31
+00:02:02,190 --> 00:02:10,350
+Então, no que diz respeito ao estilo básico aqui, uma coisa que vou fazer é me livrar do flex.
+
+32
+00:02:10,860 --> 00:02:14,460
+Vamos ter tudo centrado, mas vamos fazer de uma forma diferente.
+
+33
+00:02:14,460 --> 00:02:18,900
+Vamos usar Tranz, Transform, Translate para que possamos nos livrar dessas linhas aqui.
+
+34
+00:02:19,260 --> 00:02:22,950
+E então a única outra coisa que eu quero para o corpo é zerar a margem.
+
+35
+00:02:23,370 --> 00:02:25,830
+OK, agora tudo vai ser empurrado para o lado.
+
+36
+00:02:26,310 --> 00:02:29,070
+Então vamos começar aqui com o contador.
+
+37
+00:02:30,770 --> 00:02:35,690
+Então, para o contador, vou definir a posição como fixa.
+
+38
+00:02:35,850 --> 00:02:40,730
+OK, então esta é outra maneira de centralizar as coisas quando você define isso como fixo, o que apenas define como fixo
+
+39
+00:02:40,730 --> 00:02:46,430
+dentro da janela do navegador e podemos definir o posicionamento para o topo.
+
+40
+00:02:46,580 --> 00:02:52,100
+Vou configurá-lo para 50% do topo e então digamos que queremos que ele vá para 50% do
+
+41
+00:02:52,100 --> 00:02:52,640
+deixei.
+
+42
+00:02:53,180 --> 00:02:54,400
+Então isso o coloca no meio.
+
+43
+00:02:54,410 --> 00:02:59,840
+No entanto, quando você faz isso, ele coloca a borda, a borda esquerda no topo, no meio.
+
+44
+00:03:00,230 --> 00:03:01,280
+Então começa aqui.
+
+45
+00:03:01,280 --> 00:03:07,190
+Queremos que essa coisa toda seja deslocada para o que você sabe, então o meio disso está em
+
+46
+00:03:07,190 --> 00:03:08,350
+meio da tela.
+
+47
+00:03:08,630 --> 00:03:13,480
+Então, para fazer isso, usamos transform e então podemos usar translate.
+
+48
+00:03:13,670 --> 00:03:19,940
+Então, traduza sem X ou Y, podemos fazer os valores X e Y aqui.
+
+49
+00:03:19,940 --> 00:03:22,850
+E para ambos, queremos fazer 50% negativos.
+
+50
+00:03:23,600 --> 00:03:29,810
+E você verá que, uma vez que eu salve, ele é deslocado para cima e para cima, para que fique diretamente no meio.
+
+51
+00:03:31,250 --> 00:03:35,060
+E eu só quero também enviar uma linha para o centro.
+
+52
+00:03:36,900 --> 00:03:43,200
+OK, agora temos isso bem, então a próxima coisa que faremos é posicionar isso.
+
+53
+00:03:43,210 --> 00:03:49,920
+Então esta é a aula final, então vamos em frente e dizer final e vamos fazer a mesma coisa.
+
+54
+00:03:49,930 --> 00:03:51,420
+Na verdade, vou copiar.
+
+55
+00:03:53,210 --> 00:03:53,670
+Vamos ver.
+
+56
+00:03:53,670 --> 00:03:58,820
+Vamos copiar tudo isso, OK?
+
+57
+00:03:58,830 --> 00:04:03,120
+Isso vai basicamente posicioná-lo no mesmo lugar que o balcão.
+
+58
+00:04:03,840 --> 00:04:06,530
+Agora, como eu disse, só queremos mostrar um de cada vez.
+
+59
+00:04:06,540 --> 00:04:09,330
+Então, a maneira que isso vai funcionar é o contador.
+
+60
+00:04:09,330 --> 00:04:15,750
+A div que tem a classe de contador também terá às vezes a classe de ocultar para quando quisermos
+
+61
+00:04:15,750 --> 00:04:16,250
+esconda isso.
+
+62
+00:04:16,710 --> 00:04:23,580
+Então vamos em frente e adicionar o estilo para a classe Hyde e a maneira que eu quero isso para basicamente
+
+63
+00:04:23,580 --> 00:04:26,000
+escondê-lo é reduzi-lo a zero.
+
+64
+00:04:26,310 --> 00:04:27,810
+Então, e eu realmente vou te mostrar.
+
+65
+00:04:27,820 --> 00:04:30,960
+Então, assim que essa contagem terminar, observe o que acontece.
+
+66
+00:04:32,810 --> 00:04:39,580
+Veja como isso diminui e diminui e depois aumenta, então meio que vem do nada.
+
+67
+00:04:39,860 --> 00:04:41,160
+Então é isso que eu quero fazer.
+
+68
+00:04:41,180 --> 00:04:44,420
+E a maneira que vou fazer é deste lado.
+
+69
+00:04:44,750 --> 00:04:52,580
+Vamos definir transform e queremos apenas posicioná-lo corretamente novamente com translate e depois
+
+70
+00:04:52,580 --> 00:04:55,250
+negativo de 50 por cento no X e no Y.
+
+71
+00:04:55,670 --> 00:04:59,760
+Mas também queremos adicionar uma escala para que possamos usar várias transformações aqui.
+
+72
+00:04:59,780 --> 00:05:07,580
+Então, além de traduzir, podemos usar a escala e queremos reduzi-la de zero a nada e
+
+73
+00:05:07,580 --> 00:05:09,520
+quer que ele tenha uma animação.
+
+74
+00:05:09,860 --> 00:05:17,210
+Então chame essa animação de ocultar e veremos dois segundos para a duração e depois abrandar.
+
+75
+00:05:18,020 --> 00:05:19,520
+Vamos facilitar.
+
+76
+00:05:21,700 --> 00:05:24,320
+Para isso e eu coloco meu ponto e vírgula aqui.
+
+77
+00:05:25,960 --> 00:05:33,460
+Então agora se eu aplicar a classe Hyde aqui no div com a classe counter, eu posso ver que isso
+
+78
+00:05:33,700 --> 00:05:34,600
+aquele longe.
+
+79
+00:05:36,890 --> 00:05:45,290
+Agora, para a animação, vamos usar um quadro-chave, então é um quadro-chave e chamamos de hyd,
+
+80
+00:05:46,290 --> 00:05:51,440
+chame do que quiser, apenas certifique-se de que combina com isso e faremos algo acontecer
+
+81
+00:05:51,440 --> 00:05:52,370
+em zero por cento.
+
+82
+00:05:52,400 --> 00:05:58,520
+Então, basicamente, quando começa e quando termina em 100 por cento, então em zero por cento, estamos
+
+83
+00:05:58,520 --> 00:06:01,180
+vai apenas pegar essa transformação.
+
+84
+00:06:02,060 --> 00:06:04,080
+Então esse é o estado padrão, certo.
+
+85
+00:06:04,130 --> 00:06:12,830
+Então escala zero e então me desculpe, escala um é o estado padrão e então queremos que ele se esconda.
+
+86
+00:06:13,100 --> 00:06:15,250
+Então, queremos defini-lo para escala zero.
+
+87
+00:06:15,980 --> 00:06:17,840
+Então, estamos apenas dando uma suave.
+
+88
+00:06:17,840 --> 00:06:29,810
+Você pode ver aqui como ele meio que desvanece e desaparece, mas vai agora para isso para esta final.
+
+89
+00:06:30,440 --> 00:06:33,520
+Vai funcionar de maneira oposta com contador.
+
+90
+00:06:33,740 --> 00:06:35,240
+Ele será exibido por padrão.
+
+91
+00:06:35,240 --> 00:06:40,670
+E então podemos adicionar dinamicamente essa classe hyd, que vou remover agora com final.
+
+92
+00:06:40,670 --> 00:06:43,580
+Na verdade, vamos tê-lo não mostrado por padrão.
+
+93
+00:06:43,580 --> 00:06:46,680
+E então quando aplicarmos uma classe de show que mostraremos.
+
+94
+00:06:46,970 --> 00:06:52,420
+Então, vou definir a escala por padrão para zero, o que fará com que ela desapareça.
+
+95
+00:06:52,670 --> 00:06:58,460
+E então o que vamos fazer é ter uma aula final de show nesse mesmo div.
+
+96
+00:06:59,660 --> 00:07:03,050
+E vou copiar o que tenho aqui no esconderijo.
+
+97
+00:07:04,760 --> 00:07:13,070
+E em vez do quadrado começando na escala zero, queremos que seja a escala um porque estamos
+
+98
+00:07:13,070 --> 00:07:13,760
+mostrando isso.
+
+99
+00:07:14,180 --> 00:07:14,620
+Tudo bem.
+
+100
+00:07:14,630 --> 00:07:20,450
+Vamos chamar uma animação aqui também para mostrá-la porque queremos o mesmo tipo de efeito,
+
+101
+00:07:20,450 --> 00:07:22,210
+aquele efeito de escala animado.
+
+102
+00:07:22,220 --> 00:07:23,390
+Então vamos criar
+
+103
+00:07:25,880 --> 00:07:27,620
+mostram os quadros-chave.
+
+104
+00:07:29,950 --> 00:07:37,090
+Então, na verdade, vou copiá-los para zero por cento e 100 por cento, mas também adicionaremos
+
+105
+00:07:37,720 --> 00:07:41,800
+em 30 por cento, eu só quero aumentar um pouco para que fique assim.
+
+106
+00:07:41,800 --> 00:07:45,310
+Você sabe, ele aumentará apenas por um segundo e depois diminuirá novamente.
+
+107
+00:07:45,730 --> 00:07:47,530
+Então vamos pegar isso.
+
+108
+00:07:48,610 --> 00:07:55,200
+Então, para zero por cento, queremos que seja zero, OK, porque lembre-se, estamos mostrando isso.
+
+109
+00:07:55,210 --> 00:07:59,520
+Então estamos começando com ele escondido e então vamos escalá-lo até um ponto quatro.
+
+110
+00:07:59,860 --> 00:08:02,910
+Então, um pouco mais do que, você sabe, o padrão.
+
+111
+00:08:03,250 --> 00:08:05,830
+E então, finalmente, vamos acabar em um.
+
+112
+00:08:07,350 --> 00:08:16,050
+Então vamos guardar isso agora, se aplicarmos a classe de show aqui, você vê como ela entrou quando eu quando eu mantenho
+
+113
+00:08:16,050 --> 00:08:18,880
+salvando, você pode ver o efeito, OK?
+
+114
+00:08:19,120 --> 00:08:24,510
+E se eu adicionar hyd aqui, você pode ver o efeito.
+
+115
+00:08:25,230 --> 00:08:25,560
+Tudo bem.
+
+116
+00:08:25,560 --> 00:08:27,820
+Mas estaremos aplicando aqueles com JavaScript.
+
+117
+00:08:27,820 --> 00:08:29,550
+Então, vou me livrar de ambos por enquanto.
+
+118
+00:08:29,550 --> 00:08:31,560
+E só devemos ver o contador agora.
+
+119
+00:08:31,950 --> 00:08:36,780
+Então, no próximo vídeo, vamos prosseguir e finalizar o estilo dos números.
+
+120
+00:08:37,020 --> 00:08:40,930
+E então temos algumas outras animações para fazer agora.
+
+121
+00:08:40,950 --> 00:08:46,440
+Nós cuidamos, você sabe, da saída do balcão e da entrada final.
+
+122
+00:08:46,440 --> 00:08:51,030
+Mas precisamos fazer essa animação dos números reais entrando e saindo.
+
+123
+00:08:51,450 --> 00:08:51,720
+Tudo bem.
+
+124
+00:08:51,720 --> 00:08:53,040
+Então, vamos chegar a isso a seguir.

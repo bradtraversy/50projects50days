@@ -1,0 +1,495 @@
+1
+00:00:00,090 --> 00:00:04,830
+All right, so we're going to get started here, I have the final project open and you'll see that there's
+
+2
+00:00:04,830 --> 00:00:07,920
+basically two screens or two states.
+
+3
+00:00:07,920 --> 00:00:10,680
+We have the countdown and then we have this final message.
+
+4
+00:00:10,950 --> 00:00:16,500
+So we're going to start off with the HTML, creating those two sections and then we'll go ahead and
+
+5
+00:00:16,500 --> 00:00:17,730
+we'll start to style it.
+
+6
+00:00:18,030 --> 00:00:24,810
+So I just have my project starter boilerplate open here and I'm just going to change the title to,
+
+7
+00:00:24,810 --> 00:00:31,100
+let's say, animated countdown and get rid of that H1.
+
+8
+00:00:31,500 --> 00:00:33,660
+So basically, like I said, we have two sections.
+
+9
+00:00:33,660 --> 00:00:35,000
+We have the counter.
+
+10
+00:00:35,400 --> 00:00:39,720
+So that's going to be the numbers and that's going to be the heading that says get ready.
+
+11
+00:00:39,960 --> 00:00:44,880
+And then under that so under that closing div, we're going to have a class of final, which is going
+
+12
+00:00:44,880 --> 00:00:48,700
+to be that, you know, the button, the replay and so on.
+
+13
+00:00:48,990 --> 00:00:56,010
+So inside counter, we want to have a class called Nums, OK, Nums.
+
+14
+00:00:56,010 --> 00:00:59,220
+So that's going to wrap the numbers which are going to be in Span's.
+
+15
+00:00:59,580 --> 00:01:01,470
+So there's going to be four altogether.
+
+16
+00:01:01,470 --> 00:01:09,240
+So we'll create four spans with the numbers, three to one and zero.
+
+17
+00:01:09,930 --> 00:01:14,190
+And what we want to do here, since we only want one number to show at a time, we're going to have
+
+18
+00:01:14,190 --> 00:01:16,560
+a class of N and whatever.
+
+19
+00:01:16,560 --> 00:01:21,720
+Ultimately, whatever number has that class is going to be the number that comes in that's showing,
+
+20
+00:01:22,110 --> 00:01:28,290
+OK, now under these spans and then under this div, we're just going to have in each four and we're
+
+21
+00:01:28,290 --> 00:01:29,970
+just going to say get ready.
+
+22
+00:01:30,790 --> 00:01:39,330
+And then down here in the final class here, this div we're going to put in, each one says go and we're
+
+23
+00:01:39,330 --> 00:01:41,730
+going to have a button to replay it.
+
+24
+00:01:41,730 --> 00:01:47,280
+So I'm going to give this an idea of replay so we can grab on to it in the JavaScript later on and we'll
+
+25
+00:01:47,280 --> 00:01:48,270
+just say replay.
+
+26
+00:01:48,690 --> 00:01:49,080
+All right.
+
+27
+00:01:49,090 --> 00:01:49,830
+So that should be it.
+
+28
+00:01:49,830 --> 00:01:56,700
+Now we can see both sections, the counter and final right now, but we're going to only show one at
+
+29
+00:01:56,700 --> 00:01:59,070
+a time and we'll do that from within the success.
+
+30
+00:01:59,370 --> 00:02:01,280
+So let's jump into the styling.
+
+31
+00:02:02,190 --> 00:02:10,350
+So as far as the the the base styling here, one thing I'm going to do is get rid of the flex.
+
+32
+00:02:10,860 --> 00:02:14,460
+We are going to have everything centered, but we're going to do it in a different way.
+
+33
+00:02:14,460 --> 00:02:18,900
+We're going to use Tranz, Transform, Translate so we can get rid of these lines here.
+
+34
+00:02:19,260 --> 00:02:22,950
+And then the only other thing I want for the body is just to zero out the margin.
+
+35
+00:02:23,370 --> 00:02:25,830
+OK, now everything's going to get pushed up to the side.
+
+36
+00:02:26,310 --> 00:02:29,070
+So let's start off here with the counter.
+
+37
+00:02:30,770 --> 00:02:35,690
+So for the counter, I'm going to set the position to fixed.
+
+38
+00:02:35,850 --> 00:02:40,730
+OK, so this is another way you can center things when you set this to fixed, which just sets it fixed
+
+39
+00:02:40,730 --> 00:02:46,430
+within the browser window and we can set the positioning to top.
+
+40
+00:02:46,580 --> 00:02:52,100
+I'm going to set it to 50 percent from the top and then let's say we want it to go 50 percent from the
+
+41
+00:02:52,100 --> 00:02:52,640
+left.
+
+42
+00:02:53,180 --> 00:02:54,400
+So this puts it in the middle.
+
+43
+00:02:54,410 --> 00:02:59,840
+However, when you do this, it puts the edge, the left edge in the top, in the middle.
+
+44
+00:03:00,230 --> 00:03:01,280
+So it starts here.
+
+45
+00:03:01,280 --> 00:03:07,190
+We want this entire thing to be shifted over and up into the you know, so the middle of this is in
+
+46
+00:03:07,190 --> 00:03:08,350
+the middle of the screen.
+
+47
+00:03:08,630 --> 00:03:13,480
+So to do that, we use transform and then we can use translate.
+
+48
+00:03:13,670 --> 00:03:19,940
+So translate without X or Y, we can we can do both X and Y values in here.
+
+49
+00:03:19,940 --> 00:03:22,850
+And for both of those, we want to do negative 50 percent.
+
+50
+00:03:23,600 --> 00:03:29,810
+And you'll see that once I save, it gets shifted up and over so that this is directly in the middle.
+
+51
+00:03:31,250 --> 00:03:35,060
+And I just want to also text a line to the center.
+
+52
+00:03:36,900 --> 00:03:43,200
+OK, so now we have that good, so the next thing we'll do is let's position this.
+
+53
+00:03:43,210 --> 00:03:49,920
+So this is the final class, so we'll go ahead and say final and let's do the same thing.
+
+54
+00:03:49,930 --> 00:03:51,420
+I'm actually going to copy.
+
+55
+00:03:53,210 --> 00:03:53,670
+Let's see.
+
+56
+00:03:53,670 --> 00:03:58,820
+Let's just copy all of this, OK?
+
+57
+00:03:58,830 --> 00:04:03,120
+That's going to basically position it in the same place as the counter.
+
+58
+00:04:03,840 --> 00:04:06,530
+Now, as I said, we only want to show one of these at a time.
+
+59
+00:04:06,540 --> 00:04:09,330
+So the way that this is going to work is the counter.
+
+60
+00:04:09,330 --> 00:04:15,750
+The div that has the class of counter will also at times have the class of hide for when we want to
+
+61
+00:04:15,750 --> 00:04:16,250
+hide it.
+
+62
+00:04:16,710 --> 00:04:23,580
+So let's go ahead and add the styling for the Hyde class and the way that I want this to to to basically
+
+63
+00:04:23,580 --> 00:04:26,000
+hide it is to scale it down to zero.
+
+64
+00:04:26,310 --> 00:04:27,810
+So and I'll actually show you.
+
+65
+00:04:27,820 --> 00:04:30,960
+So as soon as this count ends, watch what happens.
+
+66
+00:04:32,810 --> 00:04:39,580
+See how it kind of scales down and out and then this scales up, so it kind of comes from nowhere.
+
+67
+00:04:39,860 --> 00:04:41,160
+So that's what I want to do.
+
+68
+00:04:41,180 --> 00:04:44,420
+And the way I'm going to do it is on this side.
+
+69
+00:04:44,750 --> 00:04:52,580
+We're going to set transform and we want to just position it correctly again with translate and then
+
+70
+00:04:52,580 --> 00:04:55,250
+negative 50 percent on the X and Y.
+
+71
+00:04:55,670 --> 00:04:59,760
+But we also want to add a scale so we can use multiple transforms here.
+
+72
+00:04:59,780 --> 00:05:07,580
+So in addition to translate, we can use scale and we want to scale it down to zero to nothing and we
+
+73
+00:05:07,580 --> 00:05:09,520
+want it to have an animation.
+
+74
+00:05:09,860 --> 00:05:17,210
+So call this animation hide and we'll see point two seconds for the duration and then ease.
+
+75
+00:05:18,020 --> 00:05:19,520
+Let's to ease out.
+
+76
+00:05:21,700 --> 00:05:24,320
+For that and I get to put my semicolon here.
+
+77
+00:05:25,960 --> 00:05:33,460
+So now if I apply the Hyde class right here to the div with the class of counter, I can see that that
+
+78
+00:05:33,700 --> 00:05:34,600
+that one away.
+
+79
+00:05:36,890 --> 00:05:45,290
+Now for the animation, we're going to use a key frame, so it's a keyframes and we called it hyd,
+
+80
+00:05:46,290 --> 00:05:51,440
+call it whatever you want, just make sure it matches this and we're going to have something happen
+
+81
+00:05:51,440 --> 00:05:52,370
+at zero percent.
+
+82
+00:05:52,400 --> 00:05:58,520
+So basically, when it starts and then when it finishes at 100 percent, so at zero percent, we're
+
+83
+00:05:58,520 --> 00:06:01,180
+going to just grab this transform.
+
+84
+00:06:02,060 --> 00:06:04,080
+So that's the default state, right.
+
+85
+00:06:04,130 --> 00:06:12,830
+So scale zero and then I'm sorry, scale one is the default state and then we want it to hide.
+
+86
+00:06:13,100 --> 00:06:15,250
+So then we want to set it to scale zero.
+
+87
+00:06:15,980 --> 00:06:17,840
+So we're just giving it a smooth.
+
+88
+00:06:17,840 --> 00:06:29,810
+You can see right here how it just kind of fades and fades out but goes in now for this for this final.
+
+89
+00:06:30,440 --> 00:06:33,520
+It's going to work in the opposite way with counter.
+
+90
+00:06:33,740 --> 00:06:35,240
+It's going to show by default.
+
+91
+00:06:35,240 --> 00:06:40,670
+And then we can dynamically add this hyd class, which I'm going to remove right now with final.
+
+92
+00:06:40,670 --> 00:06:43,580
+We're going to actually have it not shown by default.
+
+93
+00:06:43,580 --> 00:06:46,680
+And then when we apply a class of show that we'll show it.
+
+94
+00:06:46,970 --> 00:06:52,420
+So I'm going to set the scale by default to zero, which will make it go away.
+
+95
+00:06:52,670 --> 00:06:58,460
+And then what we'll do is we'll have a final a show class on that same div.
+
+96
+00:06:59,660 --> 00:07:03,050
+And I'm just going to copy what I have here in the hide.
+
+97
+00:07:04,760 --> 00:07:13,070
+And instead of square starting off at scale zero, we want to want this to be scale one because we're
+
+98
+00:07:13,070 --> 00:07:13,760
+showing it.
+
+99
+00:07:14,180 --> 00:07:14,620
+All right.
+
+100
+00:07:14,630 --> 00:07:20,450
+We are going to call an animation here as well to show it because we want that same kind of effect,
+
+101
+00:07:20,450 --> 00:07:22,210
+that animated scale effect.
+
+102
+00:07:22,220 --> 00:07:23,390
+So let's create
+
+103
+00:07:25,880 --> 00:07:27,620
+keyframes show.
+
+104
+00:07:29,950 --> 00:07:37,090
+So I'm just going to actually copy these to zero percent and 100 percent, but we're also going to add
+
+105
+00:07:37,720 --> 00:07:41,800
+at 30 percent, I just want to scale it up a little bit so it'll have like that.
+
+106
+00:07:41,800 --> 00:07:45,310
+You know, it'll scale up just for a second and then scale back down.
+
+107
+00:07:45,730 --> 00:07:47,530
+So let's grab this.
+
+108
+00:07:48,610 --> 00:07:55,200
+So for zero percent, we want that to be zero, OK, because remember, we're showing it.
+
+109
+00:07:55,210 --> 00:07:59,520
+So we're starting with it hidden and then we're going to scale it up to one point four.
+
+110
+00:07:59,860 --> 00:08:02,910
+So a little more than, you know, the default one.
+
+111
+00:08:03,250 --> 00:08:05,830
+And then finally, we'll end up at one.
+
+112
+00:08:07,350 --> 00:08:16,050
+So let's save that now, if we apply the class of show here, you see how it came in when I when I keep
+
+113
+00:08:16,050 --> 00:08:18,880
+saving, you can see the effect, OK?
+
+114
+00:08:19,120 --> 00:08:24,510
+And if I add hyd here, you can see the effect.
+
+115
+00:08:25,230 --> 00:08:25,560
+All right.
+
+116
+00:08:25,560 --> 00:08:27,820
+But we'll be applying those with JavaScript.
+
+117
+00:08:27,820 --> 00:08:29,550
+So I'm going to get rid of both of those for now.
+
+118
+00:08:29,550 --> 00:08:31,560
+And we should only see the counter right now.
+
+119
+00:08:31,950 --> 00:08:36,780
+So in the next video, we're going to go ahead and finish up the styling for the numbers.
+
+120
+00:08:37,020 --> 00:08:40,930
+And then we have a couple other animations to do right now.
+
+121
+00:08:40,950 --> 00:08:46,440
+We took care of, you know, the the counter going out and the final coming in.
+
+122
+00:08:46,440 --> 00:08:51,030
+But we need to do this animation of the actual numbers coming in and out.
+
+123
+00:08:51,450 --> 00:08:51,720
+All right.
+
+124
+00:08:51,720 --> 00:08:53,040
+So we're going to get to that next.

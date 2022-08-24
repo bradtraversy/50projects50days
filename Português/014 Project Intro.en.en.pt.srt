@@ -1,0 +1,43 @@
+﻿1
+00:00:00,180 --> 00:00:05,640
+OK, então este será um dos projetos mais curtos deste curso, mas é um pequeno widget legal
+
+2
+00:00:05,640 --> 00:00:09,050
+que você pode adicionar ao seu site ou ao seu aplicativo.
+
+3
+00:00:09,060 --> 00:00:10,080
+É uma busca oculta.
+
+4
+00:00:10,320 --> 00:00:14,790
+E temos este botão aqui com um pequeno ícone de pesquisa da fonte.
+
+5
+00:00:14,790 --> 00:00:15,330
+Incrível.
+
+6
+00:00:15,480 --> 00:00:22,230
+E assim que eu clico nele, se me oferecessem um evento JavaScript, que ativa uma classe específica onde
+
+7
+00:00:22,230 --> 00:00:29,280
+adicionamos uma transição para a largura dessa entrada ficar mais larga e o botão para mover usando uma transformação
+
+8
+00:00:29,280 --> 00:00:32,970
+traduza X, e se eu clicar nele novamente, ele encolherá novamente.
+
+9
+00:00:33,210 --> 00:00:39,690
+OK, então usaremos as transições de CSFs junto com um pouco de JavaScript para adicionar o evento
+
+10
+00:00:39,870 --> 00:00:42,060
+e alternar a classe.
+
+11
+00:00:42,120 --> 00:00:43,460
+Tudo bem, então vamos começar.

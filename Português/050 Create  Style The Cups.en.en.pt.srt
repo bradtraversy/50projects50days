@@ -1,0 +1,679 @@
+﻿1
+00:00:00,210 --> 00:00:04,920
+Muito bem, pessoal, vamos divulgar o acesso à linha do tempo para este projeto de água potável, então
+
+2
+00:00:04,920 --> 00:00:10,860
+vamos pular direto para o nosso próximo TML e para o título aqui, vou mudar isso para beber água
+
+3
+00:00:12,120 --> 00:00:18,690
+e então no corpo, vamos nos livrar deste e vamos ter um para o título aqui
+
+4
+00:00:18,690 --> 00:00:20,280
+e apenas diga beber água.
+
+5
+00:00:20,670 --> 00:00:23,640
+E embaixo disso terá um H3 com nosso objetivo.
+
+6
+00:00:23,640 --> 00:00:27,270
+E nosso objetivo será para os líderes.
+
+7
+00:00:28,560 --> 00:00:31,960
+E então embaixo disso, vamos ter uma aula de xícara.
+
+8
+00:00:32,610 --> 00:00:39,240
+Agora, esta classe de copo vai ser basicamente como a forma do copo, o topo plano e
+
+9
+00:00:39,240 --> 00:00:41,090
+então o tipo de forma arredondada.
+
+10
+00:00:41,310 --> 00:00:45,800
+E isso vai ser usado no copo grande e em todos os copos pequenos, os oito copos pequenos.
+
+11
+00:00:46,620 --> 00:00:49,500
+Então, este primeiro que estamos fazendo, porém, será o grande copo.
+
+12
+00:00:49,800 --> 00:00:52,640
+E aqui dentro, vamos ter uma classe de restos.
+
+13
+00:00:53,160 --> 00:00:59,570
+E isso basicamente vai ter, você sabe, o valor que resta para o seu objetivo.
+
+14
+00:00:59,970 --> 00:01:05,850
+Então, por dentro, ainda quero adicionar um ID a isso também, porque vou usar um ID para
+
+15
+00:01:05,850 --> 00:01:07,620
+agarre-o no JavaScript.
+
+16
+00:01:07,890 --> 00:01:09,570
+Então vamos apenas dizer permaneceu.
+
+17
+00:01:09,870 --> 00:01:15,180
+E então aqui nós teremos um intervalo e vamos dar a isto uma identificação de líderes.
+
+18
+00:01:15,970 --> 00:01:22,620
+E por enquanto, vamos colocar aqui um ponto cinco L e então queremos uma pequena etiqueta com apenas um tipo de
+
+19
+00:01:22,620 --> 00:01:24,540
+rótulo que só vai dizer permaneceu.
+
+20
+00:01:25,840 --> 00:01:28,110
+Obviamente, esse período, isso vai mudar.
+
+21
+00:01:28,110 --> 00:01:30,210
+Esta pequena tag não é apenas estática.
+
+22
+00:01:30,780 --> 00:01:36,970
+Então, abaixo do div dos restos, mas ainda dentro do copo, também teremos uma porcentagem.
+
+23
+00:01:37,800 --> 00:01:42,810
+Então, isso será como a porcentagem que você já bebeu, você sabe, e isso será um
+
+24
+00:01:42,810 --> 00:01:46,170
+ID também de porcentagem.
+
+25
+00:01:47,370 --> 00:01:52,830
+E então aqui dentro eu vou colocar 20%, mas isso vai ser dinâmico
+
+26
+00:01:53,250 --> 00:01:56,850
+agora abaixo desta última div para que esta seja a div do copo.
+
+27
+00:01:57,150 --> 00:02:06,480
+Teremos um parágrafo com a classe de texto e aqui diremos apenas selecionar quantos copos
+
+28
+00:02:06,480 --> 00:02:09,840
+de água que você tem.
+
+29
+00:02:10,620 --> 00:02:11,120
+Beber.
+
+30
+00:02:11,850 --> 00:02:17,250
+OK, e abaixo do parágrafo vamos ter uma classe de xícaras porque é aqui que todos os pequenos
+
+31
+00:02:17,250 --> 00:02:24,700
+copos vão, que também vão ter uma classe de xícara, mas também uma classe de xícara pequena.
+
+32
+00:02:25,320 --> 00:02:31,630
+OK, e então aqui diremos 250 ml e queremos oito dessas divisões.
+
+33
+00:02:31,680 --> 00:02:33,480
+Vamos colocar um espaço aqui.
+
+34
+00:02:33,900 --> 00:02:37,820
+Então vamos fazer é um, dois, três, quatro, cinco, seis, sete, oito.
+
+35
+00:02:38,160 --> 00:02:42,780
+E vou adicionar a classe full a alguns desses porque a classe completa vai
+
+36
+00:02:42,780 --> 00:02:45,930
+sei lá, vai parecer que tem água nele.
+
+37
+00:02:45,930 --> 00:02:47,730
+Vai ter um fundo azul.
+
+38
+00:02:48,300 --> 00:02:50,220
+Então vamos dizer completo nos dois primeiros.
+
+39
+00:02:50,490 --> 00:02:52,260
+E isso deve fazer isso para o TML.
+
+40
+00:02:52,380 --> 00:02:55,720
+Vai ficar assim e saltar para o nosso sucesso.
+
+41
+00:02:55,750 --> 00:03:02,640
+Vou usar a fonte Monserrat, então vou pegar daqui, deletar e dizer sucesso.
+
+42
+00:03:02,640 --> 00:03:11,520
+Família e família vai ser Munt o que é um monte Sirat para o nosso.
+
+43
+00:03:12,120 --> 00:03:21,120
+E por enquanto vamos fazer Colen 400, karma 600 assim e depois vamos mudar seu boto para Monserrat
+
+44
+00:03:23,610 --> 00:03:24,580
+Montserrate.
+
+45
+00:03:24,840 --> 00:03:26,850
+Eu tenho problemas para soletrar isso por algum motivo.
+
+46
+00:03:27,300 --> 00:03:34,290
+OK, e então para o corpo aqui, vamos dar uma cor de fundo e vamos usar hexadecimal
+
+47
+00:03:34,290 --> 00:03:42,300
+valor três quatro nove para e para OK e então vamos dar uma cor.
+
+48
+00:03:42,600 --> 00:03:45,540
+A cor do texto será branca, é mais legível.
+
+49
+00:03:46,860 --> 00:03:51,300
+E então vamos ver até onde podemos nos livrar do corpo aqui.
+
+50
+00:03:54,200 --> 00:04:01,710
+E veja, na verdade não precisamos justificar o conteúdo ou hype ou estouro oculto e, em seguida, margem, vou
+
+51
+00:04:01,710 --> 00:04:07,020
+para definir apenas a margem inferior de 40 pixels assim.
+
+52
+00:04:07,590 --> 00:04:15,510
+E então temos alguns estilos gerais como um para o que vou definir a margem para fazer 10 pixels,
+
+53
+00:04:15,510 --> 00:04:28,200
+zero zero, e depois o H3, que é o objetivo quando definir o peso da fonte, vamos definir o peso da fonte
+
+54
+00:04:28,200 --> 00:04:33,060
+para 400 e vamos definir a margem para 10 na parte superior e inferior.
+
+55
+00:04:34,410 --> 00:04:34,860
+Tudo bem.
+
+56
+00:04:34,860 --> 00:04:36,380
+Agora temos nosso copo.
+
+57
+00:04:36,870 --> 00:04:43,260
+Então a classe da xícara, esta é para a xícara grande que vai estar aqui em cima e para as oito pequenas
+
+58
+00:04:43,260 --> 00:04:43,740
+uns.
+
+59
+00:04:44,010 --> 00:04:46,310
+Então, isso vai meio que dar essa forma.
+
+60
+00:04:46,830 --> 00:04:53,040
+Então vamos começar dando a eles uma cor de fundo branca, OK?
+
+61
+00:04:53,070 --> 00:04:54,120
+Vai ficar assim.
+
+62
+00:04:54,600 --> 00:04:59,360
+E a borda aqui será vamos fazer quatro pixels sólidos.
+
+63
+00:04:59,700 --> 00:05:07,020
+Agora, essa cor eu vou usar como a cor da água, bem como a cor da fonte.
+
+64
+00:05:07,770 --> 00:05:12,240
+Então, vou colocar algumas dessas cores nas propriedades personalizadas.
+
+65
+00:05:12,240 --> 00:05:13,920
+Então, no topo, você não precisa fazer isso.
+
+66
+00:05:13,920 --> 00:05:20,550
+Mas como vamos repetir algumas dessas cores no escopo raiz, direi borda
+
+67
+00:05:20,670 --> 00:05:33,000
+cor do traço e vamos definir isso para o valor de hexadecimal um para FC seis, OK, que é
+
+68
+00:05:33,000 --> 00:05:39,690
+vai ficar assim azul mais escuro e aí pra fronteira aqui vai passar em VA.
+
+69
+00:05:39,690 --> 00:05:43,710
+E eu vou dizer que VA vai passar na cor da borda assim.
+
+70
+00:05:44,580 --> 00:05:50,490
+E então a cor também será da mesma cor da borda.
+
+71
+00:05:50,490 --> 00:05:55,320
+Então a cor do texto e então vamos definir um raio de borda.
+
+72
+00:05:55,540 --> 00:05:57,750
+Eu quero que o topo seja reto.
+
+73
+00:05:57,750 --> 00:06:02,820
+Então zero zero e o canto inferior esquerdo e direito serão 40 pixels.
+
+74
+00:06:04,060 --> 00:06:09,060
+OK, agora vamos dar a isso uma altura.
+
+75
+00:06:09,060 --> 00:06:14,940
+Vou usar trezentos e trinta pixels para a altura e a largura será de 150
+
+76
+00:06:14,940 --> 00:06:15,500
+píxeis.
+
+77
+00:06:15,510 --> 00:06:20,610
+Agora, no momento, todos esses são copos grandes, certo?
+
+78
+00:06:20,620 --> 00:06:22,170
+Então eles são todos desta altura e com.
+
+79
+00:06:22,170 --> 00:06:27,240
+Mas mais tarde, vamos ter que lembrar que temos essa pequena classe, então vamos fazer essas
+
+80
+00:06:27,240 --> 00:06:28,260
+menor depois.
+
+81
+00:06:28,560 --> 00:06:31,320
+Mas a largura inicial de Highton será esta.
+
+82
+00:06:32,430 --> 00:06:39,150
+E também queremos adicionar, digamos, margem de 30 pixels na parte superior e inferior.
+
+83
+00:06:40,380 --> 00:06:42,240
+E eu vou exibir.
+
+84
+00:06:43,360 --> 00:06:53,490
+Flex e vamos definir a direção do flex para a coluna, então queremos que os itens do flex fiquem no topo
+
+85
+00:06:53,490 --> 00:06:59,880
+um ao outro e acho que deveria ser, vamos definir o overflow como oculto também.
+
+86
+00:06:59,890 --> 00:07:06,990
+Então nada sai do recipiente e devemos estar bem agora para os copos pequenos, digamos onde quer que
+
+87
+00:07:06,990 --> 00:07:11,880
+há um copo, um copo de copo e também um copo pequeno.
+
+88
+00:07:12,750 --> 00:07:15,870
+Então vamos definir a largura disso.
+
+89
+00:07:15,870 --> 00:07:26,280
+Então, em vez de 330 pixels, vamos definir a largura para 50 pixels e vamos definir
+
+90
+00:07:26,280 --> 00:07:31,080
+uma altura de noventa e cinco pixels.
+
+91
+00:07:31,860 --> 00:07:33,570
+Então você pode ver agora que eles são menores.
+
+92
+00:07:33,900 --> 00:07:39,210
+Agora, do jeito que o fundo parece, isso parece muito mais arredondado porque é menor.
+
+93
+00:07:39,220 --> 00:07:44,220
+Queremos definir em vez de ter um raio de borda de 40 pixels na parte inferior, vamos
+
+94
+00:07:44,220 --> 00:07:51,210
+defina-os para 15 na parte inferior e parecerá mais, você sabe, mais parecido com a aparência.
+
+95
+00:07:52,230 --> 00:07:59,490
+OK, e então vamos definir vamos fazer uma cor de fundo do nosso GBA.
+
+96
+00:08:01,950 --> 00:08:10,800
+Não RGB Q ou RGB A e branco, então 255 para vermelho, verde, azul e, em seguida, o valor alfa será zero
+
+97
+00:08:10,800 --> 00:08:19,560
+ponto nove e, em seguida, vamos definir o cursor para um ponteiro porque vamos clicar neles
+
+98
+00:08:19,570 --> 00:08:20,270
+para preenchê-los.
+
+99
+00:08:20,280 --> 00:08:27,300
+Queremos que o cursor seja um ponteiro e vou definir o tamanho da fonte para 14 pixels.
+
+100
+00:08:28,050 --> 00:08:29,450
+E vamos definir
+
+101
+00:08:32,880 --> 00:08:41,960
+Também vou fazer uma linha de itens para o centro porque já temos display flex.
+
+102
+00:08:41,970 --> 00:08:44,370
+Lembre-se, a classe tem display flex.
+
+103
+00:08:44,370 --> 00:08:46,060
+Então eu quero itens de linha para o centro.
+
+104
+00:08:46,080 --> 00:08:57,830
+Eu também quero justificar o conteúdo para o centro e enviar uma linha de texto e também uma linha de texto para o centro.
+
+105
+00:08:58,350 --> 00:09:06,060
+OK, então eu posso ver que este texto está no meio e vamos adicionar uma margem de cinco pixels.
+
+106
+00:09:07,050 --> 00:09:13,470
+E eu quero fazer a transição nisso também, porque quando clicamos nele para preencher, queremos essa transição
+
+107
+00:09:14,490 --> 00:09:14,960
+efeito.
+
+108
+00:09:14,970 --> 00:09:20,970
+Então são dois zero vírgula três segundos e usamos o efeito EZ.
+
+109
+00:09:23,430 --> 00:09:31,980
+OK, e acho que devemos ser bons no que diz respeito às xícaras pequenas, agora temos uma classe de
+
+110
+00:09:31,980 --> 00:09:36,860
+cups, plural, enrolado em torno disso, e queremos definir isso para o bloco Aflex.
+
+111
+00:09:36,880 --> 00:09:38,120
+Então, estes estão em uma linha.
+
+112
+00:09:38,520 --> 00:09:44,430
+Então, vamos adicionar a classe de copos e definir isso para exibir flex.
+
+113
+00:09:44,430 --> 00:09:47,250
+E assim que eu fizer isso, ele exibirá todos eles em uma linha.
+
+114
+00:09:47,670 --> 00:09:50,100
+Eu quero que eles batam para a próxima linha.
+
+115
+00:09:51,180 --> 00:09:59,520
+Então, o que vamos fazer é definir um valor de flex wrap de rap e não irá para a próxima linha ainda porque
+
+116
+00:09:59,520 --> 00:10:00,990
+precisamos adicionar um chicote aqui.
+
+117
+00:10:01,740 --> 00:10:08,610
+Então a largura que vou definir em copos será de duzentos e oitenta pixels e isso deve apenas
+
+118
+00:10:08,610 --> 00:10:13,320
+ser suficiente para embrulhar, você sabe, depois do quarto, ele vai bater o próximo no próximo
+
+119
+00:10:13,320 --> 00:10:13,740
+linha.
+
+120
+00:10:15,330 --> 00:10:15,770
+Tudo bem.
+
+121
+00:10:15,780 --> 00:10:23,080
+Vou apenas para o centro de itens de linha e justificar o centro de conteúdo também.
+
+122
+00:10:24,670 --> 00:10:25,010
+Bom.
+
+123
+00:10:25,470 --> 00:10:28,640
+Agora para os copos cheios da primeira para ter uma aula de cheio.
+
+124
+00:10:28,650 --> 00:10:37,470
+Então vou dizer que qualquer classe de copo que tem copo pequeno e cai, vou definir a cor de fundo para
+
+125
+00:10:38,430 --> 00:10:47,490
+na verdade, vou definir isso como uma variável e chamaremos isso de cor de preenchimento.
+
+126
+00:10:48,120 --> 00:10:54,630
+E aqui em cima, vamos definir a cor de preenchimento do escopo raiz.
+
+127
+00:10:54,630 --> 00:11:02,160
+E este será o valor hexadecimal seis, então seis AB três F oito.
+
+128
+00:11:04,320 --> 00:11:09,890
+E agora você pode ver que os dois primeiros têm essa cor de fundo porque eles têm essa classe de queda
+
+129
+00:11:09,900 --> 00:11:10,780
+agora a aula completa.
+
+130
+00:11:10,800 --> 00:11:13,500
+Também queremos que a cor do texto seja branca.
+
+131
+00:11:14,070 --> 00:11:17,700
+Então, isso é um pouco mais legível e deve fazê-lo.
+
+132
+00:11:17,850 --> 00:11:23,040
+Agora para os quatro aqui em cima, temos a lembrança remanescente, uma divisão com a classe de sobra e a
+
+133
+00:11:23,040 --> 00:11:24,690
+fez com a classe de porcentagem.
+
+134
+00:11:25,110 --> 00:11:26,850
+Assim ficaram quatro.
+
+135
+00:11:31,610 --> 00:11:40,400
+Vamos ver, então ficou, vou adicionar display flex, quero centralizar tudo então vamos dizer um
+
+136
+00:11:40,400 --> 00:11:49,300
+centro do item de linha, justifique o centro de conteúdo e envie um texto para o centro da linha.
+
+137
+00:11:50,840 --> 00:11:56,960
+E, na verdade, vamos definir a direção flexível, defina isso como coluna.
+
+138
+00:12:01,290 --> 00:12:08,390
+OK, e então eu quero que isso ocupe, você sabe, a maior parte disso aqui, então vamos definir o Fleck's
+
+139
+00:12:08,390 --> 00:12:15,890
+value para um e vamos adicionar uma transição aqui também, porque quando ela for preenchida, queremos ter
+
+140
+00:12:15,890 --> 00:12:19,010
+esse tipo de efeitos de animação de transição.
+
+141
+00:12:19,010 --> 00:12:24,680
+Então zero ponto três segundos é agora o intervalo.
+
+142
+00:12:24,680 --> 00:12:26,870
+Então dentro do membro dentro permaneceu.
+
+143
+00:12:27,350 --> 00:12:35,960
+Nós temos este vão que tem, você sabe, envolve um ponto cinco L, então vamos dizer que permaneceu
+
+144
+00:12:36,140 --> 00:12:36,980
+período.
+
+145
+00:12:37,860 --> 00:12:46,130
+E eu só quero definir o tamanho da fonte para vinte pixels e vamos definir o peso da fonte para negrito.
+
+146
+00:12:48,140 --> 00:12:57,680
+OK, e então temos a tag pequena, então digamos permaneceu pequena, que é apenas o texto aqui que permaneceu
+
+147
+00:12:58,040 --> 00:13:02,720
+e eu só quero definir o tamanho da fonte para 12 pixels.
+
+148
+00:13:04,130 --> 00:13:07,130
+Tudo bem, agora para a parte percentual, que está aqui embaixo.
+
+149
+00:13:09,620 --> 00:13:18,710
+Então porcentagem vou definir a cor de fundo e vou usar a cor completa aqui, então
+
+150
+00:13:18,710 --> 00:13:31,940
+vamos pegar a variável full color e defini-la e então fazer o tamanho da fonte para 30 pixels.
+
+151
+00:13:31,940 --> 00:13:33,320
+E queremos centralizar isso.
+
+152
+00:13:33,830 --> 00:13:47,690
+Então, vamos adicionar display flex e vamos definir um item de linha para centralizar e justificar o conteúdo para centralizar
+
+153
+00:13:47,690 --> 00:13:48,860
+que vai colocar isso no meio.
+
+154
+00:13:51,470 --> 00:13:53,710
+Vamos deixar o peso da fonte em negrito também.
+
+155
+00:13:56,400 --> 00:14:08,820
+Então vamos fazer um trabalho ousado e então vamos definir a altura para zero, então teremos uma altura inicial
+
+156
+00:14:08,820 --> 00:14:11,280
+de zero e, em seguida, transição.
+
+157
+00:14:12,290 --> 00:14:16,890
+Também vamos adicionar aqui a zero vírgula três segundos, EE's.
+
+158
+00:14:20,150 --> 00:14:23,900
+Tudo bem, acho que isso deve ser suficiente e depois para os técnicos aqui embaixo.
+
+159
+00:14:27,080 --> 00:14:32,960
+Esse é um parágrafo com uma classe de texto e tudo o que quero fazer aqui é garantir que enviamos uma linha de texto
+
+160
+00:14:33,710 --> 00:14:40,370
+para o centro e vamos também adicionar margem a zero zero cinco pixels.
+
+161
+00:14:40,790 --> 00:14:41,400
+Tudo bem, legal.
+
+162
+00:14:41,420 --> 00:14:43,520
+Então isso deve ser bom para os CSFs.
+
+163
+00:14:43,520 --> 00:14:47,880
+Agora, no índice HTML, podemos nos livrar da classe completa aqui em ambos.
+
+164
+00:14:47,900 --> 00:14:50,050
+Eu só queria testá-lo, ter certeza de que parece certo.
+
+165
+00:14:50,450 --> 00:14:54,290
+Além disso, os dados como os 20%, não precisamos disso.
+
+166
+00:14:54,300 --> 00:14:58,310
+Isso parece meio estranho porque está vazio, mas ainda podemos ver o topo dos 20%.
+
+167
+00:14:59,510 --> 00:15:00,880
+Quero dizer, você poderia deixá-lo lá.
+
+168
+00:15:00,890 --> 00:15:05,120
+Ele será substituído pelo que temos em nosso JavaScript, mas vamos nos livrar disso.
+
+169
+00:15:05,810 --> 00:15:10,730
+E também o vírgula cinco L que virá do JavaScript também.
+
+170
+00:15:11,180 --> 00:15:15,290
+OK, então no próximo vídeo, vamos em frente e vamos começar em nosso arquivo JS de script.

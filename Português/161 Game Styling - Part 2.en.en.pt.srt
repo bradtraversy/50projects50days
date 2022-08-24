@@ -1,0 +1,427 @@
+﻿1
+00:00:00,300 --> 00:00:04,440
+Então agora queremos estilizar a tela final aqui, todo o contêiner do jogo.
+
+2
+00:00:04,620 --> 00:00:12,030
+Então, a parte inferior do cessar-fogo, digamos, o contêiner do jogo, e vamos posicionar isso para ser relativo
+
+3
+00:00:12,030 --> 00:00:15,900
+para que possamos posicionar elementos filhos absolutos dentro dele.
+
+4
+00:00:16,680 --> 00:00:18,150
+Pronto, agora é a hora.
+
+5
+00:00:18,660 --> 00:00:22,080
+Vamos pegar o tempo e a pontuação,
+
+6
+00:00:25,230 --> 00:00:27,870
+que normalmente não gosto de estilizar por IED.
+
+7
+00:00:27,870 --> 00:00:28,770
+Então eu quero dizer isso.
+
+8
+00:00:28,770 --> 00:00:45,000
+Tudo bem, mas vou adicionar uma classe de tempo e é apenas a pontuação da classe de preferência e uma classe de
+
+9
+00:00:45,000 --> 00:00:45,870
+mensagem.
+
+10
+00:00:47,270 --> 00:00:54,000
+Dessa forma, podemos apenas estilizar pela classe em vez do ID e fazê-lo pelo ID é absolutamente bom,
+
+11
+00:00:54,020 --> 00:00:55,160
+é apenas preferência para mim.
+
+12
+00:00:56,150 --> 00:01:03,380
+Então, vamos definir isso, digamos, no topo onde precisamos posicioná-lo, posicione esses dois absolutos
+
+13
+00:01:03,830 --> 00:01:08,900
+e, em seguida, diga a partir dos 20 primeiros pixels, o que os colocará no mesmo lugar exato.
+
+14
+00:01:09,350 --> 00:01:15,950
+Então, digamos que, por enquanto, a posição esquerda será de 20 pixels.
+
+15
+00:01:16,370 --> 00:01:24,600
+E para a pontuação, a direita fará 20 pixels da direita, o que os colocará de cada lado aqui.
+
+16
+00:01:25,460 --> 00:01:29,150
+Agora para a mensagem, inicialmente será aqui em cima.
+
+17
+00:01:29,150 --> 00:01:38,150
+Não seremos capazes de vê-lo, mas terá uma classe de visível quando entrar em
+
+18
+00:01:38,150 --> 00:01:38,710
+visão.
+
+19
+00:01:38,720 --> 00:01:42,250
+Então, vou apenas adicionar manualmente a classe de visible por enquanto.
+
+20
+00:01:42,680 --> 00:01:43,070
+Tudo bem.
+
+21
+00:01:43,070 --> 00:01:50,090
+E então vamos adicionar mensagem e vamos fazer as alturas da linha um ponto seis.
+
+22
+00:01:50,090 --> 00:01:53,680
+Quebre isso um pouco, na verdade em um ponto sete.
+
+23
+00:01:54,320 --> 00:01:58,640
+E vamos definir que eu vou definir um plano de fundo nele.
+
+24
+00:01:58,640 --> 00:02:05,420
+Então a cor de fundo será Giba Black e então zero vírgula cinco.
+
+25
+00:02:05,530 --> 00:02:06,890
+Então dê-lhe um pouco de fundo.
+
+26
+00:02:07,220 --> 00:02:19,040
+Vamos fazer a largura dele cem por cento e vamos adicionar 20 pixels de preenchimento e deve
+
+27
+00:02:19,040 --> 00:02:19,900
+estar sempre em cima.
+
+28
+00:02:19,910 --> 00:02:24,100
+Então o índice Z vai ser cem.
+
+29
+00:02:24,560 --> 00:02:26,510
+Agora, você não precisa adicionar esta mensagem.
+
+30
+00:02:26,510 --> 00:02:32,390
+É basicamente uma piada, você sabe, mas você não tem que entrar tanto porque uma vez
+
+31
+00:02:32,390 --> 00:02:36,590
+ele entrar, se algum inseto estiver por trás dele, você não poderá clicar e continuar jogando.
+
+32
+00:02:36,590 --> 00:02:39,170
+Portanto, cabe a você se você deseja removê-lo ou não.
+
+33
+00:02:40,350 --> 00:02:51,080
+Veja, eu quero enviar uma linha para o centro e a opacidade será definida como zero, o que vai
+
+34
+00:02:51,080 --> 00:02:52,040
+para fazê-lo ir embora.
+
+35
+00:02:52,040 --> 00:02:59,900
+No entanto, vou descer aqui e dizer uma mensagem, se tiver uma classe de visible, defina opacity
+
+36
+00:03:00,470 --> 00:03:01,430
+para um.
+
+37
+00:03:02,390 --> 00:03:04,670
+Além disso, queremos posicioná-lo.
+
+38
+00:03:04,670 --> 00:03:14,480
+Então, vamos posicionar absoluto e vamos definir isso de cima, defini-lo como zero.
+
+39
+00:03:14,480 --> 00:03:24,260
+Vai movê-lo para cima, digamos, 50% para a esquerda, o que vai colocar o início
+
+40
+00:03:24,260 --> 00:03:26,180
+dele a cinquenta por cento da esquerda.
+
+41
+00:03:26,190 --> 00:03:30,800
+Então vamos fazer uma tradução, que irá traduzir em X e Y.
+
+42
+00:03:30,800 --> 00:03:39,710
+Então, queremos cinqüenta por cento negativos em X e oops, desculpe, precisamos transformar traduz não um adereço.
+
+43
+00:03:39,710 --> 00:03:46,520
+queremos transformar e então traduzir menos cinquenta em X e então queremos que ele vá bem acima de onde
+
+44
+00:03:46,520 --> 00:03:47,540
+não pode ser visto.
+
+45
+00:03:47,540 --> 00:03:51,500
+Então, cento e cinquenta por cento y, então agora está aqui em cima.
+
+46
+00:03:52,280 --> 00:04:00,980
+Mas quando estiver visível, o que faremos é copiar isso e definir como positivo
+
+47
+00:04:00,980 --> 00:04:03,650
+um cinqüenta se esse visível for adicionado.
+
+48
+00:04:06,300 --> 00:04:15,930
+Tudo bem, e então queremos que ele faça a transição, então vamos adicionar uma transição nisso e fazer a transição
+
+49
+00:04:15,930 --> 00:04:24,090
+a propriedade transform em zero vírgula quatro segundos com facilidade, na verdade.
+
+50
+00:04:28,050 --> 00:04:34,980
+Então, isso cuida da mensagem agora, não queremos mostrar isso agora, então vamos nos livrar de
+
+51
+00:04:34,980 --> 00:04:42,240
+a classe visível agora, a última coisa a fazer é estilizar o real ou a última coisa com sucesso é
+
+52
+00:04:42,240 --> 00:04:46,380
+o estilo, o inseto, que não temos porque vão ser inseridos com JavaScript.
+
+53
+00:04:46,390 --> 00:04:53,850
+Então vou colocar temporariamente uma classe de inseto e depois uma imagem e pegar um desses.
+
+54
+00:04:53,850 --> 00:05:01,350
+Vou pegar a imagem da mosca aqui e vamos colocar aqui e salvar.
+
+55
+00:05:01,360 --> 00:05:02,760
+Então agora nós pegamos a mosca.
+
+56
+00:05:03,700 --> 00:05:15,630
+Então, a classe de insetos que vamos exibir como flex para que possamos adicionar um centro de item de linha e
+
+57
+00:05:15,630 --> 00:05:25,710
+justifique o centro de conteúdo e a largura será de 100 pixels e a altura será de 100 pixels.
+
+58
+00:05:25,980 --> 00:05:28,860
+Mas a imagem está atualmente rompendo com isso.
+
+59
+00:05:28,860 --> 00:05:35,940
+Então, digamos que para a imagem do inseto, queremos a mesma coisa.
+
+60
+00:05:37,740 --> 00:05:43,330
+Então, o que eu ganho por tentar ser muito esperto com atalhos, vamos fazer do jeito idiota.
+
+61
+00:05:43,620 --> 00:05:44,070
+Tudo bem.
+
+62
+00:05:44,490 --> 00:05:48,570
+Portanto, contenha isso dentro do inseto.
+
+63
+00:05:48,570 --> 00:05:57,200
+Portanto, temos 100 pixels aumentados e agora queremos posicionar isso como absoluto.
+
+64
+00:05:58,470 --> 00:06:03,780
+E o que vai colocá-lo em um local aleatório são os valores superior e esquerdo.
+
+65
+00:06:03,780 --> 00:06:11,280
+Então, eu estou indo para o código rígido dizer 100 a 200 pixels do topo e então faremos 300 pixels
+
+66
+00:06:11,280 --> 00:06:12,330
+da esquerda.
+
+67
+00:06:14,070 --> 00:06:18,450
+E vamos querer adicionar transform
+
+68
+00:06:20,880 --> 00:06:30,900
+e queremos traduzir nos eixos X e Y, 50% negativos e 50% negativos.
+
+69
+00:06:31,110 --> 00:06:36,090
+Mas também queremos uma escala porque a maneira como ela desaparecerá é definindo a escala para zero.
+
+70
+00:06:36,100 --> 00:06:39,630
+Portanto, por padrão, isso será definido como um.
+
+71
+00:06:40,470 --> 00:06:40,850
+Certo.
+
+72
+00:06:40,860 --> 00:06:44,320
+Então agora você pode ver que está neste ponto aqui.
+
+73
+00:06:44,340 --> 00:06:50,880
+Agora, se eu me mover, digamos, vamos de cima para baixo para seiscentos e então ele é colocado lá.
+
+74
+00:06:50,880 --> 00:06:57,600
+Se eu fizer 400 é colocado lá, se eu quiser movê-lo horizontalmente, eu poderia dizer quinhentos movimentos
+
+75
+00:06:57,600 --> 00:06:58,290
+isso aí.
+
+76
+00:06:59,110 --> 00:07:05,170
+OK, então isso será aleatório dentro do JavaScript, na verdade, vou mover esses filmes para
+
+77
+00:07:05,170 --> 00:07:09,310
+no final, porque vamos nos livrar deles porque, novamente, eles serão aleatórios.
+
+78
+00:07:10,000 --> 00:07:10,960
+Então, o que mais?
+
+79
+00:07:10,960 --> 00:07:15,640
+Vamos adicionar um ponteiro de cursor a isso, porque vamos clicar neles.
+
+80
+00:07:19,480 --> 00:07:24,130
+E também queremos adicionar uma transição na propriedade transform.
+
+81
+00:07:24,410 --> 00:07:25,780
+Então meio que desbota.
+
+82
+00:07:26,200 --> 00:07:34,990
+Então faça a transição na transformação, digamos, zero vírgula três segundos e faça uma saída fácil.
+
+83
+00:07:36,730 --> 00:07:42,580
+Agora, quando for pego, quando o inseto for pego ou clicado, ele vai diminuir
+
+84
+00:07:42,580 --> 00:07:43,180
+para zero.
+
+85
+00:07:43,210 --> 00:07:53,350
+Então o que eu vou fazer é pegar isso e dizer se tem se o inseto tem uma classe de tribunal, então nós vamos
+
+86
+00:07:53,350 --> 00:07:55,300
+para reduzi-lo a zero.
+
+87
+00:07:55,810 --> 00:07:56,200
+Tudo bem.
+
+88
+00:07:56,210 --> 00:08:02,170
+Então, se eu adicionar isso e tudo isso será feito em JavaScript, mas se eu adicionar catch, é
+
+89
+00:08:02,170 --> 00:08:02,980
+vai embora.
+
+90
+00:08:04,570 --> 00:08:08,440
+OK, então acho que esse é todo o estilo que precisamos fazer.
+
+91
+00:08:10,270 --> 00:08:10,540
+Sim.
+
+92
+00:08:10,570 --> 00:08:14,670
+Então, vamos em frente e nos livrar dessa div do Insec agora.
+
+93
+00:08:14,680 --> 00:08:19,660
+Agora que sabemos que podemos colocar isso no dom e vai, você sabe, podemos colocá-lo em um aleatório
+
+94
+00:08:19,660 --> 00:08:20,130
+ver.
+
+95
+00:08:20,140 --> 00:08:23,500
+Então eu também vou me livrar do topo e da esquerda porque eles serão aleatórios.
+
+96
+00:08:25,100 --> 00:08:28,480
+OK, então nosso estilo deve estar pronto.
+
+97
+00:08:29,030 --> 00:08:35,890
+Agora eu vou ver se eu vou ver se eles colocam o up.
+
+98
+00:08:39,640 --> 00:08:40,600
+Hoje teve aula.
+
+99
+00:08:40,900 --> 00:08:42,550
+Não, eu fiz isso aqui no JavaScript.
+
+100
+00:08:42,580 --> 00:08:43,790
+Tudo bem, então eu vou me livrar disso.
+
+101
+00:08:43,820 --> 00:08:45,670
+Eu só quero começar na primeira página.
+
+102
+00:08:46,450 --> 00:08:47,500
+Certo, faremos isso.
+
+103
+00:08:47,510 --> 00:08:55,120
+E a classe de OP deve ser apenas 100 negativos ou é tela de tela aqui.
+
+104
+00:08:55,130 --> 00:08:56,600
+Então deve ser 100.
+
+105
+00:08:56,980 --> 00:08:57,340
+Tudo bem.
+
+106
+00:08:57,350 --> 00:09:02,500
+Agora que está tudo pronto, estamos prontos para começar no JavaScript e realmente fornecer funcionalidade
+
+107
+00:09:02,500 --> 00:09:03,220
+a este jogo.

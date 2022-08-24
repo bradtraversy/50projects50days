@@ -1,0 +1,379 @@
+﻿1
+00:00:00,180 --> 00:00:05,340
+Tudo bem, no último vídeo, fomos em frente e criamos a maior parte do estilo, temos nosso histórico
+
+2
+00:00:05,460 --> 00:00:08,150
+gradiente, temos nossa pequena barra de navegação aqui.
+
+3
+00:00:08,150 --> 00:00:12,320
+E agora queremos fazer o ícone, que é um botão com a classe de ícone.
+
+4
+00:00:12,630 --> 00:00:21,510
+Então vamos fazer isso ou adicionar um ícone e vamos definir a cor de fundo para branco,
+
+5
+00:00:21,520 --> 00:00:24,570
+que é o mesmo que é um contêiner lá.
+
+6
+00:00:25,140 --> 00:00:27,360
+E então queremos nos livrar dessa fronteira também.
+
+7
+00:00:27,360 --> 00:00:29,190
+Então, vamos definir essa borda em zero.
+
+8
+00:00:29,760 --> 00:00:37,350
+Então agora nós essencialmente não podemos ver nada e então vamos definir o cursor para um ponteiro para que
+
+9
+00:00:37,350 --> 00:00:39,600
+quando passamos o mouse sobre ele, obtemos esse cursor.
+
+10
+00:00:40,230 --> 00:00:45,420
+Queremos definir qualquer preenchimento para zero.
+
+11
+00:00:46,270 --> 00:00:52,020
+Vamos posicionar este relativo porque as linhas dentro serão posicionadas de forma absoluta e
+
+12
+00:00:52,020 --> 00:00:55,200
+vamos definir a altura e a largura para 30 pixels.
+
+13
+00:00:57,860 --> 00:00:58,340
+Tudo bem.
+
+14
+00:00:58,370 --> 00:00:59,840
+Não podemos ver nada ainda.
+
+15
+00:01:01,260 --> 00:01:04,970
+Uma coisa da qual eu quero me livrar é desse esboço sobre o estado de foco.
+
+16
+00:01:04,970 --> 00:01:12,690
+Então, diremos o ícone Cole e o foco, e queremos definir o contorno para zero.
+
+17
+00:01:14,180 --> 00:01:16,250
+OK, agora queremos estilizar as linhas.
+
+18
+00:01:16,250 --> 00:01:20,080
+Lembre-se disso para Divs dentro do botão com a classe de linha.
+
+19
+00:01:20,090 --> 00:01:21,410
+Então nós queremos estilizar isso.
+
+20
+00:01:22,070 --> 00:01:34,970
+Então, digamos linha de ícone e vamos definir a cor de fundo e vamos definir isso para hexadecimal de cinco a
+
+21
+00:01:34,970 --> 00:01:38,570
+nove zero F nove.
+
+22
+00:01:40,190 --> 00:01:43,160
+E queremos definir a altura.
+
+23
+00:01:43,490 --> 00:01:47,110
+Então a essência vai ser duas linhas ou definir dois pixels para a altura.
+
+24
+00:01:47,150 --> 00:01:50,750
+Então temos duas linhas de dois pixels.
+
+25
+00:01:51,290 --> 00:01:56,000
+Agora queremos posicionar isso como absoluto.
+
+26
+00:01:57,260 --> 00:01:59,420
+E na verdade colocou nossa largura também.
+
+27
+00:01:59,420 --> 00:02:04,110
+Então a largura será de 20 pixels e nós posicionamos absoluto.
+
+28
+00:02:04,130 --> 00:02:12,150
+Agora, queremos mover isso, digamos, dos 10 pixels superiores e dos cinco pixels da esquerda.
+
+29
+00:02:12,530 --> 00:02:14,160
+Então essa é a linha superior.
+
+30
+00:02:14,180 --> 00:02:19,130
+Agora, ambos estão exatamente no mesmo lugar agora porque ambos têm a linha, a classe
+
+31
+00:02:19,130 --> 00:02:22,940
+de linha, que acabamos de colocar na mesma posição.
+
+32
+00:02:23,210 --> 00:02:29,300
+Então o que vamos fazer é logo abaixo, digamos, ícone, e então queremos pegar a linha dois
+
+33
+00:02:29,990 --> 00:02:36,320
+e queremos movê-lo para baixo para que possamos usar auto para o topo e, digamos, do
+
+34
+00:02:36,320 --> 00:02:39,230
+10 pixels inferiores.
+
+35
+00:02:39,770 --> 00:02:46,370
+OK, agora temos duas linhas separadas aqui em cima, veja o que mais queremos?
+
+36
+00:02:46,440 --> 00:02:48,680
+E queremos adicionar uma transição, peso real.
+
+37
+00:02:48,680 --> 00:02:50,270
+O que a transição depois?
+
+38
+00:02:50,510 --> 00:02:51,690
+Vamos fazer a rotação.
+
+39
+00:02:52,190 --> 00:02:58,430
+Então lembre-se, quando clicamos nele, quando ele vai de um X para as duas linhas, queremos que elas girem.
+
+40
+00:02:58,440 --> 00:03:03,170
+Então vamos descer aqui e eles precisam girar em direções diferentes.
+
+41
+00:03:03,170 --> 00:03:11,480
+Então, queremos dizer NAV e quando estiver ativo, queremos pegar o ícone e queremos a linha um primeiro.
+
+42
+00:03:11,490 --> 00:03:18,650
+Então, vamos pegar a linha um e adicionar uma transformação para que possamos girar.
+
+43
+00:03:18,650 --> 00:03:27,350
+E os graus é que vamos fazer uma rotação negativa de sete e sessenta e cinco graus.
+
+44
+00:03:27,770 --> 00:03:36,920
+E também precisamos adicionar translate y para o posicionamento e isso será de 5,5 pixels.
+
+45
+00:03:37,750 --> 00:03:38,200
+Tudo bem.
+
+46
+00:03:38,210 --> 00:03:41,000
+E então o que vou fazer é copiar tudo isso.
+
+47
+00:03:42,560 --> 00:03:48,590
+E isso vai ser para a linha dois e isso vai ser positivo, sete, seis, cinco graus.
+
+48
+00:03:48,680 --> 00:03:53,230
+E então isso será negativo porque queremos que eles sigam um caminho diferente.
+
+49
+00:03:55,650 --> 00:04:02,730
+Então salve isso e agora temos um X agora quando eles mudam, precisamos ter uma transição.
+
+50
+00:04:02,740 --> 00:04:11,070
+Então, vamos voltar até aqui para a classe de linha e vamos adicionar uma transição.
+
+51
+00:04:12,690 --> 00:04:15,120
+Queremos colocá-lo na propriedade transform.
+
+52
+00:04:16,770 --> 00:04:19,000
+Tudo é zero vírgula seis segundos.
+
+53
+00:04:19,020 --> 00:04:26,070
+Claro, você pode mudar isso se você gosta de linear e você pode ver quando eu salvo e isso é aplicado,
+
+54
+00:04:26,520 --> 00:04:28,770
+você pode ver a rotação.
+
+55
+00:04:29,500 --> 00:04:34,860
+Então, a última coisa que temos que fazer agora é o JavaScript, que é muito, muito, apenas, acho que
+
+56
+00:04:34,860 --> 00:04:36,480
+cinco, cinco, seis linhas.
+
+57
+00:04:36,940 --> 00:04:41,550
+Basicamente, precisamos apenas de um ouvinte de evento neste botão para que quando clicarmos na classe ativa
+
+58
+00:04:41,550 --> 00:04:42,420
+é alternado.
+
+59
+00:04:42,660 --> 00:04:48,900
+Então vamos ao nosso script e digamos const toggle e defina isso para documentá-lo.
+
+60
+00:04:49,500 --> 00:04:57,360
+E vamos usar o elemento get por D para trazer a ideia de alternância, que é o botão.
+
+61
+00:04:57,480 --> 00:04:57,840
+Certo.
+
+62
+00:04:57,850 --> 00:05:00,570
+Então nós temos essa ideia de alternar, então estamos pegando isso.
+
+63
+00:05:00,810 --> 00:05:03,470
+Também queremos pegar o nav por este lado.
+
+64
+00:05:03,990 --> 00:05:14,400
+Então, digamos que o documento const nav obtenha o elemento por D e queremos o NAV de volta e, em seguida, o que estamos indo
+
+65
+00:05:14,400 --> 00:05:18,780
+fazer é alternar e adicionar um ouvinte de evento a ele porque queremos ouvir
+
+66
+00:05:18,780 --> 00:05:19,620
+por um clique.
+
+67
+00:05:20,220 --> 00:05:21,830
+Então passe e clique.
+
+68
+00:05:21,840 --> 00:05:29,550
+E então temos uma função que você pode escrever assim, ou você pode usar uma função de seta, que
+
+69
+00:05:29,550 --> 00:05:33,990
+é o que eu prefiro, então podemos nos livrar disso e depois adicionar uma seta, OK?
+
+70
+00:05:33,990 --> 00:05:39,450
+E então vamos pegar o nav e vamos simplesmente alternar a classe ativa, o que significa que
+
+71
+00:05:39,450 --> 00:05:41,160
+se for aplicado, ele o removerá.
+
+72
+00:05:41,250 --> 00:05:43,480
+Se não for aplicado, ele irá adicioná-lo.
+
+73
+00:05:43,770 --> 00:05:48,600
+Então vamos pegar uma lista de classes e uma lista de classes.
+
+74
+00:05:48,600 --> 00:05:53,610
+Você pode adicionar se quiser adicionar uma classe, pode remover para remover uma ou pode alternar, o que
+
+75
+00:05:53,610 --> 00:05:57,720
+é o que queremos e queremos alternar a classe ativa.
+
+76
+00:05:58,770 --> 00:05:59,160
+Tudo bem.
+
+77
+00:05:59,190 --> 00:06:05,220
+Agora, com as funções de seta, se tivermos apenas uma única linha como esta no corpo da função, não
+
+78
+00:06:05,220 --> 00:06:07,560
+ainda precisa dessas chaves.
+
+79
+00:06:07,860 --> 00:06:09,570
+Podemos apenas fazer isso.
+
+80
+00:06:09,980 --> 00:06:12,260
+Quer dizer, você não precisa, mas eu não sei.
+
+81
+00:06:12,300 --> 00:06:13,020
+Então é mais curto.
+
+82
+00:06:13,020 --> 00:06:13,650
+É mais limpo.
+
+83
+00:06:14,280 --> 00:06:15,410
+Então vamos tentar isso.
+
+84
+00:06:15,420 --> 00:06:17,310
+Eu vou passar aqui e vou clicar aqui.
+
+85
+00:06:18,300 --> 00:06:19,160
+E lá vamos nós.
+
+86
+00:06:20,580 --> 00:06:29,820
+Assim, todas as transições são aplicadas, incluindo a rotação do ícone, a rotação da rotação
+
+87
+00:06:29,820 --> 00:06:31,680
+e a capacidade dos links.
+
+88
+00:06:31,680 --> 00:06:38,640
+Você pode ver que eles giram e aparecem e desaparecem na largura do contêiner aqui.
+
+89
+00:06:39,360 --> 00:06:44,400
+Portanto, todas essas transições são aplicadas quando essa classe é adicionada e removida.
+
+90
+00:06:45,300 --> 00:06:45,660
+Tudo bem.
+
+91
+00:06:45,660 --> 00:06:48,270
+Então esse é um projeto bem simples.
+
+92
+00:06:48,990 --> 00:06:55,380
+Você pode integrar isso em seu site ou seu aplicativo, seu aplicativo móvel, o que quer que seja
+
+93
+00:06:55,380 --> 00:06:56,490
+você deseja usá-lo com.
+
+94
+00:06:56,490 --> 00:06:57,200
+Mas é isso.
+
+95
+00:06:57,210 --> 00:06:59,670
+Obrigado por assistir e nos vemos no próximo projeto.

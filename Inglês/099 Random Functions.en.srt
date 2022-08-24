@@ -1,0 +1,375 @@
+1
+00:00:00,390 --> 00:00:04,350
+All right, so we're going to get started on our JavaScript here, and I'm not going to say that this
+
+2
+00:00:04,350 --> 00:00:10,200
+is like an advance project, but a lot of the JavaScript we're going to do here is more in depth than
+
+3
+00:00:10,200 --> 00:00:13,670
+some of, you know, the majority of the projects that are in this course.
+
+4
+00:00:14,220 --> 00:00:21,630
+So I'm going to start off by creating a few functions to generate an uppercase letter, a lowercase
+
+5
+00:00:21,630 --> 00:00:25,020
+letter, a number and a symbol, because we need to do that.
+
+6
+00:00:25,020 --> 00:00:30,630
+We need to randomly generate these things to create our password and we need to combine them.
+
+7
+00:00:30,960 --> 00:00:34,560
+So what I'm going to do is create some functions.
+
+8
+00:00:35,070 --> 00:00:39,570
+So this function is going to be called get random lower.
+
+9
+00:00:40,440 --> 00:00:46,690
+And it's exactly what it's going to do is return a random lowercase letter.
+
+10
+00:00:46,730 --> 00:00:49,160
+Now, there's a few ways we can do this.
+
+11
+00:00:49,170 --> 00:00:51,630
+What I'm going to do is use the string object.
+
+12
+00:00:51,900 --> 00:00:56,520
+And on that there's a method called from Char Code.
+
+13
+00:00:56,940 --> 00:01:00,910
+Now, I'm just going to bring this window over for a second here.
+
+14
+00:01:01,320 --> 00:01:07,130
+So this is the the string object, which is used to represent and manipulate a sequence of characters.
+
+15
+00:01:07,590 --> 00:01:13,350
+And, you know, there's there's you can you can convert something to a string, but there's a whole
+
+16
+00:01:13,350 --> 00:01:17,610
+bunch of methods that you can use on this, including from char code.
+
+17
+00:01:17,910 --> 00:01:26,160
+So the static from char code method returns a string created from the specified sequence of UTF 16 code
+
+18
+00:01:26,160 --> 00:01:26,790
+units.
+
+19
+00:01:27,240 --> 00:01:33,990
+So basically we can put a number in here which pertains to and this is just the W3 Schools website,
+
+20
+00:01:33,990 --> 00:01:36,770
+but you can find these and you know, many different places.
+
+21
+00:01:37,080 --> 00:01:42,510
+These are the ASCII printable characters and we have our characters over here.
+
+22
+00:01:42,870 --> 00:01:51,030
+So letters, numbers, symbols, and then they have a specific number or a specific code that pertains
+
+23
+00:01:51,030 --> 00:01:51,460
+to them.
+
+24
+00:01:51,990 --> 00:01:58,530
+So if we look at like the numbers here, zero, the code for that is 48 and then it just keeps going.
+
+25
+00:01:58,530 --> 00:02:00,240
+And the nine is 57.
+
+26
+00:02:00,730 --> 00:02:10,890
+If we want uppercase letters, starts to 65 and ends at 90, lowercase letters start at 97 and end at
+
+27
+00:02:11,090 --> 00:02:12,330
+122.
+
+28
+00:02:12,750 --> 00:02:21,720
+So using this from character code, if I put a 97 in here and then we'll just do a console log of get
+
+29
+00:02:22,890 --> 00:02:32,430
+random lower and if I go over here, we should get a lowercase A because 97 is the code for lowercase
+
+30
+00:02:32,430 --> 00:02:35,940
+A, the next letter B would be the code 98.
+
+31
+00:02:35,940 --> 00:02:38,640
+So that gives me B 122.
+
+32
+00:02:38,640 --> 00:02:39,570
+Should be A Z.
+
+33
+00:02:40,050 --> 00:02:40,490
+All right.
+
+34
+00:02:40,500 --> 00:02:44,820
+So what we want to do is just generate a random lowercase.
+
+35
+00:02:45,240 --> 00:02:55,710
+So we'll take the 97, which we know is a right lowercase A and two that I want to just multiply any
+
+36
+00:02:55,710 --> 00:03:03,260
+number up to 26 because there's 26 characters in, you know, 26 letters in the alphabet.
+
+37
+00:03:03,630 --> 00:03:10,170
+So what we can do is, first of all, first of all, just take math dot floor, which is going to round
+
+38
+00:03:10,170 --> 00:03:11,990
+down and then math.
+
+39
+00:03:13,110 --> 00:03:15,630
+So math dot random.
+
+40
+00:03:16,560 --> 00:03:22,560
+And then I just want to multiply that by the highest random number I want to get, which is 26.
+
+41
+00:03:22,950 --> 00:03:26,730
+And then I'm going to add to that 97.
+
+42
+00:03:27,030 --> 00:03:33,000
+So this could be, you know, one plus ninety seven, which would be 98, which would be a B or two
+
+43
+00:03:33,000 --> 00:03:34,680
+plus ninety seven, which would be C.
+
+44
+00:03:35,130 --> 00:03:36,990
+So let's just go ahead and save this.
+
+45
+00:03:36,990 --> 00:03:44,400
+And you can see right away we get a V if I reload W, X, L, Z, so it's just going to be a random,
+
+46
+00:03:44,820 --> 00:03:46,730
+you know, random lowercase number.
+
+47
+00:03:47,280 --> 00:03:49,500
+So there's other ways you can do this.
+
+48
+00:03:49,500 --> 00:03:56,390
+But this is just the way I'm going to do the lowercase, the uppercase and the numbers.
+
+49
+00:03:57,090 --> 00:04:01,200
+So let's just copy this now and paste that.
+
+50
+00:04:01,230 --> 00:04:07,560
+And this one is going to be get random upper and we're going to do pretty much the same thing here,
+
+51
+00:04:07,560 --> 00:04:10,380
+except we want to change the range we still want.
+
+52
+00:04:10,410 --> 00:04:14,970
+Twenty six is our random number to to add on because we're still dealing with the alphabet.
+
+53
+00:04:15,480 --> 00:04:24,480
+But we want to change this from 97 to 65 because in that chart I showed you uppercase A. was 65.
+
+54
+00:04:25,090 --> 00:04:32,490
+OK, so it's going to just be something twenty six, you know, between one and twenty six plus 65.
+
+55
+00:04:32,500 --> 00:04:38,700
+So if I go ahead and console law, get random upper we get uppercase B, we get O.
+
+56
+00:04:38,940 --> 00:04:41,970
+S G so it's going to be a random upper case.
+
+57
+00:04:42,460 --> 00:04:44,070
+Let's do the same for numbers.
+
+58
+00:04:45,240 --> 00:04:55,410
+So this will be get random number and instead of twenty six we want ten because it's going to be you
+
+59
+00:04:55,410 --> 00:04:58,650
+know, up to what's going to be zero through nine.
+
+60
+00:04:59,040 --> 00:04:59,670
+And then we want.
+
+61
+00:05:00,030 --> 00:05:06,880
+Add on to that 48, because zero has the character, the coat of 48.
+
+62
+00:05:07,410 --> 00:05:19,440
+So if I go down here and I say, get random number, we get three to five, a five eight one.
+
+63
+00:05:19,870 --> 00:05:20,370
+All right.
+
+64
+00:05:21,090 --> 00:05:25,890
+And then four symbols, symbols.
+
+65
+00:05:25,910 --> 00:05:29,480
+And I'm just going to I just want to use a certain set of symbols.
+
+66
+00:05:29,490 --> 00:05:37,860
+So let's just we'll just as a function, get random symbol.
+
+67
+00:05:37,860 --> 00:05:44,160
+And I'm just going to grab this string of symbols here.
+
+68
+00:05:44,160 --> 00:05:51,090
+So I'm going to say const symbols and set that to a string with these specific symbols in it.
+
+69
+00:05:51,450 --> 00:05:56,910
+And then we want to get a random one of these so return symbols.
+
+70
+00:05:58,320 --> 00:06:02,190
+And even though this is a string, we can still use an index.
+
+71
+00:06:02,190 --> 00:06:10,470
+Like if I get zero symbols, zero, and we go down here, we say, get random symbol, I'm going to
+
+72
+00:06:10,470 --> 00:06:13,200
+get the the exclamation.
+
+73
+00:06:13,200 --> 00:06:15,600
+If I do one, I should get the at sign.
+
+74
+00:06:15,840 --> 00:06:18,320
+So it's zero one, two, three and so on.
+
+75
+00:06:18,630 --> 00:06:24,870
+So I'm just going to get a random number and here that with a max of the length of the entire string.
+
+76
+00:06:25,200 --> 00:06:36,210
+So to do that will do math, dot for math, dot random and let's go ahead and multiply that math dot
+
+77
+00:06:36,210 --> 00:06:43,000
+random by whatever the length of symbols is the length of that string.
+
+78
+00:06:43,410 --> 00:06:47,790
+So now I see I get a percent if I reload slash.
+
+79
+00:06:47,940 --> 00:06:50,890
+So I'm just going to get one of these symbols here.
+
+80
+00:06:52,440 --> 00:07:00,120
+So now we have these four functions and we can implement them into, you know, the rest of the application.
+
+81
+00:07:00,300 --> 00:07:04,830
+Now, one thing I do want to do before we end this specific video is up here.
+
+82
+00:07:04,830 --> 00:07:14,460
+I'm going to create a variable called random func because I want it I want to be able to get a random
+
+83
+00:07:14,460 --> 00:07:17,300
+lowercase, uppercase number, symbol, whatever.
+
+84
+00:07:17,910 --> 00:07:23,490
+So I'm going to use this object here and give each function a key.
+
+85
+00:07:23,490 --> 00:07:41,760
+So lower is going to be get get random lower and upper, Olby get random upper and no get random number
+
+86
+00:07:42,360 --> 00:07:48,040
+and symbol will be get a random symbol.
+
+87
+00:07:48,570 --> 00:07:48,960
+All right.
+
+88
+00:07:48,970 --> 00:07:54,570
+So we have this object that has these keys that equal whatever these functions return.
+
+89
+00:07:55,020 --> 00:07:57,840
+And you'll see why in a little bit when we use these.
+
+90
+00:07:58,050 --> 00:08:03,780
+But I think we should stop the video here and in the next one will start to work with the DOM and,
+
+91
+00:08:04,500 --> 00:08:06,570
+you know, start to add some event.
+
+92
+00:08:06,570 --> 00:08:12,910
+Listeners want to be able to click this button, generate a password based on these functions over here.
+
+93
+00:08:13,650 --> 00:08:17,580
+We also want to be able to have the function to copy it to the clipboard.
+
+94
+00:08:17,760 --> 00:08:19,820
+So we'll get to that stuff in the next video.

@@ -1,0 +1,679 @@
+1
+00:00:00,180 --> 00:00:03,990
+All right, so we're going to start on our sticky nav, and the way I'm going to do this is we'll do
+
+2
+00:00:03,990 --> 00:00:09,600
+all the e-mail now and then we're going to style the whole rest of the page, including the hero image,
+
+3
+00:00:09,780 --> 00:00:15,150
+the hero area with the overlay, and then in the next video will style the navigation and add a little
+
+4
+00:00:15,150 --> 00:00:21,180
+bit of JavaScript that we need in order to give it that effect where it's it's making it active and
+
+5
+00:00:21,180 --> 00:00:23,880
+not active, depending where we're scrolling on the page.
+
+6
+00:00:24,180 --> 00:00:24,510
+All right.
+
+7
+00:00:24,520 --> 00:00:26,600
+So let's start off in our HTML here.
+
+8
+00:00:26,610 --> 00:00:30,930
+We'll just say sticky navigation for the title.
+
+9
+00:00:30,930 --> 00:00:35,970
+And down here, first thing we're going to have here is the navigation.
+
+10
+00:00:35,970 --> 00:00:40,530
+So I'm going to use an HTML5 nav tag and I'm just going to give a class of NAV as well.
+
+11
+00:00:41,020 --> 00:00:46,950
+And inside there, we want a container class because we don't want all we don't want the logo on this
+
+12
+00:00:46,950 --> 00:00:53,490
+side and the links on this side to stick to the edges if the browser is too long or too wide.
+
+13
+00:00:53,610 --> 00:00:57,390
+So we'll settle with a max width of like twelve hundred on the container.
+
+14
+00:00:57,810 --> 00:00:59,850
+And then inside here we want two things.
+
+15
+00:00:59,850 --> 00:01:01,500
+One is going to be the one.
+
+16
+00:01:01,720 --> 00:01:03,440
+I'm just going to give that a class of logo.
+
+17
+00:01:03,660 --> 00:01:05,730
+Usually you'll have a link around the logo.
+
+18
+00:01:05,730 --> 00:01:09,840
+Just go to the, you know, this page here and inside here.
+
+19
+00:01:09,840 --> 00:01:16,290
+I'll just say my Web site, OK, and then under the one we want to have our unordered list with our
+
+20
+00:01:16,290 --> 00:01:18,000
+list items and our links.
+
+21
+00:01:18,420 --> 00:01:20,360
+And these aren't actually going to go anywhere.
+
+22
+00:01:20,370 --> 00:01:23,510
+Let's say home will have for these.
+
+23
+00:01:23,520 --> 00:01:27,890
+So we'll do home about services.
+
+24
+00:01:27,900 --> 00:01:30,690
+These are kind of the default pages that we use.
+
+25
+00:01:31,950 --> 00:01:37,480
+And then I'm going to add a class of active onto home.
+
+26
+00:01:37,710 --> 00:01:41,640
+So basically we just want a different color link for whatever page you're on.
+
+27
+00:01:42,150 --> 00:01:46,890
+So if I save that, it's going to look really weird just because of the default styles we have, putting
+
+28
+00:01:46,890 --> 00:01:48,350
+everything in the middle and so on.
+
+29
+00:01:48,900 --> 00:01:54,950
+So let's move on under the nav now and we're going to have our hero area.
+
+30
+00:01:54,960 --> 00:01:56,580
+So let's have a class of hero.
+
+31
+00:01:56,910 --> 00:02:02,430
+And we also want the container in here because we want to contain the content and let's do an H1.
+
+32
+00:02:02,430 --> 00:02:10,830
+We'll say welcome to my Web site and then a paragraph and we'll just do Lorem 10 enter to give us ten
+
+33
+00:02:10,830 --> 00:02:12,230
+words of text.
+
+34
+00:02:12,950 --> 00:02:13,350
+All right.
+
+35
+00:02:13,350 --> 00:02:20,340
+Now, under the hero will have a section and the section is going to also use the container class and
+
+36
+00:02:20,340 --> 00:02:24,180
+also give it a class of content and we'll do an H.
+
+37
+00:02:24,660 --> 00:02:31,170
+Let's do an H2 here and say content one paragraph.
+
+38
+00:02:31,170 --> 00:02:32,970
+We'll do Lorem one hundred.
+
+39
+00:02:34,060 --> 00:02:42,430
+And then under the that paragraph will do, say, an H3 will say contents to obviously this would be
+
+40
+00:02:42,430 --> 00:02:44,400
+whatever you want on your site.
+
+41
+00:02:44,590 --> 00:02:45,970
+So we just need something.
+
+42
+00:02:46,450 --> 00:02:48,370
+So a couple of paragraphs and headings.
+
+43
+00:02:48,370 --> 00:02:48,670
+Good.
+
+44
+00:02:49,080 --> 00:02:55,090
+So now what I'm going to do is just comment out the now for now, because I want to style the rest of
+
+45
+00:02:55,090 --> 00:02:55,600
+the page.
+
+46
+00:02:55,600 --> 00:02:59,530
+That way we can do everything that we need to with the nav bar in the next video.
+
+47
+00:03:00,050 --> 00:03:06,310
+So in our stylesheet here, let's go ahead and change in the body.
+
+48
+00:03:06,320 --> 00:03:08,950
+We don't actually need flaks or anything like that.
+
+49
+00:03:09,970 --> 00:03:12,250
+So we're going to get rid of all of this, actually.
+
+50
+00:03:13,300 --> 00:03:21,070
+And then let's just set a color of two, two, two for the text and let's use open sans is a find.
+
+51
+00:03:21,070 --> 00:03:22,200
+It looks a little nicer.
+
+52
+00:03:23,020 --> 00:03:34,060
+So success questionmark family set that to open plus Sande's and we'll add that here open sans.
+
+53
+00:03:35,080 --> 00:03:37,510
+And then I want to add a reset.
+
+54
+00:03:37,510 --> 00:03:42,230
+So we want to take the margin and padding off of everything that includes the body.
+
+55
+00:03:43,240 --> 00:03:49,240
+OK, so now there's no margin and padding and then in the body I'm going to add just padding bottom
+
+56
+00:03:50,020 --> 00:03:52,840
+of 50 pixels just to give some room at the bottom.
+
+57
+00:03:53,560 --> 00:03:55,600
+All right, now the container.
+
+58
+00:03:57,910 --> 00:04:05,050
+I'm going to set a max width of twelve hundred pixels and then for the margin, we want zero top and
+
+59
+00:04:05,050 --> 00:04:08,560
+bottom and then auto on the left and right, which will put it in the middle.
+
+60
+00:04:08,830 --> 00:04:13,150
+So now if I stretch this so you can see anywhere we use the container, it's going to end right here,
+
+61
+00:04:13,300 --> 00:04:16,810
+including the NAV, which I just have commented out right now.
+
+62
+00:04:17,680 --> 00:04:18,100
+All right.
+
+63
+00:04:18,130 --> 00:04:23,460
+We can make this a little smaller here and here.
+
+64
+00:04:23,770 --> 00:04:24,210
+All right.
+
+65
+00:04:24,430 --> 00:04:28,120
+Now, the NAV stuff will go here.
+
+66
+00:04:28,120 --> 00:04:32,840
+But let's just let's just put a to do here, so to do now.
+
+67
+00:04:33,920 --> 00:04:34,360
+All right.
+
+68
+00:04:34,360 --> 00:04:37,930
+Now I want to work on the hero area, which is this here.
+
+69
+00:04:37,930 --> 00:04:43,810
+I want this to take up the full screen right here, all the viewport heights with a background image,
+
+70
+00:04:43,810 --> 00:04:44,870
+with an overlay.
+
+71
+00:04:45,130 --> 00:04:54,010
+So let's take the class of hero and let's do a actually let's add let's add the background.
+
+72
+00:04:55,290 --> 00:05:01,260
+Image first, so the background image is going to be a neutral and I'm just going to grab it.
+
+73
+00:05:01,560 --> 00:05:07,320
+It's from the pixels dotcom Web site and of course, you could use any image you want here.
+
+74
+00:05:07,770 --> 00:05:12,720
+And if I say we're only going to see it up to the height of the content so we can't even, you know,
+
+75
+00:05:12,720 --> 00:05:13,800
+make out the image.
+
+76
+00:05:14,130 --> 00:05:15,570
+But let's add a height.
+
+77
+00:05:17,760 --> 00:05:21,650
+Actually, I'm going to make this a little wider.
+
+78
+00:05:22,680 --> 00:05:25,960
+So let's make the height of this, take up the whole viewport.
+
+79
+00:05:25,980 --> 00:05:29,220
+So one hundred viewport heights like that right now.
+
+80
+00:05:29,220 --> 00:05:33,090
+I do want to add some background properties because that doesn't look how I want.
+
+81
+00:05:33,510 --> 00:05:41,760
+So let's set first of all, we'll do background repeat, set that to no repeat, then we'll do background
+
+82
+00:05:42,210 --> 00:05:45,420
+size and we'll set that to cover.
+
+83
+00:05:46,100 --> 00:05:50,550
+OK, as soon as I do that, we can see the whole image and then I'm going to position it.
+
+84
+00:05:50,560 --> 00:05:58,830
+So background position, we're going to set that to the bottom center.
+
+85
+00:06:00,560 --> 00:06:01,070
+All right.
+
+86
+00:06:01,080 --> 00:06:04,080
+And then, yeah, that should do it for the background image.
+
+87
+00:06:06,850 --> 00:06:12,870
+OK, now the content inside, we want to deal with that, so let's go under the height here.
+
+88
+00:06:12,880 --> 00:06:27,160
+Let's set the color of this to white and let's display blacks so that we can justify content center
+
+89
+00:06:27,160 --> 00:06:33,810
+and also we want to align items center.
+
+90
+00:06:33,820 --> 00:06:34,990
+So it's going to put it right in the middle.
+
+91
+00:06:35,020 --> 00:06:39,820
+We also want to text a line to the center like that.
+
+92
+00:06:40,270 --> 00:06:42,010
+And let's add.
+
+93
+00:06:44,620 --> 00:06:51,700
+Let's see, let's add a position relative, because we're going to be adding an overlay inside of it,
+
+94
+00:06:52,060 --> 00:06:57,490
+which will be positioned absolute, I also want to just add some margin bottom to push the content below
+
+95
+00:06:57,490 --> 00:06:57,970
+it down.
+
+96
+00:06:57,970 --> 00:07:01,450
+So the 20 pixels, so that takes up one hundred viewport heights.
+
+97
+00:07:01,450 --> 00:07:04,010
+And then when we scroll, we can see the rest of the content.
+
+98
+00:07:05,200 --> 00:07:11,110
+Now for the overlay, we want to add an overlay because this this image is way too bright.
+
+99
+00:07:11,140 --> 00:07:13,620
+This is the contrast is not right here.
+
+100
+00:07:13,690 --> 00:07:14,620
+This is unreadable.
+
+101
+00:07:14,630 --> 00:07:19,030
+I mean, it's readable, but it's it's not readable enough.
+
+102
+00:07:19,510 --> 00:07:24,790
+So we could add an extra element in the HTML to add the overlay to.
+
+103
+00:07:25,600 --> 00:07:29,600
+But what we'll do is use the DB for pseudo selector.
+
+104
+00:07:29,920 --> 00:07:37,300
+So if we say hero, colon, colon before it, basically kind of you can think of it as adding like a
+
+105
+00:07:37,300 --> 00:07:38,970
+ghost element to style.
+
+106
+00:07:39,340 --> 00:07:46,630
+So before and when we use before or after, we have to add content and you can actually store something.
+
+107
+00:07:47,520 --> 00:07:53,940
+There you can add content like hello, which is right here, so that's getting inserted with the.
+
+108
+00:07:54,630 --> 00:07:57,840
+Now, we don't want to add any text, so we're going to leave that blank.
+
+109
+00:07:58,440 --> 00:08:03,010
+And then we want this to be just placed over this entire thing, over the hero.
+
+110
+00:08:03,050 --> 00:08:09,750
+So we'll position it absolute within the hero, which we positioned relative.
+
+111
+00:08:10,210 --> 00:08:13,300
+And then once we do that, we want to set the top.
+
+112
+00:08:13,800 --> 00:08:20,100
+So basically say we're going to start it at the top zero and left zero position and we want it to cover
+
+113
+00:08:20,100 --> 00:08:21,090
+the entire thing.
+
+114
+00:08:21,090 --> 00:08:24,420
+So the with hundred percent height, 100 percent.
+
+115
+00:08:25,880 --> 00:08:26,300
+All right.
+
+116
+00:08:26,310 --> 00:08:32,580
+And then we could add a background or as background color.
+
+117
+00:08:32,850 --> 00:08:34,650
+So background color.
+
+118
+00:08:35,730 --> 00:08:42,960
+Now if I say background, color red, you can see that it adds an entire overlay to that area because
+
+119
+00:08:42,960 --> 00:08:44,250
+we positioned it relative.
+
+120
+00:08:44,250 --> 00:08:48,550
+We started it at the top left corner and we had to go total with total height.
+
+121
+00:08:48,960 --> 00:08:51,770
+Now, obviously, we don't want a solid color like this.
+
+122
+00:08:52,110 --> 00:08:58,320
+So what we'll do is use our GBA red, green, blue, alpha, and we'll make it black and alpha.
+
+123
+00:08:58,320 --> 00:09:01,750
+The last value is the transparency or the opacity.
+
+124
+00:09:02,250 --> 00:09:04,830
+So let's set that to zero point six.
+
+125
+00:09:05,160 --> 00:09:07,670
+And now you can see we have this overlay.
+
+126
+00:09:07,680 --> 00:09:13,020
+If I make it higher, like zero point nine, if it's darker, if I do zero point two, it's lighter.
+
+127
+00:09:13,020 --> 00:09:16,080
+I think six is and I think that looks good.
+
+128
+00:09:16,080 --> 00:09:17,620
+Or maybe five.
+
+129
+00:09:18,540 --> 00:09:23,790
+Now, the problem here is that the text is actually behind the overlay.
+
+130
+00:09:23,790 --> 00:09:26,070
+So the text is darkened, which we don't want.
+
+131
+00:09:26,340 --> 00:09:33,120
+So I'm going to set a Z index, which is basically how close to you how close to the screen an element
+
+132
+00:09:33,120 --> 00:09:33,450
+is.
+
+133
+00:09:33,720 --> 00:09:35,210
+We're going to push this back.
+
+134
+00:09:35,220 --> 00:09:45,330
+So let's do negative two, which didn't work because I want to set that to negative one and set this
+
+135
+00:09:45,330 --> 00:09:46,910
+the hero to negative two.
+
+136
+00:09:47,340 --> 00:09:48,810
+So this is the index.
+
+137
+00:09:50,310 --> 00:09:52,590
+We'll set that to negative two.
+
+138
+00:09:53,160 --> 00:09:57,750
+And now you can see it goes the image, the overlay and then the text.
+
+139
+00:09:59,280 --> 00:09:59,700
+All right.
+
+140
+00:09:59,710 --> 00:10:05,190
+Now I just want to kind of like make this each one a little bigger and position it better.
+
+141
+00:10:05,190 --> 00:10:17,340
+So let's do hero H1 and set the font size to forty six pixels and we're going to add the same margin.
+
+142
+00:10:18,150 --> 00:10:18,870
+So margin.
+
+143
+00:10:18,870 --> 00:10:20,010
+I want to move it up a bit.
+
+144
+00:10:20,010 --> 00:10:28,020
+So negative 20 pixels zero and then 20 pixels on the bottom and then for the paragraph.
+
+145
+00:10:28,290 --> 00:10:38,490
+So hero P let's make the font size twenty pixels and let's make the letter spacing.
+
+146
+00:10:38,490 --> 00:10:39,090
+Will do.
+
+147
+00:10:39,810 --> 00:10:41,610
+We'll do one pixel for that.
+
+148
+00:10:42,970 --> 00:10:48,370
+Pace that looks a little better, and then for the content, we need to separate some of this stuff
+
+149
+00:10:48,370 --> 00:10:48,590
+out.
+
+150
+00:10:48,640 --> 00:10:58,060
+So let's say content age two and we also have an H3 in there and let's say font size for this will do
+
+151
+00:10:58,330 --> 00:10:59,370
+we'll do a percentage.
+
+152
+00:10:59,380 --> 00:11:03,190
+So hundred and fifty percent for those.
+
+153
+00:11:04,090 --> 00:11:09,250
+And let's also do margin 10 pixels on the top and bottom.
+
+154
+00:11:09,250 --> 00:11:11,560
+Separate that out from the paragraph's.
+
+155
+00:11:11,830 --> 00:11:19,360
+And then for the paragraph's, let's say content P, let's say color five five five.
+
+156
+00:11:19,840 --> 00:11:23,760
+And the line height can see how the lines are very close together.
+
+157
+00:11:23,770 --> 00:11:32,050
+So we'll do a line height of 30 pixels and let's do letter spacing of one point five pixels.
+
+158
+00:11:32,410 --> 00:11:39,580
+So if we take a look at that actuals to one point, that's kind of it's kind of much.
+
+159
+00:11:39,850 --> 00:11:41,590
+Let's do one point two for that.
+
+160
+00:11:43,240 --> 00:11:49,330
+All right, and actually, let's do 20 pixels on the headings.
+
+161
+00:11:50,830 --> 00:11:51,820
+All right, so that's good.
+
+162
+00:11:53,740 --> 00:11:57,880
+Now for the Navar and let me just show you if I make this bigger.
+
+163
+00:11:59,020 --> 00:12:05,740
+OK, so that sort of looks like so not much, but it's the start of, you know, 90 percent of the websites
+
+164
+00:12:05,740 --> 00:12:08,040
+out there, just hero and then some content.
+
+165
+00:12:08,740 --> 00:12:11,350
+So I'm going to uncommented the NAV.
+
+166
+00:12:13,090 --> 00:12:18,810
+And as soon as I do that, you'll see that we have it up here completely unstyled.
+
+167
+00:12:19,030 --> 00:12:23,560
+So in the next video, we're going to go ahead and style the NAV and add a little bit of JavaScript
+
+168
+00:12:23,560 --> 00:12:29,710
+to dynamically add and remove a class to basically give it that effect that I showed you in the intro.
+
+169
+00:12:29,830 --> 00:12:30,160
+All right.
+
+170
+00:12:30,160 --> 00:12:31,570
+So I'll see you in the next video.

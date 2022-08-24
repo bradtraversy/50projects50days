@@ -1,0 +1,75 @@
+﻿1
+00:00:00,060 --> 00:00:05,670
+Ei, pessoal, bem-vindos ao curso de 50 projetos, 50 dias, então este curso é realmente para iniciantes
+
+2
+00:00:05,670 --> 00:00:10,980
+ou desenvolvedores da Web de nível intermediário que desejam um projeto legal e exclusivo para fazer todos os dias.
+
+3
+00:00:11,190 --> 00:00:14,250
+E estes são apenas HTML em JavaScript.
+
+4
+00:00:14,250 --> 00:00:16,920
+Não há frameworks de front-end usados ​​ou algo assim.
+
+5
+00:00:17,220 --> 00:00:23,010
+E eles realmente são feitos para aprimorar suas habilidades, suas habilidades de JavaScript e apenas trabalhar com o porteiro
+
+6
+00:00:23,010 --> 00:00:23,520
+em geral.
+
+7
+00:00:23,790 --> 00:00:27,380
+Então eu criei esse curso com um amigo meu, Floren Pop.
+
+8
+00:00:27,390 --> 00:00:32,520
+Ele pode conhecê-lo do Twitter ou Twitter ou YouTube, e ele realmente criou todos esses projetos.
+
+9
+00:00:32,700 --> 00:00:34,620
+Então, eu definitivamente quero dar crédito a ele por isso.
+
+10
+00:00:34,860 --> 00:00:40,110
+E quanto ao que você deve saber, antes de fazer este curso, eu diria apenas o básico de
+
+11
+00:00:40,410 --> 00:00:43,470
+essas três tecnologias, HTML, acesso, JavaScript.
+
+12
+00:00:43,620 --> 00:00:48,090
+Quer dizer, eu não vou explicar o que é uma variável ou como importar uma folha de estilo ou algo parecido
+
+13
+00:00:48,090 --> 00:00:48,390
+este.
+
+14
+00:00:48,390 --> 00:00:50,190
+Então você deve saber o básico.
+
+15
+00:00:50,190 --> 00:00:54,960
+Mas praticamente qualquer pessoa pode fazer este curso e há 50 projetos diferentes.
+
+16
+00:00:55,110 --> 00:00:56,550
+Podemos adicionar mais depois.
+
+17
+00:00:56,730 --> 00:00:58,650
+Podemos mudar um pouco mais tarde.
+
+18
+00:00:58,650 --> 00:01:04,010
+Mas como eu disse, eles são realmente feitos para aprimorar suas habilidades e apenas dar a você algo divertido para criar.
+
+19
+00:01:04,200 --> 00:01:07,470
+Então, se isso soa bem, então vamos em frente e comecemos.
