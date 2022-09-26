@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 89vh;
   margin: 0;
 }
 
@@ -29,7 +29,8 @@ canvas {
 
 .toolbox > * {
   background-color: #fff;
-  border: none;
+  border-radius: 14px;
+  border: 1px solid black;
   display: inline-flex;
   align-items: center;
   justify-content: center;
