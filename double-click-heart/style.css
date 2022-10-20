@@ -40,6 +40,7 @@ small {
 }
 
 .loveMe .fa-heart {
+  pointer-events: none;
   position: absolute;
   animation: grow 0.6s linear;
   transform: translate(-50%, -50%) scale(0);
