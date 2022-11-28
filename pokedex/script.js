@@ -26,7 +26,7 @@ const fetchPokemons = async () => {
 }
 
 const getPokemon = async (id) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+    const url = `https://pokeapi.co/api/v2/pokemon-form/${id}`
     const res = await fetch(url)
     const data = await res.json()
     createPokemonCard(data)
