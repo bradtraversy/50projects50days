@@ -4,23 +4,23 @@ const rightBtn = document.getElementById('right')
 
 const img = document.querySelectorAll('#imgs img')
 
-let idx = 0
+let PO = 0
 
 let interval = setInterval(run, 2000)
 
 function run() {
-    idx++
+    PO++;
     changeImage()
 }
 
 function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
+    if(PO > img.length - 1) {
+        PO = 0
     } else if(idx < 0) {
-        idx = img.length - 1
+        PO = img.length - 1
     }
 
-    imgs.style.transform = `translateX(${-idx * 500}px)`
+    imgs.style.transform = `translateX(${-PO * 500}px)`
 }
 
 function resetInterval() {
@@ -29,13 +29,13 @@ function resetInterval() {
 }
 
 rightBtn.addEventListener('click', () => {
-    idx++
+    PO++
     changeImage()
     resetInterval()
 })
 
 leftBtn.addEventListener('click', () => {
-    idx--
+    PO--
     changeImage()
     resetInterval()
 })
