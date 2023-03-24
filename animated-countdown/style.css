@@ -125,7 +125,7 @@ h4 {
   }
 }
 
-#replay{
+/* #replay{
   background-color: #3498db;
   border-radius: 3px;
   border: none;
@@ -160,4 +160,56 @@ h4 {
 #replay:hover span:after{
   opacity: 1;
   right: 0;
+} */
+
+button{
+  border: none;
+  padding: 5px 30px;
+  transform-origin: left;
+  font-size: 1.2rem;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+  background: none;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+
+
+button::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleX(37%);
+  background-color: #3498db;
+  transform-origin: left;
+  transition: 1s;
+  opacity: 40%;
+  border-radius: 10px;
+}
+button:hover::before{
+  transform: scaleX(1);
+}
+
+button::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform-origin: left;
+  transform: scaleX(44%);
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(42, 58, 107);
+  transition: 1s;
+}
+button:hover::after{
+  transform: scaleX(1);
 }
