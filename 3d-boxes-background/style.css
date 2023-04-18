@@ -87,7 +87,7 @@ body {
   position: absolute;
   bottom: -15px;
   left: 8px;
-  height: 15px;
+  height: 14px;
   width: 100%;
   transform: skewX(45deg);
 }
