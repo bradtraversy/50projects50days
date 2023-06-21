@@ -24,6 +24,7 @@ img {
   border-radius: 10px;
   overflow: hidden;
   width: 350px;
+  transition: transform 0.5s;
 }
 
 .card-header {
@@ -93,6 +94,9 @@ img {
   margin: 0;
   height: 10px;
   width: 100%;
+}
+.card:hover{
+  transform: translateY(-10px);
 }
 
 @keyframes bgPos {
