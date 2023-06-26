@@ -6,6 +6,7 @@
 
 body {
   background-color: darksalmon;
+  background: linear-gradient(right to left red blue green);
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
