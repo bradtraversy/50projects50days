@@ -17,7 +17,8 @@ body {
 
 .search {
   position: relative;
-  height: 50px;
+  height: 30px;
+  
 }
 
 .search .input {
@@ -27,20 +28,22 @@ body {
   padding: 15px;
   height: 50px;
   width: 50px;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
+  border-radius: 50px;
 }
 
 .btn {
   background-color: #fff;
-  border: 0;
+  border: 0 ;
   cursor: pointer;
   font-size: 24px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   height: 50px;
   width: 50px;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
+  border-radius: 25px;
 }
 
 .btn:focus,
