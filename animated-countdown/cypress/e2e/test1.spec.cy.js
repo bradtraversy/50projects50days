@@ -19,10 +19,6 @@ describe('Project 3: Animated Countdown', () => {
     cy.get('.counter').get('h4').should('have.text', 'Get Ready')
   })
 
-  it('The countdown is visible', () => {
-    
-  })
-
   it('Go word is visible', () => {
     cy.get('.final').get('h1').should('have.text', 'GO')
   })
