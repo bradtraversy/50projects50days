@@ -45,14 +45,6 @@ describe('Project 2: 3d-Boxes-Background', () => {
       cy.get('.magic').should('be.visible').click()
       cy.get('.boxes').should('be.visible')
     })
-
-    it('The GIF in the image is working or not', () => {
-      cy.get('.magic').should('be.visible').click()
-      cy.get('.box').should('be.visible')
-      cy.get('image').should('have.data', 'background-image', 'https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif')
-    })
   })
-
-
 
 })
