@@ -16,5 +16,43 @@ describe('Project 2: 3d-Boxes-Background', () => {
     cy.get('body').should('be.visible')
   })
 
+  it('Magic Button is visible', () => {
+    cy.get('.magic').should('be.visible')
+  })
+
+  it('Magic Button is clickable', () => {
+    cy.get('.magic').should('be.visible').click()
+  })
+
+  it('Small Boxes are visible on the screen', () => {
+    cy.get('.boxes').should('be.visible')
+  })
+
+  it('Magic button when clicked, the boxes merge into one box', () => {
+    cy.get('.magic').should('be.visible').click()
+    cy.get('.box').should('be.visible')
+  })
   
+  context('Magic Button toggle', () => {
+    before(() => {
+      cy.visit('http://127.0.0.1:5500/3d-boxes-background/')
+      cy.get('.magic').should('be.visible').click()
+      cy.get('.box').should('be.visible')
+      
+    })
+  
+    it('If Magic button is toggled, then the box changes to small boxes', () => {
+      cy.get('.magic').should('be.visible').click()
+      cy.get('.boxes').should('be.visible')
+    })
+
+    it('The GIF in the image is working or not', () => {
+      cy.get('.magic').should('be.visible').click()
+      cy.get('.box').should('be.visible')
+      cy.get('image').should('have.data', 'background-image', 'https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif')
+    })
+  })
+
+
+
 })
