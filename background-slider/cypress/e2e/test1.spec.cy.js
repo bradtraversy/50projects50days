@@ -34,6 +34,11 @@ describe('Project 4: Background Slider', () => {
       it('Left arrow is clickable', () => {
         cy.get('.fa-arrow-left ').should('be.visible').click()
       })
+
+      it('Left arrow when clicked takes me to the previous image', () => {
+        cy.get('.fa-arrow-left ').should('be.visible').click()
+        cy.get('.slide').should('have.class', 'active').should('be.visible')
+      })
     })
 
     context('Right Arrow', () => {
@@ -43,6 +48,11 @@ describe('Project 4: Background Slider', () => {
 
       it('Right arrow is clickable', () => {
         cy.get('.fa-arrow-right ').should('be.visible').click()
+      })
+
+      it('Right arrow when clicked takes me to the next image', () => {
+        cy.get('.fa-arrow-right ').should('be.visible').click()
+        cy.get('.slide').should('have.class', 'active').should('be.visible')
       })
     })
    })
