@@ -7,7 +7,12 @@ describe('Project 6: Content Placeholder', () => {
 
   })
 
-  it('Background color', () => {
-
+  it('Body is visible', () => {
+    cy.get('body').should('be.visible')
   })
+
+  it('Background color', () => {
+    cy.get('body').should('have.css', 'background-color', 'rgb(236, 240, 241)')
+  })
+
 })
