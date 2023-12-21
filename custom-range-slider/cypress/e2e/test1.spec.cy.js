@@ -66,10 +66,6 @@ describe('Project: Custom Range Slider', () => {
         cy.get('#range').invoke('val', '101').trigger('input');
         cy.get('label[for="range"]').should('not.have.text', '101');
       })
-
-      // it('Color of the slider is correctly displayed', () => {
-      //   cy.get('input[type="range"]').should('be.visible').should('have.css', 'background-color', 'rgb(128, 0, 128)')
-      // })
     })
   })
 
