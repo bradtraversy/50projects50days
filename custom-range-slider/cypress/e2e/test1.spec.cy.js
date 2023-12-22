@@ -47,25 +47,22 @@ describe('Project: Custom Range Slider', () => {
         cy.get('label[for="range"]').should('have.text', '100');
       })
 
-      it('Range slider has any value between 0 and 50 inclusive', () => {
+      it('Range slider has any value between 0 and 100 inclusive', () => {
         cy.get('#range').invoke('val', '29').trigger('input');
         cy.get('label[for="range"]').should('have.text', '29');
-      })
 
-      it('Range slider has any value between 0 and 100 inclusive', () => {
         cy.get('#range').invoke('val', '63').trigger('input');
         cy.get('label[for="range"]').should('have.text', '63');
       })
 
-      it('Range slider does not have a value less than 0', () => {
+      it('Range slider does not have a value less than 0 or greater than 100', () => {
         cy.get('#range').invoke('val', '-1').trigger('input');
         cy.get('label[for="range"]').should('not.have.text', '-1');
-      })
 
-      it('Range slider does not have a value greater than 100', () => {
         cy.get('#range').invoke('val', '101').trigger('input');
         cy.get('label[for="range"]').should('not.have.text', '101');
       })
+
     })
   })
 
