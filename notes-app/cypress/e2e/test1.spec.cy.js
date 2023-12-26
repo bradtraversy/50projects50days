@@ -94,6 +94,23 @@ describe('Project: Notes-App', () => {
               cy.get('.note textarea').should('be.visible')
             })
           })
+
+          context('Delete the note button', () => {
+            it('The button is visible', () => {
+              cy.get('.delete').should('be.visible')
+            })
+
+            it('The button is clickable', () => {
+              cy.get('.delete').should('be.visible').click()
+            })
+
+            it('The button when clicked deletes the note from the screen', () => {
+              cy.get('.note').its('length').then((initialNoteCount) => {
+                cy.get('.note:first-of-type .delete').click()
+                cy.get('.note').should('have.length', initialNoteCount - 1)
+              })
+            })
+          })
         })
       })
     })
