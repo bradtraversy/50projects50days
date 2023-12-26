@@ -1,4 +1,5 @@
 describe('Project: Notes-App', () => {
+
   beforeEach(() => {
     cy.visit('http://127.0.0.1:5500/notes-app')
   })
@@ -11,18 +12,18 @@ describe('Project: Notes-App', () => {
     cy.get('body').should('be.visible')
   })
 
-  context('Background-color', () => {
-
-    it('Background color is visible', () => {
-      cy.get('body').should('be.visible')
-    })
-
-    it('Background color is correct', () => {
-      cy.get('body').should('have.css', 'background-color', 'rgb(123, 218, 243)')
-    })
-  })
-
   context('Body', () => {
+
+    context('Background-color', () => {
+      it('Background color is visible', () => {
+        cy.get('body').should('be.visible')
+      })
+  
+      it('Background color is correct', () => {
+        cy.get('body').should('have.css', 'background-color', 'rgb(123, 218, 243)')
+      })
+    })
+  
     context('Add Note Button', () => {
       it('The button is visible', () => {
         cy.get('body').get('.add').should('be.visible')
@@ -85,8 +86,9 @@ describe('Project: Notes-App', () => {
               cy.get('.edit').should('be.visible').click()
             })
 
-            it('The button when clicked saves the text and does not allow me to edit it and when clicked again allows me to edit the text', () => {
+            it('The toggle button to edit and save the text', () => {
               cy.get('.note').should('be.visible').type('Hello world, how are you?')
+
               cy.get('.edit').should('be.visible').click()
               cy.get('.note textarea').should('not.be.visible')
 
