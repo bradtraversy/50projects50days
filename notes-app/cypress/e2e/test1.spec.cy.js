@@ -49,8 +49,52 @@ describe('Project: Notes-App', () => {
       })
 
       it('The button when clicked opens a new note', () => {
-        cy.get('body .add').should('be.visible').click()
+        cy.get('body .add').should('be.visible').click()  // checks if the note is visible or not too
         cy.get('.note').should('be.visible')
+      })
+
+      context('New Note', () => {
+        it('The user is able to write in the note', () => {
+          cy.get('body .add').should('be.visible').click() 
+          cy.get('.note').should('be.visible').type('Hello world, how are you?')
+        })
+
+        it('The note accepts multi line input as well', () => {
+          cy.get('body .add').should('be.visible').click() 
+          cy.get('.note').should('be.visible').type('Hello world, how are you?').type('{enter}').type('The world says that it is fine.')
+        })
+
+        it('The user is able to delete characters with the help of backspace', () => {
+          cy.get('body .add').should('be.visible').click() 
+          cy.get('.note').should('be.visible').type('Hello world, how are you?').type('{enter}').type('The world says that it is fine.')
+          .type('{backspace}').type('{backspace}').type('{backspace}').type('{backspace}').type('{backspace}')
+        })
+
+        context('Notepad buttons', () => {
+          beforeEach(() => {
+            cy.get('body .add').should('be.visible').click() 
+            cy.get('.note').should('be.visible')
+          })
+
+          context('Save the text button', () => {
+            it('The button is visible', () => {
+              cy.get('.edit').should('be.visible')
+            })
+
+            it('The button is clickable', () => {
+              cy.get('.edit').should('be.visible').click()
+            })
+
+            it('The button when clicked saves the text and does not allow me to edit it and when clicked again allows me to edit the text', () => {
+              cy.get('.note').should('be.visible').type('Hello world, how are you?')
+              cy.get('.edit').should('be.visible').click()
+              cy.get('.note textarea').should('not.be.visible')
+
+              cy.get('.edit').should('be.visible').click()
+              cy.get('.note textarea').should('be.visible')
+            })
+          })
+        })
       })
     })
   })
