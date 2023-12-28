@@ -1,0 +1,74 @@
+body{
+    font-family: 'Saira', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    background-color: aqua;
+
+}
+h1{text-align: center;}
+
+.draw{
+    border:2px solid grey;
+    user-select: none;
+    display:flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background-color: white ;
+}
+.buttonrow{
+    margin: 0.2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-content: center;
+}
+
+button{
+    margin: 1%;
+    width: 8%;
+    background-color: rgb(252, 252, 127);
+    border-color: grey;
+    border-radius: 15%;
+    font-size: medium;
+}
+#selectcol{
+
+    margin-right:1%;
+    border-radius: 30%;
+    border-width: 1px;
+    background-color: rgb(252, 252, 127);
+    
+}
+#download{
+    width:20%;
+}
+
+input{
+    
+    background-color: rgb(252, 252, 127);
+
+}
+
+@media only screen and (max-width: 500px){
+    .draw{
+        height: 300px;
+        width: 300px;
+    }
+    .buttonrow{
+        margin: 2%;
+
+
+    }
+    button{
+        width: 20%;
+    }
+    #download{
+        width:40%;
+    }
+}
