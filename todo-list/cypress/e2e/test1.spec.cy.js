@@ -54,13 +54,11 @@ describe('Project: Todo List', () => {
         })
 
         it('Type some data in the textfield', () => {
-          cy.get('#form .input').should('be.visible').click()
-          .type('Hello world, how are you?').type('{enter}')
+          cy.get('#form .input').should('be.visible').click().type('Hello world, how are you?').type('{enter}')
         })
 
         it('The entry is listed below and visible', () => {
-          cy.get('#form .input').should('be.visible').click()
-          .type('Hello world, how are you?').type('{enter}')
+          cy.get('#form .input').should('be.visible').click().type('Hello world, how are you?').type('{enter}')
           cy.get('.todos').should('be.visible')
         })
       })
@@ -89,7 +87,7 @@ describe('Project: Todo List', () => {
           })
          
           context('Right Click', () => {
-            it('The Right Click text is corect', () => {
+            it('The Right Click text is correct', () => {
               cy.get('body small').contains('Right click to delete todo').should('be.visible')
             })
 
@@ -99,7 +97,6 @@ describe('Project: Todo List', () => {
               cy.contains('.todos li', 'Hello world, how are you?').should('not.exist')
             })
           })
-
         })
       })
     })
