@@ -17,7 +17,7 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 driver.get('http://127.0.0.1:5500/_project_starter_/')
 
 # Find the element you want to check the background color for
-element = driver.find_element(By.TAG_NAME, 'body')  # Replace with your element's ID or any other locator
+element = driver.find_element(By.TAG_NAME, 'body') 
 
 # Get the CSS value for the 'background-color' property of the element
 background_color = element.value_of_css_property('background-color')
