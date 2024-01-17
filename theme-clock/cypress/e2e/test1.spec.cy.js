@@ -67,13 +67,9 @@ describe('Project Theme Clock', () => {
             var hours = currentTime.getHours()
             const minutes = currentTime.getMinutes()
             const meridiem = hours >= 12 ? 'PM' : 'AM'
-  
             hours = hours % 12 || 12
-            // Format minutes to have leading zero if less than 10
             const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes
-  
             const formattedTime = `${hours}:${formattedMinutes} ${meridiem}`
-  
             cy.get('.time').should('have.text', formattedTime).should('have.css', 'color', 'rgb(255, 255, 255)')
           })
 
@@ -118,9 +114,7 @@ describe('Project Theme Clock', () => {
             var hours = currentTime.getHours()
             const minutes = currentTime.getMinutes()
             const meridiem = hours >= 12 ? 'PM' : 'AM'
-  
             hours = hours % 12 || 12
-            // Format minutes to have leading zero if less than 10
             const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes
   
             const formattedTime = `${hours}:${formattedMinutes} ${meridiem}`
