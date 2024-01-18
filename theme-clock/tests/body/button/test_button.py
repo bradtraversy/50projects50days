@@ -18,11 +18,10 @@ driver.get('http://127.0.0.1:5500/theme-clock/index.html')
 button = driver.find_element(By.XPATH, '/html/body/button')
 button.click()
 
-# Wait for the changes to take effect (adjust wait time as needed)
 try:
-    # Find the new button after the changes
+    
     button = driver.find_element(By.XPATH, '/html/body/button')
-
+    
     # Retrieve properties
     text = button.text
     background_color = button.value_of_css_property('background-color')
