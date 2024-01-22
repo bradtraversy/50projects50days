@@ -29,5 +29,4 @@ time.sleep(3)
 
 print('Success!')
 
-# Close the browser window
 driver.quit()
