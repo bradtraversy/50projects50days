@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #1f1f1f;
+  background-color: #f1f1f1;
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ body {
 }
 
 .circle {
-  background-color: #1f1f1f;
+  background-color: #f1f1f1;
   color:#e2e2e2;
   border-radius: 50%;
   height: 30px;
