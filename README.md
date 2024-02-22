@@ -2,8 +2,8 @@
 
 This is the main repository for all of the projects in the course.
 
--   [Course Link](https://www.udemy.com/course/50-projects-50-days)
--   [Course Info Website](https://50projects50days.com)
+-   [Course Link](https://www.traversymedia.com/50-Projects-In-50-Days)
+
 
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -57,6 +57,7 @@ This is the main repository for all of the projects in the course.
 | 48  | [Random Image Feed](https://github.com/bradtraversy/50projects50days/tree/master/random-image-generator)                         | [Live Demo](https://50projects50days.com/projects/random-image-feed/)             |
 | 49  | [Todo List](https://github.com/bradtraversy/50projects50days/tree/master/todo-list)                                         | [Live Demo](https://50projects50days.com/projects/todo-list/)                     |
 | 50  | [Insect Catch Game](https://github.com/bradtraversy/50projects50days/tree/master/insect-catch-game)                         | [Live Demo](https://50projects50days.com/projects/insect-catch-game/)             |
+| 51  | [Simple Timer](https://github.com/bradtraversy/50projects50days/tree/master/simple-timer)                                   | [Live Demo](https://50projects50days.com/projects/simple-timer/)             |
 
 **NOTE ON PULL REQUESTS**: All of these projects are part of the course. While I do appreciate people trying to make some things prettier or adding new features, we are only accepting pull requests and looking at issues for bug fixes so that the code stays inline with the course
 
