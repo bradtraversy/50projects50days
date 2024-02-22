@@ -72,6 +72,8 @@ body {
   padding: 15px 0;
   font-size: 18px;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .form-control input:focus,
