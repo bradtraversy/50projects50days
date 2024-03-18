@@ -26,6 +26,7 @@ html.dark {
 body {
   font-family: 'Heebo', sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -40,8 +41,9 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 8px 12px;
-  position: absolute;
-  top: 100px;
+  position: relative;
+  top: 0;
+  margin-bottom: 80px;
 }
 
 .toggle:focus {
