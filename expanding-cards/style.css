@@ -33,6 +33,12 @@ body {
   -webkit-transition: all 700ms ease-in;
 }
 
+/* Hover effect for panels */
+.panel:hover {
+  flex: 3; /* You can adjust the value for the flex property as needed */
+  background-size: 110%; /* This will slightly zoom the background image */
+}
+
 .panel h3 {
   font-size: 24px;
   position: absolute;
