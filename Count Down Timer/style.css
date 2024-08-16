@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "sans";    
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    background: #19172e;
+    color: white;
+}
+
+h1{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    padding-top: 120px;
+}
+h2{
+    margin-bottom: 20px;
+}
+
+#start-button{
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    font-size: 1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    bottom: 0;
+    margin-bottom: 280px;
+}
+
+#start-button:active{
+    background: #1e8e3e;
+
+}
+#container {
+    height: 200px;
+    width: 700px;
+    background-color: #F5E4C3;
+    margin: 0 auto;
+    border: 5px solid #88B169;
+    color: #19172e;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*label*/
+.label {
+    margin: 0;
+
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#hour-label {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+#min-label {
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+#sec-label {
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+/*times*/
+.time {
+    justify-self: center;
+    align-self: center;
+
+    border: none;
+    background-color: #ffffff00;
+    font-size: 50px;
+    width: 70px;
+    height: 50px;
+}
+
+#hour {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.semicolon {
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+    margin: 0;
+}
+#p1 {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+#minute {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+#p2 {
+    grid-area: 2 / 3 / 2 / 5;
+}
+
+#sec {
+    grid-area: 2 / 4 / 2 / 5;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    
+    width: 100px;
+    height: 40px;
+
+    font-size: 30px;
+    justify-self: center;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 4;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 5;
+    display: none;
+}
+
+#pause {
+    grid-area: 3 / 4 / 3 / 6;
+    display: none;
+}
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    line-height: 3vh;
+}
+
+footer a:visited {
+    color: inherit;
+}
+
+#centered-text {
+    text-align: center;
+  }
