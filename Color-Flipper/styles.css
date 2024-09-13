@@ -1,0 +1,32 @@
+body {
+    transition: background-color 0.5s;
+}
+
+section#colour-display {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 100px auto;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.5);
+    padding: 4rem;
+    border-radius: .5rem;
+}
+
+section#colour-display h1 {
+    font-weight: 900;
+}
+
+section#colour-display #new-colour-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section#colour-display #new-colour-button:hover {
+    background-color: #454444;
+}
