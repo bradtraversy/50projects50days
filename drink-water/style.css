@@ -10,8 +10,9 @@
 }
 
 body {
-  background-color: #3494e4;
-  color: #fff;
+  background-color: #F5EFE7;
+  color: black;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@ h3 {
   border-radius: 0 0 40px 40px;
   height: 330px;
   width: 150px;
-  margin: 30px 0;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -53,6 +54,10 @@ h3 {
   text-align: center;
   margin: 5px;
   transition: 0.3s ease;
+}
+
+.cup.cup-small:hover {
+  background-color: #d9ebfc;
 }
 
 .cup.cup-small.full {
@@ -101,4 +106,47 @@ h3 {
 .text {
   text-align: center;
   margin: 0 0 5px;
+}
+
+.goal-input {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.goal-input input {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.goal-input button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--fill-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.goal-input button:hover {
+  background-color: #4a9edd;
+}
+
+.glass-info {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .cups {
+    width: 100%;
+  }
+
+  .cup.cup-small {
+    margin: 3px;
+  }
 }
