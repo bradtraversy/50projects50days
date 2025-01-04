@@ -1,21 +1,23 @@
-const counters = document.querySelectorAll('.counter')
+const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
-    counter.innerText = '0'
+    const target = parseInt(counter.getAttribute('data-target'), 10);  // Parse the target value
+    let current = 0;  // Initial value of counter
+    const increment = target / 200;  // Determine increment per frame
 
     const updateCounter = () => {
-        const target = +counter.getAttribute('data-target')
-        const c = +counter.innerText
+        // If the counter hasn't reached the target
+        if (current < target) {
+            current += increment;  // Increment counter
+            counter.innerText = Math.ceil(current);  // Update the inner text with rounded value
 
-        const increment = target / 200
-
-        if(c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`
-            setTimeout(updateCounter, 1)
+            // Use requestAnimationFrame for smoother animation
+            requestAnimationFrame(updateCounter);
         } else {
-            counter.innerText = target
+            counter.innerText = target;  // Ensure the target value is set when done
         }
-    }
+    };
 
-    updateCounter()
-})
+    // Start the counter animation
+    updateCounter();
+});
