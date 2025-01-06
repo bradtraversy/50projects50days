@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .container {
+            width: 30vw;
+            margin-top: 200px;
+            margin-left: 100px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .card {
+            padding: 50px;
+        }
+
+        .card h1 {
+            color: rgb(34, 96, 30);
+            text-decoration: underline;
+            margin-top: 20px;
+            font-size: 34px;
+            /* word-spacing: 10px; */
+        }
+
+        .card h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        /* Add some basic styling to the buttons */
+        .btn {
+            background-color: #4CAF50;
+            /* Green background */
+            color: #ffffff;
+            /* White text */
+            border: none;
+            /* Remove border */
+            padding: 20px 20px;
+            /* Add some padding */
+            font-size: 25px;
+            /* Increase font size */
+            cursor: pointer;
+            /* Change cursor to a pointing hand */
+            margin-top: 30px;
+            width: 300px;
+
+        }
+
+        /* Add some hover effects */
+        .btn:hover {
+            background-color: #3e8e41;
+            /* Darken the green background on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Add a subtle shadow */
+        }
+
+
+        .password {
+            height: 40px;
+            width: 500px;
+        }
+
+        .buttons img {
+            height: 40px;
+            /* top: 20px; */
+            /* right: 0; */
+            position: relative;
+            /* left: -10px; */
+            top: -50px;
+            /* z-index:1; */
+            padding-left: 3px;
+        }
+
+        .input1 img {
+            height: 30px;
+            /* top: 20px; */
+            /* right: 0; */
+            position: relative;
+            left: 470px;
+            top: -40px;
+            /* z-index:1; */
+            /* padding-right: 30px; */
+        }
+        .input1 .copy{
+            cursor: pointer;
+            transition: trasform 0.9s;
+        }
+        .input1 .copy:hover{
+            transform: scale(1.1);
+            /* color: #052047; */
+        }
+    </style>
+</head>
+
+<body style="background-color: #052047;">
+    <div class="container">
+        <div class="card">
+            <h2>Generate a</h2>
+            <h1> Random Password</h1>
+            <div class="input1">
+                <input class="password" type="text">
+                <img class = "copy" src="copy.png" alt="">
+
+            </div>
+            <div class="buttons">
+                <button class="btn">Generate Password</button>
+                <img src="generate.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const input = document.querySelector(".input1  input")
+
+        const button = document.querySelector(".buttons .btn")
+
+        const copy = document.querySelector(".input1 .copy")
+
+
+        function randomPass() {
+            const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+-"
+
+            let password = ""
+
+            for (let i = 0; i < 12; i++) {
+                password += characters.charAt(Math.floor(Math.random() * characters.length))
+            }
+            input.value = password
+        }
+
+        button.addEventListener("click",function(){
+            randomPass()
+        })
+
+        copy.addEventListener("click",function(){
+            input.select()
+            document.execCommand("copy")
+        
+        })
+    </script>
+</body>
+
+</html>
