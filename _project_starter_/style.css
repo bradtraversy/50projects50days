@@ -5,12 +5,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: cadetblue;
+}
+#p1:hover{
+    font-size:200px;
+    text-decoration: wavy;
+    text-align: justify;
+    text-shadow: 5px 10px 15px white;
 }
