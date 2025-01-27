@@ -28,7 +28,9 @@ body {
   color: #fff;
   cursor: pointer;
   flex: 0.5;
+  transform: skew(20deg);
   margin: 10px;
+  z-index: 999;
   position: relative;
   -webkit-transition: all 700ms ease-in;
 }
@@ -46,8 +48,13 @@ body {
   flex: 5;
 }
 
+.skew-restore{
+  transform: skew(0deg);
+}
+
 .panel.active h3 {
   opacity: 1;
+  color: rgb(51, 203, 9);
   transition: opacity 0.3s ease-in 0.4s;
 }
 
