@@ -1,7 +1,7 @@
-const smallCups = document.querySelectorAll('.cup-small')
-const liters = document.getElementById('liters')
-const percentage = document.getElementById('percentage')
-const remained = document.getElementById('remained')
+var smallCups = document.querySelectorAll('.cup-small')
+var liters = document.getElementById('liters')
+var percentage = document.getElementById('percentage')
+var remained = document.getElementById('remained')
 
 updateBigCup()
 
@@ -27,8 +27,8 @@ function highlightCups(idx) {
 }
 
 function updateBigCup() {
-    const fullCups = document.querySelectorAll('.cup-small.full').length
-    const totalCups = smallCups.length
+    var fullCups = document.querySelectorAll('.cup-small.full').length
+    var totalCups = smallCups.length
 
     if(fullCups === 0) {
         percentage.style.visibility = 'hidden'

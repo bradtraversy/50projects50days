@@ -85,6 +85,7 @@ h3 {
 
 .remained small {
   font-size: 12px;
+
 }
 
 .percentage {
@@ -95,7 +96,58 @@ h3 {
   font-weight: bold;
   font-size: 30px;
   height: 0;
+  position: relative;
   transition: 0.3s ease;
+}
+
+.percentage::after {
+  content: '';
+  height: 10px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-30%) translateX(-30%);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  background-color: #6ab3f8;
+  animation: water 5s linear infinite;
+}
+
+.percentage::before {
+  content: '';
+  height: 10px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-30%) translateX(90%);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  background-color: #6ab3f8;
+  animation: water-s 5s linear infinite;
+}
+
+@keyframes water-s {
+  0% {
+    transform: translateX(90%) translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-100%) translateY(-30%);
+  }
+}
+
+@keyframes water {
+  0% {
+    transform: translateX(-30%) translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(330%) translateY(-30%);
+  }
 }
 
 .text {
