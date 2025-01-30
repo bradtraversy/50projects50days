@@ -8,3 +8,20 @@ function fixNav() {
         nav.classList.remove('active')
     }
 }
+
+var mouse = document.querySelector('#mousefollower');
+
+document.body.addEventListener('mousemove',(details)=>{
+    var x = details.pageX;
+    var y = details.pageY;
+    console.log(y)
+    mouse.style.transform = `translate(${x}px,${y}px)`
+})
+
+document.body.addEventListener('mouseenter',(details)=>{
+    mouse.style.opacity = '1'
+})
+
+document.body.addEventListener('mouseleave',(details)=>{
+    mouse.style.opacity = '0'
+})
