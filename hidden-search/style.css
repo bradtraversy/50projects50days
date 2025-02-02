@@ -26,6 +26,7 @@ body {
   font-size: 18px;
   padding: 15px;
   height: 50px;
+  border-radius: 20px;
   width: 50px;
   transition: width 0.3s ease;
 }
@@ -38,6 +39,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 20px;
   height: 50px;
   width: 50px;
   transition: transform 0.3s ease;
@@ -54,4 +56,5 @@ body {
 
 .search.active .btn {
   transform: translateX(198px);
+  background-color: aqua;
 }
