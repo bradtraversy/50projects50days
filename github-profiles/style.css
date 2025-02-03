@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,9 +19,21 @@ body {
   margin: 0;
 }
 
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
 .user-form {
   width: 100%;
   max-width: 700px;
+  margin-bottom: 2rem;
 }
 
 .user-form input {
@@ -35,6 +49,7 @@ body {
   font-size: 1rem;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smoother transitions */
 }
 
 .user-form input::placeholder {
@@ -43,6 +58,24 @@ body {
 
 .user-form input:focus {
   outline: none;
+  background-color: #6b40a5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds shadow on focus */
+}
+
+.user-form input:hover {
+  background-color: #5a3495; /* Adds hover effect */
+}
+
+/* Card Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card {
@@ -54,6 +87,12 @@ body {
   display: flex;
   padding: 3rem;
   margin: 0 1.5rem;
+  transition: transform 0.3s ease; /* Adds a smooth transition */
+  animation: fadeInUp 0.5s ease-out both; /* Fade-in animation */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Slight hover animation */
 }
 
 .avatar {
@@ -61,11 +100,13 @@ body {
   border: 10px solid #2a2a72;
   height: 150px;
   width: 150px;
+  animation: fadeInUp 0.8s ease-out both; /* Delayed animation */
 }
 
 .user-info {
   color: #eee;
   margin-left: 2rem;
+  animation: fadeInUp 1s ease-out both; /* Delayed animation */
 }
 
 .user-info h2 {
@@ -99,6 +140,13 @@ body {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.repo:hover {
+  background-color: #3a4ca8;
+  transform: scale(1.05); /* Slight scale effect */
 }
 
 @media (max-width: 500px) {
@@ -109,5 +157,14 @@ body {
 
   .user-form {
     max-width: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .user-info ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
