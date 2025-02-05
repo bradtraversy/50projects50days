@@ -4,5 +4,7 @@ const input = document.querySelector('.input')
 
 btn.addEventListener('click', () => {
     search.classList.toggle('active')
-    input.focus()
+    if (search.classList != 'search' && 'active') {
+        input.focus(search)
+    }
 })
