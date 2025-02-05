@@ -1,8 +1,9 @@
 const fill = document.querySelector('.fill')
 const empties = document.querySelectorAll('.empty')
+const body = document.body
 
-fill.addEventListener('dragstart', dragStart)
-fill.addEventListener('dragend', dragEnd)
+body.addEventListener('dragstart', dragStart)
+body.addEventListener('dragend', dragEnd)
 
 for(const empty of empties) {
     empty.addEventListener('dragover', dragOver)
@@ -11,13 +12,17 @@ for(const empty of empties) {
     empty.addEventListener('drop', dragDrop)
 }
 
-function dragStart() {
-    this.className += ' hold' 
-    setTimeout(() => this.className = 'invisible', 0)
+function dragStart(e) {
+    if(!e.target.classList.contains("fill")) {
+        e.preventDefault()
+        return
+    }
+    fill.className += ' hold' 
+    setTimeout(() => fill.className = 'invisible', 0)
 }
 
 function dragEnd() {
-    this.className = 'fill'
+    fill.className = 'fill'
 }
 
 function dragOver(e) {
