@@ -1,6 +1,6 @@
 # 50 Projects in 50 Days - HTML/CSS and JavaScript
 
-This is the main repository for all of the projects in the course.
+This is the main repository for all of the project
 
 -   [Course Link](https://www.traversymedia.com/50-Projects-In-50-Days)
 
