@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*Code for the header tag*/
+header {
+  text-align: center;
+}
+header .watch {
+  font-size: 56px;
+}
+
+span {
+  color: #3498db;
+  font-style: italic;
+}
+
+/*End of the code*/
+
 
 * {
   box-sizing: border-box;
