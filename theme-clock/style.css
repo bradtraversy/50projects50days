@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,58 +7,71 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --accent-color: #4caf50;
+  --danger-color: #e74c3c;
+  --background-color: #f9f9f9;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 html {
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 
 html.dark {
   --primary-color: #fff;
   --secondary-color: #333;
-}
-
-html.dark {
-  background-color: #111;
-  color: var(--primary-color);
+  --background-color: #111;
+  --shadow-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
   font-family: 'Heebo', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+  overflow: hidden;
 }
 
 .toggle {
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: var(--secondary-color);
   border: 0;
-  border-radius: 4px;
-  padding: 8px 12px;
+  border-radius: 50px;
+  padding: 10px 20px;
   position: absolute;
-  top: 100px;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all 0.3s ease-in-out;
 }
 
-.toggle:focus {
-  outline: none;
+.toggle:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transform: scale(1.05);
 }
 
 .clock-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .clock {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(145deg, #05b54e, #ffffff);
+  border-radius: 50%;
+  box-shadow: inset 0 4px 6px var(--shadow-color), 0 6px 10px var(--shadow-color);
 }
 
 .needle {
@@ -66,58 +79,50 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 65px;
-  width: 3px;
+  width: 4px;
+  border-radius: 2px;
   transform-origin: bottom center;
-  transition: all 0.5s ease-in linear;
+  transition: all 0.5s ease-in-out;
 }
 
 .needle.hour {
+  height: 70px;
   transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .needle.minute {
-  transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
+  transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .needle.second {
+  height: 110px;
+  background-color: var(--danger-color);
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 100px;
-  background-color: #e74c3c;
 }
 
 .center-point {
-  background-color: #e74c3c;
-  width: 10px;
-  height: 10px;
+  background-color: var(--danger-color);
+  width: 12px;
+  height: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-}
-
-.center-point::after {
-  content: '';
-  background-color: var(--primary-color);
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .time {
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .date {
-  color: #aaa;
-  font-size: 14px;
-  letter-spacing: 0.3px;
+  color: var(--accent-color);
+  font-size: 16px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -125,12 +130,65 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 50%;
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 18px;
-  transition: all 0.5s ease-in;
+  line-height: 20px;
   font-size: 12px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
+
+.alarm-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.set-alarm {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.set-alarm:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.alarm-status {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--danger-color);
+}
+.alarm-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--danger-color);
+  color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.alarm-notification.show {
+  opacity: 1;
+  visibility: visible;
+}
+
