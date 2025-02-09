@@ -7,13 +7,19 @@
     <title>Todo List</title>
   </head>
   <body>
+    <header>
     <h1>todos</h1>
-    <form id="form">
+    </header>
+    <main>
+    <form id="form" aria-label="Todo Form">
       <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
 
       <ul class="todos" id="todos"></ul>
     </form>
+    <footer>
     <small>Left click to toggle completed. <br> Right click to delete todo</small>
+      </footer>
+      </main>
 
     <script src="script.js"></script>
   </body>
