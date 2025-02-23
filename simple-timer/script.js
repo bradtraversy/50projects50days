@@ -2,15 +2,32 @@ const resetBtn = document.querySelector('#reset');
 const playBtn = document.querySelector('#play');
 const timerEl = document.querySelector('#timer');
 const root = document.querySelector(':root');
+const customMinutesInput = document.querySelector('#customMinutes');
+const customSecondsInput = document.querySelector('#customSeconds');
+const setTimeBtn = document.querySelector('#setTime');
 
 // Initial setup
-const totalSeconds = 60;
+let totalSeconds = 60;
 let playing = false;
 let currentSeconds = totalSeconds;
 timerEl.innerText = formatTime(totalSeconds);
 
 const timerInterval = setInterval(run, 1000);
 
+
+setTimeBtn.addEventListener('click', () => {
+  let min = parseInt(customMinutesInput.value) || 0;
+  let sec = parseInt(customSecondsInput.value) || 0;
+  let newTime = min * 60 + sec;
+  if (newTime > 0) {
+    totalSeconds = newTime;
+    currentSeconds = newTime;
+    timerEl.innerText = formatTime(newTime);
+
+    customMinutesInput.value = "";
+    customSecondsInput.value = "";
+  }
+});
 playBtn.addEventListener('click', () => {
   playing = !playing;
   playBtn.classList.toggle('play');
