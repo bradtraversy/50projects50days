@@ -14,7 +14,7 @@ function resetDOM() {
   })
 
   nums[0].classList.add('in')
-}
+};
 
 function runAnimation() {
   nums.forEach((num, idx) => {
@@ -32,9 +32,11 @@ function runAnimation() {
       }
     })
   })
-}
+};
 
 replay.addEventListener('click', () => {
   resetDOM()
   runAnimation()
-})
+});
+
+/// commit 3rd time
