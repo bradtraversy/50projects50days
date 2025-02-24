@@ -1,42 +1,19 @@
-const loveMe = document.querySelector('.loveMe')
-const times = document.querySelector('#times')
 
-let clickTime = 0
-let timesClicked = 0
+var car = document.querySelector('.loveMe');
+var clutter = 0;
+var times = document.querySelector('#times');
 
-loveMe.addEventListener('click', (e) => {
-    if(clickTime === 0) {
-        clickTime = new Date().getTime()
-    } else {
-        if((new Date().getTime() - clickTime) < 800) {
-            createHeart(e)
-            clickTime = 0
-        } else {
-            clickTime = new Date().getTime()
-        }
-    }
+car.addEventListener('dblclick', () => {
+    clutter++;
+    var heart = document.querySelector('#heart');
+    heart.style.opacity = 1;
+    heart.style.transform = 'scale(1)';
+    setTimeout(() => {
+        heart.style.transform = 'scale(0)';
+        heart.style.opacity = '0';
+    }, 600)
+    setTimeout(()=>{
+        heart.style.display = 'initial';
+    },620)
+    times.innerHTML = clutter;
 })
-
-const createHeart = (e) => {
-    const heart = document.createElement('i')
-    heart.classList.add('fas')
-    heart.classList.add('fa-heart')
-
-    const x = e.clientX
-    const y = e.clientY
-
-    const leftOffset = e.target.offsetLeft
-    const topOffset = e.target.offsetTop
-
-    const xInside = x - leftOffset
-    const yInside = y - topOffset
-
-    heart.style.top = `${yInside}px`
-    heart.style.left = `${xInside}px`
-
-    loveMe.appendChild(heart)
-
-    times.innerHTML = ++timesClicked
-
-    setTimeout(() => heart.remove(), 1000)
-}

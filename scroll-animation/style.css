@@ -29,19 +29,21 @@ h1 {
   height: 200px;
   margin: 10px;
   border-radius: 10px;
+  transform: translateX(-100px);
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(400%);
-  transition: transform 0.4s ease;
-}
-
-.box:nth-of-type(even) {
-  transform: translateX(-400%);
-}
-
-.box.show {
-  transform: translateX(0);
 }
 
 .box h2 {
   font-size: 45px;
+}
+
+@keyframes appear{
+  from{
+    transform: translateX(-100px);
+  }to{
+    transform: translateX(100px);
+  }
 }

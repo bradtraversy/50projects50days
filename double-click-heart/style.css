@@ -34,20 +34,19 @@ small {
   margin: auto;
   cursor: pointer;
   max-width: 100%;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  justify-content: center;
   position: relative;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   overflow: hidden;
 }
 
-.loveMe .fa-heart {
-  position: absolute;
-  animation: grow 0.6s linear;
-  transform: translate(-50%, -50%) scale(0);
-}
 
-@keyframes grow {
-  to {
-    transform: translate(-50%, -50%) scale(10);
-    opacity: 0;
-  }
+#heart{
+  font-size: 15vw;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.4s;
 }

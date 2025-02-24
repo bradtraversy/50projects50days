@@ -115,3 +115,15 @@ body {
   line-height: 30px;
   letter-spacing: 1.2px;
 }
+
+#mousefollower{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 999;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.1s;
+  background-color: white;
+}
