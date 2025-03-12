@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: darksalmon;
+  background-color: rgb(234, 255, 217);
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -13,13 +13,19 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  width: 80vw;
+  margin: auto;
+}
+
+
+#text {
+  text-align: center;
 }
 
 div {
   position: absolute;
   bottom: 20px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(9, 105, 31, 0.1);
   padding: 10px 20px;
   font-size: 18px;
 }
@@ -28,7 +34,7 @@ input {
   width: 50px;
   padding: 5px;
   font-size: 18px;
-  background-color: darksalmon;
+  background-color: rgb(172, 234, 201);
   border: none;
   text-align: center;
 }

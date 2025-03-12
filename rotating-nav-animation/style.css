@@ -6,19 +6,20 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #333;
+  background-color: #0c5c9e;
   color: #222;
   overflow-x: hidden;
   margin: 0;
 }
 
 .container {
-  background-color: #fafafa;
+  background-color: #e5ffde;
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
+  position: relative;
 }
 
 .container.show-nav {
@@ -27,8 +28,9 @@ body {
 
 .circle-container {
   position: fixed;
-  top: -100px;
-  left: -100px;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
 }
 
 .circle {
@@ -37,7 +39,7 @@ body {
   width: 200px;
   border-radius: 50%;
   position: relative;
-  transition: transform 0.5s linear;
+  transition: transform 0.7s linear;
 }
 
 .container.show-nav .circle {
@@ -49,7 +51,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100px;
+  height: 80px;
   background: transparent;
   border: 0;
   font-size: 26px;
@@ -70,7 +72,7 @@ body {
   transform-origin: top left;
 }
 
-.container.show-nav + nav li {
+.container.show-nav+nav li {
   transform: translateX(0);
   transition-delay: 0.3s;
 }
@@ -84,7 +86,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 nav ul li {
@@ -100,17 +102,17 @@ nav ul li i {
   margin-right: 10px;
 }
 
-nav ul li + li {
+nav ul li+li {
   margin-left: 15px;
   transform: translateX(-150%);
 }
 
-nav ul li + li + li {
+nav ul li+li+li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
 
-nav a{
+nav a {
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
@@ -126,7 +128,7 @@ nav a:hover {
 }
 
 .content {
-  max-width: 1000px;
+  max-width: 100vw;
   margin: 50px auto;
 }
 

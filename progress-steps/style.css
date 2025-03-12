@@ -3,7 +3,6 @@
 :root {
   --line-border-fill: #3498db;
   --line-border-empty: #383838;
-
 }
 
 * {
@@ -29,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 100%;
   width: 350px;
 }
@@ -59,20 +58,36 @@ body {
 }
 
 .circle {
+  position: relative;
+  z-index: 1;
   background-color: #f1f1f1;
-  color:#e2e2e2;
+  color: #000000;
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid var(--line-border-empty);
   transition: 0.4s ease;
+  /* Add this to ensure the background is solid */
+  box-shadow: 0 0 0 4px #f1f1f1;
 }
 
 .circle.active {
   border-color: var(--line-border-fill);
+  background-color: #e7f7fa;
+  animation-name: pop;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  font-size: 130%;
+  font-weight: 1000;
+}
+
+.circle:not(.active) {
+  transform: scale(0.9);
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
 }
 
 .btn {
@@ -98,4 +113,19 @@ body {
 .btn:disabled {
   background-color: var(--line-border-empty);
   cursor: not-allowed;
+  transform: scale(1);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

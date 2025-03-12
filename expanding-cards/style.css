@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  /* width is 100vw by default*/
   overflow: hidden;
   margin: 0;
 }
@@ -25,19 +26,19 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  transition: all 700ms ease-in;
 }
 
 .panel h3 {
   font-size: 24px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 30px;
   margin: 0;
   opacity: 0;
 }
