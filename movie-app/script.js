@@ -20,7 +20,7 @@ function showMovies(movies) {
     main.innerHTML = ''
 
     movies.forEach((movie) => {
-        const { title, poster_path, vote_average, overview } = movie
+        const { title, poster_path, vote_average, overview, id } = movie
 
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
@@ -34,6 +34,9 @@ function showMovies(movies) {
             <div class="overview">
           <h3>Overview</h3>
           ${overview}
+           <p style="margin-top: 10px;">
+      <a href="https://www.themoviedb.org/movie/${id}" target="_blank" class="detail-btn">View Details</a>
+    </p>
         </div>
         `
         main.appendChild(movieEl)
