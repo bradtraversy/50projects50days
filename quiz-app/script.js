@@ -32,6 +32,10 @@ const quizData = [
         correct: "b",
     },
 ];
+const verifyBox = document.getElementById('verify')
+const dragEl    = document.getElementById('drag')    
+const dropEl    = document.getElementById('drop')    
+const verifyMsg = document.getElementById('verify-msg')
 
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
@@ -41,7 +45,29 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+const feedbackEl= document.getElementById('feedback')
+dragEl.addEventListener('dragstart', e => {
+  e.dataTransfer.setData('text/plain', 'drag');
+});
+dropEl.addEventListener('dragover', e => e.preventDefault());
+dropEl.addEventListener('drop', e => {
+  e.preventDefault();
+  if (e.dataTransfer.getData('text/plain') === 'drag') {
+    dragEl.style.top  = dropEl.offsetTop + 'px';
+    dragEl.style.left = dropEl.offsetLeft + 'px';
+    dragEl.setAttribute('draggable', false);
+    dragEl.style.cursor = 'default';
 
+    verifyMsg.style.color = '#27ae60';
+    verifyMsg.textContent = '✔ Verification passed! Starting...';
+
+    setTimeout(() => {
+      verifyBox.classList.add('hidden'); 
+      quiz.classList.remove('hidden');   
+      loadQuiz();                 
+    }, 700);
+  }
+});
 let currentQuiz = 0
 let score = 0
 
@@ -49,7 +75,7 @@ loadQuiz()
 
 function loadQuiz() {
     deselectAnswers()
-
+    feedbackEl.textContent = '';
     const currentQuizData = quizData[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
@@ -78,11 +104,14 @@ function getSelected() {
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     
-    if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
-            score++
-        }
+    if (!answer) return
 
+  const correct = answer === quizData[currentQuiz].correct
+  if (correct) score++
+  feedbackEl.style.color = correct ? '#27ae60' : '#c0392b'
+  feedbackEl.textContent = correct ? 'Correct!' : 'Wrong!'
+
+  setTimeout(() => {
         currentQuiz++
 
         if(currentQuiz < quizData.length) {
@@ -94,5 +123,5 @@ submitBtn.addEventListener('click', () => {
                 <button onclick="location.reload()">Reload</button>
             `
         }
-    }
+    }，900）
 })
