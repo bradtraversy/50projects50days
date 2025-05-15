@@ -7,6 +7,20 @@
     <title>Quiz App</title>
   </head>
   <body>
+    <div class="verify-container" id="verify">
+      <h2>Human Verification</h2>
+      <p class="verify-instr">
+        Drag the <span class="red-word">red</span> square onto the
+        <span class="blue-word">blue</span> square to start the quiz.
+      </p>
+
+      <div class="stage">
+        <div id="drop" class="block blue"></div>
+        <div id="drag" class="block red" draggable="true"></div>
+      </div>
+
+      <p id="verify-msg"></p>
+    </div>
     <div class="quiz-container" id="quiz">
       <div class="quiz-header">
         <h2 id="question">Question text</h2>
@@ -33,6 +47,7 @@
         </ul>
       </div>
       <button id="submit">Submit</button>
+      <p id="feedback" class="feedback"></p>
     </div>
     <script src="script.js"></script>
   </body>
