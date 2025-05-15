@@ -7,30 +7,43 @@
     <title>Quiz App</title>
   </head>
   <body>
+
+  <div id="verify-container" class="verify-container">
+    <h2>Human Verification</h2>
+    <p>Drag the <span class="red">red</span> square onto the <span class="blue">blue</span> square to start the quiz.</p>
+    <div id="drop" class="square target"></div>
+    <div id="drag" class="square draggable" draggable="true"></div>
+    <p id="verify-msg" class="verify-msg"></p>
+  </div>
+    
     <div class="quiz-container" id="quiz">
       <div class="quiz-header">
         <h2 id="question">Question text</h2>
         <ul>
           <li>
             <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_text">Question</label>
+            <label for="a" id="a_text">Answer A</label>
           </li>
 
           <li>
             <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_text">Question</label>
+            <label for="b" id="b_text">Answer B</label>
           </li>
 
           <li>
             <input type="radio" name="answer" id="c" class="answer">
-            <label for="c" id="c_text">Question</label>
+            <label for="c" id="c_text">Answer C</label>
           </li>
 
           <li>
             <input type="radio" name="answer" id="d" class="answer">
-            <label for="d" id="d_text">Question</label>
+            <label for="d" id="d_text">Answer D</label>
           </li>
         </ul>
+
+          <p id="feedback" class="feedback"></p>
+    </div>
+      
       </div>
       <button id="submit">Submit</button>
     </div>
