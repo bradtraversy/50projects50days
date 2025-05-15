@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
+.hidden { display: none; }
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
@@ -68,3 +68,20 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+.feedback { text-align:center; font-weight:600; font-size:1.2rem; padding:0.8rem 0; }
+.verify-container {
+  background:#fff; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1);
+  padding:2rem 3rem; text-align:center;
+}
+.verify-instr { margin-top:.5rem; font-size:0.95rem; }
+.red-word { color:#e74c3c; font-weight:600; }
+.blue-word{ color:#2980b9; font-weight:600; }
+
+.stage { position:relative; width:100px; height:180px; margin:1.5rem auto; }
+.block {
+  width:80px; height:80px; border-radius:6px; position:absolute; left:50%;
+  transform:translateX(-50%); cursor:grab;
+}
+.blue { background:#2980b9; top:0; }
+.red  { background:#e74c3c; bottom:0; }
+#verify-msg { margin-top:0.6rem; font-weight:600; }
