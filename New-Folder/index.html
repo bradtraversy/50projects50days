@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Calulator</h1>
+      <div class="outer">
+        <div class="calculator">
+          <!-- ======================---Inputs--------============================================= -->
+
+          <div class="form-floating mb-3">
+            <input
+              type="number"
+              name=""
+              id="floatingInput inp1"
+              class="form-control inp-1"
+              placeholder="Enter Number"
+              required
+            />
+            <label for="floatingInput">Enter a Number</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="number"
+              name=""
+              id="floatingInput inp2"
+              class="form-control inp-2"
+              placeholder="Enter Number"
+              required
+            />
+            <label for="floatingInput">Enter a Number</label>
+          </div>
+
+          <!-- =======================-------   Buttons   ----------======================================= -->
+
+          <div class="buttons">
+            <button class="btn btn-outline-secondary addi">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="btn btn-outline-secondary multi">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="btn btn-outline-secondary sub">-</button>
+            <button class="btn btn-outline-secondary divi">/</button>
+            <!-- <button class="btn btn-outline-secondary ans">=</button> -->
+            <button class="btn btn-outline-secondary clear">Clear</button>
+          </div>
+
+          <h3>Ans:</h3>
+
+          <div class="form-floating mb-3">
+            <input
+              type="number"
+              name=""
+              id="floatingInput "
+              class="form-control ans-box"
+              placeholder="Answer"
+              required
+            />
+            <label for="floatingInput">Answer</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
