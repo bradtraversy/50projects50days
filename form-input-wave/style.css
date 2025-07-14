@@ -43,6 +43,7 @@ body {
   font-size: 16px;
   border: 0;
   border-radius: 5px;
+  margin-top: 30px;
 }
 
 .btn:focus {
@@ -54,12 +55,11 @@ body {
 }
 
 .text {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .form-control {
   position: relative;
-  margin: 20px 0 40px;
   width: 300px;
 }
 
