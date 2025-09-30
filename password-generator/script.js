@@ -1,4 +1,4 @@
-const resultEl = document.getElementById('result')
+ const resultEl = document.getElementById('result')
 const lengthEl = document.getElementById('length')
 const uppercaseEl = document.getElementById('uppercase')
 const lowercaseEl = document.getElementById('lowercase')
@@ -6,6 +6,7 @@ const numbersEl = document.getElementById('numbers')
 const symbolsEl = document.getElementById('symbols')
 const generateEl = document.getElementById('generate')
 const clipboardEl = document.getElementById('clipboard')
+const clear = document.getElementById('clear');
 
 const randomFunc = {
     lower: getRandomLower,
@@ -20,7 +21,14 @@ clipboardEl.addEventListener('click', () => {
     return;
   }
   navigator.clipboard.writeText(password);
-    alert('Password copied to clipboard!')
+  
+  const icon = clipboardEl.querySelector("i");
+   icon.className = "fas fa-check";
+
+    setTimeout(() => {
+    icon.classList.remove("fa-check");
+    icon.classList.add("fa-clipboard");
+  }, 2000);
 })
 
 generateEl.addEventListener('click', () => {
@@ -54,6 +62,9 @@ function generatePassword(lower, upper, number, symbol, length) {
     return finalPassword
 }
 
+clear.addEventListener('click' , ()=>{
+  resultEl.innerText  = "";
+});
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
