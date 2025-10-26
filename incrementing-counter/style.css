@@ -5,16 +5,36 @@
 }
 
 body {
+  /* LIGHT MODE DEFAULTS */
   background-color: #8e44ad;
   color: #fff;
   font-family: 'Roboto Mono', sans-serif;
   display: flex;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
+
+/* --- DARK MODE STYLES --- */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f1c40f; /* Yellow text for dark mode contrast */
+}
+
+body.dark-mode .btn {
+  background-color: #f1c40f; /* Yellow button */
+  color: #1a1a1a;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #e6b908; 
+}
+/* --- End Dark Mode Styles --- */
+
 
 .counter-container {
   display: flex;
@@ -29,8 +49,46 @@ body {
   margin-top: 10px;
 }
 
+/* --- Button Styles --- */
+.btn {
+    background-color: #47bcf3; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px; 
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: #38a5d3;
+}
+
+/* --- Theme Toggle Button Styles --- */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0; /* Override margin-top */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 0;
+    line-height: 50px; /* Center icon vertically */
+    z-index: 10;
+}
+/* --- End Theme Toggle Styles --- */
+
+
 @media (max-width: 580px) {
-  body {
-    flex-direction: column;
+  .counter-container {
+    margin: 15px; 
   }
 }
