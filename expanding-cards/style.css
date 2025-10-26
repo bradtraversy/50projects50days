@@ -6,7 +6,9 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  /* Adjust display to allow space for controls */
   display: flex;
+  flex-direction: column; /* Stack controls above container */
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -30,7 +32,7 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  transition: all 700ms ease-in, outline 0.1s linear; /* Keep existing transition */
 }
 
 .panel h3 {
@@ -40,6 +42,9 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+  /* Add slide animation styles */
+  transform: translateY(30px);
+  transition: opacity 0.3s ease-in 0.4s, transform 0.4s ease-in 0.4s;
 }
 
 .panel.active {
@@ -48,8 +53,37 @@ body {
 
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transform: translateY(0); /* Final position for slide animation */
+  /* Remove transition from here as it's handled by base .panel h3 */
 }
+
+.panel:focus {
+  outline: 3px solid #fff;
+  outline-offset: -3px;
+}
+
+/* --- ADDED Styles for Auto-Cycle Controls --- */
+.controls {
+  text-align: center;
+  margin-bottom: 20px; /* Add space between buttons and cards */
+}
+
+.controls button {
+  background-color: #eee;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #ddd;
+}
+/* --- End of Added Styles --- */
+
 
 @media (max-width: 480px) {
   .container {
