@@ -28,13 +28,23 @@ body {
   height: 0;
   border: 50px solid transparent;
   border-bottom-color: #fff;
-  animation: rotateA 2s linear infinite 0.5s;
+  /* Ensure animation direction is normal by default */
+  animation: rotateA 2s linear infinite 0.5s normal; 
 }
 
 .kinetic::before {
   transform: rotate(90deg);
-  animation: rotateB 2s linear infinite;
+  /* Ensure animation direction is normal by default */
+  animation: rotateB 2s linear infinite normal; 
 }
+
+/* --- ADDED: Reverse animation class --- */
+.kinetic.reverse::before,
+.kinetic.reverse::after {
+  animation-direction: reverse;
+}
+/* --- End Added --- */
+
 
 @keyframes rotateA {
   0%,
@@ -67,3 +77,22 @@ body {
     transform: rotate(450deg);
   }
 }
+
+/* --- ADDED: Button styles --- */
+button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit; /* Use same font as body */
+}
+
+button:hover {
+    background-color: #eee; /* Slight hover effect */
+}
+/* --- End Added --- */
