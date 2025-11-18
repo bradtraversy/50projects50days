@@ -59,3 +59,29 @@ h3 {
 .btn:focus {
   outline: 0;
 }
+
+
+/* Floating laughing emojis */
+.laugh-emoji {
+  position: fixed;
+  bottom: -100px;
+  font-size: 40px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: floatUp linear forwards;
+  user-select: none;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) translateX(var(--drift));
+    opacity: 0;
+  }
+}
+
+
+
