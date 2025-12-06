@@ -1,13 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
-  </head>
-  <body>
-    <h1>Project Starter</h1>
-    <script src="script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>WWE Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameArea">
+
+    <div id="ui">
+        <div class="bar playerHP"></div>
+        <div class="bar enemyHP"></div>
+    </div>
+
+    <img id="player" class="fighter" src="player.png">
+    <img id="enemy" class="fighter" src="enemy.png">
+
+</div>
+
+<script src="game.js"></script>
+</body>
 </html>
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+#gameArea {
+    width: 900px;
+    height: 450px;
+    background: url("ring.png") no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+
+.fighter {
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    transition: transform 0.1s;
+}
+
+#player { left: 100px; }
+#enemy { right: 100px; transform: scaleX(-1); }
+
+/* HP bars */
+#ui {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+}
+
+.bar {
+    height: 20px;
+    border-radius: 6px;
+}
+
+.playerHP {
+    background: #2196f3;
+    width: 350px;
+    margin-left: 10px;
+}
+
+.enemyHP {
+    background: #f44336;
+    width: 350px;
+    margin-left: 540px;
+}
+const player = document.getElementById("player");
+const enemy = document.getElementById("enemy");
+const hp1 = document.querySelector(".playerHP");
+const hp2 = document.querySelector(".enemyHP");
+
+let pX = 100;
+let eX = 650;
+let pHP = 350;
+let eHP = 350;
+let gravity = 0;
+let jumping = false;
+
+// Movement
+document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") pX += 15;
+    if (e.key === "ArrowLeft") pX -= 15;
+
+    // Punch
+    if (e.key === "z") attackEnemy(25);
+
+    // Kick
+    if (e.key === "x") attackEnemy(35);
+
+    // Jump
+    if (e.key === "ArrowUp" && !jumping) {
+        gravity = 18;
+        jumping = true;
+    }
+
+    updatePositions();
+});
+
+// Update positions
+function updatePositions() {
+    // Keep inside ring
+    pX = Math.max(0, Math.min(pX, 750));
+    eX = Math.max(0, Math.min(eX, 750));
+
+    player.style.left = pX + "px";
+    enemy.style.left = eX + "px";
+}
+
+// Attack hit detection
+function attackEnemy(dmg) {
+    if (Math.abs(pX - eX) < 120) {
+        eHP -= dmg;
+        hp2.style.width = eHP + "px";
+    }
+}
+
+// Simple AI
+setInterval(() => {
+    // Enemy moves toward player
+    if (eX > pX + 120) eX -= 10;
+    else if (eX < pX - 120) eX += 10;
+
+    // Enemy attacks
+    if (Math.abs(pX - eX) < 120) {
+        pHP -= 10;
+        hp1.style.width = pHP + "px";
+    }
+
+    updatePositions();
+}, 200);
+
+// Jump physics
+setInterval(() => {
+    if (jumping) {
+        player.style.bottom = gravity + "px";
+        gravity -= 2;
+
+        if (gravity <= 0) {
+            gravity = 0;
+            jumping = false;
+            player.style.bottom = "0px";
+        }
+    }
+}, 40);
