@@ -70,3 +70,21 @@ small {
   margin-top: 3rem;
   text-align: center;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6rem; /* Reduce font size for smaller screens */
+  }
+
+  .input {
+    font-size: 1.5rem; /* Adjust input font size */
+    padding: 0.8rem 1.5rem; /* Adjust padding */
+  }
+
+  .todos li {
+    font-size: 1.2rem; /* Adjust list item font size */
+    padding: 0.8rem 1.5rem; /* Adjust list item padding */
+  }
+}
+
