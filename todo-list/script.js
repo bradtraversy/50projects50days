@@ -1,65 +1,67 @@
-const form = document.getElementById('form')
-const input = document.getElementById('input')
-const todosUL = document.getElementById('todos')
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+const todosUL = document.getElementById("todos");
+const countEl = document.getElementById("count");
+const clearBtn = document.getElementById("clear");
 
-const todos = JSON.parse(localStorage.getItem('todos'))
+let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
-if(todos) {
-    todos.forEach(todo => addTodo(todo))
+renderTodos();
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (input.value.trim() === "") {
+    alert("Todo empty nahi ho sakta 😅");
+    return;
+  }
+
+  todos.push({
+    text: input.value,
+    completed: false
+  });
+
+  input.value = "";
+  saveAndRender();
+});
+
+function renderTodos() {
+  todosUL.innerHTML = "";
+
+  todos.forEach((todo, index) => {
+    const li = document.createElement("li");
+    li.innerText = todo.text;
+
+    if (todo.completed) li.classList.add("completed");
+
+    li.addEventListener("click", () => {
+      todo.completed = !todo.completed;
+      saveAndRender();
+    });
+
+    li.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      todos.splice(index, 1);
+      saveAndRender();
+    });
+
+    todosUL.appendChild(li);
+  });
+
+  updateCount();
 }
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    addTodo()
-})
-
-function addTodo(todo) {
-    let todoText = input.value
-
-    if(todo) {
-        todoText = todo.text
-    }
-
-    if(todoText) {
-        const todoEl = document.createElement('li')
-        if(todo && todo.completed) {
-            todoEl.classList.add('completed')
-        }
-
-        todoEl.innerText = todoText
-
-        todoEl.addEventListener('click', () => {
-            todoEl.classList.toggle('completed')
-            updateLS()
-        }) 
-
-        todoEl.addEventListener('contextmenu', (e) => {
-            e.preventDefault()
-
-            todoEl.remove()
-            updateLS()
-        }) 
-
-        todosUL.appendChild(todoEl)
-
-        input.value = ''
-
-        updateLS()
-    }
+function updateCount() {
+  const pending = todos.filter(t => !t.completed).length;
+  countEl.innerText = `${pending} tasks left`;
 }
 
-function updateLS() {
-    todosEl = document.querySelectorAll('li')
+clearBtn.addEventListener("click", () => {
+  todos = todos.filter(todo => !todo.completed);
+  saveAndRender();
+});
 
-    const todos = []
-
-    todosEl.forEach(todoEl => {
-        todos.push({
-            text: todoEl.innerText,
-            completed: todoEl.classList.contains('completed')
-        })
-    })
-
-    localStorage.setItem('todos', JSON.stringify(todos))
+function saveAndRender() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+  renderTodos();
 }
