@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
 :root {
   --primary-color: #22254b;
@@ -11,15 +11,21 @@
 
 body {
   background-color: var(--primary-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
 header {
   padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: var(--secondary-color);
+}
+
+#firstHeading {
+  color: #633ec9;
+  margin: 10px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .search {
@@ -66,7 +72,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:0.2rem;
+  gap: 0.2rem;
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
@@ -109,4 +115,30 @@ main {
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+
+#btn {
+  background-color: transparent;
+  height: 40px;
+  border-radius: 40px;
+  margin-left: 10px;
+}
+
+img {
+  height: 300px;
+  width: 400px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
