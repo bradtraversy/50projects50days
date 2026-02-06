@@ -1,0 +1,49 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f172a;
+}
+
+.flower {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.petal {
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  background: radial-gradient(circle at top, #ff9ad5, #e11d48);
+  border-radius: 50%;
+  top: 40px;
+  left: 70px;
+  transform-origin: bottom center;
+  transform: scale(0.2) rotate(0deg);
+  transition: transform 10s ease-in-out;
+}
+
+/* Petal angles */
+.petal:nth-child(1) { --angle: 0deg; }
+.petal:nth-child(2) { --angle: 45deg; }
+.petal:nth-child(3) { --angle: 90deg; }
+.petal:nth-child(4) { --angle: 135deg; }
+.petal:nth-child(5) { --angle: 180deg; }
+.petal:nth-child(6) { --angle: 225deg; }
+.petal:nth-child(7) { --angle: 270deg; }
+.petal:nth-child(8) { --angle: 315deg; }
+
+.flower.open .petal {
+  transform: scale(1) rotate(var(--angle));
+}
+
+
