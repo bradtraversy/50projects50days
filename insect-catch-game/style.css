@@ -95,7 +95,8 @@ h1 {
 }
 
 .time,
-.score {
+.score,
+.high-score {
   position: absolute;
   top: 20px;
 }
@@ -108,24 +109,34 @@ h1 {
   right: 20px;
 }
 
-.message {
-  line-height: 1.7;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  padding: 20px;
-  z-index: 100;
-  text-align: center;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -150%);
-  transition: transform 0.4s ease-in;
+.high-score {
+  top: 60px;
+  right: 20px;
 }
 
-.message.visible {
-  transform: translate(-50%, 150%);
-  opacity: 1;
+.speed-control {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+.speed-control label {
+  font-size: 12px;
+}
+
+.speed-control input[type="range"] {
+  width: 100px;
+  cursor: pointer;
+}
+
+.speed-control span {
+  font-size: 12px;
+  min-width: 30px;
 }
 
 .insect {
@@ -147,4 +158,24 @@ h1 {
 .insect img {
   width: 100px;
   height: 100px;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  transition: transform 0.4s ease-in;
+  line-height: 1.6;
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
 }

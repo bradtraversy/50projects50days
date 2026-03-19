@@ -4,23 +4,42 @@ const start_btn = document.getElementById('start-btn')
 const game_container = document.getElementById('game-container')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
+const highScoreEl = document.getElementById('high-score')
+const speedSlider = document.getElementById('speed')
+const speedValue = document.getElementById('speed-value')
 const message = document.getElementById('message')
 let seconds = 0
 let score = 0
 let selected_insect = {}
+let gameSpeed = 1
+let highScore = localStorage.getItem('insectCatchHighScore') || 0
+
+highScoreEl.innerHTML = `High Score: ${highScore}`
 
 start_btn.addEventListener('click', () => screens[0].classList.add('up'))
 
 choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img')
-        const src = img.getAttribute('src')
-        const alt = img.getAttribute('alt')
-        selected_insect = { src, alt }
+        const emoji = btn.querySelector('span')
+        if (img) {
+            const src = img.getAttribute('src')
+            const alt = img.getAttribute('alt')
+            selected_insect = { type: 'img', src, alt }
+        } else if (emoji) {
+            const content = emoji.textContent
+            const alt = btn.querySelector('p').textContent.toLowerCase()
+            selected_insect = { type: 'emoji', content, alt }
+        }
         screens[1].classList.add('up')
         setTimeout(createInsect, 1000)
         startGame()
     })
+})
+
+speedSlider.addEventListener('input', (e) => {
+    gameSpeed = parseInt(e.target.value)
+    speedValue.textContent = `${gameSpeed}x`
 })
 
 function startGame() {
@@ -42,7 +61,12 @@ function createInsect() {
     const { x, y } = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
-    insect.innerHTML = `<img src="${selected_insect.src}" alt="${selected_insect.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`
+    
+    if (selected_insect.type === 'emoji') {
+        insect.innerHTML = `<span style="font-size: 80px; transform: rotate(${Math.random() * 360}deg); display: inline-block;">${selected_insect.content}</span>`
+    } else {
+        insect.innerHTML = `<img src="${selected_insect.src}" alt="${selected_insect.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`
+    }
 
     insect.addEventListener('click', catchInsect)
 
@@ -65,14 +89,24 @@ function catchInsect() {
 }
 
 function addInsects() {
-    setTimeout(createInsect, 1000)
-    setTimeout(createInsect, 1500)
+    const baseDelay = 1000
+    const adjustedDelay = baseDelay / gameSpeed
+    
+    setTimeout(createInsect, adjustedDelay)
+    setTimeout(createInsect, adjustedDelay * 1.5)
 }
 
 function increaseScore() {
     score++
+    scoreEl.innerHTML = `Score: ${score}`
+    
+    if (score > highScore) {
+        highScore = score
+        highScoreEl.innerHTML = `High Score: ${highScore}`
+        localStorage.setItem('insectCatchHighScore', highScore)
+    }
+    
     if(score > 19) {
         message.classList.add('visible')
     }
-    scoreEl.innerHTML = `Score: ${score}`
 }
