@@ -48,12 +48,42 @@
                />
           </button>
         </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Ant</p>
+            <span style="font-size: 60px;">🐜</span>
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Bee</p>
+            <span style="font-size: 60px;">🐝</span>
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Beetle</p>
+            <span style="font-size: 60px;">🪲</span>
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Ladybug</p>
+            <span style="font-size: 60px;">🐞</span>
+          </button>
+        </li>
       </ul>
     </div>
 
     <div class="screen game-container" id="game-container">
       <h3 id="time" class="time">Time: 00:00</h3>
       <h3 id="score" class="score">Score: 0</h3>
+      <h3 id="high-score" class="high-score">High Score: 0</h3>
+      <div class="speed-control">
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="1" max="10" value="1">
+        <span id="speed-value">1x</span>
+      </div>
       <h5 id="message" class="message">
         Are you annoyed yet? <br>
         You are playing an impossible game!!
