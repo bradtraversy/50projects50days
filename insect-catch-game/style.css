@@ -59,6 +59,7 @@ h1 {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+  max-width: 800px;
 }
 
 .insects-list li {
@@ -95,7 +96,8 @@ h1 {
 }
 
 .time,
-.score {
+.score,
+.high-score {
   position: absolute;
   top: 20px;
 }
@@ -106,6 +108,36 @@ h1 {
 
 .score {
   right: 20px;
+}
+
+.high-score {
+  right: 20px;
+  top: 50px;
+  font-size: 12px;
+  color: #ffd700;
+}
+
+.speed-control {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 10px;
+}
+
+.speed-control label {
+  margin-bottom: 5px;
+}
+
+.speed-control input[type="range"] {
+  width: 100px;
+  cursor: pointer;
+}
+
+#speed-value {
+  color: #ffd700;
 }
 
 .message {

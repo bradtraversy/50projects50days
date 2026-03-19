@@ -4,12 +4,25 @@ const start_btn = document.getElementById('start-btn')
 const game_container = document.getElementById('game-container')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
+const highScoreEl = document.getElementById('high-score')
 const message = document.getElementById('message')
+const speedSlider = document.getElementById('speed-slider')
+const speedValue = document.getElementById('speed-value')
+
 let seconds = 0
 let score = 0
+let highScore = localStorage.getItem('insectCatchHighScore') || 0
 let selected_insect = {}
+let spawnSpeedMultiplier = 1
+
+highScoreEl.innerHTML = `High Score: ${highScore}`
 
 start_btn.addEventListener('click', () => screens[0].classList.add('up'))
+
+speedSlider.addEventListener('input', (e) => {
+    spawnSpeedMultiplier = parseInt(e.target.value)
+    speedValue.innerHTML = `${spawnSpeedMultiplier}x`
+})
 
 choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -65,8 +78,10 @@ function catchInsect() {
 }
 
 function addInsects() {
-    setTimeout(createInsect, 1000)
-    setTimeout(createInsect, 1500)
+    const baseDelay1 = 1000 / spawnSpeedMultiplier
+    const baseDelay2 = 1500 / spawnSpeedMultiplier
+    setTimeout(createInsect, baseDelay1)
+    setTimeout(createInsect, baseDelay2)
 }
 
 function increaseScore() {
@@ -75,4 +90,10 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
+    
+    if(score > highScore) {
+        highScore = score
+        localStorage.setItem('insectCatchHighScore', highScore)
+        highScoreEl.innerHTML = `High Score: ${highScore}`
+    }
 }
