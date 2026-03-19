@@ -5,11 +5,23 @@ const game_container = document.getElementById('game-container')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
+const highScoreEl = document.getElementById('high-score')
+const highScoreMenuEl = document.getElementById('high-score-menu')
+const speedSelect = document.getElementById('speed')
+
 let seconds = 0
 let score = 0
 let selected_insect = {}
+let speed = 1
+let highScore = localStorage.getItem('insectGameHighScore') || 0
 
-start_btn.addEventListener('click', () => screens[0].classList.add('up'))
+highScoreMenuEl.innerHTML = highScore
+highScoreEl.innerHTML = `Best: ${highScore}`
+
+start_btn.addEventListener('click', () => {
+    speed = parseInt(speedSelect.value)
+    screens[0].classList.add('up')
+})
 
 choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -22,6 +34,7 @@ choose_insect_btns.forEach(btn => {
         startGame()
     })
 })
+
 
 function startGame() {
     setInterval(increaseTime, 1000)
@@ -65,8 +78,9 @@ function catchInsect() {
 }
 
 function addInsects() {
-    setTimeout(createInsect, 1000)
-    setTimeout(createInsect, 1500)
+    const baseDelay = 1000 / speed
+    setTimeout(createInsect, baseDelay)
+    setTimeout(createInsect, baseDelay * 1.5)
 }
 
 function increaseScore() {
@@ -75,4 +89,11 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
+    
+    if(score > highScore) {
+        highScore = score
+        localStorage.setItem('insectGameHighScore', highScore)
+        highScoreEl.innerHTML = `Best: ${highScore}`
+        highScoreMenuEl.innerHTML = highScore
+    }
 }

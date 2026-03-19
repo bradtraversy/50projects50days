@@ -39,6 +39,34 @@ h1 {
   outline: 0;
 }
 
+.speed-selector {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.speed-selector label {
+  margin-right: 10px;
+}
+
+.speed-selector select {
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #516dff;
+  cursor: pointer;
+}
+
+.speed-selector select:focus {
+  outline: 0;
+}
+
+.high-score-display {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
@@ -106,6 +134,13 @@ h1 {
 
 .score {
   right: 20px;
+}
+
+.high-score {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 12px;
 }
 
 .message {
