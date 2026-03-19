@@ -18,14 +18,14 @@
         <li>
           <button class="choose-insect-btn">
             <p>Fly</p>
-            <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Housefly_%28Musca_domestica%29.jpg/640px-Housefly_%28Musca_domestica%29.jpg" alt="fly">
           </button>
         </li>
         <li>
           <button class="choose-insect-btn">
             <p>Mosquito</p>
             <img
-               src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mosquito_2007-2.jpg/640px-Mosquito_2007-2.jpg"
                alt="mosquito"
                />
           </button>
@@ -34,7 +34,7 @@
           <button class="choose-insect-btn">
             <p>Spider</p>
             <img
-               src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/European_garden_spider_%28Araneus_diadematus%29.jpg/640px-European_garden_spider_%28Araneus_diadematus%29.jpg"
                alt="spider"
                />
           </button>
@@ -43,8 +43,44 @@
           <button class="choose-insect-btn">
             <p>Roach</p>
             <img
-               src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Blattodea_icon.png/640px-Blattodea_icon.png"
                alt="roach"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Butterfly</p>
+            <img
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Monarch_Butterfly_Danaus_plexippus.jpg/640px-Monarch_Butterfly_Danaus_plexippus.jpg"
+               alt="butterfly"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Dragonfly</p>
+            <img
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sympetrum_flaveolum_-_side_%28aka%29.jpg/640px-Sympetrum_flaveolum_-_side_%28aka%29.jpg"
+               alt="dragonfly"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Ladybug</p>
+            <img
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Coccinella_septempunctata_-_top_%28aka%29.jpg/640px-Coccinella_septempunctata_-_top_%28aka%29.jpg"
+               alt="ladybug"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Bee</p>
+            <img
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Apis_mellifera_Western_honey_bee.jpg/640px-Apis_mellifera_Western_honey_bee.jpg"
+               alt="bee"
                />
           </button>
         </li>
@@ -54,6 +90,11 @@
     <div class="screen game-container" id="game-container">
       <h3 id="time" class="time">Time: 00:00</h3>
       <h3 id="score" class="score">Score: 0</h3>
+      <h3 id="high-score" class="high-score">High Score: 0</h3>
+      <div class="speed-control">
+        <label for="speed-slider">Spawn Speed: <span id="speed-value">1x</span></label>
+        <input type="range" id="speed-slider" min="1" max="10" value="1" step="1">
+      </div>
       <h5 id="message" class="message">
         Are you annoyed yet? <br>
         You are playing an impossible game!!
