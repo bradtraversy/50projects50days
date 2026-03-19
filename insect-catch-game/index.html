@@ -9,7 +9,25 @@
   <body>
     <div class="screen">
       <h1>Catch The Insect</h1>
+      <div class="speed-selector">
+        <label for="speed">Speed:</label>
+        <select id="speed">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+          <option value="5">5x</option>
+          <option value="6">6x</option>
+          <option value="7">7x</option>
+          <option value="8">8x</option>
+          <option value="9">9x</option>
+          <option value="10">10x</option>
+        </select>
+      </div>
       <button class="btn" id="start-btn">Play Game</button>
+      <div class="high-score-display">
+        <span>High Score: <span id="high-score-menu">0</span></span>
+      </div>
     </div>
 
     <div class="screen">
@@ -48,12 +66,49 @@
                />
           </button>
         </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Bee</p>
+            <img
+               src="https://cdn-icons-png.flaticon.com/512/616/616492.png"
+               alt="bee"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Butterfly</p>
+            <img
+               src="https://cdn-icons-png.flaticon.com/512/1866/1866304.png"
+               alt="butterfly"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Ant</p>
+            <img
+               src="https://cdn-icons-png.flaticon.com/512/1866/1866327.png"
+               alt="ant"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Ladybug</p>
+            <img
+               src="https://cdn-icons-png.flaticon.com/512/2330/2330867.png"
+               alt="ladybug"
+               />
+          </button>
+        </li>
       </ul>
     </div>
 
     <div class="screen game-container" id="game-container">
       <h3 id="time" class="time">Time: 00:00</h3>
       <h3 id="score" class="score">Score: 0</h3>
+      <h3 id="high-score" class="high-score">Best: 0</h3>
       <h5 id="message" class="message">
         Are you annoyed yet? <br>
         You are playing an impossible game!!
