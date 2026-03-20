@@ -31,6 +31,25 @@
             <label for="d" id="d_text">Question</label>
           </li>
         </ul>
+
+        <div class="rating-section">
+          <p>为这道题打分 (1-5分):</p>
+          <div class="stars" id="rating-stars">
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+          </div>
+          <p class="high-score" id="high-score">历史最高分: 未评分</p>
+        </div>
+
+        <div class="notes-section">
+          <label for="notes">笔记:</label>
+          <textarea id="notes" placeholder="输入你的笔记..."></textarea>
+          <button id="save-notes" class="save-btn">保存笔记</button>
+          <p class="save-status" id="save-status"></p>
+        </div>
       </div>
       <button id="submit">Submit</button>
     </div>

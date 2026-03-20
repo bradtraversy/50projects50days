@@ -68,3 +68,96 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+
+.rating-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.rating-section p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #ffc107;
+}
+
+.star:hover ~ .star {
+  color: #ddd;
+}
+
+.high-score {
+  font-size: 0.85rem;
+  color: #8e44ad;
+  font-weight: bold;
+}
+
+.notes-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.notes-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#notes {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+#notes:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+.save-btn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: auto;
+  display: inline-block;
+}
+
+.save-btn:hover {
+  background-color: #219a52;
+}
+
+.save-status {
+  font-size: 0.85rem;
+  color: #27ae60;
+  margin-top: 0.5rem;
+  min-height: 1.2rem;
+}
