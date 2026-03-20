@@ -11,9 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   margin: 0;
+  padding: 20px 0;
 }
 
 .quiz-container {
@@ -25,13 +26,19 @@ body {
 }
 
 .quiz-header {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 h2 {
   padding: 1rem;
   text-align: center;
   margin: 0;
+}
+
+h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
 }
 
 ul {
@@ -67,4 +74,152 @@ button:hover {
 button:focus {
   outline: none;
   background-color: #5e3370;
+}
+
+.note-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.note-section textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.note-section textarea:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+.save-note-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  width: auto;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.save-note-btn.saved {
+  background-color: #27ae60;
+}
+
+.rating-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-container {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.star.active {
+  color: #f39c12;
+}
+
+.rating-value {
+  font-size: 0.9rem;
+  color: #666;
+  min-width: 60px;
+}
+
+.high-score-display {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.high-score-display.new-record {
+  color: #27ae60;
+  font-weight: bold;
+  animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.result-notes {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-notes h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.note-item {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border-left: 3px solid #8e44ad;
+}
+
+.note-text {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.note-score {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .quiz-container {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .quiz-header {
+    padding: 1rem;
+  }
+  
+  ul li {
+    font-size: 1rem;
+  }
+  
+  .star {
+    font-size: 1.5rem;
+  }
 }
