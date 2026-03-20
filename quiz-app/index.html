@@ -9,6 +9,10 @@
   <body>
     <div class="quiz-container" id="quiz">
       <div class="quiz-header">
+        <div class="question-info">
+          <span id="question-counter">1/8</span>
+          <span id="best-score">Best: 0/8</span>
+        </div>
         <h2 id="question">Question text</h2>
         <ul>
           <li>
@@ -31,8 +35,28 @@
             <label for="d" id="d_text">Question</label>
           </li>
         </ul>
+        
+        <div class="rating-section">
+          <label>Rate this question (1-5):</label>
+          <div class="stars" id="rating-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <span id="current-rating">Not rated</span>
+        </div>
+
+        <div class="notes-section">
+          <label for="notes">Notes:</label>
+          <textarea id="notes" placeholder="Add your notes here..."></textarea>
+          <button id="save-notes" class="save-btn">Save Notes</button>
+        </div>
       </div>
-      <button id="submit">Submit</button>
+      <div class="button-group">
+        <button id="submit">Submit</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

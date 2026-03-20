@@ -11,9 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-y: auto;
   margin: 0;
+  padding: 20px;
 }
 
 .quiz-container {
@@ -21,17 +22,27 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 600px;
+  max-width: 100%;
   overflow: hidden;
 }
 
 .quiz-header {
-  padding: 4rem;
+  padding: 2rem 3rem;
+}
+
+.question-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 h2 {
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
   margin: 0;
+  font-size: 1.3rem;
 }
 
 ul {
@@ -40,8 +51,8 @@ ul {
 }
 
 ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
 }
 
 ul li label {
@@ -67,4 +78,98 @@ button:hover {
 button:focus {
   outline: none;
   background-color: #5e3370;
+}
+
+.button-group {
+  display: flex;
+  gap: 1px;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+.rating-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.rating-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.stars {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #f39c12;
+}
+
+#current-rating {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.notes-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.notes-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.notes-section textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.save-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  width: auto;
+  border-radius: 5px;
+  background-color: #27ae60;
+}
+
+.save-btn:hover {
+  background-color: #219a52;
+}
+
+.final-score {
+  text-align: center;
+  padding: 2rem;
+}
+
+.final-score h2 {
+  margin-bottom: 1rem;
+}
+
+.final-score .best-score {
+  font-size: 1.1rem;
+  color: #8e44ad;
+  margin: 1rem 0;
 }
