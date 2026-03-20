@@ -31,6 +31,27 @@
             <label for="d" id="d_text">Question</label>
           </li>
         </ul>
+
+        <div class="note-section">
+          <h3>题目笔记</h3>
+          <textarea id="note-input" placeholder="在此输入你的笔记..." rows="3"></textarea>
+          <button id="save-note" class="save-note-btn">保存笔记</button>
+        </div>
+
+        <div class="rating-section">
+          <h3>智能评分 (1-5分)</h3>
+          <div class="rating-wrapper">
+            <div id="rating-container" class="rating-container">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <span id="rating-value" class="rating-value">未评分</span>
+          </div>
+          <div id="high-score-display" class="high-score-display">暂无评分记录</div>
+        </div>
       </div>
       <button id="submit">Submit</button>
     </div>
