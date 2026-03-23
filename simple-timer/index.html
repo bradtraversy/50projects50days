@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +27,7 @@
       >
         <p id="timer" class="text-blue-200 relative text-5xl z-10">00:00</p>
 
-        <!-- Create the inner cirlce and line -->
+        <!-- Create the inner circle and line -->
         <div
           class="w-[calc(100%-4px)] aspect-square bg-gray-800 rounded-full absolute inset-[2px]"
         ></div>
@@ -41,6 +42,7 @@
       <div class="flex justify-center gap-6">
         <button
           id="reset"
+          aria-label="Reset timer"
           class="flex justify-center items-center w-10 h-10 bg-blue-300 rounded-full"
         >
           <i class="fas fa-refresh"></i>
@@ -48,6 +50,7 @@
 
         <button
           id="play"
+          aria-label="Play or pause timer"
           class="flex justify-center items-center w-10 h-10 bg-blue-300 rounded-full group"
         >
           <i class="fas fa-play"></i>
