@@ -78,6 +78,7 @@ The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
 🔹 Software Disclaimer 🔹
+hello i am new 
 
 🛠️ Provided "As Is" – No guarantees, use at your own risk.
 📜 No Warranty – No promises on performance or fitness for any purpose.
